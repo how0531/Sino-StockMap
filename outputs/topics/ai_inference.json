@@ -1,0 +1,570 @@
+{
+ "id": "ai_inference",
+ "tab": "AI 推論服務",
+ "title": "AI 推論服務與優化供應鏈 (AI Inference Serving & Optimization)",
+ "subtitle": "AI Inference Serving & Optimization — 推論即服務（賣 API/token）與優化軟體層（量化/KV cache/投機解碼，每 GPU 多服務 10–50x 請求）。2026 是推論層自成資產類別的引爆年：Fireworks 洽 $15B（ARR ~$8 億、每日 10+ 兆 token）、Baseten 估值 $11–13B（單季 ARR $200M→$600M）、Together $7.5B（ARR ~$10 億）；Groq 獲 NVIDIA 3 年 $170 億推論技術授權並於 GTC 2026 落地為自有 Groq 3 LPX、Cerebras 已 IPO（2026-05 每股 $185 募 $55.5 億、首日衝至約 $950 億估值、OpenAI 採購倍增至逾 $200 億，Llama 70B 1,800+ tok/s）；OpenRouter 估值 $1.3B、每週 25 兆 token 抽 ~5% 過路費；SGLang spin out 成 RadixArk（$400M、Accel/NVIDIA 投）。市場 2025 $1,061 億→2030 $2,550 億（CAGR ~19%）。⚠ HBM 2026 全年售罄、推論將佔年底約 2/3 算力需求。價值鏈：推論晶片/加速器 → 推論引擎/優化（vLLM/SGLang/TensorRT-LLM/Dynamo）→ 推論即服務平台 → 聚合/路由 → 終端需求。⚠ 真正穩賺是引擎/優化與聚合兩個輕資產賣鏟人；押 GPU 平台毛利僅 ~50%。有別於 neocloud（賣裸機）、llmops_eval（監控）。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 5
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "推論市場規模",
+   "v": "$2,550億(2030)",
+   "sub": "2025 $1,061億→2030 CAGR ~19.2%（MarketsandMarkets）",
+   "hot": true
+  },
+  {
+   "k": "2026 催化",
+   "v": "Cerebras IPO + 估值翻倍潮",
+   "sub": "Cerebras 5/13 IPO 募 $55.5億·首日估值約 $950億·OpenAI 採購 $200億+·NVIDIA Groq 3 LPX 落地·Fireworks 洽 $15B·Baseten $13B",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "chip",
+   "label": "推論晶片 / 加速器 Inference Silicon",
+   "main": false
+  },
+  {
+   "id": "engine",
+   "label": "推論引擎 / 優化軟體 Inference Engine & Optimization",
+   "main": false
+  },
+  {
+   "id": "platform",
+   "label": "推論即服務平台 Inference-as-a-Service",
+   "main": true
+  },
+  {
+   "id": "router",
+   "label": "聚合 / 路由 / 網關 Aggregator & Router",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "終端需求 Application & Enterprise Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "inf_silicon",
+   "row": "chip",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "推論晶片 / 加速器（GPU / LPU / WSE / RDU）",
+   "nameEn": "Inference Silicon & Accelerators",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · NVIDIA 軟硬通吃並推自有 Groq 3 LPX（每 MW 35x）；市佔由 80–85% 降至年底 ~75%；Cerebras 已 IPO 估值約 $950 億",
+   "desc": "推論服務層的硬體底料：NVIDIA Blackwell/Hopper GPU 主導，加上 Groq LPU、Cerebras 晶圓級 WSE、SambaNova RDU、Google TPU 等專用推論加速器。這是整鏈成本結構（COGS）的核心。⚠ 2026 HBM 全年售罄、資料中心吃掉全球約 70% 記憶體晶片產能，OpenAI 點名記憶體短缺為訓練/推論首要瓶頸——此 memory wall 正是大片上 SRAM、避開 HBM 的 LPU/WSE 架構在 H1 取得結構性順風的根因。",
+   "marketSize": "服務層底料",
+   "growth": "Blackwell 降本 10x",
+   "share": "null",
+   "analysis": "NVIDIA（NVDA，Blackwell B200/GB200 為推論主力、較 Hopper 每 token 成本降最高 10x；同時擁 TensorRT-LLM/Dynamo 軟體並戰略投資幾乎所有推論平台與引擎——軟硬通吃；2026 GTC 把對 Groq 的授權落地為自有產品『Groq 3 LPX』低延遲推論加速器，設計於 Vera Rubin 平台、單系統 256 顆第三代 LPU、每晶片 500MB 片上 SRAM/150 TB/s 避開 HBM memory wall，宣稱兆參數模型每 MW 吞吐較 HBM GPU 高 35x、GA 落在 2026 H2，將 LPU 架構納入產品線）。專用推論晶片：Groq（未上市，LPU 500–1,000+ tok/s、GPU 5–14x；2025-12 與 NVIDIA 簽 3 年 $170 億推論技術授權、2026-02 派發 $7.6B 給股東）、Cerebras（已掛牌 NASDAQ，2026-05-13 每股 $185 募 $55.5 億為自 Uber 以來最大美科技 IPO、首日收 $311（+68%）估值衝至約 $950 億；WSE 晶圓級，Llama 3.3 70B 達 1,800+ tok/s、Kimi K2.6 達 981 tok/s 為官方端點 29x；2025 營收 $510M（約 86% 來自 UAE 系）；OpenAI 採購額由 $100 億倍增至逾 $200 億；2026-03 進 Amazon Bedrock）、SambaNova（傳 Intel 收購，RDU 可重構資料流、SN50 氣冷約 GPU 三倍）。AMD（AMD，CES 2026 發表 MI400 系列與 Helios 機櫃（72 顆 MI455X、每櫃 2.9 ExaFLOPS FP4 推論、HBM4 432GB）、OpenAI 承諾部署 6GW（H2 FY26 先上 1GW MI450）、累計約 12GW 承諾；投資 RadixArk/Cerebras）、Google（GOOGL，TPU v6/v7 自用+Cloud；2026 與 Marvell 洽共同開發 memory processing unit + 推論最佳化 TPU，於 Broadcom/MediaTek 之外新增第三家設計夥伴以分散單點）。⚠ 分析師估 NVIDIA 資料中心 AI 加速器市佔由 80–85% 降至 2026 年底約 75%；NVIDIA 以 $200 億取得 Groq 資產/授權後再推自有 LPX，被部分參議員質疑為 reverse acquihire，集中度既是護城河也是反壟斷風險。",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "推論加速器主導 ~75%（年底）+ 軟硬通吃 + 自有 LPU",
+     "products": "Blackwell B200/GB200 / Groq 3 LPX / TensorRT-LLM / Dynamo",
+     "note": "Blackwell 較 Hopper 每 token 成本降最高 10x；GTC 2026 把 Groq 授權落地為 Groq 3 LPX（Vera Rubin、每 MW 吞吐 35x、GA H2 2026）；市佔由 80–85% 降至年底約 75%",
+     "src": "https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/"
+    },
+    {
+     "name": "Groq",
+     "ticker": "—",
+     "country": "US",
+     "share": "LPU 極速推論",
+     "products": "LPU 推論晶片 / Groq Cloud",
+     "note": "未上市；500–1,000+ tok/s；2025-12 獲 NVIDIA 3 年 $170 億授權、2026-02 派 $7.6B 股利；NVIDIA 將 LPU 授權落地為 Groq 3 LPX",
+     "src": "https://fortune.com/2026/01/05/nvidia-groq-deal-ai-chip-startups-in-play/"
+    },
+    {
+     "name": "Cerebras Systems",
+     "ticker": "CBRS",
+     "country": "US",
+     "share": "晶圓級 WSE 極速推論 / 已 IPO",
+     "products": "WSE-3 / Cerebras Cloud Inference",
+     "note": "2026-05-13 每股 $185 募 $55.5 億、首日收 $311（+68%）估值約 $950 億；2025 營收 $510M（86% UAE 系）；OpenAI 採購倍增至逾 $200 億+認股權證最高 10%；Llama 70B 1,800+ tok/s；2026-03 進 Bedrock",
+     "src": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/"
+    },
+    {
+     "name": "SambaNova",
+     "ticker": "—",
+     "country": "US",
+     "share": "RDU 可重構資料流",
+     "products": "SN50 氣冷晶片 / SambaNova Cloud",
+     "note": "未上市；傳 Intel 簽 term sheet 收購；SN50 約 GPU 三倍 token 速",
+     "src": "https://intuitionlabs.ai/articles/cerebras-vs-sambanova-vs-groq-ai-chips"
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "GPU 推論替代（市佔升）",
+     "products": "Instinct MI400 系列 / MI455X / Helios 機櫃",
+     "note": "CES 2026 發表 MI400/Helios（每櫃 2.9 ExaFLOPS FP4、HBM4 432GB）；OpenAI 承諾 6GW、累計約 12GW；投資 RadixArk/Cerebras",
+     "src": "https://www.datacenterdynamics.com/en/news/amd-unveils-full-mi400-product-lineup-claims-mi500-chips-will-deliver-1000x-increase-in-ai-performance/"
+    },
+    {
+     "name": "Google",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "TPU 自用 + 雲端",
+     "products": "TPU v6/v7 / Vertex AI 推論",
+     "note": "自有 TPU 推論；2026 與 Marvell 洽開發 MPU + 推論最佳化 TPU（Broadcom/MediaTek 外第三家設計夥伴）；CapitalG 領投 OpenRouter",
+     "src": "https://www.datacenterdynamics.com/en/news/google-in-discussions-with-marvell-for-development-of-two-inference-chips-report/"
+    },
+    {
+     "name": "Marvell",
+     "ticker": "MRVL",
+     "country": "US",
+     "share": "客製 AI ASIC 協同設計 ~35%",
+     "products": "客製矽（Trainium/Maia/Meta DPU）/ Google MPU+TPU 洽談中",
+     "note": "2026 與 Google 洽共同開發 MPU + 推論最佳化 TPU；客製矽年化營收約 $15 億、18 個雲端設計案；Amazon Trainium 3 2026 Q2 量產",
+     "src": "https://www.datacenterdynamics.com/en/news/google-in-discussions-with-marvell-for-development-of-two-inference-chips-report/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "inf_engine"
+    },
+    {
+     "id": "inf_platform"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Blackwell 降每 token 成本 10x (NVIDIA)",
+     "url": "https://blogs.nvidia.com/blog/inference-open-source-models-blackwell-reduce-cost-per-token/"
+    },
+    {
+     "label": "NVIDIA Groq 3 LPX 落地 (NVIDIA Dev)",
+     "url": "https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/"
+    },
+    {
+     "label": "Cerebras 募 $55.5 億 IPO (TechCrunch)",
+     "url": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/"
+    },
+    {
+     "label": "AMD MI400/Helios 發表 (DCD)",
+     "url": "https://www.datacenterdynamics.com/en/news/amd-unveils-full-mi400-product-lineup-claims-mi500-chips-will-deliver-1000x-increase-in-ai-performance/"
+    },
+    {
+     "label": "Google×Marvell 洽推論晶片 (DCD)",
+     "url": "https://www.datacenterdynamics.com/en/news/google-in-discussions-with-marvell-for-development-of-two-inference-chips-report/"
+    }
+   ]
+  },
+  {
+   "id": "inf_engine",
+   "row": "engine",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "推論引擎 / 優化軟體（賣鏟人核心）",
+   "nameEn": "Inference Engine & Optimization",
+   "competition": "highgrowth",
+   "single": "最務實賣鏟人 · vLLM 為事實標準；SGLang spin out RadixArk $400M；組合優化每 GPU 多服務 10–50x",
+   "desc": "把模型「跑得快、跑得省」的開源推論引擎與優化軟體：vLLM、SGLang、TensorRT-LLM、Dynamo 編排層，加上量化/KV cache/投機解碼等優化技術。這是整鏈真正的軟體護城河與最務實的賣鏟人環節。",
+   "marketSize": "軟體護城河",
+   "growth": "每 GPU +10–50x 請求",
+   "share": "null",
+   "analysis": "vLLM（開源/Red Hat 商業化，PagedAttention/continuous batching 事實標準，生產部署於 Meta/Mistral/Cohere/IBM/Red Hat；Red Hat AI Inference 商業化、IBM 旗下）。SGLang→RadixArk（未上市 $400M，2026-01 spin out、2026-05 $100M 種子 Accel/Spark 領投、NVIDIA/AMD/MediaTek 參投；SGLang 部署 40 萬+ GPU 含 xAI/Google/Microsoft/Oracle/Nebius/LinkedIn）。TensorRT-LLM（NVIDIA，GPU 專用優化，FP8/NVFP4/INT4 AWQ 量化）。NVIDIA Dynamo（開源框架，2026-03 GA 分散式編排，disaggregated prefill/decode；GB200 NVL72 上 MoE 吞吐 +7x、DeepSeek-R1 請求 +30x、GB300 較 Hopper +50x；上層編排 vLLM/SGLang/TensorRT-LLM）。LMCache（開源 KV cache 層，移出 GPU 顯存跨引擎共享、配 vLLM 吞吐最高 15x）。優化技術：量化（FP8 最穩、NVFP4 Blackwell 專用）、投機解碼（EAGLE-3 草稿模型）、prefix caching、continuous batching——組合可較 naive 多服務 10–50x 請求/GPU。Neural Magic（被 Red Hat 收購）稀疏化、Google TurboQuant 極端壓縮。",
+   "companies": [
+    {
+     "name": "vLLM (Red Hat / IBM)",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "事實標準開源引擎",
+     "products": "vLLM (PagedAttention) / Red Hat AI Inference",
+     "note": "生產部署於 Meta/Mistral/Cohere/IBM；Red Hat 商業化（IBM 旗下）",
+     "src": "https://www.redhat.com/en/topics/ai/what-is-vllm"
+    },
+    {
+     "name": "RadixArk (SGLang)",
+     "ticker": "—",
+     "country": "US",
+     "share": "開源引擎商業化新星",
+     "products": "SGLang 推論引擎 / 託管服務",
+     "note": "未上市 $400M；2026-05 $100M 種子（Accel/Spark/NVIDIA/AMD/MediaTek）；部署 40 萬+ GPU",
+     "src": "https://techfundingnews.com/radixark-100m-seed-accel-spark-nvidia-sglang-ai-inference/"
+    },
+    {
+     "name": "NVIDIA (TensorRT-LLM / Dynamo)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "GPU 專用引擎 + 編排層",
+     "products": "TensorRT-LLM / Dynamo 1.0",
+     "note": "Dynamo 1.0 2026-03-16 GTC GA；prefill/decode 解耦 + NIXL KV 傳輸；GB300 NVL72 達 $0.123/百萬 token、較 Hopper 每 MW 吞吐 +50x；Meta/LinkedIn/Mistral/HuggingFace 已生產用",
+     "src": "https://www.spheron.network/blog/nvidia-dynamo-disaggregated-inference-guide/"
+    },
+    {
+     "name": "LMCache",
+     "ticker": "—",
+     "country": "US",
+     "share": "KV cache 優化層",
+     "products": "LMCache（KV cache 跨引擎共享）",
+     "note": "未上市/開源；配 vLLM 吞吐最高 15x（多輪問答/長文件）",
+     "src": "https://arxiv.org/html/2510.09665v2"
+    },
+    {
+     "name": "Neural Magic (Red Hat)",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "稀疏化/量化優化",
+     "products": "SparseZoo / LLM Compressor",
+     "note": "被 Red Hat 收購；剪枝/量化/稀疏推論",
+     "src": "https://www.redhat.com/en/topics/ai/how-vllm-accelerates-ai-inference-3-enterprise-use-cases"
+    },
+    {
+     "name": "Google (TurboQuant)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "極端壓縮研究",
+     "products": "TurboQuant 量化 / KV cache 壓縮",
+     "note": "零精度損失極端壓縮；研究級",
+     "src": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "inf_silicon"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "inf_platform"
+    }
+   ],
+   "sources": [
+    {
+     "label": "vLLM 介紹 (Red Hat)",
+     "url": "https://www.redhat.com/en/topics/ai/what-is-vllm"
+    },
+    {
+     "label": "RadixArk $100M 種子 NVIDIA/Accel (TFN)",
+     "url": "https://techfundingnews.com/radixark-100m-seed-accel-spark-nvidia-sglang-ai-inference/"
+    }
+   ]
+  },
+  {
+   "id": "inf_platform",
+   "row": "platform",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "推論即服務平台（IaaS，敘事核心）",
+   "nameEn": "Inference-as-a-Service Platforms",
+   "competition": "highgrowth",
+   "single": "⚠ 估值翻倍潮 · Fireworks 洽 $15B/Baseten $13B/Together $7.5B；但毛利僅 ~50%、面 hyperscaler 擠壓",
+   "desc": "賣 API/token 的推論即服務平台，是 2026 投資熱度最高的敘事核心。ARR 單季翻倍、估值半年翻倍，但 GPU 成本嵌入 COGS 致毛利僅 ~50%，且面臨 hyperscaler 收編壓力。",
+   "marketSize": "估值翻倍潮",
+   "growth": "ARR 單季翻倍",
+   "share": "null",
+   "analysis": "Together AI（未上市 $7.5B，ARR ~$10 億 2026-02；API 占 30–40%、其餘 GPU 租賃；NVIDIA cloud ally；2026-03 推即時語音 agent sub-500ms）。Fireworks AI（未上市，洽 $15B、7 個月前才 $4B；ARR ~$8 億 2026-05、每日 10+ 兆 token；客戶 Cursor/Perplexity/Notion/Uber；FireAttention 自研核心；毛利 ~50%）。Baseten（未上市 $11–13B，5 個月前才 $5B；ARR 單季 $200M→$600M；客戶 Cursor/Mercor/OpenEvidence 省 30% 成本；用 Blackwell 降每 token 成本 10x）。DeepInfra（未上市，2026-05 $107M Series B、500 Global/Georges Harik 領投、NVIDIA 參投；專注開源模型專屬推論雲、營收 2026 初翻三倍）。Modal Labs（未上市 ~$4.5B 洽談，serverless GPU 推論、ARR ~$3 億 2026-04；2026-05 完成 $355M）。晶片商自營雲：Groq Cloud/Cerebras Cloud/SambaNova Cloud（極速差異化）。Anyscale（未上市，Ray 原生）。⚠ 毛利 ~50% 遠低於 SaaS 70%+；per-token 價格戰 + hyperscaler（AWS/GCP/Azure）拉回自家平台壓力。",
+   "companies": [
+    {
+     "name": "Together AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "IaaS ARR 領先",
+     "products": "推論 API / GPU 租賃 / 語音 agent",
+     "note": "未上市 $7.5B；ARR ~$10 億；API 占 30–40%；NVIDIA cloud ally",
+     "src": "https://sacra.com/c/together-ai/"
+    },
+    {
+     "name": "Fireworks AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值最高洽談中",
+     "products": "FireAttention 推論 / serverless API",
+     "note": "未上市、洽 $15B；ARR ~$8 億、每日 10+ 兆 token；Cursor/Perplexity/Notion/Uber；毛利 ~50%",
+     "src": "https://sacra.com/c/fireworks-ai/"
+    },
+    {
+     "name": "Baseten",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR 增速最猛",
+     "products": "推論部署平台 / 專用端點",
+     "note": "未上市 $11–13B；ARR 單季 $200M→$600M；客戶省 30% 成本",
+     "src": "https://startupfortune.com/baseten-closes-a-15-billion-round-at-up-to-13-billion-valuation-as-inference-becomes-its-own-infrastructure-war/"
+    },
+    {
+     "name": "DeepInfra",
+     "ticker": "—",
+     "country": "US",
+     "share": "開源模型專屬推論雲",
+     "products": "開源模型推論端點",
+     "note": "未上市；2026-05 $107M Series B（NVIDIA 參投）；營收 2026 初翻三倍",
+     "src": "https://siliconangle.com/2026/05/04/deepinfra-lands-107m-funding-build-dedicated-inference-cloud-open-source-models/"
+    },
+    {
+     "name": "Modal Labs",
+     "ticker": "—",
+     "country": "US",
+     "share": "serverless GPU 推論",
+     "products": "serverless 推論 / 批次運算",
+     "note": "未上市 ~$4.5B 洽談；ARR ~$3 億；2026-05 完成 $355M",
+     "src": "https://siliconangle.com/2026/05/21/serverless-ai-infrastructure-startup-modal-labs-seals-355m-funding-round/"
+    },
+    {
+     "name": "Cerebras Cloud",
+     "ticker": "CBRS",
+     "country": "US",
+     "share": "晶片商自營極速雲",
+     "products": "Cerebras Cloud Inference",
+     "note": "2026-05 已 IPO（估值約 $950 億）；WSE 晶圓級極速；OpenAI 採購逾 $200 億跑 ChatGPT 部分推論；2026-03 進 Amazon Bedrock",
+     "src": "https://www.networkworld.com/article/4117296/openai-turns-to-cerebras-in-a-mega-deal-to-scale-ai-inference-infrastructure.html"
+    },
+    {
+     "name": "Groq Cloud",
+     "ticker": "—",
+     "country": "US",
+     "share": "LPU 自營推論雲",
+     "products": "GroqCloud 推論 API",
+     "note": "未上市；LPU 極速；GPU 5–14x token 速",
+     "src": "https://sacra.com/c/groq/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "inf_silicon"
+    },
+    {
+     "id": "inf_engine"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "inf_router"
+    },
+    {
+     "id": "end_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Fireworks AI revenue/valuation (Sacra)",
+     "url": "https://sacra.com/c/fireworks-ai/"
+    },
+    {
+     "label": "Baseten $13B round (Startup Fortune)",
+     "url": "https://startupfortune.com/baseten-closes-a-15-billion-round-at-up-to-13-billion-valuation-as-inference-becomes-its-own-infrastructure-war/"
+    }
+   ]
+  },
+  {
+   "id": "inf_router",
+   "row": "router",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "聚合 / 路由 / 網關（過路費商業模式）",
+   "nameEn": "Aggregator, Router & Gateway",
+   "competition": "competitive",
+   "single": "OpenRouter 每週 25 兆 token 抽 ~5% 過路費；Cloudflare 2025-11 收 Replicate 進邊緣推論",
+   "desc": "把多家模型/平台統一成單一 API 的聚合與路由網關，以「過路費」抽成，是另一個輕資產賣鏟人環節。隨多模型多供應商生態擴張，路由 token 量爆增。",
+   "marketSize": "輕資產賣鏟人",
+   "growth": "token 路由量爆增",
+   "share": "null",
+   "analysis": "OpenRouter（未上市 $1.3B，400+ 模型/60+ provider 統一 API、每週 25 兆 token、抽 ~5%；ARR ~$50M 2026-03 由 2025 底 $19M；2026-05 $113M Series B、CapitalG 領投、NVentures/a16z/Menlo 參投）。Cloudflare（NET，2025-11 收 Replicate 整併進 Workers AI 邊緣推論；Replicate 以海量預訓練模型庫見長）。Novita（serverless 端點 + 按需/spot GPU、H100/H200/RTX5090）、Hyperbolic（折扣 GPU + 快速上架）、Featherless（flat-rate 25,000+ 模型固定費率）。⚠ 路由層抽成商業模式佳，但自身亦在『侵蝕存在理由』——多家平台與模型直連、流量去中介化風險，且 hyperscaler 自帶網關。",
+   "companies": [
+    {
+     "name": "OpenRouter",
+     "ticker": "—",
+     "country": "US",
+     "share": "聚合路由領導",
+     "products": "400+ 模型統一 API / token 路由",
+     "note": "未上市 $1.3B；每週 25 兆 token 抽 ~5%；2026-05 $113M（CapitalG/NVentures/a16z）",
+     "src": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/"
+    },
+    {
+     "name": "Cloudflare",
+     "ticker": "NET",
+     "country": "US",
+     "share": "邊緣推論 + 模型庫",
+     "products": "Workers AI / Replicate（2025-11 收購）",
+     "note": "2025-11 收 Replicate 整併進 Workers AI 邊緣推論",
+     "src": "https://www.runpod.io/articles/guides/top-serverless-gpu-clouds"
+    },
+    {
+     "name": "Novita AI",
+     "ticker": "—",
+     "country": "SG",
+     "share": "serverless + spot GPU",
+     "products": "serverless 推論端點 / 按需 GPU",
+     "note": "未上市；H100/H200/RTX5090 按秒計費",
+     "src": "https://fish.audio/blog/model-inference-providers-2026/"
+    },
+    {
+     "name": "Hyperbolic",
+     "ticker": "—",
+     "country": "US",
+     "share": "折扣 GPU 推論",
+     "products": "折扣 GPU / 快速模型上架",
+     "note": "未上市；低價 GPU 推論市集",
+     "src": "https://shareai.now/blog/insights/llm-api-providers/"
+    },
+    {
+     "name": "Featherless AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "flat-rate 推論",
+     "products": "flat-rate 25,000+ 模型訂閱",
+     "note": "未上市；固定費率取代 per-token",
+     "src": "https://featherless.ai/blog/llm-api-pricing-comparison-2026-complete-guide-inference-costs"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "inf_platform"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "end_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "OpenRouter $1.3B 估值 (TechCrunch)",
+     "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/"
+    },
+    {
+     "label": "Replicate 被 Cloudflare 收購 (Runpod)",
+     "url": "https://www.runpod.io/articles/guides/top-serverless-gpu-clouds"
+    }
+   ]
+  },
+  {
+   "id": "end_demand",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端需求（應用 / 企業 / 開源模型方）",
+   "nameEn": "Application & Enterprise Demand",
+   "competition": "fragmented",
+   "single": "agentic 工作流每任務吃 5–30x token 是推論量暴增根因；開源模型是第三方平台命脈",
+   "desc": "推論服務的需求端：AI 原生應用、超大規模/企業，以及提供可代跑權重的開源模型方。agentic 工作流每任務吃 5–30x token，是推論 token 結構性暴增的根因。",
+   "marketSize": "需求錨點",
+   "growth": "agentic 每任務 5–30x token",
+   "share": "null",
+   "analysis": "推論已成 AI 算力支出主軸：多方估計推論將佔 2026 年底約三分之二 AI 算力需求（2023 約三分之一），是 OpenAI 同時與 Cerebras/Groq/AMD 簽巨額推論合約的結構性背景。AI 原生應用：Cursor、Perplexity、Notion、Uber、Mercor、OpenEvidence——per-token 價格 10–100x 壓縮，但 agentic 用量 5–30x 暴增，總帳單反增、推論量結構性成長。超大規模/企業：Microsoft（MSFT）、Google（GOOGL）、AWS（AMZN，自有推論 + 收編壓力，把推論支出拉回自家平台；Trainium 3 2026 Q2 量產加速去 NVIDIA 化）、OpenAI（2026-04 將 Cerebras 採購倍增至逾 $200 億並取得最高 10% 認股權證、承諾 AMD 6GW）。開源模型方是第三方推論平台命脈（閉源 API 無第三方代跑空間）：Mistral（ARR ~$400M 2026-01、目標年底 >$10 億）、Meta Llama、DeepSeek、Qwen（阿里）、Kimi（月之暗面）。⚠ 大客戶內製化（OpenAI 自建、企業自架 vLLM）可繞過第三方平台，侵蝕 IaaS 需求；hyperscaler 同時是需求方與競爭方。",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": "—",
+     "country": "US",
+     "share": "最大推論需求/合約方",
+     "products": "ChatGPT / API（與 Cerebras/Groq/AMD 簽推論/算力約）",
+     "note": "未上市；2026-04 Cerebras 採購由 $100 億倍增至逾 $200 億（750MW+認股權證最高 10%+$10 億資料中心資金）；承諾 AMD 6GW；自建推論基建是內製化威脅",
+     "src": "https://finance.biggo.com/news/hs_3FZ4BNl__-4_Gk-3T"
+    },
+    {
+     "name": "Mistral AI",
+     "ticker": "—",
+     "country": "FR",
+     "share": "歐洲開源模型方",
+     "products": "開源權重模型（第三方平台代跑）",
+     "note": "未上市；ARR ~$400M 2026-01、目標年底 >$10 億",
+     "src": "https://sacra.com/c/mistral/"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "超大規模需求+競爭",
+     "products": "Azure AI 推論 / Copilot",
+     "note": "自有推論 + 把支出拉回自家平台壓力",
+     "src": "https://startupfortune.com/baseten-closes-a-15-billion-round-at-up-to-13-billion-valuation-as-inference-becomes-its-own-infrastructure-war/"
+    },
+    {
+     "name": "Amazon (AWS)",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "雲端需求+收編方+自研矽",
+     "products": "Bedrock（含 Cerebras）/ Inferentia / Trainium 3",
+     "note": "2026-03 把 Cerebras 納 Bedrock；Trainium 3 2026 Q2 量產加速去 NVIDIA 化；hyperscaler 收編壓力",
+     "src": "https://www.tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+    },
+    {
+     "name": "Perplexity",
+     "ticker": "—",
+     "country": "US",
+     "share": "AI 原生應用客戶",
+     "products": "AI 搜尋（跑在 Fireworks 等平台）",
+     "note": "未上市；Fireworks 客戶；agentic 高 token 用量",
+     "src": "https://sacra.com/c/fireworks-ai/"
+    },
+    {
+     "name": "Cursor (Anysphere)",
+     "ticker": "—",
+     "country": "US",
+     "share": "coding agent 客戶",
+     "products": "AI coding（跑在 Fireworks/Baseten/SGLang）",
+     "note": "未上市；多平台客戶；coding agent token 用量大",
+     "src": "https://sacra.com/c/fireworks-ai/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "inf_platform"
+    },
+    {
+     "id": "inf_router"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "agentic 推論成本經濟 (Introl)",
+     "url": "https://introl.com/blog/inference-unit-economics-true-cost-per-million-tokens-guide"
+    },
+    {
+     "label": "Mistral ARR (Sacra)",
+     "url": "https://sacra.com/c/mistral/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "inf_silicon",
+   "inf_engine"
+  ],
+  [
+   "inf_silicon",
+   "inf_platform"
+  ],
+  [
+   "inf_engine",
+   "inf_platform"
+  ],
+  [
+   "inf_platform",
+   "inf_router"
+  ],
+  [
+   "inf_platform",
+   "end_demand"
+  ],
+  [
+   "inf_router",
+   "end_demand"
+  ]
+ ],
+ "_proposed": {}
+}

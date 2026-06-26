@@ -1,0 +1,613 @@
+{
+ "id": "ai_chip_startup",
+ "tab": "AI 晶片新創",
+ "title": "AI 晶片新創供應鏈 (AI Chip Startups: Inference Silicon)",
+ "subtitle": "AI Chip Startups — AI 算力重心由「訓練」轉向「推論」，給專用推論晶片新創一道挑戰 NVIDIA 約 74% 推論市佔的縫隙。2026 熱度爆量：Cerebras(CBRS) 5/14 上市、募 $5.55B（年度最大科技 IPO）、開盤近 $350 翻倍、在手合約 $24.6B；Groq 被 NVIDIA 以約 $20B 非獨家授權「軟收編」LPU；Qualcomm 傳 $8–10B 洽購 Tenstorrent；韓國「K-Nvidia」國家隊 Rebellions $2.34B 估值、FuriosaAI 拒 Meta $800M 改靠 LG。AI 推論市場 2026 約 $76–118B。價值鏈：RISC-V/EDA/IP → TSMC 先進製程＋CoWoS＋HBM（共同瓶頸，已售罄）→ 推論晶片新創 → CUDA 軟體護城河 → 推論雲/主權 AI 部署。有別於 asic（超大規模自研）與 china_semi（國產算力）。⚠ 贏家極少、被收編是常見退出，估值高度分化。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 5
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "Cerebras IPO",
+   "v": "$5.55B",
+   "sub": "2026 年最大科技 IPO·開盤近翻倍·RPO $24.6B",
+   "hot": true
+  },
+  {
+   "k": "NVIDIA 推論市佔",
+   "v": "~74%",
+   "sub": "挑戰者合計 <30%·被收編為常見退出",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "ip",
+   "label": "IP / EDA / RISC-V 核心 Upstream IP",
+   "main": false
+  },
+  {
+   "id": "fab",
+   "label": "代工 / CoWoS / HBM（共同瓶頸）Foundry & Packaging",
+   "main": false
+  },
+  {
+   "id": "chip",
+   "label": "推論晶片新創 Inference Chip Startups",
+   "main": true
+  },
+  {
+   "id": "sw",
+   "label": "軟體堆疊 / CUDA 護城河 Software Stack",
+   "main": false
+  },
+  {
+   "id": "deploy",
+   "label": "推論雲 / 主權 AI 部署 Deployment & Offtake",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ip_eda_riscv",
+   "row": "ip",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "IP / EDA / RISC-V 核心",
+   "nameEn": "IP, EDA & RISC-V Cores",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · EDA 三雄 + Arm/RISC-V 為所有晶片設計共同入口；新創多採 RISC-V 避 Arm royalty",
+   "desc": "推論晶片新創的設計起點：RISC-V 或 Arm CPU 核心、EDA 工具、SerDes/die-to-die 互連 IP。多數新創採 RISC-V 以避開 Arm 授權上限並掌握架構自主。",
+   "marketSize": "設計入口",
+   "growth": "RISC-V 加速採用",
+   "share": "null",
+   "analysis": "EDA 由 Synopsys（SNPS）、Cadence（CDNS）雙寡頭壟斷設計流程，是任何 AI 晶片繞不開的入口。RISC-V 陣營快速崛起：SiFive（商用先驅、未上市）、晶心 Andes（6533.TWO，台廠 RISC-V IP 龍頭）、Tenstorrent（自有 Ascalon 核心 + 2025 併 Blue Cheetah die-to-die IP，兼具 IP 供應與整機新創雙重身分）。Arm（ARM）Neoverse 仍為部分新創 CPU 選項（如 Rebellions 與 Arm/Samsung Ventures 合作）。SerDes/UCIe chiplet 互連由 Alphawave、Synopsys、Cadence 提供（連結 chiplet_ucie 主題）。絃外之音：RISC-V 從下端、hyperscaler 自研微架構從上端，雙面夾擊 Arm 的 royalty 模式——這也是 Qualcomm 看上 Tenstorrent RISC-V IP 的核心。",
+   "companies": [
+    {
+     "name": "Synopsys",
+     "ticker": "SNPS",
+     "country": "US",
+     "share": "EDA 雙雄之一",
+     "products": "EDA 全流程 / IP / SerDes",
+     "note": "AI 晶片設計繞不開的入口；新創 IP 供應",
+     "src": "https://builtin.com/articles/nvidias-cuda-future-ai-infrastructure"
+    },
+    {
+     "name": "Cadence",
+     "ticker": "CDNS",
+     "country": "US",
+     "share": "EDA 雙雄之一",
+     "products": "EDA / 模擬 / 互連 IP",
+     "note": "AI 晶片設計與驗證",
+     "src": "https://builtin.com/articles/nvidias-cuda-future-ai-infrastructure"
+    },
+    {
+     "name": "Arm Holdings",
+     "ticker": "ARM",
+     "country": "UK",
+     "share": "CPU IP 龍頭",
+     "products": "Neoverse CPU IP",
+     "note": "Rebellions 與 Arm/Samsung Ventures 合作；新創 CPU 選項之一",
+     "src": "https://www.datacenterdynamics.com/en/news/ai-chip-startup-rebellions-valued-at-14bn-following-investment-from-arm-samsung-ventures/"
+    },
+    {
+     "name": "SiFive",
+     "ticker": "—",
+     "country": "US",
+     "share": "RISC-V 商用先驅",
+     "products": "RISC-V 核心 IP",
+     "note": "未上市；RISC-V 商用化先行者",
+     "src": "https://www.theregister.com/systems/2026/06/16/qualcomm-said-to-be-circling-ai-chip-biz-tenstorrent-in-10b-risc-v-power-play/"
+    },
+    {
+     "name": "晶心科技 Andes",
+     "ticker": "6533.TWO",
+     "country": "TW",
+     "share": "台廠 RISC-V IP 龍頭",
+     "products": "RISC-V 處理器 IP",
+     "note": "累計授權 >200 億顆；高階 CAGR ~30%",
+     "src": "https://www.theregister.com/systems/2026/06/16/qualcomm-said-to-be-circling-ai-chip-biz-tenstorrent-in-10b-risc-v-power-play/"
+    },
+    {
+     "name": "Tenstorrent (IP)",
+     "ticker": "—",
+     "country": "US",
+     "share": "RISC-V AI IP + 整機",
+     "products": "Ascalon RISC-V CPU / Blue Cheetah die-to-die IP",
+     "note": "未上市；2025 併 Blue Cheetah；Qualcomm 傳 $8–10B 洽購其 RISC-V/CPU IP",
+     "src": "https://www.tomshardware.com/tech-industry/artificial-intelligence/qualcomm-mulls-taking-over-jim-kellers-tenstorrent-report-claims-deal-for-ai-chipmaker-would-value-the-company-at-between-usd8-billion-and-usd10-billion"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "inference_startups"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CUDA 護城河與設計層 (Built In)",
+     "url": "https://builtin.com/articles/nvidias-cuda-future-ai-infrastructure"
+    },
+    {
+     "label": "Qualcomm 洽購 Tenstorrent RISC-V (The Register)",
+     "url": "https://www.theregister.com/systems/2026/06/16/qualcomm-said-to-be-circling-ai-chip-biz-tenstorrent-in-10b-risc-v-power-play/"
+    }
+   ]
+  },
+  {
+   "id": "foundry_cowos_hbm",
+   "row": "fab",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "代工 / CoWoS / HBM（共同瓶頸）",
+   "nameEn": "Foundry, CoWoS & HBM Bottleneck",
+   "competition": "oligopoly",
+   "single": "⚠ 鎖喉點 · 所有挑戰者共用 TSMC 先進製程＋CoWoS＋SK hynix HBM 同一條已售罄產線；NVIDIA 以採購規模優先鎖配額",
+   "desc": "推論晶片新創幾乎全下單 TSMC 先進製程，並排隊搶 CoWoS 先進封裝與 HBM3E。這條供應鏈 2026 已售罄，是新創最大交期風險，也是 NVIDIA 的盾。",
+   "marketSize": "命門單點",
+   "growth": "2026 全售罄",
+   "share": "null",
+   "analysis": "代工：TSMC（2330.TW / TSM）N5/N4/N3/N2 為新創共同選擇——Cerebras WSE 用 TSMC 5nm 整片晶圓、Etched Sohu 4nm、Rebellions/Furiosa 多 4/5nm；d-Matrix 刻意改走 TSMC 成熟 N6＋Alchip 合作（避開先進節點與 HBM 售罄瓶頸）；Samsung Foundry（005930.KS）為次要選項。先進封裝：TSMC CoWoS-S/L、Amkor（AMKR）、ASE 日月光（3711.TW）。HBM：SK hynix（000660.KS，CFO 明言 2026 全年 HBM 供應已售罄、緊俏延續至 2027）、Samsung、Micron（MU）。⚠ 2026 CoWoS 全售罄、2nm 已被預訂、總需求近 1M 片晶圓；Gartner 估 2026 >40% HBM 用於推論。小型新創無採購規模難搶長約配額——延遲一兩季，NVIDIA 就再鞏固一輪。絃外之音：Cerebras 以晶圓級 SRAM 規避外購 HBM、成為差異化賣點；但其餘多數新創（d-Matrix、Rebellions REBEL-Quad、SambaNova）仍需 HBM3E，與 NVIDIA 搶同一批貨。連結既有 cowos / hbm / chiplet_ucie 主題。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "新創共同代工",
+     "products": "N5/N4/N3/N2 + CoWoS-S/L",
+     "note": "Cerebras 5nm 整片晶圓/Etched 4nm 等共用；2026 CoWoS 售罄、2nm 預訂滿",
+     "src": "https://siliconanalysts.com/analysis/foundry-allocation-status-q1-2026"
+    },
+    {
+     "name": "SK hynix",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "HBM 龍頭",
+     "products": "HBM3E / HBM4",
+     "note": "CFO：2026 全年 HBM 供應已售罄、緊俏延續至 2027",
+     "src": "https://info.fusionww.com/blog/inside-the-ai-bottleneck-cowos-hbm-and-2-3nm-capacity-constraints-through-2027"
+    },
+    {
+     "name": "Samsung（Foundry+HBM）",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "次要代工+HBM",
+     "products": "Foundry / HBM3E",
+     "note": "新創次要代工與 HBM 供應選項",
+     "src": "https://info.fusionww.com/blog/inside-the-ai-bottleneck-cowos-hbm-and-2-3nm-capacity-constraints-through-2027"
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "country": "US",
+     "share": "HBM 第三供應",
+     "products": "HBM3E",
+     "note": "美系 HBM 供應商",
+     "src": "https://info.fusionww.com/blog/inside-the-ai-bottleneck-cowos-hbm-and-2-3nm-capacity-constraints-through-2027"
+    },
+    {
+     "name": "Amkor",
+     "ticker": "AMKR",
+     "country": "US",
+     "share": "OSAT 先進封裝",
+     "products": "2.5D/3D 封裝",
+     "note": "CoWoS 以外的先進封裝產能",
+     "src": "https://oplexa.com/ai-chip-packaging-bottleneck-2026/"
+    },
+    {
+     "name": "ASE 日月光",
+     "ticker": "3711.TW",
+     "country": "TW",
+     "share": "OSAT 龍頭",
+     "products": "先進封裝 / 測試",
+     "note": "新創封測產能來源之一",
+     "src": "https://oplexa.com/ai-chip-packaging-bottleneck-2026/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "inference_startups"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC CoWoS 售罄/2nm 預訂 (Silicon Analysts)",
+     "url": "https://siliconanalysts.com/analysis/foundry-allocation-status-q1-2026"
+    },
+    {
+     "label": "CoWoS/HBM/2-3nm 瓶頸 (Fusion Worldwide)",
+     "url": "https://info.fusionww.com/blog/inside-the-ai-bottleneck-cowos-hbm-and-2-3nm-capacity-constraints-through-2027"
+    }
+   ]
+  },
+  {
+   "id": "inference_startups",
+   "row": "chip",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "推論晶片新創（主節點）",
+   "nameEn": "Inference Chip Startups",
+   "competition": "highgrowth",
+   "single": "⚠ 高分化 · Cerebras 已 IPO 獲利 vs Etched 未出貨；被收編（Groq/Tenstorrent/Rivos）為常見退出",
+   "desc": "以差異化架構挑戰 NVIDIA GPU 的獨立推論晶片新創：wafer-scale、LPU、RDU、Transformer-only ASIC、in-memory compute、RISC-V AI、韓系 NPU。自有品牌、自賣晶片或推論雲。",
+   "marketSize": "AI 推論 $76–118B(2026)",
+   "growth": "募資/IPO 爆量",
+   "share": "null",
+   "analysis": "架構分流挑戰 GPU：(1) Cerebras（CBRS）晶圓級 WSE-3（較 B200 大 58 倍、記憶體頻寬高 2,625 倍），2025 營收 $510M(+76%)、淨利 $87.9M(47% 淨利率，罕見獲利)、2026-05 IPO 募 $5.55B、開盤近 $350、RPO $24.6B（OpenAI >$20B、AWS 2026H2 商轉）。(2) Groq LPU（確定性資料流/SRAM，Llama 4 Scout >460 tok/s），2025 估值 $6.9B；2025-12 NVIDIA 約 $20B 非獨家授權 LPU、創辦人轉投 NVIDIA、2026-02 分配股東 $7.6B——挑戰者最諷刺結局：被龍頭「軟收編」。(3) SambaNova RDU 可重構資料流，估值由 $5.1B 腰斬至 $2.2B、Intel $1.6B 收購破局、裁員 15% 轉推論。(4) Etched Sohu Transformer-only ASIC（TSMC 4nm），2026 募 $500M/估值 $5B 但 2026-04 仍未出貨、無第三方 benchmark（純選擇權）。(5) d-Matrix Corsair in-memory compute，2025-11 募 $275M/估值 $2B（Microsoft 投）、2026-06 出貨、宣稱 10× 快。(6) Tenstorrent（Jim Keller）RISC-V AI，Qualcomm 傳 $8–10B 洽購。(7) 韓系：Rebellions（ATOM-Max/REBEL-Quad，2026-03 募 $400M/估值 $2.34B、韓首家 AI 晶片獨角獸、K-Nvidia 國家隊）、FuriosaAI（RNGD，2025 拒 Meta $800M、改靠 LG EXAONE、Series D pre-IPO 估值約 $2.3B）。新進：Positron（2026 募 $230M 成獨角獸）。2026-H1 新一波進入者（含首見歐洲玩家）：MatX（前 Google、$500M、2027 出貨）、英國 Fractile（NATO Innovation Fund 投）、荷蘭 Euclyd（前 ASML CEO 背書、宣稱能效 100×）、Ayar Labs（$500M 光互連）；2026 全年新創募資已達約 $8.3B。⚠ 背離：資金狂熱但市佔反向——NVIDIA 推論市佔靠 Blackwell 由約 66% 升至約 74%、挑戰者整體反而失血，多數新創恐淪「募資成功、商業失敗」。⚠ 贏家極少；M&A 溢價/被收編為主回報路徑（Rivos 已被 Meta $2B 併、SambaNova 由 Intel 入股約 9%）。",
+   "companies": [
+    {
+     "name": "Cerebras Systems",
+     "ticker": "CBRS",
+     "country": "US",
+     "share": "wafer-scale 已 IPO 獲利",
+     "products": "WSE-3 晶圓級引擎 / Cerebras Inference",
+     "note": "2026-05 IPO 募 $5.55B、開盤近 $350；2025 營收 $510M(+76%)、淨利 $87.9M；RPO $24.6B（OpenAI >$20B）；⚠ 86% 營收曾來自 UAE 兩實體",
+     "src": "https://thetechmarketer.com/cerebras-ipo-cbrs-stock-2026-wafer-scale-engine/"
+    },
+    {
+     "name": "Groq",
+     "ticker": "—",
+     "country": "US",
+     "share": "LPU 最快推論",
+     "products": "LPU 推論晶片 / GroqCloud",
+     "note": "未上市；估值 $6.9B；NVIDIA 非獨家授權 LPU 結構為 2026 年底前分三期付約 $17B 現金、2026-02 已派股東 $7.6B；2026-05 再向既有投資人募約 $650M 支持推論雲轉型",
+     "src": "https://www.datacenterdynamics.com/en/news/groq-raises-750m-for-69bn-valuation/"
+    },
+    {
+     "name": "SambaNova Systems",
+     "ticker": "—",
+     "country": "US",
+     "share": "RDU 可重構資料流",
+     "products": "SN40L RDU / SambaNova Cloud",
+     "note": "未上市；2026-02 完成 $350M Series E（Vista Equity/Cambium 領投），估值約 $2.2B（較 $5.1B 峰值腰斬約 57%）；Intel 由 $1.6B 收購破局轉為策略股東持股約 9%（被併→被入股）；裁員 15% 轉推論",
+     "src": "https://www.eetimes.com/sambanova-lays-off-15-of-workforce-to-refocus-on-inference/"
+    },
+    {
+     "name": "Etched",
+     "ticker": "—",
+     "country": "US",
+     "share": "Transformer-only ASIC",
+     "products": "Sohu ASIC（TSMC 4nm）",
+     "note": "未上市；2026-01 募 $500M（總募資近 $1B）、估值約 $5B；已 tape-out 但截至 2026-03/04 仍未出貨、無第三方 benchmark、效能全為自報（純選擇權）",
+     "src": "https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/"
+    },
+    {
+     "name": "d-Matrix",
+     "ticker": "—",
+     "country": "US",
+     "share": "in-memory compute",
+     "products": "Corsair / JetStream / Aviator 全棧",
+     "note": "未上市；2025-11 募 $275M、估值 $2B（Microsoft 投）；2026-06 Corsair 進入全面量產放量出貨，採 TSMC 成熟 N6 製程＋Alchip 合作（刻意避開先進節點與 HBM 售罄瓶頸）；客戶約 90% 在美國；宣稱 10× 快、3× 低成本",
+     "src": "https://www.cnbc.com/2026/06/09/nvidia-d-matrix-chip-production-microsoft.html"
+    },
+    {
+     "name": "Tenstorrent",
+     "ticker": "—",
+     "country": "US",
+     "share": "RISC-V AI（Jim Keller）",
+     "products": "Tensix AI + Ascalon RISC-V / TT-Metalium",
+     "note": "未上市；Qualcomm 傳 $8–10B 洽購（約 4× 溢價）、6/24 投資人日或確認",
+     "src": "https://www.tomshardware.com/tech-industry/artificial-intelligence/qualcomm-mulls-taking-over-jim-kellers-tenstorrent-report-claims-deal-for-ai-chipmaker-would-value-the-company-at-between-usd8-billion-and-usd10-billion"
+    },
+    {
+     "name": "Rebellions",
+     "ticker": "—",
+     "country": "KR",
+     "share": "韓首家 AI 晶片獨角獸",
+     "products": "ATOM / ATOM-Max / REBEL-Quad(HBM3E)",
+     "note": "未上市；2026-03 Pre-IPO 募 $400M、估值 $2.34B；韓國家成長基金 $166M；K-Nvidia 國家隊；2026末/2027初 IPO",
+     "src": "https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/"
+    },
+    {
+     "name": "FuriosaAI",
+     "ticker": "—",
+     "country": "KR",
+     "share": "韓系推論 NPU",
+     "products": "RNGD 推論晶片（LG EXAONE / OpenAI gpt-oss）",
+     "note": "未上市；2025 拒 Meta $800M 收購；RNGD 較 GPU 快 2.25×；新增 OpenAI 合作（gpt-oss 120B 以 MXFP4 即時跑在僅 2 張 RNGD）；目標 2026 出貨 2 萬顆 NPU；走獨立 2027 IPO，籌約 $500M Pre-IPO/Series D（Morgan Stanley/Mirae 顧問），估值約 $2.3B",
+     "src": "https://www.benzinga.com/news/topics/25/09/47712321/ai-unicorn-furiosaai-with-246m-in-funding-teams-with-openai-to-run-120b-model-on-just-2-cards-while-g"
+    },
+    {
+     "name": "Positron AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "能效推論新進",
+     "products": "Atlas / Asimov（2026末 tape-out）",
+     "note": "未上市；2026 募 $230M Series B 成獨角獸；宣稱 ~3× compute/瓦 vs H100",
+     "src": "https://www.datacenterdynamics.com/en/news/ai-inferencing-startup-positron-ai-raises-230-million-to-develop-chips-to-rival-nvidia/"
+    },
+    {
+     "name": "MatX",
+     "ticker": "—",
+     "country": "US",
+     "share": "新進入者（前 Google）",
+     "products": "訓練/推論晶片（TSMC，2027 出貨）",
+     "note": "未上市；2026-02 募 $500M Series B；前 Google 硬體團隊；主攻訓練 10× 效能；2027 才出貨（遠期選擇權）",
+     "src": "https://www.cnbc.com/2026/04/17/nvidia-ai-chip-rivals-funding-euclyd-fractile.html"
+    },
+    {
+     "name": "Fractile",
+     "ticker": "—",
+     "country": "UK",
+     "share": "歐洲新進入者",
+     "products": "in-memory 推論晶片",
+     "note": "未上市；2026 九位數募資、NATO Innovation Fund 投；英國玩家；仍在募資/未驗證",
+     "src": "https://www.cnbc.com/2026/04/17/nvidia-ai-chip-rivals-funding-euclyd-fractile.html"
+    },
+    {
+     "name": "Euclyd",
+     "ticker": "—",
+     "country": "NL",
+     "share": "歐洲新進入者",
+     "products": "推論晶片（宣稱能效 100× vs Vera Rubin）",
+     "note": "未上市；洽募 ≥€100M、前 ASML CEO 背書；荷蘭玩家；效能未經第三方驗證",
+     "src": "https://www.cnbc.com/2026/04/17/nvidia-ai-chip-rivals-funding-euclyd-fractile.html"
+    },
+    {
+     "name": "Ayar Labs",
+     "ticker": "—",
+     "country": "US",
+     "share": "矽光 I/O 新進",
+     "products": "光學 chiplet / 互連 IP",
+     "note": "未上市；2026 募 $500M；光互連切入 AI 算力",
+     "src": "https://www.cnbc.com/2026/04/17/nvidia-ai-chip-rivals-funding-euclyd-fractile.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ip_eda_riscv"
+    },
+    {
+     "id": "foundry_cowos_hbm"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "software_stack"
+    },
+    {
+     "id": "deployment_offtake"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cerebras CBRS IPO 開盤 $350 (TheTechMarketer)",
+     "url": "https://thetechmarketer.com/cerebras-ipo-cbrs-stock-2026-wafer-scale-engine/"
+    },
+    {
+     "label": "NVIDIA $20B Groq 授權 (IntuitionLabs)",
+     "url": "https://intuitionlabs.ai/articles/nvidia-groq-ai-inference-deal"
+    },
+    {
+     "label": "Qualcomm $8–10B 洽購 Tenstorrent (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/qualcomm-mulls-taking-over-jim-kellers-tenstorrent-report-claims-deal-for-ai-chipmaker-would-value-the-company-at-between-usd8-billion-and-usd10-billion"
+    },
+    {
+     "label": "新一波新進入者+$8.3B 募資 (CNBC)",
+     "url": "https://www.cnbc.com/2026/04/17/nvidia-ai-chip-rivals-funding-euclyd-fractile.html"
+    },
+    {
+     "label": "NVIDIA 推論市佔升至 74% (Crypto Briefing)",
+     "url": "https://cryptobriefing.com/nvidia-ai-inference-chip-market-share-74-percent/"
+    }
+   ]
+  },
+  {
+   "id": "software_stack",
+   "row": "sw",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "軟體堆疊 / CUDA 護城河",
+   "nameEn": "Software Stack & CUDA Moat",
+   "competition": "monopoly",
+   "single": "⚠ 鎖喉點 · NVIDIA CUDA 為最深護城河；新創各自自有 SDK/編譯器，推論端因標準化而鎖定較弱",
+   "desc": "晶片再快，沒有軟體生態就難用。NVIDIA CUDA 是十年累積的開發者護城河；挑戰者各自靠自有編譯器/SDK 與開源 MLIR/Triton 突圍。推論工作負載標準化、可攜性高，是 CUDA 鎖定最弱的一環。",
+   "marketSize": "最大長期風險",
+   "growth": "推論端鬆動",
+   "share": "null",
+   "analysis": "NVIDIA CUDA 為訓練端幾乎無解的護城河；但推論工作負載標準化、可攜性高，CUDA 優勢顯著收斂——這正是推論晶片新創的最大機會窗。各家自有軟體：Groq Compiler（確定性編譯）、SambaNova SambaFlow、d-Matrix Aviator、Tenstorrent TT-Metalium（開源）、Cerebras SDK。開源層 OpenAI Triton / MLIR 降低跨硬體移植成本，是「去 CUDA 化」的關鍵槓桿。絃外之音：編譯器層是 CUDA 鎖定真正鬆動之處；但企業遷移成本、kernel 調校與生態成熟度仍是新創的硬傷——YC 等已出現專攻 inference kernel 的新創（如 Cumulus Labs），顯示軟體層本身也在分工。NVIDIA 收編 Groq 的部分動機，正是吸走最強的推論軟體/硬體協同團隊。",
+   "companies": [
+    {
+     "name": "NVIDIA (CUDA)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "軟體護城河壟斷·推論市佔約 74%",
+     "products": "CUDA / TensorRT-LLM / Triton(NV) / Blackwell",
+     "note": "十年累積開發者生態；推論端標準化使鎖定收斂但仍最深；Blackwell 較 Hopper token 成本低達 35×、每瓦 token 多達 50×，推論市佔由約 66% 升至約 74%",
+     "src": "https://cryptobriefing.com/nvidia-ai-inference-chip-market-share-74-percent/"
+    },
+    {
+     "name": "Groq Compiler",
+     "ticker": "—",
+     "country": "US",
+     "share": "確定性編譯",
+     "products": "Groq Compiler / GroqWare",
+     "note": "確定性資料流編譯，無需手調 kernel",
+     "src": "https://intuitionlabs.ai/articles/llm-inference-hardware-enterprise-guide"
+    },
+    {
+     "name": "SambaNova SambaFlow",
+     "ticker": "—",
+     "country": "US",
+     "share": "資料流軟體棧",
+     "products": "SambaFlow / SambaNova Cloud",
+     "note": "RDU 編譯與部署框架",
+     "src": "https://intuitionlabs.ai/articles/llm-inference-hardware-enterprise-guide"
+    },
+    {
+     "name": "d-Matrix Aviator",
+     "ticker": "—",
+     "country": "US",
+     "share": "推論優化軟體",
+     "products": "Aviator 軟體棧",
+     "note": "與 Corsair/JetStream 全棧整合",
+     "src": "https://www.d-matrix.ai/announcements/d-matrix-raises-275-million-to-power-the-age-of-ai-inference/"
+    },
+    {
+     "name": "OpenAI Triton / MLIR",
+     "ticker": "—",
+     "country": "US",
+     "share": "開源去 CUDA 槓桿",
+     "products": "Triton / MLIR 編譯框架",
+     "note": "開源跨硬體移植層，降低 CUDA 鎖定",
+     "src": "https://builtin.com/articles/nvidias-cuda-future-ai-infrastructure"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "inference_startups"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "deployment_offtake"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CUDA 護城河與推論可攜性 (Built In)",
+     "url": "https://builtin.com/articles/nvidias-cuda-future-ai-infrastructure"
+    },
+    {
+     "label": "LLM 推論硬體企業指南 (IntuitionLabs)",
+     "url": "https://intuitionlabs.ai/articles/llm-inference-hardware-enterprise-guide"
+    }
+   ]
+  },
+  {
+   "id": "deployment_offtake",
+   "row": "deploy",
+   "col": 2,
+   "span": 2,
+   "kind": "stage",
+   "name": "推論雲 / 主權 AI 部署",
+   "nameEn": "Inference Cloud, Sovereign AI & Offtake",
+   "competition": "highgrowth",
+   "single": "⚠ 單一客戶/主權集中風險 · Cerebras→OpenAI/UAE、Groq→沙烏地、Furiosa→LG",
+   "desc": "晶片透過自建推論雲、主權 AI 國家級部署、超大規模採購與 neocloud 觸達終端。大客戶/主權承諾是新創的營收錨點，也是最集中的風險。",
+   "marketSize": "需求錨點",
+   "growth": "主權 AI 催化",
+   "share": "null",
+   "analysis": "部署通路：(1) 自建推論雲——GroqCloud、SambaNova Cloud、Cerebras Inference。(2) 主權 AI——沙烏地 HUMAIN/Aramco 採 Groq（$1.5B 承諾、Dammam 全球最大推論資料中心）、UAE G42/MBZUAI 採 Cerebras（2025 曾佔其 86% 營收）、韓國 LG AI Research 採 FuriosaAI（EXAONE），且 2026-H1 FuriosaAI 新增 OpenAI 合作（gpt-oss 120B 以 MXFP4 即時跑在僅 2 張 RNGD、目標 2026 出貨 2 萬顆 NPU）——韓系新創在 LG 之外新增 OpenAI 開源模型作為錨定負載。(3) 超大規模——OpenAI 訂 Cerebras >$20B、Microsoft 投 d-Matrix、AWS 部署 Cerebras（2026H2 商轉）。(4) neocloud——General Compute 以 SambaNova SN50 建首個非 NVIDIA 推論 neocloud（連結 neocloud 主題）。絃外之音：主權 AI 是推論晶片新創繞過 NVIDIA 直銷限制、拿到大單的捷徑，但客戶高度集中——Cerebras 的真風險不是技術而是 OpenAI/UAE 單一交易對手；大客戶戰略生變即重傷，且中東客戶受美國出口管制牽動。",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": "—",
+     "country": "US",
+     "share": "Cerebras 錨定大客戶",
+     "products": "Cerebras 750MW 算力合約",
+     "note": "未上市；多年合約 >$20B + $1B 貸款；Cerebras RPO $24.6B 主來源",
+     "src": "https://thetechmarketer.com/cerebras-ipo-cbrs-stock-2026-wafer-scale-engine/"
+    },
+    {
+     "name": "HUMAIN / Aramco（沙烏地）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "Groq 主權 AI 大客戶",
+     "products": "Groq Dammam 推論資料中心",
+     "note": "沙烏地主權實體（未上市）；$1.5B 承諾；EMEA 最大 AI 推論算力；部署 OpenAI gpt-oss",
+     "src": "https://groq.com/blog/groq-aramco-data-center-partnership"
+    },
+    {
+     "name": "G42 / MBZUAI（UAE）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "Cerebras 早期主權客戶",
+     "products": "Cerebras WSE 推論",
+     "note": "UAE 主權實體（未上市）；2025 曾佔 Cerebras 約 86% 營收（集中度風險）",
+     "src": "https://www.techtimes.com/articles/316698/20260515/cerebras-raises-555-billion-ai-chip-ipo-86-revenue-dependence-uae-entities-unresolved.htm"
+    },
+    {
+     "name": "LG AI Research（韓）",
+     "ticker": "003550.KS",
+     "country": "KR",
+     "share": "FuriosaAI 企業客戶",
+     "products": "EXAONE 4.0 on RNGD",
+     "note": "RNGD 較 GPU 推論快 2.25×、更省電；橫跨電子/金融/電信/生技",
+     "src": "https://www.datacenterdynamics.com/en/news/furiosaai-partners-with-lg-ai-research-for-deployment-of-rngd-inferencing-chips/"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "d-Matrix 投資+客戶",
+     "products": "M12 投資 d-Matrix",
+     "note": "Microsoft 創投基金 M12 投資；推論部署夥伴",
+     "src": "https://www.cnbc.com/2026/06/09/nvidia-d-matrix-chip-production-microsoft.html"
+    },
+    {
+     "name": "AWS",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "Cerebras 雲部署",
+     "products": "Cerebras 硬體進 AWS 資料中心",
+     "note": "2026H2 商轉；把 Cerebras 算力納入雲服務",
+     "src": "https://www.mostlymetrics.com/p/cerebras-ipo-s1-breakdown"
+    },
+    {
+     "name": "General Compute",
+     "ticker": "—",
+     "country": "US",
+     "share": "首個非 NVIDIA 推論 neocloud",
+     "products": "SambaNova SN50 氣冷推論雲",
+     "note": "未上市；2026-06 種子輪 $15M；$300M SN50 在手；鎖定 colo/礦場改造",
+     "src": "https://dataphoenix.info/general-compute-raises-15m-to-build-inference-neocloud-on-sambanova-chips/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "inference_startups"
+    },
+    {
+     "id": "software_stack"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Groq×Aramco 沙烏地推論資料中心 (Groq)",
+     "url": "https://groq.com/blog/groq-aramco-data-center-partnership"
+    },
+    {
+     "label": "Cerebras 客戶集中度 86% (TechTimes)",
+     "url": "https://www.techtimes.com/articles/316698/20260515/cerebras-raises-555-billion-ai-chip-ipo-86-revenue-dependence-uae-entities-unresolved.htm"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "ip_eda_riscv",
+   "inference_startups"
+  ],
+  [
+   "foundry_cowos_hbm",
+   "inference_startups"
+  ],
+  [
+   "inference_startups",
+   "software_stack"
+  ],
+  [
+   "inference_startups",
+   "deployment_offtake"
+  ],
+  [
+   "software_stack",
+   "deployment_offtake"
+  ]
+ ],
+ "_proposed": {}
+}

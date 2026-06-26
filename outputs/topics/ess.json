@@ -1,0 +1,567 @@
+{
+ "id": "ess",
+ "tab": "儲能 ESS",
+ "title": "儲能系統 ESS 供應鏈 (Grid-Scale Battery Storage)",
+ "subtitle": "Energy Storage System — AI 資料中心爆量用電 + 再生能源併網，把電網級儲能（BESS）推上結構性成長。電網級儲能 2026 市場 $1,081 億、CAGR 23.9% 到 2031 達 $3,158 億；亞太佔 ~46%；2025 全球出貨 +75.5% 至 421GWh、2026 上看 600GWh。系統整合商 2025 易位：BYD 60GWh/13% 超越 Tesla（46.7GWh/10%）居首、Sungrow 9% 第三。CATL 全球儲能電芯 1Q26 市占 22%（EVE/海辰各 10%、CR10 82%）、中國掌握 ~40% LFP 供應鏈；美 FEOC + Section 301（2026/1 起中國 ESS 電芯綜合稅負升至 58.4%、LFP 達 82.4%）逼供應鏈雙軌化，Envision AESC 等以本土合規產能繞道回攻歐美。Tesla Megapack + Autobidder AI、Fluence 整合軟體、Sungrow 變流器「黃金標準」。價值鏈：鋰電芯 + LFP 材料 → 系統整合/EPC → PCS 變流/BMS → 電網/資料中心備電/工商業。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 8
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "40+"
+  },
+  {
+   "k": "鎖喉／領導單點",
+   "v": 2,
+   "sub": "CATL 電芯+LFP·Sungrow 變流",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "cell",
+   "label": "電芯 / LFP 材料 Cells & Materials",
+   "main": false
+  },
+  {
+   "id": "system",
+   "label": "系統整合 / EPC Integration",
+   "main": true
+  },
+  {
+   "id": "pcs",
+   "label": "PCS 變流 / BMS Power Conversion",
+   "main": false
+  },
+  {
+   "id": "app",
+   "label": "應用：電網 / 資料中心 / 工商業 Applications",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "battery_cell",
+   "row": "cell",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "儲能電芯 LFP Cell",
+   "nameEn": "ESS Battery Cell",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · CATL 儲能電芯居首但市占快速流失（2023 32%→2025 全年 20%→1Q26 22%）、EVE 與海辰 HiTHIUM 1Q26 各 10% 並列第二梯隊、HiTHIUM 升全球前三超越 BYD；1Q26 CR10 82%；垂直整合大廠 CATL+BYD 合計市占由 2023 峰值 >40% 跌破 30%；真鎖喉在中國 LFP 正極材料（CAM 全球 ~98%）、2026 供需轉緊；FEOC/Section 301 逼出非中電芯稀缺",
+   "desc": "儲能用大容量 LFP（磷酸鐵鋰）電芯，是 BESS 成本與安全核心。長壽命、低成本是關鍵。",
+   "marketSize": "鎖喉點",
+   "growth": "+20%+ YoY",
+   "share": "null",
+   "analysis": "CATL（300750.SZ/3750.HK，1Q26 出貨 ~50GWh，惟全年市占由 2023 32%→2025 20% 持續流失、靠鈉電 Naxtra 2026/9 首批交付（硬碳負極成本 2024→2026 砍半至 35-40k 元/噸）＋與 HyperStrong 60GWh 全球最大鈉電合作＋零衰減守護城河）、BYD（002594.SZ/1211.HK，2025 系統部署 60+GWh 超越 Tesla 居全球第一、刀片電池）；海辰 HiTHIUM（未上市，2025 升至電芯第二 ~12%、與中車 CRRC 簽 5 年 120GWh 大單）、EVE 億緯鋰能（300014.SZ，第三 ~12%）；韓 LG Energy Solution（373220.KS）、Samsung SDI（006400.KS）、SK On 在美受 IRA 拉動但失中國份額。隱性結構：top-6 全為中國廠、CR6 ~75%，二、三名差距僅 4% 內競爭白熱，CATL 龍頭地位正被稀釋。",
+   "companies": [
+    {
+     "name": "CATL 寧德時代",
+     "ticker": "300750.SZ",
+     "country": "CN",
+     "share": "儲能電芯 1Q26 市占 22%",
+     "products": "LFP 儲能電芯 / 零衰減 / 鈉電 Naxtra",
+     "note": "1Q26 儲能電芯出貨 ~50GWh 翻倍 YoY；掌握 ~40% LFP 供應鏈；2026/4 與 HyperStrong 簽全球最大 60GWh 鈉電合作（=2025 全年儲能出貨量約半），鈉電 2026/9 首批交付；2026/5/28 啟用廈門 ESVL 全球最大儲能驗證平台（投資 ~$440M）",
+     "src": "https://www.catl.com/en/"
+    },
+    {
+     "name": "BYD 比亞迪",
+     "ticker": "002594.SZ",
+     "country": "CN",
+     "share": "全球最大儲能部署（2025 60GWh/13%）",
+     "products": "刀片電池 / BESS",
+     "note": "2025 出貨逾 60GWh、市占 13% 超越 Tesla（46.7GWh/10%）成全球最大 BESS 整合商，終結 Tesla 2023-24 龍頭地位",
+     "src": "https://electrek.co/2026/05/13/byd-surpasses-tesla-energy-storage-bess-benchmark-2025/"
+    },
+    {
+     "name": "EVE 億緯鋰能 / 海辰 HiTHIUM",
+     "ticker": "300014.SZ / —",
+     "country": "CN",
+     "share": "1Q26 各 10% 並列第二梯隊",
+     "products": "大容量 LFP 儲能電芯",
+     "note": "海辰專注儲能、未上市；HiTHIUM 1Q26 升全球前三超越 BYD；EVE/HiTHIUM 1Q26 儲能電芯各 ~10%",
+     "src": "https://www.energytrend.com/news/20260525-51447.html"
+    },
+    {
+     "name": "Envision AESC",
+     "ticker": "—",
+     "country": "JP",
+     "share": "FEOC 本土合規新進者",
+     "products": "美國 domestic-content 儲能電芯/模組",
+     "note": "日本註冊、中資 Envision 控股；2026 與整合商 Prevalon 簽 3 年 10GWh+ 美國本土合規電芯/模組大單供 AI 資料中心+公用事業，以本土合規產能繞過 FEOC 切入美國",
+     "src": "https://www.energy-storage.news/aesc-signs-10gwh-us-domestic-content-bess-cell-and-module-deal-with-system-integrator-prevalon/"
+    },
+    {
+     "name": "LG Energy Solution",
+     "ticker": "373220.KS",
+     "country": "KR",
+     "share": "韓系電芯領導",
+     "products": "LFP/NCM 儲能電芯",
+     "note": "Tesla $4.3B LFP 供 Megapack 3 (2027/8起)"
+    },
+    {
+     "name": "Samsung SDI / SK On",
+     "ticker": "006400.KS / —",
+     "country": "KR",
+     "share": "韓系電芯",
+     "products": "SBB 儲能模組 / 電芯",
+     "note": "美 IRA 拉動、失中國份額"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "system_us"
+    },
+    {
+     "id": "system_cn"
+    },
+    {
+     "id": "integrator_global"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BYD 超越 Tesla 成最大儲能部署商 (Electrek)",
+     "url": "https://electrek.co/2026/05/13/byd-surpasses-tesla-energy-storage-bess-benchmark-2025/"
+    },
+    {
+     "label": "1Q26 全球儲能電芯排名 CR10 82% (EnergyTrend)",
+     "url": "https://www.energytrend.com/news/20260525-51447.html"
+    },
+    {
+     "label": "AESC×Prevalon 10GWh 美國 domestic-content 大單 (Energy-Storage.news)",
+     "url": "https://www.energy-storage.news/aesc-signs-10gwh-us-domestic-content-bess-cell-and-module-deal-with-system-integrator-prevalon/"
+    },
+    {
+     "label": "美國對中國 ESS 電芯升 Section 301 關稅 (Battery-Tech)",
+     "url": "https://battery-tech.net/battery-markets-news/u-s-raises-section-301-duties-on-chinese-ess-batteries/"
+    }
+   ]
+  },
+  {
+   "id": "lfp_material",
+   "row": "cell",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "LFP 正極 / 隔膜 / 電解液",
+   "nameEn": "LFP Cathode / Separator / Electrolyte",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "LFP 正極材料、隔膜、電解液、銅鋁箔等電芯四大材料，中國高度集中。",
+   "marketSize": "null",
+   "growth": "中國主導",
+   "share": "null",
+   "analysis": "LFP 正極：湖南裕能（301358.SZ，全球 LFP 正極龍頭）、德方納米（300769.SZ）；隔膜：恩捷股份（002812.SZ，全球隔膜龍頭）；電解液：天賜材料（002709.SZ）、新宙邦（300037.SZ）。中國掌握 LFP 正極活性材料（CAM）全球 ~98%、湖南裕能+德方納米合計約 70% 全球 LFP 正極，是整鏈最深的隱性單點（電芯廠可換、材料鏈難換）；2026 供需翻轉趨緊，314Ah 電芯價格半年漲逾 20% 至 0.360-0.383 元/Wh（500Ah+，2026/4）、交期 45-60 天，漲價沿正極/石墨材料鏈傳導（美商務部對中國陽極級石墨初判 93.5% 反傾銷稅，疊加 FEOC 使非中正極/石墨成稀缺瓶頸）。",
+   "companies": [
+    {
+     "name": "湖南裕能 / 德方納米",
+     "ticker": "301358.SZ / 300769.SZ",
+     "country": "CN",
+     "share": "LFP 正極龍頭",
+     "products": "磷酸鐵鋰正極材料",
+     "note": "全球 LFP 正極主導"
+    },
+    {
+     "name": "恩捷股份 Yunnan Energy",
+     "ticker": "002812.SZ",
+     "country": "CN",
+     "share": "隔膜全球龍頭",
+     "products": "鋰電隔膜",
+     "note": "隔膜市占第一"
+    },
+    {
+     "name": "天賜材料 / 新宙邦",
+     "ticker": "002709.SZ / 300037.SZ",
+     "country": "CN",
+     "share": "電解液領先",
+     "products": "電解液 / 六氟磷酸鋰",
+     "note": "電解液雙雄"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "battery_cell"
+    }
+   ],
+   "sources": [
+    {
+     "label": "湖南裕能 (深交所)",
+     "url": "http://www.hnyuneng.com/"
+    },
+    {
+     "label": "中國 314Ah 儲能電芯半年漲逾 20% (ESS News)",
+     "url": "https://www.ess-news.com/2026/04/22/chinas-314-ah-storage-cell-prices-climb-more-than-20-in-six-months/"
+    }
+   ]
+  },
+  {
+   "id": "system_us",
+   "row": "system",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "美系儲能系統整合",
+   "nameEn": "US ESS Integrators",
+   "competition": "competitive",
+   "single": "Tesla Megapack + Autobidder AI 軟硬整合；Fluence 複雜電網案首選整合商；BYD 2025 出貨 60GWh/13% 已超越 Tesla（46.7GWh/10%）",
+   "desc": "電網級 BESS 系統整合與軟體，含電力市場交易 AI、預測維運。",
+   "marketSize": "系統主力",
+   "growth": "grid + 資料中心",
+   "share": "null",
+   "analysis": "Tesla（TSLA，Megapack + Autobidder AI 讓電廠自主參與電力市場、Houston Megafactory 2026 底 50GWh）；惟 2025 全球 BESS 整合商排名易位：BYD 60GWh/13% 超越 Tesla（46.7GWh/10%，YoY +49% 仍不敵）成全球第一、終結 Tesla 2023-24 龍頭，Sungrow 9% 第三、CRRC 株洲/CATL/HyperStrong 各 6% 並列。Fluence（FLNC，複雜電網級案首選整合商、FQ2'26 backlog 創新高 $5.6B、簽兩大 hyperscaler MSA、2026 新增第二家符合 domestic content 法規的電芯供應商）；Powin 2025/6 申請 Chapter 11 破產、資產 2025/8 以 $36M 售予 FlexGen；NextEra Energy（NEE，最大再生能源+儲能開發商）。軟體（電力市場交易/預測）是美系差異化。",
+   "companies": [
+    {
+     "name": "Tesla Energy",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "Megapack 領導",
+     "products": "Megapack 3 / Powerwall / Autobidder",
+     "note": "1Q26 部署 8.8GWh（-15% YoY、遠低於共識 14.4GWh）；Houston Megafactory 2026 底投產 Megapack 3 50GWh/年；LG $4.3B LFP 合約"
+    },
+    {
+     "name": "Fluence Energy",
+     "ticker": "FLNC",
+     "country": "US",
+     "share": "整合商龍頭",
+     "products": "Gridstack / Nispera 軟體",
+     "note": "FQ2'26 營收 $465M（+8% YoY）、backlog 新高 $5.6B；簽兩大 hyperscaler MSA；2026 新增第二家符合 domestic content 法規的電芯供應商以應對 FEOC",
+     "src": "https://www.energy-storage.news/aesc-signs-10gwh-us-domestic-content-bess-cell-and-module-deal-with-system-integrator-prevalon/"
+    },
+    {
+     "name": "FlexGen / NextEra",
+     "ticker": "— / NEE",
+     "country": "US",
+     "share": "整合 / 開發",
+     "products": "FlexGen HybridOS / NEE 開發",
+     "note": "FlexGen 2025/8 以 $36M 收購破產 Powin 資產；T1 Energy 2026/6 以 ~$32M 收購 KORE Power 切入 BESS+AI 資料中心基建；NEE 最大再生能源開發商"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "battery_cell"
+    },
+    {
+     "id": "pcs_inverter"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "application"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Tesla Megapack (官方)",
+     "url": "https://www.tesla.com/megapack"
+    }
+   ]
+  },
+  {
+   "id": "system_cn",
+   "row": "system",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國儲能系統 / 整合",
+   "nameEn": "China ESS Systems",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "中國儲能系統整合廠以電芯垂直整合 + 成本優勢主導全球出貨。",
+   "marketSize": "null",
+   "growth": "出口導向",
+   "share": "null",
+   "analysis": "陽光電源 Sungrow（300274.SZ，全球儲能系統+變流器領導、DC-coupled 強）、比亞迪儲能、CATL（EnerOne/EnerC 系統）、海博思創（688411.SS）、阿特斯 Canadian Solar（CSIQ，e-Storage）。中國整合廠靠垂直整合與出口政策拿下亞太 ~46% 份額。",
+   "companies": [
+    {
+     "name": "陽光電源 Sungrow",
+     "ticker": "300274.SZ",
+     "country": "CN",
+     "share": "全球系統+變流領導",
+     "products": "PowerTitan 儲能系統 + PCS",
+     "note": "DC-coupled 黃金標準；2025 儲能出貨 43GWh、儲能營收首度超越逆變器（佔總營收 41.8%）；1Q26 儲能出貨 11.4GWh（-5% YoY）、ASP 侵蝕，2026 出貨目標 +40-50%；2026/6 獲 Masdar 全球首座 GW 級 24/7 可調度再生能源案（UAE），供 7.5GWh PowerTitan 3.0 + 2.6GW PV 逆變器",
+     "src": "https://en.sungrowpower.com/"
+    },
+    {
+     "name": "比亞迪儲能 / CATL",
+     "ticker": "002594.SZ / 300750.SZ",
+     "country": "CN",
+     "share": "電芯+系統垂直整合",
+     "products": "BYD Cube / CATL EnerC",
+     "note": "電芯廠延伸系統"
+    },
+    {
+     "name": "海博思創 / 阿特斯",
+     "ticker": "688411.SS / CSIQ",
+     "country": "CN",
+     "share": "整合商",
+     "products": "儲能系統 / e-Storage",
+     "note": "出口導向"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "battery_cell"
+    },
+    {
+     "id": "pcs_inverter"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "application"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sungrow ESS (官方)",
+     "url": "https://en.sungrowpower.com/productDetail/ESS"
+    }
+   ]
+  },
+  {
+   "id": "integrator_global",
+   "row": "system",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "歐日整合 / 電芯系統",
+   "nameEn": "EU/JP Integrators",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "歐洲日本系統整合與電網儲能，多結合電網設備與軟體。",
+   "marketSize": "null",
+   "growth": "電網現代化",
+   "share": "null",
+   "analysis": "Wärtsilä（WRT1V.HE，芬蘭、GEMS 軟體+系統）、Hitachi Energy（日立能源，電網+儲能）、LG ES / Samsung SDI（韓系電芯系統）、Saft（TotalEnergies 子）。歐日以電網現代化、軟體與電芯系統切入。",
+   "companies": [
+    {
+     "name": "Wärtsilä Energy",
+     "ticker": "WRT1V.HE",
+     "country": "FI",
+     "share": "整合+軟體",
+     "products": "GridSolv / GEMS 軟體",
+     "note": "芬蘭、電網儲能整合"
+    },
+    {
+     "name": "Hitachi Energy",
+     "ticker": "6501.T",
+     "country": "JP",
+     "share": "電網+儲能",
+     "products": "電網級 BESS / 變壓器",
+     "note": "電網現代化"
+    },
+    {
+     "name": "LG ES / Samsung SDI (系統)",
+     "ticker": "373220.KS / 006400.KS",
+     "country": "KR",
+     "share": "電芯系統",
+     "products": "BESS 系統",
+     "note": "韓系電芯延伸"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "battery_cell"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "application"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Wärtsilä Energy Storage",
+     "url": "https://www.wartsila.com/energy/solutions/energy-storage"
+    }
+   ]
+  },
+  {
+   "id": "pcs_inverter",
+   "row": "pcs",
+   "col": 1,
+   "span": 2,
+   "kind": "rail",
+   "name": "PCS 變流器 / 逆變器",
+   "nameEn": "PCS / Inverter",
+   "competition": "oligopoly",
+   "single": "Sungrow 變流器「黃金標準」；台達電切入儲能 PCS",
+   "desc": "儲能變流器（PCS）將電池直流與電網交流雙向轉換，是 BESS 效率與併網核心。",
+   "marketSize": "null",
+   "growth": "DC-coupled",
+   "share": "null",
+   "analysis": "陽光電源 Sungrow（300274.SZ，PCS 全球領導）、SMA Solar（S92.DE）、Enphase（ENPH，住宅微逆變）、SolarEdge（SEDG）、台達電（2308.TW，工商儲能 PCS）、固德威 GoodWe（688390.SS）、Power Electronics（西）。DC-coupled 太陽能+儲能架構是成長重點。",
+   "companies": [
+    {
+     "name": "陽光電源 Sungrow",
+     "ticker": "300274.SZ",
+     "country": "CN",
+     "share": "PCS 全球領導",
+     "products": "儲能 PCS / 光伏逆變器",
+     "note": "黃金標準"
+    },
+    {
+     "name": "SMA Solar / Power Electronics",
+     "ticker": "S92.DE / —",
+     "country": "DE",
+     "share": "歐系逆變",
+     "products": "Sunny Central / 儲能 PCS",
+     "note": "歐洲大型案"
+    },
+    {
+     "name": "Enphase / SolarEdge",
+     "ticker": "ENPH / SEDG",
+     "country": "US",
+     "share": "住宅/商用",
+     "products": "微逆變 / IQ Battery",
+     "note": "分散式儲能"
+    },
+    {
+     "name": "台達電 Delta / 固德威",
+     "ticker": "2308.TW / 688390.SS",
+     "country": "TW",
+     "share": "工商儲能 PCS",
+     "products": "儲能變流系統",
+     "note": "台達切入 BESS"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "system_us"
+    },
+    {
+     "id": "system_cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sungrow PCS",
+     "url": "https://en.sungrowpower.com/"
+    }
+   ]
+  },
+  {
+   "id": "application",
+   "row": "app",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "應用：電網 / 資料中心 / 工商業",
+   "nameEn": "Grid / Datacenter / C&I",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "BESS 終端應用：電網調頻/削峰、AI 資料中心備電與電網緩衝、工商業（C&I）儲能。",
+   "marketSize": "$1,081 億 2026",
+   "growth": "AI 用電催化",
+   "share": "null",
+   "analysis": "電網級（utility-scale）為最大宗（BYD/Tesla/Sungrow）；AI 資料中心真正催化點是「電網接入時間差」——資料中心 18-36 月可建成、輸電線卻要 5-10 年（北維州 2026 排隊者要等到 2030-2033 才有市電），逼出 behind-the-meter（BTM）自帶儲能/發電，Cleanview 估 2026 約 30% 新增資料中心電力將來自場內自發（一年前近乎 0），這是 ess 與 power 主題 BBU/UPS 的真正交會點與被低估需求。工商業（C&I）儲能在電價高地區成長。2026 市場 $1,081 億、CAGR 23.9%。",
+   "companies": [
+    {
+     "name": "Utility-scale（電網級）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "最大宗",
+     "products": "調頻/削峰/再生能源併網",
+     "note": "Tesla/Fluence/CATL/Sungrow 主場"
+    },
+    {
+     "name": "資料中心備電/緩衝",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "AI 新催化",
+     "products": "datacenter BESS / 電網緩衝 / energy park",
+     "note": "與 power BBU/UPS 交會；2026 雲廠垂直整合加速（Google 買 Intersect、Fluence 資料中心 pipeline 季增 >30% 至 ~12GWh 綁兩大 hyperscaler MSA）"
+    },
+    {
+     "name": "NextEra / AES / Engie",
+     "ticker": "NEE / AES / ENGI.PA",
+     "country": "US",
+     "share": "開發運營商",
+     "products": "儲能電站開發運營",
+     "note": "再生能源+儲能"
+    },
+    {
+     "name": "Energy Vault",
+     "ticker": "NRGV",
+     "country": "US",
+     "share": "新進開發/平台",
+     "products": "BESS 開發運營 / 重力儲能",
+     "note": "2026/5 完成併購 BayWa r.e. 850MW 案組合切入日本、全球自有近期案達 1.1GW"
+    },
+    {
+     "name": "Google / Intersect Power",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "雲廠自建能源園區",
+     "products": "co-located 太陽能+BESS energy park / BTM",
+     "note": "Google 2026 H1 完成 $4.75B 收購 Intersect Power（2.2GW 太陽能、2.4GWh BESS）；首家直接買下開發商而非簽 PPA，Quantum 案 640MW 光伏+1.3GWh 儲能 2026 春末完工"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "system_us"
+    },
+    {
+     "id": "system_cn"
+    },
+    {
+     "id": "integrator_global"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Grid-scale battery 市場 (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/grid-scale-battery-market"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "lfp_material",
+   "battery_cell"
+  ],
+  [
+   "battery_cell",
+   "system_us"
+  ],
+  [
+   "battery_cell",
+   "system_cn"
+  ],
+  [
+   "battery_cell",
+   "integrator_global"
+  ],
+  [
+   "pcs_inverter",
+   "system_us"
+  ],
+  [
+   "pcs_inverter",
+   "system_cn"
+  ],
+  [
+   "system_us",
+   "application"
+  ],
+  [
+   "system_cn",
+   "application"
+  ],
+  [
+   "integrator_global",
+   "application"
+  ]
+ ],
+ "_proposed": {}
+}

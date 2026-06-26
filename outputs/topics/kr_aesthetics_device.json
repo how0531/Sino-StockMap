@@ -1,0 +1,593 @@
+{
+ "id": "kr_aesthetics_device",
+ "tab": "韓國醫美儀器",
+ "title": "韓國醫美能量儀器 + 肉毒/填充供應鏈 (Korea Aesthetics: Energy Devices, Botulinum Toxin & HA Fillers)",
+ "subtitle": "K-beauty 的下一波出口主力不是面膜、而是『醫美硬體＋針劑』——把高純度肉毒、玻尿酸填充與 HIFU/RF 能量儀器以更低價、更快迭代打進美國/巴西/東南亞，正面挑戰 Allergan(Botox)、Galderma 與 Merz。商業模式的精髓是『刮鬍刀＋刀片』：儀器一次賣斷($85k OligioX/Volnewmer)，真正的金礦是裝機後反覆消耗的換能器匣/拋棄式探頭(Classys 2025 耗材占營收 46%、毛利 50%+)。三大龍頭 2026 數字：Classys(214150.KQ) 全年指引營收約 ₩4,720–4,900 億(+40~45% YoY)、調整後 EBITDA 利潤率 ~52%；Hugel(145020.KQ) Q1 營收 ₩1,166 億(+30%)、海外肉毒+填充 +46%、Letybo 美國 FDA 上市後肉毒銷售 +60.6%；Wontech(336570.KQ) 2025 營收 ₩1,568 億(+36%)、Oligio 兩年破 1.5 億發。價值鏈：上游換能器/拋棄式耗材＋原料(肉毒菌株/HA 發酵) → 中游能量儀器＋肉毒＋填充製造 → 經銷/診所通路 → 全球消費者。絃外之音：①真正的護城河在『裝機後的耗材年金』與『FDA/NMPA/EMA 三大市場通行證』，純賣硬體者估值與毛利都會被壓縮(如 LG 化學 2025 出售 Yvoire 填充事業)；②Bain Capital 控股的 Classys 一邊整併 Ilooda、一邊直接買下巴西最大美容儀通路商，韓系玩家正從『賣設備』升級為『掌控海外通路』；③肉毒『菌株來源』長年是 Medytox vs Daewoong 的世紀訴訟戰場，菌株正當性＝出口許可的隱形門票。⚠ 與既有 ai_pharma / 醫療類主題部分重疊；本主題聚焦『韓國醫美能量儀器＋針劑全球出口鏈』視角。非投資建議。",
+ "category": "health",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "20+"
+  },
+  {
+   "k": "肉毒桿菌素市場",
+   "v": "$128億",
+   "sub": "2026 約 $128 億 → 2034 $240 億（CAGR ~7.9%）；亞太 CAGR ~20.8%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "Hugel Letybo 美國放量＋巴西/東南亞爆發·肉毒菌株訴訟＋低價競爭壓縮毛利",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "上游：換能器/拋棄式耗材 + 原料（肉毒菌株 / HA 發酵）",
+   "main": false
+  },
+  {
+   "id": "manuf",
+   "label": "中游：能量儀器 + 肉毒桿菌素 + 玻尿酸填充製造",
+   "main": true
+  },
+  {
+   "id": "channel",
+   "label": "經銷 / 診所通路 / 海外直營",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "下游：全球消費者（美國 / 巴西 / 東南亞 / 中國）",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "consumables",
+   "row": "upstream",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "換能器 / 拋棄式耗材匣 / 探頭",
+   "nameEn": "Transducers · Disposable Cartridges · Tips",
+   "competition": "oligopoly",
+   "single": "隱性年金引擎 · 儀器賣斷後反覆消耗的換能器匣/拋棄式探頭才是真金礦——Classys 2025 耗材占營收 46%、毛利 50%+，鎖死『裝機=長期年金』",
+   "desc": "HIFU 換能器、RF 拋棄式探頭與耗材匣——能量儀器的『刀片』環節，多由原廠自製或關鍵零組件廠供應，是裝機後反覆計次消耗的高毛利年金來源。",
+   "marketSize": "耗材占龍頭營收 40~50%（年金型現金流）",
+   "growth": "Classys 2025 耗材占營收 46%；全球累計 HIFU 療程 >550 萬次/年",
+   "share": "null",
+   "analysis": "醫美能量儀的商業模式是『刮鬍刀＋刀片』：儀器(主機)一次性賣斷或鋪機，真正的長期現金流來自裝機後反覆消耗的換能器匣與拋棄式探頭。Classys 2025 年耗材(Shurink 換能器匣＋Volnewmer tip)占總營收 46%、毛利率 50%+，用 Classys 設備執行的 HIFU 療程全球累計 >550 萬次/年——這是『年金型』而非一次性硬體營收，也是其調整後 EBITDA 利潤率高達 ~52% 的根因。此環節多由原廠垂直整合自製(換能器是 HIFU 的核心精密零件、決定能量聚焦深度與療程一致性)，第三方關鍵零組件(壓電陶瓷、超音波模組)供應商相對隱形。誰掌握耗材的『機台綁定＋計次計費』，誰就握有定價權與客戶黏著。",
+   "companies": [
+    {
+     "name": "Classys（自製換能器/耗材）",
+     "ticker": "214150.KQ",
+     "country": "KR",
+     "share": "HIFU 換能器自製＋耗材 46% 營收",
+     "products": "Shurink 換能器匣 / Volnewmer tip / Everesse 耗材",
+     "note": "耗材占 2025 營收 46%、毛利 50%+；全球 HIFU 療程 >550 萬次/年；裝機=長期年金",
+     "src": "https://www.prnewswire.com/news-releases/classys-emerges-as-a-global-leader-in-medical-aesthetics-beyond-k-beauty-highlighting-45-growth-50-margins-and-recurring-revenue-model-302752605.html"
+    },
+    {
+     "name": "Wontech（自製 RF tip）",
+     "ticker": "336570.KQ",
+     "country": "KR",
+     "share": "Oligio 拋棄式探頭",
+     "products": "Oligio/OligioX 單極 RF tip / 耗材",
+     "note": "Oligio 兩年破 1.5 億發、裝機 >1,000 台；計次耗材年金",
+     "src": "https://www.theworldfolio.com/interviews/how-wontech-is-scaling-koreas-aesthetic-revolution-with-oligox/7144/"
+    },
+    {
+     "name": "Jeisys（耗材/換能器）",
+     "ticker": "—",
+     "country": "KR",
+     "share": "RF/能量耗材",
+     "products": "Density/LinearZ 耗材",
+     "note": "2024/7 由 ARCHIMED 以約 ₩9,900 億下市私有化、已從 KOSDAQ 退市；非上市標的",
+     "src": "https://www.archimed.group/news/archimed-acquires-jeisys-medical-a-leading-developer-of-aesthetic-medicine-devices/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "energy_devices"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Classys：45% 成長、50%+ 毛利、年金型耗材模式（PR Newswire）",
+     "url": "https://www.prnewswire.com/news-releases/classys-emerges-as-a-global-leader-in-medical-aesthetics-beyond-k-beauty-highlighting-45-growth-50-margins-and-recurring-revenue-model-302752605.html"
+    },
+    {
+     "label": "Korea Aesthetic Devices 2026：$2B 硬體帝國（Seoulz）",
+     "url": "https://www.seoulz.com/korea-aesthetic-devices-2026/"
+    }
+   ]
+  },
+  {
+   "id": "raw_material",
+   "row": "upstream",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "原料：肉毒菌株 + 玻尿酸(HA)發酵",
+   "nameEn": "Botulinum Strain & HA Fermentation (raw material)",
+   "competition": "oligopoly",
+   "single": "出口隱形門票 · 肉毒『菌株來源正當性』是 Medytox vs Daewoong 世紀訴訟戰場、決定能否取得 FDA/EMA 出口許可；HA 原料則由中國 Bloomage 壟斷供給",
+   "desc": "針劑的最上游：肉毒桿菌素的『菌株(strain)』與發酵製程、玻尿酸(HA)的微生物發酵原料——前者是出口許可與訴訟焦點，後者由中國產能主導、原料端已商品化。",
+   "marketSize": "HA 原料：全球最大供應商產能 +30%（中國 Bloomage）",
+   "growth": "肉毒菌株＝FDA/NMPA/EMA 三大市場通行證；HA 原料價格商品化",
+   "share": "null",
+   "analysis": "針劑供應鏈的最上游有兩條原料線：①肉毒桿菌素的『菌株來源』——肉毒是劇毒生物製劑，其菌株(strain)的合法來源與發酵技術是出口許可的隱形門票，也是 Medytox 與 Daewoong(Nabota/美國 Jeuveau) 纏訟多年的『偷竊菌株』世紀訴訟核心，最終於美國 ITC＋韓國法院後和解；菌株正當性直接決定能否打進 FDA/EMA/NMPA 三大市場。②玻尿酸(HA)原料——透過微生物發酵生產，中國 Bloomage Biotech 新建第五座 HA 發酵廠、全球產能 +30%，是世界最大 HA 原料供應商，原料端已高度商品化、價格承壓(LG 化學 2025 出售 Yvoire 填充事業即反映商品化分層的毛利壓力)。原料端的啟示：肉毒的價值在『菌株＋監管許可』，HA 的價值已下移到『品牌＋通路＋交聯技術』而非原料本身。",
+   "companies": [
+    {
+     "name": "Bloomage Biotech",
+     "ticker": "688363.SS",
+     "country": "CN",
+     "share": "全球最大 HA 原料供應商",
+     "products": "玻尿酸(HA)發酵原料",
+     "note": "新建第五座 HA 發酵廠、全球 HA 產能 +30%；供應填充/護膚/眼科原料；原料端商品化",
+     "src": "https://www.mordorintelligence.com/industry-reports/hyaluronic-acid-based-dermal-fillers-market"
+    },
+    {
+     "name": "Medytox（自有菌株）",
+     "ticker": "086900.KQ",
+     "country": "KR",
+     "share": "韓國肉毒菌株/技術源頭",
+     "products": "肉毒菌株 / Meditoxin(Neuronox) / Coretox",
+     "note": "與 Daewoong 纏訟『偷竊菌株』世紀訴訟，美國 ITC＋韓國法院後和解；菌株正當性＝出口門票",
+     "src": "https://www.koreabiomed.com/news/articleView.html?idxno=20433"
+    },
+    {
+     "name": "LG 化學（自製 HA→出售）",
+     "ticker": "051910.KS",
+     "country": "KR",
+     "share": "Yvoire HA 填充(2025 出售)",
+     "products": "HA 原料→注射針劑垂直整合",
+     "note": "Yvoire 由 HA 原料到注射針劑全程自製；2025 出售 Yvoire 填充事業，反映商品化分層毛利壓力",
+     "src": "http://global.lgyvoire.com/whyyvoire.jsp"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "botulinum"
+    },
+    {
+     "id": "ha_filler"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Medytox–Daewoong 肉毒菌株訴訟引產業漣漪（KBR）",
+     "url": "https://www.koreabiomed.com/news/articleView.html?idxno=20433"
+    },
+    {
+     "label": "HA 填充市場與原料供應商（Mordor Intelligence）",
+     "url": "https://www.mordorintelligence.com/industry-reports/hyaluronic-acid-based-dermal-fillers-market"
+    }
+   ]
+  },
+  {
+   "id": "energy_devices",
+   "row": "manuf",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "能量儀器（HIFU / RF）製造",
+   "nameEn": "Energy Devices (HIFU / RF) Manufacturing",
+   "competition": "highgrowth",
+   "single": "韓系硬體三雄主導全球出口 · Classys(HIFU)＋Wontech(單極 RF)＋Jeisys(私有化)以更低價、更快迭代正面挑戰美系 Ultherapy/Thermage",
+   "desc": "非侵入式能量美容儀——HIFU(高強度聚焦超音波，拉提)與 RF(射頻，緊緻)的設計製造，韓系廠以高 CP 值＋耗材年金模式全球放量，挑戰 Merz Ultherapy/Solta Thermage。",
+   "marketSize": "能量基美容儀 2025 $38 億 → 2030 $59 億（CAGR ~9%）；HIFA/RF 子市場 CAGR ~12%",
+   "growth": "Classys 2026 指引營收 ₩4,720–4,900 億(+40~45%)、EBITDA 利潤率 ~52%",
+   "share": "null",
+   "analysis": "韓系能量儀三雄主導全球出口：Classys(214150.KQ)是 HIFU 龍頭，旗艦 Shurink Universe(海外 Ultraformer MPT)韓國 HIFU 市占 >55%，2026 全年指引營收約 ₩4,720–4,900 億(+40~45% YoY)、調整後 EBITDA 利潤率 ~52%，靠日本/巴西直營＋次世代單極 RF 平台 Volnewmer(Everesse)放量。Wontech(336570.KQ)專攻單極 RF，Oligio/OligioX 兩年破 1.5 億發、裝機 >1,000 台，2025 營收 ₩1,568 億(+36%)，泰國子公司兩年破 10 億泰銖、RF 市占 >40%，正攻美國(OligioX MSRP $85k)。Jeisys(原 287410)2024/7 由 PE ARCHIMED 以約 ₩9,900 億下市私有化、已退市。韓系打法：用美系 1/3~1/2 的價格＋更快機種迭代＋耗材年金，正面侵蝕 Merz Ultherapy(HIFU)、Solta/Bausch Thermage(RF)的高價市場——這是『硬體性價比＋耗材黏著』的雙重攻勢。",
+   "companies": [
+    {
+     "name": "Classys",
+     "ticker": "214150.KQ",
+     "country": "KR",
+     "share": "韓國 HIFU 市占 >55%、全球 HIFU 龍頭",
+     "products": "Shurink Universe(海外 Ultraformer MPT) / Volnewmer / Everesse(MRF)",
+     "note": "Bain Capital 控股(54%)；2026 指引營收 ₩4,720–4,900 億(+40~45%)、EBITDA 利潤率 ~52%；耗材占 46%；日/巴直營",
+     "src": "https://koalagains.com/stocks/KOSDAQ/214150"
+    },
+    {
+     "name": "Wontech",
+     "ticker": "336570.KQ",
+     "country": "KR",
+     "share": "單極 RF 領先、泰國 RF 市占 >40%",
+     "products": "Oligio / OligioX(單極 RF) / Picocare / V-Laser",
+     "note": "2025 營收 ₩1,568 億(+36%)；Oligio 兩年破 1.5 億發、裝機 >1,000 台；OligioX 攻美 MSRP $85k",
+     "src": "https://www.theworldfolio.com/interviews/how-wontech-is-scaling-koreas-aesthetic-revolution-with-oligox/7144/"
+    },
+    {
+     "name": "Jeisys Medical",
+     "ticker": "—",
+     "country": "KR",
+     "share": "RF/能量儀第三強（已私有化）",
+     "products": "Density(RF) / LinearZ(HIFU) / Potenza",
+     "note": "2024/7 由 ARCHIMED 以約 ₩9,900 億($742M)下市、退市；非上市標的",
+     "src": "https://www.archimed.group/news/archimed-acquires-jeisys-medical-a-leading-developer-of-aesthetic-medicine-devices/"
+    },
+    {
+     "name": "Merz / Solta(Bausch Health)",
+     "ticker": "BHC",
+     "country": "US",
+     "share": "美系高價基準(Ultherapy/Thermage)",
+     "products": "Ultherapy(HIFU) / Thermage(RF)",
+     "note": "韓系以 1/3~1/2 價格＋快迭代正面侵蝕；定價基準被壓縮",
+     "src": "https://www.precedenceresearch.com/radiofrequency-based-aesthetic-devices-market"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "consumables"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "distribution"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Classys(214150) 關鍵指標與 2026 指引（KoalaGains）",
+     "url": "https://koalagains.com/stocks/KOSDAQ/214150"
+    },
+    {
+     "label": "Wontech OligioX 全球擴張（Worldfolio 專訪）",
+     "url": "https://www.theworldfolio.com/interviews/how-wontech-is-scaling-koreas-aesthetic-revolution-with-oligox/7144/"
+    },
+    {
+     "label": "RF 能量基美容儀市場 2034 $40 億（Precedence Research）",
+     "url": "https://www.precedenceresearch.com/radiofrequency-based-aesthetic-devices-market"
+    }
+   ]
+  },
+  {
+   "id": "botulinum",
+   "row": "manuf",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "肉毒桿菌素（BTX）製造",
+   "nameEn": "Botulinum Toxin (BTX) Manufacturing",
+   "competition": "oligopoly",
+   "single": "韓系挑戰 Botox 寡占 · Hugel Letybo 成首個取得美/中/歐三大市場許可的韓國肉毒、Daewoong Nabota 透過美國 Jeuveau(Evolus)放量",
+   "desc": "肉毒桿菌素 type A 製造——醫美除皺針劑核心。韓系以高純度＋低價策略打破 Allergan(Botox) 長年寡占，攻入美國/巴西/東南亞/中國。",
+   "marketSize": "肉毒市場 2026 約 $128 億 → 2034 $240 億（CAGR ~7.9%）；亞太 CAGR ~20.8%",
+   "growth": "Hugel Q1 肉毒銷售 +60.6%、海外肉毒+填充 +46%；Daewoong Nabota 占營收 14.6%",
+   "share": "null",
+   "analysis": "韓系肉毒正面挑戰 Allergan(AbbVie 旗下)Botox 的全球寡占。Hugel(145020.KQ)是最受惠標的：旗艦 Letybo 於 2024/3 取得美國 FDA 核准(letibotulinumtoxinA-wlbg)，成為首個同時拿下美國/中國/歐洲三大市場許可的韓國肉毒、全球前三；2026 Q1 營收 ₩1,166 億(+30%)、營業利益 ₩476 億，肉毒銷售 +60.6% 至 ₩654 億(美國/巴西帶動)、海外肉毒+填充合計 +46%。Daewoong(069620.KS)的 Nabota 是首個拿下 FDA/EMA/加拿大的亞洲肉毒，美國以 Jeuveau 品牌由 Evolus(EOLS)銷售、占其美國營收 ~90%；Nabota 占 Daewoong 營收已達 14.6%(₩2,290 億)。Medytox(086900.KQ)以 Meditoxin/Coretox 為主、菌株技術源頭。肉毒市場 2026 約 $128 億、亞太 CAGR 高達 ~20.8%——韓系『高純度＋低價＋三大市場通行證』是其全球放量的核心引擎，但『菌株來源訴訟』仍是揮之不去的監管尾部風險。",
+   "companies": [
+    {
+     "name": "Hugel",
+     "ticker": "145020.KQ",
+     "country": "KR",
+     "share": "韓國肉毒龍頭、全球前三",
+     "products": "Letybo(肉毒) / The Chaeum(HA 填充) / Wellage",
+     "note": "GS/CBC/Mubadala 財團控股；Letybo 2024/3 取美國 FDA、首個美/中/歐三市場韓肉毒；Q1 營收 ₩1,166 億(+30%)、肉毒 +60.6%",
+     "src": "https://en.sedaily.com/culture/2026/05/07/hugel-posts-record-q1-earnings-on-46-percent-surge-in"
+    },
+    {
+     "name": "Daewoong Pharmaceutical",
+     "ticker": "069620.KS",
+     "country": "KR",
+     "share": "Nabota=首個亞洲 FDA 肉毒",
+     "products": "Nabota(美國 Jeuveau)",
+     "note": "美國經 Evolus(EOLS)以 Jeuveau 銷售、占 Evolus 美國營收 ~90%；Nabota 占 Daewoong 營收 14.6%(₩2,290 億)",
+     "src": "https://www.janeyoomd.com/nabota/"
+    },
+    {
+     "name": "Medytox",
+     "ticker": "086900.KQ",
+     "country": "KR",
+     "share": "韓國肉毒菌株技術源頭",
+     "products": "Meditoxin(Neuronox) / Coretox / Innotox",
+     "note": "與 Daewoong 纏訟『偷竊菌株』後和解；菌株正當性＝出口隱形門票",
+     "src": "https://www.koreabiomed.com/news/articleView.html?idxno=20433"
+    },
+    {
+     "name": "AbbVie(Allergan) / Galderma",
+     "ticker": "ABBV",
+     "country": "US",
+     "share": "全球肉毒寡占基準(Botox/Dysport)",
+     "products": "Botox / Dysport(Galderma) / Daxxify",
+     "note": "韓系以高純度＋低價正面侵蝕；定價/市占基準被壓縮",
+     "src": "https://www.fortunebusinessinsights.com/industry-reports/botulinum-toxin-market-100996"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "raw_material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "distribution"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Hugel 創 Q1 紀錄、海外肉毒+填充 +46%（Seoul Economic Daily）",
+     "url": "https://en.sedaily.com/culture/2026/05/07/hugel-posts-record-q1-earnings-on-46-percent-surge-in"
+    },
+    {
+     "label": "肉毒市場 2026 $128 億、亞太 CAGR 20.8%（Fortune Business Insights）",
+     "url": "https://www.fortunebusinessinsights.com/industry-reports/botulinum-toxin-market-100996"
+    },
+    {
+     "label": "Daewoong Nabota / 美國 Jeuveau（Jane Yoo MD）",
+     "url": "https://www.janeyoomd.com/nabota/"
+    }
+   ]
+  },
+  {
+   "id": "ha_filler",
+   "row": "manuf",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "玻尿酸填充 + 膠原蛋白製造",
+   "nameEn": "HA Dermal Fillers & Collagen Manufacturing",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "玻尿酸(HA)真皮填充劑與膠原蛋白植入劑製造——醫美塑形核心。韓系與台系填充廠以交聯技術＋價格切入，並由台灣提供少見的純台股投資切口。",
+   "marketSize": "HA 填充市場 2026 $57.5 億 → 2031 $93.3 億（CAGR ~10.2%）",
+   "growth": "Hugel 填充+皮膚精華 Q1 ₩321 億、連三季成長；Galderma/AbbVie 主導全球",
+   "share": "null",
+   "analysis": "玻尿酸填充與膠原蛋白是醫美『塑形』的針劑核心，市場 2026 約 $57.5 億、CAGR ~10.2%，由 Galderma(Restylane)、AbbVie/Allergan(Juvederm) 主導，韓系/台系以交聯(cross-linking)技術＋價格切入。Hugel(145020.KQ)以 The Chaeum/Revolax 填充與皮膚精華補強針劑組合，Q1 填充+精華 ₩321 億、連三季成長。原料端因中國 Bloomage HA 發酵商品化，價值已從原料下移到『交聯技術＋品牌＋通路』(LG 化學 2025 出售 Yvoire 即印證商品化分層)。台灣提供罕見的純台股切口：科妍(1786.TW)專營 HA 醫材填充與護膚、雙美(4728.TWO)是膠原蛋白植入劑龍頭(現有年產能 30 萬支、新廠規劃 100 萬支、新廠醫材認證估 2026 年底取得、2027 貢獻營收)——是台灣投資人參與此醫美針劑鏈的在地標的。",
+   "companies": [
+    {
+     "name": "Hugel（填充/精華）",
+     "ticker": "145020.KQ",
+     "country": "KR",
+     "share": "韓系填充+肉毒組合龍頭",
+     "products": "The Chaeum / Revolax(HA 填充) / 皮膚精華",
+     "note": "Q1 填充+皮膚精華 ₩321 億、連三季成長；與肉毒交叉銷售",
+     "src": "https://en.sedaily.com/culture/2026/05/07/hugel-posts-record-q1-earnings-on-46-percent-surge-in"
+    },
+    {
+     "name": "科妍生技",
+     "ticker": "1786.TW",
+     "country": "TW",
+     "share": "台灣 HA 醫材填充",
+     "products": "玻尿酸醫材填充劑 / HA 護膚",
+     "note": "台灣 HA 醫材廠、布局國際；純台股醫美針劑切口",
+     "src": "https://www.cnyes.com/twstock/1786"
+    },
+    {
+     "name": "雙美生技",
+     "ticker": "4728.TWO",
+     "country": "TW",
+     "share": "台灣膠原蛋白植入劑龍頭",
+     "products": "膠原蛋白注射植入劑",
+     "note": "現年產能 30 萬支、新廠規劃 100 萬支、新廠醫材認證估 2026 年底取得、2027 貢獻營收；台股切口",
+     "src": "https://www.genetinfo.com/investment/featured/item/80744.html"
+    },
+    {
+     "name": "Galderma / AbbVie(Allergan)",
+     "ticker": "GALD",
+     "country": "CH",
+     "share": "全球 HA 填充主導(Restylane/Juvederm)",
+     "products": "Restylane(Galderma) / Juvederm(AbbVie)",
+     "note": "韓系/台系以交聯技術＋價格切入；高端品牌仍主導",
+     "src": "https://www.mordorintelligence.com/industry-reports/hyaluronic-acid-based-dermal-fillers-market"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "raw_material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "distribution"
+    }
+   ],
+   "sources": [
+    {
+     "label": "HA 填充市場 2026 $57.5 億、CAGR 10.2%（Mordor Intelligence）",
+     "url": "https://www.mordorintelligence.com/industry-reports/hyaluronic-acid-based-dermal-fillers-market"
+    },
+    {
+     "label": "雙美(4728) 膠原蛋白新廠產能與認證時程（GenetInfo）",
+     "url": "https://www.genetinfo.com/investment/featured/item/80744.html"
+    },
+    {
+     "label": "Hugel Q1 填充+精華連三季成長（Seoul Economic Daily）",
+     "url": "https://en.sedaily.com/culture/2026/05/07/hugel-posts-record-q1-earnings-on-46-percent-surge-in"
+    }
+   ]
+  },
+  {
+   "id": "distribution",
+   "row": "channel",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "經銷 / 診所通路 / 海外直營",
+   "nameEn": "Distribution · Clinic Channel · Overseas Direct Sales",
+   "competition": "fragmented",
+   "single": "從『賣設備』升級為『掌控通路』 · Bain 控股的 Classys 一邊整併 Ilooda、一邊直接收購巴西最大美容儀通路商，韓系玩家正接管海外經銷與診所端",
+   "desc": "把儀器/針劑送到全球皮膚科/醫美診所的經銷、培訓與直營網絡——韓系正從依賴在地經銷商，升級為自建海外直營與收購當地通路，掌握終端定價與耗材續購。",
+   "marketSize": "70+ 國經銷網；診所端決定耗材續購與品牌黏著",
+   "growth": "Classys 收購巴西最大美容儀通路商($13M)、自建直營；Hugel 印尼/中國培訓擴張",
+   "share": "null",
+   "analysis": "通路是醫美鏈的『最後一哩』，也是 2026 韓系玩家的戰略升級點：過去依賴各國在地經銷商鋪機，現在改為『自建海外直營＋收購當地通路』以掌握終端定價、培訓認證與耗材續購黏著。Classys(214150.KQ, Bain Capital 控股 54%)一邊整併 Ilooda 補強微針 RF/雷射，一邊以 ₩182.7 億($13M)直接收購巴西(其最大海外市場)最大美容儀通路商 JL Health，建立南美直營網絡，已布局 70+ 國、正攻美/中。Hugel 在印尼舉辦 Letybo 培訓、在中國成都推培訓計畫，以『教育診所醫師』綁定通路。診所端的醫師習慣與培訓認證一旦建立，換機/換針劑成本極高——這是比硬體更深的護城河，也是韓系從『賣設備』升級為『掌控通路』的核心邏輯。",
+   "companies": [
+    {
+     "name": "Classys（巴西直營/通路收購）",
+     "ticker": "214150.KQ",
+     "country": "KR",
+     "share": "自建海外直營＋收購通路",
+     "products": "巴西 JL Health 收購 / 日本/泰/台直營",
+     "note": "₩182.7 億收購巴西最大美容儀通路商 JL Health；整併 Ilooda；70+ 國經銷",
+     "src": "https://www.kedglobal.com/mergers-acquisitions/newsView/ked202510240003"
+    },
+    {
+     "name": "Hugel（診所培訓/海外）",
+     "ticker": "145020.KQ",
+     "country": "KR",
+     "share": "診所醫師培訓綁定通路",
+     "products": "Letybo 印尼/中國培訓 / 美國直營",
+     "note": "印尼 Letybo 培訓、成都培訓計畫；以醫師教育綁定診所通路續購",
+     "src": "https://en.sedaily.com/culture/2026/05/11/hugel-enters-growth-phase-on-us-direct-sales-china-expansion"
+    },
+    {
+     "name": "Evolus（美國肉毒通路）",
+     "ticker": "EOLS",
+     "country": "US",
+     "share": "Daewoong Nabota 美國獨家通路",
+     "products": "Jeuveau 美國銷售/診所網絡",
+     "note": "美國以 Jeuveau 銷售 Nabota；韓系針劑的美國通路代理範例",
+     "src": "https://www.janeyoomd.com/nabota/"
+    },
+    {
+     "name": "全球皮膚科/醫美診所",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "終端鋪機與耗材續購",
+     "products": "裝機＋計次耗材＋針劑施打",
+     "note": "醫師習慣＋培訓認證=換機成本高=護城河；耗材續購回饋上游年金",
+     "src": "https://www.seoulz.com/korea-aesthetic-devices-2026/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "energy_devices"
+    },
+    {
+     "id": "botulinum"
+    },
+    {
+     "id": "ha_filler"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "consumers"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Classys 收購巴西最大美容儀通路商 JL Health（KED Global）",
+     "url": "https://www.kedglobal.com/mergers-acquisitions/newsView/ked202510240003"
+    },
+    {
+     "label": "Hugel：美國直營＋中國擴張進入成長期（Seoul Economic Daily）",
+     "url": "https://en.sedaily.com/culture/2026/05/11/hugel-enters-growth-phase-on-us-direct-sales-china-expansion"
+    }
+   ]
+  },
+  {
+   "id": "consumers",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "下游：全球消費者（美/巴/東南亞/中）",
+   "nameEn": "Global Consumers (US / Brazil / SEA / China)",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "醫美能量療程與針劑的終端需求——美國(最大付費市場)、巴西(拉美龍頭)、東南亞(印尼/泰/越高速放量)、中國(體量最大但監管嚴)，是回頭拉動全鏈耗材/針劑用量的成長引擎。",
+   "marketSize": "醫美儀器+針劑全球需求數百億美元級、亞太最快",
+   "growth": "Hugel 海外 +46%；Classys 巴西/泰/台放量；亞太肉毒 CAGR ~20.8%",
+   "share": "null",
+   "analysis": "需求端是全鏈成長引擎：消費者每一次 HIFU/RF 療程與每一針肉毒/填充，回饋到上游耗材年金、針劑用量與通路續購——這是『醫美升級＋抗老剛需＋社群驅動』的長線結構性需求。地理梯度：①美國=最大付費市場、Hugel Letybo＋Daewoong Jeuveau 放量、Classys/Wontech 攻 FDA 與診所；②巴西=拉美龍頭、Classys 直接收購通路、Hugel 肉毒放量；③東南亞=印尼/泰/越高速成長(Wontech 泰國兩年破 10 億泰銖、Hugel 印尼培訓)；④中國=體量最大但監管嚴(NMPA 許可為門檻)。⚠ 風險：低價韓系彼此內卷＋中國本土廠(愛美客/華熙生物)崛起壓縮毛利；肉毒『菌株訴訟＋監管』為尾部風險；消費景氣與匯率波動影響可選消費。絃外之音：真正受惠者是『耗材/針劑用量與療程次數正相關＋掌握三大市場許可＋掌控海外通路』者(Classys/Hugel)，而非僅靠單次硬體銷售或缺乏 FDA/NMPA 通行證者。",
+   "companies": [
+    {
+     "name": "美國消費者（最大市場）",
+     "ticker": "—",
+     "country": "US",
+     "share": "全球最大醫美付費市場",
+     "products": "肉毒/填充/HIFU/RF 療程",
+     "note": "Letybo/Jeuveau 肉毒＋OligioX/Ultraformer 放量；FDA 通行證為門檻",
+     "src": "https://www.seoulz.com/korea-aesthetic-devices-2026/"
+    },
+    {
+     "name": "巴西消費者",
+     "ticker": "—",
+     "country": "BR",
+     "share": "拉美最大醫美市場",
+     "products": "能量療程＋針劑",
+     "note": "Classys 直接收購通路、Hugel 肉毒放量；韓系重點海外市場",
+     "src": "https://www.kedglobal.com/mergers-acquisitions/newsView/ked202510240003"
+    },
+    {
+     "name": "東南亞消費者（印尼/泰/越）",
+     "ticker": "—",
+     "country": "ID",
+     "share": "高速成長新興市場",
+     "products": "RF/HIFU＋肉毒療程",
+     "note": "Wontech 泰國兩年破 10 億泰銖、RF 市占 >40%；Hugel 印尼培訓擴張",
+     "src": "https://www.seoulz.com/korea-aesthetic-devices-2026/"
+    },
+    {
+     "name": "中國消費者",
+     "ticker": "—",
+     "country": "CN",
+     "share": "體量最大、監管最嚴(NMPA)",
+     "products": "肉毒/填充/能量療程",
+     "note": "NMPA 許可為門檻；本土愛美客/華熙生物崛起壓縮韓系毛利",
+     "src": "https://www.fortunebusinessinsights.com/industry-reports/botulinum-toxin-market-100996"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "distribution"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Korea Aesthetic Devices 2026：全球需求與市場（Seoulz）",
+     "url": "https://www.seoulz.com/korea-aesthetic-devices-2026/"
+    },
+    {
+     "label": "肉毒市場：亞太 CAGR 20.8% 最快（Fortune Business Insights）",
+     "url": "https://www.fortunebusinessinsights.com/industry-reports/botulinum-toxin-market-100996"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "consumables",
+   "energy_devices"
+  ],
+  [
+   "raw_material",
+   "botulinum"
+  ],
+  [
+   "raw_material",
+   "ha_filler"
+  ],
+  [
+   "energy_devices",
+   "distribution"
+  ],
+  [
+   "botulinum",
+   "distribution"
+  ],
+  [
+   "ha_filler",
+   "distribution"
+  ],
+  [
+   "distribution",
+   "consumers"
+  ]
+ ],
+ "_proposed": {}
+}

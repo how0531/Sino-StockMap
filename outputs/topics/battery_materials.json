@@ -1,0 +1,756 @@
+{
+ "id": "battery_materials",
+ "tab": "電池材料",
+ "title": "電池材料供應鏈 (Battery Materials: Cathode/Anode/Separator/Electrolyte)",
+ "subtitle": "Battery Materials — 鋰電「電芯之前」的上游材料，由中國全面主導：正極 89.4%、負極 93.5%、電解液 87.4%、隔膜 85%（全球產能），銅箔 >74%、鈷精煉 >72%。2026 上半年最熱的舊賽道：鋰價 Q1 翻倍（電池級碳酸鋰由 ¥75,000 一度破 ¥180,000/噸、漲逾 100%）、Q2 回落至 ¥157,000~169,000/噸（仍處兩年高位），材料股單季獲利爆發——天齊 2026 Q1 淨利 YoY +1,530~1,818%、湖南裕能 2026 Q1 +1,337.77%（單季超 2025 全年）、恩捷 2026 Q1 +901.7%、新宙邦 2026 Q1 +100~117.5%、贛鋒 2026 Q1 由虧轉盈（淨利 ¥16-21 億、營收 +98%）。價值鏈：鋰鈷鎳/石墨精煉 → 正極(LFP/三元) + 負極(石墨/矽碳) + 隔膜 + 電解液 + 銅箔 → 電芯/EV/儲能。儲能(AI 資料中心用電、2026 全球新增 +353GWh、產能由 EV 轉向 ESS)是 EV 之外第二需求曲線。⚠ 強週期商品 beta 高、產能過剩未完全出清；2026-H1 地緣政治出現「鬆綁」反轉——美 ITC 2026-03 終裁否決對中國石墨負極反傾銷稅、中國 2025-11~2026-11 暫停鋰電/石墨負極出口管制（為期一年的喘息）；杉杉重整由安徽國資入主、BTR 收購落空。有別於 ev、ess、solid_state。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "45+"
+  },
+  {
+   "k": "中國產能主導",
+   "v": "85-93%",
+   "sub": "正極89.4%·負極93.5%·電解液87.4%·隔膜85%",
+   "hot": true
+  },
+  {
+   "k": "鋰價 H1 催化",
+   "v": "+100%",
+   "sub": "碳酸鋰 ¥75K→¥180K(Q1)→¥157-169K(Q2)·材料股單季淨利暴衝",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "mineral",
+   "label": "礦物精煉 鋰/鈷/鎳/石墨 Mineral Refining",
+   "main": false
+  },
+  {
+   "id": "active",
+   "label": "四大主材 正極/負極/隔膜/電解液 Active Materials",
+   "main": true
+  },
+  {
+   "id": "current",
+   "label": "集流體 銅箔 Current Collector",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "電芯 / EV / 儲能 應用 Cell & Applications",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "mineral_refine",
+   "row": "mineral",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "鋰 / 鈷 / 鎳 / 石墨 精煉",
+   "nameEn": "Lithium / Cobalt / Nickel / Graphite Refining",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 中國掌握 >72% 鈷精煉、~80% 石墨加工、>50% 電池級金屬精煉",
+   "desc": "電池材料的最上游：鋰鹽（碳酸鋰/氫氧化鋰）、鈷/鎳精煉、天然+人造石墨加工。商品價格強週期，2026 Q1 鋰價翻倍點火整個板塊。",
+   "marketSize": "中國精煉 >50%",
+   "growth": "鋰價 H1+100%後回落",
+   "share": "null",
+   "analysis": "中國控制 >72% 鈷精煉、約 80% 石墨開採與加工、逾 50% 電池級金屬精煉。鋰：贛鋒鋰業（002460.SZ/1772.HK，全球鋰化合物龍頭、垂直整合上游礦，2025-11 董事長喊 2026 需求 +30-40%、鋰價上看 ¥150-200K/噸直接點火板塊；2026 Q1 由虧轉盈、淨利 ¥16-21 億 vs 2025Q1 虧 ¥3.56 億、營收 +98%）、天齊鋰業（002466.SZ/9696.HK，泰利森鋰精礦+鋰鹽，2026 Q1 淨利 ¥17-20 億、YoY +1,530~1,818% 單季近 2025 全年四倍、營收 ¥51.3 億 +98.44%、含 SQM 投資收益）、盛新鋰能（002240.SZ，鋰鹽+固態電解質）。鈷/鎳：洛陽鉬業 CMOC（603993.SS/03993.HK，全球最大鈷生產商，DRC，鈷市占近 40%）、華友鈷業（603799.SS，全球最大鈷精煉商，鈷市占約 16%、印尼鎳冶煉）、Glencore（GLEN.L，鈷市占約 13%、非中替代）。鋰價 2026 Q1 由 2025 低點 ¥75,000 一度突破 ¥180,000/噸（美元計逼近 $26,278/噸）、Q2 回落整理至 ¥157,000~169,000/噸（仍處兩年高位）。⚠ 強週期，鈉電在鋰價上行時重獲成本優勢、構成鋰價內生天花板（CATL Naxtra 2026 規模量產）。",
+   "companies": [
+    {
+     "name": "贛鋒鋰業 Ganfeng Lithium",
+     "ticker": "002460.SZ",
+     "country": "CN",
+     "share": "全球鋰化合物龍頭",
+     "products": "碳酸鋰 / 氫氧化鋰 / 鋰礦",
+     "note": "垂直整合上游礦；2025-11 董事長喊 2026 需求 +30-40%、鋰價上看 ¥150-200K/噸點火板塊；2026 Q1 由虧轉盈、淨利 ¥16-21 億、營收 +98%",
+     "src": "https://www.mysteel.net/news/5120360-flash-ganfeng-lithium-expects-q1-2026-net-profit-of-yuan-1621-billion-returning-to-profitability"
+    },
+    {
+     "name": "天齊鋰業 Tianqi Lithium",
+     "ticker": "002466.SZ",
+     "country": "CN",
+     "share": "鋰精礦+鋰鹽",
+     "products": "泰利森鋰精礦 / 碳酸鋰",
+     "note": "2026 Q1 淨利 ¥17-20 億、YoY +1,530~1,818%；單季近 2025 全年四倍",
+     "src": "https://investingnews.com/daily/resource-investing/battery-metals-investing/lithium-investing/lithium-forecast/"
+    },
+    {
+     "name": "洛陽鉬業 CMOC",
+     "ticker": "603993.SS",
+     "country": "CN",
+     "share": "全球最大鈷生產商",
+     "products": "鈷 / 銅（DRC 礦）",
+     "note": "鈷市占近 40%；連結 DRC 開採至中國精煉",
+     "src": "https://www.spglobal.com/en/research-insights/special-reports/china-s-global-reach-grows-behind-critical-minerals"
+    },
+    {
+     "name": "華友鈷業 Huayou Cobalt",
+     "ticker": "603799.SS",
+     "country": "CN",
+     "share": "全球最大鈷精煉商",
+     "products": "鈷/鎳精煉 / 三元前驅體",
+     "note": "鈷市占約 16%；印尼鎳冶煉、鈷鎳一體化",
+     "src": "https://finance.yahoo.com/quote/603799.SS/"
+    },
+    {
+     "name": "盛新鋰能 Chengxin Lithium",
+     "ticker": "002240.SZ",
+     "country": "CN",
+     "share": "鋰鹽 + 固態布局",
+     "products": "碳酸鋰 / 氫氧化鋰 / 固態電解質",
+     "note": "鋰鹽 + 子公司押注硫化物電解質",
+     "src": "https://investingnews.com/ganfeng-forecast-chinese-lithium-prices/"
+    },
+    {
+     "name": "Glencore",
+     "ticker": "GLEN.L",
+     "country": "UK",
+     "share": "非中鈷替代",
+     "products": "鈷 / 鎳",
+     "note": "鈷市占約 13%；西方主要鈷供應",
+     "src": "https://www.mdpi.com/2813-2432/5/1/2"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "cathode"
+    },
+    {
+     "id": "anode"
+    }
+   ],
+   "sources": [
+    {
+     "label": "鋰價翻倍 Q1 2026 (InvestingNews)",
+     "url": "https://investingnews.com/daily/resource-investing/battery-metals-investing/lithium-investing/lithium-forecast/"
+    },
+    {
+     "label": "中國掌握電池金屬精煉 (S&P Global)",
+     "url": "https://www.spglobal.com/en/research-insights/special-reports/china-s-global-reach-grows-behind-critical-minerals"
+    }
+   ]
+  },
+  {
+   "id": "cathode",
+   "row": "active",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "正極 Cathode（LFP / LMFP / 三元 NCM）",
+   "nameEn": "Cathode (LFP / LMFP / Ternary)",
+   "competition": "redocean",
+   "single": "⚠ 中國正極全球產能 89.4%；湖南裕能 LFP 全球市占約 30%",
+   "desc": "電池最大材料環節（佔成本 40-50%）。LFP（磷酸鐵鋰）佔正極出貨 72-80%、三元（NCM/NCA）退居其次；LMFP 摻錳提密度為新方向。",
+   "marketSize": "佔材料成本 40-50%",
+   "growth": "LFP 佔 72-80%",
+   "share": "null",
+   "analysis": "中國正極全球產能 89.4%。LFP 龍頭湖南裕能（301358.SZ，2025 出貨 113.7 萬噸、全球市占約 30%/居首約 22-27%；2025 營收 ¥346.2 億 +53.22%；2026 Q1 營收 ¥149.6 億 +121.31%、淨利 ¥13.6 億 +1,337.77% 單季超 2025 全年，但經營現金流仍負 -¥10.4 億；市值 ~$10.4B、推進赴港 A+H 雙平台）；湖北萬潤（2025 出貨 37.5 萬噸居次）、德方納米（300769.SZ，LFP/LMFP 第三、出貨約 28 萬噸）、龍蟠科技（603906.SS）。三元：容百科技（688005.SS）、當升科技（300073.SZ）高鎳 NCM/NCA 領先。非中卡位：Umicore（UMI.BR，歐洲唯一完整循環正極價值鏈、與 PowerCo 合資）、POSCO Future M（003670.KS）、EcoPro BM（247540.KQ）、L&F（066970.KQ，三元全球第 5-6 名、IRA 受惠）。全球 LFP CR5（湖南裕能、CATL Brunp、龍蟠 LBM、國軒、德方納米）約 56.5%。⚠ 政策反轉：中國 2025-11 將鋰電/人造石墨負極製備工藝列入出口管制，但依美中貿易協議 2025-11-07~2026-11-10 暫停實施（為期一年喘息）；高壓實 LFP「滿產售罄」、溢價 ¥1,000-2,000/噸。",
+   "companies": [
+    {
+     "name": "湖南裕能 Hunan Yuneng",
+     "ticker": "301358.SZ",
+     "country": "CN",
+     "share": "LFP 正極全球龍頭 ~30%",
+     "products": "磷酸鐵鋰 LFP / LMFP / 三元",
+     "note": "2025 出貨 113.7 萬噸；2026 Q1 營收 ¥149.6 億 +121.31%、淨利 ¥13.6 億 +1,337.77% 單季超 2025 全年（現金流仍負）；推進赴港 A+H",
+     "src": "https://www.mysteel.net/news/5121716-flash-hunan-yuneng-q1-2026-net-profit-surges-1-338-yoy-driven-by-phosphate-based-cathode-material-sales"
+    },
+    {
+     "name": "德方納米 Dynanonic",
+     "ticker": "300769.SZ",
+     "country": "CN",
+     "share": "LFP/LMFP 第三",
+     "products": "磷酸鐵鋰 / 磷酸錳鐵鋰 LMFP",
+     "note": "2025 出貨約 28 萬噸；LMFP 領先布局",
+     "src": "https://chinaevhome.com/2026/01/27/chinas-lfp-cathode-shipments-hit-3-94-mt-in-2025-as-market-share-nears-80/"
+    },
+    {
+     "name": "龍蟠科技 LBM",
+     "ticker": "603906.SS",
+     "country": "CN",
+     "share": "LFP CR5",
+     "products": "磷酸鐵鋰正極",
+     "note": "常州鋰源 LBM；全球 LFP CR5 之一",
+     "src": "https://www.gminsights.com/industry-analysis/lfp-and-lmfp-cathode-market"
+    },
+    {
+     "name": "容百科技 Ronbay",
+     "ticker": "688005.SS",
+     "country": "CN",
+     "share": "高鎳三元領先",
+     "products": "NCM/NCA 三元正極",
+     "note": "高鎳三元主供高端 EV",
+     "src": "https://www.sneresearch.com/en/insight/release_view/593/page/0"
+    },
+    {
+     "name": "當升科技 Easpring",
+     "ticker": "300073.SZ",
+     "country": "CN",
+     "share": "高鎳三元",
+     "products": "NCM 三元正極",
+     "note": "三元正極二強之一",
+     "src": "https://www.sneresearch.com/en/insight/release_view/593/page/0"
+    },
+    {
+     "name": "Umicore",
+     "ticker": "UMI.BR",
+     "country": "EU",
+     "share": "歐洲非中正極",
+     "products": "NCM 正極 / pCAM",
+     "note": "歐洲唯一完整循環正極價值鏈；與 PowerCo 合資；芬蘭 pCAM 2 萬噸/年",
+     "src": "https://www.umicore.com/en/about/battery-materials-solutions/battery-cathode-materials/start/"
+    },
+    {
+     "name": "POSCO Future M",
+     "ticker": "003670.KS",
+     "country": "KR",
+     "share": "韓系三元+LMR",
+     "products": "NCM 三元 / LMR 正極",
+     "note": "完成全 EV 級正極組合、LMR 量產技術布局；IRA 受惠",
+     "src": "https://www.poscofuturem.com/en/business/energy.do"
+    },
+    {
+     "name": "EcoPro BM / L&F",
+     "ticker": "247540.KQ",
+     "country": "KR",
+     "share": "三元全球第 5-6",
+     "products": "高鎳 NCM/NCA 三元",
+     "note": "L&F 066970.KQ；三元全球第 5、6 名、IRA 受惠的非中卡位",
+     "src": "https://www.asiae.co.kr/en/article/enterprise-CEO/2026061709405698192"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mineral_refine"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cell_apps"
+    }
+   ],
+   "sources": [
+    {
+     "label": "中國 LFP 出貨 3.94Mt、市占近 80% (ChinaEVHome)",
+     "url": "https://chinaevhome.com/2026/01/27/chinas-lfp-cathode-shipments-hit-3-94-mt-in-2025-as-market-share-nears-80/"
+    },
+    {
+     "label": "中國正極89.4% (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/how-chinas-control-of-battery-supply-chains-is-becoming-a-critical-risk-for-us-ai-and-defense"
+    }
+   ]
+  },
+  {
+   "id": "anode",
+   "row": "active",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "負極 Anode（石墨 / 矽碳）",
+   "nameEn": "Anode (Graphite / Silicon-Carbon)",
+   "competition": "oligopoly",
+   "single": "⚠ 中國負極全球產能 93.5%（最高）；貝特瑞全球碳負極 ~23%",
+   "desc": "以人造石墨（佔 ~56%）+ 天然石墨（~28%）為主，矽碳/矽氧負極為高能量密度新需求。中國產能集中度全環節最高（93.5%）。",
+   "marketSize": "$2.75B(2025)",
+   "growth": "矽碳新需求",
+   "share": "null",
+   "analysis": "中國負極全球產能 93.5%、為四大主材最高。貝特瑞 BTR（835185.BJ，全球負極龍頭、全球碳負極約 23%；2025 營收 ¥169 億 +19.29%、淨利 ¥8.99 億 -3.32% 量增價跌；1H25 負極出貨 >26 萬噸 +32.83%；矽碳 CVD 2025 量產；印尼/摩洛哥設廠出海；牽頭收購杉杉計畫 2026-Q1 落空）、杉杉股份（600884.SS，全球第二約 18%；2025 淨利 ¥4-6 億扭虧；⚠ 控股股東杉杉集團破產重整 2026-04 定案、由安徽國資皖維集團約 ¥71 億入主、實控人變更安徽省國資委）、璞泰來（603659.SS，負極+塗布隔膜雙布局；2025 營收 ¥157.11 億 +16.83%、淨利 ¥23.59 億 +98.14%）、尚太科技（001301.SZ，人造石墨）。去中卡位：NOVONIX（NVX，澳/美，北美合成石墨領頭、田納西 Chattanooga 廠 2026 初投產、20kt/年供 Panasonic/Stellantis/PowerCo）、Syrah Resources（SYR.AX，中國境外首家垂直整合天然石墨負極、路易斯安那 Vidalia 廠）。⚠ 政策反轉：美 ITC 2026-03-12 終裁「否決」對中國 AAM 反傾銷/反補貼稅（商務部 2026-02 曾定 160-170% 稅率），Syrah -29%、Novonix -6%、Syrah 考慮上訴；現僅 25% 301 條款+10% 全球稅=合計 35% 對中 AAM 關稅。中國亦 2025-11~2026-11 暫停人造石墨負極出口管制。矽碳負極（固態/4680 用）為新增高值需求。",
+   "companies": [
+    {
+     "name": "貝特瑞 BTR New Material",
+     "ticker": "835185.BJ",
+     "country": "CN",
+     "share": "全球負極龍頭 ~23%",
+     "products": "人造/天然石墨 / 矽碳負極",
+     "note": "2025 營收 ¥169 億 +19.29%、淨利 ¥8.99 億 -3.32%；1H25 出貨 >26 萬噸 +32.83%；矽碳 CVD 量產",
+     "src": "http://notice.10jqka.com.cn/api/pdf/916fdc672e10d74e.pdf"
+    },
+    {
+     "name": "杉杉股份 Shanshan",
+     "ticker": "600884.SS",
+     "country": "CN",
+     "share": "全球第二 ~18%",
+     "products": "人造石墨負極 / 矽碳",
+     "note": "2025 淨利 ¥4-6 億扭虧；⚠ 控股股東破產重整 2026-04 定案、安徽國資皖維約 ¥71 億入主、實控人變更安徽省國資委、BTR 收購落空",
+     "src": "https://stcn.com/article/detail/3634864.html"
+    },
+    {
+     "name": "璞泰來 Putailai",
+     "ticker": "603659.SS",
+     "country": "CN",
+     "share": "負極+塗布隔膜",
+     "products": "人造石墨負極 / 塗布隔膜 / 設備",
+     "note": "2025 營收 ¥157.11 億 +16.83%、淨利 ¥23.59 億 +98.14%",
+     "src": "https://zhuanlan.zhihu.com/p/2020868204403196329"
+    },
+    {
+     "name": "尚太科技 Shinzoom",
+     "ticker": "001301.SZ",
+     "country": "CN",
+     "share": "人造石墨二線",
+     "products": "人造石墨負極",
+     "note": "一體化人造石墨",
+     "src": "https://www.globalgrowthinsights.com/market-reports/carbon-anode-material-market-119869"
+    },
+    {
+     "name": "NOVONIX",
+     "ticker": "NVX",
+     "country": "AU",
+     "share": "北美合成石墨領頭",
+     "products": "合成石墨負極",
+     "note": "田納西 Chattanooga 廠 2026 初投產、目標 20kt/年供 Panasonic/Stellantis/PowerCo；ITC 終裁否決石墨關稅、股價 -6%；IRA 受惠",
+     "src": "https://novonixgroup.gcs-web.com/news-releases/news-release-details/us-graphite-producers-win-preliminary-itc-trade-case-ruling"
+    },
+    {
+     "name": "Syrah Resources",
+     "ticker": "SYR.AX",
+     "country": "AU",
+     "share": "中國境外首家垂直整合",
+     "products": "天然石墨負極 AAM",
+     "note": "路易斯安那 Vidalia 廠；ITC 2026-03 終裁否決對中石墨反傾銷稅、股價 -29% 考慮上訴",
+     "src": "https://greenstocksresearch.com/itc-blocks-graphite-tariffs-chinese-imports/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mineral_refine"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cell_apps"
+    }
+   ],
+   "sources": [
+    {
+     "label": "碳負極市場 BTR~23%/Shanshan~18% (GlobalGrowthInsights)",
+     "url": "https://www.globalgrowthinsights.com/market-reports/carbon-anode-material-market-119869"
+    },
+    {
+     "label": "ITC 終裁否決對中石墨反傾銷稅 Syrah-29%/Novonix-6% (GreenStocksResearch)",
+     "url": "https://greenstocksresearch.com/itc-blocks-graphite-tariffs-chinese-imports/"
+    },
+    {
+     "label": "安徽國資 ~¥71 億入主杉杉股份 (新浪財經)",
+     "url": "https://stcn.com/article/detail/3634864.html"
+    }
+   ]
+  },
+  {
+   "id": "separator",
+   "row": "active",
+   "col": 5,
+   "span": 1,
+   "kind": "stage",
+   "name": "隔膜 Separator（濕法 / 乾法）",
+   "nameEn": "Separator (Wet / Dry Process)",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 技術門檻最高；恩捷連 7 年市占第一、中國約 40%",
+   "desc": "四大主材中技術門檻最高、寡占度最深。濕法基膜 + 陶瓷/PVDF 塗布。中國 2025 國內出貨 323 億 m² +45.4%、全球市占 79.4%。",
+   "marketSize": "$6.1B→$24.3B(2030)",
+   "growth": "CAGR 18-19%",
+   "share": "null",
+   "analysis": "中國隔膜全球產能 85%、2025 國內出貨 323 億 m² +45.4%。恩捷股份／SEMCORP（002812.SZ，全球隔膜龍頭、連續 7 年市占第一、中國約 40%；2025 出貨 128.4 億 m² +45.5%、隔膜營收約 ¥116.3 億 +40.89%、占總營收 85.3% 全年扭虧；2026 Q1 營收 ¥39.08 億 +43.21%、淨利 ¥2.6 億 +901.7%、毛利率衝至 28.09%（+~10pp）、產能利用率 94.91%；2026-05 公告擬 ¥40 億擴產；固態：高純硫化鋰中試線完成、10 噸級固態電解質產線已投產並小批量出貨、玉溪規劃千噸級線）、星源材質（300568.SZ，中國第二、1H25 +65.3%）、中材科技 Sinoma（002080.SZ，第三、份額上升）。非中：Asahi Kasei 旭化成（3407.T，日系濕法龍頭）、Toray 東麗（3402.T）、UBE/Teijin、W-Scope（KR）。隔膜市場 2023 $6.1B → 2030 $24.3B、CAGR ~19.1%。⚠ 寡占+技術壁壘使隔膜成為材料股中護城河最深、利潤彈性最大者之一；2026-H1 行業由「價格戰」轉向價值驅動、利潤拐點確立。",
+   "companies": [
+    {
+     "name": "恩捷股份 SEMCORP",
+     "ticker": "002812.SZ",
+     "country": "CN",
+     "share": "全球隔膜龍頭 連7年第一",
+     "products": "濕法基膜 / 塗布隔膜 / 固態電解質",
+     "note": "中國約 40%；2025 出貨 128.4 億 m² +45.5%；2026 Q1 營收 ¥39.08 億 +43.21%、淨利 ¥2.6 億 +901.7%、毛利率 28.09%、利用率 94.91%；2026-05 擬 ¥40 億擴產；10 噸級固態電解質產線投產",
+     "src": "https://finance.sina.com.cn/stock/relnews/cn/2026-04-24/doc-inhvqwee3205970.shtml"
+    },
+    {
+     "name": "星源材質 Senior",
+     "ticker": "300568.SZ",
+     "country": "CN",
+     "share": "中國第二",
+     "products": "乾法/濕法隔膜",
+     "note": "1H25 +65.3% 強勁成長",
+     "src": "https://news.metal.com/newscontent/103315512-performance-insights-of-top-10-lithium-battery-separator-companies-in-2024-third-place-or-5-billion-changes-hands-to-pub"
+    },
+    {
+     "name": "中材科技 Sinoma Sci-Tech",
+     "ticker": "002080.SZ",
+     "country": "CN",
+     "share": "中國第三",
+     "products": "濕法隔膜 / 塗布",
+     "note": "份額上升",
+     "src": "https://news.metal.com/newscontent/103315512-performance-insights-of-top-10-lithium-battery-separator-companies-in-2024-third-place-or-5-billion-changes-hands-to-pub"
+    },
+    {
+     "name": "Asahi Kasei 旭化成",
+     "ticker": "3407.T",
+     "country": "JP",
+     "share": "日系濕法龍頭",
+     "products": "濕法隔膜（Hipore）",
+     "note": "非中濕法龍頭；全球第二陣營",
+     "src": "https://www.globenewswire.com/news-release/2024/07/26/2919510/28124/en/The-Global-Market-for-Battery-Separators-2024-2029-Market-Set-to-Reach-19-Billion-at-a-CAGR-of-18-6-Asahi-Kasei-Senior-Teijin-UBE-and-Yunnan-Energy-New-Material-Co-Dominating.html"
+    },
+    {
+     "name": "Toray 東麗",
+     "ticker": "3402.T",
+     "country": "JP",
+     "share": "日系隔膜",
+     "products": "濕法隔膜（Setela）",
+     "note": "非中濕法供應",
+     "src": "https://www.globenewswire.com/news-release/2024/07/26/2919510/28124/en/The-Global-Market-for-Battery-Separators-2024-2029-Market-Set-to-Reach-19-Billion-at-a-CAGR-of-18-6-Asahi-Kasei-Senior-Teijin-UBE-and-Yunnan-Energy-New-Material-Co-Dominating.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mineral_refine"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cell_apps"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Top 10 隔膜廠 2024 恩捷~40% (SMM)",
+     "url": "https://news.metal.com/newscontent/103315512-performance-insights-of-top-10-lithium-battery-separator-companies-in-2024-third-place-or-5-billion-changes-hands-to-pub"
+    },
+    {
+     "label": "隔膜市場 2024-2029 (GlobeNewswire)",
+     "url": "https://www.globenewswire.com/news-release/2024/07/26/2919510/28124/en/The-Global-Market-for-Battery-Separators-2024-2029-Market-Set-to-Reach-19-Billion-at-a-CAGR-of-18-6-Asahi-Kasei-Senior-Teijin-UBE-and-Yunnan-Energy-New-Material-Co-Dominating.html"
+    }
+   ]
+  },
+  {
+   "id": "electrolyte",
+   "row": "active",
+   "col": 6,
+   "span": 1,
+   "kind": "stage",
+   "name": "電解液 Electrolyte（溶劑+LiPF6+添加劑）",
+   "nameEn": "Electrolyte (Solvent + LiPF6 + Additives)",
+   "competition": "oligopoly",
+   "single": "⚠ 天賜材料電解液全球市占 41.8%；中國掌握 >70% LiPF6 產能",
+   "desc": "碳酸酯溶劑 + 六氟磷酸鋰(LiPF6)鋰鹽 + 功能添加劑。垂直整合 LiPF6 與溶劑者毛利彈性最大。中國電解液廠 Q3 2025 全球市占 86.8%。",
+   "marketSize": "$6.8B(2025)",
+   "growth": "+34% 出貨",
+   "share": "null",
+   "analysis": "中國電解液全球產能 87.4%、Q3 2025 全球市占 86.8%（韓 8.2%、日 5.0%）。天賜材料 Tinci（002709.SZ，全球龍頭、市占約 41.8%；2025 供應 26.4 萬噸 +34.1%；2025 營收 ¥166.5 億 +33%、淨利 ¥13.62 億 +181.43%；股價 YoY +122%；自產 LiPF6+溶劑垂直整合）、新宙邦 Capchem（300037.SZ，第二、市占約 13.1%；2026 Q1 淨利 ¥4.6-5.0 億、YoY +100.11~117.51%、單季電解液出貨約 9 萬噸；推進港股 IPO）、瑞泰新材/國泰華榮 GTHR（301238.SZ，第三、市占約 9.8%；2025 出貨 7.5 萬噸）、多氟多/天際股份（LiPF6 專門廠；中國掌握 >70% LiPF6 產能）。⚠ LiPF6 價格 2026-H1 劇烈波動：2025-12 高點 ¥18 萬/噸 → 2026-04 底回落 ¥10-10.5 萬/噸（-42%）→ 2026-05 反彈至 ¥11.35 萬/噸（單週 +12%、行業庫存僅約一週）；溶劑+添加劑漲價抵銷 LiPF6 跌價、電解液成品報價維持穩定。非中：Mitsubishi Chemical（4188.T）、Soulbrain（357780.KQ，KR）、Enchem（348370.KQ，KR）IRA 受惠。電解液市場 2025 約 $6.8B → 2026 $7.5B。",
+   "companies": [
+    {
+     "name": "天賜材料 Tinci",
+     "ticker": "002709.SZ",
+     "country": "CN",
+     "share": "電解液全球龍頭 41.8%",
+     "products": "電解液 / LiPF6 / 溶劑",
+     "note": "2025 供應 26.4 萬噸 +34.1%；營收 ¥166.5 億 +33%、淨利 ¥13.62 億 +181%；股價 YoY +122%；垂直整合",
+     "src": "https://stockanalysis.com/quote/she/002709/"
+    },
+    {
+     "name": "新宙邦 Capchem",
+     "ticker": "300037.SZ",
+     "country": "CN",
+     "share": "全球第二 ~13.1%",
+     "products": "電解液 / 氟化液 / 添加劑",
+     "note": "2025 出貨 18 萬噸 +96.9%；2026 Q1 淨利 ¥4.6-5.0 億 +100.11~117.51%、單季出貨約 9 萬噸；推進港股 IPO",
+     "src": "https://news.qq.com/rain/a/20260414A04E0I00"
+    },
+    {
+     "name": "瑞泰新材 GTHR",
+     "ticker": "301238.SZ",
+     "country": "CN",
+     "share": "全球第三 ~9.8%",
+     "products": "電解液",
+     "note": "張家港國泰華榮；2025 出貨 7.5 萬噸 +7.3%",
+     "src": "https://www.qyresearch.com/reports/3480951/lithium-ion-battery-electrolyte"
+    },
+    {
+     "name": "多氟多 Do-Fluoride",
+     "ticker": "002407.SZ",
+     "country": "CN",
+     "share": "LiPF6 專門",
+     "products": "六氟磷酸鋰 LiPF6 / 新型鋰鹽",
+     "note": "中國掌握 >70% LiPF6 產能；LiPF6 2025-12 ¥18 萬→2026-04 ¥10 萬→2026-05 ¥11.35 萬/噸劇烈波動、庫存僅約一週",
+     "src": "https://www.cls.cn/detail/2377005"
+    },
+    {
+     "name": "Mitsubishi Chemical 三菱化學",
+     "ticker": "4188.T",
+     "country": "JP",
+     "share": "日系電解液",
+     "products": "電解液 / 溶劑",
+     "note": "非中供應；IRA 受惠",
+     "src": "https://cm.asiae.co.kr/en/article/2024010413214052528"
+    },
+    {
+     "name": "Soulbrain / Enchem",
+     "ticker": "357780.KQ",
+     "country": "KR",
+     "share": "韓系電解液",
+     "products": "電解液 / 電子材料",
+     "note": "Enchem 348370.KQ；IRA 友岸外包卡位",
+     "src": "https://cm.asiae.co.kr/en/article/2024010413214052528"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mineral_refine"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cell_apps"
+    }
+   ],
+   "sources": [
+    {
+     "label": "電解液市占 Tinci 41.8% (QYResearch)",
+     "url": "https://www.qyresearch.com/reports/3480951/lithium-ion-battery-electrolyte"
+    },
+    {
+     "label": "天賜 002709 (stockanalysis)",
+     "url": "https://stockanalysis.com/quote/she/002709/"
+    }
+   ]
+  },
+  {
+   "id": "copper_foil",
+   "row": "current",
+   "col": 1,
+   "span": 6,
+   "kind": "stage",
+   "name": "銅箔（集流體）",
+   "nameEn": "Copper Foil (Current Collector)",
+   "competition": "competitive",
+   "single": "中國銅箔市占 >74%、韓 17%；極薄化(<7μm)為技術競賽",
+   "desc": "電池負極集流體用電解銅箔，向極薄化（<7μm）演進以提升能量密度。中國市占 >74%、汽車用佔近 65%。",
+   "marketSize": "$10.1B→$49.7B(2033)",
+   "growth": "CAGR 19.4%",
+   "share": "null",
+   "analysis": "鋰電銅箔市場 2024 $100.7 億、CAGR ~19.4% 至 2033 達 $496.5 億；中國市占 >74%、韓 17%；全球 CR5 約 42%（諾德、SK Nexilis、CCP、九江德福、廣東嘉元）。中國：諾德股份（600110.SS，中國鋰電銅箔龍頭、全球 CR5）、嘉元科技（688388.SS，高端極薄銅箔 <7μm；2025 全年虧 ¥2.99 億，2026 Q1 由虧轉盈、淨利 ¥4,009 萬，鋰電銅箔占營收 86.28%）、德福科技。韓系：SK Nexilis（SK 集團）、日進材料 Iljin（020150.KS）。日系：古河電工 Furukawa（5801.T）、UACJ（5741.T）。⚠ 2026-H1 加工費周期反轉、行業開工率 2026-03 升至約 89.59%（MoM +5.33pp）。7-10μm 佔 48%、<7μm 佔 46% 為極薄化技術競賽；具極薄良率優勢者享溢價。複合銅箔（PET 鍍銅）為降本+安全新路線。",
+   "companies": [
+    {
+     "name": "諾德股份 Nuode",
+     "ticker": "600110.SS",
+     "country": "CN",
+     "share": "中國銅箔龍頭 全球CR5",
+     "products": "電解銅箔 / 極薄銅箔",
+     "note": "鋰電銅箔全球 CR5 之一",
+     "src": "https://www.businessresearchinsights.com/market-reports/lithium-battery-copper-foil-market-103306"
+    },
+    {
+     "name": "嘉元科技 Jiayuan",
+     "ticker": "688388.SS",
+     "country": "CN",
+     "share": "高端極薄銅箔",
+     "products": "<7μm 極薄電解銅箔",
+     "note": "極薄化技術領先；複合銅箔布局；2025 虧 ¥2.99 億、2026 Q1 由虧轉盈淨利 ¥4,009 萬（加工費周期反轉）",
+     "src": "https://www.cfi.net.cn/p20260423001099.html"
+    },
+    {
+     "name": "SK Nexilis",
+     "ticker": "—",
+     "country": "KR",
+     "share": "韓系銅箔 全球CR5",
+     "products": "電解銅箔",
+     "note": "SK 集團；未獨立上市；全球 CR5",
+     "src": "https://www.businessresearchinsights.com/market-reports/lithium-battery-copper-foil-market-103306"
+    },
+    {
+     "name": "日進材料 Iljin Materials",
+     "ticker": "020150.KS",
+     "country": "KR",
+     "share": "韓系銅箔",
+     "products": "電解銅箔（I2B）",
+     "note": "Lotte 集團；非中銅箔供應",
+     "src": "https://www.businessresearchinsights.com/market-reports/lithium-battery-copper-foil-market-103306"
+    },
+    {
+     "name": "古河電工 Furukawa Electric",
+     "ticker": "5801.T",
+     "country": "JP",
+     "share": "日系銅箔",
+     "products": "電解銅箔",
+     "note": "日系電解銅箔供應",
+     "src": "https://www.businessresearchinsights.com/market-reports/lithium-battery-copper-foil-market-103306"
+    },
+    {
+     "name": "UACJ",
+     "ticker": "5741.T",
+     "country": "JP",
+     "share": "日系鋁/銅箔",
+     "products": "鋁箔 / 銅箔集流體",
+     "note": "正極鋁箔+負極銅箔集流體",
+     "src": "https://www.businessresearchinsights.com/market-reports/lithium-battery-copper-foil-market-103306"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mineral_refine"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cell_apps"
+    }
+   ],
+   "sources": [
+    {
+     "label": "鋰電銅箔市場 中國>74% (BusinessResearchInsights)",
+     "url": "https://www.businessresearchinsights.com/market-reports/lithium-battery-copper-foil-market-103306"
+    }
+   ]
+  },
+  {
+   "id": "cell_apps",
+   "row": "demand",
+   "col": 1,
+   "span": 6,
+   "kind": "stage",
+   "name": "電芯 / EV / 儲能 應用（需求錨點）",
+   "nameEn": "Cell & Applications (Demand Anchor)",
+   "competition": "highgrowth",
+   "single": "需求錨點 · CATL/BYD 電芯主導；儲能(AI 資料中心)為 EV 外第二需求曲線",
+   "desc": "電芯廠與 EV/儲能終端是電池材料的需求錨點。詳見既有 ev（整車/電芯）、ess（電網儲能系統）主題；此處作為下游需求節點。",
+   "marketSize": "材料市場 $76.9B(2026)",
+   "growth": "儲能第二曲線",
+   "share": "null",
+   "analysis": "電池材料市場 2025 $69.58B → 2026 $76.94B、CAGR 10.6%；鋰電材料更高（2025 $80.3B → 2034 $404.3B）。需求由兩引擎驅動：EV（CATL 300750.SZ 動力電池 1-4 月 40.1%、BYD 002594.SZ）與儲能 ESS（2026 全球新增儲能約 +353GWh、AI 資料中心用電爆量、BESS 大量採用 LFP，使 LFP 正極/隔膜/電解液脫離 EV 單一引擎；2026-H1 業界明顯由 EV 轉向 ESS 配置產能——Ford 改 Kentucky 廠產 BESS、中國電芯廠 2026-06 拿下歐美電網儲能 >25GWh 訂單）。電芯廠：CATL、BYD、EVE 億緯（300014.SZ）、LG ES（373220.KS）、Panasonic（6752.T）。次世代：LMFP（國軒宣稱 240 Wh/kg）2026 商用；CATL Naxtra 鈉電 2026 規模量產（~175 Wh/kg、較 LFP 便宜 ~30%），長安啟源 A06 為全球首款鈉電量產乘用車、鋰價上漲使鈉電重獲成本優勢。⚠ 詳細電芯/整車/系統見 ev、ess、solid_state 主題，避免重複。",
+   "companies": [
+    {
+     "name": "CATL 寧德時代",
+     "ticker": "300750.SZ",
+     "country": "CN",
+     "share": "動力+儲能電芯龍頭",
+     "products": "LFP/三元電芯 / Naxtra 鈉電",
+     "note": "動力電池 1-4 月 40.1%；Naxtra 鈉電 2026 規模量產（~175Wh/kg、較 LFP 便宜 ~30%）、長安啟源 A06=全球首款鈉電量產車、拉動鈉電材料需求",
+     "src": "https://electrek.co/2026/04/22/catl-launching-sodium-ion-batteries-evs-2026/"
+    },
+    {
+     "name": "BYD 比亞迪",
+     "ticker": "002594.SZ",
+     "country": "CN",
+     "share": "刀片電池(LFP)",
+     "products": "刀片電池 / BESS",
+     "note": "LFP 電芯自供；全球最大儲能部署商",
+     "src": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries"
+    },
+    {
+     "name": "EVE 億緯鋰能",
+     "ticker": "300014.SZ",
+     "country": "CN",
+     "share": "動力+儲能電芯",
+     "products": "大容量 LFP 電芯",
+     "note": "儲能電芯黑馬",
+     "src": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries"
+    },
+    {
+     "name": "LG Energy Solution",
+     "ticker": "373220.KS",
+     "country": "KR",
+     "share": "韓系電芯領導",
+     "products": "LFP/NCM 電芯",
+     "note": "非中電芯+材料友岸外包需求",
+     "src": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries"
+    },
+    {
+     "name": "Panasonic",
+     "ticker": "6752.T",
+     "country": "JP",
+     "share": "Tesla 主供之一",
+     "products": "2170/4680 圓柱電芯",
+     "note": "北美 Tesla 供應；採 Novonix 合成石墨",
+     "src": "https://chargedevs.com/newswire/novonix-delivers-synthetic-graphite-anode-c-sample-to-panasonic/"
+    },
+    {
+     "name": "國軒高科 Gotion",
+     "ticker": "002074.SZ",
+     "country": "CN",
+     "share": "LFP/LMFP 電芯",
+     "products": "LFP / LMFP 電芯",
+     "note": "LMFP 宣稱 240 Wh/kg、525 Wh/L、1,800-4,000 循環、2026 商用",
+     "src": "https://en.wikipedia.org/wiki/LMFP_battery"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cathode"
+    },
+    {
+     "id": "anode"
+    },
+    {
+     "id": "separator"
+    },
+    {
+     "id": "electrolyte"
+    },
+    {
+     "id": "copper_foil"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "電池材料市場 2026 $76.9B (TBRC)",
+     "url": "https://www.thebusinessresearchcompany.com/report/battery-materials-global-market-report"
+    },
+    {
+     "label": "CATL 鈉電 2026 量產 (Electrek)",
+     "url": "https://electrek.co/2026/04/22/catl-launching-sodium-ion-batteries-evs-2026/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "mineral_refine",
+   "cathode"
+  ],
+  [
+   "mineral_refine",
+   "anode"
+  ],
+  [
+   "mineral_refine",
+   "separator"
+  ],
+  [
+   "mineral_refine",
+   "electrolyte"
+  ],
+  [
+   "mineral_refine",
+   "copper_foil"
+  ],
+  [
+   "cathode",
+   "cell_apps"
+  ],
+  [
+   "anode",
+   "cell_apps"
+  ],
+  [
+   "separator",
+   "cell_apps"
+  ],
+  [
+   "electrolyte",
+   "cell_apps"
+  ],
+  [
+   "copper_foil",
+   "cell_apps"
+  ]
+ ],
+ "_proposed": {}
+}

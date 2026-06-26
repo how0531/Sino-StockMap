@@ -1,0 +1,97 @@
+﻿id,category,category_zh,title,subtitle,last_update,nodes,edges,companies
+battery_materials,energy,能源與電氣化,電池材料供應鏈 (Battery Materials: Cathode/Anode/Separator/Electrolyte),Battery Materials — 鋰電「電芯之前」的上游材料，由中國全面主導：正極 89.4%、負極 93.5%、電解液 87.4%、隔膜 85%（全球產能），銅箔 >74%、鈷精煉 >72%。2026 上半年最熱的舊賽道：鋰價 Q1,,7,10,43
+ess,energy,能源與電氣化,儲能系統 ESS 供應鏈 (Grid-Scale Battery Storage),"Energy Storage System — AI 資料中心爆量用電 + 再生能源併網，把電網級儲能（BESS）推上結構性成長。電網級儲能 2026 市場 $1,081 億、CAGR 23.9% 到 2031 達 $3,158 億；亞太佔",,7,9,27
+ev,energy,能源與電氣化,電動車 EV 供應鏈 (Battery · OEM · Power Semi · Charging),"Electric Vehicle — 全球運輸電氣化主軸，與儲能共用電池供應鏈、與 AI 共用功率半導體。2026 Q1 Tesla 358,023 重奪全球 BEV 龍頭、BYD 310,389 暫居第二（中國購置稅改課 5% 致 BYD",,7,9,30
+ev_charging,energy,能源與電氣化,電動車充電基礎設施供應鏈 (EV Charging Infrastructure),EV Charging — 充電從「燒錢圈地」轉向「網路營收 + 高毛利 SaaS + 賣鏟人晶片」的結構性成長。2026 H1 三催化齊發：① NACS(SAE J3400) 標準戰塵埃落定，幾乎全美車廠(Ford/GM/Rivian/H,,6,5,39
+fusion,energy,能源與電氣化,核融合供應鏈 (Nuclear Fusion),Nuclear Fusion — AI 資料中心對 24/7 無碳基載電力的渴求把核融合從科研推向可投資敘事。2026-H1 募資再爆量：CFS（Commonwealth）2026-05 再募 $3.85B、累計約 $6.85B 居全球之冠,,5,4,35
+grid_power,energy,能源與電氣化,電網與輸配電設備供應鏈 (Power Grid & T&D Equipment),Power Grid & T&D — AI 資料中心用電爆量把瓶頸從「發電」延伸到「輸配電」：大型電力變壓器交期在美國最長拉到 4 年、GIS 開關設備與 HVDC 換流站嚴重供不應求，催生橫跨美歐日韓台的 T&D 設備漲價超級循環。全球電,,7,10,38
+hydrogen,energy,能源與電氣化,氫能與燃料電池供應鏈 (Hydrogen & Fuel Cells),Hydrogen & Fuel Cells — AI 資料中心對「快速到位電力」的渴求把燃料電池(Bloom SOFC)從邊緣敘事推成 2026 最強落地題材。Bloom Energy(BE) Q1'26 營收暴增至 $751M(+130%,,5,7,36
+nuclear_fuel_cycle,energy,能源與電氣化,核燃料循環與鈾濃縮供應鏈 (Nuclear Fuel Cycle & Uranium Enrichment),AI 資料中心向核電 PPA 與 SMR 大舉押注，把『燃料側』推上結構性多頭——這是與 nuclear_smr（反應爐設計）互補的另一半故事。價值鏈：鈾礦開採 → 轉化(UF6)＋濃縮(離心)＋HALEU 高濃度低濃鈾 → 燃料組件製造 ,,5,5,22
+nuclear_smr,energy,能源與電氣化,核能 / 小型模組反應爐 SMR 供應鏈 (Nuclear & SMR),Nuclear & SMR — AI 資料中心爆量用電把瓶頸從晶片移到電力，核能（尤其小型模組反應爐 SMR）成 24/7 無碳基載解方。鈾價近 $86/lb；NuScale（SMR）為唯一獲 NRC 認證設計、TVA 6GW 案；hype,,5,6,23
+onsite_power,energy,能源與電氣化,AI 資料中心自有發電 / 表後電力供應鏈 (Behind-the-Meter Prime Power for AI Data Centers),AI 資料中心等不到電網——併網排隊長達 4-7 年，業者乾脆「自帶電廠」（表後 / behind-the-meter prime power），用燃氣渦輪＋往復引擎＋燃料電池就地發電。需求把熱段供應鏈逼到極限：GE Vernova（GEV,,5,5,27
+solar_pv,energy,能源與電氣化,太陽能 PV 供應鏈 (Solar Photovoltaics),Solar PV — AI 資料中心綠電與全球能源轉型撐起全球最大單一發電硬體供應鏈，2025 全球裝置量約 650GW、製造產值 $347 億。五段垂直鏈：多晶矽 → 矽片/長晶 → 電池 → 組件 → 逆變器/系統，加光伏玻璃/EVA膠,,8,11,53
+solid_state_battery,energy,能源與電氣化,固態 / 半固態電池供應鏈 (Solid-State Battery),Solid-State Battery — 以固態電解質取代液態+隔膜，是 EV/儲能的『能量密度+安全』次世代躍進，有別於 ev（現行液態鋰電/整車）與 ess（電網儲能）。2026 為中試線元年：QuantumScape（QS，市值 ~,,6,9,34
+vpp_grid,energy,能源與電氣化,虛擬電廠與電力交易供應鏈 (Virtual Power Plants & Grid Software),Virtual Power Plants & Grid Software — AI 資料中心用電暴增、新建電廠/輸電線跟不上，逼出「以軟體換產能」的最高槓桿環節：用軟體把成千上萬個分散式能源(屋頂光電/家用電池/EV/恆溫器/可削減負載)聚,,6,7,36
+wind_power,energy,能源與電氣化,風力發電供應鏈 (Wind Power: Onshore & Offshore),Wind Power — 2025 全球風電裝機 169.2GW（+37.9%）創歷史新高、惟離岸 -30% 至 8.1GW，GWEC 預估 2026-2030 再裝 969GW、浮動式離岸 CAGR 51.7%。中國整機商首度包辦 BNE,,8,9,47
+prediction_markets,fin,金融科技,預測市場 / 事件合約交易所供應鏈 (Prediction Markets / Event Contracts),預測市場 — 把『未來事件的機率』封裝成 $0.01–$0.99 的二元事件合約（YES/NO），由 CFTC 監管、像期貨一樣可交易與清算的新興資產類別。爆發力驚人：Kalshi 2025 全年成交 $238 億，2026/5 單月即破 ,,6,7,20
+stablecoin_rwa,fin,金融科技,穩定幣與真實世界資產代幣化金融基礎設施 (Stablecoins & RWA Tokenization Infrastructure),穩定幣與 RWA（真實世界資產）代幣化是 2025–2026 最具確定性的 fintech×blockchain 垂直——把『美元』與『金融資產』重寫成可在公鏈 24/7 結算的程式化貨幣與證券。2025/7/18 GENIUS Act 立,,7,9,27
+bci_neurotech,health,生技醫療,腦機介面與神經調控供應鏈 (Brain-Computer Interface & Neuromodulation),把『讀寫大腦』從科幻變成可植入的醫材——本主題鏈結直接植入人體、讀寫神經訊號的閉迴路電子裝置：電極陣列/超細導線/植入式 ASIC＋神經解碼 AI → 植入裝置 OEM → 上市神經調控代理 → 癱瘓/帕金森/癲癇/中風病患。2026 兩條,,6,9,20
+glp1_cdmo,health,生技醫療,GLP-1 / 胜肽藥物製造委外供應鏈 (GLP-1 / Peptide CDMO & Fill-Finish),"GLP-1（瘦瘦針/減重藥）終端市場 2024 約 $535 億 → 2030 上看 $1,567 億（CAGR ~17%），但真正稀缺的不是分子、而是「能合成出公斤級高純度胜肽 + 把它無菌充填進注射筆」的產能——這是製造端的賣鏟人，與 ",,5,4,26
+kr_aesthetics_device,health,生技醫療,"韓國醫美能量儀器 + 肉毒/填充供應鏈 (Korea Aesthetics: Energy Devices, Botulinum Toxin & HA Fillers)",K-beauty 的下一波出口主力不是面膜、而是『醫美硬體＋針劑』——把高純度肉毒、玻尿酸填充與 HIFU/RF 能量儀器以更低價、更快迭代打進美國/巴西/東南亞，正面挑戰 Allergan(Botox)、Galderma 與 Merz。商,,7,7,26
+radiopharma_isotope,health,生技醫療,放射性藥物與醫用同位素供應鏈 (Radiopharmaceuticals & Medical Isotopes / Theranostics),放射性藥物把『診斷顯影劑』與『治療藥』做成同一個標靶分子的攣生對（治療診斷一體化 theranostics）：先用診斷同位素（Ga-68/F-18）顯影確認腫瘤表現標靶，再換上治療同位素（Lu-177/Ac-225）精準殺癌。放射藥物治療診,,5,5,23
+surgical_robotics,health,生技醫療,手術機器人供應鏈 (Surgical & Medical Robotics),手術機器人 — 半導體式「裝機 + 耗材」商業模式的醫療版：賣平台只是入場券，真正的價值在 EndoWrist 等單次使用器械與服務合約形成的 85% 經常性收入。市場 2025 約 $129 億 → 2035 拚 $500~600 億（C,,6,7,27
+advanced,hw,半導體硬體,先進製程（2nm GAA）供應鏈,Leading-edge Logic Process — 2nm/3nm GAA 邏輯製造，是半導體鎖喉點最密集的供應鏈。台積電 ≤3nm >90% 近乎獨佔；上游層層巢狀獨佔：ASML EUV→Zeiss 光學→Cymer 光源、Lase,,20,19,90
+ai_chip_startup,hw,半導體硬體,AI 晶片新創供應鏈 (AI Chip Startups: Inference Silicon),AI Chip Startups — AI 算力重心由「訓練」轉向「推論」，給專用推論晶片新創一道挑戰 NVIDIA 約 74% 推論市佔的縫隙。2026 熱度爆量：Cerebras(CBRS) 5/14 上市、募 $5.55B（年度最大科,,5,5,37
+ai_devices,hw,半導體硬體,AI 終端裝置 / 智慧眼鏡供應鏈 (AI Devices & Smart Glasses),AI Devices — AI 從手機/PC 走向「隨身原生裝置」：智慧眼鏡、AI 別針、穿戴。Meta Ray-Ban H2'25 出貨市占 82%、2025 銷量翻逾 3 倍、Gen 2 內建 Llama 4，Meta×EssilorL,,6,7,27
+asic,hw,半導體硬體,客製 AI 晶片（ASIC / XPU）供應鏈,Custom AI Silicon — 超大規模雲端業者（Google/AWS/Microsoft/Meta/OpenAI）以自研 XPU 取代部分 merchant GPU，是 AI 算力供應鏈成長最快的一極。價值鏈：IP/SerDes ,,17,16,45
+ate_test,hw,半導體硬體,AI 晶片測試供應鏈 (Semiconductor Test & ATE),Semiconductor Test & ATE — AI 晶片（GPU/ASIC/HBM）功耗與複雜度暴增，使測試從製程尾端成本變成決定良率與交期的鎖喉環節：先進 AI 封裝測試成本佔晶片總成本 10–15%（傳統手機 SoC ~5%），,,7,6,39
+auto_semi,hw,半導體硬體,車用半導體 / ADAS 智駕晶片供應鏈 (Automotive Semiconductor & ADAS SoC),Automotive Semi & ADAS SoC — 車用半導體 2026 市場約 $57.3B（2033 $95.1B、CAGR 7.5%），其中 L2+ 相關半導體營收 2026-2031 預計翻倍，是車用最快成長引擎。庫存去化結束,,7,8,36
+bbu,hw,半導體硬體,AI 資料中心備援電池模組 BBU 供應鏈 (Data Center Battery Backup Unit),BBU（Battery Backup Unit）是 AI 機櫃內為 GPU 提供「掉電瞬時備援」的專用鋰電池模組——當市電或 PSU 異常時撐住數十毫秒至數分鐘，讓 GPU 不致崩潰。NVIDIA GB300 NVL72 把 BBU 從 G,,5,4,23
+ccl,hw,半導體硬體,CCL 銅箔基板 / 高速 PCB 材料供應鏈,Copper Clad Laminate — AI 伺服器與 800G/1.6T 交換器板用「高速低損耗」CCL 是隱形鎖喉。M8 對應 800G/AI server，M9 攻更高速 GPU/switch 平台（台光電 M9 首家認證、20,,8,9,31
+china_semi,hw,半導體硬體,中國國產半導體生態 (China Domestic Semiconductor),China Domestic Semiconductor — 美國管制反成國產化最大催化劑，2026H1 進入「強制執行期」。北京反向限制 Nvidia 進口、政府採購白名單只納華為與寒武紀，把中國 AI 算力需求強制導向本土——2026H,,9,10,52
+chiplet_ucie,hw,半導體硬體,Chiplet / UCIe / Die-to-Die 互連 IP 供應鏈 (Chiplet & UCIe),Chiplet & UCIe — 異質整合（chiplet）是繞過單晶片良率與光罩極限的主路徑，UCIe 3.0（2025-08 發布、64GT/s，2026 Q1 完成首次跨供應商 live 互通實測）把 die-to-die PHY/控,,6,8,32
+cim_pim,hw,半導體硬體,記憶體內運算 CIM / PIM 供應鏈 (Compute-in-Memory),Compute-in-Memory / Processing-in-Memory — AI 推論約 60% 能耗花在記憶體與運算間的資料搬運（搬一個數字耗能是乘法本身的 100~1000 倍），CIM/PIM 把運算嵌進記憶體陣列直接消除「,,5,6,32
+connector_hsio,hw,半導體硬體,高速連接器與互連供應鏈 (High-Speed Connectors & Interconnect),"High-Speed Connectors & Interconnect — AI 機櫃 224G→1.6T 世代把高速連接器/銅互連從被動零件推升為機櫃內 BOM 高價值卡位點。GB200 NVL72 單櫃逾 5,000 條（5,184）",,6,9,36
+cowos,hw,半導體硬體,CoWoS 先進封裝供應鏈,Chip-on-Wafer-on-Substrate — TSMC 主導的 2.5D 先進封裝，是 AI 加速器最關鍵的產能瓶頸。本版補齊先前漏掉的台日韓封裝設備生態（濕製程、暫時鍵合、點膠、固化、雷射、檢測、自動化、廠務、耗材、特化、載具,,31,30,122
+cpo,hw,半導體硬體,CPO 共封裝光學供應鏈,Co-Packaged Optics — 將矽光子光引擎與交換器 ASIC / GPU 共封裝，突破 AI 資料中心功耗與頻寬瓶頸。本版補齊先前漏掉的台灣光學軍團（奇景/采鈺/大立光 COUPE 光學、上詮 FAU、高明鐵 ±5nm 對位、,,22,21,91
+data_center_cooling,hw,半導體硬體,AI 資料中心散熱供應鏈 (Data Center Liquid Cooling),Data Center Liquid Cooling — AI 機櫃功耗從 GB300 ~136kW 衝向 Rubin/Kyber 600kW–1MW，氣冷已撞牆、液冷由選配變標配，2026 液冷滲透率直衝 ~76%、單櫃散熱系統產值由 G,,8,10,42
+defense,hw,半導體硬體,軍工 / 國防安全供應鏈,Defense & National Security — 從半導體/國防電子視角拆解現代國防：關鍵元件（rad-hard/mil-spec 晶片、GaN RF、EO-IR 感測）→ 次系統（雷達/電戰 C4ISR、航電、推進）→ 系統整合,,18,28,92
+dram_cxl,hw,半導體硬體,"DRAM / 伺服器記憶體 / CXL 記憶體供應鏈 (DRAM, Server Memory & CXL)","DRAM, Server Memory & CXL — 2026 商品 DRAM 超級循環：三強（Samsung/SK hynix/Micron）把產能押向 HBM 與先進製程，留下 DDR5 伺服器 RDIMM 與 DDR4 利基 DRA",,6,8,33
+drone_uav,hw,半導體硬體,無人機 / 反無人機供應鏈 (Drone & Counter-UAS),Drone & UAV — 烏俄戰爭證明無人機改變戰爭型態 + 2025-12-22 FCC 把所有外國產 UAS 列入 Covered List、Trump 2026-06 簽 Drone Dominance EO，重塑全球供應鏈。全球軍,,4,3,18
+edge_ai,hw,半導體硬體,Edge AI / 終端 AI（AI PC、AI 手機、Terminal SoC）,On-device AI 推論 — Microsoft Copilot+ PC（≥40 TOPS NPU）、Apple Intelligence（iPhone 15 Pro+/M1+ Mac）、Android AICore + Gemini,,14,21,67
+fpga,hw,半導體硬體,FPGA 可程式化邏輯供應鏈 (FPGA & Programmable Logic),FPGA — 2026 年迎三重催化：①Altera 自 Intel 分拆（Silver Lake 以 $4.46B 收 51%、估值 $8.75B、對比 2015 年 Intel 收購價 $17B 腰斬），目標 2026 年底 IPO，將,,7,11,39
+glass_substrate,hw,半導體硬體,玻璃基板 / TGV / CoPoS 供應鏈 (Glass Substrate & TGV),Glass Substrate & TGV — 以玻璃核心取代 ABF、以方形玻璃面板取代矽中介層，是 AI 晶片下一代封裝載體。2026-H1 進度：TSMC CoPoS 試線 2026/6 完工、量產延至 2028H2、魏哲家 6/4 ,,6,8,31
+hbm,hw,半導體硬體,HBM 高頻寬記憶體供應鏈,High Bandwidth Memory — 堆疊 DRAM 緊鄰 AI GPU/ASIC，是 AI 算力與 CoWoS 的共同瓶頸。三強寡占；2026 Q1 SK hynix 全球首批 HBM4 量產（Nvidia Rubin ~70%,,19,18,64
+humanoid_components,hw,半導體硬體,人形機器人關鍵零組件供應鏈 (Humanoid Robot Components),Humanoid Robot Components — 一台人形機器人 ≈ 28-40+ 個關節，每個旋轉關節 = 減速機＋無框馬達＋編碼器＋力矩感測，線性關節 = 行星滾柱螺桿＋無框馬達，靈巧手 = 微型空心杯馬達＋觸覺。本主題不碰整機與,,9,13,54
+hybrid_bonding,hw,半導體硬體,混合鍵合與 TCB 設備供應鏈 (Hybrid Bonding & TCB Equipment),AI 算力的真正瓶頸正從『前段製程』下移到『鍵合台』——當微凸塊（microbump）到了 16-Hi/3D 堆疊撞牆，銅對銅直接接合的混合鍵合（Hybrid Bonding）與無助焊劑熱壓鍵合（fluxless TCB）成為下一道關卡。本,,6,9,21
+icdesign,hw,半導體硬體,IC 設計（Fabless / EDA / IP）供應鏈,IC Design — 無晶圓廠（fabless）設計公司站在價值鏈最上層，向下牽動晶圓代工、封測與終端系統。最深單點在「設計入口」：EDA 三雄（Synopsys/Cadence/Siemens）合計 >70%、Arm CPU IP 架構,,17,25,70
+india_ems_semi,hw,半導體硬體,印度電子製造與半導體在地化供應鏈 (India EMS & Semiconductor Localization),"India Inc. 的「China+1 製造夢」——印度政府以 ECMS（2026 預算上修至 ₹40,000 億盧布/約 $48 億）＋ ISM 半導體任務（2026 單年 ₹8,000 億盧布）＋手機 PLI，砸補貼把電子供應鏈從「組",,6,8,26
+leosat,hw,半導體硬體,低軌衛星 (LEO) 供應鏈,Low-Earth-Orbit Satellite — 以 SpaceX Starlink 為核心的低軌寬頻/手機直連（D2C）巨型星系生態。價值鏈：星系營運（太空段）→ 衛星製造/酬載/發射 → 地面設備（用戶終端/相位陣列天線/閘道站）,,14,18,56
+lidar,hw,半導體硬體,光達 LiDAR 與車用感測供應鏈 (Automotive LiDAR & Sensing),Automotive LiDAR & Sensing — L3+ 法規強制（UN R157 要求深度感知）、BYD 天神之眼智駕平價化、robotaxi/Physical AI 第二曲線三線引爆，車用光達 2025 首破 $10 億(+60,,6,6,39
+material,hw,半導體硬體,半導體材料供應鏈,Semiconductor Materials — 晶片製造的「血液」，涵蓋矽晶圓、光阻、CMP 耗材、濺鍍靶材、電子特氣、ALD/CVD 前驅物、濕化學品、光罩坯料/pellicle，到封裝端 EMC/ABF 膜/底填/銲料。日廠在最上游,,17,16,81
+memory_storage,hw,半導體硬體,NAND / 企業級 SSD 記憶體儲存供應鏈 (NAND & Enterprise SSD),NAND & Enterprise SSD — AI 推論（KV cache、向量庫、data lake）讓儲存成為第二個 HBM 級瓶頸：TrendForce 估 2Q26 NAND 合約價季漲 70~75%、1Q26 前五大原廠營收 $,,6,8,32
+mems_sensor,hw,半導體硬體,MEMS 與感測器供應鏈 (MEMS & Sensors),MEMS & Sensors — AI 從雲端走入物理世界，感測前端成為車、機器人、穿戴不可省略的 BOM。MEMS 感測器市場 2026 約 $20.2B(CAGR 8%)、影像感測 (CIS) 約 $33B、最快的 MEMS IMU 慣,,8,11,53
+mlcc_passive,hw,半導體硬體,被動元件 MLCC 供應鏈 (Passive Components: MLCC),"Passive Components — AI 伺服器把被動元件推上「下一個記憶體」敘事。整機櫃 MLCC 用量從 ~2,200 顆暴衝到 >30,000 顆（頂規單櫃 45-60 萬顆，約智慧手機 300 倍）；Goldman Sachs",,7,10,47
+networking,hw,半導體硬體,AI 資料中心網路供應鏈 (Switch / NIC / Interconnect),AI Networking — 把上萬顆 GPU 連成超級電腦的網路。兩大戰場：scale-up（機櫃內 NVLink/UALink）vs scale-out（跨櫃 Ethernet/InfiniBand）。Broadcom Tomahaw,,8,7,32
+optical_module,hw,半導體硬體,800G / 1.6T 光模組供應鏈 (Pluggable Optical Transceiver),Pluggable Optical Transceiver — AI 資料中心 scale-out 網路把 GPU 連起來的光模組。800G 2024-25 主流、1.6T 2025 H2 起量產、2026 放量（全球 1.6T 需求 20,,8,12,36
+photonic_compute,hw,半導體硬體,光子運算供應鏈 (Photonic / Optical Computing),Photonic / Optical Computing — 用光（光強度/相位）在類比域做矩陣乘法（MAC），以突破電子互連與算力的功耗牆。2026 是敘事引爆年：Lightelligence（曦智）2026-04 香港掛牌、公開認購 6,,5,7,30
+plp,hw,半導體硬體,面板級封裝 PLP / FOPLP 供應鏈,Panel Level Packaging — AI reticle 放大（Rubin 5.5x，12 吋僅容 4–7 顆）逼出方形面板封裝。雙速產業：消費小晶片（PMIC/RF/穿戴）已商轉、AI/HPC 大晶片試量產（2027–2029,,16,16,56
+power,hw,半導體硬體,AI 資料中心 電源 / 散熱供應鏈,Power & Thermal — AI 機櫃功率從 GB200 ~120kW 暴衝到 Rubin Ultra (Kyber) ~600kW，逼出兩場革命：供電端 54V→800V HVDC（Nvidia 2027 量產、減銅 45%、省 ,,16,16,75
+power_semi,hw,半導體硬體,功率半導體 SiC / GaN 供應鏈 (Power Semiconductor: SiC & GaN),Power SiC & GaN — 「電力是新的算力瓶頸」第二章：核能/SMR 解決發電，GaN/SiC 解決電怎麼進機櫃。NVIDIA 為 1MW Kyber 機櫃（576 顆 Rubin Ultra、2027 上線）定義 800 VDC,,7,9,40
+quantum_compute,hw,半導體硬體,量子運算供應鏈 (Quantum Computing),Quantum Computing — 下一代運算典範，多模態路線競賽（超導/離子阱/中性原子/光子/矽自旋）。2026-05-21 美商務部依 CHIPS Act 與 9 家簽 LOI 共 $20.13 億（IBM $10 億、Globa,,5,5,21
+rare_earth,hw,半導體硬體,稀土與關鍵礦物供應鏈 (Rare Earth & Critical Minerals),Rare Earth & Critical Minerals — 稀土永磁(NdFeB)是機器人馬達/EV/風電/國防/電子的命脈，也是中美科技戰最硬的中國籌碼。中國 2025-10 祭出史上最廣出口管制（含「0.1% 域外管轄」可掐境外磁,,7,7,42
+rf_6g,hw,半導體硬體,RF 前端與 6G／衛星通訊晶片供應鏈 (RF Front-End & 6G),RF Front-End & 6G — 天線與數據機之間的射頻層（PA／濾波器 BAW·FBAR·SAW／LNA／switch／天線調諧／modem-RF），是手機、Wi-Fi、基地台、衛星、車用無線的「最後一哩」。RFFE 模組市場 20,,7,7,40
+robot,hw,半導體硬體,人形機器人供應鏈,Humanoid Robotics — 「具身智慧 (Physical AI)」是 AI 下一個前沿。一台人形機器人 = 數十個關節（actuator），每個關節由 減速機＋無框馬達＋伺服驅動＋力矩/位置感測 構成，是 BOM 與技術門檻最,,16,27,70
+semicap_wfe,hw,半導體硬體,半導體前段設備供應鏈 (Wafer Fab Equipment),Wafer Fab Equipment — 晶圓廠前段設備是 AI/2nm/HBM 資本支出的核心鏟子。五強寡占（ASML 光刻獨佔 EUV、Applied Materials WFE ~19% 最大廠、Lam 蝕刻龍頭、Tokyo Ele,,8,12,49
+server,hw,半導體硬體,AI 伺服器 ODM / 系統整合供應鏈,AI Server ODM — 從 GPU 運算盤/交換盤、機櫃整合到 OEM 品牌與雲端終端。Nvidia GB200/GB300 NVL72 把伺服器由「一台主機」變成「一整櫃液冷系統」，台灣 ODM（鴻海/廣達/緯創/緯穎）拿下絕大多,,16,15,58
+silicon_laser_els,hw,半導體硬體,矽光子雷射源 / 外部光源 ELS 供應鏈 (Photonic Laser Sources),Photonic Laser Sources / External Light Source — CPO 把光引擎搬進交換器/GPU 封裝後，雷射因熱、可靠度、可維修三重物理衝突『不能』一起進封裝，於是被外置成前面板可熱插拔的 ELS/EL,,5,4,32
+siph,hw,半導體硬體,矽光子平台供應鏈,Silicon Photonics — 在矽上整合光調變/偵測/波導的平台技術，橫跨 datacom/CPO、telecom 相干光、LiDAR/車用、光運算/光子 AI、量子。真瓶頸在測試與封裝對位（非製造）；矽不發光使雷射/InP 基板,,16,15,72
+space_economy,hw,半導體硬體,太空經濟供應鏈 (Space Economy: Launch · Satellites · Apps),Space Economy — SpaceX 2026-06-12 完成史上最大 IPO（SPCX 募資 ~$750 億、估值 ~$1.75 兆、超越 Saudi Aramco；首日 +19% 收 $161、市值 >$2 兆、美股第六大），,,7,8,41
+specialty_gas,hw,半導體硬體,電子特殊氣體與六氟化鎢(WF6)斷供供應鏈 (Electronic Specialty Gases & WF6 Supply Shock),電子特氣是半導體製造的「血液」——蝕刻、沉積、摻雜、清洗每一步都要超高純(5N–7N)氣體；占晶圓製造材料成本約 15%。本主題與 material(晶圓材料堆疊) 分流，聚焦『鎢原料 → 製氣+純化 → 特氣供應+輸送系統 → 晶圓廠製程,,6,6,26
+substrate,hw,半導體硬體,IC 載板供應鏈 (ABF / BT / 玻璃),IC Substrate — 承載晶片並連接 PCB 的有機/玻璃載板。AI GPU/ASIC 推升 ABF 載板往大尺寸、高層數（3+3 → 11+11 → 13+13）演進，2026 起重回結構性短缺。最深單點為味之素 ABF 膜（~9,,16,18,59
+copper_electrification,industrial,工業/消費,銅與 AI 電氣化基本金屬供應鏈 (Copper & the Metals of Electrification),"銅是 AI 與電氣化時代「不可替代的導體」——AI 資料中心、電網更新、EV 三大需求暴增，撞上礦山品位長期下降與新礦十年難建的結構性缺口，銅成為 2026 最確定的多頭基本金屬。價格端：LME 銅 2026/1/6 觸及歷史新高 $13,",,6,6,34
+engine_mro,industrial,工業/消費,民航航空發動機售後維修超級循環 (Aero Engine Aftermarket / MRO Super-cycle),民航發動機售後（aftermarket / MRO）是航空業最甜的『razor-blade』生意——OEM 幾乎不靠賣新發動機賺錢，而靠裝機後 20–30 年、按飛行小時（RPFH / power-by-the-hour）計費的維修與原廠件,,7,12,26
+evtol_uam,industrial,工業/消費,低空經濟 / eVTOL 城市空中交通供應鏈 (Low-Altitude Economy / eVTOL Urban Air Mobility),低空經濟 — 把人與貨從二維道路搬到三維天空的『新質生產力』賽道，2026 公認為載人 eVTOL『商業化元年』。中國市場規模 2026 估突破 1 兆元人民幣（樂觀估約 1.06 兆）、其中 eVTOL 本體市場約 950 億元，2026,,7,8,26
+ip_collectibles,industrial,工業/消費,谷子經濟 / 潮玩 IP 供應鏈 (Anime Goods · Designer Toys · Collectible IP),"「谷子經濟」（goods，二次元 IP 周邊：盲盒/潮玩/集換卡牌/痛包/吧唧/手辦）是 Z 世代『為熱愛買單』的內需新引擎——中國谷子市場 2024 約 1,689 億元（YoY +40%）、2026 上看 2,400 億、2027 破 ",,5,5,17
+kbeauty,industrial,工業/消費,K-Beauty 韓妝供應鏈 (Korean Beauty: ODM 代工 × Indie 品牌 × 跨境通路),K-Beauty — 2026 年從「韓流話題」升格為「全球美妝供應鏈核心」的消費出口主題。2025 韓妝出口首破 $114 億、躍居全球第二大化妝品出口國（僅次法國 $243 億，超越美國 $108 億），對美出口 +15% 至 $22 ,,7,8,26
+shipbuilding,industrial,工業/消費,商用造船超級循環供應鏈 (Commercial Shipbuilding Super-Cycle — LNG・MASGA・Eco-Ships),商用造船在 2026 進入「結構性超級循環」：全球商用造船在手訂單 Q1 2026 達 1.91 億 CGT、為 17 年新高（佔現役船隊 17%，2011 年以來最高），新接訂單 YoY +40%，今天下單交期已拉到 3.8 年（2019,,7,7,31
+subsea_telecom_cable,industrial,工業/消費,海底電信光纜 與 AI 跨洋頻寬骨幹供應鏈 (Subsea Telecom Cable & AI Bandwidth Backbone),全球 99% 跨洋網路資料、與幾乎全部 AI 跨地域訓練/推論流量，都跑在約 600 條海底光纜上——這是 AI 時代『看不見的骨幹』。海底電信纜系統市場 2026 約 $164 億 → 2031 $264 億（CAGR ~10%）；AI ,,5,5,22
+agentic_ai,sw,企業AI軟體,Agentic AI / 企業軟體 AI 自動化（雲端 → 模型 → 平台 → 應用）,2024–2026 企業 AI 化浪潮：Anthropic（企業 API 40%，ARR USD 47B+，Series H USD 65B at USD 965B 已完成、2026-06-01 秘密遞交 S-1）、OpenAI（27%，A,,15,23,108
+agentops,sw,企業AI軟體,企業 AI 維運與管理軟體供應鏈 (AgentOps / Enterprise AI Management),AgentOps — 企業把 AI Agent 從 demo 推上「生產線」所需的維運、管理與基礎設施軟體層，是 AI 落地的賣鏟人。AI Agent 軟體市場 2025 約 $78 億 → 2030 $526 億（CAGR ~46%）。2,,6,7,30
+ai_inference,sw,企業AI軟體,AI 推論服務與優化供應鏈 (AI Inference Serving & Optimization),AI Inference Serving & Optimization — 推論即服務（賣 API/token）與優化軟體層（量化/KV cache/投機解碼，每 GPU 多服務 10–50x 請求）。2026 是推論層自成資產類別的引爆年,,5,6,31
+ai_infra_capital,sw,企業AI軟體,AI 基礎設施融資 / 資料中心 REIT 供應鏈 (AI Infra Capital & DC REITs),AI 資本循環的金融層 — 不是「誰賣算力」(見 neocloud)，而是「誰出錢、用什麼結構出錢、風險最後堆在誰身上」。2026 hyperscaler capex 指引上看 $700B+，Morgan Stanley 估到 2028 需,,6,6,46
+ai_media_gen,sw,企業AI軟體,生成式 AI 內容與媒體供應鏈 (Generative AI Media),Generative AI Media — 影像/影片/語音/音樂/數位人五大模態的創作生成供應鏈。2026-H1 ARR 真實化：ElevenLabs 2026-05 ARR 破 $500M、估值 $11B、BlackRock/Welli,,9,16,54
+ai_pharma,sw,企業AI軟體,AI 製藥 / TechBio 供應鏈 (AI Drug Discovery),AI Drug Discovery — AI×生技交會點 2026 進入「臨床驗證元年」：前幾年平台潛力撐起估值溢價，2026 起價值由「能不能做出過人體試驗的藥」決定。資金面卻空前火熱——Isomorphic Labs（DeepMind ,,6,7,38
+ai_security,sw,企業AI軟體,AI Security / Agent Security / Identity / Governance（Runtime → Identity → DLP → Red Team → Compliance）,2025-2026 M&A 整合爆發：PANW 收 Protect AI（USD 700M）發布 Prisma AIRS 3.0（2026-03-23，覆蓋 agentic AI 全生命周期）；CSCO 收 Robust Intellige,,11,16,69
+coding_ai,sw,企業AI軟體,AI Coding / DevSecOps（IDE → SWE Agents → Code Review → Testing → DevSecOps → CI/CD）,整體 AI 代碼工具市場 2026E 約 USD 12.8B（窄口徑 AI code assistants 約 USD 4–5B、開發者滲透率約 85%）；Cursor 估值 USD 29.3B→SpaceX USD 60B 全股票收購 2,,12,18,71
+cs_ai,sw,企業AI軟體,Customer Service AI / 客服 Agent（語音 → 模型 → 平台 → CCaaS → CRM）,Contact Center AI TAM USD 4.2B（2025）→ USD 11.8B（2030），Agentic AI CAGR 44.5%；Sierra AI USD 15.8B、Decagon USD 4.5B 雙領頭；Ele,,11,18,57
+cyber_platform,sw,企業AI軟體,網路資安平台供應鏈 (Cybersecurity Platforms),Cybersecurity Platforms — CISO 厭倦數十個點狀工具、主動向 1-2 個「主平台」收編，引爆 platform consolidation 超級週期。2025-2026 為史上最大資安併購年：Google 收 W,,7,10,38
+data_platform,sw,企業AI軟體,企業資料平台 / 湖倉 / 串流 (Data Platform & Lakehouse),AI 真正的瓶頸不是模型而是「資料底座」——湖倉/串流/轉換是每個 AI agent 的燃料管線，2026 成兵家必爭：Databricks 傳 $165-175B 新輪（ARR $5.4B→$6.9B、AI 產品 ARR $1.4B）；S,,5,6,29
+erp_ai,sw,企業AI軟體,ERP / HR / Finance Back-office Agents（ERP 核心 → HR → Close/Spend → Asia 本土）,SAP ECC 2027 EOL 催動亞太遷移浪潮；SAP Cloud Backlog €21.9B（Q1 2026 current，+25% cc）、Oracle FY2026 雲端 $34.0B（+39%）、RPO $638B、Fusi,,11,16,67
+industrial_ai,sw,企業AI軟體,Industrial AI / Digital Twin / Machine Vision / Physical AI（工業自動化 → 數位孿生 → 機器視覺 → Edge MLops → Physical AI）,Google 2026/2 收編 Intrinsic 為內部單位（『機器人界 Android』，合作 FANUC/Universal Robots/KUKA + Foxconn JV）；Fanuc FY2025 JPY 857.8B、與 G,,11,18,68
+llmops_eval,sw,企業AI軟體,LLMOps / Observability / Eval（觀測 → Eval / 紅隊 → Agent 監控 → 治理）,LLM Observability TAM 2025 USD 1.97B→2026 USD 2.69B（CAGR +36.3%）；廣義 LLMOps 2026 USD 7.14B（CAGR +21.3%）。M&A 整合潮席捲：W&B→Cor,,10,16,62
+neocloud,sw,企業AI軟體,AI 算力雲 / GPU 租賃 (AI Neoclouds / GPU Cloud),AI Neoclouds — 專為 AI 打造、以 GPU-as-a-Service 為核心的新一代雲。商模：買 NVIDIA GPU → 折舊 → 以 3-5 年長約出租，毛利來自租金減 GPU 折舊+電力+網路的價差，並用 GPU 庫存,,5,6,29
+rag_kb,sw,企業AI軟體,RAG / Vector Search / 企業知識庫（文件解析 → 嵌入 → 向量 DB → RAG 平台 → 應用）,全棧 RAG 基礎設施：Glean USD 7.2B/ARR $300M（2026-05）、AlphaSense USD 7.5B/ARR $600M+（2026-06）企業搜尋雙龍頭；BAAI BGE 開源 Embedding + Zil,,11,16,65
+robotaxi,sw,企業AI軟體,Robotaxi 自動駕駛營運供應鏈 (Robotaxi Operations),Robotaxi Operations — 2026 是自駕計程車從示範轉放量的轉折年。Waymo 2026-02 完成 $16B 募資、估值 $126B（史上最大 AV 融資），週付費載客 2026-03 達 50 萬趟（一年翻倍）、目標,,7,13,41
+vertical_ai_agents,sw,企業AI軟體,垂直產業 AI Agent 供應鏈 (Vertical AI Agents),Vertical AI Agents — 模型平權後，價值由基礎模型外溢到擁有專業 workflow＋專屬資料＋分潤定價權的垂直 agent。四大專業域 2025-2026 同步爆發：法律 Harvey（$11B、ARR $300M）vs ,,5,7,33
+workflow_rpa,sw,企業AI軟體,Workflow Automation / RPA / iPaaS / Tool Execution（傳統 RPA → iPaaS → Browser-Use → 文件 IDP → 編排）,RPA 3.0：UiPath ARR $1.901B（FY27Q1）首季 GAAP 獲利 + Maestro Case；iPaaS：n8n 估值 $5.2B（SAP 策略投資）、2026 Gartner MQ Workato Leader ,,11,16,64

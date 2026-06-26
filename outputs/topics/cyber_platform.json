@@ -1,0 +1,743 @@
+{
+ "id": "cyber_platform",
+ "tab": "資安平台",
+ "title": "網路資安平台供應鏈 (Cybersecurity Platforms)",
+ "subtitle": "Cybersecurity Platforms — CISO 厭倦數十個點狀工具、主動向 1-2 個「主平台」收編，引爆 platform consolidation 超級週期。2025-2026 為史上最大資安併購年：Google 收 Wiz（USD 32B）、PANW 收 CyberArk（USD 25B，更名 Idira）、Cisco 收 Splunk（USD 28B），2025 全年揭露逾 USD 84B、策略買家佔 92% 資本。平台廠高速成長：PANW NGS ARR USD 8.18B（+60%）、CRWD ARR USD 5.51B（+24%）、Fortinet billings +31%、Cloudflare +34%。Morgan Stanley CIO 調查指資安支出年增速比整體軟體快 50%。價值鏈：安全 ASIC / 威脅情報 / 雲基建 → 端點 / SASE / SIEM / 身分 / 應用五大平台支柱 → MSSP / 託管 SOC / CISO。有別於 ai_security 聚焦窄義 AI-agent 防護。⚠ 風險：CRWD/ZS 估值曾逾 80-100x、2026 Q1 重估；SASE/身分增速下修；Microsoft 捆綁侵蝕純廠。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "40+"
+  },
+  {
+   "k": "2025 併購總額",
+   "v": ">$84B",
+   "sub": "Wiz $32B·CyberArk $25B·Splunk $28B·策略買家佔 92%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "CISO 平台整併+AI 需求·高估值重估+成長減速",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "up",
+   "label": "上游 — 安全晶片 / 威脅情報 / 雲基建 Upstream",
+   "main": false
+  },
+  {
+   "id": "core",
+   "label": "端點 + 網路 Endpoint / Network",
+   "main": true
+  },
+  {
+   "id": "secops",
+   "label": "SIEM / SecOps + 身分 Identity",
+   "main": false
+  },
+  {
+   "id": "edge",
+   "label": "應用 / 邊緣 WAAP / CDN",
+   "main": false
+  },
+  {
+   "id": "down",
+   "label": "下游 — MSSP / SOC / 企業 CISO Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "upstream_silicon_intel",
+   "row": "up",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "安全晶片 / 威脅情報 / 雲基建",
+   "nameEn": "Security ASIC, Threat Intel & Cloud Infra",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Fortinet 為唯一自研安全 ASIC（SP5/NP7/CP9）廠；雲 SaaS 安全平台底層綁 AWS/Azure/GCP 三雲",
+   "desc": "資安平台的上游底層：(1) 防火牆 / 邊緣的自研安全處理器 ASIC；(2) 威脅情報 feeds、全網 telemetry 與暴露面管理（CTEM）數據；(3) 承載 SaaS 安全平台的超大規模雲基礎設施。",
+   "marketSize": "防火牆硬體 ASIC 為 Fortinet 獨家差異化；威脅情報 + telemetry 數據湖為平台燃料",
+   "growth": "AI telemetry 量爆增帶動數據湖需求；CTEM 暴露面管理為新興上游",
+   "share": "null",
+   "analysis": "硬體：Fortinet（FTNT）為業界唯一自研安全 ASIC 廠——SP5（7nm，17x 防火牆效能、2.5Gbps SSL 檢測、省電 88%）、NP7 網路處理器、CP9 內容處理器，把矽底層優勢轉成防火牆市佔護城河（與半導體 wiki 的天然連結點）。數據 / 情報：CRWD Falcon、PANW、Microsoft 以全網 telemetry 與威脅情報訓練偵測模型；CTEM（持續威脅暴露管理）為新興上游環節。雲基建：ZS、CRWD、NET、PANW Prisma 等 SaaS 平台底層綁定 AWS（AMZN）/ Azure（MSFT）/ GCP（GOOGL）三雲——既是基礎設施供應商，Microsoft / Google 又同時是資安市場的下場玩家（Defender/Sentinel/Wiz），上下游高度交織。2026-03-11 Google 完成 USD 32B 收 Wiz（史上最大資安併購），把雲原生 CNAPP / 雲與 AI 安全直接內建進超大雲端平台，新進的雲端巨頭一躍成為資安平台主要競爭者。",
+   "companies": [
+    {
+     "name": "Fortinet（FortiASIC SP5/NP7）",
+     "ticker": "FTNT",
+     "country": "US",
+     "share": "唯一自研安全 ASIC 廠",
+     "products": "SP5（7nm 安全處理器）/ NP7 網路處理器 / CP9 內容處理器",
+     "note": "SP5 17x 防火牆效能、2.5Gbps SSL、省電 88%；自研晶片為防火牆市佔差異化",
+     "src": "https://www.fortinet.com/products/fortigate/fortiasic"
+    },
+    {
+     "name": "Microsoft（Azure + 威脅情報）",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "全球最大資安廠 + 雲基建",
+     "products": "Azure 承載 / MSTIC 威脅情報 / Defender telemetry",
+     "note": "資安年營收逾 USD 37B（FY25，佔總營收 ~14%）；既供雲基建又下場競爭",
+     "src": "https://www.cybersecuritydive.com/news/microsoft-20b-security-revenue/641498/"
+    },
+    {
+     "name": "Amazon Web Services",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "SaaS 安全平台主要雲底層",
+     "products": "雲基礎設施承載 / GuardDuty / Security Lake",
+     "note": "CRWD/ZS/PANW 多數 SaaS 平台運行於 AWS",
+     "src": "https://cybersecurityventures.com/official-2026-cybersecurity-market-report-predictions-and-statistics/"
+    },
+    {
+     "name": "Alphabet / Google Cloud（含 Wiz）",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "雲基建 + 收 Wiz 下場成資安平台",
+     "products": "GCP 承載 / Mandiant 威脅情報 / Wiz CNAPP 雲與 AI 安全",
+     "note": "2026-03-11 完成收 Wiz USD 32B（史上最大資安併購），併入 Google Threat Intelligence + Security Operations；Wiz RSAC 2026 推 AI Application Protection Platform（agentic-native 安全、AI-BOM 追蹤 shadow AI），雲原生資安由獨立廠商主導轉為超大雲端平台內建",
+     "src": "https://www.securityweek.com/wiz-joins-google-cloud-as-landmark-acquisition-closes/"
+    },
+    {
+     "name": "CrowdStrike（Threat Graph telemetry）",
+     "ticker": "CRWD",
+     "country": "US",
+     "share": "全網 telemetry 數據湖",
+     "products": "Threat Graph / Charlotte AI 威脅情報",
+     "note": "以全網 telemetry 訓練偵測模型，數據規模為平台護城河",
+     "src": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-first-quarter-fiscal-year-2027-financial"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "endpoint_xdr"
+    },
+    {
+     "id": "network_sase"
+    },
+    {
+     "id": "siem_secops"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Fortinet FortiASIC SP5（官方）",
+     "url": "https://www.fortinet.com/products/fortigate/fortiasic"
+    },
+    {
+     "label": "Microsoft 資安逾 USD 20B（Cybersecurity Dive）",
+     "url": "https://www.cybersecuritydive.com/news/microsoft-20b-security-revenue/641498/"
+    }
+   ]
+  },
+  {
+   "id": "endpoint_xdr",
+   "row": "core",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "端點 EDR / XDR",
+   "nameEn": "Endpoint EDR / XDR",
+   "competition": "oligopoly",
+   "single": "CRWD + Microsoft 雙雄合計 >50% EDR 市佔；CRWD 單一 agent 模組化 vs MS 捆綁侵蝕",
+   "desc": "端點偵測與回應（EDR）及延伸的跨層偵測回應（XDR）——資安平台整併的「灘頭堡」，多數平台以端點為核心 agent 再外擴模組。",
+   "marketSize": "端點安全市場 USD 23.3B（2026）；EDR 子市場 USD 6-7B、CAGR ~24-26%",
+   "growth": "EDR CAGR ~24-26%；XDR ~20-21%；CRWD AIDR ARR 環比 +250%",
+   "share": "null",
+   "analysis": "CrowdStrike（CRWD）EPP 市佔 ~22.5%（#1 純廠），ending ARR USD 5.51B（+24%）、淨新增 ARR USD 256M（+32%，Q1 FY27），Falcon 單一輕量 agent 部署全模組、AIDR ARR 環比 +250%，2026-07-02 進行 4:1 分割。Microsoft Defender（MSFT）EPP 市佔 ~13.6%，靠 M365 E5 捆綁侵蝕，與 CRWD 合計逾 50% EDR 市場。SentinelOne（S）營收 USD 277M（+21%）、ARR USD 1,163M（+23%），近 50% ARR 來自非端點，2026 裁員 8% 並收 Prompt Security + Observo。Trend Micro（4704.T）Vision One ARR USD 467M（+58%）。⚠ Microsoft 捆綁是純廠最大威脅，CRWD/S 須靠最佳效能與跨雲中立防守。",
+   "companies": [
+    {
+     "name": "CrowdStrike Falcon",
+     "ticker": "CRWD",
+     "country": "US",
+     "share": "EPP 市佔 ~22.5%（#1 純廠）",
+     "products": "Falcon 單 agent 模組化（EDR/XDR/Identity/SIEM/Cloud）",
+     "note": "營收 USD 1.39B(+26%，連四季加速)；ARR USD 5.51B(+24%)；淨新增 ARR USD 256M(+32%)；FY27 淨新增 ARR 成長指引上調至 27.7%；Falcon Flex ARR >USD 1.9B(近翻倍)；2026-07 4:1 分割",
+     "src": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-first-quarter-fiscal-year-2027-financial"
+    },
+    {
+     "name": "Microsoft Defender",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "EPP 市佔 ~13.6%",
+     "products": "Defender for Endpoint / Defender XDR",
+     "note": "M365 E5 捆綁；資安年營收逾 USD 37B；與 CRWD 合計 >50% EDR 市場",
+     "src": "https://6sense.com/tech/endpoint-protection/crowdstrike-market-share"
+    },
+    {
+     "name": "SentinelOne Singularity",
+     "ticker": "S",
+     "country": "US",
+     "share": "EDR/XDR 第三勢力",
+     "products": "Singularity Platform（端點 + 雲 + 數據 + AI SecOps）",
+     "note": "Q1 FY27 ARR USD 1,163M(+23%，加速)、近 50% ARR 非端點；2026-05-28 再裁約 8%（一次性費用約 USD 25M）、聚焦 AI/Data/Cloud/Endpoint；連三次重組(2025-03/2025-07/2026-05)顯示在 CRWD+MS 夾擊下守勢；收 Prompt Security+Observo",
+     "src": "https://www.stocktitan.net/sec-filings/S/8-k-sentinel-one-inc-reports-material-event-295d61d04d63.html"
+    },
+    {
+     "name": "Trend Micro Vision One",
+     "ticker": "4704.T",
+     "country": "JP",
+     "share": "亞洲端點 / XDR 龍頭",
+     "products": "TrendAI Vision One（XDR/SIEM/CNAPP）",
+     "note": "FY25 淨收入 ¥276B(~USD 1.77B)；Vision One ARR USD 467M(+58%)；創於台灣、總部東京",
+     "src": "https://www.cybersecuritydive.com/news/microsoft-demand-security-q1-ai/697753/"
+    },
+    {
+     "name": "Sophos / Bitdefender",
+     "ticker": "—",
+     "country": "UK",
+     "share": "中端市場 / MSP 通路",
+     "products": "Intercept X EDR / GravityZone",
+     "note": "私有（Sophos 屬 Thoma Bravo）；中小企業與 MSP 通路強",
+     "src": "https://www.mordorintelligence.com/industry-reports/endpoint-detection-and-response-market"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "upstream_silicon_intel"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "siem_secops"
+    },
+    {
+     "id": "mssp_ciso"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CrowdStrike Q1 FY27 財報（官方 IR）",
+     "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-first-quarter-fiscal-year-2027-financial"
+    },
+    {
+     "label": "端點安全 EDR 市場（Mordor）",
+     "url": "https://www.mordorintelligence.com/industry-reports/endpoint-detection-and-response-market"
+    }
+   ]
+  },
+  {
+   "id": "network_sase",
+   "row": "core",
+   "col": 3,
+   "span": 3,
+   "kind": "stage",
+   "name": "網路安全 / SASE / SSE",
+   "nameEn": "Network Security / SASE / SSE",
+   "competition": "competitive",
+   "single": "ZS 為 SSE Gartner MQ 龍頭；PANW Prisma SASE 以 platformization 衝 NGS ARR USD 20B 目標",
+   "desc": "零信任 SASE（安全存取服務邊緣）/ SSE（安全服務邊緣）整合 SWG、CASB、ZTNA、FWaaS——取代傳統 VPN 與分散網路安全工具，是平台整併第二大戰場。",
+   "marketSize": "SSE 市場 USD 6.26B→36.87B（2033），CAGR 21.9%；SASE 為 ZS/PANW 主戰場",
+   "growth": "SSE CAGR ~22%；但 ZS FY27 ARR 增速下修至 16-17%（從 +25%）",
+   "share": "null",
+   "analysis": "Zscaler（ZS）ARR USD 3,525M（+25%，Q3 FY26），SSE Gartner MQ 龍頭、零信任 proxy 架構；但 FY27 ARR 增速指引驟降至 16-17%（進入成熟期）。Palo Alto（PANW）NGS ARR USD 8.18B（+60%）、總營收 USD 3.0B（+31%），platformized 客戶 2,280 家、NRR 120%，三平台 Strata（網路）+ Prisma（雲 / SASE）+ Cortex（AI SecOps）共 ~33 筆併購組成，目標 FY30 NGS ARR USD 20B。Fortinet（FTNT）billings USD 2.09B（+31%）、SASE 大企業滲透 16%→18%，自研 ASIC 加持。Cloudflare（NET）營收 USD 639.8M（+34%），SASE 單客戶汰換 16 家 legacy 廠。Cisco（CSCO）整合 Splunk + 網路；Netskope（2025 IPO）/ Cato（IL，估值 USD 3B+）為 Forrester Wave 領先 / 強勁者。",
+   "companies": [
+    {
+     "name": "Zscaler",
+     "ticker": "ZS",
+     "country": "US",
+     "share": "SSE Gartner MQ 龍頭",
+     "products": "Zero Trust Exchange（ZIA/ZPA/ZDX）",
+     "note": "ARR USD 3,525M(+25%；有機 +21%，4pt 來自 Red Canary 併購)；以 USD 675M 收 MDR 廠 Red Canary 推 agentic SOC；FY27 增速下修至 16-17%",
+     "src": "https://ir.zscaler.com/news-releases/news-release-details/zscaler-announces-strong-third-quarter-fiscal-2026-results"
+    },
+    {
+     "name": "Palo Alto Networks",
+     "ticker": "PANW",
+     "country": "US",
+     "share": "平台整併領頭羊",
+     "products": "Strata（網路）+ Prisma SASE + Cortex（AI SecOps）",
+     "note": "NGS ARR USD 8.18B(+60%)；platformized 客戶 2,280、NRR 120%；目標 FY30 NGS ARR USD 20B",
+     "src": "https://www.tikr.com/blog/palo-alto-network-stock-hits-record-q3-revenue-of-3b-as-platformization-drives-60-ngs-arr-growth-heres-what-investors-need-to-know"
+    },
+    {
+     "name": "Fortinet",
+     "ticker": "FTNT",
+     "country": "US",
+     "share": "防火牆 / Unified SASE",
+     "products": "FortiGate NGFW / Unified SASE（FortiSASE）",
+     "note": "billings USD 2.09B(+31%)、營收 USD 1.85B(+20%)；SASE 大企業滲透 16%→18%；自研 ASIC",
+     "src": "https://www.stocktitan.net/sec-filings/FTNT/8-k-fortinet-inc-reports-material-event-8e69acd2c455.html"
+    },
+    {
+     "name": "Cloudflare",
+     "ticker": "NET",
+     "country": "US",
+     "share": "雲原生 SASE 新勢力",
+     "products": "Cloudflare One（ZTNA/SWG/CASB）+ Magic WAN",
+     "note": "營收 USD 639.8M(+34%)；SASE 單客戶汰換 16 家 legacy；2026 AI-first 裁員 20%",
+     "src": "https://www.stocktitan.net/sec-filings/NET/8-k-cloudflare-inc-reports-material-event-070b89301d60.html"
+    },
+    {
+     "name": "Cisco（含 Splunk）",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "網路 + 安全整併",
+     "products": "Cisco Secure Access / Hypershield / Splunk",
+     "note": "收 Splunk USD 28B；網路霸主轉資安平台",
+     "src": "https://www.sdxcentral.com/news/netskope-palo-alto-networks-zscaler-lead-forrester-sase-rankings/"
+    },
+    {
+     "name": "Netskope",
+     "ticker": "NTSK",
+     "country": "US",
+     "share": "雲優先 SASE（DLP/CASB）",
+     "products": "Netskope One SASE Platform",
+     "note": "2025 IPO；Forrester SASE Wave 領先；DLP/CASB 強",
+     "src": "https://www.sdxcentral.com/news/netskope-palo-alto-networks-zscaler-lead-forrester-sase-rankings/"
+    },
+    {
+     "name": "Cato Networks",
+     "ticker": "—",
+     "country": "IL",
+     "share": "單一雲 SASE 服務",
+     "products": "Cato SASE Cloud",
+     "note": "私有；估值 USD 3B+；以 MPLS 替代 + 全球單一雲服務見長",
+     "src": "https://www.sdxcentral.com/news/netskope-palo-alto-networks-zscaler-lead-forrester-sase-rankings/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "upstream_silicon_intel"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "siem_secops"
+    },
+    {
+     "id": "waap_cdn"
+    },
+    {
+     "id": "mssp_ciso"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Zscaler Q3 FY26 財報（官方 IR）",
+     "url": "https://ir.zscaler.com/news-releases/news-release-details/zscaler-announces-strong-third-quarter-fiscal-2026-results"
+    },
+    {
+     "label": "SSE 市場規模（Grand View）",
+     "url": "https://www.grandviewresearch.com/industry-analysis/security-service-edge-sse-market-report"
+    },
+    {
+     "label": "SASE Forrester Wave 排名（SDxCentral）",
+     "url": "https://www.sdxcentral.com/news/netskope-palo-alto-networks-zscaler-lead-forrester-sase-rankings/"
+    }
+   ]
+  },
+  {
+   "id": "siem_secops",
+   "row": "secops",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "次世代 SIEM / SecOps",
+   "nameEn": "Next-Gen SIEM / SecOps",
+   "competition": "oligopoly",
+   "single": "Splunk（Cisco）市佔 ~46% 為龍頭；CRWD LogScale 無索引模型 + MS Sentinel Copilot 攪局",
+   "desc": "安全資訊與事件管理（SIEM）及安全營運（SecOps / SOAR）——彙整全棧 telemetry 做威脅偵測、調查與自動回應，AI 把自然語言威脅獵捕變成現實。",
+   "marketSize": "SIEM 市場 USD 13.67B（2031）；Splunk ~46% 市佔、Sentinel ~15%",
+   "growth": "次世代 SIEM 增速最快 ~12%；無索引擷取 + AI 自然語言獵捕主流化",
+   "share": "null",
+   "analysis": "Splunk（CSCO）SIEM 市佔 ~46%（#1），2024 被 Cisco 收 USD 28B、改寫路線與定價。Microsoft Sentinel（MSFT）市佔 ~15%，25,000 客戶、ARR 逾 USD 1B，整合 Security Copilot 做自然語言獵捕（FY26 Q3 Copilot 客戶數年增 2 倍、資料安全 triage agent 單季處理逾 200 萬筆告警）。CrowdStrike Next-Gen SIEM（CRWD）以 LogScale 無索引擷取模型主流化、Falcon 統一 telemetry，適合已標準化 Falcon 的客戶。IBM QRadar（IBM）~9% 市佔。整併邏輯：SIEM 是「平台收口」環節——端點 / 網路 telemetry 最終匯入 SIEM 做關聯分析，誰掌握 SIEM 誰就掌握 SOC 中樞，故 CRWD/PANW(Cortex)/MS 皆重兵投入。⚠ 2026-H1 新軸：Gartner 指 XDR『在達到高原前就被吸收』進 CRWD NG-SIEM、PANW XSIAM 等大平台；Agentic SOC/MDR 成全新催化軸——CRWD 2026-03 與 NVIDIA 擴大合作以 Nemotron 模型驅動 Agentic MDR（調查快 5 倍、分流準確 3 倍），EY/Grant Thornton 改採 Falcon Agentic MDR 取代傳統 MDR。",
+   "companies": [
+    {
+     "name": "Splunk（Cisco）",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "SIEM 市佔 ~46%（#1）",
+     "products": "Splunk Enterprise Security / SOAR",
+     "note": "2024 被 Cisco 收 USD 28B；整合至 Cisco 安全 + 可觀測",
+     "src": "https://6sense.com/tech/security-information-and-event-management-siem"
+    },
+    {
+     "name": "Microsoft Sentinel",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "SIEM 市佔 ~15%",
+     "products": "Sentinel（雲原生 SIEM）+ Security Copilot",
+     "note": "25,000 客戶、ARR 逾 USD 1B；Copilot 自然語言獵捕",
+     "src": "https://6sense.com/tech/security-information-and-event-management-siem"
+    },
+    {
+     "name": "CrowdStrike Next-Gen SIEM",
+     "ticker": "CRWD",
+     "country": "US",
+     "share": "無索引擷取主流化",
+     "products": "Falcon Next-Gen SIEM（LogScale）+ Charlotte AI",
+     "note": "無索引擷取模型；Falcon 統一 telemetry；適合已標準化 Falcon 客戶",
+     "src": "https://6sense.com/tech/security-information-and-event-management-siem"
+    },
+    {
+     "name": "IBM QRadar",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "SIEM 市佔 ~9%",
+     "products": "QRadar SIEM / SOAR",
+     "note": "傳統大廠；雲 QRadar Suite 轉型；部分資產售予 Palo Alto",
+     "src": "https://6sense.com/tech/security-information-and-event-management-siem"
+    },
+    {
+     "name": "Palo Alto Cortex",
+     "ticker": "PANW",
+     "country": "US",
+     "share": "AI SecOps 平台",
+     "products": "Cortex XSIAM / XDR / XSOAR",
+     "note": "AI 驅動 SecOps，整併至 platformization 第三支柱；收 IBM QRadar SaaS 客戶",
+     "src": "https://www.prnewswire.com/news-releases/security-information-and-event-management-market-worth-13-67-billion-by-2031--marketsandmarkets-302770642.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "endpoint_xdr"
+    },
+    {
+     "id": "network_sase"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "mssp_ciso"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SIEM 市佔（6sense）",
+     "url": "https://6sense.com/tech/security-information-and-event-management-siem"
+    },
+    {
+     "label": "SIEM 市場 USD 13.67B/2031（MarketsandMarkets）",
+     "url": "https://www.prnewswire.com/news-releases/security-information-and-event-management-market-worth-13-67-billion-by-2031--marketsandmarkets-302770642.html"
+    }
+   ]
+  },
+  {
+   "id": "identity_iam",
+   "row": "secops",
+   "col": 3,
+   "span": 3,
+   "kind": "stage",
+   "name": "身分 IAM / PAM / IGA",
+   "nameEn": "Identity IAM / PAM / IGA",
+   "competition": "competitive",
+   "single": "Microsoft Entra（4.25 億 MAU）以捆綁稱霸；CyberArk 被 PANW 收 USD 25B 後身分成 platformization 支柱",
+   "desc": "身分與存取管理（IAM）、特權存取管理（PAM）、身分治理與管理（IGA）——零信任的核心；AI agent 暴增使「非人類 / 機器身分」成為 2026 最熱身分子題。",
+   "marketSize": "IAM 服務市場 CAGR ~7%；身分為 AI agent 時代新主戰場",
+   "growth": "IGA / PAM 增速領先；Okta for AI Agents、CyberArk Idira 押注 agent 身分",
+   "share": "null",
+   "analysis": "Microsoft Entra（MSFT）管理 4.25 億 MAU、50 萬+ 組織，是 Microsoft-centric 身分骨幹（捆綁稱霸）。Okta（OKTA）營收 USD 765M（+11%）、RPO USD 4.719B（+16%），新產品組合佔 25% bookings（IGA 領跑、PAM 次之），Okta for AI Agents 於 2026-04-30 GA、為史上最大新品 pipeline。CyberArk（PANW）PAM 龍頭，2026-02 被 PANW 以 USD 25B 收購、更名 Idira，使身分成為 PANW platformization 第四支柱。SailPoint（SAIL）IGA 龍頭，ARR USD 1,163M（+26%）、SaaS ARR USD 781M（+36%，Q1 FY27），2025 IPO；非人類／機器身分（NHI）為其 2026 最快成長段（機器身分對人類已達 80:1）。⚠ 弦外之音：CyberArk 被收編後其中立性受損，反利好仍獨立的 SailPoint / Okta。",
+   "companies": [
+    {
+     "name": "Microsoft Entra",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "工作身分骨幹（捆綁稱霸）",
+     "products": "Entra ID / Entra Permissions / Verified ID",
+     "note": "4.25 億 MAU、50 萬+ 組織；M365/Azure 捆綁；Entra Agent ID 押注 agent 身分",
+     "src": "https://research.etr.ai/blog-observatory/identity-security-entra-and-okta-set-the-pace"
+    },
+    {
+     "name": "Okta",
+     "ticker": "OKTA",
+     "country": "US",
+     "share": "獨立雲原生身分龍頭",
+     "products": "Workforce/Customer Identity + Okta for AI Agents",
+     "note": "營收 USD 765M(+11%)；RPO USD 4.719B(+16%)；新產品佔 25% bookings；Agents 2026-04-30 GA",
+     "src": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Okta-Announces-First-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx"
+    },
+    {
+     "name": "CyberArk（Idira / PANW）",
+     "ticker": "PANW",
+     "country": "US",
+     "share": "PAM 龍頭",
+     "products": "Privileged Access / Secrets / 機器身分（Idira）",
+     "note": "2026-02-11 完成被 PANW 收 USD 25B（現金加股票，貢獻 NGS ARR 約 USD 16B 無機成長）；2026-05-12 正式發表 Idira 識別安全平台（PAM+機器/agentic 身分、零常駐特權）；成 PANW platformization 第四支柱",
+     "src": "https://www.stocktitan.net/sec-filings/PANW/8-k-palo-alto-networks-inc-reports-material-event-59898cb1c33a.html"
+    },
+    {
+     "name": "SailPoint",
+     "ticker": "SAIL",
+     "country": "US",
+     "share": "IGA 龍頭",
+     "products": "Identity Security Cloud（IGA / 存取認證 / 生命週期）",
+     "note": "ARR USD 1,163M(+26%)；SaaS ARR USD 781M(+36%，Q1 FY27)；2025 IPO；非人類／機器身分(NHI)為最快成長段",
+     "src": "https://investor.sailpoint.com/news-releases/news-release-details/sailpoint-announces-fiscal-second-quarter-2026-results"
+    },
+    {
+     "name": "Ping Identity / ForgeRock",
+     "ticker": "—",
+     "country": "US",
+     "share": "大企業 CIAM / 聯合身分",
+     "products": "PingOne / PingFederate",
+     "note": "私有（Thoma Bravo 整併 Ping+ForgeRock）；大企業聯合身分",
+     "src": "https://research.etr.ai/blog-observatory/identity-security-entra-and-okta-set-the-pace"
+    },
+    {
+     "name": "BeyondTrust / Delinea",
+     "ticker": "—",
+     "country": "US",
+     "share": "PAM 第二梯隊",
+     "products": "Privileged Remote Access / Secret Server",
+     "note": "私有；PAM 與 CyberArk 競爭",
+     "src": "https://www.wiseguyreports.com/reports/iam-security-services-market"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "upstream_silicon_intel"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "mssp_ciso"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Okta Q1 FY27 財報（官方 IR）",
+     "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Okta-Announces-First-Quarter-Fiscal-Year-2027-Financial-Results/default.aspx"
+    },
+    {
+     "label": "PANW 完成收購 CyberArk USD 25B（SDxCentral）",
+     "url": "https://www.sdxcentral.com/news/palo-alto-networks-completes-25b-cyberark-deal-to-ignite-identity-in-ai-era/"
+    },
+    {
+     "label": "SailPoint Q2 FY26 財報（官方 IR）",
+     "url": "https://investor.sailpoint.com/news-releases/news-release-details/sailpoint-announces-fiscal-second-quarter-2026-results"
+    }
+   ]
+  },
+  {
+   "id": "waap_cdn",
+   "row": "edge",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "應用 / 邊緣 WAAP / CDN / DDoS",
+   "nameEn": "Application / Edge WAAP / CDN / DDoS",
+   "competition": "competitive",
+   "single": "NET 為中小 / 開發者首選；Akamai 多 Tb DDoS 為大企業首選；API 安全為新增長極",
+   "desc": "Web 應用與 API 防護（WAAP）——把 WAF、bot 管理、L7 DDoS 緩解與 API 安全整合於 CDN / 邊緣網路；AI 驅動的自動化攻擊與 API 暴增使此環節結構性成長。",
+   "marketSize": "WAF/WAAP 已整併為含 bot + L7 DDoS + API 安全的綜合套件",
+   "growth": "API 安全與 bot 管理隨 AI 流量爆增；邊緣防護需求結構性上行",
+   "share": "null",
+   "analysis": "Cloudflare（NET）營收 USD 639.8M（+34%），WAAP + DDoS + bot + API + Workers 一站式，為中小 / 開發者首選，Workers 開發者數單季近抵 2025 全年；2026 AI-first 裁員 20%。Akamai（AKAM）多 Tb DDoS 防護、大企業首選，WAAP 整合套件減少工具碎片化。Fastly（FSLY）以 Signal Sciences 驅動 hybrid WAF。Imperva（屬 Thales，HO.PA）DB-layer + on-prem 混合估產首選。四大頭部廠預設規則對 OWASP Top 10 攔截率達 97-99%。整併邏輯：WAAP 與 SASE / Zero Trust 收斂——NET 同時跨網路（SASE）與應用（WAAP）兩環節，是「邊緣安全平台」整併的代表。",
+   "companies": [
+    {
+     "name": "Cloudflare",
+     "ticker": "NET",
+     "country": "US",
+     "share": "中小 / 開發者首選",
+     "products": "WAF + DDoS + Bot + API Shield + Workers",
+     "note": "營收 USD 639.8M(+34%)；Workers 開發者單季近抵 2025 全年；2026 裁員 20%",
+     "src": "https://www.stocktitan.net/sec-filings/NET/8-k-cloudflare-inc-reports-material-event-070b89301d60.html"
+    },
+    {
+     "name": "Akamai",
+     "ticker": "AKAM",
+     "country": "US",
+     "share": "大企業多 Tb DDoS 首選",
+     "products": "App & API Protector / Prolexic DDoS / Guardicore",
+     "note": "WAAP 整合套件（DDoS+bot+API+WAF）；轉型雲安全 + 微分段",
+     "src": "https://www.indusface.com/blog/best-cloud-waap-waf-software/"
+    },
+    {
+     "name": "Fastly",
+     "ticker": "FSLY",
+     "country": "US",
+     "share": "邊緣 / hybrid WAF",
+     "products": "Next-Gen WAF（Signal Sciences）/ 邊緣運算",
+     "note": "hybrid SaaS WAF；以 Signal Sciences 為核心",
+     "src": "https://www.fastly.com/blog/best-waf-solutions-2025-2026"
+    },
+    {
+     "name": "Imperva（Thales）",
+     "ticker": "HO.PA",
+     "country": "FR",
+     "share": "DB-layer / on-prem 混合",
+     "products": "Imperva WAF / API Security / DAM",
+     "note": "屬法國 Thales；DB-layer 防護與混合 / on-prem 估產首選",
+     "src": "https://www.indusface.com/blog/best-cloud-waap-waf-software/"
+    },
+    {
+     "name": "F5",
+     "ticker": "FFIV",
+     "country": "US",
+     "share": "ADC + 應用安全",
+     "products": "BIG-IP / Distributed Cloud WAAP / NGINX",
+     "note": "從 ADC 轉應用交付 + 安全平台；AI Gateway",
+     "src": "https://www.indusface.com/blog/best-cloud-waap-waf-software/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "network_sase"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "mssp_ciso"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cloudflare Q1 2026 8-K（StockTitan）",
+     "url": "https://www.stocktitan.net/sec-filings/NET/8-k-cloudflare-inc-reports-material-event-070b89301d60.html"
+    },
+    {
+     "label": "雲 WAAP / WAF 廠商（Indusface）",
+     "url": "https://www.indusface.com/blog/best-cloud-waap-waf-software/"
+    }
+   ]
+  },
+  {
+   "id": "mssp_ciso",
+   "row": "down",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "MSSP / 託管 SOC / 企業 CISO",
+   "nameEn": "MSSP / Managed SOC / Enterprise CISO",
+   "competition": "fragmented",
+   "single": "結構性催化 · CISO platform consolidation 是平台廠 NRR 120% 與超高客單價的根源",
+   "desc": "下游需求與交付：託管安全服務商（MSSP）/ 託管偵測回應（MDR）/ 託管 SOC 為交付通路；企業 CISO（金融 / 政府 / 製造 / 醫療）為最終買家，正主動把分散工具收編到單一主平台。",
+   "marketSize": "需求端：CISO 主動向 1-2 主平台收編；資安支出年增速比軟體快 50%",
+   "growth": "platformized 客戶 NRR 120%、客單價 5-10x；MDR / 託管 SOC 高速成長",
+   "share": "null",
+   "analysis": "需求催化：Morgan Stanley 2025-09 CIO 調查指資安支出年增速比整體軟體快 50%；Gartner 估 2026 整併型資安平台支出將逾 USD 215B、成長速度約為點狀產品的兩倍；AI 從實驗走向生產帶動攻擊面與防護同步爆發。Platform consolidation 是 2026 主旋律——企業厭倦管理數十個點狀工具，主動選定 1-2 個主平台收編，platformized 客戶 NRR 120%、近乎零流失、客單價是非平台客戶的 5-10 倍；2025 全年資安併購金額年增近 270%、逾 400 件，2026-03 單月即 38 件。交付端：MSSP / MDR 為平台觸達中小企業的通路；CRWD/S 提供託管 SOC，但 SentinelOne 連三次重組(2026-05 再裁 8%)、Cloudflare 裁 20% 顯示 AI 正取代部分 SOC 人力——2026-H1 Agentic SOC/MDR 興起（CRWD 攜 NVIDIA Nemotron，EY/Grant Thornton 改採 Falcon Agentic MDR），對人力密集 MSSP 長線利空、對 AI 自動化平台利多。下游也含雲市集 marketplace（AWS/Azure/GCP）作為通路。",
+   "companies": [
+    {
+     "name": "Accenture / Deloitte（MSSP/SI）",
+     "ticker": "ACN",
+     "country": "US",
+     "share": "大型 MSSP / 系統整合（切入 OT 軟體）",
+     "products": "託管 SOC / 資安顧問 / 平台導入 / OT 安全（Dragos+runZero+NetRise）",
+     "note": "2026-06-18 約 USD 4.1B 收 Dragos 多數股權 + runZero + NetRise，由服務跨入 OT 軟體；三者合計 ARR ~USD 208M(+53%)；CRWD AgentWorks 生態夥伴",
+     "src": "https://cybersecurityventures.com/official-2026-cybersecurity-market-report-predictions-and-statistics/"
+    },
+    {
+     "name": "金融 / 政府 / 製造 CISO",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "最終買家（主動整併）",
+     "products": "platform consolidation 採購決策",
+     "note": "厭倦點狀工具、主動向 1-2 主平台收編；NRR 120%、客單價 5-10x 之源",
+     "src": "https://www.fool.com/investing/2026/03/13/crowdstrike-vs-palo-alto-networks-which-cybersecur/"
+    },
+    {
+     "name": "AWS / Azure / GCP Marketplace",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "雲市集通路",
+     "products": "資安平台 SaaS 上架 / 承諾消費抵扣",
+     "note": "企業以雲消費承諾（committed spend）採購資安平台，加速整併",
+     "src": "https://cybersecurityventures.com/official-2026-cybersecurity-market-report-predictions-and-statistics/"
+    },
+    {
+     "name": "CHT Security（中華資安）",
+     "ticker": "—",
+     "country": "TW",
+     "share": "亞洲區域 MSSP",
+     "products": "AI-powered SOC / MDR / 資安服務",
+     "note": "台灣首家資安服務上市；母公司中華電信 2412.TW；東南亞擴展",
+     "src": "https://cybersecurityventures.com/official-2026-cybersecurity-market-report-predictions-and-statistics/"
+    },
+    {
+     "name": "Secureworks / Arctic Wolf（MDR）",
+     "ticker": "—",
+     "country": "US",
+     "share": "MDR / 託管 SOC",
+     "products": "Taegis MDR / Aurora 託管平台",
+     "note": "Secureworks 2025 被 Sophos 收；Zscaler 2026 以 USD 675M 收 MDR 廠 Red Canary（貢獻 ARR USD 127M）；2026-H1 Agentic MDR 崛起——EY/Grant Thornton 改採 CRWD Falcon Agentic MDR(NVIDIA Nemotron 驅動)取代傳統 MDR，對人力密集 MDR 形成替代壓力",
+     "src": "https://www.crowdstrike.com/en-us/press-releases/ey-selects-crowdstrike-to-power-its-agentic-soc-services-accelerated-by-nvidia/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "endpoint_xdr"
+    },
+    {
+     "id": "network_sase"
+    },
+    {
+     "id": "siem_secops"
+    },
+    {
+     "id": "identity_iam"
+    },
+    {
+     "id": "waap_cdn"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "CrowdStrike vs Palo Alto 平台整併（Motley Fool）",
+     "url": "https://www.fool.com/investing/2026/03/13/crowdstrike-vs-palo-alto-networks-which-cybersecur/"
+    },
+    {
+     "label": "2026 資安市場報告（Cybersecurity Ventures）",
+     "url": "https://cybersecurityventures.com/official-2026-cybersecurity-market-report-predictions-and-statistics/"
+    },
+    {
+     "label": "8 筆突破 USD 1B 併購（SecurityWeek）",
+     "url": "https://www.securityweek.com/8-cybersecurity-acquisitions-surpassed-1-billion-mark-in-2025/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "upstream_silicon_intel",
+   "endpoint_xdr"
+  ],
+  [
+   "upstream_silicon_intel",
+   "network_sase"
+  ],
+  [
+   "upstream_silicon_intel",
+   "identity_iam"
+  ],
+  [
+   "endpoint_xdr",
+   "siem_secops"
+  ],
+  [
+   "network_sase",
+   "siem_secops"
+  ],
+  [
+   "network_sase",
+   "waap_cdn"
+  ],
+  [
+   "endpoint_xdr",
+   "mssp_ciso"
+  ],
+  [
+   "siem_secops",
+   "mssp_ciso"
+  ],
+  [
+   "identity_iam",
+   "mssp_ciso"
+  ],
+  [
+   "waap_cdn",
+   "mssp_ciso"
+  ]
+ ],
+ "_proposed": {}
+}

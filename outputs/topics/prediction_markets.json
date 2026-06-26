@@ -1,0 +1,525 @@
+{
+ "id": "prediction_markets",
+ "tab": "預測市場",
+ "title": "預測市場 / 事件合約交易所供應鏈 (Prediction Markets / Event Contracts)",
+ "subtitle": "預測市場 — 把『未來事件的機率』封裝成 $0.01–$0.99 的二元事件合約（YES/NO），由 CFTC 監管、像期貨一樣可交易與清算的新興資產類別。爆發力驚人：Kalshi 2025 全年成交 $238 億，2026/5 單月即破 $170 億（YoY +2,500%）；Kalshi+Polymarket 2026 前數月合計已逾 $600 億，超越 2025 全年的 $510 億；Bernstein 估全年成交達 $2,400 億（+370%）、2030 年將達 $1 兆（CAGR ~80%）。價值鏈四段：①上游＝交易所/清算基建＋事件結果資料源（運動賽事資料、經濟指標、加密基準）；②中游＝持牌交易所/清算所（Kalshi、Polymarket、CME、CBOE、Rothera）；③下游分發通路＝券商與 App（Robinhood、DraftKings、FanDuel、moomoo）；④終端＝散戶投機與機構對沖。2026 五大催化：CFTC 於 6/10 發布首份事件合約規則草案（Reg 40.11＋Appendix F，公眾意見至 7/27）為產業立法定錨；ICE（NYSE 母公司）累計投入 $20 億入股 Polymarket（估值升至 $150 億），但醉翁之意在『資料分發』而非賭局——已推 Polymarket Signals 機構資料饋送；Polymarket 以 $1.12 億收購 CFTC 牌照交易所 QCEX、取得美國合規身分後於 2025/12 回歸美國；Kalshi 估值 5 個月翻倍至 $220 億；Robinhood 與 Susquehanna 合資收購 MIAXdx（改名 Rothera）自建交易所、欲擺脫對 Kalshi 的依賴（HOOD 貢獻 Kalshi 逾 5 成量）。絃外之音：本輪真正『賣鏟人』不是賭客也不是 App，而是 ①收授權費與資料費、與成交量正相關卻不承擔輸贏的『資料源＋交易所基建』（ICE、CME、CBOE、SRAD、GENI、MIAX），與 ②靠導流抽佣的券商通路（HOOD 事件合約營收 2026 估 $5.86 億、YoY +286%）——它們把博弈的波動風險留給交易者，自己賺穩定的『過路費』；而事件合約與運動博弈的監管界線（聯邦 CFTC vs 各州博弈法）正是 2026 最大法律變數。⚠ 與既有主題重疊：與 stablecoin_rwa 零重疊（彼為代幣化資產、此為事件衍生品）；與線上博弈/體育博彩主題部分相鄰（DKNG/FLUT 同時是博彩商）。非投資建議。",
+ "category": "fin",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "20+"
+  },
+  {
+   "k": "預測市場年成交（2026E）",
+   "v": "$2,400億",
+   "sub": "Bernstein 估 +370%；2030 上看 $1 兆（CAGR ~80%）",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "CFTC 6/10 首份事件合約規則草案立法定錨·聯邦 vs 各州博弈監管界線是最大法律變數",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "infra",
+   "label": "上游：交易所/清算基建 + 事件結果資料源",
+   "main": false
+  },
+  {
+   "id": "venue",
+   "label": "中游：持牌事件合約交易所/清算所",
+   "main": true
+  },
+  {
+   "id": "channel",
+   "label": "下游：分發通路（券商 / App）",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "終端：散戶投機 + 機構對沖",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "exchange_infra",
+   "row": "infra",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "交易所 / 清算 / 資料分發基建",
+   "nameEn": "Exchange · Clearing · Data Distribution Infra",
+   "competition": "oligopoly",
+   "single": "資料分發暗線 · ICE 累計 $20 億入股 Polymarket（估值 $150 億），但獨家全球分發其事件資料給機構（Polymarket Signals）——『買的是資料、不是賭局』",
+   "desc": "預測市場的『鐵軌與電網』：傳統交易所集團提供撮合/清算/結算技術與基準，並把事件機率資料正規化後分發給機構——與成交量正相關卻不承擔輸贏。",
+   "marketSize": "事件合約成交 2026E $2,400 億 → 2030 $1 兆",
+   "growth": "ICE 累計入股 Polymarket $20 億；推 Polymarket Signals 機構資料饋送",
+   "share": "null",
+   "analysis": "ICE（NYSE 母公司）2025/10 首筆 $10 億、2026/3 再加碼 $6 億現金＋至多 $4,000 萬證券，累計約 $20 億入股 Polymarket（估值升至 $150 億），但 CFO 與分析師一致定調：ICE 的投資論題是成為『Polymarket 事件資料的全球獨家機構分發商』，2026/2 推出 Polymarket Signals & Sentiment——把群眾機率正規化為機構可用的結構化市場訊號，醉翁之意在資料費而非賭局。CME（CME）以既有期貨清算基建承接 DraftKings Predictions 與 FanDuel Predicts（分 50% 毛收入、承擔交易所成本），是『不開 App、只賣鐵軌』的隱形受惠者。CBOE 2026Q2 推 Mini-SPX 預測合約、以選擇權外殼提供『三段式賠付區間』創新（突破 YES/NO 二元）、由 OCC 清算。MIAX（NYSE: MIAX）旗下 MIAXdx 被 Robinhood/Susquehanna 合資收購、改名 Rothera。CF Benchmarks（Kraken 旗下）提供加密事件合約結算基準。",
+   "companies": [
+    {
+     "name": "Intercontinental Exchange",
+     "ticker": "ICE",
+     "country": "US",
+     "share": "Polymarket 最大股東+獨家資料分發",
+     "products": "NYSE 母公司 / Polymarket Signals 機構資料饋送 / 清算結算技術",
+     "note": "2025/10 首筆 $10 億、2026/3 再 $6 億現金＋至多 $4,000 萬證券，累計約 $20 億入股 Polymarket（估值升至 $150 億）；投資論題是『獨家全球分發 Polymarket 事件資料給機構』而非賭局——買資料不買賭場",
+     "src": "https://ir.theice.com/press/news-details/2026/Intercontinental-Exchange-Announces-New-600-Million-Investment-in-Polymarket/default.aspx"
+    },
+    {
+     "name": "CME Group",
+     "ticker": "CME",
+     "country": "US",
+     "share": "DKNG/FanDuel 事件合約清算後台",
+     "products": "事件合約撮合/清算基建 / 經濟指標+指數+商品基準",
+     "note": "承接 DraftKings Predictions 與 FanDuel Predicts；FanDuel Predicts 分 CME 50% 毛收入、CME 承擔交易所成本——『只賣鐵軌不開 App』的隱形受惠者",
+     "src": "https://www.cmegroup.com/media-room/press-releases/2025/12/22/fanduel-and-cme-group-launch-fanduel-predicts.html"
+    },
+    {
+     "name": "Cboe Global Markets",
+     "ticker": "CBOE",
+     "country": "US",
+     "share": "選擇權系交易所跨入預測市場",
+     "products": "Mini-SPX 預測合約（2026Q2）/ 三段式賠付區間 / OCC 清算",
+     "note": "以選擇權外殼提供突破 YES/NO 的『payout zone』中間賠付，現金結算、OCC 集中清算；聚焦金融/經濟合約（其最深專長）",
+     "src": "https://ir.cboe.com/news/news-details/2026/Cboe-Introduces-Innovative-Prediction-Markets-Framework-Expanding-Choice-Beyond-Yes-Or-No-Outcomes/default.aspx"
+    },
+    {
+     "name": "Miami International (MIAX)",
+     "ticker": "MIAX",
+     "country": "US",
+     "share": "Rothera 交易所/清算所母體",
+     "products": "MIAXdx（DCM+DCO+SEF，已改名 Rothera）",
+     "note": "2026/1/20 由 Robinhood×Susquehanna 合資收購 MIAXdx；MIAX 為母公司（NYSE: MIAX），Rothera 為子公司（未單獨上市）",
+     "src": "https://robinhood.com/us/en/newsroom/robinhood-prediction-markets-joint-venture/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "kalshi_polymarket"
+    },
+    {
+     "id": "regulated_venues"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ICE 再投 Polymarket $6 億、完成 $20 億承諾",
+     "url": "https://ir.theice.com/press/news-details/2026/Intercontinental-Exchange-Announces-New-600-Million-Investment-in-Polymarket/default.aspx"
+    },
+    {
+     "label": "ICE 入股 Polymarket 重點在資料而非賭局 (FinTech Weekly)",
+     "url": "https://www.fintechweekly.com/news/intercontinental-exchange-polymarket-financial-data-infrastructure-2026"
+    },
+    {
+     "label": "FanDuel×CME Group 推 FanDuel Predicts（CME 分 50% 毛收入）",
+     "url": "https://www.cmegroup.com/media-room/press-releases/2025/12/22/fanduel-and-cme-group-launch-fanduel-predicts.html"
+    },
+    {
+     "label": "Cboe 推三段式賠付預測市場框架（2026Q2 Mini-SPX）",
+     "url": "https://ir.cboe.com/news/news-details/2026/Cboe-Introduces-Innovative-Prediction-Markets-Framework-Expanding-Choice-Beyond-Yes-Or-No-Outcomes/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "data_source",
+   "row": "infra",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "事件結果資料源 / 整合服務",
+   "nameEn": "Event Outcome Data & Integrity",
+   "competition": "oligopoly",
+   "single": "結算唯一真相源 · 官方運動資料＝合約能否創建與結算的關卡；SRAD 成 Kalshi 官方資料源、GENI 供 Polymarket（LIGA MX）資料",
+   "desc": "事件合約必須有『可信、低延遲、不可竄改』的結果判定來源——運動賽事資料、整合度監測、加密基準——成為交易所的關鍵單點依賴。",
+   "marketSize": "運動資料雙寡占，併入既有 SaaS 大盤",
+   "growth": "SRAD 簽 Kalshi 多年全球協議；GENI FY26 營收上修至 $9.9–10.1 億",
+   "share": "null",
+   "analysis": "事件合約的結算需要『官方、低延遲、防舞弊』的結果判定——這把運動資料雙寡頭 Sportradar 與 Genius Sports 直接推進預測市場供應鏈，且其角色與成交量正相關。Sportradar（SRAD）2026/6/8 簽下與 Kalshi 的首創全球多年協議，成官方資料與解決方案商，供 MLB/NHL/MLS/UFC 等內容＋整合度服務（UFDS AI 偵測異常、SIE），消息日股價 +8.4%。Genius Sports（GENI）2026/6 與 Polymarket、LIGA MX 三方合作，供官方資料支援合約創建與結算；本季已導入多家高知名度造市商使用其低延遲資料饋送；併購 Legend 後 FY26 營收上修至 $9.9–10.1 億、調整後 EBITDA $2.7–2.8 億。CF Benchmarks（Kraken 旗下）供加密事件合約結算基準。",
+   "companies": [
+    {
+     "name": "Sportradar",
+     "ticker": "SRAD",
+     "country": "CH",
+     "share": "Kalshi 官方資料源",
+     "products": "官方運動資料/即時賠率 / UFDS AI 整合度監測 / Sportradar Integrity Exchange",
+     "note": "2026/6/8 簽 Kalshi 首創全球多年協議，供 MLB/NHL/MLS/UFC 等內容＋整合度服務；消息日股價 +8.4% 至 $15.11",
+     "src": "https://sportradar.com/content-hub/news/sportradar-and-kalshi-announce-first-of-its-kind-data-and-infrastructure-global-partnership-for-prediction-markets/"
+    },
+    {
+     "name": "Genius Sports",
+     "ticker": "GENI",
+     "country": "UK",
+     "share": "Polymarket 運動資料供應",
+     "products": "官方低延遲資料饋送 / 合約創建與結算資料",
+     "note": "2026/6 與 Polymarket、LIGA MX 三方合作供官方資料；本季導入多家高知名度造市商；併 Legend 後 FY26 營收上修至 $9.9–10.1 億",
+     "src": "https://www.stocktitan.net/news/GENI/liga-mx-and-polymarket-announce-sponsorship-agreement-for-the-us-60a07rz1aen4.html"
+    },
+    {
+     "name": "CF Benchmarks (Kraken)",
+     "ticker": "—",
+     "country": "UK",
+     "share": "加密事件合約結算基準",
+     "products": "加密基準指數 / 結算參考價",
+     "note": "未上市（Kraken 旗下）；供 Kalshi 加密事件合約結算基準",
+     "src": "https://www.cfbenchmarks.com/blog/kalshi-leads-surging-crypto-event-contract-market-powered-by-cf-benchmarks"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "kalshi_polymarket"
+    },
+    {
+     "id": "regulated_venues"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sportradar×Kalshi 首創全球資料與基建協議（2026/6/8）",
+     "url": "https://sportradar.com/content-hub/news/sportradar-and-kalshi-announce-first-of-its-kind-data-and-infrastructure-global-partnership-for-prediction-markets/"
+    },
+    {
+     "label": "Genius Sports 供 Polymarket／LIGA MX 預測市場資料",
+     "url": "https://www.stocktitan.net/news/GENI/liga-mx-and-polymarket-announce-sponsorship-agreement-for-the-us-60a07rz1aen4.html"
+    },
+    {
+     "label": "Genius Sports Q1 2026：預測市場成新成長軸",
+     "url": "https://www.gamblinginsider.com/news/159115/genius-sports-q1-prediction-markets-legend-beyond-sports-data"
+    }
+   ]
+  },
+  {
+   "id": "kalshi_polymarket",
+   "row": "venue",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "純玩家持牌交易所（雙雄）",
+   "nameEn": "Pure-Play Licensed Exchanges (Duopoly)",
+   "competition": "oligopoly",
+   "single": "雙寡頭格局 · Kalshi（CFTC DCM）vs Polymarket（鏈上＋收 QCEX 取得美國牌照）——前者估值 $220 億、後者 $150 億，合計囊括逾 9 成成交量",
+   "desc": "預測市場的核心『場館』——CFTC 持牌的指定合約市場（DCM）與清算所，撮合 YES/NO 事件合約、自證合約、收取交易費。",
+   "marketSize": "Kalshi+Polymarket 2026 前數月合計逾 $600 億",
+   "growth": "Kalshi 2026/5 單月破 $170 億（YoY +2,500%）；估值 5 個月翻倍至 $220 億",
+   "share": "null",
+   "analysis": "雙寡頭主導全球事件合約成交。Kalshi（未上市，估值 $220 億）為 CFTC 直接監管的 DCM，2025 全年成交 $238 億、2026/5 單月即破 $170 億（YoY +2,500%）；2025/12 Series E $10 億（Paradigm 領投）估值 $110 億，2026/3 再募逾 $10 億、5 個月估值翻倍至 $220 億；正打造『預測市場版 Bloomberg Terminal』搶機構。Polymarket（未上市，估值 $150 億）以鏈上 USDC 結算起家、為全球最大政治/事件市場，2025/7 以 $1.12 億收購 CFTC 牌照交易所＋清算所 QCEX、11 月獲 CFTC 修訂指定令、2025/12/2 正式回歸美國（可直接對接券商與用戶）；ICE 累計 $20 億入股。Robinhood/Susquehanna 合資的 Rothera（前 MIAXdx）2026Q2 上線、自證棒球/初領失業金/核心 PCE 合約，欲讓 HOOD 擺脫對 Kalshi 的依賴。",
+   "companies": [
+    {
+     "name": "Kalshi",
+     "ticker": "—",
+     "country": "US",
+     "share": "CFTC DCM 龍頭、估值 $220 億",
+     "products": "事件合約 DCM / 自證合約 / 機構終端（建置中）",
+     "note": "未上市；2025 全年成交 $238 億、2026/5 單月破 $170 億(YoY +2,500%)；Series E $10 億@$110 億(Paradigm 領投)，2026/3 再募逾 $10 億、估值翻倍至 $220 億；HOOD 貢獻其逾 5 成量",
+     "src": "https://news.kalshi.com/p/kalshi-11-billion-valuation-series-e"
+    },
+    {
+     "name": "Polymarket",
+     "ticker": "—",
+     "country": "US",
+     "share": "全球最大政治/事件市場、估值 $150 億",
+     "products": "鏈上 USDC 事件合約 / QCEX（CFTC 牌照交易所＋清算所）",
+     "note": "未上市；2025/7 以 $1.12 億收購 QCEX 取得美國合規身分、11 月獲 CFTC 修訂指定令、2025/12/2 回歸美國；ICE 累計 $20 億入股、估值升至 $150 億（2026/4 再洽 $4 億）",
+     "src": "https://www.prnewswire.com/news-releases/polymarket-acquires-cftc-licensed-exchange-and-clearinghouse-qcex-for-112-million-302509626.html"
+    },
+    {
+     "name": "Rothera (Robinhood×SIG)",
+     "ticker": "—",
+     "country": "US",
+     "share": "HOOD 自建 CFTC 交易所",
+     "products": "前 MIAXdx 改名（DCM+DCO+SEF）/ 棒球·初領失業金·核心 PCE 合約",
+     "note": "未上市；Robinhood 與 Susquehanna 合資 2026/1/20 收購 MIAXdx、改名 Rothera，預計 2026Q2 上線、欲讓 HOOD 擺脫對 Kalshi 的依賴",
+     "src": "https://robinhood.com/us/en/newsroom/robinhood-prediction-markets-joint-venture/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "exchange_infra"
+    },
+    {
+     "id": "data_source"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "broker_apps"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Kalshi $10 億 Series E、估值 $110 億 → 後續翻倍至 $220 億",
+     "url": "https://news.kalshi.com/p/kalshi-11-billion-valuation-series-e"
+    },
+    {
+     "label": "Polymarket 以 $1.12 億收購 CFTC 牌照交易所 QCEX",
+     "url": "https://www.prnewswire.com/news-releases/polymarket-acquires-cftc-licensed-exchange-and-clearinghouse-qcex-for-112-million-302509626.html"
+    },
+    {
+     "label": "Polymarket 估值升至 $150 億、再洽 $4 億 (Bloomberg via PYMNTS)",
+     "url": "https://www.pymnts.com/news/investment-tracker/2026/polymarket-targets-15-billion-valuation-in-new-funding-round/"
+    },
+    {
+     "label": "Kalshi 打造『預測市場版 Bloomberg Terminal』(CNBC)",
+     "url": "https://www.cnbc.com/2026/06/04/kalshi-is-building-a-bloomberg-terminal-for-prediction-markets.html"
+    }
+   ]
+  },
+  {
+   "id": "regulated_venues",
+   "row": "venue",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "上市交易所集團場館 / 機構入口",
+   "nameEn": "Listed Exchange Venues & Institutional Access",
+   "competition": "competitive",
+   "single": "機構化前哨 · Tradeweb（TW）入股 Kalshi＋接入其 3,000+ 機構客戶，把事件機率變成機構交易工作流的『前瞻風險訊號』",
+   "desc": "上市交易所集團與機構平台把事件合約導入正規金融軌道——既是中游撮合場館，也是機構分發的橋樑。",
+   "marketSize": "機構事件合約市場剛起步（經濟/政治/商業合約）",
+   "growth": "Tradeweb 入股 Kalshi、接入 3,000+ 機構客戶",
+   "share": "null",
+   "analysis": "上市交易所集團是預測市場『機構化』的前哨。Tradeweb（TW）2026/2/19 與 Kalshi 結盟並做少數股權投資，把 Kalshi 即時事件資料整合進其逾 3,000 家機構客戶的核心交易工作流，目標把『機率式前瞻風險訊號』直接嵌入機構決策。CME（CME）／CBOE（CBOE）／MIAX 同時在此層提供撮合與清算（詳見上游基建節點）。機構需求被預期集中在經濟、商業、政治合約——投資人尋求對事件的『直接離散曝險』，與目前佔 6 成的運動合約形成互補；Bernstein 估運動佔比 2030 將腰斬，機構合約是主要增量。",
+   "companies": [
+    {
+     "name": "Tradeweb Markets",
+     "ticker": "TW",
+     "country": "US",
+     "share": "Kalshi 機構分發夥伴+股東",
+     "products": "全球電子交易平台 / Kalshi 事件資料整合 / 機構風險訊號",
+     "note": "2026/2/19 與 Kalshi 結盟並做少數股權投資；把事件機率整合進逾 3,000 家機構客戶的核心交易工作流",
+     "src": "https://www.tradeweb.com/newsroom/media-center/news-releases/tradeweb-and-kalshi-announce-strategic-partnership-to-expand-institutional-access-to-prediction-markets/"
+    },
+    {
+     "name": "CME Group",
+     "ticker": "CME",
+     "country": "US",
+     "share": "事件合約清算場館",
+     "products": "事件合約撮合/清算（DKNG/FanDuel 後台）",
+     "note": "亦見上游基建節點；機構級期貨清算延伸至事件合約",
+     "src": "https://www.cmegroup.com/media-room/press-releases/2025/12/22/fanduel-and-cme-group-launch-fanduel-predicts.html"
+    },
+    {
+     "name": "Cboe Global Markets",
+     "ticker": "CBOE",
+     "country": "US",
+     "share": "選擇權系預測合約場館",
+     "products": "Mini-SPX 預測合約 / OCC 清算",
+     "note": "亦見上游基建節點；2026Q2 上線金融/經濟合約",
+     "src": "https://ir.cboe.com/news/news-details/2026/Cboe-Introduces-Innovative-Prediction-Markets-Framework-Expanding-Choice-Beyond-Yes-Or-No-Outcomes/default.aspx"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "exchange_infra"
+    },
+    {
+     "id": "data_source"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "broker_apps"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Tradeweb×Kalshi 結盟＋少數股權投資（接入 3,000+ 機構）",
+     "url": "https://www.tradeweb.com/newsroom/media-center/news-releases/tradeweb-and-kalshi-announce-strategic-partnership-to-expand-institutional-access-to-prediction-markets/"
+    },
+    {
+     "label": "Bernstein：預測市場 2030 達 $1 兆、運動佔比將腰斬",
+     "url": "https://www.cnbc.com/2026/04/14/prediction-markets-will-grow-to-1-trillion-by-2030-bernstein-says.html"
+    }
+   ]
+  },
+  {
+   "id": "broker_apps",
+   "row": "channel",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "下游：分發通路（券商 / App）",
+   "nameEn": "Distribution Channels (Brokers & Apps)",
+   "competition": "competitive",
+   "single": "流量入口卡位 · Robinhood 靠導流抽佣，事件合約 2026 營收估 $5.86 億(+286%)、貢獻 Kalshi 逾 5 成量——『不開交易所、賺過路費』",
+   "desc": "把事件合約端到散戶手機的最後一哩——券商、博彩商 App、財富管理平台——靠 KYC 客群與導流抽佣獲利，是成交量爆發的真正引擎。",
+   "marketSize": "通路抽佣與其他交易營收，與成交量正相關",
+   "growth": "HOOD 事件合約 2026 營收估 $5.86 億(+286%)；DKNG Predictions 年化 $31 億",
+   "share": "null",
+   "analysis": "通路層是成交量爆發的引擎，且多採『導流抽佣、不承擔輸贏』模式。Robinhood（HOOD）2026Q1 事件合約成交 88 億口、帶動『其他交易營收』YoY +320% 至 $1.47 億；Bernstein 估其 2026 預測市場營收約 $5.86 億（YoY +286%）；目前貢獻 Kalshi 逾 5 成量，但已透過自建 Rothera 把部分世界盃流量轉離 Kalshi。DraftKings（DKNG）的 DraftKings Predictions 走 CME 後台＋自有 Railbird（2025/10 收購），2026/5 月成交環比 +24% 至 $13 億、總年化成交達 $31 億（消費者年化 $13 億），消息日股價 +14.7%。FanDuel（Flutter 旗下，FLUT）2025/12 與 CME 推 FanDuel Predicts、5 州試點後全國滾動。moomoo（Futu 旗下，FUTU）接入 Kalshi 開放聯準會/選舉等合約。絃外之音：通路抽佣穩定、與賭注大小正相關卻不承擔賠付風險，是比交易所更輕資產的受惠位置——但聯邦 CFTC 牌照 vs 各州博弈法的監管界線是最大變數。",
+   "companies": [
+    {
+     "name": "Robinhood",
+     "ticker": "HOOD",
+     "country": "US",
+     "share": "最大事件合約導流通路",
+     "products": "事件合約中心 / 接 Kalshi＋自建 Rothera",
+     "note": "2026Q1 事件合約 88 億口、『其他交易營收』+320% 至 $1.47 億；2026 預測市場營收估 $5.86 億(+286%)；貢獻 Kalshi 逾 5 成量；已把部分世界盃流量轉離 Kalshi",
+     "src": "https://www.financemagnates.com/forex/why-robinhood-cant-ditch-kalshi-yet-despite-owning-its-own-exchange/"
+    },
+    {
+     "name": "DraftKings",
+     "ticker": "DKNG",
+     "country": "US",
+     "share": "博彩商跨入預測市場",
+     "products": "DraftKings Predictions（CME 後台＋自有 Railbird）",
+     "note": "2025/10 收購 Railbird Exchange；2026/5 月成交環比 +24% 至 $13 億、總年化 $31 億（消費者年化 $13 億）；消息日股價 +14.7%",
+     "src": "https://finance.yahoo.com/markets/stocks/articles/prediction-market-trading-draftkings-hits-124500341.html"
+    },
+    {
+     "name": "Flutter (FanDuel)",
+     "ticker": "FLUT",
+     "country": "IE",
+     "share": "FanDuel Predicts 通路",
+     "products": "FanDuel Predicts（CME 後台）/ S&P500・Nasdaq・商品・運動合約",
+     "note": "2025/12/22 與 CME 推出、首於 5 州上線後全國滾動；CME 分 50% 毛收入；在尚未合法線上博彩州提供運動合約",
+     "src": "https://flutter.com/news-media/press-releases/fanduel-and-cme-group-launch-fanduel-predicts/"
+    },
+    {
+     "name": "Futu (moomoo)",
+     "ticker": "FUTU",
+     "country": "HK",
+     "share": "亞系券商接入 Kalshi",
+     "products": "moomoo 接 Kalshi 預測市場 / 聯準會・選舉合約",
+     "note": "moomoo 與 Kalshi 合作擴大事件合約存取；把預測市場帶入零售券商客群",
+     "src": "https://www.stocktitan.net/news/FUTU/moomoo-partners-with-kalshi-to-expand-access-to-prediction-vr7cpr989x4d.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "kalshi_polymarket"
+    },
+    {
+     "id": "regulated_venues"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "end_users"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Robinhood 為何離不開 Kalshi（事件合約導流經濟）",
+     "url": "https://www.financemagnates.com/forex/why-robinhood-cant-ditch-kalshi-yet-despite-owning-its-own-exchange/"
+    },
+    {
+     "label": "DraftKings Predictions 月成交破 $13 億、年化 $31 億",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/prediction-market-trading-draftkings-hits-124500341.html"
+    },
+    {
+     "label": "FanDuel×CME 推 FanDuel Predicts（Flutter 新聞稿）",
+     "url": "https://flutter.com/news-media/press-releases/fanduel-and-cme-group-launch-fanduel-predicts/"
+    },
+    {
+     "label": "moomoo 接入 Kalshi 預測市場（聯準會/選舉合約）",
+     "url": "https://www.stocktitan.net/news/FUTU/moomoo-partners-with-kalshi-to-expand-access-to-prediction-vr7cpr989x4d.html"
+    }
+   ]
+  },
+  {
+   "id": "end_users",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端：散戶投機 + 機構對沖",
+   "nameEn": "Retail Speculation & Institutional Hedging",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "預測市場的需求引擎——散戶把事件當成可交易標的（運動為主、選舉/經濟次之），機構則用事件合約對沖政策/事件風險，回頭拉動上述全層用量。",
+   "marketSize": "2030 年成交 $1 兆、收入約 $100 億（Bernstein）",
+   "growth": "運動合約佔 6 成成交、2030 預期腰斬；機構合約成主要增量",
+   "share": "null",
+   "analysis": "需求端決定全鏈用量：散戶（運動、選舉、加密、流行文化）目前是成交主力，機構（政策、利率、CPI、地緣事件對沖）是增量來源。CFTC 2026/6/10 首份事件合約規則草案（修訂 Reg 40.11＋新增 Appendix F）以三步分析框架界定哪些合約涉及『博弈/非法活動/違反公共利益』、定義 gaming、明定 90 天自證審查程序，公眾意見至 7/27——這是把產業從灰色地帶拉進聯邦監管的立法定錨，但也劃出『聯邦 CFTC 事件合約 vs 各州博弈法』的法律戰線。⚠ 風險：①運動事件合約是否被各州視為非法博彩仍在訴訟（多州博彩監管機構發禁制令）；②CFTC 最終規則若收緊運動合約，將直接衝擊佔 6 成量的成交基本盤；③散戶投機集中度高、波動性大。絃外之音：真正抗風險的投資位置是『收資料費/授權費/清算費、與成交量正相關卻不承擔賠付』的基建與資料源（ICE/CME/CBOE/SRAD/GENI/MIAX/TW），而非賭注本身。",
+   "companies": [
+    {
+     "name": "散戶交易者（運動/選舉/加密）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "成交主力",
+     "products": "YES/NO 事件合約投機",
+     "note": "運動合約佔 6 成；用量回饋全層；監管界線是最大變數"
+    },
+    {
+     "name": "機構/造市商（對沖）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "增量需求",
+     "products": "政策/利率/CPI/事件風險對沖",
+     "note": "經濟·政治·商業合約是 2030 主要增量；造市商已導入官方資料饋送"
+    },
+    {
+     "name": "CFTC（監管定錨）",
+     "ticker": "—",
+     "country": "US",
+     "share": "聯邦事件合約監管",
+     "products": "Reg 40.11＋Appendix F 規則草案",
+     "note": "2026/6/10 首份規則草案、三步分析框架、公眾意見至 7/27；劃出聯邦 vs 各州博弈監管戰線",
+     "src": "https://www.cftc.gov/PressRoom/PressReleases/9249-26"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "broker_apps"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "CFTC 發布首份事件合約規則草案（2026/6/10）",
+     "url": "https://www.cftc.gov/PressRoom/PressReleases/9249-26"
+    },
+    {
+     "label": "CFTC 規則草案三步框架解析 (Greenberg Traurig)",
+     "url": "https://www.gtlaw.com/en/insights/2026/6/cftc-proposes-new-rules-for-events-contracts-on-prediction-markets"
+    },
+    {
+     "label": "Bernstein：預測市場 2030 達 $1 兆、收入約 $100 億",
+     "url": "https://www.cnbc.com/2026/04/14/prediction-markets-will-grow-to-1-trillion-by-2030-bernstein-says.html"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "exchange_infra",
+   "kalshi_polymarket"
+  ],
+  [
+   "exchange_infra",
+   "regulated_venues"
+  ],
+  [
+   "data_source",
+   "kalshi_polymarket"
+  ],
+  [
+   "data_source",
+   "regulated_venues"
+  ],
+  [
+   "kalshi_polymarket",
+   "broker_apps"
+  ],
+  [
+   "regulated_venues",
+   "broker_apps"
+  ],
+  [
+   "broker_apps",
+   "end_users"
+  ]
+ ],
+ "_proposed": {}
+}

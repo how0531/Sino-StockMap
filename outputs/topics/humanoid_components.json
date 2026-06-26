@@ -1,0 +1,931 @@
+{
+ "id": "humanoid_components",
+ "tab": "人形機器人零件",
+ "title": "人形機器人關鍵零組件供應鏈 (Humanoid Robot Components)",
+ "subtitle": "Humanoid Robot Components — 一台人形機器人 ≈ 28-40+ 個關節，每個旋轉關節 = 減速機＋無框馬達＋編碼器＋力矩感測，線性關節 = 行星滾柱螺桿＋無框馬達，靈巧手 = 微型空心杯馬達＋觸覺。本主題不碰整機與 AI 大腦（見 robot 主題），只深掘「卡量產」的零組件瓶頸與定價權。最深單點：諧波減速機（Harmonic Drive >70% 全球領導）與行星滾柱螺桿（瑞士 GSA+Rollvis >50%）。2026-H1 催化：Harmonic Drive 人形接單 FY03/27 翻倍～三倍、北美產能擴 33%；綠的諧波通過 Tesla 驗厰簽 1 萬套；特斯拉中系 T 鏈成形（三花傳獲 US$6.85 億線性致動器訂單/約 18 萬台量、拓普升 Tier 0.5）；兆威 2026/3 港股上市但破發；PaXini（B 輪 US$1.45 億）、LinkerBot（B+ 輪 螞蟻）觸覺/靈巧手大額募資。⚠ Tesla 2026 目標僅 5 萬台、V3 發表自 Q1 遞延至年中、高量產實際在 2027、台廠多屬送樣驗證、中系概念股估值高且傳聞訂單常遭澄清。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 9
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "50+"
+  },
+  {
+   "k": "獨佔／關鍵單點",
+   "v": 2,
+   "sub": "諧波 Harmonic Drive>70%·行星滾柱螺桿 GSA+Rollvis>50%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "中系 T 鏈成形(三花 US$6.85 億訂單傳聞)·Tesla 2026 僅 5 萬台 V3 遞延年中",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "material",
+   "label": "材料 / 感測晶片 Materials & Sensing IC",
+   "main": false
+  },
+  {
+   "id": "components",
+   "label": "關鍵零組件（瓶頸）Key Components",
+   "main": true
+  },
+  {
+   "id": "module",
+   "label": "致動器 / 靈巧手模組 Actuator & Hand Module",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "materials",
+   "row": "material",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "材料 / 感測晶片",
+   "nameEn": "Materials & Sensing IC",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "零組件上游：粉末冶金/合金鋼（齒輪/螺桿）、釹鐵硼磁材（馬達）、Hall/MEMS/GaN 感測晶片（力覺/編碼器）。",
+   "marketSize": "上游投入",
+   "growth": "隨關節放量",
+   "share": "null",
+   "analysis": "磁材：釹鐵硼（中系如金力永磁、日 TDK/信越主導稀土磁材）；齒輪/螺桿用粉末冶金與高精度合金鋼；力覺/編碼器晶片：TDK/ST/Bosch（MEMS/Hall）、AMS-OSRAM（磁位置感測 IC）、CT-Unite（中系 GaN 磁編碼器晶片）。材料端非本主題核心瓶頸，但稀土磁材的中國集中度（>80% 加工）與高精度合金鋼供應，會影響馬達與傳動件成本與產能。",
+   "companies": [
+    {
+     "name": "信越化學 Shin-Etsu",
+     "ticker": "4063.T",
+     "country": "JP",
+     "share": "釹鐵硼磁材",
+     "products": "稀土永磁 / 磁材",
+     "note": "馬達磁材上游",
+     "src": "https://www.shinetsu.co.jp/en/"
+    },
+    {
+     "name": "TDK",
+     "ticker": "6762.T",
+     "country": "JP",
+     "share": "磁材+感測 IC",
+     "products": "釹鐵硼 / Hall・MEMS 感測",
+     "note": "馬達磁材 + 感測元件",
+     "src": "https://www.tdk.com/en/index.html"
+    },
+    {
+     "name": "金力永磁 JL MAG",
+     "ticker": "300748.SZ",
+     "country": "CN",
+     "share": "中系釹鐵硼龍頭",
+     "products": "高性能釹鐵硼磁材",
+     "note": "中系稀土磁材主力（稀土加工集中度高）",
+     "src": "https://www.jlmag.com.cn/"
+    },
+    {
+     "name": "AMS-OSRAM",
+     "ticker": "AMS.SW",
+     "country": "AT",
+     "share": "磁位置感測 IC",
+     "products": "磁編碼器/位置感測晶片",
+     "note": "編碼器/伺服回授 IC",
+     "src": "https://ams-osram.com/"
+    },
+    {
+     "name": "STMicroelectronics / Bosch",
+     "ticker": "STM",
+     "country": "EU",
+     "share": "MEMS/Hall",
+     "products": "MEMS / Hall 感測晶片",
+     "note": "力覺/IMU/編碼器晶片",
+     "src": "https://www.st.com/"
+    },
+    {
+     "name": "CT-Unite 视觉芯",
+     "ticker": "—",
+     "country": "CN",
+     "share": "GaN 編碼晶片新創",
+     "products": "CT-21X GaN 磁編碼器晶片",
+     "note": "中國首款人形關節 GaN 磁編碼晶片、Q3 2026 量產",
+     "src": "https://www.trendforce.com/news/2026/05/04/news-china-unveils-first-gan-magnetic-encoder-chip-for-humanoid-robot-joints/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "harmonic_rv"
+    },
+    {
+     "id": "roller_screw"
+    },
+    {
+     "id": "frameless_motor"
+    },
+    {
+     "id": "coreless_motor"
+    },
+    {
+     "id": "force_sensor"
+    },
+    {
+     "id": "encoder"
+    }
+   ],
+   "sources": [
+    {
+     "label": "中國首款人形 GaN 磁編碼晶片（TrendForce）",
+     "url": "https://www.trendforce.com/news/2026/05/04/news-china-unveils-first-gan-magnetic-encoder-chip-for-humanoid-robot-joints/"
+    }
+   ]
+  },
+  {
+   "id": "harmonic_rv",
+   "row": "components",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "諧波 / RV / 行星減速機",
+   "nameEn": "Harmonic / RV / Planetary Reducer",
+   "competition": "monopoly",
+   "single": "近壟斷 ⚑ · Harmonic Drive Systems（日）諧波 >70% 全球領導；上肢/手腕首選。RV 擺線 Nabtesco ~35%（下肢大扭矩）",
+   "desc": "諧波（柔輪彈性變形、零背隙、輕量高減速比，上肢/手腕/手指）＋ RV 擺線/行星（大扭矩高剛性，腰/髖/膝下肢負重）。",
+   "marketSize": "最深單點 ⚑",
+   "growth": "人形拉動",
+   "share": "諧波 Harmonic Drive >70%",
+   "analysis": "諧波最深單點：Harmonic Drive Systems（6324.T，諧波發明商 >70% 全球領導；人形接單 Q2 ¥13 億、FY03/26 預期 ¥25 億、FY03/27 翻倍～三倍、3 月季訂單創 4 年新高；FY03/27 指引營收 ¥680 億/營益 ¥62 億/淨利 ¥45 億；於麻州附近擴北美產能 33%）。RV/行星下肢：Nabtesco（6268.T，RV 機器人應用 ~35%、2024 出貨 >160 萬台、2026 倍增 RV 產能、已併斯洛伐克擺線廠 Spinea 強化人形小型減速）。中系國產替代：綠的諧波（688017.SS，國內 >35%、2025 淨利預增 104.7%~131.5%（¥11.5~13 億）、人形營收佔比 2025E 15%→2026E 25%→2027E 30%、2025/12 通過 Tesla 供應鏈驗厰並簽 1 萬套諧波（2026 交付）、墨西哥合資廠 30 萬套直供 Tesla、推輕 30% 人形諧波 + 靈巧手微型諧波、年底產能達 79 萬台）。台廠：上銀（諧波+交叉滾子軸承+大銀模組）、和大（行星、Optimus 台灣行星齒輪供應）、鈞興-KY（人形專用諧波送樣中）。寡占/壟斷使整機 OEM 難快速壓價——賣鏟人定價權核心。",
+   "companies": [
+    {
+     "name": "Harmonic Drive Systems 哈默納科",
+     "ticker": "6324.T",
+     "country": "JP",
+     "share": "諧波 >70% 全球領導 ⚑",
+     "products": "strain wave gear / 諧波減速齒輪",
+     "note": "人形接單 Q2 ¥13 億、FY03/26 預期 ¥25 億、FY03/27 翻倍~三倍、北美客戶詢單加速、3 月季訂單創 4 年新高；FY03/27 指引營收 ¥680 億(+14.2%)/營益 ¥62 億(+141.5%)/淨利 ¥45 億(+179.7%)；麻州附近北美產能擴 33%",
+     "src": "https://www.investing.com/news/stock-market-news/this-japanese-stock-is-surging-on-positive-outlook-for-humanoid-robot-orders-4367329"
+    },
+    {
+     "name": "Nabtesco 那博特斯克",
+     "ticker": "6268.T",
+     "country": "JP",
+     "share": "RV 擺線 ~35% 全球",
+     "products": "RV 減速機 / RVmini / Monocrank",
+     "note": "2024 RV 出貨 >160 萬台、~35% 全球；2025/12 推 RVmini/Monocrank 小型精密系列；2026 倍增 RV 產能因應人形；已併斯洛伐克擺線廠 Spinea",
+     "src": "https://www.nabtesco.com/en/news/20251202-17329/"
+    },
+    {
+     "name": "綠的諧波 Leaderdrive",
+     "ticker": "688017.SS",
+     "country": "CN",
+     "share": "中國諧波龍頭 國內 >35%",
+     "products": "諧波減速機 / 輕 30% 人形諧波 / 靈巧手微型諧波",
+     "note": "2025 淨利預增 104.7%~131.5%（¥11.5~13 億）；人形營收佔比 2025E 15%→2026E 25%→2027E 30%；2025/12 通過 Tesla 供應鏈驗厰、簽 1 萬套諧波（2026 交付）、墨西哥合資廠 30 萬套直供 Tesla；年底產能達 79 萬台、增資擴 100 萬台/年諧波 + 20 萬套機電一體化",
+     "src": "https://vocus.cc/article/68b69b23fd8978000137cf96"
+    },
+    {
+     "name": "上銀 HIWIN",
+     "ticker": "2049.TW",
+     "country": "TW",
+     "share": "諧波+軸承+模組",
+     "products": "harmonic reducer / 交叉滾子軸承 / 大銀關節模組",
+     "note": "MS Humanoid 100 台廠之一；人形仍屬小批送樣",
+     "src": "https://www.hiwin.tw/"
+    },
+    {
+     "name": "和大工業 Hota",
+     "ticker": "1536.TW",
+     "country": "TW",
+     "share": "行星減速台廠",
+     "products": "行星減速機 / Optimus 關節件",
+     "note": "Tesla Optimus 台灣行星齒輪供應；合資盟英諧波年產 10 萬套",
+     "src": "https://www.hotagroup.com/"
+    },
+    {
+     "name": "鈞興-KY Pan Taiwan",
+     "ticker": "4571.TW",
+     "country": "TW",
+     "share": "齒輪/諧波送樣",
+     "products": "人形專用諧波 / 精密齒輪",
+     "note": "開發人形專用諧波、送樣認證中（概念/驗證）",
+     "src": "https://www.hiwin.tw/"
+    },
+    {
+     "name": "住友重機 Sumitomo HI",
+     "ticker": "6302.T",
+     "country": "JP",
+     "share": "行星/擺線",
+     "products": "Cyclo 減速機",
+     "note": "工業傳動老廠"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "actuator_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Harmonic Drive 人形訂單拉升股價（Investing.com）",
+     "url": "https://www.investing.com/news/stock-market-news/this-japanese-stock-is-surging-on-positive-outlook-for-humanoid-robot-orders-4367329"
+    },
+    {
+     "label": "Nabtesco 新精密減速機系列（官方）",
+     "url": "https://www.nabtesco.com/en/news/20251202-17329/"
+    }
+   ]
+  },
+  {
+   "id": "roller_screw",
+   "row": "components",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "行星滾柱螺桿 / 線性傳動",
+   "nameEn": "Planetary Roller Screw · Linear",
+   "competition": "oligopoly",
+   "single": "鎖喉點 ⚑ · 瑞士 GSA + Rollvis 全球 >50%；Tesla Optimus 14 根行星滾柱螺桿主供 GSA；Ewellix（瑞典→Schaeffler）第三",
+   "desc": "把旋轉轉成直線、承受大軸向力的行星滾柱螺桿（定位重複精度 ±5µm，優於滾珠螺桿 30-40%），用於人形上臂/前臂/大腿/小腿線性致動器；含滾珠螺桿/線軌。",
+   "marketSize": "量產卡關 ⚑",
+   "growth": "線性致動需求",
+   "share": "GSA+Rollvis >50%",
+   "analysis": "行星滾柱螺桿是量產最卡的環節之一（精密、難量產、產能稀缺）。瑞士 GSA + Rollvis 全球 >50%，Tesla Optimus 14 根線性關節主供 GSA；Ewellix（瑞典、2022 被德 Schaeffler 收購）第三，Schaeffler 在 CES 2026 首發人形專用行星齒輪致動器；瑞典 SKF 亦為 Tier-1 PRS 廠（與 UBTech 合作 ISO 3408-4 模組、組裝時數由 14h→6h）。日系 THK/NSK 線性/滾珠全球龍頭。台廠上銀（滾珠螺桿/線軌全球前列、2026 推行星滾柱螺桿瞄準人形、robotics 佔比目標年底破 10%）、全球傳動（概念）。中系國產替代成群湧入：杭州新劍機電規劃年產 100 萬根、2026/1 上市輔導備案、已獲北美客戶訂單、被視為 Optimus 鏈隱形冠軍；拓普集團寧波基地行星滾柱螺桿定位精度 ±0.01mm、成本較德製低 45%、良率 98%、2026 二廠投產執行器達 100 萬套、墨西哥廠 Q2 2026 達 30 萬套；恒立液壓（早期接觸北美客戶）、貝斯特崑山基地（投 ¥18.5 億、2026 量產、年產 260 萬套）、浙江榮泰（併 KGG 取得滾柱螺桿產能）亦快速卡位。寡占＋產能瓶頸＝高定價權，惟中系供應商基數 2026-H1 快速擴大、價格下殺壓力上升。",
+   "companies": [
+    {
+     "name": "GSA（瑞士）",
+     "ticker": "—",
+     "country": "CH",
+     "share": "行星滾柱螺桿全球領導 ⚑",
+     "products": "inverted planetary roller screw",
+     "note": "與 Rollvis 合計全球 >50%；Tesla Optimus 14 根線性關節主供 GSA",
+     "src": "https://www.screw-tech.com/su/news/detail-342705.html"
+    },
+    {
+     "name": "Schaeffler（含 Ewellix）",
+     "ticker": "SHA.DE",
+     "country": "DE",
+     "share": "行星滾柱螺桿全球第三",
+     "products": "Ewellix 滾柱螺桿 / 行星齒輪致動器",
+     "note": "2022 收購瑞典 Ewellix；CES 2026 首發整合式致動器（含齒輪/馬達/編碼器/控制器）；2026 與英新創 Humanoid、Hexagon Robotics 結策略夥伴、並在自家工廠部署數百台人形（既供應商又使用者）",
+     "src": "https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88184987"
+    },
+    {
+     "name": "上銀 HIWIN",
+     "ticker": "2049.TW",
+     "country": "TW",
+     "share": "滾珠螺桿/線軌全球前列",
+     "products": "ball screw / 線性導軌 / 行星滾柱螺桿(2026)",
+     "note": "robotics 佔比升至 ~12%（Q1 2026）；2026 推行星滾柱螺桿瞄準人形；人形仍屬小批送樣、量產看 2027+",
+     "src": "https://www.hiwin.tw/"
+    },
+    {
+     "name": "THK / NSK",
+     "ticker": "6481.T",
+     "country": "JP",
+     "share": "線性/滾珠全球龍頭",
+     "products": "LM guide / ball screw / 滾柱螺桿",
+     "note": "日系全球傳動龍頭、布局人形",
+     "src": "https://www.thk.com/"
+    },
+    {
+     "name": "杭州新劍機電 Xinjian",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中系滾柱螺桿新銳",
+     "products": "人形行星滾柱螺桿",
+     "note": "規劃年產 100 萬根人形滾柱螺桿；2026/1 上市輔導備案；被視為 Optimus 鏈隱形冠軍",
+     "src": "https://eu.36kr.com/en/p/3780414717129481"
+    },
+    {
+     "name": "全球傳動 TBI Motion",
+     "ticker": "4540.TW",
+     "country": "TW",
+     "share": "傳動台廠（概念）",
+     "products": "滾珠螺桿/線性導軌/滾珠花鍵",
+     "note": "人形概念股、卡位",
+     "src": "https://www.tbimotion.com.tw/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "actuator_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "為何 Musk 用行星滾柱螺桿（Screw-Tech）",
+     "url": "https://www.screw-tech.com/su/news/detail-342705.html"
+    },
+    {
+     "label": "Schaeffler CES 2026 人形致動器（官方）",
+     "url": "https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88156672"
+    }
+   ]
+  },
+  {
+   "id": "frameless_motor",
+   "row": "components",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "無框力矩馬達 / 伺服",
+   "nameEn": "Frameless Torque Motor · Servo",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "無外殼的無框力矩馬達（直接整合進關節、高扭矩密度）＋伺服驅動，是旋轉關節致動器的動力源。",
+   "marketSize": "旋轉關節",
+   "growth": "關節致動核心",
+   "share": "null",
+   "analysis": "全球馬達龍頭 Nidec（6594.T）布局機器人致動；無框力矩馬達專業廠 Allied Motion / Kollmorgen（美）；台廠台達電（2308.TW，伺服+驅動+馬達整合）、東元（1504.TW）。中系昊志機電、步科以成本切入、追趕快。相較減速機/滾柱螺桿，無框馬達競爭較分散、進入障礙較低，是 BOM 中較難建立定價權的環節，但隨關節數放量是量最大的零件之一。",
+   "companies": [
+    {
+     "name": "Nidec 日本電產",
+     "ticker": "6594.T",
+     "country": "JP",
+     "share": "馬達全球龍頭",
+     "products": "無框/伺服馬達 / 致動器",
+     "note": "全球馬達龍頭、布局機器人關節致動",
+     "src": "https://www.nidec.com/en/"
+    },
+    {
+     "name": "Allied Motion / Kollmorgen",
+     "ticker": "—",
+     "country": "US",
+     "share": "無框力矩馬達專業",
+     "products": "frameless torque motor / 伺服",
+     "note": "高扭矩密度無框馬達（Regal Rexnord 旗下 Kollmorgen）",
+     "src": "https://www.kollmorgen.com/"
+    },
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "伺服+驅動整合台廠",
+     "products": "伺服馬達 / 驅動器 / 模組",
+     "note": "伺服+驅動+馬達整合、機器人布局",
+     "src": "https://www.deltaww.com/"
+    },
+    {
+     "name": "東元 TECO",
+     "ticker": "1504.TW",
+     "country": "TW",
+     "share": "馬達台廠",
+     "products": "馬達 / 驅動",
+     "note": "工業馬達延伸機器人",
+     "src": "https://www.teco.com.tw/"
+    },
+    {
+     "name": "昊志機電 / 步科",
+     "ticker": "300503.SZ",
+     "country": "CN",
+     "share": "中系無框馬達追趕",
+     "products": "無框力矩馬達 / 伺服",
+     "note": "中系成本切入、追趕快",
+     "src": "https://www.haozhi.cn/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "actuator_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nidec（官方）",
+     "url": "https://www.nidec.com/en/"
+    }
+   ]
+  },
+  {
+   "id": "coreless_motor",
+   "row": "components",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "空心杯（微型）馬達",
+   "nameEn": "Coreless / Hollow-Cup Motor",
+   "competition": "oligopoly",
+   "single": "寡占 · 瑞士 Maxon＋德 Faulhaber＋美 Portescap 三家合計 >50%；每隻靈巧手約 6 顆空心杯馬達",
+   "desc": "無鐵芯（coreless）微型馬達，質量慣量極低、響應快、效率高，是靈巧手手指與微型致動的心臟。",
+   "marketSize": "微型致動",
+   "growth": "靈巧手心臟",
+   "share": "Maxon/Faulhaber/Portescap >50%",
+   "analysis": "瑞士 Maxon（saddle winding 工藝、空心杯龍頭）、德 Faulhaber、美 Portescap 三家合計 >50%（均未上市或私有）。中系鳴志電器（603728.SS）為主要空心杯/步進供應、成本切入；Dings 等追趕。全球空心杯馬達 2022 ~USD 7 億 → 2028 ~USD 11.9 億（CAGR ~8.5%），人形靈巧手是新增最大需求（每手 ~6 顆）。三家西方寡占 + 中系國產替代並進。",
+   "companies": [
+    {
+     "name": "Maxon（瑞士）",
+     "ticker": "—",
+     "country": "CH",
+     "share": "空心杯龍頭",
+     "products": "coreless motor（saddle winding）",
+     "note": "與 Faulhaber/Portescap 三家合計 >50%；靈巧手微型馬達首選；未上市",
+     "src": "https://www.maxongroup.com/"
+    },
+    {
+     "name": "Faulhaber（德國）",
+     "ticker": "—",
+     "country": "DE",
+     "share": "空心杯三強",
+     "products": "coreless / 微型馬達",
+     "note": "德系微型馬達；未上市",
+     "src": "https://www.faulhaber.com/"
+    },
+    {
+     "name": "Portescap",
+     "ticker": "—",
+     "country": "US",
+     "share": "空心杯三強",
+     "products": "coreless motor",
+     "note": "美系微型馬達（私有）",
+     "src": "https://www.portescap.com/"
+    },
+    {
+     "name": "鳴志電器 Moons",
+     "ticker": "603728.SS",
+     "country": "CN",
+     "share": "中系空心杯/步進主力",
+     "products": "空心杯馬達 / 步進馬達 / 驅動",
+     "note": "主要中系空心杯/步進供應、人形概念",
+     "src": "https://uanalyze.com.tw/articles/3933312042"
+    },
+    {
+     "name": "Dings Intellisense",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中系微型馬達追趕",
+     "products": "空心杯 / 步進馬達",
+     "note": "中系成本替代",
+     "src": "https://www.dingsmotion.com/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dexterous_hand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "空心杯/無框馬達 台廠關注（優分析）",
+     "url": "https://uanalyze.com.tw/articles/3933312042"
+    }
+   ]
+  },
+  {
+   "id": "force_sensor",
+   "row": "components",
+   "col": 5,
+   "span": 1,
+   "kind": "stage",
+   "name": "六維力覺 / 觸覺感測",
+   "nameEn": "6-Axis Force-Torque · Tactile",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "六軸力/扭矩（F/T）感測（手腕/腳踝/關節）＋指尖觸覺，是力控與安全人機互動的關鍵感知，過去成本高、量產難。",
+   "marketSize": "感知瓶頸",
+   "growth": "CAGR ~48%",
+   "share": "null",
+   "analysis": "六軸力/扭矩老牌：ATI Industrial（Novanta NOVT 旗下）、FUTEK（美）。新興玩家爆發、2026-H1 大額募資：PaXini 帕西尼（中，2026/3 B 輪募 ¥10 億+（US$1.45 億）、估值破 ¥100 億（US$14 億+）；CES 2026 全身 6 軸 F/T + 多維觸覺、DexH13 內含 ~1,140 觸覺單元；PX6D 號稱全球首款商用 Hall 效應 6D 力/扭矩感測器）、Bota Systems（瑞士）、宇立 Sunrise / 海伯森 Hypersen（中）、Mitsumi（日，MMS101 號稱全球最小數位 6 軸 F/T）。人形用扭矩感測市場估 2032 USD 78.7 億、CAGR 48.2%。技術路線（Hall / 光學 / MEMS / 應變片）未定，是高成長但押錯路線風險高的環節；資金正快速湧入中系觸覺新創。",
+   "companies": [
+    {
+     "name": "ATI Industrial（Novanta）",
+     "ticker": "NOVT",
+     "country": "US",
+     "share": "六軸 F/T 老牌",
+     "products": "6-axis force/torque sensor",
+     "note": "Novanta 旗下；工業/機器人 F/T 標準",
+     "src": "https://www.ati-ia.com/"
+    },
+    {
+     "name": "FUTEK",
+     "ticker": "—",
+     "country": "US",
+     "share": "力/扭矩感測",
+     "products": "六軸力/扭矩 / load cell",
+     "note": "美系力感測（私有）",
+     "src": "https://www.futek.com/"
+    },
+    {
+     "name": "PaXini 帕西尼",
+     "ticker": "—",
+     "country": "CN",
+     "share": "觸覺/6D 新興龍頭",
+     "products": "PX6D Hall 6D F/T / 多維觸覺 / DexH13 靈巧手 / TORA-ONE",
+     "note": "2026/3 B 輪募 ¥10 億+（US$1.45 億）、估值破 ¥100 億（US$14 億+）；CES 2026 發表全身 6 軸 F/T + 多維觸覺、DexH13 內含 ~1,140 觸覺處理單元；PX6D 號稱全球首款商用 Hall 6D 力/扭矩感測",
+     "src": "https://www.caixinglobal.com/2026-03-07/robot-sensor-startup-paxini-raises-145-million-tops-14-billion-valuation-102420414.html"
+    },
+    {
+     "name": "Bota Systems",
+     "ticker": "—",
+     "country": "CH",
+     "share": "瑞士 F/T 新創",
+     "products": "六軸力/扭矩感測",
+     "note": "瑞士緊湊型 F/T（ATI 系出身）",
+     "src": "https://www.botasys.com/"
+    },
+    {
+     "name": "宇立 Sunrise / 海伯森 Hypersen",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中系 F/T",
+     "products": "六維力/扭矩感測",
+     "note": "中系六維力供應、成本切入",
+     "src": "https://www.srisensor.com/"
+    },
+    {
+     "name": "Mitsumi（三美電機）",
+     "ticker": "6767.T",
+     "country": "JP",
+     "share": "微型 6 軸 F/T",
+     "products": "MMS101 數位 6 軸 F/T",
+     "note": "MMS101 號稱全球最小數位 6 軸 F/T（9.6mm 徑）",
+     "src": "https://www.mitsumi.co.jp/en/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dexterous_hand"
+    },
+    {
+     "id": "actuator_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "PaXini CES 2026 觸覺基礎設施（PR Newswire）",
+     "url": "https://www.prnewswire.com/news-releases/paxini-unveils-the-tactile-infrastructure-for-embodied-ai-redefining-full-stack-product-matrix-at-ces-2026-302655238.html"
+    },
+    {
+     "label": "人形扭矩感測市場 2032 USD 78.7 億（isStories）",
+     "url": "https://www.isstories.com/2026/02/19/global-torque-sensor-for-humanoid-robot-market-to-reach-usd-7-87-billion-by-2032-at-48-2-cagr/"
+    }
+   ]
+  },
+  {
+   "id": "encoder",
+   "row": "components",
+   "col": 6,
+   "span": 1,
+   "kind": "stage",
+   "name": "編碼器（位置回授）",
+   "nameEn": "Encoder (Position Feedback)",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "提供關節絕對/增量位置與速度回授的磁/光編碼器，是伺服閉環控制的必要元件，人形偏好小型輕量磁編碼。",
+   "marketSize": "回授元件",
+   "growth": "隨關節放量",
+   "share": "null",
+   "analysis": "磁編碼：Renishaw（RSW.L）/ 旗下 RLS（被 PAL Robotics 採用）；日系多摩川 Tamagawa（光/磁，工業伺服標準）；德 Heidenhain（光學高精度）；AMS-OSRAM（磁位置感測 IC，AT）。中系國產替代：CT-Unite（CT-21X GaN 磁編碼器晶片、人形關節首款 GaN、Q3 2026 量產）、ZeroErr（磁編碼 + 一體化致動器）。編碼器競爭較分散、單價低，但精度/可靠度與成本是人形量產關鍵。",
+   "companies": [
+    {
+     "name": "Renishaw / RLS",
+     "ticker": "RSW.L",
+     "country": "UK",
+     "share": "磁編碼器領先",
+     "products": "磁旋轉/線性編碼器",
+     "note": "旗下 RLS 磁編碼器被 PAL Robotics 採用於平衡控制",
+     "src": "https://www.renishaw.com/en/pal-robotics-integrates-magnetic-encoder-technology-into-robots-to-achieve-balance--43036"
+    },
+    {
+     "name": "多摩川 Tamagawa Seiki",
+     "ticker": "—",
+     "country": "JP",
+     "share": "伺服編碼器標準",
+     "products": "磁/光編碼器 / resolver",
+     "note": "日系工業伺服編碼器標準（私有）",
+     "src": "https://www.tamagawa-seiki.com/english/"
+    },
+    {
+     "name": "Heidenhain",
+     "ticker": "—",
+     "country": "DE",
+     "share": "光學高精度編碼器",
+     "products": "光學旋轉/線性編碼器",
+     "note": "德系高精度光學編碼（私有）",
+     "src": "https://www.heidenhain.com/"
+    },
+    {
+     "name": "AMS-OSRAM",
+     "ticker": "AMS.SW",
+     "country": "AT",
+     "share": "磁位置感測 IC",
+     "products": "磁編碼器晶片 / 位置感測 IC",
+     "note": "編碼器/伺服回授晶片供應",
+     "src": "https://ams-osram.com/"
+    },
+    {
+     "name": "CT-Unite 视觉芯",
+     "ticker": "—",
+     "country": "CN",
+     "share": "GaN 編碼晶片新創",
+     "products": "CT-21X GaN 磁編碼器晶片",
+     "note": "中國首款人形關節 GaN 磁編碼晶片、Q3 2026 量產",
+     "src": "https://www.trendforce.com/news/2026/05/04/news-china-unveils-first-gan-magnetic-encoder-chip-for-humanoid-robot-joints/"
+    },
+    {
+     "name": "ZeroErr 因克斯",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中系磁編碼+致動器",
+     "products": "磁編碼器 / 一體化旋轉致動器",
+     "note": "中系磁編碼 + 一體化關節致動器",
+     "src": "https://en.zeroerr.cn/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "actuator_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Renishaw/RLS 磁編碼用於 PAL Robotics（官方）",
+     "url": "https://www.renishaw.com/en/pal-robotics-integrates-magnetic-encoder-technology-into-robots-to-achieve-balance--43036"
+    }
+   ]
+  },
+  {
+   "id": "dexterous_hand",
+   "row": "module",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "靈巧手模組",
+   "nameEn": "Dexterous Hand Module",
+   "competition": "highgrowth",
+   "single": "兆威機電（中）電直驅多指仿生靈巧手龍頭、2026/3 港股二次上市；靈巧手價值量佔人形 BOM ~32%",
+   "desc": "整合微型空心杯馬達 + 微型傳動（諧波/絲桿）+ 指尖觸覺 + 控制的多指仿生手，是 BOM 中價值量最高的次模組之一。",
+   "marketSize": "高價值次模組",
+   "growth": "BOM ~32%",
+   "share": "null",
+   "analysis": "兆威機電（003021.SZ / 02692.HK，2026/3/9 港股二次上市、募 HK$19.7 億、21 家基石（高瓴/高毅）；惟上市後破發、Q1 2026 營收 ¥3.57 億(-2.74% YoY)/淨利 ¥0.41 億(-25.15% YoY) 機器人光環暫退；CES 2026 發表 B20 靈巧手 20 自由度/600g/15N；擬投 ¥8 億建靈巧手產業園）為電直驅多指靈巧手龍頭，雪球估靈巧手價值量佔人形 BOM ~32%。中系新創 2026-H1 大額募資潮：靈心巧手 LinkerBot（中，B 輪 ~US$2.17 億 + 2026/4 B+ 輪（螞蟻/中銀資管/復星），高自由度手月交付破 1,000 隻、佔國產高自由度利基 >80%）、PaXini 帕西尼（中，2026/3 B 輪 ¥10 億+（US$1.45 億）、估值破 ¥100 億，DexH13 內含 ~1,140 觸覺處理單元）、因時機器人 Inspire（中，2025 靈巧手交付破 1 萬隻、央視春晚首秀）、Wonik Robotics（韓）；微型馬達由 Maxon/鳴志供應、微型諧波由綠的供應。中國產靈巧手 2024 約佔全球 49%、2031 估 >60%。靈巧手是人形「能做事」的關鍵，資金與訂單湧入，但方案（腱繩 vs 連桿 vs 直驅、觸覺種類）仍在競爭。",
+   "companies": [
+    {
+     "name": "兆威機電 Zhaowei",
+     "ticker": "003021.SZ",
+     "country": "CN",
+     "share": "電直驅靈巧手龍頭",
+     "products": "多指仿生靈巧手 / 微型驅動系統",
+     "note": "2026/3/9 港股二次上市（02692.HK、募 HK$19.7 億）惟上市後破發；Q1 2026 營收 ¥3.57 億(-2.74% YoY)/淨利 ¥0.41 億(-25.15% YoY)；CES 2026 B20 手 20 自由度/600g/15N；擬投 ¥8 億擴靈巧手；BOM 價值量 ~32%",
+     "src": "https://www.hstong.com/news/hk/detail/26041002153907679"
+    },
+    {
+     "name": "靈心巧手 LinkerBot",
+     "ticker": "—",
+     "country": "CN",
+     "share": "高自由度靈巧手 >80% 利基",
+     "products": "Linker Hand 高自由度靈巧手 / 全棧靈巧平台",
+     "note": "B 輪 ~US$2.17 億 + 2026/4 B+ 輪（螞蟻/中銀資管/復星）；高自由度手月交付破 1,000 隻、佔國產高自由度利基 >80%；2026 年底研發團隊翻倍",
+     "src": "https://kr-asia.com/linkerbot-raises-new-funding-to-build-a-full-stack-platform-for-robot-dexterity"
+    },
+    {
+     "name": "因時機器人 Inspire Robots",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中系靈巧手新創",
+     "products": "靈巧手 / 微型直線伺服",
+     "note": "2025 靈巧手交付破 1 萬隻、央視春晚首秀；中系商用量產靈巧手先行者",
+     "src": "https://en.inspire-robots.com/news/7719.html"
+    },
+    {
+     "name": "Wonik Robotics",
+     "ticker": "—",
+     "country": "KR",
+     "share": "韓系靈巧手",
+     "products": "Allegro Hand 靈巧手",
+     "note": "韓系研究/商用靈巧手",
+     "src": "https://www.wonikrobotics.com/"
+    },
+    {
+     "name": "兆威機電 港股 Zhaowei HK",
+     "ticker": "02692.HK",
+     "country": "HK",
+     "share": "靈巧手龍頭港股",
+     "products": "靈巧手 / 微型驅動系統",
+     "note": "2026/3/9 港交所二次上市、21 家基石投資人；募資投向靈巧手研發與擴產",
+     "src": "https://www.stcn.com/article/detail/3667158.html"
+    },
+    {
+     "name": "Maxon / 鳴志（馬達供應）",
+     "ticker": "603728.SS",
+     "country": "CN",
+     "share": "靈巧手微型馬達",
+     "products": "空心杯馬達（每手 ~6 顆）",
+     "note": "靈巧手手指動力來源",
+     "src": "https://uanalyze.com.tw/articles/3933312042"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "coreless_motor"
+    },
+    {
+     "id": "force_sensor"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "兆威機電擬 8 億加碼靈巧手（華盛通）",
+     "url": "https://www.hstong.com/news/hk/detail/26041002153907679"
+    }
+   ]
+  },
+  {
+   "id": "actuator_module",
+   "row": "module",
+   "col": 4,
+   "span": 3,
+   "kind": "stage",
+   "name": "關節致動器模組",
+   "nameEn": "Joint Actuator Module",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "把減速機/滾柱螺桿 + 無框馬達 + 編碼器 + 力矩感測整合成可直接裝機的旋轉/線性關節致動器模組。",
+   "marketSize": "關節整合",
+   "growth": "整合放量",
+   "share": "null",
+   "analysis": "整合趨勢：上銀（大銀，伺服+驅動+諧波模組）、和大（行星+關節件）；日 Harmonic/Nabtesco/Nidec 自家垂直整合；中系 ZeroErr（一體化旋轉致動器）、宇樹/智元等整機廠自製。2026-H1 最大變化為特斯拉「中系 T 鏈」執行器供應鏈成形：三花智控傳獲 Optimus 線性致動器 US$6.85 億訂單（夠造 ~18 萬台、Q1 2026 起交付，惟公司澄清傳聞不實）、機器人致動器產能 Q1 2026 升至 50 萬套/年、長期規劃 >150 萬套（杭州/墨西哥/泰國三基地）；拓普集團升格 Tier 0.5、傳獨家供線性/旋轉執行器+靈巧手直驅件、Tesla 業務佔營收 35-40%、致動器產能 30 萬套→2026 二廠投產達 100 萬套、墨西哥廠 Q2 2026 達 30 萬套、行星滾柱螺桿定位精度 ±0.01mm/成本較德製低 45%/良率 98%、靈巧手業務 2026E 營收 ¥1 億——使本節點定價權與量產主導權往中系 T 鏈傾斜。德 Schaeffler 除 CES 2026 首發整合式致動器（含齒輪/馬達/編碼器/控制器），更與英國新創 Humanoid、Hexagon Robotics 結策略夥伴並在自家工廠部署數百台人形。整機 OEM（Tesla 2026 目標 5 萬台/Figure）多自研致動器以控成本、僅外購最深的減速機/滾柱螺桿/感測（整機端見 robot 主題）。模組整合競爭分散、毛利受整機壓價，價值仍回流到最深的減速機/滾柱螺桿單點。",
+   "companies": [
+    {
+     "name": "上銀（大銀）DAIDO/HIWIN",
+     "ticker": "2049.TW",
+     "country": "TW",
+     "share": "關節模組整合台廠",
+     "products": "伺服+驅動+諧波關節模組",
+     "note": "大銀整合伺服馬達+驅動+諧波成關節模組",
+     "src": "https://www.hiwin.tw/"
+    },
+    {
+     "name": "和大工業 Hota",
+     "ticker": "1536.TW",
+     "country": "TW",
+     "share": "行星+關節件",
+     "products": "行星減速 + 關節件",
+     "note": "Optimus 台灣行星齒輪供應、關節件整合",
+     "src": "https://www.hotagroup.com/"
+    },
+    {
+     "name": "Nidec 日本電產",
+     "ticker": "6594.T",
+     "country": "JP",
+     "share": "馬達+致動器整合",
+     "products": "致動器模組 / 馬達",
+     "note": "馬達龍頭垂直整合致動器",
+     "src": "https://www.nidec.com/en/"
+    },
+    {
+     "name": "ZeroErr 因克斯",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中系一體化致動器",
+     "products": "一體化旋轉致動器（含編碼）",
+     "note": "中系一體化關節致動器",
+     "src": "https://en.zeroerr.cn/"
+    },
+    {
+     "name": "三花智控 Sanhua",
+     "ticker": "002050.SZ",
+     "country": "CN",
+     "share": "Optimus 線性致動器核心 傳 Tier 1",
+     "products": "線性致動器 / 旋轉關節總成",
+     "note": "傳獲 Optimus 線性致動器 US$6.85 億訂單(夠造 ~18 萬台、Q1 2026 起交付、公司澄清傳聞不實)；機器人致動器產能 Q1 2026 升至 50 萬套/年、長期 >150 萬套(杭州/墨西哥/泰國三基地)；機器人營收 1H25 +320%",
+     "src": "https://eu.36kr.com/en/p/3510288514980998"
+    },
+    {
+     "name": "拓普集團 Tuopu",
+     "ticker": "601689.SS",
+     "country": "CN",
+     "share": "Optimus 線性/旋轉執行器 Tier 0.5 傳獨家",
+     "products": "線性/旋轉執行器 / 行星滾柱螺桿 / 靈巧手直驅件 / 電子皮膚",
+     "note": "升格 Tier 0.5、傳獨家供執行器+靈巧手驅動件、Tesla 佔營收 35-40%；致動器產能 30 萬套→2026 二廠投產 100 萬套、墨西哥廠 Q2 2026 達 30 萬套；行星滾柱螺桿 ±0.01mm/成本較德製低 45%/良率 98%；靈巧手業務 2026E 營收 ¥1 億；已交付特斯拉 1 萬套諧波減速機；投 ¥50 億建機器人電驅基地",
+     "src": "https://optimusk.blog/blog/tesla-optimus-suppliers/"
+    },
+    {
+     "name": "Schaeffler（含 Ewellix）",
+     "ticker": "SHA.DE",
+     "country": "DE",
+     "share": "整合式人形致動器",
+     "products": "整合式致動器（齒輪/馬達/編碼器/控制器）",
+     "note": "CES 2026 首發整合式致動器；2026 與英新創 Humanoid、Hexagon Robotics 結策略夥伴、並在自家工廠部署數百台人形",
+     "src": "https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88184987"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "harmonic_rv"
+    },
+    {
+     "id": "roller_screw"
+    },
+    {
+     "id": "frameless_motor"
+    },
+    {
+     "id": "encoder"
+    },
+    {
+     "id": "force_sensor"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "上銀科技（官網）",
+     "url": "https://www.hiwin.tw/"
+    },
+    {
+     "label": "Schaeffler CES 2026 人形致動器（官方）",
+     "url": "https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88156672"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "materials",
+   "harmonic_rv"
+  ],
+  [
+   "materials",
+   "roller_screw"
+  ],
+  [
+   "materials",
+   "frameless_motor"
+  ],
+  [
+   "materials",
+   "coreless_motor"
+  ],
+  [
+   "materials",
+   "force_sensor"
+  ],
+  [
+   "materials",
+   "encoder"
+  ],
+  [
+   "harmonic_rv",
+   "actuator_module"
+  ],
+  [
+   "roller_screw",
+   "actuator_module"
+  ],
+  [
+   "frameless_motor",
+   "actuator_module"
+  ],
+  [
+   "encoder",
+   "actuator_module"
+  ],
+  [
+   "force_sensor",
+   "actuator_module"
+  ],
+  [
+   "force_sensor",
+   "dexterous_hand"
+  ],
+  [
+   "coreless_motor",
+   "dexterous_hand"
+  ]
+ ],
+ "_proposed": {}
+}

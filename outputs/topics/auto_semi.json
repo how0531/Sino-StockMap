@@ -1,0 +1,673 @@
+{
+ "id": "auto_semi",
+ "tab": "車用半導體",
+ "title": "車用半導體 / ADAS 智駕晶片供應鏈 (Automotive Semiconductor & ADAS SoC)",
+ "subtitle": "Automotive Semi & ADAS SoC — 車用半導體 2026 市場約 $57.3B（2033 $95.1B、CAGR 7.5%），其中 L2+ 相關半導體營收 2026-2031 預計翻倍，是車用最快成長引擎。庫存去化結束後板塊進入上行週期：Qualcomm 車用 Q2 FY26 $1.33B（+38% YoY、pipeline >$45B）、Mobileye Q1 2026 $558M（+27%、上調全年）、NXP 車用 +6.5%、Renesas 車用 +10.6%。中國智駕平價化（BYD 天神之眼全系標配、裝車 >250 萬輛）推升地平線 2025 營收 +57.7%（出貨 401 萬顆）、黑芝麻 +73.4%。價值鏈：台積電 N3A 車規 3nm → ADAS SoC（NVIDIA Thor/Qualcomm/Mobileye vs 地平線/黑芝麻/華為）+ MCU 五強 + 光達/CIS → Tier-1 域控（德賽西威）→ OEM。⚠ 中國價格戰壓 ASP、地平線 2025 虧 RMB 105 億、L3 法規時程風險。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "2026 車用半導體市場",
+   "v": "$57.3B",
+   "sub": "2033 $95.1B、CAGR 7.5%；MCU $12.3B"
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "L2+ 半導體營收 2026-31 翻倍·中國智駕價格戰壓 ASP",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "foundry",
+   "label": "晶圓代工 / 車規先進製程 Foundry & IP",
+   "main": false
+  },
+  {
+   "id": "soc",
+   "label": "ADAS SoC / 智駕晶片 ADAS SoC",
+   "main": true
+  },
+  {
+   "id": "component",
+   "label": "車用 MCU / 感測 MCU & Sensors",
+   "main": false
+  },
+  {
+   "id": "system",
+   "label": "Tier-1 域控 / 整車 OEM Tier-1 & OEM",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "auto_foundry",
+   "row": "foundry",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "晶圓代工 / 車規先進製程 / IP",
+   "nameEn": "Auto Foundry & Process / IP",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 台積電 N3A 車規 3nm 2026 量產（>10 個車用產品）；Arm 車用 CPU IP 近壟斷",
+   "desc": "智駕晶片從 16/7nm 快速走向 5/4/3nm：台積電 N3A 車規 3nm 2026 年量產，N2A 2028 完成 AEC-Q100 車規驗證。【絃外之音】台積電晶圓代工 Q3 2025 市占 ~72%、是高階車規 3nm 唯一可量產來源（Thor、R-Car X5H、C-X1 全靠 N3A）；疊加 Arm 近壟斷車用 CPU IP——下游 SoC 不論國際/中國誰勝出，定價權與過路費先被上游這兩個隱性單點收走。",
+   "marketSize": "先進製程化",
+   "growth": "N3A 2026 量產",
+   "share": "null",
+   "analysis": "台積電（2330.TW）N3A 為車規 3nm 主力、>10 個車用產品已規劃（Thor、R-Car X5H、C-X1 皆先進製程），N2A nanosheet 較 N3A 同功耗快 15-20%、2028 完成 AEC-Q100；N3 因 AI 需求吃緊。Samsung（005930.KS）搶 Tesla 次世代 AI 晶片大單；GlobalFoundries（GFS）22FDX、聯電（2303.TW）28/22nm 吃車用成熟製程；Arm（ARM）車用 CPU IP 近壟斷——C-X1 採 Arm v9.2-A、R-Car Gen5 同為 Arm 架構。",
+   "companies": [
+    {
+     "name": "台積電 TSMC",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "車規先進製程主導",
+     "products": "N3A 車規 3nm / N5A / N2A(2028)",
+     "note": ">10 個車用產品規劃於 N3A；N2A 2028 完成 AEC-Q100",
+     "src": "https://www.blackridgeresearch.com/news-releases/tsmc-unveils-a-13-process-node-at-2026-north-america-technology-Symposium"
+    },
+    {
+     "name": "Samsung Foundry",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "車用先進製程第二",
+     "products": "車用 4/2nm 代工",
+     "note": "Tesla AI5 代工（德州 Taylor 廠），簽 8 年約 $16.5B 合約；與 TSMC 亞利桑那雙源打破單一代工依賴",
+     "src": "https://www.financialcontent.com/article/tokenring-2026-1-26-tesla-breaks-the-foundry-monopoly-dual-sourcing-ai5-silicon-across-tsmc-and-samsungs-us-fabs-for-2026-global-ramp"
+    },
+    {
+     "name": "GlobalFoundries",
+     "ticker": "GFS",
+     "country": "US",
+     "share": "車用特殊製程",
+     "products": "22FDX / 車用 RF·嵌入式",
+     "note": "車用為主要成長線"
+    },
+    {
+     "name": "聯電 UMC",
+     "ticker": "2303.TW",
+     "country": "TW",
+     "share": "車用成熟製程",
+     "products": "28/22nm 車用代工",
+     "note": "與 Denso 合作功率元件"
+    },
+    {
+     "name": "Arm",
+     "ticker": "ARM",
+     "country": "UK",
+     "share": "車用 CPU IP 近壟斷",
+     "products": "Arm v9.2-A / 車用 CSS",
+     "note": "MediaTek C-X1、Renesas R-Car Gen5 皆 Arm 架構",
+     "src": "https://corp.mediatek.com/news-events/press-releases/mediatek-brings-advanced-ai-capabilities-to-vehicles-with-new-dimensity-auto-cockpit-chipsets-enabled-by-nvidia-technology"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "adas_soc_global"
+    },
+    {
+     "id": "adas_soc_china"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC N3A/N2A 車規製程 (BlackRidge)",
+     "url": "https://www.blackridgeresearch.com/news-releases/tsmc-unveils-a-13-process-node-at-2026-north-america-technology-Symposium"
+    },
+    {
+     "label": "TSMC N3 吃緊 (TrendForce 2026-04)",
+     "url": "https://www.trendforce.com/news/2026/04/16/news-tsmc-n3-tightens-on-ai-demand-arizona-2nd-fab-3nm-volume-production-in-2h27-kumamoto-in-2028/"
+    }
+   ]
+  },
+  {
+   "id": "adas_soc_global",
+   "row": "soc",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "ADAS SoC — 國際陣營",
+   "nameEn": "ADAS SoC — Global Players",
+   "competition": "oligopoly",
+   "single": "核心賽道 · NVIDIA Thor GA（Lucid/Stellantis/Mercedes/ZEEKR-Waymo）；Qualcomm pipeline >$45B；Mobileye VW L3",
+   "desc": "高階智駕運算平台：NVIDIA Thor、Qualcomm Snapdragon Ride、Mobileye EyeQ6，吃歐美日 L2++/L3 與 robotaxi 域控。",
+   "marketSize": "高階 L3/robotaxi",
+   "growth": "L2+ 半導體 2026-31 翻倍",
+   "share": "null",
+   "analysis": "NVIDIA（NVDA）Q1 FY27 車用營收 $604M（+6% YoY，Orin→Thor 過渡期）、Thor 已 GA + Halos 安全 OS，2026-06-01 把 DRIVE Hyperion（Hyperion 10）升級為全球 L4 robotaxi 參考平台、新增 Uber（慕尼黑＋Autobrains）／Stellantis／鴻海（高雄起跑、擴大代工 L4 車隊）／VinFast／HUMAIN（沙國）；design wins：Lucid 中型平台每車 2 顆 Thor、Stellantis DRIVE AGX Hyperion（L4-ready）、Mercedes MB.OS 合作、ZEEKR RT 供 Waymo robotaxi；Qualcomm（QCOM）Q2 FY26 車用 $1.326B（+38% YoY）、年化首破 $5B、pipeline >$45B、FY26 出場 run-rate 目標 >$6B；Mobileye（MBLY）Q1 2026 營收 $558M（+27% YoY）、EyeQ 出貨 1,080 萬套、上調全年至約 $1.98B 中值（+2%）並宣布 $250M 庫藏股；Mahindra 成第三家 Surround ADAS 客戶（前三家 VW+一美系大廠+Mahindra，ASP $100-150、毛利約 70%）、VW L2++/Chauffeur L3 推進；Renesas（6723.T）R-Car X5H 業界首顆 3nm 多域 SoC sampling；聯發科（2454.TW）C-X1（3nm+NVIDIA Blackwell GPU）攻 AI 座艙、與 Foxtron 結盟。",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "高階智駕域控龍頭",
+     "products": "DRIVE AGX Thor / Orin / Hyperion / Halos OS",
+     "note": "Q1 FY27 車用 $604M（+6% YoY）；Lucid 每車 2 顆 Thor、Stellantis L4、ZEEKR RT 供 Waymo",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027"
+    },
+    {
+     "name": "Qualcomm",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "座艙龍頭+ADAS 放量",
+     "products": "Snapdragon Digital Chassis / Ride",
+     "note": "Q2 FY26 車用 $1.326B（+38% YoY）；Q3 FY26 車用指引約 +50% YoY；pipeline >$45B；FY26 出場 run-rate >$6B",
+     "src": "https://futurumgroup.com/insights/qualcomm-q2-fy-2026-earnings-show-data-center-entry-and-auto-strength/"
+    },
+    {
+     "name": "Mobileye",
+     "ticker": "MBLY",
+     "country": "IL",
+     "share": "前視 ADAS 市佔最大",
+     "products": "EyeQ6 / SuperVision / Chauffeur L3",
+     "note": "Q1 2026 營收 $558M（+27% YoY）、上調全年；新增美國大廠高量 Surround ADAS（EyeQ6H 標配，前二客戶累計 1,900 萬套）；2026 全年營收上調至約 $1.98B 中值並啟動 $250M 庫藏股；VW L3 里程碑",
+     "src": "https://ir.mobileye.com/news-releases/news-release-details/mobileye-releases-first-quarter-2026-results-updates-full-year"
+    },
+    {
+     "name": "Renesas",
+     "ticker": "6723.T",
+     "country": "JP",
+     "share": "日系 ADAS SoC",
+     "products": "R-Car X5H（3nm 多域 SoC）",
+     "note": "Q1 2026 車用營收 ¥171.7B（+10.6% YoY）；X5H sampling 中",
+     "src": "https://www.renesas.com/en/about/newsroom/renesas-fast-tracks-sdv-innovation-r-car-gen-5-soc-based-end-end-multi-domain-solution-platform"
+    },
+    {
+     "name": "聯發科 MediaTek",
+     "ticker": "2454.TW",
+     "country": "TW",
+     "share": "AI 座艙挑戰者",
+     "products": "Dimensity Auto C-X1（3nm+NVIDIA Blackwell GPU）",
+     "note": "2026/6 與鴻海 Foxtron 多年期合作；與 Thor 組中央運算組合",
+     "src": "https://www.mediatek.com/press-room/foxtron-and-mediatek-collaborate-to-advance-ai-powered-intelligent-vehicle-experiences-with-nvidia"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "auto_foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "tier_one_domain"
+    },
+    {
+     "id": "oem_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA Q1 FY27 財報",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027"
+    },
+    {
+     "label": "Mobileye Q1 2026 (IR)",
+     "url": "https://ir.mobileye.com/news-releases/news-release-details/mobileye-releases-first-quarter-2026-results-updates-full-year"
+    },
+    {
+     "label": "Qualcomm Q2 FY26 車用 (Futurum)",
+     "url": "https://futurumgroup.com/insights/qualcomm-q2-fy-2026-earnings-show-data-center-entry-and-auto-strength/"
+    }
+   ]
+  },
+  {
+   "id": "adas_soc_china",
+   "row": "soc",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國智駕晶片",
+   "nameEn": "China ADAS SoC",
+   "competition": "highgrowth",
+   "single": "NVIDIA+地平線雙龍頭：2026/4 中國智駕域控晶片裝車 NVIDIA 50.9%（>30 萬顆）、地平線升第二 13.6% 超越華為/Tesla（國產品牌 ADAS 市佔達 47.7%、每三輛智能車一輛用其方案）；城市 NOA 算力晶片 NVIDIA+華為+地平線三家握約 90%",
+   "desc": "中國智駕平價化（NOA 下沉至 10 萬元級車款）最大受益者：地平線、黑芝麻、華為乾崑三強卡位。",
+   "marketSize": "智駕平價化主場",
+   "growth": "地平線 +57.7%",
+   "share": "null",
+   "analysis": "地平線（9660.HK）2025 營收 RMB 37.58 億（+57.7% YoY）、征程出貨 401 萬顆（+38.8%）、中高階佔 45%（2024 的 4.8 倍）、J6 近 400 車型 design win、2026/4 中國智駕域控晶片裝車已超越華為+Tesla 升至第二（13.6%、>8 萬顆，僅次 NVIDIA 50.9%），惟虧損 RMB 104.7 億（研發 51.5 億、佔營收 137%）、2026/4 發表中國首顆 5nm 艙駕融合晶片征程 6P/Starry（650 TOPS、273GB/s），Q3 2026 於 iCAR 量產首發、已綁 BYD/Chery 等 14 家、Bosch 預備量產協議；2026/4 發表中國首顆 5nm 艙駕融合晶片征程 6P/Starry（650 TOPS、273GB/s），Q3 2026 於 iCAR 量產首發、已綁 BYD/Chery 等 14 家、Bosch 預備量產協議；2027 推征程 7 對標 Tesla；【結構】中國 ADAS 解決方案地平線市占 45.8%、整體智駕方案 32.4% 居首，城市 NOA 算力晶片由 NVIDIA+華為+地平線三家吃 90%（地平線+Mobileye 佔 75%），是寡占而非散戶賽局，惟 137% 研發/營收比顯示「市占第一卻燒錢買單」的盈利結構落差；黑芝麻（2533.HK）2025 營收 RMB 8.22 億（+73.4%）、華山 A2000 量產倒數、通過美國商務部審查獲准全球銷售（國內唯一）；華為海思（未上市）乾崑 ADS 中高階市佔第一；小鵬圖靈自研晶片 2025 上車。價格戰是最大風險。",
+   "companies": [
+    {
+     "name": "地平線 Horizon Robotics",
+     "ticker": "9660.HK",
+     "country": "CN",
+     "share": "中國智駕晶片出貨王",
+     "products": "征程 J6 系列 / HSD 城市 NOA",
+     "note": "2025 營收 RMB 37.6 億（+57.7%）、出貨 401 萬顆；虧損 RMB 104.7 億；2026/4 升中國域控裝車第二、國產品牌 ADAS 市佔 47.7%",
+     "src": "https://www.digitimes.com/news/a20260618VL211/nvidia-horizon-robotics-autonomous-driving-china-market-2026.html"
+    },
+    {
+     "name": "黑芝麻智能",
+     "ticker": "2533.HK",
+     "country": "CN",
+     "share": "高階智駕第二梯隊",
+     "products": "華山 A1000/A2000 / 武當 C1200",
+     "note": "2025 營收 RMB 8.22 億（+73.4%）；A2000 通過美商務部審查可全球銷售",
+     "src": "https://www.donews.com/news/detail/1/6494041.html"
+    },
+    {
+     "name": "華為海思（乾崑）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "高階智駕主力廠",
+     "products": "昇騰 / MDC / 乾崑 ADS",
+     "note": "2026/4 域控裝車排名被地平線超越退至第三梯隊；未上市、制裁名單",
+     "src": "https://www.digitimes.com/news/a20260618VL211/nvidia-horizon-robotics-autonomous-driving-china-market-2026.html"
+    },
+    {
+     "name": "小鵬（圖靈）",
+     "ticker": "XPEV",
+     "country": "CN",
+     "share": "OEM 自研代表",
+     "products": "圖靈 Turing AI 晶片",
+     "note": "2025 起量產上車、自研+外購雙軌"
+    },
+    {
+     "name": "比亞迪半導體",
+     "ticker": "1211.HK",
+     "country": "CN",
+     "share": "垂直整合自研",
+     "products": "天神之眼 C 自研比例提升",
+     "note": "DiPilot 100/300/600（100-600 TOPS）",
+     "src": "https://counterpointresearch.com/en/insights/byd-eyes-global-adas-revolution-with-gods-eye"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "auto_foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "oem_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "地平線 2025 年報 (Gasgoo)",
+     "url": "https://autonews.gasgoo.com/articles/news/horizon-robotics-boasts-577-yoy-surge-in-2025-annual-revenue-2034605818467483649"
+    },
+    {
+     "label": "黑芝麻 2025 年報 (DoNews)",
+     "url": "https://www.donews.com/news/detail/1/6494041.html"
+    }
+   ]
+  },
+  {
+   "id": "auto_mcu",
+   "row": "component",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "車用 MCU / 類比五強",
+   "nameEn": "Automotive MCU & Analog",
+   "competition": "oligopoly",
+   "single": "寡占賣鏟人 · 前五大市佔 81.5%、Infineon 28.5% 第一；2026 二輪漲價 15-85%、Bernstein 判定上行週期",
+   "desc": "每車 MCU 數量隨域控/區域架構（zonal）重組但單價上升；2026 車用 MCU 市場 $12.34B、CAGR 8.18%。",
+   "marketSize": "$12.3B (2026)",
+   "growth": "上行週期+漲價",
+   "share": "null",
+   "analysis": "Infineon（IFX.DE）車用 MCU 市佔 28.5% 全球第一（AURIX）、以 $2.5B 收購 Marvell 車用乙太網補 SDV、上調全年財測點名車用訂單回溫（automotive order intake improves）；NXP（NXPI）Q1 2026 車用營收 $1.782B（+6.5% YoY、全公司 +12%）、S32 平台 + SDV/physical AI 轉型、財報後股價單日 +26%；Renesas Q1（截至 3/31）GAAP 營收 ¥3,803 億（+23.2% YoY）、車用與工業強勁；ST Stellar（Stellantis 綁定）、TI 車用類比。Bernstein：車用半導體正式進入上行週期（2026 Q1 +11% YoY），Infineon/TI/NXP 等啟動第二輪漲價（部分品項 +15%~85%）——寡占結構下漲價直接灌進毛利。⚠ 單點斷鏈：Nexperia（母公司聞泰 Wingtech 600745.SS）自 2026/3 中荷母子公司分裂為敵對實體，車用功率二極體/IGBT 等基礎元件曾因斷供致部分車廠產線停擺；Nexperia China 趕認本土晶圓（上海積塔/燧原/United Nova），產能驗證估 Q1-Q2 2026 完成，協商破局恐入國際仲裁（Wingtech 求償上看 $80 億）。",
+   "companies": [
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "車用 MCU 28.5% 第一",
+     "products": "AURIX MCU / 車用功率·乙太網",
+     "note": "2026/6/17 增資 $1.73B 部分支應重新收購 Cypress（EV ~$9B）；7/1 啟動第二輪漲價",
+     "src": "https://autotechinsight.spglobal.com/news/5250304/infineon-raises-usd173-billion-to-fund-cypress-acquisition"
+    },
+    {
+     "name": "NXP",
+     "ticker": "NXPI",
+     "country": "NL",
+     "share": "車用 MCU 前二",
+     "products": "S32 平台 / 雷達 / UWB",
+     "note": "Q1 2026 車用 $1.782B（+6.5% YoY）；財報後股價 +26%",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001413447/000141344726000032/nxp1q26exhibit991.htm"
+    },
+    {
+     "name": "Renesas",
+     "ticker": "6723.T",
+     "country": "JP",
+     "share": "車用 MCU 前三",
+     "products": "RH850 MCU / R-Car",
+     "note": "Q1 2026 車用 ¥171.7B（+10.6% YoY）",
+     "src": "https://www.renesas.com/en/document/rep/earnings-report-1st-quarter-ended-march-31-2026"
+    },
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "CH",
+     "share": "車用 MCU 五強",
+     "products": "Stellar MCU / SiC",
+     "note": "Stellantis 深度綁定",
+     "src": "https://www.yolegroup.com/press-release/infineon-technologies-nxp-and-stmicroelectronics-face-rising-competition-in-132-billion-automotive-semiconductor-race/"
+    },
+    {
+     "name": "Texas Instruments",
+     "ticker": "TXN",
+     "country": "US",
+     "share": "車用類比龍頭",
+     "products": "車用類比 / 嵌入式",
+     "note": "二輪漲價名單成員",
+     "src": "https://jianshiapp.com/bernstein-automotive-semiconductors-have-officially-entered-an-upward-cycle/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "tier_one_domain"
+    }
+   ],
+   "sources": [
+    {
+     "label": "車用 MCU 市場 (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/global-automotive-mcu-market"
+    },
+    {
+     "label": "Bernstein 車用半導體上行週期",
+     "url": "https://jianshiapp.com/bernstein-automotive-semiconductors-have-officially-entered-an-upward-cycle/"
+    }
+   ]
+  },
+  {
+   "id": "auto_sensor",
+   "row": "component",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "車用感測：光達 / CIS",
+   "nameEn": "Auto Sensors: LiDAR & CIS",
+   "competition": "oligopoly",
+   "single": "放量最猛環節 · 禾賽 ADAS 光達 Q1 +141.9%、速騰出貨 +204.1%（在手訂單 >900 萬台）",
+   "desc": "L2+ 標配化推升每車感測器數量：天神之眼 C 即 12 攝影機+5 毫米波雷達；中高階加 1-3 顆光達。",
+   "marketSize": "null",
+   "growth": "光達出貨 +140~200%",
+   "share": "null",
+   "analysis": "禾賽 Hesai（HSAI）Q1 2026 營收 RMB 6.81 億（+30% YoY）、ADAS 光達出貨 353,441 顆（+141.9% YoY）、總出貨 471,723 顆；速騰聚創 RoboSense（2498.HK）Q1 2026 營收 RMB 4.59 億（+39.9%）、出貨 330,300 台（+204.1%）、ADAS 在手訂單 >900 萬台。光達單價跌至 $200 級反而催出量。【結構】此環節非碎片化而是寡占：禾賽全球車用光達市占 33%（連三年第一），禾賽+速騰+華為+Seyond 前四家中國廠合計約 89%（ADAS 細分近 99%）；CIS 為 onsemi/Sony/韋爾三強寡占吃每車 10-12 顆攝影頭。光達雙雄同時開出機器人第二曲線（速騰機器人光達 +1,458.8% YoY）。",
+   "companies": [
+    {
+     "name": "禾賽科技 Hesai",
+     "ticker": "HSAI",
+     "country": "CN",
+     "share": "車用光達出貨第一",
+     "products": "AT 系列 ADAS 光達 / JT 機器人光達",
+     "note": "Q1 2026 營收 RMB 6.81 億（+30%）；ADAS 出貨 +141.9% YoY；Q2 2026 首度單季轉盈（淨利 $6.2M）、出貨 35.2 萬顆；車用光達市占 37-39%、長距 ADAS 43% 居首",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001861737/000110465926063803/tm2615071d1_ex99-1.htm"
+    },
+    {
+     "name": "速騰聚創 RoboSense",
+     "ticker": "2498.HK",
+     "country": "CN",
+     "share": "光達雙雄",
+     "products": "MX / EM 平台光達",
+     "note": "Q1 2026 出貨 330,300 台（+204.1%）；ADAS 在手訂單 >900 萬台",
+     "src": "https://www.prnewswire.com/news-releases/robosense-asserts-global-dominance-in-lidar-for-robotics-with-1-458-8-yoy-shipment-surge-in-q1-2026--302783148.html"
+    },
+    {
+     "name": "onsemi",
+     "ticker": "ON",
+     "country": "US",
+     "share": "車用 CIS 龍頭",
+     "products": "Hyperlux 車用 CIS / SiC",
+     "note": "ADAS 攝影頭感測主力"
+    },
+    {
+     "name": "Sony",
+     "ticker": "6758.T",
+     "country": "JP",
+     "share": "車用 CIS 二強",
+     "products": "IMX 車用 CIS",
+     "note": "高階車用影像感測"
+    },
+    {
+     "name": "韋爾股份 OmniVision",
+     "ticker": "603501.SS",
+     "country": "CN",
+     "share": "中國車用 CIS 龍頭",
+     "products": "OX 系列車用 CIS",
+     "note": "受益中國智駕平價化放量"
+    },
+    {
+     "name": "indie Semiconductor",
+     "ticker": "INDI",
+     "country": "US",
+     "share": "多模感測整併者",
+     "products": "雷達 / 視覺 / LiDAR / 超音波多模感測",
+     "note": "2026/5 宣布以 €40M 收購 ams OSRAM 無晶圓 CMOS 影像感測器事業（預計 2026 Q3 完成、即時增厚獲利），補齊視覺感測、走多模一站式供應",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001841925/000119312526216934/indi-ex99_1.htm"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "tier_one_domain"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Hesai Q1 2026 6-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001861737/000110465926063803/tm2615071d1_ex99-1.htm"
+    },
+    {
+     "label": "RoboSense Q1 2026 (PR Newswire)",
+     "url": "https://www.prnewswire.com/news-releases/robosense-asserts-global-dominance-in-lidar-for-robotics-with-1-458-8-yoy-shipment-surge-in-q1-2026--302783148.html"
+    }
+   ]
+  },
+  {
+   "id": "tier_one_domain",
+   "row": "system",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "Tier-1 / 智駕域控制器",
+   "nameEn": "Tier-1 & Domain Controllers",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "把 SoC+MCU+感測整合成域控制器/智駕方案交付 OEM：德賽西威為 NVIDIA 系最大域控廠並出海。",
+   "marketSize": "null",
+   "growth": "德賽智駕 +55.5%",
+   "share": "null",
+   "analysis": "德賽西威（002920.SZ）2025 前三季營收 RMB 223.4 億（+17.7% YoY）、H1 2025 智駕業務 RMB 41.5 億（+55.5%）、IPU14 域控（基於 Thor）於 IAA 2025 宣布出海，客戶方案從 Orin-X 切換 Thor；Bosch/ZF（未上市）中階 ADAS 方案走量；Continental（CON.DE）2025/9 分拆 Aumovio（含 ADAS 事業）上市；Aptiv（APTV）ADAS+線束分拆中。域控毛利受晶片換代與價格戰影響波動，但「智駕標配化」確保量增。",
+   "companies": [
+    {
+     "name": "德賽西威 Desay SV",
+     "ticker": "002920.SZ",
+     "country": "CN",
+     "share": "NVIDIA 系域控最大",
+     "products": "IPU14（Thor）/ IPU04（Orin）域控",
+     "note": "2025 前三季營收 RMB 223.4 億（+17.7%）；智駕 H1 +55.5%；IPU14 出海",
+     "src": "https://www.prnewswire.com/apac/news-releases/desay-sv-expands-its-intelligent-driving-solutions-to-overseas-market-built-on-nvidia-accelerated-compute-302565870.html"
+    },
+    {
+     "name": "Bosch / ZF",
+     "ticker": "—",
+     "country": "DE",
+     "share": "全球 Tier-1 龍頭",
+     "products": "中階 ADAS 方案 / 感測",
+     "note": "未上市；走量市場主力"
+    },
+    {
+     "name": "Continental (Aumovio)",
+     "ticker": "CON.DE",
+     "country": "DE",
+     "share": "歐系 Tier-1",
+     "products": "ADAS / 自駕方案",
+     "note": "2025/9 分拆 Aumovio（含 ADAS）上市"
+    },
+    {
+     "name": "Aptiv",
+     "ticker": "APTV",
+     "country": "IE",
+     "share": "ADAS 方案+線束",
+     "products": "ADAS 平台 / SVA 架構",
+     "note": "EDS 事業分拆中"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "adas_soc_global"
+    },
+    {
+     "id": "auto_mcu"
+    },
+    {
+     "id": "auto_sensor"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "oem_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Desay SV IPU14 出海 (PR Newswire)",
+     "url": "https://www.prnewswire.com/apac/news-releases/desay-sv-expands-its-intelligent-driving-solutions-to-overseas-market-built-on-nvidia-accelerated-compute-302565870.html"
+    },
+    {
+     "label": "德賽西威 2025 三季報 (Futu)",
+     "url": "https://news.futunn.com/en/post/64221787/desay-sv-002920-2025-q3-earnings-report-commentary-continued-strong"
+    }
+   ]
+  },
+  {
+   "id": "oem_demand",
+   "row": "system",
+   "col": 2,
+   "span": 2,
+   "kind": "stage",
+   "name": "整車 OEM / 智駕標配化",
+   "nameEn": "OEM Demand & ADAS Democratization",
+   "competition": "redocean",
+   "single": "BYD 天神之眼全系標配（裝車 >250 萬輛）讓智駕成 10 萬元車標配；歐美走 L3/robotaxi 高價路線",
+   "desc": "需求端兩條路線：中國平價標配（NOA 下沉）衝量、歐美 L3/robotaxi 衝單車價值，雙引擎拉動上游半導體。",
+   "marketSize": "需求錨點",
+   "growth": "結構性催化",
+   "share": "null",
+   "analysis": "BYD（1211.HK）天神之眼三檔（DiPilot 100/300/600）全系標配、入門 RMB 69,800 海鷗也配、>20 車型、至 2025 末裝車 >250 萬輛——智駕平價化錨點；Tesla（TSLA）FSD 全自研 + Austin robotaxi 試營運；Lucid（LCID）中型平台每車 2 顆 Thor；VW（VOW3.DE）Mobileye EyeQ6H SuperVision L2++/Chauffeur L3 推進；吉利/極氪（0175.HK）ZEEKR RT（Thor）供 Waymo robotaxi。中國城市 NOA 滲透率 2024 H1 僅 7.6%、政策目標 L2+ 50%，滲透曲線仍在早段。【垂直整合】OEM 直接介入晶片設計：Tesla AI5 自研雙代工、Stellantis 與 Foxconn 合資 SiliconAuto 自 2026 起供下一代車型平台客製晶片——壓縮第三方晶片商可服務市場（SAM）。",
+   "companies": [
+    {
+     "name": "比亞迪 BYD",
+     "ticker": "1211.HK",
+     "country": "CN",
+     "share": "智駕平價化錨點",
+     "products": "天神之眼 A/B/C（100-600 TOPS）",
+     "note": "全系標配、>20 車型；至 2025 末裝車 >250 萬輛。【絃外之音】BYD 同時是地平線/外購晶片最大客戶與比亞迪半導體自研者——客戶集中度即定價權：智駕 SoC 廠對單一最大買家議價力薄，BYD 自研比例上升將反噬上游 ASP",
+     "src": "https://paultan.org/2025/02/13/byd-unveils-gods-eye-dipilot-adas-suite-to-roll-out-in-all-byd-denza-yangwang-models-sold-in-china/"
+    },
+    {
+     "name": "Tesla",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "自研路線標竿",
+     "products": "FSD / HW4·AI5 自研晶片",
+     "note": "Austin robotaxi 試營運；AI5 推論晶片 2026/4 完成 tape-out，採 TSMC 亞利桑那＋Samsung 德州雙代工（與 Samsung 簽 8 年約 $16.5B），2026H2-2027 量產——OEM 自研+垂直整合上游代工，對 NVIDIA 車用 SoC 構成中長期替代壓力",
+     "src": "https://www.financialcontent.com/article/tokenring-2026-1-26-tesla-breaks-the-foundry-monopoly-dual-sourcing-ai5-silicon-across-tsmc-and-samsungs-us-fabs-for-2026-global-ramp"
+    },
+    {
+     "name": "Lucid",
+     "ticker": "LCID",
+     "country": "US",
+     "share": "Thor 首發採用者",
+     "products": "中型平台（2 顆 DRIVE AGX Thor）",
+     "note": "光達+雷達+攝影機全感測組合",
+     "src": "https://insideevs.com/news/777224/lucid-midsize-autonomous-driving-nvidia/"
+    },
+    {
+     "name": "Volkswagen",
+     "ticker": "VOW3.DE",
+     "country": "DE",
+     "share": "Mobileye 最大客戶群",
+     "products": "SuperVision L2++ / Chauffeur L3",
+     "note": "EyeQ6H 程序里程碑達成",
+     "src": "https://ir.mobileye.com/news-releases/news-release-details/mobileye-releases-first-quarter-2026-results-updates-full-year"
+    },
+    {
+     "name": "吉利 / 極氪",
+     "ticker": "0175.HK",
+     "country": "CN",
+     "share": "robotaxi 供應者",
+     "products": "ZEEKR RT（Thor 域控）",
+     "note": "供 Waymo robotaxi 車隊",
+     "src": "https://www.nvidia.com/en-us/solutions/autonomous-vehicles/news/"
+    },
+    {
+     "name": "理想 / 小鵬",
+     "ticker": "2015.HK",
+     "country": "CN",
+     "share": "城市 NOA 軍備競賽",
+     "products": "城市 NOA / 自研晶片",
+     "note": "小鵬圖靈晶片已上車；理想 L2+ 年銷 >50 萬輛"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "adas_soc_global"
+    },
+    {
+     "id": "adas_soc_china"
+    },
+    {
+     "id": "tier_one_domain"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "BYD 天神之眼 (Counterpoint)",
+     "url": "https://counterpointresearch.com/en/insights/byd-eyes-global-adas-revolution-with-gods-eye"
+    },
+    {
+     "label": "中國 NOA 滲透 (ResearchInChina)",
+     "url": "http://www.researchinchina.com/Htmls/Report/2024/76027.html"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "auto_foundry",
+   "adas_soc_global"
+  ],
+  [
+   "auto_foundry",
+   "adas_soc_china"
+  ],
+  [
+   "adas_soc_global",
+   "tier_one_domain"
+  ],
+  [
+   "adas_soc_global",
+   "oem_demand"
+  ],
+  [
+   "adas_soc_china",
+   "oem_demand"
+  ],
+  [
+   "auto_mcu",
+   "tier_one_domain"
+  ],
+  [
+   "auto_sensor",
+   "tier_one_domain"
+  ],
+  [
+   "tier_one_domain",
+   "oem_demand"
+  ]
+ ],
+ "_proposed": {}
+}

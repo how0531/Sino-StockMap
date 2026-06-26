@@ -1,0 +1,563 @@
+{
+ "id": "silicon_laser_els",
+ "tab": "矽光子雷射源",
+ "title": "矽光子雷射源 / 外部光源 ELS 供應鏈 (Photonic Laser Sources)",
+ "subtitle": "Photonic Laser Sources / External Light Source — CPO 把光引擎搬進交換器/GPU 封裝後，雷射因熱、可靠度、可維修三重物理衝突『不能』一起進封裝，於是被外置成前面板可熱插拔的 ELS/ELSFP 模組（OIF-ELSFP-02.0、CW-WDM MSA）。這條鏈用 CW（連續波）DFB 而非可插拔的 EML，是整座 AI 光網路最深、最不可替代的單點：一顆 1310nm 高功率 CW 雷射（200-400mW/24dBm）gate 住整台交換器開機。NVIDIA 2026-03 對 Lumentum、Coherent 各注資 $2B（合 $4B）鎖長期雷射產能＝把單點私有化。價值鏈：InP 基板（AXT 60-70%，缺口 >70%）→ InP 磊晶（IQE 6 吋/聯亞 IDM）→ 高功率 CW 雷射晶粒（Lumentum/Coherent 雙寡占）→ ELS/ELSFP 模組 → 盲配連接器 → CPO 整機（NVIDIA Quantum-X 每台僅 18 顆 ELSFP）。TrendForce 估 CPO/NPO 市場 2030 逾 $390 億、laser 段 CAGR ~21%。有別於 siph（矽光子平台）與 optical_module（可插拔 EML）。⚠ 風險：CPO 採用時程滑期、單一大客戶集中、估值過熱（Sivers YTD 一度 +2000%）。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 5
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "ELSFP 模組市場",
+   "v": ">$15億",
+   "sub": "2026 逾$1億→2030（Cignal AI 2026-05）·CPO 埠 3000 萬埠/年",
+   "hot": true
+  },
+  {
+   "k": "最深單點 / 催化",
+   "v": "NVIDIA $4B",
+   "sub": "鎖 Lumentum/Coherent 雷射產能＝單點私有化",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "sub",
+   "label": "InP 基板 Substrate",
+   "main": false
+  },
+  {
+   "id": "epi",
+   "label": "InP 磊晶 Epitaxy",
+   "main": false
+  },
+  {
+   "id": "laser",
+   "label": "高功率 CW 雷射晶粒 CW Laser Die",
+   "main": true
+  },
+  {
+   "id": "module",
+   "label": "ELS / ELSFP 模組 + 連接器 Module & Connector",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "CPO 整機 / 需求 Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "inp_substrate",
+   "row": "sub",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "InP 單晶基板（4吋→6吋）",
+   "nameEn": "InP Substrate (4\"→6\")",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · AXT 佔 InP 基板 60-70%；2025 全球出貨 60-70 萬片 vs 需求 150-200 萬片，訂單排到 2027+",
+   "desc": "磷化銦（InP）單晶基板是高速光通訊雷射的底材。AI 資料中心 CPO/ELS 需求把 InP 從利基推向結構性短缺，6 吋化是良率/成本分水嶺。",
+   "marketSize": "實體瓶頸",
+   "growth": "缺口 >70%",
+   "share": "null",
+   "analysis": "AXT（AXTI，子公司北京通美 Tongmei）控全球 InP 基板約 60-70%，2025 全球出貨僅 60-70 萬片 vs 需求 150-200 萬片（缺口 >70%、零庫存、訂單排到 2027+）。2026Q1 營收 $26.9M（QoQ +17%、YoY +39%），InP 首度逾總營收 50%、backlog 衝 $100M、中國相關 InP 營收連兩季翻倍；自 2025-10 起已加 ~25% 產能、2026 底較 2025Q4 翻倍（目標 $35M/季 InP run-rate），2027/2028 新鄰廠拉到 $65-70M/季；惟對中國出口許可仍為變數（2025Q4 受限、2026Q1 許可放行後北美僅占 1%）。前五大供應商（Sumitomo Electric、AXT、Freiberger、JX 金屬、全新 VPEC）合計約 70% 營收。日系 Sumitomo（5802.T）、JX Advanced Metals（5016.T）為基板五強；德國 Freiberger；台灣全新光電（2455.TW）兼基板+磊晶+高功率 CW；聯亞（3081.TWO）2026 與住友簽 2026-2030 五年供貨長約鎖基板。⚠ InP 上游鎵/銦為中國出口管制籌碼，地緣雙向卡脖子。",
+   "companies": [
+    {
+     "name": "AXT (Tongmei 通美)",
+     "ticker": "AXTI",
+     "country": "US",
+     "share": "InP 基板 60-70%",
+     "products": "InP 單晶基板 4\"/6\"",
+     "note": "2026Q1 營收 $26.9M(+17% QoQ)、InP 首破總營收 50%、backlog $100M；2026 底產能較 2025Q4 翻倍($35M/季)、2027/28 新廠拉到 $65-70M/季；對中出口許可為變數",
+     "src": "https://www.semiconductor-today.com/news_items/2026/may/axt-050526.shtml"
+    },
+    {
+     "name": "Sumitomo Electric 住友電工",
+     "ticker": "5802.T",
+     "country": "JP",
+     "share": "基板五強",
+     "products": "InP 基板 / EML 晶粒",
+     "note": "垂直整合至雷射晶粒",
+     "src": "https://www.mordorintelligence.com/industry-reports/indium-phosphide-wafer-market"
+    },
+    {
+     "name": "JX Advanced Metals",
+     "ticker": "5016.T",
+     "country": "JP",
+     "share": "基板五強",
+     "products": "InP 單晶基板",
+     "note": "日系高純度金屬大廠",
+     "src": "https://www.mordorintelligence.com/industry-reports/indium-phosphide-wafer-market"
+    },
+    {
+     "name": "Freiberger",
+     "ticker": "—",
+     "country": "DE",
+     "share": "基板五強",
+     "products": "InP / GaAs 基板",
+     "note": "德系化合物基板",
+     "src": "https://www.mordorintelligence.com/industry-reports/indium-phosphide-wafer-market"
+    },
+    {
+     "name": "全新光電 VPEC",
+     "ticker": "2455.TW",
+     "country": "TW",
+     "share": "基板+磊晶五強之一",
+     "products": "InP 磊晶 / 300mW CW / 1.6T PD",
+     "note": "法人估 2026 光電子營收翻倍、占比衝 40%+",
+     "src": "https://wantrich.chinatimes.com/news/20260409900253-420101"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "inp_epi"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AXT Q1 出口許可+17% (Semiconductor Today)",
+     "url": "https://www.semiconductor-today.com/news_items/2026/may/axt-050526.shtml"
+    },
+    {
+     "label": "InP 基板市場/五強 (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/indium-phosphide-wafer-market"
+    }
+   ]
+  },
+  {
+   "id": "inp_epi",
+   "row": "epi",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "InP 磊晶片（DFB/CW/PD 結構）",
+   "nameEn": "InP Epitaxy",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · IQE 業界首推 6 吋 InP DFB/EML/PD 平台；磊晶良率與 6 吋化是放量瓶頸",
+   "desc": "把 InP 基板長成含 DFB/CW/PD 結構的磊晶片，是雷射晶粒的前一站。CPO 成熟後磊晶成為量產瓶頸而非僅戰略瓶頸。",
+   "marketSize": "volume bottleneck",
+   "growth": "6吋化爬坡",
+   "share": "null",
+   "analysis": "IQE（IQE.L，英國）業界首推 6 吋（150mm）InP DFB/EML/FP 雷射 + PIN PD 平台，為純磊晶代工模式、隨 CPO 成為 volume bottleneck；2026-06-15 與 Tower Semiconductor 簽多年 InP 磊晶供貨長約並和解專利訴訟（取得 Tower 多孔矽專利全球免權利金授權）＝拿下 tier-one 矽光 foundry 錨定客戶、提供合約營收底，並關閉賓州 MBE 廠、收斂至北卡/Newport 重整資本結構。台灣聯亞（3081.TWO）為 IDM（自基板/磊晶到 DFB/CW），2026Q1 EPS NT$3.44（QoQ +66%、YoY +648%）、2026-05 月營收 +119% YoY，於 1.6T 優先量產 ELS（而非研發中的 CPO）搶 NVIDIA 立即性商機、多波長技術壟斷性領先、基板 2\"→3\" 升級降本，InP CW 雷射磊晶獨步；全新光電（2455.TW）以 300mW 高功率 CW + 1.6T PD 切入。中國源傑（688498.SS）為 IDM 全製程（設計+磊晶+製造+封裝），2026Q1 營收 ¥3.55 億（YoY +321%）、淨利 ¥1.79 億（+1153%），CW70mW 量產、CW100mW（1.6T 矽光）通過客戶驗證並小批出貨。⚠ 6 吋 InP 磊晶若爬坡不順，整鏈瓶頸上移至此。",
+   "companies": [
+    {
+     "name": "IQE",
+     "ticker": "IQE.L",
+     "country": "UK",
+     "share": "6吋 InP 磊晶平台領先",
+     "products": "6\" InP DFB/EML/FP 磊晶 + PIN PD",
+     "note": "2026-06 與 Tower 簽多年 InP 磊晶供貨長約+和解專利＝拿下 tier-one 矽光 foundry 錨定客戶；關 PA MBE 廠重整資本",
+     "src": "https://www.iqep.com/media/press-releases/2026/iqe-and-tower-semiconductor-announce-multi-year-inp-epiwafer-supply-agreement/"
+    },
+    {
+     "name": "聯亞 LandMark",
+     "ticker": "3081.TWO",
+     "country": "TW",
+     "share": "台灣 InP 磊晶 IDM 核心",
+     "products": "InP 磊晶 + DFB/CW 雷射 / ELS",
+     "note": "2026Q1 EPS NT$3.44(+648% YoY)；1.6T 優先量產 ELS、多波長壟斷；與住友簽五年供貨長約",
+     "src": "https://winvest.tw/News/Detail/83921"
+    },
+    {
+     "name": "全新光電 VPEC",
+     "ticker": "2455.TW",
+     "country": "TW",
+     "share": "高功率 CW + PD",
+     "products": "InP 磊晶 / 300mW CW / 1.6T PD",
+     "note": "法人估 2026 光電子營收翻倍",
+     "src": "https://uanalyze.com.tw/articles/5613923288"
+    },
+    {
+     "name": "源傑科技 Yuanjie",
+     "ticker": "688498.SS",
+     "country": "CN",
+     "share": "中國唯一 IDM 全製程",
+     "products": "InP 磊晶+DFB/EML/CW",
+     "note": "2026Q1 營收 ¥3.55 億(+321% YoY)、淨利 +1153%；CW100mW(1.6T 矽光)通過驗證小批出貨",
+     "src": "https://finance.sina.com.cn/jjxw/2026-04-28/doc-inhvzmyi1772363.shtml"
+    },
+    {
+     "name": "Coherent (自有磊晶)",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "6吋 InP 垂直整合",
+     "products": "6\" InP 磊晶+雷射 IDM",
+     "note": "Sherman 6 吋線全產量爬坡、產能 >5x、良率優於 3 吋；瑞典線 2025-08 起",
+     "src": "https://www.coherent.com/news/press-releases/coherent-samples-low-noise-400mw-cw-lasers"
+    },
+    {
+     "name": "Tower Semiconductor",
+     "ticker": "TSEM",
+     "country": "IL",
+     "share": "矽光/InP foundry 平台",
+     "products": "SiPho/EIC 製程 + InP 磊晶採購(向 IQE)",
+     "note": "2026-06 與 IQE 簽多年 InP 磊晶長約；已簽 2027 矽光營收合約 $1.3B；與 NVIDIA 攻 1.6T、與 Coherent 達 400Gbps/lane",
+     "src": "https://towersemi.com/2026/05/13/05132026_1/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "inp_substrate"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cw_laser_die"
+    }
+   ],
+   "sources": [
+    {
+     "label": "IQE×Tower 多年 InP 磊晶長約+和解 (IQE 官方 2026-06)",
+     "url": "https://www.iqep.com/media/press-releases/2026/iqe-and-tower-semiconductor-announce-multi-year-inp-epiwafer-supply-agreement/"
+    },
+    {
+     "label": "源傑 Q1 CW 放量、淨利 +1153% (新浪財經)",
+     "url": "https://finance.sina.com.cn/jjxw/2026-04-28/doc-inhvzmyi1772363.shtml"
+    },
+    {
+     "label": "聯亞磊晶獨步 (UAnalyze)",
+     "url": "https://uanalyze.com.tw/articles/5613923288"
+    }
+   ]
+  },
+  {
+   "id": "cw_laser_die",
+   "row": "laser",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "高功率 CW DFB 雷射晶粒（1310nm/24dBm）",
+   "nameEn": "High-Power CW DFB Laser Die",
+   "competition": "oligopoly",
+   "single": "⚠ 全鏈最深單點 · 一顆 CW 雷射 gate 整台交換器；NVIDIA $4B 鎖 Lumentum/Coherent 產能＝把單點私有化",
+   "desc": "ELS 的核心：1310nm 連續波（CW）DFB 雷射晶粒，單通道 23-25dBm（約 200-300mW）。雷射只負責發光，調變在矽光引擎做（與可插拔的 EML 戰場不同）。矽不發光，這顆 CW 雷射是 CPO 最深、最不可替代的單點。",
+   "marketSize": "最深單點 · 定價權所在",
+   "growth": "laser 段 CAGR ~21%",
+   "share": "null",
+   "analysis": "⚠ CPO 把利潤池從模組組裝（淨利率 20-33%）往上推到光源——一顆 CW 雷射 gate 住整台交換器開機。NVIDIA 2026-03-02 對 Lumentum、Coherent 各注資約 $2B（合 $4B）鎖長期雷射產能（含建美國新 fab）＝把最深單點私有化，把非 NVIDIA 買家交期推到 2027 後。Lumentum（LITE）超高功率 CW 雷射晶片量產在軌、12 月季可見實質營收並履行 1H27『數億美元級』ELS PO；雲端模組約 20% 已用自製 CW 雷射；FY26Q3 $808.4M（+90% YoY）、FY26Q4 指引 $960M-$1.01B、營益率指引 35-36%。Coherent（COHR）德州 Sherman 6 吋 InP 全產量爬坡、產能 >5x（良率優於成熟 3 吋線）、400mW 低噪 CW 雷射量產/GA 排 2026Q3、OFC 2026 展自研 InP CW 的 ELS + 6.4T（32×200G）socketed CPO、FY26Q3 $1.81B（+21%），為唯一具量產規模的雙雄之二。中國快速國產化：源傑（688498.SS，2026Q1 淨利 +1153%、CW70mW 量產/CW100mW 驗證小批、開發 300mW+ CPO 用 CW）、長光華芯（688048.SS，70mW CWDM4 + 200mW uncooled CW DFB）、仕佳光子（688313.SS，非制冷 100mW + 商溫 400mW CW DFB 小批出貨）。歐系黑馬 Sivers（SIVE.ST，與 GlobalFoundries 合作供 SCALE 雷射、2026 認證/2027 量產，YTD 一度 +2000%，但 InP 雷射良率 <30%）。日系 Sumitomo（5802.T）/三菱（6503.T）為 CW/EML 五強。CW Laser 全球市場 2025 約 $25-30 億 → 2027 估 $76.7 億（2026-28 CAGR >40%）。",
+   "companies": [
+    {
+     "name": "Lumentum",
+     "ticker": "LITE",
+     "country": "US",
+     "share": "CW 雷射西方雙雄之一",
+     "products": "高功率 CW DFB / ELSFP(1311nm/24dBm/雙TEC/16ch DWDM)",
+     "note": "超高功率 CW 12 月季見實質營收、履行 1H27 數億美元級 ELS PO；雲端模組 ~20% 用自製 CW；FY26Q3 $808M(+90% YoY)、FY26Q4 指引 $960M-$1.01B / 營益率 35-36%；NVIDIA $2B 建美新 fab",
+     "src": "https://www.semiconductor-today.com/news_items/2026/may/lumentum-140526.shtml"
+    },
+    {
+     "name": "Coherent",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "CW 雷射西方雙雄之一",
+     "products": "高功率 InP CW(400mW 低噪) / ELS 模組 / 6.4T socketed CPO",
+     "note": "Sherman 6 吋 InP 全產量爬坡、產能 >5x；400mW CW 量產/GA 排 2026Q3；NVIDIA $2B；FY26Q3 $1.81B(+21%)",
+     "src": "https://www.coherent.com/news/press-releases/coherent-samples-low-noise-400mw-cw-lasers"
+    },
+    {
+     "name": "源傑科技 Yuanjie",
+     "ticker": "688498.SS",
+     "country": "CN",
+     "share": "中國唯一 IDM 全製程",
+     "products": "CW DFB(70mW 量產/100mW 驗證/開發 300mW+ CPO 用) / EML",
+     "note": "2026Q1 營收 ¥3.55 億(+321% YoY)、淨利 ¥1.79 億(+1153%)；¥12.51 億二期擴產 2026 底投產",
+     "src": "https://finance.sina.com.cn/jjxw/2026-04-28/doc-inhvzmyi1772363.shtml"
+    },
+    {
+     "name": "Sivers Semiconductors",
+     "ticker": "SIVE.ST",
+     "country": "SE",
+     "share": "歐系黑馬→GF SCALE 參考設計",
+     "products": "InP CW 雷射陣列",
+     "note": "2026-06-02 升級：Sivers 雷射陣列成 GF SCALE CPO 平台『參考設計』(AMD+多家 hyperscaler ASIC 採用)；production-ready 2027、Q4 2026 LiDAR SOP 首次量產驗證；良率 <30%",
+     "src": "https://www.prnewswire.com/news-releases/sivers--globalfoundries-advance-ai-data-center-optical-solutions-302788035.html"
+    },
+    {
+     "name": "長光華芯 Everbright Photonics",
+     "ticker": "688048.SS",
+     "country": "CN",
+     "share": "中國高功率雷射晶片龍頭",
+     "products": "70mW CWDM4 / 200mW uncooled CW DFB",
+     "note": "中國自主高功率 CW 主力",
+     "src": "https://www.ab-sm.com/a/74368"
+    },
+    {
+     "name": "仕佳光子 Shijia",
+     "ticker": "688313.SS",
+     "country": "CN",
+     "share": "CW DFB 切入",
+     "products": "資料中心非制冷 100mW + 商溫 400mW CW DFB",
+     "note": "高功率 CW DFB 已小批出貨；矽光 100/200/400G 應用",
+     "src": "https://pdf.dfcfw.com/pdf/H3_AP202606011823122684_1.pdf"
+    },
+    {
+     "name": "Sumitomo / 三菱 Mitsubishi",
+     "ticker": "5802.T / 6503.T",
+     "country": "JP",
+     "share": "CW/EML 五強(日系)",
+     "products": "InP CW DFB / EML",
+     "note": "雷射晶粒供應主力",
+     "src": "https://www.mordorintelligence.com/industry-reports/indium-phosphide-wafer-market"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "inp_epi"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "els_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA 注資 Coherent/Lumentum $4B (CNBC)",
+     "url": "https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html"
+    },
+    {
+     "label": "Lumentum FY26Q3 $808M +90%、FY26Q4 指引 (Semiconductor Today)",
+     "url": "https://www.semiconductor-today.com/news_items/2026/may/lumentum-140526.shtml"
+    },
+    {
+     "label": "Coherent 400mW 低噪 CW 量產/GA 2026Q3 (官方)",
+     "url": "https://www.coherent.com/news/press-releases/coherent-samples-low-noise-400mw-cw-lasers"
+    }
+   ]
+  },
+  {
+   "id": "els_module",
+   "row": "module",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "ELS / ELSFP 模組 + 盲配連接器",
+   "nameEn": "ELS/ELSFP Module & Blind-mate Connector",
+   "competition": "oligopoly",
+   "single": "客戶綁定 · NVIDIA Quantum-X ELS 由 Lumentum/住友/Coherent 三家供；ELSFP 把最高故障率元件放前面板可熱插拔",
+   "desc": "把 CW 晶粒 + 雙 TEC（控溫）+ 保偏 FAU（耦合）+ 盲配連接器封裝成前面板可插拔的 ELS/ELSFP 模組（OIF-ELSFP-02.0、CMIS、CW-WDM MSA 8/16/32 波長）。把雷射搬離 ASIC 解決熱、可靠度、可維修三衝突。",
+   "marketSize": "前面板可熱插拔",
+   "growth": "OIF 標準化",
+   "share": "null",
+   "analysis": "ELSFP 三大元件：高功率 InP CW-DFB 晶粒（發光）+ TEC（精準控溫）+ 保偏 FAU（耦合），單通道目標 23-25dBm（200-300mW）。模組廠：Lumentum（ELSFP 1311nm/24dBm/雙TEC）、Coherent（自研 InP CW 的 ELS、6.4T 32×200G socketed CPO）、住友電工（NVIDIA Quantum-X ELS 三供之一）、台灣 APAC Opto（符合 OIF-ELSFP-02.0）。盲配光連接器：Senko（精密盲配、雙 MT ferrule、自對準、hot-swap）、Molex（ELSFP Interconnect System）、TE Connectivity（TEL，102.4T CPO 前面板可插拔）、Amphenol（APH，OIF 成員）。標準由 OIF（OIF-ELSFP-02.0）+ CW-WDM MSA 制定。⚠ 可靠度賣點：hyperscaler 現場數據雷射為前三大故障模式，ELSFP 把最高故障率元件放前面板可熱插拔、CPO 免停機（Broadcom Bailly CPO MTBF 250 萬小時；Meta 量測 CPO link MTBF 較可插拔改善 ~5 倍）。",
+   "companies": [
+    {
+     "name": "Lumentum (ELSFP)",
+     "ticker": "LITE",
+     "country": "US",
+     "share": "ELSFP 模組領先",
+     "products": "ELSFP 模組（CW+雙TEC+FAU）",
+     "note": "1311nm/每波長 24dBm；集中化可維修光源",
+     "src": "https://www.lumentum.com/en/products/external-laser-source-els-module-ultra-high-power-laser"
+    },
+    {
+     "name": "Coherent (ELS)",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "ELS 模組（自研 InP CW）",
+     "products": "ELS 模組 / 6.4T(32×200G) socketed CPO",
+     "note": "OFC 2026 展 6.4T socketed CPO + 自研 400mW InP CW 的 ELS；6 吋 InP 全產量爬坡",
+     "src": "https://www.coherent.com/news/press-releases/coherent-co-packaged-optics-cpo-technologies-ofc-2026"
+    },
+    {
+     "name": "Sumitomo Electric 住友",
+     "ticker": "5802.T",
+     "country": "JP",
+     "share": "NVIDIA ELS 三供之一",
+     "products": "ELS 模組組裝/對位/測試",
+     "note": "NVIDIA Quantum-X ELS 供應三家之一",
+     "src": "https://optics.org/news/16/3/26"
+    },
+    {
+     "name": "Senko",
+     "ticker": "—",
+     "country": "US",
+     "share": "盲配連接器",
+     "products": "ELSFP 精密盲配連接器",
+     "note": "雙 MT ferrule、自對準、hot-swap",
+     "src": "https://www.senko.com/wp-content/uploads/2024/08/Data-Sheet_ELSFP-Module-Connector.pdf"
+    },
+    {
+     "name": "TE Connectivity",
+     "ticker": "TEL",
+     "country": "CH",
+     "share": "ELSFP 前面板可插拔",
+     "products": "ELSFP cage/connector",
+     "note": "102.4T CPO 雷射封裝介面",
+     "src": "https://www.te.com/en/products/connectors/pluggable-connectors-cages/intersection/elsfp.html"
+    },
+    {
+     "name": "Molex",
+     "ticker": "—",
+     "country": "US",
+     "share": "ELSFP 互連系統",
+     "products": "ELSFP Interconnect System",
+     "note": "外部光源至光晶片連接、可現場維修",
+     "src": "https://www.molex.com/en-us/products/optical-solutions/elsfp-interconnect-system"
+    },
+    {
+     "name": "Amphenol",
+     "ticker": "APH",
+     "country": "US",
+     "share": "OIF ELSFP 成員",
+     "products": "光連接/互連",
+     "note": "ELSFP 規格參與者",
+     "src": "https://www.oiforum.com/oif-announces-external-laser-small-form-factor-pluggable-elsfp-implementation-agreement-paving-the-way-for-advancements-in-co-packaged-optics-applications/"
+    },
+    {
+     "name": "APAC Opto",
+     "ticker": "—",
+     "country": "TW",
+     "share": "ELSFP 模組",
+     "products": "ELSFP 模組（OIF-ELSFP-02.0）",
+     "note": "台廠切入外部光源模組",
+     "src": "https://www.ecocexhibition.com/exhibitor-news/apac-opto-els-external-laser-source-module/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cw_laser_die"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cpo_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Lumentum ELS 模組 (官方)",
+     "url": "https://www.lumentum.com/en/products/external-laser-source-els-module-ultra-high-power-laser"
+    },
+    {
+     "label": "OIF-ELSFP-02.0 規格 (OIF PDF)",
+     "url": "https://www.oiforum.com/wp-content/uploads/OIF-ELSFP-02.0.pdf"
+    },
+    {
+     "label": "CPO 雷射 single point / 可維修 (MapYourTech)",
+     "url": "https://mapyourtech.com/co-packaged-optics-architecture-status-and-the-path-to-1-6t-switches/"
+    }
+   ]
+  },
+  {
+   "id": "cpo_demand",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "CPO 整機 / Hyperscaler 需求",
+   "nameEn": "CPO Systems & Demand",
+   "competition": "emerging",
+   "single": "⚠ 時程變數 · NVIDIA Quantum-X 每台僅 18 顆 ELSFP（每顆供 8 引擎）→ 雷射集中化反強化單點",
+   "desc": "CPO 交換器 / GPU 封裝整機與 hyperscaler 是 ELS 需求源頭。CPO 先打 scale-up，可插拔 2028 前仍主導 scale-out；ELS 真正爆量看 CPO 採用曲線。",
+   "marketSize": "需求錨點",
+   "growth": "市場 >$390億(2030)",
+   "share": "null",
+   "analysis": "NVIDIA（NVDA）已開始出貨 Quantum-X InfiniBand 光子交換器（CPO 版，早 2026），Spectrum-X Ethernet CPO 版預定 2026Q3 底前出貨；每台 Quantum-X 115.2Tb/s（144 埠×800G、24 光引擎用 TSMC COUPE）僅需 18 顆 ELSFP 雷射模組（每顆供 8 個 1.6Tb/s 矽光引擎、單位頻寬雷射模組數約少 4×）——雷射顆數少但每顆更關鍵、功率更高，單點性不降反升；NVIDIA $4B 鎖 Lumentum/Coherent 雷射產能。Broadcom（AVGO）Bailly/TH6 CPO（MTBF 250 萬小時）。GlobalFoundries（GFS）2026-05 推 SCALE 矽光 CPO 光引擎模組、採 Sivers 雷射陣列為參考設計（AMD MI500 回流 GF CPO）。矽光 foundry 端：Tower（TSEM）已簽 2027 矽光營收合約 $1.3B、與 NVIDIA 攻 1.6T、與 IQE 鎖 InP 磊晶供貨；TSMC COUPE 量產。終端 hyperscaler：微軟、Meta、Google 已承諾 2026-2030 CPO 交換，估每年數億顆 CW 需求。市場：TrendForce 估 CPO/NPO 2025 約 $1 億 → 2030 逾 $390 億、laser 段 CAGR 最快 ~21%。Cignal AI(2026-05)：ELSFP 模組市場 2026 逾 $1 億→2030 逾 $15 億、2030 CPO 埠逾 3000 萬埠/年；NVIDIA 為首家量產級 CPO 部署者。⚠ 風險：可插拔（含 LPO/LRO）降本超預期則 CPO 量產遞延、ELS 需求遞延；單一大客戶集中（NVIDIA）；標準（OIF-ELSFP vs 其他 form factor）未完全收斂。",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "CPO 交換器主導",
+     "products": "Quantum-X / Spectrum-X 光子交換器",
+     "note": "已出貨 Quantum-X CPO 版、Spectrum-X CPO 版排 2026Q3 底；每台 Quantum-X 僅 18 顆 ELSFP；$4B 鎖雷射產能；首家量產級 CPO 部署者",
+     "src": "https://www.hpcwire.com/2026/04/20/inside-nvidias-silicon-photonics-roadmap/"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "CPO 交換器挑戰者",
+     "products": "Bailly / TH6 CPO 交換器",
+     "note": "Bailly CPO MTBF 250 萬小時",
+     "src": "https://mapyourtech.com/co-packaged-optics-architecture-status-and-the-path-to-1-6t-switches/"
+    },
+    {
+     "name": "GlobalFoundries",
+     "ticker": "GFS",
+     "country": "US",
+     "share": "CPO 矽光平台/foundry",
+     "products": "SCALE 矽光 CPO 光引擎",
+     "note": "2026-06-02 採 Sivers 雷射陣列為 SCALE 參考設計(AMD+hyperscaler ASIC)；AMD MI500 回流 GF CPO",
+     "src": "https://gf.com/gf-press-release/globalfoundries-accelerates-adoption-of-co-packaged-optics-for-advanced-ai-data-centers-with-scale-optical-module-solution/"
+    },
+    {
+     "name": "Tower Semiconductor",
+     "ticker": "TSEM",
+     "country": "IL",
+     "share": "矽光 foundry 平台",
+     "products": "SiPho/EIC 製程 / 1.6T 矽光模組",
+     "note": "2026-05 簽 2027 矽光營收合約 $1.3B；與 NVIDIA 攻 1.6T、向 IQE 鎖 InP 磊晶、與 Coherent 達 400Gbps/lane",
+     "src": "https://towersemi.com/2026/05/13/05132026_1/"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "Hyperscaler 採用",
+     "products": "CPO 資料中心交換",
+     "note": "2026-2030 CPO 交換承諾之一",
+     "src": "https://www.trendforce.com/presscenter/news/20260615-13098.html"
+    },
+    {
+     "name": "Meta",
+     "ticker": "META",
+     "country": "US",
+     "share": "Hyperscaler 採用",
+     "products": "CPO 交換",
+     "note": "量測 CPO link MTBF 較可插拔改善 ~5 倍",
+     "src": "https://mapyourtech.com/co-packaged-optics-architecture-status-and-the-path-to-1-6t-switches/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "els_module"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "NVIDIA 矽光 roadmap / Quantum-X 出貨 (HPCwire 2026-04)",
+     "url": "https://www.hpcwire.com/2026/04/20/inside-nvidias-silicon-photonics-roadmap/"
+    },
+    {
+     "label": "ELSFP 模組市場 2030 逾 $1.5B (Cignal AI 2026-05)",
+     "url": "https://cignal.ai/2026/05/elsfp-module-market-to-exceed-1-5-billion-by-2030/"
+    },
+    {
+     "label": "CPO/NPO >$39B by 2030 (TrendForce)",
+     "url": "https://www.trendforce.com/presscenter/news/20260615-13098.html"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "inp_substrate",
+   "inp_epi"
+  ],
+  [
+   "inp_epi",
+   "cw_laser_die"
+  ],
+  [
+   "cw_laser_die",
+   "els_module"
+  ],
+  [
+   "els_module",
+   "cpo_demand"
+  ]
+ ],
+ "_proposed": {}
+}

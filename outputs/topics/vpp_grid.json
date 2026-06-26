@@ -1,0 +1,648 @@
+{
+ "id": "vpp_grid",
+ "tab": "虛擬電廠",
+ "title": "虛擬電廠與電力交易供應鏈 (Virtual Power Plants & Grid Software)",
+ "subtitle": "Virtual Power Plants & Grid Software — AI 資料中心用電暴增、新建電廠/輸電線跟不上，逼出「以軟體換產能」的最高槓桿環節：用軟體把成千上萬個分散式能源(屋頂光電/家用電池/EV/恆溫器/可削減負載)聚合成一座看不見的電廠，對電網提供削峰/調頻並在批發市場競價變現。VPP 全球市場 2026 約 $7.7B、CAGR 22-28%、2035 上看 $45.7B；DERMS 2026 約 $1.1-1.3B；ETRM 電力交易軟體 2025 $3B→2034 $6.4B。皇冠明珠 Octopus 的 Kraken 軟體以 $8.65B 估值分拆、合約帳戶逾 7,000 萬、年化營收破 $5 億、2026 中潛在 IPO。催化：Google 已與印第安那/田納西簽 AI 削峰合約、FERC Order 2222 開放 DER 進批發市場。有別於 grid_power(實體 T&D 硬體)：本主題是位元與演算法，不是鐵與銅。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "VPP 市場 2026",
+   "v": "~$7.7B",
+   "sub": "CAGR 22-28%·2035 $45.7B(Precedence)",
+   "hot": true
+  },
+  {
+   "k": "Kraken 估值",
+   "v": "$8.65B",
+   "sub": "募資 $1B·帳戶 7,500 萬·2026 中分拆/潛在 IPO 上看 $15B",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "edge",
+   "label": "邊緣遙測 / 智慧電表 Grid Edge & AMI",
+   "main": false
+  },
+  {
+   "id": "der",
+   "label": "DER 設備層(附 VPP 服務) DER Devices + Grid Services",
+   "main": false
+  },
+  {
+   "id": "soft",
+   "label": "VPP / DERMS 聚合調度軟體 Aggregation & Dispatch SW",
+   "main": true
+  },
+  {
+   "id": "market",
+   "label": "電力市場交易 + 公用事業 OS Trading & Utility OS",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ami_edge",
+   "row": "edge",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "智慧電表 AMI / 閘道 / Grid Edge Intelligence",
+   "nameEn": "Smart Meters (AMI), Gateways & Grid Edge",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "VPP 的數據與控制神經末梢：智慧電表(AMI)、閘道、邊緣運算提供雙向通訊與遙測——沒有它 DER 無法被聚合與結算。",
+   "marketSize": "VPP 數據神經末梢",
+   "growth": "Grid Edge +23%",
+   "share": "null",
+   "analysis": "Itron(ITRI)的 Grid Edge Intelligence 平台帶動 2026Q1 Outcomes 部門 +22%、ARR +28%(含新併 Resiliency Solutions)、營收 $587M(-3% YoY)、backlog $4.4B、non-GAAP EPS $1.49，Outcomes 經常性營收占比 2/3-3/4 且持續攀升，並與 Schneider 合作簡化配電現代化；Landis+Gyr(LAND.SW)為 130 年電表老廠轉智慧電網、Gridstream 整合 head-end/MDM/分析、推 IoT-ready 新一代電表(LTE/端對端加密)。Honeywell/Aclara(HON)為 DRMS 軟體供應商之一；Tantalus(TANT)專攻中小公用事業。集中度 competitive：Itron+Landis+Gyr 雙雄 + Honeywell/Aclara + 區域玩家。",
+   "companies": [
+    {
+     "name": "Itron",
+     "ticker": "ITRI",
+     "country": "US",
+     "share": "Grid Edge Intelligence 領先",
+     "products": "AMI 智慧電表 / DERMS / grid edge",
+     "note": "2026Q1 營收 $587M(-3% YoY)、Outcomes 部門 +22%、ARR +28%(含 Resiliency Solutions)、backlog $4.4B、non-GAAP EPS $1.49；與 Schneider 合作",
+     "src": "https://investors.itron.com/news-releases/news-release-details/itron-announces-first-quarter-2026-financial-results"
+    },
+    {
+     "name": "Landis+Gyr",
+     "ticker": "LAND.SW",
+     "country": "CH",
+     "share": "歐系電表龍頭",
+     "products": "智慧電表 / Gridstream 平台",
+     "note": "130 年電表老廠轉智慧電網；IoT-ready 新電表 LTE+端對端加密",
+     "src": "https://www.landisgyr.com/us/en/home/news-media/newsroom/emea-news/New-Generation-of-IoT-ready-Smart-Meters-from-Landis-Gyr-Helps-DSOs-Maintain-a-Safe,-Reliable-and-Efficient-Grid"
+    },
+    {
+     "name": "Honeywell (Aclara)",
+     "ticker": "HON",
+     "country": "US",
+     "share": "DRMS / 計量",
+     "products": "SmartConnect DRMS / AMI",
+     "note": "DRMS 需量反應管理系統供應商之一",
+     "src": "https://codibly.com/blog/articles/demand-response-companies"
+    },
+    {
+     "name": "Tantalus Systems",
+     "ticker": "TANT.TO",
+     "country": "CA",
+     "share": "中小公用事業 AMI",
+     "products": "TRUSense grid edge / AMI",
+     "note": "聚焦北美中小型公用事業 grid edge",
+     "src": "https://codibly.com/blog/articles/demand-response-companies"
+    },
+    {
+     "name": "Schneider Electric",
+     "ticker": "SU.PA",
+     "country": "FR",
+     "share": "EcoStruxure Grid",
+     "products": "Easergy 保護電驛 / SCADAPack RTU",
+     "note": "邊緣保護+RTU 整合進 ADMS/DERMS 全棧",
+     "src": "https://smartgrid.schneider-electric.com/smartgrid/s/derms-overview"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "vpp_soft"
+    },
+    {
+     "id": "der_devices"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Itron Grid Edge Intelligence (官方)",
+     "url": "https://investors.itron.com/news-releases/news-release-details/itron-showcase-advancements-grid-edge-intelligence-and"
+    },
+    {
+     "label": "Itron 8-K FY2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000780571/000117184326000850/exh_991.htm"
+    }
+   ]
+  },
+  {
+   "id": "der_devices",
+   "row": "der",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "DER 設備層(逆變器/電池/EV，附 VPP 服務)",
+   "nameEn": "DER Devices with Grid Services",
+   "competition": "competitive",
+   "single": "服務化槓桿 · 硬體商把一次性銷售轉為裝置生命週期經常性 grid-services 服務費",
+   "desc": "VPP 聚合的對象——屋頂光電逆變器、家用/工商業電池、EV。這些硬體商正往上長出自家 VPP/grid services 服務層收取經常性服務費(與 ess/ev/power 主題交界，本處切其「軟體/服務」業務線)。",
+   "marketSize": "VPP 聚合對象",
+   "growth": "服務化轉型",
+   "share": "null",
+   "analysis": "Tesla(TSLA)的 Autobidder AI 自動競價軟體(Scala/Akka/Kafka/gRPC 技術棧)+ Powerwall VPP，2026Q1 儲能部署創紀錄 14.4GWh、Megapack 3 休士頓廠規劃 50GWh/年；Sunrun(RUN)轉型分散式電廠營運商成效顯著——2026Q1 營收 $722M(+43% YoY)、EPS $0.62 大超預期、儲能附著率創紀錄 73%、單季淨加 ~19,000 客戶，3.7GWh 可調度電池上線(目標 2028 達 10GWh)，並與 NRG 合推德州 ERCOT 1GW 住宅 VPP；Enphase(ENPH)反為本期最弱一環——2026Q1 營收 $282.9M(-21% YoY)、IQ Battery MWh -39%、轉淨損、歐洲需求疲軟，惟 2026/4 整合澳洲 Evergen VPP 平台續推 grid services；SolarEdge(SEDG)Grid Services 雲端聚合 PV+儲能；Generac(GNRC)加州 VPP(PWRcell 電池，前期 $1,000+每年 $100)。VPP 對它們而言是估值由硬體倍數往服務倍數遷移的隱藏槓桿，但 2026-H1 住宅光電硬體景氣分歧(Sunrun 儲能優先勝出、Enphase 微逆變器承壓)。",
+   "companies": [
+    {
+     "name": "Tesla Energy",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "Autobidder + Powerwall VPP",
+     "products": "Autobidder AI 競價 / Powerwall / Megapack",
+     "note": "Scala/Akka/Kafka/gRPC 技術棧；多區域 VPP；2026Q1 儲能部署創紀錄 14.4GWh；Megapack 3 休士頓廠規劃 50GWh/年",
+     "src": "https://www.tesla.com/virtual-power-plant"
+    },
+    {
+     "name": "Sunrun",
+     "ticker": "RUN",
+     "country": "US",
+     "share": "美最大住宅 VPP",
+     "products": "CalReady 分散式電廠 / 17+ 個 VPP 計畫 / NRG Texas 1GW",
+     "note": "2026Q1 營收 $722M(+43% YoY)、EPS $0.62 大超預期、儲能附著率創紀錄 73%、單季加 ~19,000 客戶；3.7GWh 可調度電池上線、目標 2028 達 10GWh；與 NRG 合推德州 ERCOT 1GW 住宅 VPP",
+     "src": "https://www.stocktitan.net/news/RUN/sunrun-reports-first-quarter-2026-financial-is8xqyiprowp.html"
+    },
+    {
+     "name": "Enphase",
+     "ticker": "ENPH",
+     "country": "US",
+     "share": "微逆變器 + VPP 服務",
+     "products": "IQ Battery / 微逆變器 / grid services",
+     "note": "2026Q1 營收 $282.9M(-21% YoY)、IQ Battery MWh -39%、轉淨損 $7.4M、國際營收 -47%；2026/4 整合澳洲 Evergen VPP 平台；IQ Vault 商用電池 2027Q1 試點",
+     "src": "https://investor.enphase.com/news-releases/news-release-details/enphase-energy-expands-its-support-virtual-power-plants-across"
+    },
+    {
+     "name": "SolarEdge",
+     "ticker": "SEDG",
+     "country": "US",
+     "share": "PV 逆變器 + grid services",
+     "products": "Grid Services 雲端聚合 PV+儲能",
+     "note": "聚合控制與資料回報以組 VPP",
+     "src": "https://www.solaredge.com/en/products/services/grid-services"
+    },
+    {
+     "name": "Generac",
+     "ticker": "GNRC",
+     "country": "US",
+     "share": "備發 + 電池 VPP",
+     "products": "PWRcell 電池 / 備用發電機聚合",
+     "note": "加州 VPP 計畫前期 $1,000+每年 $100",
+     "src": "https://www.generac.com/services-applications/grid-solutions-programs/california-battery-program/"
+    },
+    {
+     "name": "WeaveGrid",
+     "ticker": "—",
+     "country": "US",
+     "share": "V2G / EV 智慧充電",
+     "products": "managed charging / V2G 聚合軟體",
+     "note": "未上市；與 Kia/Wallbox 示範 V2G 雙向充電",
+     "src": "https://www.weavegrid.com/news/live-demo-bringing-v2g-to-life"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ami_edge"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "vpp_soft"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sunrun 2026Q1 財報 (StockTitan)",
+     "url": "https://www.stocktitan.net/news/RUN/sunrun-reports-first-quarter-2026-financial-is8xqyiprowp.html"
+    },
+    {
+     "label": "Tesla VPP (官方)",
+     "url": "https://www.tesla.com/virtual-power-plant"
+    }
+   ]
+  },
+  {
+   "id": "vpp_soft",
+   "row": "soft",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "VPP / DERMS 聚合與調度軟體",
+   "nameEn": "VPP / DERMS Aggregation & Dispatch Software",
+   "competition": "competitive",
+   "single": "純軟最高價值層 · ABI 2025 排名 Schneider 第一、Siemens 第二、GE Vernova 第三",
+   "desc": "把 DER 設備聚合成 VPP、做負載預測/最佳化/即時調度的 SaaS——本主題純軟體價值最高的一層。大廠寡占骨幹、純軟新創長尾。",
+   "marketSize": "DERMS $1.1-1.3B(2026)",
+   "growth": "DERMS CAGR 14-16%",
+   "share": "null",
+   "analysis": "市場：DERMS 2026 約 $1.1-1.3B、CAGR 14.5-16.3%、2036 上看 $4.87B；VPP 軟體 2026 約 $7.7B、CAGR 22-28%。格局：ABI Research 2025 排 Schneider Electric(SU.PA)第一、Siemens(SIE.DE)第二、GE Vernova(GEV)第三，IDC MarketScape 把 GE Vernova 列 DERMS Leaders 象限，Top 5(Siemens/GE Vernova/IBM/Hitachi/Schneider)>30% 市占。GE Vernova(GEV)2026/2 推 GridOS for Distribution 統一 ADMS+DERMS 於 AI-ready 架構、2026Q1 整併為 Grid Automation & Software 並簽首筆 EMS 訂單(總 backlog 衝 $163B)；Schneider EcoStruxure Grid 全棧整合(2026Q1 營收 $11.4B/+11.2% 有機、資料中心驅動)；Hitachi Energy(6501.T)推業界首款 grid 專用 AI Nostradamus。純軟新創/整合：Uplight 2025 併 AutoGrid(整合 6GW 彈性容量)、EnergyHub 併 Resideo(250 萬裝置/300 計畫)、Stem(STEM)2026Q1 第 4 季連續正 Adj.EBITDA+純軟毛利率創紀錄 52%、GridBeyond 獲 Samsung Ventures €1,200 萬、Fluence(FLNC)Nispera/Mosaic 軟體(FQ2'26 營收 $4.65 億/+8%、backlog 創高 $56 億、ARR $1.57 億、簽兩大 hyperscaler MSA)、Wärtsilä(WRT1V.HE)GEMS。集中度 competitive：寡占骨幹+碎片化長尾。",
+   "companies": [
+    {
+     "name": "Schneider Electric",
+     "ticker": "SU.PA",
+     "country": "FR",
+     "share": "grid digitalization 全球第一(ABI)",
+     "products": "EcoStruxure Grid / DERMS / ADMS",
+     "note": "ABI 2025 排名第一；2026Q1 營收 $11.4B(+11.2% 有機、資料中心+能源安全驅動)；Verdantix DERMS Green Quadrant leader",
+     "src": "https://www.prnewswire.com/news-releases/schneider-electric-siemens-ag-and-ge-vernova-take-top-spots-in-abi-researchs-energy-grid-digitalization-technologies-competitive-ranking-302469980.html"
+    },
+    {
+     "name": "GE Vernova (GridOS)",
+     "ticker": "GEV",
+     "country": "US",
+     "share": "DERMS Leaders 象限(IDC)",
+     "products": "GridOS ADMS+DERMS / GridBeats / 停電管理 / DER 調度",
+     "note": "2026/2 推 GridOS for Distribution 統一 ADMS+DERMS 於 AI-ready 架構；2026Q1 整併為 Grid Automation & Software、簽下首筆 EMS 訂單、backlog 衝 $163B(資料中心電氣化訂單 $2.4B 已超 2025 全年)",
+     "src": "https://www.gevernova.com/software/products/gridos/distributed-energy-resources-management-system"
+    },
+    {
+     "name": "Siemens",
+     "ticker": "SIE.DE",
+     "country": "DE",
+     "share": "ABI 排名第二",
+     "products": "Spectrum Power / grid software",
+     "note": "電網數位化 ABI 第二",
+     "src": "https://www.prnewswire.com/news-releases/schneider-electric-siemens-ag-and-ge-vernova-take-top-spots-in-abi-researchs-energy-grid-digitalization-technologies-competitive-ranking-302469980.html"
+    },
+    {
+     "name": "Hitachi Energy",
+     "ticker": "6501.T",
+     "country": "JP",
+     "share": "業界首款 grid AI",
+     "products": "Nostradamus AI / Lumada / grid automation",
+     "note": "母公司 Hitachi 6501.T；推業界首款電網專用 AI Nostradamus",
+     "src": "https://www.gevernova.com/software/blog/adms-derms-differences"
+    },
+    {
+     "name": "Stem",
+     "ticker": "STEM",
+     "country": "US",
+     "share": "AI 儲能最佳化純軟",
+     "products": "Athena / PowerTrack AI 軟體服務",
+     "note": "2026Q1 第 4 季連續正 Adj.EBITDA $200 萬、純軟毛利率創紀錄 52%(零電池硬體轉售)、營收 $2,900 萬(-11% YoY)；重申 2026 全年指引 $1.4-1.9 億(軟體/服務 $1.3-1.5 億)；託管服務 ARR 因供應商破產 -4%",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/05/07/stem-stem-q1-2026-earnings-transcript/"
+    },
+    {
+     "name": "Uplight (AutoGrid)",
+     "ticker": "—",
+     "country": "US",
+     "share": "端到端 DER 平台",
+     "products": "客戶互動 + AutoGrid 調度 + 市場結算",
+     "note": "未上市；2025 併 AutoGrid 整合 6GW 彈性容量",
+     "src": "https://uplight.com/solutions/demand-response/"
+    },
+    {
+     "name": "EnergyHub",
+     "ticker": "—",
+     "country": "US",
+     "share": "全球最大 DER 組合之一",
+     "products": "DER 編排平台 / 恆溫器+電池聚合",
+     "note": "未上市(Alarm.com 旗下)；併 Resideo Grid Services 達 250 萬裝置/300 計畫",
+     "src": "https://codibly.com/blog/articles/demand-response-companies"
+    },
+    {
+     "name": "GridBeyond",
+     "ticker": "—",
+     "country": "IE",
+     "share": "跨 US/澳/日/歐 AI 平台",
+     "products": "AI 能源最佳化 / 電網張力管理",
+     "note": "未上市；獲 Samsung Ventures €1,200 萬戰略投資擴張",
+     "src": "https://pulse2.com/gridbeyond-e12-million-raised-to-expand-ai-energy-optimization-platform-globally/amp/"
+    },
+    {
+     "name": "Wärtsilä (GEMS)",
+     "ticker": "WRT1V.HE",
+     "country": "FI",
+     "share": "整合+軟體",
+     "products": "GEMS 數位能源平台",
+     "note": "最佳化能源、最大化營收流",
+     "src": "https://www.wartsila.com/energy/energy-storage/technology/gems-digital-energy-platform"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ami_edge"
+    },
+    {
+     "id": "der_devices"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "trading"
+    },
+    {
+     "id": "utility_os"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ABI 電網數位化排名 (PRNewswire)",
+     "url": "https://www.prnewswire.com/news-releases/schneider-electric-siemens-ag-and-ge-vernova-take-top-spots-in-abi-researchs-energy-grid-digitalization-technologies-competitive-ranking-302469980.html"
+    },
+    {
+     "label": "GE Vernova GridOS DERMS (官方)",
+     "url": "https://www.gevernova.com/software/products/gridos/distributed-energy-resources-management-system"
+    },
+    {
+     "label": "DERMS 市場 (TBRC)",
+     "url": "https://www.thebusinessresearchcompany.com/report/distributed-energy-resources-management-system-derms-global-market-report"
+    }
+   ]
+  },
+  {
+   "id": "trading",
+   "row": "soft",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "電力交易軟體 ETRM + 需量反應聚合",
+   "nameEn": "ETRM Trading SW & Demand Response Aggregators",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "把聚合容量送進批發市場競價/結算的能源交易與風險管理(ETRM)軟體，及直接代客戶賣需量反應的聚合商。",
+   "marketSize": "ETRM $3B(2025)→$6.4B(2034)",
+   "growth": "ETRM CAGR 13.9%",
+   "share": "null",
+   "analysis": "ETRM 軟體 2025 約 $3B→2034 $6.4B、CAGR 13.88%，從後台合規工具進化成前台策略引擎(管理再生能源/氫/環境憑證波動+AI 風險預測+自動執行)：Hitachi Energy 的 ETRM 在 Chartis Energy50 奪冠、ION Group(Openlink Endur)、雲原生 Molecule.io、Aspect(AspectCTRM)、Igloo、enTrader。需量反應聚合商：Enel X(ENEL.MI，美國 DR 最大 ~4.3GW)、CPower(>4GW，LS Power 旗下，未上市)、Voltus(~1.7GW，未上市；2026/2 與 Octopus Energy US 合作供住宅恆溫器/EV/家電進 PJM/MISO/NY/CA；2026 Google 為首個 hyperscaler 簽 100MW BYOC VPP——hyperscaler 用 VPP 容量繞過數年併網排隊，PJM 2026/27 容量拍賣已飆至 $329.17/MW-day 上限)、Leap(VPP 平台 API，未上市)。集中度 competitive：DR 三強 + ETRM 寡占軟體。",
+   "companies": [
+    {
+     "name": "Hitachi Energy (ETRM)",
+     "ticker": "6501.T",
+     "country": "JP",
+     "share": "ETRM Chartis Energy50 第一",
+     "products": "ETRM 能源交易與風險管理軟體",
+     "note": "母公司 Hitachi 6501.T；Chartis Energy50 ETRM 奪冠",
+     "src": "https://www.hitachienergy.com/us/en/products-and-solutions/energy-portfolio-management/energy-commercial-enablement-software-solutions/energy-trading-and-risk-management-etrm-software-solution"
+    },
+    {
+     "name": "Enel X",
+     "ticker": "ENEL.MI",
+     "country": "IT",
+     "share": "美國 DR 最大 ~4.3GW",
+     "products": "需量反應聚合 / C&I DR",
+     "note": "美國需量反應受控負載最大",
+     "src": "https://codibly.com/blog/articles/demand-response-companies"
+    },
+    {
+     "name": "CPower",
+     "ticker": "—",
+     "country": "US",
+     "share": ">4GW 受控負載",
+     "products": "需量反應聚合 / 容量市場",
+     "note": "未上市(LS Power 旗下)",
+     "src": "https://www.canarymedia.com/articles/climatetech-finance/voltus-launches-1-3b-spac-to-help-businesses-reshape-their-power-use-and-ease-grid-stress"
+    },
+    {
+     "name": "Voltus",
+     "ticker": "—",
+     "country": "US",
+     "share": "~1.7GW 受控負載",
+     "products": "需量反應 / BYOC / 分散式能源市場價值",
+     "note": "未上市；2026/2 與 Octopus Energy US 合作供住宅 DER 進 PJM/MISO/NY/CA；Google 為首個 hyperscaler 簽 100MW BYOC VPP(PJM/3 年)——hyperscaler 與 VPP 業者首例批發市場交易",
+     "src": "https://www.utilitydive.com/news/google-virtual-power-plant-vpp-pjm-voltus/821838/"
+    },
+    {
+     "name": "ION Group (Openlink)",
+     "ticker": "—",
+     "country": "UK",
+     "share": "ETRM 老牌龍頭",
+     "products": "Endur ETRM",
+     "note": "未上市；大型能源交易商主力 ETRM",
+     "src": "https://www.gartner.com/reviews/market/energy-trading-and-risk-management"
+    },
+    {
+     "name": "Leap",
+     "ticker": "—",
+     "country": "US",
+     "share": "VPP 平台 API",
+     "products": "DER 市場接入 API / VPP 平台",
+     "note": "未上市；2024 與 Carrier 恆溫器合作組 VPP",
+     "src": "https://codibly.com/blog/articles/demand-response-companies"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vpp_soft"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dc_flex"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ETRM 軟體市場 (Insight Partners)",
+     "url": "https://www.theinsightpartners.com/reports/energy-trading-risk-management-etrm-software-market"
+    },
+    {
+     "label": "需量反應廠商 (Codibly 2026)",
+     "url": "https://codibly.com/blog/articles/demand-response-companies"
+    }
+   ]
+  },
+  {
+   "id": "utility_os",
+   "row": "market",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "公用事業作業系統 + AI 電網大腦",
+   "nameEn": "Utility OS & AI Grid Brain",
+   "competition": "highgrowth",
+   "single": "皇冠明珠 · Kraken 唯一接近 IPO 的純軟標的；估值邏輯像能源界 Salesforce 而非單純 VPP",
+   "desc": "VPP 之上的公用事業作業系統(計費+CRM+客服+DER 調度)，授權給能源巨頭按帳戶收 SaaS——本主題護城河最深、最接近 IPO 的純軟標的。",
+   "marketSize": "Kraken $8.65B 估值",
+   "growth": "年化營收 4 倍/3 年",
+   "share": "null",
+   "analysis": "Octopus Energy 的 Kraken Technologies 是 AI 驅動公用事業 OS，授權 EDF/E.ON Next/National Grid US/Origin Energy/Plenitude/東京瓦斯：契約服務帳戶 7,500 萬(目標 1 億)、ARR £380M(~$5 億、三年成長 4 倍)，2025/12 宣布以 $8.65B 估值分拆、募資 $1B(D1 Capital 領投，Ontario Teachers'/Fidelity/Durable 跟投，Origin Energy 另投 $140M)、2026 中完成分拆+潛在 IPO(Octopus 保留 14%，《WSJ》估 IPO 情境上看 $15B)；Kraken Flex 即其 VPP 調度引擎。其 ~$5 億營收主來自計費/CRM 授權(per-account SaaS)，估值邏輯更像能源界 Salesforce/Toast 而非單純 VPP——這是非共識洞察。其他 AI 電網大腦：Hitachi Nostradamus AI、GE Vernova GridOS(AI-ready，2026Q1 簽首筆 EMS)、Google Tapestry(電網建模 AI;但 2026 Google 改以 Voltus 100MW BYOC 出資外部 VPP，自建 vs 採購並行)。集中度 highgrowth：Kraken 一枝獨秀+大廠 AI 模組。",
+   "companies": [
+    {
+     "name": "Octopus Energy / Kraken",
+     "ticker": "—",
+     "country": "UK",
+     "share": "公用事業 OS 皇冠明珠",
+     "products": "Kraken OS(計費/CRM/客服/DER 調度) / Kraken Flex VPP",
+     "note": "未上市；$8.65B 估值分拆、募資 $1B(D1 領投/OTPP/Fidelity/Durable，Origin 另投 $140M)；契約帳戶 7,500 萬、ARR £380M(~$5 億，3 年 4 倍)；2026 中完成分拆(Octopus 保留 14%)+潛在 IPO 上看 $15B",
+     "src": "https://www.cnbc.com/2025/12/30/octopus-energy-to-spinoff-ai-unit-kraken-at-8point65-billion-valuation.html"
+    },
+    {
+     "name": "GE Vernova (GridOS AI)",
+     "ticker": "GEV",
+     "country": "US",
+     "share": "AI-ready 電網平台",
+     "products": "GridOS 統一 ADMS+DERMS / 預測分析",
+     "note": "2026/2 GridOS for Distribution；AI 驅動洞察+集中式故障解決",
+     "src": "https://www.gevernova.com/software/products/gridos/advanced-distribution-management-system"
+    },
+    {
+     "name": "Hitachi Energy (Nostradamus)",
+     "ticker": "6501.T",
+     "country": "JP",
+     "share": "業界首款 grid AI",
+     "products": "Nostradamus AI 電力預測",
+     "note": "母公司 Hitachi 6501.T；業界首款電網專用 AI",
+     "src": "https://www.gevernova.com/software/blog/adms-derms-differences"
+    },
+    {
+     "name": "Google (Tapestry / 削峰)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "超大規模商自建 + 削峰",
+     "products": "Tapestry 電網建模 AI / AI 工作負載削峰合約",
+     "note": "與印第安那/田納西電力公司簽 AI 削峰合約;自建 grid software 威脅外部聚合商",
+     "src": "https://www.powerpolicy.net/p/googles-big-flex-can-ai-data-centers"
+    },
+    {
+     "name": "Schneider Electric",
+     "ticker": "SU.PA",
+     "country": "FR",
+     "share": "grid 軟體全棧第一",
+     "products": "EcoStruxure Grid 軟體全棧",
+     "note": "ABI grid digitalization 全球第一",
+     "src": "https://www.prnewswire.com/news-releases/schneider-electric-siemens-ag-and-ge-vernova-take-top-spots-in-abi-researchs-energy-grid-digitalization-technologies-competitive-ranking-302469980.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vpp_soft"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dc_flex"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Kraken $8.65B 分拆 (CNBC)",
+     "url": "https://www.cnbc.com/2025/12/30/octopus-energy-to-spinoff-ai-unit-kraken-at-8point65-billion-valuation.html"
+    },
+    {
+     "label": "Kraken 7,000 萬帳戶/$5 億營收 (Silicon Canals)",
+     "url": "https://siliconcanals.com/octopus-energy-release-kraken/"
+    }
+   ]
+  },
+  {
+   "id": "dc_flex",
+   "row": "market",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "終端：AI 資料中心彈性用電 + FERC 2222",
+   "nameEn": "AI Data Center Flexibility & FERC 2222",
+   "competition": "emerging",
+   "single": "結構性催化 · Google 已簽印第安那/田納西削峰合約 + 100MW BYOC VPP(Voltus/PJM);FERC 2222 開放 DER 進批發市場",
+   "desc": "把資料中心從純負載變成可調度網格資源的需求催化，及監管端開放 DER 進批發市場的 FERC Order 2222——VPP 軟體的全新巨型客戶群與通路。",
+   "marketSize": "需求錨點",
+   "growth": "結構性催化",
+   "share": "null",
+   "analysis": "⚠ 本期最大催化升級：Google(GOOGL)2026 與 Voltus 簽下首個 hyperscaler 的 100MW BYOC(Bring Your Own Capacity)VPP 合約(PJM/3 年)——資料中心出資聚合住宅電池/恆溫器等 DER 換取併網容量、繞過數年排隊，是 hyperscaler 與 VPP 業者首例美國批發市場交易，把『AI 削峰』從減載升級為主動採購網格容量;PJM 2026/27 容量拍賣已飆至 $329.17/MW-day 上限(兩年漲 10 倍)放大 VPP 變現誘因。Google 另已與印第安那/田納西簽 AI 削峰合約;Duke 研究指若 AI/雲端資料中心願接受每年 <50 小時短時削減，電力公司可在不新建電廠下容納大量新負載;Microsoft/Google 工作負載規劃從固定路線圖轉『持續再平衡』。監管催化 FERC Order 2222 強制 RTO/ISO 開放 DER 聚合直接進批發市場——⚠ 但各 RTO 時程分歧(PJM 能源/輔助服務 2028/2、容量市場 2027/2;MISO Phase 1 2027/6 + Phase 2 2029/6)，監管延宕=營收遞延，是 22-28% CAGR 的最大下行風險。容量現況：北美 VPP 2026 僅 +13.7% 至 37.5GW(廣度成長快於深度，但部署數/承購方/受監測計畫各 +33%)、加州/德州/紐約/麻州占 37%;Microgrid Knowledge 直指進入商業模式洗牌期。集中度 emerging：終端催化、玩家分散。",
+   "companies": [
+    {
+     "name": "Google",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "AI 削峰先行者 + VPP 出資方",
+     "products": "AI 工作負載削峰合約 / Tapestry / BYOC VPP",
+     "note": "與印第安那/田納西電力公司簽 AI 削峰合約;2026 與 Voltus 簽 100MW BYOC VPP(PJM/3 年、首個 hyperscaler 出資住宅 DER 換併網容量)——資料中心由純負載轉為網格資源出資方",
+     "src": "https://www.utilitydive.com/news/google-virtual-power-plant-vpp-pjm-voltus/821838/"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "工作負載再平衡",
+     "products": "AI 工作負載持續再平衡",
+     "note": "規劃系統吸收用電波動、可削減負載",
+     "src": "https://www.datacenterknowledge.com/next-gen-data-centers/data-center-world-2026-how-microsoft-and-google-plan-and-place-ai-workloads"
+    },
+    {
+     "name": "FERC Order 2222",
+     "ticker": "—",
+     "country": "US",
+     "share": "監管結構性催化",
+     "products": "強制 RTO/ISO 開放 DER 進批發市場",
+     "note": "監管;PJM 能源/輔助服務 2028/2 上線、容量市場 2027/2(可參與 2028/29 容量年)、MISO Phase 1 2027/6 + Phase 2 2029/6(延宕=營收遞延)",
+     "src": "https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy"
+    },
+    {
+     "name": "Fluence (軟體)",
+     "ticker": "FLNC",
+     "country": "US",
+     "share": "資料中心儲能+軟體",
+     "products": "Nispera AI / Mosaic 市場競價軟體",
+     "note": "FQ2'26 營收 $4.65 億(+8% YoY)、backlog 創高 $56 億、ARR $1.57 億;簽兩大 hyperscaler MSA、資料中心管線擴至 ~12GWh、FQ3 預期首筆 hyperscaler 訂單;重申 FY 營收 $32-36 億",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/05/07/fluence-flnc-q2-2026-earnings-transcript/"
+    },
+    {
+     "name": "Volkswagen / Elli (V2G)",
+     "ticker": "VOW3.DE",
+     "country": "DE",
+     "share": "EV 作為 DER",
+     "products": "V2G 整合方案",
+     "note": "2026Q4 在德國推私人客戶 V2G、把 EV 變能源資產",
+     "src": "https://electriccarsreport.com/2026/04/volkswagen-and-elli-to-launch-vehicle-to-grid-offer-in-q4-2026/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "trading"
+    },
+    {
+     "id": "utility_os"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Google AI 資料中心削峰 (Power Policy)",
+     "url": "https://www.powerpolicy.net/p/googles-big-flex-can-ai-data-centers"
+    },
+    {
+     "label": "FERC Order 2222 (官方)",
+     "url": "https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy"
+    },
+    {
+     "label": "VPP 商業模式洗牌 (Microgrid Knowledge)",
+     "url": "https://www.microgridknowledge.com/distributed-energy/virtual-power-plant/article/55379650/the-us-virtual-power-plant-market-is-entering-a-business-model-shakeout"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "ami_edge",
+   "der_devices"
+  ],
+  [
+   "ami_edge",
+   "vpp_soft"
+  ],
+  [
+   "der_devices",
+   "vpp_soft"
+  ],
+  [
+   "vpp_soft",
+   "trading"
+  ],
+  [
+   "vpp_soft",
+   "utility_os"
+  ],
+  [
+   "trading",
+   "dc_flex"
+  ],
+  [
+   "utility_os",
+   "dc_flex"
+  ]
+ ],
+ "_proposed": {}
+}

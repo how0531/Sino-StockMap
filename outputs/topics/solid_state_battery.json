@@ -1,0 +1,650 @@
+{
+ "id": "solid_state_battery",
+ "tab": "固態電池",
+ "title": "固態 / 半固態電池供應鏈 (Solid-State Battery)",
+ "subtitle": "Solid-State Battery — 以固態電解質取代液態+隔膜，是 EV/儲能的『能量密度+安全』次世代躍進，有別於 ev（現行液態鋰電/整車）與 ess（電網儲能）。2026 為中試線元年：QuantumScape（QS，市值 ~$4.95B）2026-02 啟用 Eagle Line 試產、6 月 Cobra 陶瓷隔膜整合進量產（熱處理快 25x）、VW PowerCo 授權 85GWh；Idemitsu+Toyota 硫化物中試廠 2026-01 動工（2027-06 完工）；ProLogium 輝能法國 Dunkirk gigafactory 2026-02 動土；Toyota/Samsung SDI/CATL 訂 2027 量產、中國 2026-07 發首個固態電池國標。市場 2026 ~$2.58B、CAGR 31.8-38.2%（硫化物佔 43.5%）。⚠ emerging 高風險：全固態時程屢滑期、純玩家燒錢營收近零；護城河與真實業績集中在硫化物電解質（Idemitsu/Mitsui 握 >40% 專利、Ganfeng 已量產 300 噸）與設備賣鏟人；半固態（衛藍/NIO）已在中國上車、先落地。價值鏈：電解質+負極 → 設備 → 電芯開發商 → OEM 包銷。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "市場 2026",
+   "v": "~$2.58B",
+   "sub": "CAGR 31.8-38.2%·硫化物佔 43.5%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "2026 中試線元年+2027 量產倒數·時程滑期/純玩家燒錢",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "material",
+   "label": "固態電解質 / 負極材料 Electrolyte & Anode",
+   "main": false
+  },
+  {
+   "id": "equip",
+   "label": "製造設備 乾電極 / 等靜壓 Manufacturing Equipment",
+   "main": false
+  },
+  {
+   "id": "dev",
+   "label": "固態電芯開發商（純玩家）Pure-Play Cell Developers",
+   "main": true
+  },
+  {
+   "id": "incumbent",
+   "label": "量產大廠 / 半固態過渡 Incumbents & Semi-Solid",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "OEM / 應用包銷 Offtake & Applications",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "solid_electrolyte",
+   "row": "material",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "固態電解質（硫化物 / 氧化物）",
+   "nameEn": "Solid Electrolyte (Sulfide / Oxide)",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Idemitsu+Mitsui 合計握 >40% 活躍硫化物專利；Ganfeng 已量產 300 噸電解質",
+   "desc": "固態電池真正的技術護城河：以固態電解質取代液態電解液+隔膜。硫化物（Li2S→Li3PS4/LGPS）離子導電率最高為主流路線（2025 佔 43.5%），氧化物（石榴石 LLZO）對水氣不敏感 CAGR 最快（61.3%）。",
+   "marketSize": "鎖喉點",
+   "growth": "硫化物 CAGR 47.2%",
+   "share": "null",
+   "analysis": "硫化物雙雄握專利咽喉：Idemitsu 出光興産（5019.T，深耕 30 年、與 Toyota 合作 13 年；2026-01-29 靜岡動工年產數百噸硫化物電解質試產廠、另建 1,000 噸/年 Li2S 廠 2027 中完工供 Toyota；2026 持續積極申請鹵素摻雜 argyrodite 專利）、Mitsui 三井金属（5706.T）——兩者合計握逾 40% 活躍硫化物（argyrodite）專利。中國垂直整合領先：Ganfeng 贛鋒（002460.SZ/1772.HK，已量產 300 噸硫化物電解質、自產高純 Li2S 供自家固態電池）、Chengxin 盛新鋰能（002240.SZ，2026 年中投產硫化物+氧化物+複合隔膜）。氧化物：Ohara 小原（5218.T，LICGC 玻璃陶瓷老牌）、QuantumScape（QS，無陽極氧化物陶瓷隔膜）。⚠ 新上游卡點：中國 2025-10-09 公布、11-08 生效並延伸至 2026 的鋰電池供應鏈出口管制，涵蓋正極前驅體、負極材料、LFP 正極及電池/材料產線設備與技術；中國於正極前驅體/LFP 等環節市佔 95%+，對含固態材料/設備的全產業鏈構成單點風險。中國握約 35% 全球固態電池專利（最大單一來源），但 2026-05 官方/業界公開警示恐失全球領先。【絃外之音】護城河在電解質與專利、不在電芯品牌：Idemitsu+Mitsui 卡住西方/日系全固態上游咽喉，純玩家若無自有電解質長期是被授權方；中國以 Ganfeng 閉環 Li2S→電解質→電芯為少數已量產者，且以出口管制反制成新地緣槓桿。",
+   "companies": [
+    {
+     "name": "Idemitsu Kosan 出光興産",
+     "ticker": "5019.T",
+     "country": "JP",
+     "share": "硫化物專利雙雄之一",
+     "products": "硫化物固態電解質 / Li2S",
+     "note": "2026-01 動工千噸級 Li2S 中試廠（2027-06 完工）；Toyota 首位客戶",
+     "src": "https://news.metal.com/newscontent/103751094-Idemitsu-Kosan-Launches-Sulfide-Solid-State-Battery-Pilot-Plant-Aiming-for-Toyota-Mass-Production-in-2027"
+    },
+    {
+     "name": "Mitsui Mining & Smelting 三井金属",
+     "ticker": "5706.T",
+     "country": "JP",
+     "share": "硫化物專利雙雄之一",
+     "products": "硫化物固態電解質",
+     "note": "與 Idemitsu 合計握 >40% 活躍硫化物專利、2026 持續申請",
+     "src": "https://www.patsnap.com/resources/blog/rd-blog/sulfide-solid-electrolyte-landscape-2026-patsnap-eureka/"
+    },
+    {
+     "name": "Ganfeng Lithium 贛鋒鋰業",
+     "ticker": "002460.SZ",
+     "country": "CN",
+     "share": "中國已量產電解質",
+     "products": "硫化物電解質(LGPS/LPSC/Li3PS4) / Li2S",
+     "note": "已量產 300 噸硫化物電解質、自產高純 Li2S 垂直整合",
+     "src": "https://www.patsnap.com/resources/blog/rd-blog/sulfide-solid-electrolyte-landscape-2026-patsnap-eureka/"
+    },
+    {
+     "name": "Chengxin Lithium 盛新鋰能",
+     "ticker": "002240.SZ",
+     "country": "CN",
+     "share": "中國電解質新進",
+     "products": "硫化物+氧化物電解質 / 複合隔膜",
+     "note": "子公司押注、2026 年中投產、閉環鋰硫循環",
+     "src": "https://news.metal.com/newscontent/103678858-Chengxin-Lithiums-Solid-State-Battery-Layout-Pioneering-Sulfide-Solid-State-Electrolyte-Mass-Production-for-a-Closed-Loo"
+    },
+    {
+     "name": "Ohara 小原",
+     "ticker": "5218.T",
+     "country": "JP",
+     "share": "氧化物玻璃陶瓷老牌",
+     "products": "LICGC 氧化物玻璃陶瓷電解質",
+     "note": "氧化物路線老牌供應商",
+     "src": "https://www.patsnap.com/resources/blog/rd-blog/sulfide-solid-electrolyte-landscape-2026-patsnap-eureka/"
+    },
+    {
+     "name": "POSCO Future M 浦項未來材料",
+     "ticker": "003670.KS",
+     "country": "KR",
+     "share": "韓系電解質+負極新進",
+     "products": "硫化物電解質 / 鋰金屬負極 / 正極材料",
+     "note": "2025-11 MoU→投資 Factorial 共同開發全固態材料；目標 2030 量產；既有正負極材料供 LG/SK On/Samsung SDI",
+     "src": "https://chargedevs.com/newswire/posco-future-m-invests-in-us-based-factorial-to-develop-all-solid-state-batteries/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "ss_equipment"
+    },
+    {
+     "id": "pure_play"
+    },
+    {
+     "id": "incumbent_giant"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Idemitsu 硫化物中試廠供 Toyota (SMM)",
+     "url": "https://news.metal.com/newscontent/103751094-Idemitsu-Kosan-Launches-Sulfide-Solid-State-Battery-Pilot-Plant-Aiming-for-Toyota-Mass-Production-in-2027"
+    },
+    {
+     "label": "硫化物電解質專利地圖 2026 (PatSnap)",
+     "url": "https://www.patsnap.com/resources/blog/rd-blog/sulfide-solid-electrolyte-landscape-2026-patsnap-eureka/"
+    },
+    {
+     "label": "中國鋰電池供應鏈出口管制 2026 (ESS-News)",
+     "url": "https://www.ess-news.com/2025/10/13/china-imposes-new-export-controls-on-lithium-ion-battery-technology/"
+    }
+   ]
+  },
+  {
+   "id": "li_anode",
+   "row": "material",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "鋰金屬 / 矽負極（高能量密度活性材料）",
+   "nameEn": "Lithium-Metal / Silicon Anode",
+   "competition": "emerging",
+   "single": "鋰金屬負極解鎖 500Wh/kg+；QuantumScape 採『無陽極』設計（首充原位鍍鋰）",
+   "desc": "搭配固態電解質的高能量密度負極：鋰金屬負極可衝 500Wh/kg+、1,000km 級續航；矽負極為半固態與固態通用過渡方案；無陽極設計則省去負極材料。",
+   "marketSize": "能量密度關鍵",
+   "growth": "高成長",
+   "share": "null",
+   "analysis": "鋰金屬路線：SES AI（SES，鋰金屬軟包、與通用/現代/本田合作）、Sion Power（未上市，Licerion 鋰金屬、Tucson 11 萬呎廠、國防/航太/無人機、2026 底首批出貨）。矽負極：Group14/6K Energy（未上市，矽負極）、貝特瑞 BTR（835185.BJ，矽碳負極全球龍頭，與 ev 重疊但固態用矽負極為新增需求）。無陽極設計：QuantumScape 採無陽極氧化物隔膜、首充原位鍍鋰省去負極材料。【絃外之音】鋰金屬負極是固態能量密度躍進的關鍵，但循環壽命與枝晶仍是難點，初期高價值市場（國防/eVTOL/無人機）先行。",
+   "companies": [
+    {
+     "name": "SES AI",
+     "ticker": "SES",
+     "country": "US",
+     "share": "鋰金屬軟包",
+     "products": "Li-Metal 軟包電池",
+     "note": "與通用/現代/本田合作",
+     "src": "https://www.ses.ai/"
+    },
+    {
+     "name": "Sion Power",
+     "ticker": "—",
+     "country": "US",
+     "share": "鋰金屬國防/航太",
+     "products": "Licerion 鋰金屬電池",
+     "note": "未上市；Tucson 11萬呎廠；2026 底首批出貨",
+     "src": "https://www.prnewswire.com/news-releases/sion-power-expands-licerion-lithium-metal-battery-products-for-next-generation-defense-and-aerospace-systems-302723151.html"
+    },
+    {
+     "name": "貝特瑞 BTR",
+     "ticker": "835185.BJ",
+     "country": "CN",
+     "share": "矽碳負極全球龍頭",
+     "products": "矽碳 / 矽氧負極",
+     "note": "固態用矽負極為新增需求",
+     "src": "https://www.patsnap.com/resources/blog/mse-blog/dry-electrode-materials-2026-solid-state-battery-patsnap-eureka/"
+    },
+    {
+     "name": "Group14 / 6K Energy",
+     "ticker": "—",
+     "country": "US",
+     "share": "矽負極新創",
+     "products": "矽碳複合負極",
+     "note": "未上市；半固態與固態通用",
+     "src": "https://www.patsnap.com/resources/blog/mse-blog/dry-electrode-materials-2026-solid-state-battery-patsnap-eureka/"
+    },
+    {
+     "name": "QuantumScape（無陽極）",
+     "ticker": "QS",
+     "country": "US",
+     "share": "無陽極設計",
+     "products": "無陽極氧化物隔膜（原位鍍鋰）",
+     "note": "省去負極材料、首充鍍鋰",
+     "src": "https://www.batterytechonline.com/design-manufacturing/quantumscapes-solid-state-battery-tech-advances-with-powerco-deal-cobra-process"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "ss_equipment"
+    },
+    {
+     "id": "pure_play"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sion Power Licerion 鋰金屬 (PRNewswire)",
+     "url": "https://www.prnewswire.com/news-releases/sion-power-expands-licerion-lithium-metal-battery-products-for-next-generation-defense-and-aerospace-systems-302723151.html"
+    },
+    {
+     "label": "乾電極/負極材料 2026 (PatSnap)",
+     "url": "https://www.patsnap.com/resources/blog/mse-blog/dry-electrode-materials-2026-solid-state-battery-patsnap-eureka/"
+    }
+   ]
+  },
+  {
+   "id": "ss_equipment",
+   "row": "equip",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "製造設備（乾電極 / 等靜壓 WIP / 陶瓷燒結）",
+   "nameEn": "Manufacturing Equipment (Dry Electrode / WIP)",
+   "competition": "competitive",
+   "single": "量產瓶頸 · 乾電極(免 NMP 溶劑)+等靜壓 WIP 是固態量產先決；Murata/Corning 已為 QS Cobra 隔膜出貨",
+   "desc": "固態電池量產的真瓶頸不在物理而在製造：乾電極（免 NMP 毒性溶劑塗佈）、等靜壓 WIP（堆疊前對電芯均壓）、陶瓷隔膜燒結。是隱形受益的「賣鏟人」環節。",
+   "marketSize": "規模化卡點",
+   "growth": "量產瓶頸",
+   "share": "null",
+   "analysis": "陶瓷隔膜設備：Corning 康寧（GLW）、Murata 村田（6981.T）為 QS Cobra 陶瓷隔膜燒結設備投資方，Q1 2026 QS 首次認列生態客戶帳單即來自兩者採購。乾電極專利主導：LG Energy Solution（373220.KS）、LG Chem、Samsung SDI（006400.KS）、Hyundai/Kia（005380.KS）、Toyota（7203.T）名列乾電極專利前列；Tesla（TSLA）已量產乾電極製程、know-how 外溢。韓系產線設備：Hanwha、PNT、Jaewon Industrial。等靜壓 WIP 為堆疊前均壓的量產前提。【絃外之音】乾電極+WIP 均壓良率才是量產真卡點（實驗室已驗證物理可行），讓設備商與製程 know-how 廠成為隱形受益者。",
+   "companies": [
+    {
+     "name": "Corning 康寧",
+     "ticker": "GLW",
+     "country": "US",
+     "share": "陶瓷隔膜設備",
+     "products": "陶瓷隔膜燒結設備 / 玻璃陶瓷",
+     "note": "QS Cobra 隔膜產線投資方；Q1 2026 QS 首批帳單來源",
+     "src": "https://www.batterytechonline.com/design-manufacturing/quantumscapes-solid-state-battery-tech-advances-with-powerco-deal-cobra-process"
+    },
+    {
+     "name": "Murata 村田製作所",
+     "ticker": "6981.T",
+     "country": "JP",
+     "share": "陶瓷隔膜設備",
+     "products": "陶瓷材料 / 隔膜燒結設備",
+     "note": "QS Cobra 隔膜產線投資方；Q1 2026 QS 首批帳單來源",
+     "src": "https://www.batterytechonline.com/design-manufacturing/quantumscapes-solid-state-battery-tech-advances-with-powerco-deal-cobra-process"
+    },
+    {
+     "name": "LG Energy Solution / LG Chem",
+     "ticker": "373220.KS",
+     "country": "KR",
+     "share": "乾電極專利前列",
+     "products": "乾電極製程 / 固態產線",
+     "note": "乾電極專利主導廠之一",
+     "src": "https://www.patsnap.com/resources/blog/mse-blog/dry-electrode-materials-2026-solid-state-battery-patsnap-eureka/"
+    },
+    {
+     "name": "Tesla",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "乾電極已量產",
+     "products": "乾電極(dry electrode)製程",
+     "note": "乾電極 know-how 外溢固態製造",
+     "src": "https://news.metal.com/newscontent/103757875-Tesla-Mass-Produces-Dry-Electrode-Light-Year-Engine-Unveils-All-Solid-State-Battery"
+    },
+    {
+     "name": "Hyundai / Kia",
+     "ticker": "005380.KS",
+     "country": "KR",
+     "share": "乾電極/固態專利",
+     "products": "固態電池製程專利",
+     "note": "OEM 兼乾電極專利前列",
+     "src": "https://www.patsnap.com/resources/blog/mse-blog/dry-electrode-materials-2026-solid-state-battery-patsnap-eureka/"
+    },
+    {
+     "name": "Hanwha / PNT / Jaewon",
+     "ticker": "—",
+     "country": "KR",
+     "share": "韓系產線設備",
+     "products": "等靜壓 WIP / 乾電極塗佈設備",
+     "note": "未細分上市；韓固態產線設備供應",
+     "src": "https://www.batterytechonline.com/industry-outlook/lithium-solid-state-batteries-in-2026-promise-physics-and-the-path-to-commercial-reality"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "solid_electrolyte"
+    },
+    {
+     "id": "li_anode"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "pure_play"
+    },
+    {
+     "id": "incumbent_giant"
+    }
+   ],
+   "sources": [
+    {
+     "label": "乾電極製造 2026 固態 (PatSnap)",
+     "url": "https://www.patsnap.com/resources/blog/mse-blog/dry-electrode-materials-2026-solid-state-battery-patsnap-eureka/"
+    },
+    {
+     "label": "固態電池 2026 量產現實 (BatteryTechOnline)",
+     "url": "https://www.batterytechonline.com/industry-outlook/lithium-solid-state-batteries-in-2026-promise-physics-and-the-path-to-commercial-reality"
+    }
+   ]
+  },
+  {
+   "id": "pure_play",
+   "row": "dev",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "固態電芯開發商（純玩家，高 beta）",
+   "nameEn": "Pure-Play Solid-State Cell Developers",
+   "competition": "emerging",
+   "single": "⚠ 選擇權式高 beta · QS 市值 ~$4.95B 但 Q1 首次帳單、SLDP TTM 營收僅 $15；ProLogium 唯一有規模量產實績但未上市",
+   "desc": "專注固態的純玩家，是題材敘事核心與高 beta 標的，但多燒錢、營收近零，靠現金部位續命，本質漸轉為 IP 授權+賣設備生態而非電芯製造商。",
+   "marketSize": "題材高 beta",
+   "growth": "中試線元年",
+   "share": "null",
+   "analysis": "QuantumScape（QS，氧化物無陽極隔膜；2026-02 啟用 Eagle Line 試產、6 月 Cobra 整合進量產（熱處理快 25x）、2026 出 QSE-5 B1 樣品；VW PowerCo 授權 80→85GWh/年；Murata/Corning 生態投資；2026-06-19 股價 $8.04、市值 ~$4.95B；Q1 2026 淨損 $100.8M、現金 $904.7M、EPS -$0.16 優於 -$0.18、首次認列生態帳單）、Solid Power（SLDP，硫化物電解質供應商路線；2024 接手 Toyota Battery JV；2026 商業化高矽負極、後接鋰金屬 NMC、2027 商業量產；Q1 2026 營收+補助 $3.1M（SK On 場驗+DOE）、市值 ~$662M、流動性 $435.3M、無負債、DOE 補助上限 $50M）、ProLogium 輝能（未上市，TW，氧化物全無機固態鋰陶瓷；桃園廠 2024 投產已出貨 >60 萬顆、2026-02 法國 Dunkirk gigafactory 動土（2028 一期 0.8GWh→2032 達 12GWh→上限 48GWh）；客戶 Mercedes/FAW/NIO/VinFast；估值 ~$1B）。【絃外之音】QS 商業模式已轉向授權 PowerCo（不自建 gigafactory）+ 賣 Cobra 設備生態，營收天花板取決於授權金而非電芯量；ProLogium 是唯一具規模量產實績的純玩家但未上市，台股可透過 Yageo 國巨等股東間接曝險。",
+   "companies": [
+    {
+     "name": "QuantumScape",
+     "ticker": "QS",
+     "country": "US",
+     "share": "氧化物無陽極領先純玩家",
+     "products": "QSE-5 無陽極氧化物固態電芯 / Cobra 隔膜授權",
+     "note": "市值 ~$4.95B；Eagle Line 試產(Cobra 製程)、Q1 開始量產 QSE-5、Q2 擴產；與 PowerCo 推進至實車現場路測(field testing)；PowerCo 授權 85GWh；Q1 現金 $904.7M、首次生態帳單；商模轉向 IP/製程授權",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/04/22/quantumscape-qs-q1-2026-earnings-transcript/"
+    },
+    {
+     "name": "Solid Power",
+     "ticker": "SLDP",
+     "country": "US",
+     "share": "硫化物電解質供應商路線",
+     "products": "硫化物電解質 / 全固態平台",
+     "note": "市值 ~$662M；電解質產能 2 條 30MT/年→2026 底 75MT/年（連續式中試線設備已 FAT 完成）；2026 現金指引 $85-100M；BMW/Ford/SK On 授權電芯設計；2027 量產",
+     "src": "https://seekingalpha.com/news/4442621-solid-power-targets-75-metric-tons-of-sulfide-electrolyte-capacity-by-2026"
+    },
+    {
+     "name": "ProLogium 輝能",
+     "ticker": "—",
+     "country": "TW",
+     "share": "唯一規模量產實績純玩家",
+     "products": "全無機固態鋰陶瓷電池 / 超流態",
+     "note": "未上市；桃園廠出貨 >60 萬顆、2026-06 量產第四代固態電池（初期約 0.3GWh）、首批客戶偏電動自行車(Darfon)等小型應用、短期產能未足供大型車廠；法國 Dunkirk 2026-Q1 動土→48GWh；2026-06 與法國 Tier-1 OPmobility 簽 module/pack MoU；估值 ~$1B；Mercedes/FAW/NIO/VinFast",
+     "src": "https://www.reccessary.com/zh-tw/news/prologium-4th-generation-battery"
+    },
+    {
+     "name": "Factorial Energy",
+     "ticker": "FAC",
+     "country": "US",
+     "share": "半固態/固態新創（2026-06 上市）",
+     "products": "FEST 半固態 / 全固態",
+     "note": "2026-06-08 經 Cartesian Growth III SPAC 上 Nasdaq（FAC）；In-Q-Tel/Mercedes/Stellantis/Hyundai-Kia 背書；POSCO Future M 投資共同開發",
+     "src": "https://www.sec.gov/Archives/edgar/data/0002049662/000110465926072433/tm2617149d1_ex99-4.htm"
+    },
+    {
+     "name": "輝能氧化物路線（CES 2026）",
+     "ticker": "—",
+     "country": "TW",
+     "share": "第四代全無機",
+     "products": "超流態全無機固態電池",
+     "note": "CES 2026 發表超流態突破成果",
+     "src": "https://www.prnewswire.com/news-releases/prologium-marks-20th-anniversary-at-ces-2026-unveils-breakthrough-superfluidized-all-inorganic-solid-state-battery-results-302652922.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "solid_electrolyte"
+    },
+    {
+     "id": "li_anode"
+    },
+    {
+     "id": "ss_equipment"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "offtake"
+    }
+   ],
+   "sources": [
+    {
+     "label": "QuantumScape Eagle Line 里程碑 (Yahoo)",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/quantumscape-qs-advances-solid-state-205454186.html"
+    },
+    {
+     "label": "Solid Power Q1 2026 財報 (ChartMill)",
+     "url": "https://www.chartmill.com/news/SLDP/Chartmill-47100-Solid-Power-NASDAQSLDP-Q1-2026-Earnings-Revenue-Miss-Overshadowed-by-Earnings-Beat-and-Strong-Liquidity"
+    }
+   ]
+  },
+  {
+   "id": "incumbent_giant",
+   "row": "incumbent",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "量產卡位大廠 / 半固態過渡（中國已上車）",
+   "nameEn": "Incumbents & Semi-Solid (China On-Road)",
+   "competition": "oligopoly",
+   "single": "Toyota 固態專利最多、2027-28 量產(1,000km)；半固態衛藍/NIO 2024 已上車、先落地",
+   "desc": "在液態鋰電（ev/ess）龍頭地位 + 固態卡位的大廠，是『不被顛覆』的防禦型曝險；半固態（含液態的過渡方案）則在中國已量產上車，比全固態早 3-5 年商業化。",
+   "marketSize": "防禦型曝險",
+   "growth": "2027 量產倒數",
+   "share": "null",
+   "analysis": "全固態量產卡位：Toyota（7203.T，固態專利最多、2027-2028 硫化物全固態量產 1,000km 級+10 分快充、已獲日本政府認證 2026 啟動、與 Idemitsu/Sumitomo 合作）、Samsung SDI（006400.KS，硫化物+銀碳 Ag-C 負極、目標 900Wh/L、S-Line 全球最大試產線、2027 量產）、SK On（SK Innovation 096770.KS，氧化物+硫化物雙線、與 Solid Power 場驗、2027-28）、CATL（300750.SZ，硫化物 500Wh/kg、2027 小批量/2030 大規模、技術成熟度 L4→2027 衝 L7-8）。半固態（中國已落地）：WeLion 衛藍（未上市→pre-IPO，NIO 半固態供應商、2023 量產 360Wh/kg、NIO ET7 150kWh pack >1,000km、2024-06 限量服役、2025-12 啟動科創板輔導）、清陶/贛鋒（上汽/賽力斯）、Sunwoda 欣旺達（300207.SZ，2027 全固態）、GAC（2026 小批量整車測試）。【絃外之音】CATL「凝聚態」是凝膠態（介於液態與全固態、航空利基），非全固態，CATL 親自否認 2027 量產 2,000km 全固態傳聞；2027 是業界集體錨點但歷史時程屢滑期，真正先量產的反而是中國半固態。⚠ 滲透率現實檢核：中國工程院院士 2026-03 估固態達 1% 市佔仍需 5-10 年，且 2026-05 官方警示專利領先(~35%)未必轉化為近期裝車優勢——印證量產時程錨點偏樂觀。",
+   "companies": [
+    {
+     "name": "Toyota 豐田",
+     "ticker": "7203.T",
+     "country": "JP",
+     "share": "固態專利最多",
+     "products": "硫化物全固態（1,000km 級）",
+     "note": "2027-28 量產、已獲日本政府認證 2026 啟動；Idemitsu 供電解質",
+     "src": "https://global.toyota/en/newsroom/corporate/39865919.html"
+    },
+    {
+     "name": "Samsung SDI",
+     "ticker": "006400.KS",
+     "country": "KR",
+     "share": "硫化物 900Wh/L",
+     "products": "硫化物全固態 + Ag-C 負極",
+     "note": "S-Line 全球最大試產線、2027 量產",
+     "src": "https://news.samsungsdi.com/global/articleView?seq=203"
+    },
+    {
+     "name": "CATL 寧德時代",
+     "ticker": "300750.SZ",
+     "country": "CN",
+     "share": "硫化物 500Wh/kg",
+     "products": "硫化物全固態 / 凝聚態(凝膠)",
+     "note": "2027 小批量/2030 大規模；凝聚態≠全固態；否認 2027 量產 2000km 傳聞",
+     "src": "https://carnewschina.com/2025/10/09/catl-denies-rumours-of-2000-km-solid-state-battery-mass-production-in-2027/"
+    },
+    {
+     "name": "SK On",
+     "ticker": "096770.KS",
+     "country": "KR",
+     "share": "氧化物+硫化物雙線",
+     "products": "全固態電芯",
+     "note": "與 Solid Power 場驗合作、2027-28",
+     "src": "https://www.electrive.com/2024/03/05/samsung-sdi-to-start-mass-production-of-solid-state-batteries-in-2027/"
+    },
+    {
+     "name": "WeLion 衛藍新能源",
+     "ticker": "—",
+     "country": "CN",
+     "share": "半固態先落地（NIO 供應）",
+     "products": "360Wh/kg 半固態電芯",
+     "note": "未上市→2025-12 pre-IPO；NIO ET7 150kWh >1,000km、2024 已上車",
+     "src": "https://cnevpost.com/2025/12/11/welion-begins-pre-ipo-tutoring-onshore-listing/"
+    },
+    {
+     "name": "Sunwoda 欣旺達 / GAC 廣汽",
+     "ticker": "300207.SZ",
+     "country": "CN",
+     "share": "中國全固態跟進",
+     "products": "全固態電芯 / 整車測試",
+     "note": "Sunwoda 2027 量產；GAC 2026 小批量整車測試",
+     "src": "https://carnewschina.com/2026/02/16/china-ignites-solid-state-battery-race-production-expands-in-2026-vehicle-demonstrations-by-2027/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "solid_electrolyte"
+    },
+    {
+     "id": "ss_equipment"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "offtake"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Idemitsu+Toyota 全固態合作 (Toyota 官方)",
+     "url": "https://global.toyota/en/newsroom/corporate/39865919.html"
+    },
+    {
+     "label": "中國固態競賽 2026/2027 (CarNewsChina)",
+     "url": "https://carnewschina.com/2026/02/16/china-ignites-solid-state-battery-race-production-expands-in-2026-vehicle-demonstrations-by-2027/"
+    }
+   ]
+  },
+  {
+   "id": "offtake",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "OEM / 應用包銷 (Offtake & Applications)",
+   "nameEn": "Offtake & Applications",
+   "competition": "emerging",
+   "single": "VW PowerCo 授權 QS 85GWh、Mercedes 首位投資 ProLogium；無人機/eVTOL/國防為首批高價值市場",
+   "desc": "OEM 以授權/投資/包銷鎖定固態產能，是把固態推向可投資敘事的需求催化。EV 之外，高能量密度先在無人機/eVTOL/航太/國防等高價值市場落地。",
+   "marketSize": "需求錨點",
+   "growth": "需求催化",
+   "share": "null",
+   "analysis": "VW PowerCo（VOW3.DE，QS 授權 85GWh/年、最大潛在固態包銷）、Mercedes-Benz（MBG.DE，ProLogium 首位車廠投資+共同開發自 2016、亦路測 Factorial）、NIO（NIO，衛藍半固態 150kWh pack 商用、2026-03 設上海電池子公司加速固態）、VinFast（VFS，投資+合作 ProLogium、越南設 JV 可能）、FAW 一汽（ProLogium 合作+投資）。高價值利基市場：無人機/eVTOL/航太/國防（Sion Power、QS 首批），對價格不敏感、看重能量密度與安全。【絃外之音】固態量產後直接擴大 EV 續航/安全 TAM 並開啟航空/eVTOL 新市場，與 ev/ess 需求共振；但 OEM 承諾多為授權/訊號性，量產時程未定前屬選擇權式佈局。",
+   "companies": [
+    {
+     "name": "VW PowerCo",
+     "ticker": "VOW3.DE",
+     "country": "DE",
+     "share": "QS 最大授權包銷",
+     "products": "QS QSE-5 授權 85GWh/年",
+     "note": "授權 80→85GWh、可擴產；最大潛在固態包銷",
+     "src": "https://www.batterytechonline.com/design-manufacturing/quantumscapes-solid-state-battery-tech-advances-with-powerco-deal-cobra-process"
+    },
+    {
+     "name": "Mercedes-Benz",
+     "ticker": "MBG.DE",
+     "country": "DE",
+     "share": "ProLogium 首位車廠投資",
+     "products": "ProLogium 共同開發 + Factorial 路測",
+     "note": "自 2016 測試 ProLogium；與 Factorial 合作之固態 EQS 原型車完成單次充電 1,205km 實路測試（抵達後餘 137km）、可用能量+25%、重量體積與標準電池相當；2026 量產驗證基準",
+     "src": "https://group.mercedes-benz.com/technology/e-mobility/electric-drive/eqs-solid-state-battery.html"
+    },
+    {
+     "name": "NIO 蔚來",
+     "ticker": "NIO",
+     "country": "CN",
+     "share": "半固態商用 OEM",
+     "products": "衛藍半固態 150kWh pack",
+     "note": "ET7 >1,000km 商用；2026-03 設上海電池子公司",
+     "src": "https://cnevpost.com/2026/03/05/nio-sets-up-new-shanghai-battery-unit-solid-state-tech/"
+    },
+    {
+     "name": "VinFast",
+     "ticker": "VFS",
+     "country": "VN",
+     "share": "ProLogium 投資+合作",
+     "products": "ProLogium 固態電芯供應",
+     "note": "投資 ProLogium、越南設 JV 可能",
+     "src": "https://vinfastauto.us/newsroom/press-release/vinfast-partners-with-and-invests-in-prologium"
+    },
+    {
+     "name": "Sion Power（無人機/國防）",
+     "ticker": "—",
+     "country": "US",
+     "share": "高價值利基首批",
+     "products": "Licerion 鋰金屬（國防/航太/無人機）",
+     "note": "未上市；對價格不敏感市場先落地",
+     "src": "https://www.prnewswire.com/news-releases/sion-power-expands-licerion-lithium-metal-battery-products-for-next-generation-defense-and-aerospace-systems-302723151.html"
+    },
+    {
+     "name": "FAW 一汽",
+     "ticker": "—",
+     "country": "CN",
+     "share": "ProLogium 合作+投資",
+     "products": "ProLogium 固態電芯",
+     "note": "未細分上市主體；ProLogium 早期投資人",
+     "src": "https://tracxn.com/d/companies/prologium/__3n68EHwuxKGOwwNDB7yS9J-c0YPzvDOCvEDrX-Te4lI"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "pure_play"
+    },
+    {
+     "id": "incumbent_giant"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "QS×PowerCo 授權+Cobra (BatteryTechOnline)",
+     "url": "https://www.batterytechonline.com/design-manufacturing/quantumscapes-solid-state-battery-tech-advances-with-powerco-deal-cobra-process"
+    },
+    {
+     "label": "NIO 上海電池子公司加速固態 (CnEVPost)",
+     "url": "https://cnevpost.com/2026/03/05/nio-sets-up-new-shanghai-battery-unit-solid-state-tech/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "solid_electrolyte",
+   "ss_equipment"
+  ],
+  [
+   "li_anode",
+   "ss_equipment"
+  ],
+  [
+   "solid_electrolyte",
+   "pure_play"
+  ],
+  [
+   "li_anode",
+   "pure_play"
+  ],
+  [
+   "solid_electrolyte",
+   "incumbent_giant"
+  ],
+  [
+   "ss_equipment",
+   "pure_play"
+  ],
+  [
+   "ss_equipment",
+   "incumbent_giant"
+  ],
+  [
+   "pure_play",
+   "offtake"
+  ],
+  [
+   "incumbent_giant",
+   "offtake"
+  ]
+ ],
+ "_proposed": {}
+}

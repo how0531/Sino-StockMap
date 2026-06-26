@@ -1,0 +1,1336 @@
+{
+ "id": "material",
+ "tab": "半導體材料",
+ "title": "半導體材料供應鏈",
+ "subtitle": "Semiconductor Materials — 晶片製造的「血液」，涵蓋矽晶圓、光阻、CMP 耗材、濺鍍靶材、電子特氣、ALD/CVD 前驅物、濕化學品、光罩坯料/pellicle，到封裝端 EMC/ABF 膜/底填/銲料。日廠在最上游近乎壟斷（信越+SUMCO 矽晶圓 ~54%、TOK/JSR EUV 光阻 >95%、味之素 ABF 膜 ~95%、Hoya EUV 光罩坯料 >75%），台/中廠則在 CMP、靶材、濕化學、特氣力推本土替代。2nm/HBM/CoWoS 拉動高階材料需求。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 18
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "90+"
+  },
+  {
+   "k": "獨佔／客戶獨家單點",
+   "v": 8,
+   "sub": "信越·SUMCO·JSR/TOK·味之素·Hoya·三井·DuPont pad·Cabot",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "raw",
+   "label": "原材料・基板・靶材 Raw & Substrate",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "原材料 → 晶圓 → 前段製程材料 → 封裝材料 → 需求 Materials Flow",
+   "main": true
+  },
+  {
+   "id": "back",
+   "label": "封裝材料・特化・耗材 Back-end Materials",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "f-poly",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "多晶矽 / 石英 / 高純原料",
+   "nameEn": "Polysilicon · Quartz · Raw",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "電子級多晶矽（EG-poly，11N）、高純石英砂/坩堝、超高純金屬與氣體前體，是晶圓與材料的最上游。",
+   "marketSize": "null",
+   "growth": "上游卡位",
+   "share": "null",
+   "analysis": "電子級多晶矽（半導體用，純度遠高於太陽能級）由 Wacker、信越（德山 Tokuyama）、OCI 等少數廠供應；高純石英砂（IOTA）由美 Sibelco/挪威 TQC 近寡占；中系大全/協鑫切入電子級。半導體級石英坩堝為晶圓拉晶關鍵耗材。",
+   "companies": [
+    {
+     "name": "Wacker Chemie",
+     "ticker": "WCH.DE",
+     "country": "DE",
+     "share": "電子級多晶矽龍頭",
+     "products": "EG-polysilicon 11N",
+     "note": "半導體級多晶矽主力"
+    },
+    {
+     "name": "德山 Tokuyama / 信越",
+     "ticker": "4043.T / 4063.T",
+     "country": "JP",
+     "share": "EG-poly",
+     "products": "電子級多晶矽",
+     "note": "日系高純原料"
+    },
+    {
+     "name": "OCI",
+     "ticker": "010060.KS",
+     "country": "KR",
+     "share": "半導體級 poly",
+     "products": "EG-polysilicon",
+     "note": "韓系"
+    },
+    {
+     "name": "Sibelco / TQC",
+     "ticker": "— / —",
+     "country": "EU",
+     "share": "高純石英砂近寡占",
+     "products": "IOTA 石英砂/坩堝",
+     "note": "拉晶耗材（未上市）"
+    },
+    {
+     "name": "大全能源 / 協鑫",
+     "ticker": "688303.SS / 03800.HK",
+     "country": "CN",
+     "share": "電子級切入",
+     "products": "電子級多晶矽",
+     "note": "本土替代"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-wafer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "電子級多晶矽與石英 (TECHCET)",
+     "url": "https://techcet.com/"
+    }
+   ]
+  },
+  {
+   "id": "f-wafer",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "矽晶圓 / 磊晶晶圓",
+   "nameEn": "Silicon Wafer · Epi",
+   "competition": "oligopoly",
+   "single": "雙占咽喉 · 信越+SUMCO（日）合計 ~54%，300mm 前五 ~80%；換廠認證門檻極高",
+   "desc": "晶片的基板——12 吋（300mm）拋光/磊晶矽晶圓；前五大近寡占，日廠雙雄主導。",
+   "marketSize": "$145 億 / 咽喉",
+   "growth": "8.7% CAGR",
+   "share": "null",
+   "analysis": "前五大（信越/SUMCO/環球晶/Siltronic/SK Siltron）約占整體價值 ~80–82%（2023 口徑）；信越+SUMCO 兩日廠合計 ~52–54%（雙占咽喉、換供應商需數年認證）。絃外之音：認證門檻而非產能才是護城河——SUMCO 2026/4 無限期延後佐賀兩新廠、環球晶規劃下半年漲價，顯示雙占者寧減資本支出護價也不打量戰。環球晶為最大台廠（含併 Siltronic 案後仍獨立）。中系滬硅產業/立昂微推本土 300mm 替代但高階仍落後。SEMI：2026Q1 全球矽晶圓出貨 3,275 MSI、YoY +13.1%（AI 資料中心拉動，先進 300mm 緊俏、消費/工業/車用與成熟 200mm 仍弱）、前五大合計約 ~72.6%；SUMCO 2026/4 無限期延後佐賀兩座新廠（原投資 ¥2,250 億、補助縮至 ¥193 億）、策略退出 200mm 改專攻 AI 級 300mm，Q1 FY2026 仍營業虧損 ¥53 億但 Q2 指引轉盈、市場聚焦 H2 2026 300mm 長約調價將驅動 FY2027 利潤回升；環球晶 2026Q1 稱週期底部確立、規劃 2026 下半年調漲價格、2026/1 啟動德州 Sherman Phase 2 擴產。",
+   "companies": [
+    {
+     "name": "信越化學 Shin-Etsu",
+     "ticker": "4063.T",
+     "country": "JP",
+     "share": "全球第一 ~30%",
+     "products": "300mm 拋光/磊晶晶圓",
+     "note": "矽晶圓龍頭、雙占單點",
+     "src": "https://www.stellarmr.com/report/silicon-wafer-market/2769"
+    },
+    {
+     "name": "SUMCO",
+     "ticker": "3436.T",
+     "country": "JP",
+     "share": "全球第二 ~22%",
+     "products": "300mm 晶圓",
+     "note": "與信越合計 ~54%；Q1 FY2026 營業虧損 ¥53億（淨損 ¥85億、EPS -24.22）、2026/4 無限期延後佐賀兩新廠；策略退出 200mm 專攻 AI 級 300mm，H2 2026 長約料調漲",
+     "src": "https://www.trendforce.com/news/2026/04/06/news-sumco-delays-construction-of-two-silicon-wafer-fabs-amid-market-shift/"
+    },
+    {
+     "name": "環球晶 GlobalWafers",
+     "ticker": "6488.TWO",
+     "country": "TW",
+     "share": "全球第三",
+     "products": "300mm 矽/SiC 晶圓",
+     "note": "最大台廠、併 Siltronic；德州 Sherman 廠 2025/5 開幕、2026/1 啟動 Phase 2（總投資上看 $75 億、產能倍增）供美系",
+     "src": "https://www.globalsemiconductorprojects.com/articles/globalwafers-expansion-in-texas-phase-2-begins"
+    },
+    {
+     "name": "Siltronic / SK Siltron",
+     "ticker": "WAF.DE / —",
+     "country": "DE",
+     "share": "前五（德/韓）",
+     "products": "300mm 晶圓",
+     "note": "SK Siltron 為 SK 集團、未上市"
+    },
+    {
+     "name": "滬硅產業 / 立昂微",
+     "ticker": "688126.SS / 605358.SS",
+     "country": "CN",
+     "share": "本土替代",
+     "products": "300mm 矽晶圓",
+     "note": "中國國產化主力"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-poly"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-proc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "矽晶圓市場與前五市佔 (Stellar MR)",
+     "url": "https://www.stellarmr.com/report/silicon-wafer-market/2769"
+    }
+   ]
+  },
+  {
+   "id": "f-proc",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "前段製程材料總成",
+   "nameEn": "Front-end Process Materials",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "晶圓在晶圓廠（fab）內歷經沉積→微影→蝕刻→CMP→清洗，所需的光阻、特氣、前驅物、靶材、CMP 耗材、濕化學的總成節點（細項見上下游 rail）。",
+   "marketSize": "材料樞紐",
+   "growth": "2nm 拉動",
+   "share": "null",
+   "analysis": "前段材料占半導體材料市場約六成，日廠在光阻/前驅物/特氣高度集中（如 EUV 光阻日系 >95%）；台積電在台/美/日在地化，帶動台廠（達興/長春/三福）與台設靶材廠卡位；中系藉 2025 出口管制與國產化加速替代。2nm（GAA）與高階 DRAM 推升 high-k 前驅物、特氣與光阻用量。絃外之音：日廠刻意把單一咽喉材料拆成三家供（EUV 光阻 JSR+TOK+信越、EUV 坯料 Hoya+AGC），故無單一玩家 >70% 卻有集體定價權與斷供風險——帳面「寡占」實為「協同單點」。",
+   "companies": [
+    {
+     "name": "TSMC（材料拉貨方）",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "最大用戶",
+     "products": "2nm/3nm/CoWoS 製程",
+     "note": "材料在地化主導"
+    },
+    {
+     "name": "Samsung / SK hynix",
+     "ticker": "005930.KS / 000660.KS",
+     "country": "KR",
+     "share": "記憶體/邏輯用戶",
+     "products": "DRAM/HBM/邏輯",
+     "note": "韓系材料拉貨"
+    },
+    {
+     "name": "Intel / Micron",
+     "ticker": "INTC / MU",
+     "country": "US",
+     "share": "美系用戶",
+     "products": "邏輯/DRAM",
+     "note": "美國 fab 在地化"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-wafer"
+    },
+    {
+     "id": "r-resist"
+    },
+    {
+     "id": "r-gas"
+    },
+    {
+     "id": "r-precursor"
+    },
+    {
+     "id": "r-target"
+    },
+    {
+     "id": "r-cmp"
+    },
+    {
+     "id": "r-wetchem"
+    },
+    {
+     "id": "r-mask"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-pkgmat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "半導體材料市場前段占比 (SEMI)",
+     "url": "https://www.semi.org/en/products-services/market-data/materials"
+    }
+   ]
+  },
+  {
+   "id": "f-pkgmat",
+   "row": "flow",
+   "col": 7,
+   "span": 2,
+   "kind": "stage",
+   "name": "封裝材料總成",
+   "nameEn": "Packaging Materials",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "晶圓切割後進入封裝，所需的 ABF 載板膜/BT 樹脂、EMC 環氧封膠、底填/NCF、銲料微凸塊、PSPI 介電、晶圓級液態封裝材的總成節點（細項見下游 rail）。",
+   "marketSize": "材料樞紐",
+   "growth": "先進封裝拉動",
+   "share": "null",
+   "analysis": "封裝材料約占材料市場四成，日廠主導（味之素 ABF 膜 ~95%、住友電木 EMC、旭化成 PSPI）。真正最深咽喉是味之素 ABF（~95%、無第二來源、漲價 ~30% 仍滿單）與日東紡 T-glass（~80%，2026Q4 訂單已滿、Apple/Nvidia/Google/Amazon 爭搶）——AI 載板瓶頸已從『矽』下移到『布與膜』。AI/HBM/CoWoS 推升高階 ABF、底填、NCF、PSPI 需求；2026 上半年 ABF 重回缺貨、味之素漲價 ~30%、ABF 事業利潤率 >50%，並購地建岐阜可兒新廠（2028 動工、2032 投產）；台廠長春/長興、台光電（CCL）為配套。詳見 CoWoS 主題的封裝材料節點。",
+   "companies": [
+    {
+     "name": "味之素 Ajinomoto",
+     "ticker": "2802.T",
+     "country": "JP",
+     "share": "ABF 膜 ~95%",
+     "products": "Ajinomoto Build-up Film",
+     "note": "全鏈最深單點",
+     "src": "https://semiconductorinsight.com/blog/ajinomoto-ramps-up-abf-substrate-production-amid-surging-semiconductor-demand-market-poised-to-double-by-2032/"
+    },
+    {
+     "name": "住友電木 Sumitomo Bakelite",
+     "ticker": "4203.T",
+     "country": "JP",
+     "share": "EMC ~18–20%",
+     "products": "環氧封裝材 EMC",
+     "note": "molding 主力"
+    },
+    {
+     "name": "Resonac 昭和電工",
+     "ticker": "4004.T",
+     "country": "JP",
+     "share": "EMC/CCL/CMP",
+     "products": "EMC + 封裝/CCL 材料",
+     "note": "封裝材料綜合大廠"
+    },
+    {
+     "name": "長春 Chang Chun / 台光電",
+     "ticker": "— / 2383.TW",
+     "country": "TW",
+     "share": "EMC/CCL 配套",
+     "products": "環氧樹脂/EMC / 高速 CCL",
+     "note": "長春未上市；台光電=AI CCL"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-proc"
+    },
+    {
+     "id": "b-emc"
+    },
+    {
+     "id": "b-pkgchem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "味之素 ABF 獨佔 (Semiconductor Insight)",
+     "url": "https://semiconductorinsight.com/blog/ajinomoto-ramps-up-abf-substrate-production-amid-surging-semiconductor-demand-market-poised-to-double-by-2032/"
+    }
+   ]
+  },
+  {
+   "id": "f-special",
+   "row": "flow",
+   "col": 9,
+   "span": 2,
+   "kind": "stage",
+   "name": "化合物 / 特殊基板",
+   "nameEn": "Compound · Specialty Substrate",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "SiC（碳化矽）、GaN（氮化鎵）、InP、藍寶石等化合物半導體與特殊基板，供功率/射頻/光電元件。",
+   "marketSize": "$10 億+ SiC",
+   "growth": "車用/功率",
+   "share": "null",
+   "analysis": "SiC 基板 2024 Wolfspeed ~33.7% 居首，中系天科合達(TanKeBlue)~17.3% 第二、天岳先進(SICC)~17.1% 第三快速崛起，Coherent ~13.9%；2025-26 供過於求、6 吋基板價格戰（主流報價 ~$400-500、部分近成本價），8 吋 SiC 滲透率 2026 估由 <2% 升至 ~15%、AI 資料中心 800V 電源成新成長引擎。SiC 龍頭多在虧損/重整（Wolfspeed 2025/9 脫離 Ch.11、債務-70%）。GaN-on-Si 由穩懋/IQE/Soitec QST 布局；InP 基板住友/AXT/JX 三強控 >90%（見矽光子）。環球晶/SK Siltron CSS 切入 SiC。",
+   "companies": [
+    {
+     "name": "Wolfspeed",
+     "ticker": "WOLF",
+     "country": "US",
+     "share": "SiC 基板 ~34%(2024)",
+     "products": "200mm SiC 基板",
+     "note": "龍頭、2025/9 脫離 Ch.11(債務-70%)；2026 關閉 Durham 150mm 廠全面轉 Mohawk Valley 200mm；6 吋報價兩年由 $1,500 崩至中系 $500",
+     "src": "https://www.trendforce.com/news/2026/03/04/news-wafer-capacity-set-to-surge-a-new-phase-for-the-sic-industry-in-2026/"
+    },
+    {
+     "name": "天岳先進 SICC / 天科合達 TanKeBlue",
+     "ticker": "688234.SS / —",
+     "country": "CN",
+     "share": "~17.1% / ~17.3%",
+     "products": "SiC 基板",
+     "note": "中系（天科合達~17.3%第二、天岳~17.1%第三）；天岳=STAR、天科合達=新三板870013非主板",
+     "src": "https://www.semiconductor-today.com/news_items/2025/may/trendforce-120525.shtml"
+    },
+    {
+     "name": "Coherent",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "SiC ~13.9%",
+     "products": "SiC 基板/材料",
+     "note": "前四"
+    },
+    {
+     "name": "環球晶 / SK Siltron CSS",
+     "ticker": "6488.TWO / —",
+     "country": "TW",
+     "share": "SiC 切入",
+     "products": "150/200mm SiC",
+     "note": "SK Siltron CSS 未上市"
+    },
+    {
+     "name": "穩懋 / IQE",
+     "ticker": "3105.TWO / IQE.L",
+     "country": "TW",
+     "share": "GaN/化合物磊晶",
+     "products": "GaN-on-SiC/Si 磊晶代工",
+     "note": "射頻/功率磊晶"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SiC 基板營收與市佔 (Semiconductor Today/TrendForce)",
+     "url": "https://www.semiconductor-today.com/news_items/2025/may/trendforce-120525.shtml"
+    }
+   ]
+  },
+  {
+   "id": "f-demand",
+   "row": "flow",
+   "col": 11,
+   "span": 2,
+   "kind": "demand",
+   "name": "晶圓代工 / OSAT / 終端需求",
+   "nameEn": "Foundry · OSAT (Demand)",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "半導體材料的最終買家：晶圓代工（前段材料）、OSAT/IDM 封測（封裝材料），背後是 AI/HPC、車用、消費終端需求。",
+   "marketSize": "材料需求源",
+   "growth": "AI/HPC 拉動",
+   "share": "null",
+   "analysis": "全球半導體材料市場 2025 約 700 億美元（前段+封裝），台灣連續多年為最大材料消費地（占 ~25%，因台積電在地化）。AI/HBM/先進封裝拉動高階材料（EUV 光阻、high-k 前驅物、ABF 膜、PSPI、底填）；成熟製程與車用支撐特氣/濕化學量。",
+   "companies": [
+    {
+     "name": "TSMC（前段材料最大買家）",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "材料最大用戶",
+     "products": "2nm/3nm/CoWoS",
+     "note": "台灣=全球最大材料消費地"
+    },
+    {
+     "name": "Samsung / Intel / SK hynix",
+     "ticker": "005930.KS / INTC / 000660.KS",
+     "country": "KR",
+     "share": "IDM 用戶",
+     "products": "邏輯/DRAM/HBM",
+     "note": "全球前段材料拉貨"
+    },
+    {
+     "name": "ASE / Amkor / 日月光",
+     "ticker": "3711.TW / AMKR / 3711.TW",
+     "country": "TW",
+     "share": "封裝材料買家",
+     "products": "OSAT 封測",
+     "note": "封裝材料需求端"
+    },
+    {
+     "name": "Nvidia / AMD（終端）",
+     "ticker": "NVDA / AMD",
+     "country": "US",
+     "share": "AI 終端拉動",
+     "products": "AI GPU/ASIC",
+     "note": "高階材料需求源頭"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-pkgmat"
+    },
+    {
+     "id": "f-special"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "半導體材料市場規模 (SEMI Materials)",
+     "url": "https://www.semi.org/en/products-services/market-data/materials"
+    }
+   ]
+  },
+  {
+   "id": "r-resist",
+   "row": "raw",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "光阻 / 顯影 / BARC",
+   "nameEn": "Photoresist · Developer",
+   "competition": "oligopoly",
+   "single": "EUV 咽喉 · 日系 EUV 光阻 >95%（JSR/TOK/信越）；JSR 為 EUV 光阻領導（被日 JIC 收購）",
+   "desc": "微影核心材料——ArF/KrF/EUV 光阻、顯影液、抗反射層（BARC）、EBR 邊緣去膠。",
+   "marketSize": "$40 億 / 咽喉",
+   "growth": "EUV 高成長",
+   "share": "null",
+   "analysis": "全球光阻日系 >90%、高階 EUV 光阻日系 >95%（TOK ~30% 整體第一、JSR+信越合計近 40%、Fujifilm/住友化學/DuPont 補）。JSR 為 EUV 光阻技術領導（2024 被日本政府基金 JIC 私有化、保護國家戰略材料）；2026/5 JSR 宣布在台（雲林）建首座光阻廠（最快 2028 投產）、就近供應/共同開發 TSMC 先進 EUV 光阻，JSR 在韓的 MOR（金屬氧化物光阻，源自併購 Inpria 的錫氧化物技術）廠 2026 內量產供三星/海力士、TOK 另投 ¥200 億建韓國光阻廠 2030 投產。TOK FY2025 營收 ¥2,370 億（+17.9% YoY）、營業利益 +43.2% 創高。絃外之音：下世代 MOR（金屬氧化物光阻）格局 2026/5/27 出現重大整併——JSR/Inpria 與 Entegris 簽 EUV MOR 專利非獨家交互授權、撤回 IPR2025-00267 專利訴訟並合作 MOR 配方+前驅物+專用過濾，把『JSR 配方領導+Entegris MOR 前驅物/過濾』綁進同一陣營、墊高中系 EUV 追趕門檻。中系南大光電/彤程新材/晶瑞推 KrF/ArF 本土替代、EUV 仍空白。",
+   "companies": [
+    {
+     "name": "JSR",
+     "ticker": "—",
+     "country": "JP",
+     "share": "EUV 光阻領導",
+     "products": "ArF/EUV 光阻",
+     "note": "2024 JIC 私有化（下市）",
+     "src": "https://www.trendforce.com/news/2025/11/06/news-japan-ramps-up-photoresist-investment-for-2nm-chips-tokyo-ohka-kogyo-jsr-lead-the-charge/"
+    },
+    {
+     "name": "Tokyo Ohka 東京應化 TOK",
+     "ticker": "4186.T",
+     "country": "JP",
+     "share": "整體 ~30% 第一",
+     "products": "ArF/KrF/EUV 光阻",
+     "note": "光阻整體龍頭、2nm 擴產"
+    },
+    {
+     "name": "信越化學 Shin-Etsu",
+     "ticker": "4063.T",
+     "country": "JP",
+     "share": "EUV 光阻前三",
+     "products": "EUV/ArF 光阻",
+     "note": "與 JSR 合計近 40%"
+    },
+    {
+     "name": "住友化學 / Fujifilm / DuPont",
+     "ticker": "4005.T / 4901.T / DD",
+     "country": "JP",
+     "share": "光阻五強",
+     "products": "ArF/KrF 光阻+顯影",
+     "note": "DuPont=美系"
+    },
+    {
+     "name": "Entegris",
+     "ticker": "ENTG",
+     "country": "US",
+     "share": "MOR 前驅物/過濾",
+     "products": "MOR 前驅物·CVD 沉積·專用過濾",
+     "note": "2026/5/27 與 JSR/Inpria 簽 EUV MOR 專利非獨家交互授權+撤訴+合作開發、切入下世代金屬氧化物光阻陣營",
+     "src": "https://www.businesswire.com/news/home/20260526876476/en/Entegris-and-JSR-CorporationInpria-Corporation-Announce-Non-Exclusive-Cross-Licensing-to-EUV-Lithography"
+    },
+    {
+     "name": "南大光電 / 彤程新材 / 晶瑞",
+     "ticker": "300346.SZ / 603650.SS / 300655.SZ",
+     "country": "CN",
+     "share": "本土替代",
+     "products": "KrF/ArF 光阻/前驅物",
+     "note": "EUV 仍空白"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-proc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "日系光阻 2nm 擴產 TOK/JSR (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/11/06/news-japan-ramps-up-photoresist-investment-for-2nm-chips-tokyo-ohka-kogyo-jsr-lead-the-charge/"
+    },
+    {
+     "label": "JSR/Inpria 與 Entegris EUV MOR 交互授權 (Business Wire)",
+     "url": "https://www.businesswire.com/news/home/20260526876476/en/Entegris-and-JSR-CorporationInpria-Corporation-Announce-Non-Exclusive-Cross-Licensing-to-EUV-Lithography"
+    }
+   ]
+  },
+  {
+   "id": "r-gas",
+   "row": "raw",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "電子特氣 / 大宗氣體",
+   "nameEn": "Specialty & Bulk Gases",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "蝕刻/沉積/摻雜用電子特氣（NF₃、WF₆、含氟氣體、矽烷、摻雜氣）與大宗氣體（N₂/H₂/Ar/He）。",
+   "marketSize": "$165 億",
+   "growth": "3.6% CAGR",
+   "share": "null",
+   "analysis": "四大工業氣體 Linde/Air Products/Air Liquide/大陽日酸（Nippon Sanso）主導，前三合計 >35%；特氣含氟由 Merck/關東電化/SK specialty 補。台廠聯華林德（Linde 合資）、亞東工業氣體；中系華特氣體（國產特氣龍頭）、金宏氣體、南大光電（前驅物兼特氣）力推本土替代（2025 含鎵/鍺出口管制加速國產化）。",
+   "companies": [
+    {
+     "name": "Linde",
+     "ticker": "LIN",
+     "country": "US",
+     "share": "工業氣體第一",
+     "products": "NF₃/WF₆/大宗氣體",
+     "note": "台灣擴產 NF₃/WF₆ +40%"
+    },
+    {
+     "name": "Air Liquide",
+     "ticker": "AI.PA",
+     "country": "FR",
+     "share": "前三",
+     "products": "電子特氣/大宗氣體",
+     "note": "美國新廠供半導體"
+    },
+    {
+     "name": "Air Products / 大陽日酸",
+     "ticker": "APD / 4091.T",
+     "country": "US",
+     "share": "前三/日系",
+     "products": "特氣/大宗氣體",
+     "note": "大陽日酸=Nippon Sanso"
+    },
+    {
+     "name": "Merck / 關東電化",
+     "ticker": "MRK.DE / 4047.T",
+     "country": "DE",
+     "share": "含氟特氣",
+     "products": "蝕刻特氣/前驅物",
+     "note": "特化補位"
+    },
+    {
+     "name": "華特氣體 / 金宏氣體",
+     "ticker": "688268.SS / 688106.SS",
+     "country": "CN",
+     "share": "國產特氣龍頭",
+     "products": "含氟/含氟碳特氣",
+     "note": "本土替代主力",
+     "src": "https://www.intelmarketresearch.com/semiconductor-high-purity-electronic-special-gas-market-22789"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-proc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "電子特氣市場與四大廠 (Intel Market Research)",
+     "url": "https://www.intelmarketresearch.com/semiconductor-high-purity-electronic-special-gas-market-22789"
+    }
+   ]
+  },
+  {
+   "id": "r-precursor",
+   "row": "raw",
+   "col": 6,
+   "span": 1,
+   "kind": "rail",
+   "name": "ALD/CVD 前驅物 / high-k",
+   "nameEn": "ALD/CVD Precursors",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "原子層/化學氣相沉積用金屬有機前驅物（Hf/Zr high-k、W、Ti/Ta 阻障、Mo、SiN 前驅物）。",
+   "marketSize": "$18 億",
+   "growth": "9% CAGR",
+   "share": "null",
+   "analysis": "Merck（~21%）整體第一、Air Liquide（~16%）次之，供 >1,200 配方；韓系 SK Materials/DNF/Soulbrain/Hansol 為三星/海力士配套大宗；ADEKA（日）high-k 強；台廠（UP Chemical 被韓收）量小。中系雅克科技（前驅物 + 電子特氣 + LDS 光刻膠平台）、南大光電本土替代。2nm GAA 與高階 DRAM 推升 high-k 用量。2026/1 中國對日本二氯矽烷（dichlorosilane，SiN 前驅物原料）發起反傾銷調查反制，加速 SiN 前驅物國產化。",
+   "companies": [
+    {
+     "name": "Merck (EMD)",
+     "ticker": "MRK.DE",
+     "country": "DE",
+     "share": "前驅物 ~21%",
+     "products": "high-k/金屬有機前驅物",
+     "note": "全球第一、1,200+ 配方",
+     "src": "https://www.mordorintelligence.com/industry-reports/high-k-and-cvd-ald-metal-precursors-market"
+    },
+    {
+     "name": "Air Liquide",
+     "ticker": "AI.PA",
+     "country": "FR",
+     "share": "~16%",
+     "products": "300+ fab 認證前驅物",
+     "note": "6N 純度"
+    },
+    {
+     "name": "ADEKA",
+     "ticker": "4401.T",
+     "country": "JP",
+     "share": "high-k 強",
+     "products": "Hf/Zr high-k 前驅物",
+     "note": "日系高階"
+    },
+    {
+     "name": "SK Materials / DNF / Soulbrain",
+     "ticker": "— / 092070.KQ / 357780.KQ",
+     "country": "KR",
+     "share": "韓系配套",
+     "products": "前驅物/特氣",
+     "note": "三星/海力士供應鏈"
+    },
+    {
+     "name": "雅克科技 / 南大光電",
+     "ticker": "002409.SZ / 300346.SZ",
+     "country": "CN",
+     "share": "本土替代",
+     "products": "前驅物/SiN/含氟特氣",
+     "note": "中系平台型"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-proc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "High-k/ALD/CVD 前驅物市場 (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/high-k-and-cvd-ald-metal-precursors-market"
+    }
+   ]
+  },
+  {
+   "id": "r-target",
+   "row": "raw",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "濺鍍靶材",
+   "nameEn": "Sputtering Targets",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "PVD 濺鍍用高純金屬靶材（Cu/Al/Ti/Ta/W/Co/Ru），用於金屬化、阻障、晶種與 RDL/TSV。",
+   "marketSize": "JX 領導·前五 ~58%",
+   "growth": "5.6% CAGR",
+   "share": "null",
+   "analysis": "日系 JX Advanced Metals（前 JX 金屬，2025 上市，半導體靶材全球領導）、日礦/三井金屬、美系 Honeywell/Materion 主導高階；台廠光洋應材（再生靶材+靶材，供台積電）；中系江豐電子（國產靶材龍頭、12 吋高階突破）、隆運/有研新材。半導體靶材純度與背板技術門檻高。",
+   "companies": [
+    {
+     "name": "JX Advanced Metals",
+     "ticker": "5016.T",
+     "country": "JP",
+     "share": "靶材全球領導",
+     "products": "高純 Cu/Ta/Ti/Co 靶材",
+     "note": "2025 IPO、半導體靶材龍頭",
+     "src": "https://www.verifiedmarketresearch.com/product/sputtering-target-material-for-semiconductor-market/"
+    },
+    {
+     "name": "Honeywell / Materion",
+     "ticker": "HON / MTRN",
+     "country": "US",
+     "share": "前段高階",
+     "products": "高純金屬靶材",
+     "note": "美系領導"
+    },
+    {
+     "name": "三井金屬 / 住友化學",
+     "ticker": "5706.T / 4005.T",
+     "country": "JP",
+     "share": "日系靶材",
+     "products": "金屬/合金靶材",
+     "note": "日系第二梯隊"
+    },
+    {
+     "name": "江豐電子 Jiangfeng",
+     "ticker": "300666.SZ",
+     "country": "CN",
+     "share": "國產靶材龍頭",
+     "products": "Cu/Al/Ti/Ta 靶材",
+     "note": "12 吋高階突破、本土替代"
+    },
+    {
+     "name": "光洋應材 / 隆運",
+     "ticker": "1786.TWO / —",
+     "country": "TW",
+     "share": "再生靶/靶材",
+     "products": "貴金屬靶/再生靶",
+     "note": "光洋=1786.TWO；隆運未上市"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-proc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "半導體濺鍍靶材市場 (Verified Market Research)",
+     "url": "https://www.verifiedmarketresearch.com/product/sputtering-target-material-for-semiconductor-market/"
+    }
+   ]
+  },
+  {
+   "id": "r-cmp",
+   "row": "raw",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "CMP 研磨液 / 研磨墊",
+   "nameEn": "CMP Slurry · Pad",
+   "competition": "monopoly",
+   "single": "雙單點 · DuPont CMP pad ~66%（領導）；Cabot(→Entegris) slurry 領導、TSMC/三星全節點認證",
+   "desc": "化學機械研磨耗材：研磨液（slurry）、研磨墊（pad）、鑽石碟、保持環。",
+   "marketSize": "DuPont pad ~66%",
+   "growth": "9% CAGR",
+   "share": "null",
+   "analysis": "Pad 由 DuPont ~66% 領導（單點）；slurry 較分散——Entegris（併 Cabot/CMC，整體 ~23%）、DuPont（~22%）、Fujimi（~18-20%）、Resonac、JSR，前五 ~64%；Cabot 在各先進節點全認證、嵌入 TSMC/三星。中系安集科技（國產 slurry 龍頭）、鼎龍股份（CMP pad 國產第一）力推替代；台廠中砂（鑽石碟/保持環/再生晶圓）。2026/4 JSR 與 Applied Materials 在新竹設先進 CMP 聯合研發中心（瞄準 TSMC）；Entegris 2026Q1 營收 $811.9M（+5.0% YoY），先進沉積材料與 CMP 耗材為成長主力。",
+   "companies": [
+    {
+     "name": "DuPont",
+     "ticker": "DD",
+     "country": "US",
+     "share": "CMP pad ~66%",
+     "products": "CMP pad",
+     "note": "pad 絕對龍頭（單點）",
+     "src": "https://www.reportsanddata.com/report-detail/chemical-mechanical-planarization-cmp-slurry-market"
+    },
+    {
+     "name": "Entegris (Cabot/CMC)",
+     "ticker": "ENTG",
+     "country": "US",
+     "share": "slurry ~23%",
+     "products": "Cu/STI/ILD slurry+pad+過濾",
+     "note": "Cabot 全節點認證"
+    },
+    {
+     "name": "Fujimi",
+     "ticker": "5384.T",
+     "country": "JP",
+     "share": "slurry ~18–20%",
+     "products": "氧化物/鎢 slurry",
+     "note": "高純研磨材料（QYResearch 口徑 18–20%）"
+    },
+    {
+     "name": "安集科技 Anji / 鼎龍 Dinglong",
+     "ticker": "688019.SS / 300054.SZ",
+     "country": "CN",
+     "share": "國產 slurry/pad 龍頭",
+     "products": "CMP slurry / CMP pad",
+     "note": "鼎龍=國產 pad 第一"
+    },
+    {
+     "name": "中砂 Kinik",
+     "ticker": "1560.TW",
+     "country": "TW",
+     "share": "鑽石碟台廠",
+     "products": "鑽石碟/保持環/再生晶圓",
+     "note": "CMP 耗材台廠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-proc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CMP slurry/pad 市佔 (Reports and Data)",
+     "url": "https://www.reportsanddata.com/report-detail/chemical-mechanical-planarization-cmp-slurry-market"
+    }
+   ]
+  },
+  {
+   "id": "r-wetchem",
+   "row": "raw",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "濕化學品 / 雙氧水 / 蝕刻液",
+   "nameEn": "Wet Chemicals · H2O2 · Etchants",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "高純濕化學品：雙氧水（H₂O₂）、硫酸/氫氟酸/磷酸蝕刻液、TMAH 顯影液、剝離液、SC-1/SC-2 清洗液。",
+   "marketSize": "量大値低",
+   "growth": "在地化",
+   "share": "null",
+   "analysis": "高量低值、運輸半徑短 → 強在地化。國際巨頭 BASF/三菱化學/Stella；台廠達興材料（友達系，光阻剝離/選擇比蝕刻/雷射釋放層，半導體比重續增）、三福化工（TSMC CoWoS 特化、TMAH 回收）、勝一（電子級溶劑）、國精化（雙氧水）。中系晶瑞電子材料（超純化學/雙氧水）、格林達（TMAH 顯影液）、鑫科材料力推國產替代。",
+   "companies": [
+    {
+     "name": "達興材料 Daxin",
+     "ticker": "5234.TWO",
+     "country": "TW",
+     "share": "面板轉半導體",
+     "products": "剝離液/選擇比蝕刻/雷射釋放層",
+     "note": "友達系、半導體比重續增",
+     "src": "https://vocus.cc/article/6839c8cffd89780001117df8"
+    },
+    {
+     "name": "三福化工 / 勝一 / 國精化",
+     "ticker": "4755.TWO / 1773.TW / 4722.TW",
+     "country": "TW",
+     "share": "TSMC 特化配套",
+     "products": "蝕刻/顯影/清洗/溶劑/雙氧水",
+     "note": "三福=CoWoS 特化+TMAH 回收"
+    },
+    {
+     "name": "BASF / 三菱化學",
+     "ticker": "BAS.DE / 4188.T",
+     "country": "DE",
+     "share": "國際巨頭",
+     "products": "高純濕化學/雙氧水",
+     "note": "全球供應"
+    },
+    {
+     "name": "晶瑞電子材料 / 格林達",
+     "ticker": "300655.SZ / 603931.SS",
+     "country": "CN",
+     "share": "國產替代",
+     "products": "超純化學/雙氧水 / TMAH 顯影液",
+     "note": "中系本土化"
+    },
+    {
+     "name": "鑫科材料 / 上海新陽",
+     "ticker": "600255.SS / 300236.SZ",
+     "country": "CN",
+     "share": "中系濕化學",
+     "products": "蝕刻液/清洗液/電鍍液",
+     "note": "本土替代長尾"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-proc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "達興材料半導體材料轉型 (Vocus)",
+     "url": "https://vocus.cc/article/6839c8cffd89780001117df8"
+    }
+   ]
+  },
+  {
+   "id": "r-mask",
+   "row": "raw",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "光罩坯料 / 光罩 / pellicle",
+   "nameEn": "Mask Blank · Photomask · Pellicle",
+   "competition": "monopoly",
+   "single": "雙咽喉 · Hoya EUV 光罩坯料 >75%（與 AGC 二家）；三井化學 ASML EUV pellicle 全球首家獨家量產",
+   "desc": "微影最上游——光罩坯料（mask blank）、空白/成品光罩（photomask）、防塵薄膜（pellicle）。",
+   "marketSize": "EUV 咽喉",
+   "growth": "EUV 高成長",
+   "share": "null",
+   "analysis": "EUV 光罩坯料僅 Hoya（>75%）、AGC 二家商業供貨、信越供 DUV 坯料（坯料咽喉單點）；商售光罩 Toppan/DNP/Photronics 三強；EUV pellicle 由三井化學（ASML 授權、全球首家量產）獨家，信越/韓 S&S Tech 補（三家 ~70–80%），三井下世代 CNT pellicle 攻 600W+ 高功率。中系路維光電/清溢光電做中低階光罩本土替代。",
+   "companies": [
+    {
+     "name": "Hoya",
+     "ticker": "7741.T",
+     "country": "JP",
+     "share": "EUV 坯料 >75%",
+     "products": "EUV/DUV 光罩坯料",
+     "note": "坯料咽喉、High-NA 唯一驗證",
+     "src": "https://semiconductorinsight.com/blog/hoya-expands-euv-photomask-blank-capabilities-strengthening-global-semiconductor-supply-chain/"
+    },
+    {
+     "name": "三井化學 Mitsui Chemicals",
+     "ticker": "4183.T",
+     "country": "JP",
+     "share": "EUV pellicle 獨家量產",
+     "products": "EUV pellicle（ASML 授權）",
+     "note": "全球首家、CNT 攻 600W",
+     "src": "https://www.optica-opn.org/home/industry/2023/december/imec_and_mitsui_partner_on_key_euv_lithography_com/"
+    },
+    {
+     "name": "Toppan / DNP / Photronics",
+     "ticker": "7911.T / 7912.T / PLAB",
+     "country": "JP",
+     "share": "商售光罩三強",
+     "products": "EUV/DUV 光罩",
+     "note": "Photronics=美系"
+    },
+    {
+     "name": "信越 / AGC",
+     "ticker": "4063.T / 5201.T",
+     "country": "JP",
+     "share": "DUV 坯料/EUV 坯料二家",
+     "products": "光罩坯料 / 石英基板",
+     "note": "AGC=EUV 坯料另一家"
+    },
+    {
+     "name": "路維光電 / 清溢光電",
+     "ticker": "688401.SS / 688138.SS",
+     "country": "CN",
+     "share": "中低階本土",
+     "products": "光罩（FPD/半導體）",
+     "note": "中系替代（高階仍落後）"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-proc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Hoya EUV 光罩坯料 >75% (Semiconductor Insight)",
+     "url": "https://semiconductorinsight.com/blog/hoya-expands-euv-photomask-blank-capabilities-strengthening-global-semiconductor-supply-chain/"
+    },
+    {
+     "label": "三井化學 ASML EUV pellicle (Optica OPN)",
+     "url": "https://www.optica-opn.org/home/industry/2023/december/imec_and_mitsui_partner_on_key_euv_lithography_com/"
+    }
+   ]
+  },
+  {
+   "id": "b-emc",
+   "row": "back",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "EMC / 底填 / NCF",
+   "nameEn": "EMC · Underfill · NCF",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "封裝成型材料：環氧封裝材（EMC）、毛細/模封底填（underfill/MUF）、非導電膜（NCF）、ACF。",
+   "marketSize": "$25 億 EMC",
+   "growth": "先進封裝拉動",
+   "share": "null",
+   "analysis": "EMC 日廠主導：住友電木（~18–20%）、Resonac（~10%）、Panasonic 三強約四成；台廠長春供應。底填 Namics(DIC)/Henkel/住友主導；NCF/ACF 由 Dexerials/Toray/Namics 寡占（HBM 堆疊與 CoWoS 關鍵）。AI/HBM 推升高導熱底填與 NCF 需求。",
+   "companies": [
+    {
+     "name": "住友電木 Sumitomo Bakelite",
+     "ticker": "4203.T",
+     "country": "JP",
+     "share": "EMC ~18–20%",
+     "products": "EMC + 液態封裝材",
+     "note": "molding 主力"
+    },
+    {
+     "name": "Resonac / Panasonic",
+     "ticker": "4004.T / 6752.T",
+     "country": "JP",
+     "share": "EMC 三強",
+     "products": "EMC + 環氧模封料",
+     "note": "日系前三 ~40%"
+    },
+    {
+     "name": "Namics(DIC) / Henkel",
+     "ticker": "— / HEN3.DE",
+     "country": "JP",
+     "share": "底填領導",
+     "products": "LCMUF/高導熱底填",
+     "note": "Henkel=德、底填材料龍頭"
+    },
+    {
+     "name": "Dexerials / Toray",
+     "ticker": "4980.T / 3402.T",
+     "country": "JP",
+     "share": "NCF/ACF",
+     "products": "NCF/ACF 接合膜",
+     "note": "HBM 堆疊+CoWoS 關鍵"
+    },
+    {
+     "name": "長春 Chang Chun",
+     "ticker": "—",
+     "country": "TW",
+     "share": "EMC 配套",
+     "products": "環氧樹脂 + EMC",
+     "note": "台灣供應（未上市）"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-pkgmat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "EMC 全球市場 (Spherical Insights)",
+     "url": "https://www.sphericalinsights.com/blogs/top-25-companies-in-global-semiconductor-epoxy-mold-compound-market-market-strategic-overview-and-future-trends-2024-2035"
+    }
+   ]
+  },
+  {
+   "id": "b-pkgchem",
+   "row": "back",
+   "col": 8,
+   "span": 1,
+   "kind": "rail",
+   "name": "PSPI / 銲料 / 電鍍化學",
+   "nameEn": "PSPI · Solder · Plating",
+   "competition": "oligopoly",
+   "single": "近單點 · PSPI/RDL 介電 旭化成 PIMEL 領導（前五 ~71%、2025 缺料）",
+   "desc": "先進封裝關鍵材料：PSPI/RDL 介電膜、微焊球/銲膏、Cu pillar 電鍍化學、晶圓級液態封裝材（LMC）。",
+   "marketSize": "多單點",
+   "growth": "AI 封裝拉動",
+   "share": "null",
+   "analysis": "PSPI（感光性聚醯亞胺，RDL 介電）旭化成 PIMEL/Toray/HD MicroSystems 前五 ~71%、2025 缺料無全面替代；微凸塊銲料千住金屬/昇貿/Indium；電鍍化學 MKS Atotech/上村/DuPont；晶圓級液態封裝材台廠長興（TSMC CoWoS LMC）。AI 先進封裝（CoWoS/FOPLP/PLP）拉動 RDL 介電與銅電鍍用量。",
+   "companies": [
+    {
+     "name": "旭化成 Asahi Kasei / HD MicroSystems",
+     "ticker": "3407.T / —",
+     "country": "JP",
+     "share": "PSPI 前五 ~71%",
+     "products": "PIMEL PSPI / 封裝介電",
+     "note": "PSPI 近單點、2025 缺料",
+     "src": "https://technews.tw/2025/05/28/"
+    },
+    {
+     "name": "Toray 東麗",
+     "ticker": "3402.T",
+     "country": "JP",
+     "share": "PSPI/介電",
+     "products": "感光性聚醯亞胺",
+     "note": "PSPI 第二源"
+    },
+    {
+     "name": "千住金屬 / 昇貿 / Indium",
+     "ticker": "5836.T / 3551.TW / —",
+     "country": "JP",
+     "share": "銲料球領先",
+     "products": "微焊球/銲膏/preform",
+     "note": "昇貿=台、Indium=美"
+    },
+    {
+     "name": "MKS Atotech / 上村工業",
+     "ticker": "MKSI / —",
+     "country": "US",
+     "share": "電鍍化學龍頭",
+     "products": "RDL/Cu pillar 電鍍化學",
+     "note": "上村=日、未單獨上市"
+    },
+    {
+     "name": "長興 Eternal",
+     "ticker": "1717.TW",
+     "country": "TW",
+     "share": "LMC 台廠",
+     "products": "晶圓級液態封裝材 / 封裝膠",
+     "note": "TSMC CoWoS LMC"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-pkgmat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "PSPI 缺料 旭化成 (TechNews)",
+     "url": "https://technews.tw/2025/05/28/"
+    }
+   ]
+  },
+  {
+   "id": "b-substrate",
+   "row": "back",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "載板核心材料 (BT/CCL)",
+   "nameEn": "Substrate Core (BT/CCL)",
+   "competition": "monopoly",
+   "single": "null",
+   "desc": "封裝載板核心材料：ABF 增層膜、BT 樹脂/prepreg、高速 CCL（覆銅板）、玻璃布。",
+   "marketSize": "味之素 ABF ~95%",
+   "growth": "AI 載板拉動",
+   "share": "null",
+   "analysis": "ABF 膜味之素 ~95% 絕對獨佔（最深單點）；BT 樹脂三菱瓦斯化學（MGC）主導；高速 CCL 由 Panasonic/Isola/台光電/聯茂主導（AI 伺服器 M8/M9 等級高速材料）；玻璃布日東紡（Nittobo，Low-Dk 玻纖布近寡占、AI PCB 關鍵）；HVLP4 高階銅箔由三井金屬（Mitsui Kinzoku，超薄銅箔 ~98%、AI CCL 用 HVLP2+ ~60%）近乎壟斷、2026/6 Nvidia 越過 CCL 廠直接向上游銅箔廠（含台廠 Co-Tech 長華科）與玻纖布鎖料（2026 供需缺口估 ~1,500 噸、Mitsui＋次供合計僅能滿足未來三年 50–60% 需求）。AI 載板/PCB 推升超低損耗材料——卡脖瓶頸已擴散到 T-glass＋HVLP 銅箔＋ABF 三大上游；Resonac 銅箔/CCL 相關材料已自 2026/3 起全面調漲 30%+、MGC 載板樹脂亦同步漲價，標準 ABF 載板 H2 2026 估再漲 5-10%、現貨已逾 +30%。",
+   "companies": [
+    {
+     "name": "味之素 Ajinomoto",
+     "ticker": "2802.T",
+     "country": "JP",
+     "share": "ABF 膜 ~95%",
+     "products": "Ajinomoto Build-up Film",
+     "note": "全鏈最深單點、ABF 膜確定 Q3 2026 漲價 30%（AI 封裝層數升至 11+11/13+13）",
+     "src": "https://www.digitimes.com/news/a20260513PD230/ic-substrate-abf-substrate-demand-substrate-2026.html"
+    },
+    {
+     "name": "三菱瓦斯化學 MGC",
+     "ticker": "4182.T",
+     "country": "JP",
+     "share": "BT 樹脂主導",
+     "products": "BT prepreg / 載板樹脂",
+     "note": "BT 載板核心"
+    },
+    {
+     "name": "台光電 / 聯茂",
+     "ticker": "2383.TW / 6213.TW",
+     "country": "TW",
+     "share": "高速 CCL 領導",
+     "products": "高速 CCL / M8/M9 等級",
+     "note": "AI 伺服器 CCL 主力"
+    },
+    {
+     "name": "日東紡 Nittobo / Panasonic",
+     "ticker": "3110.T / 6752.T",
+     "country": "JP",
+     "share": "T-glass ~90% / NER 60-70%",
+     "products": "低損耗玻璃布 / CCL",
+     "note": "日東紡 2026/4 再漲 20-30%、H2 2026 高階玻璃布供給缺口估 >40%（恐引重複下單）、新產能最快 2027 年中；南亞獲長約 2027 年代工 ~20%",
+     "src": "https://www.tomshardware.com/tech-industry/artificial-intelligence/glass-cloth-could-be-the-next-great-ai-shortage-as-major-manufacturers-scramble-to-secure-critical-material-japanese-manufacturer-courted-by-apple-nvidia-google-and-amazon"
+    },
+    {
+     "name": "三井金屬 / Co-Tech 長華科",
+     "ticker": "5706.T / 4426.TW",
+     "country": "JP",
+     "share": "超薄銅箔 ~98% / HVLP4 次供",
+     "products": "HVLP4/HVLP2+ 超薄銅箔",
+     "note": "三井超薄銅箔近獨家(~98%、HVLP2+ ~60%)；2026/6 Nvidia 越過 CCL 廠直接向 Co-Tech 鎖料、HVLP4 2026 缺口 ~1,500 噸",
+     "src": "https://www.digitimes.com/news/a20260609PD232/co-tech-copper-foil-nvidia-2026-capacity.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-pkgmat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AI 載板/CCL/玻纖布 (TechNews)",
+     "url": "https://technews.tw/"
+    }
+   ]
+  },
+  {
+   "id": "b-bonding",
+   "row": "back",
+   "col": 10,
+   "span": 1,
+   "kind": "rail",
+   "name": "切割膠帶 / 引線 / 散熱介面",
+   "nameEn": "Dicing Tape · Wire · TIM",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "封裝耗材：晶圓切割/貼膜膠帶（DAF/dicing tape）、打線金/銅線、晶片黏著、散熱介面材（TIM）、暫時鍵合膠。",
+   "marketSize": "封裝耗材",
+   "growth": "穩定",
+   "share": "null",
+   "analysis": "切割/DAF 膠帶日東電工（Nitto）/古河/Lintec 主導；打線材田中貴金屬/賀利氏（金線/銅線）；DAF 日立化成(Resonac)/Henkel；TIM Henkel/信越/Dow；暫時鍵合膠 Brewer Science。屬量大穩定耗材，台廠多為代理/二次加工。AI 封裝推升高導熱 TIM 與低翹曲 DAF。",
+   "companies": [
+    {
+     "name": "日東電工 Nitto",
+     "ticker": "6988.T",
+     "country": "JP",
+     "share": "切割/貼膜膠帶領導",
+     "products": "dicing tape / DAF / 保護膜",
+     "note": "封裝膠帶龍頭"
+    },
+    {
+     "name": "田中貴金屬 / 賀利氏 Heraeus",
+     "ticker": "— / —",
+     "country": "JP",
+     "share": "打線材領導",
+     "products": "金線/銅線/銲線",
+     "note": "兩者皆未上市"
+    },
+    {
+     "name": "Resonac / Henkel",
+     "ticker": "4004.T / HEN3.DE",
+     "country": "JP",
+     "share": "DAF/TIM",
+     "products": "DAF 黏晶膜 / TIM",
+     "note": "Henkel=德"
+    },
+    {
+     "name": "信越 / Dow / Brewer Science",
+     "ticker": "4063.T / DOW / —",
+     "country": "JP",
+     "share": "TIM/暫時鍵合膠",
+     "products": "散熱介面材 / 暫時鍵合膠",
+     "note": "Brewer=美、未上市"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-pkgmat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "封裝耗材（膠帶/打線/TIM）市場 (TECHCET)",
+     "url": "https://techcet.com/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "f-poly",
+   "f-wafer"
+  ],
+  [
+   "f-wafer",
+   "f-proc"
+  ],
+  [
+   "f-proc",
+   "f-pkgmat"
+  ],
+  [
+   "f-pkgmat",
+   "f-demand"
+  ],
+  [
+   "f-special",
+   "f-demand"
+  ],
+  [
+   "r-resist",
+   "f-proc"
+  ],
+  [
+   "r-gas",
+   "f-proc"
+  ],
+  [
+   "r-precursor",
+   "f-proc"
+  ],
+  [
+   "r-target",
+   "f-proc"
+  ],
+  [
+   "r-cmp",
+   "f-proc"
+  ],
+  [
+   "r-wetchem",
+   "f-proc"
+  ],
+  [
+   "r-mask",
+   "f-proc"
+  ],
+  [
+   "b-emc",
+   "f-pkgmat"
+  ],
+  [
+   "b-pkgchem",
+   "f-pkgmat"
+  ],
+  [
+   "b-substrate",
+   "f-pkgmat"
+  ],
+  [
+   "b-bonding",
+   "f-pkgmat"
+  ]
+ ],
+ "_proposed": {}
+}

@@ -1,0 +1,727 @@
+{
+ "id": "space_economy",
+ "tab": "太空經濟",
+ "title": "太空經濟供應鏈 (Space Economy: Launch · Satellites · Apps)",
+ "subtitle": "Space Economy — SpaceX 2026-06-12 完成史上最大 IPO（SPCX 募資 ~$750 億、估值 ~$1.75 兆、超越 Saudi Aramco；首日 +19% 收 $161、市值 >$2 兆、美股第六大），把太空從題材推向可投資的資產類別，RDW/LUNR 6 個月暴漲 +368%/+335%、ASTS/RKLB/PL 接連創高。價值鏈：火箭推進/結構件 → 發射服務（Falcon9 降本至 ~$2,700/kg、Starship 目標 $100–200/kg）→ 衛星/太空船製造 → 在軌/月球/太空站服務 → 衛星營運（通訊 D2C / 對地觀測 / 太空算力）→ 地面設備（台廠華通/昇達科重倉）。整體市場 2026 約 $462–630B、2040 上看 $1 兆（Morgan Stanley）。有別於 leosat（LEO 通訊+台廠地面設備細分），本主題涵蓋發射+製造+應用全景。⚠ SpaceX 2025 虧損近 $50 億、估值爭議；整機新創多 EPS 負；發射近獨佔單點風險。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "40+"
+  },
+  {
+   "k": "SpaceX IPO",
+   "v": "市值~$2.44兆",
+   "sub": "募資 ~$750 億·史上最大 IPO·6/16 盤中觸 $225.64、市值一度破 $3 兆",
+   "hot": true
+  },
+  {
+   "k": "市場/降本",
+   "v": "$100/kg",
+   "sub": "市場 2026 ~$462–630B→2040 $1 兆·Starship 目標 $100–200/kg",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "up",
+   "label": "推進 / 結構件 Propulsion & Structures",
+   "main": false
+  },
+  {
+   "id": "launch",
+   "label": "發射服務 Launch Services",
+   "main": false
+  },
+  {
+   "id": "mfg",
+   "label": "衛星製造 · 在軌/月球/太空站 Mfg · In-Space",
+   "main": true
+  },
+  {
+   "id": "app",
+   "label": "營運·應用 / 地面設備 Operators · Apps · Ground",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "propulsion",
+   "row": "up",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "火箭推進 / 結構件 / 酬載防護",
+   "nameEn": "Propulsion, Structures & Payload Protection",
+   "competition": "oligopoly",
+   "single": "Karman backlog $1.0B(+61%)·BE-4 引擎同供 New Glenn 與 Vulcan",
+   "desc": "火箭推進系統、級間/整流罩結構件、酬載防護與飛彈/太空關鍵子系統，是發射與衛星的上游硬體基礎，受國防 + 商業太空雙重需求拉動。",
+   "marketSize": "國防+太空雙引擎",
+   "growth": "+51% YoY",
+   "share": "null",
+   "analysis": "Karman Holdings（KRMN，飛彈/國防/太空關鍵系統——酬載防護、推進、級間結構，垂直整合上游卡位者）Q1 2026 營收 $151.2M(+51%)、backlog $1.0B(+61%)、2026 指引上調至 $720–735M，是少數有真實業績與 backlog 能見度的「賣鏟人」。引擎方面 Blue Origin BE-4（550,000 磅推力 LNG 引擎）同時供應自家 New Glenn 與 ULA Vulcan，是西方非 SpaceX 大推力的共同瓶頸。配套：AMSC（材料/磁體，sleeve）、Moog（致動器/閥件）、L3Harris（LHX，推進與系統整合）。上游受國防 SDA 與商業巨星系雙重訂單拉動，集中度高、進入門檻極高。",
+   "companies": [
+    {
+     "name": "Karman Holdings",
+     "ticker": "KRMN",
+     "country": "US",
+     "share": "推進/結構/酬載防護",
+     "products": "整流罩 / 級間結構 / 推進子系統",
+     "note": "Q1 2026 營收 $151.2M(+51%)、backlog $1.0B(+61%)、2026 指引 $720–735M；2026-01 併 Seemann Composites/MSC 切入海事國防",
+     "src": "https://www.investing.com/news/transcripts/earnings-call-transcript-karman-holdings-q1-2026-shows-strong-growth-93CH-4682670"
+    },
+    {
+     "name": "Blue Origin (BE-4)",
+     "ticker": "—",
+     "country": "US",
+     "share": "大推力引擎共用源",
+     "products": "BE-4 LNG 引擎 / New Glenn",
+     "note": "未上市；BE-4 同供 New Glenn 與 ULA Vulcan(550,000 磅推力)",
+     "src": "https://www.geekwire.com/2026/blue-origin-new-glenn-rocket-amazon-leo-satellites/"
+    },
+    {
+     "name": "L3Harris",
+     "ticker": "LHX",
+     "country": "US",
+     "share": "推進/系統整合",
+     "products": "Aerojet Rocketdyne 推進 / 系統",
+     "note": "併 Aerojet Rocketdyne；太空+國防",
+     "src": "https://www.stocktitan.net/stocks/themes/space-stocks"
+    },
+    {
+     "name": "Moog",
+     "ticker": "MOG.A",
+     "country": "US",
+     "share": "致動/閥件",
+     "products": "推進閥件 / 致動器 / 結構",
+     "note": "火箭與衛星精密機電",
+     "src": "https://www.stocktitan.net/stocks/themes/space-stocks"
+    },
+    {
+     "name": "American Superconductor",
+     "ticker": "AMSC",
+     "country": "US",
+     "share": "材料/磁體 sleeve",
+     "products": "推進/電力材料",
+     "note": "太空電力與磁體配套",
+     "src": "https://www.stocktitan.net/stocks/themes/space-stocks"
+    },
+    {
+     "name": "Karman 配套供應鏈",
+     "ticker": "—",
+     "country": "US",
+     "share": "上游零組件",
+     "products": "複合材料 / 精密金屬件",
+     "note": "未上市為主；國防+太空雙需求",
+     "src": "https://finance.yahoo.com/markets/stocks/articles/karman-holdings-krmn-using-space-171849057.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "launch_svc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Karman backlog $1.0B (Yahoo)",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/karman-holdings-krmn-using-space-171849057.html"
+    },
+    {
+     "label": "Karman 財務 (stockanalysis)",
+     "url": "https://stockanalysis.com/stocks/krmn/"
+    }
+   ]
+  },
+  {
+   "id": "launch_svc",
+   "row": "launch",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "發射服務（SpaceX 近獨佔）",
+   "nameEn": "Launch Services",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · SpaceX Falcon 9 占全球商業入軌運能絕大多數、Starship Flight 12 試 V3；⚠ Blue Origin New Glenn(NG-3)2026-05-28 地面測試爆炸、年底前才復飛，西方遞補受挫",
+   "desc": "把酬載送上軌道的火箭發射服務。可回收火箭使單位發射成本崩跌（Falcon 9 ~$2,700/kg→Starship 目標 $100–200/kg），是整個太空經濟下游應用得以成立的根本。",
+   "marketSize": "$/kg 崩跌",
+   "growth": "可回收降本",
+   "share": "null",
+   "analysis": "SpaceX（SPCX，Falcon 9 可回收、自發 Starlink，占全球商業入軌運能絕大多數，近乎獨佔；2026-06-12 IPO 募資 ~$750 億、估值 ~$1.77 兆、史上最大、首日 +19% 收 $161、6/16 盤中觸 $225.64；Starship Flight 12(2026-05-22) 首試 V3 架構＋Raptor 3、達成模擬衛星部署與印度洋濺落、目標 $10–100/kg；惟 2025 全公司虧損近 $50 億、估值爭議）。西方第二極：Rocket Lab（RKLB，2025 營收 $602M +38%、Q1 2026 創 $200M 季營收 +63.5%、backlog $2.2B +108%；Neutron 中型 Q4 2026 首飛、已簽含一筆「史上最大」機密合約至 2029；KeyBanc 太空首選）、Firefly Aerospace（FLY，Q1 2026 營收 $80.9M +45%、2026 指引 $420–450M、Blue Ghost M2 今夏組裝完成、入選 Golden Dome 攔截器計畫、估值僅 ~14x vs RKLB ~70x）。新進大推力受挫：⚠ Blue Origin New Glenn 第三枚(NG-3)2026-05-28 在 LC-36 地面測試時 7 具 BE-4 點火後底部起火爆炸（未載 Amazon Leo 衛星），原本規劃發射 Amazon Leo 首批衛星受阻、Blue Origin 重建發射台並承諾「年底前復飛」；ULA Vulcan、Arianespace Ariane 6（目標年 10 發）。⚠ 分析師示警「SpaceX 控制軌道存取」對對手不利；New Glenn 爆炸更凸顯西方非 SpaceX 大推力遞補的脆弱，發射近獨佔屬產業單點風險加劇。",
+   "companies": [
+    {
+     "name": "SpaceX",
+     "ticker": "SPCX",
+     "country": "US",
+     "share": "商業入軌近獨佔",
+     "products": "Falcon 9 / Falcon Heavy / Starship V3 / Starlink",
+     "note": "2026-06-12 IPO 募資 ~$750 億、估值 ~$1.77 兆(史上最大)、首日 +19% 收 $161、6/16 觸 $225.64；Starship Flight 12(5/22)首試 V3+Raptor 3 達衛星部署＋濺落；2025 虧損近 $50 億",
+     "src": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"
+    },
+    {
+     "name": "Rocket Lab",
+     "ticker": "RKLB",
+     "country": "US",
+     "share": "西方第二極",
+     "products": "Electron / Neutron(Q4 2026) / Space Systems",
+     "note": "Q1 2026 季營收 $200M(+63.5%)、backlog $2.2B(+108%)；KeyBanc 太空首選",
+     "src": "https://www.investing.com/news/company-news/rocket-lab-q1-2026-slides-record-revenue-up-64-backlog-hits-22b-93CH-4671036"
+    },
+    {
+     "name": "Firefly Aerospace",
+     "ticker": "FLY",
+     "country": "US",
+     "share": "小型發射+登月",
+     "products": "Alpha 火箭 / Blue Ghost 登月 / Elytra",
+     "note": "Q1 2026 營收 $80.9M +45%、2026 指引 $420–450M；Blue Ghost M2 今夏組裝完成、入選 Golden Dome 攔截器；首家成功商業登月；估值僅 ~14x vs RKLB ~70x",
+     "src": "https://www.stocktitan.net/news/FLY/firefly-aerospace-announces-first-quarter-2026-financial-xyhq2qvdcifi.html"
+    },
+    {
+     "name": "Blue Origin",
+     "ticker": "—",
+     "country": "US",
+     "share": "新進大推力(受挫)",
+     "products": "New Glenn / New Shepard / BE-4",
+     "note": "未上市；⚠ NG-3 2026-05-28 地面測試爆炸毀損(未載 Amazon Leo 衛星)、發射台重建中、承諾年底前復飛；原為 Amazon Leo 規劃 24 發",
+     "src": "https://spaceflightnow.com/2026/06/03/blue-origin-vows-to-resume-new-glenn-flights-by-years-end/"
+    },
+    {
+     "name": "ULA (United Launch Alliance)",
+     "ticker": "—",
+     "country": "US",
+     "share": "國防發射",
+     "products": "Vulcan(BE-4)",
+     "note": "未上市(Boeing/Lockheed 合資)；國防巨星系部署",
+     "src": "https://spaceflightnow.com/2026/06/03/blue-origin-vows-to-resume-new-glenn-flights-by-years-end/"
+    },
+    {
+     "name": "Arianespace",
+     "ticker": "—",
+     "country": "FR",
+     "share": "歐洲自主運能",
+     "products": "Ariane 6 / Vega",
+     "note": "未上市；目標年 10 發 Ariane 6",
+     "src": "https://interactive.satellitetoday.com/via/satellite-2025-show-daily-day-3/launchers-work-to-ramp-up-cadence-to-capitalize-on-surging-demand-for-access-to-space"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "propulsion"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "sat_mfg"
+    },
+    {
+     "id": "inspace"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SpaceX IPO SPCX (CNBC)",
+     "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"
+    },
+    {
+     "label": "Rocket Lab Q1 2026 backlog $2.2B (Investing.com)",
+     "url": "https://www.investing.com/news/company-news/rocket-lab-q1-2026-slides-record-revenue-up-64-backlog-hits-22b-93CH-4671036"
+    }
+   ]
+  },
+  {
+   "id": "sat_mfg",
+   "row": "mfg",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "衛星 / 太空船製造",
+   "nameEn": "Satellite & Spacecraft Manufacturing",
+   "competition": "oligopoly",
+   "single": "Lockheed 2024 併 Terran Orbital 內製 SDA 衛星 bus；垂直整合潮",
+   "desc": "衛星本體/平台與太空船製造。LEO 巨星系與 SDA 國防量產需求驅動「工業化造星」，大廠透過併購內製 bus、發射商垂直整合切入製造。",
+   "marketSize": "$25B(2026)",
+   "growth": "LEO 61.4%",
+   "share": "null",
+   "analysis": "衛星製造市場 2026 約 $25.0B、2027 $28.7B，LEO 衛星 2025 佔 61.4%。垂直整合併購潮加劇：Intuitive Machines 2026-01 以 $800M 併 Lanteris Space Systems（前 Maxar Space Systems）、跨入大型衛星製造成為新太空 prime（見 in-space 節點）。Lockheed Martin（LMT，2024-10 併 Terran Orbital 內製 SDA 用衛星 bus、量產 + 任務保證雙優）、Airbus（AIR.PA，OneWeb 製造合資、Gen-2 規劃）、Northrop Grumman（NOC）、Boeing（BA）。中堅量產：York Space、Sierra Space（未上市，SDA 量產主力）。垂直整合潮：Rocket Lab Space Systems（RKLB，從發射商跨製造、Space Systems 佔 backlog 58.5%）、SpaceX 自製 Starlink。2026 全球衛星發射量法人估突破 5,000 顆(YoY +~50%)。",
+   "companies": [
+    {
+     "name": "Lockheed Martin",
+     "ticker": "LMT",
+     "country": "US",
+     "share": "SDA 衛星 bus 內製",
+     "products": "軍用/民用衛星 + Terran Orbital",
+     "note": "2024-10 併 Terran Orbital；量產+任務保證",
+     "src": "https://www.researchandmarkets.com/reports/6223287/small-satellite-manufacturing-contract-market"
+    },
+    {
+     "name": "Airbus",
+     "ticker": "AIR.PA",
+     "country": "EU",
+     "share": "OneWeb 製造",
+     "products": "OneWeb Gen-1/Gen-2 平台",
+     "note": "OneWeb Satellites 合資",
+     "src": "https://www.futuremarketinsights.com/reports/satellite-manufacturing-market"
+    },
+    {
+     "name": "Northrop Grumman",
+     "ticker": "NOC",
+     "country": "US",
+     "share": "大型衛星/在軌服務",
+     "products": "軍用衛星 / MEV 在軌服務",
+     "note": "傳統大廠+在軌延壽",
+     "src": "https://www.stocktitan.net/stocks/themes/space-stocks"
+    },
+    {
+     "name": "Rocket Lab (Space Systems)",
+     "ticker": "RKLB",
+     "country": "US",
+     "share": "垂直整合製造",
+     "products": "衛星 bus / 太陽能板 / 反作用輪",
+     "note": "Space Systems 佔 backlog 58.5%",
+     "src": "https://www.investing.com/news/company-news/rocket-lab-q1-2026-slides-record-revenue-up-64-backlog-hits-22b-93CH-4671036"
+    },
+    {
+     "name": "Boeing",
+     "ticker": "BA",
+     "country": "US",
+     "share": "大型衛星",
+     "products": "GEO/政府衛星",
+     "note": "傳統航太大廠",
+     "src": "https://www.futuremarketinsights.com/reports/satellite-manufacturing-market"
+    },
+    {
+     "name": "York / Sierra Space",
+     "ticker": "—",
+     "country": "US",
+     "share": "量產中堅",
+     "products": "SDA bus / 小型衛星量產",
+     "note": "未上市；SDA 量產主力（註：Maxar Space Systems 已被 LUNR 併並改名 Lanteris，見 in-space 節點）",
+     "src": "https://www.researchandmarkets.com/reports/6223287/small-satellite-manufacturing-contract-market"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "launch_svc"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "operators"
+    },
+    {
+     "id": "eo_compute"
+    }
+   ],
+   "sources": [
+    {
+     "label": "小型衛星製造合約市場 (Research and Markets)",
+     "url": "https://www.researchandmarkets.com/reports/6223287/small-satellite-manufacturing-contract-market"
+    },
+    {
+     "label": "衛星製造市場 (Future Market Insights)",
+     "url": "https://www.futuremarketinsights.com/reports/satellite-manufacturing-market"
+    }
+   ]
+  },
+  {
+   "id": "inspace",
+   "row": "mfg",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "在軌 / 月球 / 太空站服務",
+   "nameEn": "In-Space, Lunar & Stations",
+   "competition": "emerging",
+   "single": "⚠ 高漲幅高風險 · LUNR 併 Lanteris($800M)/RDW 併 Edge Autonomy/VOYG 併 Astrobotic 三案垂直整合；EPS 多仍負；ISS 2030 退役接班商機",
+   "desc": "登月著陸器、在軌製造/服務硬體、商業太空站。ISS 2030 退役接班 + NASA CLPS 月球商業運輸 + 在軌製造，是 SpaceX IPO 後資金最熱、漲幅最大但 EPS 多為負的環節。",
+   "marketSize": "高題材高風險",
+   "growth": "6個月 +335~368%",
+   "share": "null",
+   "analysis": "Intuitive Machines（LUNR，登月著陸器+太空運輸，2026-01-13 完成 $800M（現金 $450M+股票 $350M）併購 Lanteris Space Systems（前 Maxar Space Systems），垂直整合為「地球軌道至月球/火星」太空 prime；Q1 2026 創 $186.7M 季營收、backlog 升至 $1.1B（較年底 +$842M、主因 Lanteris）、2026 全年營收指引 $900M–$1B 並轉正 adj. EBITDA；6 個月曾漲 +335%）、Redwire（RDW，太空關鍵硬體——可展開太陽能板/天線/機械臂/在軌製造，2026 併 Edge Autonomy 切入國防無人機；Q1 2026 營收 $97M +58%（太空 $52.7M+國防科技 $44.3M）、毛利率升至 27%、惟淨損擴大；2026 指引 $450–500M +41.6%；2026-05 交付月球機械臂 MANUS；6 個月曾漲 +368%）、Voyager Technologies（VOYG，國防+太空+Starlab 太空站多數持股、接替 2030 退役 ISS；2026-06-02 宣布以最高 ~$3 億（純股票+earnout）併登月著陸器廠 Astrobotic、目標 2026-07 初完成，把 Pittsburgh「Moon Base」設為登月計畫核心；backlog $275.3M、2026 營收指引 $230–255M）。配套：Axiom Space（未上市，2026-01 發射首 2 個在軌資料中心節點）、Sierra Space（未上市，Dream Chaser+太空站）。⚠ 純題材股估值脫離基本面，多數 EPS 負、靠 backlog 與敘事撐估值，慎防回檔。",
+   "companies": [
+    {
+     "name": "Intuitive Machines",
+     "ticker": "LUNR",
+     "country": "US",
+     "share": "登月著陸器+垂直整合",
+     "products": "Nova-C 月球著陸器 / 太空運輸 / Lanteris 衛星製造",
+     "note": "2026-01 完成 $800M 併 Lanteris(前 Maxar Space Systems)轉太空 prime；Q1 2026 季營收 $186.7M、backlog $1.1B(+$842M)、2026 指引 $900M–$1B；⚠ 對手 Voyager 併 Astrobotic 搶登月",
+     "src": "https://www.stocktitan.net/news/LUNR/intuitive-machines-reports-first-quarter-2026-financial-results-zcbrjao1l7x0.html"
+    },
+    {
+     "name": "Redwire",
+     "ticker": "RDW",
+     "country": "US",
+     "share": "在軌硬體+國防科技",
+     "products": "可展開太陽能板 / 天線 / 機械臂 / 在軌製造 / Edge Autonomy 無人機",
+     "note": "Q1 2026 營收 $97M +58%(太空$52.7M+國防$44.3M)、毛利 27%、2026 指引 $450–500M；併 Edge Autonomy 切入國防無人機；2026-05 交付月球機械臂 MANUS",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/05/08/redwire-rdw-q1-2026-earnings-call-transcript/"
+    },
+    {
+     "name": "Voyager Technologies",
+     "ticker": "VOYG",
+     "country": "US",
+     "share": "太空站接班",
+     "products": "Starlab 商業太空站 / 國防 / Astrobotic 登月著陸器",
+     "note": "Starlab 多數持股、接替 2030 ISS；2026-06-02 宣布以最高~$3億(純股票+earnout)併 Astrobotic、目標 7 月初完成；backlog $275.3M、2026 營收指引 $230–255M",
+     "src": "https://spacenews.com/voyager-to-acquire-lunar-lander-developer-astrobotic/"
+    },
+    {
+     "name": "Axiom Space",
+     "ticker": "—",
+     "country": "US",
+     "share": "商業太空站",
+     "products": "Axiom Station / 在軌資料中心",
+     "note": "未上市；2026-01 發射首 2 個在軌資料中心節點",
+     "src": "https://introl.com/blog/orbital-data-center-nodes-launch-space-computing-infrastructure-january-2026"
+    },
+    {
+     "name": "Sierra Space",
+     "ticker": "—",
+     "country": "US",
+     "share": "太空載具/站",
+     "products": "Dream Chaser / 太空站模組",
+     "note": "未上市；商業太空站玩家",
+     "src": "https://www.stocktitan.net/stocks/themes/space-stocks"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "launch_svc"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "eo_compute"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Redwire vs Intuitive Machines (Yahoo)",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/redwire-vs-intuitive-machines-space-154700248.html"
+    },
+    {
+     "label": "太空基建股創高 (Foreign Policy Journal)",
+     "url": "https://www.foreignpolicyjournal.com/2026/05/29/ast-spacemobile-nasdaq-asts-intuitive-machines-nasdaq-lunr-and-redwire-nyse-rdw-surge-to-52-week-highs/"
+    }
+   ]
+  },
+  {
+   "id": "operators",
+   "row": "app",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "衛星營運 / 通訊 D2C",
+   "nameEn": "Operators & Direct-to-Cell",
+   "competition": "oligopoly",
+   "single": "去重：細節在 leosat · Amazon 2026-04 以 ~$115.7 億併 Globalstar 接手 Apple 衛星",
+   "desc": "衛星通訊營運與直連手機（D2C）。衛星服務佔太空經濟最大且最快約 40%。（與 leosat 主題去重：本節點摘要核心營運商，台廠地面細分見 leosat）",
+   "marketSize": "服務佔 ~40%",
+   "growth": "D2C 爆發",
+   "share": "null",
+   "analysis": "AST SpaceMobile（ASTS，直連未改裝手機 D2C；2026-06-17 成功以 Falcon 9 發射 BlueBird 8/9/10（~2,400 sq ft 陣列、峰值 ~200 Mbps 直連標準手機），加速衝向 2026 底 ~45 顆在軌；Q1 2026 營收 $14.7M、惟 EPS -$0.66 雙miss、2026 指引維持 $150–200M；FCC 核准 SCS 商用上看 248 顆；現金 ~$35 億；近 60 家電信夥伴 >30 億用戶）。Amazon Leo（前 Kuiper）2026-04 以 ~$115.7 億收購 Globalstar（GSAT）加入 D2D，並接手 Apple iPhone/Apple Watch 衛星緊急 SOS 業務，D2C 格局重組。既有營運商：Iridium（IRDM，IoT/政府）、Viasat（VSAT，航空/政府寬頻）。SpaceX Starlink 仍是 LEO 寬頻近獨佔（細節見 leosat 主題）。",
+   "companies": [
+    {
+     "name": "AST SpaceMobile",
+     "ticker": "ASTS",
+     "country": "US",
+     "share": "D2C 直連手機領先",
+     "products": "BlueBird 衛星 / 手機直連寬頻",
+     "note": "2026-06-17 發射 BlueBird 8/9/10(~200 Mbps)、衝 2026 底 ~45 顆；Q1 2026 營收 $14.7M、EPS -$0.66 雙miss；指引維持 $150–200M；FCC 核准 SCS 上看 248 顆",
+     "src": "https://www.businesswire.com/news/home/20260609326230/en/AST-SpaceMobile-Announces-Launch-Date-for-BlueBird-Satellites-8-9-and-10"
+    },
+    {
+     "name": "Globalstar (Amazon Leo)",
+     "ticker": "GSAT",
+     "country": "US",
+     "share": "Amazon D2D + Apple",
+     "products": "LEO D2D / Apple 衛星 SOS",
+     "note": "Amazon 2026-04 ~$115.7 億收購；接手 Apple 衛星業務",
+     "src": "https://investors.globalstar.com/news-releases/news-release-details/amazon-acquire-globalstar-and-expand-amazon-leo-satellite"
+    },
+    {
+     "name": "Iridium",
+     "ticker": "IRDM",
+     "country": "US",
+     "share": "IoT/政府營運",
+     "products": "LEO 語音/數據/IoT / STL 定位",
+     "note": "獲利穩定老牌營運商",
+     "src": "https://www.fool.com/investing/stock-market/market-sectors/industrials/space-stocks/satellite-stocks/"
+    },
+    {
+     "name": "Viasat",
+     "ticker": "VSAT",
+     "country": "US",
+     "share": "航空/政府寬頻",
+     "products": "GEO/LEO 寬頻 / 機上 WiFi",
+     "note": "政府+航空為主；併 Kymeta 天線",
+     "src": "https://www.fool.com/investing/stock-market/market-sectors/industrials/space-stocks/satellite-stocks/"
+    },
+    {
+     "name": "SpaceX (Starlink)",
+     "ticker": "SPCX",
+     "country": "US",
+     "share": "LEO 寬頻近獨佔",
+     "products": "Starlink 寬頻 / Starlink Direct",
+     "note": "細節見 leosat；2024 營收占 SpaceX ~58%",
+     "src": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "sat_mfg"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ground_tw"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AST SpaceMobile 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001780312/000178031226000005/asts-ex99_1.htm"
+    },
+    {
+     "label": "Amazon 收購 Globalstar (Globalstar IR)",
+     "url": "https://investors.globalstar.com/news-releases/news-release-details/amazon-acquire-globalstar-and-expand-amazon-leo-satellite"
+    }
+   ]
+  },
+  {
+   "id": "eo_compute",
+   "row": "app",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "對地觀測 EO / 太空算力",
+   "nameEn": "Earth Observation & Space-Based Compute",
+   "competition": "competitive",
+   "single": "Planet 首度全年獲利(FY26 $307.7M +26%)·太空算力 Starcloud(Nvidia)/Google Suncatcher 新題材",
+   "desc": "對地觀測（EO）影像與分析，及新興「太空算力」（軌道 AI 資料中心）。EO 已商業化、太空算力屬前瞻敘事，皆為 leosat 未涵蓋的新環節。",
+   "marketSize": "新興算力敘事",
+   "growth": "PL 首獲利",
+   "share": "null",
+   "analysis": "對地觀測：Planet Labs（PL，每日全球高解析影像訂閱制；Q1 FY2027(截至 2026-04)營收 $94M +42%、backlog $906M +72%、RPO +81%、國防情報營收 +65%、毛利率 56%；2027 指引 $425–441M；Pelican 次世代衛星）、BlackSky（BKSY，高頻 EO 影像+分析 Gen-3）、Maxar Intelligence（未上市，高解析 EO 龍頭；注意製造端 Maxar Space Systems 已被 LUNR 併並改名 Lanteris）。太空算力（emerging 前瞻）：Starcloud（未上市，2026-03 完成 $170M A 輪（Benchmark/EQT 領投）、估值 $1.1B、累計募資 >$2 億；2025-11 Starcloud-1 載 Nvidia H100 上軌成首個在軌訓練 LLM、Starcloud-2 今年升 Blackwell+AWS server blade、願景 5GW 軌道超叢集、規劃 Starship 發射資料中心級太空船）、Google Project Suncatcher（太陽能+TPU 軌道資料中心、2027 初發射 2 顆原型、軌道太陽能效率達地面 8 倍）、Nvidia Vera Rubin Space-1（2026-03 發表軌道 AI 資料中心晶片系統）。太空算力與 neocloud/data_center_cooling（地面 AI 資料中心）形成軌道版對照，距商業化尚遠（散熱/輻射/維修瓶頸）。",
+   "companies": [
+    {
+     "name": "Planet Labs",
+     "ticker": "PL",
+     "country": "US",
+     "share": "每日 EO 影像龍頭",
+     "products": "Dove/SkySat/Pelican / 影像分析訂閱",
+     "note": "Q1 FY2027 營收 $94M(+42%)、backlog $906M(+72%)、國防情報營收 +65%；FY2027 指引 $425–441M",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/06/05/planet-labs-pl-q1-2027-earnings-transcript/"
+    },
+    {
+     "name": "BlackSky",
+     "ticker": "BKSY",
+     "country": "US",
+     "share": "高頻 EO 影像",
+     "products": "Gen-3 高解析 EO / 分析",
+     "note": "高重訪率影像+AI 分析",
+     "src": "https://www.stocktitan.net/stocks/themes/space-stocks"
+    },
+    {
+     "name": "Starcloud",
+     "ticker": "—",
+     "country": "US",
+     "share": "軌道 AI 資料中心先行",
+     "products": "Starcloud-1/2 (Nvidia H100→Blackwell)",
+     "note": "未上市；2026-03 完成 $170M A 輪(Benchmark/EQT)、估值 $1.1B、累計 >$2 億；Starcloud-1 成首個在軌訓練 LLM；願景 5GW 軌道超叢集",
+     "src": "https://techcrunch.com/2026/03/30/starcloud-raises-170-million-series-ato-build-data-centers-in-space/"
+    },
+    {
+     "name": "Google (Project Suncatcher)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "太陽能 TPU 軌道 DC",
+     "products": "Suncatcher 太陽能+TPU 衛星",
+     "note": "2027 初發射 2 顆原型；軌道太陽能效率達地面 8 倍",
+     "src": "https://www.cnbc.com/2025/12/10/nvidia-backed-starcloud-trains-first-ai-model-in-space-orbital-data-centers.html"
+    },
+    {
+     "name": "Nvidia (Vera Rubin Space-1)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "軌道 AI 晶片系統",
+     "products": "Vera Rubin Space-1 / Starcloud 投資",
+     "note": "2026-03 發表軌道 AI 資料中心晶片系統",
+     "src": "https://www.cnbc.com/2026/03/16/nvidia-chips-orbital-data-centers-space-ai.html"
+    },
+    {
+     "name": "Maxar Intelligence",
+     "ticker": "—",
+     "country": "US",
+     "share": "高解析 EO 龍頭",
+     "products": "WorldView 高解析影像",
+     "note": "未上市；政府+商業高解析（製造端 Maxar Space Systems 已被 LUNR 併、改名 Lanteris）",
+     "src": "https://www.stocktitan.net/stocks/themes/space-stocks"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "sat_mfg"
+    },
+    {
+     "id": "inspace"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ground_tw"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Planet FY2026 財報 (BusinessWire)",
+     "url": "https://www.businesswire.com/news/home/20260319782110/en/Planet-Reports-Financial-Results-for-Fourth-Quarter-and-Full-Fiscal-Year-2026"
+    },
+    {
+     "label": "Starcloud 軌道 AI (CNBC)",
+     "url": "https://www.cnbc.com/2025/12/10/nvidia-backed-starcloud-trains-first-ai-model-in-space-orbital-data-centers.html"
+    }
+   ]
+  },
+  {
+   "id": "ground_tw",
+   "row": "app",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "地面設備 / 元件（台廠重倉）",
+   "nameEn": "Ground Equipment & Components (Taiwan)",
+   "competition": "competitive",
+   "single": "去重：細分見 leosat · SpaceX 訪台重點華通/昇達科；昇達科 2026 衛星占比上看 8 成",
+   "desc": "地面接收站、相位陣列天線、衛星板 PCB、RF 模組與元件——台灣是關鍵供應地且多為已上市可投資標的。SpaceX 訪台擴大下單、要求「零紅鏈」。（細分見 leosat 主題）",
+   "marketSize": "零紅鏈受惠",
+   "growth": "SpaceX 訪台擴單",
+   "share": "null",
+   "analysis": "SpaceX 2026 組團密訪台灣供應鏈、要求供應鏈去中國化（零紅鏈），重點對象華通與昇達科。衛星板 PCB：華通（2313.TW，衛星板 PCB 龍頭、HDI 全球第一 $13.81 億、受邀 3 場法說、訂單走高）、燿華（2367.TW，衛星板滿單漲停）。酬載：昇達科（3491.TWO，衛星通訊酬載大廠、SpaceX 訪台重點；2026 衛星營收占比上看 8 成、全年營收成長目標 +90%、毛利 >60%，營收貢獻最實之一）。地面站天線/LNB：啟碁（6285.TW，低軌營收占比破 10%、2025 營收創高）、兆赫（2485.TW，衛星接收 LNB/微波模組老牌廠）、金寶（2312.TW，SpaceX 地面接收站整機組裝；⚠2026-01 證實低軌業務「暫停」因客戶生產策略調整，警示客戶集中風險）。RF：同欣電（6271.TW，RF 模組）、穩懋（3105.TWO，砷化鎵 GaAs，SpaceX 獨家為券商說法待證）。⚠ 多數台廠衛星營收占比仍個位數%，屬概念/驗證階段，需個別檢視。",
+   "companies": [
+    {
+     "name": "華通 Compeq",
+     "ticker": "2313.TW",
+     "country": "TW",
+     "share": "衛星板 PCB 龍頭",
+     "products": "衛星板 / HDI PCB",
+     "note": "HDI 全球第一 $13.81 億；SpaceX 重點對象、訂單走高",
+     "src": "https://www.sinotrade.com.tw/richclub/hotopic/-%E6%96%B0%E8%81%9E%E7%86%B1%E9%96%80%E8%82%A1TOP10-%E8%8F%AF%E9%80%9A-%E7%87%BF%E8%8F%AF%E9%9B%99%E6%BC%B2%E5%81%9C--%E5%A4%AA%E7%A9%BA%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83-%E5%95%86%E6%A9%9F%E5%BC%95%E7%88%86PCB-%E5%8D%97%E4%BA%9E%E7%A7%91%E5%87%BA%E9%97%9C%E9%87%8F%E5%83%B9%E9%BD%8A%E6%8F%9A-6976b352e4a2e426570100dd"
+    },
+    {
+     "name": "昇達科 SARSP",
+     "ticker": "3491.TWO",
+     "country": "TW",
+     "share": "衛星通訊酬載",
+     "products": "微波元件 / 衛星通訊酬載",
+     "note": "SpaceX 訪台重點；供 SpaceX 衛星間雷射 ISL 零組件、擴台越產能；受惠太空軍 $2.29B 零紅鏈大單；2026 衛星占比上看 8 成、毛利 >60%",
+     "src": "https://www.sinotrade.com.tw/richclub/hotstock/SpaceX%E4%BD%8E%E8%AA%BF%E8%A8%AA%E5%8F%B0%E6%93%B4%E5%A4%A7%E4%B8%8B%E5%96%AE-%E6%98%87%E9%81%94%E7%A7%91-%E8%8F%AF%E9%80%9A%E6%88%90%E9%87%8D%E9%BB%9E%E5%B0%8D%E8%B1%A1-%E5%8F%B0%E5%BB%A0%E5%A4%AA%E7%A9%BA%E4%BE%9B%E6%87%89%E9%8F%88%E5%85%A8%E8%A7%A3%E6%9E%90-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69733dea69e5022612a7aa66"
+    },
+    {
+     "name": "啟碁 Wistron NeWeb",
+     "ticker": "6285.TW",
+     "country": "TW",
+     "share": "地面站天線/LNB",
+     "products": "相位陣列天線 / LNB / 用戶終端",
+     "note": "低軌營收占比破 10%；2025 營收創高",
+     "src": "https://www.pocket.tw/school/report/SCHOOL/7055/"
+    },
+    {
+     "name": "燿華 Unitech",
+     "ticker": "2367.TW",
+     "country": "TW",
+     "share": "衛星板 PCB",
+     "products": "衛星板 PCB",
+     "note": "滿單漲停；受惠 SpaceX 擴單",
+     "src": "https://statementdog.com/news/15821"
+    },
+    {
+     "name": "金寶 Kinpo",
+     "ticker": "2312.TW",
+     "country": "TW",
+     "share": "地面站整機組裝",
+     "products": "SpaceX 地面接收站整機組裝",
+     "note": "⚠2026-01 證實低軌業務「暫停」（客戶生產策略調整）；客戶集中風險",
+     "src": "https://www.pocket.tw/school/report/SCHOOL/7032/"
+    },
+    {
+     "name": "兆赫 Microelectronics",
+     "ticker": "2485.TW",
+     "country": "TW",
+     "share": "LNB/微波模組",
+     "products": "衛星接收 LNB / 微波通訊模組",
+     "note": "衛星接收設備老牌廠",
+     "src": "https://www.pocket.tw/school/report/perspective/7347/"
+    },
+    {
+     "name": "同欣電 / 穩懋",
+     "ticker": "6271.TW",
+     "country": "TW",
+     "share": "RF 模組/GaAs",
+     "products": "RF 模組 / 砷化鎵 GaAs",
+     "note": "穩懋 SpaceX 獨家為券商說法（待證）",
+     "src": "https://statementdog.com/news/15659"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "operators"
+    },
+    {
+     "id": "eo_compute"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "SpaceX 訪台台廠全解析 (Sinotrade)",
+     "url": "https://www.sinotrade.com.tw/richclub/hotstock/SpaceX%E4%BD%8E%E8%AA%BF%E8%A8%AA%E5%8F%B0%E6%93%B4%E5%A4%A7%E4%B8%8B%E5%96%AE-%E6%98%87%E9%81%94%E7%A7%91-%E8%8F%AF%E9%80%9A%E6%88%90%E9%87%8D%E9%BB%9E%E5%B0%8D%E8%B1%A1-%E5%8F%B0%E5%BB%A0%E5%A4%AA%E7%A9%BA%E4%BE%9B%E6%87%89%E9%8F%88%E5%85%A8%E8%A7%A3%E6%9E%90-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69733dea69e5022612a7aa66"
+    },
+    {
+     "label": "金寶低軌暫停 (Pocket)",
+     "url": "https://www.pocket.tw/school/report/SCHOOL/7032/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "propulsion",
+   "launch_svc"
+  ],
+  [
+   "launch_svc",
+   "sat_mfg"
+  ],
+  [
+   "launch_svc",
+   "inspace"
+  ],
+  [
+   "sat_mfg",
+   "operators"
+  ],
+  [
+   "sat_mfg",
+   "eo_compute"
+  ],
+  [
+   "inspace",
+   "eo_compute"
+  ],
+  [
+   "operators",
+   "ground_tw"
+  ],
+  [
+   "eo_compute",
+   "ground_tw"
+  ]
+ ],
+ "_proposed": {}
+}

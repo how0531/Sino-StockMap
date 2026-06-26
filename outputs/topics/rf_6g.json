@@ -1,0 +1,710 @@
+{
+ "id": "rf_6g",
+ "tab": "RF/6G 通訊晶片",
+ "title": "RF 前端與 6G／衛星通訊晶片供應鏈 (RF Front-End & 6G)",
+ "subtitle": "RF Front-End & 6G — 天線與數據機之間的射頻層（PA／濾波器 BAW·FBAR·SAW／LNA／switch／天線調諧／modem-RF），是手機、Wi-Fi、基地台、衛星、車用無線的「最後一哩」。RFFE 模組市場 2026 約 $31.9B、2030 達 $49.6B（CAGR 11.9%），五強 Skyworks／Murata／Qualcomm／Qorvo／Broadcom 合計約 85% 市占。2026 主軸＝Skyworks 併購 Qorvo（$22B、2026/02 雙方股東會通過、預計 2027 初完成、綜效 >$500M、跨入國防航太），把五強壓成四強。濾波器最鎖喉（Broadcom FBAR 為 Apple 獨家、Qualcomm 21%／Broadcom 18%）。新增量：手機直連衛星（Qualcomm NB-NTN modem、ST 供 Starlink 相位陣列、AST SpaceMobile）與 6G（3GPP Rel-21 2026 起跑、FR3 7–24GHz）。台廠穩懋（全球最大純 GaAs 代工，衛星占基建~40%）、宏捷科為代工純度標的。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "40+"
+  },
+  {
+   "k": "RFFE 市場 2026",
+   "v": "$31.9B",
+   "sub": "2030 $49.6B·CAGR 11.9%·五強 ~85% 市占",
+   "hot": true
+  },
+  {
+   "k": "最大催化／風險",
+   "v": 2,
+   "sub": "Skyworks 併 Qorvo $22B(2027 初)·待 FTC 審查·Apple 自研 RF",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "化合物基板 / 磊晶 / 代工 Substrate & Foundry",
+   "main": false
+  },
+  {
+   "id": "device",
+   "label": "RFFE 元件五強 PA / 濾波器 / LNA / Switch",
+   "main": true
+  },
+  {
+   "id": "modem",
+   "label": "Modem-RF / 整合模組 Modem & Modules",
+   "main": false
+  },
+  {
+   "id": "frontier",
+   "label": "衛星直連 / 6G / 國產替代 Frontier",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "substrate_epi",
+   "row": "upstream",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "化合物基板 / 磊晶 (GaAs/InP/GaN)",
+   "nameEn": "Compound Substrate & Epi",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · IQE 磊晶領先 + Sumitomo/AXT 寡占 GaAs/InP 基板",
+   "desc": "RFFE 與衛星 MMIC 的最上游：GaAs/InP/GaN 基板與磊晶片，決定 PA/LNA/高頻 MMIC 的性能與良率。",
+   "marketSize": "材料上游",
+   "growth": "RF/光通訊雙引擎",
+   "share": "null",
+   "analysis": "磊晶龍頭 IQE（IQE.L，GaAs/InP/GaN/InAs 磊晶，供應全球 RF PA 與光通訊 VCSEL/雷射）；GaAs/InP 基板由 Sumitomo Electric（5802.T）、AXT（AXTI，GaAs/InP/Ge 基板，但中國出口管制下供應受擾）、Freiberger 寡占；台廠全新光電（2455.TW，磊晶）、英特磊（5455.TWO）為磊晶在地源。GaN-on-SiC（基地台/國防/衛星）SiC 基板來自 Wolfspeed（WOLF）。上游材料是 RF（手機）+ 光通訊（AI 資料中心）+ 衛星三需求共用的賣鏟人。",
+   "companies": [
+    {
+     "name": "IQE",
+     "ticker": "IQE.L",
+     "country": "UK",
+     "share": "化合物磊晶龍頭",
+     "products": "GaAs/InP/GaN 磊晶片",
+     "note": "全球 RF PA 與光通訊磊晶外包龍頭",
+     "src": "https://ensun.io/search/semiconductor-substrate"
+    },
+    {
+     "name": "Sumitomo Electric",
+     "ticker": "5802.T",
+     "country": "JP",
+     "share": "GaAs/GaN 基板寡占",
+     "products": "GaAs / GaN 單晶基板",
+     "note": "RF 與功率 GaN 基板",
+     "src": "https://www.winfoundry.com/en-US/"
+    },
+    {
+     "name": "AXT",
+     "ticker": "AXTI",
+     "country": "US",
+     "share": "GaAs/InP 基板",
+     "products": "GaAs / InP / Ge 基板",
+     "note": "中國子公司產，受出口管制擾動",
+     "src": "https://ensun.io/search/semiconductor-substrate"
+    },
+    {
+     "name": "全新光電 VPEC",
+     "ticker": "2455.TW",
+     "country": "TW",
+     "share": "台系磊晶",
+     "products": "GaAs PA 磊晶 / VCSEL 磊晶",
+     "note": "供穩懋/宏捷科代工用磊晶",
+     "src": "https://www.winfoundry.com/en-US/"
+    },
+    {
+     "name": "英特磊 IntelliEPI",
+     "ticker": "5455.TWO",
+     "country": "TW",
+     "share": "台系磊晶利基",
+     "products": "GaAs/InP 磊晶",
+     "note": "RF/光通訊/感測磊晶",
+     "src": "https://www.winfoundry.com/en-US/"
+    },
+    {
+     "name": "Wolfspeed",
+     "ticker": "WOLF",
+     "country": "US",
+     "share": "SiC 基板(GaN-on-SiC)",
+     "products": "SiC 基板 / GaN RF",
+     "note": "基地台/國防/衛星 GaN 用 SiC",
+     "src": "https://ensun.io/search/semiconductor-substrate"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "化合物基板廠商 (ensun)",
+     "url": "https://ensun.io/search/semiconductor-substrate"
+    },
+    {
+     "label": "WIN Semiconductors 官網",
+     "url": "https://www.winfoundry.com/en-US/"
+    }
+   ]
+  },
+  {
+   "id": "foundry",
+   "row": "upstream",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "RFFE 晶圓代工 (GaAs/RF-SOI/GaN)",
+   "nameEn": "RFFE Foundry",
+   "competition": "oligopoly",
+   "single": "穩懋為全球最大純 GaAs 6 吋代工；GF 為 RF-SOI(switch/tuner) 龍頭",
+   "desc": "RFFE 元件的代工層：GaAs PA 代工、RF-SOI（switch/tuner/LNA）、GaN-on-SiC（高功率）三大製程。",
+   "marketSize": "台廠主場",
+   "growth": "Wi-Fi 7+衛星+光通訊",
+   "share": "null",
+   "analysis": "GaAs PA 代工：穩懋（3105.TWO，全球最大純 GaAs 6 吋代工；2025 全年 EPS NT$4 三年高+121% YoY、統一證估 2026 營收 NT$181 億 +10%、毛利 27.4%、EPS NT$3.72；2026 衛星占基建業務 ~40% 且衛星毛利顯著高於平均）、宏捷科（8086.TWO，2026 前 5 月累計營收 NT$21.13 億 +51.49% YoY、Wi-Fi 7 PA 量產起量、光通訊/無人機/LEO 衛星新增量）。RF-SOI（switch/tuner/LNA）：GlobalFoundries（GFS，RF-SOI 龍頭，RF-SOI/SiGe/RF GaN 差異化）、Tower Semiconductor（TSEM）、台積電。台廠是 RFFE 代工最具營收能見度的可投資環節。",
+   "companies": [
+    {
+     "name": "穩懋 WIN Semiconductors",
+     "ticker": "3105.TWO",
+     "country": "TW",
+     "share": "全球最大純 GaAs 代工",
+     "products": "GaAs/GaN MMIC 代工(PA/衛星/光通訊)",
+     "note": "2025 EPS NT$4(+121%);2026 估營收 NT$181 億、衛星占基建~40%、衛星毛利高於平均",
+     "src": "https://www.marboweekly.com.tw/report/2689.html"
+    },
+    {
+     "name": "宏捷科 AWSC",
+     "ticker": "8086.TWO",
+     "country": "TW",
+     "share": "GaAs PA 代工 #2(台)",
+     "products": "GaAs PA 代工 / Wi-Fi 7 PA / 光通訊",
+     "note": "2026 前 5 月營收 NT$21.13 億 +51.49% YoY;Wi-Fi 7/無人機/LEO 衛星新增量",
+     "src": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/218661"
+    },
+    {
+     "name": "GlobalFoundries",
+     "ticker": "GFS",
+     "country": "US",
+     "share": "RF-SOI 龍頭",
+     "products": "RF-SOI / SiGe / RF GaN 代工",
+     "note": "switch/tuner/LNA 主力製程;2026 Q1 差異化技術帶動成長",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001709048/000170904826000111/globalfoundries1q2026earni.htm"
+    },
+    {
+     "name": "Tower Semiconductor",
+     "ticker": "TSEM",
+     "country": "IL",
+     "share": "RF-SOI/SiGe 利基代工",
+     "products": "RF-SOI / SiGe RFFE 代工",
+     "note": "switch/LNA 利基代工",
+     "src": "https://ensun.io/search/semiconductor-substrate"
+    },
+    {
+     "name": "台積電 TSMC",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "GaN/RF 先進代工",
+     "products": "GaN-on-SiC / RF CMOS / RF-SOI",
+     "note": "高功率 GaN RF 與整合 modem-RF 先進製程代工",
+     "src": "https://www.winfoundry.com/en-US/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "substrate_epi"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "rffe_five"
+    },
+    {
+     "id": "satellite_rf"
+    }
+   ],
+   "sources": [
+    {
+     "label": "穩懋 2026 Wi-Fi 7×衛星×航太軍工 (萬寶周刊)",
+     "url": "https://www.marboweekly.com.tw/report/2689.html"
+    },
+    {
+     "label": "宏捷科 年增58% EPS衝5元 (理財周刊)",
+     "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/218661"
+    }
+   ]
+  },
+  {
+   "id": "rffe_five",
+   "row": "device",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "RFFE 元件五強 (PA / LNA / Switch / 模組)",
+   "nameEn": "RFFE Big Five",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 五強合計 ~85% 市占;Skyworks 併 Qorvo($22B) 壓成四強",
+   "desc": "RF 前端的核心元件與整合模組（PA/LNA/switch/天線調諧/PAMiD），是手機 BOM 的射頻心臟。",
+   "marketSize": "$31.9B(2026)",
+   "growth": "整併提毛利",
+   "share": "null",
+   "analysis": "RFFE 模組市場 2026 約 $31.9B、2030 $49.6B、CAGR 11.9%；五強 Skyworks／Murata／Qualcomm／Qorvo／Broadcom 合計約 85% 市占。⚠ 2026 主軸＝Skyworks（SWKS，FY26 Q2 營收 $944M、Non-GAAP EPS $1.15）併購 Qorvo（QRVO，FY26 Q4 營收 $808.3M、Non-GAAP 毛利 52.6%、FY26 淨利 $339M、現金 $1.22B）——$22B 現金+股票、2025/10/27 簽約、2026/02/11 雙方股東會壓倒性通過、預計 2027 初完成（待 FTC HSR Second Request+反壟斷/外資審查）、綜效 >$500M、毛利目標 50–55%、新增國防/航太 TAM（Qorvo GaN），Phil Brace 領軍。Murata（6981.T）以被動+SAW 切模組。⚠ 高 Apple 集中度、中國國產（卓胜微）侵蝕中低階。",
+   "companies": [
+    {
+     "name": "Skyworks Solutions",
+     "ticker": "SWKS",
+     "country": "US",
+     "share": "RFFE 市占龍頭",
+     "products": "PA / 模組 / 濾波器(DiFEM/PAMiD)",
+     "note": "FY26 Q2 營收 $944M、Non-GAAP EPS $1.15;2025/10 宣布併 Qorvo;高 Apple 依賴",
+     "src": "https://www.globenewswire.com/news-release/2026/05/05/3288209/0/en/Skyworks-Delivers-Strong-Second-Quarter-Fiscal-Year-2026-Results.html"
+    },
+    {
+     "name": "Qorvo",
+     "ticker": "QRVO",
+     "country": "US",
+     "share": "RFFE 三強 + GaN/國防",
+     "products": "PA / 濾波器 / GaN / 模組",
+     "note": "FY26 Q4 營收 $808.3M、Non-GAAP 毛利 52.6%、FY26 淨利 $339M;被 Skyworks 併($22B)、2027 初完成",
+     "src": "https://ir.qorvo.com/node/25501/pdf"
+    },
+    {
+     "name": "Murata",
+     "ticker": "6981.T",
+     "country": "JP",
+     "share": "SAW + 被動 + 模組",
+     "products": "SAW/TC-SAW 濾波器 / 模組 / MLCC",
+     "note": "SAW 前五合計 >88%;被動元件龍頭跨 RF 模組",
+     "src": "https://www.openpr.com/news/4130501/saw-rf-filters-market-to-grow-at-9-50-cagr-with-murata"
+    },
+    {
+     "name": "Qualcomm (RFFE)",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "modem-RF + RFFE 整合",
+     "products": "RF360 / TruSignal / GaAs PAMiD",
+     "note": "濾波器市占 ~21%(第一);RF360 與 TDK 合資 >4000 員工",
+     "src": "https://www.qualcomm.com/modems/rffe-filter-products/about"
+    },
+    {
+     "name": "Broadcom (Wireless)",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "FBAR 濾波器 Apple 獨家",
+     "products": "FBAR/BAW 濾波器 / 無線元件",
+     "note": "Apple 占其前一年 $33.2B 約 20%;FBAR Apple 獨家、2023 簽多年期協議",
+     "src": "https://siliconangle.com/2023/05/23/apple-inks-multibillion-dollar-deal-broadcom-wireless-components/"
+    },
+    {
+     "name": "TDK / EPCOS",
+     "ticker": "6762.T",
+     "country": "JP",
+     "share": "SAW 濾波器 + RF360 合資",
+     "products": "SAW/TC-SAW 濾波器",
+     "note": "與 Qualcomm 合資 RF360;SAW 前五成員",
+     "src": "https://www.openpr.com/news/4130501/saw-rf-filters-market-to-grow-at-9-50-cagr-with-murata"
+    },
+    {
+     "name": "Taiyo Yuden",
+     "ticker": "6976.T",
+     "country": "JP",
+     "share": "SAW 濾波器",
+     "products": "SAW 濾波器 / 被動元件",
+     "note": "SAW 前五成員;消費/車用擴張",
+     "src": "https://www.openpr.com/news/4130501/saw-rf-filters-market-to-grow-at-9-50-cagr-with-murata"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "modem_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "RFFE 模組市場 2026-2035 (GMInsights)",
+     "url": "https://www.gminsights.com/industry-analysis/rf-front-end-module-market"
+    },
+    {
+     "label": "Skyworks 併 Qorvo $22B (TradingView)",
+     "url": "https://www.tradingview.com/news/tradingview:b774c296b5e73:0-skyworks-to-acquire-qorvo-in-stock-and-cash-merger-qorvo-fy26-net-income-339m-1-22b-cash/"
+    }
+   ]
+  },
+  {
+   "id": "filter_baw",
+   "row": "device",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "濾波器 (BAW/FBAR/SAW) 最鎖喉環節",
+   "nameEn": "RF Filters (BAW/FBAR/SAW)",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Broadcom FBAR 為 Apple 獨家;Qualcomm 21%/Broadcom 18%",
+   "desc": "濾波器是 RFFE 技術門檻最高、集中度最高的環節：每代 5G/6G 頻段增加 → 濾波器數量線性增加。",
+   "marketSize": "頻段越多越鎖喉",
+   "growth": "CAGR 15.7%",
+   "share": "null",
+   "analysis": "RF Filter 市場 2025 約 $1.72B → 2032 約 $4.97B、CAGR 15.7%。高階 BAW/FBAR（高頻、抗干擾）門檻最高：Broadcom（AVGO，FBAR 為 Apple 獨家）、Qorvo（BAW）；中低頻 SAW/TC-SAW 由 Murata／TDK／Taiyo Yuden／Skyworks 主導（前五合計 >88%）。5G RF Filters 市場 Qualcomm 21%（第一）、Broadcom 18%（FBAR for Apple），傳統五強合計 >70%。6G FR3（7–24GHz）將帶來新一輪濾波器設計增量。這是 RFFE 裡 BOM 增量最確定、護城河最深的環節。",
+   "companies": [
+    {
+     "name": "Broadcom (FBAR)",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "FBAR 18%(Apple 獨家)",
+     "products": "FBAR/BAW 濾波器",
+     "note": "Apple FBAR 獨家供應、極高黏性",
+     "src": "https://www.marketresearchintellect.com/product/5g-rf-filters-market/"
+    },
+    {
+     "name": "Qualcomm (濾波器)",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "5G 濾波器 ~21%(#1)",
+     "products": "BAW/SAW (RF360)",
+     "note": "RF360 含 SAW/TC-SAW/BAW 全製程",
+     "src": "https://www.marketresearchintellect.com/product/5g-rf-filters-market/"
+    },
+    {
+     "name": "Murata (SAW)",
+     "ticker": "6981.T",
+     "country": "JP",
+     "share": "SAW 龍頭",
+     "products": "SAW/TC-SAW 濾波器",
+     "note": "SAW 前五合計 >88%",
+     "src": "https://www.openpr.com/news/4130501/saw-rf-filters-market-to-grow-at-9-50-cagr-with-murata"
+    },
+    {
+     "name": "Qorvo (BAW)",
+     "ticker": "QRVO",
+     "country": "US",
+     "share": "BAW 濾波器",
+     "products": "BAW 濾波器 / 模組",
+     "note": "被 Skyworks 併入後成四強之一",
+     "src": "https://ir.qorvo.com/node/25501/pdf"
+    },
+    {
+     "name": "Skyworks (TC-SAW)",
+     "ticker": "SWKS",
+     "country": "US",
+     "share": "SAW/BAW 整合",
+     "products": "SAW/BAW 整合 RFFE",
+     "note": "CES 2026 展次世代 SAW/BAW 整合方案",
+     "src": "https://www.marketresearchintellect.com/product/5g-rf-filters-market/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "modem_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "5G RF Filters 市場 (MarketResearchIntellect)",
+     "url": "https://www.marketresearchintellect.com/product/5g-rf-filters-market/"
+    },
+    {
+     "label": "SAW Filters 前五 >88% (openPR)",
+     "url": "https://www.openpr.com/news/4130501/saw-rf-filters-market-to-grow-at-9-50-cagr-with-murata"
+    }
+   ]
+  },
+  {
+   "id": "modem_module",
+   "row": "modem",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "Modem-RF / 整合模組 (含 NTN 衛星)",
+   "nameEn": "Modem-RF & Integrated Modules",
+   "competition": "oligopoly",
+   "single": "Qualcomm Snapdragon X80/X85 首款整合 NB-NTN 衛星;MediaTek 5G NR NTN",
+   "desc": "從數據機（modem/baseband）到天線埠的整合：modem-RF 系統與高整合 RFFE 模組（PAMiD/L-PAMiD），近年整合衛星 NTN 直連。",
+   "marketSize": "整合度提升",
+   "growth": "NTN 衛星整合",
+   "share": "null",
+   "analysis": "Qualcomm（QCOM，Snapdragon X80 首款整合 NB-NTN 衛星 5G modem、6 天線、6X 載波聚合；X85 2025/03 MWC 發表、3GPP Rel-18、下載 12.5Gbps；提供 digital-to-antenna 完整 RFFE 平台）主導旗艦 modem-RF。MediaTek（2454.TW，全球首個 5G NR NTN over LEO 連線、Wi-Fi 7；旗下 Airoha 絡達已為子公司、做 Bluetooth/衛星/寬頻——絡達非獨立上市、可投資標的收斂到 MTK）為 Android 主力。整合模組（PAMiD/L-PAMiD/DiFEM）由 Qorvo/Skyworks/Murata/Qualcomm 提供。Apple 自研 C1/C2 modem 是長期最大變數。",
+   "companies": [
+    {
+     "name": "Qualcomm",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "旗艦 modem-RF 主導",
+     "products": "Snapdragon X80/X85 modem-RF(含 NTN)",
+     "note": "X80 首款整合 NB-NTN 衛星;X85 下載 12.5Gbps",
+     "src": "https://www.qualcomm.com/modems/products/snapdragon-x80-5g-modem-rf-system"
+    },
+    {
+     "name": "MediaTek",
+     "ticker": "2454.TW",
+     "country": "TW",
+     "share": "Android modem + NTN + Wi-Fi 7",
+     "products": "5G modem / NR NTN / Wi-Fi 7 / 絡達 RF",
+     "note": "全球首個 5G NR NTN over LEO;絡達(Airoha)為子公司、衛星/Wi-Fi 收斂到 MTK",
+     "src": "https://www.mediatek.com/tek-talk-blogs/worlds-first-5g-nr-ntn-connection-over-leo-satellites"
+    },
+    {
+     "name": "Skyworks (模組)",
+     "ticker": "SWKS",
+     "country": "US",
+     "share": "整合 RFFE 模組",
+     "products": "DiFEM / PAMiD 模組",
+     "note": "併 Qorvo 後模組+濾波器一體化",
+     "src": "https://www.globenewswire.com/news-release/2026/05/05/3288209/0/en/Skyworks-Delivers-Strong-Second-Quarter-Fiscal-Year-2026-Results.html"
+    },
+    {
+     "name": "Qorvo (模組)",
+     "ticker": "QRVO",
+     "country": "US",
+     "share": "L-PAMiD 整合模組",
+     "products": "L-PAMiD / DiFEM 模組",
+     "note": "高整合主板 RFFE 模組",
+     "src": "https://ir.qorvo.com/node/25501/pdf"
+    },
+    {
+     "name": "Apple (自研 modem)",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "自研 C1/C2 modem(垂直整合)",
+     "products": "C1/C2 蜂巢 modem",
+     "note": "⚠ 自研 modem 長期侵蝕外購 modem-RF;仍外購 Broadcom FBAR",
+     "src": "https://siliconangle.com/2023/05/23/apple-inks-multibillion-dollar-deal-broadcom-wireless-components/"
+    },
+    {
+     "name": "三星 System LSI",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "Exynos modem + RFFE",
+     "products": "Exynos modem / RFFE",
+     "note": "自家旗艦+對外;RFFE 自研",
+     "src": "https://www.qualcomm.com/modems/products/qualcomm-x85-5g-modem-rf"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "rffe_five"
+    },
+    {
+     "id": "filter_baw"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "satellite_rf"
+    },
+    {
+     "id": "china_rf"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Qualcomm Snapdragon X80 modem-RF",
+     "url": "https://www.qualcomm.com/modems/products/snapdragon-x80-5g-modem-rf-system"
+    },
+    {
+     "label": "MediaTek 5G NR NTN over LEO",
+     "url": "https://www.mediatek.com/tek-talk-blogs/worlds-first-5g-nr-ntn-connection-over-leo-satellites"
+    }
+   ]
+  },
+  {
+   "id": "satellite_rf",
+   "row": "frontier",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "衛星直連 RF (D2C) + 6G 新增量",
+   "nameEn": "Satellite D2C RF & 6G",
+   "competition": "emerging",
+   "single": "⚠ 早期/驗證 · ST 供 Starlink 相位陣列獨家;AST 自研 AST5000;6G Rel-21 2026 起跑",
+   "desc": "手機直連衛星（Direct-to-Cell）與 6G 是 RF 前端的下一輪內容增量：手機端 NTN RF + 衛星端相位陣列 RF/beamforming。",
+   "marketSize": "遠期選擇權",
+   "growth": "D2C + Rel-21",
+   "share": "null",
+   "analysis": "衛星直連：STMicroelectronics（STM，與 SpaceX 十年合作、Starlink 相位陣列天線獨家 BiCMOS 供應、法/馬爾他/馬來西亞 fab）；AST SpaceMobile（ASTS，自研 AST5000 ASIC 處理頻寬 ×10、巨型電子可控相位陣列、目標 2026 底部署 45–60 顆 BlueBird、H2 2026 商用、AT&T/Verizon 合作）；台廠穩懋/宏捷科供衛星 MMIC。6G：3GPP Release 21 為首個 6G 規範版本、2026 進入研究階段、商用約 2030；近期焦點轉向 FR3 上中頻段（7–24GHz、黃金頻段 7.125–8.4GHz）；Nokia/Ericsson（架構）、Samsung/NTT（THz/AI）領銜標準。⚠ 多為早期/驗證、短期難貢獻營收，屬遠期選擇權。",
+   "companies": [
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "CH",
+     "share": "Starlink 相位陣列獨家",
+     "products": "BiCMOS 相位陣列晶片",
+     "note": "與 SpaceX 十年合作、Starlink 天線獨家;法/馬爾他/馬來西亞 fab",
+     "src": "https://www.sec.gov/Archives/edgar/data/0000932787/000093278725000039/stmicroelectronicsandspace.htm"
+    },
+    {
+     "name": "AST SpaceMobile",
+     "ticker": "ASTS",
+     "country": "US",
+     "share": "D2C 相位陣列自研",
+     "products": "AST5000 ASIC / BlueBird 相位陣列",
+     "note": "處理頻寬 ×10;2026 底部署 45–60 顆、H2 2026 商用;AT&T/Verizon",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001780312/000178031226000005/asts-ex99_2.htm"
+    },
+    {
+     "name": "穩懋 WIN Semiconductors",
+     "ticker": "3105.TWO",
+     "country": "TW",
+     "share": "衛星/光通訊 GaAs/GaN",
+     "products": "衛星 MMIC / GaN PA 代工",
+     "note": "2026 衛星占基建~40%、衛星毛利高於平均",
+     "src": "https://www.marboweekly.com.tw/report/2689.html"
+    },
+    {
+     "name": "宏捷科 AWSC",
+     "ticker": "8086.TWO",
+     "country": "TW",
+     "share": "LEO 衛星 GaAs",
+     "products": "衛星/光通訊 GaAs PA 代工",
+     "note": "LEO 衛星進入量產階段",
+     "src": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/218661"
+    },
+    {
+     "name": "Qualcomm (NTN)",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "手機端 NB-NTN",
+     "products": "X80/X85 含 NTN",
+     "note": "首款整合 NB-NTN 衛星 5G modem",
+     "src": "https://www.qualcomm.com/modems/products/snapdragon-x80-5g-modem-rf-system"
+    },
+    {
+     "name": "Nokia / Ericsson",
+     "ticker": "NOK",
+     "country": "FI",
+     "share": "6G 標準/架構",
+     "products": "6G 系統/基地台 RF",
+     "note": "Rel-21 架構領銜;FR3 7–24GHz 試驗",
+     "src": "https://www.rcrwireless.com/20260102/fundamentals/fr3-explained"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "modem_module"
+    },
+    {
+     "id": "foundry"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "ST × SpaceX Starlink 晶片 (SEC 6-K)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000932787/000093278725000039/stmicroelectronicsandspace.htm"
+    },
+    {
+     "label": "6G FR3 Release 18 (RCR Wireless)",
+     "url": "https://www.rcrwireless.com/20260102/fundamentals/fr3-explained"
+    }
+   ]
+  },
+  {
+   "id": "china_rf",
+   "row": "frontier",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國國產 RFFE (替代 + 風險)",
+   "nameEn": "China Domestic RFFE",
+   "competition": "competitive",
+   "single": "⚠ 卓胜微全球 ~4% 市占、主導 discrete;6G 進入全國產能力的風險源",
+   "desc": "中國本土 RFFE 廠商受惠華為國產供應鏈重整與在地 design win，從 discrete/中低階模組快速侵蝕五強份額。",
+   "marketSize": "侵蝕中低階",
+   "growth": "國產替代",
+   "share": "null",
+   "analysis": "Maxscend 卓胜微（300782.SZ，中國最大、全球 ~4% 市占、主導 discrete switch/LNA、靠濾波器垂直整合切入模組）；唯捷创芯 Vanchip（688153.SS）、昂瑞微 OnMicro、慧智微 SmarterMicro、Lansus、HiSilicon。Yole：中國 OEM 正驅動 RFFE 創新與顛覆、受惠華為國產供應鏈重整與在地 design win，預期 6G 進入全國產能力——這是壓低五強在中國 Android 份額與 ASP、改寫全球 RFFE 平衡的結構性風險。⚠ 對五強而言，這正是 Skyworks 併 Qorvo「往國防/航太高毛利利基走」的深層邏輯。",
+   "companies": [
+    {
+     "name": "Maxscend 卓胜微",
+     "ticker": "300782.SZ",
+     "country": "CN",
+     "share": "中國最大 ~全球 4%",
+     "products": "switch/LNA discrete / 濾波器 / 模組",
+     "note": "discrete 主導、垂直整合濾波器切模組",
+     "src": "https://www.yolegroup.com/press-release/rf-front-end-modules-for-mobile-how-chinese-oems-are-driving-innovation-and-disruption/"
+    },
+    {
+     "name": "唯捷创芯 Vanchip",
+     "ticker": "688153.SS",
+     "country": "CN",
+     "share": "中國 PA/模組",
+     "products": "PA / RFFE 模組",
+     "note": "華為供應鏈在地化受惠",
+     "src": "https://www.electronicsweekly.com/news/business/china-coming-for-the-rf-front-end-module-market-2025-09/"
+    },
+    {
+     "name": "昂瑞微 OnMicro",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國 RFFE",
+     "products": "PA / switch 模組",
+     "note": "華為 design win",
+     "src": "https://www.electronicsweekly.com/news/business/china-coming-for-the-rf-front-end-market-2025-09/"
+    },
+    {
+     "name": "慧智微 SmarterMicro",
+     "ticker": "688869.SS",
+     "country": "CN",
+     "share": "中國可重構 RFFE",
+     "products": "可重構 PA / 模組",
+     "note": "中低階 Android RFFE",
+     "src": "https://www.yolegroup.com/press-release/rf-front-end-modules-for-mobile-how-chinese-oems-are-driving-innovation-and-disruption/"
+    },
+    {
+     "name": "HiSilicon (華為)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "華為自研 RFFE",
+     "products": "自研 RFFE / modem",
+     "note": "國產供應鏈核心(未上市)",
+     "src": "https://www.yolegroup.com/press-release/rf-front-end-modules-for-mobile-how-chinese-oems-are-driving-innovation-and-disruption/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "modem_module"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "China coming for the RFFE market (Electronics Weekly)",
+     "url": "https://www.electronicsweekly.com/news/business/china-coming-for-the-rf-front-end-module-market-2025-09/"
+    },
+    {
+     "label": "Chinese OEMs driving RFFE innovation (Yole)",
+     "url": "https://www.yolegroup.com/press-release/rf-front-end-modules-for-mobile-how-chinese-oems-are-driving-innovation-and-disruption/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "substrate_epi",
+   "foundry"
+  ],
+  [
+   "foundry",
+   "rffe_five"
+  ],
+  [
+   "foundry",
+   "satellite_rf"
+  ],
+  [
+   "rffe_five",
+   "modem_module"
+  ],
+  [
+   "filter_baw",
+   "modem_module"
+  ],
+  [
+   "modem_module",
+   "satellite_rf"
+  ],
+  [
+   "modem_module",
+   "china_rf"
+  ]
+ ],
+ "_proposed": {}
+}

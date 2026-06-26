@@ -1,0 +1,1525 @@
+{
+ "id": "advanced",
+ "tab": "先進製程",
+ "title": "先進製程（2nm GAA）供應鏈",
+ "subtitle": "Leading-edge Logic Process — 2nm/3nm GAA 邏輯製造，是半導體鎖喉點最密集的供應鏈。台積電 ≤3nm >90% 近乎獨佔；上游層層巢狀獨佔：ASML EUV→Zeiss 光學→Cymer 光源、Lasertec EUV 光罩檢測、AGC/Hoya 光罩基板、家登 EUV 光罩盒、日本 EUV 光阻、Arm CPU IP、Synopsys/Cadence EDA。所有設備/材料/設計工具最終匯流進入晶圓代工。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 20
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "110+"
+  },
+  {
+   "k": "獨佔／鎖喉單點",
+   "v": 8,
+   "sub": "ASML·Zeiss·TRUMPF·Lasertec·IMS·TSMC·Arm…",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "equip",
+   "label": "前段製程設備 Equipment",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "設計 → 晶圓代工 → 終端 Design · Foundry · Demand",
+   "main": true
+  },
+  {
+   "id": "material",
+   "label": "材料・光罩・氣體・耗材・通路 Materials",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "eq-litho",
+   "row": "equip",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "EUV / High-NA / DUV 微影",
+   "nameEn": "EUV · High-NA · DUV Litho",
+   "competition": "monopoly",
+   "single": "四層巢狀獨佔 · ASML EUV 100% → Carl Zeiss SMT 光學唯一供應 → Cymer 光源 captive → TRUMPF CO₂ 驅動雷射唯一供應，2nm 以下無任何替代",
+   "desc": "2nm 以下圖形化的唯一手段（EUV/High-NA），與多重曝光的浸潤式 DUV。",
+   "marketSize": "最深鎖喉點",
+   "growth": "機台 >$3.5–4 億",
+   "share": "null",
+   "analysis": "ASML 100% 獨佔 EUV，且光學（Carl Zeiss SMT 唯一供應）、光源等離子模組（Cymer，2013 被 ASML 收購）、CO₂ 驅動雷射（TRUMPF 全球唯一）層層 sole-source——四層巢狀獨佔，是整條供應鏈最深、最不可替代的鎖喉；DUV 則 ASML/Nikon/Canon 寡占。",
+   "companies": [
+    {
+     "name": "ASML",
+     "ticker": "ASML",
+     "country": "EU",
+     "share": "EUV 100%",
+     "products": "NXE / High-NA EXE:5200 / ArFi",
+     "note": "2nm 以下無可替代；Q1'26 營收 €8.8B（含 2 台 High-NA 認列）、2026 財測 €36–40B、Q2'26 財測 €8.4–9.0B；TSMC 因成本暫緩 High-NA，ASML 預期首批 High-NA 產品由記憶體/邏輯客戶數月內領跑",
+     "src": "https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results"
+    },
+    {
+     "name": "Carl Zeiss SMT",
+     "ticker": "—",
+     "country": "EU",
+     "share": "光學 sole-source",
+     "products": "EUV 反射鏡組 / NA0.55 光學",
+     "note": "最隱形單點，無 Zeiss 無 EUV；帳面非上市無『市佔數字』，卻握 EUV 否決權——真正定價權不在 ASML 而在這層"
+    },
+    {
+     "name": "TRUMPF",
+     "ticker": "—",
+     "country": "EU",
+     "share": "CO₂ 驅動雷射唯一",
+     "products": "EUV 30kW CO₂ 驅動雷射",
+     "note": "比 Cymer 更上游的 sole-source（第四層）",
+     "src": "https://www.pchardwarepro.com/en/ASML-and-the-CO2-laser:-the-hidden-key-to-EUV-lithography/"
+    },
+    {
+     "name": "Cymer (ASML)",
+     "ticker": "—",
+     "country": "US",
+     "share": "光源 captive",
+     "products": "錫滴 13.5nm LPP 光源",
+     "note": "ASML 鎖定光源命脈"
+    },
+    {
+     "name": "Nikon / Canon",
+     "ticker": "7731.T / 7751.T",
+     "country": "JP",
+     "share": "DUV 寡占（ASML 主導）",
+     "products": "浸潤式 ArFi / i-line stepper / NIL",
+     "note": "ASML 浸潤式 >60%；Nikon/Canon 替代源"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASML 為何唯一 EUV (HeQingEle)",
+     "url": "https://heqingele.com/blog/why-is-asml-the-only-euv-company-unraveling-monopoly/"
+    },
+    {
+     "label": "ASML 與 CO₂ 雷射 EUV 光源 (PCHardwarePro)",
+     "url": "https://www.pchardwarepro.com/en/ASML-and-the-CO2-laser:-the-hidden-key-to-EUV-lithography/"
+    }
+   ]
+  },
+  {
+   "id": "eq-etch",
+   "row": "equip",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "蝕刻 Etch",
+   "nameEn": "Etch",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "GAA 奈米片成形所需的高選擇性蝕刻與原子層蝕刻（ALE），釋放通道、價值量大增。",
+   "marketSize": "ALE $1.2→1.8B",
+   "growth": "GAA 價值增",
+   "share": "null",
+   "analysis": "AMAT+Lam+TEL 控蝕刻 ~75%；Lam ALE 約 60.9%（GAA win 42%）、AMAT Sculpta ALE（ASP 3x），GAA 直接受惠。",
+   "companies": [
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "蝕刻 ~32%",
+     "products": "Sculpta ALE / 介電蝕刻",
+     "note": "GAA 成形核心"
+    },
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "蝕刻 ~28%、ALE ~61%",
+     "products": "Akara 導體蝕刻 / Flex",
+     "note": "原子層蝕刻主力"
+    },
+    {
+     "name": "Tokyo Electron",
+     "ticker": "8035.T",
+     "country": "JP",
+     "share": "蝕刻 ~15%",
+     "products": "Tactras 蝕刻",
+     "note": "蝕刻+塗顯雙料"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "蝕刻/ALE 市佔 (GMInsights)",
+     "url": "https://www.gminsights.com/industry-analysis/atomic-layer-etching-equipment-market"
+    }
+   ]
+  },
+  {
+   "id": "eq-depo",
+   "row": "equip",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "沉積 CVD/PVD/ALD/Epi",
+   "nameEn": "Deposition",
+   "competition": "highgrowth",
+   "single": "ALD 領導 · ASM International 單片 ALD >55%（2nm GAA 節點 >55%，直接受惠）",
+   "desc": "GAA 須更高強度的 ALD（原子層沉積）與 Epi 磊晶；薄膜沉積是 GAA 閘極堆疊核心。",
+   "marketSize": "GAA 受惠",
+   "growth": "ALD CAGR 10–14%",
+   "share": "null",
+   "analysis": "ASM International 單片 ALD >55%、2nm GAA 節點 >55%，是 GAA 最直接受惠者；但 AMAT 已在多個次世代 GAA 邏輯 ALD 步驟取得 PoR（製程認證），實際 GAA 受惠不如市場想像由 ASM 獨吃；批次 ALD 由 Kokusai（~70%）主導；Lam（W ALD/電鍍）競逐。",
+   "companies": [
+    {
+     "name": "ASM International",
+     "ticker": "ASM.AS",
+     "country": "EU",
+     "share": "單片 ALD >55%",
+     "products": "單片 ALD / Epi 磊晶",
+     "note": "GAA 直接受惠"
+    },
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "沉積龍頭",
+     "products": "Endura Trillium ALD / PVD/CVD/Epi",
+     "note": "GAA 閘極堆疊；已在多個次世代 GAA 邏輯 ALD 步驟取得 PoR，蠶食 ASM GAA 受惠敘事",
+     "src": "https://www.techinvestments.io/p/a-primer-on-the-deposition-market"
+    },
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "介電/金屬",
+     "products": "ALTUS W ALD / SABRE 電鍍",
+     "note": "填充沉積"
+    },
+    {
+     "name": "Kokusai Electric",
+     "ticker": "6525.T",
+     "country": "JP",
+     "share": "批次 ALD 領導",
+     "products": "批次 ALD/LPCVD / 爐管",
+     "note": "高深寬比批次薄膜"
+    },
+    {
+     "name": "Wonik IPS / Jusung / Eugene / TES",
+     "ticker": "240810.KQ / 036930.KQ / 084370.KQ / 095610.KQ",
+     "country": "KR",
+     "share": "韓系 ALD/CVD 在地",
+     "products": "ALD/CVD/LPCVD",
+     "note": "三星/SK captive 沉積在地源",
+     "src": "https://www.bald-engineering.com/"
+    },
+    {
+     "name": "Veeco",
+     "ticker": "VECO",
+     "country": "US",
+     "share": "Epi/MOCVD",
+     "products": "磊晶/MOCVD",
+     "note": "化合物/Epi 設備"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASM 單片 ALD >55% (MatrixBCG)",
+     "url": "https://matrixbcg.com/blogs/competitors/asm"
+    }
+   ]
+  },
+  {
+   "id": "eq-cmp",
+   "row": "equip",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "CMP + 離子植入",
+   "nameEn": "CMP + Ion Implant",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "化學機械研磨（CMP）平坦化與離子植入摻雜。",
+   "marketSize": "null",
+   "growth": "植入 12.3% CAGR",
+   "share": "null",
+   "analysis": "CMP 由 AMAT（第一）與 Ebara（第二）雙雄；離子植入 AMAT（Varian ~62.65%）近主導、Axcelis（~21.19%）第二、住友重機第三。",
+   "companies": [
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "CMP 第一/植入 ~63%",
+     "products": "Reflexion CMP / Varian 植入",
+     "note": "平坦化+摻雜雙料"
+    },
+    {
+     "name": "Ebara 荏原",
+     "ticker": "6361.T",
+     "country": "JP",
+     "share": "CMP 第二",
+     "products": "F-REX300 CMP / 銅電鍍",
+     "note": "銅平坦化雙雄"
+    },
+    {
+     "name": "Axcelis",
+     "ticker": "ACLS",
+     "country": "US",
+     "share": "植入 ~21%",
+     "products": "Purion 高能/高電流植入",
+     "note": "GAA 精準摻雜第二源；與 Veeco 合併案 2026/02 股東批准、待中國 SAMR 核准、預計 2026 H2 完成",
+     "src": "https://www.prnewswire.com/news-releases/axcelis-stockholders-approve-merger-with-veeco-302680838.html"
+    },
+    {
+     "name": "住友重機 SHI",
+     "ticker": "6302.T",
+     "country": "JP",
+     "share": "植入第三",
+     "products": "中電流離子植入",
+     "note": "第三供應源"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CMP/離子植入市佔 (MatrixBCG)",
+     "url": "https://matrixbcg.com/blogs/competitors/axcelis"
+    }
+   ]
+  },
+  {
+   "id": "eq-metro",
+   "row": "equip",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "量測 / 檢測",
+   "nameEn": "Metrology · Inspection",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · KLA 製程控制 ~56%；Lasertec EUV 光罩檢測唯一商用（actinic ~90%+）",
+   "desc": "缺陷檢測、CD/薄膜/overlay 量測與 EUV 光罩檢測，是良率管理與 ≤7nm 量產前提。",
+   "marketSize": "鎖喉點",
+   "growth": "良率關鍵",
+   "share": "null",
+   "analysis": "KLA 製程控制 ~56%、量檢測合計 ~73.8% 絕對龍頭；Lasertec 為 EUV actinic 光罩檢測唯一商用（~90%+），無合格光罩檢測即不能量產 ≤7nm；Onto、AMAT、日立 High-Tech 利基。",
+   "companies": [
+    {
+     "name": "KLA",
+     "ticker": "KLAC",
+     "country": "US",
+     "share": "製程控制 ~56%",
+     "products": "光學/e-beam 檢測 / CD/overlay 量測",
+     "note": "良率管理絕對龍頭"
+    },
+    {
+     "name": "Lasertec",
+     "ticker": "6920.T",
+     "country": "JP",
+     "share": "EUV 光罩檢測 ~90%+",
+     "products": "ACTIS actinic blank/mask 檢測",
+     "note": "唯一商用 actinic（鎖喉）",
+     "src": "https://www.oreateai.com/blog/lasertec-the-global-monopoly-in-euv-photomask-inspection/981a881b59881e5650513914c59b6694"
+    },
+    {
+     "name": "ASML (HMI)",
+     "ticker": "ASML",
+     "country": "EU",
+     "share": "e-beam 檢測領導",
+     "products": "multi-beam e-beam 缺陷檢測",
+     "note": "原台廠漢微科 Hermes Microvision"
+    },
+    {
+     "name": "Onto / AMAT / 日立 High-Tech",
+     "ticker": "ONTO / AMAT / 6501.T",
+     "country": "US",
+     "share": "利基",
+     "products": "光學 CD/薄膜量測 / e-beam / CD-SEM",
+     "note": "KLA 外替代源"
+    },
+    {
+     "name": "Nova / Park Systems / Bruker",
+     "ticker": "NVMI / 140860.KQ / BRKR",
+     "country": "GLOBAL",
+     "share": "OCD/AFM",
+     "products": "OCD 整合量測 / in-line AFM",
+     "note": "Nova=IL OCD領導、Park=KR AFM 全球第一、Bruker=US"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "KLA 製程控制市佔 (Dr. Castellano)",
+     "url": "https://drrobertcastellano.substack.com/p/klas-market-share-growth-in-process"
+    },
+    {
+     "label": "Lasertec EUV 光罩檢測獨佔 (OreateAI)",
+     "url": "https://www.oreateai.com/blog/lasertec-the-global-monopoly-in-euv-photomask-inspection/981a881b59881e5650513914c59b6694"
+    }
+   ]
+  },
+  {
+   "id": "eq-clean",
+   "row": "equip",
+   "col": 6,
+   "span": 1,
+   "kind": "rail",
+   "name": "清洗 / 退火 / 熱製程",
+   "nameEn": "Clean · Anneal · Thermal",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "單片濕式清洗、乾式去光阻（strip）、毫秒/雷射退火（GAA 摻雜活化）與爐管熱處理。",
+   "marketSize": "null",
+   "growth": "GAA 退火受惠",
+   "share": "null",
+   "analysis": "單片清洗 SCREEN+TEL+Lam >82%；乾式去光阻 PSK 全球領導；毫秒/雷射退火 Veeco/AMAT；韓系 SEMES（三星 captive）、Wonik/Jusung/Eugene 沉積清洗在地化；台廠弘塑、辛耘為台積電濕製程在地供應。",
+   "companies": [
+    {
+     "name": "SCREEN",
+     "ticker": "7735.T",
+     "country": "JP",
+     "share": "單片清洗龍頭",
+     "products": "SU 系列單片濕式清洗",
+     "note": "清洗領導"
+    },
+    {
+     "name": "PSK Inc.",
+     "ticker": "319660.KQ",
+     "country": "KR",
+     "share": "dry strip 全球領導",
+     "products": "乾式去光阻",
+     "note": "★319660≠母公司 PSK Holdings 031980（reflow/descum）"
+    },
+    {
+     "name": "Veeco / Mattson",
+     "ticker": "VECO / —",
+     "country": "US",
+     "share": "退火",
+     "products": "雷射/毫秒退火 LSA",
+     "note": "GAA 摻雜活化（Mattson 中資）"
+    },
+    {
+     "name": "SEMES",
+     "ticker": "—",
+     "country": "KR",
+     "share": "韓系最大在地",
+     "products": "清洗/塗顯/strip（三星 captive）",
+     "note": "三星子公司；沉積廠 Wonik/Jusung 改列 eq-depo"
+    },
+    {
+     "name": "弘塑 / 辛耘",
+     "ticker": "3131.TWO / 3583.TW",
+     "country": "TW",
+     "share": "台積電在地",
+     "products": "濕式清洗/再生晶圓",
+     "note": "SoIC 濕清洗強"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "單片清洗市場 (Intel Market Research)",
+     "url": "https://www.intelmarketresearch.com/single-wafer-clean-machine-market-11801"
+    }
+   ]
+  },
+  {
+   "id": "eq-test",
+   "row": "equip",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "測試 ATE / 探針卡",
+   "nameEn": "ATE · Probe Card",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "晶圓/成品測試（ATE）與晶圓測試探針卡。",
+   "marketSize": "null",
+   "growth": "AI 高頻測試",
+   "share": "null",
+   "analysis": "ATE Advantest+Teradyne ~45–48%；探針卡 Technoprobe/FormFactor 領先，台廠旺矽（非記憶體全球第三）、中華精測（先進 MEMS 全自製）、穎崴。",
+   "companies": [
+    {
+     "name": "Advantest / Teradyne",
+     "ticker": "6857.T / TER",
+     "country": "JP",
+     "share": "ATE ~45–48%",
+     "products": "V93000 / UltraFLEX",
+     "note": "SoC/HBM 測試雙雄"
+    },
+    {
+     "name": "FormFactor / Technoprobe",
+     "ticker": "FORM / TPRO.MI",
+     "country": "US",
+     "share": "探針卡領先",
+     "products": "MEMS/垂直探針卡",
+     "note": "2nm 晶圓測試"
+    },
+    {
+     "name": "旺矽 MPI / 中華精測",
+     "ticker": "6223.TWO / 6510.TW",
+     "country": "TW",
+     "share": "全球第三/全自製",
+     "products": "VPC/MEMS 探針卡/高頻測試板",
+     "note": "台廠瞄準 2nm"
+    },
+    {
+     "name": "JEM / 穎崴 / 雍智",
+     "ticker": "6855.T / 6515.TW / 6683.TWO",
+     "country": "JP",
+     "share": "探針卡前三/socket/CP載板",
+     "products": "記憶體探針卡 / test socket / CP 載板",
+     "note": "JEM+FormFactor+Technoprobe(IT) ~60%"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "測試設備與探針卡 (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/semiconductor-test-equipment-market"
+    }
+   ]
+  },
+  {
+   "id": "eq-maskwriter",
+   "row": "equip",
+   "col": 8,
+   "span": 1,
+   "kind": "rail",
+   "name": "光罩寫入機 Mask Writer",
+   "nameEn": "Mask Writer",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · IMS Nanofabrication 單獨 ~81.5%(2024) multi-beam 光罩寫入機，EUV 光罩唯一成圖手段",
+   "desc": "以多束電子束（multi-beam e-beam）在光罩基板寫出電路圖形，是 EUV 光罩唯一成圖手段。",
+   "marketSize": "雙雄寡占",
+   "growth": "EUV 必經",
+   "share": "null",
+   "analysis": "IMS Nanofabrication（Intel 持股）單獨 ~81.5%(2024) 近乎獨佔，NuFlare（東芝集團、已 TOB 下市）overlay 領先、JEOL 補位（multi-beam Top5 ~86%）；無光罩寫入機即無 EUV 光罩。",
+   "companies": [
+    {
+     "name": "IMS Nanofabrication",
+     "ticker": "—",
+     "country": "AT",
+     "share": "~81.5% (2024)",
+     "products": "multi-beam EUV 光罩寫入機",
+     "note": "Intel 持股、近乎獨佔",
+     "src": "https://www.qyresearch.com/news/11750"
+    },
+    {
+     "name": "NuFlare",
+     "ticker": "—",
+     "country": "JP",
+     "share": "雙雄之二",
+     "products": "e-beam 光罩寫入機",
+     "note": "東芝集團、已 TOB 下市"
+    },
+    {
+     "name": "JEOL",
+     "ticker": "6951.T",
+     "country": "JP",
+     "share": "Top5",
+     "products": "e-beam 寫入 / CD-SEM",
+     "note": "補位"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "multi-beam mask writer (QYResearch)",
+     "url": "https://www.qyresearch.com/news/11750"
+    }
+   ]
+  },
+  {
+   "id": "eq-subsys",
+   "row": "equip",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "設備子系統 / 零組件",
+   "nameEn": "Equipment Subsystems",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "RF 電源、真空、氣體輸送、靜電吸盤（ESC）、真空泵等設備子系統，是 AMAT/Lam/ASML 共同上游。",
+   "marketSize": "null",
+   "growth": "設備上游",
+   "share": "null",
+   "analysis": "MKS（RF 電源全球第一）、Advanced Energy（與 MKS 合計 RF >35%）、Comet（真空電容/RF 匹配）、UCT/Ichor（氣體輸送代工）、Ferrotec（ESC/陶瓷）、ULVAC（真空泵）；台廠京鼎/翔名為在地 OEM。",
+   "companies": [
+    {
+     "name": "MKS Instruments",
+     "ticker": "MKSI",
+     "country": "US",
+     "share": "RF 電源第一",
+     "products": "RF 電源 / MFC / 真空",
+     "note": "設備共同上游"
+    },
+    {
+     "name": "Advanced Energy",
+     "ticker": "AEIS",
+     "country": "US",
+     "share": "RF >35%(與MKS)",
+     "products": "電漿電源",
+     "note": "電漿電源"
+    },
+    {
+     "name": "Comet",
+     "ticker": "COTN.SW",
+     "country": "CH",
+     "share": "真空電容/RF 匹配領導",
+     "products": "真空電容 / RF 匹配",
+     "note": "電漿穩定單點"
+    },
+    {
+     "name": "UCT / Ichor / Ferrotec / ULVAC",
+     "ticker": "UCTT / ICHR / 6890.T / 6728.T",
+     "country": "US",
+     "share": "子系統",
+     "products": "氣體輸送 / ESC / 真空泵",
+     "note": "模組外包"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "設備關鍵子系統 (Yole)",
+     "url": "https://www.yolegroup.com/strategy-insights/"
+    }
+   ]
+  },
+  {
+   "id": "f-eda",
+   "row": "flow",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "EDA 工具",
+   "nameEn": "EDA Tools",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "電子設計自動化工具，2nm signoff 與光罩驗證必備。",
+   "marketSize": "$12 億",
+   "growth": "~8% CAGR",
+   "share": "null",
+   "analysis": "三強 >70%：Synopsys（~31%，含 Ansys）、Cadence（~30%）、Siemens EDA（~13%，Calibre 物理驗證業界標準）。是先進設計的入口門檻。",
+   "companies": [
+    {
+     "name": "Synopsys",
+     "ticker": "SNPS",
+     "country": "US",
+     "share": "EDA ~31%",
+     "products": "全流程 EDA + IP + 模擬",
+     "note": "2nm signoff 必備"
+    },
+    {
+     "name": "Cadence",
+     "ticker": "CDNS",
+     "country": "US",
+     "share": "EDA ~30%",
+     "products": "全流程 EDA / Palladium / IP",
+     "note": "設計兩大支柱之一"
+    },
+    {
+     "name": "Siemens EDA",
+     "ticker": "SIE.DE",
+     "country": "EU",
+     "share": "EDA ~13%",
+     "products": "Calibre 物理驗證 / Tessent",
+     "note": "光罩驗證近標準"
+    },
+    {
+     "name": "Ansys / Keysight EDA",
+     "ticker": "(SNPS) / KEYS",
+     "country": "US",
+     "share": "模擬/RF",
+     "products": "多物理模擬 / RF EDA",
+     "note": "Ansys 2025/07/17 正式被 SNPS 以 $350 億併入；2026 H1 推出首批 Synopsys-Ansys Multiphysics-Fusion 整合 EDA 工具"
+    },
+    {
+     "name": "華大九天 Empyrean",
+     "ticker": "301269.SZ",
+     "country": "CN",
+     "share": "中國 EDA 龍頭",
+     "products": "全流程 EDA（國產替代）",
+     "note": "中國 EDA 主力"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "EDA 市場結構 (SemiAnalysis)",
+     "url": "https://newsletter.semianalysis.com/p/eda-market-primer"
+    }
+   ]
+  },
+  {
+   "id": "f-ip",
+   "row": "flow",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "矽智財 IP / 設計服務",
+   "nameEn": "Silicon IP · Design Service",
+   "competition": "oligopoly",
+   "single": "近乎獨佔 · Arm CPU 架構（行動 >95%）；台廠晶心 RISC-V、力旺 OTP/安全 IP 利基近獨佔",
+   "desc": "CPU/介面/基礎 IP 與 ASIC 設計服務，是先進製程 SoC 的設計基石。",
+   "marketSize": "Arm 近獨佔",
+   "growth": "RISC-V 興起",
+   "share": "null",
+   "analysis": "Arm CPU 架構近獨佔（行動 >95%）；介面 IP Synopsys/Cadence 主導；RISC-V（SiFive、台廠晶心 Andes）興起挑戰。台廠設計服務軍團：力旺（OTP/安全 IP 全球領導、過 N3P）、創意/世芯/智原（2nm ASIC turnkey）。",
+   "companies": [
+    {
+     "name": "Arm",
+     "ticker": "ARM",
+     "country": "UK",
+     "share": "CPU IP 行動 >90%",
+     "products": "Cortex/Neoverse CPU IP / CSS",
+     "note": "SoC CPU 事實標準；FY26 營收 $4.92B 創高（royalty $2.61B）、hyperscaler CPU 算力佔比達 50%",
+     "src": "https://newsroom.arm.com/news/arm-q4-fye26-results"
+    },
+    {
+     "name": "Synopsys / Cadence",
+     "ticker": "SNPS / CDNS",
+     "country": "US",
+     "share": "介面 IP 主導",
+     "products": "PCIe/DDR/HBM/SerDes IP",
+     "note": "介面 IP 雙雄"
+    },
+    {
+     "name": "晶心 Andes / 力旺 eMemory / M31",
+     "ticker": "6533.TWO / 3529.TW / 6643.TWO",
+     "country": "TW",
+     "share": "RISC-V/OTP/基礎 IP",
+     "products": "RISC-V CPU IP / OTP/NeoPUF / 基礎 IP",
+     "note": "力旺過 TSMC N3P；M31 台積 IP 夥伴"
+    },
+    {
+     "name": "創意 GUC / 世芯 Alchip / 智原",
+     "ticker": "3443.TW / 3661.TW / 3035.TW",
+     "country": "TW",
+     "share": "ASIC 設計服務",
+     "products": "2nm ASIC turnkey + IP",
+     "note": "雲端自研晶片受惠"
+    },
+    {
+     "name": "Alphawave(→Qualcomm) / Rambus",
+     "ticker": "(QCOM) / RMBS",
+     "country": "US",
+     "share": "介面 IP 第三源",
+     "products": "224G SerDes/UCIe / HBM PHY",
+     "note": "★Alphawave 2025/12 已併入 Qualcomm、AWE.L 下市"
+    },
+    {
+     "name": "M31 / Ceva / Imagination",
+     "ticker": "6643.TWO / CEVA / —",
+     "country": "TW",
+     "share": "基礎/利基 IP",
+     "products": "基礎 IP / DSP IP / GPU IP",
+     "note": "M31 台廠基礎 IP"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "力旺過 TSMC N3P (TechNews)",
+     "url": "https://technews.tw/2025/06/26/ememory-passed-tsmc-n3p-test/"
+    }
+   ]
+  },
+  {
+   "id": "f-foundry",
+   "row": "flow",
+   "col": 4,
+   "span": 2,
+   "kind": "stage",
+   "name": "先進邏輯晶圓代工（2nm GAA）",
+   "nameEn": "Leading-edge Foundry",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · TSMC 代工 ~70%、≤3nm >90%，N2 GAA 2025Q4 HVM、N3 佔 Q1 2026 晶圓收入 25%；Q1 2026 營收 NT$1,134B (+35% YoY)、毛利率 66.2%；5 月營收 NT$417.0B (+30.1% YoY)、Jan–May 累計 NT$1,961.8B (+30.0% YoY)；Q2'26 財測 US$39.0–40.2B (+32% YoY)、2026 capex $52–56B 創新高；月產能 2026 底目標 >10 萬片（部分研調上看 13–14 萬片）",
+   "desc": "2nm/3nm GAA 邏輯製造的核心——所有設備、材料、EDA/IP 在此匯流，是整條供應鏈的收斂點與終極鎖喉。",
+   "marketSize": "鎖喉點 · 匯流核心",
+   "growth": "N2 量產（2025Q4 HVM，2026 月產能 >10 萬片）",
+   "share": "null",
+   "analysis": "台積電代工 ~70%、≤3nm >90% 近乎獨佔（N2 2nm GAA 2025Q4 量產、A16 背面供電）；N2 自 2026/03 貢獻營收、產能售罄至 2028（lead time 52–156 週），2nm 連四年漲價 2026 約調漲 10–20% 至 ~$2.2–2.4 萬/片（終結『便宜電晶體』）；先進製程＋CoWoS 同時售罄至 2027、需求高於產能 ~25–30%，AI 算力出貨受制於 TSMC 單點。Samsung（SF2 良率 ~50%、以 ~$2 萬/片低價搶下 Tesla AI5/AI6約 $165 億）、Intel（18A Panther Lake 量產、已簽 Microsoft/AWS 但良率 2027 才達世界級）、Rapidus（日本國家隊、首客 Fujitsu、2027 HVM）追趕。GAA 良率與生態系是進入障礙，挑戰者落後 1–2 代。絃外之音：TSMC 雖是漏斗收斂點，但定價權其實受上游 sole-source（ASML/Lasertec/IMS）反向鉗制——上游漲價 TSMC 只能轉嫁；TSMC 真正的護城河是『生態系綁定』（EDA/IP/設備同步調校），而非單純份額，這是 Samsung/Intel 砸錢也追不上的部分。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "代工 ~70%、≤3nm >90%",
+     "products": "N2(2nm GAA) / A16 Super Power Rail",
+     "note": "絕對龍頭、節奏掌控；2nm 唯一可大量交貨者，N2 自 2025Q4 量產、2026/03 起貢獻營收，高雄 Fab 22＋寶山兩廠 2026 產能爬升至 ~9–10 萬片/月且全年完售、最新訂單 lead time 52–156 週排到 2028；先進製程＋CoWoS 同時售罄至 2027、需求高於產能約 25–30%，魏哲家 2026/06/04 股東會稱 AI 需求『瘋狂』、供給落後將持續『數年』，TSMC 產出實質成為 Nvidia Blackwell/Rubin 出貨硬上限",
+     "src": "https://siliconanalysts.com/analysis/foundry-allocation-status-q1-2026"
+    },
+    {
+     "name": "Samsung Foundry",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "第二",
+     "products": "SF2(2nm MBCFET)",
+     "note": "與 Tesla 簽約 ~$165 億 AI5/AI6 代工（Taylor 廠生產至 2033），首度於價格與大客戶層面實質挑戰 TSMC；以 ~$20K/片（遠低於 TSMC ~$30K）搶單、2026 全年 2nm 訂單量預期 YoY +30%+；SF2 良率 2025/09 量產時約 50%（低於 ~60% 商業門檻），Exynos 2600 恐僅覆蓋 Galaxy S26 約 30% 產量；Qualcomm 已確認 Snapdragon 8 Elite Gen 6 N2P 獨家交 TSMC、Samsung 轉單延至 Gen 7；Taylor 廠 SF2P+ 確認 2027 投產；惟 foundry 年度獲利目標延至 2028",
+     "src": "https://www.aninews.in/news/business/tesla-deepens-chip-push-ai6-to-be-built-on-samsungs-2nm-process20260416173155/"
+    },
+    {
+     "name": "Intel Foundry",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "挑戰者",
+     "products": "18A(RibbonFET+PowerVia)",
+     "note": "Panther Lake（首款 18A 消費級處理器）2026 年初發表、向亞利桑那高量產爬升；外部代工已簽 Microsoft、AWS；惟 Intel 自承良率要到 2027 才達世界級、CFO 重新評估是否對外開放 18A，短期難撼動 TSMC demanding 客戶端；14A PDK 0.5 已開放、設備採購 YoY +50%+；首台 High-NA EXE:5200 已驗收進入 HVM",
+     "src": "https://www.tomshardware.com/pc-components/cpus/intels-18a-production-starts-before-tsmcs-competing-n2-tech-heres-how-the-two-process-nodes-compare"
+    },
+    {
+     "name": "Rapidus",
+     "ticker": "—",
+     "country": "JP",
+     "share": "後進試產",
+     "products": "2nm GAA(與 IBM)",
+     "note": "IIM-1 潔淨室啟動、EUV 裝機完成、2nm GAA 試產中；2nm PDK 開放早期客戶；2026/04 北海道千歲後段封裝原型線啟動、日本政府追加 ¥6,315 億支援；首位客戶確認為 Fujitsu；2026 底目標出客戶測試晶片，HVM 仍維持 2027",
+     "src": "https://www.trendforce.com/news/2026/04/13/news-rapidus-reportedly-launches-back-end-prototype-line-japan-adds-%C2%A5631-5b-to-support-2nm-push/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "eq-litho"
+    },
+    {
+     "id": "eq-etch"
+    },
+    {
+     "id": "eq-depo"
+    },
+    {
+     "id": "eq-cmp"
+    },
+    {
+     "id": "eq-metro"
+    },
+    {
+     "id": "eq-clean"
+    },
+    {
+     "id": "eq-test"
+    },
+    {
+     "id": "eq-maskwriter"
+    },
+    {
+     "id": "eq-subsys"
+    },
+    {
+     "id": "f-eda"
+    },
+    {
+     "id": "f-ip"
+    },
+    {
+     "id": "m-wafer"
+    },
+    {
+     "id": "m-resist"
+    },
+    {
+     "id": "m-mask"
+    },
+    {
+     "id": "m-gas"
+    },
+    {
+     "id": "m-cmp"
+    },
+    {
+     "id": "m-channel"
+    },
+    {
+     "id": "m-target"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "d-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC ≤3nm >90%、2nm 競賽 (Taipei Times)",
+     "url": "https://www.taipeitimes.com/News/biz/archives/2026/03/14/2003853777"
+    }
+   ]
+  },
+  {
+   "id": "d-demand",
+   "row": "flow",
+   "col": 7,
+   "span": 1,
+   "kind": "demand",
+   "name": "終端需求（fabless）",
+   "nameEn": "Fabless Demand",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "先進製程的最終客戶：fabless 與 IDM 設計公司，AI 與旗艦手機驅動需求。",
+   "marketSize": "N2 產能搶購",
+   "growth": "AI/旗艦驅動",
+   "share": "null",
+   "analysis": "Apple 升格為 N2 第一大錨定客戶、鎖定逾 50% 初期 N2 產能供 A20/A20 Pro 與 M5 系列（2026 秋季），其餘配額由 Nvidia/AMD/Qualcomm 瓜分——2nm 早期被『單一手機客戶＋少數 AI HPC』高度集中綁定；AMD（EPYC Venice 已 tape-out）、Broadcom（雲端 ASIC）、Qualcomm（Snapdragon 8 Elite Gen 6 確認 N2P 獨家 TSMC）/聯發科（N2P）跟進；Nvidia Rubin 暫守 3nm（良率/成本）、A16(1.6nm) SPR 2026 底量產 Feynman 領跑。需求集中於少數大客戶，2027 後手機週期若轉弱將放大稼動率波動。",
+   "companies": [
+    {
+     "name": "Apple",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "N2 過半初期產能",
+     "products": "A20/A20 Pro/M5 (N2, 2026 秋)",
+     "note": "2nm 首發與最大買家、鎖定逾 50% 初期 N2 產能",
+     "src": "https://phemex.com/academy/tsmc-2nm-wafer-pricing-nvda-avgo-amd-ai-stack"
+    },
+    {
+     "name": "AMD / Broadcom",
+     "ticker": "AMD / AVGO",
+     "country": "US",
+     "share": "N2 早期",
+     "products": "EPYC Venice / 雲端 ASIC",
+     "note": "HPC/ASIC 2nm"
+    },
+    {
+     "name": "聯發科 MediaTek",
+     "ticker": "2454.TW",
+     "country": "TW",
+     "share": "首家 2nm tape-out",
+     "products": "Dimensity 9600 (N2P)",
+     "note": "台廠 2nm 旗艦 SoC；改採 N2P（較 N3E 同功耗效能 +18%）、2026 底量產上市",
+     "src": "https://www.technetbooks.com/2026/04/mediatek-dimensity-9600-redesign.html"
+    },
+    {
+     "name": "Qualcomm / Nvidia",
+     "ticker": "QCOM / NVDA",
+     "country": "US",
+     "share": "N2P/A16 首家客戶",
+     "products": "Snapdragon (N2P) / Rubin (3nm, 2026Q3) / Feynman (A16)",
+     "note": "Nvidia 為 TSMC A16 首家暨唯一客戶（高雄 P3 2027 量產）；2nm 產能滿載迫使 Feynman 評估重新設計",
+     "src": "https://wccftech.com/nvidia-first-only-customer-for-tsmc-a16-process-node-for-next-gen-feynman-gpus/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Apple 拿下 N2 過半產能 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/10/28/news-apple-reportedly-takes-most-of-tsmcs-2nm-capacity-for-a20-series-in-foldable-iphone-and-iphone-18/"
+    }
+   ]
+  },
+  {
+   "id": "m-wafer",
+   "row": "material",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "矽晶圓",
+   "nameEn": "Silicon Wafer",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "先進邏輯製程的 300mm 拋光/磊晶矽晶圓。",
+   "marketSize": "$14.8 億 (300mm)",
+   "growth": "前五 >80%",
+   "share": "null",
+   "analysis": "前五大 >80%（信越+SUMCO ~54%）：信越（>27%）、SUMCO、環球晶、Siltronic、SK Siltron。",
+   "companies": [
+    {
+     "name": "信越半導體 Shin-Etsu",
+     "ticker": "4063.T",
+     "country": "JP",
+     "share": "300mm >27%",
+     "products": "拋光/磊晶 300mm",
+     "note": "絕對龍頭"
+    },
+    {
+     "name": "SUMCO",
+     "ticker": "3436.T",
+     "country": "JP",
+     "share": "第二",
+     "products": "拋光/磊晶 300mm",
+     "note": "雙雄 ~54%"
+    },
+    {
+     "name": "環球晶 GlobalWafers",
+     "ticker": "6488.TWO",
+     "country": "TW",
+     "share": "第三",
+     "products": "拋光/磊晶/SOI",
+     "note": "全球第三"
+    },
+    {
+     "name": "Siltronic / SK Siltron",
+     "ticker": "WAF.DE / —",
+     "country": "EU",
+     "share": "第四/第五",
+     "products": "300mm 矽晶圓",
+     "note": "前五 >80%"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "矽晶圓市場 (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/Market-Reports/silicon-wafer-market-142301524.html"
+    }
+   ]
+  },
+  {
+   "id": "m-resist",
+   "row": "material",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "光阻 Photoresist",
+   "nameEn": "Photoresist",
+   "competition": "oligopoly",
+   "single": "日系寡占 · EUV 光阻 Top4 ~75%（JSR>22%/TOK/信越/Fujifilm）、Top5 ~50%，無單一玩家 >70%；真鎖喉在『新材料認證週期 18-24 月』非市佔",
+   "desc": "EUV/ArF 光阻——先進製程圖形化的關鍵材料，日本對 2nm 最強鎖喉之一。",
+   "marketSize": "日本近壟斷",
+   "growth": "2nm 鎖喉",
+   "share": "null",
+   "analysis": "EUV 光阻 Top5 ~50%、Top4 ~75%，日本壟斷：JSR（>22%，含 Inpria 金屬氧化物）、TOK、信越、Sumitomo Chem、Fujifilm；韓系 Dongjin 在地化供 Samsung；台廠崇越代理信越。",
+   "companies": [
+    {
+     "name": "JSR (含 Inpria)",
+     "ticker": "—",
+     "country": "JP",
+     "share": "EUV >22%",
+     "products": "EUV CAR / 金屬氧化物光阻",
+     "note": "已 JIC 私有化下市"
+    },
+    {
+     "name": "TOK 東京應化",
+     "ticker": "4186.T",
+     "country": "JP",
+     "share": "Top 3",
+     "products": "EUV/ArF 光阻",
+     "note": "EUV 三強"
+    },
+    {
+     "name": "信越 / Sumitomo Chem / Fujifilm",
+     "ticker": "4063.T / 4005.T / 4901.T",
+     "country": "JP",
+     "share": "Top 5",
+     "products": "EUV/ArF 光阻",
+     "note": "日系四強 ~76%"
+    },
+    {
+     "name": "Dongjin / 崇越(代理)",
+     "ticker": "005290.KS / 5434.TW",
+     "country": "KR",
+     "share": "韓系/台通路",
+     "products": "EUV 光阻 / 信越代理",
+     "note": "在地化供應"
+    },
+    {
+     "name": "新應材 AEMC",
+     "ticker": "4749.TWO",
+     "country": "TW",
+     "share": "光阻周邊",
+     "products": "Rinse 表面改質劑 / BARC / EBR",
+     "note": "N2 獨家供 BARC/EBR、Rinse 佔台積 ~70%",
+     "src": "https://www.sinotrade.com.tw/richclub/industry/台積電2奈米概念股-新應材-台特化等5檔特化股國產替代商機-產業熱話-696496d75cf248262ecb94f0"
+    },
+    {
+     "name": "達興 / 國精化 / 三福化",
+     "ticker": "5234.TW / 4722.TW / 4755.TWO",
+     "country": "TW",
+     "share": "台廠特化",
+     "products": "PSPI / 顯影液 TMAH / 蝕刻剝離",
+     "note": "國產替代特化軍團"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "日本壟斷 EUV 光阻 (FountyTech)",
+     "url": "https://www.fountyltech.com/news/japanese-companies-monopolize-the-euv-photoresist-supply-market/"
+    }
+   ]
+  },
+  {
+   "id": "m-mask",
+   "row": "material",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "光罩 / EUV blank / pellicle",
+   "nameEn": "Photomask · Blank · Pellicle",
+   "competition": "oligopoly",
+   "single": "雙寡占/獨佔 · EUV blank AGC+Hoya ~93%；EUV pod 家登 >80%；EUV pellicle Mitsui 領導",
+   "desc": "EUV/DUV 光罩、EUV 光罩基板（blank）、防塵薄膜（pellicle）與光罩傳載盒（pod）。",
+   "marketSize": "雙寡占/獨佔",
+   "growth": "blank 12.8% CAGR",
+   "share": "null",
+   "analysis": "EUV mask blank AGC（~59%）+Hoya（~34%）約 93% 近雙頭獨佔；光罩製造 Toppan/DNP/Photronics 競爭；EUV pellicle Mitsui 化學近獨佔（ASML 2021 授權、唯一商用 >90% 穿透、CNT 次世代）；EUV pod 家登 >80% 獨佔（High-NA pod 首發獲 ASML 認證）；韓系 S&S Tech 本土化。絃外之音：本節點是『多個 sole-source 疊一層』——AGC/Hoya/家登/Mitsui 各自在子產品近獨佔，任一斷貨即無合格 EUV 光罩，集中度被『oligopoly』標籤低估。",
+   "companies": [
+    {
+     "name": "AGC / Hoya",
+     "ticker": "5201.T / 7741.T",
+     "country": "JP",
+     "share": "EUV blank ~93%",
+     "products": "EUV 光罩基板（超低膨脹玻璃+Mo/Si）",
+     "note": "blank 雙寡占"
+    },
+    {
+     "name": "家登 Gudeng",
+     "ticker": "3680.TWO",
+     "country": "TW",
+     "share": "EUV pod >80%",
+     "products": "EUV/High-NA 光罩盒 / FOUP",
+     "note": "光罩運輸獨家鎖喉；EUV pod >80% 的台廠 sole-source，是『賣鏟子的賣鏟子』二階受惠者——不論誰贏 2nm 競賽，光罩都要裝家登的盒子",
+     "src": "https://www.pocket.tw/school/report/SCHOOL/6409/"
+    },
+    {
+     "name": "Mitsui 三井化學",
+     "ticker": "4183.T",
+     "country": "JP",
+     "share": "EUV pellicle 領導",
+     "products": "EUV pellicle / CNT pellicle",
+     "note": "ASML 授權"
+    },
+    {
+     "name": "Toppan / DNP / Photronics",
+     "ticker": "7911.T / 7912.T / PLAB",
+     "country": "JP",
+     "share": "光罩製造",
+     "products": "EUV/DUV 光罩",
+     "note": "獨立光罩主供"
+    },
+    {
+     "name": "S&S Tech / FST / LG Innotek",
+     "ticker": "101490.KQ / 036810.KQ / 011070.KS",
+     "country": "KR",
+     "share": "韓系在地化",
+     "products": "EUV blank/pellicle / blank",
+     "note": "三星 2026 在地化稀釋日系"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "EUV mask blank 市佔 (Intel Market Research)",
+     "url": "https://www.intelmarketresearch.com/euv-mask-blanks-market-11463"
+    },
+    {
+     "label": "家登 EUV pod >80% (Pocket)",
+     "url": "https://www.pocket.tw/school/report/SCHOOL/6409/"
+    }
+   ]
+  },
+  {
+   "id": "m-gas",
+   "row": "material",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "特用氣體 / 前驅物",
+   "nameEn": "Specialty Gas · Precursors",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "ALD/CVD 高 k 前驅物與蝕刻/清洗特用氣體，GAA 高 k 介電的關鍵。",
+   "marketSize": "$2.7B 氣體",
+   "growth": "前驅物 10% CAGR",
+   "share": "null",
+   "analysis": "依氣種 KR/JP/EU 集中：Merck（含 Versum）、Linde、Air Liquide 領導前驅物/氣體；ADEKA（高 k 前驅物 HfO₂ 系列、GAA 關鍵）；韓系 SK Materials/Soulbrain/DNF/Hansol 在地供 Samsung/SK；Resonac/Kanto 蝕刻氣。",
+   "companies": [
+    {
+     "name": "Merck (Versum)",
+     "ticker": "MRK.DE",
+     "country": "EU",
+     "share": "前驅物領導",
+     "products": "高 k 前驅物 / 特用氣體",
+     "note": "先進製程核心"
+    },
+    {
+     "name": "Linde / Air Liquide",
+     "ticker": "LIN / AI.PA",
+     "country": "EU",
+     "share": "氣體龍頭",
+     "products": "大宗+特用氣體 / 前驅物",
+     "note": "晶圓廠氣體主力"
+    },
+    {
+     "name": "ADEKA",
+     "ticker": "4401.T",
+     "country": "JP",
+     "share": "高 k 前驅物領導",
+     "products": "HfO₂ ALD 前驅物",
+     "note": "GAA 高 k 關鍵"
+    },
+    {
+     "name": "SK Materials / Soulbrain / DNF / Hansol",
+     "ticker": "— / 036830.KS / 092070.KS / 014680.KS",
+     "country": "KR",
+     "share": "韓系在地",
+     "products": "NF3 / ALD 前驅物 / HCDS / 特用氣體",
+     "note": "供 Samsung/SK"
+    },
+    {
+     "name": "台特化 / 中華化 / 勝一",
+     "ticker": "4772.TWO / 1727.TW / 1773.TW",
+     "country": "TW",
+     "share": "台廠特氣/溶劑",
+     "products": "高純矽烷 SiH4/AHF / 半導體級硫酸 / 溶劑",
+     "note": "台特化＝台灣唯一矽烷產商"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "前驅物市場 (Valuates)",
+     "url": "https://reports.valuates.com/market-reports/QYRE-Auto-4L10436/global-precursor-for-semiconductor"
+    }
+   ]
+  },
+  {
+   "id": "m-cmp",
+   "row": "material",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "CMP 耗材 / 濕製程化學",
+   "nameEn": "CMP Consumables · Wet Chem",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "CMP 研磨液（slurry）、研磨墊（pad）、修整鑽石碟與濕製程電子化學品。",
+   "marketSize": "null",
+   "growth": "slurry Top5 ~70%",
+   "share": "null",
+   "analysis": "slurry Top5 ~70%（Entegris ~23%、Fujimi ~18–20%）；DuPont CMP pad（IC1000 近標準）；台廠中砂（CMP 鑽石碟）、長春（電子級化學）；韓系 Soulbrain 濕化學。",
+   "companies": [
+    {
+     "name": "Entegris (CMC)",
+     "ticker": "ENTG",
+     "country": "US",
+     "share": "slurry ~23%",
+     "products": "slurry / pad / 過濾",
+     "note": "slurry 第一"
+    },
+    {
+     "name": "DuPont / Fujimi",
+     "ticker": "DD / 5384.T",
+     "country": "US",
+     "share": "pad 領導/slurry ~18%",
+     "products": "CMP pad / slurry",
+     "note": "pad 近標準"
+    },
+    {
+     "name": "Soulbrain / KCTech",
+     "ticker": "036830.KS / 281820.KS",
+     "country": "KR",
+     "share": "韓系 slurry",
+     "products": "CMP slurry / 濕化學",
+     "note": "供三星/SK"
+    },
+    {
+     "name": "中砂 Kinik / 長春",
+     "ticker": "1560.TW / —",
+     "country": "TW",
+     "share": "鑽石碟/化學",
+     "products": "CMP 鑽石碟 / 電子級雙氧水",
+     "note": "台積電在地供應"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CMP slurry/pad 市佔 (Market Growth Reports)",
+     "url": "https://www.marketgrowthreports.com/market-reports/cmp-slurry-and-pads-market-116426"
+    }
+   ]
+  },
+  {
+   "id": "m-channel",
+   "row": "material",
+   "col": 6,
+   "span": 1,
+   "kind": "rail",
+   "name": "材料通路 / 廠務 / 設備代工",
+   "nameEn": "Channel · Facility · Subcon",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "半導體材料通路、無塵室廠務工程、設備代工與第三方檢測——隨台積電擴產連動、英文來源最易漏的一層。",
+   "marketSize": "英文來源最易漏",
+   "growth": "隨擴產連動",
+   "share": "null",
+   "analysis": "崇越（信越光阻台灣獨家代理+環保工程）、帆宣（廠務系統+ASML 模組代工）、漢唐/亞翔（無塵室統包）、京鼎（TEL 設備代工）、閎康（第三方失效分析）。建廠連動度高。",
+   "companies": [
+    {
+     "name": "崇越 Topco",
+     "ticker": "5434.TW",
+     "country": "TW",
+     "share": "材料通路+廠務",
+     "products": "信越光阻代理 / 無塵室工程",
+     "note": "雙引擎"
+    },
+    {
+     "name": "帆宣 Marketech / 漢唐",
+     "ticker": "6196.TW / 2404.TW",
+     "country": "TW",
+     "share": "廠務龍頭",
+     "products": "廠務系統/ASML 模組代工/無塵室",
+     "note": "擴產高能見度"
+    },
+    {
+     "name": "京鼎 Foxsemicon / 閎康 MA-tek",
+     "ticker": "3413.TW / 3587.TW",
+     "country": "TW",
+     "share": "設備代工/檢測",
+     "products": "AMAT/TEL 模組代工 / 失效分析",
+     "note": "京鼎為 AMAT 模組指標供應商"
+    },
+    {
+     "name": "翔名 / 瑞耘",
+     "ticker": "8091.TWO / 6532.TWO",
+     "country": "TW",
+     "share": "OEM 零組件",
+     "products": "黃光備品 / 前段設備零組件",
+     "note": "全球前段設備廠 OEM"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "3nm 擴產設備耗材台廠 (Sinotrade)",
+     "url": "https://www.sinotrade.com.tw/richclub/hotstock/3奈米擴產引爆EUV掩膜與耗材商機-家登-帆宣-中砂-閎康如何坐穩設備升級紅利-股市話題-6965aaee9c4008268f8cf662"
+    }
+   ]
+  },
+  {
+   "id": "m-target",
+   "row": "material",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "濺鍍靶材 / 石英件",
+   "nameEn": "Sputtering Target · Quartzware",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "GAA 金屬閘極/內連線 PVD 用高純濺鍍靶材，與爐管/反應腔高溫石英陶瓷件。",
+   "marketSize": "null",
+   "growth": "GAA 金屬化",
+   "share": "null",
+   "analysis": "靶材 JX 金屬（~60%）、Honeywell、Tosoh 領導，台廠光洋、中國江豐切入；石英件 Ferrotec、Heraeus、信越石英。屬設備耗材鎖喉。",
+   "companies": [
+    {
+     "name": "JX Advanced Metals",
+     "ticker": "5016.T",
+     "country": "JP",
+     "share": "高純靶材龍頭",
+     "products": "高純 Cu/Ta/Co 濺鍍靶",
+     "note": "JX+Tosoh+Honeywell ~35%、前六 ~60%"
+    },
+    {
+     "name": "Honeywell / Tosoh / Materion",
+     "ticker": "HON / 4042.T / MTRN",
+     "country": "US",
+     "share": "靶材主力",
+     "products": "高純金屬靶",
+     "note": "前六大"
+    },
+    {
+     "name": "光洋應材 / 江豐",
+     "ticker": "1785.TWO / 300666.SZ",
+     "country": "TW",
+     "share": "台/中靶材",
+     "products": "薄膜濺鍍靶 / 回收",
+     "note": "在地靶材"
+    },
+    {
+     "name": "Ferrotec / Heraeus / 信越石英",
+     "ticker": "6890.T / — / —",
+     "country": "JP",
+     "share": "石英件",
+     "products": "石英/陶瓷腔體件",
+     "note": "高溫耗材"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foundry"
+    }
+   ],
+   "sources": [
+    {
+     "label": "濺鍍靶材市場 (Cognitive)",
+     "url": "https://medium.com/@cognitive_/semiconductor-sputtering-targets-market-size-was-usd-4-5-fad445cc280c"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "f-eda",
+   "f-foundry"
+  ],
+  [
+   "f-ip",
+   "f-foundry"
+  ],
+  [
+   "f-foundry",
+   "d-demand"
+  ],
+  [
+   "eq-litho",
+   "f-foundry"
+  ],
+  [
+   "eq-etch",
+   "f-foundry"
+  ],
+  [
+   "eq-depo",
+   "f-foundry"
+  ],
+  [
+   "eq-cmp",
+   "f-foundry"
+  ],
+  [
+   "eq-metro",
+   "f-foundry"
+  ],
+  [
+   "eq-clean",
+   "f-foundry"
+  ],
+  [
+   "eq-test",
+   "f-foundry"
+  ],
+  [
+   "eq-maskwriter",
+   "f-foundry"
+  ],
+  [
+   "eq-subsys",
+   "f-foundry"
+  ],
+  [
+   "m-wafer",
+   "f-foundry"
+  ],
+  [
+   "m-resist",
+   "f-foundry"
+  ],
+  [
+   "m-mask",
+   "f-foundry"
+  ],
+  [
+   "m-gas",
+   "f-foundry"
+  ],
+  [
+   "m-cmp",
+   "f-foundry"
+  ],
+  [
+   "m-channel",
+   "f-foundry"
+  ],
+  [
+   "m-target",
+   "f-foundry"
+  ]
+ ],
+ "_proposed": {}
+}

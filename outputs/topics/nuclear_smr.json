@@ -1,0 +1,450 @@
+{
+ "id": "nuclear_smr",
+ "tab": "核能 / SMR",
+ "title": "核能 / 小型模組反應爐 SMR 供應鏈 (Nuclear & SMR)",
+ "subtitle": "Nuclear & SMR — AI 資料中心爆量用電把瓶頸從晶片移到電力，核能（尤其小型模組反應爐 SMR）成 24/7 無碳基載解方。鈾價近 $86/lb；NuScale（SMR）為唯一獲 NRC 認證設計、TVA 6GW 案；hyperscaler 搶簽核電 PPA（Microsoft-Constellation 三哩島重啟、Amazon-Talen、Google-Kairos、Meta、Oracle）。價值鏈：鈾礦/濃縮/燃料 → SMR/反應爐技術 → 核電運營 → AI 資料中心。⚠ 多數 SMR 首電要等 2028-2030、純 SMR 題材股估值偏高、政策/監管風險大。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "AI 用電催化·SMR 首電 2028-30 時程風險",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "fuel",
+   "label": "鈾礦 / 濃縮 / 燃料 Uranium & Fuel",
+   "main": false
+  },
+  {
+   "id": "reactor",
+   "label": "SMR / 反應爐技術 Reactors",
+   "main": true
+  },
+  {
+   "id": "grid",
+   "label": "核電運營 / AI 資料中心 Utility & Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "uranium_fuel",
+   "row": "fuel",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "鈾礦 / 濃縮 / 燃料",
+   "nameEn": "Uranium Mining / Enrichment / Fuel",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Cameco + Kazatomprom 主導鈾礦；Centrus 為美唯一 HALEU 濃縮；脫轉換（deconversion）為 SMR 量產新單點瓶頸",
+   "desc": "核燃料循環上游：鈾礦開採、轉化、濃縮（含 SMR 用 HALEU 高純度低濃縮鈾）、脫轉換、燃料製造。",
+   "marketSize": "上游瓶頸",
+   "growth": "鈾價 ~$86",
+   "share": "null",
+   "analysis": "鈾礦：Cameco（CCJ，西方最大、2026 產量 19.5-21.5M lb）、Kazatomprom（KAP.IL，全球最大）、Uranium Energy（UEC）、Denison（DNN）；濃縮/HALEU：Centrus Energy（LEU，美唯一 HALEU 濃縮、SMR 燃料關鍵單點）、Urenco。鈾礦集中度：Kazatomprom ~40% + Cameco ~14-20%，top-2 已逾半。濃縮端更集中：Rosatom ~36%、Urenco ~30%、Orano ~14%（top-3>75%），CNNC+Rosatom+Urenco+Orano 四家握全球 ~99%——這才是真正寡占。鈾價近 $86/lb，AI 電力需求 + 西方去俄化使燃料循環成瓶頸；HALEU（多數先進 SMR 所需）供應尤其緊，Centrus 為西方唯一商業 HALEU 來源（隱性單點/壟斷級瓶頸）。2026-H1 新瓶頸：美國目前無商業級 HALEU 脫轉換（deconversion，UF6→金屬/氧化物）廠，Centrus 為 DOE 生產的 HALEU 只能以 UF6 氣態儲存待脫轉換，加上 LEU 上游產能潛在缺口，脫轉換成 SMR 量產的新單點；Oklo 與 Centrus 2026/3 宣布在俄亥俄 Piketon 共址成立脫轉換 JV，把上游燃料端鎖進供應鏈。DOE 2026/1 另頒 $2.7B 給 HALEU/LEU 濃縮並選定 Centrus 子公司 American Centrifuge Operating 取得 $900M 任務訂單。",
+   "companies": [
+    {
+     "name": "Cameco",
+     "ticker": "CCJ",
+     "country": "CA",
+     "share": "西方最大鈾礦",
+     "products": "鈾礦 / 轉化 / Westinghouse 49%",
+     "note": "2026 產量 19.5-21.5M lb；持 Westinghouse 49%；2026-03 與印度簽 ~$2.6B / ~22M lb 九年供鈾長約（2027-2035 交貨，市場連動價）——上游從題材轉為長約現金流",
+     "src": "https://www.tipranks.com/compare-stocks/nuclear-energy-revival"
+    },
+    {
+     "name": "Kazatomprom",
+     "ticker": "KAP.IL",
+     "country": "KZ",
+     "share": "全球最大鈾礦",
+     "products": "天然鈾",
+     "note": "全球鈾礦龍頭"
+    },
+    {
+     "name": "Centrus Energy",
+     "ticker": "LEU",
+     "country": "US",
+     "share": "美唯一 HALEU 濃縮",
+     "products": "HALEU / LEU 濃縮 / 脫轉換 JV",
+     "note": "先進 SMR 燃料關鍵單點；backlog ~$3.8B 延至 2040；DOE 2026/1 頒 $2.7B HALEU/LEU 濃縮、選定子公司 American Centrifuge Operating 取得 $900M 任務訂單於 Piketon 擴大商業級 HALEU、既有 HALEU 合約延至 2026/6/30（含至多 8 年選項），NNSA 已表態擬獨家採購部分濃縮活動；2026-03 與 Oklo 宣布在俄亥俄 Piketon 共址成立脫轉換（deconversion）JV——美國目前無商業級 HALEU 脫轉換廠，此為解 SMR 量產單點瓶頸關鍵；2026 與 Oklo 簽 LOI 供 HALEU 給至多 5 座 Aurora、2029 起交付",
+     "src": "https://www.ans.org/news/article-7652/doe-awards-27b-for-haleu-and-leu-enrichment/"
+    },
+    {
+     "name": "Uranium Energy / Denison",
+     "ticker": "UEC / DNN",
+     "country": "US",
+     "share": "北美鈾礦",
+     "products": "鈾礦開採",
+     "note": "美國本土供應"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "smr_developer"
+    },
+    {
+     "id": "reactor_oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "核能股 2026 (TipRanks)",
+     "url": "https://www.tipranks.com/compare-stocks/nuclear-energy-revival"
+    },
+    {
+     "label": "HALEU 脫轉換瓶頸 (World Nuclear)",
+     "url": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/high-assay-low-enriched-uranium-haleu"
+    },
+    {
+     "label": "DOE $2.7B HALEU/LEU 濃縮 (ANS)",
+     "url": "https://www.ans.org/news/article-7652/doe-awards-27b-for-haleu-and-leu-enrichment/"
+    }
+   ]
+  },
+  {
+   "id": "smr_developer",
+   "row": "reactor",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "SMR 開發商（純題材）",
+   "nameEn": "SMR Developers",
+   "competition": "emerging",
+   "single": "⚠ 高估值題材 · Oklo/NuScale 為 AI 資料中心電力代表股；多數首電 2028-2030；NRC Part 53 新框架 (2026/3) 助力，惟 HALEU 燃料 2029 才交付為量產卡點",
+   "desc": "小型模組反應爐（SMR）與微型反應爐開發商，主打可工廠化量產、貼近資料中心部署。",
+   "marketSize": "高題材高風險",
+   "growth": "首電 2028-30",
+   "share": "null",
+   "analysis": "Oklo（OKLO，Aurora 微反應爐、資料中心現場供電代表、Sam Altman 系）、NuScale（SMR，唯一 NRC 認證設計、ENTRA1 合作 TVA 6GW 案）、NANO Nuclear（NNE）、TerraPower（Bill Gates，未上市）、X-energy（Amazon 投資，未上市）、Kairos Power（Google 合作，未上市）。AI 電力需求是核心題材，但多數首電 2028-2030、商業化未定，純 SMR 股估值偏高、波動大。2026-06-15/16 傳日本擬把至多 $62.3B 投美國核能/SMR（$550B 美日貿易協議一環，~$25B 投 NuScale 經 ENTRA1、~$40B 投 GE Vernova-Hitachi BWRX-300），盤後帶動 XE +16%、SMR +10%、OKLO +5%——政策/外資是 SMR 題材最大催化，但款項分配與落地仍待確認。2026-H1 雙催化：(1) 政策——NRC 於 2026/3/25 通過全新 Part 53 風險知情、技術中立的先進反應爐執照框架（1989 年以來首個新初始執照規則，明確涵蓋 SMR/微型爐），依 E.O.14300 將於 2026/11/23 前完成 NRC 規章全面改革；DOE 2025/12 選定 TVA 與 Holtec Government Services 支援先進輕水式 SMR，合計至多 $800M 聯邦成本分攤。(2) 新進入者激增——透過 DOE Reactor Pilot Program 加速搶位：Antares（2026/1）、Radiant（2026/2）、Valar（2026/3）、Aalo（2026/3）四家於 2026 上半年取得 PDSA 核准，目標 2026/7/4 前至少三座測試爐達臨界；玩家暴增稀釋既有領先者敘事、技術路線分歧（鈉冷快堆/熔鹽/微型爐）增加標準不確定性。",
+   "companies": [
+    {
+     "name": "Oklo",
+     "ticker": "OKLO",
+     "country": "US",
+     "share": "資料中心微反應爐代表",
+     "products": "Aurora 微反應爐 + 燃料垂直整合",
+     "note": "Sam Altman 系；Meta 1.2GW 協議（俄亥俄 Pike County，PJM 併網申請推進，2030 首階段上線、2034 擴至 1.2GW）；下游綁定加深：與 Switch 主協議達 12GW、Equinix 500MW；2026-05 NRC 通過 Aurora 主要設計準則（尚未取得設計認證）；2026-03 與 Centrus 宣布 Piketon 脫轉換 JV + 簽 HALEU LOI（足供至多 5 座 Aurora、2029 起交付）——把上游燃料端鎖進自家供應鏈建立燃料安全護城河；Aurora-INL 已向 DOE 提交 PDSA、簽 Siemens Energy 電力轉換系統、Groves 同位素測試爐目標 2026/7/4 前達臨界；Q1 2026 淨損 33.1M、capex 32.8M，2026 首月再淨募 1.182B 完成 1.5B ATM；目標 2027 底 INL 首座 Aurora 商轉",
+     "src": "https://www.prnewswire.com/news-releases/oklo-centrus-announce-planned-joint-venture-to-advance-nuclear-fuel-services-in-ohio-302708075.html"
+    },
+    {
+     "name": "NuScale Power",
+     "ticker": "SMR",
+     "country": "US",
+     "share": "唯一 NRC 認證設計 SMR",
+     "products": "VOYGR SMR (77MWe 模組)",
+     "note": "ENTRA1 合作 TVA 6GW 案（全美最大規劃核能部署，惟截至 2026-H1 仍非確定訂單 firm order）+ 羅馬尼亞 RoPower 6 模組；⚠ 2026Q1-Q2 遭證券集體訴訟，指誇大 ENTRA1 經驗能力；Q1 2026 營收僅 0.565M、淨損約 44M——估值高度依賴尚未轉確定訂單的框架協議；2026-06 將 Highly Integrated Protection System (HIPS) 設計與安全驗證合約授予 Paragon，朝每廠至多 12 模組部署關鍵安全里程碑邁進；日本已確認最高 $25B 投 NuScale/美 SMR 供應鏈（$550B 美日協議一環），帶動 SMR 30 日內 +28%——政策外資為最大催化但波動大",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001822966/000182296626000052/a2026-05x07xnuscaleq1202.htm"
+    },
+    {
+     "name": "NANO Nuclear Energy",
+     "ticker": "NNE",
+     "country": "US",
+     "share": "微反應爐新創",
+     "products": "ZEUS / ODIN 微反應爐",
+     "note": "早期、題材股"
+    },
+    {
+     "name": "TerraPower / X-energy / Kairos",
+     "ticker": "XE（X-energy）",
+     "country": "US",
+     "share": "私有/新上市先進 SMR",
+     "products": "Natrium / Xe-100 / KP-FHR",
+     "note": "Gates/Amazon/Google 系；X-energy 2026-04 IPO 上市（XE，定價 $23、開盤 $30.11、首日收 +27%、募 >$10 億為史上最大核能 IPO），客戶含 Dow（德州 Seadrift 共生案、NRC 環評獲 FONSI）、Amazon×Energy Northwest（320→960MWe）、英 Centrica（~6GWe JDA）；TerraPower/Kairos 仍未上市"
+    },
+    {
+     "name": "Terrestrial Energy",
+     "ticker": "IMSR",
+     "country": "CA",
+     "share": "新上市 Gen-IV SMR",
+     "products": "IMSR 整體式熔鹽爐",
+     "note": "2025-10 經 HCM II SPAC 上 Nasdaq（IMSR）、募 >$2.92 億；提供電力 + 工業高溫熱；上市後股價回落（~$7）"
+    },
+    {
+     "name": "Aalo Atomics",
+     "ticker": "—",
+     "country": "US",
+     "share": "資料中心微反應爐新創",
+     "products": "Aalo-X / XMR",
+     "note": "2026 完成 $100M B 輪（Valor、Hitachi Ventures、NRG），累計募 >$1.36 億；DOE Pilot 選中、2026/3 取得 PDSA；首家取得商業濃縮鈾燃料合約的美核創；目標 2026-07 INL 冷臨界、2027 旁建實驗資料中心（首座反應爐+資料中心共建）"
+    },
+    {
+     "name": "Antares / Radiant / Valar",
+     "ticker": "—",
+     "country": "US",
+     "share": "DOE Pilot 新進微型爐",
+     "products": "微型/移動式反應爐",
+     "note": "DOE Reactor Pilot Program 新進入者：Antares（2026/1）、Radiant（2026/2）、Valar（2026/3）均取得 PDSA 核准，目標 2026/7/4 前至少三座測試爐達臨界——玩家暴增稀釋既有領先者敘事",
+     "src": "https://www.ans.org/news/2025-11-14/article-7543/the-progress-so-far-an-update-on-the-reactor-pilot-program/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "nuclear_utility"
+    },
+    {
+     "id": "datacenter_deal"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Oklo vs NuScale (Motley Fool)",
+     "url": "https://www.fool.com/investing/2026/05/29/nuclear-stock-face-off-is-oklo-or-nuscale-power/"
+    },
+    {
+     "label": "NRC Part 53 先進反應爐新框架 (Perkins Coie)",
+     "url": "https://perkinscoie.com/insights/blog/nrc-finalizes-new-risk-informed-technology-inclusive-regulatory-framework-advanced"
+    },
+    {
+     "label": "DOE Reactor Pilot Program 進度 (ANS)",
+     "url": "https://www.ans.org/news/2025-11-14/article-7543/the-progress-so-far-an-update-on-the-reactor-pilot-program/"
+    }
+   ]
+  },
+  {
+   "id": "reactor_oem",
+   "row": "reactor",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "大型反應爐 / 設備 OEM",
+   "nameEn": "Reactor OEM & Equipment",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "傳統大型反應爐與 SMR 製造設備：壓力容器、燃料、核島設備、SMR 量產製造。",
+   "marketSize": "null",
+   "growth": "大型+SMR",
+   "share": "null",
+   "analysis": "GE Vernova（GEV，BWRX-300 SMR、Hitachi 合作）、Westinghouse（Cameco+Brookfield 持有，AP1000+AP300 SMR）、BWX Technologies（BWXT，海軍反應爐+SMR 製造+HALEU）、Holtec（SMR-300，未上市）、Doosan Enerbility（韓，核島鍛件）。GE Vernova + BWXT 為「賣鏟人」式核心設備供應；BWXT 對美海軍核反應爐近獨佔（2026 NNPP 新約 >$14 億），且 2026-06 製造 TRISO 燃料達成 DOE 計畫 40 年來首次新反應爐臨界——燃料製造端的隱性卡位者，比題材 SMR 股更具定價權。",
+   "companies": [
+    {
+     "name": "GE Vernova",
+     "ticker": "GEV",
+     "country": "US",
+     "share": "西方首座在建商業 SMR",
+     "products": "BWRX-300 SMR / 核能設備",
+     "note": "與 Hitachi 合作；加拿大 OPG Darlington 首座 BWRX-300 取得安大略省最終核准、2026 首座機組進入全尺寸施工（西方首座商業 SMR、共 4 座，領先多數仍在設計/執照階段者）；2026 與 AFRY 簽 Main Services Agreement、與 Hitachi 簽東南亞部署 MOU；BWRX-300 設計獲英國核准可使用；波蘭 OSGE 規劃 24 座；日本傳擬投 ~$40B 給 GEV-Hitachi BWRX-300（田納西/阿拉巴馬 3GW）——商業化進度領先純題材 SMR",
+     "src": "https://www.world-nuclear-news.org/articles/ge-vernova-hitachi-smr-design-cleared-for-use-in-uk"
+    },
+    {
+     "name": "BWX Technologies",
+     "ticker": "BWXT",
+     "country": "US",
+     "share": "核島製造+HALEU",
+     "products": "反應爐元件 / 海軍核 / SMR 製造",
+     "note": "核製造賣鏟人"
+    },
+    {
+     "name": "Westinghouse",
+     "ticker": "—",
+     "country": "US",
+     "share": "AP1000/AP300",
+     "products": "AP1000 大型 / AP300 SMR",
+     "note": "Cameco 49% + Brookfield 持有"
+    },
+    {
+     "name": "Doosan Enerbility",
+     "ticker": "034020.KS",
+     "country": "KR",
+     "share": "核島鍛件",
+     "products": "反應爐鍛件 / SMR 製造",
+     "note": "韓系核設備"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "uranium_fuel"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "nuclear_utility"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GE Vernova 核能 (官方)",
+     "url": "https://www.gevernova.com/nuclear"
+    }
+   ]
+  },
+  {
+   "id": "nuclear_utility",
+   "row": "grid",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "核電運營商",
+   "nameEn": "Nuclear Utilities",
+   "competition": "oligopoly",
+   "single": "Constellation 三哩島為 Microsoft 重啟；Talen-Amazon、Vistra 現役核電受惠 AI 用電",
+   "desc": "現役核電運營商，因 AI 資料中心用電 + 機組延役/重啟而重估值。",
+   "marketSize": "現役基載",
+   "growth": "重啟+延役",
+   "share": "null",
+   "analysis": "Constellation Energy（CEG，美最大核電商、三哩島為 Microsoft 重啟、收 Calpine）、Vistra（VST，核電+天然氣）、Talen Energy（TLN，與 Amazon 簽資料中心供電）、Public Service Enterprise（PEG）。現役核電是最快可用的 24/7 無碳基載，hyperscaler 直接簽 PPA，使運營商估值重估。",
+   "companies": [
+    {
+     "name": "Constellation Energy",
+     "ticker": "CEG",
+     "country": "US",
+     "share": "美最大核電商",
+     "products": "核電運營 / PPA",
+     "note": "三哩島為 Microsoft 重啟；2026-01 完成 $22B 收購 Calpine，成全美最大發電商（~55GW）"
+    },
+    {
+     "name": "Vistra",
+     "ticker": "VST",
+     "country": "US",
+     "share": "核電+天然氣",
+     "products": "核電 + 燃氣發電",
+     "note": "2026-01 與 Meta 簽 20 年 PPA >2.1GW（Beaver Valley/Perry/Davis-Besse）"
+    },
+    {
+     "name": "Talen Energy",
+     "ticker": "TLN",
+     "country": "US",
+     "share": "資料中心供電",
+     "products": "核電 + 資料中心 PPA",
+     "note": "與 Amazon 擴大 PPA 至 1,920MW（Susquehanna，至 2042）；AWS 投賓州 $20B 並擬於園區探索新建 SMR"
+    },
+    {
+     "name": "Public Service / NextEra",
+     "ticker": "PEG / NEE",
+     "country": "US",
+     "share": "核電運營",
+     "products": "核電 + 再生能源",
+     "note": "基載運營"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "smr_developer"
+    },
+    {
+     "id": "reactor_oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "datacenter_deal"
+    }
+   ],
+   "sources": [
+    {
+     "label": "核能 AI 電力股 (InvestorIdeas)",
+     "url": "https://www.investorideas.com/news/2026/energy/05131-nuclear-stocks-ai-power-demand.asp"
+    }
+   ]
+  },
+  {
+   "id": "datacenter_deal",
+   "row": "grid",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "AI 資料中心電力需求",
+   "nameEn": "AI Datacenter Power Demand",
+   "competition": "emerging",
+   "single": "hyperscaler 搶簽核電 PPA：MSFT/AMZN/GOOG/Meta/Oracle 鎖定無碳基載",
+   "desc": "AI 資料中心成核能需求最大新增來源，hyperscaler 直接簽長約鎖定核電/SMR 產能。",
+   "marketSize": "需求錨點",
+   "growth": "結構性催化",
+   "share": "null",
+   "analysis": "Microsoft（三哩島重啟 PPA）、Amazon（Talen + X-energy SMR 投資）、Google（Kairos SMR 合作）、Meta（2026-01 與 Vistra/Oklo/TerraPower 簽至多 6.6GW 20 年核電協議，含 Oklo 俄亥俄 1.2GW 案、PJM 併網申請推進）、Oracle（SMR 供電 datacenter）。2025 起電力成 AI 擴張瓶頸，hyperscaler 從「找晶片」轉為「找電」，核能/SMR 為 24/7 無碳解方的首選錨點，是整個核能板塊的需求催化。2026-H1 上下游綁定加深：Oklo 與 Switch 主協議達 12GW、Equinix 500MW；新玩家 Riot Platforms（RIOT，比特幣礦商）與 Terrestrial Energy 啟動核能資料中心合作，形成礦商→核能新上下游關係。",
+   "companies": [
+    {
+     "name": "Microsoft / Amazon",
+     "ticker": "MSFT / AMZN",
+     "country": "US",
+     "share": "核電 PPA 領先",
+     "products": "三哩島重啟 / Talen + X-energy",
+     "note": "鎖定無碳基載"
+    },
+    {
+     "name": "Google / Meta",
+     "ticker": "GOOGL / META",
+     "country": "US",
+     "share": "SMR 合作",
+     "products": "Kairos SMR / Vistra+Oklo+TerraPower 至多 6.6GW",
+     "note": "Meta 已成美企業核電採購最大戶之一（2026-01）"
+    },
+    {
+     "name": "Oracle",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "SMR datacenter",
+     "products": "SMR 供電 datacenter",
+     "note": "Stargate 電力"
+    },
+    {
+     "name": "Riot Platforms",
+     "ticker": "RIOT",
+     "country": "US",
+     "share": "礦商→核能 AI datacenter",
+     "products": "核能供電大型資料中心",
+     "note": "2026 與 Terrestrial Energy 啟動合作開發核能供電大型資料中心專案——比特幣礦商跨入核能 AI datacenter 的新上下游關係",
+     "src": "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "smr_developer"
+    },
+    {
+     "id": "nuclear_utility"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "AI 電力需求驅動核能 (StockShips)",
+     "url": "https://stockships.com/ai-power-stocks-playbook/"
+    },
+    {
+     "label": "Terrestrial Energy × Riot 核能資料中心合作",
+     "url": "https://www.riotplatforms.com/terrestrial-energy-and-riot-platforms-launch-collaboration-to-develop-nuclear-powered-large-scale-data-center-projects/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "uranium_fuel",
+   "smr_developer"
+  ],
+  [
+   "uranium_fuel",
+   "reactor_oem"
+  ],
+  [
+   "smr_developer",
+   "nuclear_utility"
+  ],
+  [
+   "smr_developer",
+   "datacenter_deal"
+  ],
+  [
+   "reactor_oem",
+   "nuclear_utility"
+  ],
+  [
+   "nuclear_utility",
+   "datacenter_deal"
+  ]
+ ],
+ "_proposed": {}
+}

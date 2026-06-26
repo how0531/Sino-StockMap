@@ -1,0 +1,467 @@
+{
+ "id": "bbu",
+ "tab": "資料中心 BBU",
+ "title": "AI 資料中心備援電池模組 BBU 供應鏈 (Data Center Battery Backup Unit)",
+ "subtitle": "BBU（Battery Backup Unit）是 AI 機櫃內為 GPU 提供「掉電瞬時備援」的專用鋰電池模組——當市電或 PSU 異常時撐住數十毫秒至數分鐘，讓 GPU 不致崩潰。NVIDIA GB300 NVL72 把 BBU 從 GB200 的「選配」升級為「標配」（每櫃約 $1,500、單模組製造成本約 $300），2025 GB200/GB300 出貨約 2.7–2.8 萬櫃、2026 上看 5–6 萬櫃，BBU 規格也從 5.5kW 走向 8/12kW，是 ASP 與毛利雙升的甜蜜點。價值鏈：電芯（Molicel/三星SDI/LG/CATL）→ BBU 模組+BMS（AES-KY 6781.TW、順達 3211.TWO、新盛力 4931.TWO、加百裕 3323.TWO）→ 電源托盤/Power Shelf 整合（台達電 2308.TW、光寶 2301.TW）→ AI 伺服器/CSP 資料中心。台廠在模組層近乎主導：AES-KY 2026 Q1 EPS 10.64 元、HVDC BBU 拚 2026H2–2027 量產；順達 2026 BBU 營收上看 50 億、非 IT 占比破五成、EPS 上看 12.85 元；新盛力 BBU 占比已達五成、產能 2026 年增約五成。絃外之音：市場焦點多在電芯與模組，但真正卡關的單點是『模組廠 × CSP 認證 × HVDC 規格升級』——能跟著 Power Shelf 一起整合出貨、且通過 NVIDIA/CSP 嚴苛安規（熱失控防護）的模組廠，才能吃到 8/12kW 與 800V HVDC 的 ASP 倍增紅利；純電芯廠反而被夾在規格與安規門檻之間。AI BBU 電源市場 2024 約 $12 億 → 2034 $35 億（CAGR ~11.5%），但機櫃標配化使台廠模組廠營收成長遠快於大盤。⚠ 與既有 power（PSU/HVDC/VRM 機櫃電源）、ess（電網級長時儲能）主題部分重疊；本主題聚焦『機櫃級毫秒備援電池模組 × 台廠主導』視角。非投資建議。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "25+"
+  },
+  {
+   "k": "AI BBU 電源市場",
+   "v": "$35億",
+   "sub": "2024 $12 億 → 2034 $35 億（CAGR ~11.5%）；單櫃 BBU 約 $1,500",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "GB300「選配變標配」＋8/12kW/HVDC ASP 倍增·風險：CSP capex 循環＋熱失控安規＋電芯短缺",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "cell",
+   "label": "上游：電芯 / 原料（BBU 的能量來源）",
+   "main": false
+  },
+  {
+   "id": "module",
+   "label": "中游：BBU 模組 + BMS（台廠主導的核心層）",
+   "main": true
+  },
+  {
+   "id": "integ",
+   "label": "整合：電源托盤 / Power Shelf（PSU+BBU 合一）",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "下游：AI 伺服器 / CSP 資料中心（終端需求）",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "cells",
+   "row": "cell",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "電芯 / 高功率鋰電池芯",
+   "nameEn": "Battery Cells (High-Power Li-ion)",
+   "competition": "oligopoly",
+   "single": "卡位點 · Molicel（台泥子公司）5/8kW BBU 電芯已量產出貨多家 CSP、訂單能見度逾 2026 且超過原產能 2 倍，是台廠少數握有高功率圓柱電芯的關鍵單點",
+   "desc": "BBU 的能量核心——需高功率放電（瞬時大電流）、高循環壽命、熱穩定（防熱失控）的鋰電芯，多採三元（NMC）圓柱或 LFP；是模組廠的最大成本與安規源頭。",
+   "marketSize": "BBU 用高功率電芯，併入鋰電芯大盤",
+   "growth": "鋰電 BBU 需求 CAGR ~20%（至 2030）",
+   "share": "null",
+   "analysis": "電芯是 BBU 的成本與安規命門：需在數十毫秒內輸出大電流、又要通過 NVIDIA/CSP 的熱失控（thermal runaway）防護驗證。台廠 Molicel（台泥 TCC 集團子公司，未上市）以超高功率圓柱電芯切入，S 系列 5/8kW BBU 已量產供多家全球 CSP，訂單能見度逾 2026、超過原產能 2 倍——是台廠在電芯層最強單點（惟 2025 廠房火災為供給變數）。國際大廠三星SDI、LG Energy Solution（JP6 UPS 機架＋次世代 2170 BBU）、Panasonic、CATL/比亞迪（LFP）並進。電芯供給若吃緊，將成 2026 模組廠出貨的真實瓶頸。",
+   "companies": [
+    {
+     "name": "Molicel（台泥集團）",
+     "ticker": "—",
+     "country": "TW",
+     "share": "台廠高功率圓柱電芯關鍵單點",
+     "products": "S 系列超高功率電芯（5/8kW BBU）",
+     "note": "未上市；母公司台泥 1101.TW；訂單逾 2026、>2x 原產能；2025 廠房火災為供給變數",
+     "src": "https://www.molicel.com/about/"
+    },
+    {
+     "name": "三星SDI",
+     "ticker": "006400.KS",
+     "country": "KR",
+     "share": "BBU/UPS 電芯國際大廠",
+     "products": "NMC/圓柱電芯",
+     "note": "資料中心備援電芯供應",
+     "src": "https://ithy.com/article/bbu-supply-chain-manufacturers-market-share-p4ndn0vg"
+    },
+    {
+     "name": "LG Energy Solution",
+     "ticker": "373220.KS",
+     "country": "KR",
+     "share": "AI 資料中心電池方案",
+     "products": "JP6 UPS 機架 / 次世代 2170 BBU",
+     "note": "2026 EES Europe 展出 AI 資料中心備援方案",
+     "src": "https://www.koreaherald.com/article/10783832"
+    },
+    {
+     "name": "Panasonic Energy",
+     "ticker": "6752.T",
+     "country": "JP",
+     "share": "高品質圓柱電芯",
+     "products": "圓柱鋰電芯",
+     "note": "BBU/UPS 電芯供應"
+    },
+    {
+     "name": "CATL / 比亞迪",
+     "ticker": "300750.SZ",
+     "country": "CN",
+     "share": "全球電芯龍頭（LFP/NMC）",
+     "products": "LFP / 三元電芯",
+     "note": "資料中心備援與儲能電芯；成本領先",
+     "src": "https://ithy.com/article/bbu-supply-chain-manufacturers-market-share-p4ndn0vg"
+    },
+    {
+     "name": "興能高",
+     "ticker": "6558.TWO",
+     "country": "TW",
+     "share": "台廠電芯/模組 BBU 概念",
+     "products": "鋰電芯 / 電池模組",
+     "note": "BBU 與 AI/AR 題材；台廠電芯一員",
+     "src": "https://www.cmoney.tw/forum/article/168596864"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "bbu_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Molicel：超高功率電芯與 BBU 供應",
+     "url": "https://www.molicel.com/about/"
+    },
+    {
+     "label": "LG Energy Solution：AI 資料中心電池方案 (Korea Herald)",
+     "url": "https://www.koreaherald.com/article/10783832"
+    },
+    {
+     "label": "BBU 供應鏈：從電芯到系統整合 (Ithy)",
+     "url": "https://ithy.com/article/bbu-supply-chain-manufacturers-market-share-p4ndn0vg"
+    }
+   ]
+  },
+  {
+   "id": "bbu_module",
+   "row": "module",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "BBU 模組 + BMS（台廠主導核心層）",
+   "nameEn": "BBU Module + BMS (Taiwan-led core)",
+   "competition": "highgrowth",
+   "single": "本主題權力中心 · AES-KY（6781.TW，新普 6121.TWO 子公司）為 BBU 模組龍頭，2026 Q1 EPS 10.64 元（季增 12%）、HVDC BBU 拚 2026H2–2027 量產，高進入門檻＝高附加價值",
+   "desc": "把電芯組成可插拔的機櫃備援模組（含 BMS 電池管理、保護板、熱管理、機構件），通過 NVIDIA/CSP 安規與壽命驗證——這是台廠近乎主導、且 ASP 隨 5.5→8/12kW＋HVDC 升級而倍增的核心環節。",
+   "marketSize": "單櫃 BBU 約 $1,500、單模組約 $300（製造）",
+   "growth": "GB200/300 機櫃 2025 ~2.7–2.8 萬 → 2026 5–6 萬櫃",
+   "share": "null",
+   "analysis": "模組層是 BBU 投資主軸、台廠近乎包辦：AES-KY（6781.TW，NB 電池龍頭新普 6121.TWO 的高功率子公司）為龍頭，2026 Q1 EPS 10.64 元（季增 12%）、近四季 EPS 39.13 元，HVDC BBU 已就緒拚 2026H2–2027 量產，高門檻帶來附加價值與市占。順達（3211.TWO）2026 BBU 營收上看 50 億、非 IT 占比突破五成、產能翻倍、5.5kW 為主流 8/12kW 接棒、毛利率拚 20.9%、EPS 上看 12.85 元、2027 挑戰 19.8 元。新盛力（4931.TWO）BBU 占比已達五成、總產能 2026 年增約五成、4 月營收年增近翻倍。加百裕（3323.TWO）聯手系統電搶攻美國製造 BBU。絃外之音：能跟 Power Shelf 一起整合出貨＋通過熱失控安規＋卡進 800V HVDC 規格者，才吃得到 ASP 倍增紅利。",
+   "companies": [
+    {
+     "name": "AES-KY 全漢能源科技",
+     "ticker": "6781.TW",
+     "country": "TW",
+     "share": "BBU 模組龍頭",
+     "products": "伺服器 BBU 模組 / HVDC BBU / LEV 電池",
+     "note": "新普 6121.TWO 子公司；2026Q1 EPS 10.64（季增 12%）；HVDC BBU 拚 2026H2–2027 量產",
+     "src": "https://statementdog.com/analysis/6781/eps"
+    },
+    {
+     "name": "順達科技 Dynapack",
+     "ticker": "3211.TWO",
+     "country": "TW",
+     "share": "BBU 模組主力",
+     "products": "BBU 模組（5.5/8/12kW）",
+     "note": "2026 BBU 營收上看 50 億、非 IT 破五成、產能翻倍；EPS 上看 12.85、2027 拚 19.8",
+     "src": "https://money.udn.com/money/story/11074/9510421"
+    },
+    {
+     "name": "新盛力 STL Technology",
+     "ticker": "4931.TWO",
+     "country": "TW",
+     "share": "BBU 高成長股",
+     "products": "BBU 電池模組 / BMS",
+     "note": "BBU 占比已達五成；總產能 2026 年增約五成；4 月營收年增近翻倍",
+     "src": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/225722"
+    },
+    {
+     "name": "加百裕工業",
+     "ticker": "3323.TWO",
+     "country": "TW",
+     "share": "BBU + 美國製造布局",
+     "products": "BBU 模組 / NB 電池模組",
+     "note": "聯手系統電搶攻美國製造 BBU；台灣三大 NB 電池廠之一",
+     "src": "https://www.sinotrade.com.tw/richclub/hotstock/"
+    },
+    {
+     "name": "新普科技 Simplo",
+     "ticker": "6121.TWO",
+     "country": "TW",
+     "share": "NB 鋰電模組龍頭（母公司）",
+     "products": "NB 電池模組 / 經 AES-KY 切入 BBU",
+     "note": "全球 NB 鋰電模組龍頭；BBU 成長動能透過子公司 AES-KY",
+     "src": "https://www.kelvintaispace.com/simplo-twstock-6121/"
+    },
+    {
+     "name": "鵬輝能源 Great Power",
+     "ticker": "300438.SZ",
+     "country": "CN",
+     "share": "中國 BBU/儲能電池模組",
+     "products": "LFP 電池模組 / 資料中心備援",
+     "note": "陸系 BBU/儲能供應；中國自主供應鏈一員",
+     "src": "https://ithy.com/article/bbu-supply-chain-manufacturers-market-share-p4ndn0vg"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cells"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "power_shelf"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AES-KY 6781 EPS（財報狗）",
+     "url": "https://statementdog.com/analysis/6781/eps"
+    },
+    {
+     "label": "順達 2026 BBU 營收破 50 億（經濟日報）",
+     "url": "https://money.udn.com/money/story/11074/9510421"
+    },
+    {
+     "label": "新盛力 4 月營收年增近翻倍（理財周刊）",
+     "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/225722"
+    }
+   ]
+  },
+  {
+   "id": "power_shelf",
+   "row": "integ",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "電源托盤 / Power Shelf（PSU+BBU 整合）",
+   "nameEn": "Power Shelf Integration (PSU + BBU)",
+   "competition": "oligopoly",
+   "single": "整合定價權 · 台達電（2308.TW）2025 BBU 營收估增 200–300% 至約 110 億、光寶（2301.TW）估增 400–500% 至約 50 億，模組廠出貨須經此層整合進機櫃",
+   "desc": "把 BBU 模組與 PSU、電容托盤整合成機櫃的電源托盤（Power Shelf），統一供電與備援——模組廠的 BBU 多透過此層整合進 GB300 NVL72，整合廠掌握與 NVIDIA/CSP 的系統級話語權。",
+   "marketSize": "AI 機櫃電源整合，併入 power 主題大盤",
+   "growth": "台達電 BBU 2025 估 +200–300%；光寶 +400–500%",
+   "share": "null",
+   "analysis": "整合層是 BBU 上機櫃的必經關卡，與 power 主題交集：台達電（2308.TW）與光寶（2301.TW）把 BBU＋PSU 整合成 Power Shelf——台達電 2025 BBU 營收估增 200–300% 至約 110 億，光寶估增 400–500% 至約 50 億、Q3 BBU 產線量產、與 NVIDIA 共同開發 GB300 NVL72 電源架構（以儲能與功率上限控制削減電網尖峰 30%）。GB200/GB300（400VAC 輸入、Power Shelf 轉 50VDC）邁向 Vera Rubin/Kyber 的 800VDC 與 In-row Power Rack，整合複雜度與內涵價值再升。此層為寡占（台達電/光寶/Lite-On 主導），是模組廠 ASP 能否隨規格升級的閘門。",
+   "companies": [
+    {
+     "name": "台達電子 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "機櫃電源+BBU 整合龍頭",
+     "products": "Power Shelf / PSU+BBU 整合 / HVDC",
+     "note": "2025 BBU 營收估 +200–300% 至約 110 億；GB300 電源架構領導",
+     "src": "https://news.cnyes.com/news/id/6132910"
+    },
+    {
+     "name": "光寶科技 Lite-On",
+     "ticker": "2301.TW",
+     "country": "TW",
+     "share": "Power Shelf 整合 + BBU 量產",
+     "products": "Power Shelf / PSU / BBU 整合",
+     "note": "2025 BBU 估 +400–500% 至約 50 億；與 NVIDIA 共同開發 GB300 NVL72 電源",
+     "src": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91q3-bbu%E7%94%A2%E7%B7%9A%E9%A0%86%E5%88%A9%E9%87%8F%E7%94%A2-asic-ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%AE%A2%E6%88%B6%E9%9C%80%E6%B1%82%E5%BC%B7%E5%8B%81q4%E6%96%B0%E5%93%81%E6%94%BE%E9%87%8F-083930878.html"
+    },
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "BBU 電源管理晶片",
+     "products": "BBU 控制/功率半導體",
+     "note": "為 BBU 提供電源管理與功率元件方案",
+     "src": "https://www.infineon.com/technology/ai/we-power-ai/bbu"
+    },
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "資料中心電力/UPS 整合",
+     "products": "機櫃電力與備援整合",
+     "note": "資料中心電力基建整合商"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "bbu_module"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_server"
+    }
+   ],
+   "sources": [
+    {
+     "label": "台廠 BBU 供應鏈營運爆發（鉅亨網）",
+     "url": "https://news.cnyes.com/news/id/6132910"
+    },
+    {
+     "label": "光寶科 Q3 BBU 產線量產（Yahoo 股市）",
+     "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91q3-bbu%E7%94%A2%E7%B7%9A%E9%A0%86%E5%88%A9%E9%87%8F%E7%94%A2-asic-ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%AE%A2%E6%88%B6%E9%9C%80%E6%B1%82%E5%BC%B7%E5%8B%81q4%E6%96%B0%E5%93%81%E6%94%BE%E9%87%8F-083930878.html"
+    },
+    {
+     "label": "Infineon：AI 資料中心 BBU 方案",
+     "url": "https://www.infineon.com/technology/ai/we-power-ai/bbu"
+    }
+   ]
+  },
+  {
+   "id": "ai_server",
+   "row": "demand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI 伺服器 / 機櫃 ODM",
+   "nameEn": "AI Server & Rack ODM",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "把 GPU 運算板、電源托盤（含 BBU）、散熱整合成 GB300 NVL72 等 AI 機櫃的系統廠/ODM——是 BBU 標配化的直接拉貨者。",
+   "marketSize": "AI 伺服器 2026 數千億美元級",
+   "growth": "GB200/300 機櫃 2026 上看 5–6 萬櫃",
+   "share": "null",
+   "analysis": "系統廠/ODM 是 BBU 標配化的傳導樞紐：GB300 NVL72 標準化電容托盤＋（轉為標配的）BBU 系統，由鴻海、廣達、緯創/緯穎、英業達、美超微等整機櫃出貨。機櫃出貨量（2025 ~2.7–2.8 萬 → 2026 5–6 萬櫃）直接決定 BBU 模組與整合層的需求量；其電力架構選擇（50VDC→800VDC）也牽動 BBU 規格升級節奏。此層與 server 主題交集，本主題僅列以呈現需求傳導。",
+   "companies": [
+    {
+     "name": "鴻海 Foxconn",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "AI 機櫃組裝龍頭",
+     "products": "GB200/GB300 NVL72 整機櫃",
+     "note": "BBU 隨機櫃出貨的最大拉貨者之一",
+     "src": "https://english.cw.com.tw/article/article.action?id=4029"
+    },
+    {
+     "name": "廣達 Quanta",
+     "ticker": "2382.TW",
+     "country": "TW",
+     "share": "AI 伺服器 ODM",
+     "products": "AI 伺服器 / 機櫃",
+     "note": "GB300 供應鏈系統廠"
+    },
+    {
+     "name": "緯穎 Wiwynn",
+     "ticker": "6669.TW",
+     "country": "TW",
+     "share": "CSP 白牌伺服器",
+     "products": "AI 機櫃 / 電源托盤整合",
+     "note": "超大規模 CSP 機櫃供應"
+    },
+    {
+     "name": "Supermicro",
+     "ticker": "SMCI",
+     "country": "US",
+     "share": "AI 伺服器系統",
+     "products": "GB300 機櫃系統",
+     "note": "美系 AI 伺服器整合"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "power_shelf"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "csp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GB300 登場與台廠新供應鏈（CommonWealth）",
+     "url": "https://english.cw.com.tw/article/article.action?id=4029"
+    },
+    {
+     "label": "GB200/GB300 出貨與 BBU 規格（fibermall）",
+     "url": "https://www.fibermall.com/news/nvidia-here-comes-the-gb300.htm"
+    }
+   ]
+  },
+  {
+   "id": "csp",
+   "row": "demand",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "CSP / 超大規模資料中心（終端買方）",
+   "nameEn": "CSP / Hyperscale Data Centers",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "微軟、Google、AWS、Meta、Oracle 等 CSP——BBU 標配化與 HVDC 升級的最終出資方，其 capex 與安規要求定義整條 BBU 鏈的量與規格。",
+   "marketSize": "前九大 CSP 2026 capex 約 $8,300 億",
+   "growth": "資料中心儲能 2024 15.7GWh→2030 216.8GWh（CAGR 46%）",
+   "share": "null",
+   "analysis": "CSP 是 BBU 鏈的需求總源與規格制定者：TrendForce 估前九大 CSP 2026 capex 約 8,300 億美元，AI 資料中心儲能裝置量 2024 15.7GWh→2030 216.8GWh（CAGR 46.1%）。CSP 把 BBU 列為 GB300 標配、並推動 800V HVDC，同時對熱失控安規與供應商認證極嚴——這既是台廠模組廠的紅利，也是進入門檻與循環風險：一旦 CSP capex 放緩或機櫃遞延，BBU 模組廠營收彈性最大、波動也最大。絃外之音：BBU 是 AI capex 的「保險絲」，標配化使其與 GPU 出貨高度連動，但毛利取決於能否守住規格與安規領先。",
+   "companies": [
+    {
+     "name": "Microsoft / Google / AWS / Meta",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "超大規模 CSP 寡占",
+     "products": "AI 資料中心（BBU 終端買方）",
+     "note": "前九大 CSP 2026 capex 約 $8,300 億；BBU 標配與 HVDC 推手",
+     "src": "https://www.trendforce.com/presscenter/news/20260506-13033.html"
+    },
+    {
+     "name": "Oracle (OCI)",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "AI 雲快速擴張",
+     "products": "OCI AI 資料中心",
+     "note": "AI 機櫃與備援電力需求成長"
+    },
+    {
+     "name": "NVIDIA（規格制定）",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "機櫃規格定義者",
+     "products": "GB300 NVL72 / 電容托盤+BBU 標配",
+     "note": "把 BBU 列標配、推 800V HVDC，定義 BBU 規格升級節奏",
+     "src": "https://www.fibermall.com/news/nvidia-here-comes-the-gb300.htm"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ai_server"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "前九大 CSP 2026 capex $8,300 億（TrendForce）",
+     "url": "https://www.trendforce.com/presscenter/news/20260506-13033.html"
+    },
+    {
+     "label": "AI 資料中心 BBU 電源市場 2024 $1.2B→2034 $3.5B (Emergen)",
+     "url": "https://www.emergenresearch.com/industry-report/ai-data-center-bbu-power-supply-market"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "cells",
+   "bbu_module"
+  ],
+  [
+   "bbu_module",
+   "power_shelf"
+  ],
+  [
+   "power_shelf",
+   "ai_server"
+  ],
+  [
+   "ai_server",
+   "csp"
+  ]
+ ],
+ "_proposed": {}
+}

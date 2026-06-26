@@ -1,0 +1,1149 @@
+{
+ "id": "substrate",
+ "tab": "IC基板",
+ "title": "IC 載板供應鏈 (ABF / BT / 玻璃)",
+ "subtitle": "IC Substrate — 承載晶片並連接 PCB 的有機/玻璃載板。AI GPU/ASIC 推升 ABF 載板往大尺寸、高層數（3+3 → 11+11 → 13+13）演進，2026 起重回結構性短缺。最深單點為味之素 ABF 膜（~95% 獨佔）；高階 ABF 由 Ibiden（Nvidia 主供）與台廠欣興/南電/景碩主導；玻璃基板（Absolics/Intel/Samsung/DNP）為 2026-28 下世代替代。T-glass（Nittobo/PPG ~80%）與 BT 樹脂（三菱瓦斯化學）為材料端咽喉。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 16
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "60+"
+  },
+  {
+   "k": "獨佔／高階寡占單點",
+   "v": 6,
+   "sub": "味之素·Ibiden·三菱瓦斯·Nittobo·Soitec玻纖·NGK…",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "mat",
+   "label": "基板材料 Materials",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "材料 → 載板製造 → 封裝/終端 Materials · Substrate · Demand",
+   "main": true
+  },
+  {
+   "id": "equip",
+   "label": "設備 · 玻璃基板 Equipment / Glass",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "f-mat",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "核心材料閘口 / 增層膜・CCL",
+   "nameEn": "Core Materials Gateway",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · 味之素 ABF 膜 ~95%，2026 Q3 漲價 30%；全鏈最深、最脆弱單點 ⚑",
+   "desc": "ABF 載板三大關鍵材料的匯流閘口：增層介電膜（ABF）、銅箔基板（CCL，含 BT 樹脂/玻纖/銅箔）。AI 晶片由 3+3 增層走向 11+11、13+13，材料用量倍增。",
+   "marketSize": "全鏈最深單點",
+   "growth": "2026 全面漲價",
+   "share": "null",
+   "analysis": "味之素 ABF 膜 ~95% 近乎絕對獨佔，是整條先進封裝/載板鏈最深、最脆弱的單點瓶頸，2026 Q3 宣布漲價 30%、第三座岐阜廠目標 2032 量產；Resonac、三菱瓦斯化學（MGC）BT/CCL 材料 2026/4/1 起漲 30%。CCL 端台廠台光電（M8 超低損耗主導）、聯茂、台燿「CCL 三雄」與高階玻纖布同步擴產。⚑ 此節點集中度為全鏈最高。",
+   "companies": [
+    {
+     "name": "味之素 Ajinomoto",
+     "ticker": "2802.T",
+     "country": "JP",
+     "share": "ABF 膜 ~95%",
+     "products": "Ajinomoto Build-up Film (ABF)",
+     "note": "全鏈最大壟斷瓶頸、2026Q3 漲價 30%",
+     "src": "https://www.ajinomoto.co.jp/company/en/ir/"
+    },
+    {
+     "name": "三菱瓦斯化學 MGC",
+     "ticker": "4182.T",
+     "country": "JP",
+     "share": "BT 樹脂龍頭",
+     "products": "BT resin / 高階 CCL 材料",
+     "note": "2026/4/1 起 CCL 材料漲 30%",
+     "src": "https://www.mgc.co.jp/eng/ir/"
+    },
+    {
+     "name": "台光電 EMC",
+     "ticker": "2383.TW",
+     "country": "TW",
+     "share": "M8 超低損耗主導",
+     "products": "高速 CCL / 銅箔基板",
+     "note": "目標 2027 底月產 945 萬張",
+     "src": "https://www.emctw.com/en/Investor"
+    },
+    {
+     "name": "聯茂 ITEQ / 台燿 TUC",
+     "ticker": "6213.TW / 6274.TW",
+     "country": "TW",
+     "share": "CCL 三雄",
+     "products": "Low-Dk CCL / 銅箔基板",
+     "note": "AI 載板/PCB 材料同步漲價"
+    },
+    {
+     "name": "Resonac 昭和電工",
+     "ticker": "4004.T",
+     "country": "JP",
+     "share": "CCL/封裝材料",
+     "products": "CCL 樹脂材料",
+     "note": "2026/4 隨 MGC 漲 30%"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "m-film"
+    },
+    {
+     "id": "m-bt"
+    },
+    {
+     "id": "m-glasscloth"
+    },
+    {
+     "id": "m-copper"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-abf"
+    },
+    {
+     "id": "f-bt"
+    }
+   ],
+   "sources": [
+    {
+     "label": "味之素確認 ABF 漲價 30% (TechNews)",
+     "url": "https://technews.tw/2026/05/11/ajinomoto-and-abf-unimicron-nan-ya/"
+    }
+   ]
+  },
+  {
+   "id": "f-abf",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "ABF 載板（FC-BGA・高階）",
+   "nameEn": "ABF Substrate (FC-BGA)",
+   "competition": "oligopoly",
+   "single": "高階寡占 · Ibiden（Nvidia 主供）+ 欣興（全球最大）；高階 ABF 日台少數能做，2026-H1 三星電機（SEMCO）以 Nvidia Groq3 LPU/AMD HPC FCBGA 切入、首度打破日台寡占 ⚑",
+   "desc": "承載 AI GPU/ASIC/server CPU 的高層數有機載板（FC-BGA）。AI 需求推往大尺寸、20+ 層，是 CoWoS 與先進封裝的後段基座。",
+   "marketSize": "高階日台寡占",
+   "growth": "2028 缺 42%",
+   "share": "null",
+   "analysis": "健康寡占而非單點：前三大（欣興/Ibiden/Shinko）約 75%、前五約 74%、但無單一玩家 >18%——載板本身不是瓶頸，瓶頸在上游材料配額（ABF 膜、T-glass）。欣興（全球最大、20+ 層大尺寸主供高階 GPU/CoWoS）、Ibiden（Nvidia 主供，FY2026 起三年投 ¥5000 億/~$33 億擴產、岐阜廠 2026/3 達 50% 產能）、Shinko（2025/8 被 JIC 完成私有化）、南電、AT&S。高盛/外資估缺口 2H26 10%、2027 21%、2028 42%（6/3 東財彙整主流券商最新口徑），大摩另估 2030 缺口由 15% 上修至 22%、AI 占高階 ABF 需求 2030 將近 75%（研調推估）。欣興 2026 capex 三度上修至 ~340 億（2026/2/25 法說、較前版 254 億再 +34%），2026 載板產能估年增 35-40%。Samsung 電機/LG Innotek（2024 初量產 FC-BGA、攻 Tesla AI5）切入高階。2026/5 AMD 宣布逾 $100 億台灣生態系投資、並推 EFB（Embedded Fan-out Bridge，類 Intel EMIB 的矽橋封裝）於 MI450X/Venice（2H26），讓欣興/景碩/南電台廠三雄在 CoWoS 之外多一條 EFB 載板需求軌；欣興 2026/6 完成董事改選、新任董座簡水陽聚焦 AI 載板瓶頸。",
+   "companies": [
+    {
+     "name": "Ibiden",
+     "ticker": "4062.T",
+     "country": "JP",
+     "share": "高階 ABF 龍頭",
+     "products": "高密度 ABF FC-BGA 載板",
+     "note": "Nvidia 全系列主供、FY26-28 投 ¥5,000 億擴產、目標 2028 產能 2.5x、FY26 capex 上修至 ¥2,100 億（FY30 營收目標 ¥1 兆）⚑",
+     "src": "https://www.ibiden.com/ir/"
+    },
+    {
+     "name": "欣興 Unimicron",
+     "ticker": "3037.TW",
+     "country": "TW",
+     "share": "全球最大 ~22%",
+     "products": "20+ 層大尺寸 ABF FC-BGA",
+     "note": "高階 GPU/CoWoS 首選、估拿下 Nvidia 高階 GPU ABF ~35% 份額、Google TPU/AWS Trainium ASIC >50% 份額、2026 capex 三度上修至 ~340 億（~70% 投 ABF）、Q1'26 EPS 3.28 元（+446% YoY）、毛利率升至 18.0%；大摩 2026/2 升至「加碼」、目標價 NT$120.75→500、估 2025-28 EPS CAGR +105%",
+     "src": "https://www.investing.com/news/stock-market-news/morgan-stanley-upgrades-unimicron-nypcb-on-ailed-abf-substrate-upcycle-4519224"
+    },
+    {
+     "name": "Shinko 新光電氣",
+     "ticker": "6967.T",
+     "country": "JP",
+     "share": "高階 ABF 前五",
+     "products": "FC-BGA / 高階載板",
+     "note": "2025/8 被 JIC 完成私有化",
+     "src": "https://www.shinko.co.jp/english/ir/"
+    },
+    {
+     "name": "南電 Nan Ya PCB / 景碩 Kinsus",
+     "ticker": "8046.TW / 3189.TW",
+     "country": "TW",
+     "share": "前五 / 大尺寸良率",
+     "products": "ABF FC-BGA 載板",
+     "note": "南電 Q1'26 EPS 2.03 元、毛利率 15.8%（+10.8pp YoY）；大摩 2026/2 升至「加碼」目標價 NT$165→515、估 2025-28 EPS CAGR +113%，6 月再升至 850 元（買進）；景碩跨車用 ADAS、6 月股價破 500 元創高",
+     "src": "https://www.investing.com/news/stock-market-news/morgan-stanley-upgrades-unimicron-nypcb-on-ailed-abf-substrate-upcycle-4519224"
+    },
+    {
+     "name": "AT&S",
+     "ticker": "ATS.VI",
+     "country": "AT",
+     "share": "前五（歐洲）",
+     "products": "高階 IC 載板 / FC-BGA",
+     "note": "前五大合計 ~74%；FY25/26 營收 €18 億（+21% YoY 固定匯率）、2026/5/20 宣布擴 AI 載板產能"
+    },
+    {
+     "name": "Samsung 電機 / LG Innotek",
+     "ticker": "009150.KS / 011070.KS",
+     "country": "KR",
+     "share": "高階 AI 主供進場（打破日台寡占）",
+     "products": "AI/server FC-BGA",
+     "note": "Samsung 電機 2026 Q1 Package Solutions +45% YoY、R&D 年增 36%、FC-BGA 需求 >產能 50%（缺口延續至 2027）、2026/5 拿下 KRW 1.6 兆美系 AI 大單、奪 Nvidia Groq3 LPU（Vera Rubin 推論晶片）FC-BGA 首選供應商 Q2'26 量產、並與 AMD 簽 HPC 伺服器 FCBGA 供貨協議且已開始量產（韓廠首度切入 Nvidia/AMD 高階核心鏈）、再投 $12 億越南 Thai Nguyen 廠（量產 Q3'27、累計 KRW 3 兆）、目標高值 FCBGA 市佔 2026 達 >50%；LG Innotek 2026/6 與北美大廠共同開發 120mm 超大 FC-BGA（面積為 85mm 的 2x）、股價今年近 4x、封裝事業目標 2031 獲利 1 兆韓元，從車用 AI5 升級為 AI 加速器級玩家",
+     "src": "https://finance.biggo.com/news/7Z1tbJ0BOIb5XxavLMUy"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-mat"
+    },
+    {
+     "id": "eq-laser"
+    },
+    {
+     "id": "eq-plate"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-pkg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Ibiden 投 $3.3bn 擴 IC 載板 (DIGITIMES)",
+     "url": "https://www.digitimes.com/news/a20260204PD227/ibiden-expansion-capacity-production-plant.html"
+    },
+    {
+     "label": "AI 載板 2028 短缺 35%、外資調升欣興/景碩/南電 (TechNews)",
+     "url": "https://finance.technews.tw/2026/04/27/ai-carrier-board-shortage/"
+    }
+   ]
+  },
+  {
+   "id": "f-bt",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "BT 載板（記憶體・RF）",
+   "nameEn": "BT Substrate (Memory · RF)",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "以 BT（雙馬來醯亞胺三嗪）樹脂為核心的載板，用於記憶體（含 HBM 邏輯/緩衝晶片）、RF、wire-bond 與一般用途封裝。",
+   "marketSize": "台韓寡占",
+   "growth": "BT 漲 ~20%",
+   "share": "null",
+   "analysis": "BT 載板 2025-26 隨 AI 與 HBM 需求漲約 20%；台廠景碩、南電、欣興與韓廠 Simmtech、Daeduck、Samsung 電機主導。BT 樹脂源頭為三菱瓦斯化學（見材料閘口）。HBM 用 BT 載板隨 HBM3E/HBM4 放量同步吃緊。",
+   "companies": [
+    {
+     "name": "景碩 Kinsus",
+     "ticker": "3189.TW",
+     "country": "TW",
+     "share": "BT 載板主力",
+     "products": "BT 載板 / coreless / RF",
+     "note": "跨車用 ADAS、BT+ABF 雙線"
+    },
+    {
+     "name": "南電 Nan Ya PCB / 欣興 Unimicron",
+     "ticker": "8046.TW / 3037.TW",
+     "country": "TW",
+     "share": "BT 載板台廠",
+     "products": "BT 載板 / 記憶體載板",
+     "note": "ABF+BT 雙線供應"
+    },
+    {
+     "name": "Simmtech",
+     "ticker": "222800.KQ",
+     "country": "KR",
+     "share": "BT/記憶體載板領先",
+     "products": "BT 載板 / HBM 載板 / HDI",
+     "note": "SK 海力士 HBM 載板供應"
+    },
+    {
+     "name": "Daeduck Electronics",
+     "ticker": "353200.KS",
+     "country": "KR",
+     "share": "BT/ABF 擴產",
+     "products": "BT / FC-BGA 載板",
+     "note": "韓系積極擴 ABF"
+    },
+    {
+     "name": "Samsung 電機",
+     "ticker": "009150.KS",
+     "country": "KR",
+     "share": "BT/RF 載板",
+     "products": "BT 載板 / RF / 玻璃核心",
+     "note": "BT+玻璃核心雙佈局"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-mat"
+    },
+    {
+     "id": "eq-laser"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-pkg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "韓廠 BT/ABF 載板擴產 (PCD&F)",
+     "url": "https://pcdandf.com/pcdesign/index.php/editorial/menu-news/fab-news/17713-asian-pcb-makers-differentiate-strategies-continue-to-look-southward"
+    }
+   ]
+  },
+  {
+   "id": "f-china",
+   "row": "flow",
+   "col": 7,
+   "span": 2,
+   "kind": "stage",
+   "name": "中國載板 / 國產替代",
+   "nameEn": "China Substrate / Localization",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "中國 IC 載板廠以 BT 為主、積極攻 ABF/FC-BGA 國產替代；2025 起產能逐步釋放。",
+   "marketSize": "BT 為主、攻 ABF",
+   "growth": "國產替代放量",
+   "share": "null",
+   "analysis": "深南電路（投 ~60 億元擴載板）、興森科技（投 ~72 億元、含珠海高階載板）為中系雙雄；珠海越亞（無芯載板/Coreless）投 ~35 億元。多數仍聚焦 BT，高階 ABF/大尺寸 FC-BGA 良率與味之素/玻纖供應為門檻；2025-26 隨在地化政策快速放量但仍落後日台。",
+   "companies": [
+    {
+     "name": "深南電路 Shennan",
+     "ticker": "002916.SZ",
+     "country": "CN",
+     "share": "中系載板雙雄",
+     "products": "BT/ABF 載板 / PCB",
+     "note": "投 ~60 億元擴載板",
+     "src": "https://www.sz-scc.com/"
+    },
+    {
+     "name": "興森科技 Xingsen",
+     "ticker": "002436.SZ",
+     "country": "CN",
+     "share": "中系載板雙雄",
+     "products": "BT 載板 / FC-BGA / 樣品板",
+     "note": "投 ~72 億元、珠海高階載板"
+    },
+    {
+     "name": "珠海越亞 Access",
+     "ticker": "—",
+     "country": "CN",
+     "share": "無芯載板",
+     "products": "Coreless 載板",
+     "note": "投 ~35 億元、未上市→「—」"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-mat"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-pkg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "中系 IC 載板投資與國產替代 (財聯社)",
+     "url": "https://www.cls.cn/detail/1276220"
+    }
+   ]
+  },
+  {
+   "id": "f-pkg",
+   "row": "flow",
+   "col": 9,
+   "span": 2,
+   "kind": "stage",
+   "name": "封裝整合 / WoS 接合",
+   "nameEn": "Packaging Integration",
+   "competition": "monopoly",
+   "single": "客戶綁定 · 載板最終接到 TSMC CoWoS / OSAT；TSMC 是載板規格的隱性定價權方——尺寸/層數由其封裝世代（GB200/Rubin）單向制定，載板廠只能跟 ⚑",
+   "desc": "ABF/BT 載板接到先進封裝（CoWoS WoS 載板接合）或 OSAT 成型，是載板價值落地的下游。CoWoS-L/S 自 2025 底全數 booked。",
+   "marketSize": "載板下游基座",
+   "growth": "AI 拉動",
+   "share": "null",
+   "analysis": "TSMC CoWoS 將中介層+晶片接到超大尺寸高層數 ABF 載板（欣興/Ibiden 供）；ASE/Amkor 等 OSAT 承接委外與 CoWoS-like；載板尺寸/層數隨 AI 加速器世代（GB200/GB300/Rubin）持續升級，是載板需求的直接拉動端。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "CoWoS 主導",
+     "products": "WoS：中介層接 ABF 載板",
+     "note": "載板最大拉動客戶",
+     "src": "https://investor.tsmc.com/english"
+    },
+    {
+     "name": "ASE 日月光",
+     "ticker": "3711.TW",
+     "country": "TW",
+     "share": "OSAT 龍頭",
+     "products": "FC-BGA 封裝 / CoWoP / SiP",
+     "note": "載板下游組裝"
+    },
+    {
+     "name": "Amkor",
+     "ticker": "AMKR",
+     "country": "US",
+     "share": "委外承接",
+     "products": "FC-BGA / 2.5D 封裝",
+     "note": "TSMC 委外夥伴"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-abf"
+    },
+    {
+     "id": "f-bt"
+    },
+    {
+     "id": "f-china"
+    },
+    {
+     "id": "eq-aoi"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CoWoS-L/S 全 booked、ASE CoWoP (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/12/08/news-tsmcs-cowos-l-s-reportedly-fully-booked-osat-partners-step-up-with-ases-cowop-in-focus/"
+    }
+   ]
+  },
+  {
+   "id": "f-demand",
+   "row": "flow",
+   "col": 11,
+   "span": 2,
+   "kind": "demand",
+   "name": "AI 加速器 / 終端需求",
+   "nameEn": "AI Accelerators (Demand)",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "載板最終需求：AI GPU、自研 ASIC、server CPU 與 HBM。大尺寸高層數 ABF 載板需求遠超供給，是 2026-28 結構性短缺主因。",
+   "marketSize": "結構性短缺驅動",
+   "growth": "AI 超級循環",
+   "share": "null",
+   "analysis": "Nvidia（GB200/GB300/Rubin，CoWoS-L 大尺寸 ABF）為最大拉動；Broadcom（Google TPU/Meta ASIC）、AMD（MI350/MI400）、Marvell（AWS/微軟 ASIC）自研晶片成長更快、層數/尺寸升級推升 ABF 用量。server CPU（Intel/AMD）與 HBM（用 BT 載板）為配套需求。AI 平台已占 2025 server 價值 >70%。",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "最大拉動",
+     "products": "GB200/GB300/Rubin (大尺寸 ABF)",
+     "note": "CoWoS-L 帶動高層數載板",
+     "src": "https://investor.nvidia.com/"
+    },
+    {
+     "name": "Broadcom / AMD",
+     "ticker": "AVGO / AMD",
+     "country": "US",
+     "share": "自研 ASIC / GPU",
+     "products": "TPU/Meta ASIC / MI350/MI400",
+     "note": "ASIC 層數升級拉 ABF"
+    },
+    {
+     "name": "Marvell / Google / AWS",
+     "ticker": "MRVL / GOOGL / AMZN",
+     "country": "US",
+     "share": "雲端自研",
+     "products": "Trainium/TPU/Maia ASIC",
+     "note": "自研晶片放量"
+    },
+    {
+     "name": "Intel / Tesla",
+     "ticker": "INTC / TSLA",
+     "country": "US",
+     "share": "CPU / AI5",
+     "products": "server CPU / AI5 (FC-BGA)",
+     "note": "Tesla AI5 引爆韓廠載板競爭"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-pkg"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "AI 載板需求與短缺趨勢 (DIGITIMES)",
+     "url": "https://www.digitimes.com/news/a20251218PD207/abf-substrate-packaging-expansion-ai-gpu-capacity.html"
+    }
+   ]
+  },
+  {
+   "id": "m-film",
+   "row": "mat",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "ABF 增層膜",
+   "nameEn": "Ajinomoto Build-up Film",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · 味之素 ~95%，全鏈最深單點、2026Q3 漲價 30% ⚑",
+   "desc": "ABF 載板的關鍵絕緣增層介電膜，源自味之素味精化學，幾乎所有高階 CPU/GPU 載板都依賴它。",
+   "marketSize": "鎖喉點",
+   "growth": "2026Q3 漲 30%",
+   "share": "null",
+   "analysis": "味之素 ABF 膜 ~95% 近乎絕對獨佔，是整條先進封裝/載板鏈最深、最脆弱的單點；2026 Q3 漲價 30%、岐阜第三廠目標 2032 量產。積水化學份額極小，是唯一潛在第二源。",
+   "companies": [
+    {
+     "name": "味之素 Ajinomoto",
+     "ticker": "2802.T",
+     "country": "JP",
+     "share": "~95%",
+     "products": "Ajinomoto Build-up Film (ABF)",
+     "note": "全鏈最大壟斷、2026Q3 漲 30% ⚑",
+     "src": "https://www.ajinomoto.co.jp/company/en/ir/"
+    },
+    {
+     "name": "積水化學 Sekisui",
+     "ticker": "4204.T",
+     "country": "JP",
+     "share": "極小",
+     "products": "build-up film 替代材",
+     "note": "唯一潛在第二源"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-mat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "味之素 ABF ~95% 漲 30% (Wccftech)",
+     "url": "https://wccftech.com/msg-maker-ajinomoto-to-raise-prices-as-abf-substrate-supply-demand-gap-extends-to-2027/"
+    }
+   ]
+  },
+  {
+   "id": "m-bt",
+   "row": "mat",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "BT 樹脂 / CCL 樹脂",
+   "nameEn": "BT Resin / CCL Resin",
+   "competition": "oligopoly",
+   "single": "近單點 · 三菱瓦斯化學 BT 樹脂龍頭；2026/4/1 與 Resonac 同漲 30%",
+   "desc": "BT 載板與部分 CCL 的核心樹脂——BT（雙馬來醯亞胺三嗪）樹脂與環氧 CCL 樹脂。",
+   "marketSize": "材料咽喉",
+   "growth": "2026/4 漲 30%",
+   "share": "null",
+   "analysis": "三菱瓦斯化學（MGC）為 BT 樹脂全球龍頭，2026/4/1 起與 Resonac 同步將 CCL 相關材料漲 30%；是 BT 載板與高階 CCL 的材料咽喉，與味之素 ABF 膜並列載板兩大日系材料源。",
+   "companies": [
+    {
+     "name": "三菱瓦斯化學 MGC",
+     "ticker": "4182.T",
+     "country": "JP",
+     "share": "BT 樹脂龍頭",
+     "products": "BT resin / CCL 樹脂",
+     "note": "2026/4 漲 30%",
+     "src": "https://www.mgc.co.jp/eng/ir/"
+    },
+    {
+     "name": "Resonac 昭和電工",
+     "ticker": "4004.T",
+     "country": "JP",
+     "share": "CCL 樹脂",
+     "products": "CCL/封裝樹脂",
+     "note": "與 MGC 同步漲 30%"
+    },
+    {
+     "name": "長春 Chang Chun",
+     "ticker": "—",
+     "country": "TW",
+     "share": "樹脂/銅箔台廠",
+     "products": "環氧樹脂 / CCL 材料",
+     "note": "未上市→「—」"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-mat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MGC/Resonac CCL 材料漲 30% (DIGITIMES)",
+     "url": "https://www.digitimes.com/news/a20260513PD230/ic-substrate-abf-substrate-demand-substrate-2026.html"
+    }
+   ]
+  },
+  {
+   "id": "m-glasscloth",
+   "row": "mat",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "玻纖布 / T-glass",
+   "nameEn": "Glass Cloth / T-glass",
+   "competition": "monopoly",
+   "single": "近獨佔 · Nittobo 單家 ~90% T-glass（+PPG 合計 >80%）；高速訊號完整性無可替代、AI 載板真正卡脖子點 ⚑",
+   "desc": "CCL 的補強玻纖布，高階 AI 用低介電 T-glass（低 Dk）確保高速訊號完整性。",
+   "marketSize": "高速材料咽喉",
+   "growth": "2026 產能 3x",
+   "share": "null",
+   "analysis": "T-glass 結構比載板更集中：Nittobo（日東紡）單家約 90%、加 PPG 合計 >80%（兩家口徑），高階 NER/Low-Dk2 Nittobo ~60-70%；Nittobo 投 ¥1500 億擴產、2026 底量產後產能三倍，但建廠到量產需 2-3 年、為 AI 載板/PCB 材料真正瓶頸。⚑ 絃外之音：Nittobo 把 ~20%（2027）玻纖布織造外包給南亞（Nan Ya）——南亞既是載板廠又成 Nittobo 代織夥伴，是被低估的二階受惠者兼產能咽喉。2026/5 Nittobo 表態不再追漲、優先擴產保市佔（以量穩住 ~90% 份額、阻止台廠台玻/富喬切入），高階玻纖布供需失衡估延續至 2027 下半年。",
+   "companies": [
+    {
+     "name": "Nittobo 日東紡",
+     "ticker": "3110.T",
+     "country": "JP",
+     "share": "T-glass 主導",
+     "products": "低 Dk T-glass 玻纖布",
+     "note": "投 ¥1500 億（含福島新廠房）、FY26Q4 投產、FY27 翻倍、2028 產能 3x、規劃 2028 次世代 T-glass（客戶含 Nvidia/Apple）⚑",
+     "src": "https://www.nittobo.co.jp/english/ir/"
+    },
+    {
+     "name": "PPG",
+     "ticker": "PPG",
+     "country": "US",
+     "share": "T-glass 雙頭",
+     "products": "電子級玻纖",
+     "note": "與 Nittobo 合占 >80%（Nittobo 單家 ~90%、PPG 為差距甚大的老二）"
+    },
+    {
+     "name": "台玻 TG / 富喬 Fuhwa",
+     "ticker": "1802.TW / 1815.TW",
+     "country": "TW",
+     "share": "追趕",
+     "products": "電子玻纖布 / Low-Dk 玻纖",
+     "note": "富喬有 Low-Dk、量產待觀察"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-mat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "T-glass Nittobo/PPG ~80%、Nittobo 擴產 (UGPCB)",
+     "url": "https://www.ugpcb.com/news/trade-news/pcb-industry-t-glass-ai-servers/"
+    }
+   ]
+  },
+  {
+   "id": "m-copper",
+   "row": "mat",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "銅箔 / 化學 / 乾膜",
+   "nameEn": "Copper Foil · Chemicals · Dry Film",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "載板用超薄/低粗糙度電解銅箔、電鍍化學、乾膜光阻與銅球，是 CCL 與線路成型的基礎材料。",
+   "marketSize": "null",
+   "growth": "AI 載板拉動",
+   "share": "null",
+   "analysis": "高階載板用銅箔（低粗糙度 HVLP）由 JX 金屬、古河電工（Furukawa）、台廠長春/南亞主導；乾膜光阻旭化成/長興；電鍍化學 MKS Atotech/上村；隨高層數 ABF 對銅箔薄化/平整度要求升高，材料規格成新門檻。",
+   "companies": [
+    {
+     "name": "JX 金屬 / 古河電工",
+     "ticker": "5016.T / 5801.T",
+     "country": "JP",
+     "share": "HVLP 銅箔領先",
+     "products": "低粗糙度電解銅箔",
+     "note": "高階載板銅箔主力"
+    },
+    {
+     "name": "南亞 / 長春",
+     "ticker": "1303.TW / —",
+     "country": "TW",
+     "share": "銅箔/樹脂台廠",
+     "products": "電解銅箔 / 樹脂",
+     "note": "長春未上市→「—」"
+    },
+    {
+     "name": "旭化成 Asahi Kasei / 長興",
+     "ticker": "3407.T / 1717.TW",
+     "country": "JP",
+     "share": "乾膜光阻",
+     "products": "乾膜光阻 / 封裝膠",
+     "note": "線路成型材料"
+    },
+    {
+     "name": "MKS Atotech / 上村",
+     "ticker": "MKSI / —",
+     "country": "US",
+     "share": "電鍍化學",
+     "products": "載板電鍍化學",
+     "note": "上村未上市→「—」"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-mat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CCL/載板上游材料漲價與擴產 (esunsec)",
+     "url": "https://www.esunsec.com.tw/article/post/570"
+    }
+   ]
+  },
+  {
+   "id": "m-solder",
+   "row": "mat",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "銲料球 / C4 凸塊材料",
+   "nameEn": "Solder Ball · C4 Bump",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "載板與晶片/PCB 互連用的銲錫球（BGA ball）、C4 微凸塊與底填膠等接合材料。",
+   "marketSize": "null",
+   "growth": "AI 封裝拉動",
+   "share": "null",
+   "analysis": "BGA 銲球/微凸塊由日廠千住金屬領先、台廠昇貿與美系 Indium 競逐；高層數 FC-BGA 對銲球間距/共面性要求升高，是載板組裝良率材料。底填膠 Namics/Henkel 主導。",
+   "companies": [
+    {
+     "name": "千住金屬 Senju",
+     "ticker": "5836.T",
+     "country": "JP",
+     "share": "銲球領先",
+     "products": "微銲球 / solder paste",
+     "note": "BGA/C4 互連"
+    },
+    {
+     "name": "昇貿 Shenmao",
+     "ticker": "3551.TW",
+     "country": "TW",
+     "share": "銲料台廠",
+     "products": "BGA 銲球 / 錫膏",
+     "note": "載板組裝材料"
+    },
+    {
+     "name": "Indium / Namics(DIC)",
+     "ticker": "— / —",
+     "country": "US",
+     "share": "銲料/底填",
+     "products": "solder preform / 底填膠",
+     "note": "均未上市→「—」"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-pkg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "封裝銲料/底填材料 (Spherical Insights)",
+     "url": "https://www.sphericalinsights.com/blogs/top-25-companies-in-global-semiconductor-epoxy-mold-compound-market-market-strategic-overview-and-future-trends-2024-2035"
+    }
+   ]
+  },
+  {
+   "id": "eq-laser",
+   "row": "equip",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "雷射鑽孔設備",
+   "nameEn": "Laser Via Drilling",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "ABF/BT 載板的微盲孔（via）雷射鑽孔設備，是載板層間互連的關鍵製程設備。",
+   "marketSize": "null",
+   "growth": "交期拉長",
+   "share": "null",
+   "analysis": "ABF 載板雷射鑽孔由三菱電機（Mitsubishi Electric）與 Via Mechanics（日立系）主導，ESI(MKS)、大族雷射、LPKF（兼攻玻璃 TGV）競逐；AI 載板高層數使鑽孔量暴增、設備交期拉長。",
+   "companies": [
+    {
+     "name": "三菱電機 Mitsubishi Electric",
+     "ticker": "6503.T",
+     "country": "JP",
+     "share": "載板雷射鑽孔領先",
+     "products": "高速高精度雷射鑽孔機",
+     "note": "ABF via drilling 主力",
+     "src": "https://www.mitsubishielectric.com/fa/products/drilling/"
+    },
+    {
+     "name": "Via Mechanics",
+     "ticker": "—",
+     "country": "JP",
+     "share": "雷射鑽孔雙雄",
+     "products": "載板雷射鑽孔機",
+     "note": "日立系、未獨立上市→「—」"
+    },
+    {
+     "name": "ESI (MKS Instruments)",
+     "ticker": "MKSI",
+     "country": "US",
+     "share": "雷射加工",
+     "products": "via 鑽孔/雷射系統",
+     "note": "MKS 旗下"
+    },
+    {
+     "name": "大族雷射 / LPKF",
+     "ticker": "002008.SZ / LPK.DE",
+     "country": "CN",
+     "share": "中國 / 玻璃 TGV",
+     "products": "雷射鑽孔 / TGV LIDE",
+     "note": "LPKF 兼攻玻璃基板"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-abf"
+    },
+    {
+     "id": "f-bt"
+    }
+   ],
+   "sources": [
+    {
+     "label": "PCB/載板雷射鑽孔主要廠商 (Valuates)",
+     "url": "https://reports.valuates.com/market-reports/QYRE-Auto-22W12439/global-pcb-laser-drilling"
+    }
+   ]
+  },
+  {
+   "id": "eq-plate",
+   "row": "equip",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "電鍍 / 壓膜設備",
+   "nameEn": "Plating · Lamination",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "ABF 增層壓合（lamination）、線路電鍍與表面處理設備，是 build-up 製程核心。",
+   "marketSize": "null",
+   "growth": "載板擴產拉動",
+   "share": "null",
+   "analysis": "ABF 壓膜/真空壓合與電鍍設備由日系（名機製作所/Nikko-Materials 系）與台廠分食；CCL/載板擴產潮使壓合、電鍍設備訂單排至 2028、交期達兩年；台廠志聖/群翊（熱處理/壓合）受惠先進封裝與載板熱製程。",
+   "companies": [
+    {
+     "name": "志聖 GP Tech / 群翊 Chun Yih",
+     "ticker": "2467.TW / 6664.TWO",
+     "country": "TW",
+     "share": "載板熱處理/壓合台廠",
+     "products": "壓膜/烘烤/載板熱處理",
+     "note": "載板/玻璃基板熱製程",
+     "src": "https://www.gp-tech.com.tw/en/"
+    },
+    {
+     "name": "名機製作所 Meiki",
+     "ticker": "—",
+     "country": "JP",
+     "share": "真空壓合",
+     "products": "ABF build-up 壓合機",
+     "note": "未上市→「—」"
+    },
+    {
+     "name": "MKS Atotech",
+     "ticker": "MKSI",
+     "country": "US",
+     "share": "電鍍設備/化學",
+     "products": "載板電鍍線",
+     "note": "build-up 鍍銅"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-abf"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CCL/載板設備交期排至 2028 (DIGITIMES)",
+     "url": "https://www.digitimes.com/news/a20260402PD216/equipment-expansion-ccl-materials-demand.html"
+    }
+   ]
+  },
+  {
+   "id": "eq-aoi",
+   "row": "equip",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "AOI 檢測 / 量測",
+   "nameEn": "AOI Inspection · Metrology",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "載板線路/孔/外觀的自動光學檢測（AOI）與量測，大尺寸高層數 ABF 的良率關鍵。",
+   "marketSize": "null",
+   "growth": "良率關鍵",
+   "share": "null",
+   "analysis": "PCB/載板 AOI 由 Orbotech（KLA）、台廠牧德、由田主導；牧德為 PCB AOI 龍頭、轉攻載板/玻璃基板檢測，由田做封裝黃光 AOI；大尺寸高層數 ABF 提高檢測難度與設備需求。",
+   "companies": [
+    {
+     "name": "牧德 Machvision",
+     "ticker": "3563.TWO",
+     "country": "TW",
+     "share": "PCB/載板 AOI 龍頭",
+     "products": "AVI 外觀檢測 + 量測",
+     "note": "轉攻載板/玻璃基板檢測",
+     "src": "https://www.machvision.com.tw/en/"
+    },
+    {
+     "name": "由田 Utechzone",
+     "ticker": "3455.TWO",
+     "country": "TW",
+     "share": "封裝/載板 AOI",
+     "products": "黃光 AOI / RDL 檢測",
+     "note": "先進封裝全節點 AOI"
+    },
+    {
+     "name": "Orbotech (KLA)",
+     "ticker": "KLAC",
+     "country": "US",
+     "share": "PCB/載板 AOI 國際",
+     "products": "載板 AOI / 量測",
+     "note": "KLA 旗下"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-pkg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "牧德 PCB/載板 AOI (公司官網)",
+     "url": "https://www.machvision.com.tw/en/"
+    }
+   ]
+  },
+  {
+   "id": "eq-test",
+   "row": "equip",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "載板電測 / 探針",
+   "nameEn": "Substrate Test · Probe",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "FC-BGA 載板開短路電性測試、飛針/治具測試與探針卡，是載板出貨前的良率把關。",
+   "marketSize": "null",
+   "growth": "高層數拉動",
+   "share": "null",
+   "analysis": "載板電測由日系（武藤/MJC）與台廠分食；致茂（電性測試系統）、旺矽（探針）切入載板/封裝測試；高層數大尺寸 ABF 提高電測點數與設備需求。",
+   "companies": [
+    {
+     "name": "致茂 Chroma",
+     "ticker": "2360.TW",
+     "country": "TW",
+     "share": "電測系統台廠",
+     "products": "載板/封裝電性測試",
+     "note": "測試設備主力"
+    },
+    {
+     "name": "旺矽 MPI",
+     "ticker": "6223.TWO",
+     "country": "TW",
+     "share": "探針台廠",
+     "products": "探針卡 / 測試",
+     "note": "載板/封裝測試"
+    },
+    {
+     "name": "MJC（武藤）",
+     "ticker": "6871.T",
+     "country": "JP",
+     "share": "載板電測國際",
+     "products": "載板開短路測試機",
+     "note": "FC-BGA 電測"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-pkg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "致茂測試設備 (公司官網)",
+     "url": "https://www.chromaate.com/en/Investor"
+    }
+   ]
+  },
+  {
+   "id": "eq-glass",
+   "row": "equip",
+   "col": 6,
+   "span": 1,
+   "kind": "rail",
+   "name": "玻璃基板（下世代替代）",
+   "nameEn": "Glass Substrate (Next-gen)",
+   "competition": "emerging",
+   "single": "試產認證期 · Absolics(SKC) 喬治亞廠原型量產、Intel 厚核玻璃、DNP TGV；無量產主導者",
+   "desc": "以玻璃核心取代 ABF 有機載板的下世代封裝基板，散熱/平整度/大尺寸優於有機，是長線繞過 ABF/味之素獨佔的潛在替代。",
+   "marketSize": "長線替代 ABF",
+   "growth": "2026-28 試產→量產",
+   "share": "null",
+   "analysis": "尚在試產認證、無量產主導者：Absolics(SKC) 喬治亞 Covington 廠原型量產（年 ~1.2 萬 m²）、SKC 1.17 兆韓元現增新股 2026/6/8 上市（5,896 億韓元注入 Absolics、5,775 億還債，全球玻璃基板最大融資）、喬治亞廠已對 AMD/AWS 出量產樣品進認證、2026 底量產目標；Intel 厚核玻璃（10-2-10、整合 EMIB）NEPCON 2026 亮相、2026/6 以 3DGS 推進並規劃 $33 億印度玻璃基板廠（5-6 年建置）、2026/6 以 3DGS 推進並規劃 $33 億印度玻璃基板廠（5-6 年建置）；Samsung 電機 2026-27 量產；DNP TGV 玻璃核心 2025/12 試產線、2026 初送樣、FY2028 量產；Corning/AGC 供玻璃基材、沃格光電（中）布局。",
+   "companies": [
+    {
+     "name": "Absolics (SKC)",
+     "ticker": "011790.KS",
+     "country": "KR",
+     "share": "量產最前沿",
+     "products": "玻璃核心載板",
+     "note": "喬治亞廠原型量產、供 AMD/AWS、2026/5 對美系客戶推非埋入式(non-embedding)新玻璃製程攻下世代通訊晶片",
+     "src": "https://www.skc.kr/en/"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "先行者（自研）",
+     "products": "厚核玻璃 10-2-10 + EMIB",
+     "note": "NEPCON 2026 亮相"
+    },
+    {
+     "name": "DNP 大日本印刷",
+     "ticker": "7912.T",
+     "country": "JP",
+     "share": "TGV 試產",
+     "products": "TGV 玻璃核心載板 510×515mm",
+     "note": "2026 初送樣、FY2028 量產",
+     "src": "https://www.global.dnp/news/detail/20177773_4126.html"
+    },
+    {
+     "name": "Samsung 電機 / Corning / AGC",
+     "ticker": "009150.KS / GLW / 5201.T",
+     "country": "KR",
+     "share": "挑戰者 / 玻璃基材",
+     "products": "玻璃核心線 / 玻璃基材 / TGV",
+     "note": "Samsung 2026-27 量產、2026/4 已向 Apple/Broadcom 送玻璃基板樣品"
+    },
+    {
+     "name": "沃格光電 Wotop",
+     "ticker": "603773.SS",
+     "country": "CN",
+     "share": "中系布局",
+     "products": "玻璃基板 / TGV",
+     "note": "中國國產玻璃基板"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-pkg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Absolics(SKC) 2026 底量產玻璃基板 (TradingKey)",
+     "url": "https://www.tradingkey.com/analysis/stocks/more/261889517-absolix-skc-sk-hynix-samsung-glass-substrate-mass-production-funding-tradingkey"
+    },
+    {
+     "label": "DNP TGV 玻璃核心試產線 (DNP)",
+     "url": "https://www.global.dnp/news/detail/20177773_4126.html"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "f-mat",
+   "f-abf"
+  ],
+  [
+   "f-mat",
+   "f-bt"
+  ],
+  [
+   "f-abf",
+   "f-pkg"
+  ],
+  [
+   "f-bt",
+   "f-pkg"
+  ],
+  [
+   "f-china",
+   "f-pkg"
+  ],
+  [
+   "f-pkg",
+   "f-demand"
+  ],
+  [
+   "f-mat",
+   "f-china"
+  ],
+  [
+   "m-film",
+   "f-mat"
+  ],
+  [
+   "m-bt",
+   "f-mat"
+  ],
+  [
+   "m-glasscloth",
+   "f-mat"
+  ],
+  [
+   "m-copper",
+   "f-mat"
+  ],
+  [
+   "m-solder",
+   "f-pkg"
+  ],
+  [
+   "eq-laser",
+   "f-abf"
+  ],
+  [
+   "eq-laser",
+   "f-bt"
+  ],
+  [
+   "eq-plate",
+   "f-abf"
+  ],
+  [
+   "eq-aoi",
+   "f-pkg"
+  ],
+  [
+   "eq-test",
+   "f-pkg"
+  ],
+  [
+   "eq-glass",
+   "f-pkg"
+  ]
+ ],
+ "_proposed": {}
+}

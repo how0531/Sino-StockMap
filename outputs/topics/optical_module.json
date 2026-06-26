@@ -1,0 +1,681 @@
+{
+ "id": "optical_module",
+ "tab": "光模組",
+ "title": "800G / 1.6T 光模組供應鏈 (Pluggable Optical Transceiver)",
+ "subtitle": "Pluggable Optical Transceiver — AI 資料中心 scale-out 網路把 GPU 連起來的光模組。800G 2024-25 主流、1.6T 2025 H2 起量產、2026 放量（全球 1.6T 需求 2026 估 3,000 萬只+，NVIDIA 佔 60%+）。中際旭創（Innolight）全球出貨第一、與新易盛合計拿下 NVIDIA 800G ~60%；DSP 由 Marvell（Inphi 系）+ Broadcom 雙寡占；雷射晶片 Lumentum 唯一量產 200G/lane EML（NVIDIA 注資 $2B）。LPO/CPO 為長線降本替代但 2028 前可插拔仍主導。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 9
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "55+"
+  },
+  {
+   "k": "鎖喉／客戶獨家",
+   "v": 3,
+   "sub": "Marvell/Broadcom DSP·Lumentum 200G EML·中際旭創出貨王",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "chip",
+   "label": "DSP / 雷射晶片 Chips (DSP · EML · CW)",
+   "main": false
+  },
+  {
+   "id": "module",
+   "label": "光模組組裝 Transceiver Assembly",
+   "main": true
+  },
+  {
+   "id": "tech",
+   "label": "1.6T / LPO 新技術 Next-Gen",
+   "main": false
+  },
+  {
+   "id": "conn",
+   "label": "光連接 / 被動 / 材料 Connectivity",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "dsp",
+   "row": "chip",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "光 DSP / TIA / Driver",
+   "nameEn": "Optical DSP / TIA / Driver",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Marvell（Inphi 系）+ Broadcom 雙寡占 800G/1.6T DSP；無 DSP 模組做不出來",
+   "desc": "光模組的訊號處理核心：DSP（數位訊號處理）、TIA（跨阻放大）、Driver。決定模組速率與功耗。",
+   "marketSize": "鎖喉點",
+   "growth": "1.6T 升級",
+   "share": "null",
+   "analysis": "⚠商用 PAM4 DSP 高度集中於 Marvell（Inphi 系）——單一即約 70% 市占（六代 SerDes 領先、首發 3nm 1.6T Ara DSP，FQ1 FY27 營收 $2.42B +28% YoY、2026/2 完成收購 Celestial AI（$3.5B，Photonic Fabric scale-up 互連）與 XConn（PCIe/CXL switch）），Broadcom 為主要次位但其 DSP 多自用整合於自家 switch ASIC、外賣量有限，故『商用 DSP 市場』比『雙寡占』更接近 Marvell 獨大；Broadcom 2026/3 推 Taurus BCM83640（3nm、業界首顆 400G/lane 光 DSP）後從『多自用』轉為正面搶攻商用 1.6T DSP，與 Marvell 形成正面雙寡占對決（已 sampling、H2 2026 量產）；Semtech（+Alphawave）、MaxLinear、MACOM（TIA/driver，2026/3 推 448G/lane driver）為第二梯隊；Astera Labs 以線性光（去 DSP）切入 scale-up；中國 DSP 自主仍落後。絃外之音：LPO/LRO 線性光可整顆繞過 DSP，Marvell 的 70% 護城河同時是它最大的自我顛覆風險。",
+   "companies": [
+    {
+     "name": "Marvell",
+     "ticker": "MRVL",
+     "country": "US",
+     "share": "商用 PAM4 DSP ~70%",
+     "products": "800G/1.6T PAM4 DSP / Ara / Aquila",
+     "note": "Inphi 系；首發 3nm 1.6T Ara；OFC 2026 LPO/LRO host DSP（LPO 為自我顛覆變數）",
+     "src": "https://bepresearch.substack.com/p/the-quiet-architect"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "DSP 挑戰者（轉攻商用 1.6T）",
+     "products": "PAM4 DSP / SerDes / Taurus",
+     "note": "2026/3 推 Taurus BCM83640（3nm、業界首顆 400G/lane 光 DSP）正面搶 1.6T merchant DSP；已 sampling、OFC 2026 發表、H2 2026 量產，與 Marvell 對決白熱化",
+     "src": "https://www.servethehome.com/broadcom-launches-taurus-bcm83640-a-3nm-400g-per-lane-optical-dsp/"
+    },
+    {
+     "name": "Semtech (+Alphawave)",
+     "ticker": "SMTC",
+     "country": "US",
+     "share": "224G IC",
+     "products": "224G/lane IC / FiberEdge TIA/driver",
+     "note": "2026 推 224G linear optics 系列",
+     "src": "https://www.semtech.com/company/press/semtech-launches-224-gbps-ic-family-for-linear-optics-era"
+    },
+    {
+     "name": "MACOM / MaxLinear",
+     "ticker": "MTSI / MXL",
+     "country": "US",
+     "share": "TIA/driver / DSP",
+     "products": "448G driver / Keystone DSP",
+     "note": "MACOM 2026/3 推 448G/lane driver"
+    },
+    {
+     "name": "Tower Semiconductor",
+     "ticker": "TSEM",
+     "country": "IL",
+     "share": "矽光子代工新進",
+     "products": "相干光子電路 / 矽光子 PIC 代工",
+     "note": "向 Marvell 出貨 500 萬顆相干光子電路供 AI DC；2026/2 與 NVIDIA 合作開發 1.6T 矽光子，切入 1.6T 光引擎供應",
+     "src": "https://cryptobriefing.com/tower-semiconductor-photonic-circuits-marvell-ai/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "module_cn"
+    },
+    {
+     "id": "module_us"
+    },
+    {
+     "id": "module_tw"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Marvell OFC 2026 DC connectivity",
+     "url": "https://www.marvell.com/company/newsroom/marvell-ai-data-center-connectivity-ofc-2026.html"
+    }
+   ]
+  },
+  {
+   "id": "laser_chip",
+   "row": "chip",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "雷射晶片 EML / CW / VCSEL",
+   "nameEn": "Laser Chip (EML/CW/VCSEL)",
+   "competition": "oligopoly",
+   "single": "客戶綁定 · Lumentum 唯一量產 200G/lane EML，NVIDIA 注資 $2B；EML 產能為 2026 全鏈瓶頸",
+   "desc": "光模組的光源：EML（電吸收調變雷射）、CW DFB、VCSEL。矽不發光，雷射晶片是最深單點，200G/lane EML 緊缺。",
+   "marketSize": "最深單點",
+   "growth": "200G EML 瓶頸",
+   "share": "null",
+   "analysis": "⚠全鏈最硬單點：Lumentum（LITE）是 200G/lane EML 的事實 sole-source（唯一量產，NVIDIA 注資 $2B、Q3 FY26 營收 $808M +90% YoY），這顆 EML 直接 gate 整個 1.6T ramp；Coherent（COHR，6 吋 InP 線在德州 Sherman、DC&C 占 75% 營收、NVIDIA 亦注資 $2B）為唯一具量產潛力的挑戰者；廣義 EML 為 Lumentum/Coherent/住友/三菱寡占。中國源杰（688498.SH，國內唯一量產 100G EML）、台灣聯亞（3081.TWO InP 自製）、環宇（4991.TWO 800G PD >70%）切入。McKinsey 估 800G 收發器產能至 2027 較需求短 40-60%、1.6T 至 2029 短 30-40%；200G EML 2026 因無第二來源出現雙位數漲價，nLIGHT（自製 InP 雷射）為潛在第二供應商；NVIDIA $4B 鎖雷射產能把非 NVIDIA 買家交期推到 2027 後——此節點才是真正定價權所在。",
+   "companies": [
+    {
+     "name": "Lumentum",
+     "ticker": "LITE",
+     "country": "US",
+     "share": "200G EML 唯一量產",
+     "products": "CW DFB / 200G EML 陣列",
+     "note": "NVIDIA 注資 $2B；Q3 FY26 record $808M +90% YoY、Q4 FY26 指引創高 $960-1010M、EML 出貨量 Dec25→Dec26 估 +50%+（200G EML 唯一量產者持續加產）",
+     "src": "https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html"
+    },
+    {
+     "name": "Coherent",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "EML 雙雄",
+     "products": "EML / CW / 6-inch InP",
+     "note": "Q3 FY26 record $1.81B +21% YoY、DC +37% YoY、transceiver book-to-bill 逾 4:1、訂單能見度延伸至 2028；NVIDIA 注資 $2B"
+    },
+    {
+     "name": "源杰科技 Yuanjie",
+     "ticker": "688498.SS",
+     "country": "CN",
+     "share": "中國唯一量產 100G EML",
+     "products": "DFB / EML / CW",
+     "note": "中國 EML 自主主力"
+    },
+    {
+     "name": "聯亞 LandMark / 環宇 GCS",
+     "ticker": "3081.TWO / 4991.TWO",
+     "country": "TW",
+     "share": "InP 自製 / PD >70%",
+     "products": "InP 磊晶+DFB / 800G PD",
+     "note": "聯亞 2026/4 月營收 +115% YoY；NVIDIA 包產能至 2027"
+    },
+    {
+     "name": "Sumitomo / 三菱電機",
+     "ticker": "5802.T / 6503.T",
+     "country": "JP",
+     "share": "EML 五強(日系)",
+     "products": "EML / InP DFB",
+     "note": "EML 供應主力"
+    },
+    {
+     "name": "nLIGHT",
+     "ticker": "LASR",
+     "country": "US",
+     "share": "潛在第二來源",
+     "products": "InP 雷射 / EML",
+     "note": "自製 InP 雷射，2026/3 NVIDIA $4B 雷射布局帶動股價，被點名為 200G EML 第二來源候選",
+     "src": "https://www.financialcontent.com/article/marketminute-2026-3-2-light-speed-nlight-surges-as-nvidias-4-billion-optical-bet-ignites-laser-sector"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "module_cn"
+    },
+    {
+     "id": "module_us"
+    },
+    {
+     "id": "module_jp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA 注資 Coherent/Lumentum (CNBC)",
+     "url": "https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html"
+    }
+   ]
+  },
+  {
+   "id": "module_cn",
+   "row": "module",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "中國光模組廠（全球出貨王）",
+   "nameEn": "China Transceiver Makers",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · 中際旭創全球出貨第一、NVIDIA 800G ~50%+；與新易盛合計 NVIDIA 800G ~60%",
+   "desc": "中國模組廠以成本+產能拿下全球可插拔光模組 50%+ 份額，是 NVIDIA/Google 主力供應。",
+   "marketSize": "全球 ~50%+",
+   "growth": "+100%+ YoY",
+   "share": "null",
+   "analysis": "中際旭創（300308.SZ，2026 Q1 營收 ¥195.0 億 +192% YoY、歸母淨利 ¥57.4 億 +262% YoY、800G NVIDIA 錢包占比 >50%、1.6T 市占 50-60%、自 2025 Q3 起批量出貨、泰國基地 2026/3 滿產）；新易盛（300502.SZ，與旭創合計 NVIDIA 800G ~60%、海外營收占 78%）；天孚通信（300394.SZ，光器件/封裝、淨利率近 40% 高於模組廠）、光迅 Accelink（002281.SZ，國企）、華工科技（000988.SZ）。全球前 10 大模組廠 7 席為中國廠。⚠帳面市占王非利潤王：模組組裝淨利率 20-33%，遠低於上游 DSP/EML/器件——利潤池在晶片端。⚠地緣暗流：US Section 301（25%）+ EAR + 原產地認定收緊，旭創/新易盛已外移泰國+墨西哥避稅，但『實質轉型』認定為活變數。1.6T 2026 放量元年（需求 1.8M→30M 只、+10x），旭創+新易盛分食 NVIDIA 1.6T 訂單 ~70%（800G 為 ~60%）；TrendForce 估 2026 AI 光收發器市場 $26B（2025 $16.5B、+57% YoY）、800G+ 出貨 24M→63M 只（2.6x）；2025 optical transceiver 整體 $23.8B。",
+   "companies": [
+    {
+     "name": "中際旭創 Innolight",
+     "ticker": "300308.SZ",
+     "country": "CN",
+     "share": "全球出貨 #1（整體 ~8-9%／NVIDIA 800G >50%／1.6T 50-60%）",
+     "products": "800G / 1.6T transceiver",
+     "note": "1H2026 營收 ¥147.89 億 +36.95% YoY、歸母淨利 ¥39.95 億 +69.4% YoY、毛利率 39.33%（+6.2pp）；NVIDIA 800G 錢包占比 >50%；1.6T 自 2025 Q3 起批量出貨、Q2 2026 分批交貨、H2 放量、市占 50-60%。⚠淨利率僅 20-22%＜器件廠天孚 ~40%：帳面出貨王非利潤王",
+     "src": "https://photoncap.net/p/chinese-optical-modules-own-7-of"
+    },
+    {
+     "name": "新易盛 Eoptolink",
+     "ticker": "300502.SZ",
+     "country": "CN",
+     "share": "全球前三（出貨 #3）",
+     "products": "800G / 1.6T transceiver",
+     "note": "2026 Q1 營收 ¥83.4 億 +105.76% YoY、歸母淨利 ¥27.8 億 +76.8%、毛利率 ~49%；與旭創合計 NVIDIA 800G ~60%、1.6T ~70%；與 Meta/Microsoft/Amazon 簽 2026-2030 五年期長約框架、1.6T LPO 自 Meta/MS 訂單 2026 估貢獻 >¥500 億營收、海外占比 >90%；⚠1.6T 量產爬坡慢於預期、Q1 淨利 ¥27.8 億低於機構共識（預期 ¥32-38 億）",
+     "src": "https://www.tmtpost.com/7967261.html"
+    },
+    {
+     "name": "天孚通信 T&S",
+     "ticker": "300394.SZ",
+     "country": "CN",
+     "share": "光器件/封裝領先",
+     "products": "光引擎/陶瓷套管/隔離器/封裝",
+     "note": "模組廠上游器件主供"
+    },
+    {
+     "name": "光迅科技 Accelink",
+     "ticker": "002281.SZ",
+     "country": "CN",
+     "share": "國企老牌",
+     "products": "光晶片+模組垂直整合",
+     "note": "武漢郵科系"
+    },
+    {
+     "name": "華工科技 / 劍橋科技",
+     "ticker": "000988.SZ / 603083.SS",
+     "country": "CN",
+     "share": "第二梯隊",
+     "products": "800G 模組 / 矽光模組",
+     "note": "切入 AI 模組"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "dsp"
+    },
+    {
+     "id": "laser_chip"
+    },
+    {
+     "id": "conn_passive"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "tech_16t"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Innolight+Eoptolink 拿下 NVIDIA 800G 60% (IP-Fiber)",
+     "url": "https://ip-fiber.com/blogs/news/nvidia-orders-surge-innolight-and-eoptolink-dominate-60-of-800g-sfp-optical-modules-supply"
+    }
+   ]
+  },
+  {
+   "id": "module_us",
+   "row": "module",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "美系模組廠 / 代工",
+   "nameEn": "US Transceiver & EMS",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "美系垂直整合模組廠（自有雷射晶片）+ 代工龍頭 Fabrinet。",
+   "marketSize": "西方主力",
+   "growth": "AI 拉動",
+   "share": "null",
+   "analysis": "Coherent（COHR）、Lumentum（LITE）以自有 EML 垂直整合做高階模組；Fabrinet（FN，Q3 FY26 營收 $1.214B 創紀錄 +39% YoY）為西方品牌代工龍頭；AAOI（Applied Optoelectronics，2026 Q1 $151.1M +51% YoY、全年財測上修至 $1.1B+）切入 hyperscaler；Cisco/Arista 部分自用。",
+   "companies": [
+    {
+     "name": "Coherent",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "垂直整合高階",
+     "products": "800G/1.6T 模組 + EML",
+     "note": "DC&C 75% 營收"
+    },
+    {
+     "name": "Lumentum",
+     "ticker": "LITE",
+     "country": "US",
+     "share": "垂直整合",
+     "products": "800G 模組 + 200G EML",
+     "note": "NVIDIA $2B"
+    },
+    {
+     "name": "Fabrinet",
+     "ticker": "FN",
+     "country": "TH",
+     "share": "代工龍頭",
+     "products": "光模組代工 (OEM/ODM)",
+     "note": "Q3 FY26 $1.214B 創紀錄 +39% YoY；西方品牌代工"
+    },
+    {
+     "name": "Applied Optoelectronics",
+     "ticker": "AAOI",
+     "country": "US",
+     "share": "hyperscaler 切入",
+     "products": "800G 模組",
+     "note": "FY26 Q1 $151.1M +51% YoY；2026/3 接 hyperscaler $200M+ 1.6T 首批量產單（Q3 出貨）、年底 800G/1.6T 合計產能 >50 萬只/月；2026/3 接 hyperscaler $200M+ 1.6T 首批量產單（Q3 出貨）、年底 800G/1.6T 合計產能 >50 萬只/月"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "dsp"
+    },
+    {
+     "id": "laser_chip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "tech_16t"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Fabrinet Q1 FY26 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001408710/000140871025000054/fn-20251103xex991q126.htm"
+    }
+   ]
+  },
+  {
+   "id": "module_tw",
+   "row": "module",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "台灣光通訊軍團",
+   "nameEn": "Taiwan Optical Cluster",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "台灣光通訊廠多為零組件/小型模組，切入 AI 資料中心與 CPO 生態。",
+   "marketSize": "利基/零組件",
+   "growth": "切入 AI",
+   "share": "null",
+   "analysis": "聯鈞（3450.TW）、光聖（6442.TW）、華星光（4979.TWO）、波若威（3163.TW）、眾達-KY（4977.TW）、上詮（3363.TWO，FAU 光纖陣列）。多供應器件/被動/FAU，部分打入 NVIDIA/Coherent 供應鏈。",
+   "companies": [
+    {
+     "name": "聯鈞 / 光聖",
+     "ticker": "3450.TW / 6442.TW",
+     "country": "TW",
+     "share": "光通訊零組件",
+     "products": "光收發模組 / 光纜組件",
+     "note": "切入 800G/AI"
+    },
+    {
+     "name": "華星光 / 波若威",
+     "ticker": "4979.TWO / 3163.TW",
+     "country": "TW",
+     "share": "模組/WDM",
+     "products": "光模組 / AWG WDM",
+     "note": "資料中心光連接"
+    },
+    {
+     "name": "上詮 FOCI",
+     "ticker": "3363.TWO",
+     "country": "TW",
+     "share": "FAU 領先",
+     "products": "光纖陣列 FAU / 耦合",
+     "note": "CPO/模組共用、客戶獨家級"
+    },
+    {
+     "name": "眾達-KY",
+     "ticker": "4977.TW",
+     "country": "TW",
+     "share": "模組",
+     "products": "高速光模組",
+     "note": "資料中心"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "dsp"
+    },
+    {
+     "id": "laser_chip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "conn_passive"
+    }
+   ],
+   "sources": [
+    {
+     "label": "台灣光通訊 CPO 供應鏈 (cnYES)",
+     "url": "https://news.cnyes.com/news/id/5014649"
+    }
+   ]
+  },
+  {
+   "id": "module_jp",
+   "row": "module",
+   "col": 5,
+   "span": 1,
+   "kind": "stage",
+   "name": "日系光元件 / 材料",
+   "nameEn": "Japan Optical Components",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "日系廠以雷射晶片、光纖、被動元件供應全球模組廠。",
+   "marketSize": "上游關鍵",
+   "growth": "穩定",
+   "share": "null",
+   "analysis": "住友電工（5802.T，EML/光纖）、古河電工（5801.T）、三菱電機（6503.T，EML）為日系光元件主力，多為模組廠的雷射/光纖上游。",
+   "companies": [
+    {
+     "name": "住友電工 Sumitomo",
+     "ticker": "5802.T",
+     "country": "JP",
+     "share": "EML/光纖",
+     "products": "EML / 光纖 / 連接器",
+     "note": "上游關鍵"
+    },
+    {
+     "name": "古河電工 Furukawa",
+     "ticker": "5801.T",
+     "country": "JP",
+     "share": "光纖/連接",
+     "products": "光纖 / CPO 連接器 (Epoch)",
+     "note": "OFC 2025 12-fiber CPO connector"
+    },
+    {
+     "name": "三菱電機 Mitsubishi",
+     "ticker": "6503.T",
+     "country": "JP",
+     "share": "EML",
+     "products": "EML / InP DFB",
+     "note": "EML 供應"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "laser_chip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "module_cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "住友電工 IR",
+     "url": "https://sumitomoelectric.com/ir"
+    }
+   ]
+  },
+  {
+   "id": "tech_16t",
+   "row": "tech",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "1.6T / LPO / LRO 新世代",
+   "nameEn": "1.6T / LPO / LRO Next-Gen",
+   "competition": "highgrowth",
+   "single": "2026 = 1.6T 商轉元年（需求 1.8M→30M 只 +10x）；旭創+新易盛分食 NVIDIA 1.6T ~70%；LPO/LRO 降功耗、CPO 為長線威脅",
+   "desc": "1.6T 模組 2026 商轉元年；LPO（線性可插拔）/LRO（線性接收）省去/簡化 DSP 降功耗；CPO 共封裝為長線替代。",
+   "marketSize": "下一波",
+   "growth": "2026 元年",
+   "share": "null",
+   "analysis": "1.6T 由中際旭創領先 ramp（2025 Q3 起批量出貨、2026 加速放量、市占 50-70%），全球 1.6T 需求 2026 估 3,000 萬只+（NVIDIA 佔 60%+、其餘為 Google/Meta）；LightCounting 2026/3 估 2026 資料中心光模組市場達 $22.8B（光模組整體維持約 +60%）、其中 800G+1.6T 高速合計約 $14.6B，1.6T 2026 出貨估 5M-11M 只（口徑不一）。LPO（Linear Pluggable Optics）2026 IEEE EPS 確立框架、Semtech 224G linear IC + Marvell host DSP 推動；LPO 去 DSP 可降模組功耗 40-50%、延遲 <3ns/跳，分析師估 2026-27 逾 1/3 的 1.6T/800G 部署採 LPO/LRO（新易盛 1.6T LPO 良率 >95%、毛利率 >50%、泰國廠承接 60% 高端產能）；CPO（見 cpo 主題）為 2028+ 長線降本路線，但可插拔生態（庫存/維修/多源）使其 2028 前仍主導。",
+   "companies": [
+    {
+     "name": "中際旭創 Innolight",
+     "ticker": "300308.SZ",
+     "country": "CN",
+     "share": "1.6T ramp 領先",
+     "products": "1.6T OSFP / 2×800G",
+     "note": "2025 Q3 起量產、ASP ~¥7,800、毛利率 ~50%"
+    },
+    {
+     "name": "Marvell (LPO/LRO DSP)",
+     "ticker": "MRVL",
+     "country": "US",
+     "share": "LPO host DSP",
+     "products": "Ara 1.6T / LRO DSP",
+     "note": "OFC 2026 推 LPO/LRO"
+    },
+    {
+     "name": "Semtech (LPO IC)",
+     "ticker": "SMTC",
+     "country": "US",
+     "share": "224G linear IC",
+     "products": "FiberEdge 224G linear",
+     "note": "IEEE EPS LPO 框架 2026/3"
+    },
+    {
+     "name": "NVIDIA (需求錨點/獨買)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "1.6T 需求 60%+（GB300 每櫃 162 顆 1.6T）",
+     "products": "Rubin / Spectrum-X 採 1.6T",
+     "note": "⚠買方獨佔（monopsony）：佔 1.6T 需求 80%+（2025/26 多家估其 1.6T 需求占比已升破 80%），且垂直鎖上游稀缺供給（Lumentum/Coherent 各 $2B EML、Corning 光纖 $3.2B、$4B 雷射 lockup），把供應商市場變成自家可控；Spectrum-X Photonics CPO H2 2026"
+    },
+    {
+     "name": "Coherent / Lumentum",
+     "ticker": "COHR / LITE",
+     "country": "US",
+     "share": "1.6T EML 供應",
+     "products": "200G/lane EML for 1.6T",
+     "note": "1.6T = 8×200G"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "module_cn"
+    },
+    {
+     "id": "module_us"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "IEEE EPS Linear Pluggable Optics 白皮書",
+     "url": "https://eps.ieee.org/wp-content/uploads/2026/03/Linear-Pluggable-Optics_V2-UPDATED.pdf"
+    }
+   ]
+  },
+  {
+   "id": "conn_passive",
+   "row": "conn",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "光連接 / 被動 / MPO",
+   "nameEn": "Optical Connectivity / Passive",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "MPO/MTP 連接器、光纖、被動分光/合波等模組與資料中心佈線元件。",
+   "marketSize": "null",
+   "growth": "高速成長",
+   "share": "null",
+   "analysis": "中國天孚通信（300394.SZ）、太辰光（300570.SZ，MPO）；美系 US Conec、Senko；Corning（GLW，光纖，NVIDIA 2026/5 簽 10x 美國光連接產能擴增多年協議、最高 $3.2B 投資）。AI 資料中心光纖/連接用量隨速率倍增。",
+   "companies": [
+    {
+     "name": "Corning",
+     "ticker": "GLW",
+     "country": "US",
+     "share": "光纖龍頭",
+     "products": "光纖 / MTP / 連接",
+     "note": "NVIDIA 2026/5 簽 10x 美國產能擴增、最高 $3.2B 投資",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-and-corning-announce-long-term-partnership-to-strengthen-us-manufacturing-for-ai-infrastructure"
+    },
+    {
+     "name": "天孚通信 / 太辰光",
+     "ticker": "300394.SZ / 300570.SZ",
+     "country": "CN",
+     "share": "光器件 / MPO",
+     "products": "陶瓷套管 / MPO 連接",
+     "note": "模組廠上游"
+    },
+    {
+     "name": "US Conec / Senko",
+     "ticker": "— / —",
+     "country": "US",
+     "share": "MPO/MTP 領先",
+     "products": "MTP 連接器 / MMC",
+     "note": "private；高密度連接標準"
+    },
+    {
+     "name": "仕佳光子 GIGALIGHT",
+     "ticker": "688313.SS",
+     "country": "CN",
+     "share": "AWG/PLC",
+     "products": "AWG / PLC 分光 / DFB",
+     "note": "光晶片自主"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "module_cn"
+    },
+    {
+     "id": "module_tw"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA × Corning 光連接協議",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-and-corning-announce-long-term-partnership-to-strengthen-us-manufacturing-for-ai-infrastructure"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "dsp",
+   "module_cn"
+  ],
+  [
+   "dsp",
+   "module_us"
+  ],
+  [
+   "dsp",
+   "module_tw"
+  ],
+  [
+   "laser_chip",
+   "module_cn"
+  ],
+  [
+   "laser_chip",
+   "module_us"
+  ],
+  [
+   "laser_chip",
+   "module_jp"
+  ],
+  [
+   "module_jp",
+   "module_cn"
+  ],
+  [
+   "conn_passive",
+   "module_cn"
+  ],
+  [
+   "conn_passive",
+   "module_tw"
+  ],
+  [
+   "module_cn",
+   "tech_16t"
+  ],
+  [
+   "module_us",
+   "tech_16t"
+  ],
+  [
+   "module_tw",
+   "conn_passive"
+  ]
+ ],
+ "_proposed": {}
+}

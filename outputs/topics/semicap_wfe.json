@@ -1,0 +1,896 @@
+{
+ "id": "semicap_wfe",
+ "tab": "半導體前段設備",
+ "title": "半導體前段設備供應鏈 (Wafer Fab Equipment)",
+ "subtitle": "Wafer Fab Equipment — 晶圓廠前段設備是 AI/2nm/HBM 資本支出的核心鏟子。五強寡占（ASML 光刻獨佔 EUV、Applied Materials WFE ~19% 最大廠、Lam 蝕刻龍頭、Tokyo Electron、KLA 製程控制 ~56%）+ 細分獨佔（Lasertec EUV 光罩檢測 ~90%、Disco 切割研磨 60-70%、ASM 單片 ALD >55%、VAT 真空閥 ~34%）。2026 WFE 上看 $135–154B、2027 達 $156–210B，AI 先進邏輯+HBM/DRAM+先進封裝三條 capex 齊揚，市場 re-rating 循環延到 2027-28。台日彈性標的辛耘/弘塑/家登/京鼎/Disco/SCREEN；中國國產北方華創/中微/ACM 六家合計占全球 WFE ~6.5% 並逐步上吃成熟製程份額。⚠ 高 beta 循環股，中國出口管制與國產替代是雙面刃。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "45+"
+  },
+  {
+   "k": "2026 WFE 市場",
+   "v": "$140B+",
+   "sub": "Lam/KLA 4 月上修(原$135B)；2027 再優於 2026",
+   "hot": true
+  },
+  {
+   "k": "五強寡占",
+   "v": "~90%",
+   "sub": "ASML·AMAT·Lam·TEL·KLA",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "subsys",
+   "label": "設備子系統 / 關鍵零組件 Subsystems",
+   "main": false
+  },
+  {
+   "id": "litho",
+   "label": "微影 Lithography",
+   "main": false
+  },
+  {
+   "id": "core1",
+   "label": "沉積 / 蝕刻 Deposition & Etch",
+   "main": false
+  },
+  {
+   "id": "core2",
+   "label": "CMP·植入 / 量檢測 / 清洗熱處理 PC & Clean",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "晶圓代工 / IDM / 記憶體 Capex",
+   "main": true
+  }
+ ],
+ "nodes": [
+  {
+   "id": "subsys",
+   "row": "subsys",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "設備子系統 / 關鍵零組件",
+   "nameEn": "WFE Subsystems & Critical Components",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · VAT 真空閘閥 ~34%；是 ASML/AMAT/Lam/TEL 共同上游『賣鏟人的賣鏟人』",
+   "desc": "真空閘閥、RF/DC 電源與匹配網路、氣體流量控制、靜電吸盤、乾式真空泵、運動控制——是所有 WFE OEM 的共同上游，景氣彈性常被低估。",
+   "marketSize": "WFE 共同上游",
+   "growth": "~$50B 市場",
+   "share": "null",
+   "analysis": "設備子系統是約 $50B 的隱形市場，是五強設備廠的共同上游。VAT Group（CH，高真空閘閥 ~34% 全球領導、2025 營收 >CHF 9 億）、MKS Instruments（US，氣體輸送/RF 電源/流量控制，2024 半導體相關營收約 $1.8B）、Advanced Energy（US，RF/DC 電源與匹配網路，直接對撼 MKS）、Edwards Vacuum（Atlas Copco 旗下，乾式真空泵領導）、Ichor Systems（US，整合氣路模組）、Horiba（JP，質量流量計）、Pfeiffer Vacuum（DE，渦輪分子泵）。絃外之音：ASML 的真正鎖喉在更上游的 Carl Zeiss SMT（光學）與 TRUMPF（CO₂ 雷射）——子系統層才是設備鏈最深的單點。",
+   "companies": [
+    {
+     "name": "VAT Group",
+     "ticker": "VACN.SW",
+     "country": "CH",
+     "share": "真空閘閥 ~34%",
+     "products": "高真空閘閥 / 模組",
+     "note": "2025 營收 >CHF 9 億；critical sole-source 偏好供應商",
+     "src": "https://www.gminsights.com/industry-analysis/vacuum-valve-market"
+    },
+    {
+     "name": "MKS Instruments",
+     "ticker": "MKSI",
+     "country": "US",
+     "share": "氣體輸送/RF 領導",
+     "products": "氣體流量控制 / RF 電源 / 真空量測",
+     "note": "2024 半導體相關營收約 $1.8B",
+     "src": "https://portersfiveforce.com/blogs/competitors/mksinst"
+    },
+    {
+     "name": "Advanced Energy",
+     "ticker": "AEIS",
+     "country": "US",
+     "share": "RF/DC 電源",
+     "products": "RF/DC 電漿電源 / 匹配網路",
+     "note": "直接對撼 MKS 電源業務",
+     "src": "https://www.yolegroup.com/strategy-insights/critical-subsystems-suppliers-are-the-superstars-of-the-semiconductor-supply-chain/"
+    },
+    {
+     "name": "Edwards Vacuum (Atlas Copco)",
+     "ticker": "ATCO-A.ST",
+     "country": "SE",
+     "share": "乾式真空泵領導",
+     "products": "乾式真空泵 / 廢氣處理",
+     "note": "WFE 真空泵關鍵供應",
+     "src": "https://www.yolegroup.com/strategy-insights/critical-subsystems-suppliers-are-the-superstars-of-the-semiconductor-supply-chain/"
+    },
+    {
+     "name": "Ichor Systems",
+     "ticker": "ICHR",
+     "country": "US",
+     "share": "整合氣路模組",
+     "products": "氣體輸送子系統 / 閥組",
+     "note": "對既有氣路供應商施壓",
+     "src": "https://www.yolegroup.com/strategy-insights/critical-subsystems-suppliers-are-the-superstars-of-the-semiconductor-supply-chain/"
+    },
+    {
+     "name": "Horiba",
+     "ticker": "6856.T",
+     "country": "JP",
+     "share": "質量流量計",
+     "products": "MFC 質量流量控制器",
+     "note": "氣體流量計利基",
+     "src": "https://www.yolegroup.com/strategy-insights/critical-subsystems-suppliers-are-the-superstars-of-the-semiconductor-supply-chain/"
+    },
+    {
+     "name": "Pfeiffer Vacuum",
+     "ticker": "—",
+     "country": "DE",
+     "share": "渦輪分子泵",
+     "products": "渦輪分子泵 / 洩漏檢測",
+     "note": "Busch 集團；真空管理",
+     "src": "https://www.yolegroup.com/strategy-insights/critical-subsystems-suppliers-are-the-superstars-of-the-semiconductor-supply-chain/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "litho"
+    },
+    {
+     "id": "depo"
+    },
+    {
+     "id": "etch"
+    },
+    {
+     "id": "cmp_implant"
+    },
+    {
+     "id": "metro_pc"
+    },
+    {
+     "id": "clean_therm"
+    }
+   ],
+   "sources": [
+    {
+     "label": "設備子系統 ~$50B / VAT 34% / MKS (Yole)",
+     "url": "https://www.yolegroup.com/strategy-insights/critical-subsystems-suppliers-are-the-superstars-of-the-semiconductor-supply-chain/"
+    },
+    {
+     "label": "真空閥市場 VAT ~34% (GMInsights)",
+     "url": "https://www.gminsights.com/industry-analysis/vacuum-valve-market"
+    }
+   ]
+  },
+  {
+   "id": "litho",
+   "row": "litho",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "微影 EUV / High-NA / DUV",
+   "nameEn": "Lithography (EUV · High-NA · DUV)",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · ASML EUV 100%；2nm 以下無任何替代；DUV ASML/Nikon/Canon 寡占",
+   "desc": "把電路圖形轉印到晶圓的曝光設備——EUV/High-NA（2nm 以下唯一手段）與浸潤式 DUV（多重曝光），是整條 WFE 鏈最深、價值量最高的單點。",
+   "marketSize": "最深鎖喉",
+   "growth": "ASML 2026 €36–40B",
+   "share": "null",
+   "analysis": "ASML 100% 獨佔 EUV（NXE / High-NA EXE:5200），是 2nm 以下圖形化的唯一手段；浸潤式 DUV 也由 ASML 主導（>60%），Nikon/Canon 補位。Q1'26 營收 €8.8B（EUV 系統單季 >€4.1B、含 2 台 High-NA），記憶體佔系統營收 51%（DRAM 客戶加速採用 EUV）；2026 全年財測由 €34–39B 上修並收窄至 €36–40B、2030 模型 €44–60B；Low-NA EUV 2027 出貨目標上調至 ≥80 台（2026 ≥60、2025 出 44）。High-NA 早期客戶結構確立：EXE:5200B 首台量產機 2025Q4 出貨，Intel 14A 為首位採用者、SK Hynix 預計取得約 2 台用於次世代 DRAM，ASML 預期 2026Q2 內可見首批 High-NA 製造之記憶體/邏輯產品；TSMC 因 €350M+ 單價延後至 1.4nm 之後——顛覆『先進設備一定 TSMC 先買』直覺。中國 SMEE（上海微電子）i-line 僅 ~4%、最先進約 90nm DUV，仍落後數代。",
+   "companies": [
+    {
+     "name": "ASML",
+     "ticker": "ASML",
+     "country": "NL",
+     "share": "EUV 100% / DUV 浸潤式主導",
+     "products": "NXE / High-NA EXE:5200B / ArFi",
+     "note": "2nm 以下無替代；Q1'26 €8.8B、記憶體佔系統 51%；2026 財測收窄至 €36–40B；EXE:5200B 首台 2025Q4 出貨、Intel 14A 首採、SK Hynix 約 2 台；TSMC 延後至 1.4nm 後",
+     "src": "https://www.trendforce.com/news/2026/05/20/news-asml-expects-first-high-na-euv-memory-logic-products-within-months-amid-tsmcs-cost-driven-delay/"
+    },
+    {
+     "name": "Nikon",
+     "ticker": "7731.T",
+     "country": "JP",
+     "share": "DUV 替代源",
+     "products": "浸潤式 ArFi / i-line stepper",
+     "note": "ASML 浸潤式主導下的替代源",
+     "src": "https://www.tikr.com/blog/asml-stock-raises-2026-guidance-after-e8-8b-q1-revenue-beat"
+    },
+    {
+     "name": "Canon",
+     "ticker": "7751.T",
+     "country": "JP",
+     "share": "DUV / 奈米壓印",
+     "products": "i-line / KrF / NIL 奈米壓印",
+     "note": "奈米壓印（NIL）另闢蹊徑",
+     "src": "https://www.tikr.com/blog/asml-stock-raises-2026-guidance-after-e8-8b-q1-revenue-beat"
+    },
+    {
+     "name": "Carl Zeiss SMT",
+     "ticker": "—",
+     "country": "DE",
+     "share": "EUV 光學 sole-source",
+     "products": "EUV 反射鏡組 / NA0.55 光學",
+     "note": "未上市；無 Zeiss 無 EUV，比 ASML 更深的單點",
+     "src": "https://tech-insider.org/asml-q1-2026-revenue-earnings-guidance-raise-ai-chip/"
+    },
+    {
+     "name": "TRUMPF",
+     "ticker": "—",
+     "country": "DE",
+     "share": "EUV CO₂ 驅動雷射唯一",
+     "products": "EUV 30kW CO₂ 驅動雷射",
+     "note": "未上市；EUV 光源最上游 sole-source",
+     "src": "https://tech-insider.org/asml-q1-2026-revenue-earnings-guidance-raise-ai-chip/"
+    },
+    {
+     "name": "SMEE 上海微電子",
+     "ticker": "—",
+     "country": "CN",
+     "share": "i-line ~4% / 28nm DUV",
+     "products": "i-line / 28nm DUV 曝光機",
+     "note": "未上市；中國微影國產化主力，仍落後數代",
+     "src": "https://cset.georgetown.edu/article/inside-beijings-chipmaking-offensive/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "subsys"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASML 2026 財測 €36–40B (TIKR)",
+     "url": "https://www.tikr.com/blog/asml-stock-raises-2026-guidance-after-e8-8b-q1-revenue-beat"
+    },
+    {
+     "label": "High-NA 首台出貨 / Intel 14A 首採 / SK Hynix (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/05/20/news-asml-expects-first-high-na-euv-memory-logic-products-within-months-amid-tsmcs-cost-driven-delay/"
+    }
+   ]
+  },
+  {
+   "id": "depo",
+   "row": "core1",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "沉積 CVD / PVD / ALD / Epi",
+   "nameEn": "Deposition",
+   "competition": "oligopoly",
+   "single": "寡占 · AMAT 沉積龍頭；ASM 單片 ALD >55%；Kokusai 批次 ALD ~70%",
+   "desc": "在晶圓表面沉積各式薄膜（CVD/PVD/ALD/磊晶 Epi）——GAA 閘極堆疊與 3D NAND/DRAM 結構使 ALD 步驟暴增，是 WFE intensity 上升最直接受惠的環節。",
+   "marketSize": "GAA/3D 受惠",
+   "growth": "ALD CAGR 10–14%",
+   "share": "null",
+   "analysis": "AMAT 為整體沉積龍頭（PVD/CVD/Epi 全線、Endura Trillium ALD）、FY2025 營收 $28.37B（WFE ~19% 最大廠）；Lam（介電/金屬填充、SABRE 電鍍）；TEL 補位；ALD 細分——ASM International 單片 ALD >55%（GAA 2nm 受惠，Q1'25 訂單 €834M）、Kokusai Electric 批次 ALD ~70%（高深寬比批次薄膜，3D NAND 300+ 層核心）。中國：拓荊（Piotech）切入 PECVD/ALD、北方華創 PVD/CVD 在地。3D NAND 往 300+ 層、3D DRAM 量產使沉積價值量結構性放大。",
+   "companies": [
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "沉積龍頭 / WFE ~19%",
+     "products": "Endura PVD / Epi / ALD/CVD",
+     "note": "WFE 最大廠；FY2025 營收 $28.37B 創紀錄；2026 設備成長預期上修至 >30%",
+     "src": "https://mlq.ai/news/applied-materials-reports-record-revenue-for-fiscal-2025-q4-earnings-beat-expectations/"
+    },
+    {
+     "name": "ASM International",
+     "ticker": "ASM.AS",
+     "country": "NL",
+     "share": "單片 ALD >55%",
+     "products": "單片 ALD / Epi / PEALD",
+     "note": "GAA 2nm 受惠；Q1'25 訂單 €834M(+14%)",
+     "src": "https://www.blog.baldengineering.com/2025/05/asm-international-strengthens-ald.html"
+    },
+    {
+     "name": "Kokusai Electric",
+     "ticker": "6525.T",
+     "country": "JP",
+     "share": "批次 ALD ~70%",
+     "products": "批次 ALD / LPCVD / 爐管",
+     "note": "高深寬比批次薄膜；3D NAND 核心",
+     "src": "https://newsletter.semianalysis.com/p/going-vertical-gate-all-around-3d"
+    },
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "介電/金屬填充",
+     "products": "ALTUS W ALD / SABRE 電鍍",
+     "note": "Moly/Carbon gapfill 帶動 NAND 沉積出貨",
+     "src": "https://beyondspx.com/quote/LRCX/analysis/lam-research-ai-driven-etch-leadership-meets-record-margin-expansion-nasdaq-lrcx"
+    },
+    {
+     "name": "Tokyo Electron",
+     "ticker": "8035.T",
+     "country": "JP",
+     "share": "沉積補位",
+     "products": "CVD / 塗佈薄膜",
+     "note": "FY2025 營收 ¥2.43T(+32.8%)",
+     "src": "https://stockanalysis.com/quote/otc/TOELY/revenue/"
+    },
+    {
+     "name": "拓荊 Piotech",
+     "ticker": "688072.SS",
+     "country": "CN",
+     "share": "中國 PECVD/ALD",
+     "products": "PECVD / ALD / SACVD",
+     "note": "中國沉積國產化主力",
+     "src": "https://cset.georgetown.edu/article/inside-beijings-chipmaking-offensive/"
+    },
+    {
+     "name": "北方華創 NAURA",
+     "ticker": "002371.SZ",
+     "country": "CN",
+     "share": "中國 PVD/CVD 在地 / 全球第 5",
+     "products": "PVD / CVD / ALD",
+     "note": "2025 全年營收升全球設備廠第 5、超越 KLA，首家擠進全球前五的中國廠（前四仍 ASML/AMAT/Lam/TEL）；惟本土低價+外商削價致毛利承壓",
+     "src": "https://www.trendforce.com/news/2026/02/02/news-three-chinese-chip-toolmakers-reportedly-enter-global-top-20-as-naura-rises-to-fifth-by-sales/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "subsys"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASM 單片 ALD >55% / GAA (BALD Engineering)",
+     "url": "https://www.blog.baldengineering.com/2025/05/asm-international-strengthens-ald.html"
+    },
+    {
+     "label": "NAURA 升全球第 5、超越 KLA / 三家進前 20 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/02/02/news-three-chinese-chip-toolmakers-reportedly-enter-global-top-20-as-naura-rises-to-fifth-by-sales/"
+    },
+    {
+     "label": "Kokusai 批次 ALD ~70% / 3D (SemiAnalysis)",
+     "url": "https://newsletter.semianalysis.com/p/going-vertical-gate-all-around-3d"
+    }
+   ]
+  },
+  {
+   "id": "etch",
+   "row": "core1",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "蝕刻 Etch / ALE",
+   "nameEn": "Etch",
+   "competition": "oligopoly",
+   "single": "寡占 · Lam 蝕刻全球第一；AMAT/TEL 強勢；中微 AMEC 介電蝕刻崛起",
+   "desc": "以電漿/原子層蝕刻（ALE）移除材料、刻出結構——GAA 奈米片成形與 3D NAND 高深寬比孔洞使蝕刻價值量大增。",
+   "marketSize": "Lam 龍頭",
+   "growth": "3D 化驅動",
+   "share": "null",
+   "analysis": "Lam Research 蝕刻全球第一（導體/介電蝕刻、ALE 主力），Q3'FY26（截至 2026/3/29）營收 $5.84B（QoQ +9%、YoY +24%）、non-GAAP EPS $1.47 雙超財測，Lam 自估 2026 設備市場成長雙位數；AMAT（Sculpta ALE）、TEL（Tactras）強勢補位。中國：中微 AMEC 在介電蝕刻表現亮眼（2024 營收 ¥9.07B、+44.7%）、14nm 蝕刻機於 SMIC 驗證中，北方華創 ICP/矽蝕刻；中國蝕刻自給率已破雙位數。⚠ Lam 中國營收占比已自一度的 43% 降至 34%（前季 35%）、管理層指 6 月季續降，惟仍是四強中曝險偏高、最大政策風險。",
+   "companies": [
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "蝕刻全球第一",
+     "products": "Akara 導體蝕刻 / 介電蝕刻 / ALE",
+     "note": "Q3'FY26 $5.84B(QoQ+9%/YoY+24%)、EPS $1.47 雙超財測；中國占比降至 34%(前季35%)",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/04/22/lam-research-lrcx-q3-2026-earnings-transcript/"
+    },
+    {
+     "name": "Tokyo Electron",
+     "ticker": "8035.T",
+     "country": "JP",
+     "share": "蝕刻第二/三強",
+     "products": "Tactras 蝕刻",
+     "note": "蝕刻+塗顯雙料；FY2025 ¥2.43T",
+     "src": "https://stockanalysis.com/quote/otc/TOELY/revenue/"
+    },
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "蝕刻強勢",
+     "products": "Sculpta ALE / 介電蝕刻",
+     "note": "GAA 成形；ALE ASP 顯著",
+     "src": "https://mlq.ai/news/applied-materials-reports-record-revenue-for-fiscal-2025-q4-earnings-beat-expectations/"
+    },
+    {
+     "name": "中微 AMEC",
+     "ticker": "688012.SS",
+     "country": "CN",
+     "share": "中國介電蝕刻領先",
+     "products": "介電/矽 電漿蝕刻",
+     "note": "2024 營收 ¥9.07B(+44.7%)；高階介電蝕刻常勝 NAURA；14nm 蝕刻機於 SMIC 驗證中",
+     "src": "https://www.trendforce.com/news/2026/02/20/news-china-reportedly-ramps-up-chip-tool-push-sets-70-target-by-2027-smee-naura-at-forefront/"
+    },
+    {
+     "name": "北方華創 NAURA",
+     "ticker": "002371.SZ",
+     "country": "CN",
+     "share": "中國 etch/depo ~25%",
+     "products": "ICP / 矽蝕刻 / 金屬蝕刻",
+     "note": "中國 28nm+ 段領先；併購 Kingsemi 擴塗顯",
+     "src": "https://www.techinsights.com/blog/china-analysis-nauras-5b-surge-and-chinas-semiconductor-equipment-consolidation-wave"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "subsys"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Lam 蝕刻龍頭 / 3D NAND (BeyondSPX)",
+     "url": "https://beyondspx.com/quote/LRCX/analysis/lam-research-ai-driven-etch-leadership-meets-record-margin-expansion-nasdaq-lrcx"
+    },
+    {
+     "label": "AMEC 2024 +44.7% etch (Digitimes)",
+     "url": "https://www.digitimes.com/news/a20251030VL219/amec-etching-thin-film-equipment-growth.html"
+    }
+   ]
+  },
+  {
+   "id": "cmp_implant",
+   "row": "core2",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "CMP / 離子植入",
+   "nameEn": "CMP & Ion Implantation",
+   "competition": "oligopoly",
+   "single": "雙雄寡占 · CMP AMAT 71%+Ebara 27%(>90%)；離子植入 AMAT/Axcelis 雙雄",
+   "desc": "CMP（化學機械研磨平坦化）與離子植入（摻雜）——每層金屬/介電都需平坦化、每個電晶體都需摻雜，是製程剛需環節。",
+   "marketSize": "雙雄寡占",
+   "growth": "穩定剛需",
+   "share": "null",
+   "analysis": "CMP：AMAT 71.3% + Ebara 26.7% = 雙雄壟斷 >90%（2025 市場約 $2.5–5B）；離子植入：AMAT（Varian）與 Axcelis 雙雄，為唯二具全系列植入產品的廠商。中國：華海清科（Hwatsing）CMP 五年內把中國份額拉升 8 個百分點，是中國 CMP 國產化代表。此環節循環性低於沉積/蝕刻，確定性較高。",
+   "companies": [
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "CMP 71% / 植入雙雄",
+     "products": "Reflexion CMP / Varian 離子植入",
+     "note": "CMP+植入雙料龍頭；FY2025 $28.37B",
+     "src": "https://grish.com/cmp-for-semiconductor-equipment/"
+    },
+    {
+     "name": "Ebara",
+     "ticker": "6361.T",
+     "country": "JP",
+     "share": "CMP ~27%",
+     "products": "CMP 研磨機 / 鍍銅",
+     "note": "與 AMAT 雙雄壟斷 CMP >90%",
+     "src": "https://grish.com/cmp-for-semiconductor-equipment/"
+    },
+    {
+     "name": "Axcelis Technologies",
+     "ticker": "ACLS",
+     "country": "US",
+     "share": "離子植入雙雄",
+     "products": "Purion 全系列離子植入",
+     "note": "與 AMAT 並列唯二全系列植入廠",
+     "src": "https://www.sec.gov/Archives/edgar/data/1113232/000110465926037361/tm262803d2_ars.pdf"
+    },
+    {
+     "name": "華海清科 Hwatsing",
+     "ticker": "688120.SS",
+     "country": "CN",
+     "share": "中國 CMP 領導",
+     "products": "CMP 研磨機",
+     "note": "五年拉升中國 CMP 份額 +8pp",
+     "src": "https://www.trendforce.com/news/2026/04/21/news-china-memory-expansion-lifts-domestic-equipment-suppliers-amec-wuhan-jingce-hwatsing-acm-in-focus/"
+    },
+    {
+     "name": "弘塑 Grand Process Tech",
+     "ticker": "3131.TWO",
+     "country": "TW",
+     "share": "台廠濕製程/單片",
+     "products": "單片清洗 / 電鍍 / 先進封裝濕製程",
+     "note": "CoWoS 拉貨；2025 出貨 170-200 台(+70~100%)、法人估營收年增 50%",
+     "src": "https://finance.ettoday.net/news/2874095"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "subsys"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CMP AMAT 71% / Ebara 27% (Grish)",
+     "url": "https://grish.com/cmp-for-semiconductor-equipment/"
+    },
+    {
+     "label": "弘塑 CoWoS 拉貨年增 50% (ETtoday)",
+     "url": "https://finance.ettoday.net/news/2874095"
+    }
+   ]
+  },
+  {
+   "id": "metro_pc",
+   "row": "core2",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "量檢測 / 製程控制",
+   "nameEn": "Metrology & Process Control",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · KLA 製程控制 ~56%；Lasertec EUV 光罩檢測 ~90%（鎖喉）",
+   "desc": "缺陷檢測、CD/薄膜/overlay 量測與 EUV 光罩檢測——是良率管理與 ≤7nm 量產前提，被視為設備族群中最確定的『不可殺死的訂閱』。",
+   "marketSize": "KLA ~56%",
+   "growth": "確定性最高",
+   "share": "null",
+   "analysis": "KLA 製程控制 ~56% 絕對龍頭（光學/e-beam 檢測、量測），FY2025 營收 $12.16B、foundry/logic 占系統營收 ~59%；製程控制整體市佔自 2021 以來 +360bp、約為次大對手 7 倍。HBM/AI 先進封裝形成新拉動：KLA 2026 先進封裝製程控制營收預估由 2025 的 $6.35 億『接近翻倍』至約 $10 億，並奪 2025 先進晶圓級封裝（WLP）製程控制第一。KLA 最不受中國出口管制衝擊、循環波動小於沉積/蝕刻（每片 wafer、每個 leading-edge fab 都要過 KLA），是 beta 最低標的。Lasertec（EUV actinic 光罩檢測 ~90% 唯一商用，無合格光罩檢測即不能量產 ≤7nm）。Onto Innovation、日立 High-Tech（CD-SEM）、ASML(HMI) e-beam 補位。中國：武漢精測（Wuhan Jingce）量檢測國產化。",
+   "companies": [
+    {
+     "name": "KLA",
+     "ticker": "KLAC",
+     "country": "US",
+     "share": "製程控制 ~56%（自 2021 +360bp、約次大對手 7 倍）",
+     "products": "光學/e-beam 檢測 / CD/overlay 量測",
+     "note": "FY2025 $12.16B；先進封裝製程控制 2026 由 $6.35 億『接近翻倍』至約 $10 億、奪 2025 WLP 製程控制第一；『不可殺死的訂閱』、最低中國曝險",
+     "src": "https://finance.biggo.com/news/US_KLAC_2026-04-29"
+    },
+    {
+     "name": "Lasertec",
+     "ticker": "6920.T",
+     "country": "JP",
+     "share": "EUV 光罩檢測 ~90%",
+     "products": "ACTIS actinic blank/mask 檢測",
+     "note": "唯一商用 actinic；≤7nm 量產鎖喉",
+     "src": "https://newsletter.semianalysis.com/p/going-vertical-gate-all-around-3d"
+    },
+    {
+     "name": "Onto Innovation",
+     "ticker": "ONTO",
+     "country": "US",
+     "share": "光學量測利基",
+     "products": "光學 CD / 薄膜量測 / 巨觀檢測",
+     "note": "KLA 外替代源；先進封裝檢測",
+     "src": "https://drrobertcastellano.substack.com/p/semiconductor-equipment-stocks-a"
+    },
+    {
+     "name": "日立 High-Tech",
+     "ticker": "6501.T",
+     "country": "JP",
+     "share": "CD-SEM 領導",
+     "products": "CD-SEM / e-beam 檢測",
+     "note": "關鍵尺寸量測利基",
+     "src": "https://drrobertcastellano.substack.com/p/semiconductor-equipment-stocks-a"
+    },
+    {
+     "name": "ASML (HMI)",
+     "ticker": "ASML",
+     "country": "NL",
+     "share": "e-beam 檢測",
+     "products": "multi-beam e-beam 缺陷檢測",
+     "note": "原台廠漢微科 Hermes Microvision",
+     "src": "https://drrobertcastellano.substack.com/p/semiconductor-equipment-stocks-a"
+    },
+    {
+     "name": "武漢精測 Wuhan Jingce",
+     "ticker": "300567.SZ",
+     "country": "CN",
+     "share": "中國量檢測",
+     "products": "面板/半導體量檢測",
+     "note": "中國記憶體擴產受惠國產化",
+     "src": "https://www.trendforce.com/news/2026/04/21/news-china-memory-expansion-lifts-domestic-equipment-suppliers-amec-wuhan-jingce-hwatsing-acm-in-focus/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "subsys"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "KLA FY2025 $12.16B (KLA IR)",
+     "url": "https://ir.kla.com/news-events/press-releases/detail/500/kla-corporation-reports-fiscal-2025-fourth-quarter-and-full"
+    },
+    {
+     "label": "KLA 先進封裝製程控制接近翻倍至 ~$10 億 / WLP 第一 (BigGo)",
+     "url": "https://finance.biggo.com/news/US_KLAC_2026-04-29"
+    },
+    {
+     "label": "Lasertec EUV 光罩檢測 / 3D (SemiAnalysis)",
+     "url": "https://newsletter.semianalysis.com/p/going-vertical-gate-all-around-3d"
+    }
+   ]
+  },
+  {
+   "id": "clean_therm",
+   "row": "core2",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "清洗 / 塗顯 / 熱處理 / 切割研磨",
+   "nameEn": "Clean · Track · Thermal · Dicing",
+   "competition": "oligopoly",
+   "single": "寡占 · 單片清洗 SCREEN+TEL+Lam >82%；Disco 切割研磨 60-70%；塗顯 TEL/SCREEN 雙雄",
+   "desc": "晶圓清洗、塗佈顯影（coater/developer track）、退火熱處理與切割/研磨——台日設備廠最強勢的環節，且因先進封裝（CoWoS）爆量而成長最猛。",
+   "marketSize": "台日強勢",
+   "growth": "先進封裝拉動",
+   "share": "null",
+   "analysis": "單片清洗：SCREEN（7735.T）+ TEL + Lam 合占 >82%；塗顯 track：TEL/SCREEN 雙雄；退火：Veeco/AMAT。切割/研磨：Disco（6146.T）60-70% 近獨佔，FY2025 營收 $2.6B(+22%)，先進封裝晶圓薄化/分割直接受惠。中國清洗：ACM Research（盛美，中國清洗領導）。台廠彈性軍團（CoWoS 受惠）：辛耘（3583，前八月 +20.6%、全年首破百億、自製設備+再生晶圓占比破五成）、京鼎（3413，Q3'25 營收 55.42 億創新高、EPS 6.10、EUV pod 自動化兩機種量產）、家登（3680，EUV 光罩盒 pod 全球領導、FOUP 份額快升、傳入列 CoPoS）。",
+   "companies": [
+    {
+     "name": "SCREEN Holdings",
+     "ticker": "7735.T",
+     "country": "JP",
+     "share": "單片清洗龍頭 / 塗顯雙雄",
+     "products": "單片清洗 / coater-developer track",
+     "note": "與 TEL/Lam 合占單片清洗 >82%",
+     "src": "https://www.nomadsemi.com/p/tokyo-electron-deep-dive-part-2"
+    },
+    {
+     "name": "Disco",
+     "ticker": "6146.T",
+     "country": "JP",
+     "share": "切割/研磨 60-70%",
+     "products": "切割鋸 / 研磨機 / 雷射隱形切割",
+     "note": "FY2025 $2.6B(+22%)；先進封裝薄化/分割受惠",
+     "src": "https://www.macrotrends.net/stocks/charts/DSCSY/disco-corp/revenue"
+    },
+    {
+     "name": "Tokyo Electron",
+     "ticker": "8035.T",
+     "country": "JP",
+     "share": "塗顯/清洗雙雄",
+     "products": "coater-developer / 清洗 / 退火",
+     "note": "塗顯與 SCREEN 雙雄；FY2025 ¥2.43T",
+     "src": "https://www.nomadsemi.com/p/tokyo-electron-deep-dive-part-2"
+    },
+    {
+     "name": "ACM Research",
+     "ticker": "ACMR",
+     "country": "US",
+     "share": "中國清洗領導",
+     "products": "單片/批次清洗 / 電鍍",
+     "note": "中國清洗國產化主力；記憶體擴產受惠",
+     "src": "https://www.kerrisdalecap.com/wp-content/uploads/2025/01/ACMR-Kerrisdale.pdf"
+    },
+    {
+     "name": "辛耘 Scientech",
+     "ticker": "3583.TW",
+     "country": "TW",
+     "share": "台廠濕製程/再生晶圓",
+     "products": "自製濕製程設備 / 再生晶圓 / 代理",
+     "note": "前八月 +20.6%、全年首破百億；自製+再生占比破五成",
+     "src": "https://tw.stock.yahoo.com/quote/3583.TW/revenue"
+    },
+    {
+     "name": "京鼎 Foxsemicon",
+     "ticker": "3413.TW",
+     "country": "TW",
+     "share": "鴻海系設備代工/模組",
+     "products": "蝕刻/薄膜/檢測設備模組+整機 / EUV pod 自動化",
+     "note": "Q3'25 營收 55.42 億創新高、EPS 6.10；EUV pod 兩機種量產",
+     "src": "https://blog.fugle.tw/post/earnings-call-3413-2025-12-23"
+    },
+    {
+     "name": "家登 Gudeng",
+     "ticker": "3680.TWO",
+     "country": "TW",
+     "share": "EUV 光罩盒 pod 全球領導",
+     "products": "EUV pod / FOUP / 晶圓載具",
+     "note": "FOUP 份額快升；傳入列 CoPoS 供應鏈；Q4 出貨高峰",
+     "src": "https://www.ttv.com.tw/finance/view/122025041058CF49D0C09EDE41079A2E5ACDBAC150145DF6/587"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "subsys"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Disco 切割研磨 60-70% / FY2025 $2.6B (MacroTrends)",
+     "url": "https://www.macrotrends.net/stocks/charts/DSCSY/disco-corp/revenue"
+    },
+    {
+     "label": "TEL/SCREEN 塗顯清洗深度 (NomadSemi)",
+     "url": "https://www.nomadsemi.com/p/tokyo-electron-deep-dive-part-2"
+    }
+   ]
+  },
+  {
+   "id": "demand",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "晶圓代工 / IDM / 記憶體廠 Capex",
+   "nameEn": "Foundry · IDM · Memory Capex",
+   "competition": "oligopoly",
+   "single": "需求端 · AI 先進邏輯+HBM/DRAM+先進封裝三 capex 齊揚；TSMC 占代工 capex 主導",
+   "desc": "晶圓代工、IDM 與記憶體廠的資本支出是 WFE 的需求端錨點——AI 先進邏輯（2nm/A16）、HBM/DRAM 與先進封裝三條 capex 同時擴張，驅動設備超級循環。",
+   "marketSize": "需求錨點",
+   "growth": "WFE 2026 $140B+",
+   "share": "null",
+   "analysis": "WFE 2026 經 Lam（4/22）與 KLA（4/29）財報同步上修至『$140B+ 且偏向更高』（原 SEMI $135.2B、Barclays $154B），2027 上看 $156–210B、Cantor 估 2029 達 $250B；兩家均預期 2027 成長再優於 2026，市場 re-rating『AI 循環延到 2027-2028』獲財報背書。需求端：TSMC（代工 ~70%、≤3nm 近獨佔、N2 量產、A16 背面供電）主導全球設備訂單節奏（如暫緩 High-NA 直接牽動 ASML）；Samsung/Intel 追趕 GAA；記憶體 SK Hynix/Samsung/Micron（DRAM+HBM、NAND 設備 2026 +12.7%→$15.7B）；中國 SMIC/CXMT/YMTC 受國產化政策強制扶植本土設備——在『新增產能須採購 >50% 國產設備』基礎上，傳設定 2027 年設備在地化 70% 目標（SMEE、NAURA 居前），惟微影仍為最大缺口。WFE intensity 隨製程微縮與 3D 化結構性上升。⚠ 2025 起中國經東南亞轉口的設備進口量激增、已超越自美直接出貨，成美荷日管制體系新規避通道；BIS 預計 2026 下半年才推出取代 AI Diffusion Rule 的新框架，管制不確定性升高，影響 Lam/AMAT/TEL 高中國曝險廠營收能見度。⚠ 高 beta 循環股，capex 一旦放緩回檔劇烈。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "代工 ~70% / 設備最大買家",
+     "products": "N2 2nm / A16 / CoWoS",
+     "note": "主導設備訂單節奏；2026/04 暫緩 High-NA 至 2029",
+     "src": "https://tech-insider.org/asml-q1-2026-revenue-earnings-guidance-raise-ai-chip/"
+    },
+    {
+     "name": "Samsung 三星",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "代工+記憶體 capex",
+     "products": "SF2 GAA / DRAM / HBM / NAND",
+     "note": "首批 High-NA 早期客戶；記憶體擴產",
+     "src": "https://tech-insider.org/asml-q1-2026-revenue-earnings-guidance-raise-ai-chip/"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "IDM capex",
+     "products": "18A / 14A 背面供電",
+     "note": "High-NA 早期採用者；IDM 2.0 擴產",
+     "src": "https://www.moomoo.com/community/feed/ai-capex-trade-returns-semiconductor-equipment-stocks-surge-on-intel-116732221652998"
+    },
+    {
+     "name": "SK Hynix",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "HBM/DRAM capex 龍頭",
+     "products": "HBM4 / DDR5 / NAND",
+     "note": "HBM 擴產帶動 DRAM 設備 capex 上修",
+     "src": "https://www.eetimes.com/ai-drives-capex-chip-equipment-to-record-156b-in-2027/"
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "country": "US",
+     "share": "DRAM/NAND capex",
+     "products": "HBM / DDR5 / NAND",
+     "note": "美系記憶體擴產",
+     "src": "https://www.eetimes.com/ai-drives-capex-chip-equipment-to-record-156b-in-2027/"
+    },
+    {
+     "name": "SMIC 中芯國際",
+     "ticker": "0981.HK",
+     "country": "HK",
+     "share": "中國代工 / 國產設備驗證",
+     "products": "成熟+先進製程代工",
+     "note": "受國產化政策扶植本土設備（50%→傳 2027 目標 70%）；AMEC 14nm 蝕刻機驗證中、NAURA 28nm 已量產",
+     "src": "https://www.trendforce.com/news/2026/02/20/news-china-reportedly-ramps-up-chip-tool-push-sets-70-target-by-2027-smee-naura-at-forefront/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "litho"
+    },
+    {
+     "id": "depo"
+    },
+    {
+     "id": "etch"
+    },
+    {
+     "id": "cmp_implant"
+    },
+    {
+     "id": "metro_pc"
+    },
+    {
+     "id": "clean_therm"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "SEMI 2026 WFE $135B / 設備 $139B",
+     "url": "https://www.semi.org/en/semi-press-release/global-total-semiconductor-equipment-sales-forecast-to-reach-a-record-of-dollar-139-billion-in-2026-semi-reports"
+    },
+    {
+     "label": "Lam/KLA 4 月上修 2026 WFE 至 $140B+ (BigGo)",
+     "url": "https://finance.biggo.com/news/US_LRCX_2026-04-22"
+    },
+    {
+     "label": "AI 驅動 capex 設備 $156B(2027) (EE Times)",
+     "url": "https://www.eetimes.com/ai-drives-capex-chip-equipment-to-record-156b-in-2027/"
+    },
+    {
+     "label": "中國經東南亞轉口設備激增 (Digitimes)",
+     "url": "https://www.digitimes.com/news/a20260415VL207/ic-manufacturing-equipment-import_export-china-2025-southeast-asia.html"
+    },
+    {
+     "label": "中國 2027 國產化 70% 目標 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/02/20/news-china-reportedly-ramps-up-chip-tool-push-sets-70-target-by-2027-smee-naura-at-forefront/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "subsys",
+   "litho"
+  ],
+  [
+   "subsys",
+   "depo"
+  ],
+  [
+   "subsys",
+   "etch"
+  ],
+  [
+   "subsys",
+   "cmp_implant"
+  ],
+  [
+   "subsys",
+   "metro_pc"
+  ],
+  [
+   "subsys",
+   "clean_therm"
+  ],
+  [
+   "litho",
+   "demand"
+  ],
+  [
+   "depo",
+   "demand"
+  ],
+  [
+   "etch",
+   "demand"
+  ],
+  [
+   "cmp_implant",
+   "demand"
+  ],
+  [
+   "metro_pc",
+   "demand"
+  ],
+  [
+   "clean_therm",
+   "demand"
+  ]
+ ],
+ "_proposed": {}
+}

@@ -1,0 +1,331 @@
+{
+ "id": "drone_uav",
+ "tab": "無人機 UAV",
+ "title": "無人機 / 反無人機供應鏈 (Drone & Counter-UAS)",
+ "subtitle": "Drone & UAV — 烏俄戰爭證明無人機改變戰爭型態 + 2025-12-22 FCC 把所有外國產 UAS 列入 Covered List、Trump 2026-06 簽 Drone Dominance EO，重塑全球供應鏈。全球軍用無人機 2033 上看 $1,825 億 (CAGR 9.5%)、美廠握 86% 份額。AeroVironment（AVAV）Switchblade 月產 40→240、但 2026-03 太空軍 SCAR 合約終止、FY26 財測下修至 $1.85-1.95B；Kratos（KTOS）Q1 FY26 +22.6%、backlog $20 億；Red Cat（RCAT）FY25 +161%、拿陸軍 SRR program of record；Anduril 估值 $61B、Arsenal-1 提前量產 Fury；MP Materials 與 DoD 合夥國產化稀土磁石單點。價值鏈：飛控/動力/感測 → 整機（軍用/商用）→ 反無人機 → 國防終端。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "催化／單點",
+   "v": 3,
+   "sub": "外國 UAS 全禁+Drone Dominance EO·稀土磁石單點·SCAR 終止風險",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "parts",
+   "label": "飛控 / 動力 / 感測 Components",
+   "main": false
+  },
+  {
+   "id": "platform",
+   "label": "整機平台 軍用 / 商用 Platforms",
+   "main": true
+  },
+  {
+   "id": "cuas",
+   "label": "反無人機 / 終端 C-UAS & End-market",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "drone_parts",
+   "row": "parts",
+   "col": 1,
+   "span": 2,
+   "kind": "rail",
+   "name": "飛控 / 動力 / 感測 / 通訊",
+   "nameEn": "Flight Control / Propulsion / Sensors",
+   "competition": "competitive",
+   "single": "去中國化 · DJI 禁令逼使飛控/馬達/電池 NDAA-compliant 供應鏈重組",
+   "desc": "無人機零組件：飛控晶片、無刷馬達、電池、感測（EO/IR、LiDAR）、通訊鏈路、影像處理。",
+   "marketSize": "供應鏈重組",
+   "growth": "去中化",
+   "share": "null",
+   "analysis": "DJI 禁令 + NDAA 合規（Blue UAS）逼出去中國化供應鏈：感測 EO/IR（Teledyne FLIR TDY、Sony 6758.T）、通訊鏈路（Doodle Labs、Silvus）、飛控/運算（NVIDIA Jetson NVDA、Qualcomm Flight RB5）、馬達/電池（脫離 DJI 體系）。台廠經緯航太、雷虎切入。零組件 NDAA 合規化是美系崛起的根基。⚠ 絃外之音：去中化是帳面假象——中國供應全球 80-90% FPV 馬達（T-Motor/MAD/Sunnysky）、控 90%+ 稀土磁石/電池，連五角大廈 Blue UAS 清單多數機型仍藏中國馬達（合法漏洞）；真正的隱性單點瓶頸與定價權在上游稀土磁石（中國控全球約 98% 釹鐵硼磁石），二階受惠者是 MP Materials/USA Rare Earth/Niron/Noveon 而非整機商。⚠ 2026-H1 稀土單點實體化：MP Materials（MP）與美國防部 DoD 簽歷史性公私合夥——DoD 認購 $4 億優先股成最大股東、加上 JPM/Goldman $10 億聯貸，建『10X』磁石新廠把產能從 3,000→10,000 公噸/年、DoD 對擴增 7,000 公噸/年 100% 包銷（2026 動工、2028 出貨），把『Pentagon 想要 30 萬架無人機卻受制於中國磁石』的瓶頸正式國產化。FY26 NDAA 自 2028-01 起禁採中國電池材料，但元件認證需 18-24 個月。⚠ 2026 出現美系國產馬達實體玩家：Unusual Machines（UMAC，奧蘭多月產 ~1.5 萬顆馬達、2026H2 上自動化線）、Westmag（a16z 領投 $1,100 萬種子，2026-06，並向上游做 stator 鋼片沖壓+稀土磁石精加工）、Neros（$7,500 萬 Series B、累計 >$1.2 億、入選美陸軍 PBAS Tranche 1 三大供應商）、Performance Drone Works（累計募約 $2 億）；五角大廈 OSC 2026-05-28 研議對 Neros/UMAC/PDW 直接債+股權投資，把單機壓向 ~$5,000，去中化從敘事走向產能落地。",
+   "companies": [
+    {
+     "name": "Teledyne (FLIR) / Sony",
+     "ticker": "TDY / 6758.T",
+     "country": "US",
+     "share": "EO/IR 感測領先",
+     "products": "熱像 / 影像感測 / EO/IR pod",
+     "note": "無人機光電酬載"
+    },
+    {
+     "name": "NVIDIA Jetson / Qualcomm",
+     "ticker": "NVDA / QCOM",
+     "country": "US",
+     "share": "邊緣運算/飛控",
+     "products": "Jetson 邊緣 AI / Flight RB5",
+     "note": "自主飛行運算"
+    },
+    {
+     "name": "Ondas Holdings",
+     "ticker": "ONDS",
+     "country": "US",
+     "share": "通訊/自主基建",
+     "products": "無人機通訊 + American Robotics",
+     "note": "自主操作基建"
+    },
+    {
+     "name": "經緯航太 / 雷虎",
+     "ticker": "8495.TWO / 8033.TWO",
+     "country": "TW",
+     "share": "台廠切入",
+     "products": "無人機系統 / 動力",
+     "note": "台灣無人機國家隊概念"
+    },
+    {
+     "name": "Unusual Machines / Westmag / Neros",
+     "ticker": "UMAC / —",
+     "country": "US",
+     "share": "美系國產馬達新軍",
+     "products": "NDAA 合規無刷馬達 / FPV 整機",
+     "note": "去中化上游落地：UMAC Q1 2026 轉盈、營收 $810 萬 (+296% YoY)、奧蘭多 6.25 萬平方呎、拿史上最大五角大廈合約供 3,500 顆馬達（2026 另規劃 +2 萬零件）、2026-05-27 傳 Pentagon 研議直接入股；Westmag a16z 領投 $1,100 萬種子（2026-06）做馬達+稀土磁石精加工；Neros $7,500 萬 Series B、PBAS Tranche 1；Pentagon OSC 研議直接債+股權投資 Neros/UMAC/PDW"
+    },
+    {
+     "name": "MP Materials",
+     "ticker": "MP",
+     "country": "US",
+     "share": "稀土磁石上游單點",
+     "products": "NdFeB 釹鐵硼永磁 / 稀土氧化物",
+     "note": "中國控全球約 98% 磁石製造、為無人機馬達隱性瓶頸；2025 DoD 認購 $4 億優先股成最大股東 + JPM/Goldman $10 億聯貸，建『10X』磁石廠 3,000→10,000 公噸/年、DoD 對擴增 7,000 公噸/年 100% 包銷（2026 動工、2028 出貨）；德州 Independence 廠量產中",
+     "src": "https://mpmaterials.com/news/mp-materials-announces-transformational-public-private-partnership-with-the-department-of-defense-to-accelerate-u-s-rare-earth-magnet-independence/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "mil_drone"
+    },
+    {
+     "id": "commercial_drone"
+    }
+   ],
+   "sources": [
+    {
+     "label": "軍用無人機股 (Parameter)",
+     "url": "https://parameter.io/top-5-drone-stocks-for-2026-investment-analysis-of-aerovironment-avav-kratos-ktos-and-more/"
+    }
+   ]
+  },
+  {
+   "id": "mil_drone",
+   "row": "platform",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "軍用無人機 / 巡飛彈",
+   "nameEn": "Military Drones & Loitering Munitions",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · AeroVironment Switchblade 巡飛彈月產 40→240、美陸軍 $9.9 億 IDIQ",
+   "desc": "軍用無人機與巡飛彈（loitering munition）：偵察、電戰、攻擊一體化，烏俄戰爭驗證。",
+   "marketSize": "美廠 86%",
+   "growth": "國防爆量",
+   "share": "null",
+   "analysis": "AeroVironment（AVAV，Switchblade 巡飛彈 + Puma 偵察、月產 40→240、美陸軍 5 年 $9.9 億 IDIQ，但 2026-03 太空軍 SCAR/BADGER 合約終止、FY26 財測下修並認 $1.51 億商譽減損——軍用無人機並非單向爆量、program-of-record 變更風險具體化）、Kratos（KTOS，Q1 FY26 +22.6%、record backlog $20 億、Valkyrie/CCA）、L3Harris（LHX）、Northrop Grumman（NOC，高空長航時）。烏俄戰爭使巡飛彈成消耗性主力，美廠握 86% 份額；2025-12 起 Hegseth $11 億『Drone Dominance Program』目標 2027 前採 ~34 萬架單向攻擊無人機、25 家角逐 $1.5 億 Phase I，需求由 program-of-record 轉向大規模低成本量產。",
+   "companies": [
+    {
+     "name": "AeroVironment",
+     "ticker": "AVAV",
+     "country": "US",
+     "share": "小型軍用無人機領導",
+     "products": "Switchblade 巡飛彈 / Puma",
+     "note": "Switchblade 600 月產 40→240；陸軍 $9.9 億 IDIQ；⚠ FY26 財測「下修」至 $18.5-19.5 億（Q3 FY26 法說 2026-03-10，非上修）——太空軍 SCAR/BADGER 合約「為便宜終止」(termination for convenience)、認列 $1.51 億商譽減損、$3.0 億未撥資 backlog 中約 $14 億 SCAR 選擇權已不預期行權；Q3 FY26 營收 $4.08 億 (+38% 有機)；2026-02 再獲陸軍 $1.86 億 Switchblade 600 Block 2 + 300 Block 20 訂單；鹽湖城 14 萬平方呎新廠約一年後投產、年產能對準 >$20 億 Switchblade/AV 產品；FY26 Q4/全年 2026-06-30 盤後公布；funded backlog $1.1B",
+     "src": "https://seekingalpha.com/news/4563020-aerovironment-updates-fy26-guidance-to-1_85b-1_95b-as-scar-contract-ends-and-commercial"
+    },
+    {
+     "name": "Kratos Defense",
+     "ticker": "KTOS",
+     "country": "US",
+     "share": "攻擊/標靶無人機",
+     "products": "XQ-58 Valkyrie / 標靶機",
+     "note": "Q1 FY26 營收 $3.71 億 (+22.6% YoY)、調整後 EPS $0.16 優於預期、book-to-bill 1.6:1、record backlog $20 億；FY26 全年財測上修至 $17.0-17.6 億；Valkyrie 年產能對準 2028 初 ~40 架（Q1 戰術營收約 $2,000 萬）；USMC 2026-01 選定 Kratos+Northrop 開發 CCA 無人僚機（首期 $2.315 億 OTA）；$1,560 億和解法案含 Valkyrie/固態火箭/無人機引擎/巡飛彈撥款"
+    },
+    {
+     "name": "L3Harris / Northrop",
+     "ticker": "LHX / NOC",
+     "country": "US",
+     "share": "大型/高空",
+     "products": "電戰無人機 / 高空長航時",
+     "note": "大型平台"
+    },
+    {
+     "name": "Red Cat Holdings",
+     "ticker": "RCAT",
+     "country": "US",
+     "share": "小型偵察 + 反無人機",
+     "products": "Black Widow / Teal",
+     "note": "FY25 全年營收 $4,070 萬 (+161% YoY)、Q4 $2,620 萬 (+1,985%)、產能 +520%；拿美陸軍 SRR（短程偵察）program of record、$3,500 萬 TD3/LRIP，由開發商轉為量產商；與 Palantir 合作把 Visual Navigation 軟體整入 Black Widow；2026-04-30 拿日本防衛省 ATLA 173 套 Black Widow（JGSDF、JFY26，亞太第二盟邦）；2026-05 Blue Ops Variant 7 無人水面艇（USV）進入 full-rate、整合 Apium 群飛、轉型空陸海全域自主；2026-06-15 Eurosatory 發表全球版小型 UAS Hellcat、獲美陸軍 $74.2 萬 Black Widow（含 AI 地雷偵測）並完成 Quaze 收購"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "drone_parts"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cuas"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Red Cat 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000748268/000162828026019403/ex-991xrcatx20260318.htm"
+    }
+   ]
+  },
+  {
+   "id": "commercial_drone",
+   "row": "platform",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "商用 / 工業無人機",
+   "nameEn": "Commercial / Industrial Drones",
+   "competition": "monopoly",
+   "single": "DJI 全球商用霸主但遭美禁；美系 Skydio 受惠國產替代",
+   "desc": "商用/工業無人機：測繪、巡檢、農業、物流，DJI 主導但美市場去中化。",
+   "marketSize": "null",
+   "growth": "DJI 禁令重組",
+   "share": "null",
+   "analysis": "DJI（大疆，未上市，全球商用霸主但遭美 NDAA 禁令）、Skydio（未上市，美自主無人機領導、轉攻國防/公部門）、Draganfly（DPRO）、億航 EHang（EH，eVTOL/載人）、Joby/Archer（eVTOL，見另題）。DJI 禁令重組美國商用市場，Skydio + 本土廠受惠。",
+   "companies": [
+    {
+     "name": "DJI 大疆",
+     "ticker": "—",
+     "country": "CN",
+     "share": "全球商用 ~70%（2024 為 74%、緩降）",
+     "products": "Mavic / Matrice 商用無人機",
+     "note": "private；2025-12-22 FCC 公告 DA-25-1086——NDAA 安全審查逾期、FCC『首創』把所有外國產 UAS 及關鍵零組件全列入 Covered List（不只 DJI/Autel），新機型一律禁取得設備認證進口（既有機隊仍可飛）；Trump 2026-06-06『Unleashing Drone Dominance』EO 進一步推本土化。⚠ 全球單一近壟斷（>~70%），美市場禁令僅打開美國本土縫隙，DJI 在歐亞拉美仍主導；Autel/JOUAV(CN)、Skydio(US)、Parrot(FR) 為長尾"
+    },
+    {
+     "name": "Skydio",
+     "ticker": "—",
+     "country": "US",
+     "share": "美自主無人機領導",
+     "products": "X10 自主無人機",
+     "note": "private；轉攻國防/公部門"
+    },
+    {
+     "name": "EHang 億航",
+     "ticker": "EH",
+     "country": "CN",
+     "share": "載人 eVTOL",
+     "products": "EH216 自動駕駛飛行器",
+     "note": "Q1 2026（2026-06-09 公布）仍僅交付 4 架 EH216-S；全球唯一同時握 TC/PC/AC+商用營運執照、合肥+廣州兩營運商自 2025-03 累計 >3,000 商業飛行 0 事故；VT35 取證測試推進；正與泰國 CAAT 洽談首張海外營運執照"
+    },
+    {
+     "name": "Draganfly",
+     "ticker": "DPRO",
+     "country": "CA",
+     "share": "商用/公共安全",
+     "products": "商用無人機系統",
+     "note": "北美商用"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "drone_parts"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "DJI 禁令影響 (TradingKey)",
+     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261694603-drone-stock-2026-rcat-dpro-tradingkey"
+    }
+   ]
+  },
+  {
+   "id": "cuas",
+   "row": "cuas",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "反無人機 C-UAS / 國防終端",
+   "nameEn": "Counter-UAS & Defense End-market",
+   "competition": "highgrowth",
+   "single": "反無人機（C-UAS）為新熱點；Anduril/Pentagon Replicator 拉動",
+   "desc": "反無人機系統（偵測/干擾/硬殺）與國防終端整合，是無人機軍備競賽的另一面。",
+   "marketSize": "$1,825 億 2033",
+   "growth": "新熱點",
+   "share": "null",
+   "analysis": "反無人機 C-UAS：Anduril（未上市，Lattice OS + Roadrunner 攔截、估值 $61B、2026 估營收約 $43 億）、RTX（RTX，Coyote 攔截）、Leonardo DRS、Red Cat（RCAT，反無人機）；國防終端整合：Palantir（PLTR，戰場指揮）。烏俄與中東衝突使 C-UAS 成 2026 國防熱點。C-UAS 市場 2025 $66.4 億 → 2030 $203.1 億（CAGR 25.1%），Anduril 為專屬營收龍頭（2025 約 $20 億、約 12-15% 份額），藉 2026-03 美陸軍 10 年上限 $20 億（$2B）Lattice enterprise 合約整併 120+ 採購載具、鎖定史上最大 C-UAS program of record——定價權正從硬殺攔截彈轉向 Lattice 這類『軟體 C2 中樞』。⚠ 2026-H1 政策超級催化：(1) Trump 2026-06-06 簽『Unleashing Drone Dominance』行政命令、推本土量產去外國依賴；(2) 國防部長 Hegseth 2025-12 啟動 $11 億『Drone Dominance Program』、目標 2027 前採購約 34 萬架低成本單向攻擊無人機（首批 30,000 架），25 家廠商角逐 Phase I $1.5 億『Gauntlet』；(3) Replicator 改名 DAWG（Defense Autonomous Warfare Group）續推長程攻擊群；(4) FY26 國防預算自主系統撥款 $136 億。全球軍用無人機 2033 上看 $1,825 億。",
+   "companies": [
+    {
+     "name": "Anduril Industries",
+     "ticker": "—",
+     "country": "US",
+     "share": "C-UAS + 自主領導",
+     "products": "Lattice OS / Roadrunner 攔截 / Fury",
+     "note": "private；Series H 募 $2.5B、估值升至 $61B（2025-06 Series G 為 $30.5B、半年翻倍；累計募資 >$110 億；IPO 尚未送件、市場估 2026 末-2027 窗口；次級市場估值傳近 ~$100B）；Ohio Arsenal-1（500 萬平方呎）2026-03-23 已「提前」開始量產 Fury 高速無人機（早於原訂 2026-07）、Roadrunner/Barracuda/機密案接續；2025 營收約 $20 億、2026 估約 $43 億；2026-03 獲美陸軍 10 年上限 $20 億（$2B）Lattice enterprise 合約、整併 120+ 採購載具、Replicator/DAWG 主力；2026-06 再傳科威特約 $19.8 億 C-UAS 大單、美 CBP 加購 200 座 Sentry 監視塔",
+     "src": "https://www.tectonicdefense.com/anduril-raises-5b-series-h-at-61b-valuation/"
+    },
+    {
+     "name": "RTX / Leonardo DRS",
+     "ticker": "RTX / DRS",
+     "country": "US",
+     "share": "攔截彈/C-UAS",
+     "products": "Coyote 攔截 / C-UAS 系統",
+     "note": "硬殺反無人機"
+    },
+    {
+     "name": "Palantir",
+     "ticker": "PLTR",
+     "country": "US",
+     "share": "戰場指揮整合",
+     "products": "AIP / 戰場數據整合",
+     "note": "無人機數據+指揮"
+    },
+    {
+     "name": "Kratos / Ondas",
+     "ticker": "KTOS / ONDS",
+     "country": "US",
+     "share": "靶機/C-UAS",
+     "products": "C-UAS 標靶 / 通訊",
+     "note": "C-UAS 生態"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mil_drone"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "軍用無人機市場 (Parameter)",
+     "url": "https://parameter.io/top-5-drone-stocks-for-2026-investment-analysis-of-aerovironment-avav-kratos-ktos-and-more/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "drone_parts",
+   "mil_drone"
+  ],
+  [
+   "drone_parts",
+   "commercial_drone"
+  ],
+  [
+   "mil_drone",
+   "cuas"
+  ]
+ ],
+ "_proposed": {}
+}

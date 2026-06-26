@@ -1,0 +1,1324 @@
+{
+ "id": "robot",
+ "tab": "機器人",
+ "title": "人形機器人供應鏈",
+ "subtitle": "Humanoid Robotics — 「具身智慧 (Physical AI)」是 AI 下一個前沿。一台人形機器人 = 數十個關節（actuator），每個關節由 減速機＋無框馬達＋伺服驅動＋力矩/位置感測 構成，是 BOM 與技術門檻最深處。最深單點：諧波減速機（Harmonic Drive ~全球領導、>70%）與 RV 擺線減速機（Nabtesco ~35%）兩家日廠＋AI 大腦 Nvidia（Jetson Thor / Isaac GR00T）。2025-2026 為量產起跑：Unitree 申請 A 股 IPO、UBTech Walker S2 量產、Figure 03 / Tesla Optimus V3 拉產能；台廠（鴻海＋Nvidia、上銀、和大、綠的）卡位概念股。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 16
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "80+"
+  },
+  {
+   "k": "獨佔／關鍵單點",
+   "v": 4,
+   "sub": "Harmonic Drive 諧波·Nabtesco RV·Nvidia 大腦·Soitec/MEMS…",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "parts",
+   "label": "關鍵零組件 Components",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "零組件 → 整機 → 應用 Components · Robot · Application",
+   "main": true
+  },
+  {
+   "id": "brain",
+   "label": "AI 大腦 · 感測 · 軟體 Brain & Sensing",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "p-harmonic",
+   "row": "parts",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "諧波減速機 Harmonic Drive",
+   "nameEn": "Strain Wave Gear",
+   "competition": "monopoly",
+   "single": "近乎獨佔 ⚑ · Harmonic Drive Systems（日）諧波減速機 >70% 全球領導；人形機器人手腕/手指輕量高扭矩首選",
+   "desc": "薄壁柔輪彈性變形傳動，零背隙、輕量、高減速比，是人形機器人手腕、手肘、靈巧手關節的核心減速元件。",
+   "marketSize": "最深單點",
+   "growth": "AI 機器人拉動",
+   "share": "null",
+   "analysis": "Harmonic Drive Systems（6324.T，諧波發明商 ~>70% 全球領導，FY03/27 三年計畫目標營收 ¥900 億、營益 ¥150 億，明指 AI 機器人＋半導體設備為動能）；台廠上銀（諧波/交叉滾子軸承）、鈞興-KY（4571.TW，齒輪廠開發人形專用諧波、2025Q4 起送樣）；中系綠的諧波（688017.SS，~7% 全球、2026 出貨目標 80 萬台）、來福追趕。AI 人形機器人是最大長線需求。",
+   "companies": [
+    {
+     "name": "Harmonic Drive Systems 哈默納科",
+     "ticker": "6324.T",
+     "country": "JP",
+     "share": "諧波 >70% 全球領導⚑",
+     "products": "strain wave gear / 諧波減速齒輪",
+     "note": "FY2026/3 實績營收 ¥595.57 億（+7.0% YoY，工業機器人/半導體設備/醫療帶動），但淨利暴跌 53.7% 至 ¥16.08 億、淨利率由 6.2% 滑落至 2.7%——毛利率壓縮，人形『題材』尚未轉化為上游零件商實際利潤；單點地位未變（>70% 全球）但短期盈利下滑；人形訂單 FY03/26 ¥25 億、FY03/27 預期翻倍~翻三倍；三年計畫目標 FY03/27 營收 ¥900 億、營益 ¥150 億",
+     "src": "https://www.ainvest.com/news/harmonic-drive-revenue-grows-profits-collapse-valuation-ignores-2605/"
+    },
+    {
+     "name": "綠的諧波 Leaderdrive",
+     "ticker": "688017.SS",
+     "country": "CN",
+     "share": "中國諧波 ~30-40%（國內龍頭）",
+     "products": "諧波減速機 / 人形關節・手指送樣",
+     "note": "中國諧波市占 30-40%、客戶含 AgiBot/UBTech 等人形廠；2025 減速機出貨 50 萬台、2026 目標 80 萬台、訂單已排到明年（2026/4 中國人形機器人生態大會）；人形成本替代主力",
+     "src": "https://humanoid.guide/leaderdrive-harmonic-reducers-surge-as-humanoid-demand-lifts-shares/"
+    },
+    {
+     "name": "上銀 HIWIN",
+     "ticker": "2049.TW",
+     "country": "TW",
+     "share": "諧波+軸承+模組",
+     "products": "harmonic reducer / 交叉滾子軸承",
+     "note": "MS 全球百大人形供應商台廠之一"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-actuator"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Harmonic Drive Systems IR（官方）",
+     "url": "https://www.hds.co.jp/english/ir/"
+    }
+   ]
+  },
+  {
+   "id": "p-rv",
+   "row": "parts",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "RV 擺線減速機 / 行星減速",
+   "nameEn": "RV Cycloidal · Planetary Reducer",
+   "competition": "oligopoly",
+   "single": "近獨佔 · Nabtesco（日）RV 擺線減速 ~35% 全球；用於機器人腰、臀、膝等大扭矩下肢關節；2026 計畫倍增產能",
+   "desc": "擺線針輪（RV）與行星減速機，承受大扭矩、高剛性，用於人形機器人髖、膝、踝等下肢負重關節與工業機械臂底座。",
+   "marketSize": "下半身單點",
+   "growth": "2026 倍增產能",
+   "share": "null",
+   "analysis": "Nabtesco（6268.T，RV 擺線在機器人應用 ~35%，全市場約 18%；機器人用 RV 前三家 Nabtesco/Sumitomo/SPINEA 合計 >80%、技術密集高進入障礙；2025/12 推 RVmini/Monocrank 小型精密新系列、規劃 2026 倍增 RV 產能因應人形需求）；台廠和大（1536.TW，行星減速，2025/3 受邀為 Tesla Optimus 核心關節送樣認證中；與盟立合資盟英 諧波年產 10 萬套）、住友重機（行星）。RV 是下半身高負載單點——寡占結構（top-3 >80%）使下肢關節成本剛性高，人形 OEM 難以快速壓價。",
+   "companies": [
+    {
+     "name": "Nabtesco 那博特斯克",
+     "ticker": "6268.T",
+     "country": "JP",
+     "share": "RV 擺線 ~35% 全球",
+     "products": "RV 減速機 / RVmini / Monocrank",
+     "note": "2025/12 推 RVmini/Monocrank 小型精密新系列；2026 計畫倍增 RV 產能；人形需求被視為超越 2022 景氣高峰的新基礎負載",
+     "src": "https://www.nabtesco.com/en/news/20251202-17329/"
+    },
+    {
+     "name": "和大工業 Hota",
+     "ticker": "1536.TW",
+     "country": "TW",
+     "share": "行星減速台廠",
+     "products": "行星減速機 / Optimus 關節件",
+     "note": "確認 Tesla Optimus 台灣獨家行星齒輪供應商；2026 年營收增 30%+（含 Rivian 6.6 萬件訂單）；Optimus 量產時程跟隨 Tesla Fremont 7-8 月節奏；合資盟英諧波年產 10 萬套",
+     "src": "https://www.hotagroup.com/"
+    },
+    {
+     "name": "住友重機 Sumitomo HI",
+     "ticker": "6302.T",
+     "country": "JP",
+     "share": "行星/擺線",
+     "products": "Cyclo 減速機",
+     "note": "工業傳動老廠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-actuator"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nabtesco 新精密減速機系列（官方新聞）",
+     "url": "https://www.nabtesco.com/en/news/20251202-17329/"
+    }
+   ]
+  },
+  {
+   "id": "p-screw",
+   "row": "parts",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "滾珠/行星滾柱螺桿・線性傳動",
+   "nameEn": "Ball/Planetary Roller Screw · Linear",
+   "competition": "oligopoly",
+   "single": "台廠群聚 · 上銀 HIWIN 滾珠螺桿/線性導軌全球前列、2026 推行星滾柱螺桿瞄準人形；全球傳動/直得補位",
+   "desc": "把旋轉轉成直線運動的滾珠/行星滾柱螺桿與線性導軌，用於人形機器人線性致動器（如膝、踝直線驅動）。",
+   "marketSize": "直線關節",
+   "growth": "線性致動需求",
+   "share": "null",
+   "analysis": "上銀（2049.TW，滾珠螺桿/線性導軌/交叉滾子軸承全球前列；旗下大銀 整合伺服馬達+驅動+諧波成關節模組；行星滾柱螺桿 2026 推出瞄準人形；robotics 約佔營收 9-10%、估 2026 破 10%）；全球傳動（4540.TW，滾珠螺桿/線軌/滾珠花鍵）、直得（1597.TW，微小/大型線軌+線性馬達）。NSK/THK 日系全球大廠。",
+   "companies": [
+    {
+     "name": "上銀 HIWIN",
+     "ticker": "2049.TW",
+     "country": "TW",
+     "share": "滾珠螺桿/線軌全球前列",
+     "products": "ball screw / 線性導軌 / 行星滾柱螺桿(2026)",
+     "note": "robotics 佔比升至 ~12%（Q1 2026，半導體自動化拉動）；毛利率 Q1 2026 31.9%（六季新高）；EPS NT$1.64；2026/5/8 法說：接單大於產能、能見度 3.5-5 個月、全年毛利率拚站穩 30%+；3 月營收 NT$23.6 億（+17.4% YoY，2022/10 以來新高）；人形仍屬小批送樣；2027+ 才看量產貢獻",
+     "src": "https://www.hiwin.tw/"
+    },
+    {
+     "name": "全球傳動 TBI Motion",
+     "ticker": "4540.TW",
+     "country": "TW",
+     "share": "傳動台廠",
+     "products": "滾珠螺桿/線性導軌/滾珠花鍵",
+     "note": "人形機器人概念股（卡位）",
+     "src": "https://www.tbimotion.com.tw/"
+    },
+    {
+     "name": "直得 Chieftek",
+     "ticker": "1597.TW",
+     "country": "TW",
+     "share": "微小線性利基",
+     "products": "微小/大型線軌 + 線性馬達",
+     "note": "延伸機器人模組（概念）"
+    },
+    {
+     "name": "THK / NSK",
+     "ticker": "6481.T / 6471.T",
+     "country": "JP",
+     "share": "線性/滾珠全球",
+     "products": "LM guide / ball screw",
+     "note": "日系全球龍頭"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-actuator"
+    }
+   ],
+   "sources": [
+    {
+     "label": "上銀科技（官網）",
+     "url": "https://www.hiwin.tw/"
+    }
+   ]
+  },
+  {
+   "id": "p-motor",
+   "row": "parts",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "無框馬達 / 伺服 / 驅動",
+   "nameEn": "Frameless Motor · Servo · Driver",
+   "competition": "oligopoly",
+   "single": "客戶分散 · 無框力矩馬達是人形關節心臟；Nidec（日）小型馬達全球＋Maxon（瑞）精密 DC＋台達電 motion 切入",
+   "desc": "驅動關節的無框力矩馬達（frameless torque motor）、伺服馬達與伺服驅動器，決定關節扭矩密度與響應。",
+   "marketSize": "關節心臟",
+   "growth": "關節電氣化",
+   "share": "null",
+   "analysis": "Nidec（6594.T，全球小型/精密馬達龍頭、人形關節馬達布局）；Maxon（瑞士未上市，火星車級精密 BLDC、人形高階關節）；台達電（2308.TW，motion/伺服系統切入機器人）、東元（1504.TW，馬達）；Allied Motion/Kollmorgen（無框力矩）。伺服驅動為關節閉環核心。",
+   "companies": [
+    {
+     "name": "Nidec 日本電產",
+     "ticker": "6594.T",
+     "country": "JP",
+     "share": "小型精密馬達全球",
+     "products": "BLDC / 關節馬達 / 減速馬達",
+     "note": "馬達龍頭、人形布局",
+     "src": "https://www.nidec.com/en/ir/"
+    },
+    {
+     "name": "Maxon",
+     "ticker": "—",
+     "country": "CH",
+     "share": "精密 BLDC 高階",
+     "products": "精密 DC/BLDC 馬達+驅動",
+     "note": "火星車級、人形高階關節（未上市）"
+    },
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "motion/伺服切入",
+     "products": "伺服馬達/驅動器/motion 系統",
+     "note": "工業自動化延伸機器人"
+    },
+    {
+     "name": "東元 TECO / Allied Motion",
+     "ticker": "1504.TW / —",
+     "country": "TW",
+     "share": "馬達台廠/無框",
+     "products": "伺服馬達 / frameless 力矩馬達",
+     "note": "Allied(被 Allient 併)無框力矩"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-actuator"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nidec IR（官方）",
+     "url": "https://www.nidec.com/en/ir/"
+    }
+   ]
+  },
+  {
+   "id": "p-sensor",
+   "row": "parts",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "力/扭矩感測 · 編碼器 · IMU",
+   "nameEn": "Force/Torque · Encoder · IMU",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "六軸力/扭矩感測器（手腕/腳踝）、絕對式編碼器（關節角度）、MEMS IMU（平衡）、觸覺/電子皮膚，是機器人「本體感與觸覺」。",
+   "marketSize": "觸覺/本體感",
+   "growth": "感測 ~$100 億(10年)",
+   "share": "null",
+   "analysis": "六軸力矩 ATI(Novanta)/FUTEK/Bota Systems(瑞)、中系 海伯森/宇立 切入人形；編碼器 雷尼紹/海德漢/多摩川；MEMS IMU 與觸覺感測 Bosch/ST/TDK；台廠在力覺/觸覺多為新進。感測 BOM 占比隨靈巧手提升、是 ~$100 億(10年)新市場。",
+   "companies": [
+    {
+     "name": "ATI(Novanta) / FUTEK",
+     "ticker": "NOVT / —",
+     "country": "US",
+     "share": "六軸力矩領先",
+     "products": "6-axis F/T sensor",
+     "note": "工業/人形手腕",
+     "src": "https://www.futek.com/applications/Humanoid-Robot-Sensors"
+    },
+    {
+     "name": "Bota Systems",
+     "ticker": "—",
+     "country": "CH",
+     "share": "整合式六軸",
+     "products": "SensONE 6-axis F/T + IMU",
+     "note": "ETH 衍生、人形 (未上市)"
+    },
+    {
+     "name": "海伯森 Hypersen / 宇立",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中系切入",
+     "products": "六軸力矩/觸覺",
+     "note": "人形成本替代"
+    },
+    {
+     "name": "XELA Robotics",
+     "ticker": "—",
+     "country": "JP",
+     "share": "觸覺水平供應",
+     "products": "uSkin / 3D 觸覺感測",
+     "note": "2025/12 將 uSkin 整合進 Tesollo DG-5F 五指仿生手、2026 Q1 末起接單，並對 Wonik/Sake/Weiss/Robotiq 等多家供貨；CES 2026 展 3D 觸覺——觸覺（BOM 最大成本、最深良率瓶頸）出現可量產的水平供應層（未上市）",
+     "src": "https://www.robotics247.com/article/ces-2026-xela-robotics-demos-3d-tactile-sensor-to-give-robots-a-human-sense-of-touch"
+    },
+    {
+     "name": "雷尼紹 / 多摩川",
+     "ticker": "RSW.L / —",
+     "country": "UK",
+     "share": "編碼器全球",
+     "products": "absolute encoder",
+     "note": "關節角度回授"
+    },
+    {
+     "name": "Bosch / ST / TDK",
+     "ticker": "— / STM / TDK",
+     "country": "DE",
+     "share": "MEMS IMU 全球",
+     "products": "MEMS IMU / 觸覺感測",
+     "note": "平衡/姿態"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-actuator"
+    },
+    {
+     "id": "f-robot"
+    }
+   ],
+   "sources": [
+    {
+     "label": "FUTEK 人形機器人感測（官方）",
+     "url": "https://www.futek.com/applications/Humanoid-Robot-Sensors"
+    }
+   ]
+  },
+  {
+   "id": "p-hand",
+   "row": "parts",
+   "col": 11,
+   "span": 1,
+   "kind": "rail",
+   "name": "靈巧手 / 微型致動",
+   "nameEn": "Dexterous Hand · Micro-actuation",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "多自由度靈巧手（含微型空心杯馬達、行星滾柱微螺桿、腱繩傳動與指尖觸覺），決定機器人「操作」能力，是技術最難子系統之一。",
+   "marketSize": "操作瓶頸",
+   "growth": "DOF 競賽",
+   "share": "null",
+   "analysis": "靈巧手 DOF 競賽：小鵬 IRON 單手 22 DOF、Tesla 新手目標 ~22 DOF；模組供應 Wonik(韓 Allegro Hand)、中系 因時 Inspire/兆威機電(003021.SZ，微型傳動)；微型空心杯馬達 Maxon/中系鳴志；觸覺指尖 Bota/海伯森。多數 OEM 自研，台廠在微型傳動/觸覺尚屬新進。是 BOM 高價值＋良率瓶頸。絃外之音：真正卡 Tesla「百萬台」的隱性單點是這裡——一隻靈巧手約需 ~20 顆空心杯馬達，全球高階空心杯由 Maxon（瑞，未上市）掌握定價權，六軸力覺感測全球僅少數可量產（中系 Coliy 為唯一已量產並進 Tesla 驗證的本土廠；PaXini 帕西尼於 CES 2026 推全棧觸覺基礎設施＋DexH13 靈巧手、XELA 推六軸力覺指甲 + 30 三軸觸點指腹）。減速機可多源、靈巧手與觸覺難多源，這才是量產時程的真瓶頸。",
+   "companies": [
+    {
+     "name": "兆威機電 Zhaowei",
+     "ticker": "003021.SZ",
+     "country": "CN",
+     "share": "微型傳動切入",
+     "products": "靈巧手微型減速/傳動模組",
+     "note": "人形靈巧手概念；2026-H1：供 Tesla Optimus V3 靈巧手驅動模組（V3 中國供應鏈 ~70% 之一）",
+     "src": "https://finance.biggo.com/news/gQPHv50BZk7xib5f4ox8"
+    },
+    {
+     "name": "智元 AgiBot OmniHand",
+     "ticker": "—",
+     "country": "CN",
+     "share": "靈巧手水平供應（新層級）",
+     "products": "OmniHand Agile/Professional 跨 OEM 靈巧手模組",
+     "note": "CES 2026：智元將 OmniHand 系列定位為跨 OEM 對外銷售、可相容他牌機器人——把過去各家自研的靈巧手轉為獨立供貨業務層；靈巧手約佔 BOM ~31%（IDTechEx）為單一最大成本項，代表最深子系統開始出現專業分工的水平供應商（智元 AgiBot 未上市）",
+     "src": "https://autonews.gasgoo.com/articles/news/zhiyuan-robot-spins-off-dexterous-hand-business-humanoid-robots-trigger-a-division-of-labor-revolution-2013868661754662912"
+    },
+    {
+     "name": "Wonik Robotics",
+     "ticker": "—",
+     "country": "KR",
+     "share": "Allegro Hand",
+     "products": "多指靈巧手",
+     "note": "研究/商用靈巧手（未上市）"
+    },
+    {
+     "name": "因時機器人 Inspire",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中系靈巧手",
+     "products": "靈巧手 + 微型缸",
+     "note": "成本替代（未上市）"
+    },
+    {
+     "name": "Maxon / 鳴志 Moons",
+     "ticker": "— / 603728.SS",
+     "country": "CH",
+     "share": "微型空心杯馬達",
+     "products": "空心杯 BLDC / 步進",
+     "note": "手指致動馬達"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-robot"
+    },
+    {
+     "id": "f-robot-cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "兆威機電（官網）",
+     "url": "https://www.zhaowei.com/en/"
+    }
+   ]
+  },
+  {
+   "id": "f-actuator",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "關節致動器模組 Actuator",
+   "nameEn": "Joint Actuator Module",
+   "competition": "highgrowth",
+   "single": "價值鎖喉 · 一台人形 ~28-40 個關節，actuator（減速機＋無框馬達＋驅動＋感測）約佔整機 BOM 一半；自研 vs 外購為各 OEM 策略主軸",
+   "desc": "把減速機、無框馬達、伺服驅動、力矩/位置感測整合為「旋轉/線性關節模組」，是人形機器人價值與技術最集中的子系統。",
+   "marketSize": "價值集中",
+   "growth": "BOM ~50%",
+   "share": "null",
+   "analysis": "策略分歧：Tesla/Figure/小鵬 傾向自研致動器（垂直整合降本）；多數中小 OEM 外購；台廠上銀（大銀關節模組）、和大（送樣）、Harmonic/Nabtesco/Nidec 供關鍵件。一台人形 ~28-40 個關節（小鵬 IRON 82 DOF、單手 22 DOF），actuator 約佔 BOM 一半，是降本主戰場。隱性單點：actuator 內的無框馬達靠 NdFeB 稀土永磁（每台 Optimus ~3.5kg），中國掌全球 ~90% 永磁加工＋40% 精密軸承，2025/4 起稀土出口管制直接拖慢 Tesla Optimus 量產（Musk 已公開承認）；去中國化將使 Optimus Gen2 BOM 由 ~$46k 暴增至 ~$131k。2026-H1 更新：中國 2025/12/2 對 JL Mag 金力永磁、寧波韻升、中科三環核發首批一年期『通用許可』（源於 10/30 川習峰會），單點風險局部鬆動，但屬條件式（綁特定客戶、僅一年期），4 月那波管制截至 2026/5 底『仍在咬』，中國續控 ~69% 開採＋~90% 磁石加工。",
+   "companies": [
+    {
+     "name": "上銀(大銀) / 和大",
+     "ticker": "2049.TW / 1536.TW",
+     "country": "TW",
+     "share": "關節模組台廠",
+     "products": "伺服+諧波關節模組 / 行星關節件",
+     "note": "大銀整合模組；和大送樣（未量產）"
+    },
+    {
+     "name": "Harmonic / Nabtesco / Nidec",
+     "ticker": "6324.T / 6268.T / 6594.T",
+     "country": "JP",
+     "share": "關鍵件供應",
+     "products": "諧波/RV 減速＋馬達",
+     "note": "致動器核心日廠"
+    },
+    {
+     "name": "綠的-KY / 全球傳動",
+     "ticker": "3164.TW / 4540.TW",
+     "country": "TW",
+     "share": "諧波/線性",
+     "products": "諧波 / 滾珠螺桿",
+     "note": "致動器內部件（概念）"
+    },
+    {
+     "name": "Tesla / Figure(自研)",
+     "ticker": "TSLA / —",
+     "country": "US",
+     "share": "OEM 自研致動器",
+     "products": "自製旋轉/線性致動器",
+     "note": "垂直整合降本"
+    },
+    {
+     "name": "Schaeffler 舍弗勒",
+     "ticker": "SHA.DE",
+     "country": "DE",
+     "share": "汽車 Tier-1 跨入致動器",
+     "products": "關節致動器 / motion 模組",
+     "note": "2026/5 與英國 Humanoid 簽 5 年（至 2031）綁定供貨：成 preferred supplier、供其輪式平台 >50% 關節致動器需求、累計七位數顆；5 個月內簽下三項人形致動器合作（Neura Robotics、英國 Humanoid、中國樂聚 Leju），共同開發次世代諧波(strain-wave)致動器；自家德廠 2026 末起部署人形（搬箱）、目標 2032 全球部署四位數機隊；另與 Hexagon Robotics 結策略夥伴；2026/6 再以策略投資人入股 Neura Robotics $14 億輪。汽車傳動巨頭正式跨入人形致動器",
+     "src": "https://roboticsandautomationnews.com/2026/05/13/humanoid-secures-landmark-deal-with-schaeffler-to-deploy-thousands-of-humanoid-robots/101411/"
+    },
+    {
+     "name": "拓普集團 Tuopu",
+     "ticker": "601689.SS",
+     "country": "CN",
+     "share": "Tesla V3 旋轉關節 Tier 0.5",
+     "products": "旋轉關節致動器 / 線性致動器組裝",
+     "note": "2026-H1：Tesla 完成 Optimus V3 工廠審核、中國供應商拿下 ~70% 零件份額；拓普以 Tier 0.5 拿下 ~¥30 億（~$4.1 億）旋轉關節訂單、2026 交付、傳獨家供線性致動器組裝；對台廠（和大送樣、上銀小批）形成份額壓力",
+     "src": "https://finance.biggo.com/news/gQPHv50BZk7xib5f4ox8"
+    },
+    {
+     "name": "三花智控 Sanhua",
+     "ticker": "002050.SZ",
+     "country": "CN",
+     "share": "Tesla V3 線性致動器",
+     "products": "線性致動器",
+     "note": "2025/10 傳獲 Tesla Optimus 線性致動器訂單 >¥50 億、2026 Q1 起交付；長三角產業聚落成 V3 供應鏈最大贏家",
+     "src": "https://finance.biggo.com/news/gQPHv50BZk7xib5f4ox8"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "p-harmonic"
+    },
+    {
+     "id": "p-rv"
+    },
+    {
+     "id": "p-screw"
+    },
+    {
+     "id": "p-motor"
+    },
+    {
+     "id": "p-sensor"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-robot"
+    }
+   ],
+   "sources": [
+    {
+     "label": "上銀科技 機器人關節（官網）",
+     "url": "https://www.hiwin.tw/"
+    }
+   ]
+  },
+  {
+   "id": "f-arm",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "工業機械臂 / 協作臂 OEM",
+   "nameEn": "Industrial · Collaborative Arm",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "六軸工業機械臂與協作機器人（cobot），是減速機/伺服最成熟的需求基礎，也是人形量產的製造與技術母體。",
+   "marketSize": "現金牛",
+   "growth": "成熟+AI 升級",
+   "share": "null",
+   "analysis": "工業機器人四大家族 Fanuc（~17%／出貨領先）、ABB（~13%）、Yaskawa 安川（~12%）、KUKA（美的子公司）寡占——四大合計約佔全球出貨 ~75%、進入障礙高；cobot 由 Universal Robots(Teradyne)、台廠達明 Techman（廣達子公司，2026 GTC 推輪式人形 TM Xplore I、Jetson Thor）領先，cobot 已佔美國機器人安裝 ~12%。四大家族是 Nabtesco RV/Harmonic 的最大現有客戶——人形量產前，減速機定價權其實由四大家族的議價力決定。",
+   "companies": [
+    {
+     "name": "Fanuc 發那科",
+     "ticker": "6954.T",
+     "country": "JP",
+     "share": "工業臂 ~11-17%",
+     "products": "六軸工業機器人/CNC",
+     "note": "全球龍頭",
+     "src": "https://www.fanuc.co.jp/en/ir/"
+    },
+    {
+     "name": "Yaskawa 安川電機",
+     "ticker": "6506.T",
+     "country": "JP",
+     "share": "~8% Motoman",
+     "products": "工業機器人+伺服",
+     "note": "伺服+機器人垂直整合"
+    },
+    {
+     "name": "ABB",
+     "ticker": "ABBN.SW",
+     "country": "CH",
+     "share": "~13%",
+     "products": "工業機器人/cobot",
+     "note": "瑞士；機器人事業"
+    },
+    {
+     "name": "達明 Techman",
+     "ticker": "—",
+     "country": "TW",
+     "share": "cobot 全球前列",
+     "products": "AI 協作臂 + TM Xplore I 輪式人形",
+     "note": "廣達子公司、Nvidia GTC 2026（未獨立掛牌）",
+     "src": "https://www.tm-robot.com/en"
+    },
+    {
+     "name": "KUKA / Universal Robots",
+     "ticker": "— / TER",
+     "country": "DE",
+     "share": "四大家族/cobot 龍頭",
+     "products": "工業臂 / UR cobot",
+     "note": "KUKA=美的旗下未獨立；UR=Teradyne"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-actuator"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-robot"
+    },
+    {
+     "id": "f-app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "FANUC IR（官方）",
+     "url": "https://www.fanuc.co.jp/en/ir/"
+    }
+   ]
+  },
+  {
+   "id": "f-robot",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "人形機器人整機 OEM（西方）",
+   "nameEn": "Humanoid OEM (West)",
+   "competition": "highgrowth",
+   "single": "資本最密 · Tesla Optimus（V3 待 2026）、Figure（$39B 估值、Helix 自研 AI）、1X NEO；多數自研致動器＋AI，垂直整合",
+   "desc": "歐美人形機器人整機開發商，多採垂直整合（自研致動器＋自研 VLA 模型），是減速機/馬達/感測的需求源頭與定義者。",
+   "marketSize": "需求核心",
+   "growth": "量產起跑",
+   "share": "null",
+   "analysis": "Tesla Optimus（TSLA，V3 demo 延至 2026 年中（Musk Q1 FY26 法說：「大約今年中段」），Fremont Model S/X 停線改建、7-8 月起量產；Musk 警告初期出量「非常慢」、有 10,000 種零件；Giga Texas 第二廠規劃 2027 年啟動）；Figure AI（未上市，2025/9 Series C 募 $10 億+、估值 $39B，Nvidia/Bezos/微軟投資；Figure 03 + Helix 02 全身自主、BotQ 已達每小時 1 台）；1X（NEO 家用）、Agility（Digit）、Boston Dynamics（Atlas，Hyundai 旗下）；Neura Robotics（德，2026/6 完成 $14 億 Series C、估值 $70 億，Tether 領投＋Nvidia/Amazon/Qualcomm/Bosch/Schaeffler，史上最大全棧機器人單輪、歐洲資金最雄厚人形新創，2026 末首批量產出貨）。資本最密集、定義 BOM 規格。",
+   "companies": [
+    {
+     "name": "Tesla Optimus",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "話題/規模領跑",
+     "products": "Optimus Gen2 / V3",
+     "note": "V3 為 37 關節、步速 1.2 m/s；Musk Q1'26 法說再次延後 V3、Fremont（原 Model S/X 線）量產延至 2026 Q3+、目標 2026 出 5–10 萬台、年底拚百萬台/年產能；自研致動器+AI5 晶片",
+     "src": "https://www.tesla.com/AI"
+    },
+    {
+     "name": "Figure AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 $39B 領先新創",
+     "products": "Figure 03 + Helix 02 VLA",
+     "note": "BotQ 量產里程碑（2026/5：累計交付 350+ 台 F.03、產速由 1 台/日提至 1 台/小時、<120 天 24x；首條產線年產能 12,000 台）；BMW Spartanburg 40 台 Figure 03 商業部署（F.02 已完成 30,000 輛 X3 生產；F.03 Phase 1 合約含 2026-2027 擴展至更多工作站）；BMW Leipzig 試點選用 Hexagon AEON（2026 春測試、夏季正式 pilot，Figure 未入選——首個客戶分流警訊）；Nvidia 投資；估值 $39B（未上市）",
+     "src": "https://www.figure.ai/news/ramping-figure-03-production"
+    },
+    {
+     "name": "1X Technologies",
+     "ticker": "—",
+     "country": "US",
+     "share": "家用人形",
+     "products": "NEO 家用機器人",
+     "note": "OpenAI 系投資；2026/4/30 加州 Hayward NEO Factory 開幕投產（美國首座垂直整合人形工廠、年產能 10,000 台、每台搭載 Jetson Thor）；首年 10,000 台 5 天內售罄、訂價 $20,000/台或 $499/月；2026 年內開始對美消費者出貨；目標 2027 年底 100,000+ 台/年（未上市）"
+    },
+    {
+     "name": "Agility Robotics",
+     "ticker": "—",
+     "country": "US",
+     "share": "物流人形",
+     "products": "Digit 倉儲",
+     "note": "已商業部署：GXO Flowery Branch 100,000+ totes 里程碑（2025/11）、Amazon、Mercado Libre（2026 德州 San Antonio）、Toyota；Digit 累計部署數百萬工時（未上市）"
+    },
+    {
+     "name": "Boston Dynamics",
+     "ticker": "—",
+     "country": "US",
+     "share": "技術標竿",
+     "products": "電動 Atlas",
+     "note": "Hyundai 旗下（005380.KS）；CES 2026 正式版 Atlas 發布（56 DOF、50 kg 舉重、7.5 ft 觸及範圍）；CES Best Robot；Google DeepMind 合作 foundation model；2026 全部產能已承諾（Hyundai RMAC + DeepMind）；Hyundai Mobis 供 actuator；規劃 2028 達 3 萬台/年；估值因 Atlas 動能飆至 ~$200-280 億（自 Hyundai 收購以來 ~20-24x）、傳最快 2027 那斯達克 IPO",
+     "src": "https://bostondynamics.com/atlas/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-actuator"
+    },
+    {
+     "id": "f-arm"
+    },
+    {
+     "id": "p-sensor"
+    },
+    {
+     "id": "b-brain"
+    },
+    {
+     "id": "b-vla"
+    },
+    {
+     "id": "b-battery"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Figure 03 量產（官方新聞）",
+     "url": "https://www.figure.ai/news/ramping-figure-03-production"
+    }
+   ]
+  },
+  {
+   "id": "f-robot-cn",
+   "row": "flow",
+   "col": 7,
+   "span": 2,
+   "kind": "stage",
+   "name": "人形機器人整機 OEM（中國）",
+   "nameEn": "Humanoid OEM (China)",
+   "competition": "highgrowth",
+   "single": "量產領先 · Unitree 宇樹（2025 出貨 5,500+ G1、申請 A 股 IPO 估值 ~$70 億、唯一獲利）；UBTech Walker S2 量產；小鵬 IRON 82 DOF",
+   "desc": "中國人形機器人 OEM，以供應鏈成本與量產速度領先，是減速機/感測中系國產替代的最大拉動。",
+   "marketSize": "成本+量",
+   "growth": "量產最快",
+   "share": "null",
+   "analysis": "Unitree 宇樹（2026/6/1 科創板 IPO 過會、募 ¥42.02 億、2025 營收 +335% 達 ¥17 億、唯一獲利 ~60% 毛利；G1 2025 出貨 5,500+、2026 目標 2 萬台）；UBTech（9880.HK，Walker S2 2025/11 量產交付、年內 500 台、2026 年產能 5,000 台、Walker 系列訂單破 ¥8 億、Airbus 採購）；小鵬 IRON（9868.HK，82 DOF、3 顆 Turing 晶片 2,250 TOPS、2026 末量產）；傅利葉 Fourier、智元 Agibot。中系帶動國產減速機/感測替代。2025 全球人形出貨 ~1.3 萬台、中國廠商佔 ~87-90%（AgiBot ~39%、Unitree ~32% 雙雄；對比 Tesla/Figure/Agility 各約 ~150 台），中國已是出貨與成本（單台約 $10,000、~西方 1/3-1/2）雙領先。TrendForce 估 2026 中國人形產出年增 ~94%、AgiBot+Unitree 合計拿下近 80%；中國 6 月起已出貨全球 ~90% 並在 AI benchmark 領先。2026-H1：Morgan Stanley 上修中國 2026 人形銷量至 ~28,000 台（+133% YoY），並指中美技術差距正在『擴大』、中國握 ~70% 零組件供應鏈與自 2022 以來 61% 的新品發表（長線維持 2035 全球 $380 億、2050 全產業鏈 $5 兆）。",
+   "companies": [
+    {
+     "name": "Unitree 宇樹",
+     "ticker": "—",
+     "country": "CN",
+     "share": "2025 人形出貨 ~32% 全球(第二)",
+     "products": "G1 / H1 人形 + 四足",
+     "note": "2026/6/1 上交所上市委通過 IPO（A 股「具身智慧第一股」，受理到過會僅 73 天）、擬募 ¥42 億、目標估值 ~$6.2B；2025 營收 ¥16.99 億（$2.5 億，+335%）、扣非淨利 ¥5.9 億、核心毛利 60.13%；2025 人形出貨 5,500+（出貨量全球第一含/第二僅次 AgiBot）、四足累計超 3 萬台；Q1 2026 營收 ¥4.23 億（+68.5% YoY）但淨利年減 ~47.7%（R&D 與產能投入加重）、H1 2026 調整後淨利指引 ¥2.36–2.83 億（YoY -6.4% 至 -22%）；與 Nvidia 合作 H2 Plus 入選 Isaac GR00T 參考機體、2026H2 推 H2+；出貨領先但獲利承壓、掛牌在即",
+     "src": "https://chinabizinsider.com/unitree-races-toward-chinas-first-humanoid-robot-ipo-betting-big-on-embodied-ai/"
+    },
+    {
+     "name": "UBTech 優必選",
+     "ticker": "9880.HK",
+     "country": "CN",
+     "share": "工業人形量產",
+     "products": "Walker S2 工業人形",
+     "note": "2025/11 量產、訂單 >¥8 億、Airbus",
+     "src": "https://www.ubtrobot.com/en/humanoid/products/walker-s2"
+    },
+    {
+     "name": "Xpeng 小鵬",
+     "ticker": "9868.HK",
+     "country": "CN",
+     "share": "車廠跨界",
+     "products": "IRON 人形(82 DOF)",
+     "note": "2026/1 完成首個 ET1 版本原型（汽車標準）；廣州工廠 2026 Q1 破土、9 個月內量產目標；IRON 62 DOF、單手 22 DOF、三顆 Turing 晶片 2,250 TOPS、VLA 2.0；硬體良率仍為瓶頸（公司承認）",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001810997/000119312526117623/d270013dex992.htm"
+    },
+    {
+     "name": "Fourier 傅利葉 / 智元 Agibot",
+     "ticker": "— / —",
+     "country": "CN",
+     "share": "AgiBot 2025 出貨 ~39% 全球(第一)",
+     "products": "GR 系列 / 遠征 A1",
+     "note": "智元 AgiBot：2025 交付 5,168 台、全球出貨市占 ~39%（超越 Unitree 居第一）；2026/3 累計出貨 10,000 台（三個月內從 5,000 到 10,000）、HK IPO Q3 目標估值 HK$40-50B（CICC/CITIC/MS 聯席保薦）；傅利葉 Fourier：2025 出貨 ~300 台、復健/通用（未上市）"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-actuator"
+    },
+    {
+     "id": "p-sensor"
+    },
+    {
+     "id": "b-brain"
+    },
+    {
+     "id": "b-vla"
+    },
+    {
+     "id": "b-battery"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Unitree G1（官網）",
+     "url": "https://www.unitree.com/g1/"
+    }
+   ]
+  },
+  {
+   "id": "f-em",
+   "row": "flow",
+   "col": 9,
+   "span": 2,
+   "kind": "stage",
+   "name": "整機代工 / EMS / 系統整合",
+   "nameEn": "Robot EMS · Integration",
+   "competition": "oligopoly",
+   "single": "台廠主場 · 鴻海 2317（與 Nvidia 合作 Houston AI 伺服器廠導入人形、2026Q1 起）、廣達 2382、樺漢/盟立 系統整合",
+   "desc": "人形機器人的整機代工/組裝（EMS）與工廠系統整合，是台灣 ICT 供應鏈最有機會切入的環節。",
+   "marketSize": "台廠卡位",
+   "growth": "鴻海+Nvidia",
+   "share": "null",
+   "analysis": "鴻海（2317.TW，與 Nvidia 合作在 Houston AI 伺服器廠導入 Nvidia 人形機器人、Young Liu 稱半年內部署、2026Q1 起隨 GB300 量產）；廣達（2382.TW，AI 伺服器＋透過達明跨足）；樺漢（6414.TW，工業電腦/邊緣運算）、盟立（2464.TW，自動化/與和大合資諧波）、所羅門（2359.TW，3D 視覺整合）。台廠以製造＋整合卡位。",
+   "companies": [
+    {
+     "name": "鴻海 Foxconn",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "整機代工龍頭",
+     "products": "人形組裝 + Nvidia 合作部署",
+     "note": "Houston AI 廠導入、2026Q1 起",
+     "src": "https://www.foxconn.com/en-us/press-center/press-releases"
+    },
+    {
+     "name": "廣達 Quanta",
+     "ticker": "2382.TW",
+     "country": "TW",
+     "share": "ICT 代工",
+     "products": "AI 伺服器 + 達明人形",
+     "note": "透過達明跨足",
+     "src": "https://www.quantatw.com/quanta/english/"
+    },
+    {
+     "name": "樺漢 Ennoconn / 盟立 Mirle",
+     "ticker": "6414.TW / 2464.TW",
+     "country": "TW",
+     "share": "工控/自動化整合",
+     "products": "邊緣運算/工業電腦 / 自動化整線",
+     "note": "盟立合資盟英諧波"
+    },
+    {
+     "name": "所羅門 Solomon",
+     "ticker": "2359.TW",
+     "country": "TW",
+     "share": "3D 視覺整合",
+     "products": "AccuPick 3D 視覺/抓取",
+     "note": "機器人視覺軟硬整合",
+     "src": "https://www.solomon.com.tw/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-actuator"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-robot"
+    },
+    {
+     "id": "f-robot-cn"
+    },
+    {
+     "id": "f-app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "鴻海新聞中心（官方）",
+     "url": "https://www.foxconn.com/en-us/press-center/press-releases"
+    }
+   ]
+  },
+  {
+   "id": "f-app",
+   "row": "flow",
+   "col": 11,
+   "span": 2,
+   "kind": "demand",
+   "name": "應用終端 / 需求場景",
+   "nameEn": "Applications (Demand)",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "人形機器人應用：智慧工廠/物流（先行）、汽車產線、倉儲、最終延伸到服務與家用。需求方常同時是 OEM（Tesla/小鵬自用）。",
+   "marketSize": "TAM 兆級(長線)",
+   "growth": "工廠先行",
+   "share": "null",
+   "analysis": "工廠/物流先行：Tesla、BYD 規劃 2025→2026 自家工廠人形部署增 >10 倍、單台目標降本 >25%；鴻海/Nvidia Houston 伺服器產線、UBTech 進汽車廠、Agility Digit 倉儲、Figure 商業客戶；家用為長線（Figure 03/1X NEO/Tesla）。終端 TAM 二手研調分歧大（馬斯克稱兆級，研調 2030 數百萬台），僅作量級。",
+   "companies": [
+    {
+     "name": "智慧工廠/汽車產線",
+     "ticker": "TSLA / BYD",
+     "country": "US",
+     "share": "最早落地",
+     "products": "產線搬運/裝配/上下料",
+     "note": "Tesla/BYD 自廠部署 +10x"
+    },
+    {
+     "name": "倉儲物流",
+     "ticker": "—",
+     "country": "US",
+     "share": "已商用",
+     "products": "Agility Digit / 揀貨",
+     "note": "倉儲搬運"
+    },
+    {
+     "name": "AI 伺服器製造",
+     "ticker": "NVDA / 2317.TW",
+     "country": "US",
+     "share": "Nvidia+鴻海",
+     "products": "伺服器組裝人形",
+     "note": "Houston GB300 產線"
+    },
+    {
+     "name": "服務 / 家用（長線）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "2027+ 商轉",
+     "products": "家用/照護/服務",
+     "note": "Figure 03/1X NEO/Optimus"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-robot"
+    },
+    {
+     "id": "f-robot-cn"
+    },
+    {
+     "id": "f-em"
+    },
+    {
+     "id": "f-arm"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Figure 03 家用（官方）",
+     "url": "https://www.figure.ai/news/introducing-figure-03"
+    }
+   ]
+  },
+  {
+   "id": "b-brain",
+   "row": "brain",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "機器人運算大腦 SoC",
+   "nameEn": "Robot Compute Brain (SoC)",
+   "competition": "highgrowth",
+   "single": "事實標準 ⚑ · Nvidia Jetson Thor（2,070 FP4 TFLOPS / 130W）＋Isaac 平台，人形機器人邊緣運算事實標準；Qualcomm/小鵬自研競逐",
+   "desc": "機器人本體的邊緣 AI 運算 SoC，即時跑感知＋VLA 推論＋運動控制，是「具身智慧」算力底座。",
+   "marketSize": "大腦單點",
+   "growth": "Physical AI",
+   "share": "null",
+   "analysis": "Nvidia（NVDA，Jetson Thor 2025 GA、2,070 FP4 TFLOPS/130W、專為人形設計，CES 2026 把 Physical AI 列為下一成長前沿；達明/鴻海/Figure 多採用；邊緣 AI 營收約 ~39%、Jetson 開發者 ~200 萬，平台鎖定 > 純晶片市占）；Qualcomm（2026 CES 推 Dragonwing 機器人平台正面挑戰 Jetson）、聯發科（邊緣 AI）；小鵬自研 Turing（3 顆 2,250 TOPS）、Tesla 自研 AI5。絃外之音：Nvidia 在機器人大腦的鎖喉不靠晶片市占（僅 ~39%），而靠 Isaac GR00T／Sim 軟體鎖定——OEM 一旦用 Isaac 訓練就難遷移，這是比硬體更深的護城河；但 OEM 自研晶片（Tesla AI5、小鵬 Turing）正是對這層鎖定的反制。",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "人形大腦事實標準⚑",
+     "products": "Jetson Thor + Isaac 平台",
+     "note": "2,070 FP4 TFLOPS/130W、Physical AI；2026/6/1 GTC Taipei 發表 Isaac GR00T 開放人形參考設計（Unitree H2 Plus 機體＋Sharpa Wave 22 DOF 觸覺手＋Jetson AGX Thor T5000），ETH/Stanford/UCSD/Ai2 首批採用",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design"
+    },
+    {
+     "name": "Qualcomm",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "機器人 SoC",
+     "products": "robotics SoC / 邊緣 AI",
+     "note": "Snapdragon 機器人平台"
+    },
+    {
+     "name": "聯發科 MediaTek",
+     "ticker": "2454.TW",
+     "country": "TW",
+     "share": "邊緣 AI 切入",
+     "products": "邊緣 AI SoC",
+     "note": "與 Nvidia 合作 SoC"
+    },
+    {
+     "name": "小鵬 Turing / Tesla AI5(自研)",
+     "ticker": "9868.HK / TSLA",
+     "country": "CN",
+     "share": "OEM 自研晶片",
+     "products": "Turing 2,250 TOPS / AI5",
+     "note": "車廠垂直整合自研"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-robot"
+    },
+    {
+     "id": "f-robot-cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nvidia Jetson Thor（官方）",
+     "url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/"
+    }
+   ]
+  },
+  {
+   "id": "b-vla",
+   "row": "brain",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "VLA 基礎模型 / 模擬訓練",
+   "nameEn": "VLA Foundation Model · Sim",
+   "competition": "highgrowth",
+   "single": "雙路線 · Nvidia Isaac GR00T（開源人形基礎模型）＋Cosmos/Isaac Lab 模擬；Figure Helix、Tesla 自研 VLA 垂直整合",
+   "desc": "視覺-語言-動作（VLA）基礎模型與合成資料/模擬訓練平台（sim-to-real），是人形機器人的「智慧」與最大差異化。",
+   "marketSize": "智慧護城河",
+   "growth": "開源+自研",
+   "share": "null",
+   "analysis": "Nvidia（Isaac GR00T N1.5 開源人形基礎模型 + Cosmos 世界模型 + Isaac Lab/Lab-Arena 模擬，CES 2026 強化）；自研派 Figure Helix 02（全身自主）、Tesla（端到端 VLA）、Google DeepMind（Gemini Robotics）、Physical Intelligence（π，未上市）；達明 GTC 2026 展動作訓練。軟體護城河比硬體更深。",
+   "companies": [
+    {
+     "name": "Nvidia Isaac GR00T",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "開源人形模型錨點",
+     "products": "GR00T N1.5 + Cosmos + Isaac Lab",
+     "note": "開源基礎模型+模擬",
+     "src": "https://developer.nvidia.com/isaac/gr00t"
+    },
+    {
+     "name": "Figure Helix(自研)",
+     "ticker": "—",
+     "country": "US",
+     "share": "自研 VLA 領先",
+     "products": "Helix 02 全身自主 VLA",
+     "note": "垂直整合（未上市）",
+     "src": "https://www.figure.ai/news/helix-02"
+    },
+    {
+     "name": "Google DeepMind / Physical Intelligence",
+     "ticker": "GOOGL / —",
+     "country": "US",
+     "share": "通用 VLA",
+     "products": "Gemini Robotics / π 模型",
+     "note": "Physical Intelligence π：傳 $1B 輪（Founders Fund + Lightspeed 參與），估值目標 $11B（+96% vs $5.6B，2026/3 Bloomberg）；Skild AI：Series C $1.4B（SoftBank 領投、Nvidia/Samsung/Bezos 參與）、估值 $14B（七個月三倍）；World Labs（Fei-Fei Li）：2026/2 $1B 輪（Nvidia/AMD/Autodesk）、估值 $5B（空間智慧 LWM）"
+    },
+    {
+     "name": "Tesla(自研)",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "端到端 VLA",
+     "products": "Optimus 端到端神經網路",
+     "note": "與 FSD 共用堆疊"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-robot"
+    },
+    {
+     "id": "f-robot-cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nvidia Isaac GR00T（官方）",
+     "url": "https://developer.nvidia.com/isaac/gr00t"
+    }
+   ]
+  },
+  {
+   "id": "b-vision",
+   "row": "brain",
+   "col": 6,
+   "span": 1,
+   "kind": "rail",
+   "name": "機器視覺 / 3D 感知 / LiDAR",
+   "nameEn": "Machine Vision · 3D · LiDAR",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "機器人的「眼睛」：2D/3D 機器視覺、深度相機、固態 LiDAR 與視覺 AI 軟體，用於導航、避障與物件抓取。",
+   "marketSize": "眼睛",
+   "growth": "感知放量",
+   "share": "null",
+   "analysis": "機器視覺 Cognex（CGNX，全球龍頭）、Keyence；3D 視覺/抓取 台廠所羅門（2359.TW，AccuPick）、達明內建視覺；LiDAR Hesai 禾賽（HSAI，全球車載 LiDAR 領先、推機器人線）、RoboSense；深度相機 Intel/Orbbec。視覺＋大腦共構感知層，台廠所羅門少數有國際能見度。",
+   "companies": [
+    {
+     "name": "Cognex",
+     "ticker": "CGNX",
+     "country": "US",
+     "share": "機器視覺全球龍頭",
+     "products": "2D/3D machine vision",
+     "note": "工業視覺標竿",
+     "src": "https://www.cognex.com/products/machine-vision"
+    },
+    {
+     "name": "Keyence 基恩斯",
+     "ticker": "6861.T",
+     "country": "JP",
+     "share": "視覺/感測全球",
+     "products": "視覺系統/感測器",
+     "note": "高毛利感測巨頭"
+    },
+    {
+     "name": "所羅門 Solomon",
+     "ticker": "2359.TW",
+     "country": "TW",
+     "share": "3D 視覺抓取台廠",
+     "products": "AccuPick 3D 視覺 AI",
+     "note": "人形/機械臂抓取（國際能見度）",
+     "src": "https://www.solomon.com.tw/"
+    },
+    {
+     "name": "Hesai 禾賽 / RoboSense",
+     "ticker": "HSAI / 2498.HK",
+     "country": "CN",
+     "share": "LiDAR 全球領先",
+     "products": "固態 LiDAR / 機器人線",
+     "note": "車載延伸機器人",
+     "src": "https://www.hesaitech.com/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-robot"
+    },
+    {
+     "id": "f-robot-cn"
+    },
+    {
+     "id": "f-em"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cognex 機器視覺（官網）",
+     "url": "https://www.cognex.com/products/machine-vision"
+    }
+   ]
+  },
+  {
+   "id": "b-battery",
+   "row": "brain",
+   "col": 8,
+   "span": 1,
+   "kind": "rail",
+   "name": "電池 / 電源 / 散熱",
+   "nameEn": "Battery · Power · Thermal",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "人形機器人的電池模組、電源管理（BMS/DC-DC）與散熱，決定續航與負載自由度，是常被忽略的系統限制。",
+   "marketSize": "能源系統",
+   "growth": "續航瓶頸",
+   "share": "null",
+   "analysis": "電芯 CATL 寧德時代（300750.SZ）、LG Energy、三星 SDI 主導，人形用高功率密度電芯；BMS/電源 台達電（2308.TW）；中系人形多用本土電芯壓低成本。續航（通常 2-5 小時）與重量是人形商用瓶頸，UBTech Walker S2 以自動換電解決。能源子系統重要性常被低估。",
+   "companies": [
+    {
+     "name": "CATL 寧德時代",
+     "ticker": "300750.SZ",
+     "country": "CN",
+     "share": "電芯全球龍頭",
+     "products": "高功率密度電芯",
+     "note": "人形電池主供",
+     "src": "https://www.catl.com/en/"
+    },
+    {
+     "name": "LG Energy / 三星 SDI",
+     "ticker": "373220.KS / 006400.KS",
+     "country": "KR",
+     "share": "電芯全球前列",
+     "products": "鋰電芯/模組",
+     "note": "高階人形電池"
+    },
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "電源/BMS",
+     "products": "電源管理/DC-DC/BMS",
+     "note": "電源系統台廠"
+    },
+    {
+     "name": "UBTech(自動換電)",
+     "ticker": "9880.HK",
+     "country": "CN",
+     "share": "OEM 換電方案",
+     "products": "Walker S2 自主換電",
+     "note": "解續航痛點",
+     "src": "https://www.ubtrobot.com/en/humanoid/products/walker-s2"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-robot"
+    },
+    {
+     "id": "f-robot-cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CATL（官網）",
+     "url": "https://www.catl.com/en/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "p-harmonic",
+   "f-actuator"
+  ],
+  [
+   "p-rv",
+   "f-actuator"
+  ],
+  [
+   "p-screw",
+   "f-actuator"
+  ],
+  [
+   "p-motor",
+   "f-actuator"
+  ],
+  [
+   "p-sensor",
+   "f-actuator"
+  ],
+  [
+   "f-actuator",
+   "f-robot"
+  ],
+  [
+   "f-actuator",
+   "f-arm"
+  ],
+  [
+   "f-arm",
+   "f-robot"
+  ],
+  [
+   "f-actuator",
+   "f-em"
+  ],
+  [
+   "f-em",
+   "f-robot"
+  ],
+  [
+   "f-em",
+   "f-robot-cn"
+  ],
+  [
+   "f-robot",
+   "f-app"
+  ],
+  [
+   "f-robot-cn",
+   "f-app"
+  ],
+  [
+   "f-arm",
+   "f-app"
+  ],
+  [
+   "f-em",
+   "f-app"
+  ],
+  [
+   "p-sensor",
+   "f-robot"
+  ],
+  [
+   "p-hand",
+   "f-robot"
+  ],
+  [
+   "p-hand",
+   "f-robot-cn"
+  ],
+  [
+   "b-brain",
+   "f-robot"
+  ],
+  [
+   "b-brain",
+   "f-robot-cn"
+  ],
+  [
+   "b-vla",
+   "f-robot"
+  ],
+  [
+   "b-vla",
+   "f-robot-cn"
+  ],
+  [
+   "b-vision",
+   "f-robot"
+  ],
+  [
+   "b-vision",
+   "f-robot-cn"
+  ],
+  [
+   "b-vision",
+   "f-em"
+  ],
+  [
+   "b-battery",
+   "f-robot"
+  ],
+  [
+   "b-battery",
+   "f-robot-cn"
+  ]
+ ],
+ "_proposed": {}
+}

@@ -1,0 +1,984 @@
+{
+ "id": "ai_media_gen",
+ "tab": "生成式內容",
+ "title": "生成式 AI 內容與媒體供應鏈 (Generative AI Media)",
+ "subtitle": "Generative AI Media — 影像/影片/語音/音樂/數位人五大模態的創作生成供應鏈。2026-H1 ARR 真實化：ElevenLabs 2026-05 ARR 破 $500M、估值 $11B、BlackRock/Wellington 入股建構 IPO；Kuaishou Kling ARR 由 $240M 衝 $500M、擬分拆 $20B 港股 IPO(2027)；Runway $5.3B(Gen-4.5+world models)、Suno $5.4B/ARR$3億、Synthesia $4B(Google Ventures 領投)/ARR$1.5億、Black Forest Labs $3.25B(Flux 2)。價值鏈：算力/基礎模型「賣鏟人」(Nvidia/Google Veo/Imagen)→五大模態生成引擎→創作工具/企業分發(Adobe 轉多模型聚合平台/Canva/Meta)→版權授權/來源驗證(Shutterstock×Getty 合併獲 DOJ/CMA 放行/C2PA)。⚠ Sora 殷鑑：OpenAI 2026-04-26 關 Sora app(每日燒 $1M、終身營收僅 $2.1M)→市場由「最強模型」轉向獎勵「有 ARR/有版權/嵌工作流」者。⚠ 版權懸劍：UMG 是與 Udio 和解(非 Suno)，UMG+Sony 對 Suno 仍纏訟、2026-07 簡易判決為 AI 音樂判例分水嶺；Disney/Universal 控 Midjourney 進行中。⚠ 純玩家幾乎全未上市，公開市場僅能間接 exposure。與既有 cs_ai（客服語音 agent）區隔，本主題聚焦創作端。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "45+"
+  },
+  {
+   "k": "2026 募資熱度",
+   "v": "30-50 億美元級",
+   "sub": "ElevenLabs $11B·Runway $5.3B·Suno $5.4B·Synthesia/Luma $4B",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "企業採用+ARR 真實化·Sora 殷鑑+版權訴訟+估值泡沫",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "infra",
+   "label": "算力 / 基礎模型 Infra & Foundation Models",
+   "main": false
+  },
+  {
+   "id": "engine",
+   "label": "五大模態生成引擎 Generation Engines",
+   "main": true
+  },
+  {
+   "id": "dist",
+   "label": "創作工具 / 企業分發 Tools & Distribution",
+   "main": false
+  },
+  {
+   "id": "rights",
+   "label": "版權授權 / 來源驗證 Rights & Provenance",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "infra_compute",
+   "row": "infra",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "算力 / 推論基礎建設（賣鏟人）",
+   "nameEn": "Compute & Inference Infra",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 影音生成推論密集；Nvidia GPU 絕對龍頭且戰略投資 Runway/ElevenLabs/BFL",
+   "desc": "擴散模型/DiT 影音生成屬推論密集型：權重小於 70B LLM，但每幀 latent tensor 為時間連貫性批次後可達數十 GB。無論哪家模型勝出皆受惠的「賣鏟人」。",
+   "marketSize": "確定性最高",
+   "growth": "推論占 AI 算力 2/3",
+   "share": "null",
+   "analysis": "2026 推論已占 AI 算力約 2/3、超越訓練；Blackwell+HBM3e 為大規模影音生成主流，GB300 NVL72 推論成本 $0.123/百萬 token（較 Hopper 低 35x），最佳化（量化/TensorRT）把單張圖成本壓到 $0.02。Nvidia（NVDA，影音生成 GPU 絕對龍頭，且 NVentures 戰略投資 Runway/ElevenLabs/Black Forest Labs，生態卡位最深）、AMD（AMD，AMD Ventures 投資 Runway）為晶片端；雲端推論：Microsoft Azure（MSFT）、Amazon AWS（AMZN）、Google Cloud（GOOGL）、CoreWeave（CRWV，AI neocloud）。生成媒體佔各家營收比例小（sleeve exposure），但屬最確定的受惠環節。",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "影音生成 GPU 絕對龍頭",
+     "products": "Blackwell/GB300 GPU / TensorRT / NVentures 投資",
+     "note": "戰略投資 Runway/ElevenLabs/BFL；生成媒體為 sleeve exposure",
+     "src": "https://www.nvidia.com/en-us/solutions/ai/inference/"
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "GPU 次集團",
+     "products": "Instinct GPU / AMD Ventures",
+     "note": "AMD Ventures 參與 Runway Series E",
+     "src": "https://news.crunchbase.com/venture/gen-ai-video-startup-unicorn-runway-seriese-raise/"
+    },
+    {
+     "name": "Microsoft (Azure)",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "雲端推論+OpenAI 後盾",
+     "products": "Azure GPU / OpenAI 算力",
+     "note": "Sora/DALL·E 算力提供方",
+     "src": "https://www.spheron.network/blog/best-gpu-for-ai-inference-2026/"
+    },
+    {
+     "name": "Amazon (AWS)",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "雲端推論",
+     "products": "AWS GPU / Bedrock",
+     "note": "生成媒體模型託管",
+     "src": "https://www.spheron.network/blog/best-gpu-for-ai-inference-2026/"
+    },
+    {
+     "name": "CoreWeave",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "AI neocloud 推論",
+     "products": "GPU 雲",
+     "note": "影音生成大規模推論算力",
+     "src": "https://www.compute-market.com/blog/best-gpu-for-ai-video-generation-2026"
+    },
+    {
+     "name": "Google Cloud",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "雲端+自研模型",
+     "products": "Vertex AI / TPU / GPU",
+     "note": "Veo/Imagen/Lyria 企業分發",
+     "src": "https://cloud.google.com/blog/products/compute/google-cloud-ai-infrastructure-at-nvidia-gtc-2026"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "eng_video"
+    },
+    {
+     "id": "eng_image"
+    },
+    {
+     "id": "eng_voice"
+    },
+    {
+     "id": "eng_music"
+    },
+    {
+     "id": "eng_avatar"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nvidia AI Inference (官方)",
+     "url": "https://www.nvidia.com/en-us/solutions/ai/inference/"
+    },
+    {
+     "label": "影音生成最佳 GPU 2026 (Compute Market)",
+     "url": "https://www.compute-market.com/blog/best-gpu-for-ai-video-generation-2026"
+    }
+   ]
+  },
+  {
+   "id": "infra_foundation",
+   "row": "infra",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "大廠全模態基礎模型平台",
+   "nameEn": "Big-Tech Foundation Models",
+   "competition": "oligopoly",
+   "single": "Google 全模態(Veo/Imagen/Lyria)+Vertex 企業分發；OpenAI Sora 2 僅留 ChatGPT",
+   "desc": "超大規模平台以「全模態基礎模型 + 雲端企業分發」碾壓獨立新創，是純玩家被邊緣化的最大結構風險（Stability AI 即前車之鑑）。",
+   "marketSize": "通吃風險來源",
+   "growth": "平台分發碾壓",
+   "share": "null",
+   "analysis": "Google DeepMind（GOOGL）為全模態最完整：Veo 3.1（8 秒 4K+原生同步音訊）、Imagen 4（圖像）、Lyria 2（音樂），全經 Gemini/Flow/API/Vertex AI（企業）分發，Veo 3.1 Fast $0.10/秒（720p）。OpenAI（US，未上市，微軟系）：Sora 2 仍存於 ChatGPT（Plus $20/Pro $200），但 2026-03-24 停運獨立 Sora app（每日燒 $1M、終身營收僅 $2.1M、Disney 合作破局）、2026-04-26 關 app、2026-09-24 關 API——成「最強模型 ≠ 賺錢」的反面教材，亦含 DALL·E 圖像。Meta（META，MusicGen 開源 + 廣告 AI 創意 + 與 BFL $1.4 億授權合約）。⚠ 大廠通吃為純玩家最大空方論點。",
+   "companies": [
+    {
+     "name": "Google DeepMind",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "全模態最完整",
+     "products": "Veo 3.1 / Imagen 4 / Lyria 2 / Vertex AI",
+     "note": "8 秒 4K+原生音訊；企業分發 Veo 3.1 Fast $0.10/秒",
+     "src": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-veo-3-imagen-4-and-lyria-2-on-vertex-ai"
+    },
+    {
+     "name": "OpenAI",
+     "ticker": "—",
+     "country": "US",
+     "share": "Sora 2/DALL·E",
+     "products": "Sora 2(僅 ChatGPT) / DALL·E",
+     "note": "未上市；⚠ 2026-03 停運獨立 Sora（每日燒 $1M、終身營收 $2.1M）",
+     "src": "https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/"
+    },
+    {
+     "name": "Meta",
+     "ticker": "META",
+     "country": "US",
+     "share": "開源+廣告分發",
+     "products": "MusicGen(開源) / 廣告 AI 創意",
+     "note": "與 Black Forest Labs $1.4 億授權合約；廣告創意分發",
+     "src": "https://www.cnbc.com/2026/02/14/new-china-ai-models-alibaba-bytedance-seedance-kuaishou-kling.html"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "OpenAI 後盾+Copilot",
+     "products": "Copilot 影像 / Azure AI Foundry",
+     "note": "OpenAI 模型分發主管道",
+     "src": "https://www.spheron.network/blog/best-gpu-for-ai-inference-2026/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "eng_video"
+    },
+    {
+     "id": "eng_image"
+    },
+    {
+     "id": "eng_music"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Veo 3/Imagen 4/Lyria 2 on Vertex (Google)",
+     "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-veo-3-imagen-4-and-lyria-2-on-vertex-ai"
+    },
+    {
+     "label": "OpenAI 為何停運 Sora (TechCrunch)",
+     "url": "https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/"
+    }
+   ]
+  },
+  {
+   "id": "eng_image",
+   "row": "engine",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "圖像生成 (Image)",
+   "nameEn": "Image Generation",
+   "competition": "competitive",
+   "single": "Midjourney V8.1 bootstrap ARR 上看 $5-6 億；BFL Flux 2 與 Meta/Adobe/Canva/Snap 合計約 $3 億合約",
+   "desc": "最成熟、單位成本最低的生成模態（單張 $0.02）。Midjourney 拒 VC 仍高獲利，Black Forest Labs 以 Flux 成大廠首選授權對象。⚠ Disney/Universal 對 Midjourney 侵權訴訟為本層最大法律變數。",
+   "marketSize": "最成熟模態",
+   "growth": "成本 $0.02/張",
+   "share": "null",
+   "analysis": "Midjourney（US，未上市，bootstrap）：2025 年營收 $5 億、約 170 員工、人均產值 >$5M、獲利且幾乎全自有，2026-03 推 V8(原生 2K/5x 快)、2026-04 V8.1(HD 快 3x/成本 1/3)，2026 ARR 預估 $5-6 億（新推創意 agency 企業方案）；硬體另設 Midjourney Medical。⚠ Disney+Universal+DreamWorks 2025-06 提侵權訴訟、2026 仍進行中。Black Forest Labs（DE，未上市）：2026-02 Series B $3 億、估值 $3.25B（Salesforce Ventures/Anjney Midha 共同領投，a16z/NVIDIA/General Catalyst/Temasek，累計 >$4.5 億），2025-11 推 Flux 2（4K/文字渲染強化），與 Meta $1.4 億、Adobe/Canva/Snap 等合約合計約 $3 億，並經 Azure AI Foundry/Adobe 分發——成大廠「圖像引擎供應商」。Adobe Firefly（ADBE，商業安全/聚合 partner models）、OpenAI DALL·E/GPT image、Google Imagen 4 + Nano Banana Pro（GOOGL）、Stability AI（UK，未上市，Stable Diffusion 開源生態，地位下滑、前車之鑑）。",
+   "companies": [
+    {
+     "name": "Midjourney",
+     "ticker": "—",
+     "country": "US",
+     "share": "獨立圖像領導",
+     "products": "Midjourney V8.1 / 硬體(Medical)",
+     "note": "未上市 bootstrap；年營收 $5 億、人均 >$5M、獲利、拒 VC；2026 ARR 上看 $5-6 億；⚠ Disney/Universal 侵權訴訟",
+     "src": "https://sacra.com/c/midjourney/"
+    },
+    {
+     "name": "Black Forest Labs",
+     "ticker": "—",
+     "country": "DE",
+     "share": "大廠首選圖像引擎",
+     "products": "Flux 2(4K) 系列模型",
+     "note": "未上市；Series B $3 億、估值 $3.25B、累計 >$4.5 億；Meta/Adobe/Canva/Snap 合約合計約 $3 億",
+     "src": "https://techfundingnews.com/black-forest-labs-raises-300m-flux-ai-image-generator/"
+    },
+    {
+     "name": "Adobe (Firefly)",
+     "ticker": "ADBE",
+     "country": "US",
+     "share": "企業商業安全",
+     "products": "Firefly Image / Creative Cloud",
+     "note": "授權資料訓練+indemnification；2026 投 >$2.5 億 AI 研發",
+     "src": "https://fueler.io/blog/adobe-firefly-usage-revenue-valuation-growth-statistics"
+    },
+    {
+     "name": "OpenAI (DALL·E)",
+     "ticker": "—",
+     "country": "US",
+     "share": "ChatGPT 內建圖像",
+     "products": "DALL·E / GPT image",
+     "note": "未上市；消費端高滲透",
+     "src": "https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/"
+    },
+    {
+     "name": "Google (Imagen 4)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "企業/雲端圖像",
+     "products": "Imagen 4 / Vertex AI",
+     "note": "全模態平台一環",
+     "src": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-veo-3-imagen-4-and-lyria-2-on-vertex-ai"
+    },
+    {
+     "name": "Stability AI",
+     "ticker": "—",
+     "country": "UK",
+     "share": "開源 SD 生態",
+     "products": "Stable Diffusion / Stable Audio",
+     "note": "未上市；地位下滑、純玩家被邊緣化前車之鑑",
+     "src": "https://sacra.com/c/black-forest-labs/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "infra_compute"
+    },
+    {
+     "id": "infra_foundation"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dist_tools"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Midjourney 營收 (Sacra)",
+     "url": "https://sacra.com/c/midjourney/"
+    },
+    {
+     "label": "Black Forest Labs $3.25B (TFN)",
+     "url": "https://techfundingnews.com/black-forest-labs-raises-300m-flux-ai-image-generator/"
+    }
+   ]
+  },
+  {
+   "id": "eng_video",
+   "row": "engine",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "影片生成 (Video)",
+   "nameEn": "Video Generation",
+   "competition": "highgrowth",
+   "single": "⚠ 算力最重、Sora 殷鑑；Runway $5.3B(Gen-4.5+world models)；Kling ARR 衝 $5億、擬分拆 $20B IPO",
+   "desc": "成長最快但算力最重的模態（每幀 latent tensor 達數十 GB）。市場 2024 $3.86B→2033 $42.29B（CAGR >30%）、2025 VC 投資 $4.7B（+189%）。Sora 停運證明單位經濟是生死關鍵；商業化龍頭轉為中國 Kling。",
+   "marketSize": "$3.86B→$42.3B(2033)",
+   "growth": "CAGR >30%",
+   "share": "null",
+   "analysis": "Runway（US，未上市）：2026-02 Series E $3.15 億、估值 $5.3B（General Atlantic 領投，Nvidia/Adobe Ventures/AMD Ventures/Fidelity），累計 $8.6 億；ARR 2024 底 $80M→2025 底 $300M、2026-Q2 再增 $40M；Gen-4.5（2025-12）含原生音訊/多鏡頭/角色一致，並發表首個「世界模型 world model」（與 physical AI 交集），客戶含「每一家主要電影製片廠」，與 Lionsgate 合作、Getty 授權。Kuaishou Kling（CN，1024.HK）：2026-Q1 營收約 $75M（多來自北美海外）、ARR 由 2025-12 約 $240M 衝至 2026-04 約 $500M（季增 300%），Kuaishou 擬分拆 Kling 成獨立公司、pre-IPO 募約 $20 億（Tencent 為潛在投資人）、目標估值 $20B、最快 2027 香港掛牌（港股稀有純 exposure）。Luma AI（US，未上市，Dream Machine/Ray 3.14，2025-11 Series C $9 億由沙烏地 Humain 領投、估值約 $4B）。ByteDance Seedance 2.0（CN，四模態 1080p）、MiniMax Hailuo（CN）、Pika（US，估值 $4.7 億，Meta 曾洽併）、愛詩科技 PixVerse（CN，2026-03 $3 億）、Moonvalley Marey（US，全授權「商業安全」影片模型，與 Vimeo 授權）。⚠ OpenAI Sora：2026-04-26 已關 app、API 2026-09-24 關閉（每日燒 $1M、終身營收 $2.1M）為最大反面教材。",
+   "companies": [
+    {
+     "name": "Runway",
+     "ticker": "—",
+     "country": "US",
+     "share": "西方影片生成領導",
+     "products": "Gen-4.5 / World Models",
+     "note": "未上市；Series E $3.15 億、估值 $5.3B；客戶含每家大製片廠；Nvidia/Adobe/AMD 投資",
+     "src": "https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/"
+    },
+    {
+     "name": "Kuaishou (Kling)",
+     "ticker": "1024.HK",
+     "country": "CN",
+     "share": "全球影片商業化領先",
+     "products": "Kling AI 影片",
+     "note": "2026-Q1 營收約 $75M、ARR 衝 $5億(由 2025-12 $240M)；擬分拆 pre-IPO 募 $20億(Tencent)、估值 $20B、2027 港股掛牌",
+     "src": "https://www.scmp.com/tech/article/3353214/kuaishou-stock-surges-reports-kling-ai-unit-spin"
+    },
+    {
+     "name": "Google (Veo 3.1)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "全模態+企業分發",
+     "products": "Veo 3.1 / Vertex AI",
+     "note": "8 秒 4K+原生音訊；Veo 3.1 Fast $0.10/秒",
+     "src": "https://www.buildfastwithai.com/blogs/google-veo-3-1-ai-video-generator"
+    },
+    {
+     "name": "Luma AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "Dream Machine",
+     "products": "Dream Machine / Ray",
+     "note": "未上市；Series C $9 億、估值約 $4B、累計 >$10 億",
+     "src": "https://www.superbcrew.com/luma-ai-raises-900-million-in-series-c-funding-round/"
+    },
+    {
+     "name": "ByteDance (Seedance)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國次集團",
+     "products": "Seedance 2.0",
+     "note": "未上市；四模態輸入 1080p 電影級",
+     "src": "https://www.cnbc.com/2026/02/14/new-china-ai-models-alibaba-bytedance-seedance-kuaishou-kling.html"
+    },
+    {
+     "name": "Pika / 愛詩 PixVerse",
+     "ticker": "—",
+     "country": "US",
+     "share": "新創/中國",
+     "products": "Pika 影片 / PixVerse",
+     "note": "未上市；Pika 估值 $4.7 億(Meta 曾洽併)；愛詩 2026-03 $3 億(中國最大 AI 影片募資)",
+     "src": "https://sacra.com/c/pika/"
+    },
+    {
+     "name": "Moonvalley",
+     "ticker": "—",
+     "country": "US",
+     "share": "全授權影片新創",
+     "products": "Marey 商業安全影片模型",
+     "note": "未上市；100% 授權資料訓練(與 Vimeo 等授權)、主打好萊塢級「commercially safe」、規避版權風險",
+     "src": "https://venturebeat.com/ai/moonvalleys-marey-is-a-state-of-the-art-ai-video-model-trained-on-fully-licensed-data"
+    },
+    {
+     "name": "OpenAI (Sora 2)",
+     "ticker": "—",
+     "country": "US",
+     "share": "⚠ 反面教材(已退場)",
+     "products": "Sora(2026-04-26 關 app)",
+     "note": "未上市；app 2026-04-26 關、API 2026-09-24 關（每日燒 $1M、終身營收 $2.1M、Disney 破局）；GPU 轉投 ChatGPT 圖像",
+     "src": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "infra_compute"
+    },
+    {
+     "id": "infra_foundation"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dist_tools"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Runway $5.3B Series E (TechCrunch)",
+     "url": "https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/"
+    },
+    {
+     "label": "Kling 營收季增 300% (SCMP)",
+     "url": "https://www.scmp.com/tech/article/3355027/kuaishou-beats-estimates-kling-ai-video-generators-revenue-jumps-300"
+    }
+   ]
+  },
+  {
+   "id": "eng_voice",
+   "row": "engine",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "語音 / 音訊生成 (Voice)",
+   "nameEn": "Voice & Audio Generation",
+   "competition": "redocean",
+   "single": "ElevenLabs $11B 估值、2026-05 ARR 破 $500M、Fortune 500 41% 採用；BlackRock/Wellington 入股、建構 IPO",
+   "desc": "創作端語音生成（配音/有聲書/影視在地化/角色語音）。與 cs_ai（客服對話 agent）區隔。ElevenLabs 一家獨大，企業 voice agents 帶動 ARR 季度跳增為最務實變現。",
+   "marketSize": "ElevenLabs ARR>$5億",
+   "growth": "ARR 4 個月 $350M→$500M",
+   "share": "null",
+   "analysis": "ElevenLabs（UK，未上市）：2026-02 Series D $5 億、估值 $11B（Sequoia 領投，a16z 加碼 4 倍/ICONIQ 加 3 倍/Lightspeed/Bond），2025 年底 ARR $350M→2026-05 正式破 $500M（4 個月 +$150M、單季約 +43%，企業部署 voice agents 為主驅動），Fortune 500 中 41% 採用；2026-05 新增 BlackRock/Wellington/D.E. Shaw/Schroders（外加 Jamie Foxx/Eva Longoria）入股，共同創辦人明言「建構通往 IPO」（預估 2026 下半～2027 上市）——是本主題最接近 IPO 的旗艦標的。⚠ 另涉伊州 BIPA 生物特徵隱私訴訟。大廠內建：Google Lyria 語音/Microsoft Azure TTS(MSFT)/Amazon Polly(AMZN)。新創：Cartesia（US，低延遲語音）、PlayHT、Resemble AI。語音模態單位經濟優於影片（算力輕、企業退訂低），被影片光環掩蓋但商業品質佳。",
+   "companies": [
+    {
+     "name": "ElevenLabs",
+     "ticker": "—",
+     "country": "UK",
+     "share": "語音生成獨大",
+     "products": "TTS / 配音 / 影視在地化 / Voice Agents",
+     "note": "未上市；Series D $5 億、估值 $11B；2026-05 ARR 破 $500M、Fortune 500 41%；BlackRock/Wellington 入股、建構 IPO(2026H2~2027)",
+     "src": "https://elevenlabs.io/blog/500m-arr-and-new-investors"
+    },
+    {
+     "name": "Google (Lyria/TTS)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "大廠內建語音",
+     "products": "Lyria 語音 / Cloud TTS",
+     "note": "全模態平台一環",
+     "src": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-veo-3-imagen-4-and-lyria-2-on-vertex-ai"
+    },
+    {
+     "name": "Microsoft (Azure TTS)",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "企業語音雲",
+     "products": "Azure Neural TTS / 客製語音",
+     "note": "企業 API 分發",
+     "src": "https://www.spheron.network/blog/best-gpu-for-ai-inference-2026/"
+    },
+    {
+     "name": "Amazon (Polly)",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "雲端 TTS",
+     "products": "Amazon Polly",
+     "note": "AWS 內建語音",
+     "src": "https://www.spheron.network/blog/best-gpu-for-ai-inference-2026/"
+    },
+    {
+     "name": "Cartesia",
+     "ticker": "—",
+     "country": "US",
+     "share": "低延遲語音新創",
+     "products": "Sonic 即時語音模型",
+     "note": "未上市；低延遲串流語音",
+     "src": "https://sacra.com/c/elevenlabs/"
+    },
+    {
+     "name": "Resemble AI / PlayHT",
+     "ticker": "—",
+     "country": "US",
+     "share": "語音複製新創",
+     "products": "語音克隆 / TTS",
+     "note": "未上市；語音克隆 API",
+     "src": "https://sacra.com/c/elevenlabs/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "infra_compute"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dist_tools"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ElevenLabs $11B 估值 (CNBC)",
+     "url": "https://www.cnbc.com/2026/02/04/nvidia-backed-ai-startup-elevenlabs-11-billion-valuation.html"
+    },
+    {
+     "label": "ElevenLabs ARR/funding (Sacra)",
+     "url": "https://sacra.com/c/elevenlabs/"
+    }
+   ]
+  },
+  {
+   "id": "eng_music",
+   "row": "engine",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "音樂生成 (Music)",
+   "nameEn": "Music Generation",
+   "competition": "competitive",
+   "single": "⚠ 版權懸劍 · Suno $5.4B/ARR$3億；UMG/Sony v. Suno 2026-07 簡易判決成判例分水嶺",
+   "desc": "募資最熱但法律風險最高的模態。WMG 已和 Suno 和解轉授權、UMG 已和 Udio 和解；但 UMG+Sony 對 Suno 仍纏訟（2026-05 擴大主張 61k+ 件），2026-07 美國簡易判決＋德國 GEMA 案將定 AI 音樂商業模式生死。",
+   "marketSize": "版權風險最高",
+   "growth": "Suno ARR $3億(+404%)",
+   "share": "null",
+   "analysis": "Suno（US，未上市）：2026-06-03 Series E $4 億完成、估值 $5.4B（較 2025-11 $2.45B 翻倍，Bond Capital 領投），2026-02 訂閱破 200 萬、ARR 達 $3 億（YoY +404%）；僅 WMG 2025-11 已和解並簽授權（Suno 並收購 Warner 旗下 Songkick、將推 WMG 合作新模型）。⚠ 校正：UMG 是與 Udio（2025-10）和解，並非 Suno——UMG 與 Sony 對 Suno 仍在訴訟，且 2026-05 雙方擴大主張逾 61,000 件侵權（discovery 揭 Suno 訓練了「數百萬」首版權錄音）；Suno 2026-03 提 fair-use 簡易判決動議（援引 Bartz）。Udio（US，未上市）：與 UMG/Warner 授權下備新產品，Sony 對 Udio（SDNY）案未了。⚠ 美國 Suno 案 2026-07 簡易判決聽證、德國 GEMA v. Suno 改判 2026-07-31——將成 AI 音樂「訓練是否需授權」判例分水嶺。大廠：Google Lyria 2（GOOGL，Vertex AI）、Stability(Stable Audio)、Meta(MusicGen 開源)。⚠ AFM 樂手工會 2026 反告 UMG/WMG 分潤不公；EU AI Act 第50條透明標示義務 2026-08-02 生效（AI 內容標示延至 2026-12-02）。",
+   "companies": [
+    {
+     "name": "Suno",
+     "ticker": "—",
+     "country": "US",
+     "share": "AI 音樂領導",
+     "products": "Suno v5 音樂生成",
+     "note": "未上市；2026-06 Series E $4 億完成、估值 $5.4B；訂閱 200 萬、ARR $3 億(YoY+404%)；僅 WMG 已和解授權，UMG/Sony 仍訴訟(擴大主張 61k+ 件)",
+     "src": "https://variety.com/2026/digital/news/ai-music-suno-funding-round-400-million-5-4-billion-valuation-1236765727/"
+    },
+    {
+     "name": "Udio",
+     "ticker": "—",
+     "country": "US",
+     "share": "AI 音樂次集團",
+     "products": "Udio 音樂生成",
+     "note": "未上市；UMG 2025-10 已和解並合資授權平台、與 Warner 授權備新產品；⚠ Sony(SDNY)訴訟未了",
+     "src": "https://www.musicbusinessworldwide.com/universal-music-settles-udio-lawsuit-strikes-deal-for-licensed-ai-music-platform/"
+    },
+    {
+     "name": "Google (Lyria 2)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "大廠音樂",
+     "products": "Lyria 2 / Vertex AI",
+     "note": "企業安全音樂生成",
+     "src": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-veo-3-imagen-4-and-lyria-2-on-vertex-ai"
+    },
+    {
+     "name": "Stability AI (Stable Audio)",
+     "ticker": "—",
+     "country": "UK",
+     "share": "開源音訊",
+     "products": "Stable Audio",
+     "note": "未上市；開源音訊生成",
+     "src": "https://sacra.com/c/black-forest-labs/"
+    },
+    {
+     "name": "Meta (MusicGen)",
+     "ticker": "META",
+     "country": "US",
+     "share": "開源音樂模型",
+     "products": "MusicGen / AudioCraft",
+     "note": "開源音樂生成研究",
+     "src": "https://www.cnbc.com/2026/02/14/new-china-ai-models-alibaba-bytedance-seedance-kuaishou-kling.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "infra_compute"
+    },
+    {
+     "id": "infra_foundation"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dist_tools"
+    },
+    {
+     "id": "rights_legal"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Suno $5.4B 估值 (Variety)",
+     "url": "https://variety.com/2026/digital/news/ai-music-suno-funding-round-400-million-5-4-billion-valuation-1236765727/"
+    },
+    {
+     "label": "UMG 和解 Udio 並合資平台 (MBW)",
+     "url": "https://www.musicbusinessworldwide.com/universal-music-settles-udio-lawsuit-strikes-deal-for-licensed-ai-music-platform/"
+    }
+   ]
+  },
+  {
+   "id": "eng_avatar",
+   "row": "engine",
+   "col": 5,
+   "span": 1,
+   "kind": "stage",
+   "name": "數位人 / Avatar",
+   "nameEn": "Digital Humans & Avatars",
+   "competition": "competitive",
+   "single": "B2B 變現最務實 · Synthesia 2026-01 $4B(Google Ventures 領投)/ARR$1.5億(F100 80%)、HeyGen ARR~$1億",
+   "desc": "企業訓練影片/在地化配音的數位人 avatar，是「明確 ROI + 高 ARR + 低退訂」的甜蜜點，相對影片生成算力輕、商業品質更佳。",
+   "marketSize": "B2B 最務實",
+   "growth": "HeyGen ARR 兩年 +10,000%",
+   "share": "null",
+   "analysis": "Synthesia（UK，未上市）：2026-01 Series E $2 億、估值 $4B（Google Ventures 領投、半年內翻倍、並讓員工套現），ARR 約 $1.5 億、預期 2026 破 $2 億，60,000+ 客戶、Fortune 100 中 80%＋採用（70% 營收來自企業大客 Bosch/Merck/SAP），偏企業訓練/在地化影片。HeyGen（US，未上市）：ARR 自 2023 初 $1M→2025-09 約 $0.95 億（兩年增約 1,000%+），累計募資 $65.6M、估值 $5 億（Benchmark 領投），85,000+ 付費客戶，偏 prosumer/SMB 但快速上攻企業、價格較 Synthesia 低、推 5 分鐘 Instant Avatar。D-ID、Hour One、Colossyan 為次集團。此環節被影片生成光環掩蓋，但企業 ARR 品質實為五模態最佳。",
+   "companies": [
+    {
+     "name": "Synthesia",
+     "ticker": "—",
+     "country": "UK",
+     "share": "企業數位人領導",
+     "products": "AI Avatar 企業影片 / 在地化",
+     "note": "未上市；2026-01 Series E $2 億(Google Ventures 領投)、估值 $4B；ARR 約 $1.5 億、2026 上看 $2 億；F100 80%＋採用",
+     "src": "https://techcrunch.com/2026/01/26/synthesia-hits-4b-valuation-lets-employees-cash-in/"
+    },
+    {
+     "name": "HeyGen",
+     "ticker": "—",
+     "country": "US",
+     "share": "prosumer/SMB 領導",
+     "products": "AI Avatar / Instant Avatar / 影片翻譯",
+     "note": "未上市；ARR 約 $0.95 億(2025-09)、累計募資 $65.6M、估值 $5 億；85,000+ 付費客戶、快速上攻企業",
+     "src": "https://sacra.com/c/heygen/"
+    },
+    {
+     "name": "D-ID",
+     "ticker": "—",
+     "country": "IL",
+     "share": "數位人次集團",
+     "products": "Creative Reality / 對話 avatar",
+     "note": "未上市；以色列數位人新創",
+     "src": "https://en.wikipedia.org/wiki/HeyGen"
+    },
+    {
+     "name": "Hour One",
+     "ticker": "—",
+     "country": "IL",
+     "share": "企業 avatar",
+     "products": "虛擬主播 / 企業影片",
+     "note": "未上市；企業數位人",
+     "src": "https://en.wikipedia.org/wiki/HeyGen"
+    },
+    {
+     "name": "Colossyan",
+     "ticker": "—",
+     "country": "UK",
+     "share": "L&D avatar",
+     "products": "企業訓練 avatar 影片",
+     "note": "未上市；學習培訓影片",
+     "src": "https://pitchbook.com/profiles/company/462145-96"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "infra_compute"
+    },
+    {
+     "id": "eng_voice"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dist_tools"
+    }
+   ],
+   "sources": [
+    {
+     "label": "HeyGen $100M ARR vs Synthesia (Ainvest)",
+     "url": "https://www.ainvest.com/news/heygen-100m-arr-4b-rival-flow-analysis-ai-video-battle-2604/"
+    },
+    {
+     "label": "HeyGen ARR/funding (Sacra)",
+     "url": "https://sacra.com/c/heygen/"
+    }
+   ]
+  },
+  {
+   "id": "dist_tools",
+   "row": "dist",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "創作工具 / 企業分發 / 廣告行銷",
+   "nameEn": "Creative Tools & Distribution",
+   "competition": "redocean",
+   "single": "Adobe/Canva 以既有工作流+裝機量收割；87% 行銷人 2026 用生成式 AI(2024 為 51%)",
+   "desc": "把各模態生成引擎嵌入既有工作流（設計/影片/廣告/行銷）並向企業分發的「最後一哩」，是生成內容的需求出海口，憑裝機量與工作流綁定收割。",
+   "marketSize": "需求出海口",
+   "growth": "87% 行銷人採用",
+   "share": "null",
+   "analysis": "Adobe（ADBE，Firefly 嵌 Creative Cloud + 企業治理/indemnification，2026 投 >$2.5 億 AI 研發）由「自研模型」轉為「多模型聚合平台」：Firefly 已上架第三方 partner models（BFL Flux、Google Gemini/Nano Banana Pro、ElevenLabs 語音、Luma Ray 3、OpenAI GPT Image、Ideogram、Moonvalley、Pika、Runway、Topaz）——成各純玩家的需求出海口/分潤通路，Firefly 累計 >24B 生成、直接營收約 $400M、Fortune 500 75% 採用。Canva（AU，未上市，Magic Studio，大量社群廣告創意）、Meta（META，廣告 AI 創意 + 與 BFL 合約，多家合約合計約 $3 億）為平台分發核心。廣告 agency 已內嵌（Edelman、R/GA）：2026 年 87% 行銷人至少一個流程用生成式 AI（2024 為 51%），多媒體生成（圖/影/音）達 64%、copy 達 72%。影視/串流終端：Lionsgate（入股 Runway）、Netflix（收購 InterPositive）、Disney（曾洽 OpenAI Sora，破局）。⚠ Disney+Universal+DreamWorks 2025-06 對 Midjourney 提侵權告訴、2026 仍纏訟（首宗好萊塢告 AI 影像案）。此層是純玩家被通吃 vs. 借力分發的關鍵戰場。",
+   "companies": [
+    {
+     "name": "Adobe",
+     "ticker": "ADBE",
+     "country": "US",
+     "share": "創作工具+多模型聚合",
+     "products": "Firefly(聚合 BFL/Google/ElevenLabs/Luma/OpenAI) / Creative Cloud / GenStudio",
+     "note": "Firefly 累計 >24B 生成、直接營收約 $400M、Fortune 500 75% 採用；授權安全+indemnification",
+     "src": "https://www.adobe.com/products/firefly/partner-models.html"
+    },
+    {
+     "name": "Canva",
+     "ticker": "—",
+     "country": "AU",
+     "share": "大眾設計分發",
+     "products": "Magic Studio / Magic Write",
+     "note": "未上市；大量社群/廣告創意生成",
+     "src": "https://genesysgrowth.com/blog/canva-magic-write-vs-adobe-firefly-vs-figma-ai"
+    },
+    {
+     "name": "Meta",
+     "ticker": "META",
+     "country": "US",
+     "share": "廣告創意分發",
+     "products": "Advantage+ AI 廣告創意",
+     "note": "與 Black Forest Labs $1.4 億授權合約",
+     "src": "https://www.emarketer.com/content/faq-on-generative-ai--how-consumer-adoption-steering-marketing-2026"
+    },
+    {
+     "name": "Lionsgate",
+     "ticker": "LGF.A",
+     "country": "US",
+     "share": "影視終端採用",
+     "products": "Runway 合作製作 IP",
+     "note": "入股 Runway；2026-06 Runway AI Festival 主辦夥伴",
+     "src": "https://www.ibc.org/artificial-intelligence/news/lionsgate-takes-stake-in-ai-firm-runway/22794"
+    },
+    {
+     "name": "Netflix",
+     "ticker": "NFLX",
+     "country": "US",
+     "share": "串流終端採用",
+     "products": "AI 製作工具 / InterPositive",
+     "note": "收購 Ben Affleck 旗下 InterPositive",
+     "src": "https://www.techradar.com/streaming/disney-and-netflix-are-quietly-using-the-same-generative-ai-startup-heres-why-the-rest-of-hollywood-is-circling"
+    },
+    {
+     "name": "Disney",
+     "ticker": "DIS",
+     "country": "US",
+     "share": "影視終端(觀望)",
+     "products": "AI 影片實驗",
+     "note": "曾洽 OpenAI Sora 合作、破局；轉觀望",
+     "src": "https://www.scientificamerican.com/article/disney-and-openai-signal-the-arrival-of-ai-video-streaming/"
+    },
+    {
+     "name": "廣告 agency (Edelman/R-GA)",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "agency 內嵌",
+     "products": "AI 創意製作流程",
+     "note": "87% 行銷人用生成式 AI(2024 為 51%)；多媒體生成達 64%",
+     "src": "https://www.emarketer.com/content/faq-on-generative-ai--how-consumer-adoption-steering-marketing-2026"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "eng_image"
+    },
+    {
+     "id": "eng_video"
+    },
+    {
+     "id": "eng_voice"
+    },
+    {
+     "id": "eng_music"
+    },
+    {
+     "id": "eng_avatar"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "rights_legal"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Adobe Firefly 統計 (Fueler)",
+     "url": "https://fueler.io/blog/adobe-firefly-usage-revenue-valuation-growth-statistics"
+    },
+    {
+     "label": "2026 行銷生成式 AI 採用 (eMarketer)",
+     "url": "https://www.emarketer.com/content/faq-on-generative-ai--how-consumer-adoption-steering-marketing-2026"
+    }
+   ]
+  },
+  {
+   "id": "rights_legal",
+   "row": "rights",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "版權授權 / 來源驗證 / 內容真偽",
+   "nameEn": "Rights, Licensing & Provenance",
+   "competition": "emerging",
+   "single": "版權方由被告翻身軍火商 · Shutterstock×Getty 合併獲 DOJ 無條件＋CMA 有條件放行(需剝離編輯業務)",
+   "desc": "AI 訓練資料授權、內容來源驗證（C2PA/SynthID）、deepfake 法規構成橫切層。版權方正由訴訟原告轉為「授權收租方」，版權資產被重新定價為 AI 訓練的稀缺原料。",
+   "marketSize": "稀缺原料重定價",
+   "growth": "歸因交易 2025→2026 翻倍",
+   "share": "null",
+   "analysis": "授權資料/版權方：Shutterstock（SSTK，AI 授權業務 2024 年貢獻 $1.04 億、2026-03 擴大多模態訓練資料集）、Getty Images（GETY，與 Runway 簽約、推「商業安全」純授權訓練 Generative AI）——兩者合併獲美 DOJ 2026-02 無條件放行、英 CMA 2026-05-15 有條件核准（須剝離 Shutterstock 全球編輯影像業務 Rex/Backgrid/Splash），交割在即。Reddit（RDDT，Google 每年付約 $6,000 萬、另簽 OpenAI）、Adobe Stock（ADBE，向貢獻者付 Firefly bonus）。授權趨勢由「一次性訓練資料」轉向「即時存取/歸因」：歸因型交易 2023 年 2 件→2024 年 11→2025 年 18→2026 估 34。來源驗證/浮水印：C2PA Content Credentials + Google SynthID 隱形浮水印雙層標準；法規：EU AI Act 第50條透明義務 2026-08-02 生效（AI 內容標示延至 2026-12-02、罰款達全球營收 1.5%）、California SB 942（2026-01-01 生效）。⚠ UMG/Sony v. Suno 2026-07 簡易判決為 AI 音樂判例分水嶺；版權合規成為 B2B 真實護城河。",
+   "companies": [
+    {
+     "name": "Shutterstock",
+     "ticker": "SSTK",
+     "country": "US",
+     "share": "授權資料領導",
+     "products": "授權訓練資料集 / AI 服務",
+     "note": "AI 授權業務 2024 貢獻 $1.04 億；2026-03 擴大多模態；與 Getty 合併獲 DOJ 無條件+CMA 有條件(須剝離編輯業務)放行",
+     "src": "https://www.minichart.com.sg/2026/05/15/getty-images-and-shutterstock-merger-receives-final-uk-cma-report-sec-8-k-filing-summary/"
+    },
+    {
+     "name": "Getty Images",
+     "ticker": "GETY",
+     "country": "US",
+     "share": "商業安全授權",
+     "products": "純授權訓練 Generative AI / 影像庫",
+     "note": "與 Runway 簽約；與 Shutterstock 合併 2026-05 CMA 有條件放行(剝離 SSTK 編輯業務)、交割在即",
+     "src": "https://www.gettyimages.com/ai"
+    },
+    {
+     "name": "Reddit",
+     "ticker": "RDDT",
+     "country": "US",
+     "share": "即時資料授權",
+     "products": "資料授權(Google/OpenAI)",
+     "note": "Google 每年付約 $6,000 萬；另簽 OpenAI",
+     "src": "https://mediaandthemachine.substack.com/p/ai-content-licensing-deals-june-2026"
+    },
+    {
+     "name": "Universal Music",
+     "ticker": "UMG.AS",
+     "country": "NL",
+     "share": "音樂版權收租",
+     "products": "AI 音樂授權 / 合資平台",
+     "note": "與 Udio 和解並合資授權 AI 音樂平台(2026)",
+     "src": "https://www.musicbusinessworldwide.com/universal-music-settles-udio-lawsuit-strikes-deal-for-licensed-ai-music-platform/"
+    },
+    {
+     "name": "Warner Music",
+     "ticker": "WMG",
+     "country": "US",
+     "share": "音樂版權收租",
+     "products": "AI 音樂授權",
+     "note": "2025-11 與 Suno 和解並簽授權；售 Songkick 予 Suno",
+     "src": "https://www.hollywoodreporter.com/music/music-industry-news/musicians-union-lawsuit-ai-song-generator-settlement-1236614835/"
+    },
+    {
+     "name": "Adobe (Content Credentials)",
+     "ticker": "ADBE",
+     "country": "US",
+     "share": "來源驗證+授權庫",
+     "products": "C2PA Content Credentials / Adobe Stock",
+     "note": "向貢獻者付 Firefly bonus；C2PA 共同發起",
+     "src": "https://magiclight.ai/news/c2pa-and-global-watermarking-mandates-for-ai-video-in-2026/"
+    },
+    {
+     "name": "Google (SynthID)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "隱形浮水印",
+     "products": "SynthID 浮水印",
+     "note": "與 C2PA 構成雙層標準；EU AI Act 強制標示受惠",
+     "src": "https://magiclight.ai/news/c2pa-and-global-watermarking-mandates-for-ai-video-in-2026/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "dist_tools"
+    },
+    {
+     "id": "eng_music"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Shutterstock 擴大訓練資料集 (StockTitan)",
+     "url": "https://www.stocktitan.net/news/SSTK/shutterstock-announces-major-expansion-of-licensed-training-datasets-fft0jwo7qy9t.html"
+    },
+    {
+     "label": "C2PA/浮水印 2026 強制 (MagicLight)",
+     "url": "https://magiclight.ai/news/c2pa-and-global-watermarking-mandates-for-ai-video-in-2026/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "infra_compute",
+   "eng_image"
+  ],
+  [
+   "infra_compute",
+   "eng_video"
+  ],
+  [
+   "infra_compute",
+   "eng_voice"
+  ],
+  [
+   "infra_compute",
+   "eng_music"
+  ],
+  [
+   "infra_compute",
+   "eng_avatar"
+  ],
+  [
+   "infra_foundation",
+   "eng_image"
+  ],
+  [
+   "infra_foundation",
+   "eng_video"
+  ],
+  [
+   "infra_foundation",
+   "eng_music"
+  ],
+  [
+   "eng_voice",
+   "eng_avatar"
+  ],
+  [
+   "eng_image",
+   "dist_tools"
+  ],
+  [
+   "eng_video",
+   "dist_tools"
+  ],
+  [
+   "eng_voice",
+   "dist_tools"
+  ],
+  [
+   "eng_music",
+   "dist_tools"
+  ],
+  [
+   "eng_avatar",
+   "dist_tools"
+  ],
+  [
+   "eng_music",
+   "rights_legal"
+  ],
+  [
+   "dist_tools",
+   "rights_legal"
+  ]
+ ],
+ "_proposed": {}
+}

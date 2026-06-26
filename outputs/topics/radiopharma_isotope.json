@@ -1,0 +1,492 @@
+{
+ "id": "radiopharma_isotope",
+ "tab": "放射性藥物/同位素",
+ "title": "放射性藥物與醫用同位素供應鏈 (Radiopharmaceuticals & Medical Isotopes / Theranostics)",
+ "subtitle": "放射性藥物把『診斷顯影劑』與『治療藥』做成同一個標靶分子的攣生對（治療診斷一體化 theranostics）：先用診斷同位素（Ga-68/F-18）顯影確認腫瘤表現標靶，再換上治療同位素（Lu-177/Ac-225）精準殺癌。放射藥物治療診斷市場 2025 約 $24 億 → 2031 $44.6 億（CAGR 10.9%，Mordor Intelligence）；放療配體治療（RLT）次市場 2025 $26 億 → 2030 $48 億。產業命脈與一般製藥完全不同：①核心藥效成分是半衰期僅數天的放射性同位素（Lu-177 ~6.6 天、Ac-225 ~10 天、Mo-99 母核 66 小時），藥廠無法囤貨，必須『邊生產邊出貨、48 小時內送達病床』；②同位素只能靠核反應爐或迴旋加速器製造，全球產能高度集中。2026 三大結構性事件：①整併——PE 巨頭 CapVest 以約 $70 億完成 Curium 再融資（核醫史上最大交易），Curium 隨即於 5 月對 Lantheus 提出約 $70 億收購要約（市場研判 deal value 近 $70 億，雙方協商中）；②龍頭自建上游——Novartis 2025 Pluvicto $20 億＋Lutathera 合計逾 $28 億，宣布在美建第三座 RLT 廠（Indianapolis/Carlsbad/East Coast）並把同位素生產內製化，擺脫對歐洲反應爐依賴；③α 核種供給戰——Ac-225 全球年產『不到一粒沙』，BMS RayzeBio 曾因 Ac-225 短缺暫停 Phase 3，TerraPower Isotopes（Bill Gates 背景）2026/3 砸 $4.5 億在費城建旗艦 Ac-225 廠、目標產能 20 倍、2029 量產。供應鏈：①同位素生產（反應爐/迴旋加速器：Mo-99、Lu-177、Ac-225、Cu-67）＋標靶分子（PSMA 配體）→ ②放射配體治療藥＋診斷顯影劑（CDMO 一站式）→ ③放射藥房/醫院核醫分裝配送（5 天半衰期冷鏈）→ ④腫瘤患者。絃外之音：這是少數『物流＝護城河』的製藥業——誰能在 48 小時把放射性劑量送到病床、誰能鎖定稀缺反應爐檔期，誰就贏；藥效分子人人會做，但 Lu-177/Ac-225 的『純度＋準時』才是真壁壘，這也是 Novartis 不惜自建反應爐、Curium/Lantheus 砸 $70 億整併分裝網絡的根本原因。台股無純放射藥物標的，僅友華(4120)等核醫通路間接沾邊。⚠ 與 glp1_cdmo（口服胜肽/小分子 CDMO）、ai_pharma（AI 藥物探索）零重疊——本主題瓶頸是核物理與放射性冷鏈物流；非投資建議。",
+ "category": "health",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "20+"
+  },
+  {
+   "k": "治療診斷市場",
+   "v": "$44.6億",
+   "sub": "2025 $24 億 → 2031 $44.6 億（CAGR 10.9%）",
+   "hot": true
+  },
+  {
+   "k": "2026 催化／風險",
+   "v": 3,
+   "sub": "Curium↔Lantheus $70 億整併·Ac-225 供給戰·5 天半衰期冷鏈單點",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "上游：同位素生產（反應爐/迴旋加速器）＋標靶分子",
+   "main": false
+  },
+  {
+   "id": "drug",
+   "label": "中游：放射配體治療藥＋診斷顯影劑（CDMO 一站式）",
+   "main": true
+  },
+  {
+   "id": "logistics",
+   "label": "下游：放射藥房/醫院核醫分裝・冷鏈配送",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "終端：腫瘤患者・核醫科",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "isotope_production",
+   "row": "upstream",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "醫用同位素生產（反應爐/迴旋加速器）",
+   "nameEn": "Medical Isotope Production (Reactors & Cyclotrons)",
+   "competition": "oligopoly",
+   "single": "α 核種真單點 · Ac-225 全球年產『不到一粒沙』，BMS RayzeBio 曾因短缺暫停 Phase 3；TerraPower 2026 砸 $4.5 億建費城廠、目標產能 20 倍",
+   "desc": "整條鏈的源頭與最深瓶頸——同位素只能靠核反應爐（Mo-99/Lu-177）或迴旋加速器（Ga-68/F-18/Cu-67）製造，半衰期數天、無法囤貨，產能高度集中於少數國家級設施。",
+   "marketSize": "醫用同位素全球數十億美元級，Lu-177/Ac-225 高速擴產",
+   "growth": "Lu-177 產能 2025 ~55,000 Ci → 2027 >75,000 Ci；Ac-225 產能緊缺、多廠 2026-2029 擴建",
+   "share": "null",
+   "analysis": "這是放射藥物最稀缺、最具定價權的一環。診斷端 Mo-99（衰變為 Tc-99m，全球核醫造影 workhorse）長期由少數老化研究反應爐供給；治療端 Lu-177（β 射線，Pluvicto/Lutathera 核心）由 ITM（NOVA 廠號稱全球最大 n.c.a. Lu-177 產線）、Curium（併 Monrol 成 Lu-177 最大製造商之一）、SHINE（北美最大 Lu-177 廠，初期 10 萬劑/年、可擴至 20 萬）、加拿大 Bruce Power 反應爐供給。最稀缺的是 α 核種 Ac-225——全球年產『不到一粒沙』，BMS RayzeBio 曾因短缺暫停 Phase 3。BWXT Medical（BWX Technologies 旗下）以無濃縮鈾製程做 Mo-99 並擴 Lu-177/Ac-225；Eckert & Ziegler（EUZ.DE）垂直整合同位素＋放射藥物（2025 營收 €3.12 億 +5%、放射藥物分部 +16%）；中國同輻（1763.HK，CNNC 旗下）2024 啟用首座商用同位素反應爐已量產 Lu-177。TerraPower Isotopes 2026/3 砸 $4.5 億建費城 Ac-225 旗艦廠、目標產能 20 倍、2029 量產——『誰鎖定反應爐檔期＋同位素純度，誰就握定價權』。標靶分子（PSMA 配體等）為小分子化學，門檻遠低於同位素本身。",
+   "companies": [
+    {
+     "name": "ITM Isotope Technologies",
+     "ticker": "—",
+     "country": "DE",
+     "share": "n.c.a. Lu-177 全球領導",
+     "products": "NOVA 廠（號稱全球最大 Lu-177 產線）/ n.c.a. Lu-177 / Ac-225",
+     "note": "未上市；QIA/ATHOS/Carbyne 領投 €1.88 億，另獲 Blue Owl 最高 $2.625 億債務融資；與法國 ILL 反應爐長約供 Lu-177",
+     "src": "https://www.itm-radiopharma.com/news/press-releases/press-releases-detail/ITM_Announces_Operational_Readiness_for_NOVA_Facility,_the_Worlds_Largest_Lutetium-177_Production_Site-664/"
+    },
+    {
+     "name": "BWX Technologies",
+     "ticker": "BWXT",
+     "country": "US",
+     "share": "Mo-99/Tc-99m/Lu-177/Ac-225 生產",
+     "products": "無濃縮鈾 Mo-99 製程 / 緊湊型 Tc-99m 產生器 / Ac-225（與 NorthStar/TRIUMF 合作）",
+     "note": "上市核工龍頭跨足醫用同位素；2024 與 NorthStar 簽 Ac-225 供應協議；推院內本地化 Tc-99m 產生器",
+     "src": "https://www.bwxt.com/what-we-do/advanced-technologies/medical-isotopes"
+    },
+    {
+     "name": "Eckert & Ziegler",
+     "ticker": "EUZ.DE",
+     "country": "DE",
+     "share": "同位素＋放射藥物垂直整合",
+     "products": "Isotope Products（密封/非密封源）/ Radiopharma（Ga-68/Lu-177 前驅體）",
+     "note": "2025 營收 €3.12 億(+5%)、淨利 +47% 至 €4,880 萬、放射藥物分部 +16%；Dresden 新廠投資至 €5,000 萬；市值約 €9.8 億",
+     "src": "https://www.ezag.com/wp-content/uploads/2026/03/Eckert-Ziegler_FY-2025.pdf"
+    },
+    {
+     "name": "China Isotope & Radiation (中國同輻)",
+     "ticker": "1763.HK",
+     "country": "CN",
+     "share": "中國最大核醫同位素",
+     "products": "反應爐/迴旋加速器同位素 / Lu-177 氯化物 / Mo-99-Tc-99m",
+     "note": "CNNC 旗下；2024/12 秦山首座商用同位素反應爐量產首批 Lu-177，中國 Lu-177 年產逾 1 萬 Ci",
+     "src": "https://www.caea.gov.cn/english/n6759361/n6759362/c10642547/content.html"
+    },
+    {
+     "name": "SHINE Technologies",
+     "ticker": "—",
+     "country": "US",
+     "share": "北美最大 Lu-177 廠",
+     "products": "Lu-177（初期 10 萬劑/年，可擴至 20 萬）/ Mo-99（聚變中子法）",
+     "note": "未上市；以加速器聚變中子源產同位素，繞開老化反應爐",
+     "src": "https://www.shinefusion.com/blog/shine-opening-largest-lutetium-177-production-facility-in-north-america"
+    },
+    {
+     "name": "TerraPower Isotopes",
+     "ticker": "—",
+     "country": "US",
+     "share": "Ac-225 新進旗艦",
+     "products": "Ac-225（費城 $4.5 億旗艦廠 + Everett 廠）",
+     "note": "未上市（Bill Gates 背景）；2026/3 宣布、目標產能 20 倍、2029 量產，劍指全球最大 Ac-225 供應商",
+     "src": "https://www.biospace.com/business/terrapower-commits-450m-to-build-radioisotope-production-plant"
+    },
+    {
+     "name": "NorthStar / Nusano / Niowave / Ionetix",
+     "ticker": "—",
+     "country": "US",
+     "share": "新興同位素產能",
+     "products": "Mo-99（非鈾路線）/ Ac-225 / Cu-67",
+     "note": "多家 2026-2029 擴 Ac-225/α 核種產能，回應 RayzeBio 等短缺事件",
+     "src": "https://www.biospace.com/business/radiopharma-sector-races-to-secure-actinium-225-supply-as-pipelines-expand"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "therapy_drug"
+    },
+    {
+     "id": "diagnostic_drug"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ITM NOVA：全球最大 Lu-177 生產廠運轉就緒",
+     "url": "https://www.itm-radiopharma.com/news/press-releases/press-releases-detail/ITM_Announces_Operational_Readiness_for_NOVA_Facility,_the_Worlds_Largest_Lutetium-177_Production_Site-664/"
+    },
+    {
+     "label": "TerraPower 砸 $4.5 億建費城 Ac-225 廠（產能 20 倍）",
+     "url": "https://www.biospace.com/business/terrapower-commits-450m-to-build-radioisotope-production-plant"
+    },
+    {
+     "label": "放射藥物業界搶 Ac-225 供給（BMS RayzeBio 短缺）",
+     "url": "https://www.biospace.com/business/radiopharma-sector-races-to-secure-actinium-225-supply-as-pipelines-expand"
+    },
+    {
+     "label": "中國秦山首座商用同位素反應爐量產 Lu-177 (CAEA)",
+     "url": "https://www.caea.gov.cn/english/n6759361/n6759362/c10642547/content.html"
+    }
+   ]
+  },
+  {
+   "id": "therapy_drug",
+   "row": "drug",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "放射配體治療藥（RLT / Theranostics 治療端）",
+   "nameEn": "Radioligand Therapeutics (RLT)",
+   "competition": "oligopoly",
+   "single": "整併進行式 · PE 巨頭 CapVest 以約 $70 億完成 Curium 再融資（核醫史上最大交易），Curium 隨即對 Lantheus 提出約 $70 億收購要約",
+   "desc": "把治療同位素（Lu-177/Ac-225）接到標靶分子（PSMA/SSTR 配體）上，做成精準殺癌的放射配體治療藥——治療診斷一體化的『治療』端，毛利與壁壘最高。",
+   "marketSize": "放療配體治療 RLT 2025 $26 億 → 2030 $48 億（CAGR 13.1%）",
+   "growth": "Novartis Pluvicto 2025 $20 億(+43%)＋Lutathera 合計逾 $28 億；放射藥物治療診斷整體 CAGR 10.9%",
+   "share": "null",
+   "analysis": "RLT 是放射藥物利潤最厚、競爭最寡占的環節。Novartis（NVS）是絕對龍頭：Pluvicto（Lu-177-PSMA-617，轉移性去勢抗性攝護腺癌）2025 銷售約 $20 億（+43%），Lutathera（Lu-177-SSTR，神經內分泌瘤）加總逾 $28 億；為擺脫對歐洲反應爐與供應鏈的依賴，Novartis 在美自建第三座 RLT 廠（Indianapolis 最大廠＋Carlsbad 西岸廠＋東岸新廠）並把同位素生產內製化——這是『藥廠倒過來吃上游』的關鍵戰略訊號。整併是 2026 主旋律：PE 巨頭 CapVest 2025/11 以約 $70 億完成 Curium 再融資（核醫史上最大交易、Curium 為全球最大獨立核醫平台、橫跨研發→製造→物流→市場、營運逾 70 國），Curium 隨即於 2026/5 對 Lantheus（LNTH）提出約 $70 億收購要約（協商中、deal value 近 $70 億）——若成局將同時整合『PSMA 診斷龍頭＋治療管線＋同位素＋分裝網絡』。BMS（旗下 RayzeBio 做 Ac-225）、Telix（TLX，治療管線 TLX591 等）為挑戰者。α 核種（Ac-225）RLT 是下一代戰場，但受制於同位素供給。",
+   "companies": [
+    {
+     "name": "Novartis",
+     "ticker": "NVS",
+     "country": "CH",
+     "share": "RLT 治療端絕對龍頭",
+     "products": "Pluvicto（Lu-177-PSMA）/ Lutathera（Lu-177-SSTR）/ Pluvicto 一線擴適應症",
+     "note": "Pluvicto 2025 約 $20 億(+43%)、加 Lutathera 合計逾 $28 億；在美建第三座 RLT 廠並內製同位素，擺脫歐洲反應爐依賴",
+     "src": "https://www.biospace.com/business/novartis-starts-construction-on-two-us-sites-to-bolster-radioligand-therapy-manufacturing"
+    },
+    {
+     "name": "Curium Pharma",
+     "ticker": "—",
+     "country": "FR",
+     "share": "全球最大獨立核醫平台",
+     "products": "RLT＋診斷一站式 / Lu-177（併 Monrol）/ 分裝物流",
+     "note": "未上市（CapVest 控股）；2025/11 CapVest 約 $70 億再融資（核醫史上最大交易）；2026/5 對 Lantheus 提出約 $70 億收購要約（協商中）；橫跨 70+ 國、4 座製造廠",
+     "src": "https://www.curiumpharma.com/2025/11/20/capvest-recapitalizes-curium/"
+    },
+    {
+     "name": "Telix Pharmaceuticals",
+     "ticker": "TLX",
+     "country": "AU",
+     "share": "診斷起家、衝治療管線",
+     "products": "Illuccix/Gozellix（診斷）/ TLX591 等 RLT 管線 / ARTMS QIS 迴旋加速器",
+     "note": "ASX:TLX 與 NASDAQ:TLX 雙重上市；FY2025 營收 $8.04 億、2026 指引 $9.5–9.7 億；以診斷現金流養治療管線",
+     "src": "https://www.prnewswire.com/apac/news-releases/telix-reports-us206m-revenue-fy-2025-guidance-upgraded-302583072.html"
+    },
+    {
+     "name": "Bristol Myers Squibb",
+     "ticker": "BMY",
+     "country": "US",
+     "share": "α 核種 RLT（RayzeBio）",
+     "products": "RayzeBio Ac-225-RLT 管線 / RYZ101（SSTR）",
+     "note": "2024 以 $41 億併 RayzeBio 切入 Ac-225；曾因 Ac-225 短缺暫停 Phase 3，凸顯上游瓶頸",
+     "src": "https://www.biospace.com/business/radiopharma-sector-races-to-secure-actinium-225-supply-as-pipelines-expand"
+    },
+    {
+     "name": "ITM（治療藥）",
+     "ticker": "—",
+     "country": "DE",
+     "share": "n.c.a. Lu-177 + 自有管線",
+     "products": "ITM-11（SSTR）等 RLT 管線 / 對外供 Lu-177",
+     "note": "未上市；同時是同位素供應商與藥廠（上游＋中游雙重身分）",
+     "src": "https://www.itm-radiopharma.com/news/press-releases/press-releases-detail/itm-raises-eur188m-to-enhance-radiopharmaceutical-pipeline-and-to-strengthen-leading-position-in-medical-radioisotope-manufacturing-671/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "isotope_production"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "radiopharmacy"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Novartis 在美建兩座新 RLT 廠、強化製造供應網",
+     "url": "https://www.biospace.com/business/novartis-starts-construction-on-two-us-sites-to-bolster-radioligand-therapy-manufacturing"
+    },
+    {
+     "label": "CapVest 約 $70 億再融資 Curium（核醫史上最大交易）",
+     "url": "https://www.curiumpharma.com/2025/11/20/capvest-recapitalizes-curium/"
+    },
+    {
+     "label": "Lantheus 評估約 $70 億 Curium 收購要約 (FiercePharma)",
+     "url": "https://www.fiercepharma.com/pharma/radiopharma-lantheus-muses-7b-potential-takeover-curium-pharma-bloomberg"
+    },
+    {
+     "label": "放療配體治療市場 2025 $26 億→2030 $48 億 (GlobeNewswire)",
+     "url": "https://www.globenewswire.com/news-release/2026/02/19/3240998/28124/en/Radioligand-Therapy-Market-to-Surge-with-13-1-CAGR-Projected-Growth-from-2-6B-in-2025-to-4-8B-by-2030-Novartis-Pluvicto-and-Lutathera-Have-Catalyzed-Commercial-Momentum.html"
+    }
+   ]
+  },
+  {
+   "id": "diagnostic_drug",
+   "row": "drug",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "診斷顯影劑（PET/SPECT 造影端）",
+   "nameEn": "Diagnostic Imaging Agents (PET/SPECT)",
+   "competition": "competitive",
+   "single": "PSMA 診斷龍頭爭奪 · Lantheus PYLARIFY 為市場領導但 2026 Q1 -6.5%、遭 Blue Earth 削價競爭；Curium 收購要約瞄準其診斷地位",
+   "desc": "治療診斷一體化的『診斷』端——用診斷同位素（Ga-68/F-18）標記同一標靶分子，先顯影確認腫瘤是否表現標靶（病患篩選），再決定能否上治療藥。",
+   "marketSize": "PSMA PET 造影市場 2025 約 +20%、長線 CAGR ~28%",
+   "growth": "Lantheus 2026 營收指引 $14–14.5 億；PYLARIFY 自 2021 累計逾 76 萬次掃描",
+   "share": "null",
+   "analysis": "診斷端是 RLT 的『守門員』——沒有 PSMA 陽性顯影就不能用 Pluvicto，造影量直接決定治療藥的可治病患池。Lantheus（LNTH）PYLARIFY（F-18-PSMA）為市場領導，自 2021 累計逾 76 萬次掃描，但 2026 Q1 PYLARIFY 銷售 $2.41 億(-6.5%)、因 Blue Earth Diagnostics 等削價競爭與給付壓力下修 2025 指引；推新一代 PYLARIFY TruVu（FDA 2026/3 行動日、Q4 2026 上市）防守。Telix（TLX）以 Illuccix/Gozellix（Ga-68-PSMA）切入並借 Cardinal Health 通路鋪貨。診斷端進入門檻低於治療端（小分子化學＋短半衰期同位素），競爭較激烈、給付承壓——這也是 Curium 收購 Lantheus 想一次拿下『診斷入口＋治療管線』的戰略邏輯。",
+   "companies": [
+    {
+     "name": "Lantheus Holdings",
+     "ticker": "LNTH",
+     "country": "US",
+     "share": "PSMA PET 診斷領導",
+     "products": "PYLARIFY（F-18-PSMA）/ PYLARIFY TruVu / Neuraceq / Definity",
+     "note": "2026 Q1 PYLARIFY $2.41 億(-6.5%)、總營收 $3.77 億、2026 指引 $14–14.5 億；遭 Curium 約 $70 億收購要約評估中；累計逾 76 萬次掃描",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001521036/000095017025103543/lnth-ex99_1.htm"
+    },
+    {
+     "name": "Telix（診斷）",
+     "ticker": "TLX",
+     "country": "AU",
+     "share": "Ga-68-PSMA 挑戰者",
+     "products": "Illuccix / Gozellix（Ga-68-PSMA-PET）",
+     "note": "ASX:TLX/NASDAQ:TLX；Gozellix 2025/3 FDA 核准、借 Cardinal Health 通路；診斷現金流養治療管線",
+     "src": "https://ir.telixpharma.com/news-releases/news-release-details/telix-announces-cardinal-health-gozellix-commercial-distribution"
+    },
+    {
+     "name": "Blue Earth Diagnostics（Bracco 旗下）",
+     "ticker": "—",
+     "country": "IT",
+     "share": "PSMA 削價競爭者",
+     "products": "Posluma（F-18-PSMA）等",
+     "note": "未上市（義大利 Bracco 集團）；削價與給付壓力是 Lantheus PYLARIFY 下修主因",
+     "src": "https://alirahealth.com/education-hub/us-pet-radiotracer-landscape-2025-between-innovation-maturity/"
+    },
+    {
+     "name": "Bruker",
+     "ticker": "BRKR",
+     "country": "US",
+     "share": "臨床前/造影儀器賣鏟人",
+     "products": "PET/CT Si78 / PET Insert / PET-MR / PMOD 分析",
+     "note": "不做藥，做核醫造影與臨床前研究儀器；放射藥物研發放量的設備受惠者",
+     "src": "https://www.bruker.com/en/products-and-solutions/preclinical-imaging/nmi/pet-ct.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "isotope_production"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "radiopharmacy"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Lantheus 2026 Q1 財報（PYLARIFY/指引）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001521036/000095017025103543/lnth-ex99_1.htm"
+    },
+    {
+     "label": "Telix 借 Cardinal Health 鋪貨 Gozellix",
+     "url": "https://ir.telixpharma.com/news-releases/news-release-details/telix-announces-cardinal-health-gozellix-commercial-distribution"
+    },
+    {
+     "label": "2025 美國 PET 造影劑版圖：創新與成熟 (Alira Health)",
+     "url": "https://alirahealth.com/education-hub/us-pet-radiotracer-landscape-2025-between-innovation-maturity/"
+    }
+   ]
+  },
+  {
+   "id": "radiopharmacy",
+   "row": "logistics",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "放射藥房/醫院核醫分裝・冷鏈即時配送",
+   "nameEn": "Radiopharmacy · Nuclear Dose Dispensing · Time-Critical Logistics",
+   "competition": "oligopoly",
+   "single": "物流＝護城河 · 5 天半衰期＋每劑量身訂製，必須『邊生產邊出貨、48 小時送達病床』；Cardinal Health 130 家核醫藥房、年配逾 1,200 萬劑時效劑量",
+   "desc": "放射藥物獨有的『最後一哩』——同位素半衰期僅數天，藥房須依每位病患的施打時間反推劑量、即時分裝、由放射性冷鏈在數十小時內送達醫院核醫科，這是一般藥品沒有的單點瓶頸。",
+   "marketSize": "核醫分裝/放射性物流，與治療診斷藥放量同步擴張",
+   "growth": "Cardinal Health 全美 130 家核醫藥房（含 3 中央藥房）＋30+ PET 站；年配逾 1,200 萬劑",
+   "share": "null",
+   "analysis": "這是放射藥物最被低估、卻最難複製的護城河——因為 Lu-177 半衰期僅 ~6.6 天、Ac-225 ~10 天、Tc-99m 母核 66 小時，藥廠無法囤貨，必須『邊生產邊出貨』，且每一劑都要依病患施打時段反推活度（dose）即時分裝，再由具放射性運輸資格的冷鏈在數十小時內送達病床。誰握有綿密的分裝藥房網與物流時效，誰就決定一款治療診斷藥能不能真正觸及病患。Cardinal Health（CAH）Nuclear & Precision Health Solutions 是美國分裝物流龍頭：全美 130 家核醫藥房（含 3 座中央藥房）＋30+ PET 站，年配逾 1,200 萬劑時效、病患特異性劑量；並部署 Telix ARTMS 迴旋加速器在地產 Ga-68，是 Gozellix 等的鋪貨命脈。Curium 之所以被估值約 $70 億，正因它把『同位素→藥→分裝→70+ 國物流』垂直整合——這也是為何龍頭寧可砸數十億整併分裝網，而非只買藥證。",
+   "companies": [
+    {
+     "name": "Cardinal Health",
+     "ticker": "CAH",
+     "country": "US",
+     "share": "美國核醫分裝物流龍頭",
+     "products": "Nuclear & Precision Health Solutions / 130 家核醫藥房 / ARTMS 在地產 Ga-68",
+     "note": "全美 130 家核醫藥房（含 3 中央藥房）＋30+ PET 站；年配逾 1,200 萬劑時效劑量；Telix Gozellix 等鋪貨通路",
+     "src": "https://www.cardinalhealth.com/en/product-solutions/pharmaceutical-products/nuclear-medicine.html"
+    },
+    {
+     "name": "Curium（分裝物流）",
+     "ticker": "—",
+     "country": "FR",
+     "share": "70+ 國垂直整合物流",
+     "products": "同位素→藥→分裝→市場一站式 / 4 座製造廠",
+     "note": "未上市（CapVest 控股）；『端到端核醫平台』是 $70 億估值核心；4 座製造廠（2 座在美）",
+     "src": "https://www.curiumpharma.com/2025/11/20/capvest-recapitalizes-curium/"
+    },
+    {
+     "name": "Lantheus（含 PNT 分裝）",
+     "ticker": "LNTH",
+     "country": "US",
+     "share": "診斷藥＋RLT 分裝佈局",
+     "products": "PYLARIFY 分裝網 / POINT Biopharma RLT 產線",
+     "note": "併 POINT Biopharma 取得 RLT 製造/分裝；Curium 收購要約瞄準其分裝＋診斷一體網絡",
+     "src": "https://www.fiercepharma.com/pharma/radiopharma-lantheus-muses-7b-potential-takeover-curium-pharma-bloomberg"
+    },
+    {
+     "name": "友華生技醫藥",
+     "ticker": "4120.TWO",
+     "country": "TW",
+     "share": "台灣核醫/腫瘤通路（間接沾邊）",
+     "products": "腫瘤/特殊藥品代理通路（TRPMA 會員）",
+     "note": "台股無純放射藥物標的；友華（上櫃 TPEx）為腫瘤特藥通路商，僅間接受惠台灣核醫治療診斷導入（如 Pluvicto 2025 在台上市）；非放射藥物直接製造商",
+     "src": "https://trpma.org.tw/cmn/members/1"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "therapy_drug"
+    },
+    {
+     "id": "diagnostic_drug"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "patients"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cardinal Health 核醫：130 家藥房、年配 1,200 萬劑",
+     "url": "https://www.cardinalhealth.com/en/product-solutions/pharmaceutical-products/nuclear-medicine.html"
+    },
+    {
+     "label": "Curium 端到端核醫平台（70+ 國、4 廠）",
+     "url": "https://www.curiumpharma.com/2025/11/20/capvest-recapitalizes-curium/"
+    },
+    {
+     "label": "Lu-177-PSMA-617（Pluvicto）正式在台上市 (theranostictw)",
+     "url": "https://theranostictw.com/2025/04/16/lu-177-psma-617-pluvicto%e9%8e%a6%e5%bf%85%e5%a6%a5-%e6%ad%a3%e5%bc%8f%e5%9c%a8%e5%8f%b0%e4%b8%8a%e5%b8%82/"
+    }
+   ]
+  },
+  {
+   "id": "patients",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端：腫瘤患者・核醫科",
+   "nameEn": "End Demand: Oncology Patients · Nuclear Medicine Depts",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "放射藥物的終端需求——攝護腺癌、神經內分泌瘤等腫瘤患者，經核醫科診斷顯影確認標靶後接受放射配體治療，回頭拉動全鏈同位素與分裝用量。",
+   "marketSize": "放射藥物治療診斷 2031 $44.6 億（CAGR 10.9%）",
+   "growth": "Pluvicto 一線擴適應症、PSMA 可治病患池擴大；α 核種 RLT 為下一波需求",
+   "share": "null",
+   "analysis": "需求端是全鏈成長引擎：每多一位 PSMA 陽性病患，就同時拉動一次診斷顯影（Ga-68/F-18）＋多輪治療劑量（Lu-177/Ac-225）＋對應的同位素生產與冷鏈分裝——這是『診斷帶動治療、治療反覆消耗同位素』的複利需求結構。Pluvicto 從末線往一線擴適應症將大幅放大可治病患池；α 核種（Ac-225）RLT 因療效更強、對微小轉移更有效，是下一波需求引擎，但完全卡在 Ac-225 供給。⚠ 現實限制：①同位素供給（尤其 Ac-225）是需求天花板，產能不足會直接卡死病患可及性；②5 天半衰期讓偏遠地區可及性受限，需就近建分裝藥房；③給付與削價（診斷端尤甚）壓縮利潤。絃外之音：放射藥物的終端需求不缺（腫瘤病患龐大），真正的成長瓶頸在『上游同位素＋下游冷鏈分裝』——這也是為何資本（Novartis 自建反應爐、TerraPower 砸 Ac-225、Curium/Lantheus $70 億整併）全押在鏈的兩端，而非藥效分子本身。",
+   "companies": [
+    {
+     "name": "腫瘤患者（攝護腺癌/神經內分泌瘤）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "放射藥物終端買方",
+     "products": "PSMA/SSTR 陽性腫瘤的診斷＋治療",
+     "note": "診斷帶動治療、治療反覆消耗同位素的複利需求；Ac-225 供給是天花板"
+    },
+    {
+     "name": "醫院核醫科 / 癌症中心",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "施打與造影端",
+     "products": "PET/SPECT 造影 + RLT 施打",
+     "note": "需就近分裝藥房支援，5 天半衰期限制偏遠可及性"
+    },
+    {
+     "name": "Novartis（終端拉動）",
+     "ticker": "NVS",
+     "country": "CH",
+     "share": "RLT 市場教育者",
+     "products": "Pluvicto 一線擴適應症 / 病患篩選教育",
+     "note": "把可治病患池從末線往一線擴大，放大全鏈需求"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "radiopharmacy"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "放射藥物治療診斷市場 2025 $24 億→2031 $44.6 億、CAGR 10.9% (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/radiopharmaceutical-theranostics-market"
+    },
+    {
+     "label": "放療配體治療市場 2025→2030 CAGR 13.1% (GlobeNewswire)",
+     "url": "https://www.globenewswire.com/news-release/2026/02/19/3240998/28124/en/Radioligand-Therapy-Market-to-Surge-with-13-1-CAGR-Projected-Growth-from-2-6B-in-2025-to-4-8B-by-2030-Novartis-Pluvicto-and-Lutathera-Have-Catalyzed-Commercial-Momentum.html"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "isotope_production",
+   "therapy_drug"
+  ],
+  [
+   "isotope_production",
+   "diagnostic_drug"
+  ],
+  [
+   "therapy_drug",
+   "radiopharmacy"
+  ],
+  [
+   "diagnostic_drug",
+   "radiopharmacy"
+  ],
+  [
+   "radiopharmacy",
+   "patients"
+  ]
+ ],
+ "_proposed": {}
+}

@@ -1,0 +1,486 @@
+{
+ "id": "subsea_telecom_cable",
+ "tab": "海底電信光纜",
+ "title": "海底電信光纜 與 AI 跨洋頻寬骨幹供應鏈 (Subsea Telecom Cable & AI Bandwidth Backbone)",
+ "subtitle": "全球 99% 跨洋網路資料、與幾乎全部 AI 跨地域訓練/推論流量，都跑在約 600 條海底光纜上——這是 AI 時代『看不見的骨幹』。海底電信纜系統市場 2026 約 $164 億 → 2031 $264 億（CAGR ~10%）；AI 驅動下 2025–2027 新系統投資估達 $130 億、近乎前三年兩倍。鏈條三段卡死：①海纜＋中繼器製造由 SubCom（美·Cerberus 控股·未上市·~18–20%）、NEC（日 6701.T·~15%）、ASN（法國國家持股 80%＋Nokia 20%·未上市）三強寡占，光纖預製棒上游則由 Corning（美 GLW）、住友電工（日 5802.T）、Fujikura（日 5803.T）把持；②鋪設/維修需要高規工程船，全球僅約 60 艘、平均船齡 25 年、2026 後零新船訂單、缺口 40–55 艘——這是比工廠更硬的瓶頸；③系統整合/運營過去是電信商（NTT 9432.T），如今超大規模雲端自建主導——Google 參與 33 條、Meta『Project Waterworth』5 萬公里為史上最長私有海纜，hyperscaler 已佔國際頻寬約 75%。2026 催化：AI 跨洋頻寬暴增、雲端自建潮、地緣海纜安全（NATO Baltic Sentry、台海/波羅的海斷纜事件）。絃外之音：市場焦點在『纜』，但真正卡脖子的是『船』——鋪設船寡占與斷纜後的修復船嚴重不足，使工程/維修運能成隱形定價權；而日本以 NEC＋住友＋Fujikura＋NTT 一條龍，是少數同時握有製造、預製棒、運營的國家隊。⚠ 與 optical_module（資料中心內光收發，非跨洋）、hvdc（離岸風電電力海纜，非通訊）、networking 部分相鄰但不重疊；本題聚焦『跨洋通訊海纜的製造×工程船×運營』。非投資建議。",
+ "category": "industrial",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "20+"
+  },
+  {
+   "k": "海纜系統市場",
+   "v": "$264億",
+   "sub": "2026 $164 億 → 2031 $264 億（CAGR ~10%）；AI 推升 2025–27 投資估 $130 億（≈前三年 2 倍）",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "AI 跨洋頻寬暴增＋雲端自建潮·風險：鋪設/修復船缺口 40–55 艘＋地緣斷纜",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "material",
+   "label": "上游：光纖預製棒 / 光纖 / 海纜原材料",
+   "main": false
+  },
+  {
+   "id": "manufacture",
+   "label": "中游：海纜＋中繼器製造（三強寡占）",
+   "main": true
+  },
+  {
+   "id": "marine",
+   "label": "工程船：鋪設 / 維修（隱形瓶頸）",
+   "main": false
+  },
+  {
+   "id": "operate",
+   "label": "下游：系統整合 / 運營（電信＋雲端自建）",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "fiber_preform",
+   "row": "material",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "上游：光纖預製棒 / 海纜光纖",
+   "nameEn": "Optical Fiber Preform & Submarine Fiber",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "海纜的『芯』——超低損耗光纖與其預製棒（preform）。海纜光纖規格遠高於陸地，需極低衰減、長距無中繼能力，是少數玩家的高門檻環節。",
+   "marketSize": "光纖光纜全球數百億美元；海纜級為高值利基",
+   "growth": "AI 拉動高密度/超低損耗光纖；Corning 約 10% 全球光纖市佔居首",
+   "share": "null",
+   "analysis": "海纜光纖是『材料壟斷在前、系統寡占在後』的雙層結構。Corning（GLW）以約 10% 全球光纖市佔居首、海纜級超低損耗光纖長期領先；日本住友電工（5802.T）、Fujikura（5803.T）、古河電工（5801.T）為日本『電線御三家』，同時供應預製棒/光纖並向下整合海纜製造——Fujikura 的超高密度光纖帶（SWR/WTC）更是 Google/Meta/微軟等 hyperscaler 偏好供應商。義大利 Prysmian（PRY.MI）則為垂直整合的歐洲海纜巨頭。此環節與 optical_module/networking 的『資料中心內光纖』不同：海纜光纖強調跨洋長距與抗壓抗腐。",
+   "companies": [
+    {
+     "name": "Corning",
+     "ticker": "GLW",
+     "country": "US",
+     "share": "全球光纖約 10% 居首",
+     "products": "海纜級超低損耗光纖 / 預製棒",
+     "note": "海纜光纖長期技術領先；AI 資料中心與海纜雙需求",
+     "src": "https://www.corning.com/optical-communications/worldwide/en/home/products/fiber/optical-fiber-products/submarine-fibers.html"
+    },
+    {
+     "name": "住友電工 Sumitomo Electric",
+     "ticker": "5802.T",
+     "country": "JP",
+     "share": "日本御三家·光纖+海纜整合",
+     "products": "預製棒 / 光纖 / 海纜系統",
+     "note": "與 Corning、Prysmian 同列全球光纜主要競爭者；向下整合海纜製造",
+     "src": "https://finance.yahoo.com/quote/5802.T/"
+    },
+    {
+     "name": "Fujikura",
+     "ticker": "5803.T",
+     "country": "JP",
+     "share": "超高密度光纖帶領導",
+     "products": "光纖 / SWR/WTC 超高密度光纖帶 / 海纜光纖",
+     "note": "Hyperscaler（Google/Meta/微軟）偏好之高密度光纖帶供應商",
+     "src": "https://finance.yahoo.com/quote/5803.T/"
+    },
+    {
+     "name": "古河電工 Furukawa Electric",
+     "ticker": "5801.T",
+     "country": "JP",
+     "share": "日本御三家·光纖+通訊系統",
+     "products": "光纖光纜 / 電信系統 / 特殊材料",
+     "note": "1884 創立綜合電線大廠；OFS 為其美國光纖子公司",
+     "src": "https://finance.yahoo.com/quote/5801.T/"
+    },
+    {
+     "name": "Prysmian",
+     "ticker": "PRY.MI",
+     "country": "IT",
+     "share": "歐洲海纜垂直整合巨頭",
+     "products": "海纜光纖 / 通訊海纜 / 預製棒",
+     "note": "通訊＋電力海纜雙線；前五大海纜廠之一",
+     "src": "https://www.prysmian.com/en/en_telecom-solutions_optical-cables_underwater-submarine-cables_Submarine-cable.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "cable_repeater"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corning 海纜光纖產品",
+     "url": "https://www.corning.com/optical-communications/worldwide/en/home/products/fiber/optical-fiber-products/submarine-fibers.html"
+    },
+    {
+     "label": "海纜系統市場 2026 $164 億→2031 $264 億 CAGR 10%（Mordor）",
+     "url": "https://www.mordorintelligence.com/industry-reports/submarine-cabling-systems-market"
+    }
+   ]
+  },
+  {
+   "id": "cable_repeater",
+   "row": "manufacture",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "中游：海纜＋中繼器製造（三強寡占）",
+   "nameEn": "Submarine Cable & Repeater Manufacturing",
+   "competition": "oligopoly",
+   "single": "全球三強寡占 · SubCom（美·Cerberus 控股）＋ NEC（日 6701.T）＋ ASN（法國國家持股）合計掌握跨洋海纜製造，前五大佔市場 50–60%",
+   "desc": "把光纖製成可承受萬米水壓、數十年壽命的海纜，並每約 60–80 公里加裝光放大中繼器（repeater）——這是海纜系統的技術心臟與寡占核心。",
+   "marketSize": "海纜系統市場 2026 約 $164 億（CAGR ~10%）",
+   "growth": "前五大佔 50–60%；2026 預計 40 條海纜商轉（2025 僅 15 條）",
+   "share": "null",
+   "analysis": "跨洋海纜製造是典型寡占：SubCom（美國·Cerberus Capital 控股·未上市）市佔約 18–20%，是唯一美國本土全垂直整合者（工程→製造→鋪設→維修一條龍），Cerberus 2026/4 完成 $23 億單一資產續存基金加碼；NEC（6701.T）市佔約 15%、逾 60 年經驗、累積鋪設逾 40 萬公里，FY2026（截至 2026/3）集團營收 3.58 兆日圓（+4.7%），近期完成亞洲直達海纜 ADC、東密克羅尼西亞 EMCS；ASN（Alcatel Submarine Networks）2024 底由 Nokia 出售予法國國家（持股 80%）＋Nokia 留 20%，估值 €3.5 億，2026/3 宣布投 €1 億現代化 Calais/Greenwich 工廠。中國亨通光電（600487.SS）為唯一具跨洋海纜完整能力的中國廠商（PEACE 系統），但因地緣多被排除於西方系統外——『海纜製造＝國家隊與地緣賽局』。三強卡死的不只是技術，更是中繼器與系統整合的長期信任與供應穩定。",
+   "companies": [
+    {
+     "name": "SubCom",
+     "ticker": "—",
+     "country": "US",
+     "share": "全球約 18–20% / 唯一美國本土全垂直整合",
+     "products": "海纜系統 / 中繼器 / 工程＋製造＋鋪設＋維修一條龍",
+     "note": "未上市；Cerberus Capital 控股（2018 自 TE Connectivity 分拆）；2026/4 完成 $23 億單一資產續存基金（CVC 領投）加碼；自有鋪設船隊吃下高毛利安裝營收",
+     "src": "https://www.submarinenetworks.com/en/nv/insights/cerberus-closes-$2-3-billion-single-asset-continuation-vehicle-for-subcom-a-landmark-in-subsea-infrastructure-investment"
+    },
+    {
+     "name": "NEC",
+     "ticker": "6701.T",
+     "country": "JP",
+     "share": "全球約 15% / 海纜三強",
+     "products": "海纜系統 / Open Cable / 中繼器",
+     "note": "逾 60 年經驗、累積鋪設逾 40 萬公里；FY2026 集團營收 3.58 兆日圓(+4.7%)；近期完成 ADC（中日菲星泰越）、EMCS（太平洋島國）；日本國家隊核心",
+     "src": "https://www.nec.com/en/press/202605/global_20260515_02.html"
+    },
+    {
+     "name": "ASN (Alcatel Submarine Networks)",
+     "ticker": "—",
+     "country": "FR",
+     "share": "海纜三強 / 法國國家戰略資產",
+     "products": "海纜系統 / 中繼器 / 海纜製造",
+     "note": "未上市；2024/12/31 Nokia 完成出售予法國國家（持股 80%）＋Nokia 留 20%，估值 €3.5 億；2026/3 宣布投 €1 億現代化 Calais/Greenwich 工廠",
+     "src": "https://www.nokia.com/newsroom/nokia-completes-its-sale-of-leading-submarine-networks-business-asn-alcatel-submarine-networks-to-the-french-state/"
+    },
+    {
+     "name": "亨通光電 Hengtong",
+     "ticker": "600487.SS",
+     "country": "CN",
+     "share": "唯一具跨洋海纜完整能力之中國廠",
+     "products": "跨洋海纜系統 / PEACE / 海洋通訊",
+     "note": "海洋通訊在手訂單約 75 億人民幣、PEACE 跨洋系統訂單逾 $3 億；因地緣多被西方系統排除",
+     "src": "https://news.futunn.com/en/post/61508054/hengtong-optic-electric-600487-opportunities-in-deep-sea-technology-highlighted"
+    },
+    {
+     "name": "Prysmian",
+     "ticker": "PRY.MI",
+     "country": "IT",
+     "share": "前五大海纜廠（通訊＋電力）",
+     "products": "通訊海纜系統 / 海纜製造",
+     "note": "歐洲垂直整合巨頭；前五大合計佔市場 50–60%",
+     "src": "https://www.prysmian.com/en/en_telecom-solutions_optical-cables_underwater-submarine-cables_Submarine-cable.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fiber_preform"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cable_lay"
+    },
+    {
+     "id": "cable_repair"
+    }
+   ],
+   "sources": [
+    {
+     "label": "海纜五強佔 50–60%、NEC ~15%、SubCom ~18–20%（Mordor）",
+     "url": "https://www.mordorintelligence.com/industry-reports/submarine-cabling-systems-market"
+    },
+    {
+     "label": "NEC 完成 EMCS 海纜（2026/5）",
+     "url": "https://www.nec.com/en/press/202605/global_20260515_02.html"
+    },
+    {
+     "label": "Nokia 完成出售 ASN 予法國國家",
+     "url": "https://www.nokia.com/newsroom/nokia-completes-its-sale-of-leading-submarine-networks-business-asn-alcatel-submarine-networks-to-the-french-state/"
+    },
+    {
+     "label": "Cerberus $23 億單一資產續存基金加碼 SubCom（2026/4）",
+     "url": "https://www.submarinenetworks.com/en/nv/insights/cerberus-closes-$2-3-billion-single-asset-continuation-vehicle-for-subcom-a-landmark-in-subsea-infrastructure-investment"
+    }
+   ]
+  },
+  {
+   "id": "cable_lay",
+   "row": "marine",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "工程船：鋪設（隱形瓶頸）",
+   "nameEn": "Cable-Laying Vessels (the hidden bottleneck)",
+   "competition": "oligopoly",
+   "single": "比工廠更硬的瓶頸 · 全球僅約 60 艘高規海纜船、平均船齡 25 年、2026 後零新船訂單，缺口估 40–55 艘且 2029 前無解",
+   "desc": "海纜製好還得靠專業鋪設船（CLV）精準埋設於海床——這是全鏈最被忽略、卻最稀缺的環節。船廠寧造高毛利 LNG 船也不造海纜船，使運能成隱形定價權。",
+   "marketSize": "海纜鋪設船隊全球約 60 艘高規船",
+   "growth": "2026 預計 40 條海纜商轉（2025 僅 15）；鋪設運能嚴重供不應求",
+   "share": "null",
+   "analysis": "鋪設船是『AI 海纜熱潮的真正卡脖子點』：全球高規海纜鋪設船僅約 60 艘、平均船齡約 25 年、約 30% 將於十年內超過 40 年船齡；更關鍵的是 2026 之後幾乎零確認新船訂單——因 CLV 新造毛利 <12%、工期 36–48 個月，船廠寧選毛利 15–20%、工期 14–18 個月的 LNG 船。產業估缺口 40–55 艘、2029 年前無解。SubCom 自有船隊吃下高毛利安裝營收為其護城河；Global Marine（2025/3 由新加坡 Keppel〔BN4.SI〕收購）、馬來西亞 OMS Group（2026 取得 $2.925 億貸款擴隊）、法國 Orange Marine（Orange〔ORA.PA〕子公司，向斯里蘭卡 Colombo Dockyard 訂兩艘 ABB 動力修復船，2028–29 交付）為主要獨立船東。Ulstein 等獲選設計次世代 CLV——但遠水救不了近火。",
+   "companies": [
+    {
+     "name": "SubCom（自有船隊）",
+     "ticker": "—",
+     "country": "US",
+     "share": "三強中唯一全垂整含船隊",
+     "products": "海纜鋪設船 / SubCom Reliance 等",
+     "note": "未上市；Cerberus 優化船隊吃下高毛利安裝營收，是與 NEC/ASN 的關鍵差異",
+     "src": "https://www.subcom.com/documents/vessels/SubCom-Reliance-VesselSpecs-Letter-Web.pdf"
+    },
+    {
+     "name": "Keppel（Global Marine）",
+     "ticker": "BN4.SI",
+     "country": "SG",
+     "share": "獨立鋪設/維修船東",
+     "products": "海纜鋪設＋維修船隊 / Cable Innovator",
+     "note": "2025/3 由 Keppel 收購 Global Marine Systems；旗下與中國電信合資 SBSS（49%）",
+     "src": "https://globalmarine.co.uk/vessels-trenching-assets/"
+    },
+    {
+     "name": "Orange Marine",
+     "ticker": "ORA.PA",
+     "country": "FR",
+     "share": "歐洲鋪設＋修復船東",
+     "products": "海纜鋪設 / 修復船",
+     "note": "Orange 子公司；向 Colombo Dockyard 訂兩艘 ABB 油電混合修復船，2028–29 交付",
+     "src": "https://new.abb.com/news/detail/133911/orange-marine-selects-abbs-integrated-power-propulsion-and-automation-system-for-two-new-cable-repair-vessels"
+    },
+    {
+     "name": "OMS Group",
+     "ticker": "—",
+     "country": "SG",
+     "share": "亞太獨立鋪設/維修船東",
+     "products": "海纜鋪設＋維修船隊",
+     "note": "未上市；總部馬來西亞、新加坡為區域營運/融資樞紐；2026 取得 $2.925 億貸款擴隊以因應船荒",
+     "src": "https://www.lightreading.com/cable-technology/oms-group-secures-292-5m-loan-for-fleet-expansion-as-industry-grapples-with-cable-ship-shortage"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cable_repeater"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "system_operate"
+    }
+   ],
+   "sources": [
+    {
+     "label": "海纜船荒：約 60 艘、均齡 25 年、2026 後零新船、缺口 40–55 艘",
+     "url": "https://energy-solutions.co/reports/subsea-cable-vessel-crisis/"
+    },
+    {
+     "label": "SubCom Reliance 船舶規格",
+     "url": "https://www.subcom.com/documents/vessels/SubCom-Reliance-VesselSpecs-Letter-Web.pdf"
+    },
+    {
+     "label": "OMS Group 取得 $2.925 億貸款擴船隊",
+     "url": "https://www.lightreading.com/cable-technology/oms-group-secures-292-5m-loan-for-fleet-expansion-as-industry-grapples-with-cable-ship-shortage"
+    }
+   ]
+  },
+  {
+   "id": "cable_repair",
+   "row": "marine",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "工程船：維修 / 海纜安全",
+   "nameEn": "Cable Repair & Subsea Security",
+   "competition": "oligopoly",
+   "single": "地緣風險升溫 · 2024–25 波羅的海 8 起、台海 5 起斷纜事件，NATO 2025/1 啟動 Baltic Sentry，修復船嚴重不足放大斷纜衝擊",
+   "desc": "海纜遭船錨、地震或蓄意破壞時，需專業修復船快速打撈、接續、復原——老化的修復船隊是斷纜後復原速度的關鍵變數，也是地緣安全焦點。",
+   "marketSize": "修復/維護占海纜系統全壽命成本要角",
+   "growth": "斷纜事件頻發＋修復船老化=復原時程拉長風險",
+   "share": "null",
+   "analysis": "維修環節因地緣政治在 2026 成為焦點：海纜承載全球 99% 跨洋網路流量，2024–25 波羅的海發生 4 起涉 8 條海纜損壞、台海 5 起涉 5 條，其中多起涉及中/俄關聯、所有權不透明船隻。NATO 於 2025/1/14 啟動『Baltic Sentry』任務、歐盟推 2025–26 海纜安全行動計畫加強偵測與監控。但修復運能同樣吃緊——修復船與鋪設船共用稀缺船隊、均齡偏高，斷纜後復原時程被拉長，對 AI 跨洋流量是系統性風險。受惠者為兼營維修的船東（SubCom、Keppel/Global Marine、Orange Marine、OMS）與海纜監測/安全技術供應商；這也推升各國對『自主修復能力』與海纜備援的戰略投資。",
+   "companies": [
+    {
+     "name": "Orange Marine",
+     "ticker": "ORA.PA",
+     "country": "FR",
+     "share": "歐洲修復船主力",
+     "products": "海纜修復船 / ROV 打撈接續",
+     "note": "Orange 子公司；訂造兩艘新世代修復船因應斷纜頻發",
+     "src": "https://new.abb.com/news/detail/133911/orange-marine-selects-abbs-integrated-power-propulsion-and-automation-system-for-two-new-cable-repair-vessels"
+    },
+    {
+     "name": "Keppel（Global Marine）",
+     "ticker": "BN4.SI",
+     "country": "SG",
+     "share": "亞歐維護合約船東",
+     "products": "海纜維護＋修復船隊",
+     "note": "維護合約區涵蓋大西洋/亞太；船齡偏高為產業共同挑戰",
+     "src": "https://globalmarine.co.uk/"
+    },
+    {
+     "name": "ABB",
+     "ticker": "ABBN.SW",
+     "country": "CH",
+     "share": "船舶電力/推進系統供應",
+     "products": "修復船整合動力＋推進＋自動化",
+     "note": "供應 Orange Marine 新修復船油電混合系統；船舶賣鏟人",
+     "src": "https://new.abb.com/news/detail/133911/orange-marine-selects-abbs-integrated-power-propulsion-and-automation-system-for-two-new-cable-repair-vessels"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cable_repeater"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "system_operate"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NATO 啟動 Baltic Sentry 海纜安全任務（2025/1）",
+     "url": "https://www.datacenterdynamics.com/en/news/nato-launches-baltic-sentry-for-subsea-cable-security/"
+    },
+    {
+     "label": "波羅的海/台海斷纜事件與威脅來源",
+     "url": "https://www.recordedfuture.com/research/submarine-cables-face-increasing-threats"
+    },
+    {
+     "label": "ABB 供應 Orange Marine 修復船動力系統",
+     "url": "https://new.abb.com/news/detail/133911/orange-marine-selects-abbs-integrated-power-propulsion-and-automation-system-for-two-new-cable-repair-vessels"
+    }
+   ]
+  },
+  {
+   "id": "system_operate",
+   "row": "operate",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "下游：系統整合 / 運營（電信＋雲端自建）",
+   "nameEn": "System Integration & Operation (Telcos + Hyperscaler-owned)",
+   "competition": "oligopoly",
+   "single": "需求權力大轉移 · 超大規模雲端已佔國際頻寬約 75%、Google 參與 33 條海纜、Meta『Project Waterworth』5 萬公里為史上最長私有海纜",
+   "desc": "海纜系統的買方與運營方——過去由電信營運商與聯盟主導，如今 AI 跨洋頻寬暴增使 Google/Meta/微軟/亞馬遜直接自建並擁有海纜，回頭重塑整條製造與工程船需求。",
+   "marketSize": "AI 推升 2025–27 新系統投資估 $130 億（≈前三年 2 倍）",
+   "growth": "2026 預計 40 條海纜商轉（2025 僅 15）；hyperscaler 參與逾 2/3 新建案",
+   "share": "null",
+   "analysis": "需求端是全鏈成長引擎，且權力正從電信商轉向雲端：超大規模雲端佔國際頻寬比重由 2010 的近乎零升至今約 75%、參與逾 2/3 新建海纜案——Google 參與 33 條（17 條自有＋16 條共有）、宣布 2026–30 投 $150 億建印度 AI 基建含海纜（America-India Connect）；Meta『Project Waterworth』5 萬公里連五大洲、為史上最長私有海纜；微軟、亞馬遜亦各持有數條。傳統電信運營商以日本 NTT（9432.T）為代表，旗下 NTT Data（原 9613，已於 2025/9/26 被 NTT 私有化下市）主導 $10 億 I-AM 亞洲海纜並在清奈建超大規模資料中心＋海纜系統——日本以『製造（NEC）＋光纖（住友/Fujikura）＋運營（NTT）』形成罕見一條龍國家隊。絃外之音：雲端自建讓海纜從『電信共享資產』變成『AI 基建私有資產』，需求更剛性、但也使三家製造商與稀缺工程船的議價籌碼上升——真正受惠者是『製造×工程船寡占』而非單純鋪纜的下游。",
+   "companies": [
+    {
+     "name": "Google (Alphabet)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "自建海纜最積極的雲端",
+     "products": "自有/共有海纜 33 條 / TalayLink / America-India Connect",
+     "note": "宣布 2026–30 投 $150 億建印度 AI 基建含海纜；APAC 錨定 8 條新系統",
+     "src": "https://www.submarinenetworks.com/en/nv/insights/google-unveils-america-india-connect-initiative"
+    },
+    {
+     "name": "Meta",
+     "ticker": "META",
+     "country": "US",
+     "share": "史上最長私有海纜業主",
+     "products": "Project Waterworth（5 萬公里連五大洲）/ Candle",
+     "note": "Project Waterworth 為世界最長私有海纜；自有 16 條（多為主要共有）",
+     "src": "https://www.rcrwireless.com/20260203/network-infrastructure/google-meta-ai-subsea"
+    },
+    {
+     "name": "NTT",
+     "ticker": "9432.T",
+     "country": "JP",
+     "share": "日本電信運營國家隊",
+     "products": "海纜運營 / 清奈超大規模 DC＋海纜系統",
+     "note": "FY2023–27 規劃逾 1.5 兆日圓資料中心投資；旗下 NTT Data（原 9613）已於 2025/9/26 私有化下市",
+     "src": "https://services.global.ntt/en-us/newsroom/ntt-launches-hyperscale-data-center-campus-with-new-subsea-cable-system-in-chennai"
+    },
+    {
+     "name": "NTT Data（NTT 子公司）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "亞洲海纜系統整合",
+     "products": "$10 億 I-AM 日本–東南亞海纜 JV",
+     "note": "2025/9/26 由 NTT 以 ¥2.37 兆完成私有化下市（已非上市）；I-AM 海纜服務 hyperscaler 頻寬",
+     "src": "https://www.lightreading.com/cable-technology/ntt-data-s-1b-asian-cable-launches-hectic-year-for-subsea"
+    },
+    {
+     "name": "Microsoft / Amazon",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "雲端自建/持股海纜",
+     "products": "自有/持股海纜（微軟 6、亞馬遜 4）",
+     "note": "AI 跨洋流量驅動雲端持續加碼海纜持股",
+     "src": "https://techblog.comsoc.org/2026/06/01/hyperscalers-dominance-of-subsea-cable-capacity-to-increase-in-the-ai-era/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cable_lay"
+    },
+    {
+     "id": "cable_repair"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Hyperscaler 佔國際頻寬約 75%、參與逾 2/3 新建海纜（IEEE ComSoc）",
+     "url": "https://techblog.comsoc.org/2026/06/01/hyperscalers-dominance-of-subsea-cable-capacity-to-increase-in-the-ai-era/"
+    },
+    {
+     "label": "Google America-India Connect / $150 億印度 AI 基建",
+     "url": "https://www.submarinenetworks.com/en/nv/insights/google-unveils-america-india-connect-initiative"
+    },
+    {
+     "label": "NTT Data $10 億 I-AM 亞洲海纜開啟 2026 熱潮",
+     "url": "https://www.lightreading.com/cable-technology/ntt-data-s-1b-asian-cable-launches-hectic-year-for-subsea"
+    },
+    {
+     "label": "NTT 清奈超大規模 DC＋海纜系統",
+     "url": "https://services.global.ntt/en-us/newsroom/ntt-launches-hyperscale-data-center-campus-with-new-subsea-cable-system-in-chennai"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "fiber_preform",
+   "cable_repeater"
+  ],
+  [
+   "cable_repeater",
+   "cable_lay"
+  ],
+  [
+   "cable_repeater",
+   "cable_repair"
+  ],
+  [
+   "cable_lay",
+   "system_operate"
+  ],
+  [
+   "cable_repair",
+   "system_operate"
+  ]
+ ],
+ "_proposed": {}
+}

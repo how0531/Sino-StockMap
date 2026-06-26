@@ -1,0 +1,1278 @@
+{
+ "id": "industrial_ai",
+ "tab": "Industrial AI",
+ "title": "Industrial AI / Digital Twin / Machine Vision / Physical AI（工業自動化 → 數位孿生 → 機器視覺 → Edge MLops → Physical AI）",
+ "subtitle": "Google 2026/2 收編 Intrinsic 為內部單位（『機器人界 Android』，合作 FANUC/Universal Robots/KUKA + Foxconn JV）；Fanuc FY2025 JPY 857.8B、與 Gemini Enterprise + Intrinsic 整合 1.1M 機器人；NVIDIA GTC 2026 GR00T N1.7 商用 + 預告 N2（DreamZero world action model）；Skild AI USD 14B 軟體嵌入 ABB+Universal Robots、與 NVIDIA/Foxconn 部署休士頓 Blackwell 產線；Synopsys+Ansys FY2026 EPS 指引 $14.72–14.80；Foxconn GB 系列機櫃市占升至 55–60%；Honeywell Aerospace 2026/6/29 分拆；2026 全球工業 AI TAM ~USD 127B",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 12
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "60+"
+  },
+  {
+   "k": "關鍵單點",
+   "v": 3,
+   "sub": "Siemens Xcelerator·Ansys+Synopsys·NVIDIA Metropolis",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "platform",
+   "label": "工業自動化平台 Industrial Platforms",
+   "main": true
+  },
+  {
+   "id": "twin",
+   "label": "Digital Twin + CAE Simulation",
+   "main": false
+  },
+  {
+   "id": "vision",
+   "label": "Machine Vision + 檢測",
+   "main": false
+  },
+  {
+   "id": "edge",
+   "label": "Edge AI / MLops + Physical AI",
+   "main": false
+  },
+  {
+   "id": "asia",
+   "label": "亞洲 AI Factory + 本土工業 AI Asia Regional",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "industrial_platform_us",
+   "row": "platform",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "歐美工業自動化主平台",
+   "nameEn": "US/EU Industrial Automation Platforms",
+   "competition": "oligopoly",
+   "single": "Siemens Xcelerator 寡占 · FY2025 Digital Industries €17.8B（ARR €5.3B）；Rockwell FactoryTalk 整合 NVIDIA Nemotron Nano SLM",
+   "desc": "歐美工業自動化巨頭全面 Agentic AI 化，提供 IIoT 平台、數位孿生、PLM、MES/SCADA 及 AI Copilot 服務。Siemens Xcelerator 為最大 Industrial AI 平台；Schneider Electric EcoStruxure 覆蓋 40 萬+ 企業；Rockwell FactoryTalk 整合大語言模型生成 PLC 程式碼；Emerson Project Beyond 重塑軟體定義控制。",
+   "marketSize": "2025 全球工業自動化 TAM ~USD 270B；OT/IT 融合後 Industrial AI 平台 TAM ~USD 45B",
+   "growth": "工業 AI 平台 YoY +22–28%（Gartner IIoT Platform 市場報告）；Rockwell FY2026 指引 +21.3% YoY",
+   "share": "null",
+   "analysis": "Siemens 2026/1 CES 宣布與 NVIDIA 共建全球首座全 AI 自適應工廠（Erlangen）；Schneider Electric 2026/4 Hannover Messe 發布 Agentic Manufacturing 三新模組；Rockwell Q2 FY2026 EPS 超預期；Emerson Project Beyond 目標將 USD 40 億控制系統業務 2/3 轉為軟體收入；GE Vernova SmartSignal 數位孿生涵蓋 370+ 工業資產預建模型。",
+   "companies": [
+    {
+     "name": "Siemens AG",
+     "ticker": "SIE.DE",
+     "country": "DE",
+     "share": "FY2025 Digital Industries €17.8B (+13%)；ARR €5.3B；Q2 FY2026 Digital Industries +8% YoY（€4.6B），軟體業務 +14%（€1.6B）；H1 數位業務 +19%（超越 15% 指引）",
+     "products": "Siemens Xcelerator、TIA Portal、Insights Hub、Senseye 預測維護、Digital Twin Composer（Xcelerator Marketplace mid-2026）、Eigen Engineering Agent",
+     "note": "Q2 FY2026：Digital Industries FY2026 指引上調至 comparable +7–10%，profit margin 17–19%；2026/1 CES 發布九款工業 Copilot；Eigen Engineering Agent 強化 Industrial AI 領導地位",
+     "src": "https://press.siemens.com/global/en/pressrelease/earnings-release-and-financial-results-q2-fy-2026"
+    },
+    {
+     "name": "Schneider Electric",
+     "ticker": "SU.PA",
+     "country": "FR",
+     "share": "FY2025 收入約 €38B；EcoStruxure 覆蓋 40 萬+ 企業",
+     "products": "EcoStruxure IIoT 平台（含 EcoStruxure Automation Expert 軟體定義自動化平台）、Aveva（旗下）、Agentic Manufacturing 套件（Azure AI 驅動）、SCADA/MES",
+     "note": "2026/4 Hannover Messe：與 Microsoft Azure AI 合作推出 next-gen Agentic Manufacturing，工業 Copilot 將工程變更時間從數週縮短至數小時（節省 50%）；覆蓋 on-prem + edge + hybrid；open software-defined automation；2026/6 EPC Show（休士頓）+ Automate（芝加哥 6/22–25）發表 Foxboro SDA 新硬體 Automation Processor 310（AP310）+ Edge Communication Node（ECN，軟體定義多角色邊緣控制核心）",
+     "src": "https://www.se.com/ww/en/about-us/newsroom/news/press-releases/Schneider-Electric-unveils-next-generation-agentic-manufacturing-capabilities-powered-by-Microsoft-Azure-AI-at-Hannover-Messe-2026-69e08de2ddabef15890a48f3/"
+    },
+    {
+     "name": "Rockwell Automation",
+     "ticker": "ROK",
+     "country": "US",
+     "share": "FY2025 收入 $8.3B；Q2 FY2026（2026/5/5 公布）revenue +12% YoY（organic +9%）；毛利率 >50%（+160 bps）；operating margin 22.5%（+350 bps YoY）；EPS $3.30（超預期 14.6%）；FCF $275M（+$104M YoY）；FY2026 指引上調至 adjusted EPS $12.50–13.10（中點 $12.80，+$1）",
+     "products": "FactoryTalk MES/SCADA/AI、Plex 雲端製造、LogixAI、FactoryTalk Design Studio Copilot（NVIDIA Nemotron Nano 9B SLM，離線邊緣推論）、FactoryTalk ResilientEdge（2026 Q1 上市）",
+     "note": "Q2 FY2026：倉儲自動化/數據中心/半導體/能源需求強勁；NVIDIA Nemotron-Nano-9B-v2 整合 FactoryTalk Design Studio，支援離線安全部署；股價 Q2 財報後單日 +8.6%、2026 年迄今 +18%；Q3 FY2026 指引營收環比約持平（Sensia 出售減 ~$50M），Q3 EPS 環比 +$0.05，YoY 中高雙位數",
+     "src": "https://www.rockwellautomation.com/en-us/company/news/press-releases/Rockwell-Automation-Reports-Second-Quarter-2026-Results.html"
+    },
+    {
+     "name": "ABB Ltd",
+     "ticker": "ABB",
+     "country": "CH",
+     "share": "FY2024 收入 $32.9B；Robotics 2025 收入 $2.3B（出售中）；交割後稅前帳面收益約 $2.4B，淨現金 ~$5.3B",
+     "products": "ABB Ability PlantInsight AI、Genix APM、Motion 驅動器、電氣化解決方案",
+     "note": "2025/10 宣布以 $5.375B 出售 Robotics 部門（7,000 員工）給 SoftBank；交割待 EU/中國/美國監管批准，預計 2026 H2 完成（截至 2026/5 尚未 close）；分離成本約 $200M（~50% 已計入 2025）；交割後聚焦 Electrification + Process Automation",
+     "src": "https://new.abb.com/news/detail/129685/abb-to-divest-robotics-division-to-softbank-group"
+    },
+    {
+     "name": "Honeywell International",
+     "ticker": "HON",
+     "country": "US",
+     "share": "FY2025 收入約 $36B；Q1 2026 organic sales +2%，orders +7%；segment profit +6%（$2.1B）",
+     "products": "Honeywell Forge IIoT/AI 平台（Google Cloud Gemini + Vertex AI 驅動工業 AI Agents）、DCS/SIS 控制系統、Quantinuum 量子 AI、Digital Prime",
+     "note": "2025/10 已完成 Advanced Materials 分拆（Solstice, Nasdaq:SOLS）；Aerospace（Honeywell Aerospace Inc., 2025 收入 >$17B）股權分派確認 2026/6/29 執行，分拆後僅留 Automation + Industrial 業務（最後一步）；2026/1 CES：Forge + Google Cloud AI 推出門店 AI 個性化方案；WWS 已達成現金出售協議",
+     "src": "https://investor.honeywell.com/news-releases"
+    },
+    {
+     "name": "Emerson Electric",
+     "ticker": "EMR",
+     "country": "US",
+     "share": "FY2025 收入 $18.0B；EPS $6.00 (+9% YoY)",
+     "products": "DeltaV DCS、Ovation 控制系統、AspenTech APM、Project Beyond 軟體定義控制平台、Guardian Virtual Advisor",
+     "note": "2025/5 Project Beyond：整合 DeltaV + AspenTech + AI，目標 USD 40 億控制業務 2/3 轉軟體收入；2026/1 IoT Breakthrough Awards 工業 IoT 年度公司",
+     "src": "https://www.emerson.com/en-us/news/2025/05-emerson-project-beyond-to-modernize-and-seamlessly-integrate-the-industrial-automation-technology-stack"
+    },
+    {
+     "name": "GE Vernova",
+     "ticker": "GEV",
+     "country": "US",
+     "share": "FY2025 收入 $38.1B (+9% YoY)；FCF $3.71B (+118% YoY)",
+     "products": "Grid Digital Twin（ADMS/AEMS/DERMS）、SmartSignal 預測性維護 AI、Proficy（評估出售中）",
+     "note": "SmartSignal 數位孿生涵蓋 370+ 工業資產預建模型；2025/9 Verdantix 工業 AI 分析軟體綠色象限 Leader；AI/機器人/自動化 2026 預算 $450–500M",
+     "src": "https://www.gevernova.com/software/blog/leading-industrial-ai-energy-sector"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "digital_twin_us"
+    },
+    {
+     "id": "machine_vision_us"
+    },
+    {
+     "id": "edge_mlops"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Siemens AI Agents for Industrial Automation（2025-05）",
+     "url": "https://press.siemens.com/global/en/pressrelease/siemens-introduces-ai-agents-industrial-automation"
+    },
+    {
+     "label": "Schneider Electric AI-native Ecosystem（2026-04）",
+     "url": "https://www.se.com/ww/en/about-us/newsroom/news/press-releases/schneider-electric-announces-multi-year-initiative-building-an-ai-native-ecosystem-for-sustainability-and-energy-management-6825414ce3742327470ccc23/"
+    },
+    {
+     "label": "Rockwell Q2 FY2026 8-K（2026）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001024478/000102447826000020/q2fy26ex99.htm"
+    },
+    {
+     "label": "Emerson Project Beyond（2025-05）",
+     "url": "https://www.emerson.com/en-us/news/2025/05-emerson-project-beyond-to-modernize-and-seamlessly-integrate-the-industrial-automation-technology-stack"
+    }
+   ]
+  },
+  {
+   "id": "industrial_platform_jp",
+   "row": "platform",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "日本工業自動化",
+   "nameEn": "Japan Industrial Automation",
+   "competition": "oligopoly",
+   "single": "Keyence 寡占機器視覺 · 全球份額第一；Fanuc 工業機器人控制系統市場領先",
+   "desc": "日本工業 AI 核心供應鏈，涵蓋工廠自動化（Fanuc / Mitsubishi Electric）、機器視覺（Keyence）、OpreX AI 製程優化（Yokogawa）、Lumada 3.0 工業 AI（Hitachi）、OMNIedge 預測維護（THK / Yaskawa）。",
+   "marketSize": "2025 日本智慧工廠市場約 JPY 1.2T；Keyence FY2026（截至 2026/3）收入 JPY 1.17T（+10.4% YoY）佔全球機器視覺市場 #1",
+   "growth": "日本 AI 半導體製造需求 2025–2026 強勁復甦；Fanuc FY2025 operating margin 21.4%",
+   "share": "null",
+   "analysis": "Fanuc FY2025（截至 2026/3）net sales JPY 857.8B、Robot Division +11.1%（中國 EV）、FY2026 指引 JPY 909.6B；2026/2 Google 將 Intrinsic 收編內部（『機器人界 Android』，合作 FANUC/Universal Robots/KUKA + Foxconn JV），2026/5 Fanuc 與 Gemini Enterprise + Intrinsic 全面整合，1.1M 台現役機器人可遠端升級物理 AI，股價單日 +16%；Hitachi Lumada 3.0 Q3 YoY +51%，FY2025 Lumada 佔集團收入 40%；Keyence FY2026 毛利率 ~70%、operating margin 51%，全球機器視覺市場份額第一；Yokogawa OpreX 覆蓋煉油廠/化工廠 AI 優化。",
+   "companies": [
+    {
+     "name": "Fanuc",
+     "ticker": "6954.T",
+     "country": "JP",
+     "share": "FY2025（截至 2026/3）net sales JPY 857.8B (+60.7B)；operating income JPY 183.8B (+24.9B)；net income JPY 166.5B (+19.0B)；Robot Division +11.1%（中國 EV 需求強勁）；FY2026 指引 net sales JPY 909.6B、operating income JPY 212.2B；2026/5/14 股價 +16%（創歷史新高）",
+     "products": "FIELD（Fanuc Intelligent Edge Link & Drive）工業 IoT 平台；1.1M 台現役機器人整合 Google Cloud Gemini Enterprise + Intrinsic 機器人平台；Physical AI Robot System（次世代）",
+     "note": "2026/2/25 Google 將 Intrinsic 收編為內部單位（目標成為『機器人界 Android』，整合 Gemini + DeepMind + Google Cloud），Intrinsic 合作夥伴含 FANUC / Universal Robots / KUKA + Foxconn JV（2025/10 全廠自動化）；2026/5/13 Fanuc 正式宣布與 Google 合作：Gemini Enterprise + Intrinsic 整合，機器人可理解人類指令、辨識物體、自主協調操作；2025/12 IREx 展後已出貨 >1,000 台 Physical AI 機器人；Google 補基礎模型層、NVIDIA 提供仿真訓練，形成雙平台 AI 棧",
+     "src": "https://www.fanuc.co.jp/en/ir/announce/pdf/2026/reference202603_e.pdf"
+    },
+    {
+     "name": "Keyence",
+     "ticker": "6861.T",
+     "country": "JP",
+     "share": "FY2026（截至 2026/3）revenue JPY 1.17T (+10.4% YoY)；net income JPY 445.2B (+11.7%)；operating income JPY 595.8B (+8.4%，超市場預期 JPY 580B）；operating margin 51.0%；ROE 13.5%；年度股息大幅提升 JPY 350→JPY 550（payout ratio 30.0%）",
+     "products": "IV4 系列 Vision Sensor（2025-04）、AI 驅動量測儀器、工廠自動化檢測全套設備",
+     "note": "FY2026 全年業績超越市場預期；AI 相關需求擴大為主要成長驅動；高盛上調目標價至 JPY 82,000；直銷模式維持全球機器視覺市場份額第一",
+     "src": "https://www.theglobeandmail.com/investing/markets/stocks/KYCCF/pressreleases/1514350/keyence-delivers-double-digit-profit-growth-and-hikes-dividend-on-strong-fy2026-results/"
+    },
+    {
+     "name": "Hitachi",
+     "ticker": "6501.T",
+     "country": "JP",
+     "share": "FY2025 consolidated revenue JPY 10,586.7B (+8%)；Lumada 佔集團 40%；Q3 Lumada YoY +51%",
+     "products": "Lumada 3.0 工業 AI：Digital Twin、預測維護、HMAX AI；2025-10 Lumada 3.0 Edge AI 晶片（功耗降至同速度 1/10）",
+     "note": "2025/9 宣布 NVIDIA AI Factory（HGX B200）；2025-10 Hitachi Rail 首家採用 NVIDIA IGX Thor 即時 AI；HMAX 目標 FY2026 JPY 480B",
+     "src": "https://www.hitachi.com/content/dam/hitachi/global/en/press/files/2026/04/260427/2025_Anpre.pdf"
+    },
+    {
+     "name": "Mitsubishi Electric",
+     "ticker": "6503.T",
+     "country": "JP",
+     "share": "FY2026 H1 revenue 創歷史新高 JPY 2,732.5B；全年指引 JPY 5,670B",
+     "products": "Maisart AI 品牌：FA 系統 AI 視覺檢測、HACARUS 合作 AI Visual Inspection、安全 AI Suite（2025）、Melsec 系列 PLC AI",
+     "note": "FA Systems 業務高速成長；2024/1 與 HACARUS 擴大 AI 視覺檢測合作",
+     "src": "https://www.mitsubishielectric.com/investors/library/integrated-report/"
+    },
+    {
+     "name": "Yokogawa Electric",
+     "ticker": "6841.T",
+     "country": "JP",
+     "share": "FY2025 H1 revenue JPY 282B (+5.8%)；net income JPY 29.4B (+19.5%)",
+     "products": "OpreX AI 平台：OpreX Quality Management System（製藥/食品）、次代 CENTUM VP 整合生產控制系統（2025-06）",
+     "note": "Energy & Sustainability + Materials 兩大業務合計 JPY 143B (+13.1%)",
+     "src": "https://www.yokogawa.com/about/ir/reports/finance/"
+    },
+    {
+     "name": "Yaskawa Electric",
+     "ticker": "6506.T",
+     "country": "JP",
+     "share": "FY2025 H1 revenue JPY 260.2B；OMNIedge AI 預測維護覆蓋廣泛製造場景",
+     "products": "Motoman 工業機器人、OMNIedge AI 預測維護；2025 收購 Tokyo Robotics Inc. 強化人形機器人",
+     "note": "AI server + 半導體 AI 需求推動 2026 業績復甦；與 Astellas Pharma 合資 Maholo 生醫機器人",
+     "src": "https://www.yaskawa-global.com/wp-content/uploads/2025/10/20251003_en.pdf"
+    },
+    {
+     "name": "THK",
+     "ticker": "6481.T",
+     "country": "JP",
+     "share": "FY2025 預計 revenue >JPY 380B；LM Guide 全球市佔 ~50%",
+     "products": "OMNIedge AI 預測維護平台：AI 診斷服務 ADV（損傷/潤滑異常評分）",
+     "note": "IoT 感測器嵌入線性運動元件，SaaS 化轉型；個案導入非計劃停機降低 >20%",
+     "src": "https://www.thk.com/brand/omniedge/us/service/linear/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "machine_vision_asia"
+    },
+    {
+     "id": "edge_mlops"
+    },
+    {
+     "id": "physical_ai_robot"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Fanuc × Google Cloud Intrinsic 合作（2026-05）",
+     "url": "https://www.fanuc.co.jp/en/ir/announce/pdf/2026/reference202512_e.pdf"
+    },
+    {
+     "label": "Hitachi FY2025 Annual Report（2026-04）",
+     "url": "https://www.hitachi.com/content/dam/hitachi/global/en/press/files/2026/04/260427/2025_Anpre.pdf"
+    },
+    {
+     "label": "Keyence IR（FY2025）",
+     "url": "https://www.keyence.com/company/investor-relations/"
+    },
+    {
+     "label": "Yokogawa IR（FY2025 H1）",
+     "url": "https://www.yokogawa.com/about/ir/reports/finance/"
+    }
+   ]
+  },
+  {
+   "id": "industrial_platform_kr",
+   "row": "platform",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "韓國工業 AI + 機器人",
+   "nameEn": "Korea Industrial AI & Robotics",
+   "competition": "oligopoly",
+   "single": "Samsung Electronics 寡占 · 半導體廠 AI + 50K GPU NVIDIA AI Factory；Hyundai Boston Dynamics Atlas 2028 年產 30K 台",
+   "desc": "韓國三大集團（Samsung/Hyundai/Hanwha）+ LG 工業 AI 佈局，覆蓋半導體 AI Factory、Cobot、物理 AI 基金，及 Doosan Robotics 協作機器人全球出貨。",
+   "marketSize": "韓國智慧製造 AI 市場 2025 KRW 2.4T（~USD 1.7B）；Hyundai 2026–2030 韓國 KRW 125.2T 投資計畫",
+   "growth": "韓國工業 AI 2025 YoY +35%；Samsung AI Factory 50K GPU 驅動半導體製程 AI 全覆蓋",
+   "share": "null",
+   "analysis": "Samsung 2025/10 宣布與 NVIDIA 共建 50K GPU AI Factory（目標 2030 全廠 AI Driven Factory），採用 Omniverse Digital Twin 全球晶圓廠；Hyundai 2026/2 宣布 KRW 9T 投資（AI DC + 機器人 + 氫能），Atlas 人形機器人 2028 年產 30K 台；Hanwha Aerospace+Krafton $1B 物理 AI 基金 2026/3 公布；LG ES 2025-10 深化 NVIDIA 合作建電池產線數位分身。",
+   "companies": [
+    {
+     "name": "Samsung Electronics",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "2025/10 與 NVIDIA 共建 50K GPU AI Factory；目標 2030 全廠 AI Driven Factory",
+     "products": "NVIDIA Omniverse Digital Twin 全球晶圓廠、CUDA-X 加速仿真/驗證/製造分析、AI 預測維護、自主決策系統",
+     "note": "Synopsys/Cadence/Siemens 協同；Samsung Networks 另提供 Smart Factory B2B 方案",
+     "src": "https://news.samsung.com/global/samsung-teams-with-nvidia-to-lead-the-transformation-of-global-intelligent-manufacturing-through-new-ai-megafactory"
+    },
+    {
+     "name": "Hyundai Motor Group（含 Boston Dynamics）",
+     "ticker": "005380.KS",
+     "country": "KR",
+     "share": "2026/2 宣佈 KRW 9T（$6.3B）投資 AI DC + 機器人 + 氫能",
+     "products": "NVIDIA Blackwell AI Factory（最多 50K GPU）用於自動駕駛/人形機器人/智慧工廠；Atlas 人形機器人 2028 年量產（目標年產 30K 台）",
+     "note": "CES 2026 發布 AI Robotics 路線圖；AI Application Center + AI Technology Center 與韓國政府合作",
+     "src": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001041"
+    },
+    {
+     "name": "Hanwha Aerospace",
+     "ticker": "012450.KS",
+     "country": "KR",
+     "share": "2026/3 與 Krafton 共建 $1B 物理 AI 基金（Hanwha Asset Management 管理）",
+     "products": "Hanwha Momentum / Hanwha Robotics：智慧工廠機器人、AI Vision 整合、Grunt 無人地面車（2025 升級版）",
+     "note": "聚焦物理 AI 核心技術 R&D、實際場景驗證、技術營運體系建立；2025/2 與 Milrem Robotics 合作",
+     "src": "https://www.hanwha.com/industries/aerospace-and-mechatronics.do"
+    },
+    {
+     "name": "LG Energy Solution",
+     "ticker": "373220.KS",
+     "country": "KR",
+     "share": "智慧工廠年訂單 KRW 500B（2 年達成）；目標 2028 提升產能 50%",
+     "products": "46 系列圓柱電池智慧工廠 Digital Twin 模擬驗證 → 生產系統、AI 製程最佳化（產品/材料/製造三領域）",
+     "note": "2025/10 深化 NVIDIA 合作建生產線數位分身；2026 LG Awards 最高獎",
+     "src": "https://news.lgensol.com/"
+    },
+    {
+     "name": "Doosan Robotics",
+     "ticker": "454910.KS",
+     "country": "KR",
+     "share": "累計出貨 >10,000 台 Cobot；2025 H1 sales KRW 9.8B",
+     "products": "協作機器人（Cobot）全系列 + AI 整合（進階視覺/安全功能）；2025/9 收購 One Expo 強化軟體生態",
+     "note": "擴張購併 Motoman Robotics（美國）；全球 Cobot 市場重要份額",
+     "src": "https://www.doosanrobotics.com/en/investment/ir/irdata/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "machine_vision_asia"
+    },
+    {
+     "id": "physical_ai_robot"
+    },
+    {
+     "id": "ai_factory_tw"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Samsung + NVIDIA AI Megafactory（2025-10）",
+     "url": "https://news.samsung.com/global/samsung-teams-with-nvidia-to-lead-the-transformation-of-global-intelligent-manufacturing-through-new-ai-megafactory"
+    },
+    {
+     "label": "Hyundai KRW 9T Investment（2026-02）",
+     "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001041"
+    },
+    {
+     "label": "LG Energy Solution Newsroom",
+     "url": "https://news.lgensol.com/"
+    },
+    {
+     "label": "Doosan Robotics IR",
+     "url": "https://www.doosanrobotics.com/en/investment/ir/irdata/"
+    }
+   ]
+  },
+  {
+   "id": "digital_twin_us",
+   "row": "twin",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "Digital Twin + CAE 仿真",
+   "nameEn": "Digital Twin & CAE Simulation",
+   "competition": "oligopoly",
+   "single": "Synopsys+Ansys 壟斷 · EDA + 多物理場仿真超級平台；NVIDIA Omniverse 為工業數位孿生的底層渲染/物理引擎",
+   "desc": "數位孿生與 CAE 仿真是工業 AI 的「虛擬工廠」核心，讓製造商在真實製造前完成產品設計、流程驗證、能耗優化。Synopsys 完成 Ansys USD 35B 收購後，EDA-to-Simulation 無縫流成真。",
+   "marketSize": "合併後 Synopsys+Ansys 仿真 TAM ~USD 31B；2025 全球數位孿生市場 ~USD 17B → 2030 ~USD 73B（CAGR 34%）",
+   "growth": "數位孿生 CAGR ~34%（2025–2030）；PTC FY2025 收入 +19% YoY；Bentley FY2026 指引 +11–13%",
+   "share": "null",
+   "analysis": "Synopsys+Ansys 2025/7/17 正式合併，NVIDIA USD 20 億投資 Synopsys + 深化 Omniverse 整合；PTC Windchill AI 提供自然語言 PLM 查詢 + Agentic Digital Thread；Autodesk FY2026 製造 Make 收入 Q4 +24% YoY，投資 World Labs $2 億；Cadence Reality Digital Twin 可提升 AI 資料中心能效達 30%；Dassault 3DEXPERIENCE 雲端 +8%，2026 為 AI 驅動 3D 宇宙轉型奠基年。",
+   "companies": [
+    {
+     "name": "Synopsys（含 Ansys）",
+     "ticker": "SNPS",
+     "country": "US",
+     "share": "Q1 FY2026（2026/2 公布）revenue $2.409B（+65.5% YoY，主因 Ansys 納入合併）；Q2 FY2026 revenue $2.276B，non-GAAP EPS $3.35（超預期 $3.15），non-GAAP operating margin 39.5%；FY2026 全年指引上調至 revenue $9.625–9.705B、non-GAAP EPS $14.72–14.80；$400M 成本協同目標提前達成（原定三年窗口）",
+     "products": "EDA 工具（Design Compiler/VCS）、Ansys HFSS / Mechanical / Fluent 仿真、agentic AI + Multiphysics Fusion、NVIDIA Omniverse 整合、silicon-to-systems 端到端平台（EDA+多物理場仿真+AI 設計工具+先進節點 IP）",
+     "note": "整合進度超前：Ansys 產品已納入 Design Automation 業務部門，Q2 Ansys 單季貢獻 revenue ~$652M；2026/H1 與 Ansys 通路夥伴網絡深化、改採 gross basis 認列通路營收（觸及過往未服務客群）；AI 晶片設計需求強勁；2025/12 NVIDIA 投資 USD 20 億強化 Omniverse 整合",
+     "src": "https://news.alphastreet.com/synopsys-inc-snps-q2-2026-earnings-call-transcript/"
+    },
+    {
+     "name": "PTC Inc.",
+     "ticker": "PTC",
+     "country": "US",
+     "share": "FY2025 收入 $2.74B (+19% YoY)；ARR $2,478M (+8.5% CC)；FCF $857M",
+     "products": "Creo CAD、Windchill PLM + Windchill AI（自然語言 PLM 查詢）、ThingWorx IoT、Vuforia AR",
+     "note": "與 NVIDIA Omniverse 合作 Windchill 3D Digital Twin Viewport；FY2026 CC ARR 指引 +7–9%",
+     "src": "https://www.ptc.com/en/news/2025/ptc-nvidia-omniverse"
+    },
+    {
+     "name": "Bentley Systems",
+     "ticker": "BSY",
+     "country": "US",
+     "share": "FY2025 收入 $1,399M (+8%)；FY2026 指引 $1,685–1,715M (+11–13%)",
+     "products": "iTwin 數位孿生平台、AssetWise APM、ProjectWise、OpenRoads / OpenBuildings",
+     "note": "2026/1 收購 Talon Aerolytics + Pointivo 強化 Asset Analytics；iTwin Experience 為工程 OT/IT 單一視窗",
+     "src": "https://www.bentley.com/news/bsy-announces-q4-and-full-year-2025-results-and-2026-outlook/"
+    },
+    {
+     "name": "Dassault Systèmes",
+     "ticker": "DSY.PA",
+     "country": "FR",
+     "share": "FY2025 收入 €5.96B (+4% 固定匯率)；3DEXPERIENCE 收入 +10%；雲端 +8%",
+     "products": "3DEXPERIENCE 平台、CATIA、SIMULIA、DELMIA 製造仿真、BIOVIA",
+     "note": "3DEXPERIENCE World 2026 主題為「AI 驅動設計與製造」；向 Life Sciences / Consumer 新市場擴張",
+     "src": "https://www.3ds.com/newsroom/press-releases/dassault-systemes-q4-revenue-growth-1-solid-operating-margin-and-eps-expansion-initiating-2026-revenue-guidance-3-5-growth"
+    },
+    {
+     "name": "Autodesk",
+     "ticker": "ADSK",
+     "country": "US",
+     "share": "FY2026 收入 $7.206B (+18%)；製造 Make Q4 FY26 $218M (+24%)",
+     "products": "Fusion 360（Design+Make+CAM+Simulation）、AutoCAD、Vault、Inventor；AI 驅動 Generative Design",
+     "note": "2026/2 投資 World Labs $2 億 + 顧問合作（空間智慧 AI）",
+     "src": "https://investors.autodesk.com/news-releases/news-release-details/autodesk-inc-announces-fiscal-2026-fourth-quarter-results"
+    },
+    {
+     "name": "Hexagon AB",
+     "ticker": "HEXA-B.ST",
+     "country": "SE",
+     "share": "FY2025 製造智慧部門為主力；APOLLO AI 2026/3 推出",
+     "products": "PC-DMIS 量測軟體、Nexus 雲端平台、Autonomous Metrology Suite、APOLLO AI（CMM+機床 AI 預測監控）",
+     "note": "2026/5/28 完成 Octave Intelligence 純軟體分拆掛牌（FY2024 收入約 €1,448M、adj. EBIT margin ~31%；Nasdaq Stockholm SDR + Nasdaq NY 雙掛牌），Hexagon 聚焦量測/製造智慧；2025/12 收購 IconPro（AI 預測性設備監控）；2026/5 推出 PC-DMIS FUSION（即時 SPC 分析）",
+     "src": "https://hexagon.com/company/newsroom/press-releases/2026/apollo-ai-powered-predictive-condition-monitoring-for-metrology-assets"
+    },
+    {
+     "name": "Cadence Design Systems",
+     "ticker": "CDNS",
+     "country": "US",
+     "share": "FY2025 收入超 $4B；Reality Digital Twin Platform 覆蓋 AI 資料中心設計",
+     "products": "Reality Digital Twin Platform、Celsius Thermal Solver、Clarity 3D Solver、EDA + System Analysis 套件",
+     "note": "2026/4 與 NVIDIA 擴大合作：Agentic AI 設計/物理仿真/數位孿生；Reality DT 可提升資料中心能效達 30%",
+     "src": "https://www.businesswire.com/news/home/20260415332711/en/Cadence-and-NVIDIA-Expand-Partnership-to-Reinvent-Engineering-for-the-Age-of-AI-and-Accelerated-Computing"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "industrial_platform_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "machine_vision_us"
+    },
+    {
+     "id": "edge_mlops"
+    },
+    {
+     "id": "physical_ai_robot"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Synopsys 完成 Ansys 收購（SEC 2025-07）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000883241/000119312525158488/d800809dex991.htm"
+    },
+    {
+     "label": "PTC × NVIDIA Omniverse 合作（2025）",
+     "url": "https://www.ptc.com/en/news/2025/ptc-nvidia-omniverse"
+    },
+    {
+     "label": "Bentley FY2025 Results + FY2026 Outlook",
+     "url": "https://www.bentley.com/news/bsy-announces-q4-and-full-year-2025-results-and-2026-outlook/"
+    },
+    {
+     "label": "Cadence × NVIDIA Expanded Partnership（2026-04-15）",
+     "url": "https://www.businesswire.com/news/home/20260415332711/en/Cadence-and-NVIDIA-Expand-Partnership-to-Reinvent-Engineering-for-the-Age-of-AI-and-Accelerated-Computing"
+    }
+   ]
+  },
+  {
+   "id": "machine_vision_us",
+   "row": "vision",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "機器視覺 + 工業檢測（歐美）",
+   "nameEn": "Machine Vision & Inspection (US/EU)",
+   "competition": "competitive",
+   "single": "無人寡占·份額分散：2024 Keyence 14.2% / Cognex 11.4% / TKH 6.8% / Teledyne 6.5% / Hikrobot 6.2%，top-3 僅 ~32%（competitive 非 oligopoly）；Cognex Q1 FY2026 +24% YoY 為成長最快但非份額領導",
+   "desc": "歐美機器視覺核心供應商，提供工業相機、AI 視覺系統、深度學習檢測平台。Cognex In-Sight 6900 Vision Controller 採用 NVIDIA Jetson 驅動，實現 few-shot learning；NVIDIA Metropolis 為工廠/倉庫視覺 AI 底層平台。",
+   "marketSize": "北美機器視覺市場 2025 ~USD 4.43B → 2030 ~USD 6.66B（CAGR ~8.5%）",
+   "growth": "YoY ~+24%（Cognex Q1 FY2026）；Teledyne Vision Solutions 北美 leading player",
+   "share": "null",
+   "analysis": "Cognex 2026/4/28 推出 In-Sight 6900 Vision Controller（NVIDIA Jetson、157 TOPS、10–20 張訓練圖像）；NVIDIA Metropolis + Accenture Physical AI Orchestrator 部署至 Belden 工廠；Landing AI Series B 2025/9 完成；Teledyne 2026/3 推出 Perciva 5D 相機（含 NPU 可在機上跑 AI 模型）；Zebra 2026/4 策略投資 Apera AI（4D Vision for industrial robots）。",
+   "companies": [
+    {
+     "name": "Cognex",
+     "ticker": "CGNX",
+     "country": "US",
+     "share": "FY2025 收入 $994M (+9%)；Q1 FY2026 revenue +24% YoY（constant currency +21%）；Adjusted EBITDA margin 26.9%（+1,010 bps YoY）；adjusted diluted EPS $0.34（+113% YoY）；連續第七季 EPS 增長；Q1 回購 $1.13 億股票",
+     "products": "In-Sight 6900 Vision Controller（NVIDIA Jetson、157 TOPS、TensorRT 即時推論、few-shot 10–20 張訓練圖像）、In-Sight 3900（Qualcomm 嵌入式 AI）、DataMan 條碼讀取、VisionPro 深度學習",
+     "note": "Q1 FY2026（截至 2026/4/5）：主要終端市場全面廣泛成長帶動超預期；2026/4/28 推出 In-Sight 6900 + 3900 雙新平台；AI 機器視覺需求持續強勁",
+     "src": "https://www.sec.gov/Archives/edgar/data/0000851205/000085120526000037/a04052026-xex991xq12026ear.htm"
+    },
+    {
+     "name": "NVIDIA（Metropolis）",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "Q1 FY2027（截至 2026/4/26）revenue $81.6B（+85% YoY）；Data Center $75.25B（+92% YoY）；工業/邊緣 AI 為成長向量",
+     "products": "NVIDIA Metropolis（工廠/倉庫視覺 AI）、Isaac ROS、Jetson Orin / Orin NX、Cosmos 世界模型",
+     "note": "Metropolis + Accenture 部署至 Belden 工廠；CES 2026 與 Siemens 共建全 AI 自適應工廠；Caterpillar 採用 Isaac 平台",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-us-manufacturing-robotics-physical-ai"
+    },
+    {
+     "name": "Teledyne Technologies",
+     "ticker": "TDY",
+     "country": "US",
+     "share": "FY2025 收入約 $5.9B；Vision Solutions 整合多品牌",
+     "products": "Teledyne DALSA 工業相機、FLIR IIS、e2v CMOS sensor、Perciva 5D 相機（2026/3，含 NPU）",
+     "note": "Perciva 5D：occlusion-free 3D，可在機上跑 AI 模型；整合 DALSA / e2v / FLIR IIS / Adimec / Lumenera",
+     "src": "https://www.stocktitan.net/news/TDY/teledyne-e2v-introduces-perciva-tm-5d-camera-occlusion-free-3d-juk8v09q2zrj.html"
+    },
+    {
+     "name": "Landing AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；2025/9 Series B（金額未披露）；~115 人",
+     "products": "LandingLens 視覺檢測平台（製造業少樣本缺陷偵測）、Agentic Document AI（API-first）",
+     "note": "Andrew Ng 為 CEO；近期擴張至文件提取（金融/保險/醫療/能源/法律）；Insight Partners 支持",
+     "src": "https://www.insightpartners.com/ideas/landing-ai-secures-funding-to-unlock-power-of-small-datasets-unleashing-next-era-of-ai/"
+    },
+    {
+     "name": "Basler AG",
+     "ticker": "BSL.DE",
+     "country": "DE",
+     "share": "歐洲機器視覺相機主要玩家；Edge AI and Vision Alliance 生態系",
+     "products": "ace 2 系列（CoaXPress 2.0）、dart、boost 系列工業相機；2026 Basler Stereo mini 3D 相機（物流+工廠）",
+     "note": "2024/6 推出 ace 2 V CoaXPress（Sony Pregius S，12.5 Gbps，212 fps）；與 Orbbec 合作",
+     "src": "https://www.baslerweb.com/en/investors/financial-information/"
+    },
+    {
+     "name": "Zebra Technologies",
+     "ticker": "ZBRA",
+     "country": "US",
+     "share": "FY2025 收入約 $4.7B；Asset Visibility & Automation 為主力",
+     "products": "Zebra Aurora Vision（機器視覺）、Photoneo 3D 視覺、RFID、Reflexis WFM",
+     "note": "2026/4 策略投資 Apera AI（4D Vision for industrial robots）；已收購 Photoneo 3D 機器視覺",
+     "src": "https://www.zebra.com/us/en/about-zebra/newsroom/press-releases/2026/zebra-technologies-makes-strategic-investment-in-apera-ai-to-drive-intelligent-automation.html"
+    },
+    {
+     "name": "Datalogic",
+     "ticker": "DAL.MI",
+     "country": "IT",
+     "share": "歐洲工業掃描/視覺領先品牌",
+     "products": "Matrix 220 XAI（AI 驅動工業 2D 條碼讀取）、MX-G2000 Vision Processor、Smart Vision Suite（零售 AI）",
+     "note": "2025/2 推出 Matrix 220 XAI；MODEX 2026 展示新 AI Matrix 系列；MX-G2000 結合傳統機器視覺 + 深度學習",
+     "src": "https://www.datalogic.com/eng/media-center/press-releases/ai-powered-solutions-for-sensing-and-tracking-nd-8584.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "industrial_platform_us"
+    },
+    {
+     "id": "digital_twin_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "edge_mlops"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cognex In-Sight 6900 Vision Controller（NVIDIA，2026-04-28）",
+     "url": "https://investor.cognex.com/news/news-details/2026/Cognex-Launches-In-Sight-Vision-Controller-Powered-by-NVIDIA/default.aspx"
+    },
+    {
+     "label": "NVIDIA US Manufacturing Robotics Physical AI",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-us-manufacturing-robotics-physical-ai"
+    },
+    {
+     "label": "Teledyne Perciva 5D Camera（2026-03）",
+     "url": "https://www.stocktitan.net/news/TDY/teledyne-e2v-introduces-perciva-tm-5d-camera-occlusion-free-3d-juk8v09q2zrj.html"
+    },
+    {
+     "label": "Zebra Technologies Strategic Investment in Apera AI（2026-04）",
+     "url": "https://www.zebra.com/us/en/about-zebra/newsroom/press-releases/2026/zebra-technologies-makes-strategic-investment-in-apera-ai-to-drive-intelligent-automation.html"
+    }
+   ]
+  },
+  {
+   "id": "machine_vision_asia",
+   "row": "vision",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "機器視覺 + 工業 AI 檢測（亞洲）",
+   "nameEn": "Machine Vision & Industrial AI Inspection (Asia)",
+   "competition": "competitive",
+   "single": "Hikvision 寡占中國市場 · FY2025 revenue RMB 92.51B；SCREEN Holdings 半導體 AI 檢測",
+   "desc": "亞洲機器視覺與工業 AI 檢測，以中國 Hikvision/Dahua AIoT、SenseTime 工業視覺、以及日本 SCREEN 半導體 AI 製程檢測為核心，韓國三星智慧工廠補充。",
+   "marketSize": "中國機器視覺市場 2025 ~RMB 30B（全球前三）；日本 Keyence 單社 FY2026 JPY 1.17T",
+   "growth": "中國機器視覺 YoY +15–20%；Hikvision 創新業務（含工業 AI）YoY +18.5%；SenseTime FY2025 GenAI revenue +51%",
+   "share": "null",
+   "analysis": "Hikvision FY2025 淨利潤 +18.5% YoY（創新業務 RMB 25.45B，含工業 AI）；Dahua FY2025 淨利 +32.77%，2025/3 出售 Huacheng 集中 AI 研發；SenseTime H2 2025 EBITDA 轉正，FY2025 GenAI 收入 +51%；SCREEN Holdings SEMICON Japan 主辦 AI × Sustainability × Semiconductor Summit；Omron IAB Q3 FY2025 大幅成長（AI 半導體需求回升）。",
+   "companies": [
+    {
+     "name": "Hikvision",
+     "ticker": "002415.SZ",
+     "country": "CN",
+     "share": "FY2025 revenue RMB 92.51B (+0.01%)；net profit RMB 14.2B (+18.52%)；創新業務 RMB 25.45B（27.51%）；Q1 2026 revenue RMB 20.72B（+11.78% YoY）；Q1 2026 net profit RMB 2.78B（+36.42% YoY）；Q1 2026 gross margin 49.09%（+4.16 ppts YoY）；海外 revenue FY2025 RMB 27.22B（+/佔 29.42%）",
+     "products": "機器視覺 + AIoT：Guanlan 大型 AI 模型（視覺/語言/多模態）、設備品質檢測音頻模型（缺陷偵測率 +70%）、工業製造/物流/環保 AI；non-video（門禁/警報/商業顯示）快速增長",
+     "note": "Q1 2026 強勁開局：淨利潤+36.42% 高於收入增速（11.78%），毛利率大幅擴張；美國制裁清單仍在列（海外業務受限）",
+     "src": "https://www.hikvision.com/europe/newsroom/latest-news/2026/hikvision-2025-full-year-and-2026-first-quarter-financial-results/"
+    },
+    {
+     "name": "Dahua Technology",
+     "ticker": "002236.SZ",
+     "country": "CN",
+     "share": "FY2025 revenue RMB 32.74B (+1.75%)；net profit RMB 3.86B (+32.77%)；Q1 2026 revenue +10.33% YoY；Q1 2026 net profit RMB 6.98 億（+6.81% YoY）；EPS 超預期 +26.73%",
+     "products": "機器視覺 + AIoT：工業相機（Area Scan/Line Scan/Smart/3D/Lens）、移動機器人、WITHS 系列 AI 偵測（2025/9）",
+     "note": "Q1 2026（2026/4/18 公布）：收入增速 10.33%，淨利增速 6.81%，毛利率壓力下 EPS 超預期；2025/3 出售 Huacheng Network（RMB 717M）集中 AI 研發；美國制裁清單",
+     "src": "https://news.futunn.com/en/post/71661453/dahua-technology-002236-sz-q1-net-profit-of-698-million"
+    },
+    {
+     "name": "SenseTime",
+     "ticker": "0020.HK",
+     "country": "HK",
+     "share": "FY2025 revenue RMB 5.015B (+32.4%)；GenAI revenue RMB 3.63B (+51%)；H2 2025 EBITDA 轉正",
+     "products": "SenseFoundry 工業/城市 AI（機器視覺/生成式 AI）、SenseFortune 工業質量管控、SenseNova 工業版大模型",
+     "note": "FY2025 net loss RMB 1.782B (-58.6% YoY，虧損大幅收窄）；IPO 後首次半年正 EBITDA",
+     "src": "https://www.sensetime.com/en/investor-relations"
+    },
+    {
+     "name": "SCREEN Holdings",
+     "ticker": "7735.T",
+     "country": "JP",
+     "share": "半導體製程設備 + AI 加速晶圓圖案檢測；Advanced Packaging + AI 半導體主軸",
+     "products": "Coater/Developer Track、退火設備、AI 加速晶圓圖案檢測系統、量測設備；高速 AI 搜尋/文件品質改善系統",
+     "note": "2025-12 SEMICON Japan 主辦 AI × Sustainability × Semiconductor Summit；Advanced Packaging + AI 半導體製造需求中期成長主軸",
+     "src": "https://www.screen.co.jp/spe/en/information/spe251126"
+    },
+    {
+     "name": "Omron",
+     "ticker": "6645.T",
+     "country": "JP",
+     "share": "FY2025 revenue JPY 801.75B；IAB 大幅成長（AI 半導體需求回升）",
+     "products": "Industrial Automation Business（IAB）：AI 感測、機器視覺、協作機器人、FA 全套設備",
+     "note": "Q3 FY2025 IAB 大幅成長；earnings JPY 16.26B (+100.9% YoY)",
+     "src": "https://www.omron.com/global/en/ir/"
+    },
+    {
+     "name": "Megvii Technology",
+     "ticker": "—",
+     "country": "CN",
+     "share": "上海 STAR 市場 + 港交所 IPO 均已撤回；創辦人尹奇 2026/2 回歸重掌",
+     "products": "機器視覺/人臉辨識/工業 AI（Face++）；ONES 工業 AI 平台（倉儲機器人調度）；供應鏈/物流/工廠品質管控",
+     "note": "已列入美國 Entity List（2019/10）；IPO 多次失敗；創辦人回歸或推動重組",
+     "src": "https://megvii.com/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "industrial_platform_jp"
+    },
+    {
+     "id": "industrial_platform_kr"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "edge_mlops"
+    },
+    {
+     "id": "industrial_ai_cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Hikvision FY2025 + Q1 2026 Financial Results",
+     "url": "https://www.hikvision.com/europe/newsroom/latest-news/2026/hikvision-2025-full-year-and-2026-first-quarter-financial-results/"
+    },
+    {
+     "label": "SenseTime Investor Relations",
+     "url": "https://www.sensetime.com/en/investor-relations"
+    },
+    {
+     "label": "SCREEN Holdings SEMICON Japan 2025",
+     "url": "https://www.screen.co.jp/spe/en/information/spe251126"
+    },
+    {
+     "label": "Dahua Technology Investor Relations",
+     "url": "https://www.dahuasecurity.com/about-dahua/investor-relations"
+    }
+   ]
+  },
+  {
+   "id": "edge_mlops",
+   "row": "edge",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "Edge AI / MLops + 推論引擎",
+   "nameEn": "Edge AI / MLops & Inference Engines",
+   "competition": "fragmented",
+   "single": "帳面碎片化、實質 CUDA 鎖定：edge AI 晶片 top-5 僅 ~42.4%、NVIDIA 名目單一市佔 ~11%，但靠 CUDA/Isaac/TensorRT 生態鎖死工業機器人與機器視覺推論棧——名目 share 看不出的實質控制力落差；Qualcomm+Edge Impulse 為主要挑戰者",
+   "desc": "工業邊緣端 AI 推論引擎、MLops 管理平台與神經形態晶片，讓機器視覺、預測維護、機器人控制在毫秒內完成推論。涵蓋 NVIDIA Jetson、Qualcomm Edge Impulse、Modular MAX Engine、BrainChip Akida 神經形態晶片。",
+   "marketSize": "2025 全球 Edge AI 市場 ~USD 29B → 2030 ~USD 107B（CAGR 30%）；神經形態運算 2030 預計達 USD 20.27B（CAGR 19.9%）",
+   "growth": "Edge AI CAGR ~30%（2025–2030）；Modular Series C $2.5 億 at $16 億估值",
+   "share": "null",
+   "analysis": "NVIDIA Jetson 累計 >100 萬裝置部署，Cognex/Fanuc 等主流工業視覺裝置採用；Qualcomm 2025/3 完成 Edge Impulse 收購，強化 Dragonwing IoT AI 晶片生態；Modular 2025/9 Series C $2.5 億（@$16 億估值），MAX 支援 500+ 預優化模型；BrainChip AKD1500 <300 mW；Plumerai 邊緣 Tiny AI 降低雲端推論成本 135×。",
+   "companies": [
+    {
+     "name": "NVIDIA（Jetson + Isaac）",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "FY2026 全年收入 $215.9B（+65% YoY）；Q1 FY2027 revenue $81.6B（+85% YoY），Q2 指引 $91B；Jetson 累計 >100 萬裝置部署",
+     "products": "Jetson Thor / Orin 系列（最高 275 TOPS）、Isaac ROS + Isaac Sim（Omniverse 合成數據）、Isaac GR00T 人形機器人基礎模型、DeepStream SDK、Cosmos 世界模型",
+     "note": "GTC 2026：GR00T N1.7 已 early access（商用授權，含進階靈巧操作）；預告 GR00T N2（基於 DreamZero 研究的 world action model 架構，新環境新任務成功率較領先 VLA 高 2 倍以上，年底推出）；GR00T 開放人形參考機（Jetson AGX Thor + Unitree H2 Plus）2026 下半年由 Unitree 出貨；Caterpillar / Franka / Boston Dynamics 採用 NVIDIA 機器人技術棧",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-and-global-robotics-leaders-take-physical-ai-to-the-real-world"
+    },
+    {
+     "name": "Modular",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；2025/9 Series C $2.5 億（@$16 億估值）；累計融資 $3.8 億",
+     "products": "MAX 推論引擎（500+ 預優化模型：Llama/Mistral/Whisper）、Mojo 程式語言、Mammoth Kubernetes 控制面板（分散式多模型推論）",
+     "note": "USITF 領投；GV / General Catalyst / Greylock 跟投；2026 計畫擴展至 Apple GPU / consumer ASIC / 邊緣裝置",
+     "src": "https://www.modular.com/blog/modular-2025-year-in-review"
+    },
+    {
+     "name": "Edge Impulse（Qualcomm）",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "Qualcomm 2025/3 收購；17 萬+ 開發者社群",
+     "products": "端到端邊緣 AI MLops 平台、模型部署至嵌入式設備、IoT AI 開發工作流（Dragonwing 生態）",
+     "note": "2025/3/10 Qualcomm 完成收購；為製造/工業 IoT 裝置提供快速邊緣 AI 開發到部署流程",
+     "src": "https://www.edgeimpulse.com/blog/edge-impulse-qualcomm-acquisition/"
+    },
+    {
+     "name": "BrainChip Holdings",
+     "ticker": "BRN.AX",
+     "country": "AU",
+     "share": "ASX 上市；2025/12 完成 $2,500 萬融資",
+     "products": "Akida 神經形態處理器、AKD1500 Edge AI 協處理器（800 GOPS @ <300 mW）、Akida GenAI",
+     "note": "AKD1500 適用電池式穿戴 + 智慧感測器；M.2 模組形式降低邊緣 AI 盒建構成本；神經形態運算市場 2030 預計 $20.27B（CAGR 19.9%）",
+     "src": "https://brainchip.com/brainchip-unveils-breakthrough-akd1500-edge-ai-co-processor-at-embedded-world-north-america/"
+    },
+    {
+     "name": "Plumerai",
+     "ticker": "—",
+     "country": "UK",
+     "share": "私有；2025/9 Series A $8.7M；累計 >$17M",
+     "products": "Tiny AI 邊緣推論引擎、Vision LLM 混合架構（邊緣+雲端）、AI Video Search / AI Captions",
+     "note": "邊緣端 Tiny AI + 雲端 Vision LLM，相比純雲端降低 135× 推論成本；客戶含 Chamberlain（智慧家居）",
+     "src": "https://blog.plumerai.com/2025/09/plumerai-raises-usd8-7m-series-a/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "machine_vision_us"
+    },
+    {
+     "id": "machine_vision_asia"
+    },
+    {
+     "id": "digital_twin_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "physical_ai_robot"
+    },
+    {
+     "id": "ai_factory_tw"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA Physical AI Models + Robot Partners（2026）",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots"
+    },
+    {
+     "label": "Modular 2025 Year in Review（Series C $250M）",
+     "url": "https://www.modular.com/blog/modular-2025-year-in-review"
+    },
+    {
+     "label": "Edge Impulse × Qualcomm Acquisition（2025-03-10）",
+     "url": "https://www.edgeimpulse.com/blog/edge-impulse-qualcomm-acquisition/"
+    },
+    {
+     "label": "BrainChip AKD1500 Edge AI Co-Processor（2025）",
+     "url": "https://brainchip.com/brainchip-unveils-breakthrough-akd1500-edge-ai-co-processor-at-embedded-world-north-america/"
+    }
+   ]
+  },
+  {
+   "id": "physical_ai_robot",
+   "row": "edge",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "Physical AI + 機器人基礎模型",
+   "nameEn": "Physical AI & Robot Foundation Models",
+   "competition": "fragmented",
+   "single": "無寡占·三種商業模式競賽（fragmented）：Skild AI($14B) 與 Physical Intelligence($5.6→11B) 走『軟體優先 license』；垂直整合人形廠 Figure AI($39B，估值已超 Skild)↔BMW / Apptronik($5B)↔Mercedes / Neura($7B) / 1X 走全棧；橫向 foundation 供應商 NVIDIA GR00T / Google Gemini Robotics 走通用底座——無單一領導者，2026–28 路線尚未收斂",
+   "desc": "訓練可跨機體泛化的通用機器人基礎模型（類比 LLM 對機器人的角色），讓工廠機器人、倉庫搬運、人形機器人無需大量客製化數據即可適應新任務。包括 Skild AI、Physical Intelligence、World Labs（Fei-Fei Li）、Covariant/Amazon、Sakana AI。",
+   "marketSize": "Physical AI / Robot Foundation Model 全球機器人 2026 迄今融資 >USD 55.8B（年度新高，2026/6 Neura $1.4B 創全棧最大單輪）；Figure AI USD 39B / Skild AI USD 14B / Physical Intelligence USD 11B / Neura Robotics USD 7B / Apptronik USD 5B 估值",
+   "growth": "機器人基礎模型 2025–2026 YoY 估值增長 5–15×；Generalist AI / Mind Robotics 各募 $400M、Neura Robotics 單輪至多 $1.4B（2026/6）",
+   "share": "null",
+   "analysis": "Skild AI 2026/1 宣布 $14 億 Series C（@$140 億估值），SoftBank / NVentures / Samsung / LG / Schneider Electric 參投，2025 年收入從零成長至 ~$3,000 萬；Physical Intelligence 2025/11 Series B $6 億（@$56 億估值），Pi0 開源跨平台多任務機器人政策；World Labs 2026/2 融資 $10 億（@~$50 億），AMD / NVIDIA / Autodesk 參投；Covariant 2024/8 Amazon 功能性收購，RFM-1 獲非獨家授權；Sakana AI 2025/11 Series B $135M（@$2.65B）；Genesis AI 2026/5 發布 GENE-26.5（宣稱首個人類級物理操作能力的機器人基礎模型，2025/7 種子輪 $105M）。",
+   "companies": [
+    {
+     "name": "Skild AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；2026/1 Series C $14 億（@$140 億估值）；2025 年收入 ~$3,000 萬",
+     "products": "Skild Brain（全身通用機器人基礎模型）、omni-bodied 機器人控制；部署：安保巡視/倉庫/製造/資料中心/建築",
+     "note": "SoftBank/NVIDIA 領投；NVentures/Macquarie/Bezos/Samsung/LG/Schneider/Sequoia/Lightspeed 參投；2026/H1 與 ABB Robotics + Universal Robots 合作，將 Skild Brain 軟體嵌入工業機器人（軟體優先 license 模式擴張）；2026/6 與 NVIDIA + Foxconn 合作，將 Skild Brain 部署至德州休士頓組裝 NVIDIA Blackwell GPU 伺服器的機器人產線（data flywheel 真實場景驗證）",
+     "src": "https://www.businesswire.com/news/home/20260114335623/en/Skild-AI-Raises-%241.4B-Now-Valued-Over-%2414B"
+    },
+    {
+     "name": "Figure AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；2025/9 Series C >$10 億（@$39 億 post-money 估值，估值已超越 Skild AI 成為人形機器人最高）；累計融資 >$19 億",
+     "products": "Helix VLA（自研 vision-language-action 模型，取代 OpenAI）、Figure 03 人形機器人、BotQ 製造廠（初期年產能 12,000 台、達 1 robot/hr）",
+     "note": "Parkway Venture Capital 領投，NVIDIA/Intel Capital/LG 參投；BMW Spartanburg 部署 Figure 02 十個月協助生產 >30,000 台 X3、搬運 9 萬+ 零件、置放準確率 >99%；2026 夏季擴展至 BMW Leipzig（德國）",
+     "src": "https://www.figure.ai/news/series-c"
+    },
+    {
+     "name": "Neura Robotics",
+     "ticker": "—",
+     "country": "DE",
+     "share": "私有；2026/6/10 Series C 至多 $14 億（@$70 億估值，歐洲最高 full-stack 機器人融資）；訂單 backlog + 部署 pipeline 已超 $10 億",
+     "products": "認知機器人（cognitive robots）全棧、4NE-1 人形機器人、Neura Gyms 物理 AI 訓練環境；目標 2030 年產達 multi-million 台",
+     "note": "Tether 領投，Qualcomm/Amazon/NVIDIA/Bosch/Schaeffler + 歐洲投資銀行（EIB）參投；歐洲物理 AI 代表性玩家，補上日韓美之外的供應鏈版圖",
+     "src": "https://www.cnbc.com/2026/06/10/neura-robotics-funding-ai-humanoid-robots.html"
+    },
+    {
+     "name": "Physical Intelligence（π）",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；2025/11 Series B $6 億（@$56 億估值）；2026/3 洽談 Series C ~$10 億（@$110 億估值，較 4 個月前翻倍），Founders Fund + Lightspeed 洽談中，NVIDIA NVentures / T. Rowe Price / Index Ventures 亦參投",
+     "products": "π0（Pi Zero）開源機器人基礎模型、π0.5、π0.7 Compositional（組合式泛化能力）",
+     "note": "Series C 於 2026/3 底仍處早期洽談階段；創辦人來自 Google DeepMind（Karol Hausman CEO）、UC Berkeley（Sergey Levine）、Stanford（Chelsea Finn）；Pi0 程式碼與權重已開源；估值 18 個月內從 $5.6B → $11B+",
+     "src": "https://techcrunch.com/2026/03/27/physical-intelligence-is-reportedly-in-talks-to-raise-1-billion-again/"
+    },
+    {
+     "name": "World Labs",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；2026/2 融資 $10 億（@~$50 億估值）",
+     "products": "空間智慧 AI（3D 世界模型）、Marble（3D 世界生成產品，從圖片/文字生成 3D 虛擬世界）",
+     "note": "AMD / NVIDIA / Autodesk（$2 億顧問角色）/ Emerson Collective / Fidelity / Sea 參投；李飛飛（Fei-Fei Li）創辦",
+     "src": "https://techfundingnews.com/world-labs-1b-funding-feifei-li-autodesk/"
+    },
+    {
+     "name": "Covariant（→ Amazon Robotics）",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "私有（Amazon 功能性收購）；2024/8 deal：$3.8 億授權 + $2,000 萬尾款",
+     "products": "RFM-1（Robotic Foundation Model 1）、Covariant Brain、倉庫揀選 AI",
+     "note": "Amazon 聘用創辦人（Abbeel/Chen/Duan）及 ~25% 員工，取得 RFM-1 非獨家授權；Covariant 繼續獨立運營",
+     "src": "https://www.aboutamazon.com/news/company-news/amazon-covariant-ai-robots"
+    },
+    {
+     "name": "Sakana AI",
+     "ticker": "—",
+     "country": "JP",
+     "share": "私有；2025/11 Series B $135M（@$2.65B，日本新創最高紀錄之一）",
+     "products": "生物啟發 AI：Model Merging / Self-Evolving / 小模型合成大能力；日語最佳化；2026 起擴展工業/製造/政府",
+     "note": "MUFG / Khosla Ventures / Macquarie Capital / NEA / Lux Capital / In-Q-Tel（CIA 旗下）投資；前 Google 研究員 Llion Jones 等創立（2023）",
+     "src": "https://sakana.ai/"
+    },
+    {
+     "name": "Tier IV",
+     "ticker": "—",
+     "country": "JP",
+     "share": "私有；2025/12 NEDO 選定（¥25.4B R&D 計畫之一）；Series B 累計 >$54M",
+     "products": "AutowareOS（開源自動駕駛平台）、L4 自動駕駛（公共交通/Robotaxi）；NEDO 計畫：大規模合成駕駛數據集（多模態 AI 自動標注）",
+     "note": "2026/3 發布 AI-based L4 ADS；與 Newmo 合作商業化 Robotaxi；跨日美歐全球擴張",
+     "src": "https://www.prnewswire.com/news-releases/tier-iv-to-develop-large-scale-dataset-for-autonomous-driving-under-nedo-project-302649418.html"
+    },
+    {
+     "name": "Apptronik",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；2026/2/11 Series A-X extension $520M（@$5B 估值），累計 Series A >$935M、總融資近 $10 億；產線 2027 可量產交付",
+     "products": "Apollo 人形機器人（多任務、雙足）；製造/物流 intra-logistics：搬運組件至產線、零件初步品檢",
+     "note": "2026/2 由 Google、Mercedes-Benz、B Capital、AT&T Ventures、John Deere、Qatar Investment Authority 共同投資；Mercedes-Benz 選用 Apollo（非 Figure）部署於柏林 Berlin-Marienfelde Digital Factory Campus + 匈牙利 Kecskemét 廠，2026 多廠多任務試點；形成 Apptronik↔Mercedes 對照 Figure↔BMW 的第二條垂直整合人形供應關係",
+     "src": "https://www.cnbc.com/2026/02/11/apptronik-raises-520-million-at-5-billion-valuation-for-apollo-robot.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "edge_mlops"
+    },
+    {
+     "id": "digital_twin_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "industrial_platform_jp"
+    },
+    {
+     "id": "ai_factory_tw"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Skild AI Raises $1.4B（BusinessWire 2026-01-14）",
+     "url": "https://www.businesswire.com/news/home/20260114335623/en/Skild-AI-Raises-%241.4B-Now-Valued-Over-%2414B"
+    },
+    {
+     "label": "Physical Intelligence 官網（π）",
+     "url": "https://www.pi.website/"
+    },
+    {
+     "label": "World Labs $1B Funding Fei-Fei Li（2026-02）",
+     "url": "https://techfundingnews.com/world-labs-1b-funding-feifei-li-autodesk/"
+    },
+    {
+     "label": "Amazon × Covariant 合作（2024-08）",
+     "url": "https://www.aboutamazon.com/news/company-news/amazon-covariant-ai-robots"
+    }
+   ]
+  },
+  {
+   "id": "ai_factory_tw",
+   "row": "asia",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "台灣 AI Factory + 精密製造",
+   "nameEn": "Taiwan AI Factory & Precision Manufacturing",
+   "competition": "oligopoly",
+   "single": "AI 機櫃組裝寡占（top-3 ~92%）：GB200/GB300 rack assembly 2025 排序 Foxconn ~52% / Wistron ~21% / Quanta ~19%——真實 #2 是 Wistron 非 Wiwynn（Wiwynn 為 CSP 採購供應商、供全球 ~50% hyperscale AI server 採購量，定位不同）；Delta AI Smart Manufacturing 全球驗證中心",
+   "desc": "台灣 AI Factory 三叉戟（Foxconn/Quanta/Wiwynn）主導全球 NVIDIA GB200/GB300 NVL72 AI Server 組裝；Delta Electronics 工業自動化 AI Factory；Advantech Edge AI IPC 全球龍頭；HIWIN 人形機器人傳動零組件；工研院 AI 智慧製造推手。",
+   "marketSize": "台灣 AI Server 市場 2025 全球份額 >50%（Foxconn/Quanta/Wiwynn 三叉戟）；Wiwynn FY2025 revenue NT$950.66B (+163.7%)",
+   "growth": "Wiwynn YoY +163.7%；Quanta FY2025 +50.2%；Foxconn AI Server 2026 強勁成長",
+   "share": "null",
+   "analysis": "Foxconn Q1 2026 operating profit +63% YoY、雲端網路佔總營收 40% 首超消費電子，NVIDIA GB 系列機櫃市占升至 55–60%，現每週產 >1,000 座 AI 機櫃（2026 年底擴至 2,000 座/週），GB300 已小量量產為 2026 H1 主流，2026/6 與 NVIDIA+Skild AI 合作部署機器人於休士頓 Blackwell 產線；Quanta Q1 2026 revenue NT$809.2B (+66.6% YoY，單季新高）；Wiwynn 供應全球 ~50% Hyperscale AI Server；Delta Q1 2026 毛利率 37%（歷史新高）、淨利 +101%；Advantech Edge AI revenue Q1 2026 佔總收入 20.5%（目標全年 30%）。",
+   "companies": [
+    {
+     "name": "Foxconn（Hon Hai）",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "全球 AI 伺服器組裝量第一；台灣 NVIDIA 首席雲端合作夥伴；Q1 2026 revenue NT$2.11T（+29.68% YoY）；Q1 operating profit NT$75.65B（+63% YoY）；NVIDIA GB 系列機櫃市占 2026 上升至 ~55–60%；雲端網路產品佔總營收 40%（首超消費電子 38%）；AI Server 2026 全年出貨量預計較 2025 翻倍",
+     "products": "NVIDIA GB200 NVL72 + GB300 NVL72 製造（NVIDIA 唯一 GB200 組裝商）；10,000 Blackwell GPU AI Factory（台灣）；Ingrasys 液冷方案",
+     "note": "GB300 已小量量產，預計成 2026 H1 AI server 主流；Young Liu：目前每週產 >1,000 座 AI 機櫃，2026 年底擴至 2,000 座/週；GB300 / Vera Rubin 機櫃 2026 Q3 起陸續出貨；2026/6 與 NVIDIA + Skild AI 合作將 Skild Brain 機器人部署至德州休士頓 Blackwell GPU 伺服器產線",
+     "src": "https://tech-insider.org/foxconn-q1-2026-ai-server-revenue-66-billion/"
+    },
+    {
+     "name": "Quanta Computer（QCT）",
+     "ticker": "2382.TW",
+     "country": "TW",
+     "share": "FY2025 revenue NT$2.12T (+50.2%)；EPS NT$19.45（歷史新高）",
+     "products": "QCT AI Server：全球兩大 AI 伺服器廠之一；FY2025 前三季 AI Server 佔 Server >70%",
+     "note": "Q1 2026 revenue NT$809.2B (+66.6% YoY，單季新高）；AI Server 訂單能見度延伸至 2027",
+     "src": "https://www.quantatw.com/Quanta/english/investor/investor.aspx"
+    },
+    {
+     "name": "Wiwynn",
+     "ticker": "6669.TWO",
+     "country": "TW",
+     "share": "FY2025 revenue NT$950.66B (+163.7%)；AI 產品 >50% 佔比",
+     "products": "CSP AI Server：NVIDIA GB200 平台系統；供應全球 ~50% Hyperscale AI Server 採購量",
+     "note": "Q3 2025 revenue NT$266.82B (+172.8%)；2025 美國設施擴張 + 台灣總部擴建",
+     "src": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2025-financial-results"
+    },
+    {
+     "name": "Delta Electronics",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "FY2025 global turnover $17.8B (+36%)；Q1 2026 revenue NT$159.4B（+36% YoY）；Q1 2026 gross margin 37%（歷史新高，+6 ppts YoY）；Q1 2026 after-tax net profit NT$20.55B（+101% YoY）；Q1 2026 EPS NT$7.91",
+     "products": "Industrial Automation：Delta AI Smart Manufacturing Innovation Center（500㎡）、Line Manager AI 系統、Delta AI Liquid Cooling、Cyber-Physical 整合方案；AI 資料中心電源（最大成長引擎）",
+     "note": "Q1 2026 淨利潤 +101%，毛利率創歷史新高；AI 資料中心電源為首要驅動（四大 CSP capex +60% YoY）；泰國工業自動化業務 +114.3% YoY；自動化業務仍受益於製造業 AI 化",
+     "src": "https://finance.biggo.com/news/TW_2308.TW_2026-04-30"
+    },
+    {
+     "name": "Advantech",
+     "ticker": "2395.TW",
+     "country": "TW",
+     "share": "FY2025 revenue $2,274M (+22%)；Edge AI revenue Q1 2026 $132M = 20.5% 總收入（目標全年 30%）",
+     "products": "Edge AI Industrial PC：AIoT 嵌入式運算、Edge AI Box 系列（推論加速）、工業 IoT 閘道器、WISE-PaaS 工業雲端平台",
+     "note": "全球工業 IPC 龍頭；CES 2025 展示 12 項 AI 工具機關鍵技術",
+     "src": "https://www.advantech.com/en-us/resources/news/advantech-reports-fy2025-eps-of-nt1225-and-announces-3-year-special-dividend-program"
+    },
+    {
+     "name": "HIWIN Technologies",
+     "ticker": "2049.TW",
+     "country": "TW",
+     "share": "全球人形機器人供應鏈 Morgan Stanley Top 100（2025-04）；全球 LM Guide 市佔 #1",
+     "products": "Ball Screw + Linear Guideway + Datorker 減速機 + 交叉滾子軸承（AI 機器人傳動核心）；人形機器人關節模組",
+     "note": "台積電/鴻海/和大同榜台廠；TIMTOS 2025 參展；AI Smart Manufacturing + 自動化組裝數位化轉型",
+     "src": "https://www.hiwin.com.tw/en/"
+    },
+    {
+     "name": "工研院（ITRI）",
+     "ticker": "—",
+     "country": "TW",
+     "share": "逾 6,500 名員工；2025 R&D 100 Awards 三項；2026 TMTS 展示 12 項 AI 工具機關鍵技術",
+     "products": "智慧製造 AI：AI-WaJe™ 技術、國科會補助 AI Factory 概念驗證；Bio-Inspired + AI 材料雙向研發",
+     "note": "AI Application Strategy Office 五大主題：智慧製造/商業/醫療/無人載具/AI SoC；公法人（非上市）",
+     "src": "https://www.itri.org.tw/english/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "industrial_platform_us"
+    },
+    {
+     "id": "industrial_platform_kr"
+    },
+    {
+     "id": "edge_mlops"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Foxconn Press Center（NVIDIA AI Factory）",
+     "url": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1557"
+    },
+    {
+     "label": "Advantech FY2025 EPS NT$12.25（2025）",
+     "url": "https://www.advantech.com/en-us/resources/news/advantech-reports-fy2025-eps-of-nt1225-and-announces-3-year-special-dividend-program"
+    },
+    {
+     "label": "Wiwynn Q2 2025 Financial Results",
+     "url": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2025-financial-results"
+    },
+    {
+     "label": "ITRI 官網",
+     "url": "https://www.itri.org.tw/english/"
+    }
+   ]
+  },
+  {
+   "id": "industrial_ai_cn",
+   "row": "asia",
+   "col": 2,
+   "span": 2,
+   "kind": "stage",
+   "name": "中國工業 AI + 國產替代",
+   "nameEn": "China Industrial AI & Domestic Substitution",
+   "competition": "competitive",
+   "single": "Huawei Pangu 寡占工業大模型 · 718B 參數覆蓋鋼鐵/電力/石油/汽車；Hikvision 機器視覺市場份額中國第一",
+   "desc": "中國工業 AI 核心供應鏈，以 Huawei Pangu 5.5 工業大模型（718B 參數）+ Alibaba Cloud 製造 AI 為主力，配合 SenseTime 工業視覺（EBITDA 轉正）、Hikvision/Dahua AIoT 機器視覺、UISEE L4 自動駕駛。",
+   "marketSize": "中國工業軟體市場 2025 ~RMB 350B；Huawei Pangu 工業大模型覆蓋 30 行業 500+ 場景；UISEE L4 機場市佔 >90.5%",
+   "growth": "中國工業 AI YoY +30–40%；Huawei Cloud 工業 AI 1,300+ 企業客戶；Alibaba Cloud IaaS 成長率回升 >25%",
+   "share": "null",
+   "analysis": "Huawei Cloud Pangu Models 5.5（718B 參數）2025/6 發布，部署 30+ 行業 500+ 場景，Blast Furnace 模型（寶武鋼鐵）鐵水溫度達標率 >90%；Alibaba Cloud 三年 RMB 3,800 億算力 capex；UISEE 2026/5 港交所掛牌（1511.HK），L4 自動駕駛覆蓋 >90.5% 中國機場；SenseTime H2 2025 EBITDA 轉正（FY2025 GenAI revenue +51%）。",
+   "companies": [
+    {
+     "name": "Huawei Cloud（Industrial AI）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "Pangu 5.5（718B 參數）；30+ 行業 500+ 場景；1,300+ 企業客戶",
+     "products": "Pangu Industrial 工業大模型：Blast Furnace（寶武鋼鐵）、Aluminum（雲南鋁業，年省電 2,600 萬 kWh）、Kunlun 石油管道（缺陷偵測效率 +40%）；FAW-VW 首個分散式雲 AI 汽車工廠（6 廠聯動）",
+     "note": "2025/6 Pangu 5.5 發布；寶武鋼鐵鐵水溫度達標率 >90%、省燃料 2kg/噸",
+     "src": "https://www.huaweicloud.com/intl/en-us/news/20250620192415143.html"
+    },
+    {
+     "name": "Alibaba Cloud / Qwen",
+     "ticker": "9988.HK",
+     "country": "CN",
+     "share": "中國公有雲 IaaS #1；工業 AI 廣泛覆蓋製造/零售/媒體垂直",
+     "products": "Qwen LLM 工業應用：製造業 AI 助理、供應鏈優化、工廠 IoT 平台；美的/Foxconn 等廠商重建雲原生 IoT 生產線",
+     "note": "三年 RMB 3,800 億算力 capex；2025 IaaS 成長率回升 >25%",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465925049400/tm2515233d1_ex99-1.htm"
+    },
+    {
+     "name": "UISEE Technology",
+     "ticker": "1511.HK",
+     "country": "CN",
+     "share": "FY2025 revenue RMB 328M；2026/5 港交所掛牌（1511.HK）；L4 機場市佔 >90.5%",
+     "products": "L4 自動駕駛：機場封閉場景（>90.5% 中國機場）、工廠/物流園/礦山自主車輛、V2X 場景邊緣 AI",
+     "note": "2026-05 港交所掛牌；籌資 HK$870M；總融資 $197.97M（Series C 2023/3 結束）",
+     "src": "https://www.uisee.com/en/about.html"
+    },
+    {
+     "name": "Tencent Cloud（工業 AI）",
+     "ticker": "0700.HK",
+     "country": "CN",
+     "share": "2025 雲業務首次規模獲利；製造/政府/金融垂直 AI 落地",
+     "products": "場景驅動型雲：工業 AI 商業化落地；2025 首次達到規模盈利；製造垂直深化",
+     "note": "非純工業 AI 廠商，工業場景佔比仍低於 Huawei；Tencent Meeting / 企業微信 AI 化加速",
+     "src": "https://www.tencent.com/en-us/investors.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "machine_vision_asia"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Huawei Cloud Pangu 5.5 工業大模型（2025-06）",
+     "url": "https://www.huaweicloud.com/intl/en-us/news/20250620192415143.html"
+    },
+    {
+     "label": "Alibaba Cloud 6-K（SEC）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465925049400/tm2515233d1_ex99-1.htm"
+    },
+    {
+     "label": "UISEE Technology 官網",
+     "url": "https://www.uisee.com/en/about.html"
+    }
+   ]
+  },
+  {
+   "id": "sovereign_industrial_jp_kr",
+   "row": "asia",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "日韓主權工業 AI 計畫",
+   "nameEn": "JP/KR Sovereign Industrial AI Programs",
+   "competition": "fragmented",
+   "single": "NEDO 計畫壟斷 · 掌握日本政府 AI 製造補貼出口；Tier IV L4 ADS 2026/3 發布",
+   "desc": "日本 NEDO 主權 AI 計畫（Tier IV L4、大規模合成駕駛數據集）+ 韓國 MSIT 智慧製造 AI 補貼（Naver/LG AI/SKT 五隊）+ Hyundai Group 韓國 KRW 125.2T 五年投資計畫，構成亞洲工業 AI 的政策驅動力。",
+   "marketSize": "日本 NEDO 工業 AI 計畫 ¥25.4B；韓國 MSIT 製造 AI 補助 KRW 200B（~USD 147M）；Hyundai 2026–2030 KRW 125.2T 總投資計畫",
+   "growth": "日本 GENIAC 第三輪持續推進；韓國 2025 智慧製造 AI 市場 YoY +35%",
+   "share": "null",
+   "analysis": "日本 NEDO 2025/12 選定 Tier IV（¥25.4B 計畫），建立大規模真實+合成駕駛數據集，強化 L4 商業化；韓國 MSIT 補助 Naver/LG AI/SKT/NC AI/Upstage 五隊 KRW 200B；Hyundai 2026/2 宣布 KRW 9T（AI DC + 機器人 + 氫能），2026–2030 韓國總計 KRW 125.2T；Sakana AI 2025/11 Series B $135M（@$2.65B）為日本 AI 生態系重要里程碑。",
+   "companies": [
+    {
+     "name": "日本 NEDO（新能源產業技術綜合開發機構）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "掌握日本政府工業 AI 主要補貼出口；¥10T 框架第三輪執行中",
+     "products": "GENIAC（生成式 AI 加速計畫）：工業 AI 製造 / 能源 / 基礎設施 / 物流場景 R&D 補助；Tier IV L4 ADS 計畫 ¥25.4B",
+     "note": "2025/12 選定 Tier IV 作為 L4 ADS 數據集主導廠商；30+ 專案已執行",
+     "src": "https://www.nedo.go.jp/english/index.html"
+    },
+    {
+     "name": "韓國 MSIT（科學技術情報通信部）",
+     "ticker": "—",
+     "country": "KR",
+     "share": "KRW 200B（~USD 147M）補助 K-AI 五隊國家工業 AI 計畫",
+     "products": "智慧製造 AI 國家計畫：Naver/LG AI/SKT/NC AI/Upstage 五隊補助；韓國電池/汽車/半導體 AI 製造路線圖",
+     "note": "2025/8 選出 K-AI 五隊；聚焦韓語 LLM + 製造業 AI 落地；與 NVIDIA 韓國 AI Factory 協同",
+     "src": "https://www.msit.go.kr/eng/index.do"
+    },
+    {
+     "name": "Hyundai Motor Group（政府計畫）",
+     "ticker": "005380.KS",
+     "country": "KR",
+     "share": "2026–2030 韓國 KRW 125.2T 投資計畫；AI Application Center + AI Technology Center 與政府合作",
+     "products": "NVIDIA Blackwell AI Factory（50K GPU）；Atlas 人形機器人（2028 年產 30K 台）；氫能 + 自動駕駛 + 智慧工廠聯動投資",
+     "note": "韓國政府力挺三星/現代/LG 三大集團在 AI 製造的主權戰略布局",
+     "src": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001041"
+    },
+    {
+     "name": "Tier IV（NEDO 計畫）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "私有；NEDO 選定；Series B 累計 >$54M；L4 商業部署中",
+     "products": "AutowareOS（開源自動駕駛）；NEDO 大規模合成駕駛數據集（多模態 AI 自動標注）；L4 公共交通/Robotaxi 商業化",
+     "note": "2026/3 發布 AI-based L4 ADS；與 Newmo 合作商業化；跨日美歐全球平台擴張",
+     "src": "https://www.prnewswire.com/news-releases/tier-iv-to-develop-large-scale-dataset-for-autonomous-driving-under-nedo-project-302649418.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "industrial_platform_jp"
+    },
+    {
+     "id": "industrial_platform_kr"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "physical_ai_robot"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NEDO 官網（GENIAC）",
+     "url": "https://www.nedo.go.jp/english/index.html"
+    },
+    {
+     "label": "Tier IV NEDO Project L4 Dataset（PR Newswire）",
+     "url": "https://www.prnewswire.com/news-releases/tier-iv-to-develop-large-scale-dataset-for-autonomous-driving-under-nedo-project-302649418.html"
+    },
+    {
+     "label": "Hyundai KRW 125.2T 五年投資（2026-02）",
+     "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001041"
+    },
+    {
+     "label": "韓國 MSIT 官網",
+     "url": "https://www.msit.go.kr/eng/index.do"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "industrial_platform_us",
+   "digital_twin_us"
+  ],
+  [
+   "industrial_platform_jp",
+   "digital_twin_us"
+  ],
+  [
+   "industrial_platform_us",
+   "machine_vision_us"
+  ],
+  [
+   "industrial_platform_jp",
+   "machine_vision_asia"
+  ],
+  [
+   "industrial_platform_kr",
+   "machine_vision_asia"
+  ],
+  [
+   "industrial_platform_us",
+   "edge_mlops"
+  ],
+  [
+   "digital_twin_us",
+   "machine_vision_us"
+  ],
+  [
+   "digital_twin_us",
+   "edge_mlops"
+  ],
+  [
+   "digital_twin_us",
+   "physical_ai_robot"
+  ],
+  [
+   "machine_vision_us",
+   "edge_mlops"
+  ],
+  [
+   "machine_vision_asia",
+   "edge_mlops"
+  ],
+  [
+   "machine_vision_asia",
+   "industrial_ai_cn"
+  ],
+  [
+   "edge_mlops",
+   "physical_ai_robot"
+  ],
+  [
+   "edge_mlops",
+   "ai_factory_tw"
+  ],
+  [
+   "physical_ai_robot",
+   "industrial_platform_jp"
+  ],
+  [
+   "physical_ai_robot",
+   "ai_factory_tw"
+  ],
+  [
+   "industrial_platform_kr",
+   "ai_factory_tw"
+  ],
+  [
+   "sovereign_industrial_jp_kr",
+   "physical_ai_robot"
+  ]
+ ],
+ "_proposed": {}
+}

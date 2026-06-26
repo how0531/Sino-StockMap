@@ -1,0 +1,671 @@
+{
+ "id": "connector_hsio",
+ "tab": "高速連接器",
+ "title": "高速連接器與互連供應鏈 (High-Speed Connectors & Interconnect)",
+ "subtitle": "High-Speed Connectors & Interconnect — AI 機櫃 224G→1.6T 世代把高速連接器/銅互連從被動零件推升為機櫃內 BOM 高價值卡位點。GB200 NVL72 單櫃逾 5,000 條（5,184）NVLink 銅纜、總長逾 2 英里、4 個 NVLink cartridge（Amphenol 統包），達 900GB/s 單向頻寬。Amphenol（APH）Q1'26 營收 $7.6B（+58%、IT datacom +81% 有機）、訂單 $9.4B、book-to-bill 1.24、Q2'26 指引 $8.1-8.2B、2026/01/12 完成併 CommScope CCS $10.5B（FY26 貢獻 ~$4.1B 補光纖、+$0.15 EPS）；TE 全球連接器市占第一、FY26Q2 訂單創高 $5.3B、FY26 AI 營收上修至 ~$2.4B、Q3'26 指引 $5.0B；嘉澤（3533）2026Q1 伺服器 +60% 佔比破 50%、大和 TP NT$3000；Credo FY26 營收 $1.3B（+206%）、併 DustPhotonics $750M 跨入光學。價值鏈：高頻介質/精密銅線材 → 背板/socket/I/O 連接器（TE/APH/Molex/嘉澤）→ DAC/ACC/AEC 銅纜+cartridge（Luxshare/貿聯/Credo）→ UQD 液冷快接（CPC/Stäubli/Parker）→ AI 機櫃整機。有別於 networking（交換晶片）、與光互連（cpo/optical_module）互為替代。⚠ 銅有物理天花板（200G/lane AEC 有效 ~3m），2028 Feynman 大規模轉光。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "APH Q1'26 營收",
+   "v": "$7.6B",
+   "sub": "YoY +58%·IT datacom +81%·Q2'26 指引 $8.1-8.2B",
+   "hot": true
+  },
+  {
+   "k": "GB200 NVL72 銅纜",
+   "v": ">5,000 條",
+   "sub": "5,184 條·總長 >2 英里·4 cartridge·900GB/s",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "mat",
+   "label": "高頻介質 / 精密銅線材 Materials",
+   "main": false
+  },
+  {
+   "id": "conn",
+   "label": "連接器本體：背板 / Socket / I/O Connectors",
+   "main": true
+  },
+  {
+   "id": "cable",
+   "label": "互連線材：DAC / ACC / AEC / Cartridge Cables",
+   "main": false
+  },
+  {
+   "id": "uqd",
+   "label": "液冷快接 UQD / Quick Disconnect",
+   "main": false
+  },
+  {
+   "id": "system",
+   "label": "AI 伺服器 / 機櫃整機 → 終端 Systems & Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "hf_material",
+   "row": "mat",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "高頻介質 / 精密 Twinax 銅線材",
+   "nameEn": "HF Dielectrics & Precision Twinax",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 92Ω 低損耗 Twinax 與 PTFE/LCP 絕緣體是 224G 訊號完整性瓶頸",
+   "desc": "高速連接器/銅纜所需的低介電損耗絕緣材料（PTFE / 液晶高分子 LCP）與高純度精密 Twinax 銅線芯（92Ω 阻抗），是 224G→448G 訊號完整性(SI)的物理基礎；與 ccl（PCB 銅箔基板）相鄰但聚焦連接器/纜線專用料。",
+   "marketSize": "連接器專用料",
+   "growth": "224G 拉動",
+   "share": "null",
+   "analysis": "224G PAM4 對絕緣損耗極敏感，連接器絕緣體與 Twinax 線芯材料是隱形瓶頸。PTFE/含氟介質與 LCP：Daikin（4061.T，含氟樹脂）、AGC（5201.T）、村田/Murata 系 LCP；高頻銅箔/銅線材與 ccl 主題之高速 CCL（聯茂 6213.TW、台光電 2383.TW、Panasonic 6752.T）相銜接。精密 Twinax 多由銅纜廠（Luxshare/貿聯）自製或向專業線材廠採購。此環與既有 ccl 主題在『高頻材料』有部分相鄰，但本節聚焦連接器/纜線專用絕緣與線芯，非 PCB 基板。",
+   "companies": [
+    {
+     "name": "Daikin 大金",
+     "ticker": "4061.T",
+     "country": "JP",
+     "share": "含氟樹脂龍頭",
+     "products": "PTFE / 含氟介質",
+     "note": "高頻連接器/纜線低損耗絕緣",
+     "src": "https://www.te.com/en/industries/data-centers-ai/technologies/224g-gigabit-ethernet-solution.html"
+    },
+    {
+     "name": "AGC 旭硝子",
+     "ticker": "5201.T",
+     "country": "JP",
+     "share": "含氟材料",
+     "products": "氟樹脂 / 玻纖布",
+     "note": "高速材料供應",
+     "src": "https://connectorsupplier.com/cable-backplanes-come-of-age/"
+    },
+    {
+     "name": "聯茂 ITEQ",
+     "ticker": "6213.TW",
+     "country": "TW",
+     "share": "高速 CCL（相鄰）",
+     "products": "高速/高頻 CCL",
+     "note": "與 ccl 主題交集；連接器板材銜接",
+     "src": "https://connectorsupplier.com/cable-backplanes-come-of-age/"
+    },
+    {
+     "name": "台光電 EMC",
+     "ticker": "2383.TW",
+     "country": "TW",
+     "share": "高速 CCL（相鄰）",
+     "products": "Megtron 等級 CCL",
+     "note": "AI 板材龍頭；連接器板材生態",
+     "src": "https://connectorsupplier.com/cable-backplanes-come-of-age/"
+    },
+    {
+     "name": "Murata 村田",
+     "ticker": "6981.T",
+     "country": "JP",
+     "share": "LCP / 被動",
+     "products": "LCP / 高頻被動元件",
+     "note": "高頻訊號路徑材料",
+     "src": "https://connectorsupplier.com/ofc-2026-high-speed-networking-in-the-ai-era/"
+    },
+    {
+     "name": "Luxshare（自製線材）",
+     "ticker": "002475.SZ",
+     "country": "CN",
+     "share": "精密 Twinax 自製",
+     "products": "92Ω Twinax 銅線芯",
+     "note": "高速對稱銅纜核心線材自製",
+     "src": "https://news.futunn.com/en/post/66943772/luxshare-precision-002475-in-depth-analysis-of-luxshare-precision-s"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "backplane_conn"
+    },
+    {
+     "id": "copper_cable"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TE 224G 方案 (官方)",
+     "url": "https://www.te.com/en/industries/data-centers-ai/technologies/224g-gigabit-ethernet-solution.html"
+    },
+    {
+     "label": "Cable Backplanes Come of Age (ConnectorSupplier)",
+     "url": "https://connectorsupplier.com/cable-backplanes-come-of-age/"
+    }
+   ]
+  },
+  {
+   "id": "backplane_conn",
+   "row": "conn",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "背板 / I/O 高速連接器（224G）",
+   "nameEn": "Backplane & I/O Connectors",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 全球寡占 TE>APH>Molex；224G 背板連接器四大平台 Paladin/Inception/Slingshot/NovaRay",
+   "desc": "AI 機櫃內 224G PAM4 背板連接器、OSFP/QSFP-DD I/O 連接器、MCIO/SlimSAS（PCIe Gen6）內部連接器，是把交換晶片/GPU/光模組接起來的核心高速介面。全球連接器市場由 TE/APH/Molex 三強寡占。",
+   "marketSize": "TE/APH/Molex 三強",
+   "growth": "224G→1.6T",
+   "share": "null",
+   "analysis": "全球連接器市占：TE Connectivity（TEL，>12% 第一）、Amphenol（APH，~11.9% 第二）、Molex（Koch 私有，第三）；前五大 TE/APH/Molex/Aptiv/Foxconn 合計約 35%。224G 背板連接器四大平台：Amphenol Paladin HD2、Molex Inception（genderless 224G）、TE AdrenaLINE Slingshot（hermaphroditic 92Ω）、Samtec NovaRay/AcceleRate HP。APH Q1'26 營收 $7.6B(+58%)、IT datacom +81% 有機（最大成長引擎）、book-to-bill 1.24、Q2'26 指引 $8.1-8.2B（高於市場 ~$7.7B）、2026/01/12 完成併 CommScope CCS $10.5B（FY26 貢獻 ~$4.1B 補光纖/寬頻、+$0.15 EPS、史上最大併購）；TE FY26Q2 訂單創高 $5.3B(+25%)、FY26 AI 營收上修至 ~$2.4B（再加 ~$200M）、Q3'26 指引 $5.0B(+10%)、EPS ~$2.83、capex 升至 ~6%。1.6T 交換器 2026 首年量產、1-2 年衝破 500 萬埠，OSFP/QSFP-DD 與背板連接器隨之放量；NVLink 6（Rubin/Kyber）電氣 lane 升至 448G（NVLink 5 為 224G）、簡單雙向 SerDes，背板/連接器 SI 門檻再升。",
+   "companies": [
+    {
+     "name": "TE Connectivity",
+     "ticker": "TEL",
+     "country": "CH",
+     "share": "全球連接器第一 >12%",
+     "products": "AdrenaLINE Slingshot 224G / OSFP / 背板連接器",
+     "note": "FY26Q2 訂單創高 $5.3B(+25%)；FY26 AI 營收上修至 ~$2.4B（再加 ~$200M）；Q3'26 指引 $5.0B(+10%)、EPS ~$2.83；capex 升至 ~6%",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/04/22/te-connectivity-tel-q2-2026-earnings-transcript/"
+    },
+    {
+     "name": "Amphenol",
+     "ticker": "APH",
+     "country": "US",
+     "share": "全球連接器第二 ~11.9%",
+     "products": "Paladin HD2 224G / 高速背板 / NVLink cartridge",
+     "note": "Q1'26 $7.6B(+58%)、IT datacom +81% 有機、b/b 1.24；Q2'26 指引 $8.1-8.2B；2026/01/12 完成併 CommScope CCS $10.5B（FY26 ~$4.1B、+$0.15 EPS）；股價歷史高",
+     "src": "https://www.businesswire.com/news/home/20260112617512/en/Amphenol-Completes-Acquisition-of-CCS-Business-From-CommScope"
+    },
+    {
+     "name": "Molex (Koch 旗下)",
+     "ticker": "—",
+     "country": "US",
+     "share": "全球連接器第三",
+     "products": "Inception 224G genderless 背板 / CX2-DS / Mirror Mezz",
+     "note": "Koch Industries 私有（2013 併購 $7.2B）；首推 chip-to-chip 224G",
+     "src": "https://www.molex.com/en-us/products/connectors/backplane-connectors/inception-backplane-connectors-and-cable-system"
+    },
+    {
+     "name": "Samtec",
+     "ticker": "—",
+     "country": "US",
+     "share": "高速 mezzanine 利基",
+     "products": "NovaRay 224G / AcceleRate HP",
+     "note": "私有；高密度 mezzanine 連接器",
+     "src": "https://blog.samtec.com/post/sc25-and-samtec-new-products-technologies-next-gen-performance/"
+    },
+    {
+     "name": "Aptiv",
+     "ticker": "APTV",
+     "country": "IE",
+     "share": "前五大（車用為主）",
+     "products": "高速連接器 / 訊號互連",
+     "note": "車用為主、資料連接卡位",
+     "src": "https://www.richardelectronics.com/blog/categories/connector/top-25-connector-manufacturing-companies-leading-the-industry-in-2025"
+    },
+    {
+     "name": "中航光电 AVIC Jonhon",
+     "ticker": "002179.SZ",
+     "country": "CN",
+     "share": "中國高速連接器龍頭",
+     "products": "224Gbps 近封裝高速銅纜模組 / 高速連接器",
+     "note": "2026/03 CPCA 發 224G 近封裝模組、2H26 批量；以國內生態配套為主",
+     "src": "https://www.connector-world.com/home/cms/detail/id/15281"
+    },
+    {
+     "name": "Luxshare 立訊精密",
+     "ticker": "002475.SZ",
+     "country": "CN",
+     "share": "中國互連全棧",
+     "products": "224G Intrepid NEXUS 背板連接器 / KOOLIO CPC/NPC",
+     "note": "2025 通訊資料中心營收 RMB 245.7 億(+33.8%)；中國/海外 AI 叢集商用",
+     "src": "https://news.futunn.com/en/post/66943772/luxshare-precision-002475-in-depth-analysis-of-luxshare-precision-s"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "hf_material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "copper_cable"
+    },
+    {
+     "id": "ai_system"
+    }
+   ],
+   "sources": [
+    {
+     "label": "APH Q1'26 法說逐字 (Motley Fool)",
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/04/30/amphenol-aph-q1-2026-earnings-transcript/"
+    },
+    {
+     "label": "連接器市場排名 (ConnectorSupplier)",
+     "url": "https://connectorsupplier.com/a-changing-landscape-in-the-connector-industry/"
+    },
+    {
+     "label": "Molex Inception 224G (官方)",
+     "url": "https://www.molex.com/en-us/products/connectors/backplane-connectors/inception-backplane-connectors-and-cable-system"
+    }
+   ]
+  },
+  {
+   "id": "socket",
+   "row": "conn",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "CPU / GPU / 加速器 Socket",
+   "nameEn": "CPU/GPU/Accelerator Sockets",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · 嘉澤全球 socket 約 30% 市占；NPO Socket（光學引擎插槽）2027 量產為非線性槓桿",
+   "desc": "CPU/GPU/AI 加速器的 LGA socket、OAM UBB 加速器插槽，以及新興 NPO Socket（光學引擎插槽）。隨 Intel/AMD/NVIDIA 平台升級單價提升，NPO 把 socket 廠拉進矽光子/CPO 生態。",
+   "marketSize": "嘉澤/Foxconn",
+   "growth": "平台升級+NPO",
+   "share": "null",
+   "analysis": "嘉澤（3533.TW，Lotes）為台灣 socket 龍頭、全球市占約 30%：2026Q1 營收 93.28 億創高、EPS 21.37、伺服器 +60% 佔比首破 50%、2026 營收看增 10-20%；AMD Venice（SP7 插槽）+ Intel Oak Stream 新世代平台腳位大增、帶動 ASP +15% 以上，Q2 伺服器出貨估季增 ~15%、下半年毛利率回溫。NPO Socket 分工明確：嘉澤負責電訊號（基板↔光學引擎 Socket），子公司嘉基負責純光學 CPO 專案；NPO 2027 量產、未來 3-5 年成主流，大和估 2027 NVIDIA 交換器用約 3,000 萬顆光學引擎、每顆搭 NPO 插槽（ASP $10-15），以嘉澤市占約 30% 推算 2027 約貢獻 6% 總營收，大和 TP NT$3,000、P/E 32x。Foxconn FIT（鴻海互連）為 LGA socket/OAM UBB OEM、AI 機櫃組裝約 40% 市占。",
+   "companies": [
+    {
+     "name": "嘉澤 Lotes",
+     "ticker": "3533.TW",
+     "country": "TW",
+     "share": "全球 socket ~30%",
+     "products": "CPU/GPU LGA socket / NPO Socket / GPU socket",
+     "note": "2026Q1 營收 93.28 億創高、EPS 21.37、伺服器 +60% 佔比破 50%；AMD Venice SP7+Intel Oak Stream 帶 ASP +15%；NPO 2027 量產（嘉基做 CPO 光學）；大和 TP NT$3000",
+     "src": "https://vocus.cc/article/6a06639afd897800018b1b5c"
+    },
+    {
+     "name": "Foxconn FIT 鴻海互連",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "socket/UBB OEM",
+     "products": "LGA socket / OAM UBB / 連接器",
+     "note": "AI 機櫃組裝約 40% 市占、過半 NVIDIA AI 硬體；Q1'26 營收 $66.6B(+30%)",
+     "src": "https://www.aicerts.ai/news/foxconn-reshapes-hardware-supply-chain-for-ai-servers/"
+    },
+    {
+     "name": "Amphenol（socket）",
+     "ticker": "APH",
+     "country": "US",
+     "share": "高速 socket 卡位",
+     "products": "GPU/加速器 socket / 高速 mezzanine",
+     "note": "連接器巨頭跨足 socket",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/04/30/amphenol-aph-q1-2026-earnings-transcript/"
+    },
+    {
+     "name": "Molex（socket）",
+     "ticker": "—",
+     "country": "US",
+     "share": "socket 卡位",
+     "products": "高速 socket / Mirror Mezz",
+     "note": "Koch 私有；高速 mezzanine",
+     "src": "https://www.molex.com/en-us/products/connectors/backplane-connectors/inception-backplane-connectors-and-cable-system"
+    },
+    {
+     "name": "TE（socket）",
+     "ticker": "TEL",
+     "country": "CH",
+     "share": "socket 卡位",
+     "products": "高速 socket / 連接器",
+     "note": "連接器全球第一跨足 socket",
+     "src": "https://finance.yahoo.com/markets/stocks/articles/te-connectivity-ltd-q2-2026-204519165.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "hf_material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_system"
+    }
+   ],
+   "sources": [
+    {
+     "label": "嘉澤法說 Q1 創高/NPO (Vocus)",
+     "url": "https://vocus.cc/article/6a06639afd897800018b1b5c"
+    },
+    {
+     "label": "嘉澤 大和 TP3000 (CMNews)",
+     "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-50a68412-2b6f-11f1-ad2d-91189ba590e6"
+    }
+   ]
+  },
+  {
+   "id": "copper_cable",
+   "row": "cable",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "DAC / ACC / AEC 銅纜 + NVLink Cartridge",
+   "nameEn": "DAC / ACC / AEC & NVLink Cartridges",
+   "competition": "highgrowth",
+   "single": "鎖喉點 · GB200 spine 5,184 條銅纜打包成 4 個 cartridge 由 Amphenol 統包；AEC 領導 Credo",
+   "desc": "機櫃內銅互連線材：被動 DAC、主動 ACC、含 retimer/DSP 的 AEC，以及把數千條 NVLink 銅纜整段打包的 cable cartridge。是 GB200/Rubin scale-up 銅背板成長最快的環節。",
+   "marketSize": "$2.8B(2028)",
+   "growth": "DAC+25%/AEC+45% CAGR",
+   "share": "null",
+   "analysis": "GB200 NVL72 單櫃 5,184 條 NVLink 銅纜、總長逾 2 英里、打包成 4 個垂直 cartridge（由 Amphenol 統包，賣『子系統』非單條纜，進入障礙高）；Rubin NVL144（2H26）沿用含 5,184 條被動銅纜的 spine 向後相容，NVLink 6 以簡單雙向 SerDes 將電氣 lane 從 224G（NVLink 5）升至 448G、單 GPU 3.6TB/s；Rubin Ultra/Kyber（72→144 socket）改採『銅 midplane』取代數千條跨耦銅纜，cartridge/背板形態演進但銅在 scale-up 仍續用。LightCounting：高速銅纜市場 2028 翻倍至 $28 億，DAC/AEC 2024-2028 CAGR 各 25%/45%。AEC 領導者 Credo（CRDO）FY26（~4 月止）營收 $1.3B（+206%）、Q4 $437M（+157%）、200G/lane 開始放量、FY27 指引 >80% 成長並以 $750M 併 DustPhotonics 垂直整合進軍光學 DSP/PIX（從純 AEC 走向銅光雙棲）；高速纜組貿聯-KY（3665.TW，2026Q1 營收 208.6 億創高、EPS 11.66 YoY +37%、GM 28.77%、AEC 400G 放量、1.6T 研發、併 XFS 強化光學、TP NT$3,380）、Luxshare（DAC/ACC/Cable Cartridge 商用、2025 通訊資料中心 RMB 245.7 億 +33.8%、布局 448G）、宏致（3605.TWO，MCIO 高速線 2026 量產、AI 占比約 40%）、兆龙互连（300913.SZ，高速對稱銅纜/MCIO、泰國廠）。",
+   "companies": [
+    {
+     "name": "Amphenol（cartridge）",
+     "ticker": "APH",
+     "country": "US",
+     "share": "NVLink cartridge 統包",
+     "products": "NVLink Cable Cartridge / Paladin 銅纜 / DAC",
+     "note": "GB200 spine 5,184 條銅纜打包 4 cartridge；子系統模式高障礙",
+     "src": "https://www.diskmfr.com/nvidia-gpu-copper-cable-interconnect-technology-explained/"
+    },
+    {
+     "name": "Credo Technology",
+     "ticker": "CRDO",
+     "country": "US",
+     "share": "AEC 主動電纜領導",
+     "products": "AEC 224G/200G-lane / HiWire / 光學 DSP / PIX",
+     "note": "FY26 營收 $1.3B(+206%)、Q4 $437M(+157%)；FY27 指引 >80% 成長；併 DustPhotonics $750M 跨入光學（銅光雙棲）",
+     "src": "https://www.sahmcapital.com/news/content/credo-technology-group-q4-2026-earnings-call-complete-transcript-2026-06-02"
+    },
+    {
+     "name": "貿聯-KY BizLink",
+     "ticker": "3665.TW",
+     "country": "TW",
+     "share": "高速纜組/AEC",
+     "products": "AEC 400G / 高速線束 / DAC/ACC / 混合銅光 / 800V HVDC",
+     "note": "2026Q1 營收 208.6 億創高、EPS 11.66(YoY +37%)、GM 28.77%；1.6T 研發；併 XFS 強化光學；TP NT$3,380",
+     "src": "https://vocus.cc/article/6a032991fd897800013f174b"
+    },
+    {
+     "name": "Luxshare 立訊精密",
+     "ticker": "002475.SZ",
+     "country": "CN",
+     "share": "互連全棧（銅光熱電）",
+     "products": "DAC / ACC / Lite Active Cable / Intrepid Cable Cartridge",
+     "note": "224G KOOLIO/Cartridge 中國海外 AI 叢集商用；2026/02 展 448G",
+     "src": "https://www.prnewswire.com/news-releases/from-interconnect-to-power-and-thermal-management-luxshare-ict-expands-its-role-in-ai-data-center-infrastructure-302752966.html"
+    },
+    {
+     "name": "宏致 Aces",
+     "ticker": "3605.TWO",
+     "country": "TW",
+     "share": "MCIO/高速線",
+     "products": "MCIO / PCIe Gen6 / GPU/SSD 連接器 / 高速線材",
+     "note": "MCIO 高速線 2026 量產；2026 EPS 估破 6 元、AI 占比約 40%；切入 ASIC 供應鏈",
+     "src": "https://cmnews.com.tw/article/marketwatcher-4b28d31f-49f6-11f1-8140-1484fa8bb93c"
+    },
+    {
+     "name": "兆龙互连 Zhaolong",
+     "ticker": "300913.SZ",
+     "country": "CN",
+     "share": "中國高速銅纜",
+     "products": "高速對稱銅纜 / MCIO / DAC/AEC 組件",
+     "note": "泰國廠 ISO9001/ETL/UL；高速線 10G→100G+ 試產",
+     "src": "https://news.futunn.com/en/post/52106875/zhejiang-zhaolong-interconnect-technology-300913-leading-in-high-speed-interconnection"
+    },
+    {
+     "name": "TE（cable）",
+     "ticker": "TEL",
+     "country": "CH",
+     "share": "纜組/背板",
+     "products": "Slingshot cabled backplane / OSFP cable assembly",
+     "note": "224G cabled backplane（Twinax 銅纜）",
+     "src": "https://www.te.com/en/products/cable-assemblies/intersection/adrenaline-slingshot-224g-cabled-backplane-solutions.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "hf_material"
+    },
+    {
+     "id": "backplane_conn"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_system"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GB200 NVL72 銅纜 cartridge (DiskMFR)",
+     "url": "https://www.diskmfr.com/nvidia-gpu-copper-cable-interconnect-technology-explained/"
+    },
+    {
+     "label": "高速銅纜市場 2028 $2.8B (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/global-active-copper-cables-market"
+    },
+    {
+     "label": "Rubin networking math (Wheeler's)",
+     "url": "https://www.wheelersnetwork.com/2025/11/decoding-nvidias-rubin-networking-math.html"
+    }
+   ]
+  },
+  {
+   "id": "uqd_conn",
+   "row": "uqd",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "液冷快接 UQD / Quick Disconnect",
+   "nameEn": "Universal Quick Disconnect (UQD)",
+   "competition": "oligopoly",
+   "single": "新增環節 · AI 機櫃液冷標配；OCP UQD 1.0 + NVIDIA NPN 認證；CPC/Stäubli/Parker 寡占",
+   "desc": "AI 機櫃由氣冷轉液冷後，每機櫃必備的不漏液萬用快接（UQD）。OCP UQD 1.0 標準化推動 multi-source，是被銅光之爭掩蓋、但純度高、格局清晰的新增卡位環節。",
+   "marketSize": "OCP 標準化",
+   "growth": "液冷標配新增環節",
+   "share": "null",
+   "analysis": "AI 機櫃液冷標配讓 UQD 從零成為每櫃必備。OCP UQD 1.0 規格 + NVIDIA NPN 認證標準化，反而擴大 multi-source 機會。主供：CPC（Colder Products，Dover DOV 旗下，Everis UQD）、Stäubli（瑞士私有，UQD/UQDB）、Parker Hannifin（PH，UQD Series、OCP Inspired）、CEJN（SE）；中國中航光电（002179.SZ，液冷快接+冷板+管路，與高速連接器同台卡位、液冷需求翻倍）。此為純度高、競爭格局清晰的小而美卡位，與既有 data_center_cooling 主題（整體散熱）在『快接零件』顆粒度上互補。",
+   "companies": [
+    {
+     "name": "CPC (Colder Products)",
+     "ticker": "DOV",
+     "country": "US",
+     "share": "UQD 液冷快接領導",
+     "products": "Everis UQD / 不漏液快接",
+     "note": "Dover 旗下；OCP 標準、hyperscaler 液冷",
+     "src": "https://www.cpcworldwide.com/Liquid-Cooling/Products/Universal-Quick-Disconnects-UQDs"
+    },
+    {
+     "name": "Stäubli",
+     "ticker": "—",
+     "country": "CH",
+     "share": "UQD 快接",
+     "products": "UQD / UQDB 萬用快接",
+     "note": "瑞士私有；AI 液冷快接",
+     "src": "https://www.staubli.com/global/en/fluid-connectors/products/quick-and-dry-disconnect-couplings/thermal-management/uqd-universal-quick-disconnect.html"
+    },
+    {
+     "name": "Parker Hannifin",
+     "ticker": "PH",
+     "country": "US",
+     "share": "UQD 快接",
+     "products": "UQD Series（OCP Inspired）",
+     "note": "OCP UQD 1.0 規格產品",
+     "src": "https://ph.parker.com/us/en/product-list/non-spill-liquid-cooling-universal-quick-disconnect-couplings-uqd-series"
+    },
+    {
+     "name": "CEJN",
+     "ticker": "—",
+     "country": "SE",
+     "share": "UQD 快接",
+     "products": "UQD couplings",
+     "note": "瑞典；液冷快接",
+     "src": "https://www.cpcworldwide.com/Liquid-Cooling/Products/Universal-Quick-Disconnects-UQDs"
+    },
+    {
+     "name": "中航光电 AVIC Jonhon",
+     "ticker": "002179.SZ",
+     "country": "CN",
+     "share": "中國液冷快接+高速連接",
+     "products": "液冷快接 / 冷板 / 高速連接器",
+     "note": "液冷與高速連接需求翻倍；國內生態配套",
+     "src": "https://guba.eastmoney.com/news,002179,1707418883.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "hf_material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_system"
+    }
+   ],
+   "sources": [
+    {
+     "label": "UQD OCP 1.0 規格 (OCP)",
+     "url": "https://www.opencompute.org/documents/ocp-universal-quick-disconnect-uqd-specification-rev-1-0-2-pdf"
+    },
+    {
+     "label": "UQD CPC (官方)",
+     "url": "https://www.cpcworldwide.com/Liquid-Cooling/Products/Universal-Quick-Disconnects-UQDs"
+    }
+   ]
+  },
+  {
+   "id": "ai_system",
+   "row": "system",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "AI 伺服器 / 機櫃整機 → 終端需求",
+   "nameEn": "AI Servers / Racks & End Demand",
+   "competition": "competitive",
+   "single": "⚠ 高度集中於 NVIDIA NVL72；連接器是機櫃 BOM 最易被砍單/殺價的被動環節",
+   "desc": "高速連接器/銅互連的下游：AI 伺服器/機櫃整機（Foxconn/廣達/NVIDIA NVL72）與終端 hyperscaler/NeoCloud。需求由 AI capex 驅動，但連接器作為被動環節對週期敏感。",
+   "marketSize": "需求錨點",
+   "growth": "AI capex 驅動",
+   "share": "null",
+   "analysis": "整機：Foxconn（2317.TW，AI 機櫃組裝約 40%、過半 NVIDIA AI 硬體、Q1'26 營收 $66.6B +30%）、廣達（2382.TW）、NVIDIA NVL72/Rubin NVL144（2H26 量產）。終端：hyperscaler（AWS/Microsoft/Google/Meta）+ NeoCloud（與既有 server/neocloud 主題銜接）。⚠ 絃外之音：銅在 scale-up 仍是 2026-2027 成長最快段——GTC'26（3/16 San Jose）揭 NVLink 6 以雙向 SerDes 把電氣 lane 拉到 448G、Rubin 沿用 5,184 條被動銅纜 spine，Rubin Ultra『Kyber』機櫃（72→144 socket）改用銅 midplane 取代跨耦銅纜叢；但 200G/lane 下 AEC 有效長度仍僅約 3m，CPO 滲透率 2027 前低個位數、scale-out/超大叢集才轉光（Credo 已併 DustPhotonics 銅光雙棲、貿聯併 XFS）——銅連接器是高確定性但有天花板的選擇權；且 GB200 曾延宕、hyperscaler 曾砍單，連接器是 BOM 中最易被殺價的被動環節。",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "scale-up 規格主導",
+     "products": "GB200 NVL72 / Rubin NVL144 / Kyber / NVLink 6 448G",
+     "note": "NVL72 用 5,184 銅纜；Rubin 沿用 spine；NVLink 6 電氣 lane 448G、Kyber 改用銅 midplane；銅光並行",
+     "src": "https://www.wheelersnetwork.com/2025/11/decoding-nvidias-rubin-networking-math.html"
+    },
+    {
+     "name": "Foxconn 鴻海",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "AI 機櫃組裝 ~40%",
+     "products": "NVL72 機櫃整機 / UBB / 系統整合",
+     "note": "過半 NVIDIA AI 硬體；Q1'26 營收 $66.6B(+30%)",
+     "src": "https://www.tomshardware.com/news/foxconn-produces-over-half-of-nvidia-ai-hardware-report"
+    },
+    {
+     "name": "廣達 Quanta",
+     "ticker": "2382.TW",
+     "country": "TW",
+     "share": "AI 伺服器 ODM",
+     "products": "AI server / 機櫃",
+     "note": "主要 GB200 機櫃 ODM",
+     "src": "https://www.aicerts.ai/news/foxconn-reshapes-hardware-supply-chain-for-ai-servers/"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "hyperscaler 終端",
+     "products": "Azure AI 資料中心",
+     "note": "Credo AEC 客戶；液冷機櫃",
+     "src": "https://connectorsupplier.com/ofc-2026-high-speed-networking-in-the-ai-era/"
+    },
+    {
+     "name": "Amazon AWS",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "hyperscaler 終端",
+     "products": "AWS AI 資料中心",
+     "note": "Credo AEC / 貿聯客戶",
+     "src": "https://www.threads.com/@wjsfinance/post/DQ2gCkuk5n3/"
+    },
+    {
+     "name": "Google",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "hyperscaler 終端",
+     "products": "TPU/AI 資料中心",
+     "note": "高速互連終端需求",
+     "src": "https://connectorsupplier.com/ofc-2026-high-speed-networking-in-the-ai-era/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "backplane_conn"
+    },
+    {
+     "id": "socket"
+    },
+    {
+     "id": "copper_cable"
+    },
+    {
+     "id": "uqd_conn"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "GB200 NVL72 OCP (NVIDIA Blog)",
+     "url": "https://developer.nvidia.com/blog/nvidia-contributes-nvidia-gb200-nvl72-designs-to-open-compute-project/"
+    },
+    {
+     "label": "銅到限制/光取代 (The Register)",
+     "url": "https://www.theregister.com/on-prem/2026/04/05/nvidia-embraces-optical-scale-up-as-copper-reaches-limits/5225238"
+    },
+    {
+     "label": "NVIDIA 撐銅/CPO 並行 (SDxCentral)",
+     "url": "https://www.sdxcentral.com/news/nvidia-backs-copper-in-next-gen-interconnects-amid-push-into-co-packaged-optics/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "hf_material",
+   "backplane_conn"
+  ],
+  [
+   "hf_material",
+   "socket"
+  ],
+  [
+   "hf_material",
+   "copper_cable"
+  ],
+  [
+   "hf_material",
+   "uqd_conn"
+  ],
+  [
+   "backplane_conn",
+   "copper_cable"
+  ],
+  [
+   "backplane_conn",
+   "ai_system"
+  ],
+  [
+   "socket",
+   "ai_system"
+  ],
+  [
+   "copper_cable",
+   "ai_system"
+  ],
+  [
+   "uqd_conn",
+   "ai_system"
+  ]
+ ],
+ "_proposed": {}
+}

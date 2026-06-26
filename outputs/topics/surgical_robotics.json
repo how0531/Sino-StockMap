@@ -1,0 +1,552 @@
+{
+ "id": "surgical_robotics",
+ "tab": "手術機器人",
+ "title": "手術機器人供應鏈 (Surgical & Medical Robotics)",
+ "subtitle": "手術機器人 — 半導體式「裝機 + 耗材」商業模式的醫療版：賣平台只是入場券，真正的價值在 EndoWrist 等單次使用器械與服務合約形成的 85% 經常性收入。市場 2025 約 $129 億 → 2035 拚 $500~600 億（CAGR ~15~16.5%）。龍頭 Intuitive Surgical（ISRG）1Q26 營收 $27.7 億（+23%）、全球手術量 +17%、da Vinci 5 單季裝機 232 台、全球裝機破 11,395 台，軟組織機器人市占近 60%——razor-blade 模式 + FDA 壁壘 = 護城河。骨科/脊椎為第二戰場：Stryker Mako（2026 推手持式 Mako RPS）、Zimmer ROSA（2025 併 Monogram AI 半自主膝關節）、Globus Medical（ExcelsiusFlex 切入全膝）。挑戰者：Medtronic Hugo（2025/12 取得美國泌尿科 FDA 清關、啟動 purposeful launch）、J&J Ottava（1Q26 已遞 FDA de novo、減重手術試驗達標）。利基龍頭 PROCEPT（PRCT）AQUABEAM 攝護腺 Aquablation，1Q26 營收 +20%、裝機 765 台（+40%）。價值鏈：上游精密諧波減速機/伺服/力回饋/內視鏡光學（Harmonic Drive、Olympus 內視鏡 ~70% 市占）→ OEM/平台廠 → 平台+單次使用耗材（毛利核心）→ 醫院手術室 + 滅菌再處理（STERIS）。絃外之音：投資手術機器人不該只看「裝機數」，而要看「每台年化耗材拉貨」——ISRG 的器械+服務佔營收 85%、手術量複利成長，比一次性賣機台的骨科廠更具現金流可預測性；而 STERIS 這類滅菌/再處理是『不管誰贏平台戰、手術量上升都受惠』的賣鏟人。台股以上銀（2049）諧波減速機/精密傳動間接卡位。⚠ 與既有 robot / humanoid_components（工業/人形機器人本體與關節零組件）部分重疊；本主題聚焦『FDA 醫材壁壘 × razor-blade 耗材 × 手術量驅動』的手術/醫療機器人視角。非投資建議。",
+ "category": "health",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "手術機器人市場",
+   "v": "$500~600億",
+   "sub": "2025 約 $129 億 → 2035（CAGR ~15~16.5%）",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "ISRG 1Q26 手術量+17%、da Vinci5 裝機232台·Hugo/Ottava 挑戰者進場＋關稅/醫院資本支出",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "上游：精密傳動・力回饋・內視鏡光學（關鍵零組件）",
+   "main": false
+  },
+  {
+   "id": "oem",
+   "label": "OEM／平台廠（系統整合・FDA 取證）",
+   "main": false
+  },
+  {
+   "id": "platform",
+   "label": "平台 + 單次使用耗材（razor-blade 經常性收入）",
+   "main": true
+  },
+  {
+   "id": "downstream",
+   "label": "下游：醫院手術室・滅菌再處理・手術量",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "precision_components",
+   "row": "upstream",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "上游：精密諧波減速機 / 伺服 / 力回饋",
+   "nameEn": "Precision Harmonic Drives · Servo · Force Feedback",
+   "competition": "oligopoly",
+   "single": "隱性單點 · 諧波減速機高扭矩精度由日系 Harmonic Drive Systems 寡占，是手術機器人關節背後最被低估的卡位",
+   "desc": "手術機器人「關節」的核心——諧波減速機（高精度零背隙）、伺服馬達、力回饋/觸覺感測器。da Vinci 5 首度整合 FDA 核准的力回饋觸覺技術，讓上游感測/傳動含量再升級。",
+   "marketSize": "精密減速機/伺服 數十億美元級（醫療為高毛利利基）",
+   "growth": "da Vinci 5 力回饋帶動感測器/傳動含量提升",
+   "share": "null",
+   "analysis": "諧波減速機（harmonic drive / strain wave gear）提供零背隙、高扭矩密度的關節傳動，醫療等級認證壁壘高、單價遠高於工業件——日系 Harmonic Drive Systems（6324.T）為全球寡占龍頭，醫療為其高毛利利基。da Vinci 5 於 2024 成為首個 FDA 核准整合力回饋觸覺的平台，讓外科醫師感知推/拉力與組織張力，使力感測器、應變規與精密傳動的單機含量上升。台股以上銀（2049.TW，諧波減速機/精密傳動）、全球傳動（4540.TW，滾珠螺桿/線性傳動）間接卡位醫療機器人傳動，但醫療佔比仍小、主力在工業/人形。此環節零組件與 robot / humanoid_components 主題重疊，本主題聚焦其在 FDA 醫材的高毛利應用。",
+   "companies": [
+    {
+     "name": "Harmonic Drive Systems",
+     "ticker": "6324.T",
+     "country": "JP",
+     "share": "諧波減速機全球寡占",
+     "products": "諧波減速機 / 精密伺服致動器（醫療等級）",
+     "note": "手術機器人關節高精度傳動核心；醫療為高毛利利基",
+     "src": "https://www.surgicalroboticstechnology.com/company/harmonic-drive-llc/"
+    },
+    {
+     "name": "上銀科技 Hiwin",
+     "ticker": "2049.TW",
+     "country": "TW",
+     "share": "精密傳動台廠龍頭",
+     "products": "諧波減速機 / 滾珠螺桿 / 線性滑軌",
+     "note": "台股醫療/機器人傳動代表；醫療佔比仍小、主力工業",
+     "src": "https://www.surgicalroboticstechnology.com/company/harmonic-drive-llc/"
+    },
+    {
+     "name": "全球傳動 TBI Motion",
+     "ticker": "4540.TW",
+     "country": "TW",
+     "share": "線性傳動",
+     "products": "滾珠螺桿 / 線性模組",
+     "note": "工業自動化為主，間接卡位醫療機器人傳動"
+    },
+    {
+     "name": "Maxon / Faulhaber",
+     "ticker": "—",
+     "country": "CH",
+     "share": "精密微馬達",
+     "products": "醫療等級微型伺服馬達",
+     "note": "未上市/私有；手術機器人精密致動微馬達供應"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "optics_endoscope"
+    },
+    {
+     "id": "oem_platform"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Harmonic Drive：手術機器人精密致動器",
+     "url": "https://www.surgicalroboticstechnology.com/company/harmonic-drive-llc/"
+    },
+    {
+     "label": "da Vinci 5 力回饋觸覺技術 (IEEE Pulse)",
+     "url": "https://www.embs.org/pulse/articles/feel-the-precision-next-gen-robotic-surgery-with-haptic-feedback/"
+    }
+   ]
+  },
+  {
+   "id": "optics_endoscope",
+   "row": "upstream",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "內視鏡光學 / 影像 / 視覺系統",
+   "nameEn": "Endoscope Optics · Imaging · Vision",
+   "competition": "oligopoly",
+   "single": "卡位點 · Olympus 全球內視鏡市占約 70%，是『不管哪台手術機器人勝出、微創影像都要過它的手』",
+   "desc": "手術機器人的「眼睛」——高解析內視鏡、3D/4K/螢光影像、影像感測器。Olympus 在軟式內視鏡市場約 70% 市占，並切入內腔機器人；影像感測由 Sony 等供給。",
+   "marketSize": "內視鏡市場約 $25 億（Olympus ~70% 市占）",
+   "growth": "Olympus 2025 與 EndoRobotics 簽全球獨家經銷、推 GI 內腔機器人",
+   "share": "null",
+   "analysis": "微創手術的影像鏈是高壁壘寡占：Olympus（7733.T）佔全球內視鏡約 70% 市占、>60% 營收來自內視鏡解決方案，2026/5 與 EndoRobotics 簽全球獨家經銷切入機器人輔助 GI 內視鏡，並與 Revival Healthcare 合資 Swan EndoSurgical 開發內腔手術機器人——是『不管哪台平台勝出、微創影像都要過它的手』的關鍵卡位。影像感測器（CMOS）由 Sony（6758.T）等供給；Sony 與 Olympus 合資成立 Sony Olympus Medical Solutions（Sony 持股 51%、未單獨上市），主力在 4K/3D 手術影像。此環節為 ISRG 內製（da Vinci 自有影像）與第三方供給並存。",
+   "companies": [
+    {
+     "name": "Olympus",
+     "ticker": "7733.T",
+     "country": "JP",
+     "share": "內視鏡 ~70% 全球市占",
+     "products": "軟式/硬式內視鏡 / EndoTherapy / 內腔機器人",
+     "note": "2026/5 與 EndoRobotics 全球獨家經銷；合資 Swan EndoSurgical 開發內腔手術機器人",
+     "src": "https://www.olympus-global.com/news/2025/nr02877.html"
+    },
+    {
+     "name": "Sony",
+     "ticker": "6758.T",
+     "country": "JP",
+     "share": "醫療影像感測/4K-3D",
+     "products": "醫療 CMOS 影像感測器 / 手術 4K-3D 影像",
+     "note": "手術影像感測供應；曾與 Olympus 合資醫療影像"
+    },
+    {
+     "name": "HOYA / Pentax Medical",
+     "ticker": "7741.T",
+     "country": "JP",
+     "share": "內視鏡第二陣營",
+     "products": "軟式內視鏡 / 醫療光學玻璃",
+     "note": "內視鏡與醫療光學材料供應"
+    },
+    {
+     "name": "Karl Storz",
+     "ticker": "—",
+     "country": "DE",
+     "share": "硬式內視鏡領導",
+     "products": "硬式內視鏡 / 微創影像",
+     "note": "未上市；硬式內視鏡與微創影像強勢"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "precision_components"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "oem_platform"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Olympus 與 EndoRobotics 內腔機器人合作 (2025)",
+     "url": "https://www.olympus-global.com/news/2025/nr02877.html"
+    },
+    {
+     "label": "Olympus 內視鏡 ~70% 市占 (Simply Wall St)",
+     "url": "https://simplywall.st/stocks/jp/healthcare/tse-7733/olympus-shares/news/olympus-robot-assisted-gi-endoscopy-push-could-be-a-game-cha"
+    }
+   ]
+  },
+  {
+   "id": "oem_platform",
+   "row": "oem",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "OEM／平台廠（系統整合・FDA 取證）",
+   "nameEn": "OEM Platform Makers · System Integration · FDA Clearance",
+   "competition": "highgrowth",
+   "single": "進場潮 · Medtronic Hugo（2025/12 美國泌尿科清關）與 J&J Ottava（1Q26 遞 FDA）正式挑戰 ISRG 軟組織壟斷",
+   "desc": "把上游零組件整合成完整手術機器人系統、通過 FDA/CE 取證的平台廠——軟組織（泌尿/婦科/普外）與骨科/脊椎兩大戰場，加上挑戰者進場。",
+   "marketSize": "手術機器人 2035 拚 $500~600 億（CAGR ~15~16.5%）",
+   "growth": "Hugo 2025/12 美國泌尿科清關；Ottava 1Q26 遞 FDA；Mako RPS 2026 限量上市",
+   "share": "null",
+   "analysis": "平台戰是手術機器人的權力核心，但 FDA 取證 + 臨床證據 + 外科醫師訓練形成多年壁壘。軟組織：Intuitive da Vinci 近 60% 市占＋全球裝機破 11,395 台＝事實壟斷；挑戰者 Medtronic（MDT）Hugo 於 2025/12 取得美國泌尿科 FDA 清關、啟動 purposeful launch，J&J（JNJ）Ottava 1Q26 已遞 FDA de novo、減重手術試驗達標，CMR Versius Plus 2026 在美商業化。骨科/脊椎：Stryker（SYK）Mako 全球裝機 >1,600 台、2026 推手持式 Mako RPS 切入新區隔；Zimmer（ZBH）2025/10 併 Monogram 取得 AI 半自主全膝、ROSA 持續放量；Globus（GMED）ExcelsiusFlex 切入全膝、2026 拓髖。利基：PROCEPT（PRCT）AQUABEAM 攝護腺 Aquablation。絃外之音：挑戰者多年難撼 da Vinci，因 razor-blade 鎖定 + 轉換成本高——但骨科戰場更分散、新進者機會大。",
+   "companies": [
+    {
+     "name": "Intuitive Surgical",
+     "ticker": "ISRG",
+     "country": "US",
+     "share": "軟組織機器人近 60% 市占",
+     "products": "da Vinci 5 / da Vinci Xi / Ion（肺部活檢）",
+     "note": "全球裝機 11,395 台(+12%)；1Q26 裝機 431 台含 da Vinci5 232 台；事實壟斷",
+     "src": "https://www.stocktitan.net/news/ISRG/intuitive-announces-first-quarter-ceqd3ha0k9ou.html"
+    },
+    {
+     "name": "Medtronic",
+     "ticker": "MDT",
+     "country": "US",
+     "share": "軟組織挑戰者",
+     "products": "Hugo RAS（機器人輔助手術）",
+     "note": "2025/12 取得美國泌尿科 FDA 清關；Expand URO 試驗達標；啟動 purposeful launch",
+     "src": "https://www.massdevice.com/medtronic-fda-nod-hugo-surgical-robot-urology/"
+    },
+    {
+     "name": "Johnson & Johnson",
+     "ticker": "JNJ",
+     "country": "US",
+     "share": "軟組織+內腔挑戰者",
+     "products": "Ottava（普外）/ Monarch（內腔）/ Velys（骨科）",
+     "note": "Ottava 1Q26 遞 FDA de novo；減重手術試驗 30 天端點達標",
+     "src": "https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-pivotal-clinical-study-results-for-a-new-soft-tissue-surgical-robotic-system"
+    },
+    {
+     "name": "Stryker",
+     "ticker": "SYK",
+     "country": "US",
+     "share": "骨科機器人領導",
+     "products": "Mako 4 / Mako RPS（手持式）/ Mako Spine",
+     "note": "Mako 全球裝機 >1,600 台；2026/1 首例 Mako RPS、限量上市切入新區隔",
+     "src": "https://orthospinenews.com/2026/02/09/stryker-introduces-mako-handheld-robotics-with-the-limited-market-release-of-mako-rps/"
+    },
+    {
+     "name": "Zimmer Biomet",
+     "ticker": "ZBH",
+     "country": "US",
+     "share": "骨科機器人",
+     "products": "ROSA Knee/Hip/Shoulder / Monogram AI",
+     "note": "2025/10 併 Monogram 取 AI 半自主全膝；2027 起搭 ZBH 植入物商化",
+     "src": "https://www.stocktitan.net/news/ZBH/zimmer-biomet-receives-u-s-fda-clearance-for-enhanced-version-of-f9pm5nbyanas.html"
+    },
+    {
+     "name": "Globus Medical",
+     "ticker": "GMED",
+     "country": "US",
+     "share": "脊椎+骨科機器人",
+     "products": "ExcelsiusGPS（脊椎/腦）/ ExcelsiusFlex（全膝）",
+     "note": "1Q25 營收 +27%、有機 +13%；ExcelsiusFlex 切入全膝、2026 拓髖",
+     "src": "https://finance.yahoo.com/markets/stocks/articles/globus-medical-inc-gmed-cheap-120203626.html"
+    },
+    {
+     "name": "PROCEPT BioRobotics",
+     "ticker": "PRCT",
+     "country": "US",
+     "share": "攝護腺 Aquablation 利基龍頭",
+     "products": "AQUABEAM / HYDROS（Aquablation 攝護腺治療）",
+     "note": "1Q26 營收 +20%、美國裝機 765 台(+40%)；2026 營收指引 $410~430M(+26~32%)",
+     "src": "https://ir.procept-biorobotics.com/news-releases/news-release-details/procept-biorobotics-reports-third-quarter-2025-financial-results"
+    },
+    {
+     "name": "CMR Surgical",
+     "ticker": "—",
+     "country": "UK",
+     "share": "軟組織第二大利用率",
+     "products": "Versius / Versius Plus（模組化手術機器人）",
+     "note": "未上市；Versius Plus 取 FDA 510(k)、2026 在美商業化；全球 >3 萬例",
+     "src": "https://www.medicaldevice-network.com/news/fda-clears-cmr-surgical-versius-plus-robot/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "precision_components"
+    },
+    {
+     "id": "optics_endoscope"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "platform_consumables"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Intuitive 1Q26：裝機 431 台、營收 +23%",
+     "url": "https://www.stocktitan.net/news/ISRG/intuitive-announces-first-quarter-ceqd3ha0k9ou.html"
+    },
+    {
+     "label": "Medtronic Hugo 取得美國泌尿科 FDA 清關 (MassDevice)",
+     "url": "https://www.massdevice.com/medtronic-fda-nod-hugo-surgical-robot-urology/"
+    },
+    {
+     "label": "J&J Ottava 遞 FDA／試驗達標 (J&J)",
+     "url": "https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-pivotal-clinical-study-results-for-a-new-soft-tissue-surgical-robotic-system"
+    }
+   ]
+  },
+  {
+   "id": "platform_consumables",
+   "row": "platform",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "平台 + 單次使用耗材（razor-blade 核心）",
+   "nameEn": "Platform + Single-Use Instruments (Razor-Blade)",
+   "competition": "monopoly",
+   "single": "獲利引擎 · ISRG 器械+服務佔營收約 85% 經常性收入，EndoWrist 單次使用器械=醫療版的『刮鬍刀片』",
+   "desc": "手術機器人真正的獲利核心——平台只是入場券，每次手術消耗的單次使用器械（EndoWrist 等）、配件與服務合約構成高毛利、可預測的經常性收入。",
+   "marketSize": "ISRG 器械+配件 2024 約 $50.8 億（+19%）",
+   "growth": "ISRG 全球手術量 1Q26 +17%；經常性收入佔比 ~85%",
+   "share": "null",
+   "analysis": "這是手術機器人最關鍵、也最被低估的一層：商業模式本質是 razor-and-blade——醫院買/租平台（razor）後，每台手術消耗單次使用器械與配件（blade）、加上服務合約，構成約 85% 的經常性收入。Intuitive（ISRG）器械+配件 2024 達 $50.8 億（+19%）、服務 ~$13 億，總經常性收入佔比 ~84~85%，且隨手術量複利成長（1Q26 全球手術量 +17%、da Vinci 手術 +16%、Ion +39%）——比一次性賣機台的骨科廠更具現金流可預測性與毛利韌性。EndoWrist 器械多有使用次數上限（軟硬體鎖定），形成高轉換成本護城河。骨科廠（SYK/ZBH/GMED）耗材以植入物與一次性配件為主，附帶率與綁定度低於 ISRG，這是估值差異核心。絃外之音：投資手術機器人不該只看『裝機數』，要看『每台年化耗材拉貨 × 手術量複利』。",
+   "companies": [
+    {
+     "name": "Intuitive Surgical",
+     "ticker": "ISRG",
+     "country": "US",
+     "share": "耗材經常性收入龍頭",
+     "products": "EndoWrist 單次使用器械 / 配件 / 服務合約",
+     "note": "器械+配件 2024 $50.8 億(+19%)；經常性收入佔比 ~85%；手術量複利",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001035267/000103526725000183/q225ex-991earningsrelease.htm"
+    },
+    {
+     "name": "PROCEPT BioRobotics",
+     "ticker": "PRCT",
+     "country": "US",
+     "share": "Aquablation 耗材",
+     "products": "AQUABEAM 單次使用 handpiece / 耗材",
+     "note": "毛利率自 49.4%→63.7%（隨裝機規模/耗材拉貨）；razor-blade 雛形",
+     "src": "https://ir.procept-biorobotics.com/news-releases/news-release-details/procept-biorobotics-reports-third-quarter-2025-financial-results"
+    },
+    {
+     "name": "Stryker",
+     "ticker": "SYK",
+     "country": "US",
+     "share": "骨科植入物+耗材",
+     "products": "Mako 植入物 / 一次性配件",
+     "note": "耗材以植入物為主、附帶率低於 ISRG 軟組織模式"
+    },
+    {
+     "name": "Zimmer Biomet",
+     "ticker": "ZBH",
+     "country": "US",
+     "share": "骨科植入物+耗材",
+     "products": "ROSA 植入物 / 一次性配件",
+     "note": "植入物綁定機器人；耗材經常性收入度中等"
+    },
+    {
+     "name": "Medtronic",
+     "ticker": "MDT",
+     "country": "US",
+     "share": "Hugo 耗材建構中",
+     "products": "Hugo 單次使用器械 / 配件",
+     "note": "美國上市後耗材經常性收入待累積；挑戰 ISRG 鎖定"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "oem_platform"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "hospital_or"
+    },
+    {
+     "id": "sterilization"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Intuitive 器械+配件營收（razor-blade 模式）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001035267/000103526725000183/q225ex-991earningsrelease.htm"
+    },
+    {
+     "label": "PROCEPT Q3 2025 財報（毛利率擴張）",
+     "url": "https://ir.procept-biorobotics.com/news-releases/news-release-details/procept-biorobotics-reports-third-quarter-2025-financial-results"
+    }
+   ]
+  },
+  {
+   "id": "sterilization",
+   "row": "platform",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "滅菌 / 器械再處理",
+   "nameEn": "Sterilization · Instrument Reprocessing",
+   "competition": "oligopoly",
+   "single": "賣鏟人 · STERIS 不管誰贏平台戰，手術量上升=滅菌/再處理拉貨上升，是中立的手術量受惠者",
+   "desc": "手術機器人器械與內視鏡的低溫滅菌、自動再處理與耗材——隨手術量與裝機數成長的『中立受惠者』，與哪家平台勝出無關。",
+   "marketSize": "STERIS 4Q FY26 營收 $11.4 億（+7%）",
+   "growth": "STERIS 耗材 +7%、服務 +9%；手術量驅動",
+   "share": "null",
+   "analysis": "STERIS（STE）是手術機器人主題裡最乾淨的『賣鏟人』：不管 da Vinci、Hugo、Mako 還是 Ottava 勝出，只要手術量與機器人器械量上升，低溫滅菌（V-PRO maX 2，內視鏡滅菌量倍增）、自動內視鏡再處理（AER）與相關耗材/服務就拉貨——4Q FY26 營收 $11.4 億（+7%），其中服務 +9%、耗材 +7%、資本設備 +6%，經常性的耗材+服務引擎大於單純的手術量故事。Advanced Sterilization Products（ASP，原 J&J 旗下）與 Olympus 為內視鏡再處理另兩大陣營。此環節商業模式同樣偏經常性收入、與裝機/手術量正相關，是手術機器人滲透率上升的二階受惠。",
+   "companies": [
+    {
+     "name": "STERIS",
+     "ticker": "STE",
+     "country": "IE",
+     "share": "滅菌/再處理龍頭",
+     "products": "V-PRO 低溫滅菌 / AER 內視鏡再處理 / 耗材服務",
+     "note": "4Q FY26 營收 $11.4 億(+7%)；服務+9%/耗材+7%；中立手術量受惠者",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026033580/ste03312026ex991.htm"
+    },
+    {
+     "name": "Olympus",
+     "ticker": "7733.T",
+     "country": "JP",
+     "share": "內視鏡再處理陣營",
+     "products": "內視鏡再處理 / 清洗滅菌",
+     "note": "內視鏡再處理三大陣營之一",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/endoscope-reprocessing-market.asp"
+    },
+    {
+     "name": "Getinge",
+     "ticker": "—",
+     "country": "SE",
+     "share": "滅菌設備",
+     "products": "醫院滅菌 / 感染控制設備",
+     "note": "GETI-B.ST 上市；手術室滅菌設備供應"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "platform_consumables"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "hospital_or"
+    }
+   ],
+   "sources": [
+    {
+     "label": "STERIS 4Q FY2026 財報 (SEC 8-K)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001757898/000162828026033580/ste03312026ex991.htm"
+    },
+    {
+     "label": "內視鏡再處理市場領導 (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/ResearchInsight/endoscope-reprocessing-market.asp"
+    }
+   ]
+  },
+  {
+   "id": "hospital_or",
+   "row": "downstream",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "下游：醫院手術室・手術量・支付方",
+   "nameEn": "Hospitals · OR · Procedure Volume · Payers",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "手術機器人的終端需求——醫院手術室採用、外科醫師訓練、手術量成長與保險支付，回頭驅動整條價值鏈的耗材拉貨與裝機。",
+   "marketSize": "手術機器人 2035 拚 $500~600 億（CAGR ~15~16.5%）",
+   "growth": "全球僅約 25% 手術室有機器人、滲透率仍低",
+   "share": "null",
+   "analysis": "需求端是全價值鏈的成長引擎：手術量上升 → 耗材拉貨 → 經常性收入 → 回饋平台與上游。微創手術趨勢、人口老化、外科醫師短缺與訓練普及驅動採用，但全球僅約 25% 手術室有機器人、滲透率仍低＝長期成長空間。北美為最大市場、亞太成長最快（中國本土平台如微創/精鋒、印度需求崛起）。風險：醫院資本支出循環、保險支付、關稅與供應鏈成本、以及挑戰者價格戰。絃外之音：手術量是『複利分母』——ISRG 等龍頭即使裝機成長放緩，既有裝機基數的手術量年化成長仍驅動耗材營收，這是手術機器人不同於一次性資本設備的核心投資邏輯。",
+   "companies": [
+    {
+     "name": "醫院 / 醫療體系（全球）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "手術機器人終端買方",
+     "products": "手術室採用 / 外科訓練 / 手術量",
+     "note": "全球僅 ~25% 手術室有機器人；滲透率低=成長空間；驅動全層耗材拉貨"
+    },
+    {
+     "name": "微創醫療 MicroPort",
+     "ticker": "0853.HK",
+     "country": "CN",
+     "share": "中國本土平台",
+     "products": "圖邁腔鏡手術機器人 / 鴻鵠骨科",
+     "note": "中國本土軟組織/骨科機器人；新興市場替代進口",
+     "src": "https://www.precedenceresearch.com/surgical-robotics-market"
+    },
+    {
+     "name": "亞太/新興市場需求",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "成長最快區域",
+     "products": "微創手術滲透",
+     "note": "亞太成長最快；人口老化+外科醫師短缺驅動採用"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "platform_consumables"
+    },
+    {
+     "id": "sterilization"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "手術機器人市場 2035 規模/CAGR (Precedence Research)",
+     "url": "https://www.precedenceresearch.com/surgical-robotics-market"
+    },
+    {
+     "label": "全球約 25% 手術室有機器人 (Morningstar)",
+     "url": "https://www.morningstar.com/stocks/will-robots-take-their-place-orthopedics"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "precision_components",
+   "optics_endoscope"
+  ],
+  [
+   "precision_components",
+   "oem_platform"
+  ],
+  [
+   "optics_endoscope",
+   "oem_platform"
+  ],
+  [
+   "oem_platform",
+   "platform_consumables"
+  ],
+  [
+   "platform_consumables",
+   "sterilization"
+  ],
+  [
+   "platform_consumables",
+   "hospital_or"
+  ],
+  [
+   "sterilization",
+   "hospital_or"
+  ]
+ ],
+ "_proposed": {}
+}

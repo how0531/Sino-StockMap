@@ -1,0 +1,620 @@
+{
+ "id": "ccl",
+ "tab": "CCL 銅箔基板",
+ "title": "CCL 銅箔基板 / 高速 PCB 材料供應鏈",
+ "subtitle": "Copper Clad Laminate — AI 伺服器與 800G/1.6T 交換器板用「高速低損耗」CCL 是隱形鎖喉。M8 對應 800G/AI server，M9 攻更高速 GPU/switch 平台（台光電 M9 首家認證、2026 H2 量產、2027 放量；聯茂 M9 2025 H2 亦獲美系 AI GPU 大廠認證）。價值鏈：低 Dk/Df 樹脂（Panasonic/MGC）+ HVLP 銅箔 + 低 Dk 玻纖布 → CCL 基板（台光電 2383/聯茂/台燿/Rogers/生益）→ 高階 PCB（金像電 GB200 UBB 主供）。高盛估 AI server CCL 2024-27 CAGR 88%、2027 達 $80 億。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 8
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "45+"
+  },
+  {
+   "k": "鎖喉／領導單點",
+   "v": 2,
+   "sub": "台光電 M9 首家認證·金像電 GB200/GB300 UBB 主供",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "material",
+   "label": "樹脂 / 銅箔 / 玻纖布 Materials",
+   "main": false
+  },
+  {
+   "id": "ccl",
+   "label": "CCL 基板廠 Laminate",
+   "main": true
+  },
+  {
+   "id": "pcb",
+   "label": "高階 PCB / HDI / UBB Boards",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "resin",
+   "row": "material",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "低介電樹脂 / 膜",
+   "nameEn": "Low-Dk Resin / Film",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 味之素 ABF 膜 ~95%、Panasonic/MGC 低損耗樹脂；M8/M9 配方門檻高；⚠ 2026-H1 NVIDIA 確認 Rubin Ultra 正交背板改採 PTFE+二氧化矽，氟樹脂（東岳 0189.HK/大金 6367.JP/昊華 600378.SS）成新卡位點",
+   "desc": "決定 CCL 介電損耗（Df）的核心：環氧/PPO/碳氫樹脂、ABF 增層膜、低 Dk/Df 配方。",
+   "marketSize": "材料單點",
+   "growth": "低損耗升級",
+   "share": "null",
+   "analysis": "味之素（2802.T，ABF 增層膜 ~95% 獨佔，見 substrate 主題、2026 Q3 漲價 30%）；Panasonic（6752.T，Megtron 6/8/9 樹脂配方）、Mitsubishi Gas Chemical（4182.T，BT 樹脂、lead time 拉長 4-5 月）、Sumitomo Bakelite（4203.T）、DuPont（DD）。低 Dk/Df 樹脂配方是 M8/M9 高速 CCL 的核心門檻。⚠ 2026-H1 材料典範轉移：廣發證券指 NVIDIA 已『確認』Rubin Ultra 正交背板主材改採 PTFE＋二氧化矽（支援 337G+ SerDes），M9＋Q-Glass 因玻纖 weave 介電不均質與石英布短缺而出局，PTFE/改質氟樹脂成新卡位點；上游氟樹脂供應商東岳集團（0189.HK，生益核心供應商）、大金 Daikin（6367.JP）、昊華科技（600378.SS）成新受惠者；廣發估 2027 Kyber 平台 PTFE CCL 市場約 RMB80 億、PCB 廠價值占比由 2-2.5x 升至 3-3.5x、最終 78 或 108 層設計 2026/7 敲定。",
+   "companies": [
+    {
+     "name": "Panasonic",
+     "ticker": "6752.T",
+     "country": "JP",
+     "share": "Megtron 樹脂領導",
+     "products": "Megtron 6/8/9 低損耗樹脂",
+     "note": "高速 CCL 樹脂標竿",
+     "src": "https://industrial.panasonic.com/ww/products/pt/megtron"
+    },
+    {
+     "name": "Mitsubishi Gas Chemical",
+     "ticker": "4182.T",
+     "country": "JP",
+     "share": "BT 樹脂領導",
+     "products": "BT resin / 低 Df 樹脂",
+     "note": "lead time 拉長 4-5 月、漲價"
+    },
+    {
+     "name": "Sumitomo Bakelite / DuPont",
+     "ticker": "4203.T / DD",
+     "country": "JP",
+     "share": "特用樹脂",
+     "products": "環氧 / PPE / 高頻材料",
+     "note": "CCL 樹脂供應"
+    },
+    {
+     "name": "味之素 Ajinomoto",
+     "ticker": "2802.T",
+     "country": "JP",
+     "share": "ABF 膜 ~95%",
+     "products": "ABF 增層膜",
+     "note": "載板/CCL 共用、2026 Q3 漲 30%"
+    },
+    {
+     "name": "東岳集團 Dongyue",
+     "ticker": "0189.HK",
+     "country": "HK",
+     "share": "PTFE/氟樹脂",
+     "products": "氟樹脂 / PTFE 原料",
+     "note": "⚠ 2026-H1 新卡位：生益核心氟樹脂供應商、Rubin Ultra PTFE 正交背板路線受惠",
+     "src": "https://investcopilot.cloud/feed/article/33231"
+    },
+    {
+     "name": "大金 Daikin / 昊華科技",
+     "ticker": "6367.JP / 600378.SS",
+     "country": "JP",
+     "share": "PTFE/氟樹脂",
+     "products": "PTFE / 含氟聚合物",
+     "note": "⚠ 2026-H1 PTFE 路線新增上游卡位點（無玻纖 PTFE+二氧化矽 取代 M9+Q-Glass）",
+     "src": "https://investcopilot.cloud/feed/article/33231"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "ccl_tw"
+    },
+    {
+     "id": "ccl_global"
+    },
+    {
+     "id": "ccl_cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Panasonic Megtron 系列",
+     "url": "https://industrial.panasonic.com/ww/products/pt/megtron"
+    }
+   ]
+  },
+  {
+   "id": "copper_glass",
+   "row": "material",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "低損耗銅箔 / 低 Dk 玻纖布",
+   "nameEn": "HVLP Copper Foil / Low-Dk Glass",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "高速 CCL 用低粗糙度（HVLP/RTF）電解銅箔 + 低介電（low-Dk/NE/Q）玻纖布，降低高頻訊號損耗。",
+   "marketSize": "null",
+   "growth": "高頻需求",
+   "share": "null",
+   "analysis": "銅箔：建滔（0148.HK，全球銅箔+玻纖布大廠）、南亞（1303.TW）、長春（未上市）、日廠三井金屬/古河、韓 Iljin/SK Nexilis；⚠ 隱性卡位者銅箔工業（Co-Tech 8358.TW）獲高盛 BUY、HVLP 市占估自 5%→53%，2026/6/8 公告 NVIDIA 直接洽談 HVLP4 長約產能規劃（客戶越過 CCL 廠直鎖上游）。玻纖布：Nittobo（3110.T，T-glass 近壟斷 ~90%/NER 60-70%；2027 起委南亞代織 20%）、建滔、AGC、台玻、宏和（1446.TW）。⚠ 結構升級：M9 將以石英布（Q-Glass，石英含量 ~92%）+ HVLP4 取代 low-Dk 玻纖布以再壓低 Df，僅 Nittobo 等少數能供 Q-Glass，台廠德宏（8359.TW，石英紗已供日客）、富喬（1815.TW，low-CTE）卡位第二來源。HVLP 銅箔與 low-Dk/Q-Glass 玻纖布是 M8/M9 高速 CCL 的雙重隱性鎖喉，定價權在材料端而非 CCL 廠。",
+   "companies": [
+    {
+     "name": "建滔 Kingboard",
+     "ticker": "0148.HK",
+     "country": "HK",
+     "share": "銅箔+玻纖布大廠",
+     "products": "電解銅箔 / 玻纖布 / CCL",
+     "note": "垂直整合上游"
+    },
+    {
+     "name": "Nittobo 日東紡",
+     "ticker": "3110.T",
+     "country": "JP",
+     "share": "T-glass ~90%/NER 60-70%",
+     "products": "low-Dk / NE glass cloth",
+     "note": "2026/4 再漲 20-30%；投逾 ¥500 億日台擴產、新產能最快 2027 中"
+    },
+    {
+     "name": "南亞 / 宏和",
+     "ticker": "1303.TW / 1446.TW",
+     "country": "TW",
+     "share": "銅箔/玻纖布台廠",
+     "products": "銅箔 / 電子級玻纖布",
+     "note": "供台廠 CCL"
+    },
+    {
+     "name": "三井金屬 / SK Nexilis",
+     "ticker": "5706.T / —",
+     "country": "JP",
+     "share": "HVLP3+ 近壟斷·含次供僅滿足 50-60%",
+     "products": "HVLP/RTF 電解銅箔",
+     "note": "⚠ 隱性單點：高盛估 HVLP3+ 缺口 2026/27/28 達 28%/39%/38%、含次供仍只滿足 5-6 成需求＝『新常態』短缺；三井 HVLP3+ 月產能僅 718 噸(2026)；2026/3 起漲 30%+；HVLP4 超低稜銅箔成 2026 H2 最新缺口"
+    },
+    {
+     "name": "銅箔工業 Co-Tech",
+     "ticker": "8358.TW",
+     "country": "TW",
+     "share": "HVLP 第二來源·市占估 5%→53%",
+     "products": "HVLP/HVLP4 電解銅箔",
+     "note": "⚠ 2026/6/8 公告 NVIDIA 直接洽談 HVLP4 長約產能（客戶越過 CCL 廠直鎖上游）；停產標準銅箔全力轉 AI/5G 高階；獲高盛 BUY",
+     "src": "https://www.digitimes.com/news/a20260609PD232/co-tech-copper-foil-nvidia-2026-capacity.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "ccl_tw"
+    },
+    {
+     "id": "ccl_cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nittobo low-Dk glass",
+     "url": "https://www.nittobo.co.jp/business/glass/"
+    }
+   ]
+  },
+  {
+   "id": "ccl_tw",
+   "row": "ccl",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "台灣 CCL 三雄（AI 高速材料）",
+   "nameEn": "Taiwan CCL Leaders",
+   "competition": "oligopoly",
+   "single": "客戶獨家鬆動 · 台光電 M9 首家認證、Meta 訂單；但 2026/3 起 NVIDIA 次世代 M10 已進三供應商測試（台光電＋滬電 002463.SZ＋一台廠），M9/M10 獨家終結；⚠ 2026-H1 NVIDIA『確認』Rubin Ultra 正交背板改採無玻纖 PTFE+二氧化矽，玻纖系 M9 在該應用被部分替代，M9 之爭從『有無』轉為『滲透率斜率』",
+   "desc": "台灣 CCL 三雄供應全球 AI 伺服器與交換器高速基板，M8/M9 升級為估值核心。",
+   "marketSize": "M9 領導",
+   "growth": "AI 滿載",
+   "share": "null",
+   "analysis": "台光電（2383.TW，M9 首家認證、Q1 2026 營收 NT$330.7 億創高、EPS 14.9、2025 全年 EPS 41.67、2026 Q2 起調漲售價至少 10%、擴產上修至 2027 年底月產能 945 萬張、獨家 Meta 訂單、5 月營收 156.19 億 YoY+115%、股價 2026/6 衝 5,185、花旗喊目標價 5,100）；聯茂（6213.TW，M9 2025 H2 獲美系 AI GPU 大廠認證、Q1 2026 營收 91.4 億創高、泰國廠月產能 60 萬張+今年再增 30 萬張；布局 AI ASIC/高速 switch/LEO 衛星、M8 高階下半年送樣放量；布局 AI ASIC/高速 switch/LEO 衛星、M8 高階下半年送樣放量）；台燿（6274.TW，Q1 2026 營收 100.5 億 +57.8% YoY、EPS 4.36、低損耗材料占營收 70%、切入 ASIC server 主板 + 800G switch）。M9 2026 H2 量產、2027 放量；高盛 M9 應用路線：2026 H2 Vera Rubin CPX 版中介板 → 2027 多數 ASIC CSP 專案（TPU/Trainium/Meta ASIC）→ 2027 H2 Vera Rubin Ultra 交換器板+運算板，且 M9 將改用石英布（Q-Glass）+ HVLP4。⚠ 結構轉折（2026-H1）：NVIDIA 次世代 M10 CCL 測試由台光電獨家擴為三家供應商（台光電＋滬電 WUS 002463.SZ＋一台廠），1Q26 送樣、2Q26 出初步結果、2H27 量產，用於取代 Cartridge 的正交背板（midplane）與 Rubin Ultra/Feynman 的 Switch blade 主板，終結台光電 M9/M10 獨家；滬電並獨拿 NVIDIA LPU/LPX 52 層 PCB 訂單（4Q26 量產），中國廠技術壁壘快速補齊。⚠ 材料典範轉移：廣發證券指 NVIDIA 已『確認』Rubin Ultra 正交背板主材改採無玻纖 PTFE＋二氧化矽（支援 337G+ SerDes），M9＋Q-Glass 因玻纖 weave 介電不均質與石英布短缺出局，玻纖系 M9（台光電/聯茂/台燿）在該高價值應用被部分替代、須改推 PPO 或改質氟樹脂；生益（600183.SS）為 PTFE 正交背板主供材料、上游氟樹脂東岳（0189.HK）/大金（6367.JP）/昊華（600378.SS）受惠；台虹（8039.TW）拚全球第二供應源、博智（8155.TWO）混壓製程受惠，NVIDIA 預計 2026/7 敲定 78 或 108 層最終設計。M9 之爭從『有無』轉為『滲透率斜率』。",
+   "companies": [
+    {
+     "name": "台光電 EMC",
+     "ticker": "2383.TW",
+     "country": "TW",
+     "share": "全球 CCL 18.9% 居冠·M9 首家認證",
+     "products": "M6/M7/M8/M9 高速 CCL",
+     "note": "Q1 2026 EPS 14.9 創高；5 月營收 156.19 億 YoY+114.63%、1-5 月累計 626.09 億 YoY+73.18%；Q2 起全產品線漲價逾 10%、不排除續漲；JPM 上調目標價至 4,200、法人上修 2026 全年 EPS 上看 92.6 元（營收 1,636 億 YoY+73.6%）；外資三巨頭目標價衝破 3,000；⚠ M9 之爭轉為『斜率』：傳 Rubin 量產過早恐沿用 M8、台光電仍規劃在 Switch Tray/UBB/CPX/Midplane 奪回市占、M9 ASP 約均價 5 倍、2026-H2 出貨 2027-28 放量；Meta 獨家",
+     "src": "https://money.udn.com/money/story/5607/9378852"
+    },
+    {
+     "name": "聯茂 ITEQ",
+     "ticker": "6213.TW",
+     "country": "TW",
+     "share": "CCL 第二",
+     "products": "M8/M9 高速 CCL",
+     "note": "M9 獲美系 AI GPU 大廠認證；Q1 2026 營收 91.4 億創高；泰國廠擴產"
+    },
+    {
+     "name": "台燿 TUC",
+     "ticker": "6274.TW",
+     "country": "TW",
+     "share": "M8/M9 ASIC/switch",
+     "products": "M8/M9 高速 CCL",
+     "note": "切入 ASIC server 主板 + 800G switch；M8 隨 META Minipack/AWS Trainium 3 放量、高階占比 2026 估 >30%；4/25 起 CCL 全面漲價最高 40%、高階 20-25%；股價 2026/6 攻 1,835 叩關千金股、Q1 2026 EPS 4.36；高盛點名 CCL 雙雄、2026-28E EPS 12.67/23.19/34.18",
+     "src": "https://tw.stock.yahoo.com/news/m9%E9%8A%85%E7%AE%94%E5%9F%BA%E6%9D%BF%E8%BF%8E%E7%88%86%E7%99%BC-%E9%AB%98%E7%9B%9B%E9%BB%9E%E5%90%8D-ccl%E9%9B%99%E9%9B%84-%E5%90%83ai%E5%A4%A7%E5%96%AE-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%96%8A%E4%B8%8A1-001500043.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "resin"
+    },
+    {
+     "id": "copper_glass"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "pcb_tw"
+    },
+    {
+     "id": "pcb_global"
+    }
+   ],
+   "sources": [
+    {
+     "label": "台光電 Q1 2026 創高 (Yahoo)",
+     "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%85%89%E9%9B%BBq1%E7%8D%B2%E5%88%A9%E5%89%B5%E9%AB%98-eps-14-9%E5%85%83-075256024.html"
+    }
+   ]
+  },
+  {
+   "id": "ccl_global",
+   "row": "ccl",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "國際 CCL（高頻/特用）",
+   "nameEn": "Global CCL (high-freq)",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "高頻/航太/特用 CCL 與高速材料的歐美日韓供應商。",
+   "marketSize": "null",
+   "growth": "AI/RF",
+   "share": "null",
+   "analysis": "Rogers（ROG，高頻微波 CCL 領導）、Panasonic（Megtron 整合 CCL）、Isola（high-speed digital）、AGC-Nelco、Park Aerospace（PKE，航太）、Doosan（韓，CCL）。多供應特用/高頻或與台廠互補。",
+   "companies": [
+    {
+     "name": "Rogers Corp",
+     "ticker": "ROG",
+     "country": "US",
+     "share": "高頻 CCL 領導",
+     "products": "RO 系列高頻微波 CCL",
+     "note": "RF/航太/AI 高頻"
+    },
+    {
+     "name": "Panasonic (CCL)",
+     "ticker": "6752.T",
+     "country": "JP",
+     "share": "Megtron CCL",
+     "products": "Megtron 8/9 CCL 成品",
+     "note": "樹脂+CCL 整合"
+    },
+    {
+     "name": "Isola / AGC-Nelco",
+     "ticker": "— / 5201.T",
+     "country": "US",
+     "share": "high-speed digital",
+     "products": "Tachyon / N4000 系列",
+     "note": "high-speed 數位 CCL"
+    },
+    {
+     "name": "Doosan / Park Aero",
+     "ticker": "— / PKE",
+     "country": "KR",
+     "share": "韓 CCL / 航太",
+     "products": "Doosan CCL / PKE 航太",
+     "note": "Doosan 2026 CCL capex 增 2.8 倍至 ₩2,445 億；泰國 ₩1,800 億新廠 2028 H2 量產"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "resin"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "pcb_global"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Rogers Corp 高頻材料",
+     "url": "https://www.rogerscorp.com/advanced-electronics-solutions"
+    }
+   ]
+  },
+  {
+   "id": "ccl_cn",
+   "row": "ccl",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國 CCL（國產替代）",
+   "nameEn": "China CCL",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "中國 CCL 廠以本土 AI server/switch 與國產替代為主。",
+   "marketSize": "null",
+   "growth": "國產化",
+   "share": "null",
+   "analysis": "生益科技（600183.SS，中國 CCL 龍頭、切入高速材料；⚠ 2026-H1 被點為 NVIDIA Rubin Ultra PTFE 正交背板主供材料，氟樹脂上游東岳集團 0189.HK 為核心供應商，廣發估 2027 Kyber 平台 PTFE CCL 市場約 RMB80 億）、南亞新材（688519.SS）、華正新材（603186.SS）。中國 AI 算力國產化（華為/中興/國產 switch）拉動本土高速 CCL 需求；PTFE 路線受惠者重心偏向中國。",
+   "companies": [
+    {
+     "name": "生益科技 Shengyi",
+     "ticker": "600183.SS",
+     "country": "CN",
+     "share": "中國 CCL 龍頭·PTFE 正交背板主供",
+     "products": "高速 CCL / 高頻材料 / PTFE CCL",
+     "note": "⚠ 2026-H1 被點為 NVIDIA Rubin Ultra PTFE 正交背板主供材料、氟樹脂上游東岳 0189.HK 核心供應商；切入 M6/M7 級國產替代",
+     "src": "https://investcopilot.cloud/feed/article/33231"
+    },
+    {
+     "name": "南亞新材 / 華正新材",
+     "ticker": "688519.SS / 603186.SS",
+     "country": "CN",
+     "share": "中國第二梯隊",
+     "products": "高速 CCL",
+     "note": "本土 AI server 供應"
+    },
+    {
+     "name": "建滔積層板 Kingboard",
+     "ticker": "0148.HK",
+     "country": "HK",
+     "share": "量大·AI CCL 短缺最大現金牛",
+     "products": "標準+中高階 CCL",
+     "note": "⚠ 2026-H1 垂直整合（玻纖紗/布→銅箔→CCL）成 AI CCL 短缺最大現金牛；過去一年漲約 148%、YTD +83%；2026/4/28 年內第四度漲價（FR-4 CCL 與膠片再漲 10%）；花旗估 2026-28 獲利 CAGR ~46%、上調目標價至 HK$30",
+     "src": "https://finance.biggo.com/news/Y95F-pwBq7sy_YQMnvbQ"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "resin"
+    },
+    {
+     "id": "copper_glass"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "pcb_cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "生益科技 IR",
+     "url": "http://www.shengyitech.com/"
+    },
+    {
+     "label": "PTFE 正交背板典範轉移 (廣發)",
+     "url": "https://investcopilot.cloud/feed/article/33231"
+    }
+   ]
+  },
+  {
+   "id": "pcb_tw",
+   "row": "pcb",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "台灣高階 PCB（AI server）",
+   "nameEn": "Taiwan HPC PCB",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · 金像電為四大 CSP 自研 ASIC（AWS/Google/Meta/MS）UBB 主力（非 NVIDIA GB200 板隊；台灣首檔 PCB 千金股）",
+   "desc": "AI 機櫃 PCB 用量暴增（UBB 通用基板/OAM 模組/HDI/backplane），台廠卡位 NVIDIA 平台。",
+   "marketSize": "客戶獨家",
+   "growth": "AI 板倍增",
+   "share": "null",
+   "analysis": "金像電（2368.TW，四大 CSP 自研 ASIC〔AWS Trainium/Google TPU/Meta MTIA/MS Maia〕UBB+主板主力供應，非 NVIDIA GB200 板隊；2025 EPS ~19.47、毛利率站上 35%、UBB 層數升破 30 層拉抬 ASP；台灣首檔 PCB 千金股）；健鼎（3044.TW，UBB 次源 + switch 板）；欣興（3037.TW，GPU OAM HDI，見 substrate）；定穎投控（6251.TW）、博智（8155.TWO）。⚠ 絃外之音：金像電真正的客戶集中度在 CSP ASIC（非 NVIDIA），ASIC 算力放量＝金像電放量；高層數（20-30+ 層）高速板是技術門檻。",
+   "companies": [
+    {
+     "name": "金像電 GCE",
+     "ticker": "2368.TW",
+     "country": "TW",
+     "share": "四大 CSP ASIC UBB 主供",
+     "products": "UBB 通用基板 / 高多層 PCB",
+     "note": "四大 CSP 自研 ASIC（AWS Trainium/Google TPU/Meta MTIA/MS Maia）UBB 主力供應；非 NVIDIA GB200 板隊；台灣首檔 PCB 千金股、股價站穩千元 ~1,315；5 月營收 87.73 億 YoY+87%；花旗喊目標價 1,650；2025 EPS ~19.47"
+    },
+    {
+     "name": "健鼎 Tripod",
+     "ticker": "3044.TW",
+     "country": "TW",
+     "share": "UBB 次源 / switch",
+     "products": "高多層 PCB / 800G switch 板",
+     "note": "AI server + networking"
+    },
+    {
+     "name": "定穎投控 / 博智",
+     "ticker": "6251.TW / 8155.TWO",
+     "country": "TW",
+     "share": "高階 PCB",
+     "products": "AI 板 / 高頻板",
+     "note": "AI server PCB 供應"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ccl_tw"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "金像電 GB200 UBB (公開資訊)",
+     "url": "https://www.gce.com.tw/"
+    }
+   ]
+  },
+  {
+   "id": "pcb_cn",
+   "row": "pcb",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國高階 PCB",
+   "nameEn": "China HPC PCB",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "中國 PCB 廠切入 AI 加速卡、白牌交換器與 HDI。",
+   "marketSize": "null",
+   "growth": "AI/switch",
+   "share": "null",
+   "analysis": "滬士電（WUS，002463.SZ，北美 switch 白牌 PCB 主供；⚠ 2026-H1 成 NVIDIA M10 CCL 測試中國代表、獨拿 NVIDIA LPU/LPX 推論機櫃 52 層超高難度 PCB 訂單〔4Q26 量產〕、在 Kyber 機櫃與 Rubin Ultra/Feynman PCB 開發領先；楠梓電 2316.TW 持 WUS 約 11-12% 股權、權益法認列受惠、股價 2026-H1 破百元）、勝宏科技（300476.SZ，NVIDIA HDI/加速卡板）、深南電路（002916.SZ）。北美 hyperscaler 白牌交換器與 AI 加速卡帶動中國高階 PCB；中國廠技術壁壘快速補齊。",
+   "companies": [
+    {
+     "name": "滬士電 WUS",
+     "ticker": "002463.SZ",
+     "country": "CN",
+     "share": "switch 白牌主供·M10 中國代表",
+     "products": "高速交換器 PCB / 52 層 LPU PCB",
+     "note": "⚠ 2026-H1 成 NVIDIA M10 CCL 測試中國代表、獨拿 NVIDIA LPU/LPX 52 層 PCB 訂單（4Q26 量產）、Kyber/Rubin Ultra/Feynman PCB 開發領先；楠梓電 2316.TW 持股約 11-12%",
+     "src": "https://abmedia.io/2316-nvidia-lpu-rubin-feyman"
+    },
+    {
+     "name": "勝宏科技 Victory Giant",
+     "ticker": "300476.SZ",
+     "country": "CN",
+     "share": "AI/HPC PCB 市占 13.8% 全球第一",
+     "products": "AI 加速卡 HDI / 高多層",
+     "note": "2026/4/21 港股 H 股上市、淨募資 ~HK$199 億、首日漲 ~50%"
+    },
+    {
+     "name": "深南電路 SCC",
+     "ticker": "002916.SZ",
+     "country": "CN",
+     "share": "封裝基板+PCB",
+     "products": "高階 PCB / IC 載板",
+     "note": "垂直整合"
+    },
+    {
+     "name": "楠梓電 NAN YA PCB",
+     "ticker": "2316.TW",
+     "country": "TW",
+     "share": "持滬電約 11-12% 股權",
+     "products": "PCB / 滬電權益法認列",
+     "note": "⚠ 2026-H1 持滬電 002463.SZ 約 11-12% 股權、權益法認列受惠 NVIDIA LPU/Rubin 訂單、股價突破百元",
+     "src": "https://abmedia.io/2316-nvidia-lpu-rubin-feyman"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ccl_cn"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "滬士電 (深交所)",
+     "url": "http://www.wuselec.com/"
+    },
+    {
+     "label": "滬電 M10/52 層 LPU 訂單·楠梓電持股",
+     "url": "https://abmedia.io/2316-nvidia-lpu-rubin-feyman"
+    }
+   ]
+  },
+  {
+   "id": "pcb_global",
+   "row": "pcb",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "歐美 PCB / 系統",
+   "nameEn": "US/EU PCB & EMS",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "歐美高階 PCB 與系統組裝廠，供應 AI server backplane 與國防/航太。",
+   "marketSize": "null",
+   "growth": "AI backplane",
+   "share": "null",
+   "analysis": "TTM Technologies（TTMI，AI server backplane/UBB、國防）、AT&S（ATS.VI，奧地利、高階 IC 載板+PCB、Kulim 量產）、Sanmina（SANM，EMS+PCB）。歐美在 backplane、國防航太高可靠度板有利基。",
+   "companies": [
+    {
+     "name": "TTM Technologies",
+     "ticker": "TTMI",
+     "country": "US",
+     "share": "AI backplane/國防",
+     "products": "高多層 PCB / backplane",
+     "note": "AI server + 國防"
+    },
+    {
+     "name": "AT&S",
+     "ticker": "ATS.VI",
+     "country": "AT",
+     "share": "高階 IC 載板+PCB",
+     "products": "FC-BGA / HDI",
+     "note": "Kulim 量產、AMD 客戶"
+    },
+    {
+     "name": "Sanmina",
+     "ticker": "SANM",
+     "country": "US",
+     "share": "EMS+PCB",
+     "products": "高階 PCB / 系統組裝",
+     "note": "資料中心/國防"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ccl_tw"
+    },
+    {
+     "id": "ccl_global"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "TTM Technologies IR",
+     "url": "https://investors.ttm.com/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "resin",
+   "ccl_tw"
+  ],
+  [
+   "resin",
+   "ccl_global"
+  ],
+  [
+   "resin",
+   "ccl_cn"
+  ],
+  [
+   "copper_glass",
+   "ccl_tw"
+  ],
+  [
+   "copper_glass",
+   "ccl_cn"
+  ],
+  [
+   "ccl_tw",
+   "pcb_tw"
+  ],
+  [
+   "ccl_tw",
+   "pcb_global"
+  ],
+  [
+   "ccl_global",
+   "pcb_global"
+  ],
+  [
+   "ccl_cn",
+   "pcb_cn"
+  ]
+ ],
+ "_proposed": {}
+}

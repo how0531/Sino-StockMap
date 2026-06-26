@@ -1,0 +1,607 @@
+{
+ "id": "hydrogen",
+ "tab": "氫能/燃料電池",
+ "title": "氫能與燃料電池供應鏈 (Hydrogen & Fuel Cells)",
+ "subtitle": "Hydrogen & Fuel Cells — AI 資料中心對「快速到位電力」的渴求把燃料電池(Bloom SOFC)從邊緣敘事推成 2026 最強落地題材。Bloom Energy(BE) Q1'26 營收暴增至 $751M(+130%)、淨利 $70.65M(由虧轉盈)、FY26 指引上修至 $3.4-3.8B、總 backlog $20B、Oracle 2.8GW + AEP $2.65B/1GW + Brookfield $5B(含 Wyoming 900MW) + Centrica/Delta 進歐洲；Fremont 廠 1GW→2GW。2026 前 90 天業界簽下 $7.65B 資料中心燃料電池合約。上游綠氫/電解槽端則是冰火兩重天：政策依賴、中國過剩、西方撤退(Cummins 2026-02 暫停接單提列 $458M、thyssenkrupp nucera Q1 -44% 下修指引、2025 ~60 案取消)；Plug Power(PLUG) Q1'26 營收 $163.5M(+22%) 仍虧損。⚠ 銥(Ir)Q2'26 漲至 ~$7,400/oz(較 2020 +425%)、2024-27 供給赤字，是 PEM 電解槽隱形天花板。價值鏈：電解槽(PEM/ALK/SOEC) / 燃料電池(PEMFC/SOFC、Ceres IP 授權) / PEM 膜·鉑銥催化劑 / 工業氣體儲運 → 終端(AI 資料中心 prime power、重卡、綠氨)。⚠ Bloom 的 SOFC 主要燒天然氣、與「綠氫純度」關係不大。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 5
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "36+"
+  },
+  {
+   "k": "Bloom Q1'26",
+   "v": "+130%/轉盈",
+   "sub": "營收 $751M·淨利 $70.65M·FY26 指引 $3.4-3.8B·backlog $20B",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "AI 資料中心 prime power·政策依賴+整機虧損+板塊高波動",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "make",
+   "label": "製氫 / 電解槽 Hydrogen Production & Electrolyzers",
+   "main": false
+  },
+  {
+   "id": "mat",
+   "label": "核心材料 / 零組件 Materials & Components",
+   "main": false
+  },
+  {
+   "id": "cell",
+   "label": "燃料電池系統 Fuel Cell Systems",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "終端需求 / Offtake End Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "electrolyzer",
+   "row": "make",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "電解槽 / 綠氫生產設備",
+   "nameEn": "Electrolyzers (PEM / ALK / SOEC)",
+   "competition": "highgrowth",
+   "single": "⚠ 中國主導 ~65% 專案 pipeline·西方撤退中(Cummins 暫停接單、nucera 下修)·2025 ~60 案取消",
+   "desc": "把水電解成綠氫的核心設備，分 ALK(鹼性)、PEM(質子交換膜)、SOEC(固態氧化物)、AEM 路線。是綠氫敘事的設備端，但中國產能嚴重過剩、西方高度依賴補貼。",
+   "marketSize": "$2-4B(2026)·>140GW pipeline",
+   "growth": "CAGR 12-24%",
+   "share": "null",
+   "analysis": "市場：綠氫電解槽 2026 約 $2-4B；全球 >140GW 專案在開發(2026-03)，裝機由 2025 ~2GW→2035 >150GW；CAGR 12-24%。技術佔比：ALK 65-70%(最低 capex $500-1,000/kW)、PEM 30-35%(最快成長、效率 82.9%)、SOEC <5%(效率 80-95% LHV、700-900°C)。⚠ 中國主導：佔全球專案 pipeline ~65%、產能過剩(2024 產能 39GW vs 內需僅 1.1GW)、stack $114-142/kW 比西方便宜 57%——隆基綠能(601012.SS，3.5GW、與 Sinopec 全球首座萬噸級綠氫)、陽光電源 Sungrow(300274.SZ，3.0GW、160MW 出口三大洲)、Peric(6.5GW 龍頭未上市)。⚠ 2026-H1 西方撤退加劇、需求斷層：2025 全球約 60 個氫專案取消(蒸發 ~500 萬噸/年規劃產能)，因綠氫成本 $4-6/kg vs 買方僅願付 $1-2/kg 的「可行性缺口」。Cummins/Accelera(CMI)2026-02 暫停所有電解槽新銷售、提列 $458M 減損、裁比利時廠;thyssenkrupp nucera(NCH2.DE，NEOM >2GW 供應商已 90% 完工)Q1'26 營收 -44%、2026-03 下修全年指引至 €450-550M。其餘西方靠政策續命：Nel ASA(NEL.OL，挪威 ALK+PEM、新加壓 ALK turnkey <$1,450/kW@25MW、年產能 ~1GW)、ITM Power(ITM.L，英國 PEM、~500MW 產能)、Siemens Energy(ENR.DE，PEM)。Plug Power 自製 PEM 並建 6 座綠氫廠($1.66B DOE 貸款)。",
+   "companies": [
+    {
+     "name": "Nel ASA",
+     "ticker": "NEL.OL",
+     "country": "NO",
+     "share": "西方 ALK+PEM 領先",
+     "products": "鹼性/PEM 電解槽 / 加氫站",
+     "note": "新一代加壓 ALK turnkey <$1,450/kW@25MW；Nel US 拿 Collins/MC500 PEM 訂單",
+     "src": "https://www.pv-magazine.com/2026/05/08/the-hydrogen-stream-nel-asa-launches-new-pressurized-alkaline-electrolyzer/"
+    },
+    {
+     "name": "ITM Power",
+     "ticker": "ITM.L",
+     "country": "UK",
+     "share": "英國 PEM 純玩家",
+     "products": "PEM 電解槽",
+     "note": "2025-05 簽 >300MW 給 APAC 電廠綠氫",
+     "src": "https://www.blackridgeresearch.com/blog/list-of-global-top-hydrogen-electrolyzer-manufacturers-companies-makers-suppliers-in-the-world"
+    },
+    {
+     "name": "Cummins / Accelera",
+     "ticker": "CMI",
+     "country": "US",
+     "share": "⚠ 2026-02 暫停電解槽新接單",
+     "products": "PEM 電解槽(撤退中) / 燃料電池",
+     "note": "2026-02 暫停所有電解槽新銷售、提列 $458M 減損、裁減比利時廠人力——西方電解槽撤退指標",
+     "src": "https://exoswan.com/green-hydrogen-stocks/"
+    },
+    {
+     "name": "隆基綠能 LONGi Hydrogen",
+     "ticker": "601012.SS",
+     "country": "CN",
+     "share": "中國 ALK 領先 3.5GW",
+     "products": "鹼性電解槽",
+     "note": "與 Sinopec 全球首座萬噸級綠氫專案、Ordos 30,000t/y 風光綠氫",
+     "src": "https://www.longi.com/en/news/hydrogen-project/"
+    },
+    {
+     "name": "陽光電源 Sungrow",
+     "ticker": "300274.SZ",
+     "country": "CN",
+     "share": "中國 3.0GW 整合方案",
+     "products": "ALK/PEM 電解槽 / 製氫系統",
+     "note": "160MW 出口三大洲；Kenya 80MW 地熱綠氨肥料",
+     "src": "https://www.hydrogeninsight.com/electrolysers/chinese-manufacturer-sungrow-ships-more-than-160mw-of-electrolysers-to-green-hydrogen-projects-on-three-continents/2-1-1964001"
+    },
+    {
+     "name": "thyssenkrupp nucera",
+     "ticker": "NCH2.DE",
+     "country": "DE",
+     "share": "大型 ALK 工程(訂單轉弱)",
+     "products": "鹼性電解槽 / 氯鹼",
+     "note": "NEOM >2GW 供應商(已 90% 完工);⚠ Q1'26 營收 -44%、2026-03 下修全年指引至 €450-550M",
+     "src": "https://www.ad-hoc-news.de/boerse/news/ueberblick/thyssenkrupp-nucera-can-an-electrolyzer-pure-play-power-the-green/68471369"
+    },
+    {
+     "name": "Siemens Energy",
+     "ticker": "ENR.DE",
+     "country": "DE",
+     "share": "PEM 大廠",
+     "products": "Silyzer PEM 電解槽",
+     "note": "德系 PEM 規模化",
+     "src": "https://www.openpr.com/news/4503350/hydrogen-electrolyzer-market-is-booming-worldwide-siemens"
+    },
+    {
+     "name": "Plug Power",
+     "ticker": "PLUG",
+     "country": "US",
+     "share": "垂直整合(自製+自建廠)",
+     "products": "PEM 電解槽 / 綠氫廠",
+     "note": "$1.66B DOE 貸款建 6 廠；Hy2gen 275MW + Barrow 30MW 訂單；仍虧損",
+     "src": "https://247wallst.com/investing/2026/04/06/plug-power-advances-4-on-biggest-electrolyzer-project-yet-and-clear-path-to-profitability/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "fuelcell"
+    },
+    {
+     "id": "demand_end"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nel 加壓 ALK / 電解槽動態 (pv-magazine)",
+     "url": "https://www.pv-magazine.com/2026/05/08/the-hydrogen-stream-nel-asa-launches-new-pressurized-alkaline-electrolyzer/"
+    },
+    {
+     "label": "綠氫電解槽市場與技術佔比 (DataM)",
+     "url": "https://www.datamintelligence.com/research-report/green-hydrogen-electrolyzer-market"
+    },
+    {
+     "label": "中國電解槽廠商與成本 (EnkiAI)",
+     "url": "https://enkiai.com/fuel-cells/top-chinese-electrolyzer-manufacturers/"
+    }
+   ]
+  },
+  {
+   "id": "industrial_gas",
+   "row": "make",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "工業氣體 / 製氫 / 儲運",
+   "nameEn": "Industrial Gas, Production & Storage",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Linde/Air Liquide/Air Products 三巨頭壟斷液氫產能與配送；氨裂解 2025 才剛 unlock",
+   "desc": "工業氣體三巨頭主導氫的製造(灰氫 SMR、藍氫+CCS)、液化、儲存與長距離運輸(液氫、高壓氣氫、氨載體)，是整個氫經濟的基礎設施錨點。",
+   "marketSize": "氫市場錨點",
+   "growth": "三巨頭主導",
+   "share": "null",
+   "analysis": "三巨頭寡占：Linde(LIN，全球最大液氫產能與配送、~1,000km 管網、全球首座高純氫鹽穴儲存、2026 起供 CCS 藍氫 1.1Mt/y 廠)、Air Liquide(AI.PA，2025-11 啟用全球首座工業級氨裂解 30 噸/日@Antwerp，解決氫難長距運輸的結構性難題)、Air Products(APD，NEOM 全球最大綠氫專案、液氫)。⚠ 氨作為氫載體：氨已有成熟全球運輸基建，可長距離輸氫後再裂解還原——這是儲運端最被低估的進展。設備：Chart Industries(GTLS，液氫儲槽/設備，已併入 Baker Hughes BKR)、Topsoe(丹麥，SOEC，擬建 $300M 美國固態氧化物廠)。",
+   "companies": [
+    {
+     "name": "Linde",
+     "ticker": "LIN",
+     "country": "IE",
+     "share": "全球最大液氫產能/配送",
+     "products": "液氫 / 氫管網 / 鹽穴儲存",
+     "note": "~1,000km 管網；首座高純氫鹽穴；2026 起供 CCS 藍氫 1.1Mt/y",
+     "src": "https://www.linde.com/clean-energy/our-h2-expertise"
+    },
+    {
+     "name": "Air Liquide",
+     "ticker": "AI.PA",
+     "country": "FR",
+     "share": "氨裂解全球首座",
+     "products": "液氫 / 氨裂解 / 氦低溫",
+     "note": "2025-11 啟用工業級氨裂解 30 噸/日@Antwerp",
+     "src": "https://www.airliquide.com/group/press-releases-news/2025-11-13/world-first-air-liquides-innovative-technology-converts-ammonia-hydrogen-industrial-scale-paving-way"
+    },
+    {
+     "name": "Air Products",
+     "ticker": "APD",
+     "country": "US",
+     "share": "全球最大綠氫專案",
+     "products": "綠氫(NEOM) / 液氫 / 工業氣體",
+     "note": "NEOM 全球最大綠氫；氫/氦工業氣體",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/hydrogen-market.asp"
+    },
+    {
+     "name": "Chart Industries (Baker Hughes)",
+     "ticker": "BKR",
+     "country": "US",
+     "share": "液氫設備/儲槽",
+     "products": "液氫儲槽 / 低溫設備",
+     "note": "Chart 已併入 Baker Hughes",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/hydrogen-market.asp"
+    },
+    {
+     "name": "Topsoe",
+     "ticker": "—",
+     "country": "DK",
+     "share": "SOEC 製氫",
+     "products": "固態氧化物電解 / 製氫工程",
+     "note": "未上市；擬建 $300M 美國 SOEC 廠",
+     "src": "https://ammoniaenergy.org/articles/solid-oxide-electrolysis-building-capacity/"
+    },
+    {
+     "name": "Sinopec",
+     "ticker": "600028.SS",
+     "country": "CN",
+     "share": "中國最大製氫/煉油用氫",
+     "products": "綠氫煉油 / 氫供應",
+     "note": "與隆基全球首座萬噸級綠氫煉油專案",
+     "src": "https://www.longi.com/en/news/hydrogen-project/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "fuelcell"
+    },
+    {
+     "id": "demand_end"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Linde 氫能基建 (官方)",
+     "url": "https://www.linde.com/clean-energy/our-h2-expertise"
+    },
+    {
+     "label": "Air Liquide 工業級氨裂解 (官方)",
+     "url": "https://www.airliquide.com/group/press-releases-news/2025-11-13/world-first-air-liquides-innovative-technology-converts-ammonia-hydrogen-industrial-scale-paving-way"
+    }
+   ]
+  },
+  {
+   "id": "materials",
+   "row": "mat",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "核心材料 / 零組件 (膜 · 鉑銥催化劑 · MEA)",
+   "nameEn": "Membranes, Pt/Ir Catalysts & MEA",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Chemours Nafion™ 質子交換膜近壟斷；銥(Ir)Q2'26 漲至 ~$7,400/oz(較 2020 +425%)、2024-27 供給赤字",
+   "desc": "PEM 燃料電池與 PEM 電解槽共用的核心材料：質子交換膜、鉑/銥催化劑、膜電極組(MEA)、雙極板、氣體擴散層(GDL)。單點卡位明確，是比押注虧損整機商更穩的「賣鏟人」。",
+   "marketSize": "賣鏟人最務實環節",
+   "growth": "單點卡位",
+   "share": "null",
+   "analysis": "質子交換膜：Chemours Nafion™(CC，旗艦產品、PEM 燃料電池與電解槽共用商業膜、近壟斷地位)、W.L. Gore(GORE-SELECT，未上市)、AGC(5201.T，日系氟膜)、Solvay(SOLB.BR)。⚠ 鉑/銥催化劑：MEA 用鉑催化劑(碳載鉑)；銥(Ir)為 PEM 電解槽稀缺瓶頸——比鉑更稀缺、年產量極小、PEMEL 每年可用量僅 ~1.5 噸。2026-Q2 銥價飆至 ~$7,400/oz(較 2020 +425%)，2024-2027 出現供給赤字(裝機每兩年翻倍)，是 PEM 電解槽大規模化的隱形天花板與市場常忽略的鎖喉點(JM/Heraeus 正以低銥載量配方+回收緩解)。貴金屬催化劑龍頭：Johnson Matthey(JMAT.L，英國)、Heraeus(未上市，德國)、Umicore(UMI.BR，比利時)、Tanaka 田中貴金屬(未上市，日本)。雙極板/GDL/MEA 為碳/石墨/金屬材料。整個材料環節單點性高、是板塊中最務實的卡位點。",
+   "companies": [
+    {
+     "name": "Chemours (Nafion™)",
+     "ticker": "CC",
+     "country": "US",
+     "share": "質子交換膜近壟斷",
+     "products": "Nafion™ PEM 膜(燃料電池+電解槽)",
+     "note": "旗艦 Advanced Performance Materials；PEM 商業膜事實標準",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001627223/000162722326000011/cc-20260331.htm"
+    },
+    {
+     "name": "W.L. Gore",
+     "ticker": "—",
+     "country": "US",
+     "share": "高性能複合膜",
+     "products": "GORE-SELECT 強化質子交換膜",
+     "note": "未上市；薄膜強化技術領先",
+     "src": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9293778"
+    },
+    {
+     "name": "Johnson Matthey",
+     "ticker": "JMAT.L",
+     "country": "UK",
+     "share": "鉑族催化劑/MEA 龍頭",
+     "products": "鉑/銥催化劑 / MEA / CCM",
+     "note": "PEM 催化劑與膜電極組核心供應",
+     "src": "https://www.futuremarketinsights.com/reports/global-fuel-cell-market"
+    },
+    {
+     "name": "AGC",
+     "ticker": "5201.T",
+     "country": "JP",
+     "share": "日系氟膜",
+     "products": "氟系離子交換膜",
+     "note": "PEM/電解質膜材料",
+     "src": "https://www.futuremarketinsights.com/reports/global-fuel-cell-market"
+    },
+    {
+     "name": "Umicore",
+     "ticker": "UMI.BR",
+     "country": "BE",
+     "share": "貴金屬催化劑",
+     "products": "鉑/鈀催化劑 / 回收",
+     "note": "燃料電池催化劑與貴金屬循環",
+     "src": "https://www.futuremarketinsights.com/reports/global-fuel-cell-market"
+    },
+    {
+     "name": "Solvay",
+     "ticker": "SOLB.BR",
+     "country": "BE",
+     "share": "氟聚合物膜材料",
+     "products": "Aquivion PFSA 膜",
+     "note": "PEM 膜替代供應",
+     "src": "https://www.futuremarketinsights.com/reports/global-fuel-cell-market"
+    },
+    {
+     "name": "Tanaka (田中貴金属)",
+     "ticker": "—",
+     "country": "JP",
+     "share": "日系鉑催化劑",
+     "products": "鉑催化劑 / 觸媒",
+     "note": "未上市；燃料電池鉑觸媒",
+     "src": "https://www.futuremarketinsights.com/reports/global-fuel-cell-market"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "electrolyzer"
+    },
+    {
+     "id": "fuelcell"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Chemours 10-Q FY2026 (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001627223/000162722326000011/cc-20260331.htm"
+    },
+    {
+     "label": "燃料電池市場與材料 (FMI)",
+     "url": "https://www.futuremarketinsights.com/reports/global-fuel-cell-market"
+    }
+   ]
+  },
+  {
+   "id": "fuelcell",
+   "row": "cell",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "燃料電池系統（發電端，板塊最強）",
+   "nameEn": "Fuel Cell Systems (PEMFC / SOFC)",
+   "competition": "highgrowth",
+   "single": "★ Bloom SOFC 是 2026 最強落地點：Q1'26 +130% 轉盈、backlog $20B、Oracle 2.8GW、繞過電網排隊",
+   "desc": "把氫(或天然氣)轉成電的核心裝置：PEMFC(移動為主)、SOFC(固定/資料中心)、MCFC。2026 的轉折是 SOFC 成為 AI 資料中心 behind-the-meter 快速電力，把 Bloom 重估成 AI 電力股。",
+   "marketSize": "$10-17B(2026)·SOFC 起飛",
+   "growth": "CAGR 26-37%",
+   "share": "null",
+   "analysis": "市場：全球燃料電池 2026 約 $10-17B(各家估值分歧)、CAGR 26-37%；PEMFC 佔 ~67%(移動)、SOFC CAGR 32-48%(成長 ~PEM 兩倍、2026 市佔 ~47.8% 居首、公用事業看重 60% 電效率與燃料彈性)。★ Bloom Energy(BE，SOFC 龍頭，已轉盈)：Q1'26 營收暴增至 $751M(+130.4%)、淨利 $70.65M(由虧轉盈)、FY26 指引上修至 $3.4-3.8B(原僅 +80%)、總 backlog $20B(產品 $6B+服務 $14B)；Oracle 2.8GW(全包 Project Jupiter@新墨西哥) + AEP $2.65B/1GW + Brookfield $5B(含 Wyoming 900MW)+ Centrica/Delta 進軍歐洲；Fremont 廠由 1GW 擴至 2GW 因應 Oracle/AEP。⚠ 但 Bloom SOFC 主要燒天然氣、與「綠氫純度」關係不大，是「快速到位的發電機」。⚠ Ceres Power(CWR.L，UK)：SOFC/SOEC 輕資產 IP 授權商，授權 Doosan(50MW/y、首筆權利金)、Delta(£43M)、Denso、Shell；Q1'26 失去 Bosch 夥伴、FY25 營收降至 £32.6M——是 SOFC 板塊被低估的 IP 卡位點。Plug Power(PLUG)：PEM 燃料電池(堆高機/固定/移動)，Q1'26 營收 $163.5M(+22%)、毛利率 -55%→-13% 仍虧損、目標 Q4'26 正 EBITDAS。Ballard(BLDP)：PEM bus/rail/stationary，2026-06 拿 15MW 固定訂單(150×100kW)。FuelCell Energy(FCEL)：MCFC/SOFC+碳捕捉(與 Exxon)，Q2'26 營收 $35.6M(-5%)、淨虧擴大至 $77.6M、backlog $1.14B，但 pipeline 暴增至 4GW(QoQ +267%、89% 為資料中心)、推 12.5MW 模組化 block、Torrington 擬投 $275M 擴 350→500MW、靠增發續命。Doosan Fuel Cell(336260.KS)：用 Ceres SteelCell 量產 SOFC(50MW/y)。",
+   "companies": [
+    {
+     "name": "Bloom Energy",
+     "ticker": "BE",
+     "country": "US",
+     "share": "SOFC 龍頭 · AI 電力首選",
+     "products": "Bloom Energy Server SOFC / SOEC",
+     "note": "Q1'26 營收 $751M(+130%)、淨利 $70.65M(轉盈)、FY26 指引上修 $3.4-3.8B；backlog $20B；Oracle 2.8GW(Project Jupiter NM)+AEP 1GW+Brookfield $5B(含 Wyoming 900MW)；Fremont 廠 1GW→2GW",
+     "src": "https://www.renewable-energy-industry.com/news/world/article-7383-bloom-energy-q1-2026-results-revenue-up-130-full-year-forecast-raised-stock-hits-new-all-time-high"
+    },
+    {
+     "name": "Plug Power",
+     "ticker": "PLUG",
+     "country": "US",
+     "share": "PEM 燃料電池+綠氫",
+     "products": "PEM 燃料電池 / GenDrive / 電解槽",
+     "note": "Q1'26 $163.5M(+22%)、毛利率 -55%→-13%；目標 Q4'26 正 EBITDAS；仍虧損",
+     "src": "https://www.stocktitan.net/news/PLUG/plug-power-reports-strong-q1-2026-results-with-22-revenue-growth-and-iklorvpk9kck.html"
+    },
+    {
+     "name": "Ballard Power",
+     "ticker": "BLDP",
+     "country": "CA",
+     "share": "PEM 移動/固定",
+     "products": "PEM 燃料電池 bus/rail/stationary",
+     "note": "2026-06 拿 15MW 固定訂單(150×100kW)、H2'26 起交付",
+     "src": "https://www.stocktitan.net/news/BLDP/ballard-announces-order-for-15-mw-in-the-stationary-power-kdwihz4l12tf.html"
+    },
+    {
+     "name": "FuelCell Energy",
+     "ticker": "FCEL",
+     "country": "US",
+     "share": "MCFC/SOFC+碳捕捉",
+     "products": "MCFC/SOFC / 12.5MW 模組化電力塊 / 碳捕捉模組",
+     "note": "Q2'26 $35.6M(-5%)、淨虧 $77.6M、EPS -$1.45、backlog $1.14B；pipeline 暴增 4GW(QoQ +267%、89% 為資料中心)；推 12.5MW 模組化 block；Torrington 擬投 $275M 擴 350→500MW；與 Exxon 碳捕捉(運 Rotterdam)；靠增發續命",
+     "src": "https://investor.fce.com/press-releases/press-release-details/2026/FuelCell-Energy-Reports-Second-Fiscal-Quarter-2026-Results-Advances-Data-Center-Power-Strategy/default.aspx"
+    },
+    {
+     "name": "Ceres Power",
+     "ticker": "CWR.L",
+     "country": "UK",
+     "share": "SOFC/SOEC IP 授權龍頭(輕資產)",
+     "products": "SteelCell SOFC 技術授權 / SOEC stack",
+     "note": "輕資產授權模式;授權 Doosan(50MW/y 量產、首筆權利金)、Delta(£43M、2026 底量產)、Denso、Shell、Weichai;⚠ Q1'26 失去 Bosch 夥伴;FY25 營收 £32.6M(yoy 降，授權時點)",
+     "src": "https://www.ceres.tech/media/jpmpucda/ceres-power-holdings-plc-final-results-statement-2026-march-26.pdf"
+    },
+    {
+     "name": "Doosan Fuel Cell",
+     "ticker": "336260.KS",
+     "country": "KR",
+     "share": "韓國 SOFC/PAFC",
+     "products": "PAFC / SOFC 固定電源",
+     "note": "2025-07 用 Ceres SteelCell 技術量產 SOFC(50MW/y)、12 月首筆 9MW 商用單;鎖定 AI 資料中心",
+     "src": "https://www.ceres.tech/media/1ppfrodd/external_ceres-power-doosan-sop-announcement-20250728-final.pdf"
+    },
+    {
+     "name": "SK ecoplant",
+     "ticker": "—",
+     "country": "KR",
+     "share": "Bloom SOEC 韓國夥伴",
+     "products": "SOEC 綠氫示範 / SOFC 部署",
+     "note": "未上市；與 Bloom KOSPO Jeju 綠氫 1.8MW SOEC",
+     "src": "https://esgnews.com/bloom-energy-and-sk-ecoplant-to-power-south-koreas-green-hydrogen-initiative-with-kospo/"
+    },
+    {
+     "name": "Cummins / Accelera",
+     "ticker": "CMI",
+     "country": "US",
+     "share": "PEM 燃料電池+電解槽",
+     "products": "PEM 燃料電池 / 電解槽",
+     "note": "移動+固定 PEM 系統",
+     "src": "https://www.futuremarketinsights.com/reports/global-fuel-cell-market"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "electrolyzer"
+    },
+    {
+     "id": "industrial_gas"
+    },
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "demand_end"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Bloom 成 2026 AI 資料中心電力play (24/7)",
+     "url": "https://247wallst.com/investing/2026/04/14/bloom-energy-rockets-23-as-fuel-cell-tech-becomes-the-ai-data-center-power-play-of-2026/"
+    },
+    {
+     "label": "燃料電池市場規模/SOFC CAGR (Fortune BI)",
+     "url": "https://www.fortunebusinessinsights.com/industry-reports/fuel-cell-market-100733"
+    }
+   ]
+  },
+  {
+   "id": "demand_end",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端需求 / Offtake (AI 資料中心 · 重卡 · 綠氨)",
+   "nameEn": "End Demand & Offtake",
+   "competition": "emerging",
+   "single": "AI 資料中心 prime power 是新需求引擎：Oracle 2.8GW、AEP 1GW、Brookfield $5B(皆 Bloom)",
+   "desc": "燃料電池/氫的終端應用：AI 資料中心快速電力(最強)、重卡與巴士移動(互補 EV)、工業脫碳(綠氨/綠鋼/煉油)。AI 需求是 2026 把氫能燃料電池推上熱榜的核心邏輯。",
+   "marketSize": "需求引擎",
+   "growth": "AI 電力催化",
+   "share": "null",
+   "analysis": "★ AI 資料中心 prime power(最強)：2026 前 90 天燃料電池業就簽下 $7.65B 資料中心約束性合約——Oracle 2.8GW SOFC 主服務協議(全包 Project Jupiter@NM)、AEP $2.65B/~900MW 20 年 offtake(2026-01)、Brookfield 承諾 $5B 融資 Bloom 部署(含 Wyoming 900MW)、Centrica+Delta 把 SOFC 帶進英國/歐洲資料中心(2026-04)。核心賣點是 behind-the-meter 繞過電網排隊(time-to-power)：美國併網佇列已長達 7-10 年，SOFC 數月即可上線；Bloom 2026 報告稱近 32% 美國資料中心擬 2030 全離網靠 SOFC，Goldman 估燃料電池可供 6-15% 增量資料中心電力、佔 behind-the-meter 25-50%。重卡/移動(互補非競爭 EV)：Toyota(7203.T，與 Hyroad 部署 40 台 Class 8@加州、2026 簽 MOU 成 Cellcentric 平等股東供電堆)、Daimler/Volvo(NextGenH2 卡車 100 台小批量 2026 底起在 Wörth 廠交付)、Hyundai(005380.KS，XCIENT 燃料電池卡車、Savannah GA 製氫站、Class 8 約 500 mile 續航/15-20 分加注)。⚠ 美國重卡氫需求隨 Nikola/Hyzon 退場而轉弱。工業脫碳：綠氨(Sungrow Kenya 80MW 地熱綠氨肥料)、綠鋼、煉油(Sinopec 萬噸級)。⚠ 政策依賴極高(45V 稅收抵免/DOE 貸款/RED III)，5/18 板塊單日 -12%~-22%。",
+   "companies": [
+    {
+     "name": "Oracle",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "Bloom 2.8GW offtake",
+     "products": "OCI 資料中心 SOFC 供電",
+     "note": "與 Bloom 簽 2.8GW SOFC 主服務協議",
+     "src": "https://enkiai.com/solid-oxide-fuel-cells/bloom-energy-fuel-cell-2026-2-8-gw-oracle-offtake/"
+    },
+    {
+     "name": "American Electric Power (AEP)",
+     "ticker": "AEP",
+     "country": "US",
+     "share": "Bloom 1GW 20 年 offtake",
+     "products": "$2.65B SOFC 部署",
+     "note": "2026-01 敲定 1GW、20 年合約",
+     "src": "https://enkiai.com/data-center/bloom-energy-fuel-cell-2026-7-65b-data-center-deals/"
+    },
+    {
+     "name": "Brookfield Asset Mgmt",
+     "ticker": "BAM",
+     "country": "CA",
+     "share": "$5B Bloom 部署融資",
+     "products": "AI 資料中心 SOFC 融資框架",
+     "note": "承諾投資高達 $5B 為 Bloom 部署融資",
+     "src": "https://www.datacenterdynamics.com/en/news/bloom-energy-signs-5bn-partnership-with-brookfield-to-deploy-fuel-cell-tech-across-ai-data-centers/"
+    },
+    {
+     "name": "Toyota",
+     "ticker": "7203.T",
+     "country": "JP",
+     "share": "重卡燃料電池",
+     "products": "Class 8 燃料電池卡車 / 加氫 / 電堆",
+     "note": "與 Hyroad 部署 40 台@加州；2026 簽 MOU 將成 Cellcentric(Daimler/Volvo JV)平等股東、供電堆技術",
+     "src": "https://www.truckinginfo.com/news/toyotas-entry-into-cellcentric-signals-push-to-accelerate-hydrogen-truck-adoption"
+    },
+    {
+     "name": "Hyundai Motor",
+     "ticker": "005380.KS",
+     "country": "KR",
+     "share": "燃料電池重卡龍頭",
+     "products": "XCIENT 燃料電池卡車",
+     "note": "Savannah GA 製氫站；Class 8 ~500mile/15-20 分加注",
+     "src": "https://www.truckingdive.com/news/trimac-hydrogen-fuel-cell-hyundai-xcient/808641/"
+    },
+    {
+     "name": "ExxonMobil",
+     "ticker": "XOM",
+     "country": "US",
+     "share": "碳捕捉+藍氫",
+     "products": "FuelCell 碳捕捉合作 / 藍氫",
+     "note": "與 FCEL 碳捕捉模組(運往 Rotterdam)",
+     "src": "https://investor.fce.com/press-releases/press-release-details/2026/FuelCell-Energy-Reports-Second-Fiscal-Quarter-2026-Results-Advances-Data-Center-Power-Strategy/default.aspx"
+    },
+    {
+     "name": "Korea Southern Power (KOSPO)",
+     "ticker": "—",
+     "country": "KR",
+     "share": "綠氫示範需求",
+     "products": "Jeju 綠氫(交通燃料)",
+     "note": "未上市;與 Bloom/SK ecoplant 1.8MW SOEC 示範",
+     "src": "https://esgnews.com/bloom-energy-and-sk-ecoplant-to-power-south-koreas-green-hydrogen-initiative-with-kospo/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fuelcell"
+    },
+    {
+     "id": "electrolyzer"
+    },
+    {
+     "id": "industrial_gas"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Bloom Oracle 2.8GW (EnkiAI)",
+     "url": "https://enkiai.com/solid-oxide-fuel-cells/bloom-energy-fuel-cell-2026-2-8-gw-oracle-offtake/"
+    },
+    {
+     "label": "Brookfield $5B 部署 Bloom (DCD)",
+     "url": "https://www.datacenterdynamics.com/en/news/bloom-energy-signs-5bn-partnership-with-brookfield-to-deploy-fuel-cell-tech-across-ai-data-centers/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "materials",
+   "electrolyzer"
+  ],
+  [
+   "materials",
+   "fuelcell"
+  ],
+  [
+   "electrolyzer",
+   "fuelcell"
+  ],
+  [
+   "electrolyzer",
+   "demand_end"
+  ],
+  [
+   "industrial_gas",
+   "fuelcell"
+  ],
+  [
+   "industrial_gas",
+   "demand_end"
+  ],
+  [
+   "fuelcell",
+   "demand_end"
+  ]
+ ],
+ "_proposed": {}
+}

@@ -1,0 +1,575 @@
+{
+ "id": "cim_pim",
+ "tab": "記憶體內運算",
+ "title": "記憶體內運算 CIM / PIM 供應鏈 (Compute-in-Memory)",
+ "subtitle": "Compute-in-Memory / Processing-in-Memory — AI 推論約 60% 能耗花在記憶體與運算間的資料搬運（搬一個數字耗能是乘法本身的 100~1000 倍），CIM/PIM 把運算嵌進記憶體陣列直接消除「記憶體牆」。TrendForce 估 2029 推論成 AI 伺服器主驅動，能效是勝負手。兩主軸：PIM 貼 DRAM 生態（三星 LPDDR-PIM、SK海力士 GDDR6-AiM/AiMX3，兩強聯手推 LPDDR6-PIM 標準）漸進商化；CIM 由 d-Matrix（Corsair 2026-06 量產、Series C $275M 估值 $2B）、EnCharge（類比切換電容 SRAM）、Axelera（D-IMC+RISC-V）、Mythic（類比快閃）另闢戰場。CIM 晶片市場 2025 約 $500M、CAGR 38.4%→2035 $12.8B。⚠ emerging 高風險：基期極小、Untether 已倒閉(團隊被 AMD acquihire)，純新創多未上市，可投資標的集中在記憶體大廠 PIM、力旺/Weebit NVM IP、TSMC/GF 承製「賣鏟人」。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 5
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "CIM 晶片市場",
+   "v": "$500M→$12.8B",
+   "sub": "2025→2035·CAGR 38.4%(GMInsights)",
+   "hot": true
+  },
+  {
+   "k": "募資/催化",
+   "v": "爆量",
+   "sub": "d-Matrix量產(微軟M12·$2B)·Axelera>$250M·Mythic併Videantis·EnCharge EN100出貨",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "device",
+   "label": "記憶體元件 / 新興 NVM 製程 Memory & eNVM",
+   "main": false
+  },
+  {
+   "id": "ip",
+   "label": "CIM/PIM IP 與 EDA / 矽智財 IP & EDA",
+   "main": false
+  },
+  {
+   "id": "chip",
+   "label": "CIM/PIM 晶片設計商 Chip Designers",
+   "main": true
+  },
+  {
+   "id": "fab",
+   "label": "製造 / 封裝 Foundry & Packaging",
+   "main": false
+  },
+  {
+   "id": "app",
+   "label": "終端推論應用 End-Inference Applications",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "memory_device",
+   "row": "device",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "記憶體元件 / 新興 NVM (SRAM/DRAM/ReRAM/MRAM)",
+   "nameEn": "Memory & Emerging NVM Devices",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · DRAM PIM 由韓系雙雄壟斷；ReRAM crossbar 為類比 CIM 關鍵載體",
+   "desc": "CIM/PIM 巨集所依附的底層記憶體位元：SRAM（數位 CIM）、DRAM（PIM）、ReRAM/MRAM/類比快閃（非揮發類比 CIM crossbar）。新興 NVM 是把權重「常駐」記憶體陣列、實現存算一體的物理基礎。",
+   "marketSize": "CIM 物理基礎",
+   "growth": "eNVM 2028 ~$2.7B",
+   "share": "null",
+   "analysis": "DRAM/PIM 由韓系雙雄壟斷：三星（005930.KS，HBM-PIM/LPDDR-PIM，2025-04 OCP Global Summit 展 LPDDR-PIM）、SK海力士（000660.KS，GDDR6-AiM）、Micron（MU，PIM 原型參與者）。新興 NVM/ReRAM：Weebit Nano（WBT.AX，ReRAM IP，2025-10 於 onsemi 300mm 量產 fab 流片、SkyWater 130nm 量產、TI 2025-12 授權、2026-03 入選韓國政府 ACiM 計畫）、Infineon×TSMC（IFX.DE，AURIX TC4 MCU 內含 20MB ReRAM、TSMC 28nm 製造）、GlobalFoundries（GFS，22FDX+ RRAM 平台 2026 量產）。Yole 估 2028 全球嵌入式新興 NVM 市場約 $2.7B。新興 NVM 的耐寫次數、類比電導線性度，是類比 CIM 量產的關鍵變數。",
+   "companies": [
+    {
+     "name": "Samsung Electronics 三星",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "DRAM/PIM 大廠",
+     "products": "HBM-PIM / LPDDR-PIM / DRAM",
+     "note": "2025-04 OCP 展 LPDDR-PIM；與 SKH 聯手推 LPDDR6-PIM 標準",
+     "src": "https://www.tweaktown.com/news/101983/sk-hynix-and-samsung-team-up-to-standardize-lpddr6-processing-in-memory-pim-for-on-device-ai/index.html"
+    },
+    {
+     "name": "SK hynix",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "GDDR6-AiM 領先",
+     "products": "GDDR6-AiM / DRAM / HBM",
+     "note": "AiM PIM 商化最積極；LPDDR6-PIM 2028、CXL-PIM 路線",
+     "src": "https://news.skhynix.com/sk-hynix-develops-pim-next-generation-ai-accelerator/"
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "country": "US",
+     "share": "DRAM 三強",
+     "products": "DRAM / HBM / PIM 原型",
+     "note": "PIM 原型參與者；DRAM/HBM 三強之一",
+     "src": "https://www.tomshardware.com/tech-industry/semiconductors/hbm-roadmaps-for-micron-samsung-and-sk-hynix-to-hbm4-and-beyond"
+    },
+    {
+     "name": "Weebit Nano",
+     "ticker": "WBT.AX",
+     "country": "AU",
+     "share": "ReRAM 元件/IP",
+     "products": "嵌入式 ReRAM NVM",
+     "note": "1H FY26 營收 A$5.6M(+8× YoY)、FY26 指引≥A$10M；TI 授權、DB HiTek JEDEC 認證、客戶完成流片(含 Overlord Labs)、onsemi 測試晶片如期；韓國 ACiM 計畫",
+     "src": "https://www.weebit-nano.com/news/press-releases/weebit-nano-achieves-record-half-year-revenue-licenses-reram-to-tier-1-texas-instruments/"
+    },
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "車用 ReRAM 落地",
+     "products": "AURIX TC4 MCU(20MB ReRAM)",
+     "note": "與 TSMC 共同開發、28nm 製造；ReRAM 量產落地指標",
+     "src": "https://semiengineering.com/reram-seeks-to-replace-nor/"
+    },
+    {
+     "name": "GlobalFoundries",
+     "ticker": "GFS",
+     "country": "US",
+     "share": "RRAM CIM 平台",
+     "products": "22FDX+ RRAM 平台",
+     "note": "提供 macro PDK；量產 2026",
+     "src": "https://marklapedus.substack.com/p/globalfoundries-rolls-out-rram-sige"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "cim_ip"
+    },
+    {
+     "id": "chip_designer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "三星/SKH LPDDR6-PIM 標準 (TweakTown)",
+     "url": "https://www.tweaktown.com/news/101983/sk-hynix-and-samsung-team-up-to-standardize-lpddr6-processing-in-memory-pim-for-on-device-ai/index.html"
+    },
+    {
+     "label": "ReRAM seeks to replace NOR (SemiEngineering)",
+     "url": "https://semiengineering.com/reram-seeks-to-replace-nor/"
+    }
+   ]
+  },
+  {
+   "id": "cim_ip",
+   "row": "ip",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "CIM/PIM IP 與 EDA / 矽智財",
+   "nameEn": "CIM/PIM IP & EDA",
+   "competition": "competitive",
+   "single": "台廠卡位點 · 力旺 RRAM/MRAM 為 CIM 非揮發權重儲存關鍵授權層",
+   "desc": "授權給晶片設計商與晶圓廠的 NVM 矽智財、SRAM/記憶體編譯器與 CIM 設計流程 EDA，是台廠少數能間接吃到 CIM 趨勢的純 IP 槓桿環節。",
+   "marketSize": "台廠槓桿點",
+   "growth": "授權模式",
+   "share": "null",
+   "analysis": "台廠 IP 槓桿：力旺 eMemory（3529.TWO，Logic NVM IP 龍頭，NeoFuse/NeoMTP/RRAM/MRAM/NeoPUF；NeoFuse OTP 通過 TSMC N3P 驗證(2025-06) 卡進先進製程 AI/HPC；TTM 營收約 $123M、市值約 $7.56B；RRAM/MRAM 是 CIM 非揮發權重儲存基礎）、智原 Faraday（3035.TW，ASIC/SoC + 矽智財含 memory compiler/類比/介面 IP，可整合 CIM 巨集做客製推論 ASIC）。EDA/IP 大廠：Synopsys（SNPS，SRAM/記憶體編譯器、CIM 設計流程）、Cadence（CDNS，Tensilica 可程式 DSP/NPU IP + 記憶體子系統 IP）。Weebit Nano（WBT.AX，ReRAM NVM IP 授權）。此環節為 CIM 提供「把運算塞進記憶體巨集」的設計工具與權重儲存 IP，技術門檻在類比/混訊與良率收斂。",
+   "companies": [
+    {
+     "name": "力旺 eMemory",
+     "ticker": "3529.TWO",
+     "country": "TW",
+     "share": "Logic NVM IP 龍頭",
+     "products": "NeoFuse / NeoMTP / RRAM / MRAM / NeoPUF",
+     "note": "2026Q1 營收 NT$19.39 億(+20% YoY)、授權金 +58.6% YoY、營益率 60.5%；3nm AI Server CPU 授權放量；NeoFuse OTP 通過 TSMC N3P；CIM 權重儲存基礎",
+     "src": "https://www.ememory.com.tw/Content/Upload/files/Webcastconference/2026/Q1/2026%20Q1%20Investor%20Conference%20Transcript_zh_20260508.pdf"
+    },
+    {
+     "name": "智原 Faraday",
+     "ticker": "3035.TW",
+     "country": "TW",
+     "share": "ASIC + 矽智財",
+     "products": "memory compiler / 類比/介面 IP / 客製 ASIC",
+     "note": "可整合 CIM 巨集做客製推論 ASIC",
+     "src": "https://finance.yahoo.com/quote/3035.TW/"
+    },
+    {
+     "name": "Synopsys",
+     "ticker": "SNPS",
+     "country": "US",
+     "share": "EDA/記憶體 IP 龍頭",
+     "products": "SRAM/記憶體編譯器 / CIM 設計流程",
+     "note": "CIM 設計流程與記憶體 IP",
+     "src": "https://www.gminsights.com/industry-analysis/compute-in-memory-cim-chip-market"
+    },
+    {
+     "name": "Cadence",
+     "ticker": "CDNS",
+     "country": "US",
+     "share": "EDA/處理器 IP",
+     "products": "Tensilica DSP/NPU IP / 記憶體子系統",
+     "note": "可程式運算 IP 搭配記憶體子系統",
+     "src": "https://www.gminsights.com/industry-analysis/compute-in-memory-cim-chip-market"
+    },
+    {
+     "name": "Weebit Nano",
+     "ticker": "WBT.AX",
+     "country": "AU",
+     "share": "ReRAM NVM IP",
+     "products": "嵌入式 ReRAM IP 授權",
+     "note": "ReRAM IP 授權模式；多家量產 fab 導入",
+     "src": "https://en.wikipedia.org/wiki/Weebit_Nano"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "memory_device"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "chip_designer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "力旺通過 TSMC N3P 驗證 (TechNews)",
+     "url": "https://technews.tw/2025/06/26/ememory-passed-tsmc-n3p-test/"
+    },
+    {
+     "label": "CIM Chip Market (GMInsights)",
+     "url": "https://www.gminsights.com/industry-analysis/compute-in-memory-cim-chip-market"
+    }
+   ]
+  },
+  {
+   "id": "chip_designer",
+   "row": "chip",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "CIM/PIM 晶片設計商（主戰場，多未上市）",
+   "nameEn": "CIM/PIM Chip Designers",
+   "competition": "emerging",
+   "single": "⚠ 高題材新創 · d-Matrix(微軟 M12 投資)估值 $2B、Corsair 2026-06 量產出貨；多數未上市；Untether 已倒閉(團隊被 AMD acquihire)",
+   "desc": "把乘加運算直接做在記憶體陣列內的晶片設計商，是題材敘事核心。分數位 CIM（SRAM）、類比 CIM（切換電容/類比快閃/ReRAM crossbar）與大廠 PIM 路線，多數為未上市新創、燒錢且軟體生態未成熟。",
+   "marketSize": "高題材高風險",
+   "growth": "募資爆量",
+   "share": "null",
+   "analysis": "數位 CIM：d-Matrix（未上市，DIMC；微軟 M12 投資、屬「微軟支持」陣營；Corsair PCIe Gen5 卡 8×6nm chiplet、2GB on-chip SRAM、~150TB/s、最多 256GB LPDDR5X；2026-06 全面量產出貨、客戶約 90% 在美其餘中東/東南亞、已有 hyperscaler/neocloud/前沿 AI lab 承諾；推 SquadRack 機架級系統；Series C $275M、估值 $2B、累計 $450M；自述 vs GPU 系統 10× 快/3× 低成本/3-5× 能效；下一代 Raptor 走 TSMC 4nm + 3DIMC DRAM 堆疊、預計 2027）、Axelera AI（未上市，NL，D-IMC + RISC-V；Metis AIPU 214 TOPS、Europa 629 TOPS@INT8 2026-H1 上市；2026 募逾 $250M(Innovation Industries 領投、BlackRock 加入)、累計約 $450M；Titania chiplet EuroHPC DARE €61.6M、2027 問世）。類比 CIM：EnCharge AI（未上市，普林斯頓 Naveen Verma 衍生；切換電容 SRAM；2025-05 發表 EN100 並進入 early-access：M.2 200+TOPS@8.25W 筆電、PCIe 4-NPU ~1 PetaOPS 工作站、>40 TOPS/W；自述能效較領先數位 AI 晶片高達 20×；Series B 逾 $100M、累計 $144M+、DARPA $18.6M）、Mythic（未上市，類比快閃存權重；M1076/M2000；2026-05 併購歐洲數位處理器 IP 廠 Videantis 補數位/視覺處理；Series D $125M(2025-12)、累計約 $260M）。大廠 PIM：三星（005930.KS，HBM-PIM/LPDDR-PIM）、SK海力士（000660.KS，CES 2026 展 AiMX/CMM-Ax(CXL-PIM)/CuD，比 GPU 系統省 1/5 功耗）。通用 PIM：UPMEM（未上市，FR，DDR4-DIMM 8 DPU/晶片，批次推論最高 259× vs Xeon）。中國存算一體：Houmo.AI 後摩智能（未上市，CN，Momagic 50、2025-26 中國新興獨角獸 Top 50）。⚠ Untether AI（CA）2025 倒閉、團隊被 AMD acquihire——印證「非聚焦 LLM 則市場有限」的賽道風險。",
+   "companies": [
+    {
+     "name": "d-Matrix",
+     "ticker": "—",
+     "country": "US",
+     "share": "數位 CIM(DIMC) 領先",
+     "products": "Corsair 推論卡 / SquadRack / Raptor 3DIMC",
+     "note": "未上市；微軟 M12 投資；Series C $275M、估值 $2B；Corsair 2026-06 量產出貨(客戶約 90% 在美)；下一代 Raptor 走 TSMC 4nm/3DIMC",
+     "src": "https://www.cnbc.com/2026/06/09/nvidia-d-matrix-chip-production-microsoft.html"
+    },
+    {
+     "name": "EnCharge AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "類比 CIM(切換電容)",
+     "products": "EN100 加速器(M.2 / PCIe)",
+     "note": "未上市；普林斯頓衍生；EN100 上市(M.2 200+TOPS@8.25W 筆電 / PCIe 4-NPU ~1 PetaOPS 工作站、>40 TOPS/W)；Series B >$100M、累計 $144M+、自述能效 20×",
+     "src": "https://www.datacenterdynamics.com/en/news/encharge-ai-launches-its-analog-in-memory-en100-ai-accelerator/"
+    },
+    {
+     "name": "Axelera AI",
+     "ticker": "—",
+     "country": "NL",
+     "share": "數位 CIM(D-IMC)+RISC-V",
+     "products": "Metis / Europa / Titania AIPU",
+     "note": "未上市；2026 募逾 $250M；Metis 214 TOPS、Europa 629 TOPS；EuroHPC DARE €61.6M",
+     "src": "https://en.wikipedia.org/wiki/Axelera_AI"
+    },
+    {
+     "name": "Mythic",
+     "ticker": "—",
+     "country": "US",
+     "share": "類比 CIM(類比快閃)",
+     "products": "M1076 AMP / M2000 系列",
+     "note": "未上市；Series D $125M(2025-12)、累計約 $260M；2026-05 併購 Videantis(歐洲數位處理器 IP)補數位/視覺處理；端側/車用/國防",
+     "src": "https://www.businesswire.com/news/home/20260519255958/en/Mythic-Acquires-Videantis-One-of-Europes-Leading-Digital-Processor-IP-Companies-to-Build-the-Worlds-Most-Energy-Efficient-AI-Compute-Platform"
+    },
+    {
+     "name": "Samsung Electronics 三星",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "PIM 大廠路線",
+     "products": "HBM-PIM / LPDDR-PIM",
+     "note": "量產級大廠；本業現金流厚、PIM 為選擇權",
+     "src": "https://www.digitimes.com/news/a20251218PD206/samsung-sk-hynix-hbm-ai-inference-data.html"
+    },
+    {
+     "name": "SK hynix",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "AiM PIM 商化最積極",
+     "products": "GDDR6-AiM / AiMX3 加速卡",
+     "note": "2025-10 AI Infra Summit；自述比 GPU 系統省 1/5 功耗、處理快 >10×",
+     "src": "https://news.skhynix.com/ai-infra-summit-2025/"
+    },
+    {
+     "name": "UPMEM",
+     "ticker": "—",
+     "country": "FR",
+     "share": "通用 PIM 先行者",
+     "products": "DDR4-DIMM PIM(8 DPU/晶片)",
+     "note": "未上市；首款商用通用 PIM；批次推論最高 259× vs Xeon",
+     "src": "https://www.upmem.com/"
+    },
+    {
+     "name": "Houmo.AI 後摩智能",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國存算一體邊緣",
+     "products": "Momagic 50 / M30 邊緣 LLM 晶片",
+     "note": "未上市；WAIC 2025 發表；2025-26 中國新興獨角獸 Top 50",
+     "src": "https://kr-asia.com/beyond-the-cloud-houmo-ai-sees-ai-compute-shifting-to-the-edge"
+    },
+    {
+     "name": "Untether AI (已退場)",
+     "ticker": "—",
+     "country": "CA",
+     "share": "at-memory/CIM(倒閉)",
+     "products": "speedAI240(停止支援)",
+     "note": "2025 倒閉、整支工程團隊被 AMD acquihire；賽道脆弱警訊",
+     "src": "https://www.eetimes.com/untether-ai-shuts-down-engineering-team-joins-amd/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "memory_device"
+    },
+    {
+     "id": "cim_ip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "foundry_pkg"
+    },
+    {
+     "id": "end_app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "d-Matrix $275M @ $2B (DCD)",
+     "url": "https://www.datacenterdynamics.com/en/news/chip-startup-d-matrix-raises-275m-against-2bn-valuation/"
+    },
+    {
+     "label": "Untether AI 倒閉→AMD (EE Times)",
+     "url": "https://www.eetimes.com/untether-ai-shuts-down-engineering-team-joins-amd/"
+    },
+    {
+     "label": "EnCharge Series B $100M (官方)",
+     "url": "https://www.enchargeai.com/news-and-publications/series-b"
+    }
+   ]
+  },
+  {
+   "id": "foundry_pkg",
+   "row": "fab",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "製造 / 封裝 (Foundry & Packaging)",
+   "nameEn": "Foundry & Packaging",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · TSMC 承製多數 CIM chiplet；d-Matrix 刻意繞開 HBM/CoWoS 用有機基板",
+   "desc": "把 CIM/PIM 設計實體化的晶圓代工與先進封裝。SRAM-CIM 走主流邏輯製程、ReRAM-CIM 走特殊製程、下一代走 3D 堆疊（DRAM 疊於 compute chiplet）。",
+   "marketSize": "量產載體",
+   "growth": "先進製程承製",
+   "share": "null",
+   "analysis": "TSMC（2330.TW / TSM，SRAM-CIM 巨集示範 55nm 峰值 44.3 TOPS/W；先進製程承製多數 CIM chiplet——d-Matrix 用 6nm chiplet 但走有機基板而非 CoWoS/HBM，刻意繞開 HBM 整合複雜度，對「HBM 唯一解」敘事是側面挑戰）、GlobalFoundries（GFS，22FDX+ RRAM CIM 平台 2026 量產）、Samsung Foundry（005930.KS，自有 PIM 製造 + 混合鍵合 HBM）。3D 堆疊路線（d-Matrix Raptor 3DIMC 把 DRAM 直接堆於 compute chiplet）需先進封裝與 hybrid bonding 能力，與 hbm/cowos 主題的封裝生態交集。承製端是把 CIM 從原型推向量產的關鍵載體與良率守門人。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "CIM chiplet 主承製",
+     "products": "SRAM-CIM 巨集 / 先進製程 chiplet",
+     "note": "55nm SRAM-CIM 達 44.3 TOPS/W；承製 d-Matrix/Axelera 等 CIM chiplet",
+     "src": "https://semiwiki.com/semiconductor-manufacturers/tsmc/296278-all-digital-in-memory-computing/"
+    },
+    {
+     "name": "GlobalFoundries",
+     "ticker": "GFS",
+     "country": "US",
+     "share": "RRAM CIM 製程",
+     "products": "22FDX+ RRAM CIM 平台",
+     "note": "macro PDK；量產 2026",
+     "src": "https://marklapedus.substack.com/p/globalfoundries-rolls-out-rram-sige"
+    },
+    {
+     "name": "Samsung Foundry",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "自有 PIM 製造",
+     "products": "PIM 製造 / 混合鍵合 HBM",
+     "note": "PIM 製造 + 先進封裝",
+     "src": "https://www.digitimes.com/news/a20251218PD206/samsung-sk-hynix-hbm-ai-inference-data.html"
+    },
+    {
+     "name": "Infineon×TSMC",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "車用 ReRAM 共製",
+     "products": "AURIX TC4 ReRAM(TSMC 28nm)",
+     "note": "ReRAM 量產落地指標",
+     "src": "https://semiengineering.com/reram-seeks-to-replace-nor/"
+    },
+    {
+     "name": "SkyWater Technology",
+     "ticker": "SKYT",
+     "country": "US",
+     "share": "ReRAM 量產 fab",
+     "products": "130nm CMOS + Weebit ReRAM",
+     "note": "Weebit ReRAM 全量產驗證 fab",
+     "src": "https://www.weebit-nano.com/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "chip_designer"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "end_app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC All-Digital In-Memory Computing (SemiWiki)",
+     "url": "https://semiwiki.com/semiconductor-manufacturers/tsmc/296278-all-digital-in-memory-computing/"
+    },
+    {
+     "label": "GlobalFoundries RRAM (Marklapedus)",
+     "url": "https://marklapedus.substack.com/p/globalfoundries-rolls-out-rram-sige"
+    }
+   ]
+  },
+  {
+   "id": "end_app",
+   "row": "app",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "終端推論應用 / 系統整合",
+   "nameEn": "End-Inference & Integration",
+   "competition": "highgrowth",
+   "single": "推論經濟需求錨 · 資料中心(d-Matrix)＋邊緣/車用(Axelera/Mythic/Houmo)＋學研基礎",
+   "desc": "CIM/PIM 的需求出海口：資料中心 LLM 推論、邊緣/端側/車用/機器人即時 AI，以及奠定基礎的學研突破。能效是推論經濟下的勝負手。",
+   "marketSize": "需求錨點",
+   "growth": "推論經濟",
+   "share": "null",
+   "analysis": "資料中心推論：d-Matrix Corsair（自述 Llama 70B 達 30K tokens/s @2ms/token、vs GPU 系統 10× 快/3× 低成本/3-5× 能效，2026-06 量產出貨優先客戶）。邊緣/端側/車用：Axelera Metis（214 TOPS 視覺/邊緣）、Mythic AMP（端側/車用/國防）、Houmo M30/Momagic（中國邊緣 AI，2025Q1 中國邊緣 AI 晶片 +217% YoY）、三星/SK海力士 LPDDR6-PIM（端側裝置 on-device AI）。學研基礎（技術觀察點）：清華大學全系統整合憶阻器存算一體晶片（on-chip learning 能耗僅 ASIC 系統 3%）、港大/清華憶阻器 ADC（能效 ×15.1、面積 ×12.9，攻克類比 CIM 最大 ADC 瓶頸）、IBM 類比 ReRAM 推論。需求面結構性催化：TrendForce 估 2029 推論成 AI 伺服器主驅動，競爭由「更大模型」轉向「更有效率模型」。",
+   "companies": [
+    {
+     "name": "d-Matrix (資料中心)",
+     "ticker": "—",
+     "country": "US",
+     "share": "資料中心推論",
+     "products": "Corsair 推論平台",
+     "note": "未上市；Llama 70B 30K tokens/s @2ms/token；2026-06 量產出貨",
+     "src": "https://www.d-matrix.ai/announcements/d-matrix-corsair-ai-inference-platform-enters-full-production-to-meet-customer-demand/"
+    },
+    {
+     "name": "Axelera AI (邊緣視覺)",
+     "ticker": "—",
+     "country": "NL",
+     "share": "邊緣/視覺推論",
+     "products": "Metis / Europa AIPU 視覺/邊緣",
+     "note": "未上市；Metis 214 TOPS、Europa 629 TOPS@INT8 2026-H1 上市；安防/工業/機器視覺/生成式邊緣",
+     "src": "https://www.datacenterdynamics.com/en/news/axelera-ai-launches-europa-chip-for-edge-ai-applications/"
+    },
+    {
+     "name": "EnCharge AI (端側/筆電)",
+     "ticker": "—",
+     "country": "US",
+     "share": "端側/筆電推論",
+     "products": "EN100 M.2 / PCIe",
+     "note": "未上市；EN100 鎖定 AI 筆電(200+TOPS@8.25W)/工作站(~1 PetaOPS)、early-access 進行中",
+     "src": "https://www.datacenterdynamics.com/en/news/encharge-ai-launches-its-analog-in-memory-en100-ai-accelerator/"
+    },
+    {
+     "name": "Mythic (車用/國防)",
+     "ticker": "—",
+     "country": "US",
+     "share": "端側/車用/國防",
+     "products": "AMP 類比 CIM 模組",
+     "note": "未上市；機器人/車用/國防 + 資料中心 LLM",
+     "src": "https://finance.yahoo.com/news/mythic-challenge-ai-gpu-pantheon-140000411.html"
+    },
+    {
+     "name": "Houmo.AI 後摩智能",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國邊緣 AI",
+     "products": "M30 / Momagic 邊緣 LLM",
+     "note": "未上市；2025Q1 中國邊緣 AI 晶片 +217% YoY",
+     "src": "https://kr-asia.com/beyond-the-cloud-houmo-ai-sees-ai-compute-shifting-to-the-edge"
+    },
+    {
+     "name": "Tsinghua 清華大學",
+     "ticker": "—",
+     "country": "CN",
+     "share": "學研基礎(憶阻器)",
+     "products": "全系統整合憶阻器 CIM 晶片",
+     "note": "on-chip learning 能耗僅 ASIC 系統 3%；類比 CIM 學研領先",
+     "src": "https://www.sic.tsinghua.edu.cn/en/info/1009/1542.htm"
+    },
+    {
+     "name": "IBM Research",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "類比 CIM 研究",
+     "products": "類比 ReRAM 推論加速器",
+     "note": "in-memory ReRAM 陣列做類比神經網路推論",
+     "src": "https://arxiv.org/html/2406.08413v1"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "chip_designer"
+    },
+    {
+     "id": "foundry_pkg"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "d-Matrix Corsair 量產 (官方)",
+     "url": "https://www.d-matrix.ai/announcements/d-matrix-corsair-ai-inference-platform-enters-full-production-to-meet-customer-demand/"
+    },
+    {
+     "label": "清華憶阻器 CIM 晶片 (Tsinghua SIC)",
+     "url": "https://www.sic.tsinghua.edu.cn/en/info/1009/1542.htm"
+    },
+    {
+     "label": "TrendForce 推論經濟",
+     "url": "https://insights.trendforce.com/p/ai-inference-chip-architecture"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "memory_device",
+   "cim_ip"
+  ],
+  [
+   "memory_device",
+   "chip_designer"
+  ],
+  [
+   "cim_ip",
+   "chip_designer"
+  ],
+  [
+   "chip_designer",
+   "foundry_pkg"
+  ],
+  [
+   "chip_designer",
+   "end_app"
+  ],
+  [
+   "foundry_pkg",
+   "end_app"
+  ]
+ ],
+ "_proposed": {}
+}

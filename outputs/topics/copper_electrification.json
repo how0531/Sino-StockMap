@@ -1,0 +1,606 @@
+{
+ "id": "copper_electrification",
+ "tab": "銅與電氣化金屬",
+ "title": "銅與 AI 電氣化基本金屬供應鏈 (Copper & the Metals of Electrification)",
+ "subtitle": "銅是 AI 與電氣化時代「不可替代的導體」——AI 資料中心、電網更新、EV 三大需求暴增，撞上礦山品位長期下降與新礦十年難建的結構性缺口，銅成為 2026 最確定的多頭基本金屬。價格端：LME 銅 2026/1/6 觸及歷史新高 $13,387/噸、COMEX 約 $6.11/磅；Goldman 預估 2026 均價約 $11,400/噸（$5.17/磅）、J.P. Morgan 約 $12,075/噸；Morgan Stanley 估 2026 精煉銅缺口約 59 萬噸、2029 擴至 110 萬噸。需求端：JPM 估 AI 資料中心 2026 較 pre-AI 基準多耗約 11 萬噸銅，一座 300MW AI 資料中心約需 6,000–9,000 噸銅；S&P 估電氣化推動 2040 銅需求達 4,200 萬噸（+50%）、缺口恐達 1,000 萬噸。礦端龍頭：Freeport（FCX）Q1 2026 營收 $62.3 億、實現銅價 $5.78/磅，但 Grasberg 事故使未來五年產量下修約 9%；Southern Copper（SCCO）2026 指引約 91 萬噸（品位下滑 -4.7%）、目標 2035 達 160 萬噸；紫金礦業（2899.HK）2026 銅目標 120 萬噸（+10%）、巨龍二期投產；Ivanhoe（IVN.TO）剛果 Kamoa-Kakula 因事故 2026 下修至 29–33 萬噸、2028 拚回 50 萬噸以上。中游冶煉是全鏈最痛點：2026 年度 TC/RC 加工費史上首次談成 $0/噸（現貨甚至 -$60/噸）、中國占全球冶煉逾五成且 2026 自願減產逾 10%——「銅精礦荒」讓冶煉廠賠錢煉銅。下游：銅線電纜市場 2025 約 $1,829 億 → 2035 約 $4,192 億（CAGR 8.65%）；台股可佈局華新麗華（1605，裸銅線/電纜/不鏽鋼，吃 AI 資料中心+強韌電網商機）、大亞（1609）、華榮（1608）。絃外之音：市場盯著礦價漲，但真正的「卡脖子」其實在中游冶煉與精煉——銅精礦不足讓礦商（拿礦權者）對冶煉廠的議價力空前，加工費歸零代表利潤正從冶煉端往礦端轉移；而美國/盟國本土冶煉產能不足，使「精煉銅在地化」成下一個地緣政治戰場。⚠ 與 rare_earth（稀土磁材）、battery_materials（鋰電材料）、power_grid（電網設備）部分相鄰但不重疊——本主題聚焦銅金屬本身的礦→冶→加工鏈。非投資建議。",
+ "category": "industrial",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "銅線電纜市場",
+   "v": "$4,192億",
+   "sub": "2025 $1,829 億 → 2035 $4,192 億（CAGR 8.65%）",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "AI資料中心+電網+EV 結構性缺口（2026 -59萬噸）·礦山品位下降+TC/RC 歸零+智利/秘魯/剛果地緣風險",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "mine",
+   "label": "上游：銅礦開採（拿礦權者）",
+   "main": false
+  },
+  {
+   "id": "smelt",
+   "label": "中游：冶煉與精煉（銅精礦荒・加工費歸零）",
+   "main": true
+  },
+  {
+   "id": "fab",
+   "label": "下游加工：銅箔 / 電線電纜 / 導體",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "終端需求：AI 資料中心・電網・EV・電氣化",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "copper_mining",
+   "row": "mine",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "銅礦開採（礦商 / 拿礦權者）",
+   "nameEn": "Copper Mining (concentrate producers)",
+   "competition": "oligopoly",
+   "single": "權力上移 · 銅精礦不足 + 加工費歸零，使握有礦權的礦商議價力空前——利潤正從冶煉端往礦端轉移",
+   "desc": "從智利、秘魯、剛果、澳洲、加拿大等銅礦帶開採銅精礦（concentrate）。全球前十大礦商寡占，礦山品位（ore grade）長期下降、優質新礦十年難建，是結構性缺口的源頭。",
+   "marketSize": "2026 礦山銅供給成長僅約 +1.4%（約 50 萬噸）",
+   "growth": "智利 Codelco 2026 約 134.4 萬噸；Chile 全國 +2.5% 至 560 萬噸",
+   "share": "null",
+   "analysis": "礦端是缺口源頭：FCX（FCX）Q1 2026 營收 $62.3 億、淨利 $8.81 億、實現銅價 $5.78/磅（vs 去年 $4.44），但印尼 Grasberg 泥流事故使未來五年銅產量下修約 9%（2026/27 衝擊最大）。SCCO（SCCO，墨西哥集團系）2026 指引約 91 萬噸（秘魯品位下滑 -4.7%），長線目標 2035 達 160 萬噸。紫金礦業（2899.HK）以併購+巨龍二期投產，2026 目標銅 120 萬噸（+10%），是全球成長最快的大型銅商。Ivanhoe（IVN.TO）剛果 Kamoa-Kakula 因地震湧水事故 2026 下修至 29–33 萬噸、2028 拚回 50 萬噸以上。BHP（BHP）Escondida、RIO（RIO）、Glencore（GLEN.L）、Antofagasta（ANTO.L）、Teck（TECK）、Ero Copper（ERO）構成其餘第一梯隊。地緣風險集中在智利/秘魯（資源民族主義、缺水）與剛果（CD，政局與電力）。",
+   "companies": [
+    {
+     "name": "Freeport-McMoRan",
+     "ticker": "FCX",
+     "country": "US",
+     "share": "全球最大上市純銅商之一",
+     "products": "銅精礦 / 陰極銅（Grasberg/美洲）",
+     "note": "Q1 2026 營收 $62.3 億、淨利 $8.81 億、實現銅價 $5.78/磅；Grasberg 事故未來 5 年產量 -9%",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/04/23/freeport-fcx-q1-2026-earnings-transcript/"
+    },
+    {
+     "name": "紫金礦業 Zijin",
+     "ticker": "2899.HK",
+     "country": "CN",
+     "share": "全球成長最快大型銅商",
+     "products": "銅精礦 / 礦山（巨龍/卡莫阿權益）",
+     "note": "2026 銅目標 120 萬噸(+10%)、金 105 噸(+17%)；巨龍二期 2026 投產達 30 萬噸",
+     "src": "https://www.zijinmining.com/news/news-detail-122566.htm"
+    },
+    {
+     "name": "Southern Copper",
+     "ticker": "SCCO",
+     "country": "PE",
+     "share": "成本最低大型銅商",
+     "products": "銅精礦 / 陰極銅（秘魯+墨西哥）",
+     "note": "2026 指引約 91 萬噸(-4.7% 品位下滑)；目標 2035 達 160 萬噸；墨西哥集團系",
+     "src": "https://finance.yahoo.com/news/scco-guides-lower-output-2026-152600227.html"
+    },
+    {
+     "name": "BHP",
+     "ticker": "BHP",
+     "country": "AU",
+     "share": "Escondida 最大單一銅礦",
+     "products": "銅精礦 / 礦山",
+     "note": "Escondita（智利）+ 拓展銅長線；多元礦業龍頭"
+    },
+    {
+     "name": "Rio Tinto",
+     "ticker": "RIO",
+     "country": "AU",
+     "share": "Oyu Tolgoi 成長",
+     "products": "銅精礦 / 礦山",
+     "note": "蒙古 Oyu Tolgoi 地下擴產為核心成長"
+    },
+    {
+     "name": "Glencore",
+     "ticker": "GLEN.L",
+     "country": "UK",
+     "share": "礦+貿易整合",
+     "products": "銅精礦 + 全球貿易/冶煉",
+     "note": "礦業＋大宗貿易整合；澳洲冶煉廠 2026 政府紓困"
+    },
+    {
+     "name": "Antofagasta",
+     "ticker": "ANTO.L",
+     "country": "CL",
+     "share": "智利純銅商",
+     "products": "銅精礦（智利）",
+     "note": "與中國冶煉廠談成 2026 TC/RC $0/噸基準"
+    },
+    {
+     "name": "Teck Resources",
+     "ticker": "TECK",
+     "country": "CA",
+     "share": "QB2 放量",
+     "products": "銅精礦（QB2 智利等）",
+     "note": "已轉型純基本金屬；QB2 二期放量"
+    },
+    {
+     "name": "Ivanhoe Mines",
+     "ticker": "IVN.TO",
+     "country": "CA",
+     "share": "剛果高品位成長股",
+     "products": "銅精礦/陰極銅（Kamoa-Kakula）",
+     "note": "2026 因事故下修 29–33 萬噸；2028 拚回 >50 萬噸；C1 $2.60–3.00/磅",
+     "src": "https://www.ivanhoemines.com/news-stories/news-release/ivanhoe-mines-announces-kamoa-kakula-copper-production-guidance-for-2026-and-2027-as-recovery-plan-advances/"
+    },
+    {
+     "name": "Ero Copper",
+     "ticker": "ERO",
+     "country": "CA",
+     "share": "巴西純銅中型股",
+     "products": "銅精礦（巴西 Tucumã/Caraíba）",
+     "note": "巴西成長型銅商；BR 礦區"
+    },
+    {
+     "name": "Codelco",
+     "ticker": "—",
+     "country": "CL",
+     "share": "全球最大銅商（國營）",
+     "products": "銅精礦 / 陰極銅",
+     "note": "智利國營；2026 約 134.4 萬噸（指引 133.1–135.7 萬噸）",
+     "src": "https://www.mining.com/web/cochilco-hikes-2025-2026-copper-price-forecasts-to-record-highs/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "smelting_refining"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Freeport Q1 2026 Earnings Transcript (Motley Fool)",
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/04/23/freeport-fcx-q1-2026-earnings-transcript/"
+    },
+    {
+     "label": "Zijin 巨龍二期投產（公司公告）",
+     "url": "https://www.zijinmining.com/news/news-detail-122566.htm"
+    },
+    {
+     "label": "Ivanhoe Kamoa-Kakula 2026/27 產量指引",
+     "url": "https://www.ivanhoemines.com/news-stories/news-release/ivanhoe-mines-announces-kamoa-kakula-copper-production-guidance-for-2026-and-2027-as-recovery-plan-advances/"
+    },
+    {
+     "label": "S&P Global：AI+國防使銅供給缺口擴大",
+     "url": "https://press.spglobal.com/2026-01-08-Substantial-Shortfall-in-Copper-Supply-Widens-as-the-Race-for-AI-and-Growing-Defense-Spending-Add-to-Accelerating-Demand,-New-S-P-Global-Study-Finds"
+    }
+   ]
+  },
+  {
+   "id": "smelting_refining",
+   "row": "smelt",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "冶煉與精煉（銅精礦荒・加工費歸零）",
+   "nameEn": "Smelting & Refining (concentrate famine)",
+   "competition": "redocean",
+   "single": "全鏈最痛點 · 2026 TC/RC 加工費史上首次談成 $0/噸（現貨甚至 -$60/噸）——冶煉廠賠錢煉銅，產能正在被迫整併",
+   "desc": "把銅精礦冶煉成粗銅（blister）、再電解精煉成 99.99% 陰極銅（cathode）。獲利來自加工費（TC/RC），但 2026 全球冶煉產能成長快過精礦供給，TC/RC 崩至史上最低，是全鏈最受擠壓的環節。",
+   "marketSize": "中國占全球冶煉產能逾 50%（2005 約 15% → 2025 約 50%）",
+   "growth": "2026 TC/RC 年度基準 $0/噸（史上最低）；現貨一度 -$60/噸",
+   "share": "null",
+   "analysis": "冶煉是全鏈最弱環節：2026 年度加工費（TC/RC）由 Antofagasta 與中國冶煉廠談成 $0/噸（史上首見），現貨甚至跌至 -$60/噸——形同冶煉廠付錢買精礦來賠錢煉。成因是冶煉產能（尤其中國，全球占比逾五成、2025 年增 11%）擴張快過礦山精礦供給。對策：中國頭部冶煉廠 2026 自願減產逾 10%、政府叫停約 200 萬噸新建產能；Glencore 旗下澳洲冶煉廠獲政府紓困；Aurubis（NDA.DE，歐洲最大）轉攻高砷複雜料與長約鎖礦。地緣：哥倫比亞大學 CGEP 與 IEA 均示警，美國/盟國本土冶煉精煉產能嚴重不足，「精煉銅在地化」成戰略議題。一體化礦商（FCX/紫金/Glencore）因自有精礦而相對抗壓。",
+   "companies": [
+    {
+     "name": "江西銅業 Jiangxi Copper",
+     "ticker": "0358.HK",
+     "country": "CN",
+     "share": "全球最大冶煉商之一",
+     "products": "陰極銅 / 銅加工",
+     "note": "中國冶煉龍頭；2026 受 TC/RC 歸零擠壓、參與自願減產",
+     "src": "https://www.mining.com/web/chinas-top-copper-smelters-to-cut-output-to-combat-negative-processing-fees/"
+    },
+    {
+     "name": "Glencore（冶煉）",
+     "ticker": "GLEN.L",
+     "country": "UK",
+     "share": "礦+冶一體化",
+     "products": "冶煉/精煉 + 貿易",
+     "note": "澳洲 Mount Isa/Townsville 冶煉 2026 獲政府紓困；自有精礦抗壓",
+     "src": "https://www.iea.org/commentaries/copper-prices-have-hit-record-highs-but-smelters-face-mounting-strategic-pressures"
+    },
+    {
+     "name": "Aurubis",
+     "ticker": "NDA.DE",
+     "country": "DE",
+     "share": "歐洲最大冶煉商",
+     "products": "陰極銅 / 多金屬回收",
+     "note": "轉攻高砷複雜料、長約鎖礦提升競爭力；歐洲循環銅龍頭"
+    },
+    {
+     "name": "紫金礦業（冶煉）",
+     "ticker": "2899.HK",
+     "country": "CN",
+     "share": "礦冶一體化",
+     "products": "冶煉/精煉 + 自有礦",
+     "note": "自有精礦比例高，TC/RC 歸零相對抗壓"
+    },
+    {
+     "name": "Southern Copper（精煉）",
+     "ticker": "SCCO",
+     "country": "PE",
+     "share": "礦冶一體化",
+     "products": "陰極銅（自有礦精煉）",
+     "note": "墨西哥/秘魯自有冶煉；垂直整合"
+    },
+    {
+     "name": "Freeport（精煉）",
+     "ticker": "FCX",
+     "country": "US",
+     "share": "美洲精煉",
+     "products": "陰極銅 / 美國精煉廠",
+     "note": "美國本土精煉資產稀缺，戰略價值上升"
+    },
+    {
+     "name": "JX Advanced Metals",
+     "ticker": "5016.T",
+     "country": "JP",
+     "share": "日系冶煉/高純度銅",
+     "products": "陰極銅 / 高純度銅 / 濺鍍靶材",
+     "note": "2025/3 東證上市；日系要求 TC/RC 與中國基準脫鉤",
+     "src": "https://finance.yahoo.com/quote/5016.T/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "copper_mining"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "copper_foil"
+    },
+    {
+     "id": "wire_cable"
+    }
+   ],
+   "sources": [
+    {
+     "label": "中國頭部冶煉廠 2026 減產逾 10% 對抗負加工費 (Mining.com)",
+     "url": "https://www.mining.com/web/chinas-top-copper-smelters-to-cut-output-to-combat-negative-processing-fees/"
+    },
+    {
+     "label": "IEA：銅價創高但冶煉廠承壓",
+     "url": "https://www.iea.org/commentaries/copper-prices-have-hit-record-highs-but-smelters-face-mounting-strategic-pressures"
+    },
+    {
+     "label": "全球銅冶煉 2026 展望 (Fastmarkets)",
+     "url": "https://www.fastmarkets.com/insights/tougher-challenges-facing-global-copper-smelting-industry/"
+    }
+   ]
+  },
+  {
+   "id": "copper_foil",
+   "row": "fab",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "銅箔 / 高純度導體（電子級）",
+   "nameEn": "Copper Foil & High-purity Conductors",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "把陰極銅再加工成電子級銅箔（PCB/載板/ABF 用）、引線、bonding wire 與高純度導體——AI 伺服器 PCB 層數與電流密度上升，帶動高階銅箔需求。與半導體載板、PCB 鏈相鄰。",
+   "marketSize": "電子級銅箔吃 AI 伺服器 PCB/載板高層數需求",
+   "growth": "AI 伺服器高電流 → 高階 RTF/HVLP 銅箔升級",
+   "share": "null",
+   "analysis": "銅箔是「銅金屬 × 電子製造」交會點：AI 伺服器 PCB 朝高層數、高電流、高頻演進，帶動低粗糙度（HVLP）與高延展（RTF）電子銅箔升級。日系（三井金屬 MITSUI、福田）與台系（南亞、長春化工系）在高階電解銅箔具優勢；中系（嘉元、諾德）量大。此環節與既有 substrate（ABF 載板）、pcb 鏈高度相鄰，本主題僅列以呈現「銅 → 電子終端」加工路徑。bonding wire（打線）由日系田中、台系等供應。",
+   "companies": [
+    {
+     "name": "三井金屬礦業 Mitsui Kinzoku",
+     "ticker": "5706.T",
+     "country": "JP",
+     "share": "高階電子銅箔/載板龍頭",
+     "products": "電子級銅箔 / MicroThin",
+     "note": "ABF 載板用超薄銅箔；AI 高階 PCB 受惠",
+     "src": "https://www.mitsui-kinzoku.com/en/"
+    },
+    {
+     "name": "南亞塑膠 Nan Ya Plastics",
+     "ticker": "1303.TW",
+     "country": "TW",
+     "share": "台系銅箔基板/銅箔",
+     "products": "電解銅箔 / CCL 銅箔基板",
+     "note": "台塑集團；AI 伺服器 CCL/銅箔垂直整合"
+    },
+    {
+     "name": "嘉元科技 Jiayuan",
+     "ticker": "688388.SS",
+     "country": "CN",
+     "share": "鋰電/電子銅箔量產",
+     "products": "電解銅箔（電子+鋰電）",
+     "note": "中系銅箔量產龍頭之一"
+    },
+    {
+     "name": "福田金屬",
+     "ticker": "—",
+     "country": "JP",
+     "share": "高階銅箔利基",
+     "products": "電解/壓延銅箔",
+     "note": "高頻高速 PCB 用利基銅箔"
+    },
+    {
+     "name": "田中貴金屬 / 日系打線",
+     "ticker": "—",
+     "country": "JP",
+     "share": "bonding wire",
+     "products": "銅/金打線",
+     "note": "半導體封裝打線；私有"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "smelting_refining"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_datacenter"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Mitsui Kinzoku（高階電子銅箔）",
+     "url": "https://www.mitsui-kinzoku.com/en/"
+    },
+    {
+     "label": "S&P Global：AI 時代的銅與電氣化挑戰",
+     "url": "https://www.spglobal.com/en/research-insights/special-reports/copper-in-the-age-of-ai"
+    }
+   ]
+  },
+  {
+   "id": "wire_cable",
+   "row": "fab",
+   "col": 2,
+   "span": 2,
+   "kind": "stage",
+   "name": "電線電纜 / 銅導體加工",
+   "nameEn": "Wire, Cable & Copper Conductors",
+   "competition": "fragmented",
+   "single": "台股最佳純玩家 · 華新麗華（1605）以裸銅線+電纜+不鏽鋼，直吃 AI 資料中心建置與強韌電網雙商機",
+   "desc": "把陰極銅拉製成裸銅線、電力電纜、資料中心匯流排（busbar）、特高壓電纜——AI 資料中心供電、電網更新與 EV 充電基建是核心拉動。這是台股最直接的銅×電氣化曝險。",
+   "marketSize": "銅線電纜 2025 約 $1,829 億 → 2035 約 $4,192 億",
+   "growth": "CAGR 8.65%（2026–2035）；AI 資料中心+電網+EV 三引擎",
+   "share": "null",
+   "analysis": "電線電纜是下游最碎片化但成長最確定的環節：銅線電纜市場 2025 約 $1,829 億 → 2035 約 $4,192 億（CAGR 8.65%）。台股是直接曝險首選——華新麗華（1605.TW）以裸銅線、電力電纜、不鏽鋼三引擎，明言 AI 需求爆發帶來資料中心建置與強韌電網（grid resilience）建廠商機，是台灣最佳純玩家；大亞（1609.TW）、華榮（1608.TW）跟進高階線纜。國際巨頭 Prysmian（PRY.MI，義大利，全球最大）、Nexans（NEX.PA，法國）主攻特高壓海纜與電網互聯。絃外之音：AI 資料中心的「銅含量」遠高於傳統機房（供電密度數倍），電纜商正從低毛利傳產轉為 AI 基建受惠股。",
+   "companies": [
+    {
+     "name": "華新麗華 Walsin Lihwa",
+     "ticker": "1605.TW",
+     "country": "TW",
+     "share": "台灣電纜/裸銅線龍頭",
+     "products": "裸銅線 / 電力電纜 / 不鏽鋼",
+     "note": "明言 AI 資料中心建置+強韌電網商機；大中華區裸銅線/電纜領導廠",
+     "src": "https://money.udn.com/money/story/5612/9469494"
+    },
+    {
+     "name": "大亞電線電纜 Ta Ya",
+     "ticker": "1609.TW",
+     "country": "TW",
+     "share": "台灣電纜+綠能",
+     "products": "電力電纜 / 漆包線 / 綠能",
+     "note": "受惠銅價+AI 資料中心+電網更新三大需求",
+     "src": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000742524_U9A4ELYP3XWHZO33NAHTH"
+    },
+    {
+     "name": "華榮電線電纜 Walsin Hua Jung",
+     "ticker": "1608.TW",
+     "country": "TW",
+     "share": "台灣高階線纜",
+     "products": "AI 高階線纜 / 電力電纜",
+     "note": "進擊 AI 高階線纜；資料中心供電應用",
+     "src": "https://money.udn.com/money/story/5710/9539130"
+    },
+    {
+     "name": "Prysmian",
+     "ticker": "PRY.MI",
+     "country": "IT",
+     "share": "全球最大電纜商",
+     "products": "特高壓電纜 / 海纜 / 電網互聯",
+     "note": "電網更新與離岸風電海纜龍頭"
+    },
+    {
+     "name": "Nexans",
+     "ticker": "NEX.PA",
+     "country": "FR",
+     "share": "電網/海纜全球第二",
+     "products": "高壓電纜 / 海纜 / 資料中心",
+     "note": "電氣化純玩家轉型；電網互聯訂單滿手"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "smelting_refining"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_datacenter"
+    },
+    {
+     "id": "grid_ev"
+    }
+   ],
+   "sources": [
+    {
+     "label": "華新：AI 需求爆發帶來電線電纜成長動能 (經濟日報)",
+     "url": "https://money.udn.com/money/story/5612/9469494"
+    },
+    {
+     "label": "三大需求支撐銅價至 2026，大亞/華新看俏 (DIGITIMES)",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000742524_U9A4ELYP3XWHZO33NAHTH"
+    },
+    {
+     "label": "銅線電纜市場 2032 達 $324.7B、CAGR 8.6% (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/PressReleases/copper-wire-&-cable.asp"
+    }
+   ]
+  },
+  {
+   "id": "ai_datacenter",
+   "row": "demand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI 資料中心供電（最快成長需求）",
+   "nameEn": "AI Data Center Power (fastest-growing demand)",
+   "competition": "highgrowth",
+   "single": "需求新引擎 · 一座 300MW AI 資料中心約需 6,000–9,000 噸銅；JPM 估 AI 2026 多耗約 11 萬噸",
+   "desc": "AI 資料中心的供電、配電、匯流排、伺服器內銅互連——是 2026 銅需求最快成長的新引擎，回頭拉動電纜、銅箔、精煉與礦端全鏈用量。",
+   "marketSize": "AI 資料中心 2026 較 pre-AI 多耗約 11 萬噸銅（JPM）",
+   "growth": "單座 300MW AI 資料中心 ≈ 6,000–9,000 噸銅",
+   "share": "null",
+   "analysis": "AI 資料中心是銅的「新邊際需求」：JPM 估 2026 較 pre-AI 基準多耗約 11 萬噸銅；單座 300MW AI 資料中心約需 6,000–9,000 噸銅（供電、配電、busbar、伺服器內互連）。供電密度數倍於傳統機房，使每 MW 銅含量大增。買方是 hyperscaler（Microsoft/Amazon/Google/Meta/Oracle）與 neocloud——他們的資本支出直接轉為電纜與精煉銅訂單。這是把『AI 算力資本支出』翻譯成『實體銅需求』的關鍵節點，也是本主題與 datacenter/power_grid 主題的交會處（本主題聚焦銅金屬曝險）。",
+   "companies": [
+    {
+     "name": "Hyperscaler（雲三巨頭+Oracle）",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "AI 資料中心最大買方",
+     "products": "AI 資料中心 capex → 銅需求",
+     "note": "Microsoft/Amazon/Google/Meta/Oracle 資料中心建置直接拉動銅",
+     "src": "https://skillings.net/copper-demand-ai-data-centers-2026-outlook-and-deficit-impact/"
+    },
+    {
+     "name": "資料中心供電/配電商",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "busbar/配電",
+     "products": "匯流排 / 配電 / 機房供電",
+     "note": "詳見 power_grid / datacenter 主題；每 MW 銅含量大增"
+    },
+    {
+     "name": "NVIDIA（算力底層）",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI 算力需求源頭",
+     "products": "GPU → 推升資料中心電力與銅",
+     "note": "算力資本支出是銅需求的上游驅動；詳見 ai_compute 主題"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "copper_foil"
+    },
+    {
+     "id": "wire_cable"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "AI 資料中心銅需求 2026 展望與缺口 (Skillings)",
+     "url": "https://skillings.net/copper-demand-ai-data-centers-2026-outlook-and-deficit-impact/"
+    },
+    {
+     "label": "Copper Outlook 2026：供給缺口+AI 需求 (TradingKey)",
+     "url": "https://www.tradingkey.com/analysis/commodities/metal/261726965-copper-outlook-2026-tradingkey"
+    }
+   ]
+  },
+  {
+   "id": "grid_ev",
+   "row": "demand",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "電網更新 / EV / 電氣化終端",
+   "nameEn": "Grid Modernization · EV · Electrification",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "電網擴建與更新、EV 與充電基建、再生能源併網——是銅的傳統電氣化主幹需求，與 AI 共同構成「結構性缺口」的需求面。",
+   "marketSize": "S&P 估 2040 銅需求達 4,200 萬噸（+50%）",
+   "growth": "2040 潛在缺口恐達約 1,000 萬噸",
+   "share": "null",
+   "analysis": "電網與 EV 是銅的長期主幹：S&P Global 估電氣化（電網、EV、再生能源）推動 2040 銅需求達 4,200 萬噸（較目前 +50%），若無大量新礦投產，缺口恐達約 1,000 萬噸。電網銅密度（特高壓、海纜、變壓器）與 EV（每車含銅約為燃油車 3–4 倍、加上充電樁）是最確定的長線需求。買方涵蓋電力公司、車廠與再生能源開發商，回饋電纜/精煉/礦端全鏈。此環節與 power_grid / ev_supply 主題相鄰，本主題以銅金屬曝險視角列出。",
+   "companies": [
+    {
+     "name": "電力公司 / 電網營運商",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "電網銅需求主幹",
+     "products": "電網更新 / 特高壓 / 海纜",
+     "note": "全球電網更新與互聯；詳見 power_grid 主題"
+    },
+    {
+     "name": "車廠 / 充電基建",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "EV 銅需求",
+     "products": "EV（含銅 3–4 倍）/ 充電樁",
+     "note": "EV 與充電基建；詳見 ev_supply 主題"
+    },
+    {
+     "name": "再生能源開發商",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "併網銅需求",
+     "products": "風光併網 / 儲能 busbar",
+     "note": "再生能源併網拉動電纜與銅"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "wire_cable"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "S&P Global：AI 時代的銅與電氣化（2040 需求 42Mt）",
+     "url": "https://www.spglobal.com/en/research-insights/special-reports/copper-in-the-age-of-ai"
+    },
+    {
+     "label": "Goldman：2026 銅價自高點略回（電網/電力支撐）",
+     "url": "https://www.goldmansachs.com/insights/articles/copper-prices-forecast-to-decline-from-record-highs-in-2026"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "copper_mining",
+   "smelting_refining"
+  ],
+  [
+   "smelting_refining",
+   "copper_foil"
+  ],
+  [
+   "smelting_refining",
+   "wire_cable"
+  ],
+  [
+   "copper_foil",
+   "ai_datacenter"
+  ],
+  [
+   "wire_cable",
+   "ai_datacenter"
+  ],
+  [
+   "wire_cable",
+   "grid_ev"
+  ]
+ ],
+ "_proposed": {}
+}

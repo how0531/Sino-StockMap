@@ -1,0 +1,672 @@
+{
+ "id": "lidar",
+ "tab": "光達/車用感測",
+ "title": "光達 LiDAR 與車用感測供應鏈 (Automotive LiDAR & Sensing)",
+ "subtitle": "Automotive LiDAR & Sensing — L3+ 法規強制（UN R157 要求深度感知）、BYD 天神之眼智駕平價化、robotaxi/Physical AI 第二曲線三線引爆，車用光達 2025 首破 $10 億(+60% YoY)、2026 約 $1.6B（2031 上看 $6.5B、CAGR 31-32%、固態占 54%）。整機端中國寡占（中系合計約 95% ADAS 光達）：禾賽 Hesai（HSAI）Q1 2026 營收 RMB6.81 億(+29.6%)、出貨 471,723 顆(+140.9%)、首見 Q1 GAAP 獲利 RMB18.3M（non-GAAP +452.9%）、2026 出貨指引 300-350 萬顆、賓士 L3 供應商、長距 ADAS 43% 居首、推 Picasso 6D SPAD-SoC + Kosmo 空間智能；速騰 RoboSense（2498.HK）Q1 出貨 +204.1%、機器人光達 +1,458.8% 占 56% 首度過半、FY2026 指引 200-270 萬台、Q1 淨虧收窄 36% 至 RMB64M、自研晶片可降本 ~50%。禾賽+華為+速騰+Seyond+Valeo 五強 >90%。價值鏈：VCSEL/EEL/光纖雷射 + GaAs/InP 磊晶（台廠全新/聯亞/穩懋卡位）→ SPAD/APD 接收+ToF/FMCW SoC（Sony/onsemi/ST）→ 掃描光學 → 光達整機 → Tier-1/OEM/Robotaxi。⚠ Luminar(LAZR) 2025-12 破產，2026-01 光達業務 $33M 售予 MicroVision(MVIS)、半導體 $110M 售予 Quantum Computing(QUBT)=西方淘汰賽分水嶺；中國價格戰壓 ASP、Tesla 純視覺路線威脅、地緣審查風險。有別於 auto_semi（ADAS SoC）。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "40+"
+  },
+  {
+   "k": "車用光達市場",
+   "v": "$1.6B→$6.5B",
+   "sub": "2026→2031-33·CAGR 31-32%·固態占 54%",
+   "hot": true
+  },
+  {
+   "k": "整機集中度",
+   "v": "五強 >90%",
+   "sub": "中系約 95%·禾賽長距 ADAS 43% 居首",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "emit",
+   "label": "雷射發射 / 磊晶 Laser Emitter & Epi",
+   "main": false
+  },
+  {
+   "id": "recv",
+   "label": "接收感測 / ToF·FMCW SoC Receiver & SoC",
+   "main": false
+  },
+  {
+   "id": "scan",
+   "label": "掃描架構 / 光學 Scanning & Optics",
+   "main": false
+  },
+  {
+   "id": "module",
+   "label": "光達整機 / 模組 LiDAR Modules",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "Tier-1 / OEM / Robotaxi 終端需求",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "vcsel_laser",
+   "row": "emit",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "VCSEL / EEL / 光纖雷射發射端",
+   "nameEn": "VCSEL / EEL / Fiber Laser Emitters",
+   "competition": "oligopoly",
+   "single": "905nm vs 1550nm 路線之爭；Lumentum 多接面 VCSEL 陣列車規卡位",
+   "desc": "光達的「光源」：905nm VCSEL/EEL（矽基探測器較便宜、主流）對決 1550nm 光纖雷射（功率高、抗雨霧、人眼安全閾值高但成本貴）。多接面 VCSEL 陣列峰值 70-400W、達 200m 行人偵測。",
+   "marketSize": "VCSEL $2.94B→$6.91B(2031)",
+   "growth": "VCSEL CAGR 18.6%",
+   "share": "null",
+   "analysis": "VCSEL 市場 2026 約 $2.94B → 2031 $6.91B、CAGR 18.64%（含消費電子）；905nm EEL/VCSEL 為中長距最經濟方案，1550nm 光纖雷射走高階長距（破產前的 Luminar、Aeva FMCW 採此）。【Top】Lumentum（LITE，M53-100 為 400W 905nm 多接面 VCSEL 陣列、車規認證，短-長距 flash ToF）、ams OSRAM（AMS.SW，EEL+VCSEL 全套 die/package/module）、Coherent（COHR，高功率雷射二極體）、Hamamatsu 濱松（6965.T，雷射二極體）、TRUMPF（DE，未上市，車用雷射）。發射端是光達 picks-and-shovels 中競爭較不血腥、量增直接受惠的環節。",
+   "companies": [
+    {
+     "name": "Lumentum",
+     "ticker": "LITE",
+     "country": "US",
+     "share": "車用 VCSEL 陣列領先",
+     "products": "M-Series 100W/400W 905nm 多接面 VCSEL 陣列（128/256 線光達）/ 光電二極體",
+     "note": "2025-11 推 M-Series 100W/400W、達 200m 偵測；資料中心+車用雙引擎，FQ2 2026 營收 +65.5% YoY 至 $665.5M（AI 光通訊主導）",
+     "src": "https://www.lumentum.com/en/products/400-w-905-nm-multi-junction-vcsel-array"
+    },
+    {
+     "name": "ams OSRAM",
+     "ticker": "AMS.SW",
+     "country": "CH",
+     "share": "EEL+VCSEL 全套",
+     "products": "IR VCSEL die/package/module + EEL",
+     "note": "車用雷射發射端廣泛採用；歐系光電龍頭",
+     "src": "https://ams-osram.com/products/lasers/ir-lasers-vcsel"
+    },
+    {
+     "name": "Coherent",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "高功率雷射二極體",
+     "products": "雷射二極體 / 光學",
+     "note": "車用光達雷射發射；資料中心光通訊為主業",
+     "src": "https://www.mordorintelligence.com/industry-reports/vertical-cavity-surface-emitting-laser-market"
+    },
+    {
+     "name": "Hamamatsu 濱松",
+     "ticker": "6965.T",
+     "country": "JP",
+     "share": "日系雷射/光電",
+     "products": "雷射二極體 / MEMS 微鏡 / MPPC",
+     "note": "發射+接收+掃描跨環節布局",
+     "src": "https://www.nature.com/articles/s41467-024-51975-6"
+    },
+    {
+     "name": "TRUMPF",
+     "ticker": "—",
+     "country": "DE",
+     "share": "車用雷射",
+     "products": "光達用雷射光源",
+     "note": "未上市；德系工業雷射龍頭",
+     "src": "https://www.mordorintelligence.com/industry-reports/vertical-cavity-surface-emitting-laser-market"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "lidar_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "VCSEL 市場規模 (Mordor Intelligence)",
+     "url": "https://www.mordorintelligence.com/industry-reports/vertical-cavity-surface-emitting-laser-market"
+    },
+    {
+     "label": "Lumentum 400W 905nm VCSEL (官方)",
+     "url": "https://www.lumentum.com/en/products/400-w-905-nm-multi-junction-vcsel-array"
+    }
+   ]
+  },
+  {
+   "id": "compound_epi",
+   "row": "emit",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "化合物半導體磊晶 / 基板 (GaAs/InP)",
+   "nameEn": "Compound Semi Epi (GaAs/InP)",
+   "competition": "oligopoly",
+   "single": "台股隱藏卡位 · 全新光電 GaAs/RF 磊晶全球第一（~60% vs IQE 40%）· 2026 矽光子元年雙引擎",
+   "desc": "VCSEL/EEL 需 GaAs 磊晶、1550nm 光纖雷射需 InP/InGaAs；磊晶代工是車用光達放量的最直接、能見度被低估的上游環節，台廠卡位深。",
+   "marketSize": "台廠隱藏卡位",
+   "growth": "VCSEL 量增受惠",
+   "share": "null",
+   "analysis": "GaAs/InP 磊晶為 VCSEL 與接收端 PD/APD 的共同必經環節。【台廠卡位】VPEC 全新光電（2455.TW，全球最大 GaAs/RF 磊晶代工、市占約 60% 領先英國 IQE 約 40%；做 VCSEL/PD/InGaAs PD/APD 全套磊晶；2026-05 月營收 NT$3.21 億、YoY +46.5%；2026 資本支出 NT$4-5 億擴光電子產線；同步切入矽光子 InP 受惠 CPO）、LandMark 聯亞光電（3081.TW，6 吋 850/940nm VCSEL 磊晶、OMVPE 製程；2026 矽光子元年題材）、穩懋 Win Semi（3105.TWO，GaAs 代工龍頭、VCSEL 後段製程）。【國際】IQE（IQE.L，英國磊晶）、Sumitomo Electric 住友電工（5802.T，InP/化合物半導體）。台廠是台股參與車用光達+矽光子雙題材最直接標的。",
+   "companies": [
+    {
+     "name": "全新光電 VPEC",
+     "ticker": "2455.TW",
+     "country": "TW",
+     "share": "全球最大 GaAs/RF 磊晶 ~60%",
+     "products": "VCSEL / PD / InGaAs PD / APD / InP 矽光子磊晶",
+     "note": "市占約 60% 領先 IQE 40%；2026-05 月營收 NT$3.21 億(+46.5%)；發射+接收磊晶通吃、切入矽光子 CPO",
+     "src": "https://blog.fugle.tw/post/vpec-analysis"
+    },
+    {
+     "name": "聯亞光電 LandMark",
+     "ticker": "3081.TW",
+     "country": "TW",
+     "share": "6 吋 VCSEL 磊晶",
+     "products": "850/940nm VCSEL / GaAs / InP 磊晶",
+     "note": "OMVPE 製程；2026-01 市值約 NT$600 億",
+     "src": "https://grokipedia.com/page/LandMark_Optoelectronics_Corporation"
+    },
+    {
+     "name": "穩懋 Win Semiconductors",
+     "ticker": "3105.TWO",
+     "country": "TW",
+     "share": "GaAs 代工龍頭",
+     "products": "GaAs 晶圓代工 / VCSEL 製程",
+     "note": "全球最大 GaAs 晶圓代工廠",
+     "src": "https://www.digitimes.com/news/a20211012PD201.html"
+    },
+    {
+     "name": "IQE",
+     "ticker": "IQE.L",
+     "country": "UK",
+     "share": "歐系磊晶",
+     "products": "GaAs / InP 磊晶",
+     "note": "英國化合物半導體磊晶廠",
+     "src": "https://www.digitimes.com/news/a20211012PD201.html"
+    },
+    {
+     "name": "Sumitomo Electric 住友電工",
+     "ticker": "5802.T",
+     "country": "JP",
+     "share": "InP/化合物基板",
+     "products": "InP 基板 / 化合物半導體",
+     "note": "1550nm 雷射用 InP 材料",
+     "src": "https://www.nature.com/articles/s41467-024-51975-6"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "vcsel_laser"
+    },
+    {
+     "id": "spad_recv"
+    }
+   ],
+   "sources": [
+    {
+     "label": "全新光電 GaAs 磊晶龍頭 (Digitimes)",
+     "url": "https://www.digitimes.com/news/a20211012PD201.html"
+    },
+    {
+     "label": "LandMark 聯亞 VCSEL 磊晶 (Grokipedia)",
+     "url": "https://grokipedia.com/page/LandMark_Optoelectronics_Corporation"
+    }
+   ]
+  },
+  {
+   "id": "spad_recv",
+   "row": "recv",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "SPAD / APD 接收端 + ToF·FMCW SoC",
+   "nameEn": "SPAD/APD Receivers & ToF/FMCW SoC",
+   "competition": "oligopoly",
+   "single": "Sony 堆疊式 SPAD 57% PDE 瞄準 L3；整機廠自研 SoC 上吃（速騰 EOCENE/Ouster Chronos/禾賽 Picasso 6D）",
+   "desc": "光達的「視網膜」：SPAD（單光子崩潰二極體）為新世代主流、APD 為傳統長距、FMCW 需相干接收；搭配 ToF/FMCW 訊號處理 SoC。整機廠正往上垂直整合接收晶片。",
+   "marketSize": "整機廠垂直整合中",
+   "growth": "SPAD 商業化加速",
+   "share": "null",
+   "analysis": "SPAD 可單光子偵測、picosecond 時序，2026 約 60% 專利為 2019 後申請、商業化加速。【Top】Sony 索尼（6758.T，堆疊式 SPAD 深度感測器、3.06μm pixel、57% PDE、0.4% 串擾，瞄準 L3+；兼車用 CIS）、onsemi（ON，SiPM/SPAD + 車用 CIS 龍頭，每車 10-12 顆攝影頭）、STMicroelectronics（STM，FlightSense SPAD）、Hamamatsu 濱松（6965.T，MPPC/SiPM）。【垂直整合訊號】RoboSense 推 EOCENE SPAD SoC 架構（Phoenix/Peacock 晶片、image-grade 3D 感知、自研晶片量產可降本 ~50%）、Ouster Chronos 數位光達晶片、禾賽 2026 推 Picasso 6D 全彩 SPAD-SoC——整機廠往上吃接收晶片價值，壓縮 onsemi/Sony 空間，是供應鏈權力重分配。",
+   "companies": [
+    {
+     "name": "Sony 索尼",
+     "ticker": "6758.T",
+     "country": "JP",
+     "share": "SPAD 深度感測領先",
+     "products": "堆疊式 SPAD 深度感測器 / 車用 CIS",
+     "note": "3.06μm pixel、57% PDE、0.4% 串擾；瞄準 L3+",
+     "src": "https://www.sony.eu/presscentre/sony-semiconductor-solutions-to-release-stacked-spad-depth-sensor-for-automotive-lidar-applications-delivering-high-resolution-high-speed-performance"
+    },
+    {
+     "name": "onsemi",
+     "ticker": "ON",
+     "country": "US",
+     "share": "SiPM/SPAD + 車用 CIS 龍頭",
+     "products": "SiPM / SPAD / 車用影像感測器",
+     "note": "每車 10-12 顆攝影頭 CIS；矽光電倍增管",
+     "src": "https://www.patsnap.com/resources/blog/articles/spad-technology-landscape-2026-trends-and-patents/"
+    },
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "EU",
+     "share": "SPAD ToF",
+     "products": "FlightSense SPAD / ToF 模組",
+     "note": "歐系車規感測 SoC",
+     "src": "https://www.patsnap.com/resources/blog/articles/spad-technology-landscape-2026-trends-and-patents/"
+    },
+    {
+     "name": "Hamamatsu 濱松",
+     "ticker": "6965.T",
+     "country": "JP",
+     "share": "MPPC/SiPM",
+     "products": "MPPC / SiPM / APD",
+     "note": "日系光電倍增；接收端多方案",
+     "src": "https://www.patsnap.com/resources/blog/articles/spad-technology-landscape-2026-trends-and-patents/"
+    },
+    {
+     "name": "RoboSense 速騰（自研 SoC）",
+     "ticker": "2498.HK",
+     "country": "CN",
+     "share": "整機廠垂直整合",
+     "products": "EOCENE SPAD SoC / Phoenix·Peacock 晶片",
+     "note": "2026-04 推 image-grade 3D 感知；整機上吃接收晶片",
+     "src": "https://tofsensors.com/blogs/news/ces-2026-lidar-hesai-robosense-more-redefine-robotic-vision"
+    },
+    {
+     "name": "Ouster（自研 Chronos）",
+     "ticker": "OUST",
+     "country": "US",
+     "share": "數位光達晶片",
+     "products": "Chronos 數位光達 SoC",
+     "note": "晶片流片、in-house 測試中；數位光達架構",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001816581/000119312526206501/d947395dex991.htm"
+    },
+    {
+     "name": "禾賽 Hesai（自研 SPAD-SoC）",
+     "ticker": "HSAI",
+     "country": "CN",
+     "share": "整機廠垂直整合",
+     "products": "Picasso 6D 全彩 SPAD-SoC",
+     "note": "2026 推全彩 SPAD-SoC + Kosmo 空間智能；整機上吃接收晶片",
+     "src": "https://www.stocktitan.net/news/HSAI/hesai-group-reports-first-quarter-2026-unaudited-financial-wgvrptc5slt8.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "lidar_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sony 堆疊式 SPAD 車用光達 (官方)",
+     "url": "https://www.sony.eu/presscentre/sony-semiconductor-solutions-to-release-stacked-spad-depth-sensor-for-automotive-lidar-applications-delivering-high-resolution-high-speed-performance"
+    },
+    {
+     "label": "SPAD 技術 landscape 2026 (PatSnap)",
+     "url": "https://www.patsnap.com/resources/blog/articles/spad-technology-landscape-2026-trends-and-patents/"
+    }
+   ]
+  },
+  {
+   "id": "scan_optics",
+   "row": "scan",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "掃描架構 / 光學 (MEMS·旋轉·Flash·OPA)",
+   "nameEn": "Scanning & Optics",
+   "competition": "competitive",
+   "single": "機械旋轉→半固態 MEMS/轉鏡（主流量產）→ Flash 全固態 / OPA 光學相位陣列",
+   "desc": "決定光達如何「掃視」場景：早期 robotaxi 機械旋轉 → 量產主流半固態 MEMS 微鏡/轉鏡 → Flash 全固態（無移動件、近場車內）→ OPA 光學相位陣列（晶片化終局）。搭配稜鏡、濾光片、收發透鏡等光學件。",
+   "marketSize": "架構演進中",
+   "growth": "半固態→全固態",
+   "share": "null",
+   "analysis": "掃描架構是光達差異化與成本/可靠度的關鍵。【架構】機械旋轉（早期 robotaxi 多線束）→ 半固態 MEMS 微鏡 / 多邊形轉鏡（禾賽 AT 系列、Valeo SCALA 量產主流）→ Flash 全固態（無移動件、車內近場感知）→ OPA 光學相位陣列（純晶片掃描、終極固態，SiLC 等新創）。【供應商】Hamamatsu 濱松（6965.T，1550nm 長距 MEMS 微鏡）、台日精密光學/濾光片/稜鏡廠（窄帶濾光片濾雜散光是 905nm 抗日光關鍵）、SiLC（US，未上市，FMCW + OPA 光學晶片）。固態化降低移動件失效率、利車規導入，是長期降本主軸。",
+   "companies": [
+    {
+     "name": "Hamamatsu 濱松",
+     "ticker": "6965.T",
+     "country": "JP",
+     "share": "MEMS 微鏡 / 光學",
+     "products": "1550nm 長距 MEMS 微鏡 / MPPC",
+     "note": "掃描+接收跨環節；日系精密光電",
+     "src": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10221218/"
+    },
+    {
+     "name": "SiLC Technologies",
+     "ticker": "—",
+     "country": "US",
+     "share": "OPA / FMCW 光學晶片",
+     "products": "FMCW 光學相位陣列 (OPA) 晶片",
+     "note": "未上市；矽光子化光達掃描終局路線",
+     "src": "https://www.nature.com/articles/s41467-024-51975-6"
+    },
+    {
+     "name": "禾賽 Hesai（自研掃描）",
+     "ticker": "HSAI",
+     "country": "CN",
+     "share": "半固態轉鏡量產",
+     "products": "AT 系列轉鏡掃描 / ETX 平台",
+     "note": "整機自研掃描模組；量產主流架構",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001861737/000110465926063803/tm2615071d1_ex99-1.htm"
+    },
+    {
+     "name": "台日光學濾光片廠",
+     "ticker": "—",
+     "country": "TW",
+     "share": "窄帶濾光片 / 稜鏡 / 透鏡",
+     "products": "905nm 窄帶濾光片 / 收發透鏡",
+     "note": "抗日光雜散是 905nm 關鍵；台日精密光學供應",
+     "src": "https://www.nature.com/articles/s41467-024-51975-6"
+    },
+    {
+     "name": "Leishen 鐳神智能",
+     "ticker": "—",
+     "country": "CN",
+     "share": "混合固態光達",
+     "products": "Hybrid solid-state LiDAR",
+     "note": "未上市；中國混合固態方案",
+     "src": "https://www.lslidar.com/products/hybrid-solid-state-lidar/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "lidar_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "1550nm MEMS 微鏡 (NCBI)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10221218/"
+    },
+    {
+     "label": "905 vs 1550nm 雷射演進 (Nature Comms)",
+     "url": "https://www.nature.com/articles/s41467-024-51975-6"
+    }
+   ]
+  },
+  {
+   "id": "lidar_module",
+   "row": "module",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "光達整機 / 模組（題材核心）",
+   "nameEn": "LiDAR Modules & Systems",
+   "competition": "oligopoly",
+   "single": "⚠ 中國寡占 · 禾賽連年第一（長距 ADAS 43%）；Luminar 破產資產 2026-01 由 MicroVision(MVIS) 接手",
+   "desc": "光達主題敘事核心：整合雷射/接收/掃描/演算法的整機與模組。禾賽+華為+速騰+Seyond+Valeo 五強合計 >90% 全球車用光達（中系合計約 95% ADAS 光達）；禾賽 Q1 2026 首見 Q1 GAAP 獲利、速騰 Q4 2025 才首度單季轉盈，西方純玩家洗牌、Luminar 資產被 MicroVision 接收。",
+   "marketSize": "五強 >90% 市占",
+   "growth": "出貨 +140~200%",
+   "share": "null",
+   "analysis": "【中國寡占】禾賽 Hesai（HSAI）Q1 2026 營收 RMB6.81 億（+29.6%）、出貨 471,723 顆（+140.9%，ADAS +141.9%）、首見 Q1 GAAP 淨利 RMB18.3M（non-GAAP RMB47.7M、+452.9%）、Q2 指引 RMB850-900M（+20~27%）、2026 出貨指引 300-350 萬顆、賓士 L3 確認供應商、長距 ADAS 43% 居首、推 Picasso 6D 全彩 SPAD-SoC + Kosmo 空間智能（SGI 軟體/數據新曲線、2026 約 RMB1 億）；速騰 RoboSense（2498.HK）Q1 2026 營收約 RMB4.6 億（+40%）、出貨 330,300 台（+204.1%）、機器人光達 185,500 台（+1,458.8%）占 56% 首度過半、服務 >3,400 客戶、Q1 淨虧收窄 36% 至 RMB64M（毛利率降至 21.7%）、FY2026 指引 200-270 萬台（2-3x）、自研晶片量產可降本 ~50%；華為 Huawei（未上市，自研光達裝問界等）、Seyond 圖達通（未上市，蔚來獨家供應）。【西方淘汰賽/重組】Luminar（LAZR）2025-12 Chapter 11（~$488M 債）；2026-01 光達業務（Iris/Halo IP+庫存+日/瑞典/佛州工程團隊）以 $33M 售予 MicroVision（MVIS），半導體子公司 LSI 以 $110M 售予 Quantum Computing（QUBT）——分水嶺事件；Innoviz（INVZ，Q1 2026 營收降至 $7.1M（去年 $17.4M）、2026 指引維持 $67-73M、推 InnovizTwo 1km 超長距、轉攻國防/邊防）、Ouster（OUST，Q1 2026 營收 $48.6M +49%、第 13 季連續成長、毛利率降至 43%、收購 Stereolabs、推新 Rev8 OS 原生彩色數位光達、Physical AI 多元化）、Aeva（AEVA，Q1 營收 $6M +76.5%、FMCW 4D、獨家歐洲 OEM L3（2028 量產）+Daimler Truck、2026-01 推高功率 SOA 跨入 AI 資料中心 CPO/矽光子新曲線）。⚠ 單價跌至 $200 級反催量、中國價格戰壓 ASP；禾賽/速騰面臨美國實體清單/審查地緣風險。",
+   "companies": [
+    {
+     "name": "禾賽科技 Hesai",
+     "ticker": "HSAI",
+     "country": "CN",
+     "share": "車用光達第一 · 長距 ADAS 43%",
+     "products": "AT/ETX ADAS 光達 / JT 機器人光達 / Picasso 6D SPAD-SoC / Kosmo",
+     "note": "Q1 2026 營收 RMB6.81 億(+29.6%)、出貨 471,723 顆(+140.9%)；首見 Q1 GAAP 淨利 RMB18.3M、non-GAAP +452.9%；Q2 指引 RMB850-900M；2026 指引 300-350 萬顆；賓士 L3 供應商；SGI 軟體新曲線",
+     "src": "https://www.stocktitan.net/news/HSAI/hesai-group-reports-first-quarter-2026-unaudited-financial-wgvrptc5slt8.html"
+    },
+    {
+     "name": "速騰聚創 RoboSense",
+     "ticker": "2498.HK",
+     "country": "CN",
+     "share": "光達雙雄 / 機器人光達全球第一",
+     "products": "MX/EM/E1R 平台 / EOCENE SPAD SoC / 自研晶片",
+     "note": "Q1 2026 營收約 RMB4.6 億(+40%)、出貨 330,300 台(+204.1%)；機器人光達 +1,458.8% 占 56% 首度過半、服務 >3,400 客戶；Q1 淨虧收窄 36% 至 RMB64M、毛利率 21.7%；FY2026 指引 200-270 萬台；自研晶片可降本 ~50%",
+     "src": "https://www.prnewswire.com/news-releases/robosense-asserts-global-dominance-in-lidar-for-robotics-with-1-458-8-yoy-shipment-surge-in-q1-2026--302783148.html"
+    },
+    {
+     "name": "華為 Huawei",
+     "ticker": "—",
+     "country": "CN",
+     "share": "五強之一",
+     "products": "自研車用光達",
+     "note": "未上市；裝問界/智界等華為智駕車",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/lidar-sensor-automotive-market.asp"
+    },
+    {
+     "name": "Seyond 圖達通",
+     "ticker": "—",
+     "country": "CN",
+     "share": "蔚來獨家供應",
+     "products": "Falcon/Robin 1550nm 光達",
+     "note": "未上市；蔚來 ET/ES 系列獨家",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/lidar-sensor-automotive-market.asp"
+    },
+    {
+     "name": "Innoviz",
+     "ticker": "INVZ",
+     "country": "IL",
+     "share": "西方純玩家 / BMW L3",
+     "products": "InnovizOne/Two 半固態光達（Two 1km 超長距）",
+     "note": "Q1 2026 營收降至 $7.1M（去年 $17.4M）、虧損擴大；2026 指引維持 $67-73M；BMW L3+VW 直供；轉攻國防/邊防/AV 新案",
+     "src": "https://www.stocktitan.net/news/INVZ/innoviz-reports-first-quarter-2026-g4a6e7q3p271.html"
+    },
+    {
+     "name": "Ouster",
+     "ticker": "OUST",
+     "country": "US",
+     "share": "數位光達 / Physical AI",
+     "products": "新 Rev8 OS 原生彩色數位光達 / Chronos SoC",
+     "note": "Q1 2026 營收 $48.6M(+49%)、第 13 季連續成長；毛利率降至 43%；收購 Stereolabs；智慧基建/工業/機器人多元化",
+     "src": "https://www.businesswire.com/news/home/20260505128191/en/Ouster-Announces-Results-for-First-Quarter-2026"
+    },
+    {
+     "name": "Aeva Technologies",
+     "ticker": "AEVA",
+     "country": "US",
+     "share": "FMCW 4D 差異化",
+     "products": "Atlas FMCW 4D 光達 / X1 SoC / 高功率 SOA",
+     "note": "Q1 2026 營收 $6M(+76.5%)；獨家歐洲 OEM L3（2028 量產）+Daimler Truck；2026-01 推高功率 SOA 跨入 AI 資料中心 CPO/矽光子新曲線",
+     "src": "https://www.aeva.com/press/aeva-unveils-industry-leading-high-power-semiconductor-optical-amplifier-for-ai-data-center-and-physical-ai-applications/"
+    },
+    {
+     "name": "MicroVision",
+     "ticker": "MVIS",
+     "country": "US",
+     "share": "西方整併者 / 接手 Luminar 資產",
+     "products": "MAVIN/MOVIA 光達 + Luminar Iris/Halo 1550nm ToF 長距光達",
+     "note": "2026-01 以 $33M 標下 Luminar 光達業務（IP/庫存/日·瑞典·佛州工程團隊）；汽車+國防雙線對抗中國低價光達",
+     "src": "https://ir.microvision.com/news/press-releases/detail/436/microvision-announces-agreement-to-acquire-luminar-assets"
+    },
+    {
+     "name": "Luminar（破產 · 資產出售完成）",
+     "ticker": "LAZR",
+     "country": "US",
+     "share": "⚠ 2025-12 Chapter 11 · 2026 清算",
+     "products": "Iris/Halo 1550nm 光達（光達業務售 MVIS、半導體售 QUBT）",
+     "note": "~$488M 債；2026-01 光達 $33M→MicroVision、半導體子公司 LSI $110M→Quantum Computing；西方淘汰賽分水嶺",
+     "src": "https://chapter11cases.com/blogs/news/luminar-technologies-files-disclosure-statement-for-chapter-11-liquidation-plan-proposes-110-million-sale-of-semiconductor-subsidiary"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vcsel_laser"
+    },
+    {
+     "id": "compound_epi"
+    },
+    {
+     "id": "spad_recv"
+    },
+    {
+     "id": "scan_optics"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "tier1_oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Hesai Q1 2026 業績 (StockTitan)",
+     "url": "https://www.stocktitan.net/news/HSAI/hesai-group-reports-first-quarter-2026-unaudited-financial-wgvrptc5slt8.html"
+    },
+    {
+     "label": "RoboSense Q1 2026 機器人 +1,458.8% (PR Newswire)",
+     "url": "https://www.prnewswire.com/news-releases/robosense-asserts-global-dominance-in-lidar-for-robotics-with-1-458-8-yoy-shipment-surge-in-q1-2026--302783148.html"
+    },
+    {
+     "label": "MicroVision $33M 接手 Luminar 光達 (官方)",
+     "url": "https://ir.microvision.com/news/press-releases/detail/436/microvision-announces-agreement-to-acquire-luminar-assets"
+    },
+    {
+     "label": "Luminar 半導體 $110M 售 QUBT (Chapter11Cases)",
+     "url": "https://chapter11cases.com/blogs/news/luminar-technologies-files-disclosure-statement-for-chapter-11-liquidation-plan-proposes-110-million-sale-of-semiconductor-subsidiary"
+    },
+    {
+     "label": "禾賽長距 ADAS 43% 居首 (Hesai/Yole)",
+     "url": "https://www.hesaitech.com/hesai-secures-no-1-in-long-range-adas-lidar-shipments-in-2025-by-yole-group/"
+    }
+   ]
+  },
+  {
+   "id": "tier1_oem",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "Tier-1 / OEM / Robotaxi 終端需求",
+   "nameEn": "Tier-1, OEM & Robotaxi Demand",
+   "competition": "competitive",
+   "single": "L3 法規 + BYD 平價化 + robotaxi/Physical AI 三引擎；Waymo 週載客 50 萬趟（目標年底 100 萬）",
+   "desc": "把光達拉出量的需求端：Tier-1 整合（Valeo）、OEM 量產車（賓士/BYD/Stellantis/BMW/蔚來）、robotaxi 營運商（Waymo/百度/Pony.ai/WeRide）。L3 強制 + 平價化 + robotaxi 三線引爆；2026 robotaxi 全面提速、機器人光達曲線更陡。",
+   "marketSize": "需求三引擎",
+   "growth": "robotaxi 營收 +395%",
+   "share": "null",
+   "analysis": "【Tier-1】Valeo（FR.PA，SCALA 3 被 Stellantis 選用達 L3 認證、>1,200 萬 pixel/s、300m 偵測，五強之一）、Continental/ZF/Bosch（德系 Tier-1 整合）。【OEM】賓士 Mercedes（MBG.DE，Drive Pilot L3 採禾賽）、BYD（1211.HK，天神之眼智駕平價化、與禾賽擴大合作 10+ 車型、中高階加 1-3 顆光達、2024 賣超 400 萬輛智駕車）、Stellantis（STLA，Valeo SCALA 3）、BMW（BMW.DE，Innoviz L3）、VW（VOW.DE，Innoviz 直供）、蔚來 NIO（Seyond 獨家）。【Robotaxi/Physical AI】Waymo（GOOGL，週付費載客 50 萬趟、橫跨 10 城、2026 底目標 100 萬；第 6 代 Driver 降至 4 顆光達、與 Zeekr 共製 Ojai）、百度 Apollo Go（BIDU，16 城 >1,000 車）、Pony.ai（PONY，Q1 2026 robotaxi 營收 +395.4%、車隊 5 月已 >1,700、年底目標上調至 >3,500 台、進歐洲克羅埃西亞+杜拜）、WeRide（WRD，中東+多國）。禾賽 robotaxi 光達市占約 61%（供 Zoox/Aurora/Apollo/Didi/Pony/WeRide）。機器人光達（人形/送貨/割草/清潔）需求曲線比車用更陡，是禾賽/速騰第二成長引擎。",
+   "companies": [
+    {
+     "name": "Valeo",
+     "ticker": "FR.PA",
+     "country": "FR",
+     "share": "西方 Tier-1 光達領先",
+     "products": "SCALA 3 半固態光達",
+     "note": "被 Stellantis 選用達 L3；>1,200 萬 pixel/s、300m 偵測；五強之一",
+     "src": "https://www.valeo.com/en/valeos-third-generation-lidar-chosen-by-stellantis-for-its-level-3-automation-capability/"
+    },
+    {
+     "name": "賓士 Mercedes-Benz",
+     "ticker": "MBG.DE",
+     "country": "DE",
+     "share": "L3 量產 OEM",
+     "products": "Drive Pilot L3（採禾賽光達）",
+     "note": "確認禾賽為 L3 戰略光達供應商",
+     "src": "https://finance.yahoo.com/sectors/technology/articles/hesai-group-hsai-just-raised-215254687.html"
+    },
+    {
+     "name": "BYD 比亞迪",
+     "ticker": "1211.HK",
+     "country": "HK",
+     "share": "智駕平價化推量",
+     "products": "天神之眼智駕（中高階 1-3 顆光達）",
+     "note": "光達平價化進 RMB 10-20 萬車型；放量主力",
+     "src": "https://www.theautochannel.com/news/2026/04/24/1660960-automotive-lidar-market-to-grow-32-09-cagr-reaching-usd.html"
+    },
+    {
+     "name": "Stellantis",
+     "ticker": "STLA",
+     "country": "EU",
+     "share": "L3 OEM",
+     "products": "多品牌 L3（Valeo SCALA 3）",
+     "note": "選用 Valeo 第三代光達達 L3 認證",
+     "src": "https://www.valeo.com/en/valeos-third-generation-lidar-chosen-by-stellantis-for-its-level-3-automation-capability/"
+    },
+    {
+     "name": "Waymo",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "Robotaxi 領先",
+     "products": "自駕車隊（第 6 代 Driver 4 顆光達）/ Ojai(與 Zeekr 共製)",
+     "note": "週付費載客 50 萬趟、10 城；2026 底目標 100 萬；第 6 代感測器數減 42%、光達由 5 減為 4 顆但更先進",
+     "src": "https://electrek.co/2026/02/12/waymo-begins-fully-autonomous-ops-with-6th-gen-driver-targets-1m-weekly-rides/"
+    },
+    {
+     "name": "百度 Apollo Go",
+     "ticker": "BIDU",
+     "country": "CN",
+     "share": "中國 Robotaxi 規模",
+     "products": "蘿蔔快跑自駕車隊",
+     "note": "16 城 >1,000 車",
+     "src": "https://blog.9cv9.com/top-10-leading-robotaxi-companies-in-2026/"
+    },
+    {
+     "name": "Pony.ai 小馬智行",
+     "ticker": "PONY",
+     "country": "US",
+     "share": "Robotaxi 高增速",
+     "products": "Gen-7 robotaxi 車隊",
+     "note": "Q1 2026 總營收 $34.3M(+145%)、robotaxi 營收 +395.4%；車隊 5 月 >1,700、年底目標上調至 >3,500 台、20+ 城；進歐洲克羅埃西亞+杜拜",
+     "src": "https://www.stocktitan.net/news/PONY/pony-ai-inc-reports-first-quarter-2026-financial-results-with-7evtvu02na5l.html"
+    },
+    {
+     "name": "WeRide 文遠知行",
+     "ticker": "WRD",
+     "country": "US",
+     "share": "國際化 Robotaxi",
+     "products": "robotaxi/robobus/清掃車",
+     "note": "中東（阿布達比/杜拜）+ 多國布局",
+     "src": "https://blog.9cv9.com/top-10-leading-robotaxi-companies-in-2026/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "lidar_module"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Valeo SCALA 3 被 Stellantis 選用 L3 (官方)",
+     "url": "https://www.valeo.com/en/valeos-third-generation-lidar-chosen-by-stellantis-for-its-level-3-automation-capability/"
+    },
+    {
+     "label": "Pony.ai Q1 2026 6-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001969302/000110465926066016/tm2615604d1_ex99-1.htm"
+    },
+    {
+     "label": "Robotaxi 2026 玩家 (9cv9)",
+     "url": "https://blog.9cv9.com/top-10-leading-robotaxi-companies-in-2026/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "compound_epi",
+   "vcsel_laser"
+  ],
+  [
+   "compound_epi",
+   "spad_recv"
+  ],
+  [
+   "vcsel_laser",
+   "lidar_module"
+  ],
+  [
+   "spad_recv",
+   "lidar_module"
+  ],
+  [
+   "scan_optics",
+   "lidar_module"
+  ],
+  [
+   "lidar_module",
+   "tier1_oem"
+  ]
+ ],
+ "_proposed": {}
+}

@@ -1,0 +1,549 @@
+{
+ "id": "hybrid_bonding",
+ "tab": "混合鍵合/TCB 設備",
+ "title": "混合鍵合與 TCB 設備供應鏈 (Hybrid Bonding & TCB Equipment)",
+ "subtitle": "AI 算力的真正瓶頸正從『前段製程』下移到『鍵合台』——當微凸塊（microbump）到了 16-Hi/3D 堆疊撞牆，銅對銅直接接合的混合鍵合（Hybrid Bonding）與無助焊劑熱壓鍵合（fluxless TCB）成為下一道關卡。本主題聚焦『鍵合設備次產業』：對準/D2W/W2W 鍵合機 → overlay 量測/檢測 → 超薄研磨切割 → 上游材料/介電層，與 cowos（封裝整體流程）、semicap_wfe（前段薄膜/蝕刻）刻意區隔。關鍵數字：混合鍵合設備市場 2025 約 $1.65 億 → 2032 $6.34 億（CAGR 21.2%，D2D 子段 35.3%）。龍頭動態：①BESI（混合鍵合龍頭）Q1-26 訂單 €2.7 億（+105% YoY）、混合鍵合單量超越前高、客戶擴至 20 家，2025 投資者日把混合鍵合升為核心、長期營收目標上調至 €15–19 億；AMAT 持股升至 ~9% 成最大股東、合推全球首套整合式 D2W『Kinex』系統，且傳出 Lam/AMAT 競購 BESI。②ASMPT（0522.HK）TCB 為邏輯 C2S 的 Process-of-Record、率先拿下 HBM4 12H 訂單，Q1-26 SEMI $2.745 億、集團接單 $7.27 億（+72% YoY）。③Disco（6146.T）超薄研磨/雷射切割近壟斷（70–80%），FY26 營收上修至 ¥4,190 億創高；④K&S（KLIC）TCB FY26 估 +70% QoQ、年化系統營收上探 $4 億。絃外之音：HBM4 主流『仍用微凸塊+TCB』、混合鍵合真正大規模導入要等 HBM4E/20-Hi（2027+）——市場常把『混合鍵合』與『TCB』混為一談，但這幾年先吃到肉的是 TCB（ASMPT/K&S）與超薄製程（Disco），純混合鍵合放量遞延、BESI 是『提前卡位、後期爆發』的長天期選擇權；台廠（辛耘濕製程、家登超潔淨載具）是『TSMC 聯盟』裡的隱形受惠者。⚠ 與既有 cowos（CoWoS 封裝流程）、hbm（記憶體本體）、semicap_wfe（前段設備）、advanced（先進製程）部分重疊；本主題專注『鍵合/對準/量測設備次產業』視角。非投資建議。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "25+"
+  },
+  {
+   "k": "混合鍵合設備市場",
+   "v": "$6.34億",
+   "sub": "2025 $1.65 億 → 2032 $6.34 億（CAGR 21.2%；D2D 子段 +35.3%）",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "HBM4 16-Hi/3D 堆疊＋BESI×AMAT×Lam 整併·混合鍵合放量遞延至 HBM4E、與既有主題重疊",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "supply",
+   "label": "上游：鍵合材料 / 介電層 / CMP・表面處理",
+   "main": false
+  },
+  {
+   "id": "equip",
+   "label": "核心：對準 / D2W / W2W 鍵合機 ＋ TCB",
+   "main": true
+  },
+  {
+   "id": "control",
+   "label": "製程控制：overlay 量測・檢測 / 超薄研磨切割",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "下游：OSAT・記憶體廠導入 → CoWoS/HBM/3D SoC → AI 加速器",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "materials",
+   "row": "supply",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "上游：鍵合材料 / 介電層 / 表面處理",
+   "nameEn": "Bonding Materials · Dielectric · Surface Prep (upstream)",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "混合鍵合的成敗在『表面』——銅對銅與介電對介電的直接接合，要求 <10nm 的平整度與超潔淨表面：低溫 SiCN/SiO₂ 介電層、CMP 拋光與漿料、電漿活化/清洗、超潔淨晶圓載具。本主題不重複展開上游純材料（詳見 semicap_material / cowos）。",
+   "marketSize": "鍵合用介電/CMP/活化 併入先進封裝材料大盤",
+   "growth": "null",
+   "share": "null",
+   "analysis": "混合鍵合對表面品質的要求遠高於傳統凸塊：銅墊只要凹陷或微塵就接不起來，因此 CMP 拋光（AMAT/荏原）、介電沉積（低溫 SiCN）、電漿活化與超潔淨搬運成為良率關鍵。AMAT 的整合式『Kinex』把表面處理→鍵合→量測收進單一平台，正是因為跨機台搬運會引入污染。台廠在此有隱形角色：家登（3680.TWO）提供 300mm 超潔淨載具，讓晶圓在 AMAT 真空設備間移動時不沾塵；辛耘（3583.TWO）供應濕製程清洗/晶圓重生，受惠 TSV/RDL/Hybrid Bond 製程帶動量價齊升。",
+   "companies": [
+    {
+     "name": "Applied Materials（CMP/活化）",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "CMP＋表面處理＋整合平台",
+     "products": "CMP / 電漿活化 / Kinex 整合 D2W（含表面處理）",
+     "note": "把表面處理收進鍵合平台是護城河；同時是 BESI 最大股東(~9%)",
+     "src": "https://www.appliedmaterials.com/us/en/product-library/kinex-integrated-die-to-wafer-hybrid-bonding-system.html"
+    },
+    {
+     "name": "家登精密",
+     "ticker": "3680.TWO",
+     "country": "TW",
+     "share": "超潔淨晶圓載具",
+     "products": "300mm FOUP / 晶圓級封裝超潔淨載具",
+     "note": "混合鍵合要求極高潔淨度，晶圓於 AMAT 真空設備間移動須以家登超潔淨盒保存防塵——『TSMC 聯盟』成員",
+     "src": "https://n.yam.com/Article/20260610165989"
+    },
+    {
+     "name": "辛耘企業",
+     "ticker": "3583.TW",
+     "country": "TW",
+     "share": "濕製程清洗/晶圓重生",
+     "products": "批式清洗(Wet Bench) / 晶圓重生 / 代理 AMAT PVD/CMP",
+     "note": "受惠 TSV/RDL/Hybrid Bond 製程，量價齊升；TSMC 濕製程關鍵夥伴",
+     "src": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1162882"
+    },
+    {
+     "name": "Ebara（CMP）",
+     "ticker": "6361.T",
+     "country": "JP",
+     "share": "CMP 拋光雙雄之一",
+     "products": "CMP / 鍍銅 / 後段清洗",
+     "note": "鍵合前銅墊平整化關鍵；詳見 semicap_wfe"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "bonders"
+    },
+    {
+     "id": "tcb"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Applied Materials Kinex 整合式 D2W 混合鍵合系統",
+     "url": "https://www.appliedmaterials.com/us/en/product-library/kinex-integrated-die-to-wafer-hybrid-bonding-system.html"
+    },
+    {
+     "label": "AMAT 與台灣廠商：AI 半導體先進封裝（家登/辛耘）",
+     "url": "https://n.yam.com/Article/20260610165989"
+    },
+    {
+     "label": "辛耘受惠先進封裝、6 檔概念股",
+     "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1162882"
+    }
+   ]
+  },
+  {
+   "id": "bonders",
+   "row": "equip",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "對準 / D2W / W2W 混合鍵合機",
+   "nameEn": "Aligners · D2W / W2W Hybrid Bonders",
+   "competition": "oligopoly",
+   "single": "結構性卡位 · BESI 為 D2W 混合鍵合龍頭（<10nm 對準精度），AMAT 持股 ~9% 成最大股東、合推整合式 Kinex，且傳 Lam/AMAT 競購 BESI",
+   "desc": "混合鍵合設備次產業的心臟：把晶粒/晶圓以 <100nm（甚至 <10nm）對準後做銅對銅直接接合。D2W（die-to-wafer，邏輯/HBM 用）與 W2W（wafer-to-wafer，CIS/3D DRAM 用）兩條技術路線並進。",
+   "marketSize": "混合鍵合設備 2025 $1.65 億 → 2032 $6.34 億（CAGR 21.2%）",
+   "growth": "BESI Q1-26 訂單 €269.7M(+105% YoY)、混合鍵合單量超越前高、客戶擴至 20 家",
+   "share": "null",
+   "analysis": "BESI（混合鍵合龍頭）以 <10nm 對準精度、高良率控制領先 D2W，Q1-26 營收 €184.9M（+28% YoY）、訂單 €269.7M（+105% YoY，混合鍵合單量超越前高、客戶擴至 20 家）；2025 投資者日把混合鍵合升為核心業務、長期營收目標上調至 €15–19 億、營益率 40–55%，FT 估 2026 混合鍵合營收 €476M、占公司約 1/3。AMAT 持股升至 ~9% 成最大股東、與 BESI 合推全球首套整合式 D2W『Kinex』（表面處理→鍵合→量測收進單機），SK hynix 同時下單 AMAT/BESI；2026/3 傳 Lam Research 與 AMAT 競購 BESI（Morgan Stanley 操刀），混合鍵合的戰略性引發整併。W2W 路線由 EV Group（奧地利，未上市）與 SUSS MicroTec（SMHN.DE）主導，SUSS 2025 推 XBC300 Gen2 D2W 平台補齊產品線。",
+   "companies": [
+    {
+     "name": "BE Semiconductor (BESI)",
+     "ticker": "BESI.AS",
+     "country": "NL",
+     "share": "D2W 混合鍵合龍頭",
+     "products": "Datacon 8800 Ultra Plus（混合鍵合）/ 晶粒貼合",
+     "note": "Q1-26 訂單 €269.7M(+105% YoY)、混合鍵合單量超越前高、客戶 20 家；2025 投資者日升核心、長期目標 €15–19 億；AMAT 持股~9% 最大股東；傳 Lam/AMAT 競購",
+     "src": "https://www.besi.com/investor-relations/press-releases/details/be-semiconductor-industries-nv-announces-q1-26-results/"
+    },
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "整合 D2W 平台 + BESI 股東",
+     "products": "Kinex 整合式 D2W 混合鍵合系統（與 BESI 合推）",
+     "note": "首套整合表面處理→鍵合→量測單機；BESI 最大股東(~9%)；SK hynix 下單",
+     "src": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-strategic-investment-be"
+    },
+    {
+     "name": "SUSS MicroTec",
+     "ticker": "SMHN.DE",
+     "country": "DE",
+     "share": "W2W/D2W 鍵合機",
+     "products": "XBC300 Gen2 D2W / 永久＋暫時鍵合 / 對準機",
+     "note": "2025/5 推 XBC300 Gen2 補齊 D2W 混合鍵合產品線；W2W 強者",
+     "src": "https://stockanalysis.com/quote/etr/SMHN/"
+    },
+    {
+     "name": "EV Group (EVG)",
+     "ticker": "—",
+     "country": "AT",
+     "share": "W2W 混合鍵合領導",
+     "products": "GEMINI W2W 融合鍵合 / SmartView 對準",
+     "note": "未上市；W2W（CIS/3D DRAM）對準精度標竿；混合鍵合 top-5 之一",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/hybrid-bonding-companies.asp"
+    },
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "鍵合製程整合潛在進入者",
+     "products": "蝕刻/沉積 + 傳競購 BESI",
+     "note": "2026/3 傳與 AMAT 競購 BESI 切入混合鍵合；本身強於前段，缺鍵合機台",
+     "src": "https://www.trendforce.com/news/2026/03/13/news-hybrid-bonding-leader-besi-reportedly-draws-takeover-interest-lam-applied-materials-rumored/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "metrology"
+    },
+    {
+     "id": "adoption"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BESI Q1-26 財報：訂單 €269.7M、混合鍵合單量超前高",
+     "url": "https://www.besi.com/investor-relations/press-releases/details/be-semiconductor-industries-nv-announces-q1-26-results/"
+    },
+    {
+     "label": "Applied Materials 對 BESI 策略性投資（最大股東）",
+     "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-strategic-investment-be"
+    },
+    {
+     "label": "TrendForce：傳 Lam/AMAT 競購混合鍵合龍頭 BESI",
+     "url": "https://www.trendforce.com/news/2026/03/13/news-hybrid-bonding-leader-besi-reportedly-draws-takeover-interest-lam-applied-materials-rumored/"
+    },
+    {
+     "label": "混合鍵合 top 廠商：EVG/SUSS/AMAT/BESI/K&S",
+     "url": "https://www.marketsandmarkets.com/ResearchInsight/hybrid-bonding-companies.asp"
+    }
+   ]
+  },
+  {
+   "id": "tcb",
+   "row": "equip",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "熱壓鍵合 TCB（過渡主力）",
+   "nameEn": "Thermo-Compression Bonding (TCB)",
+   "competition": "oligopoly",
+   "single": "現階段真正放量的環節 · ASMPT TCB 為邏輯 C2S 的 Process-of-Record、率先拿下 HBM4 12H 訂單；K&S TCB FY26 估 +70% QoQ",
+   "desc": "在混合鍵合大規模導入前，HBM4（含 16-Hi）主流仍走『微凸塊 + TCB』；無助焊劑（fluxless/AOR）TCB 是橋接到混合鍵合的關鍵過渡，這幾年先吃到肉的就是 TCB。",
+   "marketSize": "TCB 設備隨 HBM4 放量；ASMPT/K&S 雙雄",
+   "growth": "ASMPT 集團接單 $727M(+72% YoY)；K&S TCB FY26 +70% QoQ、年化上探 $4 億",
+   "share": "null",
+   "analysis": "市場常把『混合鍵合』與『TCB』混為一談，但 HBM4 16-Hi 主流『仍用微凸塊+TCB』，混合鍵合真正大規模導入要等 HBM4E/20-Hi（2027+）——這意味 2025–26 先放量的是 TCB。ASMPT（0522.HK，SG 總部/HK 掛牌）TCB 在邏輯 chip-to-substrate（C2S）為 Process-of-Record、OSAT 訂單不斷，C2W 拿下 4 台超細間距 AOR plasma 工具訂單；率先取得 HBM4 12H 訂單、為 PoR，一記憶體大廠採用其 fluxless AOR 製程驗證 HBM4 16H——Q1-26 SEMI 營收 $274.5M（+14.6% YoY）、集團接單 $727M（+72% YoY）。K&S（KLIC）TCB FY26 估 +70% QoQ、年化系統營收上探 $4 億，並加速混合鍵合研發；ASMPT/K&S 形成 TCB 雙雄。",
+   "companies": [
+    {
+     "name": "ASMPT",
+     "ticker": "0522.HK",
+     "country": "SG",
+     "share": "TCB 龍頭（邏輯 C2S PoR）",
+     "products": "TCB（C2S/C2W）/ AOR plasma fluxless / 高階晶粒貼合機",
+     "note": "率先拿 HBM4 12H 訂單、為 PoR；Q1-26 SEMI $274.5M(+14.6% YoY)、集團接單 $727M(+72% YoY)；一記憶體大廠驗證其 AOR fluxless HBM4 16H",
+     "src": "https://www.asmpt.com/en/investor-relations/news-events/asmpt-announces-2026-first-quarter-results/"
+    },
+    {
+     "name": "Kulicke & Soffa",
+     "ticker": "KLIC",
+     "country": "US",
+     "share": "TCB 第二強 + 混合鍵合研發",
+     "products": "TCB 系統 / 記憶體鍵合 / 混合鍵合研發中",
+     "note": "TCB FY26 估 +70% QoQ、年化系統營收上探 $4 億；加速混合鍵合 R&D 拚商用",
+     "src": "https://www.prnewswire.com/news-releases/kulicke--soffa-reports-second-quarter-2026-results-302764352.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "metrology"
+    },
+    {
+     "id": "adoption"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASMPT Q1-26：SEMI/TCB、HBM4 12H 訂單、AOR fluxless",
+     "url": "https://www.asmpt.com/en/investor-relations/news-events/asmpt-announces-2026-first-quarter-results/"
+    },
+    {
+     "label": "Kulicke & Soffa Q2 FY2026 財報（TCB inflection）",
+     "url": "https://www.prnewswire.com/news-releases/kulicke--soffa-reports-second-quarter-2026-results-302764352.html"
+    },
+    {
+     "label": "SemiEngineering：HBM4 仍用微凸塊、混合鍵合遞延",
+     "url": "https://semiengineering.com/hbm4-sticks-with-microbumps-postponing-hybrid-bonding/"
+    }
+   ]
+  },
+  {
+   "id": "metrology",
+   "row": "control",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "overlay 量測 / 檢測（製程控制）",
+   "nameEn": "Overlay Metrology & Inspection",
+   "competition": "oligopoly",
+   "single": "良率守門員 · 混合鍵合無凸塊餘裕、對準誤差零容忍，KLA irArcher 007 SWIR overlay 成 W2W 對準監控標竿",
+   "desc": "混合鍵合沒有凸塊的『自我對齊』餘裕，對準誤差直接=報廢，因此 overlay 量測與 3D/X-ray 檢測是良率守門員：量測鍵合前後的對位、TTV、翹曲、空洞。",
+   "marketSize": "先進封裝量測/檢測；KLA 先進封裝營收 2026 估近 $10 億",
+   "growth": "KLA 先進封裝營收 2025 ~$6.35 億 → 2026 估近 $10 億",
+   "share": "null",
+   "analysis": "混合鍵合把『對準』從製程步驟升級為良率生死線：KLA（KLAC）的 irArcher 007 overlay 量測系統以短波紅外（SWIR）穿透基板，在研磨前的鍵合晶圓上做高精度 overlay，成 W2W 對準監控標竿；KLA 先進封裝營收 2025 約 $6.35 億、2026 估近 $10 億。Camtek（CAMT，以色列）Hawk 系列在 chiplet/HBM/混合鍵合廣泛採用、MicroProf 量 TTV/翹曲/TSV/RDL overlay，並併 Visual Layer 深化視覺 AI。Onto Innovation（ONTO）供晶圓形貌與次微米對位量測，降低鍵合錯位風險。此環節與 cowos/semicap_wfe 的量測子段部分重疊，但聚焦『鍵合 overlay/3D 檢測』。",
+   "companies": [
+    {
+     "name": "KLA Corporation",
+     "ticker": "KLAC",
+     "country": "US",
+     "share": "先進封裝量測/檢測龍頭",
+     "products": "irArcher 007 SWIR overlay / 鍵合 & 3D 堆疊檢測",
+     "note": "irArcher 007 為 W2W 對準監控標竿；先進封裝營收 2025 ~$6.35 億→2026 估近 $10 億",
+     "src": "https://www.kla.com/products/packaging-manufacturing/wafer-inspection-and-metrology-for-advanced-packaging"
+    },
+    {
+     "name": "Camtek",
+     "ticker": "CAMT",
+     "country": "IL",
+     "share": "先進封裝檢測專家",
+     "products": "Hawk 3D/X-ray 檢測 / MicroProf 量測(TTV/翹曲/TSV/overlay)",
+     "note": "Hawk 廣用於 chiplet/HBM/混合鍵合；併 Visual Layer 強化視覺 AI",
+     "src": "https://www.camtek.com/news-and-events/camtek-announces-acquisition-of-visual-layer-to-deepen-its-visual-ai-capabilities-in-its-inspection-and-metrology-offering/"
+    },
+    {
+     "name": "Onto Innovation",
+     "ticker": "ONTO",
+     "country": "US",
+     "share": "形貌/對位量測",
+     "products": "晶圓形貌 / 次微米對位量測 / 缺陷檢測",
+     "note": "process control for hybrid bonding；量晶圓 topography 與對位降錯位風險",
+     "src": "https://ontoinnovation.com/resources/bridging-performance-and-yield-the-evolving-role-of-interconnect-technologies-in-hbm/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "bonders"
+    },
+    {
+     "id": "tcb"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "adoption"
+    }
+   ],
+   "sources": [
+    {
+     "label": "KLA 先進封裝晶圓檢測/量測（含混合鍵合/3D 堆疊）",
+     "url": "https://www.kla.com/products/packaging-manufacturing/wafer-inspection-and-metrology-for-advanced-packaging"
+    },
+    {
+     "label": "Camtek 併 Visual Layer 深化檢測量測視覺 AI",
+     "url": "https://www.camtek.com/news-and-events/camtek-announces-acquisition-of-visual-layer-to-deepen-its-visual-ai-capabilities-in-its-inspection-and-metrology-offering/"
+    },
+    {
+     "label": "Onto Innovation：HBM 互連技術與混合鍵合製程控制",
+     "url": "https://ontoinnovation.com/resources/bridging-performance-and-yield-the-evolving-role-of-interconnect-technologies-in-hbm/"
+    }
+   ]
+  },
+  {
+   "id": "thinning",
+   "row": "control",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "超薄研磨 / 切割（鍵合前置）",
+   "nameEn": "Ultra-thin Grinding & Dicing",
+   "competition": "monopoly",
+   "single": "卡脖子單點 · Disco 在精密研磨/切割近壟斷（~70–80%），HBM 須磨至 30–50µm 超薄、混合鍵合對 TTV 要求更嚴，無 Disco 工具 AI 晶片無法收尾",
+   "desc": "鍵合前的必經步驟：把晶圓背磨到 30–50µm 超薄、再以雷射/刀片切割成晶粒。混合鍵合對總厚度變異（TTV）與切割邊緣品質要求極高，是鍵合良率的隱形前提。",
+   "marketSize": "精密研磨/切割設備；Disco 近壟斷",
+   "growth": "Disco FY26 營收上修至 ¥4,190 億創高、出貨量創高",
+   "share": "null",
+   "analysis": "Disco（6146.T）在精密研磨、切割（刀片/雷射/電漿 dicing）近壟斷（~70–80% 市佔），位居『卡脖子』單點：HBM 為塞進更多層須磨至 30–50µm 超薄，混合鍵合對 TTV（總厚度變異）要求又比凸塊更嚴，沒有 Disco 的研磨輪與切割機，最新 AI 晶片無法收尾與封裝。FY26（截至 2026/3）營收上修至 ¥4,190 億（約 $26.5 億）、出貨量創高，由生成式 AI 帶動 GPU/HBM 需求；精密加工工具（鑽石研磨輪等）出貨創高。此節點與 cowos/semicap_wfe 雖有重疊，但 Disco 的研磨/切割是混合鍵合『前置製程』的真正壟斷點。",
+   "companies": [
+    {
+     "name": "Disco Corporation",
+     "ticker": "6146.T",
+     "country": "JP",
+     "share": "精密研磨/切割近壟斷(~70–80%)",
+     "products": "超薄背磨 / 雷射 & 刀片 & 電漿切割 / 鑽石研磨輪",
+     "note": "HBM 磨至 30–50µm、混合鍵合 TTV 要求嚴；FY26 營收上修 ¥4,190 億創高、出貨創高；無其工具 AI 晶片無法收尾",
+     "src": "https://finance.biggo.com/news/jpx_tdnet_140120260120535984"
+    },
+    {
+     "name": "Tokyo Electron (TEL)",
+     "ticker": "8035.T",
+     "country": "JP",
+     "share": "晶圓貼合/塗布輔助設備",
+     "products": "塗布顯影 / 鍵合輔助製程設備",
+     "note": "前段巨頭，於先進封裝鍵合周邊（塗布/清洗）有角色；詳見 semicap_wfe",
+     "src": "https://finance.yahoo.com/quote/6146.T/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "adoption"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Disco（6146）Q3 FY2026：營收+11.5%、上修全年",
+     "url": "https://finance.biggo.com/news/jpx_tdnet_140120260120535984"
+    },
+    {
+     "label": "Disco：半導體切磨拋全球龍頭（SemiAnalysis）",
+     "url": "https://newsletter.semianalysis.com/p/disco-corporation-the-world-leader"
+    }
+   ]
+  },
+  {
+   "id": "adoption",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "下游：OSAT・記憶體廠導入 → CoWoS/HBM/3D SoC → AI 加速器",
+   "nameEn": "OSAT & Memory Adoption → CoWoS/HBM/3D SoC → AI Accelerators",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "鍵合/對準/量測設備的需求引擎：晶圓代工/OSAT 與記憶體三雄把混合鍵合/TCB 導入產線，最終體現在 CoWoS、HBM、3D SoC（SoIC）封裝，供給 AI 加速器。",
+   "marketSize": "混合鍵合設備 2032 $6.34 億；終端為 HBM/AI 加速器數千億美元",
+   "growth": "HBM4 16-Hi 2026-H2 交樣、量產 2027 初；混合鍵合放量遞延至 HBM4E/20-Hi",
+   "share": "null",
+   "analysis": "需求端決定設備放量節奏：TSMC 以 SoIC（3D SoC）擴產帶動 D2W 混合鍵合（與 BESI/AMAT 綁定）；記憶體三雄路線分歧——SK hynix HBM4 走 MR-MUF、規劃 HBM4E/20-Hi 才導入混合鍵合；Samsung 主推銅對銅混合鍵合去微凸塊；Micron/Samsung HBM4 用 TC-NCF。NVIDIA 要求 16-Hi HBM4 2026-H2 交樣、Q4 交貨，量產 2027 初；Rubin Ultra（2027）用 HBM4E 20-Hi。絃外之音：HBM4 主流『仍用微凸塊+TCB』，混合鍵合真正大規模導入要等 20-Hi（2027+）——故近兩年先吃到肉的是 TCB（ASMPT/K&S）與超薄研磨（Disco），純混合鍵合（BESI）是『提前卡位、後期爆發』的長天期選擇權；設備估值已反映期待，導入時程遞延與良率是主要風險。",
+   "companies": [
+    {
+     "name": "TSMC",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "SoIC/3D SoC 領導、D2W 需求源",
+     "products": "SoIC（3D SoC）/ CoWoS 封裝",
+     "note": "SoIC 擴產帶動 D2W 混合鍵合需求；與 BESI/AMAT 綁定；詳見 cowos/advanced",
+     "src": "https://tspasemiconductor.substack.com/p/hybrid-bonding-at-scale-besis-vision"
+    },
+    {
+     "name": "SK hynix",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "HBM 龍頭",
+     "products": "HBM4（MR-MUF）→ HBM4E/20-Hi 導入混合鍵合",
+     "note": "下單 AMAT/BESI 混合鍵合設備；20-Hi 才大規模導入；詳見 hbm",
+     "src": "https://www.thelec.net/news/articleView.html?idxno=6246"
+    },
+    {
+     "name": "Samsung Electronics",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "HBM + 混合鍵合先行",
+     "products": "HBM4（TC-NCF）/ 銅對銅混合鍵合去微凸塊",
+     "note": "主推混合鍵合去 microbump；HBM4 16-Hi 交樣 NVIDIA",
+     "src": "https://www.tweaktown.com/news/109495/sk-hynix-samsung-and-micron-fighting-for-nvidia-supply-contracts-for-new-16-hi-hbm4-orders/index.html"
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "country": "US",
+     "share": "HBM 第三",
+     "products": "HBM4（TC-NCF）/ 16-Hi",
+     "note": "HBM4 16-Hi 量產目標 2027 初；詳見 hbm",
+     "src": "https://www.tweaktown.com/news/109495/sk-hynix-samsung-and-micron-fighting-for-nvidia-supply-contracts-for-new-16-hi-hbm4-orders/index.html"
+    },
+    {
+     "name": "NVIDIA（終端拉貨）",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI 加速器需求源",
+     "products": "Rubin / Rubin Ultra（HBM4/4E）",
+     "note": "要求 16-Hi HBM4 2026-H2 交樣；Rubin Ultra 2027 用 20-Hi HBM4E",
+     "src": "https://markets.financialcontent.com/stocks/article/tokenring-2026-1-22-the-hbm4-arms-race-sk-hynix-samsung-and-micron-deliver-16-hi-samples-to-nvidia-to-power-the-100-trillion-parameter-era"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "bonders"
+    },
+    {
+     "id": "tcb"
+    },
+    {
+     "id": "metrology"
+    },
+    {
+     "id": "thinning"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "SK hynix 向 AMAT/BESI 下單混合鍵合設備（The Elec）",
+     "url": "https://www.thelec.net/news/articleView.html?idxno=6246"
+    },
+    {
+     "label": "HBM4 16-Hi：三雄交樣 NVIDIA、2026-H2/2027 量產",
+     "url": "https://www.tweaktown.com/news/109495/sk-hynix-samsung-and-micron-fighting-for-nvidia-supply-contracts-for-new-16-hi-hbm4-orders/index.html"
+    },
+    {
+     "label": "BESI 規模化混合鍵合願景與 3D 整合（TSPA）",
+     "url": "https://tspasemiconductor.substack.com/p/hybrid-bonding-at-scale-besis-vision"
+    },
+    {
+     "label": "混合鍵合市場 2032 $633.9M、CAGR 21.2%（MarketsandMarkets）",
+     "url": "https://www.marketsandmarkets.com/PressReleases/hybrid-bonding.asp"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "materials",
+   "bonders"
+  ],
+  [
+   "materials",
+   "tcb"
+  ],
+  [
+   "materials",
+   "thinning"
+  ],
+  [
+   "bonders",
+   "metrology"
+  ],
+  [
+   "tcb",
+   "metrology"
+  ],
+  [
+   "bonders",
+   "adoption"
+  ],
+  [
+   "tcb",
+   "adoption"
+  ],
+  [
+   "metrology",
+   "adoption"
+  ],
+  [
+   "thinning",
+   "adoption"
+  ]
+ ],
+ "_proposed": {}
+}

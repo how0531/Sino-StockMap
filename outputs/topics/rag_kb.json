@@ -1,0 +1,1248 @@
+{
+ "id": "rag_kb",
+ "tab": "RAG/向量檢索",
+ "title": "RAG / Vector Search / 企業知識庫（文件解析 → 嵌入 → 向量 DB → RAG 平台 → 應用）",
+ "subtitle": "全棧 RAG 基礎設施：Glean USD 7.2B/ARR $300M（2026-05）、AlphaSense USD 7.5B/ARR $600M+（2026-06）企業搜尋雙龍頭；BAAI BGE 開源 Embedding + Zilliz Milvus 40K stars 向量 DB 亞洲事實標準；MongoDB Voyage AI $220M 收購（2025/2）鎖定垂直嵌入市場；Snowflake/Databricks/MongoDB 三強 Lakehouse 混戰。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 11
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "60+"
+  },
+  {
+   "k": "關鍵單點",
+   "v": 2,
+   "sub": "BAAI BGE 開源 embedding + Zilliz Milvus 向量 DB",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "parse",
+   "label": "文件解析 Document Parsing",
+   "main": false
+  },
+  {
+   "id": "embed",
+   "label": "嵌入模型 Embedding Models",
+   "main": false
+  },
+  {
+   "id": "store",
+   "label": "向量 DB + Lakehouse Vector Store",
+   "main": false
+  },
+  {
+   "id": "rag",
+   "label": "RAG 平台 + 企業搜尋",
+   "main": true
+  },
+  {
+   "id": "asia",
+   "label": "亞洲在地玩家 Asia Regional",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "document_parse_us",
+   "row": "parse",
+   "col": 1,
+   "span": 5,
+   "kind": "stage",
+   "name": "文件解析 / OCR / Parsing",
+   "nameEn": "Document Parsing & OCR",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "將 PDF、Office、HTML、影像等 30+ 格式轉為 LLM-ready JSON / Markdown 的解析層，是 RAG pipeline 的第一哩路。涵蓋專業解析 API（Unstructured、Reducto、LlamaParse）與雲端巨頭原生解析服務（AWS Textract、Azure Document Intelligence、Google Document AI）。",
+   "marketSize": "2025 IDP（智慧文件處理）TAM ~USD 5.7B；2030 估 USD 18B+",
+   "growth": "YoY +28%（IDP 市場）；GenAI 加速 Parse-as-API 消費",
+   "share": "null",
+   "analysis": "Reducto 2026-02 獲 a16z 主導 Series B $75M（累計 $108M），累計解析 1B 頁；LlamaParse v2 ParseBench 評測 84.9% 全類型最高分，2025-03 Series A $19M；Unstructured.io 開源庫被 45,000+ 組織採用；Claude API 原生 PDF 理解（100 頁以內）持續壓縮前端解析需求。",
+   "companies": [
+    {
+     "name": "Reducto",
+     "ticker": "—",
+     "country": "US",
+     "share": "1B 頁累計解析量；a16z Series B $75M（2026-02）",
+     "products": "Reducto Parse API（OCR+VLM 混合，30+ 格式）、Split / Extract / Edit 端點",
+     "note": "Seed $8.5M → Series A $24.5M（Benchmark, 2025-04）→ Series B $75M a16z（2026-02）；累計 $108M；ARR 2025 由 $5M 翻至 $40M（8x）；2026-05 收購 Opennote 擴展文件智能",
+     "src": "https://reducto.ai/blog/reducto-series-b-funding"
+    },
+    {
+     "name": "Unstructured.io",
+     "ticker": "—",
+     "country": "US",
+     "share": "45,000+ 組織採用；1/3 Fortune 500",
+     "products": "Unstructured Platform（企業 ETL，30+ 格式→LLM-ready JSON）、開源核心庫（6M+ 下載）",
+     "note": "Series C $40M（2025-10，Menlo Ventures+Bain Capital），估值 ~$200M；Series B $40M 由 Menlo/NVIDIA/Databricks 投資（2024-03）",
+     "src": "https://www.businesswire.com/news/home/20240314620374/en/Unstructured-Raises-40M-Series-B"
+    },
+    {
+     "name": "LlamaIndex / LlamaParse (Run-Llama)",
+     "ticker": "—",
+     "country": "US",
+     "share": "ParseBench 84.9% 全類型最高分",
+     "products": "LlamaParse（Fast/Cost Effective/Agentic 分層 API）、LlamaIndex RAG 框架、LlamaHub",
+     "note": "Series A $19M（2025-03，Norwest NVP）；Databricks Ventures + KPMG Ventures 戰略投資（2025-05）；post-money 估值 ~$93M",
+     "src": "https://www.llamaindex.ai/blog/llamaparse-v2-simpler-better-cheaper"
+    },
+    {
+     "name": "Amazon Textract",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "AWS AI Services 最廣泛部署解析服務",
+     "products": "DetectDocumentText、AnalyzeDocument、IDP + Bedrock GenAI 整合",
+     "note": "2025-06 新增準確度更新；AWS Q4 FY2025 revenue $28.8B；與 Bedrock 深度整合",
+     "src": "https://aws.amazon.com/about-aws/whats-new/2025/06/amazon-textract-detectdocumenttext-analyzedocument-apis/"
+    },
+    {
+     "name": "Microsoft Azure AI Document Intelligence",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "Azure AI Foundry 整合，企業合規首選",
+     "products": "預建模型（發票/稅表/合約）、自訂模型、GraphRAG v2.0 整合",
+     "note": "MSFT FY2025 Intelligent Cloud rev $31.9B；GraphRAG v2.0（2025-10）問答準確率較傳統 RAG 提升 3x",
+     "src": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/whats-new"
+    },
+    {
+     "name": "Google Document AI",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "GCP Vertex AI 原生整合，BigQuery 下游",
+     "products": "Domain parsers、多語言 OCR、Vertex AI Document AI、VPC-SC（2025 mid）",
+     "note": "GCP Q4 FY2025 revenue $12.3B（+28% YoY）；與 BigQuery + Vertex AI + Gemini 深度整合",
+     "src": "https://cloud.google.com/document-ai/docs/release-notes"
+    },
+    {
+     "name": "Anthropic Claude (PDF support)",
+     "ticker": "—",
+     "country": "US",
+     "share": "100 頁以內原生 PDF，免前置解析",
+     "products": "Claude 4 Opus/Sonnet API 原生 PDF 理解、官方推薦配合 Voyage AI 向量化",
+     "note": "估值 ~$61B（2025）；API 直接傳遞 PDF，壓縮前端解析採購需求",
+     "src": "https://platform.claude.com/docs/en/build-with-claude/files"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "embedding_models_us"
+    },
+    {
+     "id": "embedding_models_cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Reducto Series B $75M a16z（2026-02）",
+     "url": "https://reducto.ai/blog/reducto-series-b-funding"
+    },
+    {
+     "label": "LlamaParse v2 ParseBench 84.9%（官方）",
+     "url": "https://www.llamaindex.ai/blog/llamaparse-v2-simpler-better-cheaper"
+    },
+    {
+     "label": "Unstructured Series B $40M（2024-03）",
+     "url": "https://www.businesswire.com/news/home/20240314620374/en/Unstructured-Raises-40M-Series-B"
+    },
+    {
+     "label": "AWS Textract 2025-06 準確度更新",
+     "url": "https://aws.amazon.com/about-aws/whats-new/2025/06/amazon-textract-detectdocumenttext-analyzedocument-apis/"
+    }
+   ]
+  },
+  {
+   "id": "embedding_models_us",
+   "row": "embed",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "美系嵌入模型",
+   "nameEn": "US / EU Embedding Models",
+   "competition": "oligopoly",
+   "single": "OpenAI embedding 最廣泛使用；MongoDB Voyage AI 收購整合垂直 embedding",
+   "desc": "將文字/圖片轉為高維向量的嵌入模型 API，是 RAG pipeline 語意理解的核心。涵蓋通用商業 API（OpenAI、Cohere）、垂直領域（Voyage AI finance/code/law）、開源多模態（Nomic、Jina）。",
+   "marketSize": "2025 嵌入 API 市場含 Reranker ~USD 1.5-2B；主要透過 LLM API 套餐捆售",
+   "growth": "YoY +60%+（向量 token 用量）；OpenAI text-embedding-3-small 週 74.5B tokens",
+   "share": "null",
+   "analysis": "OpenAI text-embedding-3-large 週使用 13.6B tokens（商業最廣）；MongoDB 以 $220M 現金+股票收購 Voyage AI（2025-02-24），Voyage 客戶數收購後翻倍；Cohere Embed v4 + Rerank 4 配合 Command-R/R+ 形成完整垂直 RAG 棧，Series F $500M（2025-08）at $7B；Jina AI jina-embeddings-v4 多模態（Qwen2.5-VL-3B 基礎），德國柏林，$37.5M 累計融資。",
+   "companies": [
+    {
+     "name": "OpenAI Embeddings",
+     "ticker": "—",
+     "country": "US",
+     "share": "商業嵌入 API 使用最廣；3-small 週 74.5B tokens、3-large 週 13.6B tokens",
+     "products": "text-embedding-3-large（$0.13/1M tokens）、text-embedding-3-small（$0.02/1M tokens）、Batch tier 5折",
+     "note": "2024-01 發布；業界基準；2025 ARR $20B+；與所有主流向量 DB 原生整合",
+     "src": "https://openai.com/index/new-embedding-models-and-api-updates/"
+    },
+    {
+     "name": "Voyage AI（MongoDB 旗下）",
+     "ticker": "MDB",
+     "country": "US",
+     "share": "Anthropic 官方推薦嵌入夥伴；Atlas ARR >$2B（30% 來自 AI）",
+     "products": "voyage-3-large（2025-01）、voyage-3.5/3.5-lite（2025-05）、voyage-context-3（2025-07）、domain: finance/code/law",
+     "note": "MongoDB 以 $220M 現金+股票收購（2025-02-24）；Voyage 客戶數自收購後翻倍；品牌延用；【r10 隱性單點】Anthropic/LangChain/Harvey/Replit 官方推薦嵌入夥伴=垂直 RAG 的隱性事實標準，MongoDB 用 $220M 買下後以 Atlas Automated Embedding（2026-05 預覽）把嵌入綁進資料庫，鎖死垂直 RAG 嵌入入口",
+     "src": "https://investors.mongodb.com/news-releases/news-release-details/mongodb-announces-acquisition-voyage-ai-enable-organizations"
+    },
+    {
+     "name": "Cohere Embed v4 + Rerank 4",
+     "ticker": "—",
+     "country": "CA",
+     "share": "企業 RAG 全棧整合；ARR ~$240M（2025 FY）",
+     "products": "Embed v4（Matryoshka 256/512/1024/1536）、Rerank 4 Pro/Fast（2025-12，100+ 語言）、Command-R+ RAG 全棧",
+     "note": "Series F $500M（2025-08，Radical+NVIDIA），追加 $100M（2025-09）；估值 $7B；2026-04-24 宣布與德國 Aleph Alpha 合併（同步 Series E），合併後估值 ~$20B、Schwarz 集團注資 $600M，主攻歐洲主權合規 AI（待監管核准）；AMD/NVIDIA/Salesforce 策略股東",
+     "src": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/"
+    },
+    {
+     "name": "Nomic AI (nomic-embed)",
+     "ticker": "—",
+     "country": "US",
+     "share": "全開源（Apache 2.0）；8192 token context window",
+     "products": "nomic-embed-text-v1.5（長文本，Matryoshka）、nomic-embed-vision-v1.5（跨模態）、nomic-embed-text-v2（MoE，多語言，2025-Q3）",
+     "note": "Series A $17M（Coatue+Contrary+MongoDB Ventures）；Apache 2.0 全開源",
+     "src": "https://www.nomic.ai/blog/posts/nomic-embed-text-v1"
+    },
+    {
+     "name": "Jina AI (jina-embeddings-v4)",
+     "ticker": "—",
+     "country": "DE",
+     "share": "MTEB 評測高排名；多模態最強之一",
+     "products": "jina-embeddings-v4（多模態+多語言，Qwen2.5-VL-3B 基礎）、jina-reranker-v2、Jina Reader 文件擷取整合",
+     "note": "德國柏林；$37.5M 累計融資；支援文字+圖片+視覺文件",
+     "src": "https://jina.ai/news/jina-embeddings-v4/"
+    },
+    {
+     "name": "Mistral Embed / Codestral Embed",
+     "ticker": "—",
+     "country": "FR",
+     "share": "歐洲主權 AI 嵌入首選；代碼專用 embedding 領先",
+     "products": "mistral-embed（通用，8K context）、Codestral Embed（程式碼，$0.15/1M tokens）",
+     "note": "估值升至 $20B（2026-06 募 $3.5B，歐洲最高市值私企之一）；ASML 領投 €1.3B 為最大股東（2025-09，€1.7B Series C@€11.7B）；Codestral Embed 宣稱優於 Voyage Code 3、Cohere Embed v4 及 OpenAI 3-large",
+     "src": "https://sacra.com/c/mistral/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "document_parse_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "vector_db_us"
+    },
+    {
+     "id": "lakehouse_vector"
+    }
+   ],
+   "sources": [
+    {
+     "label": "OpenAI text-embedding-3 官方發布（2024-01）",
+     "url": "https://openai.com/index/new-embedding-models-and-api-updates/"
+    },
+    {
+     "label": "MongoDB 收購 Voyage AI $220M（2025-02-24）",
+     "url": "https://investors.mongodb.com/news-releases/news-release-details/mongodb-announces-acquisition-voyage-ai-enable-organizations"
+    },
+    {
+     "label": "Cohere Series F $500M（2025-08）",
+     "url": "https://cohere.com/blog/august-2025-funding-round"
+    },
+    {
+     "label": "Jina AI jina-embeddings-v4 發布",
+     "url": "https://jina.ai/news/jina-embeddings-v4/"
+    }
+   ]
+  },
+  {
+   "id": "embedding_models_cn",
+   "row": "embed",
+   "col": 4,
+   "span": 2,
+   "kind": "stage",
+   "name": "中國開源嵌入模型",
+   "nameEn": "China OSS Embedding Models",
+   "competition": "oligopoly",
+   "single": "BAAI BGE 事實標準 · BGE-M3 HuggingFace 最受歡迎多語言開源嵌入；Qwen3-Embedding MTEB SOTA（2025-06）",
+   "desc": "以 BAAI BGE 系列為事實標準的中國開源嵌入生態，主導亞洲及全球多語言 MTEB 排行榜。阿里 Qwen3-Embedding、字節 Seed1.5-Embedding 持續推進商業 API 版本，支撐 Zilliz Milvus 向量 DB 生態。",
+   "marketSize": "中國企業 RAG 私有化部署市場 2025 ~RMB 150-200 億；開源嵌入模型驅動採購",
+   "growth": "中國大模型解決方案 YoY +126-145%；私有化 RAG 需求 YoY +200%+",
+   "share": "null",
+   "analysis": "BAAI FlagEmbedding MIT 授權全開源；BGE-M3 支援 100+ 語言、8192 tokens，全球 MTEB 多語前三；BGE-VL（2025-03）新增圖文跨模態；Alibaba Qwen3-Embedding（0.6B/4B/8B，2025-06）支援 119 語言，MMTEB+MTEB 雙榜 SOTA；ByteDance Seed1.5-Embedding 中英雙語 MTEB SOTA，日均 Token 50 兆。",
+   "companies": [
+    {
+     "name": "BAAI / 北京智源研究院 (BGE)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "亞洲開源 Embedding 事實標準；全球 MTEB 多語前三",
+     "products": "BGE-M3（100+ 語言，8192 tokens）、BGE-VL（多模態，2025-03）、BGE-Code-v1（2025）、BGE-Reranker",
+     "note": "MIT 授權完全開源；dense/lexical/multi-vec ColBERT 三模式；被 Zilliz/Tencent/Alibaba 廣泛整合；【r10 隱性單點】中國+亞洲私有化 RAG 的嵌入層幾乎全建在 BGE 之上，是帳面無營收卻握實質控制力的關鍵單點——一個開源權重變更或授權轉向即可撼動整個亞洲私有化 RAG 採購",
+     "src": "https://github.com/flagopen/flagembedding"
+    },
+    {
+     "name": "Alibaba Cloud — Qwen3-Embedding",
+     "ticker": "9988.HK",
+     "country": "CN",
+     "share": "MMTEB + MTEB 雙榜 SOTA（2025-06）；支援 119 語言",
+     "products": "Qwen3-Embedding（0.6B/4B/8B，Apache 2.0，2025-06）、Qwen3-Reranker",
+     "note": "與 Milvus + 阿里雲向量搜尋原生整合；ModelScope 和 HuggingFace 同步釋出",
+     "src": "https://x.com/Alibaba_Qwen/status/1930648422778118246"
+    },
+    {
+     "name": "ByteDance / 字節跳動 — Seed1.5-Embedding",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中英雙語 MTEB SOTA；企業 token 用量 2024-05 上線至今成長 22x",
+     "products": "Seed1.5-Embedding（Doubao-1.5-pro 衍生）、Volcano Ark API 企業端點",
+     "note": "日均 Doubao token 超 50 兆（2025-12）；支援稀疏向量混合檢索；私有化部署選項",
+     "src": "https://seed.bytedance.com/en/blog/bytedance-s-seed1-5-embedding-model-achieves-sota-in-retrieval-training-details-unveiled"
+    },
+    {
+     "name": "Tencent / 騰訊 — Hunyuan Embed",
+     "ticker": "0700.HK",
+     "country": "CN",
+     "share": "LangChain + LlamaIndex 官方 Vector Store 整合；內部 180+ 業務線",
+     "products": "Hunyuan Embedding、Tencent Cloud VectorDB（全托管）、WeKnora（開源 RAG 框架，混合檢索）",
+     "note": "WeKnora 支援 PDF/Word/Markdown/HTML；RAG 將企業 AI 準確率從 80% 提升至 98%（含負樣本 fine-tune）",
+     "src": "https://www.tencentcloud.com/products/vdb"
+    },
+    {
+     "name": "InfiniFlow — RAGFlow + Infinity DB",
+     "ticker": "—",
+     "country": "CN",
+     "share": "RAGFlow GitHub 78,000+ Stars；最快增長 OSS 之一",
+     "products": "RAGFlow（開源 RAG 引擎，Apache 2.0）、Infinity（AI-native hybrid vector/sparse/full-text DB）",
+     "note": "中國流量佔 47.6%；Deep Document Understanding；PDF/複雜表格/掃描件；企業私有化部署友好",
+     "src": "https://github.com/infiniflow/ragflow"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "document_parse_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "vector_db_us"
+    },
+    {
+     "id": "lakehouse_vector"
+    },
+    {
+     "id": "cn_rag"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BAAI FlagEmbedding GitHub（官方）",
+     "url": "https://github.com/flagopen/flagembedding"
+    },
+    {
+     "label": "Alibaba Qwen3-Embedding 發布（2025-06）",
+     "url": "https://x.com/Alibaba_Qwen/status/1930648422778118246"
+    },
+    {
+     "label": "ByteDance Seed1.5-Embedding 技術博客",
+     "url": "https://seed.bytedance.com/en/blog/bytedance-s-seed1-5-embedding-model-achieves-sota-in-retrieval-training-details-unveiled"
+    },
+    {
+     "label": "InfiniFlow RAGFlow GitHub",
+     "url": "https://github.com/infiniflow/ragflow"
+    }
+   ]
+  },
+  {
+   "id": "vector_db_us",
+   "row": "store",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "純向量資料庫",
+   "nameEn": "Pure-Play Vector Databases",
+   "competition": "competitive",
+   "single": "三足鼎立 · Pinecone（$750M 估值）vs Weaviate（$200M）vs Qdrant（Series B $50M Mar-2026）；Zilliz Milvus 亞洲稱霸",
+   "desc": "專注向量檢索的獨立資料庫，提供向量+全文混合搜尋、多租戶、Serverless 架構。面臨 Snowflake Cortex、Databricks Vector Search、pgvector 的下行競爭壓力，但在高精度大規模場景仍具護城河。【r10 絃外之音】純向量 DB 是被兩頭擠壓的中段管路：定價權上游被 OpenAI/Voyage 嵌入握住、下游被湖倉巨頭的『企業資料引力』收編，2025 市場 USD 3.2B 但 pgvector+lakehouse 內建功能正商品化其中低端，玩家估值停滯（Weaviate 估值無 2025 更新即為訊號）。",
+   "marketSize": "2026 向量 DB 純市場 TAM ~USD 3.2-3.7B",
+   "growth": "YoY +23-28%；但受 pgvector + lakehouse 內建向量功能侵蝕中低端",
+   "share": "null",
+   "analysis": "Pinecone Serverless 降成本 10-100x，2026-05 早期預覽 Nexus+KnowQL（圖搜尋）；Qdrant 2026-03 Series B $50M（AVP+Bosch Ventures+Spark Capital），累計 $87.8M，Tripadvisor/HubSpot/Bosch 客戶；Turbopuffer 宣稱比同類便宜 10x，Anthropic/Cursor/Notion 為客戶；LanceDB Series A $30M（2025-06），Runway/Midjourney/Character.ai 使用。",
+   "companies": [
+    {
+     "name": "Pinecone",
+     "ticker": "—",
+     "country": "US",
+     "share": "純向量 DB 最廣佈；5,000+ 客戶；估值 $750M（傳潛在出售 >$2B）",
+     "products": "Pinecone Serverless（gen-2）、Pinecone Inference（托管嵌入）、Pinecone Assistant（RAG chatbot）、Nexus+KnowQL（2026-05 正式發表，agentic 檢索查詢語言）、Microsoft OneLake 整合、Frankfurt/Singapore 雲區",
+     "note": "Series B $100M（2023）；serverless 可降成本 10-100x；BYOC；原生全文搜尋 public preview；【2026 競爭警訊】創辦人 Edo Liberty 退居 Chief Scientist、Ash Ashutosh 接任 CEO（2025-09，被視為備售訊號）；流失大客戶 Notion；已與投行接觸評估出售（潛在金額 >$2B，買家 Oracle/IBM/MongoDB/Snowflake），純向量 DB 被湖倉巨頭擠壓加劇",
+     "src": "https://www.calcalistech.com/ctechnews/article/rz31q82b5"
+    },
+    {
+     "name": "Qdrant",
+     "ticker": "—",
+     "country": "DE",
+     "share": "250M+ 下載；29,000 GitHub stars；Tripadvisor/HubSpot/Bosch 客戶",
+     "products": "Qdrant Cloud + self-hosted OSS（Rust）、Composable Vector Search、ACORN-1 演算法、Sparse+Dense 混合",
+     "note": "Series B $50M（2026-03，AVP+Bosch Ventures+Spark Capital）；累計 $87.8M；250M+ 下載",
+     "src": "https://qdrant.tech/blog/series-b-announcement/"
+    },
+    {
+     "name": "Weaviate",
+     "ticker": "—",
+     "country": "NL",
+     "share": "估值 $200M（2023 Series B）；向量+全文+混合搜尋領先",
+     "products": "Weaviate Cloud（向量+全文+混合）、v1.27 多租戶 RBAC GA、Flex 定價（$45/月起）",
+     "note": "Series B $50M（2023-04，Index Ventures）；2025 重整定價；[估值無 2025 更新]",
+     "src": "https://www.prnewswire.com/news-releases/weaviate-raises-50-million-series-b-funding-to-meet-soaring-demand-for-ai-native-vector-database-technology-301803296.html"
+    },
+    {
+     "name": "Turbopuffer",
+     "ticker": "—",
+     "country": "US",
+     "share": "宣稱比同類便宜 10x；Anthropic/Cursor/Notion 客戶",
+     "products": "物件儲存上高速向量搜尋+全文搜尋，無伺服器架構",
+     "note": "Seed 未披露金額（2025-12，Lachy Groom+Thrive Capital）；前 Shopify 工程師創辦",
+     "src": "https://betakit.com/ex-shopify-engineers-raise-fresh-financing-to-scale-turbopuffers-ai-search/"
+    },
+    {
+     "name": "LanceDB",
+     "ticker": "—",
+     "country": "US",
+     "share": "Runway/Midjourney/Character.ai 企業客戶",
+     "products": "LanceDB OSS（multimodal lakehouse）、LanceDB Enterprise Cloud、Serverless、Lance 列格式（Rust）",
+     "note": "Series A $30M（2025-06）；原生多模態",
+     "src": "https://www.lancedb.com/blog/series-a-funding"
+    },
+    {
+     "name": "Chroma",
+     "ticker": "—",
+     "country": "US",
+     "share": "LangChain/LlamaIndex 原型事實標準；估值 ~$75M（2023）",
+     "products": "ChromaDB OSS（Apache 2.0）、Chroma Cloud、輕量嵌入式向量 DB",
+     "note": "Seed $18M（2023-04）；主要用於原型與中小應用",
+     "src": "https://siliconangle.com/2023/04/06/chroma-bags-18m-speed-ai-models-embedding-database/"
+    },
+    {
+     "name": "pgvector + Postgres 生態",
+     "ticker": "—",
+     "country": "US",
+     "share": "最低門檻向量方案；Supabase $5B 估值（2025）",
+     "products": "pgvector 擴充（開源 Apache 2.0）、Supabase Vector、Neon（Databricks 戰略投資）、Crunchy Data（Snowflake 合作）",
+     "note": "pgvector 開源；Supabase Series D $200M（2025 $5B 估值）；PostgreSQL 18（2025）原生內建 pgvector 向量搜尋，與 Snowflake/Databricks/MongoDB 同年內建——『三大資料庫平台同年上向量』使獨立向量 DB pitch 更難，侵蝕純向量 DB 中端市場",
+     "src": "https://github.com/pgvector/pgvector"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "embedding_models_us"
+    },
+    {
+     "id": "embedding_models_cn"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "rag_platform_us"
+    },
+    {
+     "id": "rag_framework"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Qdrant Series B $50M（2026-03）",
+     "url": "https://qdrant.tech/blog/series-b-announcement/"
+    },
+    {
+     "label": "Pinecone Serverless 官方部落格",
+     "url": "https://www.pinecone.io/blog/"
+    },
+    {
+     "label": "pgvector GitHub",
+     "url": "https://github.com/pgvector/pgvector"
+    },
+    {
+     "label": "Turbopuffer Seed 融資（Betakit）",
+     "url": "https://betakit.com/ex-shopify-engineers-raise-fresh-financing-to-scale-turbopuffers-ai-search/"
+    }
+   ]
+  },
+  {
+   "id": "lakehouse_vector",
+   "row": "store",
+   "col": 3,
+   "span": 3,
+   "kind": "stage",
+   "name": "Lakehouse + 向量混合平台",
+   "nameEn": "Lakehouse Vector Hybrid (Platform Giants)",
+   "competition": "oligopoly",
+   "single": "三強混戰 · Snowflake Cortex Search（9,100+ AI 帳號）vs Databricks Mosaic AI Vector Search vs MongoDB Atlas Vector Search；各平台策略性內建向量功能，擠壓純向量 DB",
+   "desc": "以資料倉儲/湖倉/文件 DB 為基盤，內建向量嵌入+搜尋能力的平台型巨頭。既有大規模企業資料資產加上向量功能後，形成對 RAG pipeline 的 one-stop-shop，與純向量 DB 爭奪中高端市場。",
+   "marketSize": "2026 Enterprise Data+AI 整體 TAM ~USD 25-30B；向量搜尋為成長最快子功能",
+   "growth": "Snowflake Product Rev YoY +29%；Databricks ARR $4.8B YoY +55%；MongoDB Atlas ARR >$2B",
+   "share": "null",
+   "analysis": "Snowflake Q1 FY2027（2026-05-27）產品營收 $1.33B（+34% YoY，增速由 30% 加速），FY27 產品營收指引上修至 $5.84B（+31%），Cortex Code/CoCo 7,100+ 帳號為增長最大驅動、Snowflake Intelligence 使用帳號 QoQ 翻倍；Databricks 跑率 $5.4B（+65% YoY），AI 產品年化 $1.4B、2025 轉 FCF 正，2026-06-09 傳新輪估值 $165-175B（距 2026-02 $134B 僅四個月跳升 23-31%），2025-05 以 ~$1B 收購 Neon（pgvector 基礎，Lakebase）、Storage-Optimized Vector Search 7x 降成本可存 1B+向量；MongoDB Q1 FY2027（2026-05-28）總營收 $688M（+25% YoY）、Atlas $512.5M（+29%，占 75%）並與 LangChain 結盟＋ MongoDB.local London 2026 公開 Automated Voyage AI Embeddings；Elastic ELSER v2（稀疏向量）EIS GPU 加速。【r10 絃外之音】此層才是 RAG 真正的定價權所在：誰握住企業既有資料資產（lakehouse/文件 DB），向量搜尋就只是『順手附贈』的功能而非單獨採購品，這是純向量 DB 護城河被侵蝕的根因——『贏 AI 工作負載者贏資料工作負載』。",
+   "companies": [
+    {
+     "name": "Snowflake",
+     "ticker": "SNOW",
+     "country": "US",
+     "share": "Q1 FY2027 產品營收 $1.33B（+34% YoY，增速由 30% 加速）；NRR 126%",
+     "products": "Cortex Search（混合向量+關鍵字）、Snowflake Intelligence（Agentic，GA 2025-11，使用帳號 QoQ 翻倍）、Cortex Code/CoCo（7,100+ 帳號）、自訂向量嵌入（2026-03）、Snowflake Postgres（Crunchy Data $250M 收購）",
+     "note": "Q1 FY2027（2026-05-27 發布）：營收 $1.391B（+33% YoY）、產品營收 $1.33B（+34% YoY）；總客戶 13,912（淨增 616）；$1M+ 客戶 779 個、$10M+ 客戶 64；FY27 產品營收指引上修至 $5.84B（+31%）；Cortex Code 為本季增長最大驅動；與 AWS 簽 $6B 多年協議",
+     "src": "https://www.businesswire.com/news/home/20260527027931/en/Snowflake-Reports-Financial-Results-for-the-First-Quarter-of-Fiscal-2027"
+    },
+    {
+     "name": "Databricks",
+     "ticker": "—",
+     "country": "US",
+     "share": "Revenue run-rate $5.4B（+65% YoY）；AI 產品年化 $1.4B；2025 轉 FCF 正；資料倉儲年化跑率 $1.5B（2026-06）；$1M+ ARR 客戶 700+",
+     "products": "Mosaic AI Vector Search（Storage-Optimized，1B+ 向量）、Agent Framework、AI Gateway、Genie、Lakebase（Neon-based Postgres）、MCP Server",
+     "note": "Series L $4B@$134B（2026-02 完成）；2026-06-09 傳洽談新輪估值 $165-175B（四個月跳升 23-31%）；IPO 籌備中（最快 2026 末/2027）；2025-05 以 ~$1B 收購 Neon（pgvector）；Reranker GA（2025）；FedRAMP Moderate 合規",
+     "src": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate"
+    },
+    {
+     "name": "MongoDB + Voyage AI",
+     "ticker": "MDB",
+     "country": "US",
+     "share": "Atlas ARR >$2B；Atlas 占總營收 75%；AI 工作負載 30%",
+     "products": "Atlas Vector Search（HNSW）、Atlas Search（全文）、Automated Voyage AI Embeddings（公開預覽，MongoDB.local London 2026）、LangChain 策略結盟（統一 AI agent 後端）",
+     "note": "Q1 FY2027（至 2026-04-30）總營收 $688M（+25% YoY，增速由 22% 加速）、Atlas $512.5M（+29% YoY）並上修 FY27 指引至 $2.92-2.96B；$220M 收購 Voyage AI（2025-02-24）後嵌入自動化",
+     "src": "https://www.prnewswire.com/news-releases/mongodb-inc-announces-first-quarter-fiscal-2027-financial-results-302784757.html"
+    },
+    {
+     "name": "Elastic",
+     "ticker": "ESTC",
+     "country": "US",
+     "share": "FY2025 Revenue $1.483B（+17% YoY）；>2,700 vector DB Cloud 用戶",
+     "products": "ELSER v2（稀疏向量，領域自適應）、Dense Vector+kNN、Elasticsearch Inference Service（GPU 加速）、BBQ+ACORN-1",
+     "note": "Q2 FY2026 $423M（+16%）；ELSER 把「無需自帶 embedding」做成預設；CRPO >$1B",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001707753/000170775325000053/a26q2erex991.htm"
+    },
+    {
+     "name": "Couchbase",
+     "ticker": "BASE",
+     "country": "US",
+     "share": "FY2025 Revenue $209.5M（+16%）；ARR $237.9M（+17%）",
+     "products": "Couchbase Capella（雲端托管）、Vector Search + FTS + JSON 文件、即時 AI 應用",
+     "note": "BASE NASDAQ；即時低延遲 JSON + 向量的利基市場",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001845022/000184502225000015/base-20250731xexx991.htm"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "embedding_models_us"
+    },
+    {
+     "id": "embedding_models_cn"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "rag_platform_us"
+    },
+    {
+     "id": "rag_framework"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Snowflake Q1 FY2027 財報（產品營收 $1.33B，2026-05-27）",
+     "url": "https://www.businesswire.com/news/home/20260527027931/en/Snowflake-Reports-Financial-Results-for-the-First-Quarter-of-Fiscal-2027"
+    },
+    {
+     "label": "Databricks Mosaic AI Vector Search GA（官方）",
+     "url": "https://www.databricks.com/blog/announcing-mosaic-ai-vector-search-general-availability-databricks"
+    },
+    {
+     "label": "MongoDB Q3 FY2026 財報（Atlas $503M）",
+     "url": "https://investors.mongodb.com/news-releases/news-release-details/mongodb-inc-announces-third-quarter-fiscal-2026-financial"
+    },
+    {
+     "label": "Elastic Q2 FY2026 8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001707753/000170775325000053/a26q2erex991.htm"
+    }
+   ]
+  },
+  {
+   "id": "rag_platform_us",
+   "row": "rag",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "RAG-as-a-Service + 企業搜尋平台",
+   "nameEn": "RAG Platforms & Enterprise AI Search",
+   "competition": "competitive",
+   "single": "雙龍頭 · Glean USD 7.2B/ARR $300M（工作場所 AI 搜尋）vs AlphaSense USD 7.5B/ARR $600M+（市場情報 RAG）",
+   "desc": "提供 RAG-as-a-Service 或企業知識搜尋的完整端對端平台，客戶通常為大型企業，直接提供 SaaS 介面而非 API。典型場景：工作場所知識搜尋（Glean）、金融市場情報（AlphaSense）、法律/投資分析（Hebbia）、domain-specific RAG agents（ContextualAI）。",
+   "marketSize": "2025 企業 AI 搜尋 TAM ~USD 5-8B；Gartner 預估 2028 年 60% 大企業部署 RAG 平台",
+   "growth": "YoY +80-150%（ARR 增速）；Glean ARR $300M（2026-05，15 個月 3x），AlphaSense ARR $600M+（2026-Q1，YoY ~73%）",
+   "share": "null",
+   "analysis": "Glean Series F $150M（2025-06，Wellington Management），估值 $7.2B，ARR 9 個月由 $100M 成長至 $200M，100+ 企業 apps 知識圖譜；AlphaSense 2024-06 Series F $650M，估值 $4B，ARR $500M+，Enterprise Intelligence deals +185% YoY；Hebbia Series B $130M（a16z+GV+Index），累計處理 1B 頁；ContextualAI RAG 2.0 platform（2025-01 GA）$80M Series A；Vespa.ai Yahoo 拆分獨立，Series A $31M，大規模低延遲混合搜尋標竿。",
+   "companies": [
+    {
+     "name": "Glean",
+     "ticker": "—",
+     "country": "US",
+     "share": "工作場所 AI 搜尋龍頭；ARR $300M（2026-05，較 2025 底 $208M +89% YoY）；估值 $7.2B；員工 850+",
+     "products": "Glean Enterprise Search（100+ 企業 apps 知識圖譜）、Glean Apps（agent builder）、Agentic Engine 2（自適應規劃+並行子代理）、Canvas 協作 UI、第三代 Assistant、Enterprise AI Coworker（2026-05 發表）、Glean Protect Plus",
+     "note": "Series F $150M（2025-06，Wellington Management）；年化 100M+ agent actions；ARR $300M（2026-05，15 個月 3x，自 $200M@2025-12）；Fortune 500 客戶近翻倍；統一模型中樞（15+ LLM）抗 hyperscaler 鎖定，與 Microsoft 365 Copilot 正面競爭；主打 AI 預算撙節為賣點",
+     "src": "https://www.glean.com/blog/may-2026-launch"
+    },
+    {
+     "name": "AlphaSense",
+     "ticker": "—",
+     "country": "US",
+     "share": "市場情報 RAG；ARR $600M+（2026 Q1）；90% S&P 100 客戶；估值 $7.5B",
+     "products": "企業市場情報平台（外部財經文件 + 企業內部知識庫雙軌 RAG）、Enterprise Intelligence",
+     "note": "2026-06-03 募資 $350M（Vitruvian+Accenture Ventures+J.P. Morgan AM 領投），估值 $7.5B、累計融資逾 $1B；Enterprise Intelligence deals +185% YoY",
+     "src": "https://www.alpha-sense.com/press/alphasense-surpasses-500m-in-arr/"
+    },
+    {
+     "name": "Hebbia",
+     "ticker": "—",
+     "country": "US",
+     "share": "金融機構 RAG；累計處理 1B 頁；ARR ~$24.6M（2025-09）；估值 $700M",
+     "products": "Matrix AI Platform（表格式分析，無限長文件）、2026-05 收購 FlashDocs（內容生成）",
+     "note": "Series B $130M（2024-07，a16z+GV+Index）；主攻資產管理/投行",
+     "src": "https://www.hebbia.com/blog/hebbia-raises-usd130m-series-b"
+    },
+    {
+     "name": "ContextualAI",
+     "ticker": "—",
+     "country": "US",
+     "share": "domain-specific RAG 2.0；銀行/金融/科技/媒體；估值 ~$150M",
+     "products": "RAG 2.0 Platform（2025-01 GA）、Agent Composer、on-prem / cloud 部署",
+     "note": "Series A $80M（2024-08，Greycroft+Bain CV+Bezos Expeditions+NVentures+HSBC）；累計 $100M",
+     "src": "https://siliconangle.com/2024/08/02/contextual-ai-nabs-80m-rag-2-0-platform/"
+    },
+    {
+     "name": "Cohere North (RAG Platform)",
+     "ticker": "—",
+     "country": "CA",
+     "share": "企業 RAG 全棧整合；ARR ~$240M；估值 $7B",
+     "products": "North agentic AI platform = Embed v4 + Rerank 4 + Command-R/R+ LLM；企業 on-prem/cloud/主權 AI 部署",
+     "note": "AMD/NVIDIA/Salesforce 策略股東；Rerank 4 自學習+百語言；Microsoft Foundry 整合",
+     "src": "https://cohere.com/blog/rerank-4"
+    },
+    {
+     "name": "Vespa.ai",
+     "ticker": "—",
+     "country": "NO",
+     "share": "Yahoo 技術底座；大規模低延遲混合搜尋標竿",
+     "products": "Vespa OSS + Vespa Cloud（向量+BM25+結構化查詢混合）",
+     "note": "Yahoo 2023-10 拆分獨立；Series A $31M（2023-11，Blossom Capital）；Yahoo 為最大客戶",
+     "src": "https://vespa.ai/2023-11-01-blossom-funding/"
+    },
+    {
+     "name": "Databricks Mosaic AI (Agent Framework)",
+     "ticker": "—",
+     "country": "US",
+     "share": "年化 ARR $4.8B（+55%）；$1M+ ARR 客戶 700+；NRR >140%",
+     "products": "Mosaic AI Vector Search（Storage-Optimized 1B+ 向量）、Agent Framework、AI Gateway、Genie、MCP Server",
+     "note": "估值 $134B；Series L $4B（2025-12）；Lakebase Neon-based Postgres（2025-05 收購）",
+     "src": "https://www.databricks.com/blog/mosaic-ai-announcements-data-ai-summit-2025"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vector_db_us"
+    },
+    {
+     "id": "lakehouse_vector"
+    },
+    {
+     "id": "rag_framework"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cn_rag"
+    },
+    {
+     "id": "jp_kb"
+    },
+    {
+     "id": "kr_kb"
+    },
+    {
+     "id": "tw_sea_kb"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Glean ARR $200M+ 里程碑（官方）",
+     "url": "https://www.glean.com/press/glean-surpasses-200m-in-arr-for-enterprise-ai-doubling-revenue-in-nine-months"
+    },
+    {
+     "label": "AlphaSense $350M @ $7.5B、ARR $600M+（官方 2026-06-03）",
+     "url": "https://www.alpha-sense.com/press/alphasense-raises-350m-at-7-5b-valuation-and-surpasses-600m-in-annual-recurring-revenue/"
+    },
+    {
+     "label": "Hebbia Series B $130M（a16z+GV+Index）",
+     "url": "https://www.hebbia.com/blog/hebbia-raises-usd130m-series-b"
+    },
+    {
+     "label": "ContextualAI Series A $80M（SiliconAngle）",
+     "url": "https://siliconangle.com/2024/08/02/contextual-ai-nabs-80m-rag-2-0-platform/"
+    }
+   ]
+  },
+  {
+   "id": "rag_framework",
+   "row": "rag",
+   "col": 4,
+   "span": 2,
+   "kind": "rail",
+   "name": "開源 RAG 框架 / 開發者工具鏈",
+   "nameEn": "Open-Source RAG Frameworks & Dev Tooling",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "工程師用來建構、評估與部署 RAG pipeline 的開源框架。涵蓋通用 LLM 框架（LangChain）、RAG 專用框架（LlamaIndex、Haystack）、GraphRAG（Microsoft）及中國開源引擎（RAGFlow）。",
+   "marketSize": "LangChain 月下載 90M+；LlamaIndex Python/TS 廣泛使用；RAGFlow 全球最快增長 OSS 之一",
+   "growth": "YoY adoption +200-400%；多數框架 GitHub stars YoY 3-5x",
+   "share": "null",
+   "analysis": "LangChain 2025-10 Series B $125M（IVP，估值 $1.25B），Fortune 500 採用 35%；LlamaIndex Series A $19M（2025-03）+ Databricks 戰略投資（2025-05）；Haystack / deepset Series B $30M（Balderton Capital）；Microsoft GraphRAG OSS（MIT）問答準確率較傳統 RAG 提升 3x；RAGFlow GitHub 78,000+ Stars（+2,596% contributor YoY）。",
+   "companies": [
+    {
+     "name": "LangChain Inc.",
+     "ticker": "—",
+     "country": "US",
+     "share": "GitHub 100k+ stars；90M monthly downloads；Fortune 500 採用 35%",
+     "products": "LangChain、LangGraph（agentic 工作流）、LangSmith（可觀測性+Eval）",
+     "note": "Series B $125M（2025-10，IVP，估值 $1.25B）；累計融資 $260M；ARR ~$16M",
+     "src": "https://fortune.com/2025/10/20/exclusive-early-ai-darling-langchain-is-now-a-unicorn-with-a-fresh-125-million-in-funding/"
+    },
+    {
+     "name": "LlamaIndex (Run-Llama)",
+     "ticker": "—",
+     "country": "US",
+     "share": "RAG 框架+解析雙棲；估值 ~$93M",
+     "products": "LlamaIndex Python/TS 框架、LlamaCloud（托管 pipeline）、LlamaHub（連接器）、LlamaParse",
+     "note": "Series A $19M（2025-03，Norwest NVP）；Databricks+KPMG 戰略投資（2025-05）",
+     "src": "https://www.llamaindex.ai/blog"
+    },
+    {
+     "name": "Haystack / deepset",
+     "ticker": "—",
+     "country": "DE",
+     "share": "Gartner Cool Vendor 2024；pipeline-first 企業平台",
+     "products": "Haystack v2（模組化 RAG/agent）、deepset Cloud（企業平台）",
+     "note": "Series B $30M（Balderton Capital）；累計 $45M+；Apache 2.0 開源",
+     "src": "https://www.deepset.ai/news/funding-announcement-balderton-capital"
+    },
+    {
+     "name": "Microsoft GraphRAG",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "問答準確率較傳統 RAG 提升 3x；Azure AI Foundry 整合",
+     "products": "GraphRAG OSS（MIT）、Solution Accelerator v2.0（2025-10）、知識圖譜強化 RAG",
+     "note": "MSFT 內部開源；整合 GPT-4o + text-embedding-3-small；問答準確率 3x 提升",
+     "src": "https://microsoft.github.io/graphrag/"
+    },
+    {
+     "name": "RAGFlow (InfiniFlow)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "GitHub 78,000+ Stars；最快增長 OSS 之一（+2,596% contributor YoY）",
+     "products": "RAGFlow OSS（Apache 2.0，deep document understanding + agent）、DeepDoc（文件解析）、RAGFlow Cloud",
+     "note": "InfiniFlow 支持；無公開獨立融資；中國流量 47.6%；企業私有化部署友好",
+     "src": "https://ragflow.io/blog/ragflow-named-among-github-fastest-growing-open-source-projects"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vector_db_us"
+    },
+    {
+     "id": "lakehouse_vector"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "rag_platform_us"
+    }
+   ],
+   "sources": [
+    {
+     "label": "LangChain Series B $125M（Fortune 2025-10）",
+     "url": "https://fortune.com/2025/10/20/exclusive-early-ai-darling-langchain-is-now-a-unicorn-with-a-fresh-125-million-in-funding/"
+    },
+    {
+     "label": "Microsoft GraphRAG OSS（官方）",
+     "url": "https://microsoft.github.io/graphrag/"
+    },
+    {
+     "label": "RAGFlow 最快增長 OSS（官方）",
+     "url": "https://ragflow.io/blog/ragflow-named-among-github-fastest-growing-open-source-projects"
+    },
+    {
+     "label": "deepset Series B $30M（官方）",
+     "url": "https://www.deepset.ai/news/funding-announcement-balderton-capital"
+    }
+   ]
+  },
+  {
+   "id": "cn_rag",
+   "row": "asia",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國企業 RAG / 知識庫平台",
+   "nameEn": "China Enterprise RAG & KB",
+   "competition": "redocean",
+   "single": "null",
+   "desc": "以 Baidu Qianfan 企業平台、Tencent WeKnora、Alibaba PAI+知識庫為主的中國企業 RAG 生態。大廠整合自建 Embedding + Vector DB + RAG 全棧，同時有 InfiniFlow RAGFlow 開源引擎驅動私有化部署。HR 垂直（Moka）、電商（ByteDance Volcano）為典型應用。",
+   "marketSize": "中國企業 RAG 私有化部署市場 2025 ~RMB 150-200 億；大模型解決方案 YoY +126-145%",
+   "growth": "企業 RAG 知識庫需求 YoY +200%+；Qianfan 服務 760,000 企業（百度官方 2025）",
+   "share": "null",
+   "analysis": "Baidu Qianfan 服務 23.33M 開發者、760K 企業；ERNIE 5.0（2025-11）知識圖譜強化 RAG；Tencent RAG 將企業 AI 準確率由 80% 提升至 98%；Alibaba PAI 平台整合 Qwen3-Embedding+VectorDB 一站式 RAG；Moka Eva AI 累計獨立處理簡歷 140 萬份。",
+   "companies": [
+    {
+     "name": "Baidu / 百度 — Qianfan 企業 RAG",
+     "ticker": "9888.HK",
+     "country": "CN",
+     "share": "Qianfan 服務 760,000 企業；ERNIE MAU >2 億",
+     "products": "ERNIE 5.0（2025-11）、ERNIE Embedding via Qianfan、PaddlePaddle-ERNIE 生態、Qianfan 私有化部署",
+     "note": "2025 Core AI 業務 RMB 400 億（YoY +48%）；深度整合百度知識圖譜（中文 Web+Wikipedia+企業）；RAG+fact-checking 同步",
+     "src": "https://www.prnewswire.com/news-releases/baidu-unveils-ernie-5-0-and-a-series-of-ai-applications-at-baidu-world-2025--ramps-up-global-push-302614531.html"
+    },
+    {
+     "name": "Alibaba Cloud — PAI + 知識庫 RAG",
+     "ticker": "9988.HK",
+     "country": "CN",
+     "share": "APAC IaaS #1 22.5%；Qwen3-Embedding MTEB SOTA",
+     "products": "阿里雲 PAI（訓練平台）+ DashVector（向量搜尋）+ Qwen3-Embedding/Reranker 全棧",
+     "note": "三年 RMB 3,800 億算力 capex；Apsara 2025 宣示 Qwen3 為企業 RAG 核心基礎設施",
+     "src": "https://x.com/Alibaba_Qwen/status/1930648422778118246"
+    },
+    {
+     "name": "Tencent — WeKnora + Hunyuan RAG",
+     "ticker": "0700.HK",
+     "country": "CN",
+     "share": "RAG 將企業 AI 準確率 80%→98%；內部 180+ 業務線",
+     "products": "WeKnora（開源 RAG 框架）、Tencent Cloud VectorDB、Hunyuan Embedding + Agent Development Platform",
+     "note": "RAG 合規輸出強制引用（如 Source: Q3 Report, Page 12）；對金融/法律垂直有利",
+     "src": "https://www.tencentcloud.com/products/vdb"
+    },
+    {
+     "name": "InfiniFlow — RAGFlow + Infinity DB",
+     "ticker": "—",
+     "country": "CN",
+     "share": "RAGFlow 78K+ Stars；中國流量 47.6%",
+     "products": "RAGFlow（Apache 2.0）、Infinity（AI-native hybrid vector/sparse/full-text DB）",
+     "note": "Deep Document Understanding；PDF/複雜表格/掃描件；Multi-step Agent 工作流",
+     "src": "https://github.com/infiniflow/ragflow"
+    },
+    {
+     "name": "Moka / 摩卡人力資源 — Eva AI",
+     "ticker": "—",
+     "country": "CN",
+     "share": "互聯網+新消費招聘市占 25%；3,000+ 大中型企業",
+     "products": "Moka Eva AI 招聘智能體（2025 升級）、Moka People 人事管理、HR 知識庫 RAG 問答",
+     "note": "Eva 累計獨立處理簡歷 140 萬份、協助面試 40 萬場、回應員工諮詢 300 萬次；拓展至東南亞",
+     "src": "https://www.mokahr.com/about"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "embedding_models_cn"
+    },
+    {
+     "id": "vector_db_us"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Baidu ERNIE 5.0 + Qianfan 官方 PR（2025-11）",
+     "url": "https://www.prnewswire.com/news-releases/baidu-unveils-ernie-5-0-and-a-series-of-ai-applications-at-baidu-world-2025--ramps-up-global-push-302614531.html"
+    },
+    {
+     "label": "Alibaba Qwen3-Embedding 發布（2025-06）",
+     "url": "https://x.com/Alibaba_Qwen/status/1930648422778118246"
+    },
+    {
+     "label": "Tencent Cloud VectorDB（官方）",
+     "url": "https://www.tencentcloud.com/products/vdb"
+    },
+    {
+     "label": "InfiniFlow RAGFlow GitHub",
+     "url": "https://github.com/infiniflow/ragflow"
+    }
+   ]
+  },
+  {
+   "id": "jp_kb",
+   "row": "asia",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "日本企業知識庫 AI",
+   "nameEn": "Japan Enterprise KB / Document RAG",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "以 PKSHA Technology（AI FAQ No.1）、Sansan（名片+合約 RAG）、NRI（金融 RAG 整合商）、ABEJA（製造/零售 DX）為核心的日本企業知識管理 AI 生態。日本電子帳票法修正加速 Bill One / Contract One 文件 RAG 需求。",
+   "marketSize": "2025 日本 AI SaaS 市場 ~¥3,500 億；企業 DX 知識管理為最大增量",
+   "growth": "PKSHA FY2025 Q1 YoY +82%；Sansan FY2025 YoY +27.5%；日本 BFSI AI 為最大垂直",
+   "share": "null",
+   "analysis": "PKSHA 3993.T FY2024 營收 ¥218 億（+28.9% YoY），Q1 FY2025 +82% YoY；Sansan 4443.T FY2025 YoY +27.5%、名片管理市占 84.1%；NRI + Cohere RAG 金融平台 2025 H1 商業化；Money Forward AI Vision 2025 Document Collection Agent 分批上線；Stockmark Aconnect 整合製造業內部+外部文件 RAG。",
+   "companies": [
+    {
+     "name": "PKSHA Technology",
+     "ticker": "3993.T",
+     "country": "JP",
+     "share": "日本 AI FAQ No.1（連續 11 季 ITreview Leader）；Q1 FY2025 YoY +82%",
+     "products": "PKSHA ChatAgent、PKSHA FAQ、PKSHA Knowledge Stream（文件→FAQ 自動生成）、PKSHA AI Helpdesk（Teams+SharePoint RAG）",
+     "note": "FY2024 營收 ¥218 億（+28.9% YoY）；FY2026 目標轉型 AI Agent 架構",
+     "src": "https://www.pkshatech.com/en/"
+    },
+    {
+     "name": "Sansan",
+     "ticker": "4443.T",
+     "country": "JP",
+     "share": "名片管理市占 84.1%（2025-10）；FY2025 YoY +27.5%",
+     "products": "Sansan（名片+聯絡人雲端）、Bill One（發票 AI OCR）、Contract One（合約管理 DX）",
+     "note": "調整後營業利益 FY2025 YoY +108%；電子帳票法修正後 Bill One 需求爆發",
+     "src": "https://finance.yahoo.com/quote/4443.T/earnings/4443.T-Q4-2025-earnings_call-377977.html"
+    },
+    {
+     "name": "NRI / 野村綜合研究所",
+     "ticker": "4307.T",
+     "country": "JP",
+     "share": "日本金融業 RAG 最重要 SI 整合商；Cohere Command R+ 採用",
+     "products": "NRI Financial AI Platform（2025 H1，Cohere+OCI）、金融機構 RAG+Embed 整合服務",
+     "note": "Cohere 合作公告（2024-09）；資料主權設計（on-premise+OCI 私有雲）；日本 BFSI 最大 IT 整合商之一",
+     "src": "https://www.nri.com/en/news/newsrelease/20240910_1.html"
+    },
+    {
+     "name": "Money Forward",
+     "ticker": "3994.T",
+     "country": "JP",
+     "share": "AI Vision 2025：Document Collection Agent + 科目推薦 Agent",
+     "products": "MFクラウド 會計 SaaS + AI Agent（文件清單/催收提醒/科目推薦）",
+     "note": "面向中小企業與會計師事務所；Q1 FY2026 持續正成長",
+     "src": "https://corp.moneyforward.com/en/news/release/corporate/20250402-mf-press-2/"
+    },
+    {
+     "name": "ABEJA",
+     "ticker": "5572.T",
+     "country": "JP",
+     "share": "J-Startup 認定；零售/製造/法律 DX AI",
+     "products": "ABEJA Platform（no-code AI 建模）、ABEJA LLM Series、Agentic RAG 企業知識庫",
+     "note": "東證 Growth；影像+感測器+交易資料多模態；導入 Agentic RAG 支援內部知識庫",
+     "src": "https://www.j-startup.go.jp/en/startups/018-abeja.html"
+    },
+    {
+     "name": "Stockmark",
+     "ticker": "—",
+     "country": "JP",
+     "share": "製造業企業情報 AI 代表；日文專用 LLM",
+     "products": "Aconnect（前 Anews，企業情報 AI：內部文件+新聞+專利+報告）、SAT（PaaS 底層：資訊結構化/搜尋/分類）",
+     "note": "聚焦製造業知識管理；日本政策 DX 推動下需求加速",
+     "src": "https://pitchbook.com/profiles/company/277299-91"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vector_db_us"
+    },
+    {
+     "id": "rag_platform_us"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "PKSHA Technology 官網",
+     "url": "https://www.pkshatech.com/en/"
+    },
+    {
+     "label": "Sansan Q4 FY2025 Earnings",
+     "url": "https://finance.yahoo.com/quote/4443.T/earnings/4443.T-Q4-2025-earnings_call-377977.html"
+    },
+    {
+     "label": "NRI Financial AI Platform 官方公告（2024-09）",
+     "url": "https://www.nri.com/en/news/newsrelease/20240910_1.html"
+    },
+    {
+     "label": "Money Forward AI Vision 2025（官方）",
+     "url": "https://corp.moneyforward.com/en/news/release/corporate/20250402-mf-press-2/"
+    }
+   ]
+  },
+  {
+   "id": "kr_kb",
+   "row": "asia",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "韓國企業知識庫 AI",
+   "nameEn": "Korea Enterprise KB / RAG",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "以 Naver HyperCLOVA X / CLOVA Studio、Samsung SDS FabriX、Upstage Document AI 為核心的韓國企業 RAG 生態。韓語特化 RAG 結合 MSIT K-AI 政府補助，在法律、金融、製造三大垂直加速滲透。",
+   "marketSize": "韓國 AI SaaS 企業市場 2025 ~KRW 3-5 兆；MSIT K-AI 5 隊 ₩200B 補助",
+   "growth": "Upstage Series B bridge $157M（2025）；Samsung SDS 目標 24%+ 業務導入 GenAI",
+   "share": "null",
+   "analysis": "Naver 035420.KS HyperCLOVA X SEED Think 32B，CLOVA Studio 企業 RAG；Samsung SDS 018260.KS FabriX RAG 使準確率 80%→98%（官方）；Upstage Solar Pro 2（31B，全球前 10，韓國唯一）+Document AI OCR 95%+，公共行政 GenAI 供應商（2025-12 PPS）；Kakao KakaoBank 金融 AI 搜尋（Azure OpenAI，2025-05 韓國金融業首例）。",
+   "companies": [
+    {
+     "name": "Naver / NAVER Cloud",
+     "ticker": "035420.KS",
+     "country": "KR",
+     "share": "韓國企業 RAG 事實標準；韓語語言理解最強（韓語訓練資料是 GPT-4 的 6,500 倍）",
+     "products": "HyperCLOVA X SEED Think 32B / SEED 8B Omni、CLOVA Studio（企業自訂 RAG）、Neurocloud（On-premise）",
+     "note": "MSIT 50,000 NVIDIA GPU 國家算力中心主要合作夥伴；與 Saudi NEOM digital twin 合作",
+     "src": "https://www.navercloudcorp.com/NAVER_Cloud_251114_EN.pdf"
+    },
+    {
+     "name": "Samsung SDS",
+     "ticker": "018260.KS",
+     "country": "KR",
+     "share": "韓國最大企業 IT 服務商；RAG 準確率 80%→98%（官方）",
+     "products": "FabriX（GenAI 安全整合平台）、Brity Automation（AI Flow Designer RAG 文件工作流）、Brity Copilot",
+     "note": "目標 2025 年 24%+ 業務活動導入 GenAI；Samsung 集團生態系為強大分銷渠道",
+     "src": "https://www.samsungsds.com/us/ai-fabrix/fabrix.html"
+    },
+    {
+     "name": "Upstage",
+     "ticker": "—",
+     "country": "KR",
+     "share": "Solar Pro 2 全球前 10 前沿模型（唯一入榜韓國）；KPP 公共行政 GenAI 供應商",
+     "products": "Solar Pro 2（31B）、Solar Pro 1.5、Document AI（OCR 95%+，複雜表格/手寫）、Solar for RAG（企業知識庫整合）、Timely AI Agent 平台（2026-06-09 收購）",
+     "note": "融資總額 $157M+（Series C 首關 $125.9M，2026-04）；韓國國家成長基金注資（~$370-400M，11 個直接案中第 11 案）；pre-IPO 募 ~$300M 估值 ~$900M（KB+Mirae 承銷）；IPO 申請 2026 H2、最晚 2027 H1（韓國首家上市生成式 AI 公司）；2026-06-09 收購 Timely 進軍 AI Agent",
+     "src": "https://en.sedaily.com/news/2026/06/09/upstage-acquires-ai-agent-platform-timely-to-diversify-ai"
+    },
+    {
+     "name": "Kakao Corp.",
+     "ticker": "035720.KS",
+     "country": "KR",
+     "share": "KakaoBank 金融 RAG；KakaoTalk 5,500 萬月活分發渠道",
+     "products": "KakaoBank Conversational AI Search（Azure OpenAI，2025-05，韓國金融業首例）、ChatGPT for Kakao（8M 用戶）",
+     "note": "2025 合併營收 KRW 8.1 兆（YoY +3%）；金融 AI 搜尋自然語言查詢產品資訊/匯率/利率",
+     "src": "https://www.kakaocorp.com/page/detail/11725?lang=ENG"
+    },
+    {
+     "name": "Saltlux / 솔트룩스",
+     "ticker": "—",
+     "country": "KR",
+     "share": "韓國前 100 大企業 80 家使用；Goover Enterprise 2025-05 對標 Perplexity Enterprise",
+     "products": "Goover Enterprise（AI 搜尋，2025-05）、Luxia2 LLM（韓語生成快 18%）、Knowledge Studio（本體推理）",
+     "note": "1979 年創立，NLP 深厚積累；韓/英/日 多語言；知識本體+RAG 混合架構",
+     "src": "https://seo.goover.ai/report/202505/go-public-report-en-f04a66ce-11de-4c54-904e-9754eba8abaf-0-0.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vector_db_us"
+    },
+    {
+     "id": "rag_platform_us"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "NAVER Cloud IR PDF（官方）",
+     "url": "https://www.navercloudcorp.com/NAVER_Cloud_251114_EN.pdf"
+    },
+    {
+     "label": "Samsung SDS FabriX（官方）",
+     "url": "https://www.samsungsds.com/us/ai-fabrix/fabrix.html"
+    },
+    {
+     "label": "Upstage Series B bridge 官方公告",
+     "url": "https://www.upstage.ai/news/upstage-series-b-bridge"
+    },
+    {
+     "label": "Kakao if(kakao)25 官方",
+     "url": "https://www.kakaocorp.com/page/detail/11725?lang=ENG"
+    }
+   ]
+  },
+  {
+   "id": "tw_sea_kb",
+   "row": "asia",
+   "col": 4,
+   "span": 2,
+   "kind": "stage",
+   "name": "台灣 / 東南亞 / 印度企業知識 AI",
+   "nameEn": "TW / SEA / India Enterprise KB",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "台灣（Systex/iKala/APMIC）、東南亞（AI Singapore SEA-LION、Sea/Grab）、印度（Zoho Zia、Freshworks Freddy AI）的企業知識庫 AI 生態。主權 AI 需求與低成本開源方案（SEA-LION-Embedding）驅動在地化 RAG 部署。",
+   "marketSize": "東南亞企業 AI SaaS 2025 TAM ~USD 3.5-5B；印度 AI SaaS 2025 ~USD 3-4B",
+   "growth": "SEA AI 採用 YoY +45-60%；Freshworks Freddy AI 付費客戶 8,000+（YoY 翻倍）",
+   "share": "null",
+   "analysis": "AI Singapore SEA-LION-Embedding（2026-03）為東南亞首套多語言專業 embedding；Sea Limited Compass Max v3.5（245B）+ AI CoE（2026-04 新加坡）；Grab AI CoE（2025-05）+ 13 項 AI 功能；Freshworks FRSH Freddy AI ARR 超 $2,000 萬（YoY 翻倍），8,000+ 付費客戶；Zoho Zia LLM GA 預計 2025 年底；SYSTEX 台灣最大 IT 整合商，Hybrid RAG 數位轉型服務。",
+   "companies": [
+    {
+     "name": "SYSTEX / 精誠資訊",
+     "ticker": "6214.TW",
+     "country": "TW",
+     "share": "台灣最大 IT 整合商；2025 合併營收 USD 14.1 億",
+     "products": "Ai4iA 策略聯盟、Hybrid RAG 數據視覺化、企業 AI 轉型+數位安全+雲端整合",
+     "note": "台灣企業 RAG 最重要通路整合商；MOPS 公告持續擴大 AI 服務收入",
+     "src": "https://tw.systex.com/en/"
+    },
+    {
+     "name": "iKala",
+     "ticker": "—",
+     "country": "TW",
+     "share": "2025 Google Cloud Partner of the Year（Taiwan）；服務 1,000+ 企業客戶",
+     "products": "iKala Cloud（AI 雲端轉型）、企業 AI 架構規劃+RAG 部署顧問、190+ 國家業務",
+     "note": "KPMG Singapore 認定台灣前 10 大創新企業；Vertex AI RAG 主要整合夥伴",
+     "src": "https://ikala.ai/news/2025-google-cloud-partner-of-the-year-en/"
+    },
+    {
+     "name": "APMIC AI",
+     "ticker": "—",
+     "country": "TW",
+     "share": "台灣首款繁中行動推理模型（Formosa-1，3B）；ACE S1 Fine-tuning",
+     "products": "Formosa-1（NCHC 合作，100B 繁中 tokens）、ACE（NVIDIA Blackwell 加速 S1 Fine-tuning）、PrivModel（企業文件+SOP 注入）",
+     "note": "COMPUTEX 2025 發布 ACE；MCP 協定整合（2025）；可在消費級手機執行（32GB RAM）",
+     "src": "https://www.apmic.ai/en/news/3bmobiletraditionalchineseinferencemodel"
+    },
+    {
+     "name": "AI Singapore (SEA-LION)",
+     "ticker": "—",
+     "country": "SG",
+     "share": "東南亞主權 RAG 骨幹；SEA-LION-Embedding（2026-03）地區首套多語言 embedding",
+     "products": "SEA-LION v4（11 語言 LLM，Qwen 驅動，2025-11）、SEA-LION-Embedding（2026-03）、SEA-Guard（安全模型）",
+     "note": "IMDA 主導；Sony Research MOU；開源適配東南亞 SMB 低成本 RAG 部署",
+     "src": "https://sea-lion.ai/"
+    },
+    {
+     "name": "Freshworks",
+     "ticker": "FRSH",
+     "country": "IN",
+     "share": "Freddy AI ARR 超 $2,000 萬（YoY 翻倍）；付費 AI 客戶 8,000+（YoY 翻倍）",
+     "products": "Freddy AI Agent（Knowledge Base RAG，自動解決客服工單）、Freddy Copilot、Freshservice AI ITSM",
+     "note": "Q2 FY2025 營收 $2.047 億（+18% YoY）；$100K+ ARR 客戶 +28% YoY；亞洲 SMB 最廣泛滲透",
+     "src": "https://www.freshworks.com/freshdesk/omni/freddy-ai-agent/"
+    },
+    {
+     "name": "Zoho Corporation",
+     "ticker": "—",
+     "country": "IN",
+     "share": "190+ 國 SMB+企業 SaaS；印度 AI 自主化標竿；2024 印度業務 +32%",
+     "products": "Zia LLM（1.3B/2.6B/7B，NVIDIA 平台訓練）、Zia Agents（25+ 現成代理）、Zoho Desk Zia Answer Bot（KB RAG）、Zoho MCP Server",
+     "note": "完全印度自建 LLM（主權 AI）；Zia LLM GA 預計 2025 年底；英語+Hindi ASR 模型同步",
+     "src": "https://yourstory.com/ai-story/zoho-zia-llm-enterprise-ai-capabilities-sridhar-mani-vembu"
+    },
+    {
+     "name": "Grab Holdings",
+     "ticker": "GRAB",
+     "country": "SG",
+     "share": "東南亞 8 國超級 App；AI CoE（2025-05，新加坡）；13 項 AI 功能（GrabX 2026）",
+     "products": "Grab AI Assistant（個人助理+知識庫）、AI Merchant Assistant / AI Driver Companion（Agentic AI，2025）",
+     "note": "OpenAI+Anthropic 雙研究合作；內部 LLM Kit（GenAI 開發從 1.5 週壓縮至 0.5 天）",
+     "src": "https://investors.grab.com/news-and-events/news-details/2025/Grab-deploys-agentic-AI-to-empower-merchants-and-driver-partners-2025-KuA890N398/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vector_db_us"
+    },
+    {
+     "id": "rag_platform_us"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "SEA-LION 官網（AISG）",
+     "url": "https://sea-lion.ai/"
+    },
+    {
+     "label": "Freshworks Freddy AI Agent（官方）",
+     "url": "https://www.freshworks.com/freshdesk/omni/freddy-ai-agent/"
+    },
+    {
+     "label": "iKala Google Cloud Partner of Year（官方）",
+     "url": "https://ikala.ai/news/2025-google-cloud-partner-of-the-year-en/"
+    },
+    {
+     "label": "Grab Agentic AI 官方 IR（2025）",
+     "url": "https://investors.grab.com/news-and-events/news-details/2025/Grab-deploys-agentic-AI-to-empower-merchants-and-driver-partners-2025-KuA890N398/"
+    },
+    {
+     "label": "Zoho Zia LLM YourStory",
+     "url": "https://yourstory.com/ai-story/zoho-zia-llm-enterprise-ai-capabilities-sridhar-mani-vembu"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "document_parse_us",
+   "embedding_models_us"
+  ],
+  [
+   "document_parse_us",
+   "embedding_models_cn"
+  ],
+  [
+   "embedding_models_us",
+   "vector_db_us"
+  ],
+  [
+   "embedding_models_us",
+   "lakehouse_vector"
+  ],
+  [
+   "embedding_models_cn",
+   "vector_db_us"
+  ],
+  [
+   "embedding_models_cn",
+   "lakehouse_vector"
+  ],
+  [
+   "embedding_models_cn",
+   "cn_rag"
+  ],
+  [
+   "vector_db_us",
+   "rag_platform_us"
+  ],
+  [
+   "vector_db_us",
+   "rag_framework"
+  ],
+  [
+   "lakehouse_vector",
+   "rag_platform_us"
+  ],
+  [
+   "lakehouse_vector",
+   "rag_framework"
+  ],
+  [
+   "rag_framework",
+   "rag_platform_us"
+  ],
+  [
+   "rag_platform_us",
+   "cn_rag"
+  ],
+  [
+   "rag_platform_us",
+   "jp_kb"
+  ],
+  [
+   "rag_platform_us",
+   "kr_kb"
+  ],
+  [
+   "rag_platform_us",
+   "tw_sea_kb"
+  ]
+ ],
+ "_proposed": {}
+}

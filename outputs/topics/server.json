@@ -1,0 +1,1118 @@
+{
+ "id": "server",
+ "tab": "AI伺服器ODM",
+ "title": "AI 伺服器 ODM / 系統整合供應鏈",
+ "subtitle": "AI Server ODM — 從 GPU 運算盤/交換盤、機櫃整合到 OEM 品牌與雲端終端。Nvidia GB200/GB300 NVL72 把伺服器由「一台主機」變成「一整櫃液冷系統」，台灣 ODM（鴻海/廣達/緯創/緯穎）拿下絕大多數機櫃組裝。真瓶頸不在組裝（紅海）而在認證資格＋關鍵零組件單點：滑軌（川湖近獨佔）、GPU socket（嘉澤）、白牌交換器（智邦）、800G 光模組（旭創）、UBB/HDI 高多層板。2026 進入 Rubin NVL144 與 800VDC、CPO 換代。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 18
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "70+"
+  },
+  {
+   "k": "關鍵單點／瓶頸",
+   "v": 6,
+   "sub": "鴻海機櫃·川湖滑軌·嘉澤socket·智邦交換器·旭創光模組·味之素級外溢",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "parts",
+   "label": "關鍵零組件 Components",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "零組件 → ODM/系統整合 → 雲端終端 Components · ODM · Cloud",
+   "main": true
+  },
+  {
+   "id": "interconnect",
+   "label": "機構 · 互連 · 網路 Mechanical & Networking",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "p-pcb",
+   "row": "parts",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "PCB / HDI / UBB 高多層板",
+   "nameEn": "PCB · HDI · UBB",
+   "competition": "oligopoly",
+   "single": "客戶卡位 · 金像電 GB200/GB300 UBB 通用基板主供；欣興 GPU OAM HDI；健鼎/滬士電 次源",
+   "desc": "AI 伺服器 GPU 載板（OAM HDI）、通用基板（UBB）、交換盤與運算盤高多層板（>20 層、高縱橫比背鑽）。",
+   "marketSize": "台廠領先",
+   "growth": "AI 一台抵七台",
+   "share": "null",
+   "analysis": "AI 機櫃 PCB 用量暴增（一台抵多台）：金像電（GB200/GB300 UBB 通用基板主供、2025 EPS ~19.47、毛利率站上 35%、台灣首檔 PCB 千金股）；欣興（GPU OAM 模組 HDI）；健鼎、滬士電（UBB 次源）；台光電供 M8 級 CCL（與 m-料 連動）。",
+   "companies": [
+    {
+     "name": "金像電 GCE",
+     "ticker": "2368.TW",
+     "country": "TW",
+     "share": "UBB 主供",
+     "products": "GB200/GB300 UBB 通用基板/伺服器板",
+     "note": "台灣首檔 PCB 千金股、毛利率 35%+",
+     "src": "https://www.gce.com.tw/"
+    },
+    {
+     "name": "欣興 Unimicron",
+     "ticker": "3037.TW",
+     "country": "TW",
+     "share": "OAM HDI",
+     "products": "GPU OAM 模組 HDI + ABF 載板",
+     "note": "GPU 加速卡板",
+     "src": "https://www.unimicron.com/"
+    },
+    {
+     "name": "健鼎 Tripod / 滬士電 WUS",
+     "ticker": "3044.TW / 002463.SZ",
+     "country": "TW",
+     "share": "UBB 次源",
+     "products": "高多層 UBB / 伺服器板",
+     "note": "比價題材"
+    },
+    {
+     "name": "定穎投控 Define",
+     "ticker": "6790.TW",
+     "country": "TW",
+     "share": "車用+伺服器切入",
+     "products": "多層板",
+     "note": "長尾"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-baseboard"
+    }
+   ],
+   "sources": [
+    {
+     "label": "金像電 AI 伺服器 PCB 龍頭 (TechNews)",
+     "url": "https://technews.tw/2026/04/13/gce-becomes-taiwan-first-pcb-1000-stock/"
+    }
+   ]
+  },
+  {
+   "id": "p-conn",
+   "row": "parts",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "連接器 / GPU Socket",
+   "nameEn": "Connector · GPU Socket",
+   "competition": "oligopoly",
+   "single": "⚑ 嘉澤 GPU/CPU socket 全球前三、Intel/Nvidia 必用；NVQD/UQD 液冷快接認證中",
+   "desc": "GPU/CPU 插槽（socket）、高速背板/夾層連接器、液冷快接（UQD/NVQD）、線對板高頻連接器。",
+   "marketSize": "單點 socket",
+   "growth": "高頻升級",
+   "share": "null",
+   "analysis": "⚑ 嘉澤（Lotes，全球前三 socket、Intel/AMD/Nvidia GPU socket 必用、NVQD/UQD 液冷快接客戶認證中、伺服器液冷為第二成長柱）；貿聯-KY BizLink（資料中心高階線束 cable harness、AEC 銅纜）；連展/宏致高頻連接器；Amphenol（國際背板/高速連接器龍頭，外溢）。",
+   "companies": [
+    {
+     "name": "嘉澤 Lotes",
+     "ticker": "3533.TW",
+     "country": "TW",
+     "share": "GPU/CPU socket 全球前三",
+     "products": "GPU/CPU socket + NVQD/UQD 液冷快接",
+     "note": "⚑ Intel/Nvidia 必用、socket 單點",
+     "src": "https://www.lotes.cc/en"
+    },
+    {
+     "name": "貿聯-KY BizLink",
+     "ticker": "3665.TW",
+     "country": "TW",
+     "share": "資料中心線束",
+     "products": "高速線束 cable harness / AEC 銅纜",
+     "note": "GB200 內部互連"
+    },
+    {
+     "name": "連展 / 宏致",
+     "ticker": "3710.TW / 3605.TW",
+     "country": "TW",
+     "share": "高頻連接器",
+     "products": "背板/高速連接器",
+     "note": "升級題材"
+    },
+    {
+     "name": "Amphenol",
+     "ticker": "APH",
+     "country": "US",
+     "share": "高速連接器龍頭",
+     "products": "背板/高速 I/O 連接器",
+     "note": "國際龍頭、外溢"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-baseboard"
+    }
+   ],
+   "sources": [
+    {
+     "label": "嘉澤 socket + 液冷快接 (鉅亨)",
+     "url": "https://news.cnyes.com/news/id/6175869"
+    }
+   ]
+  },
+  {
+   "id": "p-power",
+   "row": "parts",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "電源 / 機櫃供電 (800VDC)",
+   "nameEn": "Power · Rack PSU",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "伺服器電源供應器（PSU）、電源架（power shelf）、母線（busbar）、機櫃級 800VDC 供電與 BBU。",
+   "marketSize": "瓦數暴增",
+   "growth": "800VDC 換代",
+   "share": "null",
+   "analysis": "AI 機櫃功耗（NVL72 ~120kW、Rubin 朝 600kW）推動電源換代：台達電（伺服器電源龍頭、與 Nvidia 共推 800VDC 架構）；光寶科（雲端電源）；Vertiv（資料中心電力/熱管理整體系統、北美 colo 主供）。",
+   "companies": [
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "伺服器電源龍頭",
+     "products": "PSU / power shelf / 800VDC 架構",
+     "note": "與 Nvidia 共推 800VDC",
+     "src": "https://www.deltaww.com/"
+    },
+    {
+     "name": "光寶科 Lite-On",
+     "ticker": "2301.TW",
+     "country": "TW",
+     "share": "雲端電源",
+     "products": "伺服器電源/電源架",
+     "note": "hyperscaler 供應"
+    },
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "資料中心電力系統",
+     "products": "供電/配電/熱管理整廠",
+     "note": "北美 colo 主供"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "台達電 800VDC AI 電源架構 (Delta)",
+     "url": "https://www.deltaww.com/"
+    }
+   ]
+  },
+  {
+   "id": "p-thermal",
+   "row": "parts",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "散熱 / 液冷",
+   "nameEn": "Thermal · Liquid Cooling",
+   "competition": "highgrowth",
+   "single": "⚑ 全液冷換代 · 液冷滲透 2026 上修至 76%（TrendForce，單櫃產值 +4 倍）· Vera Rubin 純液冷無風扇 · 單櫃液冷價值 GB300 $3.5 萬→VR200 $6.3-6.5 萬 · 奇鋐 水冷板 ~50%/雙鴻 1.6MW L2L CDU/富世達 QD 快接",
+   "desc": "冷板（cold plate）、CDU 冷卻分配單元、分歧管（manifold）、快接頭（QD）、整櫃液冷（L2L）。",
+   "marketSize": "全液冷換代",
+   "growth": "滲透 >50%",
+   "share": "null",
+   "analysis": "液冷 2026 正式進入『全液冷』換代：TrendForce 2026/06 將 2026 滲透率由突破 50% 大幅上修至 76%（單櫃產值 +4 倍）；冷板前五大（奇鋐/雙鴻/Cooler Master/CoolIT/Boyd）合計掌握 ~96%（高度寡占）。Vera Rubin GPU TDP 達 2.3kW，遠超 700W 氣冷上限改採無風扇純液冷，黃仁勳於 CES 宣布 Vera Rubin 進入全產能、首櫃已於 Azure 上線（大摩），單櫃液冷價值由 GB300 $3.5 萬躍升至 VR200 $6.3-6.5 萬（+50%+）。奇鋐（GB300 水冷板 ~50%；Q1 2026 營收 NT$490 億 +110% YoY；毛利率 29.8%；2026 持續季增）；雙鴻（1.6MW L2L CDU、In-row CDU 斬獲 2000 台、已過 GB300 液冷認證、打入 Meta/AWS/微軟、2025 EPS 28.26 創高）；富世達（QD 快接頭）；健策（封裝級 lid/IHS，與 CoWoS 連動）。",
+   "companies": [
+    {
+     "name": "奇鋐 AVC",
+     "ticker": "3017.TW",
+     "country": "TW",
+     "share": "GB200/GB300 水冷板 ~40-50%",
+     "products": "冷板/3D VC/整櫃液冷",
+     "note": "GB300 主供、連 10 月創高；冷板前五大（奇鋐/雙鴻/Cooler Master/CoolIT/Boyd）合計 ~96% 寡占",
+     "src": "https://www.avc.co/"
+    },
+    {
+     "name": "雙鴻 Auras",
+     "ticker": "3324.TW",
+     "country": "TW",
+     "share": "CDU/冷板",
+     "products": "1.6MW L2L CDU / 分歧管",
+     "note": "MW 級液冷、EPS 28.26；2026 年度營收成長目標從 50% 上修至 70%；毛利率有望持續擴張",
+     "src": "https://statementdog.com/news/14745"
+    },
+    {
+     "name": "富世達 Fositek",
+     "ticker": "6805.TW",
+     "country": "TW",
+     "share": "液冷快接",
+     "products": "QD 快接頭/液冷件",
+     "note": "GB300"
+    },
+    {
+     "name": "健策 Jentech / Vertiv",
+     "ticker": "3653.TW / VRT",
+     "country": "TW",
+     "share": "封裝級散熱/系統",
+     "products": "lid/IHS / CDU 系統",
+     "note": "健策貼 CoWoS；Vertiv 整廠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "雙鴻 MW 級液冷 CDU (財報狗)",
+     "url": "https://statementdog.com/news/14745"
+    }
+   ]
+  },
+  {
+   "id": "p-storage",
+   "row": "parts",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "儲存 / 記憶體模組",
+   "nameEn": "Storage · Memory Module",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "企業級 SSD 與主控、伺服器 DRAM 模組（RDIMM/MRDIMM）、模組 PCB。",
+   "marketSize": "供需吃緊",
+   "growth": "AI 拉貨",
+   "share": "null",
+   "analysis": "AI 伺服器拉動企業儲存與記憶體：群聯（企業級 SSD 主控/模組、aiDAPTIV+ AI 記憶體方案）；慧榮 SMI（企業 SSD 主控）；威剛/十銓（伺服器 DRAM 模組 RDIMM）。HBM/原廠顆粒見 CoWoS 圖 m-hbm 節點。",
+   "companies": [
+    {
+     "name": "群聯 Phison",
+     "ticker": "8299.TWO",
+     "country": "TW",
+     "share": "SSD 主控+模組",
+     "products": "企業 SSD 主控 / aiDAPTIV+",
+     "note": "AI 儲存方案",
+     "src": "https://www.phison.com/"
+    },
+    {
+     "name": "慧榮 Silicon Motion",
+     "ticker": "SIMO",
+     "country": "TW",
+     "share": "SSD 主控",
+     "products": "企業/資料中心 SSD 主控",
+     "note": "主控雙雄"
+    },
+    {
+     "name": "威剛 ADATA / 十銓 TeamGroup",
+     "ticker": "3260.TW / 4967.TW",
+     "country": "TW",
+     "share": "DRAM 模組",
+     "products": "伺服器 RDIMM/MRDIMM 模組",
+     "note": "記憶體模組台廠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-baseboard"
+    }
+   ],
+   "sources": [
+    {
+     "label": "群聯 aiDAPTIV+ AI 記憶體 (Phison)",
+     "url": "https://www.phison.com/"
+    }
+   ]
+  },
+  {
+   "id": "f-baseboard",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "GPU 模組 / 運算盤 / 基板",
+   "nameEn": "GPU Board · Compute Tray",
+   "competition": "oligopoly",
+   "single": "⚑ Nvidia Bianca 主板＋HBM；GB200 NVL72 = 18 運算盤 + 9 NVSwitch 盤，主板組裝門檻高",
+   "desc": "Nvidia GPU+CPU 超級晶片主板（Bianca, GB200/GB300）、HGX baseboard、ASIC OAM 模組與運算盤（compute tray）組裝。",
+   "marketSize": "技術門檻高",
+   "growth": "Bianca 量產",
+   "share": "null",
+   "analysis": "GB200 NVL72 = 18 片運算盤（每盤 2 塊 Bianca 主板）+ 9 片 NVSwitch 交換盤；主板＋HBM＋VR 整合門檻高。鴻海與緯創為 GB200 運算盤/交換盤主力組裝；模組導入 CoWoS（見 CoWoS 圖）。緯創為 AI 運算板主要供應商之一。",
+   "companies": [
+    {
+     "name": "鴻海 Foxconn",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "運算/交換盤主力",
+     "products": "Bianca 主板 / compute tray / NVSwitch tray",
+     "note": "⚑ GB200/GB300 主板組裝主導",
+     "src": "https://www.foxconn.com/"
+    },
+    {
+     "name": "緯創 Wistron",
+     "ticker": "3231.TW",
+     "country": "TW",
+     "share": "AI 運算板主供",
+     "products": "GPU baseboard / compute board",
+     "note": "AI 運算盤主要供應商",
+     "src": "https://www.wistron.com/"
+    },
+    {
+     "name": "Nvidia (設計)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "平台定義",
+     "products": "GB200/GB300 Bianca / NVLink",
+     "note": "規格與參考設計"
+    },
+    {
+     "name": "技嘉 Gigabyte",
+     "ticker": "2376.TW",
+     "country": "TW",
+     "share": "HGX/OAM 板",
+     "products": "HGX baseboard / GPU 伺服器主板",
+     "note": "板卡起家",
+     "src": "https://www.gigabyte.com/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "p-pcb"
+    },
+    {
+     "id": "p-conn"
+    },
+    {
+     "id": "p-storage"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GB200 NVL72 硬體架構 BOM (SemiAnalysis)",
+     "url": "https://newsletter.semianalysis.com/p/gb200-hardware-architecture-and-component"
+    }
+   ]
+  },
+  {
+   "id": "f-rack",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "ODM 機櫃組裝 / NVL72",
+   "nameEn": "ODM Rack Assembly",
+   "competition": "oligopoly",
+   "single": "⚑ 鴻海 GB200/GB300 機櫃 ~52% 主導（鴻佰/Ingrasys 液冷）；廣達 ~19%、緯創 ~21%（口徑差）",
+   "desc": "整櫃 AI 伺服器（GB200/GB300 NVL72）系統整合：運算盤+交換盤+液冷+供電+NVLink 銅背板組成 ~120kW 機櫃，並做整櫃測試出貨。",
+   "marketSize": "鎖喉組裝",
+   "growth": "兆元級",
+   "share": "null",
+   "analysis": "⚑ 機櫃組裝是 ODM 核心戰場：鴻海（GB200/GB300 機櫃市佔 ~52% 主導、鴻佰/Ingrasys 提供液冷、墨西哥/台/越廠、2025 機櫃貢獻破兆、董座劉揚偉 2026/02 表態 AI 伺服器全球市佔已逾 40%、全年上看 55-60%、雲端網路產品營收占比 40% 首度超越消費電子 38%）；廣達（~19%、QCT 雲達深耕北美 CSP、液冷整合穩定、Q1 2026 AI 占比破 75% 但毛利率季減 154bps 殺到 4.78% 創近年最大季降、擬以 consignment 寄售模式改善獲利）；緯創（~21%、運算板＋整櫃，2025 合併營收超越廣達）；緯穎（hyperscaler 客製，見 f-oem）。⚑ 結構性轉變：Nvidia 自 2025/11 起將組裝集中到少數製造商、改交付預組裝 L10-L12 整盤 (tray) 並下放零組件採購權給頭部 ODM，強化鴻海/廣達/緯創寡占、壓縮二線 ODM 與板級代工；Vera Rubin NVL72 機櫃報價最高達 880 萬美元/櫃，高價 GPU+記憶體墊高營收基數卻未等比拉升組裝費，ODM 毛利結構性受壓。⚠ 市佔依出貨/營收口徑與季度差異大。",
+   "companies": [
+    {
+     "name": "鴻海 Foxconn (鴻佰/Ingrasys)",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "AI 機櫃 43% (2025·12,000 櫃) → 估 55-60% (2026)",
+     "products": "GB200/GB300 NVL72 整櫃 + 液冷",
+     "note": "⚑ 2026/5 月營收 NT$8,594 億 +39.6% YoY，創同期史高；Q1 AI 伺服器佔伺服器營收首破 5 成、EPS 3.56 元同期新高；GB300→Vera Rubin 機櫃 Q3 起陸續出貨，全年 AI 機櫃看倍數成長；AI 機櫃約 3,700 櫃/月（全球月產 ~8,300 中占 >44%）；Q1 營收突破 2.13 兆，AI 伺服器取代 iPhone 成第一引擎；劉揚偉 2026/02 表態 AI 伺服器全球市佔已逾 40%、全年上看 55-60%、雲端網路產品營收占比 40% 首度超越消費電子；已承接 Vera Rubin NVL144 MGX 機櫃工程驗證、H2 2026 量產，維持單點主導；2026/6 法說後上修全年營收目標至 NT$11 兆（+36% YoY），全年 AI 機櫃出貨看倍增",
+     "src": "https://www.digitimes.com/news/a20260210PD236/foxconn-outlook-market-share-growth-2026.html"
+    },
+    {
+     "name": "廣達 Quanta (QCT/雲達)",
+     "ticker": "2382.TW",
+     "country": "TW",
+     "share": "機櫃 ~25-30% (Nvidia 訂單)",
+     "products": "NVL72 整櫃 / QCT 雲端系統",
+     "note": "北美 CSP 深耕、液冷穩定；Q1 2026 營收 NT$8,092 億 +66.6% YoY 創季高、3 月單月 NT$3,628 億創單月紀錄，伺服器佔 80%、AI 伺服器佔伺服器 75%（占比破 75%）；但 Q1 毛利率季減 154bps 殺至 4.78% 創近年最大季降（記憶體成本墊高為主因），擬以 consignment 寄售模式 + H2 ASIC 伺服器倍增改善獲利結構；Q2 AI 伺服器收入將再季增雙位數；5 月營收 NT$3,115 億 +94% YoY 創同期新高、前 5 月累計 NT$1.46 兆，全年 AI 伺服器估佔伺服器營收逾 8 成，年底前加州再擴三座廠房",
+     "src": "https://finance.biggo.com/news/TW_2382.TW_2026-05-14"
+    },
+    {
+     "name": "緯創 Wistron",
+     "ticker": "3231.TW",
+     "country": "TW",
+     "share": "機櫃 ~21%",
+     "products": "運算板 + NVL72 整櫃",
+     "note": "2025 合併營收超廣達；Q1 2026 合併營收 NT$8,463 億 +144% YoY；AI 產品佔比約 70%；2026 全年高雙位數成長；5 月營收 NT$2,902 億 +39.2% YoY 創單月次高，前 5 月累計 NT$1.42 兆創同期新高",
+     "src": "https://www.wistron.com/"
+    },
+    {
+     "name": "雲達 QCT / 神雲 MiTAC",
+     "ticker": "— / —",
+     "country": "TW",
+     "share": "系統/委外",
+     "products": "整櫃系統整合",
+     "note": "私有/集團內，無獨立代號"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-baseboard"
+    },
+    {
+     "id": "p-power"
+    },
+    {
+     "id": "p-thermal"
+    },
+    {
+     "id": "i-switch"
+    },
+    {
+     "id": "i-nic"
+    },
+    {
+     "id": "i-aec"
+    },
+    {
+     "id": "i-chassis"
+    },
+    {
+     "id": "i-rail"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "鴻海領先廣達緯創 AI 伺服器出貨 (TechNews)",
+     "url": "https://finance.technews.tw/2026/05/12/foxconn-leads-quanta-and-wistron-in-ai-server-shipments/"
+    }
+   ]
+  },
+  {
+   "id": "f-oem",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "Hyperscaler ODM / OEM 品牌",
+   "nameEn": "Hyperscaler ODM · OEM Brand",
+   "competition": "redocean",
+   "single": "null",
+   "desc": "向雲端客戶交付的兩條路：(1) hyperscaler 客製 ODM（緯穎、英業達），(2) OEM 品牌伺服器（SMCI、Dell、HPE、技嘉、神達）。傳統紅海，但 Nvidia/CSP 認證資格形成護城河。",
+   "marketSize": "認證護城河",
+   "growth": "ASIC 拉動",
+   "share": "null",
+   "analysis": "Hyperscaler 客製：緯穎（AWS/Google/Meta/Microsoft 客製、2025 營收 +163.7% YoY、GB200＋自研 ASIC 伺服器、為 AWS Trainium/微軟 Maia 主供、馬來西亞擴 SMT 產能搶 ASIC 伺服器組裝、Q1 2026 入股 CPO 新創 Ayar Labs 卡位 Rubin 世代光互連）；英業達（CSP AI 伺服器；Q1 2026 合併營收 NT$2,003 億 +27.6% YoY 創季高；伺服器業務首度突破營收 50%；中國客戶佔 AI 伺服器超過 50%、L10 整櫃）。⚑ 結構分流：2026 ASIC 伺服器出貨年增 64.2% 首度超車 GPU 伺服器 43.8%，緯穎/英業達/Celestica 走 ASIC 路線、與鴻海/廣達 GPU 機櫃分流；Broadcom 為 Google TPU/Meta MTIA/微軟 Maia 及 2026 初確認的 OpenAI/Anthropic 客製加速器設計夥伴。OEM 品牌：美超微 SMCI（NVL72 rack-scale、液冷模組化；2026 因 DOJ 就 5.1 億美元含 Nvidia 晶片伺服器走私中國起訴、股價單週重挫 33%，市佔外溢）、Dell（趁勢搶進 GB300 NVL72、FY26 AI 伺服器在手訂單約 430 億美元、總訂單約 640 億美元為同業最大、xAI $5B 訂單）、HPE（NVL72 by HPE、搶進企業 GPU 平台）、技嘉（GPU 伺服器品牌）、神達 MiTAC（神雲/Tyan）。⚠ 雲端大廠垂直整合風險：AWS CEO Jassy 表態未來『很可能自己賣機櫃』，繼 Google 後 AWS（或加微軟）走『自己當 OEM』自組伺服器，ODM 恐被降為純代工。",
+   "companies": [
+    {
+     "name": "緯穎 Wiwynn",
+     "ticker": "6669.TW",
+     "country": "TW",
+     "share": "hyperscaler 客製領先 / ASIC 伺服器主供",
+     "products": "GB200 + 自研 ASIC AI 伺服器",
+     "note": "AWS/Google/Meta/MS、2025 +163.7%；Q1 2026 營收 NT$2,765 億 +62.0% YoY、EPS NT$75.95、AI 產品占比 >50%；為 AWS Trainium/微軟 Maia 主供，馬來西亞擴 SMT 產能搶 ASIC 伺服器組裝（ASIC 伺服器 2026 出貨 +64% 超車 GPU 伺服器）；Q1 2026 入股 CPO 新創 Ayar Labs，合作將 CPO 導入機櫃級 AI 系統卡位 Rubin 世代光互連換代；5 月營收 NT$827 億 +18% YoY、6 月估回升 NT$910 億；切入 AMD AI 伺服器與 Oracle VR200 平台；全年挑戰 NT$1.25-1.35 兆",
+     "src": "https://www.wiwynn.com/news/wiwynn-reports-first-quarter-2026-financial-results"
+    },
+    {
+     "name": "Supermicro",
+     "ticker": "SMCI",
+     "country": "US",
+     "share": "OEM rack-scale（法律危機釋出市佔）",
+     "products": "NVL72 48U / 液冷模組化",
+     "note": "建構塊架構；DLC 直液冷市佔 ~70%；Q3 FY26 營收 $102 億 +123% YoY（但季降 19%，低於預期）；AI 伺服器 backlog 達 $390 億（全 GB300 NVL72）；毛利率回升至 10.1%（non-GAAP）；2026/6 完成 $70 億股權＋可轉債融資；⚠ 2026 因美國 DOJ 就 5.1 億美元含 Nvidia 晶片伺服器走私中國起訴、股價單週重挫 33%，Dell/HPE 趁勢搶進 GB300 NVL72 企業市場、市佔外溢；Q4 FY26 營收導引 $110–125 億、FY26 全年 $389–404 億",
+     "src": "https://futurumgroup.com/insights/will-supermicros-legal-crisis-shift-server-market-share-to-new-dell-and-hpe-gpu-platforms/"
+    },
+    {
+     "name": "Dell / HPE",
+     "ticker": "DELL / HPE",
+     "country": "US",
+     "share": "OEM 品牌雙雄（趁 SMCI 危機搶進）",
+     "products": "PowerEdge GB200/GB300 / NVL72 by HPE",
+     "note": "Dell 趁 Supermicro 法律危機搶進 GB300 NVL72 企業市場、FY26 AI 伺服器在手訂單約 $430 億、總訂單約 $640 億為同業最大；FY26 AI 伺服器全年 $246.8 億（+2x YoY）、FY27 導引 $500 億（+103%）；xAI $5B 訂單；HPE 同步搶進企業 GPU 平台",
+     "src": "https://futurumgroup.com/insights/will-supermicros-legal-crisis-shift-server-market-share-to-new-dell-and-hpe-gpu-platforms/"
+    },
+    {
+     "name": "英業達 Inventec",
+     "ticker": "2356.TW",
+     "country": "TW",
+     "share": "CSP ODM",
+     "products": "L10 AI 整櫃 / 伺服器",
+     "note": "CSP AI 伺服器；Q1 2026 合併營收 NT$2,003 億 +27.6% YoY 創季高；伺服器業務首度突破營收 50%；中國客戶佔 AI 伺服器超過 50%；Q1 2026 合併營收 NT$2,003 億 +27.6% YoY 創季高；伺服器業務首度突破營收 50%；中國客戶佔 AI 伺服器超過 50%"
+    },
+    {
+     "name": "技嘉 Gigabyte / 神達 MiTAC",
+     "ticker": "2376.TW / 3706.TW",
+     "country": "TW",
+     "share": "品牌/系統",
+     "products": "GPU 伺服器品牌 / 神雲·Tyan",
+     "note": "OEM 長尾"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-integration"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Wiwynn hyperscaler AI 基建 (Wiwynn)",
+     "url": "https://www.wiwynn.com/news/wiwynn-showcases-next-generation-ai-infrastructure-at-computex-2025"
+    }
+   ]
+  },
+  {
+   "id": "f-integration",
+   "row": "flow",
+   "col": 7,
+   "span": 2,
+   "kind": "stage",
+   "name": "系統整合 / 資料中心部署",
+   "nameEn": "System Integration · DC Deployment",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "整櫃→整排（pod）→整廠（AI factory）系統整合、L11/L12 部署、供電與液冷整廠工程、上電測試與交付。",
+   "marketSize": "turn-key",
+   "growth": "整廠交付",
+   "share": "null",
+   "analysis": "AI 工廠 turn-key 交付：ODM（鴻海/廣達/緯創）向 L11/L12 整排整廠延伸；資料中心基建 Vertiv（電力/熱管理整廠）；無塵室/機電廠務台廠（漢唐/帆宣，與 CoWoS 廠務生態重疊）；Nvidia 提供 NVL72/NVL144 reference rack 與 sovereign AI turn-key。",
+   "companies": [
+    {
+     "name": "鴻海/廣達/緯創 (L11-L12)",
+     "ticker": "2317.TW / 2382.TW / 3231.TW",
+     "country": "TW",
+     "share": "整排整廠延伸",
+     "products": "pod / AI factory L11-L12 部署",
+     "note": "由整櫃向整廠延伸"
+    },
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "資料中心整廠",
+     "products": "供配電/液冷/熱管理整廠",
+     "note": "北美部署主力；Q1 2026 淨收入 $26.5 億 +30% YoY（有機成長 +23%）；全年導引上修至 $135–$140 億（年增 ~30%）；backlog $150 億 book-to-bill ~2.9x；液冷併購連發：4 月併 Strategic Thermal Labs、6/12 完成併 ThermoKey S.p.A.（熱交換）、近 18 月加購 PurgeRite(~$10 億)/Great Lakes/BiXin Energy"
+    },
+    {
+     "name": "Nvidia (reference)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "turn-key 平台",
+     "products": "NVL72/NVL144 reference + sovereign AI",
+     "note": "整櫃參考設計",
+     "src": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/"
+    },
+    {
+     "name": "漢唐/帆宣 (廠務)",
+     "ticker": "2404.TW / 6196.TW",
+     "country": "TW",
+     "share": "無塵室/機電",
+     "products": "資料中心機電廠務",
+     "note": "與 CoWoS 廠務重疊"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-cloud"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA GB200 NVL72 reference (Nvidia)",
+     "url": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/"
+    }
+   ]
+  },
+  {
+   "id": "f-cloud",
+   "row": "flow",
+   "col": 9,
+   "span": 2,
+   "kind": "demand",
+   "name": "雲端終端 / Hyperscaler 需求",
+   "nameEn": "Cloud · Hyperscaler Demand",
+   "competition": "highgrowth",
+   "single": "需求錨 · 微軟/Google/AWS/Meta 4 大 capex 創高 + Stargate；Nvidia 鎖機櫃配額",
+   "desc": "AI 伺服器最終客戶：四大雲（微軟/Google/AWS/Meta）、Nvidia 自家 DGX Cloud、OpenAI/xAI 等 AI 實驗室、與主權 AI 國家隊。",
+   "marketSize": "需求遠超供給",
+   "growth": "capex 創高",
+   "share": "null",
+   "analysis": "四大 hyperscaler 2025-2026 capex 連創新高（AI 伺服器需求遠超供給）；OpenAI 首批 GB200 NVL72 已於 Azure 運行；xAI 與 Dell $5B GB200 訂單；自研 ASIC（Google TPU/AWS Trainium/Meta MTIA/微軟 Maia）拉動緯穎/英業達客製機，2026 ASIC 伺服器出貨 +64.2% 首度超車 GPU 伺服器 +43.8%。主權 AI（各國 AI 工廠）為新成長軸。⚠ 去中介化威脅：AWS CEO Jassy 表態未來『很可能自己賣機櫃』（對 Anthropic 等客戶），繼 Google 後 AWS（或加微軟）走『自己當 OEM』自組伺服器，ODM 議價力與附加價值恐被侵蝕。",
+   "companies": [
+    {
+     "name": "微軟 / Google / AWS / Meta",
+     "ticker": "MSFT / GOOGL / AMZN / META",
+     "country": "US",
+     "share": "四大雲 capex",
+     "products": "Azure/GCP/AWS/Meta AI 叢集",
+     "note": "需求錨、capex 創高；Q1 2026 聯合 capex 突破 $1,300 億：AMZN $442 億、MSFT $309 億、GOOGL $357 億、META $200 億；全年合計估 $650–$725 億（+77% YoY）；Oracle FY26 capex ~$350–500 億，RPO backlog +359% 至 $4,550 億；Q1 2026 聯合 capex 突破 $1,300 億：AMZN $442 億、MSFT $309 億、GOOGL $357 億、META $200 億；全年合計估 $650–$725 億（+77% YoY）；Oracle FY26 capex ~$350–500 億，RPO backlog +359% 至 $4,550 億"
+    },
+    {
+     "name": "OpenAI / xAI / Anthropic",
+     "ticker": "— / — / —",
+     "country": "US",
+     "share": "AI 實驗室",
+     "products": "GB200 NVL72 訓練/推論叢集",
+     "note": "OpenAI 首批 NVL72 上線 Azure",
+     "src": "https://finance.technews.tw/2025/02/05/foxconn-gb200-nvl72-openai"
+    },
+    {
+     "name": "Nvidia DGX Cloud",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "自營雲",
+     "products": "DGX Cloud / NVL72",
+     "note": "自用＋租賃"
+    },
+    {
+     "name": "主權 AI / 國家隊",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "新成長軸",
+     "products": "各國 AI factory（NVL72/144）",
+     "note": "sovereign AI turn-key"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-integration"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "鴻海 GB200 NVL72 供 OpenAI 運行 (TechNews)",
+     "url": "https://finance.technews.tw/2025/02/05/foxconn-gb200-nvl72-openai"
+    }
+   ]
+  },
+  {
+   "id": "i-switch",
+   "row": "interconnect",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "交換器 / 白牌 Switch",
+   "nameEn": "Switch · White-box",
+   "competition": "oligopoly",
+   "single": "⚑ 智邦 Accton 全球白牌交換器最大；51.2T 800GbE DCS560、64×800G 埠",
+   "desc": "資料中心 scale-out 乙太網路交換器（800G/1.6T 白牌）、NVLink/InfiniBand 交換系統。",
+   "marketSize": "白牌龍頭",
+   "growth": "800G→1.6T",
+   "share": "null",
+   "analysis": "⚑ 智邦（Accton，全球白牌交換器最大、51.2Tbps 800GbE DCS560 內建 64×800G OSFP/QSFP-DD 埠、2026 隨 800G 滲透高峰＋1.6T 加入再創高、4 月營收史高）；Arista（品牌交換器龍頭、超大規模乙太網）；Cisco（企業/AI 乙太網）；交換晶片 Broadcom Tomahawk/Jericho 主導。",
+   "companies": [
+    {
+     "name": "智邦 Accton",
+     "ticker": "2345.TW",
+     "country": "TW",
+     "share": "白牌交換器全球最大",
+     "products": "51.2T 800GbE / 1.6T 白牌交換器",
+     "note": "⚑ 64×800G 埠；Q1 2026 營收 NT$701 億 +64% YoY；4 月單月 NT$273 億再創史高；1.6T 換代週期提前引爆；全年 EPS 47 元創史高；白牌交換器 ~22% 全球最大，與 Celestica 合計約 9 成 — 白牌段集中度遠高於整體乙太網（Arista 僅 ~12.6%）",
+     "src": "https://www.accton.com.tw/800g-ai-ml-fabrics/"
+    },
+    {
+     "name": "Arista Networks",
+     "ticker": "ANET",
+     "country": "US",
+     "share": "品牌交換器龍頭",
+     "products": "800G AI 乙太網交換器",
+     "note": "超大規模乙太網"
+    },
+    {
+     "name": "Cisco",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "企業/AI 乙太網",
+     "products": "AI 資料中心交換器",
+     "note": "Silicon One"
+    },
+    {
+     "name": "Broadcom (交換晶片)",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "交換 ASIC 主導",
+     "products": "Tomahawk 5/6 · Jericho",
+     "note": "白牌交換晶片核心"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "智邦 800G AI/ML Fabrics (Accton)",
+     "url": "https://www.accton.com.tw/800g-ai-ml-fabrics/"
+    }
+   ]
+  },
+  {
+   "id": "i-nic",
+   "row": "interconnect",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "NIC / DPU / NVSwitch",
+   "nameEn": "NIC · DPU · NVSwitch",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "網路介面卡（NIC）、資料處理器（DPU）、NVLink/NVSwitch scale-up 互連晶片與背板。",
+   "marketSize": "晶片寡占",
+   "growth": "NVLink 升級",
+   "share": "null",
+   "analysis": "互連晶片高度集中：Nvidia（ConnectX NIC / BlueField DPU / NVSwitch5 28.8Tb/s、NVLink scale-up 主導）；Broadcom（NIC/DPU 與交換晶片、Jericho 3-AI）；Marvell（DPU/客製互連）。NVSwitch 盤組裝由鴻海/緯創（見 f-baseboard）。絃外之音：NVLink/NVSwitch 是 Nvidia 唯一可量產的 scale-up 互連（sole-source 壟斷），鎖死 72-GPU 機櫃內拓樸——ODM 與雲端誰都繞不開，這才是 GB200 機櫃真正的『卡點稅』；scale-out 側（Broadcom/Arista 乙太網）才有競爭。",
+   "companies": [
+    {
+     "name": "Nvidia (NVLink/NVSwitch)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "scale-up 主導",
+     "products": "ConnectX / BlueField / NVSwitch5",
+     "note": "NVLink 生態壟斷",
+     "src": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "NIC/DPU+交換",
+     "products": "NIC/DPU / Jericho 3-AI",
+     "note": "乙太網 scale-out"
+    },
+    {
+     "name": "Marvell",
+     "ticker": "MRVL",
+     "country": "US",
+     "share": "DPU/客製互連",
+     "products": "DPU / 客製 SerDes",
+     "note": "ASIC 客製互連"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GB200 NVL72 NVSwitch (Nvidia)",
+     "url": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/"
+    }
+   ]
+  },
+  {
+   "id": "i-optical",
+   "row": "interconnect",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "光模組 / 光收發 / CPO",
+   "nameEn": "Optical Module · CPO",
+   "competition": "oligopoly",
+   "single": "⚑ 旭創 InnoLight Nvidia 800G 採購 >50%；旭創+新易盛控全球 800G ~60%；2026 CPO 起步",
+   "desc": "800G/1.6T 可插拔光收發模組、CPO 共封裝光學（rack-to-rack scale-up）、光引擎（與矽光子圖連動）。",
+   "marketSize": "光換代",
+   "growth": ">100% YoY",
+   "share": "null",
+   "analysis": "⚑ 旭創（中際旭創 InnoLight，Nvidia 800G 光模組採購 >50%、2024 營收 +123%）；新易盛 Eoptolink（+179%、淨利率 ~33%；兩家控全球 800G ~60%）；Coherent（光元件、Nvidia 注資）；Ayar Labs（CPO 新創，2026 Q1 緯穎策略入股、合作將 CPO 導入機櫃級 AI 系統）。Rubin Ultra NVL576 銅纜達極限後 2026-27 導入 CPO（rack-to-rack）。CPO 上游見矽光子圖。",
+   "companies": [
+    {
+     "name": "旭創 InnoLight",
+     "ticker": "300308.SZ",
+     "country": "CN",
+     "share": "800G ~35%·1.6T ~80%·Nvidia 採購 >50%",
+     "products": "800G/1.6T 光模組",
+     "note": "⚑ 全球光模組龍頭；1.6T 與新易盛分食 ~80%/20%；2026 規劃 800G 擴產 1500 萬顆拚 30% 全球；Nvidia 為單一最大客戶＝客戶集中度風險",
+     "src": "https://ip-fiber.com/blogs/news/nvidia-orders-surge-innolight-and-eoptolink-dominate-60-of-800g-sfp-optical-modules-supply"
+    },
+    {
+     "name": "新易盛 Eoptolink",
+     "ticker": "300502.SZ",
+     "country": "CN",
+     "share": "1.6T ~20%·淨利 ~33%",
+     "products": "800G/1.6T 光收發",
+     "note": "與旭創於 1.6T 分食 ~20%；與 Nvidia 合研 115.2T CPO 交換機"
+    },
+    {
+     "name": "Coherent",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "光元件",
+     "products": "光收發/EML/CPO 光引擎",
+     "note": "Nvidia 注資、CPO 連動"
+    },
+    {
+     "name": "Ayar Labs",
+     "ticker": "—",
+     "country": "US",
+     "share": "CPO 新創（緯穎入股）",
+     "products": "in-package optical I/O / CPO 光引擎",
+     "note": "2026 Q1 緯穎策略入股、合作導入機櫃級 AI 系統、卡位 Rubin 世代光互連",
+     "src": "https://www.wiwynn.com/news/wiwynn-reports-first-quarter-2026-financial-results"
+    },
+    {
+     "name": "天孚/上詮 (FAU·光引擎)",
+     "ticker": "300394.SZ / 3363.TWO",
+     "country": "CN",
+     "share": "CPO 封裝上游",
+     "products": "FAU / 光引擎",
+     "note": "見矽光子圖"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "旭創+新易盛 控 800G 60% (ip-fiber)",
+     "url": "https://ip-fiber.com/blogs/news/nvidia-orders-surge-innolight-and-eoptolink-dominate-60-of-800g-sfp-optical-modules-supply"
+    }
+   ]
+  },
+  {
+   "id": "i-aec",
+   "row": "interconnect",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "銅纜 AEC / DAC / 背板",
+   "nameEn": "Copper AEC · DAC",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "主動電纜（AEC）、被動銅纜（DAC）、NVLink 銅背板（機櫃內 scale-up 短距互連，成本/功耗優於光）。",
+   "marketSize": "短距互連",
+   "growth": "機櫃內主力",
+   "share": "null",
+   "analysis": "機櫃內互連仍以銅為主（200G/lane ~5m 內）：Credo（AEC 領導、SerDes）；貿聯-KY（AEC/高速線束、GB200 內部）；Amphenol/安費諾（DAC/背板）。Rubin Ultra NVL576 寬近 5m 後銅達極限、轉 CPO（見 i-optical）。",
+   "companies": [
+    {
+     "name": "Credo",
+     "ticker": "CRDO",
+     "country": "US",
+     "share": "AEC 領導",
+     "products": "Active Electrical Cable / SerDes",
+     "note": "機櫃內 scale-up",
+     "src": "https://www.credosemi.com/"
+    },
+    {
+     "name": "貿聯-KY BizLink",
+     "ticker": "3665.TW",
+     "country": "TW",
+     "share": "AEC/高速線束",
+     "products": "AEC / cable harness",
+     "note": "GB200 內部互連"
+    },
+    {
+     "name": "Amphenol",
+     "ticker": "APH",
+     "country": "US",
+     "share": "DAC/背板",
+     "products": "DAC / 高速背板",
+     "note": "國際龍頭"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nvidia 銅纜達極限轉光 (The Register)",
+     "url": "https://www.theregister.com/2026/04/05/nvidia_optical_scale_up/"
+    }
+   ]
+  },
+  {
+   "id": "i-chassis",
+   "row": "interconnect",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "機殼 / 機構件",
+   "nameEn": "Chassis · Mechanical",
+   "competition": "oligopoly",
+   "single": "勤誠 Chenbro 伺服器機殼領先；營邦 AIC 整櫃/JBOD 機構",
+   "desc": "伺服器機殼（chassis）、機架（rack frame）、背板/托盤等機構件。",
+   "marketSize": "機構卡位",
+   "growth": "整櫃放量",
+   "share": "null",
+   "analysis": "勤誠（Chenbro，伺服器機殼領先台廠、AI 整櫃機構放量）；營邦（AIC，整櫃/JBOD/儲存機構）；機構件隨 NVL72 整櫃需求成長。",
+   "companies": [
+    {
+     "name": "勤誠 Chenbro",
+     "ticker": "8210.TW",
+     "country": "TW",
+     "share": "伺服器機殼領先",
+     "products": "伺服器機殼 / AI 整櫃機構",
+     "note": "機構卡位",
+     "src": "https://www.chenbro.com/"
+    },
+    {
+     "name": "營邦 AIC",
+     "ticker": "3693.TWO",
+     "country": "TW",
+     "share": "整櫃/JBOD",
+     "products": "整櫃/儲存機構",
+     "note": "儲存機構"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "勤誠 伺服器機殼 (Chenbro)",
+     "url": "https://www.chenbro.com/"
+    }
+   ]
+  },
+  {
+   "id": "i-rail",
+   "row": "interconnect",
+   "col": 11,
+   "span": 1,
+   "kind": "rail",
+   "name": "滑軌 / 導軌",
+   "nameEn": "Server Slide Rail",
+   "competition": "monopoly",
+   "single": "⚑ 川湖 King Slide 伺服器滑軌全球近獨佔；GB200/NVL72 整櫃滑軌單點瓶頸",
+   "desc": "伺服器滑軌/導軌（slide rail）、Cable Management Arm 等機構，是整櫃伺服器抽取維護的關鍵機構單點。",
+   "marketSize": "近獨佔單點",
+   "growth": "整櫃必備",
+   "share": "null",
+   "analysis": "⚑ 川湖（King Slide，自創品牌、國際知名伺服器滑軌大廠、近獨佔級單點，AI 整櫃高密度/高負載滑軌技術門檻高、毛利極高，為被市佔視角埋沒的關鍵機構單點）；南俊國際為次級台廠。",
+   "companies": [
+    {
+     "name": "川湖 King Slide",
+     "ticker": "2059.TW",
+     "country": "TW",
+     "share": "伺服器滑軌近獨佔",
+     "products": "高負載伺服器滑軌 / CMA",
+     "note": "⚑ 機構單點、毛利極高；2026/5 月營收 NT$37.9 億 +172% YoY 首破 30 億創史高，前 5 月 NT$118.4 億 +74.2% YoY；列名 Nvidia 滑軌指定供應鏈，高密度/高負載整櫃滑軌技術門檻使其握有定價權，是『帳面小料、實質卡喉』的典型",
+     "src": "https://www.kingslide.com/"
+    },
+    {
+     "name": "南俊國際 Nanchun",
+     "ticker": "2996.TW",
+     "country": "TW",
+     "share": "滑軌次強、AI 占比衝 20-30%",
+     "products": "滑軌/機構件",
+     "note": "AI 滑軌占營收由 ~10% 拚 2026 升至 20-30%（GB200/GB300+Vera Rubin+ASIC 三動能）；累積專利 300+，川湖近獨佔被稀釋訊號",
+     "src": "https://money.udn.com/money/story/11074/9451320"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "川湖 King Slide 伺服器滑軌 (King Slide)",
+     "url": "https://www.kingslide.com/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "f-baseboard",
+   "f-rack"
+  ],
+  [
+   "f-rack",
+   "f-oem"
+  ],
+  [
+   "f-oem",
+   "f-integration"
+  ],
+  [
+   "f-integration",
+   "f-cloud"
+  ],
+  [
+   "p-pcb",
+   "f-baseboard"
+  ],
+  [
+   "p-conn",
+   "f-baseboard"
+  ],
+  [
+   "p-storage",
+   "f-baseboard"
+  ],
+  [
+   "p-power",
+   "f-rack"
+  ],
+  [
+   "p-thermal",
+   "f-rack"
+  ],
+  [
+   "i-switch",
+   "f-rack"
+  ],
+  [
+   "i-nic",
+   "f-rack"
+  ],
+  [
+   "i-optical",
+   "f-rack"
+  ],
+  [
+   "i-aec",
+   "f-rack"
+  ],
+  [
+   "i-chassis",
+   "f-rack"
+  ],
+  [
+   "i-rail",
+   "f-rack"
+  ]
+ ],
+ "_proposed": {}
+}

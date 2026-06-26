@@ -1,0 +1,560 @@
+{
+ "id": "specialty_gas",
+ "tab": "電子特氣/WF6",
+ "title": "電子特殊氣體與六氟化鎢(WF6)斷供供應鏈 (Electronic Specialty Gases & WF6 Supply Shock)",
+ "subtitle": "電子特氣是半導體製造的「血液」——蝕刻、沉積、摻雜、清洗每一步都要超高純(5N–7N)氣體；占晶圓製造材料成本約 15%。本主題與 material(晶圓材料堆疊) 分流，聚焦『鎢原料 → 製氣+純化 → 特氣供應+輸送系統 → 晶圓廠製程』這條氣體軸線。2026 主旋律是 WF6(六氟化鎢) 斷供超級循環：六氟化鎢是 3D NAND(400+ 層)、先進邏輯接觸/通孔鎢互連、HBM 唯一商用化的鎢沉積前驅物，>95% 階梯覆蓋率無成熟替代。中國 2025/2 起對鎢製品(APT/高純鎢粉)出口管制、2026/1 收緊近乎歸零，鎢原料占 WF6 成本 60–70%，逼得占全球約 25% 產能的日本雙雄關東電化(4047.T)、中央硝子(4044.T) 向三星/SK海力士/台積電下最後通牒——7/1 起永久停產 WF6；2026/4 起 WF6 價格年增暴漲逾 200%、合約價上調 70–90%。受惠主軸：①氣體寡占龍頭——Air Liquide(AI.PA) 與 Linde(LIN) 合計約 35–40% 市占、Linde 砸 $2 億擴台灣 NF3/WF6 產能 +40%；②國產化超級循環——中船特氣(688146.SH) 2025 營收 22.6 億人民幣(+15.9%)、WF6 產能 2,000 噸/年居全球前列、銷量 1,330 噸，華特氣體(688268.SH) 國內 8/12 吋客戶覆蓋逾 90%，雅克科技(002409.SZ) 7N 前驅物全球僅 Merck/信越/雅克可量產；③輸送系統 Entegris(ENTG) 2025 營收 $32 億；④韓國 SK Specialty(全球最大 NF3/WF6,私有)、Foosung。絃外之音：這不是普通缺料——是『中國掐鎢上游 → 日本被迫退出 → 韓中遞補』的地緣供應鏈重組，最大贏家不是氣體龍頭而是『同時握有鎢礦 + 製氣的中國一體化廠(中船特氣/廈門鎢業 600549.SH)』與不受鎢牽制的 NF3/稀有氣體玩家；鉬(MoF6)替代尚需 3–5 年、屬『共存互補』而非取代。⚠ 與既有 material(晶圓材料)、advanced(先進製程沉積)、hbm 部分重疊；本主題獨立聚焦『氣體軸線 × WF6 斷供地緣事件』。非投資建議。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "25+"
+  },
+  {
+   "k": "電子特氣市場",
+   "v": "$68億",
+   "sub": "2025 $68 億 → 2034 $124 億（CAGR ~6.9%）；WF6 2026 約 $7.4 億 → 2035 $34.5 億",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "WF6 7/1 日本停產+價格暴漲 200%·中國鎢管制·國產化超級循環／鉬替代與地緣反覆",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "raw",
+   "label": "上游：鎢原料 / 氣體源 / 稀有氣體（受地緣管制最深）",
+   "main": false
+  },
+  {
+   "id": "make",
+   "label": "中游：製氣＋電子級純化 / 前驅物合成",
+   "main": true
+  },
+  {
+   "id": "deliver",
+   "label": "供應＋輸送：特氣供應商・輸送系統・廢氣處理",
+   "main": false
+  },
+  {
+   "id": "fab",
+   "label": "下游：晶圓廠製程（蝕刻／沉積／摻雜）",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "tungsten_raw",
+   "row": "raw",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "上游：鎢原料 / APT・高純鎢粉",
+   "nameEn": "Tungsten Feedstock (APT / Hi-purity W powder)",
+   "competition": "monopoly",
+   "single": "地緣咽喉 · 中國握全球 >80% 鎢資源，2025/2 起對 APT／高純鎢粉出口管制、2026/1 對日近乎歸零——這是整條 WF6 鏈的單一斷點",
+   "desc": "WF6 的源頭是鎢：鎢礦 → 仲鎢酸銨(APT) → 氧化鎢 → 高純鎢粉，鎢原料占 WF6 製造成本 60–70%。中國掌控全球逾 80% 鎢資源與精煉中間品。",
+   "marketSize": "鎢原料受管制，價格 2025 年內翻倍、鎢粉一年漲 6–7 倍",
+   "growth": "APT 約 46.2 萬元/噸、鎢粉約 71 萬元/噸（2025 末高點）",
+   "share": "中國 >80% 鎢資源 / APT・氧化鎢精煉近壟斷",
+   "analysis": "這是 2026 WF6 危機的真正震央：中國 2025/2 將鎢相關製品(碳化鎢、高純鎢粉、APT、WF6) 列入兩用物項出口管制，2026/1 進一步收緊，對日出口近乎歸零——日本本土幾無鎢礦，APT 進口在關鍵航線一度驟降 70%。鎢原料占 WF6 成本 60–70%，斷了源頭等於斷了製氣。一體化的中國廠(同時握鎢礦＋製氣)成最大結構贏家：廈門鎢業(600549.SH)、中鎢高新(000657.SZ) 為鎢龍頭，中船特氣往上游鎢整合。日本/韓國廠則被迫到非中國鎢源(越南/玻利維亞/葡萄牙)重建供應，成本與認證需數年。",
+   "companies": [
+    {
+     "name": "廈門鎢業",
+     "ticker": "600549.SH",
+     "country": "CN",
+     "share": "鎢龍頭(礦+APT+鎢粉)",
+     "products": "APT / 氧化鎢 / 高純鎢粉 / 鎢絲",
+     "note": "鎢價 2025 年內翻倍受惠；高純鎢粉為 WF6 上游關鍵原料",
+     "src": "https://www.21jingji.com/article/20251105/herald/0d81a5bb9fa6cc5df46474bedb32f2e2.html"
+    },
+    {
+     "name": "中鎢高新",
+     "ticker": "000657.SZ",
+     "country": "CN",
+     "share": "鎢硬質合金/鎢粉龍頭",
+     "products": "鎢粉 / 硬質合金 / APT",
+     "note": "中國五礦旗下；鎢出口管制與漲價受惠股",
+     "src": "https://www.21jingji.com/article/20251105/herald/0d81a5bb9fa6cc5df46474bedb32f2e2.html"
+    },
+    {
+     "name": "中國鎢業/出口管制（政策方）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "全球 >80% 鎢資源",
+     "products": "APT/高純鎢粉/WF6 出口許可",
+     "note": "2025/2 列入兩用物項管制、2026/1 對日近乎歸零——整條鏈單一斷點",
+     "src": "https://www.naturalnews.com/2026-06-15-china-critical-material-stranglehold-tungsten-export-controls.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "gas_purify"
+    }
+   ],
+   "sources": [
+    {
+     "label": "中國鎢出口管制重塑全球半導體供應鏈 (NaturalNews)",
+     "url": "https://www.naturalnews.com/2026-06-15-china-critical-material-stranglehold-tungsten-export-controls.html"
+    },
+    {
+     "label": "鎢價年內翻番、受益股名單 (21經濟網)",
+     "url": "https://www.21jingji.com/article/20251105/herald/0d81a5bb9fa6cc5df46474bedb32f2e2.html"
+    },
+    {
+     "label": "China controls exports, Japan cuts WF6 output (The Elec)",
+     "url": "https://www.thelec.net/news/articleView.html?idxno=6325"
+    }
+   ]
+  },
+  {
+   "id": "rare_gas",
+   "row": "raw",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "氣體源 / 稀有氣體分離（氦・氖・氙）",
+   "nameEn": "Gas Sources & Rare-Gas Separation (He/Ne/Xe)",
+   "competition": "oligopoly",
+   "single": "另一隱性單點 · 氦氣高度集中於美國/卡達/俄羅斯井源，氖/氙曾因俄烏戰爭斷供——稀有氣體與 WF6 同屬地緣脆弱環節",
+   "desc": "電子特氣不只 WF6：氦(冷卻/洩漏檢測)、氖/氙/氪(準分子雷射/蝕刻)、氫/氮/氬(載氣/沖洗)。稀有氣體來自空分(ASU)副產或特定井源，供應高度集中。",
+   "marketSize": "稀有氣體與大宗氣體，併入特氣大盤",
+   "growth": "氦氣供應集中美/卡達/俄；氖氣曾因俄烏戰爆漲",
+   "share": "null",
+   "analysis": "稀有氣體是與 WF6 平行的脆弱環節：氦氣全球井源高度集中(美國、卡達、俄羅斯、阿爾及利亞)，曾多次出現結構性短缺；氖、氙、氪多為鋼鐵空分副產，2022 俄烏戰爭一度切斷烏克蘭逾半的半導體級氖供應、價格暴漲，迫使全球往多元化採購。氣體四巨頭 Air Liquide、Linde、Air Products、Nippon Sanso 透過空分網與長約鎖定供應；這環節說明『電子特氣斷供』不是單一品項風險，而是地緣集中的系統性風險。",
+   "companies": [
+    {
+     "name": "Air Liquide",
+     "ticker": "AI.PA",
+     "country": "FR",
+     "share": "氣體四巨頭(稀有氣體網)",
+     "products": "氦/氖/氙/氪/氫/氮 + 純化",
+     "note": "全球空分與稀有氣體分離網；與 Linde 合計電子特氣約 35–40% 市占",
+     "src": "https://www.mordorintelligence.com/industry-reports/specialty-gas-market"
+    },
+    {
+     "name": "Linde",
+     "ticker": "LIN",
+     "country": "US",
+     "share": "氣體四巨頭",
+     "products": "氦/稀有氣體/大宗氣體",
+     "note": "全球最大工業氣體商；稀有氣體與電子特氣雙線",
+     "src": "https://www.mordorintelligence.com/industry-reports/specialty-gas-market"
+    },
+    {
+     "name": "Nippon Sanso(日本酸素)",
+     "ticker": "4091.T",
+     "country": "JP",
+     "share": "氣體四巨頭之一",
+     "products": "稀有氣體 / 現場製氣 / 特氣混合",
+     "note": "Taiyo Nippon Sanso；為晶圓廠提供整合氣體方案",
+     "src": "https://chemicalresearchinsight.com/2025/06/05/top-10-companies-in-the-specialty-gases-for-electronics-industry-2025-market-leaders-powering-semiconductor-innovation/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "gas_purify"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Specialty Gas 市場與四巨頭格局 (Mordor Intelligence)",
+     "url": "https://www.mordorintelligence.com/industry-reports/specialty-gas-market"
+    },
+    {
+     "label": "Top 10 電子特氣公司 2025 (Chemical Research Insight)",
+     "url": "https://chemicalresearchinsight.com/2025/06/05/top-10-companies-in-the-specialty-gases-for-electronics-industry-2025-market-leaders-powering-semiconductor-innovation/"
+    }
+   ]
+  },
+  {
+   "id": "gas_purify",
+   "row": "make",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "中游：製氣＋電子級純化（WF6 製造）",
+   "nameEn": "Gas Synthesis & Electronic-Grade Purification",
+   "competition": "oligopoly",
+   "single": "斷供核心 · 占全球約 25% WF6 產能的日本關東電化(4047.T)＋中央硝子(4044.T) 因缺鎢，2026/7/1 永久停產 WF6——產能轉向中韓",
+   "desc": "把鎢原料合成為 WF6、把粗氣純化到 5N–7N 電子級——這是技術門檻最高、2026 斷供最劇烈的環節。WF6 沸點低、需精密純化去除 HF/金屬雜質。",
+   "marketSize": "WF6 2026 約 $7.4 億 → 2035 $34.5 億（10年近 5 倍）",
+   "growth": "WF6 價格 2026/4 起年增暴漲 >200%、合約價漲 70–90%",
+   "share": "日韓中三足：SK Specialty/中船特氣各約 2,000 噸/年、日本雙雄合計約 25%",
+   "analysis": "這是整個主題的引爆點。WF6 製造由鎢原料合成＋電子級純化兩段組成，技術與認證壁壘高。中國斷鎢後，占全球約 25% 產能的日本關東電化(4047.T，亦產 SF6/含氟氣體)與中央硝子(4044.T) 因高純鎢粉斷源，向三星/SK海力士/台積電下最後通牒：2026/7/1 起永久停產 WF6。產能缺口由不受鎢牽制或自有鎢源者遞補：韓國 SK Specialty(全球最大 NF3/WF6，2025/4 被 Hahn & Company 私有化收購、WF6 約 2,000 噸/年、NF3 全球逾 40%)、中船特氣(688146.SH，WF6 產能 2,000 噸/年、2025 銷量 1,330 噸、電子特氣營收 19.3 億人民幣)。前驅物端雅克科技(002409.SZ) 7N 超高純金屬有機前驅物全球僅 Merck/信越/雅克可量產，供 3nm 與 16+ 層 HBM。日本退出＋中國鎢管制＝『國產化超級循環』與韓中遞補的雙主軸。",
+   "companies": [
+    {
+     "name": "中船特氣",
+     "ticker": "688146.SH",
+     "country": "CN",
+     "share": "WF6 產能 2,000 噸/年(全球前列)",
+     "products": "六氟化鎢 WF6 / 三氟甲磺酸 / 含氟電子特氣",
+     "note": "2025 營收 22.6 億人民幣(+15.9%)、淨利 3.47 億；電子特氣營收 19.27 億(+12.4%)；WF6 銷量 1,329.64 噸(+3.4%)；往鎢上游一體化——斷供超級循環最大國產受惠",
+     "src": "https://www.stcn.com/article/detail/3771424.html"
+    },
+    {
+     "name": "SK Specialty(原 SK materials)",
+     "ticker": "—",
+     "country": "KR",
+     "share": "全球最大 NF3/WF6",
+     "products": "WF6(約2,000噸/年) / NF3(全球>40%) / 含氟清洗氣",
+     "note": "2025/4 被 PE Hahn & Company 私有化收購；日本停產後遞補主力",
+     "src": "https://eng.sk.com/companies/info/sk-inc-materials"
+    },
+    {
+     "name": "關東電化工業",
+     "ticker": "4047.T",
+     "country": "JP",
+     "share": "WF6 約占全球 ~25%(與中央硝子合計)",
+     "products": "WF6 / SF6 / 含氟特氣 / 電池材料(LiPF6)",
+     "note": "因高純鎢粉斷源，向三星/SK海力士/台積電通知 2026/7/1 永久停產 WF6——含氟其他氣體續產",
+     "src": "https://www.thelec.net/news/articleView.html?idxno=5468"
+    },
+    {
+     "name": "中央硝子",
+     "ticker": "4044.T",
+     "country": "JP",
+     "share": "WF6 日本雙雄之一",
+     "products": "WF6 / 含氟化學品 / 玻璃",
+     "note": "與關東電化合計約全球 25% WF6 產能；2026/7/1 起永久停產 WF6",
+     "src": "https://finance.biggo.com/news/03fc2501-c7e4-44f3-9bd1-2e3d1b0d4ae2"
+    },
+    {
+     "name": "雅克科技",
+     "ticker": "002409.SZ",
+     "country": "CN",
+     "share": "前驅物平台(7N 量產三強)",
+     "products": "半導體前驅體 / 電子特氣 / 球形矽微粉 / 光阻",
+     "note": "7N 超高純金屬有機前驅物全球僅 Merck/信越/雅克可量產，供 3nm 與 16+ 層 HBM；核心子公司 UP Chemical",
+     "src": "https://caifuhao.eastmoney.com/news/20260530233309974814080"
+    },
+    {
+     "name": "Tosoh(東曹)",
+     "ticker": "4042.T",
+     "country": "JP",
+     "share": "含氟/蝕刻特氣",
+     "products": "高純氣體 / 蝕刻氣 / 電子化學品",
+     "note": "日本綜合化學，特氣與電子化學品供應商",
+     "src": "https://www.tipranks.com/stocks/jp:4042"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "tungsten_raw"
+    },
+    {
+     "id": "rare_gas"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "supply_deliver"
+    }
+   ],
+   "sources": [
+    {
+     "label": "中船特氣 2025 營收淨利雙增、WF6 產銷 (證券時報)",
+     "url": "https://www.stcn.com/article/detail/3771424.html"
+    },
+    {
+     "label": "日本雙雄 7/1 永久停產 WF6、價格三倍 (BigGo Finance)",
+     "url": "https://finance.biggo.com/news/03fc2501-c7e4-44f3-9bd1-2e3d1b0d4ae2"
+    },
+    {
+     "label": "三星/SK海力士面臨 WF6 漲價 (The Elec)",
+     "url": "https://www.thelec.net/news/articleView.html?idxno=5468"
+    },
+    {
+     "label": "雅克科技平台壁壘：前驅體與國產替代 (東方財富)",
+     "url": "https://caifuhao.eastmoney.com/news/20260530233309974814080"
+    }
+   ]
+  },
+  {
+   "id": "nf3_etch",
+   "row": "make",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "NF3 / 蝕刻・摻雜・清洗特氣",
+   "nameEn": "NF3 & Etch/Dopant/Clean Gases",
+   "competition": "oligopoly",
+   "single": "不受鎢牽制的避風港 · SK Specialty 握全球 NF3 逾 40%，在 WF6 斷供時 NF3/含氟清洗氣成相對穩定的高價值替代曝險",
+   "desc": "WF6 之外的關鍵特氣：NF3(腔體清洗)、含氟蝕刻氣(C4F6/C4F8/SF6)、摻雜氣(B2H6/PH3/AsH3)、矽烷(SiH4) 沉積前驅物——這些不依賴鎢，是斷供下相對穩定的曝險。",
+   "marketSize": "NF3＋蝕刻/摻雜特氣，併入 $68 億電子特氣大盤",
+   "growth": "3D NAND 層數↑＋先進邏輯拉動含氟蝕刻氣與清洗氣量",
+   "share": "null",
+   "analysis": "在 WF6 斷供主旋律下，NF3 與含氟蝕刻/摻雜氣是『不被鎢綁架』的相對避風港。NF3 用於 CVD/ALD 腔體乾洗，SK Specialty(SK inc. materials) 握全球逾 40% NF3、為絕對龍頭；關東電化、Resonac(原昭和電工)、美國 Air Products 亦為要角。含氟蝕刻氣(C4F6/C4F8)隨 3D NAND 層數攀升(400+ 層)與高深寬比結構而量增；摻雜氣(B2H6/PH3)隨先進邏輯需求成長。中國國產化在 NF3/蝕刻氣同步推進——華特氣體(688268.SH) 即以蝕刻/清洗特氣切入國內 8/12 吋廠逾 90% 客戶覆蓋。此環節與既有 material/advanced 主題的『沉積/蝕刻材料』部分重疊，本主題從氣體供應角度切入。",
+   "companies": [
+    {
+     "name": "華特氣體",
+     "ticker": "688268.SH",
+     "country": "CN",
+     "share": "國內 8/12 吋客戶覆蓋 >90%",
+     "products": "蝕刻氣 / 清洗氣 / 摻雜氣 / 混合氣及設備",
+     "note": "2025 營收 14.19 億人民幣(+1.7%)、淨利 1.35 億(−26.8%)；國內最大民營特氣商之一、市占 <5% 仍有國產替代空間",
+     "src": "https://finance.sina.com.cn/jjxw/2026-04-09/doc-inhtxcuv5826540.shtml"
+    },
+    {
+     "name": "SK Specialty",
+     "ticker": "—",
+     "country": "KR",
+     "share": "NF3 全球 >40%(龍頭)",
+     "products": "NF3 / 含氟清洗氣 / 蝕刻氣",
+     "note": "全球最大 NF3 廠；不受鎢牽制的相對穩定曝險",
+     "src": "https://www.expertmarketresearch.com/blogs/top-nitrogen-trifluoride-nf3-companies"
+    },
+    {
+     "name": "Air Products",
+     "ticker": "APD",
+     "country": "US",
+     "share": "特氣＋摻雜/矽烷要角",
+     "products": "NF3 / 矽烷 SiH4 / 摻雜氣 / 現場製氣",
+     "note": "2025 與半導體客戶簽 >$2.5 億新廠氣體合約；蝕刻/摻雜/沉積特氣全線",
+     "src": "https://www.persistencemarketresearch.com/market-research/electronic-specialty-gases-market.asp"
+    },
+    {
+     "name": "Resonac(原昭和電工)",
+     "ticker": "4004.T",
+     "country": "JP",
+     "share": "含氟蝕刻/清洗氣",
+     "products": "含氟特氣 / 後段材料",
+     "note": "日本含氟蝕刻/清洗氣供應商；昭和電工與日立化成合併後品牌",
+     "src": "https://www.expertmarketresearch.com/blogs/top-nitrogen-trifluoride-nf3-companies"
+    },
+    {
+     "name": "Foosung",
+     "ticker": "—",
+     "country": "KR",
+     "share": "含氟/HF 韓系玩家",
+     "products": "含氟氣體 / HF / 電池材料",
+     "note": "中國鎢管制下被點名潛在受惠的韓系氟化學廠(WF6/含氟避險)",
+     "src": "https://www.kucoin.com/news/flash/china-s-tungsten-export-controls-disrupt-japan-s-wf6-supply-foosung-seen-as-major-beneficiary"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "rare_gas"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "supply_deliver"
+    }
+   ],
+   "sources": [
+    {
+     "label": "華特氣體 2025 業績、8/12 吋客戶覆蓋 >90% (新浪財經)",
+     "url": "https://finance.sina.com.cn/jjxw/2026-04-09/doc-inhtxcuv5826540.shtml"
+    },
+    {
+     "label": "Top NF3 公司：SK 龍頭 (Expert Market Research)",
+     "url": "https://www.expertmarketresearch.com/blogs/top-nitrogen-trifluoride-nf3-companies"
+    },
+    {
+     "label": "Foosung 為鎢管制潛在受惠者 (KuCoin)",
+     "url": "https://www.kucoin.com/news/flash/china-s-tungsten-export-controls-disrupt-japan-s-wf6-supply-foosung-seen-as-major-beneficiary"
+    }
+   ]
+  },
+  {
+   "id": "supply_deliver",
+   "row": "deliver",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "供應＋輸送：特氣供應商・輸送系統・廢氣處理",
+   "nameEn": "Gas Supply · Delivery Systems · Abatement",
+   "competition": "oligopoly",
+   "single": "輸送卡位 · Entegris(ENTG) 在氣體輸送/淨化/過濾與材料處理握高份額，是『把超高純氣體安全送進製程腔體』的隱形閘門",
+   "desc": "氣體從鋼瓶/槽車/現場製氣，經氣體櫃(gas cabinet)、質流控制器(MFC)、純化過濾、輸送管路進到製程腔體；用後再經廢氣處理(abatement) 中和有毒/含氟尾氣。",
+   "marketSize": "氣體輸送系統＋廢氣處理，併入晶圓廠 capex",
+   "growth": "Linde 砸 $2 億擴台灣 NF3/WF6 產能 +40%、就近供應亞太晶圓廠",
+   "share": "null",
+   "analysis": "斷供時代，誰能『把對的氣體穩定送到對的腔體』比氣體本身更值錢。Entegris(ENTG，2025 營收 $32 億) 在氣體輸送、純化、過濾與微汙染控制握高份額，是晶圓廠氣體輸送的隱形閘門。氣體四巨頭兼營就近供應與現場製氣：Linde(LIN) 完成 $2 億台灣擴產、NF3/WF6 產能 +40% 服務亞太；Air Liquide(AI.PA) 簽 >$2.5 億美國新廠氣體合約。亞太(中/台/韓)占電子特氣需求約 69%，就近建廠＋長約鎖量是龍頭護城河。廢氣處理(含氟尾氣分解、PFC 減排)在 ESG 與層數增加下需求同步上升。WF6/氦氣斷供 → 晶圓廠加速『雙源化、在地化、長約化』採購，反而強化具全球網與輸送能力的龍頭定價權。",
+   "companies": [
+    {
+     "name": "Entegris",
+     "ticker": "ENTG",
+     "country": "US",
+     "share": "氣體輸送/純化/過濾領先",
+     "products": "氣體輸送系統 / 純化器 / 過濾 / 微汙染控制",
+     "note": "2025 營收 $31.97 億；半導體氣體與材料處理輸送龍頭——斷供下『安全輸送』價值上升",
+     "src": "https://www.macrotrends.net/stocks/charts/ENTG/entegris/revenue"
+    },
+    {
+     "name": "Linde",
+     "ticker": "LIN",
+     "country": "US",
+     "share": "電子特氣與 Linde+AL 合計 ~35–40%",
+     "products": "WF6/NF3 製氣 / 現場製氣 / 輸送 / 純化",
+     "note": "完成 $2 億台灣擴產、NF3/WF6 產能 +40% 服務亞太晶圓廠；全球最大工業氣體商",
+     "src": "https://www.dataintelo.com/report/global-electronic-specialty-gases-market"
+    },
+    {
+     "name": "Air Liquide",
+     "ticker": "AI.PA",
+     "country": "FR",
+     "share": "電子特氣龍頭(與 Linde 雙雄)",
+     "products": "電子特氣全線 / 現場製氣 / 輸送",
+     "note": "簽 >$2.5 億美國半導體新廠氣體合約；亞太/美/歐就近建廠",
+     "src": "https://www.dataintelo.com/report/global-electronic-specialty-gases-market"
+    },
+    {
+     "name": "Nippon Sanso",
+     "ticker": "4091.T",
+     "country": "JP",
+     "share": "整合氣體方案",
+     "products": "現場製氣 / 特氣混合 / 輸送系統",
+     "note": "為晶圓廠提供大宗+特氣+現場製氣整合方案",
+     "src": "https://chemicalresearchinsight.com/2025/06/05/top-10-companies-in-the-specialty-gases-for-electronics-industry-2025-market-leaders-powering-semiconductor-innovation/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "gas_purify"
+    },
+    {
+     "id": "nf3_etch"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fab_process"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Entegris 營收 2025 $31.97 億 (Macrotrends)",
+     "url": "https://www.macrotrends.net/stocks/charts/ENTG/entegris/revenue"
+    },
+    {
+     "label": "Linde 台灣 $2 億擴產 NF3/WF6 +40%、AL 美國 $2.5 億新廠 (Dataintelo)",
+     "url": "https://www.dataintelo.com/report/global-electronic-specialty-gases-market"
+    }
+   ]
+  },
+  {
+   "id": "fab_process",
+   "row": "fab",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "下游：晶圓廠製程（沉積／蝕刻／摻雜）",
+   "nameEn": "Fab Process (Deposition / Etch / Dopant)",
+   "competition": "oligopoly",
+   "single": "需求引擎 · 3D NAND 400+ 層、HBM 與先進邏輯把 WF6 從『可選』推向『戰略必須』，斷供直接威脅 AI 記憶體與先進晶片產能",
+   "desc": "氣體最終在晶圓廠被消耗：WF6 用 ALD/CVD 沉積鎢互連(接觸/通孔/字元線)、NF3 清洗腔體、含氟氣蝕刻、摻雜氣調控載子——層數與先進製程越多，氣體用量越大。",
+   "marketSize": "全球半導體 2026 近 $1 兆；WF6/特氣為製程關鍵投入",
+   "growth": "3D NAND 400+ 層、HBM、先進邏輯拉動 WF6 與含氟氣用量",
+   "share": "null",
+   "analysis": "需求端是整條氣體鏈的成長引擎，也是斷供風險的承受者。WF6 是 3D NAND(400+ 層) 字元線、先進邏輯接觸/通孔鎢互連、HBM 唯一商用化的鎢沉積前驅物，ALD 階梯覆蓋率 >95% 無成熟替代——層數每增，WF6 用量同步攀升。三星、SK海力士、台積電、美光、長江存儲為主要消耗方，正是日本雙雄停產通牒的對象，斷供直接威脅 AI 記憶體與先進晶片產能、推升記憶體成本。設備端 Lam Research 已開發低氟鎢(LFW) ALD(ALTUS Max E) 緩解氟殘留並支援持續微縮。鉬(MoF6)替代需 6N–7N 超高純、轉換成本高，未來 3–5 年屬『WF6 與鉬共存互補』而非取代。絃外之音：晶圓廠真正的避險是『雙源 + 在地 + 長約』，最終把成本與議價壓力沿鏈回傳——這正是國產化超級循環的需求基礎。",
+   "companies": [
+    {
+     "name": "Samsung Electronics",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "記憶體龍頭(WF6 大用戶)",
+     "products": "3D NAND / DRAM / HBM",
+     "note": "日本 WF6 停產通牒對象(與 SK海力士 000660.KS 同列)；3D NAND 400+ 層拉動 WF6 用量",
+     "src": "https://wccftech.com/japan-semiconductor-gas-production-collapses-to-zero-after-china-cuts-off-tungsten-tsmc-sk-hynix-samsung/"
+    },
+    {
+     "name": "台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "先進邏輯龍頭",
+     "products": "先進邏輯鎢互連 / 接觸/通孔",
+     "note": "WF6 停產通牒對象；先進製程鎢沉積關鍵——台股最直接曝險",
+     "src": "https://wccftech.com/japan-semiconductor-gas-production-collapses-to-zero-after-china-cuts-off-tungsten-tsmc-sk-hynix-samsung/"
+    },
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "鎢 ALD/CVD 沉積設備龍頭",
+     "products": "ALTUS 低氟鎢(LFW) ALD / 鎢沉積",
+     "note": "首創低氟鎢 ALD(ALTUS Max E)，支援 3D NAND/DRAM 持續微縮——WF6 用量的設備端閘門",
+     "src": "https://newsroom.lamresearch.com/Innovative-Tungsten-ALD-Process-Provides-Pathway-to-New-Memory-Chip-Production"
+    },
+    {
+     "name": "Micron / 長江存儲",
+     "ticker": "MU",
+     "country": "US",
+     "share": "NAND/DRAM 用戶",
+     "products": "3D NAND / DRAM / HBM",
+     "note": "WF6/含氟氣消耗方；HBM 與記憶體成本受斷供傳導",
+     "src": "https://www.naturalnews.com/2026-06-19-tungsten-hexafluoride-crisis-coming-memory-cost-explosion.html"
+    },
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "沉積/蝕刻設備龍頭",
+     "products": "CVD/ALD/蝕刻設備",
+     "note": "鎢/含氟製程設備供應；鉬替代路線(MoF6)推進者之一",
+     "src": "https://semiengineering.com/scaling-memory-with-molybdenum/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "supply_deliver"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "日本特氣產能歸零，TSMC/SK/三星曝險 (Wccftech)",
+     "url": "https://wccftech.com/japan-semiconductor-gas-production-collapses-to-zero-after-china-cuts-off-tungsten-tsmc-sk-hynix-samsung/"
+    },
+    {
+     "label": "Lam Research 低氟鎢 ALD 助記憶體微縮",
+     "url": "https://newsroom.lamresearch.com/Innovative-Tungsten-ALD-Process-Provides-Pathway-to-New-Memory-Chip-Production"
+    },
+    {
+     "label": "WF6 危機與記憶體成本爆發 (NaturalNews)",
+     "url": "https://www.naturalnews.com/2026-06-19-tungsten-hexafluoride-crisis-coming-memory-cost-explosion.html"
+    },
+    {
+     "label": "用鉬替代鎢的微縮路線 (Semiconductor Engineering)",
+     "url": "https://semiengineering.com/scaling-memory-with-molybdenum/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "tungsten_raw",
+   "gas_purify"
+  ],
+  [
+   "rare_gas",
+   "gas_purify"
+  ],
+  [
+   "rare_gas",
+   "nf3_etch"
+  ],
+  [
+   "gas_purify",
+   "supply_deliver"
+  ],
+  [
+   "nf3_etch",
+   "supply_deliver"
+  ],
+  [
+   "supply_deliver",
+   "fab_process"
+  ]
+ ],
+ "_proposed": {}
+}

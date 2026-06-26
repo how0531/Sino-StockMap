@@ -1,0 +1,681 @@
+{
+ "id": "grid_power",
+ "tab": "電網/輸配電",
+ "title": "電網與輸配電設備供應鏈 (Power Grid & T&D Equipment)",
+ "subtitle": "Power Grid & T&D — AI 資料中心用電爆量把瓶頸從「發電」延伸到「輸配電」：大型電力變壓器交期在美國最長拉到 4 年、GIS 開關設備與 HVDC 換流站嚴重供不應求，催生橫跨美歐日韓台的 T&D 設備漲價超級循環。全球電網投資 2025 首度突破 4,700 億美元（BNEF）、美國佔約四分之一（IEA），約半數美國資料中心計畫因電力硬體短缺延後。價值鏈：取向矽鋼片 GOES／套管／有載分接開關 → 大型變壓器／GIS 開關／HVDC 特高壓輸電 → 電力公司／AI 資料中心。龍頭：GE Vernova、Eaton、Schneider、Hitachi Energy、Siemens Energy、韓系 Hyosung/HD Hyundai、台股重電四雄（華城/中興電/士電/亞力）。⚠ 訂單能見度長≠即時獲利、估值偏高、資料中心需求若放緩、關稅/在地化政策反覆。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "全球電網投資 2025",
+   "v": "$4,700億+",
+   "sub": "BNEF 首破 / 美國佔約 1/4",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "AI 用電催化·變壓器交期最長 4 年/估值偏高",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "material",
+   "label": "材料 / 關鍵零組件 Materials & Components",
+   "main": false
+  },
+  {
+   "id": "equipment",
+   "label": "T&D 核心設備 Transformers / Switchgear / HVDC",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "電力公司 / AI 資料中心 Utilities & Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "goes_steel",
+   "row": "material",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "取向矽鋼片 GOES",
+   "nameEn": "Grain-Oriented Electrical Steel",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Cleveland-Cliffs 為美國唯一主要 GOES 生產者，是變壓器在地化卡脖子點",
+   "desc": "變壓器鐵芯的核心材料——取向矽鋼片（GOES），高磁導低損耗，供應集中、為交期瓶頸來源之一。",
+   "marketSize": "變壓器命脈",
+   "growth": "供不應求",
+   "share": "null",
+   "analysis": "Cleveland-Cliffs（CLF，美國唯一主要 GOES 生產者，地位接近本土壟斷）、Nippon Steel（5401.T，日本龍頭、擴 Hirohata 產能）、POSCO（005490.KS，韓）、Baowu/寶武（中國，2025 新增 32 萬噸高磁感產線）、JFE（5411.T，日）、ThyssenKrupp（DE）。GOES 高品質產能極少、認證門檻高，是大型變壓器交期拉長到 4 年的根因之一；美國本土僅 Cleveland-Cliffs 一家，使變壓器 domestic content 在地化受制於此，為隱性卡脖子點。",
+   "companies": [
+    {
+     "name": "Cleveland-Cliffs",
+     "ticker": "CLF",
+     "country": "US",
+     "share": "美國唯一主要 GOES",
+     "products": "取向矽鋼片 GOES",
+     "note": "美國唯一可量產 GOES 的廠商（廠區集中賓州/俄亥俄），所有採國產鋼的美國變壓器廠皆依賴此單一來源、形成結構性瓶頸；$1.5 億西維州 Weirton 三相變壓器廠 2026H1 投產、帶動 GOES 增產 30-40%；電工鋼/鐵芯獲列國防生產法、進口課 50% 關稅",
+     "src": "https://www.corinex.com/articles/transformer-shortages-are-slowing-u-s-grid-expansion-why-capital-alone-cant-scale-the-power-system"
+    },
+    {
+     "name": "Nippon Steel",
+     "ticker": "5401.T",
+     "country": "JP",
+     "share": "日本龍頭",
+     "products": "GOES / 電工鋼",
+     "note": "擴 Hirohata 產能、投資高效薄型 GOES",
+     "src": "https://www.factmr.com/report/us-electrical-steel-market"
+    },
+    {
+     "name": "POSCO",
+     "ticker": "005490.KS",
+     "country": "KR",
+     "share": "韓系電工鋼",
+     "products": "GOES / 無取向矽鋼",
+     "note": "韓國電工鋼供應"
+    },
+    {
+     "name": "Baowu / 寶武",
+     "ticker": "600019.SS",
+     "country": "CN",
+     "share": "中國最大",
+     "products": "高磁感 GOES",
+     "note": "2025 新增 32 萬噸/年高磁感產線"
+    },
+    {
+     "name": "JFE Steel",
+     "ticker": "5411.T",
+     "country": "JP",
+     "share": "日系電工鋼",
+     "products": "GOES",
+     "note": "與 Nippon Steel 合計擴產逾 $13 億"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "transformer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "美國 GOES 需求 (FactMR)",
+     "url": "https://www.factmr.com/report/united-states-grain-oriented-electrical-steel"
+    }
+   ]
+  },
+  {
+   "id": "tap_bushing",
+   "row": "material",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "分接開關 / 套管 / 功率元件",
+   "nameEn": "Tap-Changers / Bushings / Power Devices",
+   "competition": "oligopoly",
+   "single": "MR (Reinhausen) 有載分接開關 OLTC 全球近壟斷；SiC/IGBT 連結 power_semi",
+   "desc": "變壓器與開關設備的關鍵零組件：有載分接開關（OLTC）、套管（bushing）、絕緣件，以及 HVDC/固態變壓器用功率半導體。",
+   "marketSize": "null",
+   "growth": "隨變壓器",
+   "share": "null",
+   "analysis": "有載分接開關 OLTC：MR / Maschinenfabrik Reinhausen（德，未上市，全球近壟斷）、ABB（ABBN.SW）；套管 bushing：Hitachi Energy、Trench（Siemens Energy 系）、ABB；功率半導體（HVDC 換流閥、固態變壓器）：Infineon（IFX.DE）、Mitsubishi Electric（6503.T）、Wolfspeed/onsemi（連結既有 power_semi 主題）。MR 在 OLTC 近壟斷，是變壓器調壓的隱性單點；功率元件層與 power_semi（SiC/IGBT）銜接，HVDC 與固態變壓器是 SiC 的重要新增市場。",
+   "companies": [
+    {
+     "name": "MR (Reinhausen)",
+     "ticker": "—",
+     "country": "DE",
+     "share": "OLTC 近壟斷",
+     "products": "有載分接開關 OLTC",
+     "note": "德國未上市、全球壟斷級"
+    },
+    {
+     "name": "ABB",
+     "ticker": "ABBN.SW",
+     "country": "CH",
+     "share": "套管/元件",
+     "products": "套管 / 分接開關 / 元件",
+     "note": "電氣零組件廣度大"
+    },
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "HVDC 功率元件",
+     "products": "IGBT / SiC 模組",
+     "note": "HVDC 換流閥與固態變壓器"
+    },
+    {
+     "name": "Mitsubishi Electric",
+     "ticker": "6503.T",
+     "country": "JP",
+     "share": "功率元件+設備",
+     "products": "IGBT / 變壓器 / GIS",
+     "note": "日系功率半導體+重電整合"
+    },
+    {
+     "name": "Trench Group",
+     "ticker": "—",
+     "country": "DE",
+     "share": "套管/儀用變壓器",
+     "products": "套管 / 電抗器 / 互感器",
+     "note": "Siemens Energy 旗下高壓零組件"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "transformer"
+    },
+    {
+     "id": "switchgear"
+    },
+    {
+     "id": "hvdc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "變壓器市場龍頭 (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/ResearchInsight/transformer-market.asp"
+    }
+   ]
+  },
+  {
+   "id": "transformer",
+   "row": "equipment",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "大型電力變壓器",
+   "nameEn": "Large Power Transformers",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 2026 美國電力變壓器平均交期達 128 週、GSU 144 週、高容量機組最長 4 年；2019 以來變壓器單價 +77%、GSU +45%；中國掌全球約 60% 變壓器產能",
+   "desc": "電網與資料中心的核心硬體——大型/超高壓電力變壓器（含 765kV 特高壓），交期災難性拉長，是漲價超級循環的震央。",
+   "marketSize": "$304 億(2025)",
+   "growth": "交期 4 年",
+   "share": "null",
+   "analysis": "全球電力變壓器市場 2025 約 304 億美元、估 2030 達 416 億美元（CAGR ~6.5%）。龍頭：Hitachi Energy（日立能源，全球第一、宣布 $60 億擴產含 $15 億投變壓器）、Siemens Energy（ENR.DE）、GE Vernova（GEV，旗下 Prolec GE 以 $6.45 億收 SPX Transformer 取得鐵芯鋼片產能）、Eaton（ETN，南卡 $3.4 億新廠攻資料中心三相變壓器）、Hyosung Heavy（298040.KS）、HD Hyundai Electric（267260.KS）。台系：華城（1519.TW，AI 資料中心變壓器訂單破 150 億見 2028）、士電（1503.TW，第三廠量產涵蓋美 230kV）。美國交期最長拉到 4 年、中國掌全球約 60% 產能；西方在地化（domestic content）+ 韓系赴美設廠是供需重配置主軸。",
+   "companies": [
+    {
+     "name": "Hitachi Energy",
+     "ticker": "6501.T",
+     "country": "JP",
+     "share": "全球變壓器第一",
+     "products": "超高壓 / 大型變壓器 / HVDC",
+     "note": "母公司 Hitachi 6501.T；$90 億全球投資計畫下 2026-H1 再加碼——拉美 +$1.5 億擴變壓器、印度 Vadodara 約 2,000 億盧比新建大型變壓器廠、芬蘭約 $1.8 億新廠；併購加拿大 Canduct 強化北美變壓器絕緣；印度子公司在手破 2,950 億盧比（+53%）",
+     "src": "https://www.hitachienergy.com/us/en/news-and-events/features/2026/03/hitachi-energy-reaffirms-commitment-to-latin-america-through-an-additional-150-million-usd-investment-to-expand-power-transformer-manufacturing-capacity"
+    },
+    {
+     "name": "GE Vernova",
+     "ticker": "GEV",
+     "country": "US",
+     "share": "北美變壓器龍頭",
+     "products": "變壓器 / 電網設備",
+     "note": "2026/2/2 以 52.75 億美元（現金+負債各半）收購 Prolec GE 剩餘 50% 股權完成全資併購（北美/美洲 7 廠、約 1 萬員工、Q1 約 45 億美元稅前 M&A 收益），鞏固北美變壓器產能與垂直整合；2026Q1 訂單 $183 億（有機+71%）、總 backlog $1,630 億（spin 時 $1,160 億）；資料中心電氣訂單 $24 億超越 2025 全年",
+     "src": "https://www.gevernova.com/news/press-releases/ge-vernova-completes-prolec-ge-acquisition"
+    },
+    {
+     "name": "Eaton",
+     "ticker": "ETN",
+     "country": "US",
+     "share": "資料中心電氣",
+     "products": "變壓器 / 配電 / 電氣系統",
+     "note": "2026Q1 電氣 backlog 年增 48% 至 $228 億、資料中心訂單年增 240%；2026Q1 營收 $74.5 億年增 17%；增量產能投資上調至約 $15 億（聚焦變壓器/開關/配電，墨西哥、多明尼加新廠 ramp）",
+     "src": "https://www.intelmarketresearch.com/data-center-switchgear-market-36548"
+    },
+    {
+     "name": "Hyosung Heavy",
+     "ticker": "298040.KS",
+     "country": "KR",
+     "share": "韓系赴美擴產",
+     "products": "超高壓變壓器 / HVDC",
+     "note": "2026Q1 韓三雄新單逾 7 兆韓元、合計在手破 32 兆韓元；Hyosung 在手達 15.1 兆韓元（韓首破 15 兆）、2 月簽 7,871 億韓元 765kV 美輸電商單為韓史上最大單一案",
+     "src": "https://en.sedaily.com/news/2026/05/01/korean-power-equipment-makers-clinch-record-orders-on-us"
+    },
+    {
+     "name": "HD Hyundai Electric",
+     "ticker": "267260.KS",
+     "country": "KR",
+     "share": "韓系變壓器",
+     "products": "電力變壓器 / 配電",
+     "note": "美國電網升級訂單創高"
+    },
+    {
+     "name": "華城",
+     "ticker": "1519.TW",
+     "country": "TW",
+     "share": "台系變壓器龍頭",
+     "products": "電力變壓器 / 變電站",
+     "note": "AI 資料中心變壓器訂單由去年 120 億增至 2026 突破 200 億見 2028；AIDC 營收占比擬由 ~5% 拉升至 15%+、北美出貨破 50%；德州 Stargate 首單；2026 EPS 估 21-22 元",
+     "src": "https://money.udn.com/money/story/5612/9199443"
+    },
+    {
+     "name": "士電",
+     "ticker": "1503.TW",
+     "country": "TW",
+     "share": "台系變壓器",
+     "products": "變壓器 / 配電 / 馬達",
+     "note": "第三廠 2025-09 量產涵蓋美 230kV；外銷美約 15-20%",
+     "src": "https://tw.stock.yahoo.com/quote/1503.TW"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "goes_steel"
+    },
+    {
+     "id": "tap_bushing"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "utility"
+    },
+    {
+     "id": "datacenter"
+    }
+   ],
+   "sources": [
+    {
+     "label": "美國變壓器交期 4 年 (pv magazine)",
+     "url": "https://pv-magazine-usa.com/2026/05/11/u-s-transformer-market-faces-severe-supply-constraints-as-lead-times-extend-to-four-years/"
+    },
+    {
+     "label": "變壓器市場 (GM Insights)",
+     "url": "https://www.gminsights.com/industry-analysis/power-transformer-market-report"
+    }
+   ]
+  },
+  {
+   "id": "switchgear",
+   "row": "equipment",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "開關設備 / GIS / 斷路器",
+   "nameEn": "Switchgear / GIS / Breakers",
+   "competition": "oligopoly",
+   "single": "中興電 GIS 國內市佔 ~85%（台電近壟斷）；全球 ABB/Siemens 寡占",
+   "desc": "電網與資料中心的開斷、保護與配電核心——氣體絕緣開關設備（GIS）、斷路器、配電盤、中壓開關。",
+   "marketSize": "開關 ~$1,040 億",
+   "growth": "GIS 8.7% CAGR",
+   "share": "null",
+   "analysis": "全球開關設備市場 2025 約 1,040 億美元、估 2030 達 1,367 億美元；GIS 約 287 億美元、CAGR ~8.7%。龍頭：ABB（ABBN.SW）、Siemens（SIE.DE）、Schneider Electric（SU.PA）、Eaton（ETN）、Mitsubishi Electric（6503.T）、Hyundai Electric（267260.KS）、Toshiba/東芝。台系：中興電（1513.TW，國內 GIS 市佔 ~85%、台電 GIS 今年逾 160 億訂單、在手 431 億）、亞力（1514.TW，配電盤/開關、傳獲 NVIDIA 子公司單）。中興電在台電 GIS 近壟斷、是台灣電網強韌計畫最大受惠者之一。",
+   "companies": [
+    {
+     "name": "ABB",
+     "ticker": "ABBN.SW",
+     "country": "CH",
+     "share": "全球 GIS 龍頭",
+     "products": "GIS / 斷路器 / 配電",
+     "note": "高壓開關技術領先",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/switchgear-market.asp"
+    },
+    {
+     "name": "Siemens",
+     "ticker": "SIE.DE",
+     "country": "DE",
+     "share": "全球開關龍頭",
+     "products": "GIS / 中壓開關 / 保護",
+     "note": "電網設備全線"
+    },
+    {
+     "name": "Schneider Electric",
+     "ticker": "SU.PA",
+     "country": "FR",
+     "share": "配電/能源管理",
+     "products": "中壓開關 / 配電 / EcoStruxure",
+     "note": "2025 營收 €402 億、在手 >€250 億",
+     "src": "https://www.investing.com/news/company-news/schneider-electric-fy-2025-slides-record-40bn-revenues-strong-outlook-93CH-4526856"
+    },
+    {
+     "name": "中興電",
+     "ticker": "1513.TW",
+     "country": "TW",
+     "share": "台電 GIS ~85%",
+     "products": "GIS / 開關設備 / 統包工程",
+     "note": "2025 營收 275 億、EPS 8.07 元；在手訂單攀至約 440 億、能見度至 2030",
+     "src": "https://wantrich.chinatimes.com/news/20260415900381-420101"
+    },
+    {
+     "name": "亞力",
+     "ticker": "1514.TW",
+     "country": "TW",
+     "share": "配電盤/開關",
+     "products": "配電盤 / 開關 / 智慧電網",
+     "note": "傳獲 NVIDIA 子公司訂單；台電+半導體題材",
+     "src": "https://wantrich.chinatimes.com/news/20260415900381-420101"
+    },
+    {
+     "name": "Mitsubishi Electric",
+     "ticker": "6503.T",
+     "country": "JP",
+     "share": "日系開關",
+     "products": "GIS / 斷路器",
+     "note": "日系重電寡占"
+    },
+    {
+     "name": "LS Electric",
+     "ticker": "010120.KS",
+     "country": "KR",
+     "share": "韓系電力設備整合",
+     "products": "開關 / 配電變壓器 / GIS",
+     "note": "2026-04 簽北美大廠超大規模資料中心開關+配電變壓器約 3,000 億韓元統包單、躋身韓電力設備三雄之一",
+     "src": "https://www.ajupress.com/view/20260427181670459"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "tap_bushing"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "utility"
+    },
+    {
+     "id": "datacenter"
+    }
+   ],
+   "sources": [
+    {
+     "label": "開關設備市場 (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/ResearchInsight/switchgear-market.asp"
+    }
+   ]
+  },
+  {
+   "id": "hvdc",
+   "row": "equipment",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "HVDC 換流站 / 特高壓輸電",
+   "nameEn": "HVDC & UHV Transmission",
+   "competition": "oligopoly",
+   "single": "Hitachi Energy + Siemens Energy 西方雙寡占；中國國網系特高壓自成陣營",
+   "desc": "長距離大功率輸電的核心——高壓直流（HVDC）換流站、特高壓（UHV）輸電，低損耗、用於離岸風電併網與跨區送電。",
+   "marketSize": "亞太 $89億(2030)",
+   "growth": "印度+200%訂單",
+   "share": "null",
+   "analysis": "全球 HVDC 市場 2026 約 240 億美元、估 2036 達 676 億美元（CAGR 10.9%）；亞太 2030 估 89.3 億美元。供應高度集中：Hitachi Energy、Siemens Energy、GE Vernova、Mitsubishi Electric、TBEA 五大供應商合計約佔全球營收 60%。西方雙寡占：Hitachi Energy（FY2025 兩大 HVDC 案使印度訂單簿年增 >200%、德國 Amprion >€20 億四座換流站、中國甘肅-浙江 ±800kV）、Siemens Energy（ENR.DE，Grid Technologies FY26Q2 訂單可比 +41.5% 近 €70 億、book-to-bill 1.72、上調 Grid 全年營收成長至 25-27%）。GE Vernova（GEV）亦具 HVDC 能力。中國陣營：State Grid/國網、南瑞、許繼、TBEA（特高壓 ±800/1100kV，全球最多特高壓里程、規劃逾 $2,000 億輸電投資）。HVDC 是西方寡占壁壘最高、訂單能見度最長的環節，AI 電力與離岸風電需求進一步強化龍頭寡占。",
+   "companies": [
+    {
+     "name": "Hitachi Energy",
+     "ticker": "6501.T",
+     "country": "JP",
+     "share": "HVDC 全球第一",
+     "products": "HVDC 換流站 / Lightweight HVDC",
+     "note": "FY2025 印度訂單簿年增 >200%；Amprion >€20 億；甘肅-浙江 ±800kV",
+     "src": "https://www.hitachienergy.com/us/en/news-and-events/press-releases/2025/11/hitachi-energy-india-limited-announces-q2fy26-results-strong-orderbook-resilient-margins-and-strategic-execution-driving-sustained-growth"
+    },
+    {
+     "name": "Siemens Energy",
+     "ticker": "ENR.DE",
+     "country": "DE",
+     "share": "HVDC 西方雙雄",
+     "products": "HVDC / 電網技術 / 換流站 / 數位電網",
+     "note": "全集團在手破 €1,540 億新高；Grid Technologies FY26Q2 訂單近 €70 億、book-to-bill 1.72；密西西比 $3 億高壓設備新廠；2026-H1 收購北愛 Camlin Group（電網監測/分析/數位化，約 650 員工、年營收逾 £9,000 萬，2026 年底完成）補強感測監測與軟體電網智慧",
+     "src": "https://www.siemens-energy.com/global/en/home/press-releases/Siemens_Energy_expands_capabilities_with_Camlin_Group_acquisition.html"
+    },
+    {
+     "name": "GE Vernova",
+     "ticker": "GEV",
+     "country": "US",
+     "share": "HVDC / 電網",
+     "products": "HVDC / 電網設備",
+     "note": "Electrification 區段含 HVDC",
+     "src": "https://www.gevernova.com/investors/annual-report/ceo-letter"
+    },
+    {
+     "name": "State Grid / 南瑞 (NARI)",
+     "ticker": "600406.SS",
+     "country": "CN",
+     "share": "特高壓全球第一里程",
+     "products": "±800/1100kV UHV / HVDC",
+     "note": "中國國網系；規劃逾 $2,000 億輸電投資"
+    },
+    {
+     "name": "許繼電氣",
+     "ticker": "000400.SZ",
+     "country": "CN",
+     "share": "中國 HVDC 設備",
+     "products": "換流閥 / 直流控制保護",
+     "note": "中國特高壓供應鏈"
+    },
+    {
+     "name": "Mitsubishi Electric",
+     "ticker": "6503.T",
+     "country": "JP",
+     "share": "HVDC 五大之一",
+     "products": "HVDC 換流站 / 功率元件",
+     "note": "與 Hitachi Energy/Siemens Energy/GE Vernova/TBEA 合計約佔全球 HVDC 營收 60%",
+     "src": "https://www.openpr.com/news/4445852/global-hvdc-transmission-system-market-to-reach-usd-67-6-billion"
+    },
+    {
+     "name": "TBEA / 特變電工",
+     "ticker": "600089.SS",
+     "country": "CN",
+     "share": "HVDC 五大之一",
+     "products": "特高壓 / HVDC 設備 / 變壓器",
+     "note": "中國特高壓龍頭、列全球 HVDC 五大供應商之一",
+     "src": "https://www.openpr.com/news/4445852/global-hvdc-transmission-system-market-to-reach-usd-67-6-billion"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "tap_bushing"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "utility"
+    }
+   ],
+   "sources": [
+    {
+     "label": "亞太 HVDC 市場 (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/ResearchInsight/asia-pacific-hvdc-transmission-companies.asp"
+    }
+   ]
+  },
+  {
+   "id": "utility",
+   "row": "demand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "電力公司 / 輸電業者",
+   "nameEn": "Utilities & Grid Operators",
+   "competition": "oligopoly",
+   "single": "美國 2025 電網投資 ~$1,150 億佔全球 1/4；台電 10 年強韌電網計畫 5,645 億元",
+   "desc": "T&D 設備的買方——電力公司、輸電系統運營商（TSO/ISO），因 AI 用電與電網現代化大舉投資。",
+   "marketSize": "$4,700億+ 電網投資",
+   "growth": "輸電 CAGR ~16%",
+   "share": "null",
+   "analysis": "全球電網投資 2025 首破 4,700 億美元（BNEF），美國約 1,150 億佔全球四分之一（IEA），輸電 CAGR ~16% 約為配電兩倍。美國 IOU/TSO（NextEra NEE、Southern SO、Duke DUK、American Electric Power AEP、PJM/ERCOT 等）、德國 Amprion/TenneT、台電（10 年 5,645 億元強韌電網計畫、500 億設備標）、印度 State Grid。電力公司是整個 T&D 超級循環的需求錨點，AI 資料中心併網需求 + 老舊電網汰換 + 再生能源併網三重驅動。",
+   "companies": [
+    {
+     "name": "NextEra / Southern",
+     "ticker": "NEE / SO",
+     "country": "US",
+     "share": "美大型公用事業",
+     "products": "輸配電 / 發電 / 再生",
+     "note": "電網升級 CapEx 大戶"
+    },
+    {
+     "name": "American Electric Power",
+     "ticker": "AEP",
+     "country": "US",
+     "share": "美最大輸電網之一",
+     "products": "輸電網 / 配電",
+     "note": "資料中心併網需求激增"
+    },
+    {
+     "name": "台電",
+     "ticker": "—",
+     "country": "TW",
+     "share": "台灣電網業主",
+     "products": "輸配電 / 電網強韌計畫",
+     "note": "10 年 5,645 億元強韌電網；GIS/變壓器設備標",
+     "src": "https://wantrich.chinatimes.com/news/20260221900001-420101"
+    },
+    {
+     "name": "Amprion / TenneT",
+     "ticker": "—",
+     "country": "DE",
+     "share": "歐洲 TSO",
+     "products": "輸電網 / HVDC 併網",
+     "note": "離岸風電併網 + HVDC 走廊"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "transformer"
+    },
+    {
+     "id": "switchgear"
+    },
+    {
+     "id": "hvdc"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "datacenter"
+    }
+   ],
+   "sources": [
+    {
+     "label": "全球電網投資破 $4,700 億 (BNEF)",
+     "url": "https://about.bnef.com/insights/clean-energy/global-grid-investment-could-top-470-billion-for-the-first-time-in-2025-bloombergnef/"
+    },
+    {
+     "label": "IEA 電網投資",
+     "url": "https://www.iea.org/reports/grid-investments"
+    }
+   ]
+  },
+  {
+   "id": "datacenter",
+   "row": "demand",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI 資料中心 / Hyperscaler",
+   "nameEn": "AI Datacenters & Hyperscalers",
+   "competition": "emerging",
+   "single": "半數美國資料中心因電力硬體延後；Stargate 等直接搶綁變壓器/開關產能",
+   "desc": "T&D 設備需求最大的新增來源——AI 資料中心因用電爆量，直接搶綁變壓器、開關設備與併網產能。",
+   "marketSize": "需求錨點",
+   "growth": "結構性催化",
+   "share": "null",
+   "analysis": "2026 美國規劃 12-16 GW 資料中心容量僅約三分之一實際動工，其餘卡在電氣設備交期（3-5 年）、逾半恐延後或取消，需求話語權與議價力向 hyperscaler 移轉。Hyperscaler（Microsoft、Amazon、Google、Meta、Oracle）與 Stargate（OpenAI/Oracle/軟銀）2026 合計 AI CapEx 逾 6,500 億美元，直接向 GE Vernova、Eaton、華城等下變壓器/開關大單（GE Vernova Q4 2025 創 Electrification 史上最大 hyperscaler 訂單季；華城拿德州 Stargate 首單）。政策催化：2026/3 美國白宮促成 7 家 AI 大廠簽署承諾，自建/採購/出資新增足以覆蓋其用電的發電容量並支付電網升級費用，把成本內部化。資料中心從「找晶片」轉為「找電 + 找輸配電硬體」，是整個 T&D 板塊的需求催化引擎。",
+   "companies": [
+    {
+     "name": "Microsoft / Amazon",
+     "ticker": "MSFT / AMZN",
+     "country": "US",
+     "share": "AI CapEx 領先",
+     "products": "AI 資料中心 / 自建電力",
+     "note": "直接綁變壓器/開關產能",
+     "src": "https://finance.yahoo.com/sectors/technology/articles/half-planned-us-data-center-150928890.html"
+    },
+    {
+     "name": "Google / Meta",
+     "ticker": "GOOGL / META",
+     "country": "US",
+     "share": "超大規模資料中心",
+     "products": "AI 資料中心",
+     "note": "併網與 T&D 設備需求"
+    },
+    {
+     "name": "Stargate (OpenAI/Oracle)",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "AI 基建巨案",
+     "products": "德州 Stargate 等",
+     "note": "華城拿德州 Stargate 變壓器首單 20 億元",
+     "src": "https://uanalyze.com.tw/articles/5724726208"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "transformer"
+    },
+    {
+     "id": "switchgear"
+    },
+    {
+     "id": "utility"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "半數美國資料中心延後 (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/sectors/technology/articles/half-planned-us-data-center-150928890.html"
+    },
+    {
+     "label": "白宮 hyperscaler 承諾出資電網升級 (POWER Magazine)",
+     "url": "https://www.powermag.com/hyperscalers-sign-white-house-pledge-to-fund-data-center-power-grid-upgrades/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "goes_steel",
+   "transformer"
+  ],
+  [
+   "tap_bushing",
+   "transformer"
+  ],
+  [
+   "tap_bushing",
+   "switchgear"
+  ],
+  [
+   "tap_bushing",
+   "hvdc"
+  ],
+  [
+   "transformer",
+   "utility"
+  ],
+  [
+   "transformer",
+   "datacenter"
+  ],
+  [
+   "switchgear",
+   "utility"
+  ],
+  [
+   "switchgear",
+   "datacenter"
+  ],
+  [
+   "hvdc",
+   "utility"
+  ],
+  [
+   "utility",
+   "datacenter"
+  ]
+ ],
+ "_proposed": {}
+}

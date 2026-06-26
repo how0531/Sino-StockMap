@@ -1,0 +1,1194 @@
+{
+ "id": "edge_ai",
+ "tab": "Edge AI",
+ "title": "Edge AI / 終端 AI（AI PC、AI 手機、Terminal SoC）",
+ "subtitle": "On-device AI 推論 — Microsoft Copilot+ PC（≥40 TOPS NPU）、Apple Intelligence（iPhone 15 Pro+/M1+ Mac）、Android AICore + Gemini Nano 推動 NPU 進入主流。SoC 寡占四強（Apple/Qualcomm/Intel/AMD on PC；Apple/Qualcomm/MediaTek 三強手機）；NPU IP Arm Ethos 領先；on-device LLM Apple/MS/Google 三強 + 開源 Llama/Qwen 緊追；LPDDR5X 受惠（Samsung/SK Hynix/Micron 三強）。AI PC 滲透率 2025 ~31-39%（Gartner 2025/8：31% by YE25；Counterpoint 39% H2 ramp）→ 2026 ~55-59%（Gartner 55%；Counterpoint AI Advanced PC 59%）；Windows 10 EOS 2025/10/14 加速換機潮。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 14
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "55+"
+  },
+  {
+   "k": "壟斷／鎖喉單點",
+   "v": 5,
+   "sub": "Arm CPU IP·Apple Silicon·QC×MS Copilot+·LPDDR5X 三強·TSMC",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "ip",
+   "label": "IP · NPU · 模型 IP / NPU / Model",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "SoC → OS/裝置 → 應用 SoC · Device · App",
+   "main": true
+  },
+  {
+   "id": "oem",
+   "label": "ODM / 品牌 / 通路 OEM · Brand · Channel",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ip-cpu",
+   "row": "ip",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "CPU IP（Arm／RISC-V）",
+   "nameEn": "CPU IP (Arm / RISC-V)",
+   "competition": "monopoly",
+   "single": "壟斷 · Arm 行動 CPU IP ~95%；CSS 子系統授權加速 AI SoC 上市",
+   "desc": "Arm 主導行動／PC 端 CPU IP（Cortex-X925/A725、CSS for Client）；RISC-V 在 Edge/IoT 端崛起。Qualcomm X Elite 改用自研 Oryon（含 Nuvia 授權）。",
+   "marketSize": "壟斷單點",
+   "growth": "Armv9 普及",
+   "share": "null",
+   "analysis": "Arm Holdings 行動 CPU IP 近壟斷（~95%），授權給 Apple/Qualcomm/MediaTek/Samsung 等；2025 推 CSS for Client（IP 子系統授權）加速 AI SoC 上市；Qualcomm X Elite 用自研 Oryon 核心（Nuvia 收購衍生，與 Arm 訴訟和解 2024-12）。RISC-V 由 SiFive、晶心 Andes 在 Edge NPU/IoT 切入但短期難撼動 Arm。",
+   "companies": [
+    {
+     "name": "Arm Holdings",
+     "ticker": "ARM",
+     "country": "UK",
+     "share": "行動 CPU ~99%（Arm 自陳）",
+     "products": "Cortex-X925/A725 / CSS for Client / Mali GPU",
+     "note": "壟斷單點、SoftBank 控股；每顆智慧手機/AI 手機 SoC 皆抽授權金，Armv9 royalty 率隨架構升級走高",
+     "src": "https://quartr.com/insights/company-research/arm-s-smartphone-monopoly-setting-the-stage-for-its-ipo"
+    },
+    {
+     "name": "Qualcomm Oryon",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "X Elite 自研",
+     "products": "Oryon CPU(Nuvia 系)",
+     "note": "與 Arm 2024/12 和解",
+     "src": "https://www.qualcomm.com/news/releases/2024/12/qualcomm-and-arm-settle-litigation"
+    },
+    {
+     "name": "SiFive / 晶心 Andes",
+     "ticker": "— / 6533.TWO",
+     "country": "US",
+     "share": "RISC-V Edge",
+     "products": "Performance/Intelligence + Andes Core",
+     "note": "Edge/IoT 切入",
+     "src": "https://www.andestech.com/en/news/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-soc-pc"
+    },
+    {
+     "id": "f-soc-phone"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Arm CSS for Client(Arm)",
+     "url": "https://newsroom.arm.com/news/arm-cortex-x925-a725"
+    }
+   ]
+  },
+  {
+   "id": "ip-npu",
+   "row": "ip",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "NPU / AI 加速 IP",
+   "nameEn": "NPU / AI Accel IP",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "NPU 是 AI PC（≥40 TOPS）與旗艦手機的差異化關鍵。IP 寡占：Arm Ethos、Cadence Tensilica、CEVA、Synopsys、Imagination。",
+   "marketSize": "null",
+   "growth": "TOPS 競賽",
+   "share": "null",
+   "analysis": "Arm Ethos-U/N 為授權 IP 領先（多家 SoC 內建）；Cadence Tensilica（HiFi DSP/Vision/AI）覆蓋音／影像；CEVA NeuPro-M 在物聯網／音訊；Synopsys ARC NPX/EV 攻汽車與行動。Apple/Qualcomm/MediaTek/Samsung 多採自研 NPU（不公開 IP），但 mid-tier 與 IoT/車用大量採授權 IP。",
+   "companies": [
+    {
+     "name": "Arm Ethos",
+     "ticker": "ARM",
+     "country": "UK",
+     "share": "NPU IP 領先",
+     "products": "Ethos-U85/N78",
+     "note": "多家 SoC 內建"
+    },
+    {
+     "name": "Cadence Tensilica",
+     "ticker": "CDNS",
+     "country": "US",
+     "share": "DSP/Vision/AI IP",
+     "products": "HiFi DSP / Vision / Neo NPU",
+     "note": "音／影／AI 三線"
+    },
+    {
+     "name": "CEVA",
+     "ticker": "CEVA",
+     "country": "IL",
+     "share": "NeuPro-M",
+     "products": "NeuPro-M / SensPro",
+     "note": "音訊/IoT 強，總部以色列、NASDAQ 上市"
+    },
+    {
+     "name": "Synopsys",
+     "ticker": "SNPS",
+     "country": "US",
+     "share": "ARC NPX/EV",
+     "products": "ARC NPX 高 TOPS",
+     "note": "汽車/行動"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-soc-pc"
+    },
+    {
+     "id": "f-soc-phone"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Arm Ethos-U85(Arm)",
+     "url": "https://www.arm.com/products/silicon-ip-cpu/ethos"
+    }
+   ]
+  },
+  {
+   "id": "ip-llm",
+   "row": "ip",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "On-device LLM 模型",
+   "nameEn": "On-device LLM Models",
+   "competition": "oligopoly",
+   "single": "三強寡占 · Apple Intelligence / Microsoft Phi / Google Gemini Nano；開源 Llama/Qwen 蒸餾追趕",
+   "desc": "蒸餾／量化後可跑在 8-32GB RAM 終端的 LLM：通常 1B-8B 參數、4-bit/8-bit 量化、可獨立或雲端混合推論。",
+   "marketSize": "AI 終端核心",
+   "growth": "蒸餾競賽",
+   "share": "null",
+   "analysis": "Apple Intelligence（~3B on-device + 私有雲計算）整合至 OS；Microsoft Phi-4（3.8B）力推 PC；Google Gemini Nano（3.25B）整合 Android AICore；Meta Llama 3.2 3B/1B 與 Alibaba Qwen3-3B、DeepSeek R1 蒸餾版皆可 on-device 推論；Mistral 3B 為歐系替代。蒸餾／量化（4-bit GGUF/MLX）為核心技術。",
+   "companies": [
+    {
+     "name": "Apple Intelligence",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "iOS/macOS 內建",
+     "products": "~3B on-device + Private Cloud Compute",
+     "note": "iPhone 15 Pro/M1+ 可跑",
+     "src": "https://www.apple.com/apple-intelligence/"
+    },
+    {
+     "name": "Microsoft Phi",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "Copilot+ PC 載荷",
+     "products": "Phi-3.5 / Phi-4(3.8B)",
+     "note": "Copilot Runtime 整合",
+     "src": "https://azure.microsoft.com/en-us/blog/new-models-added-to-the-phi-3-family/"
+    },
+    {
+     "name": "Google Gemini Nano",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "Android 內建",
+     "products": "Gemini Nano 1/2/Pro v2",
+     "note": "AICore + Pixel/三星 S 系列",
+     "src": "https://blog.google/technology/ai/google-gemini-nano-android-13/"
+    },
+    {
+     "name": "Meta Llama 3.2 / Mistral",
+     "ticker": "META / —",
+     "country": "US",
+     "share": "開源領先",
+     "products": "Llama 3.2 1B/3B / Mistral 3B",
+     "note": "可蒸餾／量化跑 on-device",
+     "src": "https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/"
+    },
+    {
+     "name": "Alibaba Qwen / DeepSeek",
+     "ticker": "BABA / —",
+     "country": "CN",
+     "share": "中系開源",
+     "products": "Qwen3 / DeepSeek R1 蒸餾",
+     "note": "中國終端 LLM 主力"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-app"
+    },
+    {
+     "id": "f-os"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Apple Intelligence 官網",
+     "url": "https://www.apple.com/apple-intelligence/"
+    }
+   ]
+  },
+  {
+   "id": "ip-mem",
+   "row": "ip",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "LPDDR5X 記憶體",
+   "nameEn": "LPDDR5X DRAM",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "LPDDR5X（Apple Intelligence 需 8GB、Copilot+ 推薦 16GB+）；旗艦手機 12-16GB、AI PC 16-32GB。",
+   "marketSize": "null",
+   "growth": "AI 終端容量倍增",
+   "share": "null",
+   "analysis": "三強寡占（DRAM 整體，Q1 2026 Omdia 營收市占）：Samsung 38.6%（QoQ +2.1pt）、SK Hynix 28.8%、Micron 22.4%；三強合計 ~90%、TrendForce/Counterpoint 互相印證。DRAM 市場 Q1'26 營收 YoY +85%。⚑ 絃外之音：HBM 排擠效應使 wafer 流向高毛利 HBM，LPDDR5X 供給被動收緊——記憶體三強才是 AI 終端真正的定價權樞紐，連 Apple 都吞下 100% 漲價、無議價空間。AI 需求引發行動記憶體漲價：LPDDR5X Q1'26 合約價 QoQ +58-63%、Q2'26 確認 QoQ +78-83%（TrendForce 2026/5/14），Apple 已接受 Samsung LPDDR5X 100% 漲價。AI PC 平均容量 2025 16GB → 2026 24GB+；AI 手機旗艦 16GB；單機平均容量年成長 ~20%。LPDDR5X-9600 / LPDDR6 將於 2026-27 量產。",
+   "companies": [
+    {
+     "name": "Samsung 三星",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "DRAM 38.6%(Q1'26)",
+     "products": "LPDDR5X-9600 / LPDDR6",
+     "note": "全球 DRAM 龍頭、Q1'26 唯一市占提升者(+2.1pt)"
+    },
+    {
+     "name": "SK 海力士",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "DRAM 28.8%(Q1'26)",
+     "products": "LPDDR5X / HBM4",
+     "note": "HBM 領先溢出至 LPDDR；獲利率三強最高"
+    },
+    {
+     "name": "Micron 美光",
+     "ticker": "MU",
+     "country": "US",
+     "share": "DRAM ~22%",
+     "products": "LPDDR5X 1γ",
+     "note": "美系唯一",
+     "src": "https://investors.micron.com/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ip-cpu"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-soc-pc"
+    },
+    {
+     "id": "f-soc-phone"
+    }
+   ],
+   "sources": [
+    {
+     "label": "DRAM 三強市占(TrendForce)",
+     "url": "https://www.trendforce.com/news"
+    }
+   ]
+  },
+  {
+   "id": "ip-runtime",
+   "row": "ip",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "Runtime / 推論框架",
+   "nameEn": "Runtime / Inference Framework",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "ONNX Runtime、Apple CoreML/MLX、Android AICore + AI Edge、Microsoft DirectML/Olive、llama.cpp、MediaPipe。OS 廠商主導；llama.cpp 為跨平台社群。",
+   "marketSize": "null",
+   "growth": "OS 整合",
+   "share": "null",
+   "analysis": "OS 廠商主導端側 runtime：Apple CoreML/MLX（含 Apple Silicon 優化）、Microsoft DirectML/Olive（Copilot+ 認證）、Google AICore（Android）、Qualcomm AI Hub（提供量化模型 SDK）。跨平台：ONNX Runtime（Microsoft 主導），llama.cpp（社群、GGUF 量化）。",
+   "companies": [
+    {
+     "name": "ONNX Runtime / DirectML",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "跨平台主流",
+     "products": "ONNX Runtime / DirectML / Olive",
+     "note": "Copilot+ 認證"
+    },
+    {
+     "name": "Apple CoreML / MLX",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "Apple 平台",
+     "products": "CoreML / MLX 框架",
+     "note": "Apple Silicon 優化"
+    },
+    {
+     "name": "Google AICore / AI Edge",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "Android 平台",
+     "products": "AICore + AI Edge SDK",
+     "note": "Pixel/三星 Galaxy"
+    },
+    {
+     "name": "Qualcomm AI Hub",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "Snapdragon SDK",
+     "products": "AI Hub / QNN",
+     "note": "量化模型市集"
+    },
+    {
+     "name": "llama.cpp / MediaPipe",
+     "ticker": "— / GOOGL",
+     "country": "GLOBAL",
+     "share": "開源跨平台",
+     "products": "GGUF 量化推論 / 多模態",
+     "note": "社群推動"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-os"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Qualcomm AI Hub",
+     "url": "https://www.qualcomm.com/developer/artificial-intelligence"
+    }
+   ]
+  },
+  {
+   "id": "f-soc-pc",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI PC Terminal SoC",
+   "nameEn": "AI PC SoC (≥40 TOPS NPU)",
+   "competition": "oligopoly",
+   "single": "四強寡占 · Apple 垂直整合 ⚑；Qualcomm X Elite + MS Copilot+ Arm 領先；Intel/AMD x86 追趕",
+   "desc": "AI PC SoC 需 ≥40 TOPS NPU 以獲得 Microsoft Copilot+ PC 認證；Apple Silicon 走獨立路線。",
+   "marketSize": "四強寡占",
+   "growth": "AI PC 元年",
+   "share": "null",
+   "analysis": "四強寡占：Apple Silicon M4/M5（垂直整合於 Mac，自研 NPU 38-45 TOPS）；Qualcomm Snapdragon X Elite/X2（45+ TOPS Hexagon NPU、Arm 架構、Copilot+ PC 首發夥伴，2024-06 上市 X Elite、2025 X2 跟進）；Intel Lunar Lake（48 TOPS NPU3、2024-09 上市）→ Panther Lake（2026 上市，NPU 升級至 ~50 TOPS）；AMD Ryzen AI 300 / Strix Point / Strix Halo（50 TOPS XDNA2、2024-07 上市）。NVIDIA Project DIGITS（GB10 桌面 AI 工作站 128GB，2025 H2 上市）；NVIDIA×MediaTek N1X（20 核 Arm Cortex-X925/A725 + Blackwell 6,144 CUDA cores；曾因矽片缺陷重新設計＋Microsoft Windows on Arm OS 延宕多次跳票，Jensen Huang 已於 Computex 2026/6/1 正式揭示 N1X+N1（亦稱 RTX Spark）：TSMC N3 2.5D 封裝雙 chiplet——MediaTek 設計 20 核 Armv9.2 CPU（10P+10E、32MB L3）＋NVIDIA Blackwell GPU 6,144 CUDA（≈RTX 5070 規格）；Dell/Lenovo/Asus/MSI/HP 首批 Windows on Arm 機種預估 2026 假期季前出貨、2027 初放量；筆電起售約 $1,500-2,000）。Apple 不參與 Copilot+ 生態但 Mac 仍是 AI PC 之一。",
+   "companies": [
+    {
+     "name": "Apple Silicon (M4/M5)",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "Mac 垂直整合",
+     "products": "M5/M5 Pro/M5 Max（Neural Engine 38 TOPS；M5 Max Geekbench 多核 29,233 超越 M3 Ultra；GPU 40 核 Metal ~195K，+34% vs M4 Max；M5 Pro 307GB/s / M5 Max 614GB/s；MacBook Pro M5 Pro/Max 2026/3/11 上市）",
+     "note": "獨立生態、Apple Intelligence",
+     "src": "https://www.apple.com/newsroom/2024/10/new-macbook-pro-features-m4-family-of-chips/"
+    },
+    {
+     "name": "Qualcomm Snapdragon X",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "Copilot+ Arm 首發",
+     "products": "X2 Elite / X2 Elite Extreme（NPU 80 TOPS 標準 / HP OmniBook Ultra 14 限定 85 TOPS，3rd Gen Oryon 18C 5.0GHz，TSMC N3，2026/4/7 解禁上市）；設計勝率 >150 OEM 含 HP OmniBook Ultra 14、Asus ZenBook A16（48GB/$1,699）、Lenovo Yoga Slim 7x Gen 11、Samsung Galaxy Book 5 Pro 360、Dell（開發中）；2026/6/2 Computex 推 ASUS Ascent QN10——首款 X2 Elite mini PC（0.7L、80 TOPS、4×4K 輸出、Wi-Fi 7、最高 32GB），Arm SoC 首度進軍桌面對撞 Mac mini／AMD Ryzen AI MAX+；另推 X2 Plus 下放至 ~$800 筆電；Arm PC 2026 市占估 ~30%（Canalys）",
+     "src": "https://www.qualcomm.com/news/releases/2025/09/snapdragon-x2-elite-extreme"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "x86 第一",
+     "products": "Lunar Lake(48 TOPS NPU3) / Panther Lake Core Ultra 300（NPU5 50 TOPS，18A 自製於 Arizona Chandler Fab 52，CES 2026/1 廣泛上市；H-series 28W Q2-Q3 陸續量產；總 AI 算力 180 TOPS（120 GPU+50 NPU）；Intel 宣稱 NPU LLM 推論較 AMD XDNA2 快 4.3×、>200 款設計）",
+     "note": "Copilot+ x86 主力；惟 Intel 自承 18A 良率要 2027 初才達世界級、量產爬坡受限，AI PC NPU 性能已落後 Qualcomm 旗艦（X2 Elite Extreme），恐持續流失高階份額給 Arm 陣營",
+     "src": "https://newsroom.intel.com/client-computing/intel-unveils-panther-lake-architecture-first-ai-pc-platform-built-on-18a"
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "x86 第二",
+     "products": "Ryzen AI 300 / Strix Halo(50 TOPS XDNA2) / Ryzen AI Max+ PRO 400「Gorgon Halo」(55 TOPS，16C/32T 5.2GHz，192GB 統一記憶，支援 300B+ 參數 LLM；ASUS/HP/Lenovo Q3 2026 量產)",
+     "note": "Copilot+ + 高效 GPU",
+     "src": "https://www.amd.com/en/products/processors/laptop/ryzen-ai-300-series.html"
+    },
+    {
+     "name": "NVIDIA Project DIGITS",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "新進(桌面 AI)",
+     "products": "GB10 桌面 AI 工作站(128GB)",
+     "note": "2025 上市",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-puts-grace-blackwell-on-every-desk-and-at-every-ai-developers-fingertips"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ip-cpu"
+    },
+    {
+     "id": "ip-npu"
+    },
+    {
+     "id": "ip-mem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-pc-device"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AI PC SoC NPU TOPS (Microsoft Copilot+)",
+     "url": "https://www.microsoft.com/en-us/windows/copilot-plus-pcs"
+    }
+   ]
+  },
+  {
+   "id": "f-soc-phone",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI 手機 Terminal SoC",
+   "nameEn": "AI Smartphone SoC",
+   "competition": "oligopoly",
+   "single": "三強寡占 · Apple/Qualcomm/MediaTek 合計 ~90%；Apple A18+ 與 Snapdragon 8 Elite 為 GenAI 手機指標",
+   "desc": "AI 手機 SoC 需大型 NPU + 12-16GB LPDDR5X 內建以跑 Gemini Nano / Apple Intelligence。",
+   "marketSize": "三強寡占",
+   "growth": "GenAI 手機 >40%",
+   "share": "null",
+   "analysis": "智慧手機 AP-SoC 市占（Counterpoint Q1'26 出貨：MediaTek 32% / Qualcomm 23% / Apple 19% / UNISOC 14% / Samsung 7%；MTK 自 Q1'25 的 38% 年減 6pt、QC 自 27% 年減 4pt，皆因中低階崩跌；Apple 受 iPhone 17 帶動由 15% 升至 19%）：Apple A18/A19（iPhone 16/17 系列，自研 Neural Engine，垂直整合 Apple Intelligence）；Qualcomm Snapdragon 8 Elite/Gen 4（45 TOPS NPU、Oryon CPU，Android 旗艦主力，2024-10 上市 8 Elite）；MediaTek Dimensity 9400+/9500（50 TOPS NPU，2024-10 9400 上市，2025 9400+/9500 跟進）。⚑ 2026/4/27 重大上下游重組：OpenAI 選定 Qualcomm 為其首款『AI-native 手機』主晶片供應商、MediaTek 共同開發 SoC、中國立訊精密（Luxshare）組裝，目標 2028 量產、規格與供應商 2026 底~2027Q1 定案——SoC 競局首次由 AI 模型商主導並繞過傳統 OEM 直接下單給 QC/MTK（消息出 QC 盤前一度漲 ~13%），對 Apple 自有矽與封閉生態構成正面威脅。⚑ 絃外之音：MediaTek 量大（中低階）但旗艦 GenAI/高 ASP 定價權仍由 Apple+Qualcomm 把持；三家 SoC 100% 押注 TSMC ≤3nm，真正單點在代工而非 SoC 設計。中低階：Samsung Exynos 2500/2600（自研，Galaxy S25/S26 部分機型）、Google Tensor G5（Pixel 10）/ Tensor G6（TSMC 2nm；1+4+2 C1 核；PowerVR CXTP-48-1536 GPU；MediaTek M90 數據機，棄 Samsung Exynos 數據機；Pixel 11 2026/8 預定發表）（Pixel 9/10，Samsung 代工）、UNISOC T820（中國低階）、Huawei Kirin 9100/X90（中國旗艦，SMIC 7nm）。",
+   "companies": [
+    {
+     "name": "Apple A18/A19",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "手機 SoC ~19%（Q1'26 出貨）",
+     "products": "A18 Pro / A19 + Neural Engine",
+     "note": "Apple Intelligence；垂直整合但前沿端側模型 2026 改靠 Google Gemini 雲端",
+     "src": "https://www.apple.com/newsroom/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/"
+    },
+    {
+     "name": "Qualcomm Snapdragon 8",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "Android 旗艦",
+     "products": "Snapdragon 8 Elite Gen 5 (65 TOPS Hexagon +39% NPU YoY；+19% CPU / +24% GPU；Galaxy S26 Ultra 全球版 2026/2 上市；220 tokens/s on-device LLM，INT2/FP8 支援)",
+     "note": "三星/小米/OPPO 旗艦",
+     "src": "https://www.qualcomm.com/news/releases/2024/10/snapdragon-8-elite-launch"
+    },
+    {
+     "name": "MediaTek Dimensity",
+     "ticker": "2454.TW",
+     "country": "TW",
+     "share": "Android 旗艦/中階",
+     "products": "Dimensity 9500（2025/9 量產，TSMC 3nm N3P，NPU 990 ~100 TOPS；vivo/OPPO/Xiaomi 旗艦出貨 2025 Q4）；Dimensity 9500s（2026/1/15 發表，TSMC 3nm，零 Efficiency 核，19MB CPU Cache，LPDDR5X 9600MT/s；中高階旗艦 2026 H1）",
+     "note": "vivo/OPPO/Xiaomi 旗艦；BitNet 1.58-bit 原生",
+     "src": "https://corp.mediatek.com/news-events/press-releases/mediatek-launches-dimensity-9500"
+    },
+    {
+     "name": "Samsung Exynos",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "Galaxy 部分",
+     "products": "Exynos 2600（SF2 2nm；良率 2025/11 達 ~60% Digitimes；Galaxy S26/S26+ 全球大部分市場；S26 Ultra 全球 Snapdragon 8EG5）；Exynos 2600 覆蓋 Galaxy S26 系列約 25% 產量；SF2P 精進版目標 Exynos 2700 + Tesla AI6",
+     "note": "三星自用、SF2P/SF3 製程",
+     "src": "https://semiconductor.samsung.com/processor/"
+    },
+    {
+     "name": "Google Tensor",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "Pixel 專屬",
+     "products": "Tensor G5（Pixel 10）/ Tensor G6（TSMC 2nm；1+4+2 C1 核；PowerVR CXTP-48-1536 GPU；MediaTek M90 數據機，棄 Samsung Exynos 數據機；Pixel 11 2026/8 預定發表）",
+     "note": "Samsung 代工",
+     "src": "https://store.google.com/category/phones"
+    },
+    {
+     "name": "Huawei Kirin / UNISOC",
+     "ticker": "— / —",
+     "country": "CN",
+     "share": "中國替代",
+     "products": "Kirin 9020（Mate 80 標準/Pura 90 標準）/ Kirin 9030（Mate 80 Pro/Pura 90 Pro；SMIC N+3 multi-patterning；Maleoon 935 GPU；+35% 整機性能 vs Mate 70）/ Kirin 9030 Pro（Mate 80 Pro Max、RS；Mate 80 Pro 宣稱 +42% vs Mate 70 Pro+）/ UNISOC T820",
+     "note": "SMIC 代工",
+     "src": "https://consumer.huawei.com/"
+    },
+    {
+     "name": "OpenAI（AI-native 手機 SoC）",
+     "ticker": "—",
+     "country": "US",
+     "share": "新進·模型商主導",
+     "products": "與 Qualcomm 主晶片 + MediaTek 共同開發 SoC、Luxshare 立訊精密組裝，目標 2028 量產",
+     "note": "2026/4/27 確認，繞過傳統 OEM 由模型商直接吃 QC/MTK 訂單；規格供應商 2026 底~2027Q1 定案，威脅 Apple 封閉生態",
+     "src": "https://www.cnbc.com/2026/04/27/qualcomm-qcom-openai-smartphone-chip-partnership-stock.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ip-cpu"
+    },
+    {
+     "id": "ip-npu"
+    },
+    {
+     "id": "ip-mem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-phone-device"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Snapdragon 8 Elite(Qualcomm)",
+     "url": "https://www.qualcomm.com/news/releases/2024/10/snapdragon-8-elite-launch"
+    }
+   ]
+  },
+  {
+   "id": "f-os",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "OS / AI 平台層",
+   "nameEn": "OS / AI Platform Layer",
+   "competition": "oligopoly",
+   "single": "三強寡占 · Microsoft Copilot+ / Apple Intelligence / Android AICore",
+   "desc": "OS 廠商定義 AI 體驗與硬體門檻。Copilot+ PC ≥40 TOPS NPU；Apple Intelligence 需 8GB+；Android AICore 走 Pixel/三星首發。",
+   "marketSize": "null",
+   "growth": "OS 廠商主導",
+   "share": "null",
+   "analysis": "Microsoft Copilot+ PC（2024-05 公布，≥40 TOPS NPU 為認證底線；Recall/Live Captions/Image Creator/Cocreator 體驗，2024 H2 Snapdragon X 首發、2025 Intel/AMD 加入）；Apple Intelligence（2024-10 iOS 18.1/macOS 15.1 起，需 iPhone 15 Pro/A17 Pro+ 或 M1+；WWDC 2026/6/8 發表 iOS 27/macOS 27 與重建版「Siri AI」——採 Google Gemini 客製 1.2T 參數模型於 Apple Private Cloud Compute 運行、授權約 $10 億/年，on-device 自研模型 + 私有雲 Gemini 混合架構）⚑ 絃外之音：Apple 把 Siri 前沿後端外包 Google Gemini（1.2T 參數、~8× 於 Apple 雲端舊模型），等於承認端側自研模型在前沿能力上落後；端側 AI 的價值正從「裝置本機推論」回流到「雲端基礎模型寡頭（OpenAI/Google/Anthropic）」，OS 廠的端側護城河被相對削弱、Google 成隱性二階受惠者（同時供 Android Gemini Nano 與 Apple Siri 後端）；Android AICore + Gemini Nano（Android 14+，Pixel 8 Pro / Galaxy S24 起原生）。三家平台 + Qualcomm AI Hub（跨平台 SDK）。",
+   "companies": [
+    {
+     "name": "Microsoft Copilot+",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "PC AI 認證",
+     "products": "Copilot+ PC 認證 / Recall / Cocreator",
+     "note": "≥40 TOPS NPU 認證",
+     "src": "https://www.microsoft.com/en-us/windows/copilot-plus-pcs"
+    },
+    {
+     "name": "Apple Intelligence",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "iOS/macOS 垂直",
+     "products": "Writing Tools / Image Playground / Genmoji",
+     "note": "iPhone 15 Pro+/M1+",
+     "src": "https://www.apple.com/apple-intelligence/"
+    },
+    {
+     "name": "Android AICore",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "Android 平台",
+     "products": "AICore + Gemini Nano integration",
+     "note": "Pixel/三星首發",
+     "src": "https://developer.android.com/ai/aicore"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ip-runtime"
+    },
+    {
+     "id": "ip-llm"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-pc-device"
+    },
+    {
+     "id": "f-phone-device"
+    },
+    {
+     "id": "f-app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Microsoft Copilot+ PC",
+     "url": "https://www.microsoft.com/en-us/windows/copilot-plus-pcs"
+    }
+   ]
+  },
+  {
+   "id": "f-pc-device",
+   "row": "flow",
+   "col": 7,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI PC 終端裝置",
+   "nameEn": "AI PC Devices",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "搭載 ≥40 TOPS NPU 的 Copilot+ PC 與 Apple Mac（M 系列），含筆電與桌機 mini PC。",
+   "marketSize": "百億美元級",
+   "growth": "滲透率 2025~39%→2026~59%",
+   "share": "null",
+   "analysis": "AI PC 出貨：Counterpoint 估 AI Advanced PC 2026 出貨 YoY +52%、佔全球 PC ~59%（2025 ~39%）；Gartner 估 2026 AI PC 1.43 億台、佔 55%；Q1 2026 全球 PC 出貨 YoY +3.2%（記憶體漲價前提前拉貨）。⚑ 2026/2 重大口徑翻轉：Gartner 改估 2026 全球 PC 出貨因記憶體成本飆漲反而 YoY -10.4%——AI PC『滲透率衝高（佔比達 55%）但總量收縮』的矛盾成形，DRAM 三強漲價（PC DRAM Q2'26 大漲且 Q3-Q4 續揚）侵蝕 ODM/品牌出貨量與終端換機動能，Windows 10 EOS 換機潮被記憶體通膨部分抵銷。品牌：Lenovo 全球第一（~24%）、HP（~21%）、Dell（~16%）、Apple（~9%）、Asus/Acer。AI PC ASP 較傳統 PC 高約 ~10-20%（NPU SoC 與 16/32GB RAM 加價）。Microsoft Surface Copilot+ 系列為 reference 設計。Apple Mac 走 Apple Silicon 獨立路線。台廠 Asus/Acer/MSI 在電競 AI 筆電強勢。",
+   "companies": [
+    {
+     "name": "Lenovo 聯想",
+     "ticker": "0992.HK",
+     "country": "HK",
+     "share": "全球第一 ~24%",
+     "products": "Yoga / ThinkPad / Legion AI PC",
+     "note": "Copilot+ 主力"
+    },
+    {
+     "name": "HP",
+     "ticker": "HPQ",
+     "country": "US",
+     "share": "全球第二 ~21%",
+     "products": "OmniBook / EliteBook AI",
+     "note": "Copilot+ 重點"
+    },
+    {
+     "name": "Dell",
+     "ticker": "DELL",
+     "country": "US",
+     "share": "全球第三 ~16%",
+     "products": "XPS / Inspiron / Latitude AI",
+     "note": "Copilot+ + 商用"
+    },
+    {
+     "name": "Apple",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "Mac 約 9%",
+     "products": "MacBook Air/Pro M4 / iMac M4 / Mac mini",
+     "note": "Apple Silicon 垂直",
+     "src": "https://www.apple.com/macbook-pro/"
+    },
+    {
+     "name": "Microsoft Surface",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "Copilot+ 旗艦",
+     "products": "Surface Laptop / Pro Copilot+",
+     "note": "Reference 設計"
+    },
+    {
+     "name": "Asus / Acer / MSI",
+     "ticker": "2357.TW / 2353.TW / 2377.TW",
+     "country": "TW",
+     "share": "電競 AI 筆電強",
+     "products": "ROG / Predator / Stealth AI PC",
+     "note": "電競+AI",
+     "src": "https://www.asus.com/"
+    },
+    {
+     "name": "Huawei / 小米",
+     "ticker": "— / 1810.HK",
+     "country": "CN",
+     "share": "中國市場",
+     "products": "MateBook / RedmiBook AI",
+     "note": "中國本土 AI PC"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-soc-pc"
+    },
+    {
+     "id": "f-os"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AI PC 2026 出貨 Counterpoint",
+     "url": "https://www.counterpointresearch.com/insights/global-pc-shipments-2025"
+    }
+   ]
+  },
+  {
+   "id": "f-phone-device",
+   "row": "flow",
+   "col": 9,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI 智慧手機",
+   "nameEn": "AI Smartphone",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "GenAI smartphone（內建 LLM 推論能力）。Counterpoint 估 2025 ~25% → 2026 >40% 滲透。",
+   "marketSize": "千億美元",
+   "growth": "GenAI 手機 >40%",
+   "share": "null",
+   "analysis": "前 5 大手機品牌：Samsung（~18%）、Apple（~17%）、Xiaomi（~13%）、OPPO/Vivo（~9%/8%）、Transsion（~10%）、Honor、Lenovo/Motorola、Google Pixel。Apple iPhone 16/17 Pro 全系列支援 Apple Intelligence；Samsung Galaxy S25/S26 強推 Galaxy AI（Gemini 整合）；Xiaomi 15 Ultra / Honor Magic 7 / OPPO Find X8 / Vivo X200 Pro 走 MediaTek Dimensity 9400 GenAI。中國品牌 AI 廣告吸眼但實際 on-device 比重不一。⚑ 2026 記憶體排擠重大利空：DRAM ~70% 產能流向 AI 資料中心，IDC 估 2026 全球手機出貨年減 ~13%（約少 1.6 億支、降至 ~11.2 億）；Transsion 砍年度目標 -40%、OPPO -20%+、vivo -15%，小米 Q1'26 出貨 YoY -19%；入門機（GenAI 入門）受創最深、終端 AI 升級題材被記憶體成本侵蝕。⚑ 2026 記憶體排擠重大利空：DRAM ~70% 產能流向 AI 資料中心，IDC 估 2026 全球手機出貨年減 ~13%（約少 1.6 億支、降至 ~11.2 億）；Transsion 砍年度目標 -40%、OPPO -20%+、vivo -15%，小米 Q1'26 出貨 YoY -19%；入門機（GenAI 入門）受創最深、終端 AI 升級題材被記憶體成本侵蝕。",
+   "companies": [
+    {
+     "name": "Samsung 三星",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "~18% 全球",
+     "products": "Galaxy S25/S26 + Galaxy AI",
+     "note": "Gemini Nano + Snapdragon 8E/Exynos",
+     "src": "https://www.samsung.com/global/galaxy/"
+    },
+    {
+     "name": "Apple",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "~17%(營收第一)",
+     "products": "iPhone 16/17 + Apple Intelligence",
+     "note": "A18+ + 8GB+ RAM 門檻"
+    },
+    {
+     "name": "Xiaomi 小米",
+     "ticker": "1810.HK",
+     "country": "HK",
+     "share": "~13%",
+     "products": "Mi 15 Ultra / Redmi K",
+     "note": "MediaTek 9400 + 自研 HyperOS AI"
+    },
+    {
+     "name": "OPPO / vivo / Honor",
+     "ticker": "— / — / —",
+     "country": "CN",
+     "share": "合計 ~22%",
+     "products": "Find X8 / X200 Pro / Magic 7",
+     "note": "中國 GenAI 旗艦",
+     "src": "https://www.oppo.com/en/"
+    },
+    {
+     "name": "Transsion",
+     "ticker": "688036.SS",
+     "country": "CN",
+     "share": "~10%(新興市場)",
+     "products": "Tecno / Infinix / itel",
+     "note": "印度/非洲 GenAI 入門",
+     "src": "https://www.transsion.com/"
+    },
+    {
+     "name": "Google Pixel",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "<2%(高 mindshare)",
+     "products": "Pixel 9/10 + Gemini",
+     "note": "AICore reference",
+     "src": "https://store.google.com/category/phones"
+    },
+    {
+     "name": "Motorola(Lenovo)",
+     "ticker": "0992.HK",
+     "country": "HK",
+     "share": "~4%",
+     "products": "Edge / Razr AI",
+     "note": "GenAI 中階"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-soc-phone"
+    },
+    {
+     "id": "f-os"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GenAI Smartphone 2026(Counterpoint)",
+     "url": "https://www.counterpointresearch.com/insights/global-genai-smartphone-shipments-tracker"
+    }
+   ]
+  },
+  {
+   "id": "f-app",
+   "row": "flow",
+   "col": 11,
+   "span": 2,
+   "kind": "demand",
+   "name": "AI 終端應用 / 需求",
+   "nameEn": "Edge AI Applications (Demand)",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "終端 AI 應用：寫作助理、影像生成、會議摘要、即時翻譯、智慧搜尋、智慧助理。",
+   "marketSize": "null",
+   "growth": "GenAI 滲透",
+   "share": "null",
+   "analysis": "AI PC 應用：Microsoft Copilot（內建）、Recall（爭議延遲）、Image Creator、Cocreator、Live Captions、Studio Effects。Apple：Writing Tools、Image Playground、Genmoji、ChatGPT 整合、Visual Intelligence。Android：Gemini Live、Circle to Search、Live Translate、Galaxy AI 系列、Magic Editor。第三方 on-device：Krea、Pinokio、LM Studio、Ollama、Pixea；隱私／延遲為主要 selling point。",
+   "companies": [
+    {
+     "name": "OS 內建 AI 應用",
+     "ticker": "MSFT / AAPL / GOOGL",
+     "country": "US",
+     "share": "OS 預設",
+     "products": "Copilot / Apple Intelligence / Gemini Live",
+     "note": "三大 OS 廠主導"
+    },
+    {
+     "name": "Galaxy AI / 小米 HyperOS / Xiaomi",
+     "ticker": "005930.KS / 1810.HK",
+     "country": "KR",
+     "share": "OEM 加值",
+     "products": "Galaxy AI 套件 / HyperOS AI",
+     "note": "Gemini 為底座"
+    },
+    {
+     "name": "第三方 on-device",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "開發者社群",
+     "products": "LM Studio / Ollama / Krea / Pinokio",
+     "note": "本機推論社群"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-pc-device"
+    },
+    {
+     "id": "f-phone-device"
+    },
+    {
+     "id": "f-os"
+    },
+    {
+     "id": "ip-llm"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Apple Intelligence 應用",
+     "url": "https://www.apple.com/apple-intelligence/"
+    }
+   ]
+  },
+  {
+   "id": "oem-pc-tw",
+   "row": "oem",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "台灣 PC ODM / 品牌",
+   "nameEn": "Taiwan PC ODM / Brand",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "全球 NB ODM 高度集中於台廠（>80%）；AI PC 帶動 ODM 出貨／ASP 同步上揚。",
+   "marketSize": "null",
+   "growth": "AI PC 受惠 ODM",
+   "share": "null",
+   "analysis": "全球 NB ODM 由台廠寡占（>80%）：廣達 Quanta、仁寶 Compal、緯創 Wistron、英業達 Inventec、和碩 Pegatron；其中 Quanta 為 Apple Mac/MacBook + MSFT Surface 主力。台廠自有品牌 Asus/Acer/MSI 在電競 AI PC 市場顯著。鴻海 Foxconn 在 PC ODM 較弱但承接 AI 伺服器（見 server 主題）；2024-2026 AI PC 對 ODM 是 ASP/毛利上修題材。",
+   "companies": [
+    {
+     "name": "廣達 Quanta",
+     "ticker": "2382.TW",
+     "country": "TW",
+     "share": "NB ODM 龍頭",
+     "products": "Apple Mac + MSFT Surface 主力",
+     "note": "AI 伺服器+AI PC 雙箭",
+     "src": "https://www.quantatw.com/"
+    },
+    {
+     "name": "仁寶 Compal",
+     "ticker": "2324.TW",
+     "country": "TW",
+     "share": "NB ODM 第二",
+     "products": "Lenovo/HP/Dell ODM",
+     "note": "AI PC 大客戶"
+    },
+    {
+     "name": "緯創 Wistron",
+     "ticker": "3231.TW",
+     "country": "TW",
+     "share": "NB ODM + GPU 模組",
+     "products": "Dell ODM + Nvidia GB200",
+     "note": "雙線"
+    },
+    {
+     "name": "英業達 Inventec",
+     "ticker": "2356.TW",
+     "country": "TW",
+     "share": "NB ODM + 伺服器",
+     "products": "HP NB + AI 伺服器",
+     "note": "雙線"
+    },
+    {
+     "name": "和碩 Pegatron",
+     "ticker": "4938.TW",
+     "country": "TW",
+     "share": "iPhone+NB ODM",
+     "products": "iPhone 組裝 / NB",
+     "note": "Apple 主力之一"
+    },
+    {
+     "name": "Asus 華碩 / Acer 宏碁 / MSI 微星",
+     "ticker": "2357.TW / 2353.TW / 2377.TW",
+     "country": "TW",
+     "share": "自有品牌",
+     "products": "電競+商用 AI PC",
+     "note": "Copilot+ + 電競強"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-pc-device"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Quanta AI 機會(IR)",
+     "url": "https://www.quantatw.com/quanta/english/about/investor.aspx"
+    }
+   ]
+  },
+  {
+   "id": "oem-brand",
+   "row": "oem",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "國際品牌（PC + 手機）",
+   "nameEn": "Global Brands (PC + Phone)",
+   "competition": "redocean",
+   "single": "null",
+   "desc": "全球 PC 與手機品牌（已含 OEM／自製混合：Apple/Samsung 等垂直整合，Lenovo/HP/Dell/Xiaomi 等以 ODM 為主）。",
+   "marketSize": "null",
+   "growth": "AI 加值",
+   "share": "null",
+   "analysis": "PC：Lenovo/HP/Dell/Apple/Microsoft/Asus/Acer/MSI/Huawei/小米。Smartphone：Apple/Samsung/Xiaomi/OPPO/vivo/Honor/Transsion/Google/Motorola。AI PC 與 GenAI 手機是品牌的高 ASP 升級題材。Apple 與 Samsung 高度垂直整合（SoC、製造、OS），其他品牌則依賴 Qualcomm/MediaTek/Intel/AMD 等 SoC + OS 廠（Microsoft/Google）。",
+   "companies": [
+    {
+     "name": "Apple",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "高 ASP 垂直",
+     "products": "iPhone / Mac / iPad / Apple Intelligence",
+     "note": "全垂直"
+    },
+    {
+     "name": "Samsung 三星",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "高出貨垂直",
+     "products": "Galaxy 全系列 + 自有 Exynos/Foundry",
+     "note": "半垂直"
+    },
+    {
+     "name": "Lenovo / HP / Dell",
+     "ticker": "0992.HK / HPQ / DELL",
+     "country": "HK",
+     "share": "PC 三強",
+     "products": "AI PC 主力",
+     "note": "ODM 採購"
+    },
+    {
+     "name": "小米 Xiaomi",
+     "ticker": "1810.HK",
+     "country": "HK",
+     "share": "手機第三 + AI PC",
+     "products": "Mi 旗艦 + RedmiBook AI",
+     "note": "規模化"
+    },
+    {
+     "name": "Huawei / OPPO / vivo / Honor",
+     "ticker": "— / — / — / —",
+     "country": "CN",
+     "share": "中國重點",
+     "products": "AI 旗艦",
+     "note": "中系（部分 private）"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-pc-device"
+    },
+    {
+     "id": "f-phone-device"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Smartphone 2025-26 出貨(IDC)",
+     "url": "https://www.idc.com/promo/smartphone-market-share"
+    }
+   ]
+  },
+  {
+   "id": "oem-foundry",
+   "row": "oem",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "代工 / 先進製程 製造",
+   "nameEn": "Foundry for Edge SoC",
+   "competition": "oligopoly",
+   "single": "鎖喉 · TSMC 為 Apple/Qualcomm/MediaTek/AMD 旗艦 SoC 唯一代工源（先進製程）",
+   "desc": "Edge AI SoC 仰賴最先進製程：Apple/Qualcomm/MediaTek/AMD 主要在 TSMC N3/N3E/N3P/N2；Samsung 自家 SF3/SF2；Intel 18A 自製。",
+   "marketSize": "null",
+   "growth": "N3/N2 量產",
+   "share": "null",
+   "analysis": "TSMC 為 Apple/Qualcomm/MediaTek/AMD 旗艦 Edge SoC 唯一先進製程代工源（≤3nm >90%；見 advanced 主題）；Samsung Foundry 自製 Exynos 與 Google Tensor（SF3/SF2P）；Intel Foundry 18A 為自家 Lunar Lake/Panther Lake 製程；中系 SMIC 7nm 量產 Huawei Kirin（受制裁仍持續）。⚑ 隱性單點：TSMC 3nm/5nm 2026 H1 利用率 100%、先進產能售罄至 2028；Apple 獨吃 2nm 早期配額 >50%（A20/M6），Qualcomm/MediaTek/AMD/NVIDIA 排其後——終端 SoC 真正的瓶頸與卡位不在 SoC 設計商，而在 TSMC 的 2nm 產能配額表。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "≤3nm >90%",
+     "products": "N3E/N3P/N2 代工",
+     "note": "Apple/QC/MTK/AMD 共用源",
+     "src": "https://investor.tsmc.com/"
+    },
+    {
+     "name": "Samsung Foundry",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "自製 + Google",
+     "products": "SF3/SF2P 自家+Tensor",
+     "note": "Tensor G5 留 Samsung 仍未定"
+    },
+    {
+     "name": "Intel Foundry",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "自家 18A",
+     "products": "Lunar Lake / Panther Lake 自製",
+     "note": "18A 2026 量產"
+    },
+    {
+     "name": "SMIC 中芯",
+     "ticker": "0981.HK",
+     "country": "HK",
+     "share": "中國替代",
+     "products": "Huawei Kirin SMIC 7nm",
+     "note": "受美管制",
+     "src": "https://www.smics.com/en/site/investor"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-soc-pc"
+    },
+    {
+     "id": "f-soc-phone"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC N3/N2 客戶(投資人報告)",
+     "url": "https://investor.tsmc.com/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "ip-cpu",
+   "f-soc-pc"
+  ],
+  [
+   "ip-cpu",
+   "f-soc-phone"
+  ],
+  [
+   "ip-npu",
+   "f-soc-pc"
+  ],
+  [
+   "ip-npu",
+   "f-soc-phone"
+  ],
+  [
+   "ip-mem",
+   "f-soc-pc"
+  ],
+  [
+   "ip-mem",
+   "f-soc-phone"
+  ],
+  [
+   "ip-runtime",
+   "f-os"
+  ],
+  [
+   "ip-llm",
+   "f-os"
+  ],
+  [
+   "ip-llm",
+   "f-app"
+  ],
+  [
+   "f-soc-pc",
+   "f-pc-device"
+  ],
+  [
+   "f-soc-phone",
+   "f-phone-device"
+  ],
+  [
+   "f-os",
+   "f-pc-device"
+  ],
+  [
+   "f-os",
+   "f-phone-device"
+  ],
+  [
+   "f-os",
+   "f-app"
+  ],
+  [
+   "f-pc-device",
+   "f-app"
+  ],
+  [
+   "f-phone-device",
+   "f-app"
+  ],
+  [
+   "oem-pc-tw",
+   "f-pc-device"
+  ],
+  [
+   "oem-brand",
+   "f-pc-device"
+  ],
+  [
+   "oem-brand",
+   "f-phone-device"
+  ],
+  [
+   "oem-foundry",
+   "f-soc-pc"
+  ],
+  [
+   "oem-foundry",
+   "f-soc-phone"
+  ]
+ ],
+ "_proposed": {}
+}

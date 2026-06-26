@@ -1,0 +1,406 @@
+{
+ "id": "quantum_compute",
+ "tab": "量子運算",
+ "title": "量子運算供應鏈 (Quantum Computing)",
+ "subtitle": "Quantum Computing — 下一代運算典範，多模態路線競賽（超導/離子阱/中性原子/光子/矽自旋）。2026-05-21 美商務部依 CHIPS Act 與 9 家簽 LOI 共 $20.13 億（IBM $10 億、GlobalFoundries $3.75 億建兩座量子代工 + D-Wave/Rigetti/Infleqtion 等 7 家量子商各約 $1 億、部分換 ~1% 股權）；6/22 川普再簽兩道行政命令——QC-ADDS 目標 2028 交付 DOE 國家級量子電腦、聯邦系統 PQC 遷移期限定 2030(金鑰)/2031(簽章)，消息推升 D-Wave/Rigetti/IonQ 自 3 月低點漲逾 50%；Google 105-qubit Willow 達 below-threshold 糾錯、Quantinuum×Microsoft 邏輯位元錯誤率降 800 倍；IonQ Q1 2026 營收 $64.7M（YoY +755%）、FY26 財測上修至 $260-270M；Quantinuum 6/4 以 QNT 掛牌 Nasdaq、募資 $16.8 億；Infleqtion 2/17 以 INFQ 掛 NYSE（首家上市中性原子）。市場 2026 估 $28 億（McKinsey）。⚠ 純量子股 P/S 達 109-836x、商業化早期、波動極大，屬高風險題材。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "關鍵單點／風險",
+   "v": 2,
+   "sub": "糾錯里程碑·估值 P/S 100x+ 高風險",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "qpu",
+   "label": "量子處理器 QPU（多模態）",
+   "main": false
+  },
+  {
+   "id": "stack",
+   "label": "低溫 / 控制 / 雲軟體 Enabling Stack",
+   "main": true
+  },
+  {
+   "id": "app",
+   "label": "終端應用 / 政府 Applications",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "qpu_pureplay",
+   "row": "qpu",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "純量子硬體商（pure-play）",
+   "nameEn": "Pure-Play QPU Makers",
+   "competition": "emerging",
+   "single": "⚠ 高估值 · IonQ/Rigetti/D-Wave P/S 109/836/791x；美商務部 $20 億 LOI+入股、6/22 川普 EO 催化",
+   "desc": "專注量子處理器的上市純量子公司，多模態路線（離子阱/超導/退火/中性原子/光子）。",
+   "marketSize": "高風險題材",
+   "growth": "估值狂飆",
+   "share": "null",
+   "analysis": "IonQ（IONQ，離子阱領導、Q1 2026 營收 $64.7M YoY +755%、RPO $470M、現金 $31 億、FY26 財測 $260-270M、$1.8B 併 SkyWater 取得美國晶圓廠走向垂直整合全棧）、Rigetti（RGTI，超導、與商務部簽 LOI 三年 up-to $100M、6/15 加入 HPE 混合 HPC-量子計畫）、D-Wave（QBTS，量子退火、LOI ~$1 億；Q1 bookings $33.4M YoY +1,994%，含 FAU $20M 整機售、Fortune 100 $10M QCaaS）、QCI（QUBT，光子、併 Luminar Semiconductor/NuCrypt 垂直整合 TFLN 光子代工）、Infleqtion（INFQ，中性原子、2/17 已掛 NYSE，首家上市中性原子公司、Q1 營收 $9.5M、FY26 財測 $40M）。2026 最大催化是美商務部 5/21 依 CHIPS Act 與 9 家簽 LOI 共 $20.13 億（D-Wave/Rigetti/Infleqtion/Atom Computing/Diraq/PsiQuantum/Quantinuum 7 家量子商 + GlobalFoundries/IBM 兩座代工），及 6/22 川普兩道 EO（QC-ADDS 2028 交付 DOE 量子電腦、PQC 期限 2030/2031）；純量子公司爭相併半導體/光子製造資產走向垂直整合；但 P/S 109-836x、商業化早期、波動劇烈。2026-H1 上市潮從美擴及歐洲——芬蘭 IQM（已售 23+ 台、業界最多）將以 IQMX 經 SPAC（Real Asset Acquisition）登 Nasdaq、PIPE 上修至 $1.46 億、過後現金最高約 $4.65 億、6/25 股東會表決，料成首家登美國主板的歐洲純量子；EigenQ 6/17 宣布 $3B SPAC（→EIGQ，Q4 2026 完成）。需求端出現「主權國家整機直購」新模式：法國 GENCI 6/17 完成全球首宗 cat-qubit 國家採購（Alice & Bob 18-cat-qubit，進駐 CEA TGCC 整合 Joliot-Curie 超算，2027 開放）。",
+   "companies": [
+    {
+     "name": "IonQ",
+     "ticker": "IONQ",
+     "country": "US",
+     "share": "離子阱領導",
+     "products": "Forte / Tempo 離子阱 QPU + 量子雲",
+     "note": "Q1 2026 營收 $64.7M YoY +755%、RPO $470M；FY26 財測上修至 $260-270M；併 SkyWater（$1.8B、5/8 股東通過、預計 Q2/Q3 2026 完成）取得美國半導體晶圓廠，自稱唯一垂直整合全棧量子平台",
+     "src": "https://thequantuminsider.com/2026/05/09/skywater-technology-stockholders-approve-merger-agreement-with-ionq/"
+    },
+    {
+     "name": "Rigetti Computing",
+     "ticker": "RGTI",
+     "country": "US",
+     "share": "超導路線",
+     "products": "Ankaa 超導 + 108-qubit Cepheus-1-108Q（AWS/Azure/qBraid GA）",
+     "note": "美政府入股 ~$1 億、P/S 836x；Q1 2026 營收 $4.4M（近 3 倍 YoY）",
+     "src": "https://www.cnbc.com/2026/05/21/quantum-stocks--us-taking-equity-stakes.html"
+    },
+    {
+     "name": "D-Wave Quantum",
+     "ticker": "QBTS",
+     "country": "CA",
+     "share": "量子退火領導",
+     "products": "Advantage2 退火 + Leap 雲",
+     "note": "商務部 LOI ~$1 億；Q1 2026 bookings $33.4M（YoY +1,994%，含 FAU $20M 整機售、Fortune 100 $10M QCaaS）、現金 $588.4M；6/1 NYSE 首場 Investor Day 公布超導 gate-model 路線圖：2032 達 100 邏輯位元（基於 $5.5 億併 Quantum Circuits 的 dual-rail）",
+     "src": "https://www.cnbc.com/2026/05/21/quantum-stocks--us-taking-equity-stakes.html"
+    },
+    {
+     "name": "Quantum Computing Inc (QCI)",
+     "ticker": "QUBT",
+     "country": "US",
+     "share": "光子 QPU/儲備運算",
+     "products": "光子 QPU / NeuraWave 光子儲備運算 / TFLN 光子代工",
+     "note": "完成併 Luminar Semiconductor（$110M）/NuCrypt，建 TFLN 薄膜鈮酸鋰光子代工垂直整合；2026-06 與 Planck Dynamics 簽 5 台 NeuraWave 框架協議",
+     "src": "https://www.prnewswire.com/news-releases/quantum-computing-inc-announces-framework-agreement-with-planck-dynamics-to-deploy-neurawave-photonic-reservoir-computer-as-a-foundational-platform-for-next-generation-ai-applications-302804008.html"
+    },
+    {
+     "name": "Infleqtion",
+     "ticker": "INFQ",
+     "country": "US",
+     "share": "中性原子（首家上市）",
+     "products": "中性原子 QPU / 精密量子感測 / 光學原子鐘",
+     "note": "2026-02-17 經 Churchill Capital X SPAC 以 INFQ 掛 NYSE，首家上市中性原子量子公司；列入商務部 9 家 LOI（~$1 億）；Q1 2026 營收 $9.5M（YoY +14%）、FY26 財測 $40M、市值約 $29 億；客戶含 NASA、美國防部、英國政府",
+     "src": "https://infleqtion.com/infleqtion-becomes-first-neutral-atom-quantum-company-to-go-public/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "enabling_stack"
+    },
+    {
+     "id": "quantum_cloud"
+    }
+   ],
+   "sources": [
+    {
+     "label": "美政府 $20 億注資量子 (CNBC)",
+     "url": "https://www.cnbc.com/2026/05/21/quantum-stocks--us-taking-equity-stakes.html"
+    }
+   ]
+  },
+  {
+   "id": "qpu_bigtech",
+   "row": "qpu",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "大廠量子（糾錯領先）",
+   "nameEn": "Big-Tech Quantum",
+   "competition": "oligopoly",
+   "single": "Google Willow below-threshold 糾錯；Quantinuum×Microsoft 邏輯位元錯誤率降 800 倍",
+   "desc": "科技巨頭的量子部門，糾錯（error correction）里程碑領先純量子新創。",
+   "marketSize": "技術領先",
+   "growth": "糾錯突破",
+   "share": "null",
+   "analysis": "Google（GOOGL，105-qubit Willow 達 below-threshold 糾錯）、IBM（IBM，120-qubit Nighthawk + 2026 底承諾首批 verified quantum advantage、2029 容錯目標；獲商務部 $10 億 LOI 設超導晶圓量子代工子公司）、Microsoft（MSFT，拓樸量子 + Quantinuum 合作邏輯位元錯誤率降 800 倍）、Amazon（AMZN，Ocelot）、Quantinuum（QNT，Honeywell 系離子阱，2026-06-04 Nasdaq 上市、募資 $16.8 億、市值約 $157 億）。巨頭以糾錯與規模化領先，是長線真正競爭者；2026-H1 國家級資金（商務部 $20 億 LOI、川普 6/22 QC-ADDS）多落於 IBM 與代工端，鞏固大廠卡位。",
+   "companies": [
+    {
+     "name": "Google Quantum AI",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "糾錯領先",
+     "products": "Willow 105-qubit + below-threshold",
+     "note": "below-threshold 糾錯里程碑"
+    },
+    {
+     "name": "IBM Quantum",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "模組化路線",
+     "products": "120-qubit Nighthawk（2026 7,500 gates）/ 實驗性 Loon / Heron",
+     "note": "2026 底承諾首批 verified quantum advantage、2029 容錯目標；獲商務部 $10 億 LOI 設超導晶圓量子代工子公司（9 家 LOI 中最大一筆）",
+     "src": "https://www.nist.gov/news-events/news/2026/05/department-commerce-announces-letters-intent-9-companies-2-billion"
+    },
+    {
+     "name": "Microsoft / Quantinuum",
+     "ticker": "MSFT / QNT",
+     "country": "US",
+     "share": "拓樸+離子阱",
+     "products": "Majorana / Quantinuum H 系 / Helios",
+     "note": "邏輯位元錯誤率降 800 倍；Quantinuum 2026-06-04 以 QNT 上市、$60/股募資 $16.8 億（估值約 $157 億）；6/16 一度跌破發行價至 $57.91，6/17 因加入 HPE 混合 HPC-量子計畫單日 +16.8%、6/20 回升至約 $69.80（已站回發行價之上）；Honeywell 仍握約 47.8% 投票權、保留控制權；98-qubit Helios 經 Sandia 國家實驗室驗證高保真"
+    },
+    {
+     "name": "Amazon Braket / IonQ 雲",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "量子雲",
+     "products": "Ocelot + Braket 量子雲",
+     "note": "雲端量子接入"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "quantum_cloud"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Google Willow 糾錯 (US News)",
+     "url": "https://money.usnews.com/investing/articles/best-quantum-computing-stocks-to-buy"
+    }
+   ]
+  },
+  {
+   "id": "enabling_stack",
+   "row": "stack",
+   "col": 1,
+   "span": 2,
+   "kind": "rail",
+   "name": "低溫 / 控制電子 / 元件",
+   "nameEn": "Cryogenics / Control Electronics",
+   "competition": "oligopoly",
+   "single": "「賣鏟人」· 稀釋製冷機 Bluefors 寡占；控制電子與低溫 CMOS 是共用瓶頸",
+   "desc": "量子硬體的使能層：稀釋製冷機、低溫控制電子、量子位元控制晶片、雷射/光學（離子阱/中性原子）。",
+   "marketSize": "null",
+   "growth": "硬體賣鏟",
+   "share": "null",
+   "analysis": "稀釋製冷機：Bluefors（芬蘭未上市，寡占）、Oxford Instruments（OXIG.L）；控制電子：Keysight（KEYS）、Zurich Instruments、Quantum Machines（未上市）；低溫 CMOS / 量子代工：GlobalFoundries（GFS，2026-05 成立 Quantum Technology Solutions 事業部、獲商務部 $3.75 億 LOI、美政府入股約 1%，以 FDX 平台供低溫 CMOS 並建跨模態 QPU 標準化產線）、Intel/imec；雷射/真空（離子阱/中性原子）：MKS Instruments（MKSI）、Coherent（COHR）；GPU-量子互連/即時糾錯控制層：Nvidia NVQLink + cudaq-realtime（GTC 2026 上市，串接 17 家 QPU 與 5 家控制器商，成跨模態事實標準）。這層是跨路線共用的「賣鏟人」，2026-H1 國家級資金大舉灌入量子代工製造端（IBM $10 億、GF $3.75 億），加上 Nvidia 切入後控制/糾錯協調權上移至 GPU 生態。",
+   "companies": [
+    {
+     "name": "Bluefors",
+     "ticker": "—",
+     "country": "FI",
+     "share": "QC 稀釋製冷機近乎獨佔（量子段 >60%）",
+     "products": "稀釋製冷機 (dilution fridge)",
+     "note": "private；超導量子必備且 sole-source 性質；工質 helium-3 來自氚衰變、$1,900-2,600/L、6-9 個月交期，為全產業最硬單點"
+    },
+    {
+     "name": "Oxford Instruments",
+     "ticker": "OXIG.L",
+     "country": "UK",
+     "share": "低溫設備",
+     "products": "Proteox 製冷機 / 低溫系統",
+     "note": "低溫量子設備"
+    },
+    {
+     "name": "Keysight / Zurich Instruments",
+     "ticker": "KEYS / —",
+     "country": "US",
+     "share": "控制電子",
+     "products": "量子控制/量測電子",
+     "note": "QPU 控制系統；Zurich Instruments 已被 Rohde & Schwarz 收購；以色列 Quantum Machines（OPX，未上市）是跨模態控制隱性卡位者"
+    },
+    {
+     "name": "MKS Instruments / Coherent",
+     "ticker": "MKSI / COHR",
+     "country": "US",
+     "share": "雷射/真空",
+     "products": "雷射 / 真空 / 光學",
+     "note": "離子阱/中性原子使能"
+    },
+    {
+     "name": "GlobalFoundries (Quantum Tech Solutions)",
+     "ticker": "GFS",
+     "country": "US",
+     "share": "量子代工 / 低溫 CMOS",
+     "products": "FDX 低溫 CMOS、跨模態 QPU 標準化產線、低溫控制晶片、先進互連",
+     "note": "2026-05-21 成立 Quantum Technology Solutions 事業部、獲商務部 $3.75 億 CHIPS LOI、美政府入股約 1%；支援超導/離子阱/光子/拓樸/矽自旋多路線製造，9 家 LOI 中兩座量子代工之一",
+     "src": "https://www.nist.gov/news-events/news/2026/05/department-commerce-announces-letters-intent-9-companies-2-billion"
+    },
+    {
+     "name": "Nvidia (NVQLink / CUDA-Q)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "GPU-量子互連控制層",
+     "products": "NVQLink + cudaq-realtime 即時糾錯/校準互連",
+     "note": "GTC 2026 公開上市；連接 17 家 QPU 製造商、5 家控制器商、9 座國家實驗室，成為混合量子-古典糾錯的事實控制標準",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-nvqlink-quantum-gpu-computing"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "quantum_cloud"
+    }
+   ],
+   "sources": [
+    {
+     "label": "量子供應鏈 (Motley Fool)",
+     "url": "https://www.fool.com/investing/stock-market/market-sectors/information-technology/ai-stocks/quantum-computing-stocks/"
+    }
+   ]
+  },
+  {
+   "id": "quantum_cloud",
+   "row": "stack",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "量子雲 / 軟體 / 演算法",
+   "nameEn": "Quantum Cloud & Software",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "量子雲接入（QaaS）、量子軟體/SDK、錯誤緩解與混合古典-量子演算法。",
+   "marketSize": "null",
+   "growth": "QaaS",
+   "share": "null",
+   "analysis": "量子雲：IBM Quantum、Amazon Braket、Microsoft Azure Quantum、Google；軟體：Q-CTRL（錯誤抑制，未上市）、Classiq、Quantinuum（量子軟體+硬體）、QC Ware；多數透過大廠雲接入。軟體層是降低糾錯門檻與商業落地的關鍵。",
+   "companies": [
+    {
+     "name": "IBM / Azure / Braket 量子雲",
+     "ticker": "IBM / MSFT / AMZN",
+     "country": "US",
+     "share": "QaaS 主力",
+     "products": "量子雲接入平台",
+     "note": "硬體+雲整合"
+    },
+    {
+     "name": "Q-CTRL / Classiq",
+     "ticker": "—",
+     "country": "AU",
+     "share": "錯誤抑制/軟體",
+     "products": "Fire Opal 錯誤抑制 / 量子 SDK",
+     "note": "private；軟體層"
+    },
+    {
+     "name": "Quantinuum (軟體)",
+     "ticker": "QNT",
+     "country": "US",
+     "share": "軟硬整合",
+     "products": "InQuanto / TKET 編譯器",
+     "note": "2026-06-04 Nasdaq 上市（QNT）、募資 $16.8 億"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "qpu_pureplay"
+    },
+    {
+     "id": "qpu_bigtech"
+    },
+    {
+     "id": "enabling_stack"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "quantum_app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "量子運算股 (Motley Fool)",
+     "url": "https://www.fool.com/investing/2026/05/28/quantum-computing-ionq-rgti-qbts-wall-st-warning/"
+    }
+   ]
+  },
+  {
+   "id": "quantum_app",
+   "row": "app",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "終端應用 / 政府計畫",
+   "nameEn": "Applications & Government",
+   "competition": "emerging",
+   "single": "null",
+   "desc": "量子應用早期：藥物/材料模擬、金融最佳化、密碼學（後量子加密 PQC）、政府/國防。",
+   "marketSize": "$28 億 2026",
+   "growth": "早期",
+   "share": "null",
+   "analysis": "藥物/材料模擬（製藥+化學）、金融最佳化（風險/投組）、後量子密碼（PQC，受 NIST 標準推動，影響全資安）、政府/國防（美商務部 $20 億 LOI、各國主權量子計畫）。2026 市場估 $28 億（McKinsey），多為 PoC，真正商業化看糾錯成熟（2028-2030）。PQC 是最先落地的相鄰商機——2026-06-22 川普新 EO 一改前期放緩態勢，明訂聯邦高價值資產 PQC 遷移期限（金鑰交換 2030-12-31、數位簽章 2031-12-31），並設 QC-ADDS 目標 2028 交付 DOE 國家級量子電腦，PQC 與量子整機需求重新加速；惟純量子公司營收高度依賴政府/國防合約，客戶集中度風險大。",
+   "companies": [
+    {
+     "name": "藥物/材料模擬",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "早期應用",
+     "products": "分子模擬 / 催化劑設計",
+     "note": "製藥+化學 PoC"
+    },
+    {
+     "name": "後量子密碼 PQC",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "最先落地",
+     "products": "PQC 加密遷移",
+     "note": "NIST 標準推動；2026-06-22 川普 EO 訂聯邦 PQC 期限 2030(金鑰)/2031(簽章)，落地重新加速",
+     "src": "https://www.cybersecuritydive.com/news/quantum-cryptography-white-house-executive-order/823530/"
+    },
+    {
+     "name": "政府/主權量子",
+     "ticker": "—",
+     "country": "US",
+     "share": "政策驅動",
+     "products": "商務部 $20 億 LOI（9 家）/ QC-ADDS 2028 DOE 整機 / 各國國家計畫",
+     "note": "國防+科研；6/22 川普兩道 EO 把量子置於聯邦科技戰略核心",
+     "src": "https://www.whitehouse.gov/presidential-actions/2026/06/ushering-in-the-next-frontier-of-quantum-innovation/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "quantum_cloud"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "量子市場規模 (BlueQubit)",
+     "url": "https://www.bluequbit.io/blog/quantum-computing-stocks"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "qpu_pureplay",
+   "enabling_stack"
+  ],
+  [
+   "qpu_pureplay",
+   "quantum_cloud"
+  ],
+  [
+   "qpu_bigtech",
+   "quantum_cloud"
+  ],
+  [
+   "enabling_stack",
+   "quantum_cloud"
+  ],
+  [
+   "quantum_cloud",
+   "quantum_app"
+  ]
+ ],
+ "_proposed": {}
+}

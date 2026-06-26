@@ -1,0 +1,606 @@
+{
+ "id": "vertical_ai_agents",
+ "tab": "垂直 AI Agent",
+ "title": "垂直產業 AI Agent 供應鏈 (Vertical AI Agents)",
+ "subtitle": "Vertical AI Agents — 模型平權後，價值由基礎模型外溢到擁有專業 workflow＋專屬資料＋分潤定價權的垂直 agent。四大專業域 2025-2026 同步爆發：法律 Harvey（$11B、ARR $300M）vs Legora（$5.55B）兩平台之爭、Hebbia/Crosby/EvenUp 並起；金融 Rogo（$2B、35,000 銀行家）vs Hebbia；醫療 OpenEvidence（$12B、美 40% 醫師、年化 $150M、藥廠廣告變現、毛利 90%）、Abridge（$5.3B+、ARR $100M）、Ambience；會計 Basis（$1.15B、前 25 大事務所 30% 採用）。跨域 Sierra（$15.8B）由客服外溢成「AI agent OS」。2025 企業垂直 AI 支出三倍跳增至 $3.5B，vertical agent CAGR 62.7%。標的多未上市，上市曝險集中在通路擁有者 Thomson Reuters（CoCounsel 100 萬用戶）、RELX（LexisNexis Protégé）與底層模型 Anthropic/Google。⚠ 風險：估值/ARR 倍數高（37-80x）、執照與責任監管未定、模型/平台公司向下吃。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 5
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "垂直 AI 支出",
+   "v": "$3.5B",
+   "sub": "2025 企業垂直 AI 支出（3x YoY）·醫療 $1.5B/法律 $650M·CAGR 62.7%",
+   "hot": true
+  },
+  {
+   "k": "估值溢價/風險",
+   "v": 2,
+   "sub": "Harvey $11B·OpenEvidence $12B·Sierra $15.8B·倍數 37-80x·監管未定",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "infra",
+   "label": "模型 / 資料 / 檢索層 Model, Data & Retrieval",
+   "main": false
+  },
+  {
+   "id": "legal",
+   "label": "法律 AI Agent Legal",
+   "main": true
+  },
+  {
+   "id": "finance",
+   "label": "金融 AI Agent Finance",
+   "main": false
+  },
+  {
+   "id": "health",
+   "label": "醫療 AI Agent Healthcare",
+   "main": false
+  },
+  {
+   "id": "deploy",
+   "label": "會計/審計 + 跨域平台 + 部署整合 Accounting, Cross-domain & Deployment",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "model_data",
+   "row": "infra",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "基礎模型 + 垂直語料 + 檢索層",
+   "nameEn": "Foundation Models, Domain Corpora & Retrieval",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 法律/醫療 agent 底層多走 Anthropic/Google/OpenAI 多模型路由；⚠2026-H1 上游廠向下整合（Claude for Legal/Finance）成『供應商即競爭者』",
+   "desc": "垂直 agent 的上游：基礎模型（多模型路由）+ 領域專屬語料（判例、SEC filing、臨床指引）+ RAG 檢索。模型平權使價值留在 workflow 與資料側；但 2026-H1 上游模型廠開始向下自建垂直 agent，威脅應用層護城河。",
+   "marketSize": "API 商品化",
+   "growth": "模型平權",
+   "share": "null",
+   "analysis": "基礎模型三強供應底層推理：OpenAI、Anthropic（Claude，Harvey/LexisNexis 深化合作的法律/醫療首選之一）、Google（Gemini）。Harvey 已從『只用 OpenAI』轉為多模型路由（經 AWS Bedrock/Google Vertex 同接 Anthropic 與 Google），證明垂直 agent 是模型的『議價買方』而非被綁定者——模型層被商品化、價值外溢到應用層。⚠2026-H1 結構轉變：Anthropic 年化營收由 2025 底 $90 億飆至 2026-05 $470 億，並自建 Claude for Legal/Finance（含 10 個金融 agent、M365 整合、Moody's 合作）/Small Business，直接與 Harvey 等下游客戶競爭，形成『供應商即競爭者』新單點風險——下游一面依賴、一面被夾擊，垂直層議價與護城河承壓；垂直 agent 因此加速多模型化對沖（如 Cursor Composer 2 改採中國 Moonshot Kimi K2.5 開源模型）。真正護城河在領域專屬語料與通路：判例（Westlaw/Lexis）、SEC filing、臨床指引（OpenEvidence 對接 NEJM 等）。檢索層與 rag_kb 主題重疊（Glean $7.2B/ARR $300M、AlphaSense $7.5B/ARR $600M+ 為企業搜尋雙龍頭），是垂直 agent 的上游而非同層。Sequoia 估『autopilots 可吸收 $60bn 法律工作』，凸顯應用層 TAM。",
+   "companies": [
+    {
+     "name": "Anthropic (Claude)",
+     "ticker": "—",
+     "country": "US",
+     "share": "法律/醫療 agent 首選模型之一·向下整合",
+     "products": "Claude 系列 / 企業 API + Claude for Legal/Finance/Small Business",
+     "note": "未上市；⚠2026-H1 自建垂直 agent（Claude for Finance 含 10 個金融 agent、M365 整合、Moody's 資料；Claude for Legal）直接與 Harvey 等客戶競爭——『供應商即競爭者』；年化營收 2025 底 $90 億→2026-05 $470 億",
+     "src": "https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/"
+    },
+    {
+     "name": "OpenAI",
+     "ticker": "—",
+     "country": "US",
+     "share": "多數垂直 agent 起始模型",
+     "products": "GPT / o 系列 / reasoning",
+     "note": "未上市；Harvey/Hebbia 早期底層；Harvey 已轉多模型",
+     "src": "https://www.harvey.ai/blog/expanding-harveys-model-offerings"
+    },
+    {
+     "name": "Google (Gemini)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "drafting 表現佳",
+     "products": "Gemini 2.5 Pro",
+     "note": "Harvey 評測 drafting 領先；GV 投資多家垂直 agent",
+     "src": "https://www.maginative.com/article/harvey-ai-now-offers-anthropic-and-google-models/"
+    },
+    {
+     "name": "Glean",
+     "ticker": "—",
+     "country": "US",
+     "share": "企業搜尋/agent 上游",
+     "products": "企業搜尋 + Glean Agents",
+     "note": "未上市；$7.2B/ARR $300M（2026-05）；詳見 rag_kb",
+     "src": "https://sacra.com/c/glean/"
+    },
+    {
+     "name": "AlphaSense",
+     "ticker": "—",
+     "country": "US",
+     "share": "金融研究檢索",
+     "products": "市場情報 / 金融文件檢索",
+     "note": "未上市；$7.5B/ARR $600M+（2026-06）；金融 agent 上游",
+     "src": "https://market.us/report/vertical-ai-market/"
+    },
+    {
+     "name": "Thomson Reuters (Westlaw 語料)",
+     "ticker": "TRI",
+     "country": "US",
+     "share": "法律語料通路壟斷",
+     "products": "判例/法規語料 + 自研法律 LLM",
+     "note": "上市；自研法律/稅務專屬 LLM；至 2028 ~$11B 資本量能",
+     "src": "https://www.thomsonreuters.com/en/cocounsel"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "legal_us"
+    },
+    {
+     "id": "finance_us"
+    },
+    {
+     "id": "health_us"
+    },
+    {
+     "id": "accounting_xdomain"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Harvey 多模型路由（官方）",
+     "url": "https://www.harvey.ai/blog/expanding-harveys-model-offerings"
+    },
+    {
+     "label": "Vertical AI 市場（market.us）",
+     "url": "https://market.us/report/vertical-ai-market/"
+    },
+    {
+     "label": "Sequoia：autopilots 吸收 $60bn 法律工作",
+     "url": "https://www.artificiallawyer.com/2026/03/30/autopilots-can-absorb-60bn-of-legal-work-sequoia/"
+    },
+    {
+     "label": "Anthropic 下沉做垂直 agent / 供應商即競爭者（Fortune）",
+     "url": "https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/"
+    }
+   ]
+  },
+  {
+   "id": "legal_us",
+   "row": "legal",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "法律 AI Agent（估值最高、兩平台之爭）",
+   "nameEn": "Legal AI Agents",
+   "competition": "highgrowth",
+   "single": "⚠ Harvey($11B/ARR $300M) vs Legora($5.55B) 兩平台白熱化；Crosby 走『AI 法律事務所』service-as-software",
+   "desc": "法律專業 agent：合約審查、盡職調查、M&A、法律研究、訴狀生成。法律 AI 是垂直 agent 估值最高、募資最猛的賽道，呈『兩平台之爭』。",
+   "marketSize": "法律 AI 2025 支出 ~$650M",
+   "growth": "ARR 3.9x/yr",
+   "share": "null",
+   "analysis": "Harvey（未上市，$11B；2026-03 $200M GIC/Sequoia 領投、累計 >$1B；ARR $300M 2026-05 Sacra、2024 底僅 $50M；10 萬律師/1,300 組織/60 國；25,000+ 客製 agent；多模型路由）與 Legora（瑞典/EU，$5.55B；2026-04 $550M Accel 領投、估值較 2024-10 $1.8B 三倍跳；800 客戶/50+ 市場；Deloitte 2026-05 策略聯盟；客戶含 Cleary/Linklaters/White & Case）為兩大平台。Hebbia（$700M；Matrix 資料網格+ISD；橫跨法/金；ACV $500K、NRR 200%）攻文件密集型。Crosby（$400M；2026 $60M Series B；已審 13,000 份合約、營收 +400%、中位 58 分鐘）創『AI 法律事務所』把 agent 包進執照實體（service-as-software）。EvenUp（$2B+；2025-10 $150M Bessemer；每週 1 萬案件；美前百大 PI 律所 20%；LexisNexis 投資）專攻人身傷害。既有通路：Thomson Reuters CoCounsel（100 萬用戶/7 業別）、LexisNexis Protégé。⚠2026-H1 結構新變：Legora ARR 破 $1 億、客戶 200→1,000+（Nvidia/Atlassian 入股），由 Harvey 一家獨大轉為多強鼎立；同時上游 Anthropic 推 Claude for Legal 自建法律 agent 直接夾擊下游（『供應商即競爭者』）。⚠ Harvey ~37x ARR 估值溢價、UPL（未授權執業）監管未定。",
+   "companies": [
+    {
+     "name": "Harvey",
+     "ticker": "—",
+     "country": "US",
+     "share": "法律 AI 估值龍頭",
+     "products": "法律 agent 平台 / 25,000+ 客製 agent",
+     "note": "未上市；$11B（2026-03）；ARR $300M（2026-05 Sacra）；10 萬律師/1,300 組織",
+     "src": "https://www.harvey.ai/blog/harvey-raises-at-dollar11-billion-valuation-to-scale-agents-across-law-firms-and-enterprises"
+    },
+    {
+     "name": "Legora",
+     "ticker": "—",
+     "country": "SE",
+     "share": "歐洲領頭、攻美",
+     "products": "多用途法律/稅務/合規 agent",
+     "note": "未上市；$5.55B（2026-03/04 Series D Accel 領投、Nvidia/Atlassian 入股）；客戶由 200 增至 1,000+、ARR 破 $1 億；Deloitte 聯盟",
+     "src": "https://www.cnbc.com/2026/03/25/legal-ai-startup-harvey-raises-200-million-at-11-billion-valuation.html"
+    },
+    {
+     "name": "Hebbia",
+     "ticker": "—",
+     "country": "US",
+     "share": "文件密集型法/金",
+     "products": "Matrix 資料網格 / ISD agent",
+     "note": "未上市；$700M（2024-07 a16z）；ACV $500K、NRR 200%；Goldman/McKinsey",
+     "src": "https://sacra.com/c/hebbia/"
+    },
+    {
+     "name": "Crosby",
+     "ticker": "—",
+     "country": "US",
+     "share": "AI 法律事務所（service-as-software）",
+     "products": "合約審查即服務（AI+律師）",
+     "note": "未上市；$400M（2026 $60M Series B Lux/Index）；13,000 份合約、+400%、58 分鐘",
+     "src": "https://www.tamradar.com/funding-rounds/crosby-series-b-60m"
+    },
+    {
+     "name": "EvenUp",
+     "ticker": "—",
+     "country": "US",
+     "share": "人身傷害（PI）領頭",
+     "products": "PI 文件生成 / 案件分析",
+     "note": "未上市；$2B+（2025-10 $150M Bessemer）；每週 1 萬案件；LexisNexis 投資",
+     "src": "https://news.crunchbase.com/venture/legal-tech-ai-unicorn-evenup-ai-doubles-valuation/"
+    },
+    {
+     "name": "Thomson Reuters (CoCounsel)",
+     "ticker": "TRI",
+     "country": "US",
+     "share": "既有通路 + 100 萬用戶",
+     "products": "CoCounsel 法律/稅務/審計 agent",
+     "note": "上市；2026-02 跨 7 業別 100 萬用戶；自研法律 LLM；併 Casetext",
+     "src": "https://www.lawnext.com/2026/02/three-years-after-launching-as-first-ai-legal-assistant-cocounsel-reaches-1-million-users-and-thomson-reuters-teases-whats-ahead.html"
+    },
+    {
+     "name": "LexisNexis (RELX, Protégé)",
+     "ticker": "RELX",
+     "country": "UK",
+     "share": "法律資料通路",
+     "products": "Lexis+ Protégé 法律 agent",
+     "note": "上市；2026-02 改名 Protégé；與 Anthropic 深化",
+     "src": "https://legaltechnology.com/2026/02/25/from-market-meltdown-to-strategic-realignment-harvey-and-lexisnexis-chart-diverging-paths-with-anthropic/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "model_data"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "accounting_xdomain"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Harvey $11B / ARR（官方）",
+     "url": "https://www.harvey.ai/blog/harvey-raises-at-dollar11-billion-valuation-to-scale-agents-across-law-firms-and-enterprises"
+    },
+    {
+     "label": "Legora $5.55B（TechCrunch）",
+     "url": "https://techcrunch.com/2026/04/30/legal-ai-startup-legora-hits-5-6-valuation-and-its-battle-with-harvey-just-got-hotter/"
+    },
+    {
+     "label": "法律 AI 軍備競賽（PlatinumIDS）",
+     "url": "https://blog.platinumids.com/blog/legal-ai-billion-dollar-arms-race-2026"
+    }
+   ]
+  },
+  {
+   "id": "finance_us",
+   "row": "finance",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "金融 AI Agent（投行/研究/分析）",
+   "nameEn": "Finance AI Agents",
+   "competition": "competitive",
+   "single": "Rogo($2B/35,000 銀行家) vs Hebbia 直球對決；per-seat 數千美元/年的分潤定價",
+   "desc": "金融專業 agent：投行 junior 工作流（建模、PPT、盡調）、市場研究、財報分析。價值在把高薪分析師工時自動化、按席位/案件分潤定價。",
+   "marketSize": "金融研究 agent",
+   "growth": "投行採用快",
+   "share": "null",
+   "analysis": "Rogo（未上市，$2B；2026-04 $160M Series D Kleiner 領投、估值較 2026-01 $750M 跳升、累計 >$300M；35,000+ 銀行家/250 機構含 Nomura/Baird/Truist；per-seat 數千美元/年多年期合約；J.P. Morgan 成長股權參投；源於 Goldman junior 百小時工時痛點）與 Hebbia（$700M；Matrix；Goldman/Bridgewater）為兩大金融 agent，直接競爭。AlphaSense（$7.5B/ARR $600M+）偏市場情報檢索（rag_kb 上游）。既有金融資料商（Bloomberg/FactSet/S&P）自研垂直 agent 構成通路反撲。投資論點：金融 agent 的 per-seat 訂閱模式毛利結構優於 token 轉售，是『分潤定價護城河』最清晰的範例。⚠ 多未上市，散戶曝險僅能透過 Bloomberg（私有）外的 FactSet/S&P 等上市資料商間接參與。",
+   "companies": [
+    {
+     "name": "Rogo",
+     "ticker": "—",
+     "country": "US",
+     "share": "投行 agent 領頭",
+     "products": "建模/PPT/盡調 agent（投行 OS）",
+     "note": "未上市；$2B（2026-04 $160M Kleiner）；35,000+ 銀行家/250 機構",
+     "src": "https://www.prnewswire.com/news-releases/rogo-raises-160m-series-d-to-scale-the-agentic-platform-for-finance-302756546.html"
+    },
+    {
+     "name": "Hebbia",
+     "ticker": "—",
+     "country": "US",
+     "share": "金融文件問答",
+     "products": "Matrix 資料網格 / ISD",
+     "note": "未上市；$700M；Goldman/Bridgewater；與 Rogo 直接競爭",
+     "src": "https://sacra.com/c/hebbia/"
+    },
+    {
+     "name": "AlphaSense",
+     "ticker": "—",
+     "country": "US",
+     "share": "市場情報檢索",
+     "products": "金融研究 / 市場情報",
+     "note": "未上市；$7.5B/ARR $600M+（2026-06）；偏 rag_kb 上游",
+     "src": "https://market.us/report/vertical-ai-market/"
+    },
+    {
+     "name": "FactSet",
+     "ticker": "FDS",
+     "country": "US",
+     "share": "既有金融資料商",
+     "products": "金融資料 + 自研 AI agent",
+     "note": "上市；資料通路反撲；間接曝險標的",
+     "src": "https://siliconangle.com/2026/04/29/rogo-raises-160m-speed-financial-analysis-ai-agents/"
+    },
+    {
+     "name": "S&P Global",
+     "ticker": "SPGI",
+     "country": "US",
+     "share": "金融資料/評等通路",
+     "products": "Capital IQ + AI agent",
+     "note": "上市；資料壟斷通路；垂直 agent 化",
+     "src": "https://siliconangle.com/2026/04/29/rogo-raises-160m-speed-financial-analysis-ai-agents/"
+    },
+    {
+     "name": "Bloomberg (BloombergGPT)",
+     "ticker": "—",
+     "country": "US",
+     "share": "金融終端通路",
+     "products": "Terminal + BloombergGPT",
+     "note": "私有；金融資訊終端壟斷；自研金融 LLM",
+     "src": "https://startupfortune.com/rogo-just-turned-junior-banking-grunt-work-into-a-2-billion-ai-business/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "model_data"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "accounting_xdomain"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Rogo $2B Series D（PRNewswire）",
+     "url": "https://www.prnewswire.com/news-releases/rogo-raises-160m-series-d-to-scale-the-agentic-platform-for-finance-302756546.html"
+    },
+    {
+     "label": "Rogo $2B / Goldman 緣起（Startup Fortune）",
+     "url": "https://startupfortune.com/rogo-just-turned-junior-banking-grunt-work-into-a-2-billion-ai-business/"
+    }
+   ]
+  },
+  {
+   "id": "health_us",
+   "row": "health",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "醫療 AI Agent（觸及最廣、變現多元）",
+   "nameEn": "Healthcare AI Agents",
+   "competition": "highgrowth",
+   "single": "⚠ OpenEvidence($12B/美 40% 醫師/藥廠廣告變現/毛利 90%) 異類模式；Abridge/Ambience 主導 ambient scribe",
+   "desc": "醫療專業 agent：臨床決策支援、環境 AI 病歷（ambient scribe）、事前授權/給付完整性。聚焦臨床/照護/行政端，與 ai_pharma（藥物研發）為不同價值鏈。",
+   "marketSize": "醫療 AI 2025 支出 ~$1.5B",
+   "growth": "+1,803% YoY",
+   "share": "null",
+   "analysis": "OpenEvidence（未上市，$12B；2026-01 $250M Thrive/DST、一年前僅 $1B、累計 $700M 含 GV/Nvidia/Mayo Clinic；『ChatGPT for doctors』；美國 40% 醫師使用、12 月單月 1,800 萬次臨床問診；年化營收 $150M 2025、YoY +1,803%、毛利 90%；**藥廠廣告變現**異類模式——醫師端免費換規模）為觸及最廣標的。Ambient scribe（環境 AI 病歷）：Abridge（$5.3B+；2025-06 $300M a16z、2026-04 加碼 $316M；ARR $100M 2025-05 Sacra）龍頭、Ambience Healthcare（$1.25B；2025-07 $243M；市占 13%）、Suki（市占 10%）、Nabla（法系，市占 4%）。事前授權：Cohere Health（累計 ~$200M；年處理 1,200 萬+ prior auth、60 萬+ 醫師、85% 即時核准；2025-09 併 ZignaAI）。微軟 DAX（Nuance）為既有巨頭。醫療 AI agent 公司 2025 共募 >$3.4B。⚠ OpenEvidence ~80x 倍數、廣告模式臨床中立性疑慮；FDA/HIPAA/臨床責任監管未定。",
+   "companies": [
+    {
+     "name": "OpenEvidence",
+     "ticker": "—",
+     "country": "US",
+     "share": "醫師臨床決策觸及最廣",
+     "products": "臨床問答 / 證據檢索（藥廠廣告變現）",
+     "note": "未上市；$12B（2026-01）；美 40% 醫師、年化 $150M、毛利 90%、月 1,800 萬問診",
+     "src": "https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html"
+    },
+    {
+     "name": "Abridge",
+     "ticker": "—",
+     "country": "US",
+     "share": "ambient scribe 龍頭",
+     "products": "環境 AI 臨床文件",
+     "note": "未上市；$5.3B+（2025-06 $300M a16z + 2026-04 $316M）；ARR $100M（2025-05）",
+     "src": "https://www.fiercehealthcare.com/ai-and-machine-learning/ambient-ai-startup-abridge-scores-300m-series-e-backed-a16z-and-khosla"
+    },
+    {
+     "name": "Ambience Healthcare",
+     "ticker": "—",
+     "country": "US",
+     "share": "ambient scribe 市占 13%",
+     "products": "AutoScribe 環境病歷",
+     "note": "未上市；$1.25B（2025-07 $243M）；OpenAI Startup Fund/Kleiner 投資",
+     "src": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/ambience-healthcare-reaches-1-25b-valuation/"
+    },
+    {
+     "name": "Suki",
+     "ticker": "—",
+     "country": "US",
+     "share": "ambient scribe 市占 10%",
+     "products": "語音 AI 臨床助理",
+     "note": "未上市；語音優先 scribe",
+     "src": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/ambient-ai-scribes-by-market-share/"
+    },
+    {
+     "name": "Nabla",
+     "ticker": "—",
+     "country": "FR",
+     "share": "歐系 ambient scribe 市占 4%",
+     "products": "環境 AI 病歷",
+     "note": "未上市；法國；歐洲代表",
+     "src": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/ambient-ai-scribes-by-market-share/"
+    },
+    {
+     "name": "Cohere Health",
+     "ticker": "—",
+     "country": "US",
+     "share": "事前授權 agent",
+     "products": "prior auth / 給付完整性 agent",
+     "note": "未上市；累計 ~$200M（2025-05 $90M Temasek）；年 1,200 萬 prior auth、85% 即時核准",
+     "src": "https://www.prnewswire.com/news-releases/cohere-health-secures-90m-series-c-to-expand-ai-powered-platform-transforming-health-plan-clinical-decision-making-302454527.html"
+    },
+    {
+     "name": "Microsoft (DAX / Nuance)",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "既有巨頭 scribe",
+     "products": "DAX Copilot 臨床文件",
+     "note": "上市；Nuance 收購；醫療 ambient 既有龍頭",
+     "src": "https://www.fiercehealthcare.com/health-tech/ambience-banks-243m-series-c-investors-continue-bet-big-ambient-ai"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "model_data"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "accounting_xdomain"
+    }
+   ],
+   "sources": [
+    {
+     "label": "OpenEvidence $12B（CNBC）",
+     "url": "https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html"
+    },
+    {
+     "label": "Abridge Series E（FierceHealthcare）",
+     "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/ambient-ai-startup-abridge-scores-300m-series-e-backed-a16z-and-khosla"
+    },
+    {
+     "label": "Ambient scribe 市占（Becker's）",
+     "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/ambient-ai-scribes-by-market-share/"
+    }
+   ]
+  },
+  {
+   "id": "accounting_xdomain",
+   "row": "deploy",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "會計/審計 Agent + 跨域平台 + 部署整合",
+   "nameEn": "Accounting, Cross-domain Platforms & Deployment",
+   "competition": "competitive",
+   "single": "Basis($1.15B/前 25 大事務所 30%) 端到端會計 agent；Sierra($15.8B) 跨域；Big Four(Deloitte×Legora) 把 agent 包進顧問交付",
+   "desc": "會計/稅務/審計 agent + 跨域 agent 平台 + 下游部署整合（Big Four、律所/醫療系統/銀行直購、既有專業出版商通路）。",
+   "marketSize": "下游分潤",
+   "growth": "Big Four 採用",
+   "share": "null",
+   "analysis": "會計：Basis（$1.15B；2026-02 $100M Series B a16z 領投、Tiger/Khosla；美前 25 大會計事務所 30% 採用；端到端 agent 跨會計/稅務/審計、LLM+規則控制；驅動 20-50% 效率）為領頭；Numeric（累計 $38M+；財務結算/對帳）、Truewind（累計 $17M；數位記帳員）為新創；Big Four 自研 agentic workforce（Deloitte Zora AI，HPE 採用）。跨域 agent 平台：Sierra（$15.8B；2026-05 $950M Tiger/GV；ARR >$150M；Bret Taylor + Clay Bavor；客服起家外溢成 AI agent OS）、Decagon（$4.5B；客服 agent 外溢）。下游部署整合：Big Four 把 agent 包進顧問交付（Deloitte×Legora 2026-05 聯盟、Zora AI），是傳統專業服務『再定價』受益者；既有專業出版商（TR/LexisNexis）以資料+通路收租。投資論點：上市可投標的稀缺，曝險集中在通路擁有者（TRI/RELX）與底層模型（Anthropic/Google/MSFT）。⚠2026-H1 既有 SaaS 巨頭加速反撲、與純垂直新創正面對決：Salesforce Agentforce 至 2026-01 逾 8,000 客戶/124 國、平均自動解決 85% 客服查詢，FY26 Q4 單季成交 22,000+ 案、處理 7.71 億 Agentic Work Units（QoQ +57%）；ServiceNow（IT 流程）、Microsoft Copilot Studio（Agent 365 控制平面/GPT-5）同步加碼，壓縮純垂直新創的獲客與留存空間。",
+   "companies": [
+    {
+     "name": "Basis",
+     "ticker": "—",
+     "country": "US",
+     "share": "端到端會計 agent 領頭",
+     "products": "會計/稅務/審計 agent",
+     "note": "未上市；$1.15B（2026-02 $100M a16z）；美前 25 大事務所 30% 採用；20-50% 效率",
+     "src": "https://www.businesswire.com/news/home/20260224020999/en/Basis-Raises-$100M-at-a-$1.15B-Valuation-as-Accounting-Firms-Adopt-End-to-End-Agents-Across-Accounting-Tax-and-Audit"
+    },
+    {
+     "name": "Numeric",
+     "ticker": "—",
+     "country": "US",
+     "share": "財務結算 agent",
+     "products": "結算/對帳/差異偵測",
+     "note": "未上市；累計 $38M+；成長期 in-house 會計",
+     "src": "https://siliconangle.com/2026/02/24/ai-accounting-startup-basis-secures-100m-1-15b-valuation-firms-adopt-agent-based-workflows/"
+    },
+    {
+     "name": "Truewind",
+     "ticker": "—",
+     "country": "US",
+     "share": "新創記帳 agent",
+     "products": "數位記帳員（human-in-the-loop）",
+     "note": "未上市；累計 $17M；新創記帳自動化",
+     "src": "https://www.truewind.ai/"
+    },
+    {
+     "name": "Sierra",
+     "ticker": "—",
+     "country": "US",
+     "share": "跨域 AI agent OS",
+     "products": "客服外溢的跨域 agent 平台",
+     "note": "未上市；$15.8B（2026-05 $950M Tiger/GV）；ARR >$150M；Bret Taylor",
+     "src": "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+    },
+    {
+     "name": "Deloitte (Zora AI)",
+     "ticker": "—",
+     "country": "US",
+     "share": "Big Four 部署/分潤",
+     "products": "agentic workforce + Legora 聯盟",
+     "note": "私有合夥制；Deloitte×Legora 2026-05 聯盟；Zora AI（HPE 採用）",
+     "src": "https://www.prnewswire.com/news-releases/deloitte-and-legora-expand-strategic-alliance-to-accelerate-ai-transformation-for-legal-operations-302767137.html"
+    },
+    {
+     "name": "Thomson Reuters",
+     "ticker": "TRI",
+     "country": "US",
+     "share": "通路擁有者（上市曝險）",
+     "products": "CoCounsel 跨業別 + 自研 LLM",
+     "note": "上市；100 萬用戶/7 業別；至 2028 ~$11B 資本量能",
+     "src": "https://www.thomsonreuters.com/en/cocounsel"
+    },
+    {
+     "name": "Intuit",
+     "ticker": "INTU",
+     "country": "US",
+     "share": "中小企業會計/稅務通路",
+     "products": "QuickBooks/TurboTax + AI agent",
+     "note": "上市；既有會計/稅務安裝基礎；垂直 agent 化",
+     "src": "https://www.deloitte.com/us/en/services/audit-assurance/services/ai-in-finance-and-accounting.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "model_data"
+    },
+    {
+     "id": "legal_us"
+    },
+    {
+     "id": "finance_us"
+    },
+    {
+     "id": "health_us"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Basis $1.15B（BusinessWire）",
+     "url": "https://www.businesswire.com/news/home/20260224020999/en/Basis-Raises-$100M-at-a-$1.15B-Valuation-as-Accounting-Firms-Adopt-End-to-End-Agents-Across-Accounting-Tax-and-Audit"
+    },
+    {
+     "label": "Sierra $15.8B（TechCrunch）",
+     "url": "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+    },
+    {
+     "label": "Deloitte×Legora 聯盟（PRNewswire）",
+     "url": "https://www.prnewswire.com/news-releases/deloitte-and-legora-expand-strategic-alliance-to-accelerate-ai-transformation-for-legal-operations-302767137.html"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "model_data",
+   "legal_us"
+  ],
+  [
+   "model_data",
+   "finance_us"
+  ],
+  [
+   "model_data",
+   "health_us"
+  ],
+  [
+   "model_data",
+   "accounting_xdomain"
+  ],
+  [
+   "legal_us",
+   "accounting_xdomain"
+  ],
+  [
+   "finance_us",
+   "accounting_xdomain"
+  ],
+  [
+   "health_us",
+   "accounting_xdomain"
+  ]
+ ],
+ "_proposed": {}
+}

@@ -1,0 +1,927 @@
+{
+ "id": "mems_sensor",
+ "tab": "MEMS 感測器",
+ "title": "MEMS 與感測器供應鏈 (MEMS & Sensors)",
+ "subtitle": "MEMS & Sensors — AI 從雲端走入物理世界，感測前端成為車、機器人、穿戴不可省略的 BOM。MEMS 感測器市場 2026 約 $20.2B(CAGR 8%)、影像感測 (CIS) 約 $33B、最快的 MEMS IMU 慣性 CAGR 11%。供給高度集中：MEMS 前五大(ST/Bosch/TDK/ADI/Infineon)約 55%、Sony CIS 逾 50%。2026 催化爆量：ST 已完成併 NXP MEMS $950M(2026-02-02、車用 Q1'26 轉 +15% YoY)、Sony×TSMC 簽 MOU 成立合資(Sony 控股、熊本)搶物理 AI 影像感測、Knowles 消費麥克風賣 Syntiant 後麥克風板塊重組、人形機器人觸覺需求井噴(TrendForce 估 2026 出貨逾 5 萬台/+700%)。價值鏈：MEMS 設備/材料 → 慣性/壓力/麥克風/CIS/光學感測元件 → MEMS 晶圓代工+感測封測 → 消費/車用/機器人終端。台廠卡位 CIS 設計(原相)與後段封測(精材/采鈺/同欣電)。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "MEMS 市場",
+   "v": "$20.2B",
+   "sub": "2026·CAGR 8%·IMU 子環節 CAGR 11%",
+   "hot": true
+  },
+  {
+   "k": "催化／集中度",
+   "v": 3,
+   "sub": "ST 完成併 NXP $950M·Sony×TSMC 合資·Knowles 麥賣 Syntiant·前五大 55%·Sony CIS 43%",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "MEMS 設備 / 材料 Upstream",
+   "main": false
+  },
+  {
+   "id": "device",
+   "label": "感測元件設計 / IDM Sensor Devices",
+   "main": true
+  },
+  {
+   "id": "image",
+   "label": "影像感測 CIS Image Sensors",
+   "main": false
+  },
+  {
+   "id": "back",
+   "label": "MEMS 代工 / 感測封測 Foundry & OSAT",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "終端整合 End Markets",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "mems_equip",
+   "row": "upstream",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "MEMS 製程設備 / 材料 / 特殊晶圓",
+   "nameEn": "MEMS Equipment, Materials & Wafers",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 晶圓鍵合 EVG/SUSS、深矽蝕刻 DRIE、SOI 晶圓為 MEMS 獨有瓶頸",
+   "desc": "MEMS 異於標準 CMOS：需深矽蝕刻 (DRIE)、晶圓鍵合、TSV 與 SOI/MEMS 專用晶圓，這些獨有製程設備與材料是上游卡位點。",
+   "marketSize": "DRIE/鍵合特用",
+   "growth": "瓶頸製程",
+   "share": "null",
+   "analysis": "晶圓鍵合是 MEMS 最關鍵獨有設備，EV Group (EVG，AT，未上市) 為鍵合龍頭、SUSS MicroTec (SMHN.DE，DE) 並列；深矽蝕刻 DRIE 由 Lam Research (LRCX)、Plasma-Therm (US，未上市) 供應；切割/減薄 DISCO (6146.T)。特殊晶圓：SOITEC (SOI.PA，FR，SOI 晶圓) 為 MEMS/RF-SOI 關鍵、信越/SUMCO (3436.T) 供 MEMS 級矽晶圓、Okmetic (FI，被 Group Soitec 收購) 專供 MEMS 厚膜 SOI。瓶頸不在標準曝光而在鍵合對準與深寬比蝕刻；MEMS 設備市場小但護城河深、客戶黏著高。",
+   "companies": [
+    {
+     "name": "EV Group (EVG)",
+     "ticker": "—",
+     "country": "AT",
+     "share": "晶圓鍵合龍頭",
+     "products": "晶圓鍵合 / 對準 / 奈米壓印",
+     "note": "未上市；MEMS 鍵合市佔領先、客戶黏著高",
+     "src": "https://en.wikipedia.org/wiki/List_of_MEMS_foundries"
+    },
+    {
+     "name": "SUSS MicroTec",
+     "ticker": "SMHN.DE",
+     "country": "DE",
+     "share": "鍵合 / 光罩對準",
+     "products": "晶圓鍵合 / 塗佈顯影 / 對準",
+     "note": "MEMS/先進封裝鍵合並列領先",
+     "src": "https://marklapedus.substack.com/p/mems-market-heats-up-with-new-devices"
+    },
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "深矽蝕刻 DRIE",
+     "products": "DRIE / 深矽刻蝕",
+     "note": "MEMS 高深寬比蝕刻核心設備",
+     "src": "https://marklapedus.substack.com/p/mems-market-heats-up-with-new-devices"
+    },
+    {
+     "name": "DISCO",
+     "ticker": "6146.T",
+     "country": "JP",
+     "share": "切割 / 減薄",
+     "products": "晶圓切割 / 研磨減薄",
+     "note": "MEMS/CIS 後段薄化",
+     "src": "https://en.wikipedia.org/wiki/List_of_MEMS_foundries"
+    },
+    {
+     "name": "Soitec",
+     "ticker": "SOI.PA",
+     "country": "FR",
+     "share": "SOI 晶圓",
+     "products": "SOI / RF-SOI / MEMS 厚膜 SOI",
+     "note": "收購 Okmetic 強化 MEMS 晶圓；MEMS 關鍵基板",
+     "src": "https://en.wikipedia.org/wiki/List_of_MEMS_foundries"
+    },
+    {
+     "name": "SUMCO",
+     "ticker": "3436.T",
+     "country": "JP",
+     "share": "MEMS 級矽晶圓",
+     "products": "矽晶圓 / SOI",
+     "note": "MEMS/CIS 級矽晶圓供應",
+     "src": "https://marklapedus.substack.com/p/mems-market-heats-up-with-new-devices"
+    },
+    {
+     "name": "Plasma-Therm",
+     "ticker": "—",
+     "country": "US",
+     "share": "MEMS 蝕刻/鍍膜",
+     "products": "DRIE / PECVD",
+     "note": "未上市；MEMS 專用蝕刻",
+     "src": "https://en.wikipedia.org/wiki/List_of_MEMS_foundries"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "inertial"
+    },
+    {
+     "id": "acoustic"
+    },
+    {
+     "id": "cis"
+    }
+   ],
+   "sources": [
+    {
+     "label": "List of MEMS foundries (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/List_of_MEMS_foundries"
+    },
+    {
+     "label": "MEMS Market Heats Up With New Fabs (Lapedus)",
+     "url": "https://marklapedus.substack.com/p/mems-market-heats-up-with-new-devices"
+    }
+   ]
+  },
+  {
+   "id": "inertial",
+   "row": "device",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "慣性 IMU / 加速度 / 陀螺",
+   "nameEn": "Inertial IMU / Accelerometer / Gyro",
+   "competition": "oligopoly",
+   "single": "成長最快子環節 · MEMS 取代光纖/雷射陀螺；Bosch MEMS #1(約 18%)",
+   "desc": "加速度計+陀螺儀組成 6 軸/9 軸 IMU，是 ADAS L2+、人形機器人、無人機、穿戴的動作感知核心，成長最快的 MEMS 子環節。",
+   "marketSize": "MEMS IMU $1.34B(2026)",
+   "growth": "CAGR 11.1%",
+   "share": "前四約 60%",
+   "analysis": "MEMS IMU 市場 2026 約 $1.34B、CAGR 11.12%、2031 達 $2.28B，受 MEMS 取代光纖/雷射陀螺驅動。Bosch Sensortec (DE，未上市) MEMS 全球第一、約 18% 份額，CES 2026 推 BMI5 平台(BMI560/563/570、全幅量程翻倍、延遲 <0.5ms、抗振),主攻機器人 SLAM/XR/穿戴、樣品出貨中、HVM 2026Q3;ST (STM) 約 16%、Tesla HW4 導入 Bosch SMI230；TDK InvenSense (6762.T) 消費慣性領先、Sensors Converge 2026 推物理 AI 客製感測+Robokit1(6 軸 IMU 給人形機器人)；ADI (ADI) 主攻戰術級(<5°/hr)、推 $450 ADIS16577 衝擊定價、Q1FY26 營收 $3.16B(+30% YoY、工業帶動);Murata (6981.T) 高階壓電/慣性。每台 L2+ 車 ≥2 顆 IMU、人形機器人需多顆。Bosch+ST+TDK 慣性合計 >50%。",
+   "companies": [
+    {
+     "name": "Bosch Sensortec",
+     "ticker": "—",
+     "country": "DE",
+     "share": "MEMS #1 約 18%",
+     "products": "加速度/陀螺/IMU(BMI5:560/563/570)",
+     "note": "未上市；MEMS 全球第一；CES 2026 BMI5 機器人/XR(量程翻倍/延遲<0.5ms);HVM 2026Q3",
+     "src": "https://www.bosch-sensortec.com/en/news/from-immersive-xr-to-advanced-robotics-and-wearables-bosch-sensortec-launches-bmi5-motion-sensor-platform.html"
+    },
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "EU",
+     "share": "MEMS 約 16%",
+     "products": "LSM/ISM IMU / 加速度計",
+     "note": "Tesla HW4 導入 SMI230 系；Q1'26 +23% YoY、車用轉 +15%",
+     "src": "https://newsroom.st.com/media-center/press-item.html/c3392.html"
+    },
+    {
+     "name": "TDK (InvenSense)",
+     "ticker": "6762.T",
+     "country": "JP",
+     "share": "消費慣性領先",
+     "products": "ICM IMU / 加速度 / 陀螺 / Robokit1",
+     "note": "Sensors Converge 2026 物理 AI 客製;6 軸 IMU 攻人形機器人/穿戴",
+     "src": "https://www.wevolver.com/article/innovation-in-motion-how-tdks-6-axis-imu-enables-precise-movement-in-humanoid-robots"
+    },
+    {
+     "name": "Analog Devices",
+     "ticker": "ADI",
+     "country": "US",
+     "share": "戰術級 IMU 領先",
+     "products": "ADIS 戰術級 IMU(<5°/hr)",
+     "note": "Q1FY26 $3.16B(+30% YoY)、調整後 EPS +51%；$450 ADIS16577 衝擊定價",
+     "src": "https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-fiscal-first-quarter-2026-financial"
+    },
+    {
+     "name": "Murata",
+     "ticker": "6981.T",
+     "country": "JP",
+     "share": "高階壓電/慣性",
+     "products": "壓電 MEMS / 慣性 / 振盪",
+     "note": "車規/工業高可靠度慣性",
+     "src": "https://www.mordorintelligence.com/industry-reports/global-mems-based-inertial-measurement-unit-market"
+    },
+    {
+     "name": "Goermicro (Goertek)",
+     "ticker": "002241.SZ",
+     "country": "CN",
+     "share": "中國慣性追趕",
+     "products": "MEMS 慣性 / 加速度",
+     "note": "Goertek 微電子子公司；消費慣性本土替代",
+     "src": "https://www.edge-ai-vision.com/2025/10/greater-china-mems-industry-on-the-rise-consumer-leads-the-way/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mems_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "mems_foundry"
+    },
+    {
+     "id": "end"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MEMS IMU Market CAGR 11% (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/global-mems-based-inertial-measurement-unit-market"
+    },
+    {
+     "label": "Bosch Sensortec Robotics",
+     "url": "https://www.bosch-sensortec.com/en/applications-solutions/robotics"
+    }
+   ]
+  },
+  {
+   "id": "pressure",
+   "row": "device",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "壓力 / 環境 / 車用安全感測",
+   "nameEn": "Pressure, Environmental & Auto-Safety",
+   "competition": "oligopoly",
+   "single": "✓ ST 已完成併 NXP MEMS $950M(2026-02-02)、補車用氣囊/TPMS/加速度；ST Q1'26 車用轉 +15% YoY",
+   "desc": "MEMS 壓力/環境/車用安全感測（氣囊、TPMS、車身動態、氣壓、濕度），車用安全為剛性需求、法規驅動。",
+   "marketSize": "ST 併 NXP 完成",
+   "growth": "車用轉成長",
+   "share": "null",
+   "analysis": "ST 已於 2026-02-02 完成以 $950M(上付 $900M+里程碑 $50M) 收購 NXP MEMS 感測業務(NXP MEMS 2024 營收近 $300M、車用安全為主)——NXP 補強 ST 的加速度計卡位、與 ST 6 軸能力互補；Q1'26 該併購單位貢獻約 $40M 營收。整體 ST Q1'26 營收 $3.10B、+23% YoY，車用由 2025 的下行(-24%)轉為 +15% YoY 成長(ADAS+感測+SiC+NXP 併購驅動)——此案的『車用再平衡』策略已開始兌現。Bosch (DE，未上市) 壓力/環境龍頭；Infineon (IFX.DE) 車用壓力/雷達/麥克風；TE Connectivity (TEL)、Sensata (ST，NYSE) 車用壓力/溫度模組；Melexis (MELE.BR，BE) 車用磁性/紅外感測。法規(胎壓/排放/安全)使車用 MEMS 為剛需，毛利優於消費級。",
+   "companies": [
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "EU",
+     "share": "壓力 + NXP 車用安全",
+     "products": "MEMS 壓力 / 併購 NXP 加速度/氣囊/TPMS",
+     "note": "✓ 2026-02-02 完成併 NXP MEMS $950M；Q1'26 貢獻 ~$40M；車用 +15% YoY",
+     "src": "https://newsroom.st.com/media-center/press-item.html/c3384.html"
+    },
+    {
+     "name": "Bosch",
+     "ticker": "—",
+     "country": "DE",
+     "share": "壓力/環境龍頭",
+     "products": "BMP 氣壓 / 環境 / 車用壓力",
+     "note": "未上市；環境+壓力 MEMS 領先",
+     "src": "https://www.bosch-sensortec.com/en/applications-solutions/robotics"
+    },
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "車用壓力/雷達",
+     "products": "壓力 / 60GHz 雷達 / MEMS 麥克風",
+     "note": "車用+工業感測",
+     "src": "https://www.mordorintelligence.com/industry-reports/mems-sensor-market"
+    },
+    {
+     "name": "Sensata",
+     "ticker": "ST",
+     "country": "US",
+     "share": "車用感測模組",
+     "products": "壓力 / 溫度 / 位置感測",
+     "note": "NYSE:ST；車用+工業壓力模組",
+     "src": "https://www.mordorintelligence.com/industry-reports/mems-sensor-market"
+    },
+    {
+     "name": "TE Connectivity",
+     "ticker": "TEL",
+     "country": "CH",
+     "share": "感測+連接",
+     "products": "壓力 / 溫度 / 位置",
+     "note": "車用/工業感測+連接器",
+     "src": "https://www.mordorintelligence.com/industry-reports/mems-sensor-market"
+    },
+    {
+     "name": "Melexis",
+     "ticker": "MELE.BR",
+     "country": "EU",
+     "share": "車用磁性/紅外",
+     "products": "霍爾 / 紅外 / 壓力",
+     "note": "比利時車用磁性感測領先",
+     "src": "https://www.mordorintelligence.com/industry-reports/mems-sensor-market"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mems_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "mems_foundry"
+    },
+    {
+     "id": "end"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ST 完成併 NXP MEMS (Power Electronics News)",
+     "url": "https://www.powerelectronicsnews.com/st-finalizes-acquisition-of-nxp-mems-sensors-business/"
+    },
+    {
+     "label": "MEMS Sensor Market (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/mems-sensor-market"
+    }
+   ]
+  },
+  {
+   "id": "acoustic",
+   "row": "device",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "MEMS 麥克風 / 聲學",
+   "nameEn": "MEMS Microphone & Acoustics",
+   "competition": "oligopoly",
+   "single": "⚠ 板塊重組：Knowles 賣消費 MEMS 麥給 Syntiant($150M)、Syntiant 接棒龍頭(>200 億顆)；Infineon 主導麥克風裸晶(38%)；中國價格戰",
+   "desc": "MEMS 矽麥克風用於手機、TWS、穿戴、車用語音；AI 語音助理推動多麥克風陣列與低功耗，成長強勁。",
+   "marketSize": "$2.18B(2026)",
+   "growth": "CAGR 11.7%",
+   "share": "WLP 前二約 49%",
+   "analysis": "MEMS 麥克風 2025 約 $1.95B → 2026 約 $2.18B、CAGR 11.7%、2035 上看 $11.6B。⚠ 板塊重組：Knowles 已將消費 MEMS 麥克風(SiSonic)業務以 $150M 賣給 Syntiant(US，未上市，2024-12-30 完成)，Syntiant 接棒成消費麥克風龍頭(累計出貨 >200 億顆、含 Knowles 過去 150 億顆)；Knowles (KN) 留高階助聽/平衡電樞與國防工業。Yole 統計：WLP 封裝口徑 Goertek 26%、Knowles/Syntiant 23%並列前二；但裸晶(die)市場 Infineon 以 2024 出貨 26 億顆、約 38% 領先。Goertek (002241.SZ，2025 出貨 12 億顆)、AAC Technologies (2018.HK，FY25 淨利 +40%、MEMS 麥克風 +50% AI 應用、2.0×1.5mm 薄型) 中國雙雄以成本+補貼侵蝕西方份額——消費級聲學是中國最有機會本土替代的 MEMS 環節。AI 眼鏡/TWS 多麥克風陣列是最強需求拉力。",
+   "companies": [
+    {
+     "name": "Syntiant",
+     "ticker": "—",
+     "country": "US",
+     "share": "消費麥克風龍頭",
+     "products": "SiSonic MEMS 麥克風 / 邊緣 AI 語音 SoC",
+     "note": "未上市；2024-12 以 $150M 併 Knowles 消費 MEMS 麥(累計 >200 億顆)；麥克風+處理器+軟體整合",
+     "src": "https://www.eenewseurope.com/en/syntiant-completes-150m-buy-of-knowles-consumer-mems-microphone-business/"
+    },
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "麥克風裸晶 38%",
+     "products": "XENSIV MEMS 麥克風裸晶 / 高 SNR",
+     "note": "2024 出貨 26 億顆、裸晶(die)市場第一；車用+高訊噪",
+     "src": "https://www.gminsights.com/industry-analysis/mems-microphone-market"
+    },
+    {
+     "name": "Knowles",
+     "ticker": "KN",
+     "country": "US",
+     "share": "高階/國防聲學",
+     "products": "平衡電樞 / 助聽 / 工業國防 MEMS",
+     "note": "2024-12 出售消費 MEMS 麥給 Syntiant；轉攻高毛利醫療/國防",
+     "src": "https://audioxpress.com/news/knowles-completes-the-sale-of-its-consumer-mems-microphone-business-to-syntiant"
+    },
+    {
+     "name": "Goertek",
+     "ticker": "002241.SZ",
+     "country": "CN",
+     "share": "WLP 第一 26%",
+     "products": "MEMS 麥克風 / 聲學模組",
+     "note": "2025 出貨 12 億顆；WLP 封裝口徑 Yole 列第一；成本+補貼",
+     "src": "https://www.edge-ai-vision.com/2025/10/greater-china-mems-industry-on-the-rise-consumer-leads-the-way/"
+    },
+    {
+     "name": "AAC Technologies",
+     "ticker": "2018.HK",
+     "country": "CN",
+     "share": "聲學+麥克風",
+     "products": "MEMS 麥克風 / 揚聲器 / 觸覺馬達",
+     "note": "FY25 淨利 +40%；MEMS麥克風 +50%(AI)；2.0×1.5mm 薄型",
+     "src": "https://www.edge-ai-vision.com/2025/10/greater-china-mems-industry-on-the-rise-consumer-leads-the-way/"
+    },
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "EU",
+     "share": "前三聲學",
+     "products": "MEMS 麥克風 / 音訊",
+     "note": "半導體製程優勢；高階聲學前段",
+     "src": "https://www.globalgrowthinsights.com/blog/here-s-the-top-15-list-of-mems-microphones-companies-2025-global-growth-insights-1064"
+    },
+    {
+     "name": "MEMSensing",
+     "ticker": "688286.SS",
+     "country": "CN",
+     "share": "中國麥克風/壓力",
+     "products": "MEMS 麥克風 / 壓力",
+     "note": "敏芯股份；中國本土感測",
+     "src": "https://www.edge-ai-vision.com/2025/10/greater-china-mems-industry-on-the-rise-consumer-leads-the-way/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mems_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "mems_foundry"
+    },
+    {
+     "id": "end"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Syntiant 完成併 Knowles 消費 MEMS 麥 $150M (eeNews)",
+     "url": "https://www.eenewseurope.com/en/syntiant-completes-150m-buy-of-knowles-consumer-mems-microphone-business/"
+    },
+    {
+     "label": "MEMS Microphone Market 2026 (gminsights)",
+     "url": "https://www.gminsights.com/industry-analysis/mems-microphone-market"
+    },
+    {
+     "label": "Greater China MEMS (Edge AI Vision)",
+     "url": "https://www.edge-ai-vision.com/2025/10/greater-china-mems-industry-on-the-rise-consumer-leads-the-way/"
+    }
+   ]
+  },
+  {
+   "id": "cis",
+   "row": "image",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "CMOS 影像感測 (CIS)",
+   "nameEn": "CMOS Image Sensors",
+   "competition": "monopoly",
+   "single": "鎖喉點 · Sony CIS 約 43%(整體口徑)/手機逾 50%；Sony×TSMC 2026-05 簽 MOU 成立合資(Sony 控股)於熊本，把高階 CIS 製程移向台日結盟",
+   "desc": "CMOS 影像感測是手機/車用/機器人/AR 的『視覺』前端，技術門檻（堆疊、HDR、全局快門、SPAD ToF）高，Sony 一家獨大。",
+   "marketSize": "影像感測 $33B(2026)",
+   "growth": "車用/機器人拉動",
+   "share": "Sony 逾 50%",
+   "analysis": "影像感測市場 2025 約 $25.6B(8.1 億顆) → 2026 約 $27.4B → 2031 達 $39.9B。Sony Semiconductor (6758.T) CIS 龍頭、2025 全市場份額 43.4%(手機高階逾 50%)；2026-05-08 與 TSMC 簽非約束性 MOU，將成立『Sony 為多數控股方』的合資公司，於 Sony 熊本(Koshi City)新廠設研發/量產線、長崎(Nagasaki)分階段擴產(視需求+日本政府補助)——把高階 CIS 邏輯層製程綁定台積電、聚焦物理 AI(車用/機器人)。Samsung (005930.KS) 約 20.2%；2025-12 取得 Apple 三層堆疊 CIS 訂單(於美國德州 Austin 量產)——切入 iPhone 撼動 Sony 手機獨占。OmniVision/韋爾 (603501.SS) 2024 已超越 onsemi 成『車用 CIS 龍頭』(約 35% 份額/~$8.2 億)；onsemi (ON) 整體約 3.6%、車用退居第二;ST 亦居前五。前五大合計 83.1%。車用 CIS 市場 2025 $4.89B → 2026 $5.67B(CAGR 15.9%)。Sony SPAD 切入車用 LiDAR/ToF(物理 AI)。",
+   "companies": [
+    {
+     "name": "Sony Semiconductor",
+     "ticker": "6758.T",
+     "country": "JP",
+     "share": "CIS 約 43%",
+     "products": "堆疊 CIS / SPAD ToF / 全局快門",
+     "note": "2026-05 與 TSMC 簽 MOU 成立合資(Sony 控股)於熊本;長崎分階段擴產;物理 AI",
+     "src": "https://www.sony-semicon.com/en/news/2026/2026050801.html"
+    },
+    {
+     "name": "Samsung",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "約 20.2%",
+     "products": "ISOCELL CIS / 三層堆疊 / 高畫素",
+     "note": "2025-12 拿 Apple 三層堆疊 CIS 單(德州 Austin 量產);切入 iPhone",
+     "src": "https://www.gminsights.com/industry-analysis/image-sensor-market"
+    },
+    {
+     "name": "OmniVision (韋爾)",
+     "ticker": "603501.SS",
+     "country": "CN",
+     "share": "車用 CIS 第一 ~35%",
+     "products": "CIS / 車用影像 / OX08D20",
+     "note": "韋爾股份;2024 超越 onsemi 成車用 CIS 龍頭(~$8.2 億);手機追趕",
+     "src": "https://library.techinsights.com/public/sectioned-blog-viewer/7f584898-83b0-4b44-8352-43ab62eddcd5"
+    },
+    {
+     "name": "onsemi",
+     "ticker": "ON",
+     "country": "US",
+     "share": "約 3.6%(車用退第二)",
+     "products": "車用 CIS / Hyperlux",
+     "note": "車用影像;2024 被 OmniVision 超越退居車用第二;ADAS",
+     "src": "https://www.gminsights.com/industry-analysis/image-sensor-market"
+    },
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "EU",
+     "share": "前五影像",
+     "products": "CIS / ToF / 影像 MEMS段",
+     "note": "MEMS&Sensor段 2025 +7.5%(影像帶動)",
+     "src": "https://www.stocktitan.net/sec-filings/STM/6-k-st-microelectronics-n-v-current-report-foreign-issuer-a34e96dc54a1.html"
+    },
+    {
+     "name": "GalaxyCore (格科微)",
+     "ticker": "688728.SS",
+     "country": "CN",
+     "share": "中國低階 CIS",
+     "products": "CIS / 顯示驅動",
+     "note": "中國中低階 CIS 本土替代",
+     "src": "https://www.gminsights.com/industry-analysis/image-sensor-market"
+    },
+    {
+     "name": "PixArt 原相",
+     "ticker": "3227.TWO",
+     "country": "TW",
+     "share": "光學/觸控 CIS 設計",
+     "products": "光學導航 / 觸控 / 健康感測 CIS",
+     "note": "台廠 CIS/光學感測設計;Q1'26 營收 -5.93%",
+     "src": "https://www.pixart.com/investor-events_reports-monthly/tw"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mems_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "mems_foundry"
+    },
+    {
+     "id": "end"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sony×TSMC 合資成立 MOU (Sony 官方 2026-05)",
+     "url": "https://www.sony-semicon.com/en/news/2026/2026050801.html"
+    },
+    {
+     "label": "Sony×TSMC 合資 (TSMC PR)",
+     "url": "https://pr.tsmc.com/english/news/3308"
+    },
+    {
+     "label": "OmniVision 車用 CIS 龍頭 (TechInsights)",
+     "url": "https://library.techinsights.com/public/sectioned-blog-viewer/7f584898-83b0-4b44-8352-43ab62eddcd5"
+    },
+    {
+     "label": "Image Sensor Market 2026 (gminsights)",
+     "url": "https://www.gminsights.com/industry-analysis/image-sensor-market"
+    }
+   ]
+  },
+  {
+   "id": "optical_tof",
+   "row": "image",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "光學 / ToF / 觸覺 / 特殊感測",
+   "nameEn": "Optical, ToF & Tactile",
+   "competition": "highgrowth",
+   "single": "⚠ MEMS 觸覺仍是『期貨』·量程/耐久不足、商用化 3-5 年；ToF/LiDAR 受車用機器人拉動",
+   "desc": "ToF/SPAD 深度感測、紅外/環境光、機器人力扭矩與觸覺感測，是物理 AI(車用 LiDAR、機器人操作)的新成長軸，但 MEMS 觸覺仍早期。",
+   "marketSize": "觸覺仍早期",
+   "growth": "機器人/LiDAR",
+   "share": "null",
+   "analysis": "ToF/3D 深度感測 CAGR 約 9.4%(2026-35)、受機器人/AR/車用 LiDAR/生物辨識驅動。Sony SPAD(車用 LiDAR)、AMS-OSRAM (AMS.SW，AT/CH，光感測/VCSEL)、ST ToF(FlightSense)、Hamamatsu (6965.T，光電倍增/SiPM)。機器人觸覺/力扭矩：ATI(Novanta，US)、FUTEK(US，未上市)、Tekscan——Figure 03 指尖觸覺可感 3 克力(已於 BMW Spartanburg 廠部署)、Tesla Optimus 用 28 顆感測器(Gen2 指尖觸覺已可拿雞蛋、Gen3 22-DOF 手、2026 夏量產);TrendForce 估 2026 全球人形機器人出貨突破 5 萬台(較 2025 +700%)、中國 2025 佔 >80%(Unitree 5,500 台、AgiBot 5,168 台)。⚠ 但 MEMS 力扭矩感測『量程+耐久』不足、奈米級扭矩商用化還要 3-5 年——觸覺敘事熱但短期可投資的是 ToF 與既有力扭矩供應商，非觸覺新創。",
+   "companies": [
+    {
+     "name": "Sony Semiconductor",
+     "ticker": "6758.T",
+     "country": "JP",
+     "share": "車用 SPAD LiDAR",
+     "products": "SPAD 深度 / dToF",
+     "note": "車用 LiDAR/物理 AI;CIS 龍頭延伸",
+     "src": "https://www.sony-semicon.com/en/products/is/automotive/tof.html"
+    },
+    {
+     "name": "AMS-OSRAM",
+     "ticker": "AMS.SW",
+     "country": "CH",
+     "share": "光感測/VCSEL",
+     "products": "環境光 / 接近 / VCSEL / ToF",
+     "note": "瑞士總部(原 ams 奧地利);手機/車用光感測",
+     "src": "https://www.mordorintelligence.com/industry-reports/mems-sensor-market"
+    },
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "EU",
+     "share": "ToF 模組",
+     "products": "FlightSense dToF / 測距",
+     "note": "手機/機器人測距",
+     "src": "https://www.mordorintelligence.com/industry-reports/mems-sensor-market"
+    },
+    {
+     "name": "Hamamatsu",
+     "ticker": "6965.T",
+     "country": "JP",
+     "share": "光電/SiPM",
+     "products": "光電倍增 / SiPM / 光感測",
+     "note": "工業/醫療/LiDAR 光感測",
+     "src": "https://www.mordorintelligence.com/industry-reports/robotic-sensors-market"
+    },
+    {
+     "name": "ATI (Novanta)",
+     "ticker": "NOVT",
+     "country": "US",
+     "share": "機器人力扭矩",
+     "products": "6 軸力/扭矩感測",
+     "note": "Novanta 旗下;機器人關節操作",
+     "src": "https://www.intelmarketresearch.com/torque-sensor-for-humanoid-robot-market-2830"
+    },
+    {
+     "name": "FUTEK",
+     "ticker": "—",
+     "country": "US",
+     "share": "力/扭矩感測",
+     "products": "力/扭矩 / 應變",
+     "note": "未上市;機器人/醫療力感測",
+     "src": "https://www.intelmarketresearch.com/torque-sensor-for-humanoid-robot-market-2830"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mems_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "mems_foundry"
+    },
+    {
+     "id": "end"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sony 車用 ToF/SPAD (官方)",
+     "url": "https://www.sony-semicon.com/en/products/is/automotive/tof.html"
+    },
+    {
+     "label": "Torque Sensor for Humanoid Robot",
+     "url": "https://www.intelmarketresearch.com/torque-sensor-for-humanoid-robot-market-2830"
+    },
+    {
+     "label": "Robotic Sensors Market (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/robotic-sensors-market"
+    }
+   ]
+  },
+  {
+   "id": "mems_foundry",
+   "row": "back",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "MEMS 晶圓代工 + 感測封測 (OSAT)",
+   "nameEn": "MEMS Foundry & Sensor OSAT",
+   "competition": "fragmented",
+   "single": "台廠卡位 CIS 後段:精材/采鈺/同欣電;Silex(中資)全球 MEMS 代工第一",
+   "desc": "感測器 fabless/IDM 委外的 MEMS 晶圓代工與 CIS/感測晶圓級封裝 (WLCSP/WLP)，台廠在 CIS 後段封測卡位深。",
+   "marketSize": "MEMS 代工 $0.87B(2025)",
+   "growth": "CAGR 6.5%",
+   "share": "null",
+   "analysis": "MEMS 晶圓代工市場 2025 約 $0.87B、CAGR 6.5%。純代工：Silex(中資 SAIC/上海貝嶺系，全球 MEMS 代工第一)、Teledyne DALSA (TDY，第二)、TSMC (2330.TW，CIS/MEMS 大代工)、X-FAB (XFAB.PA，BE/DE 純代工)、Atomica(US)、Tower(TSEM)、亞太優勢 APM(TW)。CIS/感測晶圓級封裝(台積電生態最強)：精材 Xintec (3374.TWO，WLCSP/WLP)、采鈺 VisEra (6789.TWO，CIS 製程/彩色濾光,台積電系)、同欣電 Tong Hsing (6271.TW，CIS/車用陶瓷封裝)、JCET(600584.SS)、日月光 ASE(3711.TW)。絃外之音:Sony×TSMC 2026-05 簽 MOU 成立合資(Sony 控股、於熊本/長崎)把高階 CIS 製程綁定台積電,精材/采鈺/同欣電是被低估的『賣鏟人』。",
+   "companies": [
+    {
+     "name": "Silex Microsystems",
+     "ticker": "—",
+     "country": "CN",
+     "share": "MEMS 代工第一",
+     "products": "MEMS 純晶圓代工 / TSV",
+     "note": "中資 SAIC 系;全球 MEMS 代工龍頭",
+     "src": "https://www.eenewseurope.com/en/chinas-silex-microsystems-remains-top-mems-foundry/"
+    },
+    {
+     "name": "Teledyne DALSA",
+     "ticker": "TDY",
+     "country": "US",
+     "share": "MEMS 代工第二",
+     "products": "MEMS 代工 / 影像",
+     "note": "全球第二大 MEMS 代工",
+     "src": "https://en.wikipedia.org/wiki/List_of_MEMS_foundries"
+    },
+    {
+     "name": "TSMC",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "CIS/MEMS 大代工",
+     "products": "CIS 邏輯層 / MEMS 代工",
+     "note": "2026-05 與 Sony 簽 MOU 成立合資(Sony 控股)次世代 CIS",
+     "src": "https://pr.tsmc.com/english/news/3308"
+    },
+    {
+     "name": "X-FAB",
+     "ticker": "XFAB.PA",
+     "country": "EU",
+     "share": "純 MEMS/類比代工",
+     "products": "MEMS / 類比 / SiC 代工",
+     "note": "比利時/德國純代工",
+     "src": "https://en.wikipedia.org/wiki/List_of_MEMS_foundries"
+    },
+    {
+     "name": "精材 Xintec",
+     "ticker": "3374.TWO",
+     "country": "TW",
+     "share": "CIS 晶圓級封裝",
+     "products": "WLCSP / WLP / CIS 封測",
+     "note": "台積電系;CIS/感測後段封測",
+     "src": "https://www.xintec.com.tw/chi/index.aspx"
+    },
+    {
+     "name": "采鈺 VisEra",
+     "ticker": "6789.TWO",
+     "country": "TW",
+     "share": "CIS 製程/濾光",
+     "products": "CIS 彩色濾光 / 微透鏡 / 製程",
+     "note": "台積電系;CIS 後段製程",
+     "src": "https://www.gminsights.com/industry-analysis/image-sensor-market"
+    },
+    {
+     "name": "同欣電 Tong Hsing",
+     "ticker": "6271.TW",
+     "country": "TW",
+     "share": "CIS/車用封裝",
+     "products": "CIS 封裝 / 陶瓷基板 / 車用",
+     "note": "CIS/車用感測封裝",
+     "src": "https://www.gminsights.com/industry-analysis/image-sensor-market"
+    },
+    {
+     "name": "亞太優勢 APM",
+     "ticker": "—",
+     "country": "TW",
+     "share": "亞太 MEMS 代工",
+     "products": "MEMS 晶圓代工",
+     "note": "Asia Pacific Microsystems;台灣 MEMS 代工",
+     "src": "https://en.wikipedia.org/wiki/List_of_MEMS_foundries"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "inertial"
+    },
+    {
+     "id": "pressure"
+    },
+    {
+     "id": "acoustic"
+    },
+    {
+     "id": "cis"
+    },
+    {
+     "id": "optical_tof"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "end"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Silex top MEMS foundry (eeNews)",
+     "url": "https://www.eenewseurope.com/en/chinas-silex-microsystems-remains-top-mems-foundry/"
+    },
+    {
+     "label": "List of MEMS foundries (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/List_of_MEMS_foundries"
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端整合：消費 / 車用 / 機器人 / AIoT",
+   "nameEn": "End Markets",
+   "competition": "competitive",
+   "single": "AI 的感官層剛需:每台 L2+ 車 ≥2 IMU、人形機器人需數十顆觸覺+IMU+影像",
+   "desc": "消費(手機/穿戴/TWS)、車用安全/ADAS、工業/人形機器人、AIoT 四大終端，是 MEMS+CIS 的需求錨點，需求『量』與『種類』雙增。",
+   "marketSize": "需求錨點",
+   "growth": "三引擎拉動",
+   "share": "null",
+   "analysis": "消費仍是 MEMS 最大宗(手機/TWS/穿戴慣性+麥克風+CIS),但成長動能轉向:車用(每台 L2+ ≥2 IMU+多顆 CIS/壓力/雷達;ST 車用 Q1'26 轉 +15% YoY、週期下行見底)、人形機器人(TrendForce 估 2026 出貨突破 5 萬台/+700%、Tesla Optimus 28 顆感測器 2026 夏量產、Figure 03 已進 BMW 廠、Bosch CES 2026 BMI5 機器人平台 HVM 2026Q3)、AIoT/AR(Meta/Apple AR 眼鏡多麥克風+ToF)。風險:中國價格戰侵蝕消費級毛利;Samsung 2025-12 拿 Apple CIS 單顯示供應鏈重分配。Apple/Tesla/Meta/Samsung 等 OEM 與 Tier-1(Bosch/Continental) 為主要拉貨方。",
+   "companies": [
+    {
+     "name": "Apple",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "消費感測最大客戶",
+     "products": "iPhone/Watch/AirPods/Vision",
+     "note": "慣性+麥克風+CIS+ToF 大買家",
+     "src": "https://www.mordorintelligence.com/industry-reports/mems-sensor-market"
+    },
+    {
+     "name": "Tesla",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "車用+機器人",
+     "products": "HW4 IMU(Bosch SMI230) / Optimus",
+     "note": "Optimus 28 顆感測器;車用+人形",
+     "src": "https://www.intelmarketresearch.com/torque-sensor-for-humanoid-robot-market-2830"
+    },
+    {
+     "name": "Samsung Electronics",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "手機+CIS 自用",
+     "products": "Galaxy 慣性/麥克風/CIS",
+     "note": "手機 OEM + 自有 CIS",
+     "src": "https://www.gminsights.com/industry-analysis/image-sensor-market"
+    },
+    {
+     "name": "Meta Platforms",
+     "ticker": "META",
+     "country": "US",
+     "share": "AR/穿戴感測",
+     "products": "Ray-Ban/Quest 麥克風陣列+ToF",
+     "note": "AI 眼鏡多麥克風+IMU+ToF 拉貨",
+     "src": "https://www.mordorintelligence.com/industry-reports/mems-sensor-market"
+    },
+    {
+     "name": "Bosch (Tier-1)",
+     "ticker": "—",
+     "country": "DE",
+     "share": "車用 Tier-1+自製",
+     "products": "ADAS/安全系統 + 自有 MEMS",
+     "note": "未上市;既是 MEMS #1 也是車用整合方",
+     "src": "https://www.bosch-sensortec.com/en/applications-solutions/robotics"
+    },
+    {
+     "name": "Figure AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "人形機器人新需求",
+     "products": "Figure 03 指尖觸覺(感 3 克力)",
+     "note": "未上市;人形機器人觸覺密度井噴",
+     "src": "https://www.intelmarketresearch.com/torque-sensor-for-humanoid-robot-market-2830"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mems_foundry"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "MEMS Sensor Market 終端 (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/mems-sensor-market"
+    },
+    {
+     "label": "Humanoid 觸覺/IMU 需求",
+     "url": "https://www.intelmarketresearch.com/torque-sensor-for-humanoid-robot-market-2830"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "mems_equip",
+   "inertial"
+  ],
+  [
+   "mems_equip",
+   "pressure"
+  ],
+  [
+   "mems_equip",
+   "acoustic"
+  ],
+  [
+   "mems_equip",
+   "cis"
+  ],
+  [
+   "mems_equip",
+   "optical_tof"
+  ],
+  [
+   "inertial",
+   "mems_foundry"
+  ],
+  [
+   "pressure",
+   "mems_foundry"
+  ],
+  [
+   "acoustic",
+   "mems_foundry"
+  ],
+  [
+   "cis",
+   "mems_foundry"
+  ],
+  [
+   "optical_tof",
+   "mems_foundry"
+  ],
+  [
+   "mems_foundry",
+   "end"
+  ]
+ ],
+ "_proposed": {}
+}

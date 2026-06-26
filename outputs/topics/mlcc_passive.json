@@ -1,0 +1,802 @@
+{
+ "id": "mlcc_passive",
+ "tab": "被動元件 MLCC",
+ "title": "被動元件 MLCC 供應鏈 (Passive Components: MLCC)",
+ "subtitle": "Passive Components — AI 伺服器把被動元件推上「下一個記憶體」敘事。整機櫃 MLCC 用量從 ~2,200 顆暴衝到 >30,000 顆（頂規單櫃 45-60 萬顆，約智慧手機 300 倍）；Goldman Sachs 估 AI 伺服器 MLCC 需求 2026 +87%、FY25→FY30 約 4.3 倍，MLCC 已成 AI 伺服器 BOM 第三大成本（僅次 GPU、記憶體）。2026 漲價缺貨三重催化：KEMET 鉭電容 +65%、Panasonic SP-Cap +20-30%、三星電機 +20-30%、村田 B/B 1.26 五年新高。價值鏈：上游鈦酸鋇粉體/鎳電極漿/鉭礦 → MLCC/鉭電容/鋁聚合物電容/電感/電阻/石英晶振 → 通路 → 終端。龍頭國巨(2327)大摩目標價升至 1,355、市值破 2 兆，與既有 power（電源系統）區隔清楚。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "40+"
+  },
+  {
+   "k": "MLCC 市場",
+   "v": "~$15B",
+   "sub": "AI MLCC TAM ~$2.7B→$13B+(2030)·CAGR ~80%",
+   "hot": true
+  },
+  {
+   "k": "2026 漲價輪",
+   "v": "村田+15-35%",
+   "sub": "Apr 1 開漲·三星+5-10%·誘電+6-13%·國巨+10-20%",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "material",
+   "label": "上游材料 Dielectric / Electrode / Ore",
+   "main": false
+  },
+  {
+   "id": "cap",
+   "label": "電容 Capacitors (MLCC / 鉭 / 鋁聚合物)",
+   "main": true
+  },
+  {
+   "id": "lrc",
+   "label": "電感 / 電阻 / 晶振 Inductor / Resistor / Crystal",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "通路 / 終端需求 Distribution & Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "material",
+   "row": "material",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "上游材料 (鈦酸鋇粉體 / 鎳漿 / 鉭礦)",
+   "nameEn": "Dielectric Powder, Ni Paste & Tantalum Ore",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 高純奈米鈦酸鋇日系雙寡頭（堺化學 25-30%）；鉭礦 42% 來自剛果(DRC) 衝突區",
+   "desc": "被動元件最上游：MLCC 介電層用高純奈米鈦酸鋇（BaTiO3）粉體、內電極鎳漿（佔成本約 9%），與鉭電容上游鉭礦（columbite-tantalite），是漲價的成本傳導源頭。",
+   "marketSize": "BaTiO3 $3.2B→$5.8B(2034)",
+   "growth": "原料漲價",
+   "share": "null",
+   "analysis": "高階奈米鈦酸鋇由日系寡頭主導：堺化學 Sakai Chemical（4078.T，約 25-30% 全球居首、技術最先進）、日本化學工業 Nippon Chemical Industrial（4092.T，約 15%）、Fuji Titanium、Ferro；村田部分自製粉體垂直整合。BaTiO3 市場 2025 約 $3.2B → 2034 $5.8B（CAGR 6.8%）。內電極鎳漿：昭榮化學 Shoei Chemical（日系鎳漿龍頭）、住友金屬礦山 Sumitomo Metal Mining（5713.T，鎳粉價 2025 +15%、2026 初再 +15-20%）。鉭礦：剛果(DRC) 2024 佔全球鉭產量 42%（衝突礦地緣風險），2026/6 剛果-盧安達簽和平協議改善礦貿、2025/9 美國 DLA 給 $8.6M 補國防儲備鉭錠。此節點是 KEMET 鉭 +65%、MLCC 普漲的根本成本推力，也是 MLCC 高階化（更薄介電層）的真實瓶頸。",
+   "companies": [
+    {
+     "name": "堺化學 Sakai Chemical",
+     "ticker": "4078.T",
+     "country": "JP",
+     "share": "鈦酸鋇全球居首",
+     "products": "高純奈米級 BaTiO3 粉體",
+     "note": "約 25-30% 全球份額、技術最先進",
+     "src": "https://chemicalresearchinsight.com/2025/06/10/top-10-companies-in-the-global-mlcc-dielectric-materials-market-2025-innovation-leaders-driving-capacitor-technologies/"
+    },
+    {
+     "name": "日本化學工業 Nippon Chemical Ind.",
+     "ticker": "4092.T",
+     "country": "JP",
+     "share": "鈦酸鋇 #2",
+     "products": "BaTiO3 粉體",
+     "note": "約 15% 全球供給",
+     "src": "https://chemicalresearchinsight.com/2025/06/10/top-10-companies-in-the-global-mlcc-dielectric-materials-market-2025-innovation-leaders-driving-capacitor-technologies/"
+    },
+    {
+     "name": "昭榮化學 Shoei Chemical",
+     "ticker": "—",
+     "country": "JP",
+     "share": "鎳電極漿龍頭",
+     "products": "MLCC 內電極鎳漿 / 端電極漿",
+     "note": "日系鎳漿主導者（成田系）",
+     "src": "https://www.verifiedmarketreports.com/product/barium-titanate-powder-for-mlcc-market/"
+    },
+    {
+     "name": "住友金屬礦山 Sumitomo Metal Mining",
+     "ticker": "5713.T",
+     "country": "JP",
+     "share": "鎳粉/鎳源",
+     "products": "電子級鎳粉 / 鎳原料",
+     "note": "鎳粉價 2025 +15%、2026 初再 +15-20%",
+     "src": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-tantalum.pdf"
+    },
+    {
+     "name": "Fuji Titanium / Ferro",
+     "ticker": "—",
+     "country": "JP",
+     "share": "粉體/配方料",
+     "products": "BaTiO3 / 介電配方粉",
+     "note": "日系/西方粉料供應",
+     "src": "https://www.verifiedmarketreports.com/product/barium-titanate-powder-for-mlcc-market/"
+    },
+    {
+     "name": "剛果(DRC) 鉭礦（上游）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "全球鉭產量 42%",
+     "products": "columbite-tantalite 鉭鈳鐵礦",
+     "note": "2024 佔 42%；衝突礦地緣風險；2026/6 剛果-盧安達和平協議；美國 DLA 補國防儲備",
+     "src": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-tantalum.pdf"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "mlcc"
+    },
+    {
+     "id": "tantalum"
+    },
+    {
+     "id": "alpolymer"
+    },
+    {
+     "id": "inductor"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MLCC 介電材料 Top 10 (Chemical Research Insight)",
+     "url": "https://chemicalresearchinsight.com/2025/06/10/top-10-companies-in-the-global-mlcc-dielectric-materials-market-2025-innovation-leaders-driving-capacitor-technologies/"
+    },
+    {
+     "label": "USGS 鉭礦商品摘要 2026",
+     "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-tantalum.pdf"
+    }
+   ]
+  },
+  {
+   "id": "mlcc",
+   "row": "cap",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "MLCC 積層陶瓷電容",
+   "nameEn": "MLCC (Multilayer Ceramic Capacitor)",
+   "competition": "oligopoly",
+   "single": "高階近雙寡頭 · 村田 AI MLCC 約 60% 主導+三星電機；2026Q2 漲價輪村田+15-35%、交期拉到 16-24 週",
+   "desc": "被動元件題材核心——積層陶瓷電容。AI 伺服器整機櫃用量從 ~2,200 顆暴衝至 >30,000 顆（GB300 單台約 30,000 顆、頂規單櫃 44-60 萬顆），高階高容/小尺寸規格嚴重短缺、全面漲價。AI 伺服器僅佔全球 MLCC 用量 2-3%，卻吃掉約 10% 產能（高容良率僅約 40%、製程週期長一倍）。",
+   "marketSize": "~$15B·AI MLCC TAM $2.7B→$13B+",
+   "growth": "AI 段 CAGR ~80%",
+   "share": "前五 ~68-72%",
+   "analysis": "Goldman Sachs 稱 MLCC 為「下一個記憶體」，2026/5 進一步上修：AI 驅動的高階 MLCC 超級循環可能延長到約 2030（先前共識為 2028 見頂），AI MLCC TAM 2025 約 $2.7B → 2030 $13B+；AI 伺服器 MLCC 需求 2026 YoY +87%、已成 AI 伺服器 BOM 第三大成本（僅次 GPU、記憶體）。全球市場 ~$15B，前五（村田/三星電機/太陽誘電/TDK/國巨）合計 ~68-72%。2026Q2 全面漲價輪正式啟動（3-4 月）：村田 6981.T（全球 >40% 龍頭、AI MLCC 約 60% 主導、4/1 起 AI 伺服器+高階車規 MLCC 調漲 15-35%、產線稼動率 95%、AI 詢單達其產能兩倍）、三星電機 009150.KS（4 月全系列+5-10%、菲律賓新廠擴產卡 AI 差異化段、Q1'26 營收 3.21 兆韓元 YoY+17% 首破 3 兆）、太陽誘電+6-13%、國巨高壓/高容/車規 MLCC+10-20%。交期由 8-12 週拉長至 16-24 週、部分規格開始限單。台廠國巨 2327.TW、華新科 2492.TW（切入 AI 伺服器供應鏈、聚焦高毛利 X6S 與中高壓 MLCC、馬來西亞新自動化廠）、禾伸堂 Holy Stone（瞄準 AI 高功率電源、加碼 NT$30 億擴北海道+宜蘭利澤）補中高階。中國風華/三環 2024H2 份額升至 10%，但高可靠 <15%。日韓上移高階、漲價並讓出中低階，全鏈量價齊揚。⚠ 矽電容（silicon capacitor，見下）為 AI 先進封裝內 GPU/ASIC/HBM 去耦新解，與 MLCC 互補非取代——村田/台積電雙寡頭，三星電機 2026/5 簽約約 $10 億切入、美商 Empower Semiconductor 亦入局。",
+   "companies": [
+    {
+     "name": "村田 Murata",
+     "ticker": "6981.T",
+     "country": "JP",
+     "share": "全球 >40%·AI MLCC 約 60%",
+     "products": "高容 MLCC / 車規 / 高頻 / 矽電容",
+     "note": "全球 >40% 龍頭、AI MLCC 約 60% 主導；4/1 起 AI 伺服器+高階車規 MLCC 調漲 15-35%、稼動率 95%、AI 詢單達產能 2 倍；矽電容與台積電雙寡頭",
+     "src": "https://www.trendforce.com/news/2026/03/17/news-mlcc-giant-murata-reportedly-confirms-april-1-price-hike-on-key-components/"
+    },
+    {
+     "name": "三星電機 Samsung Electro-Mech",
+     "ticker": "009150.KS",
+     "country": "KR",
+     "share": "高階 #2",
+     "products": "AI 伺服器 / 車規 MLCC / 矽電容",
+     "note": "4 月全系列+5-10%；Q1'26 營收 3.21 兆韓元 YoY+17% 首破 3 兆；菲律賓新廠擴產；2026/5 簽 1.5 兆韓元(~$10 億)矽電容供約切入村田/台積電雙寡頭",
+     "src": "https://passive-components.eu/samsung-electro-mechanics-signs-1-5t-krw-silicon-capacitor-ai-contract/"
+    },
+    {
+     "name": "太陽誘電 Taiyo Yuden",
+     "ticker": "6976.T",
+     "country": "JP",
+     "share": "日系前三",
+     "products": "車規 / 高頻 MLCC",
+     "note": "日系第三、車用高頻強；2026Q2 漲價 6-13%",
+     "src": "https://finance.biggo.com/news/KCJLaZ4BNl__-4_GHdDp"
+    },
+    {
+     "name": "TDK",
+     "ticker": "6762.T",
+     "country": "JP",
+     "share": "消費級約 12%",
+     "products": "MLCC + 電感雙線",
+     "note": "消費級約 12% 份額；隨輪跟漲",
+     "src": "https://www.mordorintelligence.com/industry-reports/consumer-electronics-mlcc-market"
+    },
+    {
+     "name": "國巨 Yageo",
+     "ticker": "2327.TW",
+     "country": "TW",
+     "share": "全品項台廠龍頭",
+     "products": "MLCC / 鉭(KEMET) / 電感 / 電阻 / NTC 溫度感測(芝浦)",
+     "note": "Q1'26 營收 NT$381.66 億 YoY+22.7%、淨利+45% NT$80 億、毛利率 38.1%、營益率 25.2%；AI 占 mid-teens(~14-15%)、鉭 >30% 綁 AI；高壓/高容/車規 MLCC+10-20%；2026/1 完成 100% 收購芝浦電子(~$7.4 億)切入 NTC 溫度感測",
+     "src": "https://passive-components.eu/yageo-q1-2026-results-ai-servers-and-pricing-power-behind-a-moderate-q2-outlook/"
+    },
+    {
+     "name": "華新科 Walsin",
+     "ticker": "2492.TW",
+     "country": "TW",
+     "share": "台廠 MLCC #2",
+     "products": "MLCC / 高壓 MLCC / X6S / 晶片電阻",
+     "note": "已切入主要 AI 伺服器供應鏈、聚焦高毛利 X6S 與中高壓 MLCC；馬來西亞新自動化廠；金屬板電阻對中國通路調漲 20-30%",
+     "src": "https://www.digitimes.com/news/a20260525PD222/demand-mlcc-high-power-taiwan-high-end.html"
+    },
+    {
+     "name": "禾伸堂 Holy Stone",
+     "ticker": "3026.TW",
+     "country": "TW",
+     "share": "台廠高功率 MLCC",
+     "products": "高功率/高壓 MLCC / AI 電源用",
+     "note": "瞄準 AI 高功率電源需求；2026/3 加碼 NT$30 億於北海道 R&D 中心新增產線+宜蘭利澤擴產",
+     "src": "https://www.digitimes.com/news/a20260326PD207/holy-stone-capacity-mlcc-taiwan-production.html"
+    },
+    {
+     "name": "台積電 TSMC（矽電容）",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "矽電容雙寡頭",
+     "products": "深溝槽矽電容(logic 製程) / 先進封裝去耦",
+     "note": "矽電容與村田並列雙寡頭、trench 結構；AI 先進封裝 GPU/ASIC/HBM 內嵌去耦",
+     "src": "https://www.techtimes.com/articles/316907/20260521/samsung-electro-mechanics-wins-1b-silicon-capacitor-deal-murata-tsmc-duopoly-faces-new-rival.htm"
+    },
+    {
+     "name": "Empower Semiconductor（矽電容）",
+     "ticker": "—",
+     "country": "US",
+     "share": "矽電容新進者",
+     "products": "整合式矽電容 / 垂直供電 PMIC",
+     "note": "未上市；AI 伺服器矽電容/供電新進挑戰者",
+     "src": "https://www.techtimes.com/articles/316907/20260521/samsung-electro-mechanics-wins-1b-silicon-capacitor-deal-murata-tsmc-duopoly-faces-new-rival.htm"
+    },
+    {
+     "name": "風華高科 Fenghua",
+     "ticker": "000636.SZ",
+     "country": "CN",
+     "share": "中國 MLCC 領先",
+     "products": "MLCC / 晶片電阻",
+     "note": "中國 MLCC 廠 2024H2 全球份額升至 10%；高可靠區段仍 <15%",
+     "src": "https://passive-components.eu/chinas-mlcc-makers-reach-10-market-share/"
+    },
+    {
+     "name": "潮州三環 CCTC",
+     "ticker": "300408.SZ",
+     "country": "CN",
+     "share": "中國高階卡位",
+     "products": "MLCC / 陶瓷元件",
+     "note": "陸廠高階化最積極者",
+     "src": "https://passive-components.eu/chinas-mlcc-makers-reach-10-market-share/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "distribution"
+    }
+   ],
+   "sources": [
+    {
+     "label": "村田確認 4/1 漲價 15-35% (TrendForce 2026/03)",
+     "url": "https://www.trendforce.com/news/2026/03/17/news-mlcc-giant-murata-reportedly-confirms-april-1-price-hike-on-key-components/"
+    },
+    {
+     "label": "Goldman 上修 MLCC 超級循環延至 2030 (BigGo 2026/05)",
+     "url": "https://finance.biggo.com/news/KCJLaZ4BNl__-4_GHdDp"
+    },
+    {
+     "label": "台廠 MLCC 切入 AI 伺服器需求 (DIGITIMES 2026/05)",
+     "url": "https://www.digitimes.com/news/a20260525PD222/demand-mlcc-high-power-taiwan-high-end.html"
+    }
+   ]
+  },
+  {
+   "id": "tantalum",
+   "row": "cap",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "鉭質電容 (Tantalum Cap)",
+   "nameEn": "Tantalum Capacitors",
+   "competition": "oligopoly",
+   "single": "最硬單點 · KEMET(國巨) >40% 龍頭；GB300/ASIC 指定件 +65% 漲價、上游鉭礦緊俏",
+   "desc": "高容值/高可靠鉭質電容，NVIDIA GB300 與 ASIC 伺服器電源去耦指定件，上游鉭礦緊俏 + AI 拉動下漲幅最猛、供需失衡最極端。",
+   "marketSize": "AI 缺最兇",
+   "growth": "漲價最猛",
+   "share": "KEMET >40%",
+   "analysis": "KEMET（國巨 2327.TW 子公司，全球鉭電容龍頭份額 >40%）2026/6/1 起部分高階規格漲 +65%（9 個月內第三度調漲、前兩次 2025/6、2025/11）；國巨 Q1'26 鉭電容營收 QoQ +20%+、>30% 綁 AI 伺服器、為其 book-to-bill 最強品項。上游鉭礦 42% 來自剛果(DRC) 衝突區、緊俏。Panasonic 6752.T 鉭約 10% 居第四但 SP-Cap 主導，鉭品項 2026/2/1 起漲 15-30%（引用銀/銅貴金屬原料持續走高）。Vishay VSH、AVX（京瓷旗下）為其他主供。市場焦點多在 MLCC，但鉭電容供需失衡其實更極端——這是本輪最硬的真實單點。",
+   "companies": [
+    {
+     "name": "KEMET（國巨子公司）",
+     "ticker": "2327.TW",
+     "country": "TW",
+     "share": "鉭電容龍頭 >40%",
+     "products": "高可靠鉭電容 / 鉭聚合物",
+     "note": "全球 >40%；6/1 起部分高階 +65%（9 個月三度調漲）；GB300/ASIC 指定件",
+     "src": "https://www.digitimes.com/news/a20260302PD239/yageo-tantalum-capacitor-price-increase-ai-server-demand.html"
+    },
+    {
+     "name": "Panasonic",
+     "ticker": "6752.T",
+     "country": "JP",
+     "share": "鉭約 10% #4",
+     "products": "鉭電容 / SP-Cap 聚合物",
+     "note": "鉭約 10% 居第四；鉭品項 2026/2/1 起漲 15-30%（引用銀/銅原料漲）；SP-Cap 主導",
+     "src": "https://www.digitimes.com/news/a20251201PD217/panasonic-price-tantalum-capacitor-market-share-demand.html"
+    },
+    {
+     "name": "Vishay Intertechnology",
+     "ticker": "VSH",
+     "country": "US",
+     "share": "美系綜合大廠",
+     "products": "鉭 / MLCC / 電阻",
+     "note": "AI 被動元件全品項受惠",
+     "src": "https://www.tradingkey.com/analysis/stocks/us-stocks/261849833-mlcc-hbm-ai-vsh-tradingkey"
+    },
+    {
+     "name": "AVX（京瓷旗下）",
+     "ticker": "6971.T",
+     "country": "JP",
+     "share": "鉭/MLCC",
+     "products": "鉭電容 / MLCC",
+     "note": "京瓷集團 KYOCERA AVX",
+     "src": "https://passive-components.eu/ai-servers-demand-is-driving-tantalum-capacitor-price-hikes/"
+    },
+    {
+     "name": "剛果(DRC) 鉭礦（上游）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "鉭礦 42%",
+     "products": "鉭原料",
+     "note": "上游鉭礦緊俏為漲價根本",
+     "src": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-tantalum.pdf"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "distribution"
+    }
+   ],
+   "sources": [
+    {
+     "label": "KEMET 鉭三度調漲 (DIGITIMES)",
+     "url": "https://www.digitimes.com/news/a20260302PD239/yageo-tantalum-capacitor-price-increase-ai-server-demand.html"
+    },
+    {
+     "label": "Panasonic/KEMET 漲幅達 65% (Semicon)",
+     "url": "https://www.semicone.com/article-453.html"
+    }
+   ]
+  },
+  {
+   "id": "alpolymer",
+   "row": "cap",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "鋁質聚合物電容 (SP-Cap/OS-CON)",
+   "nameEn": "Aluminum Polymer Cap (SP-Cap)",
+   "competition": "oligopoly",
+   "single": "Panasonic SP-Cap 主導 · 2026/7 再啟漲價輪；6 顆可取代 33 顆 MLCC、MLCC 缺貨替代方案",
+   "desc": "低 ESR 聚合物鋁電容（SP-Cap/OS-CON/POSCAP），AI 伺服器 CPU/GPU VRM 緊湊供電要角；6 顆 SP-Cap 可取代 33 顆 0402/0603 MLCC——既受惠又是 MLCC 的部分替代。",
+   "marketSize": "鋁電解前五 ~40%",
+   "growth": "2026/7 再漲價",
+   "share": "null",
+   "analysis": "Panasonic 6752.T 主導：SP-Cap（1991 首批商業化聚合物電容、DC/DC 轉換）、OS-CON（承襲 Sanyo）；2026/7 起再啟新一輪 SP-Cap 漲價（DIGITIMES 2026/6 報導、主要鎖定 SP-Cap、引用銀/銅貴金屬原料持續走高）；2025/1 宣布混合電容產能 2029 前再三倍化（前次五倍化已於 2025 完成）。AI 伺服器機櫃功率上升、新平台採新供電架構，SP-Cap 緊湊供電穩定優勢更突出（6 顆 SP-Cap GX 取代 33 顆 MLCC）。日本 Chemi-Con 6997.T、Nichicon 6996.T、Rubycon、TDK——鋁電解前五合計約 40%。⚠ 絃外之音：當 MLCC 缺到極致，聚合物鋁電容反而是「去 MLCC 化」解方，產能擴張值得追蹤。",
+   "companies": [
+    {
+     "name": "Panasonic",
+     "ticker": "6752.T",
+     "country": "JP",
+     "share": "SP-Cap 主導",
+     "products": "SP-Cap / OS-CON 聚合物鋁電容",
+     "note": "2026/7 起再啟新一輪 SP-Cap 漲價（引用銀/銅原料漲）；混合電容產能 2029 前再三倍化；6 顆取代 33 顆 MLCC",
+     "src": "https://www.digitimes.com/news/a20260608PD229/panasonic-passive-components-demand-price-2026.html"
+    },
+    {
+     "name": "日本 Chemi-Con",
+     "ticker": "6997.T",
+     "country": "JP",
+     "share": "鋁電解前五",
+     "products": "鋁電解 / 導電聚合物電容",
+     "note": "鋁電解前五合計約 40%",
+     "src": "https://www.mordorintelligence.com/industry-reports/aluminum-electrolytic-capacitors-market"
+    },
+    {
+     "name": "Nichicon",
+     "ticker": "6996.T",
+     "country": "JP",
+     "share": "鋁電解 / FPCAP",
+     "products": "FPCAP 導電聚合物鋁電容",
+     "note": "日系鋁電解大廠",
+     "src": "https://www.nichicon.com/en-us/products/aluminum-electrolytic-capacitors/conductive-polymer-aluminum-solid-electrolytic-capacitors/fpcap/"
+    },
+    {
+     "name": "Rubycon",
+     "ticker": "—",
+     "country": "JP",
+     "share": "鋁電解",
+     "products": "鋁電解 / 聚合物電容",
+     "note": "日系鋁電解專業廠",
+     "src": "https://www.mordorintelligence.com/industry-reports/aluminum-electrolytic-capacitors-market"
+    },
+    {
+     "name": "TDK",
+     "ticker": "6762.T",
+     "country": "JP",
+     "share": "鋁電解/聚合物",
+     "products": "鋁電解 / 聚合物電容",
+     "note": "綜合被動元件大廠",
+     "src": "https://www.mordorintelligence.com/industry-reports/aluminum-electrolytic-capacitors-market"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "distribution"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Panasonic 2026/7 再啟 SP-Cap 漲價 (DIGITIMES 2026/06)",
+     "url": "https://www.digitimes.com/news/a20260608PD229/panasonic-passive-components-demand-price-2026.html"
+    },
+    {
+     "label": "鋁電解電容市場 (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/aluminum-electrolytic-capacitors-market"
+    }
+   ]
+  },
+  {
+   "id": "inductor",
+   "row": "lrc",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "電感 (功率電感 / Molded)",
+   "nameEn": "Inductors (Power / Molded)",
+   "competition": "competitive",
+   "single": "村田約 17%·TDK約 15% 並列；AI 伺服器/EV 電源拉動，台廠奇力新/乾坤卡位",
+   "desc": "功率電感/金屬模壓電感，AI 伺服器多相 VRM 供電、EV 電源、5G 基地台拉動，是被動三大件中與 MLCC 同步受惠者。",
+   "marketSize": "$5.21B→$8.58B(2032)",
+   "growth": "CAGR 7.3%",
+   "share": "null",
+   "analysis": "市場 2025 $52.1 億 → 2032 $85.79 億（CAGR 7.3%）。村田 6981.T 約 17%（行動/車用）、TDK 6762.T 約 15%（消費/通訊）、太陽誘電 6976.T 並列前三；金屬電感前三（TDK/太陽誘電/奇力新）合計約 36%。台廠：奇力新 Chilisin 2456.TW（金屬電感前三）、乾坤 Cyntec（建準 3308.TW 旗下，AI 伺服器一體成型電感）。西方：Vishay VSH、Coilcraft、Sumida、Bourns、Würth。AI 伺服器高電流/高頻一體成型電感需求成長。",
+   "companies": [
+    {
+     "name": "村田 Murata",
+     "ticker": "6981.T",
+     "country": "JP",
+     "share": "電感約 17%",
+     "products": "功率電感 / 高頻電感",
+     "note": "約 17% 全球份額（行動/車用）",
+     "src": "https://www.intelmarketresearch.com/metal-power-inductors-market-22944"
+    },
+    {
+     "name": "TDK",
+     "ticker": "6762.T",
+     "country": "JP",
+     "share": "電感約 15%",
+     "products": "金屬功率電感 / molded",
+     "note": "約 15% 份額（消費/通訊）；金屬電感前三",
+     "src": "https://www.intelmarketresearch.com/metal-power-inductors-market-22944"
+    },
+    {
+     "name": "太陽誘電 Taiyo Yuden",
+     "ticker": "6976.T",
+     "country": "JP",
+     "share": "金屬電感前三",
+     "products": "金屬功率電感",
+     "note": "金屬電感前三（TDK/太陽誘電/奇力新合計約 36%）",
+     "src": "https://www.intelmarketresearch.com/metal-power-inductors-market-22944"
+    },
+    {
+     "name": "奇力新 Chilisin",
+     "ticker": "2456.TW",
+     "country": "TW",
+     "share": "台廠金屬電感前三",
+     "products": "金屬功率電感 / molded",
+     "note": "金屬電感全球前三、AI 伺服器配套",
+     "src": "https://www.intelmarketresearch.com/metal-power-inductors-market-22944"
+    },
+    {
+     "name": "乾坤 Cyntec（建準旗下）",
+     "ticker": "3308.TW",
+     "country": "TW",
+     "share": "AI 伺服器電感",
+     "products": "一體成型電感 / 微型化模組",
+     "note": "建準 3308.TW 旗下；AI 伺服器高電流電感",
+     "src": "https://www.fortunebusinessinsights.com/industry-reports/power-inductors-market-101349"
+    },
+    {
+     "name": "Vishay Intertechnology",
+     "ticker": "VSH",
+     "country": "US",
+     "share": "美系電感",
+     "products": "功率電感 / IHLP",
+     "note": "AI/EV 電源電感",
+     "src": "https://www.fortunebusinessinsights.com/industry-reports/power-inductors-market-101349"
+    },
+    {
+     "name": "Coilcraft",
+     "ticker": "—",
+     "country": "US",
+     "share": "高頻電感",
+     "products": "功率/高頻電感",
+     "note": "未上市；AI 伺服器電源",
+     "src": "https://www.fortunebusinessinsights.com/industry-reports/power-inductors-market-101349"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "distribution"
+    }
+   ],
+   "sources": [
+    {
+     "label": "金屬功率電感市場 (Intel Market Research)",
+     "url": "https://www.intelmarketresearch.com/metal-power-inductors-market-22944"
+    },
+    {
+     "label": "功率電感市場 (Fortune Business Insights)",
+     "url": "https://www.fortunebusinessinsights.com/industry-reports/power-inductors-market-101349"
+    }
+   ]
+  },
+  {
+   "id": "resistor_crystal",
+   "row": "lrc",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "晶片電阻 / 石英晶振·時序",
+   "nameEn": "Chip Resistors & Crystal/Timing",
+   "competition": "oligopoly",
+   "single": "國巨晶片電阻居首（前五 ~67%）；晶振愛普生/NDK 主導，NDK 供 800G/1.6T 光模組振盪器",
+   "desc": "被動三大件之一晶片電阻（國巨/華新科核心品項），與石英晶振/時序元件（XO/TCXO/OCXO）；AI 伺服器/車用/800G 光通訊拉動，與 MLCC 同步漲價。",
+   "marketSize": "電阻 ~$1.35B·晶振 ~$3.9B",
+   "growth": "電阻 >6.5%·晶振 ~9.6%",
+   "share": "null",
+   "analysis": "晶片電阻：全球約 $13.5 億、CAGR >6.5%、前五約 67% 份額。國巨 Yageo 2327.TW 居全球首位（本輪全品項漲價核心貢獻）、華新科 Walsin 2492.TW、KOA 6999.T、ROHM 6963.T、Panasonic 6752.T、中國風華；車規電阻前五（國巨/ROHM/KOA/Panasonic/風華）合計逾 50%。石英晶振/時序：市場 2025 約 $32 億 → 2026 約 $33-39 億（CAGR 至 9.6%）。愛普生 Seiko Epson 6724.T（OCXO 省電 56%）、NDK 日本電波工業 6779.T（推 800G/1.6T 光模組差動振盪器）日系主導；台灣晶技 TXC 3042.TW（Xterniti+AI 驅動 TimeLock）為台廠卡位者；Daishinku 大真空 6962.T。AI 資料中心高速光通訊與伺服器時序基準是新動能。",
+   "companies": [
+    {
+     "name": "國巨 Yageo（晶片電阻）",
+     "ticker": "2327.TW",
+     "country": "TW",
+     "share": "晶片電阻居首",
+     "products": "厚膜/薄膜晶片電阻",
+     "note": "全球首位；本輪全品項漲價核心貢獻；前五約 67%",
+     "src": "https://www.researchnester.com/reports/chip-resistor-market/7228"
+    },
+    {
+     "name": "KOA（晶片電阻）",
+     "ticker": "6999.T",
+     "country": "JP",
+     "share": "車規電阻強",
+     "products": "厚膜/金屬箔電阻",
+     "note": "車規高可靠電阻領先",
+     "src": "https://www.researchnester.com/reports/chip-resistor-market/7228"
+    },
+    {
+     "name": "ROHM（晶片電阻）",
+     "ticker": "6963.T",
+     "country": "JP",
+     "share": "日系電阻/半導體",
+     "products": "晶片電阻 / 分流電阻",
+     "note": "車規晶片電阻前五",
+     "src": "https://www.researchnester.com/reports/chip-resistor-market/7228"
+    },
+    {
+     "name": "愛普生 Seiko Epson（晶振）",
+     "ticker": "6724.T",
+     "country": "JP",
+     "share": "時序元件居首",
+     "products": "石英晶振 / TCXO / OCXO",
+     "note": "OCXO OG7050CAN 較前代省電 56%",
+     "src": "https://www.gminsights.com/industry-analysis/crystal-oscillator-market"
+    },
+    {
+     "name": "NDK 日本電波工業（晶振）",
+     "ticker": "6779.T",
+     "country": "JP",
+     "share": "高速光通訊時序",
+     "products": "差動輸出振盪器 / 晶振",
+     "note": "推 800Gbps/1.6Tbps 光模組差動振盪器",
+     "src": "https://www.marketsandmarkets.com/Market-Reports/crystal-oscillator-market-943.html"
+    },
+    {
+     "name": "台灣晶技 TXC（晶振）",
+     "ticker": "3042.TW",
+     "country": "TW",
+     "share": "台廠時序龍頭",
+     "products": "石英晶振 / TCXO / OCXO",
+     "note": "Xterniti 平台 + AI 驅動 TimeLock 演算法",
+     "src": "https://www.marketsandmarkets.com/Market-Reports/crystal-oscillator-market-943.html"
+    },
+    {
+     "name": "Daishinku 大真空（晶振）",
+     "ticker": "6962.T",
+     "country": "JP",
+     "share": "日系晶振",
+     "products": "石英晶體諧振器 / 振盪器",
+     "note": "車用/通訊晶振",
+     "src": "https://www.marketsandmarkets.com/Market-Reports/crystal-oscillator-market-943.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "distribution"
+    }
+   ],
+   "sources": [
+    {
+     "label": "晶片電阻市場 (Research Nester)",
+     "url": "https://www.researchnester.com/reports/chip-resistor-market/7228"
+    },
+    {
+     "label": "晶振市場 (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/Market-Reports/crystal-oscillator-market-943.html"
+    }
+   ]
+  },
+  {
+   "id": "distribution",
+   "row": "demand",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "通路 / 終端需求 (Distribution & Demand)",
+   "nameEn": "Distribution & End Demand",
+   "competition": "competitive",
+   "single": "AI 伺服器是量價齊揚引擎 · 單櫃 MLCC 30,000-600,000 顆（智慧手機 ~1,500 顆的 300 倍）",
+   "desc": "被動元件通路代理與終端需求。AI 伺服器（GB300/ASIC）、車用、智慧手機、工業、消費電子是需求錨點，AI 伺服器為本輪量價齊揚的核心引擎。",
+   "marketSize": "需求錨點",
+   "growth": "AI 結構拉動",
+   "share": "null",
+   "analysis": "終端：AI 伺服器整機櫃 MLCC 用量 30,000-600,000 顆（單台約 28,000 顆、智慧手機約 1,500 顆，約 300 倍），GB300/ASIC 鉭電容/聚合物電容標配；車用單車 MLCC 數千至上萬顆（電動化/智駕拉升）；智慧手機、工業、消費為基本盤。通路代理：大聯大 WPG 3702.TW、文曄 WT 3036.TW（亞太被動/IC 通路龍頭）、Arrow ARW、Avnet AVT（美系全球通路）。⚠ 被動元件為高 beta 循環產業（2018 暴漲後 2019 崩跌前例），本輪由 AI 結構需求 + 漲價驅動，但 AI 資本支出降溫或日韓擴產到位即面臨價格反轉風險。",
+   "companies": [
+    {
+     "name": "大聯大 WPG Holdings",
+     "ticker": "3702.TW",
+     "country": "TW",
+     "share": "亞太通路龍頭",
+     "products": "被動/IC 元件代理通路",
+     "note": "亞太被動元件通路龍頭",
+     "src": "https://www.tradingkey.com/analysis/stocks/us-stocks/261849833-mlcc-hbm-ai-vsh-tradingkey"
+    },
+    {
+     "name": "文曄 WT Microelectronics",
+     "ticker": "3036.TW",
+     "country": "TW",
+     "share": "全球通路前段",
+     "products": "元件代理通路",
+     "note": "併購 Future 後規模躍升",
+     "src": "https://www.tradingkey.com/analysis/stocks/us-stocks/261849833-mlcc-hbm-ai-vsh-tradingkey"
+    },
+    {
+     "name": "Arrow Electronics",
+     "ticker": "ARW",
+     "country": "US",
+     "share": "美系通路",
+     "products": "全球元件代理",
+     "note": "全球電子元件通路",
+     "src": "https://www.tradingkey.com/analysis/stocks/us-stocks/261849833-mlcc-hbm-ai-vsh-tradingkey"
+    },
+    {
+     "name": "Avnet",
+     "ticker": "AVT",
+     "country": "US",
+     "share": "美系通路",
+     "products": "全球元件代理",
+     "note": "全球電子元件通路",
+     "src": "https://www.tradingkey.com/analysis/stocks/us-stocks/261849833-mlcc-hbm-ai-vsh-tradingkey"
+    },
+    {
+     "name": "NVIDIA（終端拉動）",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI 伺服器需求源",
+     "products": "GB300/Rubin 機櫃",
+     "note": "GB300 單台約 30,000 顆 MLCC、單櫃約 44 萬顆（智慧手機 30 倍）；GB300 鉭電容/矽電容標配",
+     "src": "https://www.scmp.com/tech/big-tech/article/3357090/rice-electronics-how-ai-driven-demand-mlccs-triggered-supply-bottleneck"
+    },
+    {
+     "name": "ASIC 伺服器（終端拉動）",
+     "ticker": "—",
+     "country": "US",
+     "share": "AI ASIC 需求源",
+     "products": "客製 ASIC AI 伺服器",
+     "note": "鉭電容/聚合物電容指定件、用量暴增",
+     "src": "https://passive-components.eu/ai-servers-demand-is-driving-tantalum-capacitor-price-hikes/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mlcc"
+    },
+    {
+     "id": "tantalum"
+    },
+    {
+     "id": "alpolymer"
+    },
+    {
+     "id": "inductor"
+    },
+    {
+     "id": "resistor_crystal"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "AI 引爆 MLCC 供應瓶頸 (SCMP)",
+     "url": "https://www.scmp.com/tech/big-tech/article/3357090/rice-electronics-how-ai-driven-demand-mlccs-triggered-supply-bottleneck"
+    },
+    {
+     "label": "AI 伺服器 MLCC 趨勢/下一個 HBM (TradingKey)",
+     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261849833-mlcc-hbm-ai-vsh-tradingkey"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "material",
+   "mlcc"
+  ],
+  [
+   "material",
+   "tantalum"
+  ],
+  [
+   "material",
+   "alpolymer"
+  ],
+  [
+   "material",
+   "inductor"
+  ],
+  [
+   "material",
+   "resistor_crystal"
+  ],
+  [
+   "mlcc",
+   "distribution"
+  ],
+  [
+   "tantalum",
+   "distribution"
+  ],
+  [
+   "alpolymer",
+   "distribution"
+  ],
+  [
+   "inductor",
+   "distribution"
+  ],
+  [
+   "resistor_crystal",
+   "distribution"
+  ]
+ ],
+ "_proposed": {}
+}

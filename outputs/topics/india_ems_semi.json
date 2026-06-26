@@ -1,0 +1,561 @@
+{
+ "id": "india_ems_semi",
+ "tab": "印度電子製造",
+ "title": "印度電子製造與半導體在地化供應鏈 (India EMS & Semiconductor Localization)",
+ "subtitle": "India Inc. 的「China+1 製造夢」——印度政府以 ECMS（2026 預算上修至 ₹40,000 億盧布/約 $48 億）＋ ISM 半導體任務（2026 單年 ₹8,000 億盧布）＋手機 PLI，砸補貼把電子供應鏈從「組裝」往上游零件、再往半導體封測/晶圓在地化推進，目標 2030 建成 $5,000 億電子製造生態。價值鏈：零件/PCB/被動 → EMS/ODM 代工（本主題樞紐）→ 半導體封測 OSAT/晶圓 PLI → 終端（手機/家電/工業/外銷）。代工龍頭 Dixon（DIXON.NS）FY26 營收 ₹4,959 億盧布（+28%）、手機/EMS 佔比升至 90%，為全球市值最大 EMS 之一；半導體上，Kaynes（KAYNES.NS）Sanand OSAT 已於 2026/4 量產（日產 600 萬顆，先做 IPM 功率模組）、CG Power（CGPOWER.NS）與 Renesas/Stars 合資 OSAT 2026 中試產、Micron Sanand ATMP 已開、Tata-PSMC Dholera 28nm 晶圓廠拚 2026 末首片矽。Apple 2025 印度產 iPhone 約 5,500 萬支（+53%）、佔全球約 25%，Tata Electronics 併 Pegatron 印度廠後產值份額升至 44%、超車 Foxconn 成 Apple 印度最大代工。絃外之音：(1) 印度 EMS 的真正槓桿不在「組裝毛利」（僅 3-4%），而在「往上游零件/PCB 與往下半導體封測爬升」帶來的 value-add 與補貼資本利得——這也是 Dixon 砸錢買零件廠、Amber 與 Korea Circuit 合資 PCB 的原因；(2) 台廠是隱性贏家——PSMC 技轉 Tata 晶圓廠、Foxconn/Pegatron/Wistron 是 iPhone 印度產能骨幹、台系設備/材料/被動隨之南向。TW-listed play：鴻海（2317.TW，印度 iPhone 主力代工）。⚠ 與既有 advanced（先進製程）、substrate（封裝基板）、server 等主題在「半導體製造/封測」局部重疊；本主題聚焦『印度地緣紅利 × 補貼驅動的在地化爬升』視角。非投資建議。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "印度 EMS 市場",
+   "v": "$830億",
+   "sub": "EMS 出口 2030 拚 $830 億（CAGR ~24%）；國內 EMS 市場 CAGR 28%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "催化：ECMS ₹40,000 億+ISM 補貼、Apple 印度產能拉升、China+1；風險：組裝毛利薄、零件高度依賴進口、估值偏高",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "comp",
+   "label": "上游：零件 / PCB / 被動 / 電纜（在地化最弱一環）",
+   "main": false
+  },
+  {
+   "id": "ems",
+   "label": "中游：EMS / ODM 代工（印度製造樞紐）",
+   "main": true
+  },
+  {
+   "id": "semi",
+   "label": "半導體在地化：封測 OSAT / 晶圓 PLI / 設計服務",
+   "main": false
+  },
+  {
+   "id": "end",
+   "label": "下游：終端品牌・外銷・終端市場",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "components",
+   "row": "comp",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "上游：零件 / PCB / 被動元件",
+   "nameEn": "Components · PCB · Passives (upstream)",
+   "competition": "emerging",
+   "single": "在地化最弱、補貼最重點 · ECMS ₹40,000 億盧布主攻零件——印度 EMS 約 60-70% 物料仍靠進口，PCB/被動本土化是 value-add 與毛利的真正槓桿",
+   "desc": "印度電子供應鏈最薄的一環——裸板 PCB、被動元件（電阻/電容）、連接器、機構件多仰賴中國/台灣進口。ECMS 補貼正集中火力把這一層在地化，是 EMS 廠往上游爬、提升國產化率與毛利的關鍵戰場。",
+   "marketSize": "ECMS 目標 6 年帶動 ₹10.34 兆盧布產值",
+   "growth": "PCB/被動在地化率仍低（多數進口）→ 補貼帶動高成長",
+   "share": "null",
+   "analysis": "印度組裝（手機/家電）毛利僅 3-4%，真正 value-add 在零件——這正是 ECMS（2026 上修至 ₹40,000 億盧布、6 年拚 ₹10.34 兆產值）的主攻方向。Dixon（DIXON.NS）以併購/合資切入零件與機構件、垂直整合提毛利；Amber（AMBER.NS）與韓國 Korea Circuit 合資在印度設 PCB 廠、PG Electroplast（PGEL.NS）以塑膠射出+PCBA 切白色家電 ODM；Polycab（POLYCAB.NS）為電線電纜龍頭（Q4 FY26 季營收 ₹886 億盧布 +27% 創高）供應線材。台/中被動與 PCB 廠（國巨/華新科/欣興等）仍是隱形上游供應者。",
+   "companies": [
+    {
+     "name": "Amber Enterprises",
+     "ticker": "AMBER.NS",
+     "country": "IN",
+     "share": "家電 EMS + PCB 合資",
+     "products": "PCBA / Box Build / 與 Korea Circuit 合資 PCB",
+     "note": "從白色家電代工升級高值電子；PCB 在地化卡位",
+     "src": "https://www.ambergroupindia.com/electronics/"
+    },
+    {
+     "name": "PG Electroplast",
+     "ticker": "PGEL.NS",
+     "country": "IN",
+     "share": "白色家電 ODM",
+     "products": "塑膠射出 / PCBA / 全機組裝",
+     "note": "AC/家電 ODM 龍頭；PLI 受惠；零件垂直整合",
+     "src": "https://pgel.in/"
+    },
+    {
+     "name": "Polycab India",
+     "ticker": "POLYCAB.NS",
+     "country": "IN",
+     "share": "電線電纜龍頭",
+     "products": "電線電纜 / FMEG / 線材",
+     "note": "Q4 FY26 季營收 ₹886 億盧布(+27%)創高、股息 ₹47 創高",
+     "src": "https://chartalert.in/2026/05/06/polycab-polycab-india-q4-fy26-financial-results-6-may-26/"
+    },
+    {
+     "name": "國巨 / 華新科 / 欣興等",
+     "ticker": "2327.TW",
+     "country": "TW",
+     "share": "被動/PCB 隱形上游",
+     "products": "MLCC / 被動 / PCB / 載板",
+     "note": "印度本土被動/PCB 不足→台/中進口；台廠隨南向布局",
+     "src": "https://www.psmarketresearch.com/market-analysis/india-electronics-manufacturing-services-market-report"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "ems_odm"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ECMS ₹40,000 億盧布、目標 $5,000 億電子生態（Business Today）",
+     "url": "https://www.businesstoday.in/union-budget/news/story/budget-2026-govt-hikes-ecms-outlay-to-rs-40000-crore-to-boost-electronics-component-manufacturing-513999-2026-02-01"
+    },
+    {
+     "label": "印度 EMS 市場與在地化（P&S Market Research）",
+     "url": "https://www.psmarketresearch.com/market-analysis/india-electronics-manufacturing-services-market-report"
+    }
+   ]
+  },
+  {
+   "id": "ems_odm",
+   "row": "ems",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "中游：EMS / ODM 代工（印度製造樞紐）",
+   "nameEn": "EMS / ODM Contract Manufacturing (pivot)",
+   "competition": "highgrowth",
+   "single": "全主題樞紐 · 印度 EMS 出口 2030 拚 $830 億（CAGR ~24%）、國內市場 CAGR 28%——Dixon 為全球市值最大 EMS 之一，但組裝毛利薄是其往零件/半導體爬升的根本動機",
+   "desc": "印度製造的核心引擎——手機、家電、IT 硬體、汽車電子的合約製造與原始設計製造。受手機 PLI＋China+1 雙引擎驅動，是全主題的樞紐：往上拉動零件在地化、往下餵半導體封測需求。",
+   "marketSize": "EMS 出口 2030 $830 億（CAGR ~24%）；國內 CAGR 28%",
+   "growth": "JPMorgan：除 Dixon 外多檔 FY26-28E 營收 >20% CAGR",
+   "share": "null",
+   "analysis": "Dixon（DIXON.NS）為印度 EMS 絕對龍頭、全球市值最大 EMS 之一：FY26 營收 ₹4,959 億盧布（+28%）、手機/EMS 佔比升至 90%、電信業務 2 年從 ₹70 億衝到 ₹500 億盧布、IT 硬體 FY27 指引近 3 倍成長——但組裝毛利僅 3-4%，這是其積極往零件/顯示/半導體爬升的根本動機。Kaynes（KAYNES.NS）以高值工業/汽車 EMS 起家、跨入 OSAT。Syrma SGS（SYRMA.NS）Q3 FY26 營收 +45%、淨利 +107%，JPMorgan 列為 EMS 首選。Cyient DLM（CYIENTDLM.NS）受惠 Altek 併購、航太/醫療高值 EMS。台系 Foxconn/Pegatron/Wistron 與 Tata Electronics 是 Apple 印度產能骨幹。",
+   "companies": [
+    {
+     "name": "Dixon Technologies",
+     "ticker": "DIXON.NS",
+     "country": "IN",
+     "share": "印度 EMS 龍頭、全球市值最大 EMS 之一",
+     "products": "手機/EMS、家電、IT 硬體、電信",
+     "note": "FY26 營收 ₹4,959 億盧布(+28%)；手機/EMS 佔 90%；IT 硬體 FY27 指引近 3x",
+     "src": "https://www.icicidirect.com/research/equity/dixon-technologies-(india)-ltd/6843"
+    },
+    {
+     "name": "Kaynes Technology",
+     "ticker": "KAYNES.NS",
+     "country": "IN",
+     "share": "高值工業/汽車 EMS + OSAT",
+     "products": "工業/汽車/醫療 EMS、半導體封測",
+     "note": "EMS 起家跨入 OSAT；Sanand 廠 2026/4 量產（見半導體層）",
+     "src": "https://www.kotakneo.com/news/market-news/kaynes-semicon-osat-sanand-modi-inauguration-3300-crore-31-march/"
+    },
+    {
+     "name": "Syrma SGS Technology",
+     "ticker": "SYRMA.NS",
+     "country": "IN",
+     "share": "JPMorgan EMS 首選",
+     "products": "PCBA / RFID / 工業/汽車 EMS",
+     "note": "Q3 FY26 營收 +45%、淨利 +107%；高毛利轉型",
+     "src": "https://www.business-standard.com/markets/news/jp-morgan-bullish-on-ems-syrma-top-pick-upgrades-amber-cyient-dlm-to-ow-126031700451_1.html"
+    },
+    {
+     "name": "Cyient DLM",
+     "ticker": "CYIENTDLM.NS",
+     "country": "IN",
+     "share": "航太/醫療高值 EMS",
+     "products": "高可靠度 EMS / 航太 / 醫療",
+     "note": "FY26 受惠 Altek 併購、約 +34% 成長",
+     "src": "https://www.businesstoday.in/markets/stocks/story/kaynes-tech-amber-syrma-sgs-avalon-cyient-dlm-q3-preview-targets-for-ems-stocks-509659-2026-01-06"
+    },
+    {
+     "name": "Tata Electronics",
+     "ticker": "—",
+     "country": "IN",
+     "share": "Apple 印度最大代工",
+     "products": "iPhone 組裝 / 併 Pegatron 印度廠",
+     "note": "未上市；產值份額升至 44%、人力 7.5 萬超 Foxconn 印度",
+     "src": "https://www.business-standard.com/companies/news/tata-electronics-buys-60-stake-in-pegatron-s-india-arm-for-iphone-plant-125012400770_1.html"
+    },
+    {
+     "name": "鴻海 Foxconn (Hon Hai)",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "iPhone 印度產能骨幹",
+     "products": "iPhone 組裝 / EMS",
+     "note": "TW-listed play；Bengaluru 廠投資 ₹20,000 億盧布、年產拚 2,000 萬支",
+     "src": "https://www.theweek.in/news/sci-tech/2026/05/02/tata-electronics-apple-india-foxconn.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "components"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "osat"
+    },
+    {
+     "id": "fab"
+    },
+    {
+     "id": "end_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Dixon FY26 財報與業務拆解（ICICIdirect）",
+     "url": "https://www.icicidirect.com/research/equity/dixon-technologies-(india)-ltd/6843"
+    },
+    {
+     "label": "JPMorgan：印度 EMS 成長不變、Syrma 首選（Business Standard）",
+     "url": "https://www.business-standard.com/markets/news/jp-morgan-bullish-on-ems-syrma-top-pick-upgrades-amber-cyient-dlm-to-ow-126031700451_1.html"
+    },
+    {
+     "label": "India EMS 出口 2030 $830 億、CAGR 24%（Kotak）",
+     "url": "https://www.kotakneo.com/news/market-news/india-ems-growth-emerging-leaders/"
+    }
+   ]
+  },
+  {
+   "id": "osat",
+   "row": "semi",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "半導體封測 OSAT / ATMP",
+   "nameEn": "Semiconductor OSAT · ATMP (localization)",
+   "competition": "emerging",
+   "single": "印度半導體首先落地的一環 · Kaynes Sanand OSAT 2026/4 已量產（日產 600 萬顆）——印度從『組裝國』跨向『封測國』的第一步，但仍依賴進口晶粒",
+   "desc": "封裝、測試、打標——印度半導體在地化最先量產的環節（資本與技術門檻低於晶圓廠）。多座 OSAT/ATMP 在 ISM 補貼下 2026 陸續開出，但晶粒（die）仍多自海外進口，屬「後段在地化」。",
+   "marketSize": "ISM 2026 單年 ₹8,000 億盧布補貼（史上最大）",
+   "growth": "2026 多座 OSAT/ATMP 量產：Micron、Kaynes、CG Power",
+   "share": "null",
+   "analysis": "印度半導體先從後段封測突破：Micron Sanand ATMP（DRAM/NAND 後段）2026/2/28 由 Modi 揭幕、首座本任務週期運轉廠。Kaynes（KAYNES.NS）Sanand OSAT ₹330 億盧布廠 2026/4 由 Modi 揭幕、已量產，日產 600 萬顆、首做整合 17 顆晶片的 IPM 功率模組——印度民企自建 OSAT 的指標。CG Power（CGPOWER.NS）與 Renesas（日）、Stars Microelectronics（泰）合資 OSAT（CG 持股 92.3%）2026 中試產、規劃日產 1,500 萬顆。Tata Electronics 在 Assam 亦建 OSAT。台/星後段設備與材料隨之受惠。",
+   "companies": [
+    {
+     "name": "Kaynes Semicon",
+     "ticker": "KAYNES.NS",
+     "country": "IN",
+     "share": "印度民企 OSAT 指標",
+     "products": "OSAT 封測 / IPM 功率模組",
+     "note": "Sanand ₹330 億盧布廠 2026/4 量產、日產 600 萬顆",
+     "src": "https://www.kotakneo.com/news/market-news/kaynes-semicon-osat-sanand-modi-inauguration-3300-crore-31-march/"
+    },
+    {
+     "name": "CG Power (CG Semi)",
+     "ticker": "CGPOWER.NS",
+     "country": "IN",
+     "share": "OSAT 合資 (持股 92.3%)",
+     "products": "OSAT 封測 / 功率/RF",
+     "note": "與 Renesas+Stars 合資 ₹760 億盧布、2026 中試產、日產拚 1,500 萬顆",
+     "src": "https://www.renesas.com/en/about/newsroom/cg-power-and-industrial-solutions-limited-renesas-and-stars-microelectronics-jointly-build"
+    },
+    {
+     "name": "Micron Technology",
+     "ticker": "MU",
+     "country": "US",
+     "share": "DRAM/NAND ATMP",
+     "products": "記憶體後段封測 (ATMP)",
+     "note": "Sanand ATMP 2026/2/28 揭幕、本任務週期首座運轉廠",
+     "src": "https://www.electronicsforyou.biz/industry-buzz/tata-to-complete-microns-sanand-atmp-facility-by-december-2025/"
+    },
+    {
+     "name": "Tata Electronics (TSAT)",
+     "ticker": "—",
+     "country": "IN",
+     "share": "Assam OSAT",
+     "products": "OSAT 封測（Assam Jagiroad）",
+     "note": "未上市；集團一條龍（晶圓+封測）布局",
+     "src": "https://www.tataelectronics.com/semiconductor-assembly-and-test"
+    },
+    {
+     "name": "Renesas / Stars (合資夥伴)",
+     "ticker": "6723.T",
+     "country": "JP",
+     "share": "技術夥伴",
+     "products": "汽車/工業晶片設計 + OSAT 技轉",
+     "note": "Renesas 日、Stars 泰；提供 CG Semi 技術與訂單",
+     "src": "https://www.renesas.com/en/about/newsroom/cg-power-and-industrial-solutions-limited-renesas-and-stars-microelectronics-jointly-build"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ems_odm"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "end_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Kaynes Sanand OSAT 2026/4 量產（Kotak Neo）",
+     "url": "https://www.kotakneo.com/news/market-news/kaynes-semicon-osat-sanand-modi-inauguration-3300-crore-31-march/"
+    },
+    {
+     "label": "CG Power × Renesas × Stars OSAT 合資（Renesas）",
+     "url": "https://www.renesas.com/en/about/newsroom/cg-power-and-industrial-solutions-limited-renesas-and-stars-microelectronics-jointly-build"
+    }
+   ]
+  },
+  {
+   "id": "fab",
+   "row": "semi",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "晶圓製造 (Fab) / PLI",
+   "nameEn": "Wafer Fab · PLI (frontier of localization)",
+   "competition": "emerging",
+   "single": "技轉是命門 · Tata-PSMC Dholera 28nm 晶圓廠拚 2026 末首片矽——台廠 PSMC 技轉 + ASML 設備是印度首座 mega fab 能否成的關鍵，最高難度的在地化",
+   "desc": "印度半導體在地化最難、資本最重的一環——前段晶圓製造。Tata-PSMC 的 Dholera 廠為印度首座 mega fab，瞄準 28nm 及以上成熟製程（汽車/工業/顯示驅動/IoT），高度依賴海外技轉與設備。",
+   "marketSize": "Tata Dholera 投資 ₹91,000 億盧布、50,000 WSPM",
+   "growth": "2026 末拚首片矽（28nm）；試產目標 2026 年底",
+   "share": "null",
+   "analysis": "晶圓廠是印度半導體夢的「皇冠」也是最大不確定性。Tata Electronics 與台灣力積電（PSMC, 6770.TW）技轉合建 Dholera 28nm 廠，投資約 ₹91,000 億盧布、規劃月產 50,000 片、瞄準 2026 末首片矽，現工程約 50% 完成；並與 ASML（NL）策略合作引進設備。瞄準成熟製程（非 2nm 前沿）以服務汽車/工業/顯示/IoT——務實但仍須證明良率與成本競爭力。此環節與既有 advanced（先進製程）主題的『成熟製程』部分相鄰，但本主題聚焦印度在地化進程。",
+   "companies": [
+    {
+     "name": "Tata Electronics",
+     "ticker": "—",
+     "country": "IN",
+     "share": "印度首座 mega fab",
+     "products": "28nm 晶圓製造（Dholera）",
+     "note": "未上市；₹91,000 億盧布、50,000 WSPM、2026 末拚首片矽",
+     "src": "https://www.tataelectronics.com/w/tata-electronics-and-asml-announce-strategic-partnership-to-advance-the-semiconductor-manufacturing-ecosystem-in-india"
+    },
+    {
+     "name": "力積電 PSMC",
+     "ticker": "6770.TW",
+     "country": "TW",
+     "share": "技轉夥伴（隱性贏家）",
+     "products": "28nm 製程技轉 / 晶圓代工 know-how",
+     "note": "TW 隱形贏家；Tata Dholera 廠技術來源",
+     "src": "https://www.tataelectronics.com/w/manufacturing-corporation-psmc-complete-landmark-agreement-for-technology-transfer-to-build-india-s-first-semiconductor-fab"
+    },
+    {
+     "name": "ASML",
+     "ticker": "ASML.AS",
+     "country": "NL",
+     "share": "微影設備獨占",
+     "products": "微影/設備（Tata 策略夥伴）",
+     "note": "晶圓廠設備關鍵供應；印度生態策略合作",
+     "src": "https://www.tataelectronics.com/w/tata-electronics-and-asml-announce-strategic-partnership-to-advance-the-semiconductor-manufacturing-ecosystem-in-india"
+    },
+    {
+     "name": "ISM / MeitY (補貼方)",
+     "ticker": "—",
+     "country": "IN",
+     "share": "資本補貼來源",
+     "products": "ISM 2026 ₹8,000 億盧布補貼",
+     "note": "政府以最高 50% 資本補貼撐起 fab 經濟性",
+     "src": "https://www.abhs.in/blog/india-semiconductor-mission-2-tata-micron-2nm-dholera-2026"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ems_odm"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "end_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Tata-PSMC Dholera 28nm 廠技轉協議（Tata Electronics）",
+     "url": "https://www.tataelectronics.com/w/manufacturing-corporation-psmc-complete-landmark-agreement-for-technology-transfer-to-build-india-s-first-semiconductor-fab"
+    },
+    {
+     "label": "Tata×ASML 設備策略合作（Tata Electronics）",
+     "url": "https://www.tataelectronics.com/w/tata-electronics-and-asml-announce-strategic-partnership-to-advance-the-semiconductor-manufacturing-ecosystem-in-india"
+    }
+   ]
+  },
+  {
+   "id": "design_svc",
+   "row": "semi",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "晶片設計 / 工程服務",
+   "nameEn": "Chip Design & Engineering Services",
+   "competition": "competitive",
+   "single": "印度的真正強項在『設計腦力』 · 全球約 20% IC 設計工程師在印度——Tata Elxsi/印度 IT 提供 VLSI/嵌入式設計服務，是在地化『軟實力』",
+   "desc": "印度在 IC 設計與半導體工程服務的人才優勢（全球約 20% 晶片設計工程師在印度）——VLSI 設計、驗證、嵌入式軟體、reference design，為 fab/OSAT 與終端提供設計腦力，是印度半導體最成熟的一環。",
+   "marketSize": "印度晶片設計人才全球占比約 20%",
+   "growth": "設計服務隨在地製造與全球客戶外包成長",
+   "share": "null",
+   "analysis": "相對於 fab/封測的硬體在地化，印度真正的長期競爭力在「設計與工程服務」——Tata Elxsi（TATAELXSI.NS）提供半導體 SDK、系統架構、reference design、軟體定義車輛（與 Arm 合作）等設計服務；印度 IT 大廠與全球 IDM（NVIDIA/Qualcomm/AMD/Intel）在班加羅爾設計中心是隱形支柱。此層讓印度不只代工，也參與晶片價值鏈高附加價值端，是『在地化軟實力』。",
+   "companies": [
+    {
+     "name": "Tata Elxsi",
+     "ticker": "TATAELXSI.NS",
+     "country": "IN",
+     "share": "半導體/汽車設計服務",
+     "products": "VLSI / SDK / reference design / SDV",
+     "note": "與 Arm 合作軟體定義車輛；半導體工程服務",
+     "src": "https://www.tataelxsi.com/industries/semiconductor"
+    },
+    {
+     "name": "全球 IDM 印度設計中心",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "班加羅爾設計腦力",
+     "products": "NVIDIA/Qualcomm/AMD/Intel 印度 R&D",
+     "note": "全球約 20% 晶片設計工程師在印度",
+     "src": "https://www.tataelxsi.com/industries/semiconductor"
+    },
+    {
+     "name": "印度 IT / VLSI 服務商",
+     "ticker": "—",
+     "country": "IN",
+     "share": "工程服務外包",
+     "products": "驗證 / 嵌入式 / DFT",
+     "note": "為 fab/OSAT/終端提供設計與工程人力",
+     "src": "https://semiengineering.com/tag/tata-elxsi/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ems_odm"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "end_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Tata Elxsi 半導體設計服務",
+     "url": "https://www.tataelxsi.com/industries/semiconductor"
+    },
+    {
+     "label": "Tata Elxsi × Arm 軟體定義車輛",
+     "url": "https://www.prnewswire.com/news-releases/tata-elxsi-collaborates-with-arm-to-accelerate-the-software-defined-vehicle-journey-for-oems-302137946.html"
+    }
+   ]
+  },
+  {
+   "id": "end_demand",
+   "row": "end",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "下游：終端品牌・外銷・終端市場",
+   "nameEn": "End Brands · Exports · End Markets",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "印度電子製造的需求出海口——手機（Apple 為最大引擎）、家電、IT 硬體、汽車電子、工業，以及不斷擴大的外銷。終端需求回頭拉動 EMS、零件與半導體在地化全層用量。",
+   "marketSize": "目標 2030 建成 $5,000 億電子製造生態",
+   "growth": "Apple 印度產 iPhone 2025 ~5,500 萬支(+53%)、佔全球 ~25%",
+   "share": "null",
+   "analysis": "需求端是全主題成長引擎。Apple 是最大單一催化：2025 印度產 iPhone 約 5,500 萬支（+53%）、佔全球約 25%，目標一兩年內拉到 50%、本年衝 6,000 萬支——直接餵 Tata/Foxconn/Pegatron 代工、進而拉動零件在地化與後段封測需求。家電（AC/冰箱）、IT 硬體（PLI 2.0 拉筆電/伺服器在地化）、汽車電子、外銷市場（EMS 出口 2030 拚 $830 億）共同構成需求面。絃外之音：印度製造的長線賭注是『終端品牌＋外銷雙引擎，逼出整條供應鏈在地化』——但若零件/晶粒持續仰賴進口，附加價值與貿易順差的改善將打折。",
+   "companies": [
+    {
+     "name": "Apple",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "印度製造最大引擎",
+     "products": "iPhone（印度產佔全球 ~25%）",
+     "note": "2025 印度產 ~5,500 萬支(+53%)；目標拉至 50%",
+     "src": "https://www.bloomberg.com/news/articles/2026-03-10/apple-now-makes-about-25-of-iphones-in-india-after-china-pivot"
+    },
+    {
+     "name": "Samsung / 小米 / vivo 等",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "手機品牌",
+     "products": "手機（印度組裝/PLI）",
+     "note": "Samsung/中系品牌印度產能；EMS 客戶",
+     "src": "https://www.psmarketresearch.com/market-analysis/india-electronics-manufacturing-services-market-report"
+    },
+    {
+     "name": "家電/IT 品牌（國內+外銷）",
+     "ticker": "—",
+     "country": "IN",
+     "share": "家電/IT 硬體終端",
+     "products": "AC/冰箱/電視/筆電/伺服器",
+     "note": "PLI 2.0 拉 IT 硬體在地化；ODM 需求",
+     "src": "https://www.kotakneo.com/news/market-news/india-ems-growth-emerging-leaders/"
+    },
+    {
+     "name": "汽車/工業終端",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "汽車/工業電子",
+     "products": "汽車電子 / 功率/工業模組",
+     "note": "餵 Kaynes/CG OSAT 與工業 EMS 需求",
+     "src": "https://www.kotaksecurities.com/news/market-news/india-ems-growth-emerging-leaders/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ems_odm"
+    },
+    {
+     "id": "osat"
+    },
+    {
+     "id": "fab"
+    },
+    {
+     "id": "design_svc"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Apple 印度產 iPhone 佔全球 ~25%（Bloomberg）",
+     "url": "https://www.bloomberg.com/news/articles/2026-03-10/apple-now-makes-about-25-of-iphones-in-india-after-china-pivot"
+    },
+    {
+     "label": "印度 EMS 成長與終端（Kotak）",
+     "url": "https://www.kotakneo.com/news/market-news/india-ems-growth-emerging-leaders/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "components",
+   "ems_odm"
+  ],
+  [
+   "ems_odm",
+   "osat"
+  ],
+  [
+   "ems_odm",
+   "fab"
+  ],
+  [
+   "ems_odm",
+   "design_svc"
+  ],
+  [
+   "ems_odm",
+   "end_demand"
+  ],
+  [
+   "osat",
+   "end_demand"
+  ],
+  [
+   "fab",
+   "end_demand"
+  ],
+  [
+   "design_svc",
+   "end_demand"
+  ]
+ ],
+ "_proposed": {}
+}

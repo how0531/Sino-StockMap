@@ -1,0 +1,1264 @@
+{
+ "id": "erp_ai",
+ "tab": "ERP/HR/Finance",
+ "title": "ERP / HR / Finance Back-office Agents（ERP 核心 → HR → Close/Spend → Asia 本土）",
+ "subtitle": "SAP ECC 2027 EOL 催動亞太遷移浪潮；SAP Cloud Backlog €21.9B（Q1 2026 current，+25% cc）、Oracle FY2026 雲端 $34.0B（+39%）、RPO $638B、Fusion 1,000+ AI Agents；Workday Agentic ACV +200% YoY；Ramp ARR $1B+/Coupa ARR $1B+/Deel ARR $1.4B 引領費用革命；日韓台 SI 搶攻 S/4HANA 導入商機；印度 TCS/Infosys/Wipro 同扮 SI 與 AI 平台雙角色",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 11
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "60+"
+  },
+  {
+   "k": "關鍵單點",
+   "v": 2,
+   "sub": "SAP ECC 2027 EOL 催化遷移 + Workday/Oracle/MSFT 三強",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "core",
+   "label": "ERP 核心 + Agent ERP Core",
+   "main": false
+  },
+  {
+   "id": "hr",
+   "label": "HR Tech + AI",
+   "main": false
+  },
+  {
+   "id": "fin",
+   "label": "Finance Close + Spend Mgmt",
+   "main": true
+  },
+  {
+   "id": "asia",
+   "label": "亞洲本土 ERP/HR Asia Regional",
+   "main": false
+  },
+  {
+   "id": "si",
+   "label": "全球+亞洲 SI 導入服務 SI Integration",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "erp_core_us",
+   "row": "core",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "美歐核心 ERP + Agent 平台",
+   "nameEn": "US/EU Core ERP + Agent Platforms",
+   "competition": "oligopoly",
+   "single": "SAP S/4HANA 寡占 + 2027 ECC EOL 強迫遷移；Oracle Fusion 63,000 AI 認證專家；MSFT M365 Copilot 2,000 萬席位",
+   "desc": "全球 ERP 三巨頭（SAP、Oracle、Microsoft）加上 Workday（HCM+財務）、Infor、Sage，構成企業後台核心資料與流程的「作業系統層」，各自推出自家 Agent 平台（Joule/AI Agent Studio/Copilot/Illuminate）。",
+   "marketSize": "2025 全球 ERP 市場 ~USD 57B；SAP+Oracle+Microsoft 合計 ~50-55% 市占",
+   "growth": "YoY +8-12%（雲端段）；SAP Cloud Backlog €21.9B（+25% cc，Q1 FY2026）；Oracle Fusion 1,000+ 內嵌 AI Agent（Q3 FY2026）",
+   "share": "null",
+   "analysis": "SAP Sapphire 2026（2026-05-13）發表 SAP Business AI Platform（BTP+Business Data Cloud+AI Foundation 統一架構），50+ 領域 Joule Assistants 編排 200+ 專用 Agent，Joule Studio 2.0 首波 2026/06 上線（GA H2 2026），並擴大與 Anthropic 合作將 Claude 作為主要推理引擎嵌入 SAP 產品組合；SAP Joule 覆蓋 40+ AI Agent、2,400+ Skills；SAP 宣布 Joule 開放 on-premise 安裝，但須客戶承諾將至少 50% 維護費用移轉雲端（SAP AI Carrot 條件）；Oracle 1,000+ 內嵌 AI Agent（Q3 FY2026，超越舊數字 600+）、AI Agent Studio；Microsoft M365 Copilot 付費席位 2,000 萬+（Q3 FY2026，2026-04-29 報告，單季新增 500 萬席位、seat adds +250% YoY 最快成長）、Dynamics 365 +22% YoY（Q3 FY2026）、AI 業務年化 run-rate $37B（+123% YoY）；Workday Agentic AI ACV YoY +200%，4,000+ 客戶使用至少一個自研 Agent（FY27 Q1），並以約 $3B 併購（Sana $1.1B、Flowise、Pipedream）於 2026/03 推出統一 Sana AI OS，正式由 system of record 轉向 system of agents；SAP Sapphire 2026（2026-05）端出「Autonomous Enterprise」與 SAP AI Agent Hub 治理層、Joule Studio 2.0（€100M 夥伴基金、Cursor IDE 支援、設計期免費至 2026 年底）；SAP ECC 2027 EOL 仍為最大遷移催化劑，10,000+ 客戶面臨決策。【2026-H1 新競態】CRM/ITSM 巨頭跨界殺入後台 Agent：Salesforce 以 Agentforce（ARR $1.2B、+205% YoY、18,500 客戶）2026-04-29 推出 Agentforce Operations，由專用後台 Agent 跨「email→ERP/CRM」斷點系統自主執行（30+ 藍圖、核心來自併購的 Regrello），直接對撞 SAP Joule/Oracle AI Agent Studio/Workday Sana；ServiceNow 2025-12 完成 $2.85B 併 Moveworks，挾 ITSM 安裝基礎切入後台 Agent——competition 由 system of record 之爭轉向「誰控制把 AI 決策變成跨系統執行的那一層」，ERP/HR 既有玩家與 CRM/ITSM 巨頭界線被打破。【絃外之音】SAP 帳面 ERP 市占僅 ~24%，但實質控制力遠高於數字：僅 ~39% ECC 客戶已授權 S/4HANA，剩餘約 6 成被 2027 EOL 逼進 RISE 雲端合約，延伸維護加收 +9% 罰金、顧問費末年 +10-20%——定價權握在合約鎖定而非市占，這才是 SAP 真正的護城河。",
+   "companies": [
+    {
+     "name": "SAP SE",
+     "ticker": "SAP",
+     "country": "DE",
+     "share": "全球 ERP 市占 ~24%，大型企業第一",
+     "products": "SAP S/4HANA Cloud、Joule Agent、Joule Studio（2026 Q1 GA）、SAP Concur、SuccessFactors",
+     "note": "Q1 FY2026 Total Rev €9.56B（+12% cc）；Cloud Rev €5.96B（+27% cc）；Current Cloud Backlog €21.9B（+25% cc）；Cloud ERP Suite +30% cc；僅 3% 客戶在生產跑 Business AI；Joule 覆蓋 400+ AI use cases；on-premise Joule 須 50% 費用移雲；Sapphire 2026 推 Joule Studio 2.0（2026/06 首波客戶上線，設計期免費用至 2026 年底），50+ 領域 Joule Assistants 編排 200+ 專用 Agent，HR 13 類 Joule Assistants 2026/06 GA",
+     "src": "https://news.sap.com/2026/05/new-joule-studio-enterprise-scale-agentic-development/"
+    },
+    {
+     "name": "Oracle",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "Fusion Cloud ERP SaaS；Q4 FY2026 實績總營收 +21%、雲端 +47%",
+     "products": "Oracle Fusion Cloud ERP、AI Agent Studio（2025/3 GA）、Oracle AI Agents（1,000+ 內嵌）、NetSuite（中端）",
+     "note": "Q4 FY2026（2026-06-10）：季營收 $19.2B（+21%）；雲端營收 $9.9B（+47%）；SaaS $4.1B（+10%）；RPO 暴增 $85B 至 $638B；全年營收 $67.4B（+17%）、雲端 $34.0B（+39%）；Non-GAAP EPS $7.63（+27%）；本季 300+ Fusion 新客戶（含美國 OPM 政府機關 Fusion HCM）；1,000+ AI Agent 內嵌",
+     "src": "https://futurumgroup.com/insights/oracle-q3-fy-2026-earnings-driven-by-oci-ai-infrastructure-demand/"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "M365 Copilot 付費席位 2,000 萬+（Q3 FY2026，2026-04-29 報告，單季新增 500 萬，最快單季成長）",
+     "products": "Dynamics 365 Finance / Supply Chain / HR、Microsoft 365 Copilot Agents、Azure AI Foundry",
+     "note": "Q3 FY2026（2026-04-29）：Microsoft Cloud Rev $54.5B（年化 $218B）；Dynamics 365 +22% YoY（全工作負載成長）；AI 業務年化 run-rate $37B（+123% YoY）；M365 Copilot 付費席位 2,000 萬+，5 萬席以上大客戶數 YoY 翻四倍；EY 部署 41,000 個 Copilot Agent 用於稅務服務",
+     "src": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast"
+    },
+    {
+     "name": "Workday",
+     "ticker": "WDAY",
+     "country": "US",
+     "share": "FY27 Q1 訂閱積壓 cRPO $8.81B（+15.5% YoY）；Agentic AI ACV YoY +200%",
+     "products": "Sana AI（2026/03 推出之統一 AI 操作系統，HR/Finance/ITSM agent 編排）、Workday Build / Flowise Agent Builder（low-code）、Workday Illuminate（HCM+Finance Agent）、Adaptive Planning（7,000 企業）、WASOR 跨廠商 Agent 治理框架",
+     "note": "FY27 Q1（2026-04-30）：Total Rev $2.542B（+13.5% YoY）；訂閱 Rev $2.354B（+14.3%）；Adj EPS $2.66（超預期 $2.52）；Agentic AI 年化營收逼近 $500M、新 ACV YoY +200%+；>25% 擴張 ACV 含 AI 且平均單筆大 50%；非 GAAP 營業利益率 31.8%（全年目標上調至 30.5%）；4,000+ 客戶使用至少一個自研 Agent；最強 Q1 ACV 成長 5 年來最佳；累計約 $3B 併購（Sana $1.1B 2025/11 完成、HiredScore、Evisort、Paradox、Flowise、Pipedream）將 Workday 由 system of record 重定位為 system of agents，2026/03 推出統一 Sana AI 操作系統，Sana for ITSM H2 2026 GA",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001327811/000132781126000024/wday-04302026x991.htm"
+    },
+    {
+     "name": "Sage Group",
+     "ticker": "SGE.L",
+     "country": "UK",
+     "share": "FY2025 ARR £2,574M（+11%）；Copilot 服務 500,000+ 客戶",
+     "products": "Sage Copilot（AP 自動化 Agent、稅務 Agent、現金流 Agent）、Sage Intacct（北美）、Sage HR",
+     "note": "FY2025 AI 定價貢獻約 5.5% 收入成長；300,000+ 客戶問題 + 7,500 萬+ insights（過去一年）",
+     "src": "https://www.sage.com/en-gb/news/press-releases/2025/11/sage-full-year-2025-results/"
+    },
+    {
+     "name": "Infor（Koch Industries）",
+     "ticker": "—",
+     "country": "US",
+     "share": "60,000+ 客戶、175+ 國家；行業 ERP 深度",
+     "products": "Infor CloudSuite（製造/醫療/食飲/零售）、Velocity Suite AI、Agentic AI 製造排程",
+     "note": "Koch Industries 全資，年估計收入 $3.5-4.0B；2025 年與 AWS 合作推 Agentic AI 製造業方案"
+    },
+    {
+     "name": "NetSuite（Oracle 旗下）",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "40,000+ 中端市場客戶（YoY +20%）",
+     "products": "NetSuite AI Collections Agent、Procurement Agent、Text Enhance、Bill Capture AI",
+     "note": "Oracle Fusion ERP 季收 $1.0B 涵蓋 NetSuite；AI 功能無需 IT 導入直接嵌入 NetSuite UI"
+    },
+    {
+     "name": "Salesforce",
+     "ticker": "CRM",
+     "country": "US",
+     "share": "Agentforce ARR $1.2B（+205% YoY，Q1 FY27）；橫跨 18,500 客戶；新進入者由 CRM 跨入 ERP/財務/HR 後台 Agent",
+     "products": "Agentforce Operations（2026-04-29 GA：跨「email→ERP/CRM」斷點系統自主執行，30+ 內建藍圖含發票稽核/新人上工/採購單重排，核心來自併購供應鏈自動化公司 Regrello）、Agentforce 360",
+     "note": "Q1 FY27 處理 28.6 兆 AI tokens（環比 +152%）、Agentic Work Units 38 億（+111%）、近一年成交 29,000 筆 Agentforce 交易；Agentforce Operations 宣稱稽核/上工週期縮短最高 70%、消除 80% 手動任務，直接對撞 SAP Joule/Oracle AI Agent Studio/Workday Sana；另以 $3.6B 併 Fin 補客服 Agent",
+     "src": "https://www.salesforce.com/news/stories/agentforce-operations-announcement/"
+    },
+    {
+     "name": "ServiceNow",
+     "ticker": "NOW",
+     "country": "US",
+     "share": "新進入者：挾 ITSM/工作流既有安裝基礎切入後台 Agent，跨 sales/finance/HR/客服落地",
+     "products": "Now Assist、AI Agent Orchestrator、Moveworks 前端 AI 助理/企業搜尋/推理引擎（整合中）",
+     "note": "2025-12-15 完成 $2.85B 併購 agentic AI 平台 Moveworks（史上最大併購），與 Salesforce 在 CRM/後台正面對撞，對 ERP/HR 既有玩家構成另一條新進入者壓力線",
+     "src": "https://www.moveworks.com/us/en/company/news/press-releases/servicenow-completes-acquisition-of-moveworks"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "hr_tech_us"
+    },
+    {
+     "id": "finance_close"
+    },
+    {
+     "id": "spend_expense"
+    },
+    {
+     "id": "global_si_erp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SAP 2025 全年業績（Cloud Backlog €77B）",
+     "url": "https://news.sap.com/2026/01/sap-full-year-2025-results/"
+    },
+    {
+     "label": "Oracle FY2025 Q4 財報（Fusion ERP SaaS +22%）",
+     "url": "https://investor.oracle.com/investor-news/news-details/2025/Oracle-Reports-Fiscal-2025-Fourth-Quarter-and-Fiscal-Full-Year-Financial-Results/default.aspx"
+    },
+    {
+     "label": "Workday FY2027 Q1 業績（AI ARR $400M+）",
+     "url": "https://investor.workday.com/news-releases/news-release-details/workday-announces-fiscal-2027-first-quarter-financial-results"
+    },
+    {
+     "label": "Sage FY2025 全年業績（ARR £2,574M）",
+     "url": "https://www.sage.com/en-gb/news/press-releases/2025/11/sage-full-year-2025-results/"
+    },
+    {
+     "label": "Salesforce Agentforce Operations GA（2026-04-29）",
+     "url": "https://www.salesforce.com/news/stories/agentforce-operations-announcement/"
+    },
+    {
+     "label": "ServiceNow 完成 $2.85B 併購 Moveworks（2025-12-15）",
+     "url": "https://www.moveworks.com/us/en/company/news/press-releases/servicenow-completes-acquisition-of-moveworks"
+    }
+   ]
+  },
+  {
+   "id": "erp_core_asia",
+   "row": "core",
+   "col": 4,
+   "span": 2,
+   "kind": "stage",
+   "name": "亞洲本土核心 ERP",
+   "nameEn": "Asia Domestic Core ERP",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "日韓台中四大亞洲本土 ERP 廠商，在大型跨國系統（SAP/Oracle）以外深耕本地企業，並乘 SAP ECC 2027 EOL 浪潮加速雲端遷移與 AI Agent 整合。",
+   "marketSize": "台灣 ERP 市場 USD 2.1B（2025），CAGR 15.2% 至 2030；韓國 ERP 市場 SAP 20.5% vs Douzone 16.6%；日本 OBIC 中型 ERP 第一",
+   "growth": "SAP ECC 2027 EOL 催動整體亞太 S/4HANA 遷移；日本 OBIC FY2026 TTM 營收 JPY 135.2B YoY +6%+；中國 Digiwin ERP 市占 18% 超越國際廠商",
+   "share": "null",
+   "analysis": "OBIC（4684.T）以自建自銷模式守住日本中型市場，營業利益率 60%+；Douzone Bizon 2025 年 EQT 以 USD 905M 收購，雲端轉型加速；Digiwin（6112.TW/300378.SZ）中國製造業 ERP 市占 18%，2026 年申請香港 IPO 擴展 Athena AI 平台；Money Forward + freee 搶日本 SMB 財務 SaaS。",
+   "companies": [
+    {
+     "name": "Obic Co., Ltd.",
+     "ticker": "4684.T",
+     "country": "JP",
+     "share": "日本中型企業 ERP 市場第一，超越前二名合計",
+     "products": "Obic7 ERP Suite（財務/人事/薪資/採購/製造全模組）、雲端版 AI 功能",
+     "note": "FY2026（期末 2026-03）：創 32 連年獲利紀錄；營業利益 JPY 88.8B（+13.3% YoY，超自家預期 JPY 86.2B）；FY2027 指引 營業利益 JPY 98B（+10.3%）；宣佈 JPY 500 億股份回購；營業利益率 60%+；自建自銷模式，客戶流失率極低",
+     "src": "https://www.smartkarma.com/home/newswire/earnings-alerts/obic-co-ltd-4684-earnings-3q-operating-income-surpasses-estimates-with-13-growth/"
+    },
+    {
+     "name": "Douzone Bizon Co., Ltd.",
+     "ticker": "012510.KS",
+     "country": "KR",
+     "share": "韓國本土 ERP 市占 16.6%（SAP 20.5%之後第二）",
+     "products": "iCUBE ERP（製造/流通/建設）、WEHAGO（中小企業雲端 ERP+財務+HR）、電子稅務申報",
+     "note": "2025 年 EQT Partners 以 USD 905M 收購；2025 年營收 KRW 446.3B（+11% YoY）",
+     "src": "https://eqtgroup.com/news/eqt-to-invest-usd-930-million-in-douzone-bizon-a-leading-provider-of-erp-and-software-solutions-in-south-korea-2025-11-06"
+    },
+    {
+     "name": "Digiwin / 鼎捷數智",
+     "ticker": "6112.TW",
+     "country": "TW",
+     "share": "中國 ERP 市占 18%（2025，首次超越國際廠商）；台灣製造業 ERP 前三",
+     "products": "T100（大型製造 ERP）、Cosmos ERP（中型）、Athena AI 平台（製造 AI 分析）",
+     "note": "2025 TTM 營收約 USD 329M；2026/05 申請香港 IPO 擴展 Athena AI 平台",
+     "src": "https://www.benzinga.com/news/26/05/52671375/digiwin-seeks-hong-kong-ipo-to-expand-athena-platform"
+    },
+    {
+     "name": "Money Forward, Inc.",
+     "ticker": "3994.T",
+     "country": "JP",
+     "share": "日本前 100 大會計師事務所 84% 導入；SMB 財務 SaaS 前二",
+     "products": "Money Forward Cloud（會計/請求書/給薪/HR/確定申告）、MF KESSAI（B2B 收付款）",
+     "note": "FY Nov 2025 全年營收 JPY 50.35B（+24.7% YoY）；SaaS ARR +31.1% YoY",
+     "src": "https://www.fintechobserver.com/money-forward-reports-full-fy2025-results/"
+    },
+    {
+     "name": "freee K.K.",
+     "ticker": "4478.T",
+     "country": "JP",
+     "share": "日本中小型雲端會計第一梯隊",
+     "products": "freee 會計（雲端）、freee HR Labor（人事勞務）、freee 開業套件",
+     "note": "FY Jun 2025 ARR JPY 34.4B（+31.8% YoY）；首次 Adjusted 營業利益正轉 JPY 1.9B",
+     "src": "https://www.marketscreener.com/news/freee-k-k-faqi-fy2025-6-financial-resultsi--ce7d5adade8bfe26"
+    },
+    {
+     "name": "Zoho Corporation",
+     "ticker": "—",
+     "country": "IN",
+     "share": "全球 100 萬付費客戶（2025 突破）；SMB 雲端 ERP/CRM 全球前五",
+     "products": "Zoho One（40+ 應用套件）、Zoho ERP（USD 30/admin/月，2026-01 印度首發）、Zia AI（25+ Agent）",
+     "note": "2025 年營收成長 20% YoY（基數 USD 1.4B）；比 SAP/Oracle 定價低逾 10 倍",
+     "src": "https://erp.today/zoho-launches-ai-native-erp-platform-targeting-indian-enterprises/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "hr_tech_asia"
+    },
+    {
+     "id": "jp_back_office"
+    },
+    {
+     "id": "kr_back_office"
+    },
+    {
+     "id": "tw_back_office"
+    },
+    {
+     "id": "global_si_erp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "OBIC Q3 FY2026 業績（Smartkarma）",
+     "url": "https://www.smartkarma.com/home/newswire/earnings-alerts/obic-co-ltd-4684-earnings-3q-operating-income-surpasses-estimates-with-13-growth/"
+    },
+    {
+     "label": "EQT USD 905M 收購 Douzone Bizon（2025-11-06）",
+     "url": "https://eqtgroup.com/news/eqt-to-invest-usd-930-million-in-douzone-bizon-a-leading-provider-of-erp-and-software-solutions-in-south-korea-2025-11-06"
+    },
+    {
+     "label": "Digiwin 申請香港 IPO 擴展 Athena AI 平台（2026-05）",
+     "url": "https://www.benzinga.com/news/26/05/52671375/digiwin-seeks-hong-kong-ipo-to-expand-athena-platform"
+    },
+    {
+     "label": "Money Forward FY2025 全年業績（FintechObserver）",
+     "url": "https://www.fintechobserver.com/money-forward-reports-full-fy2025-results/"
+    },
+    {
+     "label": "Zoho ERP 印度首發（erp.today，2026-01）",
+     "url": "https://erp.today/zoho-launches-ai-native-erp-platform-targeting-indian-enterprises/"
+    }
+   ]
+  },
+  {
+   "id": "hr_tech_us",
+   "row": "hr",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "美歐 HR Tech + AI",
+   "nameEn": "US/EU HR Technology & AI Agents",
+   "competition": "competitive",
+   "single": "ADP 4,200 萬薪資工作者 + 75 年資料護城河；Workday HR 核心與 WASOR 跨廠商治理框架",
+   "desc": "美歐 HR Tech SaaS 業者，涵蓋全球薪資/EOR（Deel）、HR 一體化平台（Rippling）、HCM 雲端（ADP/Dayforce/Paychex）、績效管理（Lattice）、人才智能（Eightfold AI），各家均深度整合 AI Agents。",
+   "marketSize": "2025 全球 HCM SaaS 市場 ~USD 20-22B；全球 EOR 市場 ~USD 6-7B（CAGR +15%）",
+   "growth": "Deel ARR $1.4B（+60%+ YoY）；Rippling ARR $570M（+30%+ YoY）；ADP FY2026 Q3 +7% YoY",
+   "share": "null",
+   "analysis": "Deel ARR 突破 $1.4B（單月收入首破 $1 億，2025/09），150+ 國家 EOR/薪資；Rippling ARR $570M，2025/05 Series G $450M at $16.8B，HR+IT+Finance 三合一；ADP 2026/1 推出 Comply/Workforce Intelligence Agent；Dayforce 2025/8 Thoma Bravo $12.3B 私有化；Eightfold 2025 IDC MarketScape 人才智能 Leader。",
+   "companies": [
+    {
+     "name": "Deel",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR $1.4B（2025 H2）；40,000+ 企業；150+ 國家 EOR 第一",
+     "products": "Deel EOR、全球薪資、Contractor 管理、Deel HR（全功能 HCM）、Deel Finance、Deel AI",
+     "note": "2025/10 完成 $300M Series E at $17.3B；單月收入首破 $1 億（2025/09）；連續三年盈利；【法律風險升級】Rippling 商業間諜（RICO+商業秘密）訴訟 2026-02-25 遭加州聯邦法院駁回 Deel 移轉海外/排除高管/撤案請求、全案推進至審判，Deel 另面臨妨礙證據之制裁程序，並已換掉 RICO 被告 CFO Philippe Bouaziz、改聘新任 President/CFO；DOJ 刑事調查持續",
+     "src": "https://www.irishtimes.com/business/2026/03/20/deel-executives-can-be-removed-as-defendants-in-espionage-case-brought-by-rival-rippling/"
+    },
+    {
+     "name": "Rippling",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR $1B+（+78% YoY，Sacra 2026-03 估計）；20,000+ 客戶",
+     "products": "Rippling HR + IT + Finance 三合一、AI Employee Graph、Rippling Intelligence（主動合規偵測）",
+     "note": "2025/05 Series G $450M at $16.8B；PEO 業務客戶留存 99.5%；2026 年突破 $1B ARR（估計）；對 Deel 之 RICO/商業間諜訴訟 2026-02-25 獲加州聯邦法院裁定推進至審判（駁回 Deel 撤案/排除高管請求），兩大 EOR（合計 ARR >$2.4B）法律不確定性加深",
+     "src": "https://www.irishtimes.com/business/2026/03/20/deel-executives-can-be-removed-as-defendants-in-espionage-case-brought-by-rival-rippling/"
+    },
+    {
+     "name": "ADP",
+     "ticker": "ADP",
+     "country": "US",
+     "share": "1.1 百萬客戶、140+ 國家；每年處理薪資稅款 $3.3T",
+     "products": "ADP Assist Agents（Compliance/Workforce Intelligence）、ADP Marketplace 第三方 AI Agent 整合",
+     "note": "Q3 FY2026（2026-04-29）：Rev $5.939B（+7% YoY，超預期 $5.85B）；Adj EPS $3.37（+10% YoY）；FY2026 指引上調至 Rev 成長 6-7%、Adj EPS 成長 10-11%；AI 工具減少 8% 客戶聯繫；75 年薪資資料護城河",
+     "src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ADP"
+    },
+    {
+     "name": "Dayforce（DAY）",
+     "ticker": "DAY",
+     "country": "US",
+     "share": "6,929 活躍客戶（+5.4% YoY）；每客戶平均 ARR $167,600（+11.5%）",
+     "products": "Dayforce AI Agents（Pay Precision、Intelligent Scheduling、員工自助）、Dayforce HCM",
+     "note": "2026-02-04 Thoma Bravo 以 $12.3B 企業值完成私有化，股東獲 $70/股現金；已下市（原 NYSE:DAY）；私有化後加速 AI HCM 產品擴張，不再公開財報",
+     "src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DAY"
+    },
+    {
+     "name": "Paychex",
+     "ticker": "PAYX",
+     "country": "US",
+     "share": "~800,000 美國及歐洲客戶；中小企業薪資+福利+HR 三合一",
+     "products": "Paychex Flex AI（薪資偏差偵測/福利推薦/合規風險警示）、HRO 服務（2.3M+ 工作地點）",
+     "note": "Q3 FY2026（2026-03-25，期末 2026-02-28）：Rev $1.809B（+20% YoY，Paycor 並入）；Adj EPS $1.71（+15%）；管理層重申 FY2026 指引；Paycor 整合驅動 PEO/保險成長加速"
+    },
+    {
+     "name": "Lattice",
+     "ticker": "—",
+     "country": "US",
+     "share": "5,000+ 客戶（Slack/Gusto/Robinhood/HelloFresh）；ARR ~$127M",
+     "products": "Lattice AI Agent（一對一面談準備/績效預警/學習路徑/離職風險分析/薪酬公平）",
+     "note": "估值 $3B（2022 Series F）；AI Agent 對所有客戶免費開放，連接績效/目標/薪酬資料"
+    },
+    {
+     "name": "Eightfold AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025 IDC MarketScape 人才智能 Leader；Fortune 500 大型企業採用",
+     "products": "Talent Intelligence Agent（技能圖比對/招募推薦/繼任計畫）、與 SAP/Oracle HCM 深度整合",
+     "note": "估值 $2.1B（2021 Series E $220M）；P&G/Coca-Cola/S&P Global 為客戶；ARR ~$96.6M（Latka）"
+    },
+    {
+     "name": "HiBob",
+     "ticker": "—",
+     "country": "UK",
+     "share": "4,400+ 全球客戶；ARR 超 $100M；中端市場（500-3,000 員工）",
+     "products": "Bob AI 助理（HRBP 分析）、Bob Finance（HR 資料直連財務預算）、Mosaic AI 財務規劃",
+     "note": "2025/09 Series D $150M at ~$2.7B；收購 Mosaic（AI 財務規劃工具）",
+     "src": "https://www.prnewswire.com/news-releases/hibob-secures-150-million-series-d-funding-2025.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "erp_core_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "accounting_tax"
+    },
+    {
+     "id": "global_si_erp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Deel Series E $300M at $17.3B（TechCrunch 2025/10）",
+     "url": "https://techcrunch.com/2025/10/deel-series-e-300m/"
+    },
+    {
+     "label": "Rippling Series G $450M at $16.8B（CNBC 2025/05/09）",
+     "url": "https://www.cnbc.com/2025/05/09/rippling-raises-450-million-at-16-point-8-billion-valuation.html"
+    },
+    {
+     "label": "HiBob Series D $150M 新聞稿（2025/09）",
+     "url": "https://www.prnewswire.com/news-releases/hibob-secures-150-million-series-d-funding-2025.html"
+    },
+    {
+     "label": "Rippling-Deel RICO 間諜案進入審判（Irish Times 2026-03-20）",
+     "url": "https://www.irishtimes.com/business/2026/03/20/deel-executives-can-be-removed-as-defendants-in-espionage-case-brought-by-rival-rippling/"
+    }
+   ]
+  },
+  {
+   "id": "hr_tech_asia",
+   "row": "hr",
+   "col": 4,
+   "span": 2,
+   "kind": "stage",
+   "name": "亞洲 HR Tech + AI",
+   "nameEn": "Asia HR Technology & AI",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "亞洲 HR Tech 業者，涵蓋日本 PKSHA Technology（AI 面試 Copilot）、Recruit Holdings（Indeed/Glassdoor 母公司）、韓國 Samsung SDS（FabriX 多代理平台）、印度 Freshworks（Freddy AI）以及 Naver/Kakao 企業協作 AI。",
+   "marketSize": "印度 Freshworks FY2025 ARR $907M；韓國 Samsung SDS IT 服務 KRW 6.54T；日本 Recruit HR Tech 全球市值最高",
+   "growth": "Recruit Holdings FY Mar 2025 淨利 JPY 408.5B（+15.5% YoY）；Freshworks Freddy AI ARR $25M+（目標 2028 年 $100M）",
+   "share": "null",
+   "analysis": "Recruit Holdings FY2025 合併營收 JPY 3.56T（+4.1%），AI 驅動職位媒合縮短招聘周期 ~50%；Freshworks FY2025 首次全年盈利（淨利 $183.7M）；PKSHA AI Suite for HR 導入超 700 家企業；Samsung SDS FabriX 整合 MCP/A2A 多代理協作；Naver/Kakao 雙棧（ChatGPT+Claude）企業 AI 落地韓國市場。",
+   "companies": [
+    {
+     "name": "Recruit Holdings",
+     "ticker": "6098.T",
+     "country": "JP",
+     "share": "全球 HR 科技巨頭；Indeed/Glassdoor 母公司",
+     "products": "HR Technology（Indeed、Glassdoor）、AI 職位媒合（招聘周期縮短 ~50%）",
+     "note": "FY Mar 2026（2026-05-15 發布）：營收、EBITDA+S、基本 EPS 均創歷史新高並超越 2 月上修指引；HR Tech 營收 +7.6% 至 USD 9.67B；FY Mar 2027 指引營收 JPY 4.03T（+9.0%）、EBITDA+S JPY 949B（margin 23.5%）、基本 EPS +27.8%",
+     "src": "https://recruit-holdings.com/en/ir/library/upload/recruit_202503q4_earnings_en/"
+    },
+    {
+     "name": "PKSHA Technology",
+     "ticker": "3993.T",
+     "country": "JP",
+     "share": "日本企業 HR AI 新創；AI Suite for HR 導入 700+ 家",
+     "products": "AI Suite for HR（面試 Copilot、AI 履歷篩選、評估標準化）、PKSHA FAQ、PKSHA Chatbot",
+     "note": "東大松尾研究室系；與 Microsoft Japan 合作開發日英雙語 RetNet LLM",
+     "src": "https://prtimes.jp/main/html/rd/p/000000193.000022705.html"
+    },
+    {
+     "name": "Samsung SDS",
+     "ticker": "018260.KS",
+     "country": "KR",
+     "share": "韓國 IT 服務旗艦；IT 服務部門 KRW 6.54T",
+     "products": "FabriX（企業 GenAI 平台 MCP+A2A 多代理）、Brity Copilot（企業協作 AI）、Brity Automation（RPA+AI）",
+     "note": "FY2025 全年營收 KRW 13.93T；雲端業務 KRW 2.68T（+15.4%）；FabriX 支援 MCP/A2A 多代理跨流程協作",
+     "src": "https://www.samsungsds.com/en/news/financial-260126.html"
+    },
+    {
+     "name": "Freshworks",
+     "ticker": "FRSH",
+     "country": "IN",
+     "share": "FY2025 全年 ARR $907M（+18%）；Freddy AI 付費客戶 8,000+",
+     "products": "Freshservice（ITSM）、Freshteam（HR）、Freddy AI Agent（自動化+對話）、EX 套件 ARR $500M+",
+     "note": "FY2025 全年首次盈利，淨利 $183.7M；Freddy AI ARR $25M+，目標 2028 年 $100M",
+     "src": "https://www.freshworks.com/pressrelease/freshworks-reports-fourth-quarter-and-full-year-2025-results/"
+    },
+    {
+     "name": "Naver / NAVER Cloud",
+     "ticker": "035420.KS",
+     "country": "KR",
+     "share": "韓國最大互聯網；HyperCLOVA X 韓語 HR 本土優勢",
+     "products": "Naver Works（企業協作）、HyperCLOVA X（HR 流程分析/財務分析）、Naver Cloud Platform AI 企業服務",
+     "note": "2025 起 Naver/Kakao 雙棧（ChatGPT Enterprise + Claude Code）全面落地；韓語訓練資料是 GPT-4 的 6,500 倍",
+     "src": "https://www.koreatimes.co.kr/business/tech-science/20260102/naver-kakao-gear-up-for-agentic-ai-era-in-2026"
+    },
+    {
+     "name": "Kakao Corp / Kakao Work",
+     "ticker": "035720.KQ",
+     "country": "KR",
+     "share": "韓國最大行動生態系；企業 B2B 協作 Kakao Work",
+     "products": "Kakao Work AI 助理（會議摘要/任務分派/HR 請假核准自動化）、KakaoTalk 企業版",
+     "note": "2025/02 與 OpenAI 戰略合作；2025/04 Kakao Mobility/Woowa Brothers 採用 Claude；FY2025 營收 ~KRW 8T（估）",
+     "src": "https://www.techtimes.com/articles/317069/20260524/naver-kakao-deploy-chatgpt-claude-code-together-inside-south-koreas-dual-stack-enterprise-ai.htm"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "erp_core_asia"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "jp_back_office"
+    },
+    {
+     "id": "kr_back_office"
+    },
+    {
+     "id": "tw_back_office"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Recruit Holdings FY2025 Q4 IR（JPY 3.56T 營收）",
+     "url": "https://recruit-holdings.com/en/ir/library/upload/recruit_202503q4_earnings_en/"
+    },
+    {
+     "label": "Samsung SDS FY2025 全年業績（KRW 13.93T）",
+     "url": "https://www.samsungsds.com/en/news/financial-260126.html"
+    },
+    {
+     "label": "Freshworks FY2025 業績新聞稿（首次全年盈利）",
+     "url": "https://www.freshworks.com/pressrelease/freshworks-reports-fourth-quarter-and-full-year-2025-results/"
+    },
+    {
+     "label": "Naver/Kakao Agentic AI 2026 展望（Korea Times）",
+     "url": "https://www.koreatimes.co.kr/business/tech-science/20260102/naver-kakao-gear-up-for-agentic-ai-era-in-2026"
+    }
+   ]
+  },
+  {
+   "id": "finance_close",
+   "row": "fin",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "財務關帳 + AR/AP Agent",
+   "nameEn": "Finance Close + AR/AP Automation",
+   "competition": "competitive",
+   "single": "BlackLine 4,394 客戶、85 家 ARR >$1M 大客戶；HighRadius 90% touchless Cash Application",
+   "desc": "財務月結關帳（BlackLine/FloQast/Trintech）、AR 自動化（HighRadius）、AP 自動化（Tipalti）、費用審核（AppZen）業者，2025 年全面進入 Agentic AI 商業化，強調「可稽核 AI」符合 SOX/外部審計需求。",
+   "marketSize": "财务关帐 TAM ~USD 45B（BlackLine 估計）；AR 自動化（HighRadius）$5T+ 應收帳款處理",
+   "growth": "BlackLine 全年收入 ~$713M（+8% YoY）；FloQast ARR 突破 $200M（2026/01）；HighRadius 186 個 Agentic AI 2025 年發布",
+   "share": "null",
+   "analysis": "BlackLine Verity AI Suite 替代重複性月結工作；FloQast ARR $200M，Auditable AI Agent Builder 強調可稽核性；HighRadius 2025 發布 186 個 Agentic AI Agent，Cash Application 90% touchless；Tipalti ARR $200M、2025/09 $200M 成長融資；AppZen Series D $180M，500+ 客戶含 65 家 Fortune 500。",
+   "companies": [
+    {
+     "name": "BlackLine",
+     "ticker": "BL",
+     "country": "US",
+     "share": "Q1 2026（2026-05-05）：Rev $183.2M（+9.7% YoY）；Adj EPS $0.56（超預期 $0.45）；Gross Margin 76%；FCF Margin 20%；新客戶平均交易規模 $162K（+85% YoY）；平台商業模式轉型推動規模擴張",
+     "products": "Agentic Financial Operations（2026/04 BeyondTheBlack London 發表之 glass box 架構）、Verity Prepare（端到端對帳，建立時間 -90%+）/Verity Match（80-90% 配對率）/Verity Collect & Remit、Studio360（Reconciliation/Close/Intercompany）、Invoice-to-Cash",
+     "note": "FY2025 全年收入 ~$713M（+8%）；Q1 2026 Rev $183.2M（+9.7% YoY）；Adj EPS $0.56；座位制→生產力定價轉型，新客戶平均單筆規模 $162K（+85%）；AI 定價 ARR 佔合格 ARR 11%",
+     "src": "https://investor.blackline.com/news-releases/news-release-details/blackline-announces-fourth-quarter-and-full-year-2025-financial"
+    },
+    {
+     "name": "FloQast",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR $200M（2026/01 官方公告突破）；估值 $1.6B",
+     "products": "FloQast AI Agent Builder（Auditable AI）、FloQast Transform、Connected Compliance（SOX/ICFR）、Tax Provision Agent",
+     "note": "ARR 突破 $200M（2026/01 官方公告，企業客戶加速上行市場拓展）；Series E $100M（ICONIQ 2024-04）；強調每個 Agent 動作均留審計軌跡",
+     "src": "https://floqast.com/press-releases/"
+    },
+    {
+     "name": "HighRadius",
+     "ticker": "—",
+     "country": "US",
+     "share": "1,300+ Fortune 500 客戶；每年處理 $5T+ 應收帳款",
+     "products": "Autonomous Finance Platform（Collections/Cash Application/Treasury/Deductions Agent）",
+     "note": "2025 年發布 186 個 Agentic AI Agent；Cash Application 達 90% touchless；估值 $3.1B（2021）",
+     "src": "https://www.highradius.com/about/news/"
+    },
+    {
+     "name": "Tipalti",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR $200M（+30% YoY 客戶擴張）；估值 ~$8.3B",
+     "products": "Tipalti AI Agents（Reporting/Tax Form Scan/Purchase Request/Branded Experience）、Statement（現金管理 AI）",
+     "note": "2025/09 完成 $200M 成長融資（Hercules Capital）；收購 Statement 強化財庫自動化",
+     "src": "https://tipalti.com/press/"
+    },
+    {
+     "name": "AppZen",
+     "ticker": "—",
+     "country": "US",
+     "share": "500+ 企業客戶含 65 家 Fortune 500；累計節省客戶 $2.1B",
+     "products": "Expense Audit Agent（100% 費用報銷 AI 審核）、AP Agents（發票詐欺偵測/付款條件優化）",
+     "note": "2025/09 完成 $180M Series D（Riverwood Capital 領投）；現金流為正；客戶含 Amazon/Salesforce/JP Morgan",
+     "src": "https://news.crunchbase.com/fintech-ecommerce/appzen-series-d-180m-riverwood/"
+    },
+    {
+     "name": "Trintech Cadency",
+     "ticker": "—",
+     "country": "IE",
+     "share": "全球 2,800+ 企業客戶；G2 財務關帳 #1 多次獲評",
+     "products": "Cadency AI Agent（跨主體公司間對帳自動化/交易配對/成本分攤）",
+     "note": "FY26 Q1 加速全球成長；2025 年在印度班加羅爾、諾伊達設立 AI 創新中心",
+     "src": "https://www.prnewswire.com/news-releases/trintech-reports-record-full-year-fiscal-2025-results-302414890.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "erp_core_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "accounting_tax"
+    },
+    {
+     "id": "global_si_erp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BlackLine Q4 2025 業績（2026/02/10）",
+     "url": "https://investor.blackline.com/news-releases/news-release-details/blackline-announces-fourth-quarter-and-full-year-2025-financial"
+    },
+    {
+     "label": "FloQast ARR $200M 突破新聞稿（2026/01）",
+     "url": "https://floqast.com/press-releases/"
+    },
+    {
+     "label": "HighRadius 186 Agentic AI Agent 里程碑（PR Newswire）",
+     "url": "https://www.highradius.com/about/news/"
+    },
+    {
+     "label": "AppZen $180M Series D（Crunchbase 2025/09）",
+     "url": "https://news.crunchbase.com/fintech-ecommerce/appzen-series-d-180m-riverwood/"
+    }
+   ]
+  },
+  {
+   "id": "spend_expense",
+   "row": "fin",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "費用管理 + 採購 AI Agent",
+   "nameEn": "Spend Management & Procurement Agents",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "AI-first 費用管理（Ramp/Brex）、Source-to-Pay 採購（Coupa/SAP Concur）、差旅+費用整合（Navan）、歐洲費用平台（Spendesk）業者，以 AI 驅動支出決策自動化。",
+   "marketSize": "Ramp ARR $1.4B+（2026 H1，估值 $44B）；Coupa ARR $1B+（第一個突破 $1B 的雲端原生採購，$10T 資料）；Navan FY2025 Rev $537M",
+   "growth": "Ramp ARR 從 $300M（2024）到 $1B（2025 年 11 月），成長 3.3x；Coupa 2026 年推 20 個 AI Agent，2027 年 65 個",
+   "share": "null",
+   "analysis": "Ramp 2025/10 單月 AI 決策 2,600 萬次，ARR 突破 $1B；Coupa 2026 年 Inspire 大會宣佈 Coupa Compose（Agent 建構環境）、收購 Tonkean + Rossum；Navan S-1（2025/09）AI 助理 Ava 處理約 50% 客服互動；Brex ARR ~$700M，Capital One $5.15B 收購談判中；Spendesk 歐洲首家盈利費用管理平台。【隱性卡位】費用/採購節點看似 competitive，但定價權正轉向「資料網路效應」持有者——Coupa $10T 社區採購資料集（3,500+ 買方/1,000 萬+ 供應商）、Ramp 單月 2,600 萬次 AI 決策，後進者缺乏交易資料密度難以複製 Agent 自動化品質，這是帳面份額分散下被低估的護城河。",
+   "companies": [
+    {
+     "name": "Ramp",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR $1.4B+（2026 H1，run-rate 一度逾 $1.5B）；70,000+ 企業客戶；2025/10 單月 AI 決策 2,600 萬次；2026 由純美國轉向歐洲擴張",
+     "products": "Ramp Procurement AI Agents（2026/04 推出之 agent fleet：員工請購分流/供應商尋源/合約條款審查/合規檢查，平均節省 16% 供應商支出、每月省 46 工時）、Expense Automation（100% 自動分類）、Treasury Optimization、Ramp Intelligence、歐洲支付基礎設施（Billhop 持 EEA+UK 牌照）",
+     "note": "2026-06-04 完成 $750M Series F at $44B（ICONIQ、GIC、Ontario Teachers 領投；較 2025/11 的 $32B 大幅上升）；累計股權募資超 $3B；2026/03 併購斯德哥爾摩金流商 Billhop（取得歐洲支付牌照/基礎設施）+ 差旅/賓客費用商 Juno，回應對手 Brex 被 Capital One $5.15B 收編（2026-04-07 完成）；2026/03 TPV YoY +170%（三年最高增速）；ARR $1B+（2025-11 官方）",
+     "src": "https://tech.eu/2026/03/13/expense-management-startup-ramp-takes-on-rival-brex-with-european-acquisition/"
+    },
+    {
+     "name": "Coupa",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR $1B+（雲端原生採購第一）；$10T 社區採購資料集；3,500+ 買方、1,000 萬+ 供應商",
+     "products": "Coupa AI Agents（Autonomous Sourcing/Contract/Compliance/Supplier Intelligence）、Coupa Compose（Agent 建構環境）、Rossum（IDP）、Tonkean（A2A 編排）",
+     "note": "2023 年 Thoma Bravo $8B 私有化；2026/05 Inspire 大會連續收購 Rossum（IDP，5/12）+ Tonkean（agentic intake/A2A 編排，5/21），構成第 3、4 樁「Agentic Trade Network」併購（前有 Cirtuo、Scoutbee）；Gartner Source-to-Pay 連 3 年 Leader、2026 Ability to Execute 最高；2027 年目標 65 個 AI Agent",
+     "src": "https://www.coupa.com/newsroom/coupa-acquires-tonkean-to-accelerate-agentic-intake-and-orchestration-for-global-trade/"
+    },
+    {
+     "name": "SAP Concur（SAP旗下）",
+     "ticker": "SAP",
+     "country": "DE",
+     "share": "全球最大差旅費用管理；82% 費用交易數位化",
+     "products": "Joule for SAP Concur（差旅規劃 AI、費用報銷自動化、政策合規即時警示）",
+     "note": "SAP 2025 雲端收入 €23.92B（Concur 為重要組成）；2026 Q1 推出與 Egencia 新世代整合"
+    },
+    {
+     "name": "Navan（前 TripActions）",
+     "ticker": "NAVN",
+     "country": "US",
+     "share": "FY2026 Rev $702M（+31%）；FY2026 Q4 Rev $178M（+35%）；10,000+ 企業",
+     "products": "Ava（AI 旅遊規劃 Agent）、Navan Cognition（AI 推理框架）、費用政策合規即時建議",
+     "note": "2025-10-30 完成 Nasdaq IPO（代號 NAVN，定價 $25/股、募資 $923.1M、估值 ~$6B），首日收跌 20%；FY2026 全年（止於 2026-01）Rev $702M（+31%）、Q4 Rev $178M（+35%）、Non-GAAP 營業利益首度轉正 $37M（5% margin）、Non-GAAP 毛利率 73%（+400bps）、FCF $15M；AI 助理 Ava 處理 ~50% 客服互動"
+    },
+    {
+     "name": "Brex",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR ~$700M（2025 末）；35,000+ 企業客戶含 150+ 上市公司",
+     "products": "Brex Accounting API（AI-native 雙向 ERP 同步）、費用 AI 自動分類/對帳/稅務歸類",
+     "note": "2026-04-07 Capital One 完成 $5.15B 收購（約 $2.56B 現金 + 10,646,306 股 Capital One 股票）；Brex 已成為 Capital One 旗下品牌，繼續服務企業端；ARR ~$700M（私有化前末次估計）",
+     "src": "https://www.brex.com/journal/"
+    },
+    {
+     "name": "Spendesk",
+     "ticker": "—",
+     "country": "FR",
+     "share": "歐洲費用管理第一梯隊；2025 年歐洲首家盈利費用平台",
+     "products": "Spendesk SP&A（費用規劃&分析 AI Agent）；€100 億年度費用資料集支持",
+     "note": "ARR ~€60M；估值 $1.5B（2022 Series C）；法國 50% + 英國 40% 收入；VAT/歐盟勞動法本地化優勢",
+     "src": "https://www.sifted.eu/articles/spendesk-profitability-2025"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "erp_core_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "accounting_tax"
+    },
+    {
+     "id": "global_si_erp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Ramp ARR $1B 突破（Ramp 官方博客 2025/11）",
+     "url": "https://ramp.com/blog/1-billion-arr"
+    },
+    {
+     "label": "Ramp 併 Billhop 進軍歐洲對撞 Brex（tech.eu 2026-03-13）",
+     "url": "https://tech.eu/2026/03/13/expense-management-startup-ramp-takes-on-rival-brex-with-european-acquisition/"
+    },
+    {
+     "label": "Coupa Inspire 2026 收購 Tonkean+Rossum（coupa.com）",
+     "url": "https://www.coupa.com/newsroom/"
+    },
+    {
+     "label": "Navan S-1 申請（CNBC 2025/09）",
+     "url": "https://www.cnbc.com/2025/09/navan-ipo-s1-filing.html"
+    },
+    {
+     "label": "Spendesk 盈利達成（Sifted 2025）",
+     "url": "https://www.sifted.eu/articles/spendesk-profitability-2025"
+    }
+   ]
+  },
+  {
+   "id": "accounting_tax",
+   "row": "fin",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "會計 / 稅務 AI Agent",
+   "nameEn": "Accounting & Tax AI Agents",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "中小企業會計稅務 SaaS 三強（Intuit/Xero/Sage）加上稅務 AI 新創（TaxGPT），以 AI Agent 覆蓋帳務分類、月結、發票、申報、稅務諮詢全流程，快速商業化。",
+   "marketSize": "Intuit GBS FY2025 $11.08B（+16%）；Xero FY2025 NZ$2.1B（+23%）；Sage ARR £2.57B",
+   "growth": "Xero JAX AI Agent 2026/05 推出自然語言 Custom Agent Builder；QuickBooks 2025/07 內嵌 Agentic AI",
+   "share": "null",
+   "analysis": "Intuit 2025/07 推出 Accounting Agent + Finance Agent，AI 催款通知加速付款 45%（平均提早 5 天）；Xero JAX（Just Ask Xero）2025/09 擴展至付款預測+費用自動處理，2026/05 推出 Custom Agent Builder；FloQast Tax Provision Agent（所得稅撥備自動計算）補充關帳稅務需求。【結構真相】美國 SMB 會計為 Intuit 主導型寡占：QuickBooks 市占 ~62%、雲端會計 top-3（Intuit 27%／Xero 18%／Sage 12%）≈57%，AI Agent 戰場份額固化於既有安裝基礎，TaxGPT 等新創難撼動分銷護城河。",
+   "companies": [
+    {
+     "name": "Intuit",
+     "ticker": "INTU",
+     "country": "US",
+     "share": "FY2025 GBS 總收入 $11.08B（+16%）；QuickBooks 付費客戶全球最大 SMB",
+     "products": "Intuit Accounting Agent、Finance Agent、Tax Advisory Agent（TurboTax）、虛擬 AI 代理團隊",
+     "note": "FY26 Q3（2026-05-22）：GBS Rev $3.3B（+15% YoY）；Online Ecosystem Rev $2.5B（+19%）；Total Rev $8.6B（+10%）；AI 驅動專家平台策略推動中端市場 30%+ 成長；AI 催款提早付款 5 天（+45%）",
+     "src": "https://investors.intuit.com/SEC-Filings/annual-reports/default.aspx"
+    },
+    {
+     "name": "Xero",
+     "ticker": "XRO.AX",
+     "country": "AU",
+     "share": "FY2026 總收入 NZ$2.8B（+31%，2026-05-14 發布）；ARPC +23% 至 $55.44",
+     "products": "JAX（Just Ask Xero，跨桌機/手機/WhatsApp/Email AI Agent）、付款預測 Agent、Custom AI Agent Builder（2026/05）",
+     "note": "FY2026：Melio 併購整合推動美國核心營收 +240%（pro-forma +50%、新增 11 萬美國客戶），惟整合成本使營業利益 -13%、業績日股價跌 9%；FY27 指引營收 $3.62-3.73B；2026/05 推出自然語言 Custom AI Agent Builder 供會計師事務所自建客製化 Agent",
+     "src": "https://www.xero.com/media-releases/"
+    },
+    {
+     "name": "Sage Intacct / Sage Copilot",
+     "ticker": "SGE.L",
+     "country": "UK",
+     "share": "FY2025 ARR £2,574M（+11%）；北美 Intacct 中端市場",
+     "products": "Sage Copilot 稅務 Agent（VAT 申報預填）、現金流預測 Agent（90 天預警）、AP 自動對帳 Agent",
+     "note": "見 erp_core_us Sage Group 主條目；此處為會計/稅務專項",
+     "src": "https://www.sage.com/en-gb/news/press-releases/2025/11/sage-full-year-2025-results/"
+    },
+    {
+     "name": "TaxGPT",
+     "ticker": "—",
+     "country": "US",
+     "share": "5,000+ 稅務專業人員；美國/加拿大稅法庫",
+     "products": "Tax Research Agent（稅法問答）、Document Agent（報稅文件擷取）、Client Communication Agent（草擬客戶信件）",
+     "note": "定位為稅務事務所 AI 助理（非消費者工具）；整合 IRS Publication 資料集"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "hr_tech_us"
+    },
+    {
+     "id": "finance_close"
+    },
+    {
+     "id": "spend_expense"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Intuit 10-K FY2025（GBS Revenue $11.08B）",
+     "url": "https://investors.intuit.com/SEC-Filings/annual-reports/default.aspx"
+    },
+    {
+     "label": "Xero FY2025 全年業績（NZ$2.1B）",
+     "url": "https://www.xero.com/media-releases/"
+    },
+    {
+     "label": "Xero 推出 Custom AI Agent Builder（CPA Practice Advisor 2026/05/13）",
+     "url": "https://www.cpapracticeadvisor.com/accounting-audit/article/55282027/xero-debuts-custom-ai-agent-builder"
+    }
+   ]
+  },
+  {
+   "id": "jp_back_office",
+   "row": "asia",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "日本後台 ERP/HR 本土生態",
+   "nameEn": "Japan Back-office ERP/HR Ecosystem",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "日本企業後台 ERP/HR AI 本土生態，包含 NTT Data（Smart AI Agent™ 生態系）、大塚商会（SMILE ERP + SI）、Works Applications（HUE 大型企業 ERP）、PKSHA Technology（HR AI Suite），加上 SAP Japan/Oracle Japan 本地法人，共同搶攻 SAP ECC 2027 EOL 遷移商機。",
+   "marketSize": "Otsuka 大塚商会 FY2025 營收 JPY 1.32T（+19.4%）；NTT Data 目標 2027 Smart AI Agent USD 2B 貢獻",
+   "growth": "SAP ECC 2027 EOL 推動 S/4HANA 遷移；PKSHA HR AI Suite 導入 700+ 企業；Works Applications HUE 雲端化加速",
+   "share": "null",
+   "analysis": "NTT Data 2025/01 宣布 Smart AI Agent 國際商業化，目標 2027 年 USD 2B 營收；大塚商会 FY2025 創歷史新高 JPY 1.32T（+19.4%）；Works Applications HUE 雲端化持續深耕日本大型企業；PKSHA 面試 Copilot 2025 年推出，AI Suite for HR 導入 700+ 家企業。",
+   "companies": [
+    {
+     "name": "NTT Data Group",
+     "ticker": "9613.T",
+     "country": "JP",
+     "share": "日本 IT 服務前三大；全球 SI 深度佈局",
+     "products": "Smart AI Agent™ Ecosystem（KYC 反詐騙/財務自動化）、NTT DATA Nexus（財務雲）、AWS/Google Cloud/MSFT 深度整合",
+     "note": "2025/01 宣布 Smart AI Agent 國際商業化，2027 年目標貢獻 USD 2B；2025/11 ISG 評選 Agentic AI Services 領導者",
+     "src": "https://www.nttdata.com/global/en/news/press-release/2025/january/012800"
+    },
+    {
+     "name": "Otsuka Corporation（大塚商会）",
+     "ticker": "4768.T",
+     "country": "JP",
+     "share": "日本 IT 流通與 SI 前三大；9,680 人",
+     "products": "SMILE ERP 系列（含 AI 功能）、SAP/Oracle/Salesforce 在地 SI、IT 設備全生命週期服務",
+     "note": "FY Dec 2025 創歷史新高：營收 JPY 1.32T（+19.4% YoY）；SI 部門涵蓋 ERP 設計/客製化/實施/授權",
+     "src": "https://finance.biggo.com/news/jpx_tdnet_140120260130543790"
+    },
+    {
+     "name": "Works Applications",
+     "ticker": "—",
+     "country": "JP",
+     "share": "日本大型企業 ERP 專精；HUE 整合雲端 ERP",
+     "products": "HUE（人事/財務/採購一體化雲端 ERP）、ArielAirOne",
+     "note": "2025 年營收約 USD 100M（私人公司估計）；CVC Capital 入股後重組聚焦 HUE 雲端化與 AI 加速"
+    },
+    {
+     "name": "PKSHA Technology",
+     "ticker": "3993.T",
+     "country": "JP",
+     "share": "AI Suite for HR 導入 700+ 家企業；東大松尾研究室系",
+     "products": "PKSHA 面試 Copilot（即時評分/結構化面試輔助）、AI Suite for HR、PKSHA FAQ/Chatbot",
+     "note": "2025 年推出 PKSHA 面試 Copilot；與 Microsoft Japan 合作首個日英雙語 RetNet LLM",
+     "src": "https://prtimes.jp/main/html/rd/p/000000193.000022705.html"
+    },
+    {
+     "name": "SAP Japan / Oracle Japan",
+     "ticker": "—",
+     "country": "JP",
+     "share": "SAP 日本法人；服務日本大型企業 S/4HANA 遷移",
+     "products": "SAP S/4HANA Cloud、SAP Business AI（Joule）、SAP Concur Japan；Oracle Fusion Cloud ERP Japan",
+     "note": "SAP ECC 2027 EOL 截止使日本 S/4HANA 遷移需求急增；與 NTT Data、Otsuka 本地 SI 深度合作"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "erp_core_us"
+    },
+    {
+     "id": "erp_core_asia"
+    },
+    {
+     "id": "hr_tech_asia"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "NTT DATA Smart AI Agent 國際商業化（2025-01）",
+     "url": "https://www.nttdata.com/global/en/news/press-release/2025/january/012800"
+    },
+    {
+     "label": "大塚商会 FY2025 歷史新高（BigGo Finance TDnet）",
+     "url": "https://finance.biggo.com/news/jpx_tdnet_140120260130543790"
+    },
+    {
+     "label": "PKSHA AI Suite for HR 面試 Copilot（PR Times）",
+     "url": "https://prtimes.jp/main/html/rd/p/000000193.000022705.html"
+    }
+   ]
+  },
+  {
+   "id": "kr_back_office",
+   "row": "asia",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "韓國後台 ERP/HR 本土生態",
+   "nameEn": "Korea Back-office ERP/HR Ecosystem",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "韓國後台 ERP/HR 生態，LG CNS（AgenticWorks + PerfecTwin S/4HANA 遷移工具）、Samsung SDS（FabriX 多代理）、Hancom（Sovereign Agentic OS）三大 IT 巨頭並立，加上 Douzone Bizon 本土 SMB ERP。",
+   "marketSize": "LG CNS FY2025 營收 KRW 6.13T（+2.5%）；Hancom FY2025 獨立營收 KRW 175.3B（AI 業務佔年增 54.6%）",
+   "growth": "LG CNS AI+雲端合計 KRW 3.59T（+7%）；Hancom FY2026 目標 KRW 210B 營收；SAP 韓國市占 20.5%（第一）推動 S/4HANA 遷移",
+   "share": "null",
+   "analysis": "LG CNS 2025/02 IPO（募資 USD 821M），PerfecTwin 消除 S/4HANA 遷移風險；Hancom 2026/05 更名並宣布轉型 Sovereign Agentic OS（韓國首個）；Douzone Bizon EQT $905M 收購後雲端轉型加速；SAP 韓國市占 20.5%（第一）推動持續遷移需求。",
+   "companies": [
+    {
+     "name": "LG CNS",
+     "ticker": "034580.KS",
+     "country": "KR",
+     "share": "LG 集團 IT 旗艦；韓國雲端 ERP + AI 轉型前三大",
+     "products": "AgenticWorks（Agentic AI 平台）、PerfecTwin ERP Edition（AI 驅動 SAP S/4HANA 遷移）、AWS/Azure/GCP 整合",
+     "note": "FY2025 KRW 6.13T（+2.5%）；2025/02 IPO 募資 USD 821M；Q1 2026 Rev KRW 1.315T（+8.6% YoY）；Q1 2026 營業利益 KRW 94.2B（+19.4% YoY）；AI+雲端 Rev KRW 765.4B（58% 營收佔比）；取得 OpenAI ChatGPT Enterprise 約 10 家韓國企業客戶",
+     "src": "https://www.koreaherald.com/article/10663740"
+    },
+    {
+     "name": "Samsung SDS",
+     "ticker": "018260.KS",
+     "country": "KR",
+     "share": "三星集團 IT 旗艦；韓國 IT 外包市場領導者",
+     "products": "FabriX（GenAI 平台 MCP+A2A）、Brity Copilot、Brity Automation（RPA+AI）、SAP 實施服務",
+     "note": "Q1 2026：Rev KRW 3.353T（-3.9% YoY）；IT 服務 KRW 1.61T（略增）；雲端業務 KRW 690.9B（+5.8% YoY）；營業利益 KRW 78.3B（-70.8%，因退休金準備金一次性 KRW 112B 入帳）；ChatGPT Enterprise 客戶導入先於 LG CNS；Q2 前景：GPUaaS + 金融/公共部門 AI 服務擴張",
+     "src": "https://www.samsungsds.com/en/news/financial-260126.html"
+    },
+    {
+     "name": "Hancom Inc.",
+     "ticker": "030520.KS",
+     "country": "KR",
+     "share": "韓國辦公軟體龍頭（政府/軍方標準）；轉型 Agentic OS",
+     "products": "한컴오피스 AI 套件（GS 1 級）、Sovereign Agentic OS（2026 Beta）、AI 文件代理",
+     "note": "FY2025 營收 KRW 175.3B；AI 套件 KRW 8.9B 增量（佔年增 54.6%）；FY2026 目標 KRW 210B",
+     "src": "https://en.sedaily.com/technology/2026/05/19/hancom-pivots-to-agentic-os-rebrands-after-36-years"
+    },
+    {
+     "name": "Douzone Bizon",
+     "ticker": "012510.KS",
+     "country": "KR",
+     "share": "韓國本土 ERP 市占 16.6%（第二）；SMB 雲端 ERP 主力",
+     "products": "iCUBE ERP、WEHAGO（中小企業雲端 ERP+財務+HR）、電子稅務申報",
+     "note": "2025/11 EQT Partners $905M 收購；2025 年營收 KRW 446.3B（+11%）；雲端轉型加速",
+     "src": "https://eqtgroup.com/news/eqt-to-invest-usd-930-million-in-douzone-bizon-a-leading-provider-of-erp-and-software-solutions-in-south-korea-2025-11-06"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "erp_core_us"
+    },
+    {
+     "id": "erp_core_asia"
+    },
+    {
+     "id": "hr_tech_asia"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "LG CNS FY2025 突破 KRW 6T（Korea Herald）",
+     "url": "https://www.koreaherald.com/article/10663740"
+    },
+    {
+     "label": "Hancom 轉型 Agentic OS 更名（Seoul Economic Daily 2026/05/19）",
+     "url": "https://en.sedaily.com/technology/2026/05/19/hancom-pivots-to-agentic-os-rebrands-after-36-years"
+    },
+    {
+     "label": "EQT USD 905M 收購 Douzone Bizon（2025-11-06）",
+     "url": "https://eqtgroup.com/news/eqt-to-invest-usd-930-million-in-douzone-bizon-a-leading-provider-of-erp-and-software-solutions-in-south-korea-2025-11-06"
+    }
+   ]
+  },
+  {
+   "id": "tw_back_office",
+   "row": "asia",
+   "col": 4,
+   "span": 2,
+   "kind": "stage",
+   "name": "台灣後台 ERP/HR 生態",
+   "nameEn": "Taiwan Back-office ERP/HR Ecosystem",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "台灣後台 ERP/HR 生態，以 Systex（最大 SAP SI）、Digiwin（製造業 ERP）為核心，配合 Workday Taiwan（大型企業 HCM）及金融業自建 AI 財務系統（富邦/玉山）。台灣缺乏具規模本土 HR SaaS，市場高度依賴 SI 落地全球套件。",
+   "marketSize": "台灣 ERP 市場 USD 2.1B（2025），CAGR 15.2% 至 2030 USD 4.35B；Systex FY2025 USD 1.41B；Digiwin TTM USD 329M",
+   "growth": "台灣 ERP 市場 CAGR 15.2%（2025-2030）；SAP ECC 2027 EOL 為 Systex 最大近期催化劑",
+   "share": "null",
+   "analysis": "Systex FY2025 合併營收 USD 1.41B，SAP S/4HANA 遷移受益 2027 EOL；Digiwin 中國製造業 ERP 市占 18%（首次超越國際廠商），2026 申請港股擴展 Athena AI；台灣 ERP 市場 CAGR 15.2%（2025-2030）；玉山金控為金融業 AI 後台 Agent 領先者，授信評分/財務對帳/報表生成自動化。",
+   "companies": [
+    {
+     "name": "Systex Corporation（精誠資訊）",
+     "ticker": "6214.TW",
+     "country": "TW",
+     "share": "台灣 SAP SI 最大代理商之一；服務 40,000+ 客戶",
+     "products": "SAP ERP/S/4HANA 本地實施、Microsoft 軟體授權、多雲混合整合、金融/製造/醫療/政府 IT 服務",
+     "note": "FY2025 合併營收 USD 1.41B；SAP S/4HANA 遷移受益 2027 ECC EOL；與 SAP 亞太合作夥伴深度綁定",
+     "src": "https://tw.systex.com/en/company-profile/"
+    },
+    {
+     "name": "Digiwin / 鼎捷數智",
+     "ticker": "6112.TW",
+     "country": "TW",
+     "share": "台灣製造業 ERP 前三；中國 ERP 市占 18%（2025）",
+     "products": "T100（大型製造 ERP）、Cosmos ERP（中型製造）、Athena AI 平台（製造 AI 分析）",
+     "note": "2025 TTM 營收 USD 329M；2026/05 申請香港 IPO；見 erp_core_asia 主條目",
+     "src": "https://www.benzinga.com/news/26/05/52671375/digiwin-seeks-hong-kong-ipo-to-expand-athena-platform"
+    },
+    {
+     "name": "Workday Taiwan（WDAY 合作夥伴網路）",
+     "ticker": "WDAY",
+     "country": "TW",
+     "share": "台灣大型企業 HR+財務雲端市場快速成長",
+     "products": "Workday HCM（人力資本管理）、Workday Financial Management、Workday Planning",
+     "note": "台灣 ERP 市場 2025 年 USD 2.1B；Workday 在台大型科技製造/金融快速成長；SI 合作夥伴含 Systex、Maxsoft"
+    },
+    {
+     "name": "玉山金控（內部 AI 財務後台）",
+     "ticker": "2884.TW",
+     "country": "TW",
+     "share": "台灣金融業 AI 應用領先者；授信評分/財務自動化",
+     "products": "YS AI（貸款審核/客服 AI/財務對帳自動化）",
+     "note": "內部自建 AI 財務代理；異常偵測、財務報表生成自動化；非商業 ERP 軟體供應商，代表金融業自建模式"
+    },
+    {
+     "name": "富邦金控（內部 AI 財務後台）",
+     "ticker": "2881.TW",
+     "country": "TW",
+     "share": "台灣前三大金融集團；AI 財務風控自動化",
+     "products": "富邦 AI 風控/財務自動化/FinBot、M+ 智能理財 AI 助理",
+     "note": "內部自建 AI 財務代理；非商業 ERP 軟體供應商；代表台灣金融業後台 AI Agent 自建模式"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "erp_core_us"
+    },
+    {
+     "id": "erp_core_asia"
+    },
+    {
+     "id": "hr_tech_asia"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Systex 官方公司簡介（FY2025 USD 1.41B）",
+     "url": "https://tw.systex.com/en/company-profile/"
+    },
+    {
+     "label": "Digiwin 申請香港 IPO（Benzinga 2026/05）",
+     "url": "https://www.benzinga.com/news/26/05/52671375/digiwin-seeks-hong-kong-ipo-to-expand-athena-platform"
+    },
+    {
+     "label": "台灣 ERP 市場報告（CAGR 15.2%，2025-2030）",
+     "url": "https://www.nextmsc.com/report/taiwan-erp-software-market-ic3617"
+    }
+   ]
+  },
+  {
+   "id": "global_si_erp",
+   "row": "si",
+   "col": 1,
+   "span": 5,
+   "kind": "rail",
+   "name": "全球+亞洲 SI ERP 導入服務",
+   "nameEn": "Global & Asia ERP System Integration",
+   "competition": "oligopoly",
+   "single": "印度三大（TCS/Infosys/Wipro）同時扮演 SAP/Workday/Oracle 全球最大 SI 與自有 AI 平台商雙重角色；SAP ECC 2027 EOL 為所有 SI 近期最大商機",
+   "desc": "全球與亞洲 ERP 系統整合商（SI），涵蓋印度三大（TCS/Infosys/Wipro）、歐美大型 SI（Accenture/IBM/Deloitte）以及亞洲本土 SI（NTT Data/大塚商会/Samsung SDS/LG CNS），負責 SAP S/4HANA 遷移、Workday HCM 實施、Oracle Cloud 部署與 AI Agent 整合導入。",
+   "marketSize": "TCS FY2025 跨越 USD 30B 營收里程碑；Infosys FY2025 季均 USD 5B+；Wipro FY2025 IT 服務 USD 10.51B",
+   "growth": "TCS AI 年化收入突破 USD 2.3B（截至 2026/04）；Infosys 100+ GenAI 代理 + Topaz 平台；Accenture Cloud AI 業務持續強勁",
+   "share": "null",
+   "analysis": "TCS FY2025 AI 年化收入 USD 2.3B，600 個 GenAI 生產部署；Infosys Topaz 100+ GenAI 代理；Wipro WeGA Agentic AI 平台；Accenture 主導 Oracle AI Agent Marketplace；IBM 以 USD 11B 收購 Confluent 強化「資料 in motion for Agent」；SAP ECC 2027 EOL 為所有 SI 最大近期商機，S/4HANA 遷移全球缺口仍達數萬個客戶。【二階受惠者】真正的稀缺資源是 S/4HANA 顧問人力：2027 年前需求估達供給 3 倍，遷移工期 18-36 個月使 2026 年中後啟動者幾近不可能完成，SI（印度三大 + Accenture/IBM + 亞洲本土）握有量能即握有定價權，這是 SAP EOL 的最大隱性二階紅利。",
+   "companies": [
+    {
+     "name": "TCS（Tata Consultancy Services）",
+     "ticker": "TCS.NS",
+     "country": "IN",
+     "share": "全球 IT 服務市值最高；SAP/Workday/Oracle 全球最大 SI 之一",
+     "products": "TCS BaNCS（金融核心）、Ignio（AI 自動化）、SAP S/4HANA 全球遷移、Workday HCM 實施、Microsoft 200K+ Copilot 部署",
+     "note": "FY2025 跨越 USD 30B；AI 年化收入 USD 2.3B（2026/04）；600 個 GenAI 生產部署；Microsoft Frontier Firm",
+     "src": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-financial-results-q4-fy-2025"
+    },
+    {
+     "name": "Infosys",
+     "ticker": "INFY.NS",
+     "country": "IN",
+     "share": "全球 IT 服務前四大；Infosys Topaz AI 平台",
+     "products": "Infosys Topaz（企業 AI 平台）、100+ GenAI 代理（財務/HR/供應鏈）、SAP S/4HANA 遷移、Workday/Oracle 實施",
+     "note": "FY2025 FY26 指引 +3.0-3.5% YoY；Topaz 100+ GenAI 代理自動化客戶工作流；Microsoft Frontier Firm",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001067491/000106749125000036/exv99w02.htm"
+    },
+    {
+     "name": "Wipro",
+     "ticker": "WIPRO.NS",
+     "country": "IN",
+     "share": "全球 IT 服務前五大；WeGA AI 平台後台自動化旗艦",
+     "products": "Wipro WeGA（Agentic AI 平台）、ai360（AI 策略）、SAP/Workday/Oracle 實施、發票自動化（AI 驅動）",
+     "note": "FY2025 IT 服務 USD 10.51B；TCV USD 4.7B 大型 AI 轉型案；WeGA 驅動財務對帳/發票 AI；Microsoft Frontier Firm",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001123799/000119312525245284/d62510dex991.htm"
+    },
+    {
+     "name": "Accenture",
+     "ticker": "ACN",
+     "country": "IE",
+     "share": "全球最大 IT 諮詢 SI；Oracle AI Agent Marketplace 主要合作夥伴",
+     "products": "Accenture Cloud First、SAP S/4HANA 遷移、Oracle AI Agent Marketplace、Workday HCM、GenAI 後台自動化服務",
+     "note": "FY2025 雲端業務持續強勁；Oracle AI Agent Marketplace 入駐頂尖 SI；主導大型 ERP AI 轉型案"
+    },
+    {
+     "name": "IBM",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "企業 hybrid AI 主力；累計 GenAI book of business 超 USD 12.5B",
+     "products": "watsonx.ai、watsonx Orchestrate（500+ tools）、LinuxONE 5、2026/03 完成 Confluent $11B 收購",
+     "note": "IBM + Confluent：「資料 in motion for Agent」旗艦；SAP/Workday/Oracle 全線 SI；Consulting AI 服務加速",
+     "src": "https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents"
+    },
+    {
+     "name": "NTT Data（亞洲 SI）",
+     "ticker": "9613.T",
+     "country": "JP",
+     "share": "日本 IT 服務前三大；全球 SI 佈局；Agentic AI Services 領導者",
+     "products": "Smart AI Agent™ Ecosystem、NTT DATA Nexus（財務雲）、SAP/Oracle/Workday 亞太實施",
+     "note": "2025/11 ISG 評選 Agentic AI Services 領導者；目標 2027 年 Smart AI Agent USD 2B 貢獻",
+     "src": "https://www.nttdata.com/global/en/news/press-release/2025/may/051600"
+    },
+    {
+     "name": "Samsung SDS（亞洲 SI）",
+     "ticker": "018260.KS",
+     "country": "KR",
+     "share": "韓國三星集團 IT；FabriX MCP/A2A 多代理框架",
+     "products": "FabriX（企業 GenAI MCP/A2A）、SAP S/4HANA 韓國主要 SI、Brity 企業協作",
+     "note": "FY2025 IT 服務 KRW 6.54T；SAP/Oracle 韓國市場主要 SI 合作夥伴",
+     "src": "https://www.samsungsds.com/en/news/ces2026-260112.html"
+    },
+    {
+     "name": "LG CNS（亞洲 SI）",
+     "ticker": "034580.KS",
+     "country": "KR",
+     "share": "韓國 LG 集團 IT；PerfecTwin S/4HANA 遷移工具市場差異化",
+     "products": "AgenticWorks（Agentic AI 平台）、PerfecTwin ERP Edition（消除 S/4HANA 遷移風險）、三大雲整合",
+     "note": "FY2025 KRW 6.13T；AI+雲端 KRW 3.59T（+7%）；PerfecTwin 搶 SAP ECC 2027 EOL 先機",
+     "src": "https://www.ainvest.com/news/lg-cns-pioneering-cloud-erp-revolution-ai-driven-innovation-sap-ecosystem-dominance-2505/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "erp_core_us"
+    },
+    {
+     "id": "erp_core_asia"
+    },
+    {
+     "id": "finance_close"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "TCS Q4 FY2025 業績（USD 30B 里程碑）",
+     "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-financial-results-q4-fy-2025"
+    },
+    {
+     "label": "Infosys Form 6-K FY2025（SEC 申報）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001067491/000106749125000036/exv99w02.htm"
+    },
+    {
+     "label": "Wipro Form 6-K FY2025（SEC 申報）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001123799/000119312525245284/d62510dex991.htm"
+    },
+    {
+     "label": "IBM 完成 Confluent 收購（USD 11B，2026-03-17）",
+     "url": "https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents"
+    },
+    {
+     "label": "Microsoft Frontier Firms（TCS/Infosys/Wipro，2025-12-11）",
+     "url": "https://news.microsoft.com/source/asia/2025/12/11/cognizant-infosys-tcs-and-wipro-emerge-as-frontier-firms-with-microsoft-deploying-copilot-and-agentic-ai-across-the-enterprise/"
+    },
+    {
+     "label": "NTT DATA Smart AI Agent™ Ecosystem（2025/05/16）",
+     "url": "https://www.nttdata.com/global/en/news/press-release/2025/may/051600"
+    },
+    {
+     "label": "LG CNS SAP S/4HANA AI 主導地位（ainvest 2025/05）",
+     "url": "https://www.ainvest.com/news/lg-cns-pioneering-cloud-erp-revolution-ai-driven-innovation-sap-ecosystem-dominance-2505/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "erp_core_us",
+   "hr_tech_us"
+  ],
+  [
+   "erp_core_us",
+   "finance_close"
+  ],
+  [
+   "erp_core_us",
+   "spend_expense"
+  ],
+  [
+   "erp_core_asia",
+   "hr_tech_asia"
+  ],
+  [
+   "erp_core_asia",
+   "jp_back_office"
+  ],
+  [
+   "erp_core_asia",
+   "kr_back_office"
+  ],
+  [
+   "erp_core_asia",
+   "tw_back_office"
+  ],
+  [
+   "hr_tech_us",
+   "accounting_tax"
+  ],
+  [
+   "finance_close",
+   "accounting_tax"
+  ],
+  [
+   "spend_expense",
+   "accounting_tax"
+  ],
+  [
+   "hr_tech_asia",
+   "jp_back_office"
+  ],
+  [
+   "hr_tech_asia",
+   "kr_back_office"
+  ],
+  [
+   "hr_tech_asia",
+   "tw_back_office"
+  ],
+  [
+   "erp_core_us",
+   "global_si_erp"
+  ],
+  [
+   "erp_core_asia",
+   "global_si_erp"
+  ],
+  [
+   "finance_close",
+   "global_si_erp"
+  ]
+ ],
+ "_proposed": {}
+}

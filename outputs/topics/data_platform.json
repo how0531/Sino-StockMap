@@ -1,0 +1,564 @@
+{
+ "id": "data_platform",
+ "tab": "企業資料平台",
+ "title": "企業資料平台 / 湖倉 / 串流 (Data Platform & Lakehouse)",
+ "subtitle": "AI 真正的瓶頸不是模型而是「資料底座」——湖倉/串流/轉換是每個 AI agent 的燃料管線，2026 成兵家必爭：Databricks 傳 $165-175B 新輪（ARR $5.4B→$6.9B、AI 產品 ARR $1.4B）；Snowflake（SNOW）產品營收 $1.33B/季 +34%、與 AWS 簽 $6B 五年約後單日飆 36%、創 2026 新高；IBM 以 $11B 吞下 Confluent（2026-03 完成）；SAP 收 Dremio、Fivetran×dbt 合併（2026-06）。價值鏈：物件儲存+開放表格式（Iceberg/Delta）→ 攝取轉換（Fivetran/dbt）→ 湖倉/雲倉（Databricks/Snowflake/BigQuery/Fabric/ClickHouse）→ 即時串流（Confluent/Flink/Redpanda）→ 營運/向量庫（MongoDB/Postgres）。⚠ 有別於 rag_kb（企業搜尋/檢索層），本主題是其下方的底層資料平台。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 5
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "2026 併購",
+   "v": "$30B+",
+   "sub": "IBM $11B 收 Confluent + Salesforce $8B 收 Informatica(完成) + SAP 簽收 Dremio + Fivetran×dbt 合併",
+   "hot": true
+  },
+  {
+   "k": "私募估值熱",
+   "v": "$165-175B",
+   "sub": "Databricks 傳新輪·ARR $6.9B·AI 產品 ARR $1.4B",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "storage",
+   "label": "物件儲存 + 開放表格式 Storage & Table Format",
+   "main": false
+  },
+  {
+   "id": "ingest",
+   "label": "攝取 / 整合 / 轉換 ETL/ELT & dbt",
+   "main": false
+  },
+  {
+   "id": "lake",
+   "label": "湖倉 / 雲端資料倉儲 Lakehouse & Warehouse",
+   "main": true
+  },
+  {
+   "id": "stream",
+   "label": "即時串流 Real-time Streaming",
+   "main": false
+  },
+  {
+   "id": "opdb",
+   "label": "營運 / 向量資料庫 Operational & Vector DB",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "object_store_table",
+   "row": "storage",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "物件儲存 + 開放表格式 (Iceberg / Delta)",
+   "nameEn": "Object Storage & Open Table Formats",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Iceberg v3 2026-H1 升 GA(Snowflake 5/7、Databricks 6 月 Summit)成生產級跨平台事實標準；鎖喉點由表格式轉移至『目錄/治理層』(Unity Catalog vs Polaris/Horizon Catalog 雙向聯邦)",
+   "desc": "湖倉的物理底座是雲端物件儲存（S3/ADLS/GCS），其上加一層『開放表格式』提供 ACID／時間旅行／schema 演進。2026 表格式之爭收斂為『共存』：Iceberg 引擎中立勝出、Delta 靠 UniForm 互通。",
+   "marketSize": "Lakehouse 管理 2025 ~$5.61B；廣義 Data Lake 2026 ~$22-24B",
+   "growth": "CAGR 21.8%（Lakehouse）／22-25%（Data Lake）",
+   "share": "null",
+   "analysis": "Apache Iceberg 成事實標準：Snowflake 原生支援、AWS Athena/Glue 一級公民、Google BigQuery『Lakehouse for Apache Iceberg』(原 BigLake，2026-04 改名)、Salesforce Data Cloud 用 Iceberg 撐 4M 表 50PB。Snowflake 開源的 Iceberg REST 目錄 Apache Polaris 於 2026-02 升 Apache 頂級專案。Delta Lake 4.1.0(2026-03)強化 Kernel/Spark；UniForm 讓 Delta 一次寫、可當 Iceberg 被 Snowflake/BigQuery/Redshift 讀。Databricks 收 Tabular(Iceberg 原創者)並推 Iceberg v3——Snowflake 已於 2026-05-07 將 Iceberg v3 全部 7 項功能(deletion vectors 提速 DML 達 10x、row lineage 原生 CDC、VARIANT 半結構化型別等)升為 GA、Databricks 於 6/15-18 Data+AI Summit 同步宣布 v3 GA，Iceberg 正式從『公開預覽』變成兩強共同背書的『生產級跨平台事實標準』；Unity Catalog 可聯邦至 Polaris/Glue/Salesforce 等外部目錄(雙向讀寫)，主導兩陣營合流。底層物件儲存由 AWS S3 / Azure ADLS / Google GCS 三雲壟斷。絃外之音：Iceberg v3 GA 後，鎖喉點由表格式本身轉移到『目錄/治理層』(Unity Catalog vs Polaris/Horizon Catalog)；資料『可攜』、客戶議價力上升，長期壓縮單一廠商儲存/格式鎖定暴利，價值往目錄/治理層集中。",
+   "companies": [
+    {
+     "name": "Amazon S3 / AWS",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "雲端物件儲存龍頭",
+     "products": "S3 物件儲存 / Athena+Glue Iceberg / Redshift",
+     "note": "Iceberg 一級公民；與 Snowflake 簽 $6B 五年約",
+     "src": "https://atlan.com/know/iceberg/apache-iceberg-vs-delta-lake/"
+    },
+    {
+     "name": "Microsoft Azure",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "ADLS + OneLake 底座",
+     "products": "ADLS Gen2 / OneLake(Delta+Iceberg 雙原生)",
+     "note": "Fabric OneLake 28,000+ 客戶",
+     "src": "https://blog.fabric.microsoft.com/en-us/blog/whats-new-in-onelake-and-the-fabric-platform-more-sources-security-and-capacity-tooling?ft=All"
+    },
+    {
+     "name": "Google Cloud Storage",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "GCS + Iceberg 互通",
+     "products": "GCS / Lakehouse for Apache Iceberg(原 BigLake)",
+     "note": "2026-04 BigLake 改名；與 Trino/Spark 讀寫互通",
+     "src": "https://docs.cloud.google.com/lakehouse/docs/introduction"
+    },
+    {
+     "name": "Databricks (Delta / Tabular)",
+     "ticker": "—",
+     "country": "US",
+     "share": "Delta Lake 始祖 + 收 Iceberg 原創者",
+     "products": "Delta Lake / UniForm / Unity Catalog / Iceberg v3",
+     "note": "未上市；收 Tabular 主導 Iceberg×Delta 合流",
+     "src": "https://www.databricks.com/blog/next-era-open-lakehouse-apache-icebergtm-v3-public-preview-databricks"
+    },
+    {
+     "name": "Snowflake (Polaris / Iceberg)",
+     "ticker": "SNOW",
+     "country": "US",
+     "share": "Iceberg 原生 + 開源目錄",
+     "products": "Iceberg Tables / Apache Polaris REST 目錄",
+     "note": "Polaris 2026-02 升 Apache 頂級專案；2026-05-07 將 Iceberg v3 全 7 項功能升 GA；Horizon Catalog 跑在 Polaris 上撐雙向讀寫",
+     "src": "https://docs.snowflake.com/en/release-notes/2026/other/2026-05-07-iceberg-v3-ga"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "lakehouse_core"
+    },
+    {
+     "id": "ingest_transform"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Iceberg vs Delta、Polaris 頂級專案 (Atlan)",
+     "url": "https://atlan.com/know/iceberg/apache-iceberg-vs-delta-lake/"
+    },
+    {
+     "label": "Iceberg v3 Public Preview (Databricks)",
+     "url": "https://www.databricks.com/blog/next-era-open-lakehouse-apache-icebergtm-v3-public-preview-databricks"
+    },
+    {
+     "label": "Snowflake Iceberg v3 升 GA 2026-05-07 (Snowflake Release Notes)",
+     "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-05-07-iceberg-v3-ga"
+    }
+   ]
+  },
+  {
+   "id": "ingest_transform",
+   "row": "ingest",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "資料攝取 / 整合 / 轉換 (ETL/ELT, CDC, dbt)",
+   "nameEn": "Ingestion, Integration & Transformation",
+   "competition": "redocean",
+   "single": "⚠ 2026-06 Fivetran×dbt 合併(merger of equals)：合併後 ARR 近 $600M，建『可信 AI agent 資料底座』；Salesforce 同期完成 $8B 收 Informatica 卡位治理層",
+   "desc": "把分散資料搬進湖倉並建模的『水管工』層：批次/即時攝取（ETL/ELT）、變更資料擷取（CDC）、與資料轉換建模（dbt）。是 AI 資料品質與治理的第一道關卡。",
+   "marketSize": "資料整合市場 2026 ~$17B+",
+   "growth": "GenAI 加速資料管線消費",
+   "share": "null",
+   "analysis": "2026 最大事件為 Fivetran × dbt Labs 合併(2025-10 宣布、2026-06-01 完成)，合併後 ARR 近 $600M、估值傳 >$10B；80-90% Fivetran 客戶已用 dbt，整合 ELT 攝取與資料建模/轉換為一體，旨在打造『值得信賴的 AI agent 資料基礎設施』。其他玩家：Airbyte(開源 ELT，350+ 連接器)、Microsoft Fabric Data Factory(原生 OneLake、低代碼+AI)、Snowflake Datavolo(攝取)、Informatica(Salesforce 已完成 $8B 收購、併入 Agentforce 360)、Talend/Qlik。絃外之音：M&A 把『攝取+轉換』收編進更大平台——Fivetran×dbt 對等合併、Salesforce 吃下 Informatica，獨立 ETL/治理中型標的被快速吞噬；dbt 的『語意層/資料合約』與 Informatica 的『可信資料治理』成 agentic AI 取用可信資料的關鍵卡位。",
+   "companies": [
+    {
+     "name": "Fivetran + dbt Labs (合併)",
+     "ticker": "—",
+     "country": "US",
+     "share": "ELT+轉換合併龍頭",
+     "products": "Fivetran ELT 攝取 / dbt 轉換建模 / 語意層",
+     "note": "未上市；2026-06-01 合併完成；ARR 近 $600M；估值傳 >$10B",
+     "src": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents"
+    },
+    {
+     "name": "Microsoft Fabric Data Factory",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "雲廠原生攝取",
+     "products": "Data Factory(原生 OneLake) / 低代碼管線",
+     "note": "Build 2026 強化 AI 整合",
+     "src": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Build-2026-From-data-to-intelligence-Faster-with-Fabric-Data/ba-p/5191636"
+    },
+    {
+     "name": "Airbyte",
+     "ticker": "—",
+     "country": "US",
+     "share": "開源 ELT",
+     "products": "開源 ELT / 350+ 連接器",
+     "note": "未上市；開源攝取主力",
+     "src": "https://finance.yahoo.com/news/a16z-backed-data-firms-fivetran-140301503.html"
+    },
+    {
+     "name": "Snowflake (Datavolo / Snowpipe)",
+     "ticker": "SNOW",
+     "country": "US",
+     "share": "湖倉原生攝取",
+     "products": "Datavolo / Snowpipe / Openflow",
+     "note": "收 Datavolo 補攝取",
+     "src": "https://www.theregister.com/2025/06/10/snowflake_and_databricks_bank_postgresql/"
+    },
+    {
+     "name": "Informatica (Salesforce 旗下)",
+     "ticker": "CRM",
+     "country": "US",
+     "share": "傳統資料整合/治理龍頭",
+     "products": "IDMC / CDGC 資料治理",
+     "note": "Salesforce 已完成 $8B 收購(現金 $25/股、提前結案)、併入 Agentforce 360 資料底座；攝取/治理層獨立中型龍頭消滅",
+     "src": "https://pulse2.com/salesforce-completes-8-billion-acquisition-of-informatica-to-accelerate-agentic-ai-data-platform/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "object_store_table"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "lakehouse_core"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Fivetran×dbt 合併完成 (Fivetran)",
+     "url": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents"
+    },
+    {
+     "label": "a16z 系資料公司合併 (Reuters/Yahoo)",
+     "url": "https://finance.yahoo.com/news/a16z-backed-data-firms-fivetran-140301503.html"
+    },
+    {
+     "label": "Salesforce 完成 $8B 收 Informatica (Pulse 2.0)",
+     "url": "https://pulse2.com/salesforce-completes-8-billion-acquisition-of-informatica-to-accelerate-agentic-ai-data-platform/"
+    }
+   ]
+  },
+  {
+   "id": "lakehouse_core",
+   "row": "lake",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "湖倉 / 雲端資料倉儲（核心戰場）",
+   "nameEn": "Lakehouse & Cloud Data Warehouse",
+   "competition": "oligopoly",
+   "single": "⚠ 高題材 · Databricks 傳 $165-175B 新輪(ARR $6.9B)、Snowflake AWS $6B 合作單日 +36%、ClickHouse 估值 $6.35B-$15B 朝 IPO",
+   "desc": "AI 資料底座的『主機板』，三強（Databricks/Snowflake/雲端原生）+ 挑戰者（ClickHouse/Starburst）混戰。消費型計費、黏性強、NRR 高（Snowflake 126%），是『賣鏟給 AI』最確定性的一鏟。",
+   "marketSize": "三強+雲端原生混戰；AI 真實放量",
+   "growth": "Databricks +65% YoY · Snowflake 產品營收 +34%",
+   "share": "null",
+   "analysis": "Databricks(未上市，Lakehouse 始祖)：ARR $5.4B→$6.9B(2026-06)、估值傳 $165-175B(vs 上輪 $134B)；AI 產品 ARR $1.4B(約占 26%)；Unity Catalog 治理、Mosaic ML($1.3B 收購)訓練、Genie 對話查詢、Lakebase(serverless Postgres for AI agent，源自 $1B 收 Neon)。Snowflake(SNOW)：產品營收 $1.33B/季 +34%、上修全年 guidance $5.84B、NRR 126%、$1M+ 客戶 779 家；與 AWS 簽 $6B 五年約後股價單日 +36% 觸 52 週高 $282(仍低於 2021 ATH $401.89)；Cortex AI、Polaris/Iceberg、收 Crunchy Data($250M)補 Postgres。雲端原生：Google BigQuery(serverless+Iceberg 互通)、AWS Redshift(Zero-ETL)、Microsoft Fabric(SaaS-first，FY26 Q2 ARR 突破 $2B、客戶 >31,000 家、+60% YoY，Delta+Iceberg 雙原生；FabCon 2026 與 Azure Databricks 經 Unity Catalog 互讀 OneLake 轉『互補』)。挑戰者：ClickHouse(未上市，開源列式即時分析，年化營收 $250M 3 倍增，2026-01 完成 $400M Series D 估值升 $15B 朝 IPO；同輪收購 LLMOps 龍頭 Langfuse 切入 AI 回饋迴路、並推 Postgres 託管)、Starburst($3.35B，Trino 引擎)、Dremio(Iceberg 湖倉，2026-05 被 SAP 簽收、預計 2026Q3 結案，Business Data Cloud 將成『Iceberg 原生企業湖倉』，傳統 ERP 巨頭成湖倉新進入者)。⚠ 風險：consumption 計費景氣敏感；超大規模雲廠 bundling 擠壓；私有龍頭估值 >60x 年化營收過熱。",
+   "companies": [
+    {
+     "name": "Databricks",
+     "ticker": "—",
+     "country": "US",
+     "share": "Lakehouse 始祖 / AI 資料底座",
+     "products": "Lakehouse / Unity Catalog / Mosaic / Genie / Lakebase",
+     "note": "未上市；ARR $5.4B(+65% YoY)；The Information(2026-06-09)報導 $165-175B 新輪『商談中』(vs 2026-02 完成的 $134B Series L)、截至 6 月中尚未完成；AI 產品 ARR >$1.4B(約占 26%)；稱進『IPO 準備模式』最快 2026 年底掛牌，但 CEO Ghodsi 稱今年是『糟糕的上市年』；Lakebase 升 GA、Agent Bricks 已建逾 100k agents",
+     "src": "https://www.theinformation.com/articles/databricks-talks-raise-165-billion-valuation"
+    },
+    {
+     "name": "Snowflake",
+     "ticker": "SNOW",
+     "country": "US",
+     "share": "雲端資料雲龍頭",
+     "products": "Data Cloud / Cortex AI / Iceberg / Polaris",
+     "note": "產品營收 $1.33B/季 +34%、guidance $5.84B、NRR 126%；AWS $6B 約、單日 +36%；Summit 2026 併購 Natoma(agent 治理/企業 MCP)、推 Cortex Sense/CoWork",
+     "src": "https://www.businesswire.com/news/home/20260527027931/en/Snowflake-Reports-Financial-Results-for-the-First-Quarter-of-Fiscal-2027"
+    },
+    {
+     "name": "Microsoft Fabric",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "SaaS-first 一站式湖倉",
+     "products": "Fabric / OneLake / Power BI / Data Factory",
+     "note": "FY26 Q2 揭露 Fabric ARR 突破 $2B、客戶 >31,000 家、+60% YoY；Delta+Iceberg 雙原生；FabCon 2026 推 OneLake 雙向讀、Azure Databricks 經 Unity Catalog 原生讀 OneLake(轉互補)",
+     "src": "https://blog.fabric.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-whats-new-in-microsoft-onelake/"
+    },
+    {
+     "name": "Google BigQuery",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "serverless 雲倉",
+     "products": "BigQuery / Lakehouse for Apache Iceberg",
+     "note": "serverless；與 Trino/Spark Iceberg 讀寫互通",
+     "src": "https://docs.cloud.google.com/lakehouse/docs/introduction"
+    },
+    {
+     "name": "AWS Redshift",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "AWS 生態雲倉",
+     "products": "Redshift / Zero-ETL / Glue",
+     "note": "AWS 生態整合；Zero-ETL",
+     "src": "https://atlan.com/know/iceberg/apache-iceberg-vs-delta-lake/"
+    },
+    {
+     "name": "ClickHouse",
+     "ticker": "—",
+     "country": "US",
+     "share": "開源即時分析挑戰者",
+     "products": "ClickHouse 列式 OLAP / Cloud / Postgres 託管 / Langfuse LLMOps",
+     "note": "未上市；年化 $250M(3 倍增)；2026-01 完成 $400M Series D 估值升 $15B(Dragoneer 領投，>60x 年化營收)，前 Snowflake IR 主管任 CFO 備 IPO；同輪收購開源 LLM 可觀測性龍頭 Langfuse(Fortune 50 中 19 家採用)切入『AI 回饋迴路/LLMOps』、並推 Postgres 託管服務",
+     "src": "https://www.infoworld.com/article/4118621/clickhouse-buys-langfuse-as-data-platforms-race-to-own-the-ai-feedback-loop.html"
+    },
+    {
+     "name": "Starburst / Dremio",
+     "ticker": "—",
+     "country": "US",
+     "share": "Trino/Iceberg 查詢引擎",
+     "products": "Starburst(Trino) / Dremio(Iceberg 湖倉)",
+     "note": "Starburst $3.35B；Dremio 2026-05 被 SAP 收(預計 2026Q3 close)",
+     "src": "https://news.sap.com/2026/05/sap-to-acquire-dremio-unify-sap-and-non-sap-data-power-agentic-ai/"
+    },
+    {
+     "name": "阿里雲 MaxCompute",
+     "ticker": "9988.HK",
+     "country": "CN",
+     "share": "中國 serverless 雲倉",
+     "products": "MaxCompute / Hologres / 即時分析",
+     "note": "中國最大 serverless 資料倉儲",
+     "src": "https://www.alibabacloud.com/help/en/maxcompute/product-overview/what-is-maxcompute"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "object_store_table"
+    },
+    {
+     "id": "ingest_transform"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "streaming"
+    },
+    {
+     "id": "operational_db"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Databricks ARR $5.4B +65% (PRNewswire)",
+     "url": "https://www.prnewswire.com/news-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate-doubles-down-on-lakebase-and-genie-302682674.html"
+    },
+    {
+     "label": "Snowflake Q1 FY2027 結果 (BusinessWire)",
+     "url": "https://www.businesswire.com/news/home/20260527027931/en/Snowflake-Reports-Financial-Results-for-the-First-Quarter-of-Fiscal-2027"
+    },
+    {
+     "label": "ClickHouse 年化 $250M、IPO 路徑 (TechCrunch)",
+     "url": "https://techcrunch.com/2026/05/27/clickhouse-triples-annualized-revenue-to-250m-charting-a-path-toward-an-ipo/"
+    },
+    {
+     "label": "ClickHouse 收 Langfuse、推 Postgres、$15B Series D (InfoWorld)",
+     "url": "https://www.infoworld.com/article/4118621/clickhouse-buys-langfuse-as-data-platforms-race-to-own-the-ai-feedback-loop.html"
+    }
+   ]
+  },
+  {
+   "id": "streaming",
+   "row": "stream",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "即時串流 (Kafka / Flink / Streaming)",
+   "nameEn": "Real-time Streaming",
+   "competition": "oligopoly",
+   "single": "⚠ 2026-03 IBM 以 $11B 完成收購 Confluent：Forrester『買的不是 Kafka，是即時 AI』",
+   "desc": "AI agent 即時決策的『神經』：以 Apache Kafka/Flink 處理『資料在動中』(data in motion)，供應即時特徵與事件流。是 agentic AI 從批次走向即時的關鍵基礎設施。",
+   "marketSize": "即時資料串流市場高速成長",
+   "growth": "Confluent Cloud +27% YoY",
+   "share": "null",
+   "analysis": "2026 結構性事件：IBM 以 $31.00/股、企業價值 $11B 收購 Confluent(2025-12 宣布、2026-03-17 完成全現金交易)，整合 watsonx+混合雲建『即時 AI 資料 fabric』；Forrester 直言『IBM 買的不是 Kafka，是即時 AI』。Think 2026(5 月)推 Confluent『Real-Time Context Engine』把即時事件直灌 watsonx.data(附帶 lineage/policy/品質控管)，串流正式從『日誌管線』升級為『agent 的即時資料平面』。Confluent FY2025 訂閱營收 $1.12B(+21%)、Cloud $624M(+27%)、6,500+ 企業/40% Fortune 500、$100K+ ARR 客戶 1,521 家。其他玩家：Apache Flink(Confluent 與阿里 Ververica 主導)、AWS Kinesis/MSK(AMZN)、Redpanda(Kafka 相容 C++，估值 $1B)、Google Pub/Sub、Azure Event Hubs、阿里 DataHub。絃外之音：純獨立串流公開標的(Confluent)被吞噬後，剩下的純標的越來越稀缺；串流正從『日誌管線』升級為『AI agent 的即時資料平面』。",
+   "companies": [
+    {
+     "name": "Confluent (IBM 旗下)",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "Kafka 商業化龍頭",
+     "products": "Confluent Cloud / Kafka / Flink / Tableflow / Real-Time Context Engine",
+     "note": "2026-03 被 IBM $11B($31/股)收購完成；FY2025 訂閱 $1.12B +21%、Cloud $624M +27%；6,500+ 企業；Think 2026(5 月)推 Real-Time Context Engine 把即時事件直灌 watsonx.data(含 lineage/policy/品質控管)，升級為 agent 即時資料平面",
+     "src": "https://www.ibm.com/new/announcements/ibm-and-confluent-announce-ability-to-connect-process-and-govern-real-time-data-for-applications-and-ai-agents"
+    },
+    {
+     "name": "AWS Kinesis / MSK",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "雲廠原生串流",
+     "products": "Kinesis / MSK(託管 Kafka) / Flink",
+     "note": "AWS 生態原生串流",
+     "src": "https://www.forrester.com/blogs/why-ibm-paid-11b-for-real-time-ai-not-kafka/"
+    },
+    {
+     "name": "Redpanda",
+     "ticker": "—",
+     "country": "US",
+     "share": "Kafka 相容高效挑戰者",
+     "products": "Redpanda(C++ Kafka 相容) / Redpanda Cloud",
+     "note": "未上市；Series D $100M、估值 $1B；累計募資 $266M",
+     "src": "https://technews180.com/funding-news/redpanda-raises-100m-in-series-d-funding/"
+    },
+    {
+     "name": "Google Pub/Sub",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "GCP 原生訊息",
+     "products": "Pub/Sub / Dataflow(Flink/Beam)",
+     "note": "GCP 原生串流與 ETL",
+     "src": "https://www.forrester.com/blogs/why-ibm-paid-11b-for-real-time-ai-not-kafka/"
+    },
+    {
+     "name": "Microsoft Azure Event Hubs",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "Azure 原生串流",
+     "products": "Event Hubs(Kafka 相容) / Fabric Real-Time",
+     "note": "Fabric Real-Time Intelligence 整合",
+     "src": "https://www.forrester.com/blogs/why-ibm-paid-11b-for-real-time-ai-not-kafka/"
+    },
+    {
+     "name": "阿里 Ververica / DataHub",
+     "ticker": "9988.HK",
+     "country": "CN",
+     "share": "Flink 商業化(中國)",
+     "products": "Ververica(Flink) / DataHub 串流",
+     "note": "Apache Flink 創始團隊商業化",
+     "src": "https://www.alibabacloud.com/en/product/datahub"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "lakehouse_core"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "operational_db"
+    }
+   ],
+   "sources": [
+    {
+     "label": "IBM $11B 收 Confluent 完成 (FinancialContent)",
+     "url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-3-17-ibm-seals-the-deal-11-billion-confluent-acquisition-completes-reshaping-the-real-time-data-landscape"
+    },
+    {
+     "label": "IBM 買的是即時 AI 非 Kafka (Forrester)",
+     "url": "https://www.forrester.com/blogs/why-ibm-paid-11b-for-real-time-ai-not-kafka/"
+    },
+    {
+     "label": "IBM×Confluent Real-Time Context Engine (IBM)",
+     "url": "https://www.ibm.com/new/announcements/ibm-and-confluent-announce-ability-to-connect-process-and-govern-real-time-data-for-applications-and-ai-agents"
+    }
+   ]
+  },
+  {
+   "id": "operational_db",
+   "row": "opdb",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "營運 / 向量資料庫 (Operational & Vector DB)",
+   "nameEn": "Operational & Vector Databases",
+   "competition": "competitive",
+   "single": "Postgres 軍備競賽：Databricks Lakebase(收 Neon $1B) vs Snowflake(收 Crunchy $250M)；MongoDB 收 Voyage AI 補向量",
+   "desc": "AI agent 運轉需要『會寫、低延遲、帶向量』的營運交易庫；2025-26 出現『Postgres 文藝復興』與 HTAP（交易+分析+向量一體）的平台邊界融合。",
+   "marketSize": "AI agent 需『會寫、低延遲、帶向量』營運庫",
+   "growth": "MongoDB Atlas +29% · $2B run-rate",
+   "share": "null",
+   "analysis": "MongoDB(MDB)：文件資料庫龍頭，Q1 FY2027 總營收 $687.6M(+25%)、Atlas +29.4% 達 $2B run-rate(占 75%)、上修全年至 $2.92-2.96B；收 Voyage AI(嵌入/重排)補向量，向量搜尋自動嵌入(public preview)、Voyage 客戶季增逾倍；2026-06-12 收 $342.80。Postgres 軍備競賽：Databricks Lakebase(源自 $1B 收 Neon serverless Postgres，定位『the database for the AI era』) vs Snowflake(收 Crunchy Data $250M 補企業級 Postgres)——分析湖倉反向吃進營運交易庫。HTAP/向量原生：PingCAP TiDB(CN/US，HTAP+原生向量，主打 agentic workload)、阿里 PolarDB。絃外之音：Neon/Crunchy/Lakebase 收購潮顯示平台正融合『分析+交易+向量』為一體，AI agent 要的是 HTAP；對只能買公開股的投資人，MDB 與 SNOW/MSFT/GOOGL/AMZN 雲部門是有限的『替身』標的(Databricks 拒絕 IPO)。",
+   "companies": [
+    {
+     "name": "MongoDB",
+     "ticker": "MDB",
+     "country": "US",
+     "share": "文件資料庫 / 向量龍頭",
+     "products": "Atlas / Voyage AI 嵌入 / 向量搜尋",
+     "note": "總營收 $687.6M/季 +25%、Atlas $2B run-rate +29%；收 Voyage AI；guidance $2.92-2.96B",
+     "src": "https://www.gurufocus.com/news/8890886/mongodb-mdb-reports-strong-q1-fiscal-2027-earnings-with-25-revenue-growth"
+    },
+    {
+     "name": "Databricks Lakebase (Neon)",
+     "ticker": "—",
+     "country": "US",
+     "share": "serverless Postgres for AI",
+     "products": "Lakebase(serverless Postgres) / Neon",
+     "note": "未上市；$1B 收 Neon；『database for the AI era』",
+     "src": "https://www.techtarget.com/searchdatamanagement/news/366623864/Databricks-adds-Postgres-database-with-1B-Neon-acquisition"
+    },
+    {
+     "name": "Snowflake (Crunchy Data)",
+     "ticker": "SNOW",
+     "country": "US",
+     "share": "企業級 Postgres",
+     "products": "Snowflake Postgres(Crunchy Data)",
+     "note": "$250M 收 Crunchy 補企業級 Postgres",
+     "src": "https://www.infoworld.com/article/4001149/snowflake-acquires-crunchy-data-for-enterprise-grade-postgresql-to-counter-databricks-neon-buy.html"
+    },
+    {
+     "name": "PingCAP TiDB",
+     "ticker": "—",
+     "country": "CN",
+     "share": "HTAP + 原生向量",
+     "products": "TiDB(HTAP) / 原生向量搜尋",
+     "note": "未上市；主打 agentic workload、交易+分析+向量一體",
+     "src": "https://github.com/pingcap/tidb"
+    },
+    {
+     "name": "阿里雲 PolarDB",
+     "ticker": "9988.HK",
+     "country": "CN",
+     "share": "中國雲原生資料庫",
+     "products": "PolarDB / AnalyticDB",
+     "note": "中國雲原生 HTAP",
+     "src": "https://www.alibabacloud.com/help/en/maxcompute/product-overview/what-is-maxcompute"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "lakehouse_core"
+    },
+    {
+     "id": "streaming"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "MongoDB Q1 FY2027 +25%、Voyage AI (GuruFocus)",
+     "url": "https://www.gurufocus.com/news/8890886/mongodb-mdb-reports-strong-q1-fiscal-2027-earnings-with-25-revenue-growth"
+    },
+    {
+     "label": "Databricks Neon $1B、Lakebase (TechTarget)",
+     "url": "https://www.techtarget.com/searchdatamanagement/news/366623864/Databricks-adds-Postgres-database-with-1B-Neon-acquisition"
+    },
+    {
+     "label": "Snowflake Crunchy Data $250M (InfoWorld)",
+     "url": "https://www.infoworld.com/article/4001149/snowflake-acquires-crunchy-data-for-enterprise-grade-postgresql-to-counter-databricks-neon-buy.html"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "object_store_table",
+   "ingest_transform"
+  ],
+  [
+   "object_store_table",
+   "lakehouse_core"
+  ],
+  [
+   "ingest_transform",
+   "lakehouse_core"
+  ],
+  [
+   "lakehouse_core",
+   "streaming"
+  ],
+  [
+   "lakehouse_core",
+   "operational_db"
+  ],
+  [
+   "streaming",
+   "operational_db"
+  ]
+ ],
+ "_proposed": {}
+}

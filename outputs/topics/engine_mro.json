@@ -1,0 +1,661 @@
+{
+ "id": "engine_mro",
+ "tab": "發動機 MRO",
+ "title": "民航航空發動機售後維修超級循環 (Aero Engine Aftermarket / MRO Super-cycle)",
+ "subtitle": "民航發動機售後（aftermarket / MRO）是航空業最甜的『razor-blade』生意——OEM 幾乎不靠賣新發動機賺錢，而靠裝機後 20–30 年、按飛行小時（RPFH / power-by-the-hour）計費的維修與原廠件複利現金流。2026 結構性順風三疊加：①產能瓶頸——Airbus A320neo 衝月產 75 架推遲到 2027 底、Boeing 737 MAX 才從 42 拉到 47/月，新機交付遞延使老化機隊（全球客機平均機齡破 15 年、backlog 逾 1.7 萬架）被迫延役、飛更久、進廠更勤；②新世代發動機（LEAP / GTF）熱段耐久不如預期，進廠（shop visit）頻率與單價雙升；③RPFH 把一次性售機變成經常性現金流。2026 數字驚人：GE Aerospace Q1 服務 +39%（內部進廠 +35%、原廠件 +25%+）；Safran 民用發動機服務（USD）+30%、LEAP 售後拚低雙位數 CAGR；MTU 民用 MRO +18% 至 €60 億；Rolls-Royce 大型發動機飛時 2026 拚 2019 年的 115–120%；HEICO PMA 件 Q1 +26.5%；TransDigm 商用售後 +16%、TDG FY26 營收上修至 $103–104 億；Howmet 發動機產品 Q1 +29%。鏈：發動機 OEM（CFM/GE/RR/P&W）+ 原廠備件 → PMA 替代件（HEICO）/ 專利件（TransDigm）/ 熱段鍛鑄件（Howmet）→ MRO 維修（OEM 自營 + 獨立如 AAR）→ 航空公司/租賃機隊。台廠卡位：漢翔(2634) 引擎類佔營收約 33%、為 GE/RR/P&W 承製葉片與機匣；長榮航太(2645) 與 GE 合資長翼專修 GEnx；豐達科(3004) 取得四大引擎廠認證、與 MTU 簽 5 年約。絃外之音：市場給 OEM 賣新機的本益比，真正的金礦在『裝機基數 × 飛行小時 × RPFH 滲透率』的售後年金——這也是為何 GE Aerospace、Safran 即使新機產能受限仍持續上修獲利；風險在 PMA/USM（二手拆機件）侵蝕 OEM 售後定價、與供應鏈鍛件交期延宕。⚠ 與既有 defense 主題刻意零重疊（本主題只談民航商用售後，不談軍用平台/飛彈）；非投資建議。",
+ "category": "industrial",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "商用航空售後/MRO 市場",
+   "v": ">$1000億",
+   "sub": "商用 MRO 2026 約 $1,010 億；發動機 MRO 為最大段（~46%）",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "GE 服務 +39%、LEAP/GTF 進廠潮·風險：PMA/USM 侵蝕 OEM 定價＋鍛件交期",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "oem",
+   "label": "上游：發動機 OEM + 原廠備件（裝機基數的源頭）",
+   "main": false
+  },
+  {
+   "id": "parts",
+   "label": "中游：PMA 替代件 / 專利件 / 熱段鍛鑄件（售後零件供給）",
+   "main": false
+  },
+  {
+   "id": "mro",
+   "label": "MRO 維修服務（OEM 自營 + 獨立）— 售後現金流核心",
+   "main": true
+  },
+  {
+   "id": "fleet",
+   "label": "下游：航空公司 / 租賃機隊（飛行小時 = 需求引擎）",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "engine_oem",
+   "row": "oem",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "發動機 OEM（窄體 CFM / 寬體 GE・RR / GTF P&W）",
+   "nameEn": "Engine OEMs (Narrowbody & Widebody)",
+   "competition": "oligopoly",
+   "single": "razor-blade 寡占 · 窄體由 CFM（GE×Safran 50/50）與 P&W GTF 雙雄；寬體大型發動機由 GE 與 Rolls-Royce 對峙——OEM 靠裝機後 RPFH 售後年金而非賣新機賺錢",
+   "desc": "民航發動機 OEM 是整條售後鏈的源頭——每多一台裝機，就鎖定 20–30 年的維修與原廠件現金流。新機常以接近成本價售出，獲利幾乎全來自 aftermarket。",
+   "marketSize": "新發動機 + OEM 售後 合計數千億美元級",
+   "growth": "GE Q1 服務 +39%；Safran 民用發動機服務(USD) +30%；RR 大型發動機飛時 2026 拚 2019 的 115–120%",
+   "share": "null",
+   "analysis": "GE Aerospace（GE）是『最純的售後年金股』：Q1 2026 服務營收 +39%（內部進廠 +35%、原廠件 +25%+），裝機基數逾 4.4 萬台商用發動機；CFM（GE 與 Safran 50/50 合資）以 LEAP 主導窄體新世代、CFM56 仍是進廠主力。Safran（SAF.PA）2025 營收 €313 億（+14.7%）、民用發動機服務(USD) +30%，LEAP 售後在 RPFH 合約放量下拚低雙位數 CAGR。Rolls-Royce（RR.L）專攻寬體大型發動機（Trent 系列），2025 大型發動機飛時 +8%、2026 拚 2019 年的 115–120%、2028 拚 130–140%，靠 LTSA（長期服務協議）淨額成長與 time-on-wing 改善驅動現金流。Pratt & Whitney（RTX 旗下）GTF（PW1100G）受熱段檢修事件拖累、2026 商用售後拚高個位數成長、地停飛機數 Q1 -15%，投 $1 億擴 3 座美國 MRO 廠拼產能。MTU（MTX.DE）持 GTF 風險共擔股權＋V2500，民用 MRO 2025 +18% 至 €60 億。絃外之音：OEM 把『賣鏟』升級為『鏟子收訂閱費』——RPFH 把一次性售機變成隨飛行小時計費的年金。",
+   "companies": [
+    {
+     "name": "GE Aerospace",
+     "ticker": "GE",
+     "country": "US",
+     "share": "窄體(CFM)+寬體 售後龍頭",
+     "products": "GE9X/GEnx/CF6 + CFM(LEAP/CFM56, 與 Safran 50/50)",
+     "note": "Q1 2026 服務 +39%、內部進廠 +35%、原廠件 +25%+；裝機逾 4.4 萬台；原廠件需求持續供不應求、delinquency 較 2024 底 +70%",
+     "src": "https://www.geaerospace.com/news/press-releases/ge-aerospace-announces-first-quarter-2026-results"
+    },
+    {
+     "name": "Safran",
+     "ticker": "SAF.PA",
+     "country": "FR",
+     "share": "CFM/LEAP 50% + 售後",
+     "products": "CFM LEAP/CFM56(與 GE 合資)、機輪煞車、短艙",
+     "note": "2025 營收 €313 億(+14.7%)、民用發動機服務(USD)+30%；LEAP 售後拚低雙位數 CAGR、2025 LEAP 交付 +28%；2026 營收拚低-中雙位數成長",
+     "src": "https://www.safran-group.com/pressroom/safran-reports-excellent-financial-performance-2025-and-raises-its-2028-ambitions-2026-02-13"
+    },
+    {
+     "name": "Rolls-Royce",
+     "ticker": "RR.L",
+     "country": "UK",
+     "share": "寬體大型發動機雙雄",
+     "products": "Trent XWB/Trent 7000/Trent 1000、LTSA 服務",
+     "note": "2025 大型發動機飛時 +8%、2026 拚 2019 的 115–120%、2028 拚 130–140%；2025 獲利 +40%、LTSA 淨額成長 £0.6B；mid-term 進廠降至 1,300–1,400 次",
+     "src": "https://www.rolls-royce.com/media/press-releases/2026/26-02-2026-rr-holdings-plc-2025-full-year-results.aspx"
+    },
+    {
+     "name": "RTX (Pratt & Whitney)",
+     "ticker": "RTX",
+     "country": "US",
+     "share": "GTF 窄體第二供應",
+     "products": "PW1100G GTF / GTF Advantage / V2500(IAE)",
+     "note": "GTF 2026 商用售後拚高個位數成長；地停飛機 Q1 -15%；投 $1 億擴 3 座美國 MRO 廠；GTF Advantage 2026/4 取得 A320neo 認證；2026 P&W 營業利益 $2.25–3.25 億",
+     "src": "https://www.rtx.com/news/news-center/2026/04/21/rtxs-pratt-whitney-invests-more-than-100m-to-expand-mro-footprint-in-the-u-s"
+    },
+    {
+     "name": "MTU Aero Engines",
+     "ticker": "MTX.DE",
+     "country": "DE",
+     "share": "GTF 風險共擔 + V2500",
+     "products": "GTF 模組(低壓渦輪)、V2500、軍用、MRO",
+     "note": "2025 調整後營收 €87 億(+16%)、營業利益 €14 億(+29%)；GTF MRO 約佔民用維修 40%；民用 MRO 2025 +18% 至 €60 億",
+     "src": "https://www.mtu.de/newsroom/press/latest-press-releases/press-release-detail/figures-for-2025-mtu-stays-on-course-for-growth/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "pma_parts"
+    },
+    {
+     "id": "hot_section"
+    },
+    {
+     "id": "oem_mro"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GE Aerospace Q1 2026 財報：服務 +39%、原廠件 +25%+",
+     "url": "https://www.geaerospace.com/news/press-releases/ge-aerospace-announces-first-quarter-2026-results"
+    },
+    {
+     "label": "Safran 2025 全年：民用發動機服務(USD)+30%、LEAP 售後",
+     "url": "https://www.safran-group.com/pressroom/safran-reports-excellent-financial-performance-2025-and-raises-its-2028-ambitions-2026-02-13"
+    },
+    {
+     "label": "Rolls-Royce 2025 全年：大型發動機飛時 +8%、2026 拚 115–120%",
+     "url": "https://www.rolls-royce.com/media/press-releases/2026/26-02-2026-rr-holdings-plc-2025-full-year-results.aspx"
+    },
+    {
+     "label": "MTU 2025：民用 MRO +18% 至 €60 億、GTF MRO ~40%",
+     "url": "https://www.mtu.de/newsroom/press/latest-press-releases/press-release-detail/figures-for-2025-mtu-stays-on-course-for-growth/"
+    }
+   ]
+  },
+  {
+   "id": "oem_parts",
+   "row": "oem",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "OEM 原廠備件（OEM spare parts）",
+   "nameEn": "OEM Spare Parts",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "OEM 自家原廠認證備件——售後利潤率最高的單一品項，受 IP/型號合格證保護，是 OEM 售後年金的主力。新世代發動機進廠潮直接放大原廠件需求。",
+   "marketSize": "OEM 原廠件為發動機售後最高毛利段",
+   "growth": "GE 原廠件 +25%+、需求逾五季供不應求；HWM 發動機產品 Q1 +29%",
+   "share": "null",
+   "analysis": "原廠件（OEM proprietary parts）是 razor-blade 模式的『刀片』——毛利率常達 50%+，且受型號合格證（type certificate）與 IP 保護，PMA 難以全面替代熱段關鍵旋轉件。2026 進廠潮使原廠件需求爆量：GE Q1 原廠件 +25%+、訂單較 3 月 +30%+、delinquency 較 2024 底 +70%（需求遠超供給）。Howmet（HWM）供應 OEM 葉片/葉盤等熱段鍛鑄件，Q1 發動機產品營收 +29%、EBITDA +44%，受惠新機與售後備件雙引擎。此節點與下游 PMA、熱段鍛件節點互為替代/互補，是 OEM 守住售後定價權的關鍵。",
+   "companies": [
+    {
+     "name": "GE Aerospace（原廠件）",
+     "ticker": "GE",
+     "country": "US",
+     "share": "原廠件售後龍頭",
+     "products": "GE/CFM 原廠熱段件、旋轉件、模組",
+     "note": "Q1 原廠件 +25%+、訂單較 3 月 +30%+、delinquency 較 2024 底 +70%；需求逾五季供不應求",
+     "src": "https://www.geaerospace.com/news/press-releases/ge-aerospace-announces-first-quarter-2026-results"
+    },
+    {
+     "name": "Howmet Aerospace",
+     "ticker": "HWM",
+     "country": "US",
+     "share": "熱段鍛鑄件 OEM 供應",
+     "products": "渦輪葉片/葉盤、結構件、扣件",
+     "note": "Q1 2026 發動機產品營收 +29%、EBITDA +44%；整體營收 +19%、燃氣渦輪 +39%；售後備件需求為成長主因",
+     "src": "https://www.howmet.com/financial-release/2026-05-07/howmet-aerospace-reports-first-quarter-2026-results/"
+    },
+    {
+     "name": "Safran / RR / P&W（原廠件）",
+     "ticker": "SAF.PA",
+     "country": "FR",
+     "share": "各 OEM 自有原廠件",
+     "products": "各機型原廠認證備件",
+     "note": "RPFH 合約多綁原廠件供給；售後最高毛利來源",
+     "src": "https://www.safran-group.com/pressroom/safran-reports-first-quarter-2026-revenue-outstanding-performance-civil-engine-activities-2026-04-23"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "engine_oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "oem_mro"
+    },
+    {
+     "id": "independent_mro"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GE Q1 2026：原廠件 +25%+、訂單 +30%+、delinquency +70%",
+     "url": "https://www.geaerospace.com/news/press-releases/ge-aerospace-announces-first-quarter-2026-results"
+    },
+    {
+     "label": "Howmet Q1 2026：發動機產品 +29%、售後備件驅動",
+     "url": "https://www.howmet.com/financial-release/2026-05-07/howmet-aerospace-reports-first-quarter-2026-results/"
+    }
+   ]
+  },
+  {
+   "id": "pma_parts",
+   "row": "parts",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "PMA 替代件 / 專利售後件",
+   "nameEn": "PMA Parts & Proprietary Aftermarket",
+   "competition": "competitive",
+   "single": "razor-blade 的『破壞者』 · HEICO 以 FAA-PMA 認證替代件切入 OEM 售後高毛利、為航空公司省成本；TransDigm 反向以高度專利/獨家件鎖定售後定價權",
+   "desc": "PMA（Parts Manufacturer Approval）替代件以較低價搶 OEM 原廠件市場、為航空公司省維修成本；另一端是 TransDigm 式高度專利/單一來源的售後件，反而擁有強定價權。兩者共同界定售後零件的競爭格局。",
+   "marketSize": "PMA + 專利售後件 高速成長",
+   "growth": "HEICO PMA 件 Q1 +26.5%；TDG 商用售後 +16%、FY26 營收上修 $103–104 億",
+   "share": "null",
+   "analysis": "HEICO（HEI）是 PMA 替代件龍頭：Q1 2026 PMA 件營收 +26.5% 至 $1.967 億（Flight Support 最快成長線）、集團淨利創高 +13% 至 $1.902 億、營收 +14%。PMA 件以 FAA 認證的替代件切入 OEM 原廠件高毛利市場，為航空公司省下大量維修成本——是 OEM 售後年金的最大結構性威脅，也是航空公司樂見的成本槓桿。光譜另一端是 TransDigm（TDG）：以高度專利、單一來源（sole-source）的售後件鎖定定價權，Q1+Q2 2026 商用售後續為三大終端市場最快成長者、Q2 商用運輸 +16%、EBITDA +15.1%、FY26 營收上修至 $103–104 億、商用售後拚高個位數至低雙位數成長。絃外之音：PMA 壓 OEM 定價、TDG 模式則證明『若你獨家，售後就是印鈔機』——兩種極端策略並存。",
+   "companies": [
+    {
+     "name": "HEICO",
+     "ticker": "HEI",
+     "country": "US",
+     "share": "PMA 替代件全球龍頭",
+     "products": "FAA-PMA 認證替代件、修理開發件",
+     "note": "Q1 2026 PMA 件 +26.5% 至 $1.967 億(FSG 最快成長線)；集團淨利創高 $1.902 億(+13%)、營收 +14%；併購＋新品(含 PMA)續推成長",
+     "src": "https://www.gurufocus.com/news/8670880/heico-corp-hei-q1-2026-earnings-call-highlights-record-net-income-and-strategic-acquisitions-propel-growth"
+    },
+    {
+     "name": "TransDigm",
+     "ticker": "TDG",
+     "country": "US",
+     "share": "專利/獨家售後件定價王",
+     "products": "致動器、泵、閥、點火、連接件等高度專利件",
+     "note": "Q2 2026 商用售後最快成長、商用運輸 +16%、EBITDA +15.1%；FY26 營收上修至 $103–104 億；商用售後拚高個位數至低雙位數成長",
+     "src": "https://www.prnewswire.com/news-releases/transdigm-group-reports-fiscal-2026-second-quarter-results-302762508.html"
+    },
+    {
+     "name": "HEICO（修理/USM 整合）",
+     "ticker": "HEI",
+     "country": "US",
+     "share": "PMA + 維修 + 二手件",
+     "products": "PMA + repair + 部分 USM",
+     "note": "Flight Support Group Q1 營業利益 +21%、營收 +15%；定價紀律＋向高值 PMA 件轉移",
+     "src": "https://www.gurufocus.com/news/8670880/heico-corp-hei-q1-2026-earnings-call-highlights-record-net-income-and-strategic-acquisitions-propel-growth"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "engine_oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "independent_mro"
+    },
+    {
+     "id": "oem_mro"
+    }
+   ],
+   "sources": [
+    {
+     "label": "HEICO Q1 2026：PMA 件 +26.5%、淨利創高 +13%",
+     "url": "https://www.gurufocus.com/news/8670880/heico-corp-hei-q1-2026-earnings-call-highlights-record-net-income-and-strategic-acquisitions-propel-growth"
+    },
+    {
+     "label": "TransDigm Q2 FY26：商用售後 +16%、FY26 營收上修 $103–104 億",
+     "url": "https://www.prnewswire.com/news-releases/transdigm-group-reports-fiscal-2026-second-quarter-results-302762508.html"
+    }
+   ]
+  },
+  {
+   "id": "hot_section",
+   "row": "parts",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "熱段鍛鑄件 / 關鍵旋轉件",
+   "nameEn": "Hot-Section Forgings & Castings",
+   "competition": "oligopoly",
+   "single": "供應鏈卡點 · 熱段渦輪葉片/葉盤等關鍵旋轉件由 Howmet 等少數鍛鑄廠寡占；鍛件交期延宕成 OEM 拉產能與售後備件的最大瓶頸",
+   "desc": "發動機最高溫、最高應力的熱段（high-pressure turbine）渦輪葉片、葉盤與機匣，需鎳基超合金精密鍛鑄——技術門檻與認證壁壘極高，少數廠商寡占，是新機產能與售後備件的共同瓶頸。",
+   "marketSize": "熱段鍛鑄件為高壁壘寡占段",
+   "growth": "HWM 發動機產品 Q1 +29%、EBITDA +44%、燃氣渦輪 +39%",
+   "share": "null",
+   "analysis": "熱段鍛鑄件（forgings / castings）是發動機供應鏈最深的護城河之一：高壓渦輪葉片/葉盤需鎳基單晶超合金與精密鍛造，材料、製程與適航認證壁壘極高，Howmet（HWM）等少數廠商寡占。2026 此環節同時是『成長引擎』與『瓶頸』——Howmet Q1 發動機產品 +29%、EBITDA +44%、整體燃氣渦輪 +39%，受惠新機與售後雙重需求；但業界普遍反映鍛件交期延宕是 OEM 拉高新機產能（A320neo/737 MAX）與供應售後備件的最大限制。台廠漢翔(2634) 與豐達科(3004) 在此鏈承製葉片/機匣與引擎級扣件，是台灣切入全球發動機售後的關鍵卡位。",
+   "companies": [
+    {
+     "name": "Howmet Aerospace",
+     "ticker": "HWM",
+     "country": "US",
+     "share": "熱段鍛鑄件寡占龍頭",
+     "products": "渦輪葉片/葉盤(鎳基單晶)、結構鍛件、扣件",
+     "note": "Q1 2026 發動機產品 +29%、EBITDA +44%；整體營收 +19%、燃氣渦輪 +39%、商用航太 +20%；新機+售後雙引擎",
+     "src": "https://www.howmet.com/financial-release/2026-05-07/howmet-aerospace-reports-first-quarter-2026-results/"
+    },
+    {
+     "name": "漢翔 AIDC",
+     "ticker": "2634.TW",
+     "country": "TW",
+     "share": "台灣航太引擎件龍頭",
+     "products": "GE/RR/P&W 發動機葉片、機匣、引擎零組件代工",
+     "note": "引擎類佔營收約 33%、飛機維修佔約 61%；與 GE/Rolls-Royce/Pratt 合作；高教機收尾後承接逾 200 億元新訂單",
+     "src": "https://www.aidc.com.tw/"
+    },
+    {
+     "name": "豐達科",
+     "ticker": "3004.TW",
+     "country": "TW",
+     "share": "航太引擎級扣件",
+     "products": "航太扣件、引擎級精密車削件",
+     "note": "取得四大引擎廠認證、與 MTU 簽 5 年合作約；航太扣件訂單能見度逾 3 年、供應鏈封閉替代性極低；2025 營收創高",
+     "src": "https://www.pocket.tw/school/report/SCHOOL/6311/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "engine_oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "oem_mro"
+    },
+    {
+     "id": "independent_mro"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Howmet Q1 2026：發動機產品 +29%、EBITDA +44%",
+     "url": "https://www.howmet.com/financial-release/2026-05-07/howmet-aerospace-reports-first-quarter-2026-results/"
+    },
+    {
+     "label": "漢翔 AIDC 官網（引擎類/維修類業務）",
+     "url": "https://www.aidc.com.tw/"
+    },
+    {
+     "label": "豐達科：四大引擎廠認證 + MTU 5 年約",
+     "url": "https://www.pocket.tw/school/report/SCHOOL/6311/"
+    }
+   ]
+  },
+  {
+   "id": "oem_mro",
+   "row": "mro",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "OEM 自營 MRO / RPFH 服務（power-by-the-hour）",
+   "nameEn": "OEM-Captive MRO & RPFH Services",
+   "competition": "oligopoly",
+   "single": "售後年金核心 · OEM 用 RPFH（rate-per-flight-hour）長約把一次性售機變成按飛行小時計費的訂閱現金流，並把原廠件供給綁進服務合約、守住售後定價權",
+   "desc": "OEM 自營或主導的維修網與 RPFH（按飛行小時計費）長期服務協議——把售機轉為 20–30 年的經常性年金。新世代發動機（LEAP/GTF/Trent）進廠潮使此段營收與利潤同步放量。",
+   "marketSize": "發動機 MRO 2026 約 $470–490 億（最大 MRO 段）",
+   "growth": "GE 服務 +39%；MTU 民用 MRO +18%；Safran 服務(USD)+30%；RR LTSA 淨額成長",
+   "share": "null",
+   "analysis": "OEM 自營 MRO 是售後鏈的利潤核心——透過 RPFH（rate-per-flight-hour / power-by-the-hour）長約，把售機轉成隨飛行小時計費的訂閱年金，並把原廠件供給綁進合約，守住定價權。發動機 MRO 是整體 MRO 最大段（約佔 46%）、2026 約 $470–490 億。2026 進廠潮全面放量：GE 服務 +39%（內部進廠 +35%）、Safran 民用發動機服務(USD) +30%、MTU 民用 MRO +18% 至 €60 億（GTF MRO 約佔 40%）、Rolls-Royce 靠 LTSA 淨額成長與 time-on-wing 改善（mid-term 進廠降至 1,300–1,400 次但單價提升）、P&W 投 $1 億擴 3 座美國 GTF MRO 廠。新世代發動機（LEAP/GTF）熱段耐久不如預期，反而推升進廠頻率與單價——對 OEM MRO 是雙面刃但淨利為正。",
+   "companies": [
+    {
+     "name": "GE Aerospace（OEM MRO）",
+     "ticker": "GE",
+     "country": "US",
+     "share": "發動機 MRO 龍頭",
+     "products": "GE/CFM 進廠維修、TrueChoice 服務",
+     "note": "Q1 服務 +39%、內部進廠 +35%、佔服務營收約 60%；2026 進廠 pipeline 已逾 2/3 off-wing 或待induction",
+     "src": "https://www.geaerospace.com/news/press-releases/ge-aerospace-announces-first-quarter-2026-results"
+    },
+    {
+     "name": "Safran（CFM 服務）",
+     "ticker": "SAF.PA",
+     "country": "FR",
+     "share": "CFM/LEAP RPFH 服務",
+     "products": "LEAP/CFM56 RPFH、機輪煞車維修",
+     "note": "2025 民用發動機服務(USD)+30%；LEAP 售後在 RPFH 放量下拚低雙位數 CAGR；第三方 MRO 進廠帶動原廠件",
+     "src": "https://www.safran-group.com/pressroom/safran-reports-first-quarter-2026-revenue-outstanding-performance-civil-engine-activities-2026-04-23"
+    },
+    {
+     "name": "MTU Maintenance",
+     "ticker": "MTX.DE",
+     "country": "DE",
+     "share": "獨立+OEM 混合 MRO 領導",
+     "products": "GTF/V2500/CF6/GE90 MRO、租賃資產管理",
+     "note": "民用 MRO 2025 +18% 至 €60 億；GTF MRO 約佔民用維修 40%；窄體至寬體全機型、增長廣基",
+     "src": "https://www.mtu.de/newsroom/press/latest-press-releases/press-release-detail/figures-for-2025-mtu-stays-on-course-for-growth/"
+    },
+    {
+     "name": "Rolls-Royce（LTSA）",
+     "ticker": "RR.L",
+     "country": "UK",
+     "share": "寬體大型發動機服務",
+     "products": "TotalCare LTSA、Trent 系列維修",
+     "note": "2025 飛時 +8%、LTSA 淨額 +£0.6B；mid-term 進廠降至 1,300–1,400 次但單價/time-on-wing 改善；2026 飛時拚 2019 的 115–120%",
+     "src": "https://www.rolls-royce.com/media/press-releases/2026/26-02-2026-rr-holdings-plc-2025-full-year-results.aspx"
+    },
+    {
+     "name": "Pratt & Whitney（GTF MRO）",
+     "ticker": "RTX",
+     "country": "US",
+     "share": "GTF 自營 MRO 擴產",
+     "products": "GTF/V2500 進廠維修、EngineWise",
+     "note": "投 $1 億擴 3 座美國 MRO 廠(Texas/Florida/Arkansas)；GTF 地停飛機 Q1 -15%；2026 商用售後拚高個位數成長",
+     "src": "https://www.rtx.com/news/news-center/2026/04/21/rtxs-pratt-whitney-invests-more-than-100m-to-expand-mro-footprint-in-the-u-s"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "engine_oem"
+    },
+    {
+     "id": "oem_parts"
+    },
+    {
+     "id": "pma_parts"
+    },
+    {
+     "id": "hot_section"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fleet_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GE Q1 2026：服務 +39%、內部進廠 +35% 佔服務 ~60%",
+     "url": "https://www.geaerospace.com/news/press-releases/ge-aerospace-announces-first-quarter-2026-results"
+    },
+    {
+     "label": "MTU 2025：民用 MRO +18% 至 €60 億、GTF MRO ~40%",
+     "url": "https://www.mtu.de/newsroom/press/latest-press-releases/press-release-detail/figures-for-2025-mtu-stays-on-course-for-growth/"
+    },
+    {
+     "label": "P&W 投 $1 億擴 3 座美國 GTF MRO 廠",
+     "url": "https://www.rtx.com/news/news-center/2026/04/21/rtxs-pratt-whitney-invests-more-than-100m-to-expand-mro-footprint-in-the-u-s"
+    },
+    {
+     "label": "發動機 MRO 為最大段(~46%)、2026 市場規模",
+     "url": "https://www.fortunebusinessinsights.com/aircraft-engine-mro-market-108858"
+    }
+   ]
+  },
+  {
+   "id": "independent_mro",
+   "row": "mro",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "獨立 MRO / 零件配銷 / USM",
+   "nameEn": "Independent MRO · Parts Distribution · USM",
+   "competition": "fragmented",
+   "single": "OEM 之外的成本選項 · 獨立 MRO（如 AAR）＋ 二手拆機件(USM)＋ PMA 配銷，為航空公司提供低於 OEM 的維修方案——是售後鏈的『價格制衡者』",
+   "desc": "OEM 體系外的獨立維修商、零件配銷與 USM（二手拆機可用件）——為航空公司提供較 OEM 便宜的選項，是售後定價的制衡力量。台灣長榮航太是全球前十大 MRO、與 GE 合資專修 GEnx。",
+   "marketSize": "獨立 MRO + 配銷 + USM 高度分散",
+   "growth": "AAR Q3 FY26 營收 +25% 至 $8.45 億；零件供應 +45%、配銷有機 +36%",
+   "share": "null",
+   "analysis": "獨立 MRO 與零件配銷是售後鏈的『價格制衡者』：AAR Corp（AIR，NYSE）Q3 FY2026 營收 +25% 至 $8.45 億（超預期）、零件供應 +45%（新件配銷有機 +36%）、完成 Oklahoma City 機體 MRO 擴廠並 3 月首架進廠；提供機體維修、組件修理、起落架翻修與 USM 二手件。USM（used serviceable material）與 PMA 一起壓低 OEM 售後定價，是航空公司在新機交付遞延、被迫延役老機時的成本槓桿。台廠長榮航太(2645) 為全球前十大 MRO、與 GE 合資『長翼』專修 GEnx，2026 起恢復正貢獻並迎維修需求高峰；漢翔(2634) 飛機維修業務佔營收約 61%。絃外之音：當新機等 14 年、機隊被迫飛更久，獨立 MRO 與 USM 是售後超級循環中『最直接受惠延役』的一段。",
+   "companies": [
+    {
+     "name": "AAR Corp",
+     "ticker": "AIR",
+     "country": "US",
+     "share": "北美獨立 MRO/配銷領導",
+     "products": "機體 MRO、組件修理、起落架翻修、零件配銷、USM",
+     "note": "Q3 FY2026 營收 +25% 至 $8.45 億(超預期)；零件供應 +45%、新件配銷有機 +36%；Oklahoma City 機體 MRO 擴廠 3 月首架進廠",
+     "src": "https://www.aarcorp.com/en/newsroom/press-releases/2026/aar-reports-third-quarter-fiscal-year-2026-results/"
+    },
+    {
+     "name": "長榮航太 EGAT",
+     "ticker": "2645.TW",
+     "country": "TW",
+     "share": "全球前十大 MRO（台灣）",
+     "products": "發動機/機體維修、與 GE 合資長翼專修 GEnx",
+     "note": "與 GE 深度結盟專精發動機翻修；長翼公司預計 2026 起恢復正向貢獻；2026 迎飛機維修需求高峰；亦布局無人機",
+     "src": "https://uc913.com/stock-2645/"
+    },
+    {
+     "name": "漢翔 AIDC（維修）",
+     "ticker": "2634.TW",
+     "country": "TW",
+     "share": "台灣 MRO + 引擎件",
+     "products": "飛機/航空器維修(佔營收約 61%)、引擎類(約 33%)",
+     "note": "與 GE/RR/P&W 合作；軍民兩用；承接逾 200 億元新訂單支撐 2026 後成長",
+     "src": "https://www.aidc.com.tw/"
+    },
+    {
+     "name": "Lufthansa Technik / ST Engineering",
+     "ticker": "—",
+     "country": "DE",
+     "share": "全球大型獨立 MRO",
+     "products": "發動機/機體/組件 MRO 全服務",
+     "note": "Lufthansa Technik(德)、ST Engineering(新加坡, S63.SI) 為全球大型獨立 MRO；分散競爭",
+     "src": "https://www.aarcorp.com/en/newsroom/press-releases/2026/aar-reports-third-quarter-fiscal-year-2026-results/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "oem_parts"
+    },
+    {
+     "id": "pma_parts"
+    },
+    {
+     "id": "hot_section"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fleet_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AAR Q3 FY2026：營收 +25%、零件供應 +45%",
+     "url": "https://www.aarcorp.com/en/newsroom/press-releases/2026/aar-reports-third-quarter-fiscal-year-2026-results/"
+    },
+    {
+     "label": "長榮航太(2645) 深度分析：GE 合資長翼、MRO 前十大",
+     "url": "https://uc913.com/stock-2645/"
+    },
+    {
+     "label": "漢翔 AIDC 官網（維修業務佔比）",
+     "url": "https://www.aidc.com.tw/"
+    }
+   ]
+  },
+  {
+   "id": "fleet_demand",
+   "row": "fleet",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "下游：航空公司 / 租賃機隊（飛行小時 = 需求引擎）",
+   "nameEn": "Airlines · Leasing Fleets (Flight Hours = Demand)",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "售後超級循環的需求引擎——航空公司與租賃公司的機隊飛多少小時、機齡多老、進廠多勤，直接決定上述全鏈的 MRO 與零件用量。新機交付遞延 × 老化機隊延役 = 售後需求結構性放大。",
+   "marketSize": "商用 MRO 2026 約 $1,010 億（含全段）",
+   "growth": "全球 backlog 逾 1.7 萬架、平均機齡破 15 年；A320neo 月產 75 推遲至 2027 底",
+   "share": "null",
+   "analysis": "需求端是售後超級循環的引擎：航空公司/租賃機隊的飛行小時（flight hours）× 機齡 × 進廠頻率，直接驅動 MRO 與零件用量。2026 結構性放大三力：①新機交付遞延——A320neo 衝月產 75 架推遲至 2027 底、737 MAX 才從 42 拉到 47/月、全球 backlog 逾 1.7 萬架（『一台新飛機要等 14 年』）；②老化機隊延役——平均客機機齡破 15 年、航空公司被迫延後退役，老機飛更久、進廠更勤、單次維修更貴；③需求復甦——客運量回到並超越 2019。商用 MRO 2026 約 $1,010 億，發動機 MRO 為最大段（~46%）。絃外之音：交付遞延對航空公司是痛點，對整條售後鏈卻是結構性紅利——『買不到新飛機』直接等於『售後年金延長』，這是 OEM/MRO/PMA/鍛件全鏈 2026 同步上修的根本原因。風險：油價/景氣若壓低飛行小時、或 PMA/USM 加速侵蝕 OEM 售後定價。",
+   "companies": [
+    {
+     "name": "全球航空公司（客運/貨運）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "MRO/零件終端買方",
+     "products": "機隊運營、飛行小時、進廠決策",
+     "note": "飛行小時 × 機齡 × 進廠頻率 = 售後需求；老機延役放大用量",
+     "src": "https://www.eplaneai.com/news/aircraft-shortage-delays-retirement-of-aging-fleets-worldwide"
+    },
+    {
+     "name": "AerCap / 飛機租賃公司",
+     "ticker": "AER",
+     "country": "IE",
+     "share": "全球最大飛機租賃",
+     "products": "發動機/飛機租賃、資產管理",
+     "note": "租賃機隊維修決策影響 MRO 與 USM 需求；交付遞延推升既有資產價值",
+     "src": "https://www.eplaneai.com/news/aircraft-shortage-delays-retirement-of-aging-fleets-worldwide"
+    },
+    {
+     "name": "Airbus / Boeing（OEM 機體）",
+     "ticker": "BA",
+     "country": "US",
+     "share": "新機交付節奏決定延役程度",
+     "products": "A320neo / 737 MAX 等新機",
+     "note": "A320neo 月產 75 推遲至 2027 底、737 MAX 拉到 47/月；交付遞延=老機延役=售後紅利；詳見 defense 主題的軍用平台另論",
+     "src": "https://www.cnbc.com/2026/05/27/boeing-ortberg-737-max-production.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "oem_mro"
+    },
+    {
+     "id": "independent_mro"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "商用 MRO 2026 約 $1,010 億（Mordor Intelligence）",
+     "url": "https://www.mordorintelligence.com/industry-reports/global-aircraft-maintenance-repair-and-overhaul-market-industry"
+    },
+    {
+     "label": "新機荒延後老機退役、機齡破 15 年（ePlane AI）",
+     "url": "https://www.eplaneai.com/news/aircraft-shortage-delays-retirement-of-aging-fleets-worldwide"
+    },
+    {
+     "label": "Airbus A320neo 月產 75 推遲至 2027 底（FlightGlobal）",
+     "url": "https://www.flightglobal.com/air-transport/airbus-drops-interim-a320neo-rate-references-to-focus-on-75-per-month-target/154306.article"
+    },
+    {
+     "label": "Boeing 737 MAX 2026 拉到 47/月（CNBC）",
+     "url": "https://www.cnbc.com/2026/05/27/boeing-ortberg-737-max-production.html"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "engine_oem",
+   "oem_parts"
+  ],
+  [
+   "engine_oem",
+   "pma_parts"
+  ],
+  [
+   "engine_oem",
+   "hot_section"
+  ],
+  [
+   "engine_oem",
+   "oem_mro"
+  ],
+  [
+   "oem_parts",
+   "oem_mro"
+  ],
+  [
+   "oem_parts",
+   "independent_mro"
+  ],
+  [
+   "pma_parts",
+   "oem_mro"
+  ],
+  [
+   "pma_parts",
+   "independent_mro"
+  ],
+  [
+   "hot_section",
+   "oem_mro"
+  ],
+  [
+   "hot_section",
+   "independent_mro"
+  ],
+  [
+   "oem_mro",
+   "fleet_demand"
+  ],
+  [
+   "independent_mro",
+   "fleet_demand"
+  ]
+ ],
+ "_proposed": {}
+}

@@ -1,0 +1,498 @@
+{
+ "id": "nuclear_fuel_cycle",
+ "tab": "核燃料循環/鈾濃縮",
+ "title": "核燃料循環與鈾濃縮供應鏈 (Nuclear Fuel Cycle & Uranium Enrichment)",
+ "subtitle": "AI 資料中心向核電 PPA 與 SMR 大舉押注，把『燃料側』推上結構性多頭——這是與 nuclear_smr（反應爐設計）互補的另一半故事。價值鏈：鈾礦開採 → 轉化(UF6)＋濃縮(離心)＋HALEU 高濃度低濃鈾 → 燃料組件製造 → 核電廠/SMR 業主。2026 關鍵數字：鈾現貨年初一度衝 $101/lb、6 月回穩約 $85/lb，長約價升至 $93/lb；Cameco（CCJ）Q1 2026 營收 $8.45 億（+7%）、調整後 EBITDA $5.09 億（+44%），手握 Westinghouse 49% 與 Port Hope（占全球 UF6 一次轉化約 18%）形成『礦→轉化→反應爐→組件』一條龍；Centrus（LEU）是美國唯一在產 HALEU 商，Q1 淨利 $1,000 萬、拿下 DOE $9 億 HALEU 商規任務令（屬 $27 億去俄濃縮計畫）；NexGen（NXE）Rook I／Denison（DNN）Wheeler River 2026 雙雙取得加拿大自 2004 年來首批鈾礦建照；UEC Burke Hollow 4 月投產為美國十餘年來首座新 ISR 礦；Kazatomprom（KAP）2026 產量導引 71.5–75.4M lb（+9%）。絃外之音：鈾現貨價波動大，但真正稀缺、定價權最硬的是『轉化＋濃縮』中游——全球濃縮約 95% 由 Orano／Urenco／CNNC／Rosatom 四家把持，美國『去俄』政策（HALEU 供給戰）把這個被忽視的瓶頸變成最確定的政策套利；SMR 要量產，HALEU 才是真正的卡脖子，且產能 2028 才開始爬坡。⚠ 與既有 nuclear_smr 主題互補不重疊（彼為反應爐設計、此為燃料循環）；非投資建議。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "鈾礦市場規模",
+   "v": "$127億",
+   "sub": "2030 約 $127 億（2023 $81 億，CAGR ~4–8%）；鈾需求 2030 +28%、2040 近翻倍",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "AI 資料中心核電 PPA＋HALEU 去俄供給戰·風險：現貨價波動＋HALEU 產能 2028 才爬坡＋哈薩克地緣",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "mine",
+   "label": "上游：鈾礦開採（U3O8 黃餅）",
+   "main": false
+  },
+  {
+   "id": "convert",
+   "label": "中游：轉化 (UF6) + 濃縮 (離心) + HALEU",
+   "main": true
+  },
+  {
+   "id": "fab",
+   "label": "下游：燃料組件製造 / 實物鈾持有",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "終端：核電廠 / SMR 業主 / AI 資料中心 PPA",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "uranium_mining",
+   "row": "mine",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "鈾礦開採（U3O8 黃餅）",
+   "nameEn": "Uranium Mining (U3O8 Yellowcake)",
+   "competition": "oligopoly",
+   "single": "資源高度集中 · 哈薩克 Kazatomprom 一家約佔全球一次供給 ~20%；加拿大 Athabasca 盆地握全球最高品位礦",
+   "desc": "從礦體（露天、地下或 ISR 原地浸出）開採並提純為 U3O8『黃餅』——核燃料循環的原料起點，也是 AI 核電多頭最直接的價格曝險。",
+   "marketSize": "鈾礦市場 2030 約 $127 億（CAGR ~4–8%）",
+   "growth": "鈾現貨 6/2026 約 $85/lb（年初曾衝 $101）、長約價 $93/lb",
+   "share": "null",
+   "analysis": "上游高度寡占且資源國別集中：Kazatomprom（KAP，哈薩克國營）以 ISR 低成本一家供給全球約 20%，2026 產量導引 71.5–75.4M lb（+9%，主要來自 Budenovskoye 擴產）、銷售 50.7–53.3M lb；Cameco（CCJ）以加拿大 Athabasca 盆地高品位礦為核心，Q1 2026 鈾交付 7.8M lb、全年生產導引 19.5–21.0M lb、交付 29–32M lb。北美新供給 2026 集中上線：UEC（Uranium Energy）Burke Hollow 4 月投產為美國十餘年來首座新 ISR 礦、握美國最大鈾資源與許可產能約 12M lb/yr、$7.94 億流動資產且零負債；NexGen（NXE）Rook I（Arrow 礦，年產上看 14M kg U3O8）與 Denison（DNN）Wheeler River 於 2026 取得加拿大自 2004 年來首批新鈾礦建照。絃外之音：現貨價波動劇烈（2026 因荷莫茲海峽運輸受阻一度回檔），但長約價穩步走高，礦商靠『非避險現貨曝險』放大多頭槓桿。",
+   "companies": [
+    {
+     "name": "Cameco",
+     "ticker": "CCJ",
+     "country": "CA",
+     "share": "西方鈾礦龍頭",
+     "products": "McArthur River/Cigar Lake 鈾礦 + 一條龍燃料服務",
+     "note": "Q1 2026 營收 $8.45 億(+7%)、調整後 EBITDA $5.09 億(+44%)、調整後淨利 $2.03 億(翻倍)；全年生產導引 19.5–21.0M lb、交付 29–32M lb；2026–2030 年均交付承諾約 28M lb；另握 Westinghouse 49%",
+     "src": "https://www.cameco.com/media/news/cameco-reports-2026-first-quarter-results"
+    },
+    {
+     "name": "Kazatomprom",
+     "ticker": "KAP.L",
+     "country": "KZ",
+     "share": "全球最大、一次供給 ~20%",
+     "products": "ISR 低成本鈾礦（哈薩克）",
+     "note": "倫敦 LSE GDR（KAP.L）與 Astana AIX 雙掛牌；2026 產量導引 71.5–75.4M lb(+9%)、銷售 50.7–53.3M lb；Budenovskoye 擴產為增量主因；地緣與對俄合資為風險",
+     "src": "https://www.kazatomprom.kz/en/media/view/1h2025_financial_results"
+    },
+    {
+     "name": "Uranium Energy",
+     "ticker": "UEC",
+     "country": "US",
+     "share": "美國最大許可產能 ~12M lb/yr",
+     "products": "Burke Hollow/Christensen Ranch ISR（德州+懷俄明）",
+     "note": "Burke Hollow 4/2026 投產為美國十餘年首座新 ISR 礦；$7.94 億流動資產、零負債、不避險現貨策略；Christensen Ranch 單季產 32,195 lb、總成本 $54.61/lb",
+     "src": "https://www.ans.org/news/2026-04-17/article-7945/uranium-energy-corp-begins-production-at-burke-hollow/"
+    },
+    {
+     "name": "NexGen Energy",
+     "ticker": "NXE",
+     "country": "CA",
+     "share": "Athabasca 高品位開發龍頭",
+     "products": "Rook I / Arrow 礦（年產上看 14M kg U3O8、24 年礦命）",
+     "note": "2026/3/5 取得 CNSC 建照——加拿大自 2004 年來首批新鈾礦建照之一；尚未投產、開發期資本支出與融資為觀察點",
+     "src": "https://www.canada.ca/en/nuclear-safety-commission/news/2026/03/commission-issues-a-site-preparation-and-construction-licence-to-nexgen-energy-ltd-for-its-rook-i-project.html"
+    },
+    {
+     "name": "Denison Mines",
+     "ticker": "DNN",
+     "country": "CA",
+     "share": "Athabasca ISR 開發商",
+     "products": "Wheeler River（Phoenix ISR）",
+     "note": "2026/2/19 取得 CNSC 建照；與 NexGen 合計帶動薩斯喀徹溫鈾礦『新時代』、總投資約 28 億加元",
+     "src": "https://pipelineonline.ca/nexgen-and-denison-mines-uranium-mine-projects-both-going-ahead/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "conversion_enrichment"
+    },
+    {
+     "id": "physical_uranium"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cameco 2026 Q1 財報",
+     "url": "https://www.cameco.com/media/news/cameco-reports-2026-first-quarter-results"
+    },
+    {
+     "label": "Kazatomprom 2026 產量策略（+9%）",
+     "url": "https://www.mining.com/kazatomprom-plans-9-uranium-output-rise-this-year"
+    },
+    {
+     "label": "鈾價 Q1 2026 回顧（INN）",
+     "url": "https://investingnews.com/uranium-forecast/"
+    },
+    {
+     "label": "鈾礦市場規模 2030 約 $127 億（S&P Global）",
+     "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/02/uranium-s-next-decade-from-tight-supply-to-a-broader-mining-boom"
+    }
+   ]
+  },
+  {
+   "id": "physical_uranium",
+   "row": "mine",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "實物鈾持有（價格代理）",
+   "nameEn": "Physical Uranium Holdings",
+   "competition": "emerging",
+   "single": "null",
+   "desc": "不開礦、直接持有實物 U3O8 長期囤積，作為鈾價的『純粹代理』投資工具——把現貨曝險證券化，是供需失衡下吸收浮動庫存的關鍵買盤。",
+   "marketSize": "Yellow Cake 持倉約 23.11M lb、NAV $19.4 億",
+   "growth": "YCA NAV/股 Q1 2026 升至 633p（YoY +25%）",
+   "share": "null",
+   "analysis": "Yellow Cake（YCA.L，倫敦 AIM 掛牌）是最具代表性的實物鈾代理：透過與 Kazatomprom 的長約 + 選擇性現貨採購，把持倉由 21.68M lb 擴至 23.11M lb（年底上看 24.37M lb），鈾資產價值 Q1 2026 升至 $19.4 億（季增 9.7%、YoY +39%）、NAV/股 633p（YoY +25%）；2026/6 啟動最高 $1,000 萬庫藏股、並完成 £8,060 萬增資以再投 $1 億向 Kazatomprom 購鈾。所有實物存放於 Cameco 與 Orano 設施——這類工具是現貨市場的『隱形大買家』，買盤越強、可流通現貨越少，放大價格波動。Sprott Physical Uranium Trust（SPUT，加拿大上市）為另一大實物持有方。",
+   "companies": [
+    {
+     "name": "Yellow Cake plc",
+     "ticker": "YCA.L",
+     "country": "UK",
+     "share": "倫敦實物鈾代理龍頭",
+     "products": "實物 U3O8 長期持有（23.11M lb）",
+     "note": "倫敦 AIM 掛牌；鈾資產 Q1 2026 $19.4 億(季增 9.7%、YoY +39%)、NAV/股 633p(YoY +25%)；2026/6 啟動 $1,000 萬庫藏股、£8,060 萬增資再購 $1 億；存放於 Cameco/Orano",
+     "src": "https://uk.finance.yahoo.com/news/yellow-cake-grows-uranium-holdings-074328932.html"
+    },
+    {
+     "name": "Sprott Physical Uranium Trust",
+     "ticker": "U-UN.TO",
+     "country": "CA",
+     "share": "全球最大實物鈾基金",
+     "products": "實物 U3O8 信託",
+     "note": "多倫多上市；現貨市場最大實物吸納方之一，買盤直接收緊可流通庫存",
+     "src": "https://investingnews.com/uranium-forecast/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "uranium_mining"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fuel_fabrication"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Yellow Cake 擴大持倉與 NAV（2026）",
+     "url": "https://uk.finance.yahoo.com/news/yellow-cake-grows-uranium-holdings-074328932.html"
+    },
+    {
+     "label": "Yellow Cake 啟動庫藏股（2026/6/15）",
+     "url": "https://www.tradingview.com/news/reuters.com,2026-06-15:newsml_RSO2766Ia:0-reg-yellow-cake-plc-yellow-cake-begins-share-buyback-programme/"
+    }
+   ]
+  },
+  {
+   "id": "conversion_enrichment",
+   "row": "convert",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "轉化 (UF6) + 濃縮 (離心) + HALEU",
+   "nameEn": "Conversion (UF6) · Enrichment (Centrifuge) · HALEU",
+   "competition": "oligopoly",
+   "single": "真正的瓶頸與定價權所在 · 全球濃縮 ~95% 由 Orano／Urenco／CNNC／Rosatom 四家把持；美國『去俄』政策把此中游變成最確定的政策套利",
+   "desc": "把 U3O8 轉化為 UF6（六氟化鈾）氣體，再以離心機濃縮 U-235 由 0.7% 提到 3–5%（LEU，傳統反應爐）或 5–20%（HALEU，先進反應爐/SMR）——這是核燃料循環中技術門檻最高、最稀缺、定價權最硬的一環。",
+   "marketSize": "濃縮 ~95% 四強寡占；HALEU 為 SMR 卡脖子環節",
+   "growth": "DOE $27 億去俄濃縮計畫；Centrus 拿 $9 億 HALEU 任務令",
+   "share": "null",
+   "analysis": "中游是整條鏈的咽喉：①轉化——Cameco（CCJ）Port Hope 占全球 UF6 一次轉化約 18%、為西方僅四家商業供應商之一，2026 朝 12,000 噸/年產能推進；②濃縮——全球約 95% 服務由 Orano（法）、Urenco（英德荷）、CNNC（中）、Rosatom（俄）四家把持，技術與許可壁壘極高；③HALEU——SMR/先進反應爐要量產的真正卡脖子環節，Centrus（LEU）是美國唯一在產 HALEU 商，已累計交付逾 920 kg、Q1 2026 淨利 $1,000 萬/營收 $7,670 萬、$1.082 億資助選擇權年、並拿下 DOE 約 $9 億商規 HALEU 任務令（屬 $27 億去俄濃縮計畫，General Matter／Orano Federal 各得 $9 億），2026/2 與 Fluor 簽 EPC 擴建 Piketon。Urenco 已獲 NRC 授權於美國濃縮至 10%、在英國 Capenhurst 建 HALEU 廠（2031 投產）；Orano IKE 項目（橡樹嶺）2026 初遞照、2031 投產。絃外之音：鈾礦多但濃縮少——美國去俄等於『政策保證的需求 + 限制的供給』，這是比鈾價更確定的多頭。",
+   "companies": [
+    {
+     "name": "Centrus Energy",
+     "ticker": "LEU",
+     "country": "US",
+     "share": "美國唯一在產 HALEU 商",
+     "products": "American Centrifuge Plant（Piketon, Ohio）HALEU/LEU 濃縮",
+     "note": "Q1 2026 淨利 $1,000 萬/營收 $7,670 萬；累計交付逾 920 kg HALEU；DOE 約 $9 億商規 HALEU 任務令（待簽定）＋ $1.082 億資助選擇權年；2026/2 與 Fluor 簽 EPC 擴建；美國去俄濃縮政策最大受惠者",
+     "src": "https://www.stocktitan.net/sec-filings/LEU/10-q-centrus-energy-corp-quarterly-earnings-report-bcd93b464f33.html"
+    },
+    {
+     "name": "Cameco（轉化）",
+     "ticker": "CCJ",
+     "country": "CA",
+     "share": "西方 UF6 轉化 ~18%",
+     "products": "Port Hope UF6 轉化 + Blind River 全球最大精煉廠（UO3）",
+     "note": "西方僅四家商業 UF6 供應商之一；2026 朝 Port Hope 12,000 噸/年產能推進；Q1 2026 燃料服務產 3.3M kgU",
+     "src": "https://www.cameco.com/businesses/fuel-services"
+    },
+    {
+     "name": "Orano",
+     "ticker": "—",
+     "country": "FR",
+     "share": "全球四大濃縮之一",
+     "products": "Tricastin 濃縮（法）/ IKE 美國橡樹嶺 LEU+HALEU 廠",
+     "note": "未上市（法國國有）；供應商業濃縮鈾予美國反應爐；DOE $27 億計畫得 $9 億任務令；IKE 2026 初遞照、2031 投產",
+     "src": "https://www.powermag.com/six-companies-tapped-for-2-7-billion-leu-push-to-boost-domestic-nuclear-fuel-supply/"
+    },
+    {
+     "name": "Urenco",
+     "ticker": "—",
+     "country": "EU",
+     "share": "全球四大濃縮之一",
+     "products": "離心濃縮（英/德/荷/美 New Mexico）+ Capenhurst HALEU 廠",
+     "note": "未上市（英德荷政府＋企業合資）；2025 獲 NRC 授權於美濃縮至 10%；英 Capenhurst HALEU 廠 2031 投產",
+     "src": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/high-assay-low-enriched-uranium-haleu"
+    },
+    {
+     "name": "General Matter",
+     "ticker": "—",
+     "country": "US",
+     "share": "美國 HALEU 新進者",
+     "products": "離心濃縮（DOE 去俄計畫扶植）",
+     "note": "未上市新創；DOE $27 億計畫得約 $9 億 LEU/HALEU 任務令，與 Centrus/Orano 並列三大美國產能擴建方",
+     "src": "https://www.powermag.com/doe-issues-2-7b-orders-to-scale-domestic-nuclear-leu-and-haleu-enrichment/"
+    },
+    {
+     "name": "CNNC / Rosatom",
+     "ticker": "—",
+     "country": "CN",
+     "share": "與四強合佔 ~95% 濃縮",
+     "products": "中核/俄羅斯國家原子能濃縮服務",
+     "note": "中俄國有；美歐去俄政策正是為降低對 Rosatom 燃料依賴",
+     "src": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/uranium-enrichment"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "uranium_mining"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fuel_fabrication"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Centrus 2026 Q1 財報 + $9 億任務令",
+     "url": "https://www.stocktitan.net/sec-filings/LEU/10-q-centrus-energy-corp-quarterly-earnings-report-bcd93b464f33.html"
+    },
+    {
+     "label": "DOE $27 億 LEU/HALEU 計畫（Centrus/General Matter/Orano 各 $9 億）",
+     "url": "https://www.powermag.com/doe-issues-2-7b-orders-to-scale-domestic-nuclear-leu-and-haleu-enrichment/"
+    },
+    {
+     "label": "全球濃縮 ~95% 四強寡占（WNA）",
+     "url": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/uranium-enrichment"
+    },
+    {
+     "label": "HALEU 介紹（WNA）",
+     "url": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/high-assay-low-enriched-uranium-haleu"
+    },
+    {
+     "label": "Cameco 燃料服務（轉化/精煉）",
+     "url": "https://www.cameco.com/businesses/fuel-services"
+    }
+   ]
+  },
+  {
+   "id": "fuel_fabrication",
+   "row": "fab",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "燃料組件製造（陶瓷丸/燃料棒/TRISO）",
+   "nameEn": "Fuel Fabrication (Pellets · Rods · TRISO)",
+   "competition": "oligopoly",
+   "single": "先進燃料技術門檻拉高 · BWXT 成立 BWXT Advanced Fuels 專攻 TRISO，已為國防部 Project Pele 微反應爐交付整爐 TRISO 燃料",
+   "desc": "把濃縮 UF6 還原為陶瓷 UO2 丸、裝入鋯合金燃料棒並組裝成燃料束；先進反應爐則用金屬燃料或 TRISO 包覆粒子——HALEU 與 SMR 帶動先進燃料製造需求爆發。",
+   "marketSize": "併入燃料循環大盤；先進燃料為增量",
+   "growth": "DOE 資助 GNF/Framatome 擴丸/棒產線；BWXT TRISO 商規化",
+   "share": "null",
+   "analysis": "燃料組件由少數整合商主導，AI/SMR 帶動先進燃料是新增量：Westinghouse（Cameco 持 49% + Brookfield）為全球最大組件供應商之一、並獲選為六家 HALEU 去轉化服務商之一；Framatome（法 EDF 旗下）在華盛頓 Richland 廠獲 DOE $880 萬擴陶瓷丸產線（增約 200 噸鈾/年）、與 TerraPower 達成先進燃料突破並與 Standard Nuclear 合資產 TRISO；Global Nuclear Fuel（GE Vernova/日立/東芝合資）獲 $300 萬建第二條燃料棒產線；BWX Technologies（BWXT）2025 成立 BWXT Advanced Fuels 子公司專攻 TRISO 商規化、已為國防部 Project Pele 微反應爐交付整爐 TRISO。TerraPower Natrium 金屬燃料由 Framatome（Richland 鑄錠）與 GNF（Wilmington 最終組裝）分工。此環節是把『濃縮鈾』轉成『可裝爐燃料』的最後一哩，技術綁定深、轉換成本高。",
+   "companies": [
+    {
+     "name": "BWX Technologies",
+     "ticker": "BWXT",
+     "country": "US",
+     "share": "TRISO/微反應爐燃料領先",
+     "products": "BWXT Advanced Fuels（TRISO 包覆粒子）",
+     "note": "2025 成立 BWXT Advanced Fuels 子公司、新產線投產；已為國防部 Project Pele 微反應爐交付整爐 TRISO；SMR/微反應爐燃料商規化龍頭",
+     "src": "https://cardinalnews.org/2026/04/20/after-years-of-development-bwx-technologies-hopes-to-prove-triso-nuclear-fuels-value/"
+    },
+    {
+     "name": "Westinghouse",
+     "ticker": "—",
+     "country": "US",
+     "share": "全球最大燃料組件商之一",
+     "products": "PWR/BWR 燃料組件 + HALEU 去轉化服務",
+     "note": "Cameco 持 49% + Brookfield 持股；獲選六家 HALEU 去轉化服務商之一；與 Cameco 形成礦→轉化→反應爐→組件一條龍",
+     "src": "https://www.cameco.com/invest/overview"
+    },
+    {
+     "name": "Framatome",
+     "ticker": "—",
+     "country": "FR",
+     "share": "歐洲燃料組件龍頭",
+     "products": "陶瓷 UO2 丸/燃料棒 + TRISO（與 Standard Nuclear 合資）",
+     "note": "法國 EDF 旗下（未獨立上市）；Richland 廠獲 DOE $880 萬擴丸產線(增 ~200 噸鈾/年)；與 TerraPower 先進燃料突破",
+     "src": "https://www.world-nuclear-news.org/articles/framatome-terrapower-in-advanced-fuel-breakthrough"
+    },
+    {
+     "name": "Global Nuclear Fuel",
+     "ticker": "GEV",
+     "country": "US",
+     "share": "BWR 燃料組件",
+     "products": "燃料棒/燃料束（Wilmington, NC）",
+     "note": "GE Vernova（GEV）/日立/東芝合資；獲 DOE $300 萬建第二條燃料棒產線；負責 TerraPower Natrium 金屬燃料最終組裝",
+     "src": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/fuel-fabrication"
+    },
+    {
+     "name": "Cameco（持 Westinghouse 49%）",
+     "ticker": "CCJ",
+     "country": "CA",
+     "share": "經 Westinghouse 進入組件",
+     "products": "Westinghouse 燃料組件權益",
+     "note": "Q1 2026 Westinghouse 貢獻顯著、為 Cameco 一條龍策略關鍵；組件業務隨核電復興同步受惠",
+     "src": "https://www.cameco.com/media/news/cameco-reports-2026-first-quarter-results"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "conversion_enrichment"
+    },
+    {
+     "id": "physical_uranium"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "reactor_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BWXT TRISO 燃料商規化（2026）",
+     "url": "https://cardinalnews.org/2026/04/20/after-years-of-development-bwx-technologies-hopes-to-prove-triso-nuclear-fuels-value/"
+    },
+    {
+     "label": "Framatome × TerraPower 先進燃料突破",
+     "url": "https://www.world-nuclear-news.org/articles/framatome-terrapower-in-advanced-fuel-breakthrough"
+    },
+    {
+     "label": "燃料製造（GNF/Framatome 擴產，WNA）",
+     "url": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/fuel-fabrication"
+    },
+    {
+     "label": "Cameco 業務概覽（Westinghouse 49%）",
+     "url": "https://www.cameco.com/invest/overview"
+    }
+   ]
+  },
+  {
+   "id": "reactor_demand",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端：核電廠 / SMR 業主 / AI 資料中心 PPA",
+   "nameEn": "Reactors · SMR Owners · AI Datacenter PPA",
+   "competition": "competitive",
+   "single": "需求結構性轉折 · Meta 與 TerraPower 簽 8 座 Natrium（各 345MW）大單、Microsoft 等 hyperscaler 簽核電 PPA，AI 電力被視為結構性而非週期性需求",
+   "desc": "核燃料循環的終端買方——既有核電廠延役、新建反應爐、SMR 業主，疊加 AI 資料中心直接簽核電 PPA，回頭拉動鈾礦、轉化、濃縮、HALEU 與燃料組件全鏈用量。",
+   "marketSize": "鈾需求 2030 +28%、2040 近翻倍",
+   "growth": "資料中心用電 2030 較 2023 +175%（高盛）",
+   "share": "null",
+   "analysis": "需求端是整條鏈多頭的引擎，且 2026 出現結構性轉折：①AI 資料中心——Meta 與 TerraPower 簽下 8 座 Natrium（各 345MW）先進反應爐大單、Microsoft 等 hyperscaler 紛簽核電 PPA，高盛估資料中心用電 2030 較 2023 增 175%、AI 電力被視為『結構性』需求；②SMR 浪潮——Oklo、TerraPower、X-energy 等多以 HALEU 為燃料，把需求從鈾礦一路傳導到濃縮中游；③傳統核電——中印新建、美歐延役、日本重啟。絃外之音：終端核電是『慢變數』（核准/建設以年計），但 AI PPA 把預期一次性拉到 2026 提前定價——這解釋了鈾股的提前大漲。⚠ 風險：HALEU 商業產能要到 2028 才開始爬坡、運輸容器尚未通過認證、SMR 量產時程仍有變數；現貨價對地緣（如荷莫茲海峽）高度敏感。",
+   "companies": [
+    {
+     "name": "AI 資料中心（hyperscaler PPA）",
+     "ticker": "—",
+     "country": "US",
+     "share": "核電新增需求主驅動",
+     "products": "Meta/Microsoft/Amazon/Google 核電 PPA",
+     "note": "Meta 與 TerraPower 簽 8 座 Natrium(各 345MW)；AI 電力被視為結構性需求；資料中心用電 2030 較 2023 +175%(高盛)",
+     "src": "https://neutronbytes.com/2026/01/09/terrapower-in-mega-deal-with-meta-for-eight-natrium-345-mw-advanced-nuclear-plants/"
+    },
+    {
+     "name": "Oklo / TerraPower / X-energy",
+     "ticker": "OKLO",
+     "country": "US",
+     "share": "SMR/先進反應爐業主",
+     "products": "Aurora/Natrium/Xe-100（以 HALEU 為燃料）",
+     "note": "詳見 nuclear_smr 主題；SMR 是 HALEU 需求的核心傳導者；OKLO 上市，TerraPower/X-energy 未上市",
+     "src": "https://www.powermag.com/doe-allocates-first-round-of-haleu-to-five-u-s-advanced-nuclear-reactor-developers/"
+    },
+    {
+     "name": "Constellation Energy",
+     "ticker": "CEG",
+     "country": "US",
+     "share": "美國最大核電業主",
+     "products": "核電廠延役 + 資料中心供電",
+     "note": "與 Microsoft 簽三哩島重啟 PPA；既有核電延役直接拉動燃料循環用量",
+     "src": "https://www.iaea.org/bulletin/data-centres-artificial-intelligence-and-cryptocurrencies-eye-advanced-nuclear-to-meet-growing-power-needs"
+    },
+    {
+     "name": "全球核電業主（中印/美歐/日）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "燃料循環終端買方",
+     "products": "新建/延役/重啟核電",
+     "note": "2026 全球約 15 座新反應爐併網；鈾需求 2030 +28%、2040 近翻倍",
+     "src": "https://carboncredits.com/2026-the-year-nuclear-power-reclaims-relevance-with-15-reactors-ai-demand-and-chinas-expansion/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fuel_fabrication"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Meta × TerraPower 8 座 Natrium 大單（2026/1）",
+     "url": "https://neutronbytes.com/2026/01/09/terrapower-in-mega-deal-with-meta-for-eight-natrium-345-mw-advanced-nuclear-plants/"
+    },
+    {
+     "label": "資料中心用電 2030 +175%（高盛）",
+     "url": "https://www.goldmansachs.com/insights/articles/accelerating-power-demand-from-data-centers-poised-to-boost-new-energy-technologies"
+    },
+    {
+     "label": "AI 帶動鈾需求 2026（Canadian Mining Journal）",
+     "url": "https://www.canadianminingjournal.com/news/ai-boom-set-to-turbocharge-uranium-demand-in-2026/"
+    },
+    {
+     "label": "DOE 首輪 HALEU 配予五家先進反應爐商",
+     "url": "https://www.powermag.com/doe-allocates-first-round-of-haleu-to-five-u-s-advanced-nuclear-reactor-developers/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "uranium_mining",
+   "conversion_enrichment"
+  ],
+  [
+   "uranium_mining",
+   "physical_uranium"
+  ],
+  [
+   "physical_uranium",
+   "fuel_fabrication"
+  ],
+  [
+   "conversion_enrichment",
+   "fuel_fabrication"
+  ],
+  [
+   "fuel_fabrication",
+   "reactor_demand"
+  ]
+ ],
+ "_proposed": {}
+}

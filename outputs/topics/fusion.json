@@ -1,0 +1,567 @@
+{
+ "id": "fusion",
+ "tab": "核融合",
+ "title": "核融合供應鏈 (Nuclear Fusion)",
+ "subtitle": "Nuclear Fusion — AI 資料中心對 24/7 無碳基載電力的渴求把核融合從科研推向可投資敘事。2026-H1 募資再爆量：CFS（Commonwealth）2026-05 再募 $3.85B、累計約 $6.85B 居全球之冠、SPARC 約 75% 完工 2026 首電漿；Helion 估值飆至 $15.5B、微軟 2028 供電 PPA；TAE 將以 $6B 全股票借 Trump Media 上市；產業私募累計突破 $13B、>$100M 新創達 17 家。價值鏈：高溫超導 HTS 磁體（REBCO 市場 CAGR 21.6%）/ 真空低溫 / 鋰-6 氚燃料 / 雷射光學 → 核融合開發商 → 終端售電。與既有 SMR（核分裂）完全不同路線。⚠ emerging 高風險：全球無一商業電廠併網、原激進時程屢滑期，整機新創多未上市，可投資標的集中在超導/雷射/真空「賣鏟人」。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "累計私募",
+   "v": ">$13B",
+   "sub": "私募累計破 $13B·>$100M 新創達 17 家·CFS 單家累計約 $6.85B",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "AI 售電+里程碑催化·無商業併網·時程滑期風險",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "core",
+   "label": "超導磁體 / 真空 / 燃料 Core Components",
+   "main": false
+  },
+  {
+   "id": "laser",
+   "label": "雷射 / 慣性局限光學 Laser & ICF",
+   "main": false
+  },
+  {
+   "id": "dev",
+   "label": "核融合開發商 Fusion Developers",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "終端售電 / 需求 Offtake & Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "hts_magnet",
+   "row": "core",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "高溫超導 HTS 磁體 / 帶材",
+   "nameEn": "HTS (REBCO) Tape & Magnets",
+   "competition": "highgrowth",
+   "single": "鎖喉點 · 所有磁約束路線共同瓶頸；西部超導為中國 ITER 低溫超導線材唯一供應商",
+   "desc": "高溫超導（REBCO/2G HTS）帶材與高場磁體，是磁約束核融合（tokamak/FRC/球形）緊湊化的核心，也是最直接可投資、最具量產彈性的環節。",
+   "marketSize": "$412M→$2.84B(2033)",
+   "growth": "CAGR 21.6%",
+   "share": "null",
+   "analysis": "REBCO 核融合磁體用帶材市場 2024 約 $412M、CAGR 21.6%、2033 達約 $2,844M；全球約 15 家製造商、年產能 >5,000km(12mm)。中國股最具真實業績/訂單能見度：西部超導（688122.SS，中國 ITER 低溫超導線材唯一供應商、CRAFT，2025H1 淨利暴增 917.66%、鎖定 2025-2030 ITER 訂單 41 億元級）、永鼎股份（600105.SS，東部超導 2026 衝 15,000km/年、核聚變訂單累計 >41 億元排期至 2030）、聯創光電（600363.SS，緊湊型聚變磁體系統 2026-2028 分批交付）。西方/日韓：AMSC（FY2025 營收 $299.2M +34%、淨利 $133.8M、HTS 線材核心能力直接卡位量產磁體）、Fujikura（5803.T，2G HTS 高臨界電流領先）、SuNAM（KR，全 REBCO 磁體達 26.4T、PLD 轉型 2024 產能倍增）、SuperPower/Furukawa。HTS 是整個板塊最務實的「賣鏟人」。",
+   "companies": [
+    {
+     "name": "西部超導 Western Superconducting",
+     "ticker": "688122.SS",
+     "country": "CN",
+     "share": "中國 ITER 低溫超導唯一供應商",
+     "products": "低溫/高溫超導線材 / 高場磁體",
+     "note": "CRAFT 中標；2025H1 淨利 +917.66%；2025-2030 ITER 訂單 41 億元級",
+     "src": "https://www.moomoo.com/news/post/32488605/western-superconducting-688122-sh-the-company-is-the-only-supplier"
+    },
+    {
+     "name": "永鼎股份 Yongding (東部超導)",
+     "ticker": "600105.SS",
+     "country": "CN",
+     "share": "HTS 帶材產能領先",
+     "products": "REBCO 高溫超導帶材",
+     "note": "2026 產能衝 15,000km/年；核聚變訂單累計 >41 億元、排期至 2030",
+     "src": "https://zhuanlan.zhihu.com/p/1983527723759575044"
+    },
+    {
+     "name": "American Superconductor",
+     "ticker": "AMSC",
+     "country": "US",
+     "share": "西方 HTS 線材核心",
+     "products": "2G HTS 線材 / 磁體",
+     "note": "FY2025 營收 $299.2M(+34%)、淨利 $133.8M；核融合量產磁體卡位",
+     "src": "https://stockanalysis.com/stocks/amsc/"
+    },
+    {
+     "name": "Fujikura",
+     "ticker": "5803.T",
+     "country": "JP",
+     "share": "日系 2G HTS 領先",
+     "products": "高臨界電流 2G HTS 線材",
+     "note": "能源/醫療/科研應用",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/superconducting-wire-market.asp"
+    },
+    {
+     "name": "SuNAM",
+     "ticker": "—",
+     "country": "KR",
+     "share": "韓系 REBCO 高場",
+     "products": "REBCO 帶材 / 全超導磁體",
+     "note": "全 REBCO 磁體達 26.4T；PLD 轉型、2024 產能倍增",
+     "src": "https://www.eurekalert.org/news-releases/1101339"
+    },
+    {
+     "name": "聯創光電 Lianchuang",
+     "ticker": "600363.SS",
+     "country": "CN",
+     "share": "緊湊型聚變磁體",
+     "products": "高溫超導磁體系統",
+     "note": "2026-2028 分批交付聚變-裂變混合堆",
+     "src": "https://zhuanlan.zhihu.com/p/1983527723759575044"
+    },
+    {
+     "name": "SuperPower / Furukawa",
+     "ticker": "5801.T",
+     "country": "JP",
+     "share": "傳統 HTS 製造商",
+     "products": "2G HTS 線材",
+     "note": "PLD 製程轉型中",
+     "src": "https://dataintelo.com/report/rebco-superconducting-tape-for-fusion-magnets-market"
+    },
+    {
+     "name": "Shanghai Superconductor",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國 HTS 帶材",
+     "products": "REBCO 帶材",
+     "note": "中國新增產能",
+     "src": "https://dataintelo.com/report/rebco-superconducting-tape-for-fusion-magnets-market"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "fusion_dev"
+    }
+   ],
+   "sources": [
+    {
+     "label": "REBCO 核融合磁體市場 (Dataintelo)",
+     "url": "https://dataintelo.com/report/rebco-superconducting-tape-for-fusion-magnets-market"
+    },
+    {
+     "label": "西部超導唯一供應商 (moomoo)",
+     "url": "https://www.moomoo.com/news/post/32488605/western-superconducting-688122-sh-the-company-is-the-only-supplier"
+    }
+   ]
+  },
+  {
+   "id": "vacuum_fuel",
+   "row": "core",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "真空 / 低溫 / 鋰-6 氚燃料 / 鎢偏濾器",
+   "nameEn": "Vacuum, Cryogenics, Li-6/Tritium & Tungsten",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 氚僅 CANDU 副產一源；ASP Isotopes 為西方鋰-6 富集卡位者",
+   "desc": "核融合運轉所需真空/低溫系統、工業氣體（氦/氫），增殖包層用鋰-6 與氚燃料循環，及面對電漿的鎢偏濾器/第一壁材料。",
+   "marketSize": "材料瓶頸",
+   "growth": "緊俏供應",
+   "share": "null",
+   "analysis": "真空/低溫/氣體：Pfeiffer Vacuum（DE，渦輪分子泵/洩漏檢測/質譜，兼電漿診斷）、Air Products（APD，氦/氫工業氣體）、Linde、Air Liquide（AI.PA）。整機真空容器：Hyundai Heavy（329180.KS，ITER 5,200 噸真空容器）。燃料循環卡位：氚商業上僅 CANDU 型裂變堆副產一個來源、增殖包層需鋰-6 富集（30-90% Li-6）——ASP Isotopes（ASPI，子公司 Quantum Leap Energy 跨 fission+fusion，鋰-6/7 分離；2025-12 底現金+有價證券 $333M）為西方稀有純度標的。鎢為面對電漿首選裝甲（高熔點低濺射），ITER 偏濾器 51,000 片鎢瓦，Plansee（AT，鎢龍頭，未上市）。",
+   "companies": [
+    {
+     "name": "ASP Isotopes",
+     "ticker": "ASPI",
+     "country": "US",
+     "share": "西方鋰-6 富集卡位",
+     "products": "鋰-6/7 分離 / HALEU（跨 fission+fusion）",
+     "note": "2025-12 底現金+有價證券 $333M；與 Bristol 合作鋰雷射設施",
+     "src": "https://www.sec.gov/Archives/edgar/data/1921865/000147793226001545/aspi_ex991.htm"
+    },
+    {
+     "name": "Pfeiffer Vacuum",
+     "ticker": "—",
+     "country": "DE",
+     "share": "真空泵 / 診斷",
+     "products": "渦輪分子泵 / 洩漏檢測 / 質譜",
+     "note": "電漿診斷+真空管理（Busch 集團）",
+     "src": "https://www.iter.org/machine/vacuum-vessel"
+    },
+    {
+     "name": "Air Products",
+     "ticker": "APD",
+     "country": "US",
+     "share": "工業氣體",
+     "products": "氦 / 氫 / 氮",
+     "note": "核融合運轉與低溫冷卻關鍵氣體",
+     "src": "https://www.businesswire.com/news/home/20250926273024/en/Global-Nuclear-Fusion-Energy-Market-Report-2026-Highlights-Commercialization-Path-to-2046---ResearchAndMarkets.com"
+    },
+    {
+     "name": "Air Liquide",
+     "ticker": "AI.PA",
+     "country": "FR",
+     "share": "低溫/氦氣",
+     "products": "氦 / 低溫液化",
+     "note": "超導磁體低溫冷卻",
+     "src": "https://www.businesswire.com/news/home/20250926273024/en/Global-Nuclear-Fusion-Energy-Market-Report-2026-Highlights-Commercialization-Path-to-2046---ResearchAndMarkets.com"
+    },
+    {
+     "name": "Hyundai Heavy Industries",
+     "ticker": "329180.KS",
+     "country": "KR",
+     "share": "真空容器整機",
+     "products": "ITER 5,200 噸真空容器",
+     "note": "Ulsan 廠製造",
+     "src": "https://interestingengineering.com/energy/iter-vacuum-vessel-fusion-plasma"
+    },
+    {
+     "name": "Plansee",
+     "ticker": "—",
+     "country": "AT",
+     "share": "鎢偏濾器/第一壁龍頭",
+     "products": "鎢面對電漿材料",
+     "note": "未上市；ITER 偏濾器鎢瓦",
+     "src": "https://www.iter.org/machine/vacuum-vessel"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "fusion_dev"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ITER 真空容器 (官方)",
+     "url": "https://www.iter.org/machine/vacuum-vessel"
+    },
+    {
+     "label": "ASP Isotopes 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1921865/000147793226001545/aspi_ex991.htm"
+    }
+   ]
+  },
+  {
+   "id": "laser_icf",
+   "row": "laser",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "雷射 / 慣性局限光學 (ICF)",
+   "nameEn": "Lasers & Inertial Confinement Optics",
+   "competition": "emerging",
+   "single": "⚠ NIF 國家實驗室路線；Coherent 供高功率雷射二極體與 1m 大光學",
+   "desc": "慣性約束核融合（ICF）：高能雷射驅動靶丸內爆，與磁約束並行的另一技術路線。NIF 2022 首次科學淨增益後重新點燃私人 ICF 新創。",
+   "marketSize": "另一技術路線",
+   "growth": "NIF 8.6MJ",
+   "share": "null",
+   "analysis": "NIF/LLNL（US，國家實驗室，2022-12 首次科學淨增益增益 1.5、產額由 3.15MJ 升至 8.6MJ）為基礎科學里程碑。供應鏈：Coherent（COHR，高功率雷射二極體 DPSSL 核心、口徑達 1m 大光學）。私人 ICF 新創：Inertia Enterprises（US，2026-02 Series A $450M(Bessemer/GV)、Twilio 共創 Jeff Lawson + NIF 點火負責人 Annie Kritcher，建「全球最強雷射」Thunderwall+量產靶丸線，為 ICF 路線最大額新進者）、Xcimer Energy（未上市，KrF 準分子雷射路線；Phoenix 全球最大私人雷射系統開機 >1kJ、SBS 氣體光學 38m；Tucson 設廠 2026 量產電容；2026-06 DOE 核准雷射電廠設計）、Focused Energy（DE/US，$240M Series A、2026-06 close）、Marvel Fusion（DE）、Thea Energy（US，$100M）。瓶頸非物理而在高重複率雷射驅動器與工業化靶丸製造。",
+   "companies": [
+    {
+     "name": "Coherent",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "雷射二極體 / 大光學",
+     "products": "高功率雷射二極體(DPSSL) / 1m 大光學",
+     "note": "核融合僅占小比例營收（sleeve exposure）",
+     "src": "https://www.coherent.com/news/blog/photonics-for-laser-fusion/"
+    },
+    {
+     "name": "Xcimer Energy",
+     "ticker": "—",
+     "country": "US",
+     "share": "KrF 準分子雷射",
+     "products": "Athena 電廠 / Phoenix 雷射 / SBS 壓縮",
+     "note": "未上市；2026-06-03 啟用 Phoenix（全球最大私有雷射、私部門首座電子束泵 excimer）；2026-06-10 DOE 核准 Athena 預概念設計與技術路線里程碑；目標 2035 達 400MW；投資人 Breakthrough Energy/LowerCarbon/Hedosophia",
+     "src": "https://www.ans.org/news/article-8111/doe-approves-xcimer-laser-fusion-power-plant-design/"
+    },
+    {
+     "name": "Focused Energy",
+     "ticker": "—",
+     "country": "DE",
+     "share": "NIF 系雷射 ICF",
+     "products": "雷射慣性局限電廠",
+     "note": "未上市；$240M Series A",
+     "src": "https://www.focused-energy.co/nif-breakthrough-in-laser-fusion"
+    },
+    {
+     "name": "Marvel Fusion",
+     "ticker": "—",
+     "country": "DE",
+     "share": "雷射 ICF 新創",
+     "products": "短脈衝雷射 ICF",
+     "note": "未上市；德國雷射路線",
+     "src": "https://www.optica-opn.org/home/industry/2026/march/xcimer_takes_another_step_toward_commercial_laser_fusion/"
+    },
+    {
+     "name": "Thea Energy",
+     "ticker": "—",
+     "country": "US",
+     "share": "stellarator/磁體新創",
+     "products": "平面磁體 stellarator",
+     "note": "未上市；$100M 募資",
+     "src": "https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/"
+    },
+    {
+     "name": "Inertia Enterprises",
+     "ticker": "—",
+     "country": "US",
+     "share": "NIF 系雷射 ICF 大額新進者",
+     "products": "Thunderwall 雷射 / 量產靶丸製造",
+     "note": "未上市；2026-02 Series A $450M(Bessemer/GV)；Twilio 共創 Jeff Lawson + NIF 點火負責人 Annie Kritcher；2030 動工",
+     "src": "https://techcrunch.com/2026/02/11/twilio-co-founders-fusion-power-startup-raises-450m-from-bessemer-and-alphabets-gv/"
+    },
+    {
+     "name": "Pacific Fusion",
+     "ticker": "—",
+     "country": "US",
+     "share": "脈衝功率慣性",
+     "products": "脈衝功率模組 / Demonstration System",
+     "note": "未上市；里程碑式 Series A 逾 $1B；2026-06 公開 440GW/80ns 單級脈衝功率模組(史上最高)、Albuquerque 建示範系統",
+     "src": "https://techcrunch.com/2026/06/02/pacific-fusions-latest-prototype-packs-440-gigawatts-into-an-80-nanosecond-burst/"
+    },
+    {
+     "name": "NIF / LLNL",
+     "ticker": "—",
+     "country": "US",
+     "share": "ICF 科學基準",
+     "products": "國家點火設施",
+     "note": "2022 淨增益、產額升至 8.6MJ",
+     "src": "https://lasers.llnl.gov/news/fusion-ignition-and-the-path-to-inertial-fusion-energy"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "fusion_dev"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NIF 點火與 IFE 路徑 (LLNL)",
+     "url": "https://lasers.llnl.gov/news/fusion-ignition-and-the-path-to-inertial-fusion-energy"
+    },
+    {
+     "label": "DOE 核准 Xcimer 電廠設計 (ANS)",
+     "url": "https://www.ans.org/news/2026-06-10/article-8111/doe-approves-xcimer-laser-fusion-power-plant-design/"
+    }
+   ]
+  },
+  {
+   "id": "fusion_dev",
+   "row": "dev",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "核融合開發商（整機，多未上市）",
+   "nameEn": "Fusion Developers",
+   "competition": "emerging",
+   "single": "⚠ 高估值題材 · CFS 2026-05 再募 $3.85B、累計約 $6.85B；Helion 估值 $15.5B；TAE 將借 Trump Media 上市；多數整機未上市、無商業併網",
+   "desc": "磁約束（tokamak/FRC/球形/stellarator）與慣性約束核融合整機開發商，是題材敘事核心，但多數未上市且燒錢、時程屢滑期。2026-H1 出現首批公開市場路徑：TAE 借殼 Trump Media、General Fusion 走 SPAC。",
+   "marketSize": "高題材高風險",
+   "growth": "募資爆量",
+   "share": "null",
+   "analysis": "Commonwealth Fusion Systems（CFS，未上市，高溫超導 tokamak；2026-05 完成 $3.85B 募資、累計約 $6.85B 居全球之冠，投資人含 Nvidia/Google/Mitsubishi/Bill Gates 及新加坡資金；SPARC 約 75% 完工、首顆(共18顆)磁體已裝、夏季完成磁體環、2026 首電漿、2027 淨能量；ARC 維吉尼亞 2030 初併網；Google 200MW、Eni $1B 包銷；Nvidia/Siemens 建 SPARC 數位孿生）、Helion（未上市，FRC；累計 $1.5B、2026-06 Series G $465M 估值 $15.5B 近三倍跳升；Orion 商業電廠於華州 Malaga 興建、微軟 2028 供電）、TAE Technologies（FRC；併購前募資累計 $1.79B；2025-12 簽定與 Trump Media $6B 全股票合併、雙方各約 50%、Nunes+Binderbauer 共同 CEO、目標 2026Q4 完成）、Tokamak Energy（UK，HTS 球形；2026-03 獲 UKFE STEP £70M 磁體合約、Demo4 達 11.8T）、Proxima（DE，stellarator；Stellaris 同行審查概念+巴伐利亞/RWE MoU）、Pacific Fusion（US，慣性/脈衝功率，里程碑式 Series A 逾 $1B、2026-06 公開 440GW/80ns 模組）、General Fusion（CA，MTF；SPAC 合併）。產業統計：>$100M 新創已達 17 家、私募累計突破 $13B 仍續升（FIA 受訪 53 家累計約 $9.77B）。⚠ 全球無一商業電廠併網、原激進時程屢滑期，TechCrunch 已示警「資金熱潮現裂痕」；SPAC/借殼財務品質待驗。",
+   "companies": [
+    {
+     "name": "Commonwealth Fusion (CFS)",
+     "ticker": "—",
+     "country": "US",
+     "share": "HTS tokamak 領先",
+     "products": "SPARC / ARC",
+     "note": "未上市；2026-05 再募 $3.85B、累計約 $6.85B（Nvidia/Google/Mitsubishi/Bill Gates/新加坡）；SPARC 約 75% 完工、首顆(共18顆)磁體已裝、2026 夏完成磁體環、2026 首電漿、2027 淨能量；Google 200MW、Eni $1B 包銷",
+     "src": "https://thefusionreport.com/commonwealth-fusion-systems-a-hot-start-for-2026/"
+    },
+    {
+     "name": "Helion Energy",
+     "ticker": "—",
+     "country": "US",
+     "share": "FRC 最激進時程",
+     "products": "Polaris FRC / Orion",
+     "note": "未上市；2026-06 Series G $465M、估值 $15.5B（近三倍跳升）、累計募資 $1.5B（Thrive 領投、Ford 家族）；微軟 2028 供電 ≥50MW PPA；Orion 第八代商業電廠於華州 Malaga 興建中；Polaris 達 D-T、>1.5 億°C",
+     "src": "https://www.geekwire.com/2026/helion-hits-15-5b-valuation-with-465m-in-new-cash-to-commercialize-fusion-this-decade/"
+    },
+    {
+     "name": "TAE Technologies",
+     "ticker": "—",
+     "country": "US",
+     "share": "FRC",
+     "products": "Norman / Copernicus FRC",
+     "note": "上市進行中；併購前累計募資 $1.79B（2026-02 募 >$150M Chevron/Google/NEA）；2025-12 簽定與 Trump Media(TMTG) 全股票合併、估值逾 $6B、雙方各持約 50%；Nunes+Binderbauer 任共同 CEO；目標 2026Q4 或更早完成、合併後動工 50MWe 商業電廠",
+     "src": "https://tae.com/trump-media-and-technology-group-to-merge-with-tae-technologies/"
+    },
+    {
+     "name": "Tokamak Energy",
+     "ticker": "—",
+     "country": "UK",
+     "share": "HTS 球形 tokamak",
+     "products": "ST40 球形 tokamak / Demo4 HTS 磁體",
+     "note": "未上市；累計募資逾 $336M；2026-03 獲 UKFE STEP 計畫 £70M 磁體系統夥伴合約(至2029)；Demo4 達 11.8T；ST40 進行 $52M 升級(DOE+UK)",
+     "src": "https://tokamakenergy.com/2026/04/14/tokamak-energy-named-magnet-systems-partner-for-step-fusion-programme/"
+    },
+    {
+     "name": "Proxima Fusion",
+     "ticker": "—",
+     "country": "DE",
+     "share": "歐洲 stellarator 領先",
+     "products": "Stellaris/Alpha stellarator / SMC HTS 磁體示範機",
+     "note": "未上市；Series A 累計 €200M(歐洲最大私募)；2026-02 發表 Stellaris 同行審查商業電廠概念(首個可連續運轉整合設計)、與 RWE/巴伐利亞/IPP 簽 MoU(Alpha 示範機 Garching、Stellaris 落腳 Gundremmingen 舊核電廠址，巴伐利亞挹注最高 €400M)",
+     "src": "https://www.proximafusion.com/press-news/proxima-fusion-rwe-the-free-state-of-bavaria-and-max-planck-institute-for-plasma-physics-sign-agreement-to-build-the-worlds-first-commercial-fusion-power-plant-in-europe"
+    },
+    {
+     "name": "General Fusion",
+     "ticker": "—",
+     "country": "CA",
+     "share": "磁化靶 MTF",
+     "products": "LM26 磁化靶核融合",
+     "note": "與 Spring Valley Acquisition Corp. III SPAC 合併(2026-01)",
+     "src": "https://techcrunch.com/2026/04/10/every-fusion-startup-that-has-raised-over-100m/"
+    },
+    {
+     "name": "Type One / Pacific Fusion",
+     "ticker": "—",
+     "country": "US",
+     "share": "stellarator / 慣性",
+     "products": "stellarator / 脈衝慣性",
+     "note": "未上市；Type One 募 $250M Series B、估值 $900M(Bill Gates 系)；Pacific Fusion 里程碑式 Series A 逾 $1B，2026-06 公開 440GW/80ns 脈衝功率模組(史上最高單級)、解鎖下一筆資金、Demonstration System 於 Albuquerque 興建",
+     "src": "https://techcrunch.com/2026/06/02/pacific-fusions-latest-prototype-packs-440-gigawatts-into-an-80-nanosecond-burst/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "hts_magnet"
+    },
+    {
+     "id": "vacuum_fuel"
+    },
+    {
+     "id": "laser_icf"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "offtake"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CFS Series B2 $863M Nvidia (DCD)",
+     "url": "https://www.datacenterdynamics.com/en/news/commonwealth-fusion-systems-raises-863m-in-series-b2-funding-with-backing-from-nvidia/"
+    },
+    {
+     "label": "Helion $15.5B 估值 (GeekWire)",
+     "url": "https://www.geekwire.com/2026/helion-hits-15-5b-valuation-with-465m-in-new-cash-to-commercialize-fusion-this-decade/"
+    }
+   ]
+  },
+  {
+   "id": "offtake",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端售電 / 需求 (PPA & 包銷)",
+   "nameEn": "Offtake & Demand",
+   "competition": "emerging",
+   "single": "AI 超大規模搶簽核融合 PPA：微軟 50MW(Helion)、Google 200MW(CFS)、Eni $1B",
+   "desc": "AI 超大規模資料中心與能源巨頭以 PPA/包銷鎖定未來核融合產能，是把核融合推向可投資敘事的需求催化。",
+   "marketSize": "需求錨點",
+   "growth": "結構性催化",
+   "share": "null",
+   "analysis": "Microsoft（MSFT，2023 首張商業核融合 PPA，承諾 Helion 交付 ≥50MW、2028 供電中央華盛頓資料中心）、Google（GOOGL，包銷 CFS ARC 電廠 200MW）、Eni（CFS $1B 包銷協議）、Chevron（CVX，投資 TAE）。與既有 nuclear_smr 主題的「AI 資料中心電力需求」共享同一結構性催化，但核融合屬更長天期、更高風險的選擇權式佈局——無任一商業電廠併網、距此尚遠，PPA 多為訊號性承諾。",
+   "companies": [
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "首張核融合 PPA",
+     "products": "Helion ≥50MW PPA",
+     "note": "2023 首張商業核融合售電合約；2028 供電目標",
+     "src": "https://www.helionenergy.com/newsroom/helion-announces-worlds-first-fusion-ppa-with-microsoft"
+    },
+    {
+     "name": "Google",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "CFS 包銷",
+     "products": "CFS ARC 200MW 包銷 + TAE 投資",
+     "note": "承諾 ARC 電廠 200MW",
+     "src": "https://www.fortune.com/2026/01/07/fusion-power-commonwealth-sparc-nuclear-fusion-pilot-ai-siemens-nvidia/"
+    },
+    {
+     "name": "Eni",
+     "ticker": "E",
+     "country": "IT",
+     "share": "能源巨頭包銷",
+     "products": "CFS $1B 包銷",
+     "note": "義大利能源巨頭；CFS 早期投資人",
+     "src": "https://www.datacenterdynamics.com/en/news/commonwealth-fusion-systems-raises-863m-in-series-b2-funding-with-backing-from-nvidia/"
+    },
+    {
+     "name": "Chevron",
+     "ticker": "CVX",
+     "country": "US",
+     "share": "石油巨頭投資",
+     "products": "TAE 投資人",
+     "note": "2026-02 參與 TAE >$150M 募資",
+     "src": "https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/"
+    },
+    {
+     "name": "Aoki Super (青木スーパー)",
+     "ticker": "—",
+     "country": "JP",
+     "share": "日本首張核融合 PPA",
+     "products": "Helical Fusion Helix KANATA 售電 PPA",
+     "note": "2025-12 簽日本首張核融合 PPA；愛知縣 50 店連鎖超市，需求端首例企業包銷（非 AI/能源巨頭）",
+     "src": "https://www.helicalfusion.com/en/post/helical-fusion-signs-japan-s-first-power-purchase-agreement-for-fusion-energy-with-aoki-super"
+    },
+    {
+     "name": "Nvidia (NVentures)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI 算力+創投",
+     "products": "CFS 投資 + SPARC 數位孿生",
+     "note": "NVentures 續投 CFS 2026-05 $3.85B 輪；與 Siemens 建 SPARC 數位孿生",
+     "src": "https://www.nucnet.org/news/commonwealth-fusion-systems-siemens-nvidia-to-develop-fusion-digital-twin-1-3-2026"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fusion_dev"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Helion 微軟首張核融合 PPA (官方)",
+     "url": "https://www.helionenergy.com/newsroom/helion-announces-worlds-first-fusion-ppa-with-microsoft"
+    },
+    {
+     "label": "CFS×Nvidia×Siemens 數位孿生 (NucNet)",
+     "url": "https://www.nucnet.org/news/commonwealth-fusion-systems-siemens-nvidia-to-develop-fusion-digital-twin-1-3-2026"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "hts_magnet",
+   "fusion_dev"
+  ],
+  [
+   "vacuum_fuel",
+   "fusion_dev"
+  ],
+  [
+   "laser_icf",
+   "fusion_dev"
+  ],
+  [
+   "fusion_dev",
+   "offtake"
+  ]
+ ],
+ "_proposed": {}
+}

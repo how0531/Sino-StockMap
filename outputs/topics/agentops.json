@@ -1,0 +1,603 @@
+{
+ "id": "agentops",
+ "tab": "AI 維運/AgentOps",
+ "title": "企業 AI 維運與管理軟體供應鏈 (AgentOps / Enterprise AI Management)",
+ "subtitle": "AgentOps — 企業把 AI Agent 從 demo 推上「生產線」所需的維運、管理與基礎設施軟體層，是 AI 落地的賣鏟人。AI Agent 軟體市場 2025 約 $78 億 → 2030 $526 億（CAGR ~46%）。2026-H1 兩大結構性事件：①身分層大洗牌——Palo Alto 以 $250 億完成併購 CyberArk（2/11，PANW 史上最大案），Okta 併 Axiom＋推『Okta for AI Agents』GA，『身分＝agent 時代新邊界』正式成單點卡位；②Cloudflare 轉『agentic-AI-first』、裁員 20% 全面押注 2027 agent 佔多數 API 流量。本主題以使用者點名的 incumbent 成長股為主軸：ServiceNow（Now Assist ACV 突破 $6 億、續拚 $15 億 +50%）、Datadog（單季營收首破 $10 億 +32%、DASH 2026 轉自主維運）、Oracle（OCI RPO $6,380 億 +363%）、Cloudflare（all-in agent 基建）、Atlassian（Rovo >500 萬 MAU）、DigitalOcean（Gradient 推論雲）、Orca Security（agentic CNAPP）。⚠ 現實落差：79% 企業宣稱採用 agent 但僅 11% 在生產運行，Gartner 估 2027 逾 40% agentic 專案將被取消。價值鏈：上游基礎模型＋GPU 算力 → 運行基建/邊緣推論 → 編排 Runtime → 可觀測/評測＋安全治理 → 企業採用。⚠ 與既有 llmops_eval（可觀測）、ai_security（agent 安全）、neocloud（算力）、agentic_ai（平台）部分重疊；本主題聚焦『上市櫃 incumbent 成長股 × AgentOps 全生命週期』視角。非投資建議。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "AI Agent 軟體市場",
+   "v": "$526億",
+   "sub": "2025 $78 億 → 2030 $526 億（CAGR ~46%）",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "企業 agent 生產化剛起步·與既有主題重疊＋高估值＋ AI 變現待證",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "infra",
+   "label": "上游：基礎模型＋算力 / 運行基建・邊緣推論",
+   "main": false
+  },
+  {
+   "id": "orch",
+   "label": "編排與 Runtime（讓 agent 動起來）",
+   "main": false
+  },
+  {
+   "id": "ops",
+   "label": "可觀測・評測 / 安全・治理（讓 agent 可靠）",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "下游：企業採用・SI・垂直 agent",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "foundation_compute",
+   "row": "infra",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "上游：基礎模型 + GPU 算力",
+   "nameEn": "Foundation Models & Compute (upstream)",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "AgentOps 的上游——agent 的「大腦」（前沿模型）與「肌肉」（GPU/雲算力）。本主題不重複展開，詳見 agentic_ai / neocloud 主題。",
+   "marketSize": "前沿模型 + AI 雲算力 數千億美元級",
+   "growth": "null",
+   "share": "null",
+   "analysis": "前沿模型寡占（Anthropic Claude / OpenAI GPT / Google Gemini）決定 agent 能力上限；GPU 算力由 NVIDIA + hyperscaler + neocloud 供給。AgentOps 層夾在「模型＋算力」與「企業客戶」之間，是把原始算力轉成可營運 agent 的中介層——定價權部分受上游模型與算力成本牽制（token 成本下降對 AgentOps 用量是順風）。",
+   "companies": [
+    {
+     "name": "Anthropic / OpenAI / Google",
+     "ticker": "—",
+     "country": "US",
+     "share": "前沿模型寡占",
+     "products": "Claude / GPT / Gemini（agent 大腦）",
+     "note": "詳見 agentic_ai 主題；token 成本走勢牽動 AgentOps 用量經濟",
+     "src": "https://www.goldmansachs.com/insights/articles/ai-agents-to-boost-productivity-and-size-of-software-market"
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI 加速器壟斷",
+     "products": "GPU / CUDA",
+     "note": "agent 推論算力底層"
+    },
+    {
+     "name": "CoreWeave / Nebius",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "neocloud 算力",
+     "products": "GPU-as-a-Service",
+     "note": "詳見 neocloud 主題"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "run_infra"
+    },
+    {
+     "id": "orchestration"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Goldman Sachs：AI agents 擴大軟體市場",
+     "url": "https://www.goldmansachs.com/insights/articles/ai-agents-to-boost-productivity-and-size-of-software-market"
+    },
+    {
+     "label": "AI Agents 市場 2025 $7.84B→2030 $52.62B (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/PressReleases/ai-agents.asp"
+    }
+   ]
+  },
+  {
+   "id": "run_infra",
+   "row": "infra",
+   "col": 2,
+   "span": 2,
+   "kind": "stage",
+   "name": "運行基建 / 邊緣推論 / AI 閘道",
+   "nameEn": "Runtime Infra · Edge Inference · AI Gateway",
+   "competition": "competitive",
+   "single": "態勢劇變 · Cloudflare 全公司轉『agentic-AI-first』、裁員 20% 押注 2027 agent 佔多數 API 流量，從邊緣 CDN 升級為 agent 基建層",
+   "desc": "讓 agent 實際「跑」起來的雲與邊緣基建：serverless 推論、AI 閘道（多模型路由/快取/觀測）、中小企業 GPU 推論雲。",
+   "marketSize": "AI IaaS / 邊緣推論 高速成長",
+   "growth": "Cloudflare Q1 營收 $639.8M(+34%)、轉 agentic-first；DOCN AI run-rate $120M",
+   "share": "null",
+   "analysis": "Cloudflare（NET）2026 Q1 法說宣布轉『agentic-AI-first』營運、裁員~20%（約 1,100 人/認列 $1.4–1.5 億），CEO Matthew Prince 押注『2027 年 agent 將佔網路 API 呼叫多數、人類瀏覽成少數』，要做 agent 基建層（MCP server＋AI Gateway＋邊緣推論）而非靜態網站 CDN；AI Gateway Q1 轉 GA、Workers AI 為超標主因，Q1 營收 $639.8M（+34%），但發布日股價 -18%——『邊緣 agent 基建純玩家』升級為『全公司 all-in agent』。Oracle（ORCL）以 OCI 低價 GPU＋資料庫綁企業 agent，OCI +93%、RPO $6,380 億（+363%）但多為預付 AI 大單，變現/資本支出是觀察點。DigitalOcean（DOCN）以 Gradient 推論雲服務中小企業，2026 擴 31MW、AI run-rate $120M（占營收 12%）。",
+   "companies": [
+    {
+     "name": "Cloudflare",
+     "ticker": "NET",
+     "country": "US",
+     "share": "邊緣 agent 基建純玩家（all-in agent）",
+     "products": "Workers AI / AI Gateway(GA) / Agents SDK / MCP server",
+     "note": "Q1 2026 轉『agentic-AI-first』營運、裁員~20%(約1,100人/認列$1.4–1.5億)；CEO 押注 2027 agent 將佔多數 API 流量；Q1 營收$639.8M(+34%)、發布日股價-18%；AI Gateway Q1 轉 GA、Workers AI 為超標主因",
+     "src": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-announces-first-quarter-2026-financial-results/"
+    },
+    {
+     "name": "Oracle",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "OCI IaaS +93% YoY",
+     "products": "OCI GPU 雲 / 資料庫 + AI / 1,000+ AI agents",
+     "note": "RPO $638B（+363%）但多預付 AI 大單；變現與 capex 是關鍵",
+     "src": "https://futurumgroup.com/insights/oracle-q4-fy-2026-earnings-ai-cloud-backlog-funding/"
+    },
+    {
+     "name": "DigitalOcean",
+     "ticker": "DOCN",
+     "country": "US",
+     "share": "中小企業推論雲",
+     "products": "Gradient Agentic Inference Cloud / GPU Droplets",
+     "note": "2026 擴 31MW；AI run-rate $120M（占營收 12%）；採 AMD MI350X",
+     "src": "https://www.digitalocean.com/products/gradient"
+    },
+    {
+     "name": "AWS / Azure / GCP",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "hyperscaler agent 基建",
+     "products": "Bedrock AgentCore / Azure AI Foundry / Vertex Agent",
+     "note": "雲三巨頭自帶 agent runtime，是基建與競爭者雙重身分"
+    },
+    {
+     "name": "Fireworks / Together AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "推論服務新創",
+     "products": "推論優化 / serving",
+     "note": "詳見 ai_inference 主題"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "foundation_compute"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "orchestration"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cloudflare Q1 2026 財報：轉 agentic-AI-first、裁員 20%",
+     "url": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-announces-first-quarter-2026-financial-results/"
+    },
+    {
+     "label": "Cloudflare：為 agent 設計的推論層",
+     "url": "https://blog.cloudflare.com/ai-platform/"
+    },
+    {
+     "label": "Oracle Q4 FY26：OCI/RPO",
+     "url": "https://futurumgroup.com/insights/oracle-q4-fy-2026-earnings-ai-cloud-backlog-funding/"
+    },
+    {
+     "label": "DigitalOcean Gradient 推論雲 2026 成長 (Zacks/TradingView)",
+     "url": "https://www.tradingview.com/news/zacks:6cb38fe5f094b:0-digitalocean-s-agentic-inference-cloud-what-s-driving-growth-in-2026/"
+    }
+   ]
+  },
+  {
+   "id": "orchestration",
+   "row": "orch",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "編排與 Runtime（讓 agent 動起來）",
+   "nameEn": "Orchestration & Durable Runtime",
+   "competition": "competitive",
+   "single": "隱性單點 · Temporal 持久執行（durable execution）成多家前沿模型廠與 agent 的編排骨幹（$5B 估值、營收 +380%）",
+   "desc": "把多步驟 agent 工作流「編排、排程、容錯、可重播」地跑起來——incumbent 把既有工作流平台 agent 化，加上持久執行新基建。",
+   "marketSize": "企業 agent 編排，併入既有 SaaS 大盤",
+   "growth": "NOW Now Assist ACV 2026 拚 $1.5B (+50%)；Atlassian Rovo >5M MAU",
+   "share": "null",
+   "analysis": "ServiceNow（NOW）以 AI Agent Orchestrator 把 ITSM/工作流 agent 化，Now Assist ACV 2026 上修至 $15 億（+50% vs 原 $10 億目標）、>$1M ACV 客戶 +130%、訂閱營收 +22%、RPO $277 億——最受惠的 incumbent 成長股之一。Atlassian（TEAM）Rovo 把開發/協作 agent 化，>500 萬 MAU、半年 240 萬次自動化、用 Rovo 客戶 ARR 成長約 2 倍。底層持久執行 Temporal（未上市，$5B 估值、營收 +380%）成 agent 容錯編排的事實骨幹，Mistral/OpenAI 等都建於其上——「賣鏟人的賣鏟人」。LangChain/LangGraph 為開源框架入口。",
+   "companies": [
+    {
+     "name": "ServiceNow",
+     "ticker": "NOW",
+     "country": "US",
+     "share": "ITSM/工作流 agent 化龍頭",
+     "products": "Now Assist / AI Agent Orchestrator / EmployeeWorks / AI Control Tower",
+     "note": "Q1 2026 Now Assist ACV 突破 $6 億、續拚全年 $1.5B(+50%)；>$1M ACV 客戶 +130%；EmployeeWorks(整併 Moveworks) YoY +5x；簽史上最大新客單筆 >$1,500萬；FY26 訂閱中值 $157.55 億(+~21% cc)；發布日股價 -18%、YTD 約 -33%",
+     "src": "https://www.efficientlyconnected.com/servicenow-q1-2026-ai-platform-growth/"
+    },
+    {
+     "name": "Atlassian",
+     "ticker": "TEAM",
+     "country": "US",
+     "share": "開發協作 agent",
+     "products": "Rovo / Rovo Dev agents",
+     "note": "Rovo >5M MAU、半年 2.4M 自動化；用 Rovo 客戶 ARR ~2x；FY26 營收 +24%",
+     "src": "https://futurumgroup.com/insights/atlassian-q3-fy-2026-earnings-show-continued-cloud-and-ai-led-expansion/"
+    },
+    {
+     "name": "Temporal",
+     "ticker": "—",
+     "country": "US",
+     "share": "durable execution 骨幹",
+     "products": "Temporal（持久執行/容錯編排）",
+     "note": "未上市；2026/2 完成 $3 億 Series D（a16z 領投）、估值達 $50 億、營收 +380% YoY、Cloud 累計 9.1 兆次 action；2026/3 OpenAI Agents SDK × Temporal Python SDK GA 整合，OpenAI/Replit/Lovable/Abridge 建於其上",
+     "src": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "Copilot Studio 編排",
+     "products": "Copilot Studio / Agent Framework 1.0",
+     "note": "Agent Framework 1.0 於 2026/4/3 GA（AutoGen＋Semantic Kernel 合併為單一 .NET/Python SDK）；incumbent 編排競爭升溫，對 NOW/TEAM/LangChain 形成更直接威脅",
+     "src": "https://www.morphllm.com/ai-agent-framework"
+    },
+    {
+     "name": "Salesforce",
+     "ticker": "CRM",
+     "country": "US",
+     "share": "Agentforce",
+     "products": "Agentforce 360",
+     "note": "詳見 agentic_ai / cs_ai 主題"
+    },
+    {
+     "name": "LangChain",
+     "ticker": "—",
+     "country": "US",
+     "share": "開源框架入口",
+     "products": "LangChain / LangGraph 1.0",
+     "note": "完成 $1.25 億 Series B、估值 $12.5 億（IVP 領投）；LangChain/LangGraph 1.0 正式版（穩定 API）、合計月下載 9,000 萬、Fortune 500 中 35% 使用",
+     "src": "https://www.langchain.com/blog/series-b"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "run_infra"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "observability"
+    },
+    {
+     "id": "agent_security"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ServiceNow Q1 2026：Now Assist ACV 突破 $6 億、EmployeeWorks +5x",
+     "url": "https://www.efficientlyconnected.com/servicenow-q1-2026-ai-platform-growth/"
+    },
+    {
+     "label": "Atlassian Q3 FY26（Rovo）",
+     "url": "https://futurumgroup.com/insights/atlassian-q3-fy-2026-earnings-show-continued-cloud-and-ai-led-expansion/"
+    },
+    {
+     "label": "Temporal $3 億 Series D @ $50 億估值（a16z 領投）",
+     "url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies"
+    },
+    {
+     "label": "Microsoft Agent Framework 1.0 GA（2026/4/3）＋ OpenAI Frontier",
+     "url": "https://www.morphllm.com/ai-agent-framework"
+    },
+    {
+     "label": "LangChain $1.25 億 Series B @ $12.5 億、LangGraph 1.0",
+     "url": "https://www.langchain.com/blog/series-b"
+    }
+   ]
+  },
+  {
+   "id": "observability",
+   "row": "ops",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "可觀測 / 評測（讓 agent 可靠）",
+   "nameEn": "Agent Observability & Evaluation",
+   "competition": "competitive",
+   "single": "從被動觀測跨入主動自主維運 · Datadog DASH 2026 推 Bits AI 自主偵測→調查→修復 agent＋Agent Console，對純玩家護城河擴大",
+   "desc": "監控 agent 在生產環境的每一步（LLM 呼叫、工具調用、檢索、規劃決策）＋品質/忠實度/漂移評測——agent 不可靠是 2026 落地最大痛點。",
+   "marketSize": "LLM Observability 2026 約 $2.69B（CAGR +36%）",
+   "growth": "Datadog Q1 營收首破 $10 億(+32%)；AI-native 客群佔營收 12%、YoY +253%",
+   "share": "null",
+   "analysis": "Datadog（DDOG）是「最乾淨的 B2B AI 受惠者」：Q1 2026 營收首破 $10 億（+32%）、$100k+ 客戶 ~4,550 家、LLM Observability 客戶破 1,000 家、AI-native 客群（~650 家）佔營收 12%、YoY +253%。DASH 2026（6/9–10）一口氣推 100+ 功能，把 Bits AI 升級為自主偵測→調查→修復 agent（Bits Detection/Memories/Remediation/Code GA），推 Agent Console 統一監看 Claude Code/Cursor/GitHub Copilot 的採用與花費，及 AI Guard 防 prompt 注入——從被動觀測跨入主動自主維運（autonomous AI ops），對純玩家 Arize/LangSmith/Dynatrace 護城河擴大（DDOG 亦為 Arize Series C 投資人）。純玩家 Arize（+Phoenix OSS）、LangSmith（LangChain）、Braintrust、Langfuse（OSS）競逐 agent 評測/追蹤——此環節與既有 llmops_eval 主題高度重疊。",
+   "companies": [
+    {
+     "name": "Datadog",
+     "ticker": "DDOG",
+     "country": "US",
+     "share": "可觀測龍頭、最乾淨 AI 受惠",
+     "products": "LLM Observability / AI Agent Monitoring / Bits AI agent / Agent Console / AI Guard",
+     "note": "單季營收首破 $1B(+32%)；$100k+ 客戶 4,550；DASH 2026(6/9–10) 推 100+ 功能、Bits AI 升級為自主偵測→調查→修復 agent、Agent Console 統管 Claude Code/Cursor/Copilot 採用與花費——從被動觀測跨入主動自主維運；亦為 Arize Series C 投資人",
+     "src": "https://siliconangle.com/2026/06/09/datadog-launches-100-features-dash-push-autonomous-ai-ops/"
+    },
+    {
+     "name": "Dynatrace",
+     "ticker": "DT",
+     "country": "US",
+     "share": "APM + LLM Obs",
+     "products": "Davis AI / LLM Observability",
+     "note": "既有 APM 客群 agent 化"
+    },
+    {
+     "name": "Arize AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "agent 評測純玩家",
+     "products": "Arize / Phoenix OSS",
+     "note": "ML 監控起家轉 GenAI；詳見 llmops_eval"
+    },
+    {
+     "name": "LangChain (LangSmith)",
+     "ticker": "—",
+     "country": "US",
+     "share": "LangGraph 最深整合",
+     "products": "LangSmith（追蹤/評測）",
+     "note": "與框架綁定最深"
+    },
+    {
+     "name": "Braintrust",
+     "ticker": "—",
+     "country": "US",
+     "share": "快速原型評測",
+     "products": "Braintrust（eval/實驗）",
+     "note": "proprietary SaaS"
+    },
+    {
+     "name": "Langfuse",
+     "ticker": "—",
+     "country": "DE",
+     "share": "開源可觀測領導",
+     "products": "Langfuse（OSS, OTel）",
+     "note": "可自架、框架無關"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "orchestration"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "enterprise_adoption"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Datadog Q1 2026 財報",
+     "url": "https://investors.datadoghq.com/news-releases/news-release-details/datadog-announces-first-quarter-2026-financial-results"
+    },
+    {
+     "label": "Datadog DASH 2026：100+ 功能、Bits AI 自主維運轉向",
+     "url": "https://siliconangle.com/2026/06/09/datadog-launches-100-features-dash-push-autonomous-ai-ops/"
+    },
+    {
+     "label": "2026 Agent Observability 平台比較 (MLflow)",
+     "url": "https://mlflow.org/top-5-agent-observability-tools/"
+    }
+   ]
+  },
+  {
+   "id": "agent_security",
+   "row": "ops",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "安全 / 治理 / 身分（讓 agent 可控）",
+   "nameEn": "Agent Security · Governance · Identity",
+   "competition": "oligopoly",
+   "single": "權力中心在身分層 · machine identity 對 human 已 ~100:1，『誰能授權 agent 動作』成 AgentOps 真正關卡；PANW–CyberArk($250億) 與 Okta–Axiom 形成身分層雙雄",
+   "desc": "保護與治理生產 agent：runtime 防護（prompt 注入/越權）、雲安全（CNAPP）、agent/machine 身分授權、AI 治理合規——詳見 ai_security 主題。",
+   "marketSize": "AI 安全 + agent 身分 高速成長",
+   "growth": "null",
+   "share": "null",
+   "analysis": "2026-H1 身分層結構性洗牌定調 AgentOps 卡位：Palo Alto（PANW）於 2/11 以 $250 億完成併購 CyberArk（PANW 史上最大案、亦為身分安全史上最大併購），整併進 Prisma；Okta（OKTA）併 Axiom Security 並於 4/30 推『Okta for AI Agents』GA，把每個 agent 當一級身分——兩強形成身分層雙雄對峙。machine identity 對 human 已 ~100:1、88% 組織傳出 AI agent 安全事件但僅 22% 把 agent 當獨立身分管理。其餘：runtime 防護（Prisma AIRS、CrowdStrike、SentinelOne+Prompt Security）、雲安全 CNAPP（Orca Security agentless＋併 Opus，$1.8B 估值）。此環節與既有 ai_security / cyber_platform 高度重疊。",
+   "companies": [
+    {
+     "name": "Orca Security",
+     "ticker": "—",
+     "country": "US",
+     "share": "agentless CNAPP",
+     "products": "Orca CNAPP / 併 Opus（agentic 雲端修復）",
+     "note": "未上市；Series C 擴至 $550M、估值 $1.8B；2025 併 Opus 加 AI agent 自動修復",
+     "src": "https://orca.security/resources/press-releases/orca-security-series-c-550-million-announcement/"
+    },
+    {
+     "name": "Palo Alto Networks",
+     "ticker": "PANW",
+     "country": "US",
+     "share": "Prisma AIRS + 身分層龍頭",
+     "products": "Prisma AIRS（agentic AI 全生命週期安全）+ CyberArk 身分",
+     "note": "2026/2/11 完成 $250 億併購 CyberArk（PANW 史上最大案、亦為身分安全史上最大併購），整併進 Prisma 平台、確立『身分＝agent 時代新邊界』；另併 Protect AI；詳見 ai_security/cyber_platform",
+     "src": "https://markets.financialcontent.com/stocks/article/marketminute-2026-2-12-palo-alto-networks-completes-historic-25-billion-cyberark-acquisition-to-solidify-identity-security-pillar"
+    },
+    {
+     "name": "CrowdStrike",
+     "ticker": "CRWD",
+     "country": "US",
+     "share": "Charlotte AI + AgentWorks",
+     "products": "agent runtime 安全",
+     "note": "端點 telemetry 延伸 agent 安全"
+    },
+    {
+     "name": "CyberArk",
+     "ticker": "CYBR",
+     "country": "US",
+     "share": "machine/agent 身分（PANW 旗下）",
+     "products": "agent identity / 特權存取（PAM）",
+     "note": "2026/2/11 由 PANW 以 $250 億完成併購（每股 $45 現金＋2.2005 PANW 股）；machine identity 對 human 已達 ~100:1、88% 組織傳出 AI agent 安全事件但僅 22% 把 agent 當獨立身分管理",
+     "src": "https://markets.financialcontent.com/stocks/article/marketminute-2026-2-12-palo-alto-networks-completes-historic-25-billion-cyberark-acquisition-to-solidify-identity-security-pillar"
+    },
+    {
+     "name": "Okta",
+     "ticker": "OKTA",
+     "country": "US",
+     "share": "身分層第二強權",
+     "products": "Okta for AI Agents / Universal Directory / Axiom PAM",
+     "note": "併 Axiom Security（雲端/DB/SaaS 特權存取 PAM）；2026/4/30 推『Okta for AI Agents』GA，把每個 AI agent 當一級身分、各有獨立生命週期——與 PANW–CyberArk 形成身分層雙雄對峙",
+     "src": "https://www.computerweekly.com/news/366629921/Okta-makes-AI-identity-play-with-Axiom-acquisition"
+    },
+    {
+     "name": "SentinelOne",
+     "ticker": "S",
+     "country": "US",
+     "share": "+ Prompt Security",
+     "products": "agent runtime 防護",
+     "note": "AI agent 安全併購整合"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "orchestration"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "enterprise_adoption"
+    }
+   ],
+   "sources": [
+    {
+     "label": "PANW 完成 $250 億併購 CyberArk（2026/2/11，身分層卡位）",
+     "url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-2-12-palo-alto-networks-completes-historic-25-billion-cyberark-acquisition-to-solidify-identity-security-pillar"
+    },
+    {
+     "label": "Okta 併 Axiom＋推 Okta for AI Agents GA（身分層第二強權）",
+     "url": "https://www.computerweekly.com/news/366629921/Okta-makes-AI-identity-play-with-Axiom-acquisition"
+    },
+    {
+     "label": "Orca Security Series C $550M、估值 $1.8B",
+     "url": "https://orca.security/resources/press-releases/orca-security-series-c-550-million-announcement/"
+    },
+    {
+     "label": "Orca：agentic AI 雲端安全與修復",
+     "url": "https://orca.security/resources/blog/introducing-agentic-cloud-security-platform/"
+    }
+   ]
+  },
+  {
+   "id": "enterprise_adoption",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "下游：企業採用 / SI / 垂直 agent",
+   "nameEn": "Enterprise Adoption · SI · Vertical Agents",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "AgentOps 的下游需求——企業把 agent 推上生產線、系統整合商導入、垂直產業 agent 應用，回頭拉動上述全層的用量。",
+   "marketSize": "AI Agent 軟體 2030 $526 億（CAGR ~46%）",
+   "growth": "現實落差：79% 企業宣稱採用，僅 11% 真正在生產運行",
+   "share": "null",
+   "analysis": "需求端是 AgentOps 全層的成長引擎：企業導入 agent 後，用量計費（token/seat/工作流）回饋到編排、可觀測、安全、基建各層——這是『軟體吃 AI』的二階受惠邏輯。系統整合商（Accenture/印度 IT/德勤）負責落地，垂直 agent（法律/金融/醫療/客服，詳見 vertical_ai_agents/cs_ai）是終端應用。⚠ 2026-H1 現實落差成主旋律：79% 企業宣稱已採用 agent 但僅 11% 真正在生產環境運行；Gartner 估 2027 年逾 40% agentic AI 專案將因價值不明、成本失控、治理薄弱被取消——這解釋 NOW/NET/ORCL 即使財報超標仍當日重挫（-18%/-18%/-10%），市場質疑『AI 變現 vs 估值』與 agent 是否反噬 per-seat 訂閱定價。絃外之音：真正受惠是『按用量計費、與 agent 數量正相關』的 incumbent（DDOG/NET/NOW），而非僅貼 AI 標籤者。",
+   "companies": [
+    {
+     "name": "企業客戶（跨產業）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "AgentOps 終端買方",
+     "products": "把 agent 推上生產線",
+     "note": "用量計費回饋全層；生產化滲透率仍低=成長空間"
+    },
+    {
+     "name": "Accenture",
+     "ticker": "ACN",
+     "country": "IE",
+     "share": "AI 導入 SI 龍頭",
+     "products": "agent 落地/系統整合",
+     "note": "企業 agent 部署服務"
+    },
+    {
+     "name": "垂直 agent（法/金/醫/客服）",
+     "ticker": "—",
+     "country": "US",
+     "share": "終端應用",
+     "products": "Harvey / Sierra / Abridge…",
+     "note": "詳見 vertical_ai_agents / cs_ai 主題"
+    },
+    {
+     "name": "Palantir",
+     "ticker": "PLTR",
+     "country": "US",
+     "share": "AIP 部署平台",
+     "products": "AIP / agent 落地",
+     "note": "企業 agent 營運化"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "observability"
+    },
+    {
+     "id": "agent_security"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "AI Agents 市場 2030 $52.62B、CAGR 46% (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/PressReleases/ai-agents.asp"
+    },
+    {
+     "label": "Gartner：agentic AI 軟體支出 2030 達 $53B（SCM 範例）",
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2026-04-07-gartner-forecasts-supply-chain-management-software-with-agentic-ai-will-grow-to-53-billion-in-spend-by-2030"
+    },
+    {
+     "label": "2026 企業 agent 採用現實落差：79% 宣稱採用 vs 11% 生產運行",
+     "url": "https://www.digitalapplied.com/blog/ai-agent-adoption-2026-enterprise-data-points"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "foundation_compute",
+   "run_infra"
+  ],
+  [
+   "foundation_compute",
+   "orchestration"
+  ],
+  [
+   "run_infra",
+   "orchestration"
+  ],
+  [
+   "orchestration",
+   "observability"
+  ],
+  [
+   "orchestration",
+   "agent_security"
+  ],
+  [
+   "observability",
+   "enterprise_adoption"
+  ],
+  [
+   "agent_security",
+   "enterprise_adoption"
+  ]
+ ],
+ "_proposed": {}
+}

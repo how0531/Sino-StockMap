@@ -1,0 +1,667 @@
+{
+ "id": "ai_pharma",
+ "tab": "AI 製藥",
+ "title": "AI 製藥 / TechBio 供應鏈 (AI Drug Discovery)",
+ "subtitle": "AI Drug Discovery — AI×生技交會點 2026 進入「臨床驗證元年」：前幾年平台潛力撐起估值溢價，2026 起價值由「能不能做出過人體試驗的藥」決定。資金面卻空前火熱——Isomorphic Labs（DeepMind 分拆）2026-05 完成 $2.1B Series B（含 Thrive/Alphabet/MGX/Temasek，2026 最大 AI 生技募資）、NVIDIA×Eli Lilly 共創 AI 實驗室最高 $1B/5 年。價值鏈六層：算力（NVIDIA BioNeMo）+ 資料（Tempus 多模態腫瘤庫 Q1'26 +36%）兩端最硬 → 蛋白質結構基礎模型（AlphaFold3/Boltz/RFdiffusion，兩座諾貝爾獎背書）→ AI 藥物發現平台（題材核心、洗牌最劇）→ CRO 濕實驗室閉環 → Big Pharma「買單+自建」雙重採用。⚠ 聰明錢訊號：NVIDIA 2026-02 完全出清 Recursion；RXRX YTD −39.6%、Schrödinger 退出自有臨床——可投資錨點在「賣鏟人」(算力+資料+基礎模型)而非燒錢藥廠。全球藥物 R&D $194B，AI 滲透率僅約 1.5%。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "2026 募資爆量",
+   "v": "$2.1B",
+   "sub": "Isomorphic Series B·NVIDIA×Lilly 共創最高 $1B",
+   "hot": true
+  },
+  {
+   "k": "敘事轉折／風險",
+   "v": "臨床驗證元年",
+   "sub": "平台溢價退潮·NVDA 出清 RXRX·RXRX YTD −39.6%",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "compute",
+   "label": "AI 算力平台 Compute (BioNeMo)",
+   "main": false
+  },
+  {
+   "id": "data",
+   "label": "多模態生醫資料 Data",
+   "main": false
+  },
+  {
+   "id": "model",
+   "label": "蛋白質 / 分子基礎模型 Foundation Models",
+   "main": false
+  },
+  {
+   "id": "platform",
+   "label": "AI 藥物發現平台 Discovery Platforms",
+   "main": true
+  },
+  {
+   "id": "lab",
+   "label": "CRO / 濕實驗室閉環 Wet-Lab Loop",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "Big Pharma 採用 Adoption & Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "bionemo_compute",
+   "row": "compute",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "AI 算力平台 / BioNeMo (賣鏟人#1)",
+   "nameEn": "Compute & BioNeMo Platform",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · NVIDIA BioNeMo 一家獨大；2026-01 與 Lilly 共創實驗室最高 $1B/5 年",
+   "desc": "AI 藥物發現的算力與開發平台層：GPU 算力 + 生命科學基礎模型工具鏈，支援結構預測、生成式設計與「乾濕實驗室閉環」(lab-in-the-loop) 工作流。",
+   "marketSize": "算力基底",
+   "growth": "lab-in-the-loop",
+   "share": "null",
+   "analysis": "NVIDIA（NVDA）為絕對核心：BioNeMo 開放式生命科學 AI 開發平台 2026-01(JPM)大幅擴充，新增 Clara 開源模型(RNAPro RNA 結構預測、ReaSyn v2 確保 AI 設計藥可合成)、BioNeMo Recipes、nvMolKit(GPU 加速化學資訊)；model builders 含 Basecamp Research(EDEN)、Boltz PBC、Chai Discovery；並深化虛擬細胞合作(CZI Virtual Cells、Tahoe-100M、SandboxAQ GPCR 篩選)。2026-01-12(JPM) 宣布與 Eli Lilly 共創 AI 實驗室、5 年最高投入 $1B（建於 BioNeMo + Vera Rubin 架構），同場宣布 Thermo Fisher 等夥伴。雲端次要玩家：AWS（Amazon Bio Discovery，串接 CRO 濕實驗室驗證閉環）、Google Cloud / Microsoft Azure（生醫 AI 服務）。此層是整個板塊最務實的「賣鏟人」——不押單一臨床賭局、有真實算力營收。⚠ 但 NVIDIA 2026-02 在 13F 完全出清 Recursion(RXRX) 持股，被解讀為對「純平台藥廠」態度轉變。",
+   "companies": [
+    {
+     "name": "NVIDIA (BioNeMo)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI 製藥算力/平台龍頭",
+     "products": "BioNeMo / Clara / DGX / Vera Rubin",
+     "note": "2026-01 與 Lilly 共創實驗室最高 $1B/5 年；2026-02 13F 出清 RXRX",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-bionemo-platform-adopted-by-life-sciences-leaders-to-accelerate-ai-driven-drug-discovery"
+    },
+    {
+     "name": "Amazon (AWS Bio Discovery)",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "雲端生醫 AI 串接 CRO",
+     "products": "Amazon Bio Discovery / Bedrock",
+     "note": "CRO 夥伴串接濕實驗室驗證閉環",
+     "src": "https://aws.amazon.com/blogs/industries/introducing-amazon-bio-discovery/"
+    },
+    {
+     "name": "Alphabet (Google Cloud)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "雲端 + Isomorphic 母體",
+     "products": "Google Cloud TPU / DeepMind AlphaFold",
+     "note": "Isomorphic Labs 分拆母體；AlphaFold 基底",
+     "src": "https://www.fiercebiotech.com/biotech/alphabets-ai-biotech-isomorphic-labs-bags-21b-series-b-fuel-next-gen-drug-design-model"
+    },
+    {
+     "name": "Microsoft (Azure)",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "雲端生醫 AI",
+     "products": "Azure AI / 生醫基礎模型",
+     "note": "生命科學雲端服務",
+     "src": "https://medcitynews.com/2026/01/nvidia-drug-discovery-ai/"
+    },
+    {
+     "name": "Thermo Fisher",
+     "ticker": "TMO",
+     "country": "US",
+     "share": "儀器+NVIDIA 夥伴",
+     "products": "實驗儀器 / 質譜 / 與 NVIDIA 整合",
+     "note": "2026 JPM 與 NVIDIA 宣布合作",
+     "src": "https://medcitynews.com/2026/01/nvidia-drug-discovery-ai/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "foundation_models"
+    },
+    {
+     "id": "discovery_platforms"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA BioNeMo 採用 (NVIDIA Newsroom)",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-bionemo-platform-adopted-by-life-sciences-leaders-to-accelerate-ai-driven-drug-discovery"
+    },
+    {
+     "label": "NVIDIA × Lilly 共創 (Lilly IR)",
+     "url": "https://investor.lilly.com/news-releases/news-release-details/nvidia-and-lilly-announce-co-innovation-ai-lab-reinvent-drug"
+    }
+   ]
+  },
+  {
+   "id": "biomed_data",
+   "row": "data",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "多模態生醫資料 (賣鏟人#2)",
+   "nameEn": "Multimodal Biomedical Data",
+   "competition": "highgrowth",
+   "single": "鎖喉點 · 高品質有標註的臨床/基因資料稀缺；Tempus 多模態腫瘤庫領先",
+   "desc": "基因體 / 影像 / EHR / 多模態臨床資料層——AI 藥物發現的燃料。高品質、有生物/藥理/臨床標註的資料因成本、隱私法規、共享限制而稀缺，是真正的護城河。",
+   "marketSize": "私有資料護城河",
+   "growth": "Tempus +36% YoY",
+   "share": "null",
+   "analysis": "Tempus AI（TEM）為資料層代表：多模態腫瘤資料庫 + Lens 分析平台。Q1'26 營收 $348.1M(+36.1%)，Diagnostics $261.1M(+34.7%、腫瘤量 +28%、MRD 量 +500%)、Data and Applications $87.0M(+40.5%、Insights 資料授權 +44.1%)；2026 全年指引調升至 $1.59-1.60B、Adj. EBITDA 約 $65M(轉正)；2025 全年 $1.25B(+80%)。Merck 多年生物標記合作、AstraZeneca+Pathos $200M 共建腫瘤基礎模型、2025-02 併 Ambry Genetics；2026-06 FDA 核准 xT CDx tumor-only(股價單日急漲)；2026-06 再與 Bristol Myers Squibb 深化合作(5 個腫瘤/神經科學專案)、並偕 Yale New Haven/MSK 組建開源數位病理平台聯盟、發行 $400M 0% 可轉債(2032 到期)。其他資料/工具玩家：Veeva Systems(VEEV，臨床+商業 SaaS 資料)、Illumina(ILMN，定序資料源頭)、Owkin(FR，聯邦學習精準醫療，募 $304M)。⚠ 開源結構模型侵蝕乾資料價值，價值往「私有臨床資料 + 濕實驗室閉環」轉移。",
+   "companies": [
+    {
+     "name": "Tempus AI",
+     "ticker": "TEM",
+     "country": "US",
+     "share": "多模態腫瘤資料領先",
+     "products": "多模態臨床/基因庫 / Lens / xT CDx",
+     "note": "Q1'26 $348.1M(+36.1%)；2026 指引 $1.59-1.60B、EBITDA 轉正；2026-06 FDA xT CDx",
+     "src": "https://www.tempus.com/news/pr/tempus-reports-first-quarter-2026-results/"
+    },
+    {
+     "name": "Veeva Systems",
+     "ticker": "VEEV",
+     "country": "US",
+     "share": "生命科學 SaaS 資料",
+     "products": "臨床/法規/商業雲 + AI",
+     "note": "藥廠資料骨幹",
+     "src": "https://www.genengnews.com/topics/artificial-intelligence/pharmas-ai-investment-signals-new-drug-discovery-paradigm/"
+    },
+    {
+     "name": "Illumina",
+     "ticker": "ILMN",
+     "country": "US",
+     "share": "定序資料源頭",
+     "products": "NGS 定序儀 / 基因體資料",
+     "note": "AI 訓練的基因資料源頭",
+     "src": "https://www.grandviewresearch.com/industry-analysis/artificial-intelligence-drug-discovery-market"
+    },
+    {
+     "name": "Owkin",
+     "ticker": "—",
+     "country": "FR",
+     "share": "聯邦學習精準醫療",
+     "products": "聯邦學習 / 臨床試驗 AI",
+     "note": "未上市；募 $304M；Absci 合作",
+     "src": "https://greyb.com/blog/ai-drug-discovery-startups/"
+    },
+    {
+     "name": "Recursion (Phenomics 資料)",
+     "ticker": "RXRX",
+     "country": "US",
+     "share": "細胞影像表型資料",
+     "products": "Recursion OS 表型資料庫",
+     "note": "自有 petabyte 級細胞影像資料",
+     "src": "https://www.stocktitan.net/sec-filings/RXRX/10-q-recursion-pharmaceuticals-inc-quarterly-earnings-report-72c8e78e5b8f.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "foundation_models"
+    },
+    {
+     "id": "discovery_platforms"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Tempus Q1 2026 (官方)",
+     "url": "https://www.tempus.com/news/pr/tempus-reports-first-quarter-2026-results/"
+    },
+    {
+     "label": "biology-native data infra (BVP)",
+     "url": "https://www.bvp.com/atlas/building-biology-native-data-infrastructure-for-the-ai-era"
+    }
+   ]
+  },
+  {
+   "id": "foundation_models",
+   "row": "model",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "蛋白質 / 分子基礎模型",
+   "nameEn": "Protein & Molecule Foundation Models",
+   "competition": "competitive",
+   "single": "⚠ 開源化侵蝕獨佔：Protenix Apache 2.0、Boltz 開源；兩座諾貝爾獎背書",
+   "desc": "蛋白質結構預測 + 生成式分子/抗體設計的基礎模型層。AlphaFold/RFdiffusion 兩座 2024 諾貝爾化學獎背書，把蛋白質設計從科研推向產業。",
+   "marketSize": "技術底層",
+   "growth": "後 AF3 多模型並存",
+   "share": "null",
+   "analysis": "AlphaFold3 / DeepMind(Google)——結構預測標竿(Hassabis/Jumper 諾貝爾獎)，Isomorphic 以此為基底開發 IsoDDE/Drug Design Engine。Boltz-2(2025-06，MIT 系 Boltz PBC)：除 3D 結構外可預測小分子結合親和力，超越 AF3/Boltz-1。RFdiffusion/RFantibody(David Baker/華盛頓大學 IPD，Baker 諾貝爾獎)：蛋白質/抗體生成設計，Xaira 技術基底。ESM3(EvolutionaryScale)：序列-結構共設計。Protenix-v1(ByteDance，2026-02 Apache 2.0 開源)：基準超越 AF3、學術+商業全免費——中美並行的 AF3 開源反制潮。Chai Discovery(GSK/Lilly 合作)。2026 共識：「不同目的用不同模型」成標準、無單一冠軍。⚠ 2026-H1 新前沿「虛擬細胞模型(virtual cell)」竄起：Xaira 2026-03 推 X-Cell(史上最大基因擾動資料訓練、可零樣本預測 T 細胞擾動)、Arc Institute State、CZI×NVIDIA Virtual Cells 平台 + Billion Cells、Tahoe-100M——把基礎模型從『靜態結構』推向『動態細胞行為模擬』。⚠ 開源化(Protenix/Boltz)擠壓中間平台層利潤，價值往上游(算力+私有資料)與下游(能進臨床的管線)外移。",
+   "companies": [
+    {
+     "name": "DeepMind AlphaFold3",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "結構預測標竿",
+     "products": "AlphaFold3 / Isomorphic IsoDDE 基底",
+     "note": "Hassabis/Jumper 2024 諾貝爾化學獎",
+     "src": "https://intuitionlabs.ai/articles/biology-foundation-models-comparison"
+    },
+    {
+     "name": "Boltz PBC (Boltz-2)",
+     "ticker": "—",
+     "country": "US",
+     "share": "開源結構+親和力",
+     "products": "Boltz-2(結構+結合親和力)",
+     "note": "未上市；2025-06 超越 AF3/Boltz-1；BioNeMo 上架",
+     "src": "https://note.com/pharma_insight/n/nfe3c598ff7c3?hl=en-US"
+    },
+    {
+     "name": "Baker Lab / RFdiffusion (IPD)",
+     "ticker": "—",
+     "country": "US",
+     "share": "生成式蛋白/抗體設計",
+     "products": "RFdiffusion / RFantibody",
+     "note": "David Baker 諾貝爾獎；Xaira 技術基底",
+     "src": "https://www.nature.com/articles/d43747-024-00030-w"
+    },
+    {
+     "name": "EvolutionaryScale (ESM3)",
+     "ticker": "—",
+     "country": "US",
+     "share": "序列-結構共設計",
+     "products": "ESM3 蛋白質語言模型",
+     "note": "未上市；Meta FAIR 系團隊分拆",
+     "src": "https://intuitionlabs.ai/articles/biology-foundation-models-comparison"
+    },
+    {
+     "name": "ByteDance (Protenix)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國開源 AF3 反制",
+     "products": "Protenix-v1(Apache 2.0)",
+     "note": "未上市；2026-02 基準超越 AF3、全免費",
+     "src": "https://note.com/pharma_insight/n/nfe3c598ff7c3?hl=en-US"
+    },
+    {
+     "name": "Chai Discovery",
+     "ticker": "—",
+     "country": "US",
+     "share": "生醫基礎模型",
+     "products": "Chai-1 / 藥物設計基礎模型",
+     "note": "未上市；GSK/Lilly 合作；BioNeMo 上架",
+     "src": "https://www.drugtargetreview.com/2026-the-year-ai-stops-being-optional-in-drug-discovery/682243.article"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "bionemo_compute"
+    },
+    {
+     "id": "biomed_data"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "discovery_platforms"
+    }
+   ],
+   "sources": [
+    {
+     "label": "蛋白質基礎模型對比 (IntuitionLabs)",
+     "url": "https://intuitionlabs.ai/articles/biology-foundation-models-comparison"
+    },
+    {
+     "label": "Boltz/Chai/Protenix 開源 (Pharma Insight Lab)",
+     "url": "https://note.com/pharma_insight/n/nfe3c598ff7c3?hl=en-US"
+    }
+   ]
+  },
+  {
+   "id": "discovery_platforms",
+   "row": "platform",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "AI 藥物發現平台（題材核心、洗牌最劇）",
+   "nameEn": "AI Drug Discovery Platforms",
+   "competition": "redocean",
+   "single": "⚠ 平台敘事退潮·NVDA 出清 RXRX；RXRX YTD −39.6%、SDGR 退出自有臨床",
+   "desc": "用 AI 端到端發現/設計藥物的平台公司，是題材敘事核心但也是洗牌最劇烈的一層——2026 起價值由「能不能做出過人體試驗的藥」決定。",
+   "marketSize": "高題材高風險",
+   "growth": "臨床驗證元年",
+   "share": "null",
+   "analysis": "Isomorphic Labs(未上市，DeepMind 分拆)：IsoDDE 引擎；2026-05 $2.1B Series B(2026 最大 AI 生技募資)；2026-01 新增 J&J 跨模態(小分子+生物製劑+胜肽+分子膠)合作，Lilly/Novartis/J&J 三大藥廠累計里程碑承諾 >$3B；Hassabis 於 Davos 表示首個 AI 設計腫瘤/免疫療法預計 2026 年底進 first-in-human。Recursion(RXRX)：Recursion OS + BioHive-2 超算(生技業最強自有算力)；Q1'26 營收僅 $6.5M(低於預期 60%)、淨損收窄至 $117.5M、現金營運支出降至 $85.1M(YoY $120.2M)；現金 $665M、跑道至 2028 初；2026-04-12 為 REC-7221(CDK4/6 抑制劑治實體瘤)新報 IND(Roche 合作、主要完成 Q3'27)；Sanofi 第 5 個里程碑 $4M、累計里程碑+預付 >$500M；2026-05 董事會改組；⚠ NVIDIA 2026-02 13F 完全出清。Schrödinger(SDGR)：物理模擬+ML 分子設計業界標準；Q1'26 $58.6M(軟體 $35.6M −21%、藥物發現 $22.9M +124%)、ACV 指引 $218-228M；⚠ 戰略轉向不再獨立推內部管線進臨床(省約 $70M/年)、聚焦軟體+合作、推 Bunsen agentic AI；市值約 $1.08B(−37%/年)。Insilico(3696.HK)：Pharma.AI(Biology42/Chemistry42/Science42+Nach01)；Rentosertib(TNIK 抑制劑治 IPF)全球首個 AI 設計藥之一、FDA 2026-02 孤兒藥、CDE BTD、13 個 IND。Absci(ABSI)：生成式抗體(6 週出候選)、Almirall $610M。Xaira(未上市)：David Baker 共創、>$1B(史上第二大生技新創)、RFdiffusion 基底。Generate:Biomedicines(GENB，2026-02-27 IPO $400M)：累計 $693M、Novartis $1B+；GB-0895(anti-TSLP 治氣喘/COPD)為首個進 Phase III 的 AI 衍生抗體；與 Eikon Therapeutics(EIKN，2026-02-05 IPO $381M，2024 以來最大生技 IPO、活細胞單分子追蹤)同列 2026-02 生技 IPO 解凍代表。",
+   "companies": [
+    {
+     "name": "Isomorphic Labs",
+     "ticker": "—",
+     "country": "UK",
+     "share": "AlphaFold 母體商業化",
+     "products": "IsoDDE / Drug Design Engine",
+     "note": "未上市；2026-05 $2.1B Series B；Lilly/Novartis/J&J 里程碑 >$3B；2026-04 啟動人體試驗備戰擴編、首例給藥目標 2026 年底",
+     "src": "https://www.clinicaltrialsarena.com/news/isomorphic-labs-prepares-trials-ai-designed-drugs/"
+    },
+    {
+     "name": "Recursion",
+     "ticker": "RXRX",
+     "country": "US",
+     "share": "BioHive-2 自有超算",
+     "products": "Recursion OS / 5 臨床管線",
+     "note": "Q1'26 $6.5M；現金 $665M；⚠ NVDA 2026-02 出清；YTD −39.6%",
+     "src": "https://www.stocktitan.net/sec-filings/RXRX/10-q-recursion-pharmaceuticals-inc-quarterly-earnings-report-72c8e78e5b8f.html"
+    },
+    {
+     "name": "Schrödinger",
+     "ticker": "SDGR",
+     "country": "US",
+     "share": "物理模擬分子設計標準",
+     "products": "計算平台 / Bunsen agentic AI",
+     "note": "Q1'26 營收 $58.6M(軟體 −21%)、ACV $28.4M(+12%)、指引 $218-228M；⚠ 退出自有臨床(2026 底前完成清算、R&D 縮至 $10-15M)；Bunsen 共科學家 AI 夏季早鳥上線",
+     "src": "https://www.stocktitan.net/sec-filings/SDGR/8-k-schrodinger-inc-reports-material-event-a2ba975da8ab.html"
+    },
+    {
+     "name": "Insilico Medicine",
+     "ticker": "3696.HK",
+     "country": "HK",
+     "share": "端到端生成式平台",
+     "products": "Pharma.AI / Rentosertib(IPF)",
+     "note": "全球首個 AI 設計藥之一；2026-03 與 Lilly 簽最高 $2.75B GLP-1 糖尿病授權($115M 預付)；口服 Rentosertib Ph3 預計 H2'26、吸入劑 2026-04 取中國 IND",
+     "src": "https://www.statnews.com/2026/03/29/insilico-medicine-lilly-sign-ai-drug-commercialization-deal/"
+    },
+    {
+     "name": "Absci",
+     "ticker": "ABSI",
+     "country": "US",
+     "share": "生成式抗體設計",
+     "products": "Integrated Drug Creation",
+     "note": "6 週出抗體候選；Almirall $610M；Merck/Owkin 驗證",
+     "src": "https://www.geneonline.com/billion-dollar-ai-deals-powering-antibody-design-biologics-and-next-gen-therapies/"
+    },
+    {
+     "name": "Xaira Therapeutics",
+     "ticker": "—",
+     "country": "US",
+     "share": "RFdiffusion 商業化",
+     "products": "蛋白質/抗體設計 + X-Cell 虛擬細胞",
+     "note": "未上市；>$1B(史上第二大生技新創)；David Baker 共創；2026-03 推 X-Cell 虛擬細胞模型(史上最大基因擾動訓練)",
+     "src": "https://www.genengnews.com/topics/artificial-intelligence/xairas-first-virtual-cell-model-is-largest-to-date-toward-complex-biology/"
+    },
+    {
+     "name": "Generate:Biomedicines",
+     "ticker": "GENB",
+     "country": "US",
+     "share": "生成式生物學(已上市)",
+     "products": "GB-0895(anti-TSLP) Phase III",
+     "note": "2026-02 IPO $400M；GB-0895(每 6 月一次給藥)SOLAIRIA-1/2 全球 Ph3 嚴重氣喘試驗已啟動、COPD Ph1b 數據佳；Q1'26 現金 $516.6M、跑道至 2028；Novartis $1B+",
+     "src": "https://www.prnewswire.com/news-releases/generatebiomedicines-to-initiate-global-phase-3-studies-of-gb-0895-a-long-acting-anti-tslp-antibody-for-severe-asthma-engineered-with-ai-302628189.html"
+    },
+    {
+     "name": "Genesis Therapeutics",
+     "ticker": "—",
+     "country": "US",
+     "share": "小分子 AI 設計",
+     "products": "GEMS 神經網路+生物物理模擬",
+     "note": "未上市；小分子藥物設計新創",
+     "src": "https://greyb.com/blog/ai-drug-discovery-startups/"
+    },
+    {
+     "name": "Eikon Therapeutics",
+     "ticker": "EIKN",
+     "country": "US",
+     "share": "活細胞影像藥物發現(已上市)",
+     "products": "超解析活細胞單分子追蹤 / EIK-1001",
+     "note": "2026-02-05 IPO $381M(EIKN，2024 以來最大生技 IPO)；前 Merck R&D 長 Perlmutter 領軍、估值約 $1B；EIK-1001 黑色素瘤 Ph2/3",
+     "src": "https://www.fiercebiotech.com/biotech/eikons-upsized-381m-nasdaq-listing-marks-largest-biotech-ipo-2024"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "bionemo_compute"
+    },
+    {
+     "id": "biomed_data"
+    },
+    {
+     "id": "foundation_models"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cro_lab"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Isomorphic $2.1B (FierceBiotech)",
+     "url": "https://www.fiercebiotech.com/biotech/alphabets-ai-biotech-isomorphic-labs-bags-21b-series-b-fuel-next-gen-drug-design-model"
+    },
+    {
+     "label": "2026 TechBio Stress Test (GeneOnline)",
+     "url": "https://www.geneonline.com/illustrations-2026-techbio-stress-test-can-ai-deliver-real-drugs-as-recursion-insilico-medicine-and-schrodinger-take-center-stage-007/"
+    }
+   ]
+  },
+  {
+   "id": "cro_lab",
+   "row": "lab",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "CRO / 濕實驗室閉環",
+   "nameEn": "CRO & Wet-Lab Loop",
+   "competition": "oligopoly",
+   "single": "AI 設計需濕實驗室驗證才成藥；Charles River / Evotec 等大 CRO 集中",
+   "desc": "把 AI 乾實驗室設計拿到濕實驗室合成/驗證的閉環層。2026 自動化從『衝通量』轉向『保證實驗品質/證據可靠度』，乾濕整合形成資料飛輪。",
+   "marketSize": "驗證閉環",
+   "growth": "從衝通量轉向保品質",
+   "share": "null",
+   "analysis": "AI 設計再強也需濕實驗室合成與生物驗證才能成藥，這層由少數大 CRO 主導：Charles River Laboratories(CRL，臨床前/安全性/自動化發現服務)、Evotec(EVT.DE，AI 整合 CRO 平台)、Aurigene(印度，AI 輔助發現服務)。AWS Amazon Bio Discovery 串接 CRO 濕實驗室驗證、結果回流改善下一輪。高 AI 採用組織「乾濕實驗室整合」達標率近 2 倍(30% vs 18%)。自有自動化濕實驗室代表：Recursion(持續擴充自動化實驗室，自做閉環)、Absci(每週篩數十億細胞)。趨勢：偏好降低資本承諾的存取模式(模組化系統、共享平台、CRO 專業夥伴)。",
+   "companies": [
+    {
+     "name": "Charles River Laboratories",
+     "ticker": "CRL",
+     "country": "US",
+     "share": "全球 CRO 龍頭之一",
+     "products": "臨床前/安全性/自動化發現",
+     "note": "AI 設計藥的濕實驗室驗證主力",
+     "src": "https://www.drugtargetreview.com/quality-over-quantity-drug-discovery-automation-in-2026/682127.article"
+    },
+    {
+     "name": "Evotec",
+     "ticker": "EVT.DE",
+     "country": "DE",
+     "share": "AI 整合 CRO",
+     "products": "AI 輔助發現服務平台",
+     "note": "歐系 AI-CRO 整合",
+     "src": "https://www.drugtargetreview.com/quality-over-quantity-drug-discovery-automation-in-2026/682127.article"
+    },
+    {
+     "name": "Aurigene Services",
+     "ticker": "—",
+     "country": "IN",
+     "share": "AI 輔助 CRO",
+     "products": "AI-assisted Drug Discovery 服務",
+     "note": "印度 CRO；AI 發現平台",
+     "src": "https://www.aurigeneservices.com/services/discovery/ai-assisted-drug-discovery"
+    },
+    {
+     "name": "Recursion (自動化實驗室)",
+     "ticker": "RXRX",
+     "country": "US",
+     "share": "自有高通量濕實驗室",
+     "products": "自動化細胞影像/表型實驗室",
+     "note": "2026 持續擴充自動化實驗室、自做閉環",
+     "src": "https://www.cmcmarkets.com/en/optox/rxrx-stock-why-did-nvidia-offload-ai-drug-developer-recursion"
+    },
+    {
+     "name": "Absci (濕實驗室)",
+     "ticker": "ABSI",
+     "country": "US",
+     "share": "AI+濕實驗室 hybrid",
+     "products": "每週篩數十億細胞",
+     "note": "AI 設計到濕驗證 6 週閉環",
+     "src": "https://www.geneonline.com/billion-dollar-ai-deals-powering-antibody-design-biologics-and-next-gen-therapies/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "discovery_platforms"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "pharma_adoption"
+    }
+   ],
+   "sources": [
+    {
+     "label": "2026 drug discovery automation (Drug Target Review)",
+     "url": "https://www.drugtargetreview.com/quality-over-quantity-drug-discovery-automation-in-2026/682127.article"
+    },
+    {
+     "label": "Amazon Bio Discovery (AWS)",
+     "url": "https://aws.amazon.com/blogs/industries/introducing-amazon-bio-discovery/"
+    }
+   ]
+  },
+  {
+   "id": "pharma_adoption",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "Big Pharma 採用 (買單 + 自建)",
+   "nameEn": "Big Pharma Adoption & Demand",
+   "competition": "oligopoly",
+   "single": "需求錨點：Top Pharma『買單+自建』雙重身分；全球 R&D $194B、AI 占約 1.5%",
+   "desc": "全球大藥廠是 AI 製藥的需求錨點——同時『買單』(與平台合作/授權) 與『自建』(內部 AI 模型)，是把題材推向可投資敘事的結構性催化。",
+   "marketSize": "$194B R&D 終端",
+   "growth": "AI 滲透率僅 ~1.5%",
+   "share": "null",
+   "analysis": "Eli Lilly(LLY)：最積極——TuneLab 平台把 >$1B 訓練資料的 18 個模型(federated learning)開放給生技、NVIDIA 共創實驗室 $1B、整合 NVIDIA Clara；同時自建+生態賦能。Novartis(NVS)：Isomorphic/Generate $1B+ 合作。Merck(MRK)：Tempus 生物標記、Absci 抗體。Roche(ROG.SW)：Recursion 合作(2026 部分專案完結致 RXRX 營收降)。Sanofi(SNY)：Recursion 多里程碑。AstraZeneca(AZN)：Tempus+Pathos $200M 腫瘤基礎模型。GSK(GSK)：Chai/NOETIK 基礎模型存取。全球藥物 R&D 支出 $194B，AI 在藥物發現約占 1.5%——滲透率低、長坡厚雪。⚠ 2026-H1 前沿 AI 實驗室全面下場且 Big Pharma『直接買通用大模型』成新軸線：Anthropic 2026-04-03 收 Coefficient Bio($400M 全股票，首樁併購)；Novo Nordisk 2026-04-14 與 OpenAI 簽全棧協議(藥研/臨床/製造/供應鏈、加速肥胖 GLP-1)；Merck 選 Google Cloud agentic AI、投入最高 $1B 跨 R&D；Lilly 2026-03 再與 Insilico 簽 $2.75B GLP-1 授權。OpenAI/Anthropic/Google 等通用模型商正繞過中間平台層、直插藥廠 R&D。前 Palantir AI 高管 2026-05 創 Perceptic、種子輪 $12M(端到端藥研自動化)。監管面：FDA×EMA 2026-01-14 共同發布《藥物開發 Good AI Practice 10 項指導原則》、FDA 最終指引預計 2026-Q2 出爐，AI 製藥首個藥證預計 2026-2027(約 60% 機率)。主權基金入場(Isomorphic 的 MGX/Temasek/UK Sovereign AI)，AI 製藥被視為主權級戰略資產。",
+   "companies": [
+    {
+     "name": "Eli Lilly",
+     "ticker": "LLY",
+     "country": "US",
+     "share": "最積極自建+賦能",
+     "products": "TuneLab(18 模型) + NVIDIA 共創",
+     "note": ">$1B 訓練資料開放；NVIDIA 共創 $1B；Isomorphic 合作；2026-03 與 Insilico 簽最高 $2.75B GLP-1 授權",
+     "src": "https://www.biopharmadive.com/news/eli-lilly-insilico-ai-medicine-drug-discovery/816088/"
+    },
+    {
+     "name": "Novartis",
+     "ticker": "NVS",
+     "country": "CH",
+     "share": "Isomorphic/Generate 合作",
+     "products": "AI 設計小分子/抗體合作",
+     "note": "Generate $1B+；Isomorphic 合作",
+     "src": "https://greyb.com/blog/ai-drug-discovery-startups/"
+    },
+    {
+     "name": "Merck",
+     "ticker": "MRK",
+     "country": "US",
+     "share": "Tempus/Absci 合作",
+     "products": "生物標記 + 生成式抗體",
+     "note": "Tempus 多年生物標記；Absci 抗體",
+     "src": "https://www.tempus.com/news/pr/tempus-reports-first-quarter-2026-results/"
+    },
+    {
+     "name": "AstraZeneca",
+     "ticker": "AZN",
+     "country": "UK",
+     "share": "腫瘤基礎模型共建",
+     "products": "Tempus+Pathos $200M 模型",
+     "note": "共建最大腫瘤多模態基礎模型",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001717115/000095017025105441/tem-ex99_1.htm"
+    },
+    {
+     "name": "Sanofi",
+     "ticker": "SNY",
+     "country": "FR",
+     "share": "Recursion 多里程碑",
+     "products": "AI 設計腫瘤管線合作",
+     "note": "Q1'26 第 5 里程碑 $4M",
+     "src": "https://www.stocktitan.net/sec-filings/RXRX/10-q-recursion-pharmaceuticals-inc-quarterly-earnings-report-72c8e78e5b8f.html"
+    },
+    {
+     "name": "Roche",
+     "ticker": "ROG.SW",
+     "country": "CH",
+     "share": "Recursion 合作",
+     "products": "AI 神經科學/腫瘤合作",
+     "note": "2026 部分專案完結",
+     "src": "https://www.cmcmarkets.com/en/optox/rxrx-stock-why-did-nvidia-offload-ai-drug-developer-recursion"
+    },
+    {
+     "name": "GSK",
+     "ticker": "GSK",
+     "country": "UK",
+     "share": "基礎模型存取",
+     "products": "Chai/NOETIK 模型存取",
+     "note": "2026 初與 Chai/NOETIK 簽約",
+     "src": "https://www.drugtargetreview.com/2026-the-year-ai-stops-being-optional-in-drug-discovery/682243.article"
+    },
+    {
+     "name": "Novo Nordisk",
+     "ticker": "NVO",
+     "country": "DK",
+     "share": "OpenAI 全棧導入(新)",
+     "products": "OpenAI 模型整合藥研/臨床/製造/供應鏈",
+     "note": "2026-04-14 與 OpenAI 簽約、加速肥胖/GLP-1 新藥；R&D/製造/商營試點、2026 年底全面整合(未揭金額)",
+     "src": "https://www.cnbc.com/2026/04/14/novo-nordisk-openai-ai-drug-discovery-healthcare-nvo.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cro_lab"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Lilly TuneLab (Lilly IR)",
+     "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-launches-tunelab-platform-give-biotechnology-companies"
+    },
+    {
+     "label": "Pharma AI Investment Paradigm (GEN)",
+     "url": "https://www.genengnews.com/topics/artificial-intelligence/pharmas-ai-investment-signals-new-drug-discovery-paradigm/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "bionemo_compute",
+   "foundation_models"
+  ],
+  [
+   "bionemo_compute",
+   "discovery_platforms"
+  ],
+  [
+   "biomed_data",
+   "foundation_models"
+  ],
+  [
+   "biomed_data",
+   "discovery_platforms"
+  ],
+  [
+   "foundation_models",
+   "discovery_platforms"
+  ],
+  [
+   "discovery_platforms",
+   "cro_lab"
+  ],
+  [
+   "cro_lab",
+   "pharma_adoption"
+  ]
+ ],
+ "_proposed": {}
+}

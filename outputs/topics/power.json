@@ -1,0 +1,1271 @@
+{
+ "id": "power",
+ "tab": "電源散熱",
+ "title": "AI 資料中心 電源 / 散熱供應鏈",
+ "subtitle": "Power & Thermal — AI 機櫃功率從 GB200 ~120kW 暴衝到 Rubin Ultra (Kyber) ~600kW，逼出兩場革命：供電端 54V→800V HVDC（Nvidia 2027 量產、減銅 45%、省 4 道轉換），散熱端 氣冷→液冷全面標配（cold plate/CDU/manifold/UQD 四件套）。最深單點：800V HVDC 主動元件（GaN/SiC + 固態變壓器）、ABF 等級被動元件（村田 MLCC 高階近獨家）、UQD 快接頭（CPC/Danfoss 規格主導）。台廠在 PSU（台達/光寶）、液冷模組（奇鋐/雙鴻）、BBU、power stage 卡位完整。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 16
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "70+"
+  },
+  {
+   "k": "獨佔／客戶獨家／規格主導單點",
+   "v": 8,
+   "sub": "村田 MLCC·CPC/Danfoss UQD·Vicor 垂直供電·味之素鏈外…",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "power",
+   "label": "供電鏈 Power Delivery",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "供電 → AI 機櫃系統 → 散熱 Power · Rack · Thermal",
+   "main": true
+  },
+  {
+   "id": "thermal",
+   "label": "散熱鏈 Thermal / Liquid Cooling",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "f-grid",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "市電輸入 / 800V HVDC 配電",
+   "nameEn": "Grid Input · 800V HVDC Distribution",
+   "competition": "highgrowth",
+   "single": "規格主導 · Nvidia 800V HVDC 生態（2027 量產）由 Vertiv/Eaton/Schneider/台達 共構；固態變壓器(SST)為新單點",
+   "desc": "資料中心進電到機櫃的配電：傳統 13.8kV AC→480V→54V 多級轉換，2027 起轉向 Nvidia 800V HVDC 直流配電（central rectifier + DC busway + sidecar）。",
+   "marketSize": "減銅 45%",
+   "growth": "2027 量產拐點",
+   "share": "null",
+   "analysis": "Nvidia GTC 2025 揭示 800V HVDC（減銅 45%、省 4 道轉換、效率 +5%、TCO -30%），2027 隨 Rubin Ultra Kyber 機櫃量產為拐點，但 Nvidia+Google 已把首批 800V HVDC 出貨提前到 2026Q3 小量（TrendForce 2026-06）；GTC 2026（3/16-19）公布從電網到 GPU 的完整 800VDC 夥伴清單，電源半導體新增 Renesas、Power Integrations、MPS、Richtek、ROHM 加入既有 Infineon、Navitas、TI、onsemi、STMicro——「誰拿到 Nvidia 800V 認證＝誰吃下下一代供電 BOM」重新洗牌議價權。TI（2026-03 與 Nvidia 合作開發完整 800V 電源方案）、onsemi（SiC/SST/PSU/800VDC 配電，2026-06 列入 Nvidia MGX 生態）、STMicro（800VDC→12V/6V 轉換）。系統夥伴 Vertiv（2026H2 推完整 800V DC 產品線）、Eaton（GTC 2026 推 Beam Rubin DSX 平台、grid-to-rack 整合者）、Schneider、Siemens、台達。固態變壓器（SST）取代多級 AC/DC 為新興單點。",
+   "companies": [
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "800V DC 領導生態",
+     "products": "central rectifier/DC busway/PowerDirect 800V",
+     "note": "2026H2 推完整 800V DC 線、Nvidia 共構",
+     "src": "https://www.vertiv.com/en-us/about/news-and-insights/articles/news-releases/vertiv-and-nvidia-introduce-800-vdc-power-architecture/"
+    },
+    {
+     "name": "Eaton",
+     "ticker": "ETN",
+     "country": "US",
+     "share": "HVDC 配電夥伴",
+     "products": "800V DC 配電/switchgear/busway/Beam Rubin DSX",
+     "note": "GTC 2026 推 Beam Rubin DSX 資料中心平台（支援 NVL72）、躍升 grid-to-rack 整合者",
+     "src": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor/"
+    },
+    {
+     "name": "Schneider Electric",
+     "ticker": "SU.PA",
+     "country": "FR",
+     "share": "HVDC 配電夥伴",
+     "products": "1MW rack 800V DC 解決方案",
+     "note": "Nvidia 生態"
+    },
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "800V/SST 卡位",
+     "products": "固態變壓器/HVDC 整流/sidecar",
+     "note": "Nvidia 800V 生態台廠"
+    },
+    {
+     "name": "廣運 Kenmec",
+     "ticker": "6125.TW",
+     "country": "TW",
+     "share": "800V 機櫃級",
+     "products": "800V HVDC 機櫃級解決方案",
+     "note": "下半年推 2.5MW 液冷系統（待證）",
+     "src": "https://statementdog.com/news/15395"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-psu"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nvidia 800V HVDC 架構 (NVIDIA Technical Blog)",
+     "url": "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/"
+    },
+    {
+     "label": "GTC 2026 800VDC 電網到 GPU 夥伴清單 (Power Electronics News)",
+     "url": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor/"
+    }
+   ]
+  },
+  {
+   "id": "f-psu",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "PSU 電源供應器 / AC-DC",
+   "nameEn": "PSU · AC-DC Power Supply",
+   "competition": "oligopoly",
+   "single": "客戶獨家級 · 台達 800VDC 660kW Power Rack（含與 Nvidia 共同開發 480kW BBU）Q3 量產領先；光寶 Q3 驗證 Q4 量產、以 ASIC 客戶切入差異化——800V 電源雙寡占成形且分出時間差",
+   "desc": "機櫃 AC-DC 電源供應器與電源櫃（power shelf），把市電/HVDC 轉成 54V/12V 母線。AI 高功率使 PSU 單價與瓦數大增；800VDC 時代躍升整櫃 Power Rack。",
+   "marketSize": "台廠主場",
+   "growth": "AI 營收爆發",
+   "share": "null",
+   "analysis": "台達電 AI 伺服器 PSU 全球龍頭（2025 營收 5,549 億、YoY +31.8% 首破 5,000 億、2026 capex >461 億擴產；Q1'26 營收 1,593.53 億 YoY+34%、毛利率 37% 創高、EPS 7.91）——800VDC in-row 660kW Power Rack（含與 Nvidia 共同開發 480kW BBU）搶先 Q3 量產、±400V 今年出貨、800V 2027 放量；光寶 800VDC Power Rack 預計 Q3 完成驗證、Q4 量產、ASIC 客戶出貨提前（COMPUTEX 2026 首展 800VDC 液冷電源機櫃、5 月營收 173.5 億 YoY+29.6% 創 7 年半新高）；群電（Acbel 系，AI PSU）、康舒、Vertiv、Lite-On。台達憑量產時點領先構築護城河、光寶以 ASIC 客戶差異化。",
+   "companies": [
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "AI PSU/800V Power Rack 龍頭",
+     "products": "AI 伺服器 PSU/power shelf/800VDC 660kW Power Rack/480kW BBU",
+     "note": "800VDC in-row 660kW Power Rack（與 Nvidia 共同開發 480kW BBU）Q3'26 量產領先、±400V 今年出貨、800V 2027 放量；Q1'26 營收 1,593.53 億 YoY+34%、毛利率 37% 創高、EPS 7.91",
+     "src": "https://technews.tw/2026/04/29/liteon-800v-asic-asic/"
+    },
+    {
+     "name": "光寶科 Lite-On",
+     "ticker": "2301.TW",
+     "country": "TW",
+     "share": "AI PSU/800V Power Rack #2",
+     "products": "800VDC Power Rack/PSU/BBU",
+     "note": "800VDC Power Rack Q3'26 完成驗證、Q4'26 量產、ASIC 客戶出貨提前；5 月營收 173.5 億 YoY+29.6% 創 7 年半新高",
+     "src": "https://technews.tw/2026/04/29/liteon-800v-asic-asic/"
+    },
+    {
+     "name": "群電 AcBel",
+     "ticker": "6412.TW",
+     "country": "TW",
+     "share": "AI PSU 台廠",
+     "products": "AI 伺服器 PSU/電源模組",
+     "note": "AcBel Polytech、AI 電源切入"
+    },
+    {
+     "name": "康舒 AcBel(Lung Yin)",
+     "ticker": "6282.TW",
+     "country": "TW",
+     "share": "PSU 台廠",
+     "products": "伺服器/工業電源",
+     "note": "電源供應台廠"
+    },
+    {
+     "name": "Vertiv / Lite-On(US)",
+     "ticker": "VRT / 2301.TW",
+     "country": "US",
+     "share": "電源櫃/系統",
+     "products": "power shelf/rPDU/UPS",
+     "note": "系統級電源"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-grid"
+    },
+    {
+     "id": "p-passive"
+    },
+    {
+     "id": "p-busbar"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-board"
+    }
+   ],
+   "sources": [
+    {
+     "label": "光寶 500kW 電源櫃 (Yahoo 股市)",
+     "url": "https://tw.stock.yahoo.com/news/ai%E7%87%9F%E6%94%B6%E7%98%82%E7%88%86%E7%99%BC-032500564.html"
+    }
+   ]
+  },
+  {
+   "id": "f-board",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "板上電源 / 48V→12V IBC",
+   "nameEn": "Board Power · 48V→12V IBC",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "進到運算盤後的中段降壓：48V→12V 中介匯流排轉換器（IBC）/PDB 與「垂直供電」（power-on-package）。GB200 採 PDB，下世代往晶片下方垂直供電。",
+   "marketSize": "架構分歧",
+   "growth": "垂直供電",
+   "share": "null",
+   "analysis": "Vicor（power-on-package 垂直/側向供電、48V→PoL 領導者）；台達（IBC/PDB 模組）；MPS（48V IBC）、ADI/Maxim、Renesas、Infineon 競逐。Nvidia DGX 用 IBC、GB200 改 PDB，48V→0.8V 路徑分裂為四支、各有冠軍。",
+   "companies": [
+    {
+     "name": "Vicor",
+     "ticker": "VICR",
+     "country": "US",
+     "share": "垂直供電領導",
+     "products": "power-on-package/48V IBC/PoL",
+     "note": "高密度垂直供電（單點技術）",
+     "src": "https://www.vicorpower.com/industries-and-innovations/power-on-package"
+    },
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "IBC/PDB 模組",
+     "products": "48V→12V IBC/PDB/DC-DC",
+     "note": "機櫃板上電源台廠"
+    },
+    {
+     "name": "Monolithic Power",
+     "ticker": "MPWR",
+     "country": "US",
+     "share": "48V IBC 切入",
+     "products": "48V→12V IBC/PMIC",
+     "note": "GB200 電源模組戰"
+    },
+    {
+     "name": "Analog Devices / Renesas",
+     "ticker": "ADI / 6723.T",
+     "country": "US",
+     "share": "IBC/控制",
+     "products": "IBC/數位電源控制",
+     "note": "ADI(Maxim)、Renesas(Intersil)"
+    },
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "板上電源",
+     "products": "OptiMOS/IBC/控制器",
+     "note": "Nvidia 板上電源夥伴"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-psu"
+    },
+    {
+     "id": "p-gan"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-vrm"
+    }
+   ],
+   "sources": [
+    {
+     "label": "48V 供電架構 (EE Times Asia)",
+     "url": "https://www.eetasia.com/48-v-power-architecture-for-next-gen-ai-processors/"
+    }
+   ]
+  },
+  {
+   "id": "f-vrm",
+   "row": "flow",
+   "col": 7,
+   "span": 2,
+   "kind": "stage",
+   "name": "VRM 多相 / DrMOS power stage",
+   "nameEn": "VRM Multiphase · DrMOS Power Stage",
+   "competition": "oligopoly",
+   "single": "近壟斷 GPU socket · Monolithic Power(MPS) 自 H100 設計取代 Vicor、掌握 Nvidia 旗艦 GPU VRM 主供（PDN 鎖定）；Infineon/Renesas/onsemi 補多相+power stage、台廠茂達/力智僅切 power stage 長尾",
+   "desc": "GPU/ASIC 旁的末段降壓 12V→0.8V：多相 VRM 控制器 + DrMOS/智慧功率級（power stage），決定供電瞬態與效率。",
+   "marketSize": "MPS 主導",
+   "growth": "GPU 貼身",
+   "share": "null",
+   "analysis": "MPS（自 H100 取代 Vicor 成 GPU VRM 主供）、Infineon（多相+power stage）、Renesas、onsemi、TI 寡占；台廠茂達（多相 core power + DrMOS/MOSFET）、力智（華碩系，90A Smart Power Stage 客戶端驗證中、GaN）切入。PMIC 配套。",
+   "companies": [
+    {
+     "name": "Monolithic Power (MPS)",
+     "ticker": "MPWR",
+     "country": "US",
+     "share": "GPU VRM 主供",
+     "products": "多相控制器+DrMOS/power module",
+     "note": "H100 起取代 Vicor",
+     "src": "https://newsletter.semianalysis.com/p/energizing-ai-power-delivery-competition"
+    },
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "多相+power stage",
+     "products": "XDP 控制器/OptiMOS DrMOS",
+     "note": "Nvidia 多相供電夥伴"
+    },
+    {
+     "name": "Renesas / onsemi",
+     "ticker": "6723.T / ON",
+     "country": "JP",
+     "share": "VRM/power stage",
+     "products": "數位多相/DrMOS",
+     "note": "Renesas(Intersil)、onsemi power stage"
+    },
+    {
+     "name": "茂達 Anpec",
+     "ticker": "6138.TWO",
+     "country": "TW",
+     "share": "core power/DrMOS 台廠",
+     "products": "多相 core power/DrMOS/MOSFET/PMIC",
+     "note": "陳泰銘入主、AI 電源切入",
+     "src": "https://poorstock.com/earningcall/6138"
+    },
+    {
+     "name": "力智 uPI",
+     "ticker": "6719.TWO",
+     "country": "TW",
+     "share": "Smart Power Stage 台廠",
+     "products": "90A SPS/VRM/GaN",
+     "note": "華碩系、AI 伺服器客戶驗證中",
+     "src": "https://vocus.cc/article/679f2ccefd89780001e527ca"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-board"
+    },
+    {
+     "id": "p-passive"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AI 供電競爭格局 (SemiAnalysis)",
+     "url": "https://newsletter.semianalysis.com/p/energizing-ai-power-delivery-competition"
+    }
+   ]
+  },
+  {
+   "id": "f-rack",
+   "row": "flow",
+   "col": 9,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI 機櫃系統整合 / 液冷整合",
+   "nameEn": "AI Rack Integration · Liquid Cooling",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "GB200/GB300 NVL72→Rubin Kyber 機櫃的電力+散熱系統整合：把 PSU、BBU、busbar、cold plate、CDU、manifold 整進機櫃。液冷 2026 成標配。",
+   "marketSize": "整合鎖喉",
+   "growth": "液冷標配",
+   "share": "null",
+   "analysis": "機櫃功率 GB200 ~120kW→GB300 ~140kW→Rubin Ultra Kyber ~600kW(→1MW)，逼出 800V 供電 + 全機櫃液冷。台達（電源+液冷整櫃）、奇鋐/雙鴻（液冷模組整合）、ODM 鴻海/廣達/緯創組裝；Vertiv/廣運金運（整櫃 CDU+液冷）。L2L/L2A 散熱解方四件套（cold plate/CDU/manifold/UQD）。",
+   "companies": [
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "電源+液冷整櫃",
+     "products": "整櫃電源+CDU+液冷",
+     "note": "電源散熱雙引擎"
+    },
+    {
+     "name": "奇鋐 AVC",
+     "ticker": "3017.TW",
+     "country": "TW",
+     "share": "液冷模組整合 #1",
+     "products": "cold plate/CDU/整櫃液冷",
+     "note": "GB200/GB300 水冷板市占約 40-50%、1Q26 營收 YoY 翻倍；奇鋐+雙鴻冷板合計約 60-75%、前 5 月營收 YoY+90.3% 創同期新高；VR200 單櫃液冷產值由 GB300 ~$35k 跳升至 ~$63-65k",
+     "src": "https://www.sinotrade.com.tw/richclub/hotstock/11%E6%9C%88%E6%95%A3%E7%86%B1%E6%97%8F%E7%BE%A4%E7%87%9F%E6%94%B6%E4%B8%80%E8%A1%A8%E7%9C%8B%E6%87%82-AI%E6%B6%B2%E5%86%B7%E6%95%A3%E7%86%B1%E5%85%A8%E9%9D%A2%E5%99%B4%E7%99%BC-%E5%A5%87%E9%8B%90%E9%80%A3-10-%E6%9C%88%E5%89%B5%E9%AB%98-%E9%9B%99%E9%B4%BB%E5%81%A5%E7%AD%96%E9%BD%8A%E6%8F%9A-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6938c869882eec4a6b19f926"
+    },
+    {
+     "name": "雙鴻 Auras",
+     "ticker": "3324.TW",
+     "country": "TW",
+     "share": "液冷模組整合 #2",
+     "products": "cold plate/manifold/CDU",
+     "note": "2025 EPS 28.26 創高、水冷占比挑戰 55%+、GB300 冷板市占約 20-25%、2026E EPS 上看 57.5 元",
+     "src": "https://statementdog.com/news/15880"
+    },
+    {
+     "name": "鴻海/廣達/緯創 ODM",
+     "ticker": "2317.TW / 2382.TW / 3231.TW",
+     "country": "TW",
+     "share": "機櫃 ODM 組裝",
+     "products": "GB200/GB300 NVL72 整櫃",
+     "note": "L6/L10/L11 系統整合"
+    },
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "整櫃電力+散熱",
+     "products": "整櫃 CDU+電源+管理/800VDC 電源組合",
+     "note": "Nvidia 參考設計、Q1'26 營收 $26.5 億 YoY+30%、調整後 EPS $1.17 YoY+83%、在手訂單 >$150 億、2026 財測上修至 $135-140 億",
+     "src": "https://unclestocknotes.substack.com/p/vertiv-vrt-2026-q1-earning-release"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-vrm"
+    },
+    {
+     "id": "p-bbu"
+    },
+    {
+     "id": "t-coldplate"
+    },
+    {
+     "id": "t-cdu"
+    },
+    {
+     "id": "t-manifold"
+    },
+    {
+     "id": "t-fan"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GB300 液冷全面採用、機櫃整合 (CMoney)",
+     "url": "https://cmnews.com.tw/article/sara-58e9ef62-d8cb-11ef-945e-0c799e674e53"
+    }
+   ]
+  },
+  {
+   "id": "f-demand",
+   "row": "flow",
+   "col": 11,
+   "span": 2,
+   "kind": "demand",
+   "name": "終端需求 / AI 機櫃功率曲線",
+   "nameEn": "Demand · AI Rack Power Curve",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "電源散熱需求源頭：Nvidia GB200/GB300 NVL72→Rubin/Rubin Ultra Kyber，與 hyperscaler 液冷滲透率。機櫃功率 5 倍跳升是整鏈驅動力。",
+   "marketSize": "需求源頭",
+   "growth": "功率 5x",
+   "share": "null",
+   "analysis": "GB200 ~120kW→GB300 ~140kW→Vera Rubin VR200 NVL72 ~190-230kW→Rubin Ultra Kyber NVL576 ~600kW(目標 1MW，2027 量產)；GB200/GB300 2025 出貨估 2.7–2.8 萬櫃、2026 突破 5 萬櫃；AI 晶片液冷滲透率 2025 >30%→2026 ~47%(TrendForce)→2027 >50%；VR200 單櫃液冷產值由 GB300 ~$35k 跳升至 ~$63-65k(+50%以上)。hyperscaler（微軟/Google/AWS/Meta）+ Nvidia 定義參考架構。",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "架構定義者",
+     "products": "GB200/GB300 NVL72 → Rubin Kyber",
+     "note": "800V+液冷參考設計、Kyber 2027",
+     "src": "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/"
+    },
+    {
+     "name": "Microsoft / Google / AWS / Meta",
+     "ticker": "MSFT / GOOGL / AMZN / META",
+     "country": "US",
+     "share": "hyperscaler 需求",
+     "products": "AI 資料中心/自研 ASIC 機櫃",
+     "note": "液冷+HVDC 採用方"
+    },
+    {
+     "name": "AMD / Broadcom",
+     "ticker": "AMD / AVGO",
+     "country": "US",
+     "share": "ASIC/GPU 需求",
+     "products": "MI400/TPU/ASIC 機櫃",
+     "note": "高功率 ASIC 推升液冷"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Vera Rubin 600kW 機櫃 2027 (Introl)",
+     "url": "https://introl.com/blog/nvidia-vera-rubin-gpu-600kw-racks-2027"
+    }
+   ]
+  },
+  {
+   "id": "p-hvdc",
+   "row": "power",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "800V HVDC / 固態變壓器 / sidecar",
+   "nameEn": "800V HVDC · SST · Sidecar",
+   "competition": "emerging",
+   "single": "新興單點 · 固態變壓器(SST)+800V sidecar 為 Nvidia 2027 量產關鍵；Infineon/台達/Navitas 卡位",
+   "desc": "800V HVDC 的核心硬體：固態變壓器（SST）、800V sidecar 電源、central rectifier，把 800V 直流送進機櫃。",
+   "marketSize": "供電新單點",
+   "growth": "2027 拐點",
+   "share": "null",
+   "analysis": "Nvidia GTC 2025 展示 800V sidecar 供 576 顆 Rubin Ultra；GTC 2026（3/16-19）把架構主導權收回、公布從電網到 GPU 完整夥伴清單，「誰拿到 Nvidia 800V 認證＝誰吃下下一代供電 BOM」。Infineon（與 Nvidia 共同重塑 800V 架構、SiC/GaN、推 TDM2354x 雙相 VPD 模組電流密度 1.6 A/mm²、主打 800V/SSCB、2025 power-semi 市佔 >19.5% 居首、本年度純 AI 營收目標約 €15 億）、TI（2026-03 與 Nvidia 合作開發完整 800V 電源方案）、台達（SST/HVDC 整流）、Navitas（與 Nvidia 合作 800V HVDC for Kyber、GaN+SiC）、Vertiv/Eaton（central rectifier）。台達 ±400V/800V HVDC 已獲兩家美系 AI 指標客戶採用、2026Q3 起出貨，導入較原估 2027 提前；800V 大規模放量仍看 2027 Kyber。隱性單點：SST 把中壓 13.8kV/34.5kV 直轉 800V DC，一次側用 650V GaN 半橋、二次側 100V GaN——放量的真正瓶頸是 SiC/GaN 元件良率與 Nvidia 認證，不是台廠整流組裝；二階受惠者是 WBG 晶圓與封裝。",
+   "companies": [
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "800V 主動元件領導",
+     "products": "SiC/GaN/SST/central PSU/TDM2354x VPD/SSCB",
+     "note": "與 Nvidia 共同重塑 800V 架構、TDM2354x 雙相 VPD 模組電流密度 1.6 A/mm²、2025 power-semi 市佔 >19.5% 居首、本年度純 AI 營收目標約 €15 億",
+     "src": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor/"
+    },
+    {
+     "name": "Texas Instruments",
+     "ticker": "TXN",
+     "country": "US",
+     "share": "800V 電源方案夥伴",
+     "products": "完整 800V 電源架構/12V/6V 轉換",
+     "note": "2026-03 與 Nvidia 合作開發完整 800V 電源方案、GTC 2026 列入電網到 GPU 夥伴清單",
+     "src": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor/"
+    },
+    {
+     "name": "Navitas Semiconductor",
+     "ticker": "NVTS",
+     "country": "US",
+     "share": "GaN/SiC 800V",
+     "products": "GaNFast/GeneSiC 800V HVDC/800V→6V 單級電源板",
+     "note": "Nvidia 800V HVDC for Kyber 合作、2026-06 正式加入 Nvidia MGX 800V 生態；GTC 2026 發表 800V→6V 單級 DC-DC 電源板（取消 48V IBC、16×650V GaNFast、峰值效率 96.5%、功率密度 2,100 W/in³）；Q1'26 AI 基建營收 QoQ+50%、高功率 YoY+35%（惟整體營收 $8.6M YoY-39%、仍虧損）",
+     "src": "https://navitassemi.com/navitas-debuts-revolutionary-800-v-6-v-power-delivery-board-at-nvidia-gtc-2026/"
+    },
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "SST/HVDC 台廠",
+     "products": "固態變壓器/800V 整流/sidecar",
+     "note": "Nvidia 800V 生態台廠"
+    },
+    {
+     "name": "Vertiv / Eaton",
+     "ticker": "VRT / ETN",
+     "country": "US",
+     "share": "central rectifier",
+     "products": "800V central rectifier/DC busway",
+     "note": "2026H2 推出"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-grid"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Navitas+Nvidia 800V HVDC for Kyber (SEC 8-K)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001821769/000162828025027705/ex9912025-05x21prrenvidiac.htm"
+    }
+   ]
+  },
+  {
+   "id": "p-gan",
+   "row": "power",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "GaN / SiC 功率元件",
+   "nameEn": "GaN · SiC Power Devices",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "高頻高效電源用寬能隙（WBG）功率元件：GaN（高頻 PSU/DC-DC）、SiC（高壓 HVDC）。AI 高功率電源加速滲透。",
+   "marketSize": "寬能隙",
+   "growth": "AI 電源滲透",
+   "share": "null",
+   "analysis": "GaN：Navitas（GaNFast）、Power Integrations、Infineon、EPC、Innoscience（中）；SiC：Infineon、onsemi、STMicro、Wolfspeed、Rohm。800V HVDC 使 SiC（高壓）與 GaN（高頻）需求同步拉升；GTC 2026 把 GaN/SiC 與矽基模組廠（Navitas/Power Integrations/onsemi/ROHM/STMicro/Renesas vs Infineon/MPS/TI/Richtek）正式列入 800V/±400V 機櫃供電守門人。電源半導體成 AI 基建新利潤池——南韓啟動約 $3.29 億 R&D 計畫推動 AI 資料中心電源半導體（被視為下一個 DRAM 級金雞母）。",
+   "companies": [
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "GaN+SiC 龍頭",
+     "products": "CoolGaN/CoolSiC",
+     "note": "WBG 整體領導"
+    },
+    {
+     "name": "Navitas",
+     "ticker": "NVTS",
+     "country": "US",
+     "share": "GaN 純玩家",
+     "products": "GaNFast IC + GeneSiC",
+     "note": "Nvidia 800V 合作"
+    },
+    {
+     "name": "Power Integrations",
+     "ticker": "POWI",
+     "country": "US",
+     "share": "GaN 電源 IC",
+     "products": "PowiGaN 高壓 GaN",
+     "note": "高壓 GaN"
+    },
+    {
+     "name": "onsemi / STMicro / Rohm",
+     "ticker": "ON / STM / 6963.T",
+     "country": "US",
+     "share": "SiC 主力",
+     "products": "EliteSiC/SiC MOSFET",
+     "note": "高壓 SiC；onsemi 2026-06 列入 Nvidia MGX 800VDC 生態（SiC/SST/PSU/配電）、STMicro 2026 推 800VDC→12V/6V 轉換",
+     "src": "https://www.semiconductor-today.com/news_items/2026/jun/onsemi-080626.shtml"
+    },
+    {
+     "name": "Innoscience 英諾賽科",
+     "ticker": "2577.HK",
+     "country": "CN",
+     "share": "GaN 中系",
+     "products": "8 吋 GaN",
+     "note": "中國 GaN 量產"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-board"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nvidia+Infineon 重塑 AI 電源架構 (Power Electronics News)",
+     "url": "https://www.powerelectronicsnews.com/powering-the-future-how-nvidia-and-infineon-are-reinventing-ai-data-center-architecture/"
+    }
+   ]
+  },
+  {
+   "id": "p-bbu",
+   "row": "power",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "BBU 備援電池 / 超級電容",
+   "nameEn": "BBU · Supercapacitor",
+   "competition": "highgrowth",
+   "single": "客戶獨家級 · 順達 BBU 佔比首破五成、切入台達/Nvidia Vera Rubin 高壓架構；AES-KY 最純 BBU 受益股、毛利率上看 38-39%",
+   "desc": "AI 機櫃斷電瞬間維持運算的備援電池模組（BBU/磷酸鐵鋰）與超級電容，GB200 起成標配；GB300 NVL72 起超級電容升格 capacitor tray 標配、BBU 為選配，雙軌備援。",
+   "marketSize": "AI 標配",
+   "growth": "+50% (2026)",
+   "share": "null",
+   "analysis": "Nvidia GB200 改變規則使 BBU 成標配；台廠 AES-KY（BBU 占營收過半、被公認最純 BBU 受益股、毛利率上看 38-39%）、順達（2026 法說宣布 BBU/非 IT 營收佔比首破五成、BBU 全年營收目標逾 50 億元、產能翻倍、切入台達電與 Nvidia Vera Rubin 高壓架構、估 2026 營收 160.6 億 YoY+21.5%、EPS 上看 12.85、與台達共推 400/800VDC BBU、2027 量產）、新盛力、系統電。市場 2026 +50%、規模 ~$3.7 億；每櫃 5 顆 BBU（單顆 ~$300、整櫃 ~$1,500）。超級電容(LIC)由日本 Musashi 近獨家（GB300 每櫃 >300 顆、單價 ~$20-25、產能遠不及需求），國巨/AVX、村田追趕；2026 GB200/GB300 機櫃出貨估 5-6 萬座（YoY ~倍增）帶動雙軌備援放量。",
+   "companies": [
+    {
+     "name": "AES-KY",
+     "ticker": "6781.TW",
+     "country": "TW",
+     "share": "BBU 龍頭/最純受益股",
+     "products": "AI 伺服器 BBU 模組",
+     "note": "BBU 占營收過半、被公認最純 BBU 受益股、毛利率上看 38-39%",
+     "src": "https://www.sinotrade.com.tw/richclub/hotnews/%E9%A0%86%E9%81%94%E6%B3%95%E8%AA%AA-BBU%E4%BD%94%E6%AF%94%E9%A6%96%E7%A0%B4%E4%BA%94%E6%88%90-A7%E5%9C%9F%E5%9C%B0%E6%BD%9B%E5%80%BC%E9%80%BE%E7%99%BE%E5%84%84-2026%E5%B9%B4%E7%87%9F%E6%94%B6%E6%8B%9A%E9%9B%99%E4%BD%8D%E6%95%B8%E6%88%90%E9%95%B7-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69a7fac40aa34962f435af39"
+    },
+    {
+     "name": "順達 Dynapack",
+     "ticker": "3211.TW",
+     "country": "TW",
+     "share": "BBU 佔比破五成",
+     "products": "BBU + 超級電容模組/400/800VDC BBU",
+     "note": "2026 法說 BBU/非 IT 佔比首破五成、BBU 全年營收目標逾 50 億、產能翻倍、切入台達/Nvidia Vera Rubin、估 2026 營收 160.6 億 YoY+21.5%、EPS 上看 12.85",
+     "src": "https://www.sinotrade.com.tw/richclub/hotnews/%E9%A0%86%E9%81%94%E6%B3%95%E8%AA%AA-BBU%E4%BD%94%E6%AF%94%E9%A6%96%E7%A0%B4%E4%BA%94%E6%88%90-A7%E5%9C%9F%E5%9C%B0%E6%BD%9B%E5%80%BC%E9%80%BE%E7%99%BE%E5%84%84-2026%E5%B9%B4%E7%87%9F%E6%94%B6%E6%8B%9A%E9%9B%99%E4%BD%8D%E6%95%B8%E6%88%90%E9%95%B7-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69a7fac40aa34962f435af39"
+    },
+    {
+     "name": "新盛力 / 系統電",
+     "ticker": "4931.TWO / 5309.TWO",
+     "country": "TW",
+     "share": "BBU 台廠",
+     "products": "BBU 模組/電池保護",
+     "note": "BBU 五雄"
+    },
+    {
+     "name": "國巨(AVX) / 村田",
+     "ticker": "2327.TW / 6981.T",
+     "country": "TW",
+     "share": "超級電容",
+     "products": "超級電容/EDLC",
+     "note": "BBU 搭配儲能"
+    },
+    {
+     "name": "Musashi Energy Solutions",
+     "ticker": "7220.T",
+     "country": "JP",
+     "share": "GB300 LIC 近獨家",
+     "products": "鋰離子電容(LIC)超級電容 CCP3300SC",
+     "note": "Nvidia GB300 參考設計指定、每櫃 >300 顆；產能 6.5M 顆 vs 2026 需求 15-18M 嚴重缺口",
+     "src": "https://passive-components.eu/nvidia-gb300-boost-hybrid-supercapacitor-demand/"
+    },
+    {
+     "name": "Musashi Energy Solutions",
+     "ticker": "7220.T",
+     "country": "JP",
+     "share": "GB300 LIC 近獨家",
+     "products": "鋰離子電容(LIC)超級電容 CCP3300SC",
+     "note": "Nvidia GB300 參考設計指定、每櫃 >300 顆；產能 6.5M 顆 vs 2026 需求 15-18M 嚴重缺口",
+     "src": "https://passive-components.eu/nvidia-gb300-boost-hybrid-supercapacitor-demand/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BBU 成 AI 標配 引爆商機 (鉅亨)",
+     "url": "https://news.cnyes.com/news/id/6273304"
+    }
+   ]
+  },
+  {
+   "id": "p-busbar",
+   "row": "power",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "銅巴 / busbar / 連接",
+   "nameEn": "Busbar · Copper Connection",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "機櫃內高電流匯流的銅巴（busbar）、電源連接器與母線；800V HVDC 減銅 45% 是核心命題。",
+   "marketSize": "減銅命題",
+   "growth": "高電流",
+   "share": "null",
+   "analysis": "高功率機櫃用 busbar/連接器：Amphenol、TE Connectivity、Molex（Koch）國際大廠；台廠健和興（連接器）、貿聯-KY（線束/連接）。800V HVDC 把 1MW 機櫃銅用量從 >200kg 大減（減銅 45%）為主要賣點。",
+   "companies": [
+    {
+     "name": "Amphenol",
+     "ticker": "APH",
+     "country": "US",
+     "share": "高速/電源連接",
+     "products": "busbar/電源連接器",
+     "note": "AI 機櫃連接龍頭"
+    },
+    {
+     "name": "TE Connectivity",
+     "ticker": "TEL",
+     "country": "CH",
+     "share": "電源連接",
+     "products": "busbar/HVDC 連接器",
+     "note": "高電流連接"
+    },
+    {
+     "name": "貿聯-KY BizLink",
+     "ticker": "3665.TW",
+     "country": "TW",
+     "share": "線束/連接台廠",
+     "products": "電源線束/busbar/連接",
+     "note": "AI 機櫃內連接"
+    },
+    {
+     "name": "健和興 Excel Cell",
+     "ticker": "3003.TW",
+     "country": "TW",
+     "share": "連接器台廠",
+     "products": "電源連接端子/busbar",
+     "note": "工業/伺服器連接"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-psu"
+    }
+   ],
+   "sources": [
+    {
+     "label": "800V HVDC 減銅 45% (NVIDIA Technical Blog)",
+     "url": "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/"
+    }
+   ]
+  },
+  {
+   "id": "p-passive",
+   "row": "power",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "被動元件 MLCC / 電感",
+   "nameEn": "Passives · MLCC · Inductor",
+   "competition": "oligopoly",
+   "single": "高階近獨家 · 村田 高階 MLCC 約 26% 居首+三星約 18%（前三約 60-65%）；AI 伺服器 47μF 規格最缺，台廠國巨/華新科僅補中低階——高階容值是真實單點",
+   "desc": "供電必備被動元件：高容/高頻 MLCC、電源電感、鉭質電容。AI 伺服器用量暴增、高階規格短缺。",
+   "marketSize": "高階近獨家",
+   "growth": "+30%/年",
+   "share": "null",
+   "analysis": "高階 MLCC 由村田（AI 伺服器主供、需求 2030 達 2025 之 3.3 倍、YoY ~30%、47μF 最缺）+ 三星電機主導；國巨（AI 占 Q1 營收 15%、鉭聚電容 AI 占 >30% 缺貨）、太陽誘電、TDK、華新科。電源電感 TDK/村田/Vishay。",
+   "companies": [
+    {
+     "name": "村田 Murata",
+     "ticker": "6981.T",
+     "country": "JP",
+     "share": "高階 MLCC 主導",
+     "products": "高容 MLCC/電源電感",
+     "note": "高階 MLCC 約 26% 全球居首（村田+三星電機+TDK 前三約 60-65%）、AI MLCC 2030 達 2025 之 3.3 倍、47μF 最缺",
+     "src": "https://money.udn.com/money/story/12926/9190487"
+    },
+    {
+     "name": "Samsung Electro-Mech",
+     "ticker": "009150.KS",
+     "country": "KR",
+     "share": "高階 MLCC #2",
+     "products": "車規/伺服器 MLCC",
+     "note": "高階雙雄"
+    },
+    {
+     "name": "國巨 Yageo",
+     "ticker": "2327.TW",
+     "country": "TW",
+     "share": "MLCC/鉭電容台廠",
+     "products": "MLCC/鉭聚電容/電感",
+     "note": "AI 占 Q1'26 營收 13-15%、旗下 Kemet 鉭電容自 6 月累計漲幅達 65%（Panasonic SP-Cap 7/1 起漲 20-30% 同步）、市值破兆、大摩 2026-06 調高目標價至 1,355 元",
+     "src": "https://money.udn.com/money/story/5612/9510775"
+    },
+    {
+     "name": "TDK / 太陽誘電",
+     "ticker": "6762.T / 6976.T",
+     "country": "JP",
+     "share": "MLCC/電感",
+     "products": "MLCC/電源電感",
+     "note": "日系被動元件"
+    },
+    {
+     "name": "華新科 Walsin",
+     "ticker": "2492.TW",
+     "country": "TW",
+     "share": "MLCC 台廠 #2",
+     "products": "MLCC/晶片電阻",
+     "note": "AI 伺服器配套"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-psu"
+    },
+    {
+     "id": "f-vrm"
+    }
+   ],
+   "sources": [
+    {
+     "label": "村田 AI MLCC 需求 3 倍 (經濟日報)",
+     "url": "https://money.udn.com/money/story/12926/9190487"
+    }
+   ]
+  },
+  {
+   "id": "t-coldplate",
+   "row": "thermal",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "冷板 cold plate / 水冷板",
+   "nameEn": "Cold Plate",
+   "competition": "oligopoly",
+   "single": "客戶獨家級 · 奇鋐 GB300 水冷板主供；健策 封裝級 lid/IHS 最貼 CoWoS",
+   "desc": "直接貼在 GPU/CPU 上、以冷卻液帶走 70–80% 熱的水冷板（cold plate），是液冷四件套核心、AI 散熱最高價值。",
+   "marketSize": "奇鋐+雙鴻 60-75%",
+   "growth": "液冷核心",
+   "share": "null",
+   "analysis": "奇鋐（GB300 水冷板主供、連 10 月營收創高）、雙鴻（cold plate/EPS 28.26 創高）、健策（封裝級 lid/IHS/In-TIM 最貼 CoWoS）；國際 Boyd、Cooler Master、AVC。微通道（microchannel）為下一升級。",
+   "companies": [
+    {
+     "name": "奇鋐 AVC",
+     "ticker": "3017.TW",
+     "country": "TW",
+     "share": "水冷板 #1",
+     "products": "cold plate/水冷板/微通道",
+     "note": "GB300 主供、5 月營收 158.7 億 YoY+60.6%、前 5 月 YoY+90.3% 創同期新高",
+     "src": "https://www.sinotrade.com.tw/richclub/hotstock/11%E6%9C%88%E6%95%A3%E7%86%B1%E6%97%8F%E7%BE%A4%E7%87%9F%E6%94%B6%E4%B8%80%E8%A1%A8%E7%9C%8B%E6%87%82-AI%E6%B6%B2%E5%86%B7%E6%95%A3%E7%86%B1%E5%85%A8%E9%9D%A2%E5%99%B4%E7%99%BC-%E5%A5%87%E9%8B%90%E9%80%A3-10-%E6%9C%88%E5%89%B5%E9%AB%98-%E9%9B%99%E9%B4%BB%E5%81%A5%E7%AD%96%E9%BD%8A%E6%8F%9A-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6938c869882eec4a6b19f926"
+    },
+    {
+     "name": "雙鴻 Auras",
+     "ticker": "3324.TW",
+     "country": "TW",
+     "share": "水冷板 #2",
+     "products": "cold plate/微通道",
+     "note": "2025 EPS 28.26 創高",
+     "src": "https://statementdog.com/news/15880"
+    },
+    {
+     "name": "健策 Jentech",
+     "ticker": "3653.TW",
+     "country": "TW",
+     "share": "封裝級 lid/IHS",
+     "products": "CoWoS lid/IHS/In-TIM",
+     "note": "最貼 CoWoS 製程散熱單點"
+    },
+    {
+     "name": "Boyd Thermal (Eaton)",
+     "ticker": "ETN",
+     "country": "US",
+     "share": "國際冷板（併入 Eaton）",
+     "products": "cold plate/CDU/液冷模組",
+     "note": "Eaton 2026-03 以 95 億美元收購 Boyd Thermal（2026E 營收貢獻上修至 ~17 億美元）、grid-to-chip 整合",
+     "src": "https://www.datacenterdynamics.com/en/news/eaton-acquires-boyd-thermal-for-95bn-to-further-liquid-cooling-portfolio/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GB300 全面液冷、奇鋐雙鴻受惠 (CMoney)",
+     "url": "https://cmnews.com.tw/article/sara-58e9ef62-d8cb-11ef-945e-0c799e674e53"
+    }
+   ]
+  },
+  {
+   "id": "t-cdu",
+   "row": "thermal",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "CDU 冷卻液分配單元",
+   "nameEn": "CDU · Coolant Distribution Unit",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "冷卻液分配單元（CDU），把熱從機櫃帶到設施側冷卻塔（L2L）或風側（L2A），含泵浦/熱交換器/冗餘液路。",
+   "marketSize": "L2L/L2A",
+   "growth": "整櫃必備",
+   "share": "null",
+   "analysis": "台達（整櫃 CDU）、Vertiv（in-row/in-rack CDU）、Boyd、高力（板式熱交換器+CDU、Nvidia 認證待證）、雙鴻；廣運金運（自研 2.5MW 超大型 CDU、Redfish 架構、進軍日本算力）。CDU 為整櫃液冷必備。",
+   "companies": [
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "整櫃 CDU",
+     "products": "in-rack/in-row CDU",
+     "note": "電源散熱整合"
+    },
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "CDU 國際領導",
+     "products": "Liebert in-row/in-rack CDU",
+     "note": "Nvidia 參考設計"
+    },
+    {
+     "name": "高力 Kaori",
+     "ticker": "8996.TW",
+     "country": "TW",
+     "share": "熱交換+CDU",
+     "products": "板式熱交換器/CDU",
+     "note": "Nvidia 認證（待證）",
+     "src": "https://money.udn.com/money/story/5607/9329876"
+    },
+    {
+     "name": "廣運金運 Kenmec",
+     "ticker": "6125.TW",
+     "country": "TW",
+     "share": "大型 CDU",
+     "products": "2.5MW 超大型液冷 CDU",
+     "note": "Redfish、進軍日本算力",
+     "src": "https://finance.ettoday.net/news/3083271"
+    },
+    {
+     "name": "Boyd Thermal(Eaton) / 雙鴻",
+     "ticker": "ETN / 3324.TW",
+     "country": "US",
+     "share": "CDU 模組",
+     "products": "CDU/液冷模組",
+     "note": "Boyd 2026-03 併入 Eaton；Schneider 以 Motivair 推 2.5MW CDU；Vertiv 2026-04 併 Strategic Thermal Labs（冷板/server-side 液冷）、2026-06 併 ThermoKey（熱交換/heat rejection、強化 EMEA）",
+     "src": "https://www.datacenterdynamics.com/en/news/schneider-electric-and-motivair-unveil-first-joint-liquid-cooling-portfolio/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "金運 2.5MW 大型 CDU (ETtoday)",
+     "url": "https://finance.ettoday.net/news/3083271"
+    }
+   ]
+  },
+  {
+   "id": "t-manifold",
+   "row": "thermal",
+   "col": 11,
+   "span": 1,
+   "kind": "rail",
+   "name": "分歧管 / UQD 快接頭",
+   "nameEn": "Manifold · UQD Quick Disconnect",
+   "competition": "oligopoly",
+   "single": "規格主導 · CPC(Colder)/Danfoss/Parker 主導 UQD 規格；台廠富世達進 GB300 UQD、廣運/福華切入",
+   "desc": "機櫃內冷卻液分配的分歧管（manifold）與通用快接頭（UQD），防漏/熱插拔關鍵，是液冷規格瓶頸。",
+   "marketSize": "規格主導單點",
+   "growth": "規格瓶頸",
+   "share": "null",
+   "analysis": "UQD 為 OCP 開放標準，規格由 CPC（Colder Products）、Danfoss、Parker Hannifin、Staubli 國際主導（top-10 廠商約佔 81% 營收、防漏/盲插標準制定者）；台廠富世達（進 Nvidia GB300 UQD 供應鏈、AI 水冷雙引擎）、福華、廣運切入快接頭/manifold，但規格話語權在外商。屬規格認證單點——台廠是規格接受者非制定者。",
+   "companies": [
+    {
+     "name": "CPC (Colder Products)",
+     "ticker": "—",
+     "country": "US",
+     "share": "UQD 規格主導",
+     "products": "液冷盲插快接頭/UQD",
+     "note": "Dover 旗下、規格制定者"
+    },
+    {
+     "name": "Danfoss / Parker / Staubli",
+     "ticker": "— / PH / —",
+     "country": "DK",
+     "share": "UQD/manifold",
+     "products": "快接頭/分歧管",
+     "note": "Parker=PH、Danfoss/Staubli 未上市"
+    },
+    {
+     "name": "富世達 Fositek",
+     "ticker": "6805.TW",
+     "country": "TW",
+     "share": "UQD 台廠",
+     "products": "UQD 快接頭/液冷件",
+     "note": "進 Nvidia GB300 UQD 供應鏈",
+     "src": "https://www.pocket.tw/school/report/SCHOOL/4862/"
+    },
+    {
+     "name": "福華 / 廣運 Kenmec",
+     "ticker": "8085.TWO / 6125.TW",
+     "country": "TW",
+     "share": "快接/manifold 台廠",
+     "products": "快接頭/分歧管",
+     "note": "液冷連接切入"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "富世達 進 Nvidia GB300 UQD (口袋學堂)",
+     "url": "https://www.pocket.tw/school/report/SCHOOL/4862/"
+    }
+   ]
+  },
+  {
+   "id": "t-vc",
+   "row": "thermal",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "熱導管 / 均熱板 VC",
+   "nameEn": "Heat Pipe · Vapor Chamber",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "氣冷與輔助散熱用熱導管（heat pipe）與均熱板（vapor chamber, VC），2D 均溫；液冷時代轉為輔助/邊緣應用。",
+   "marketSize": "台廠長尾",
+   "growth": "氣冷+輔助",
+   "share": "null",
+   "analysis": "台廠超眾（VC/heat pipe，月產能百萬級）、泰碩（VC/heat pipe）、力致（VC）、雙鴻；高功率液冷下熱導管/VC 退為氣冷輔助與部分元件散熱，仍有結構需求但成長慢於液冷。",
+   "companies": [
+    {
+     "name": "超眾 Chaun-Choung",
+     "ticker": "6230.TWO",
+     "country": "TW",
+     "share": "VC/heat pipe 台廠",
+     "products": "vapor chamber/heat pipe",
+     "note": "月產能百萬級"
+    },
+    {
+     "name": "泰碩 Taisol",
+     "ticker": "3338.TWO",
+     "country": "TW",
+     "share": "VC/heat pipe",
+     "products": "均溫板/熱導管/薄型 VC",
+     "note": "散熱台廠",
+     "src": "https://www.taisol.com/thermal/vapor-chamber/"
+    },
+    {
+     "name": "力致 Forcecon",
+     "ticker": "3483.TWO",
+     "country": "TW",
+     "share": "VC 台廠",
+     "products": "vapor chamber/散熱模組",
+     "note": "VC 供應",
+     "src": "https://www.forcecon.com/zh-hant/product/vapor-chamber/"
+    },
+    {
+     "name": "雙鴻 Auras",
+     "ticker": "3324.TW",
+     "country": "TW",
+     "share": "VC+液冷",
+     "products": "VC/heat pipe/cold plate",
+     "note": "氣液冷兼具"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "泰碩 均溫板 (官網)",
+     "url": "https://www.taisol.com/thermal/vapor-chamber/"
+    }
+   ]
+  },
+  {
+   "id": "t-fan",
+   "row": "thermal",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "風扇 / TIM 導熱介面 / 浸沒式",
+   "nameEn": "Fan · TIM · Immersion",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "系統風扇（fan，氣冷+L2A 輔助）、導熱介面材料（TIM）與前瞻浸沒式（immersion）冷卻。",
+   "marketSize": "配套",
+   "growth": "輔助+前瞻",
+   "share": "null",
+   "analysis": "風扇：台達、建準（Sunon）、AVC 寡占伺服器風扇；TIM：Honeywell、信越、中石科（液態金屬/導熱膏）；浸沒式（immersion）多在試點（GRC/LiquidStack/3M 退出 PFAS）為前瞻方案。液冷主流下風扇轉 L2A 輔助。",
+   "companies": [
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "伺服器風扇",
+     "products": "高轉速伺服器風扇",
+     "note": "氣冷+L2A 輔助"
+    },
+    {
+     "name": "建準 Sunon",
+     "ticker": "2421.TW",
+     "country": "TW",
+     "share": "風扇台廠",
+     "products": "DC 風扇/散熱風扇",
+     "note": "伺服器風扇"
+    },
+    {
+     "name": "Honeywell / 信越",
+     "ticker": "HON / 4063.T",
+     "country": "US",
+     "share": "TIM 領導",
+     "products": "導熱膏/TIM/PCM",
+     "note": "信越=Shin-Etsu"
+    },
+    {
+     "name": "中石科技 Sinwa",
+     "ticker": "300684.SZ",
+     "country": "CN",
+     "share": "TIM 中系",
+     "products": "導熱介面材料/液態金屬",
+     "note": "中國 TIM"
+    },
+    {
+     "name": "GRC / LiquidStack",
+     "ticker": "— / —",
+     "country": "US",
+     "share": "浸沒式前瞻",
+     "products": "single/two-phase immersion",
+     "note": "試點、3M 退 PFAS（待證）"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-rack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "2026 機櫃級液冷革命、風扇轉輔助 (浪花科技)",
+     "url": "https://roamer-tech.com/high-density-computing-liquid-cooling-revolution-2026/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "f-grid",
+   "f-psu"
+  ],
+  [
+   "f-psu",
+   "f-board"
+  ],
+  [
+   "f-board",
+   "f-vrm"
+  ],
+  [
+   "f-vrm",
+   "f-rack"
+  ],
+  [
+   "f-rack",
+   "f-demand"
+  ],
+  [
+   "p-hvdc",
+   "f-grid"
+  ],
+  [
+   "p-busbar",
+   "f-psu"
+  ],
+  [
+   "p-gan",
+   "f-board"
+  ],
+  [
+   "p-passive",
+   "f-psu"
+  ],
+  [
+   "p-passive",
+   "f-vrm"
+  ],
+  [
+   "p-bbu",
+   "f-rack"
+  ],
+  [
+   "t-coldplate",
+   "f-rack"
+  ],
+  [
+   "t-cdu",
+   "f-rack"
+  ],
+  [
+   "t-manifold",
+   "f-rack"
+  ],
+  [
+   "t-vc",
+   "f-rack"
+  ],
+  [
+   "t-fan",
+   "f-rack"
+  ]
+ ],
+ "_proposed": {}
+}

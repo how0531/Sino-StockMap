@@ -1,0 +1,592 @@
+{
+ "id": "networking",
+ "tab": "Networking",
+ "title": "AI 資料中心網路供應鏈 (Switch / NIC / Interconnect)",
+ "subtitle": "AI Networking — 把上萬顆 GPU 連成超級電腦的網路。兩大戰場：scale-up（機櫃內 NVLink/UALink）vs scale-out（跨櫃 Ethernet/InfiniBand）。Broadcom Tomahawk 6（102.4T）領先 NVIDIA Spectrum-X 約一年、Marvell Teralynx 追趕；NIC/DPU 由 NVIDIA ConnectX/BlueField 主導、Broadcom/AMD Pensando 競逐；Arista 為白牌系統龍頭（重度用 Broadcom 晶片）；台廠智邦（Accton）全球白牌交換器領先；Astera Labs/Credo 在 retimer/AEC 卡位。UALink + Ultra Ethernet 聯盟挑戰 NVIDIA 封閉生態。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 8
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "45+"
+  },
+  {
+   "k": "鎖喉／關鍵單點",
+   "v": 3,
+   "sub": "Broadcom 交換晶片·NVIDIA NVLink/ConnectX·智邦白牌",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "silicon",
+   "label": "交換晶片 / NIC / DPU Silicon",
+   "main": false
+  },
+  {
+   "id": "system",
+   "label": "交換器系統 / 白牌 Systems",
+   "main": true
+  },
+  {
+   "id": "interconnect",
+   "label": "Retimer / AEC / Scale-up Fabric",
+   "main": false
+  },
+  {
+   "id": "asia",
+   "label": "亞洲零組件 / 國產網通 Asia",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "switch_silicon",
+   "row": "silicon",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "交換晶片 Switch ASIC",
+   "nameEn": "Switch Silicon",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Broadcom Tomahawk 6（102.4T）領先 NVIDIA Spectrum-X 約一年；merchant silicon 主導",
+   "desc": "資料中心交換器的核心 ASIC。頻寬從 51.2T → 102.4T 升級，決定 AI 叢集的擴展性與延遲。",
+   "marketSize": "鎖喉點",
+   "growth": "102.4T 世代",
+   "share": "null",
+   "analysis": "Broadcom（AVGO，merchant switch silicon 約 55% 營收市占龍頭、高階乙太交換晶片估佔約 80%、Tomahawk 6 業界首款 102.4T、Jericho 3 路由、TH6 兩層即連 128K XPU）領先 NVIDIA（Spectrum-X / Quantum InfiniBand、Spectrum-6 ASIC 102.4T、Spectrum-X1600 Photonics 平台 409.6T，2026 H2 隨 Rubin 出貨）；Marvell（Teralynx T100 102.4T、2026/06 發表）、Cisco（Silicon One G200/G300）競逐。Broadcom 同時推 scale-up Ethernet 搶在 UALink 成熟前卡位。",
+   "companies": [
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "交換晶片 #1",
+     "products": "Tomahawk 6 / TH6-Davisson CPO (102.4T)",
+     "note": "TH6 自 2026/03/12 進入量產出貨（CPO 版 Davisson H1 2026 放量、初期鎖定 10 萬+ XPU 叢集；TH5-Bailly CPO 已出貨逾 5 萬台）、下代 200T 本季 tape-out；Q2 FY26 AI 營收 $10.8B +143% YoY、Q3 指引 AI $16.0B +200% YoY、FY26 AI 上修至 $56B、FY27 目標 >$100B",
+     "src": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-ships-tomahawk-6-worlds-first-1024-tbps-switch"
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "Spectrum-X / InfiniBand",
+     "products": "Spectrum-4 / Quantum-X / Spectrum-X1600",
+     "note": "Spectrum-6 ASIC 102.4T；Spectrum-X1600 Photonics 409.6T 2026 H2；Quantum-X Photonics 2026 年初出貨"
+    },
+    {
+     "name": "Marvell",
+     "ticker": "MRVL",
+     "country": "US",
+     "share": "Teralynx",
+     "products": "Teralynx T100 (102.4T, 3nm)",
+     "note": "2026/06/01 發表 Teralynx T100（3nm 單晶、<1000W、較對手低 ~25% 功耗）、Q2 2026 送樣、但量產要到 2027 年中、實際落後 Broadcom TH6 約一年；NVIDIA 2026/03/31 以 $2B 入股並開放 NVLink Fusion，由 Marvell 供客製 XPU 與 scale-up 網路"
+    },
+    {
+     "name": "Cisco",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "Silicon One",
+     "products": "Silicon One G200/G300",
+     "note": "2025/10 推 fat interconnect"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "switch_brand"
+    },
+    {
+     "id": "whitebox_tw"
+    }
+   ],
+   "sources": [
+    {
+     "label": "102.4T Ethernet switch ASIC (NextPlatform)",
+     "url": "https://www.nextplatform.com/2025/06/03/the-ai-datacenter-is-ravenous-for-102-4-tb-sec-ethernet/"
+    }
+   ]
+  },
+  {
+   "id": "nic_dpu",
+   "row": "silicon",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "NIC / DPU / SmartNIC",
+   "nameEn": "NIC / DPU / SmartNIC",
+   "competition": "oligopoly",
+   "single": "客戶綁定 · NVIDIA ConnectX/BlueField 與 GPU 綁售；幾乎每顆 GPU 配一張 NIC",
+   "desc": "伺服器端網路介面：NIC（網卡）、DPU（資料處理器）、SmartNIC，卸載網路/儲存/安全。",
+   "marketSize": "null",
+   "growth": "每 GPU 一張",
+   "share": "null",
+   "analysis": "NVIDIA（ConnectX-8 / BlueField-4，與 GPU 平台綁售、scale-out 主力）；Broadcom（Thor 2 NIC）、AMD（Pensando DPU，收購而來）、Intel（IPU）、Marvell。NIC/DPU 隨 GPU 出貨倍增，是 networking 中與算力最直接連動的一段。",
+   "companies": [
+    {
+     "name": "NVIDIA ConnectX/BlueField",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "NIC/DPU 主導",
+     "products": "ConnectX-8 NIC / BlueField-4 DPU",
+     "note": "與 GPU 平台綁售"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "Thor NIC",
+     "products": "Thor 2 / 400G NIC",
+     "note": "Ethernet NIC"
+    },
+    {
+     "name": "AMD Pensando",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "DPU / AI NIC",
+     "products": "Pollara 400G / Vulcano 800G AI NIC",
+     "note": "Vulcano UEC 1.0 相容、2026 隨 Helios MI400 機櫃出貨"
+    },
+    {
+     "name": "Intel IPU / Marvell",
+     "ticker": "INTC / MRVL",
+     "country": "US",
+     "share": "IPU / DPU",
+     "products": "Mount Morgan IPU / OCTEON DPU",
+     "note": "第二梯隊"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "switch_brand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA networking (官方)",
+     "url": "https://www.nvidia.com/en-us/networking/"
+    }
+   ]
+  },
+  {
+   "id": "switch_brand",
+   "row": "system",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "交換器系統 / 品牌",
+   "nameEn": "Switch Systems & Brands",
+   "competition": "competitive",
+   "single": "Arista 白牌系統龍頭（重度用 Broadcom 晶片）；NVIDIA 整櫃綁售搶份額",
+   "desc": "成品交換器系統與軟體（NOS）。AI 資料中心 scale-out 以 Ethernet 為主流。",
+   "marketSize": "系統主力",
+   "growth": "800G→1.6T",
+   "share": "null",
+   "analysis": "資料中心乙太交換器營收 NVIDIA 已遠超 Cisco/Arista（最新季 NVIDIA 約 $11B vs Arista $1.66B +34% / Cisco $1.26B +9%，整體 DC Ethernet switch 市場 YoY +近 40%；NVIDIA 自 Q2'25 首度登頂後持續領先，IDC Q1 2026 數據確認 NVIDIA 以 21.5% 份額居 DC 乙太交換器營收第一、營收 $2.1B +192.7% YoY，Arista DC 區段 20.7% 居次、總體 14.6%，整體 DC 乙太交換市場 +39.8% YoY 至 $15.4B，已非三家並駕）。Arista（ANET，雲端交換器龍頭、軟體+系統整合強、重度依賴 Broadcom 晶片、力推 800G）、Cisco（CSCO，Silicon One 自研 + 系統）、NVIDIA（Spectrum-X 整櫃綁售、營收 7.5 倍 YoY 暴衝至季 $2.26B）、Juniper（被 HPE 收購）。⚠Arista 帳面龍頭但其交換晶片幾乎全外購自 Broadcom，定價權實由上游 Broadcom 掌握。",
+   "companies": [
+    {
+     "name": "Arista Networks",
+     "ticker": "ANET",
+     "country": "US",
+     "share": "雲端交換器龍頭",
+     "products": "7800R/7060X 800G 交換器 + EOS",
+     "note": "重度用 Broadcom 晶片；Q1 2026 營收 $2.71B +35% YoY、2026 AI 目標上修至 $3.5B、全年指引 $11.5B",
+     "src": "https://www.arista.com/en/company/news/press-release/24017-pr-20260505"
+    },
+    {
+     "name": "Cisco",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "企業+AI POD",
+     "products": "Nexus / Silicon One 系統",
+     "note": "自研晶片+系統"
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "整櫃綁售",
+     "products": "Spectrum-X / Quantum 交換器",
+     "note": "Q1 FY27 DC 網路營收 $14.8B +199% YoY；DC 乙太交換器營收已遠超 Cisco+Arista 之和，於 back-end GPU-to-GPU fabric 實質主導"
+    },
+    {
+     "name": "Juniper (HPE) / Nokia",
+     "ticker": "HPE / NOK",
+     "country": "US",
+     "share": "企業/電信",
+     "products": "Juniper QFX / Nokia SR",
+     "note": "Juniper 併入 HPE"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "switch_silicon"
+    },
+    {
+     "id": "nic_dpu"
+    },
+    {
+     "id": "interconnect"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Arista 800G AI networking",
+     "url": "https://www.aicerts.ai/news/arista-pushes-800g-for-ai-datacenter-networking-growth/"
+    }
+   ]
+  },
+  {
+   "id": "whitebox_tw",
+   "row": "system",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "台灣白牌交換器 ODM",
+   "nameEn": "Taiwan White-Box ODM",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · 智邦（Accton）全球白牌交換器領先、客戶 MSFT/GOOG/META/AMZN/NVIDIA",
+   "desc": "hyperscaler 採用白牌（disaggregated）交換器降本，台灣 ODM 拿下絕大多數白牌組裝。",
+   "marketSize": "客戶獨家",
+   "growth": "hyperscaler 採用",
+   "share": "null",
+   "analysis": "白牌交換器全球呈雙雄寡占：智邦 Accton 約 18-20% + Celestica 兩家合計約 90% 市占（Celestica 為加拿大廠、未列於本節點）。智邦（2345.TW，年產逾 500 萬台、800G/1.6T、CPO 白牌錨點、客戶涵蓋四大雲 + Cisco/NVIDIA）；達創（Delta 子）、緯穎（6669.TW）、鴻佰/Ingrasys（鴻海系）為次級供應。⚠絃外之音：真正的白牌龍頭組合是『智邦+Celestica』，僅看台廠會低估 Celestica 的卡位 —— Celestica 已拿下一家 hyperscaler 的 1.6T CPO 乙太交換器設計+製造案（HPS 程式、預計 2027 量產），在下世代 CPO 白牌卡位領先。",
+   "companies": [
+    {
+     "name": "智邦 Accton",
+     "ticker": "2345.TW",
+     "country": "TW",
+     "share": "全球白牌交換器領先",
+     "products": "800G/1.6T 白牌交換器 + CPO",
+     "note": "客戶 MSFT/GOOG/META/AMZN/Cisco/NVIDIA；2026/05 月營收 NT$286.23 億 +56.6% YoY、前 5 月累計 NT$1,261 億 +60% YoY、800G 出貨續強",
+     "src": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/221773"
+    },
+    {
+     "name": "緯穎 Wiwynn",
+     "ticker": "6669.TW",
+     "country": "TW",
+     "share": "hyperscaler 系統",
+     "products": "交換器 + AI server 整櫃",
+     "note": "白牌系統"
+    },
+    {
+     "name": "達創 / 鴻佰 Ingrasys",
+     "ticker": "— / 2317.TW",
+     "country": "TW",
+     "share": "ODM",
+     "products": "白牌交換器 ODM",
+     "note": "Delta 子 / 鴻海系"
+    },
+    {
+     "name": "中磊 Sercomm / 啟碁 WNC",
+     "ticker": "5388.TWO / 6285.TW",
+     "country": "TW",
+     "share": "邊緣網通",
+     "products": "邊緣交換 / 網通設備",
+     "note": "邊緣/企業網通"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "switch_silicon"
+    },
+    {
+     "id": "comp_tw"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "智邦科技 (官方)",
+     "url": "https://www.accton.com/"
+    }
+   ]
+  },
+  {
+   "id": "interconnect",
+   "row": "interconnect",
+   "col": 1,
+   "span": 2,
+   "kind": "rail",
+   "name": "Retimer / AEC / DAC 互連",
+   "nameEn": "Retimer / AEC / DAC",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · Astera Labs（PCIe/CXL retimer）+ Credo（AEC 主動電纜）卡位 224G 互連",
+   "desc": "高速訊號互連：retimer（訊號重整）、AEC（主動電纜）、DAC（直連銅纜），解決機櫃內 224G 訊號衰減。",
+   "marketSize": "高速成長",
+   "growth": "224G 世代",
+   "share": "null",
+   "analysis": "Astera Labs（ALAB，PCIe/CXL/乙太 retimer + Scorpio fabric switch、Q1 2026 營收 $308M +93% YoY）、Credo（CRDO，AEC 主動電纜領導、224G）、Amphenol（APH，連接器/纜線）、Marvell/Semtech（retimer + 併 Celestial AI 切入光 I/O）。⚠2026/06 OFC 競爭升溫：Broadcom 於 OFC 2026 推 Agera 3 200G/lane retimer 與最長 6m AEC，正面切入 Astera/Credo 互連地盤；Marvell 已於 2026/02/02 完成 Celestial AI 併購、把戰線拉到光學 scale-up fabric。機櫃內銅互連（scale-up）是 224G 世代成長最快的一段，但光互連（光 I/O / OCS）正快速吸金。",
+   "companies": [
+    {
+     "name": "Astera Labs",
+     "ticker": "ALAB",
+     "country": "US",
+     "share": "PCIe/CXL retimer 領先",
+     "products": "Aries retimer / Scorpio fabric",
+     "note": "Q1 2026 $308.4M +93% YoY、Q2 指引 $355-365M、Scorpio X 系列 320-lane 開始放量",
+     "src": "https://investors.asteralabs.com/"
+    },
+    {
+     "name": "Credo Technology",
+     "ticker": "CRDO",
+     "country": "US",
+     "share": "AEC 主動電纜領導",
+     "products": "AEC / 224G SerDes / 光學 DSP",
+     "note": "FY26 全年營收 $1.34B（YoY 翻三倍）、Q4 FY26 單季 $437M +157% YoY；Q1 FY27 指引 $465-475M、FY27 YoY >80%、光學產品 FY27 >$600M（ZeroFlap/SiPho PIC/光 DSP 各 >$100M）"
+    },
+    {
+     "name": "Amphenol",
+     "ticker": "APH",
+     "country": "US",
+     "share": "連接器/纜線",
+     "products": "高速連接器 / DAC / 背板",
+     "note": "互連巨頭"
+    },
+    {
+     "name": "Marvell / Semtech",
+     "ticker": "MRVL / SMTC",
+     "country": "US",
+     "share": "retimer / 224G + 光 I/O",
+     "products": "retimer / 224G IC / Celestial AI Photonic Fabric",
+     "note": "2026/02/02 已完成併購光互連新創 Celestial AI（前付 $3.25B、含里程碑最高 $5.5B），Photonic Fabric 光學 scale-up／記憶體解耦互連納入產品線、正面進攻 NVLink/UALink 與 Astera/Credo 銅互連；營收貢獻估 FY28 H2 起、FY28 Q4 年化 $500M",
+     "src": "https://investor.marvell.com/news-events/press-releases/detail/1005/marvell-completes-acquisition-of-celestial-ai"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "switch_brand"
+    },
+    {
+     "id": "whitebox_tw"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Astera Labs IR",
+     "url": "https://investors.asteralabs.com/"
+    }
+   ]
+  },
+  {
+   "id": "scaleup",
+   "row": "interconnect",
+   "col": 3,
+   "span": 2,
+   "kind": "rail",
+   "name": "Scale-up Fabric 標準戰",
+   "nameEn": "Scale-up Fabric Standards",
+   "competition": "monopoly",
+   "single": "NVIDIA NVLink 封閉領先 vs UALink + Ultra Ethernet 開放聯盟挑戰",
+   "desc": "機櫃內 GPU-to-GPU 高頻寬互連標準之爭：NVIDIA NVLink/NVSwitch（封閉）vs UALink（開放）vs scale-up Ethernet。",
+   "marketSize": "生態戰",
+   "growth": "標準成形",
+   "share": "null",
+   "analysis": "NVIDIA NVLink 5 / NVSwitch（GB200 NVL72 機櫃內 1.8TB/s）為 2026 唯一量產出貨的 scale-up fabric、實質獨佔；UALink 1.0（200G、最多 1,024 加速器）硬體最快 2026 Q4-2027 由 AMD Helios/Intel/Astera 出貨、尚無對等競品在量產。⚠絃外之音：NVLink Fusion 名義『開放』給 Marvell/MediaTek/Astera/Alchip 與第三方 CPU，但 NVIDIA 保留通訊控制器與 PHY 層、且第三方須付授權才能用 NVLink Switch 晶片 —『開放』實為軟性生態鎖定，帳面開放 vs 實質控制力落差極大。UEC（scale-out 開放）對抗 InfiniBand；PCIe/CXL 為記憶體互連。",
+   "companies": [
+    {
+     "name": "NVIDIA NVLink/NVSwitch",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "scale-up 封閉領先",
+     "products": "NVLink 5 / NVSwitch",
+     "note": "GB200 NVL72 1.8TB/s"
+    },
+    {
+     "name": "UALink Consortium",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "開放挑戰者",
+     "products": "UALink 200G 1.0 + 擴充規格",
+     "note": "2026/04 批准 In-Network Compute/Chiplet/Manageability 新規格；AMD Helios 首採 UALink-over-Ethernet"
+    },
+    {
+     "name": "Ultra Ethernet Consortium",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "scale-out 開放",
+     "products": "UEC Ethernet for AI",
+     "note": "對抗 InfiniBand"
+    },
+    {
+     "name": "Broadcom (scale-up Ethernet)",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "搶位",
+     "products": "Tomahawk Ultra scale-up",
+     "note": "卡位 UALink 成熟前",
+     "src": "https://www.wheelersnetwork.com/2025/06/broadcom-pitches-ethernet-for-ai-scale.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "switch_brand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Broadcom pitches Ethernet for scale-up",
+     "url": "https://www.wheelersnetwork.com/2025/06/broadcom-pitches-ethernet-for-ai-scale.html"
+    }
+   ]
+  },
+  {
+   "id": "comp_tw",
+   "row": "asia",
+   "col": 1,
+   "span": 2,
+   "kind": "rail",
+   "name": "台灣網通零組件 / 連接",
+   "nameEn": "Taiwan Networking Components",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "交換器/伺服器用連接器、線材、BMC 管理晶片等台灣零組件。",
+   "marketSize": "null",
+   "growth": "AI 拉動",
+   "share": "null",
+   "analysis": "嘉澤（3533.TW，連接器/socket）、貿聯-KY（3665.TW，BizLink 高速線材/纜線組）、信驊（5274.TWO，Aspeed BMC 伺服器管理晶片近壟斷）、健鼎（3044.TW，switch PCB）。台廠在連接、線材、BMC 有關鍵利基。",
+   "companies": [
+    {
+     "name": "信驊 Aspeed",
+     "ticker": "5274.TWO",
+     "country": "TW",
+     "share": "BMC ~70% 近壟斷",
+     "products": "伺服器 BMC 管理晶片",
+     "note": "全球 BMC 市占約 70%、每台 AI 伺服器必配的隱性單點；AI server 帶動 2026 營收估增 ~25%",
+     "src": "https://www.digitimes.com/news/a20260325PD231/aspeed-bmc-ic-design-market-share-chips.html"
+    },
+    {
+     "name": "嘉澤 Lotes",
+     "ticker": "3533.TW",
+     "country": "TW",
+     "share": "連接器/socket",
+     "products": "高速連接器 / GPU socket",
+     "note": "AI server 連接"
+    },
+    {
+     "name": "貿聯-KY BizLink",
+     "ticker": "3665.TW",
+     "country": "TW",
+     "share": "高速線材",
+     "products": "高速纜線組 / DAC/AEC 線",
+     "note": "互連線材"
+    },
+    {
+     "name": "健鼎 Tripod",
+     "ticker": "3044.TW",
+     "country": "TW",
+     "share": "switch PCB",
+     "products": "交換器高速 PCB",
+     "note": "見 CCL 主題"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "whitebox_tw"
+    }
+   ],
+   "sources": [
+    {
+     "label": "信驊科技 IR",
+     "url": "https://www.aspeedtech.com/"
+    }
+   ]
+  },
+  {
+   "id": "networking_cn",
+   "row": "asia",
+   "col": 3,
+   "span": 2,
+   "kind": "rail",
+   "name": "中國國產網通",
+   "nameEn": "China Domestic Networking",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "中國本土交換器/路由器與國產交換晶片，服務中國 AI 算力國產化。",
+   "marketSize": "null",
+   "growth": "國產替代",
+   "share": "null",
+   "analysis": "H3C（紫光股份 000938.SZ）、中興 ZTE（000063.SZ）、銳捷網路（301165.SZ）為中國交換器/路由主力；盛科通信 Centec（688702.SS）為中國少數國產交換晶片。華為（未上市）以 CloudEngine 自研。中國 AI 算力國產化拉動本土 networking。",
+   "companies": [
+    {
+     "name": "H3C 紫光股份",
+     "ticker": "000938.SZ",
+     "country": "CN",
+     "share": "中國交換器領先",
+     "products": "CloudEngine / 資料中心交換器",
+     "note": "中國企業網主力"
+    },
+    {
+     "name": "中興 ZTE",
+     "ticker": "000063.SZ",
+     "country": "CN",
+     "share": "電信+資料中心",
+     "products": "交換器 / 路由 / 光網路",
+     "note": "電信設備系"
+    },
+    {
+     "name": "銳捷網路 Ruijie",
+     "ticker": "301165.SZ",
+     "country": "CN",
+     "share": "資料中心交換",
+     "products": "AI 資料中心交換器",
+     "note": "國產替代"
+    },
+    {
+     "name": "盛科通信 Centec",
+     "ticker": "688702.SS",
+     "country": "CN",
+     "share": "國產交換晶片",
+     "products": "Ethernet switch ASIC",
+     "note": "中國少數國產 switch silicon"
+    }
+   ],
+   "upstream": [],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "盛科通信 (上交所)",
+     "url": "https://www.centecnetworks.com/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "switch_silicon",
+   "switch_brand"
+  ],
+  [
+   "switch_silicon",
+   "whitebox_tw"
+  ],
+  [
+   "nic_dpu",
+   "switch_brand"
+  ],
+  [
+   "interconnect",
+   "switch_brand"
+  ],
+  [
+   "interconnect",
+   "whitebox_tw"
+  ],
+  [
+   "scaleup",
+   "switch_brand"
+  ],
+  [
+   "comp_tw",
+   "whitebox_tw"
+  ]
+ ],
+ "_proposed": {}
+}

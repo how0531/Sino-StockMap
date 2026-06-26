@@ -1,0 +1,645 @@
+{
+ "id": "ev_charging",
+ "tab": "EV 充電",
+ "title": "電動車充電基礎設施供應鏈 (EV Charging Infrastructure)",
+ "subtitle": "EV Charging — 充電從「燒錢圈地」轉向「網路營收 + 高毛利 SaaS + 賣鏟人晶片」的結構性成長。2026 H1 三催化齊發：① NACS(SAE J3400) 標準戰塵埃落定，幾乎全美車廠(Ford/GM/Rivian/Hyundai/Toyota…)已簽署，但 Tesla Supercharger 市佔自 52% 下滑至 ~51.6%、新增槍佔比僅 26%(他網新增近 2 倍)、恐 2026 內跌破 50%；② 800V/V4 超充換代與 V5 Mega-Stall(1.2MW MCS、原生 1000V);③ V2G 走向商業化(GM Energy 2026 起推雙向充電月租、Nuvve 併 Fermata)。整體市場 2026 約 $560 億、CAGR 22.3% 到 2034 達 $2,793 億。ChargePoint Q1 FY27 營收 +4%、SaaS 毛利率破紀錄 60%、連 3 季 YoY 成長；EVgo Q1 +45.5%(連 17 季雙位數)；Kempower 北美 +230%；台達電躋身全球前五大充電樁。⚠ 中國裝機 2,148 萬支但利用率 <10%、NEVI FY2026 撥款 $8.85 億但擬把美國製門檻拉高至 100%、政策反覆。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "市場規模",
+   "v": "$560B→$2.79T",
+   "sub": "2026→2034·CAGR 22.3%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 3,
+   "sub": "NACS 定+800V 換代+V2G 催化·政策反覆+利用率低風險",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "up",
+   "label": "上游：充電晶片 / 連接器纜線 Chips & Connectors",
+   "main": false
+  },
+  {
+   "id": "hw",
+   "label": "中游：充電硬體 OEM Charger Hardware",
+   "main": true
+  },
+  {
+   "id": "cpo",
+   "label": "充電網營運商 CPO Network Operators",
+   "main": false
+  },
+  {
+   "id": "sw",
+   "label": "CPMS 軟體 / V2G / 終端 Software · V2G · Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "charging_chip",
+   "row": "up",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "充電專用晶片 / SiC 功率模組",
+   "nameEn": "Charging Chips & SiC Power Modules",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · DC 快充與車載充電器(OBC) 的 SiC 功率模組由 Infineon/ST/onsemi 寡占",
+   "desc": "DC 快充樁功率級、車載充電器(OBC) 與 DC-DC 轉換器的核心是 SiC MOSFET 與充電 controller。200mm SiC 量產(2025 底) 使單片有效晶粒 +85%、模組成本逼近高階矽。",
+   "marketSize": "最深賣鏟人單點",
+   "growth": "SiC 成本逼平矽",
+   "share": "null",
+   "analysis": "充電基礎設施最直接、最不受 NACS 標準戰輸贏影響的「賣鏟人」——不論誰建網、不論 NACS/CCS，DC 快充與 OBC 都要買 SiC 模組。Infineon(IFNNY，CoolSiC Gen2、EV 充電方案完整、2,000V SiC 模組供 Electreon 無線道路充電)、STMicro(STM，Gen-3 SiC MOSFET、powertrain 效率 >99%)、onsemi(ON，EliteSiC、DC 快充專用模組與能源基礎設施方案) 為西方寡占三強；Wolfspeed(WOLF，SiC die/模組，重整後轉攻高壓)、ROHM(6963.T，SiC MOSFET+OBC)、TI(TXN，充電 controller/GaN/隔離元件) 補完。與既有 power_semi 主題切割：此處聚焦『充電/OBC 應用』而非車用 traction inverter。",
+   "companies": [
+    {
+     "name": "Infineon",
+     "ticker": "IFNNY",
+     "country": "DE",
+     "share": "充電 SiC 模組領導",
+     "products": "CoolSiC Gen2 / EV 充電方案 / 2000V SiC",
+     "note": "供 Electreon 無線道路充電 2000V SiC 模組；EV 充電方案最完整",
+     "src": "https://www.infineon.com/applications/industrial/ev-charging"
+    },
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "CH",
+     "share": "Gen-3 SiC",
+     "products": "Gen-3 SiC MOSFET / OBC / DC-DC",
+     "note": "powertrain 效率 >99%；OBC 與充電應用",
+     "src": "https://newsroom.st.com/media-center/press-item.html/c3283.html"
+    },
+    {
+     "name": "onsemi",
+     "ticker": "ON",
+     "country": "US",
+     "share": "DC 快充 SiC 模組",
+     "products": "EliteSiC / DC 快充模組",
+     "note": "能源基礎設施(DC Fast EV Charging) 專責方案",
+     "src": "https://www.onsemi.com/solutions/industrial/energy-infrastructure/dc-fast-ev-charging"
+    },
+    {
+     "name": "Wolfspeed",
+     "ticker": "WOLF",
+     "country": "US",
+     "share": "SiC 基板龍頭 ~33.7%",
+     "products": "SiC die / 基板 / 高壓模組",
+     "note": "2025/9 完成預打包式 Chapter 11、91 天削債 $4.6B(總債 -70%)、利息 -60%；領先 8 吋 SiC 晶圓轉換",
+     "src": "https://www.semiconductor-today.com/news_items/2025/sep/wolfspeed-300925.shtml"
+    },
+    {
+     "name": "ROHM",
+     "ticker": "6963.T",
+     "country": "JP",
+     "share": "日系 SiC",
+     "products": "SiC MOSFET / OBC",
+     "note": "車載充電器(OBC) 與 DC-DC SiC",
+     "src": "https://www.globenewswire.com/news-release/2026/01/12/3217070/0/en/SiC-for-Wireless-EV-Charging-Market-Forecast-to-2034-Featuring-Wolfspeed-Infineon-Technologies-STMicroelectronics-onsemi-ROHM-Semiconductor-and-More.html"
+    },
+    {
+     "name": "Texas Instruments",
+     "ticker": "TXN",
+     "country": "US",
+     "share": "controller / GaN",
+     "products": "充電 controller / GaN / 隔離元件",
+     "note": "充電拓樸與通訊介面晶片",
+     "src": "https://markets.financialcontent.com/wral/article/tokenring-2026-1-13-the-silicon-carbide-surge-how-stmicroelectronics-and-infineon-are-powering-the-2026-ev-revolution"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "charger_oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Infineon EV charging",
+     "url": "https://www.infineon.com/applications/industrial/ev-charging"
+    },
+    {
+     "label": "onsemi DC Fast EV Charging",
+     "url": "https://www.onsemi.com/solutions/industrial/energy-infrastructure/dc-fast-ev-charging"
+    }
+   ]
+  },
+  {
+   "id": "connector_cable",
+   "row": "up",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "連接器 / 液冷纜線 / 插座",
+   "nameEn": "Connectors & Liquid-Cooled Cables",
+   "competition": "competitive",
+   "single": "500A+ 大電流必須液冷纜線；NACS/CCS 連接器規格分歧",
+   "desc": "DC 快充 500A+ 大電流必須以液冷纜線散熱；NACS(SAE J3400)/CCS/CHAdeMO 連接器規格分歧是充電生態互通的關鍵零組件。",
+   "marketSize": "高壓快充零組件",
+   "growth": "500A+ 液冷剛需",
+   "share": "null",
+   "analysis": "Phoenix Contact(DE，未上市，CHARX 液冷纜線 Boost 700A / 持續 500A@1000V DC、IEC 62196-3-1、IATF 16949 車規) 為高功率液冷纜線標竿；Amphenol(APH)、TE Connectivity(TEL) 供充電連接器/總成；Stäubli(CH，未上市) 快充連接系統。台廠：健和興(3003.TW，充電連接器/端子)、信邦(3023.TW，充電線束/纜線總成) 是真實業績的台股零組件標的。",
+   "companies": [
+    {
+     "name": "Phoenix Contact",
+     "ticker": "—",
+     "country": "DE",
+     "share": "液冷纜線標竿",
+     "products": "CHARX 液冷纜線 700A Boost / 500A 持續",
+     "note": "未上市；1000V DC、IEC 62196-3-1、IATF 16949 車規",
+     "src": "https://www.tti.com/content/ttiinc/en/manufacturers/phoenix-contact/products/phoenix-contact-500a-liquid-cooled-charging-cables.html"
+    },
+    {
+     "name": "Amphenol",
+     "ticker": "APH",
+     "country": "US",
+     "share": "充電連接器",
+     "products": "充電連接器 / 纜線總成",
+     "note": "高壓充電互連方案",
+     "src": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    },
+    {
+     "name": "TE Connectivity",
+     "ticker": "TEL",
+     "country": "CH",
+     "share": "高壓連接器",
+     "products": "充電高壓連接器",
+     "note": "充電與車載互連",
+     "src": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    },
+    {
+     "name": "Stäubli",
+     "ticker": "—",
+     "country": "CH",
+     "share": "快充連接系統",
+     "products": "快充連接系統",
+     "note": "未上市；大電流連接",
+     "src": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    },
+    {
+     "name": "健和興",
+     "ticker": "3003.TW",
+     "country": "TW",
+     "share": "台廠充電連接器",
+     "products": "充電連接器 / 端子",
+     "note": "充電樁概念股；EV 充電連接",
+     "src": "https://news.cnyes.com/news/id/5610170"
+    },
+    {
+     "name": "信邦",
+     "ticker": "3023.TW",
+     "country": "TW",
+     "share": "台廠充電線束",
+     "products": "充電線束 / 纜線總成",
+     "note": "充電樁概念股；線束總成",
+     "src": "https://news.cnyes.com/news/id/5610170"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "charger_oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Phoenix Contact 500A 液冷纜線 (TTI)",
+     "url": "https://www.tti.com/content/ttiinc/en/manufacturers/phoenix-contact/products/phoenix-contact-500a-liquid-cooled-charging-cables.html"
+    },
+    {
+     "label": "DC 快充供應商生態 (GIREVE)",
+     "url": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    }
+   ]
+  },
+  {
+   "id": "charger_oem",
+   "row": "hw",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "充電硬體 OEM（AC 樁 / DC 快充 / OBC）",
+   "nameEn": "Charger Hardware OEM",
+   "competition": "competitive",
+   "single": "歐系(ABB/Alpitronic) 主導 DC 快充占 2/3 市場；台達躋身全球前五",
+   "desc": "AC 慢充樁、DC 快充樁與車載充電器(OBC) 的硬體製造。歐系主導 DC 快充(占 2/3 市場)，中美台各有強項。800V/V4 換代與雙向化是換機潮主軸。",
+   "marketSize": "$41B→$221B(2033) DC 快充",
+   "growth": "DC 快充 CAGR ~30%",
+   "share": "null",
+   "analysis": "ABB E-mobility(ABBN.SW，DC 快充龍頭、交付 >4.5 TWh) 與 Alpitronic(IT，未上市，HYC 系列) 並列雙雄；Kempower(KEMPOWR.HE，depot/車隊充電專長；Q1 2026 營收 +54%、北美 +230%、完成首場實地 MW 重卡充電、推 Kempower 2.0 拚全球前三)；台達電(2308.TW，全球前五大、AC/DC 25-200kW 與 D800V 320-350kW、EV 充電毛利率 28.8% 台廠最高、與 EVgo 共開發 400kW dispenser 架構 2026 H2 部署)；Tritium(US/AU，2025/12 推 GRID-FLEX 800VDC 雙向)；Tesla(TSLA，2026/3 GFNY 全面轉 V4 機櫃 400-1000V/500kW，V5 Mega-Stall 1.2MW MCS+原生 1000V，垂直整合自用)；飛宏(2457.TW，充電佔營收 14% 台廠最高比重、OBC)。DC 快充 segment 2026 $41 億→2033 $221 億。",
+   "companies": [
+    {
+     "name": "ABB E-mobility",
+     "ticker": "ABBN.SW",
+     "country": "CH",
+     "share": "DC 快充雙雄之一",
+     "products": "DC 快充 / Terra HP",
+     "note": "交付 >4.5 TWh；全球 DC 快充龍頭",
+     "src": "https://www.etechvolution.com/p/the-big-four-ev-charger-manufacturers-compared-sep-2025-update"
+    },
+    {
+     "name": "Alpitronic",
+     "ticker": "—",
+     "country": "IT",
+     "share": "DC 快充雙雄之一",
+     "products": "HYC 系列 DC 快充",
+     "note": "未上市；與 ABB 並列、交付 >4.5 TWh",
+     "src": "https://www.alpitronic.it/us/"
+    },
+    {
+     "name": "Kempower",
+     "ticker": "KEMPOWR.HE",
+     "country": "FI",
+     "share": "成長最快 +54% YoY",
+     "products": "depot/車隊 DC 快充",
+     "note": "Q1 2026 營收 €66.8M +54%、北美 +230%；完成首場實地 MW 重卡充電(EV Realty)；推 Kempower 2.0 策略拚全球 DCFC 前三",
+     "src": "https://kempower.com/america/starting-2026-strong-q1-financial-results/"
+    },
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "全球前五大充電樁",
+     "products": "AC/DC 充電(25-200kW)、D800V(320-350kW)",
+     "note": "EV 充電毛利率 28.8% 台廠最高；與 EVgo 共開發 400kW dispenser 次世代架構、2026 H2 部署",
+     "src": "https://chargedevs.com/newswire/evgo-and-delta-electronics-to-co-develop-next-gen-ev-charging-architecture/"
+    },
+    {
+     "name": "Tritium",
+     "ticker": "—",
+     "country": "AU",
+     "share": "800VDC 雙向",
+     "products": "GRID-FLEX 800VDC 雙向逆變平台",
+     "note": "2025/12 推；曾破產重整",
+     "src": "https://www.etechvolution.com/p/the-big-four-ev-charger-manufacturers-compared-sep-2025-update"
+    },
+    {
+     "name": "Tesla (Supercharger HW)",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "V4/V5 自製垂直整合",
+     "products": "V4 機櫃 400-1000V / 500kW / 8 槍；V5 Mega-Stall 1.2MW MCS",
+     "note": "2026/3 GFNY 停產 V3、全面轉 V4 機櫃；V5 採原生 1000V DC bus、1.2MW MCS(供 Semi 與重卡)；常配 1.4GWh Megapack 削峰",
+     "src": "https://www.notateslaapp.com/news/3189/tesla-deploys-first-500kw-supercharger-with-new-v4-cabinet-how-fast-can-it-charge"
+    },
+    {
+     "name": "飛宏 Phihong",
+     "ticker": "2457.TW",
+     "country": "TW",
+     "share": "台廠充電佔比最高",
+     "products": "AC/DC 充電樁 / OBC",
+     "note": "充電樁佔營收 14%(台廠最高)；EV 充電與車載",
+     "src": "https://news.cnyes.com/news/id/5610170"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "charging_chip"
+    },
+    {
+     "id": "connector_cable"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cpo_network"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ABB/Alpitronic/Kempower 比較 (eTechvolution)",
+     "url": "https://www.etechvolution.com/p/the-big-four-ev-charger-manufacturers-compared-sep-2025-update"
+    },
+    {
+     "label": "台達電×EVgo 共開發 (Charged EVs)",
+     "url": "https://chargedevs.com/newswire/evgo-and-delta-electronics-to-co-develop-next-gen-ev-charging-architecture/"
+    }
+   ]
+  },
+  {
+   "id": "cpo_network",
+   "row": "cpo",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "充電網營運商 CPO（美 / 歐 / 中）",
+   "nameEn": "Charge Point Operators",
+   "competition": "fragmented",
+   "single": "⚠ 純 CPO 多虧損 · 中國 2,148 萬支但利用率 <10%；Tesla 占全美 ~51.6% DC 快充(2026 恐跌破 50%)",
+   "desc": "經營公共/合作充電網、收取充電與訂閱費。美/歐/中三分天下：美國數家上市純 CPO 仍轉盈中、中國裝機全球最大但利用率偏低、歐洲多由能源巨頭主導。2026 H1 美國他網新增槍數已達 Tesla 近 2 倍，市佔朝平準收斂。",
+   "marketSize": "中國全球最大",
+   "growth": "美 CPO 轉折 · 中過剩",
+   "share": "null",
+   "analysis": "美國：ChargePoint(CHPT，最大公共充電網之一+CPMS 軟體；Q1 FY27[2026/4 季] 營收 $101.8M +4% YoY、non-GAAP 毛利率 32%、連 3 季 YoY 成長、FY26 全年 $411.2M)、EVgo(EVGO，純 DC 快充網、5,280 槍、Q1 2026 營收 $109.5M +45.5%、充電網營收連 17 季雙位數、利用率降至 21%)、Tesla Supercharger(全美 ~51.6% DC 快充、新增槍佔比僅 26%、恐 2026 跌破 50%)、Blink(BLNK)、Electrify America(VWAGY 旗下)。中國(全球最大)：總樁破 2,148 萬支(2026/3 +47% YoY、公共升至約 486 萬)，TELD 特來電 77.8 萬支、Star Charge 星星充電 68.6 萬支(公共)，連同國家電網/南方電網前 15 大占 84%；⚠ 公共樁利用率 <10%、一線城市 <2%(供給過剩)，TELD 充電營運可望 2026-2027 轉盈。歐洲：Shell Recharge、BP Pulse、Ionity、Fastned。",
+   "companies": [
+    {
+     "name": "ChargePoint",
+     "ticker": "CHPT",
+     "country": "US",
+     "share": "美最大公共充電網之一",
+     "products": "充電網 + CPMS 軟體",
+     "note": "Q1 FY27(2026/4 季) 營收 $101.8M +4% YoY、訂閱 $40.8M +7%、non-GAAP 毛利率 32%、連 3 季 YoY 成長、EPS 大幅優於預期；FY26 全年營收 $411.2M、毛利率升至 31%",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/06/03/chargepoint-chpt-q1-2027-earnings-transcript/"
+    },
+    {
+     "name": "EVgo",
+     "ticker": "EVGO",
+     "country": "US",
+     "share": "美純 DC 快充網",
+     "products": "DC 快充網 5,280 槍",
+     "note": "Q1 2026 營收 $109.5M +45.5%；充電網營收連 17 季雙位數；利用率 21%(-300bp)",
+     "src": "https://www.stocktitan.net/news/EVGO/e-vgo-inc-reports-first-quarter-2026-results-with-record-first-yasc1qz6prw8.html"
+    },
+    {
+     "name": "Tesla Supercharger",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "全美 ~51.6% DC 快充(下滑中)",
+     "products": "Supercharger 網路",
+     "note": "市佔自 52%→51.6%(2026/4)、恐 2026 內跌破 50%；Q1 2026 新增槍佔比僅 26%(他網新增近 2,300 槍為 Tesla 近 2 倍)；全美 36,000+ NACS 槍",
+     "src": "https://evchargingstations.com/chargingnews/tesla-supercharging-network-market-share/"
+    },
+    {
+     "name": "Blink Charging",
+     "ticker": "BLNK",
+     "country": "US",
+     "share": "美中型 CPO",
+     "products": "AC/DC 充電網 + 硬體",
+     "note": "垂直整合硬體+營運",
+     "src": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    },
+    {
+     "name": "TELD 特來電",
+     "ticker": "300001.SZ",
+     "country": "CN",
+     "share": "中國公共第一 77.8 萬支",
+     "products": "公共 DC 快充網",
+     "note": "特銳德子公司；中國最大公共充電網；背後 270+ JV 鎖優質站點、充電營運可望 2026-2027 轉盈",
+     "src": "https://faxiangongchang.com/en/reports/china-ev-charger-2026"
+    },
+    {
+     "name": "Star Charge 星星充電",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國公共第二 68.6 萬支",
+     "products": "公共充電網 + 硬體",
+     "note": "未上市；連同國網/南網前 15 大占 84%",
+     "src": "https://faxiangongchang.com/en/reports/china-ev-charger-2026"
+    },
+    {
+     "name": "Electrify America",
+     "ticker": "VWAGY",
+     "country": "US",
+     "share": "美第三方快充",
+     "products": "DC 快充走廊網",
+     "note": "Volkswagen 旗下；NEVI 走廊",
+     "src": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    },
+    {
+     "name": "Fastned",
+     "ticker": "FAST.AS",
+     "country": "NL",
+     "share": "歐洲快充網",
+     "products": "DC 快充走廊網",
+     "note": "歐洲高速公路快充",
+     "src": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "charger_oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cpms_sw"
+    },
+    {
+     "id": "v2g"
+    }
+   ],
+   "sources": [
+    {
+     "label": "EVgo Q1 2026 結果 (StockTitan)",
+     "url": "https://www.stocktitan.net/news/EVGO/e-vgo-inc-reports-first-quarter-2026-results-with-record-first-yasc1qz6prw8.html"
+    },
+    {
+     "label": "中國充電網 16.7M 支 (CarNewsChina)",
+     "url": "https://carnewschina.com/2025/08/27/chinas-ev-charging-network-hits-16-7-million-units-records-7-71-billion-kwh-monthly-usage/"
+    }
+   ]
+  },
+  {
+   "id": "cpms_sw",
+   "row": "sw",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "CPMS 充電管理軟體 / 漫遊",
+   "nameEn": "Charging Management Software (CPMS)",
+   "competition": "fragmented",
+   "single": "高毛利 SaaS：ChargePoint 訂閱毛利率破紀錄 60%，是 CPO 轉盈關鍵",
+   "desc": "充電站管理平台(CPMS)、用戶 App、支付與跨網漫遊。高毛利 SaaS 訂閱是純 CPO 從『燒錢擴張』走向『單位經濟改善』的關鍵獲利引擎。",
+   "marketSize": "60% 毛利的轉盈關鍵",
+   "growth": "高毛利 SaaS",
+   "share": "null",
+   "analysis": "ChargePoint(CHPT) 訂閱營收 $38M(+14%)、SaaS 訂閱毛利率破紀錄 60%(GAAP)，是其縮虧轉盈核心；Driivz(Vontier 旗下，VNT)、AMPECO(BG)、EV Connect(Schneider Electric，SU.PA)、Noodoe(TW，雲端充電管理)；漫遊/支付：Hubject(DE)、ChargeHub。CPMS 是充電鏈中『輕資產、可規模化、高毛利』的最佳商業模式環節。",
+   "companies": [
+    {
+     "name": "ChargePoint (SaaS)",
+     "ticker": "CHPT",
+     "country": "US",
+     "share": "CPMS+訂閱領導",
+     "products": "充電管理 SaaS / 訂閱",
+     "note": "訂閱 $38M +14%；SaaS 毛利率破紀錄 60%(GAAP)",
+     "src": "https://www.investing.com/news/company-news/chargepoint-q1-2026-slides-margins-improve-despite-revenue-dip-93CH-4081571"
+    },
+    {
+     "name": "Driivz (Vontier)",
+     "ticker": "VNT",
+     "country": "US",
+     "share": "CPMS 平台",
+     "products": "充電營運/能源管理平台",
+     "note": "Vontier 旗下；獨立 CPMS",
+     "src": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    },
+    {
+     "name": "EV Connect (Schneider)",
+     "ticker": "SU.PA",
+     "country": "FR",
+     "share": "CPMS 平台",
+     "products": "充電管理平台",
+     "note": "Schneider Electric 旗下",
+     "src": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    },
+    {
+     "name": "AMPECO",
+     "ticker": "—",
+     "country": "BG",
+     "share": "白牌 CPMS",
+     "products": "白牌充電管理平台",
+     "note": "未上市；CPO 軟體後台",
+     "src": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    },
+    {
+     "name": "Noodoe",
+     "ticker": "—",
+     "country": "TW",
+     "share": "台廠雲端 CPMS",
+     "products": "雲端充電管理 / 支付",
+     "note": "未上市；台灣充電管理平台",
+     "src": "https://www.sinotrade.com.tw/richclub/industry/-63fedde76554212c3ccfaefa"
+    },
+    {
+     "name": "Hubject",
+     "ticker": "—",
+     "country": "DE",
+     "share": "跨網漫遊",
+     "products": "充電漫遊 / 即插即充(Plug&Charge)",
+     "note": "未上市；BMW/Bosch/西門子等合資",
+     "src": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cpo_network"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "ChargePoint Q1 2026 毛利 (Investing.com)",
+     "url": "https://www.investing.com/news/company-news/chargepoint-q1-2026-slides-margins-improve-despite-revenue-dip-93CH-4081571"
+    },
+    {
+     "label": "DC 快充供應商生態 (GIREVE)",
+     "url": "https://www.gireve.com/supplier-fast-chargers-beyond-ev-charging-3/"
+    }
+   ]
+  },
+  {
+   "id": "v2g",
+   "row": "sw",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "V2G 雙向充電 / 聚合 / 終端需求",
+   "nameEn": "V2G & Demand",
+   "competition": "emerging",
+   "single": "⚠ 新興高成長 · Nuvve 併 Fermata 成最大純 V2G；商業化仍早期",
+   "desc": "車輛對電網(V2G) 雙向充電與聚合服務，把 EV 電池變成分散式儲能/調頻資源；終端需求含車隊、公共快充走廊、住宅、工商業/depot。",
+   "marketSize": "$37B→$130B(2030)",
+   "growth": "CAGR 23.6%",
+   "share": "null",
+   "analysis": "V2G 市場 2024 $37 億→2030 $130 億、CAGR 23.6%。2026 H1 雙向充電從試點走向商業化主流：GM Energy(GM) 2026 起推雙向充電/PowerBank 月租方案、已售 246,000+ 台 V2H 可用 EV 為全美最多，成最具量產規模的車廠玩家。Nuvve(NVVE) 收購 Fermata Energy(合併為 Fermata 2.0)、成最大純 V2G 平台，與 ComEd 電動校車雙向充電試點落地；The Mobility House(DE)、Hitachi Energy(6501.T)、E.ON/ENGIE/OVO 為聚合/電網側；車廠側 Toyota×Oncor 試點驗證雙向價值。終端需求：車隊(fleet)、NEVI 公共快充走廊、住宅 AC、工商業 depot——NEVI FY2026 撥款 $8.85 億(法院解凍後續發)，但 2026 初擬把美國製零組件門檻自 55% 拉高至『最高 100%』，恐使可選機種更少、價更高，政策反覆仍是 CPO 擴張最大不確定。V2G 仍屬選擇權式佈局但商業化拐點臨近。",
+   "companies": [
+    {
+     "name": "Nuvve",
+     "ticker": "NVVE",
+     "country": "US",
+     "share": "最大純 V2G 平台",
+     "products": "V2G 平台 / GIVe 聚合",
+     "note": "收購 Fermata(Fermata 2.0)；ComEd 電動校車試點",
+     "src": "https://www.renewableenergyworld.com/electric-vehicle/vehicle-to-grid/two-big-v2g-players-become-one-nuvve-acquires-fermata-energy/"
+    },
+    {
+     "name": "Fermata Energy",
+     "ticker": "—",
+     "country": "US",
+     "share": "V2G 平台(併入 Nuvve)",
+     "products": "雲端 V2G 最佳化平台",
+     "note": "已併入 Nuvve；價格訊號充放電最佳化",
+     "src": "https://fermataenergy.com/"
+    },
+    {
+     "name": "The Mobility House",
+     "ticker": "—",
+     "country": "DE",
+     "share": "歐洲 V2G/聚合",
+     "products": "智慧充電 / V2G 聚合",
+     "note": "未上市；歐洲領先",
+     "src": "https://www.globenewswire.com/news-release/2026/04/28/3282460/28124/en/vehicle-to-grid-v2g-global-strategic-business-research-report-2026-focus-on-abb-e-on-engie-fermata-energy-flexitricity-hitachi-energy-indra-renewable-technologies-nuvve-ovo-energy-.html"
+    },
+    {
+     "name": "Hitachi Energy",
+     "ticker": "6501.T",
+     "country": "JP",
+     "share": "電網側 V2G",
+     "products": "雙向充電 / 電網整合",
+     "note": "電網側聚合與整合",
+     "src": "https://www.globenewswire.com/news-release/2026/04/28/3282460/28124/en/vehicle-to-grid-v2g-global-strategic-business-research-report-2026-focus-on-abb-e-on-engie-fermata-energy-flexitricity-hitachi-energy-indra-renewable-technologies-nuvve-ovo-energy-.html"
+    },
+    {
+     "name": "Toyota (V2G 試點)",
+     "ticker": "TM",
+     "country": "JP",
+     "share": "車廠 V2G 試點",
+     "products": "雙向 BEV 充電試點",
+     "note": "與 Oncor 試點驗證雙向價值",
+     "src": "https://pressroom.toyota.com/toyotas-vehicle-to-grid-program-with-oncor-energy-demonstrates-benefits-of-bidirectional-bev-charging/"
+    },
+    {
+     "name": "GM Energy",
+     "ticker": "GM",
+     "country": "US",
+     "share": "美 V2H 市佔第一",
+     "products": "V2H Bundle / PowerBank / 雙向充電器",
+     "note": "2026 起推雙向充電月租方案；已售 246,000+ 台 V2H 可用 EV、為全美最多；Silverado EV 可供電住家最長 5 天",
+     "src": "https://news.gm.com/home.detail.html/Pages/news/us/en/2026/feb/0219-GM-leads-charge-vehicle-to-home-EVs.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cpo_network"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Nuvve 收購 Fermata (RenewableEnergyWorld)",
+     "url": "https://www.renewableenergyworld.com/electric-vehicle/vehicle-to-grid/two-big-v2g-players-become-one-nuvve-acquires-fermata-energy/"
+    },
+    {
+     "label": "V2G 市場報告 2026 (GlobeNewswire)",
+     "url": "https://www.globenewswire.com/news-release/2026/04/28/3282460/28124/en/vehicle-to-grid-v2g-global-strategic-business-research-report-2026-focus-on-abb-e-on-engie-fermata-energy-flexitricity-hitachi-energy-indra-renewable-technologies-nuvve-ovo-energy-.html"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "charging_chip",
+   "charger_oem"
+  ],
+  [
+   "connector_cable",
+   "charger_oem"
+  ],
+  [
+   "charger_oem",
+   "cpo_network"
+  ],
+  [
+   "cpo_network",
+   "cpms_sw"
+  ],
+  [
+   "cpo_network",
+   "v2g"
+  ]
+ ],
+ "_proposed": {}
+}

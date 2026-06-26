@@ -1,0 +1,1168 @@
+{
+ "id": "cs_ai",
+ "tab": "客服 Agent",
+ "title": "Customer Service AI / 客服 Agent（語音 → 模型 → 平台 → CCaaS → CRM）",
+ "subtitle": "Contact Center AI TAM USD 4.2B（2025）→ USD 11.8B（2030），Agentic AI CAGR 44.5%；Sierra AI USD 15.8B、Decagon USD 4.5B 雙領頭；ElevenLabs ARR USD 500M；NICE 收購 Cognigy USD 955M；Genesys Cloud ARR USD 2.2B，獲 Salesforce+ServiceNow 聯投 USD 1.5B；日韓台東南亞同步切入，KT Agentic AICC、PKSHA voicebot 24.7% 市占、FPT.AI 月處理 5,000 萬通電話",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 11
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "55+"
+  },
+  {
+   "k": "壟斷/關鍵單點",
+   "v": 2,
+   "sub": "OpenAI/Anthropic/Google CS 模型供應 + Sierra/Decagon 雙領頭新創",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "voice",
+   "label": "語音 / ASR / TTS Voice & Speech",
+   "main": false
+  },
+  {
+   "id": "model",
+   "label": "CS 基礎模型 Foundation Models for CS",
+   "main": false
+  },
+  {
+   "id": "platform",
+   "label": "CS Agent 平台 + 語音 infra Platforms & Voice Infra",
+   "main": true
+  },
+  {
+   "id": "ccaas",
+   "label": "CCaaS + CRM 整合 Incumbents & CRM",
+   "main": false
+  },
+  {
+   "id": "asia",
+   "label": "亞洲在地玩家 Asia Regional Players",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "voice_speech_us",
+   "row": "voice",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "美系語音 ASR/TTS infra",
+   "nameEn": "US Voice & Speech AI Infrastructure",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "提供語音辨識（ASR）、語音合成（TTS）及對話語音模型 API 的美系基礎設施廠商，為 CS Agent 平台提供語音通道能力，是客服 Agent 呼叫中心的底層語音引擎。",
+   "marketSize": "2025 全球 Voice AI 融資 USD 2.1B（+8× YoY）；ASR/TTS API 子市場約 USD 1.5-2B",
+   "growth": "YoY +8× 融資；ElevenLabs ARR USD 350M（2025）→ USD 500M（2026/4）",
+   "share": "null",
+   "analysis": "ElevenLabs 2026/4 突破 ARR USD 500M，Series D USD 500M @ USD 11B，NVIDIA/BlackRock 跟投，已整合 IBM watsonx Orchestrate；Deepgram 2026/1 Series C USD 130M @ USD 1.3B，Nova-3 STT 精度最高，Aura-2 TTS 獲 2025 Contact Center Technology Award；Vapi 1B+ calls 完成，Series B USD 50M @ USD 500M，Amazon Ring 從 40 家供應商中獨選。",
+   "companies": [
+    {
+     "name": "ElevenLabs",
+     "ticker": "—",
+     "country": "UK",
+     "share": "ARR USD 500M（2026/4），YoY 翻倍+",
+     "products": "ElevenLabs TTS（70+ 語言）、Scribe STT、Conversational AI Platform、AI Agents for Customer Support",
+     "note": "private；Series D USD 500M @ USD 11B（2026/2，Sequoia 領投，三輪追加 NVIDIA/Salesforce/Deutsche Telekom/Santander/BlackRock/Wellington 入股）；CS 落地：Revolut 2026/1 英歐 400 萬客戶解決時間 -8×、Klarna 2026/2 為 3,500 萬美國客戶第一線電話客服；與 IBM watsonx Orchestrate 整合",
+     "src": "https://www.cnbc.com/2026/02/04/nvidia-backed-ai-startup-elevenlabs-11-billion-valuation.html"
+    },
+    {
+     "name": "Deepgram",
+     "ticker": "—",
+     "country": "US",
+     "share": "ASR API 市場領先，400+ 企業客戶，逾 1 兆字轉錄，2026/1 現金流轉正",
+     "products": "Nova-3 STT（全球最高精度實時 ASR）、Aura-2 TTS（2025 Contact Center Technology Award）、Flux（對話語音辨識）、Voice Agent API",
+     "note": "private；Series C USD 130M @ USD 1.3B（2026/1，AVP/BlackRock/ServiceNow Ventures/Twilio 跟投）",
+     "src": "https://deepgram.com/learn/press-release-deepgram-raises-series-c"
+    },
+    {
+     "name": "AssemblyAI",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR ~USD 100M+（2025 中），enterprise-grade 語音 AI API",
+     "products": "Universal-2 STT、LeMUR（音訊理解 LLM）、Streaming Speech-to-Text API",
+     "note": "總募資 USD 158M；2025 ARR 目標 USD 200M",
+     "src": "https://www.assemblyai.com/products/speech-to-text/"
+    },
+    {
+     "name": "Speechmatics",
+     "ticker": "—",
+     "country": "UK",
+     "share": "精度與靈活部署（雲端/本地/端側）冠軍，2025 服務量 10x 成長兩輪",
+     "products": "Real-time STT API、On-Premise Speech Recognition、Flow（低延遲對話 ASR）",
+     "note": "總募資 USD 90.6M；2022/6 Series B USD 62M（Susquehanna Growth Equity 領投）",
+     "src": "https://www.speechmatics.com/company/articles-and-news/speechmatics-in-2025-the-numbers-that-shaped-voice-ais-breakthrough-year"
+    },
+    {
+     "name": "NVIDIA (Riva / ACE NIM)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "提供 Riva ASR/TTS NIM microservices 供 AT&T 等企業級語音 AI 基礎設施",
+     "products": "NVIDIA Riva STT/TTS NIM、NeMo Guardrails、ACE Digital Human Blueprint、Nova Sonic 2 Speech-to-Speech",
+     "note": "AT&T 已在生產環境大規模部署 NVIDIA AI Enterprise + Riva NIM 作為客服 AI 骨幹",
+     "src": "https://www.nvidia.com/en-us/use-cases/ai-assistants/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "cs_agent_platform_us"
+    },
+    {
+     "id": "voice_agent_infra"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ElevenLabs Series D USD 500M @ USD 11B（CNBC 2026-02-04）",
+     "url": "https://www.cnbc.com/2026/02/04/nvidia-backed-ai-startup-elevenlabs-11-billion-valuation.html"
+    },
+    {
+     "label": "Deepgram Series C USD 130M @ USD 1.3B（2026-01）",
+     "url": "https://deepgram.com/learn/press-release-deepgram-raises-series-c"
+    },
+    {
+     "label": "Speechmatics 2025 Voice AI 突破年（官方回顧）",
+     "url": "https://www.speechmatics.com/company/articles-and-news/speechmatics-in-2025-the-numbers-that-shaped-voice-ais-breakthrough-year"
+    },
+    {
+     "label": "NVIDIA Riva NIM 客服 AI 應用（官方頁面）",
+     "url": "https://www.nvidia.com/en-us/use-cases/ai-assistants/"
+    }
+   ]
+  },
+  {
+   "id": "voice_speech_asia",
+   "row": "voice",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "亞洲語音辨識 infra",
+   "nameEn": "Asia ASR/TTS Speech Infrastructure",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "日韓台東南亞本地語音辨識與合成基礎設施，提供在地語言（日語/韓語/繁中/印尼語/越南語）精度優化的 ASR/TTS 能力，為區域 CS Agent 平台供應語音層。",
+   "marketSize": "日本 Call Center AI USD 75.5M（2024）→ USD 282.5M（2030）CAGR 24.6%；韓國 AICC 市場 2027 目標 KRW 1 兆",
+   "growth": "APAC CCaaS CAGR ~23%；日本 Contact Center Software 2025-2033 CAGR 26.9%",
+   "share": "null",
+   "analysis": "Advanced Media AmiVoice 為日本電話語音辨識 No.1（ITR 2024 FY），550 家企業/80,000 授權；PKSHA Technology 日本 voicebot 市占 24.7%（Fuji Chimera 2026）；FPT.AI 月處理 5,000 萬通語音電話，FY2025 AI+Cloud 新合約 YoY +48.4%；GoTo Sahabat-AI 為印尼最大 70B 參數多語言本地 LLM。",
+   "companies": [
+    {
+     "name": "Advanced Media（AmiVoice）",
+     "ticker": "3773.T",
+     "country": "JP",
+     "share": "全日本 contact center 語音辨識市占 No.1（ITR 2024 FY）；550 家企業、80,000 授權",
+     "products": "AmiVoice Communication Suite（No.1 電話語音辨識）、AmiVoice CQM Assist（通話品質自動評估）、AOI LLM",
+     "note": "2025 版新增外部生成 AI 整合功能；提供客戶騷擾偵測新套件",
+     "src": "https://www.advanced-media.co.jp/en/newsrelease/9947/"
+    },
+    {
+     "name": "FPT Corporation / FPT.AI",
+     "ticker": "FPT.HM",
+     "country": "VN",
+     "share": "月處理 5,000 萬通語音電話；FY2025 AI+Cloud 新合約 VND 9,130 億（+48.4% YoY）；200+ 客戶、15 國",
+     "products": "FPT.AI Voice Agent、FPT AI Engage（下一代虛擬客服平台）、FPT CX Suite",
+     "note": "宣稱可自動化 70% call center 工作量；NVIDIA 案例：FPT Smart Cloud 以 GPU 升級客服 AI",
+     "src": "https://fptsmartcloud.com/en/ceo-le-hong-viet-ai-can-support-10-million-customers-each-month/"
+    },
+    {
+     "name": "ELYZA（KDDI 子公司）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "KDDI 持股 43%；2026-03 日本數位廳選定部署予 18 萬政府人員",
+     "products": "Llama-3.1-ELYZA-JP-70B（70B 參數日文 LLM）、聯絡中心對話摘要+文本生成 SaaS",
+     "note": "母公司 KDDI 9433.T；2025-03 推出「au Support AI Advisor」數位人客服",
+     "src": "https://newsroom.kddi.com/english/news/detail/kddi_nr-463_3742.html"
+    },
+    {
+     "name": "GoTo Group（Sahabat-AI）",
+     "ticker": "GOTO.JK",
+     "country": "ID",
+     "share": "Sahabat-AI：印尼最大本地 70B 參數多語言 LLM（2025-06 上線）",
+     "products": "Sahabat-AI（GoTo×Indosat，70B 多語言 LLM）、GoPay chatbot、Gojek+Tokopedia CS chatbot",
+     "note": "合作夥伴 Indosat Ooredoo Hutchison（ISAT.JK）；支援印尼語+爪哇語/巽他語/峇里語/巴塔克語等",
+     "src": "https://www.gotocompany.com/news/press/sahabat-ai-semakin-canggih-indosat-dan-goto-luncurkan-model-70-miliar-parameter-dengan-layanan-chat-multibahasa"
+    },
+    {
+     "name": "IVRy（アイブリー）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "Series D；覆蓋全國 47 都道府縣 97 個業種；累計募資 ¥15.11B ≈ USD 100M",
+     "products": "AI 語音 IVR SaaS（¥3,317/月起）、AI 自動応答、通話錄音、文字轉換、AI 摘要",
+     "note": "2025-11 完成 Series D ¥4B；T2D3 超速成長；Mizuho Capital/SMBC Venture Capital 投資",
+     "src": "https://thebridge.jp/en/2025/11/ivry-raises-%C2%A54-billion-in-series-d-funding"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "cs_agent_platform_asia"
+    },
+    {
+     "id": "jp_kr_cs"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Advanced Media AmiVoice 550 家客戶公告",
+     "url": "https://www.advanced-media.co.jp/en/newsrelease/9947/"
+    },
+    {
+     "label": "FPT Smart Cloud AI 客服支援（CEO 月 1,000 萬客戶目標）",
+     "url": "https://fptsmartcloud.com/en/ceo-le-hong-viet-ai-can-support-10-million-customers-each-month/"
+    },
+    {
+     "label": "KDDI au Support AI Advisor（2025-03）",
+     "url": "https://newsroom.kddi.com/english/news/detail/kddi_nr-463_3742.html"
+    },
+    {
+     "label": "GoTo Sahabat-AI 70B 上線官方 PR",
+     "url": "https://www.gotocompany.com/news/press/sahabat-ai-semakin-canggih-indosat-dan-goto-luncurkan-model-70-miliar-parameter-dengan-layanan-chat-multibahasa"
+    }
+   ]
+  },
+  {
+   "id": "cs_foundation",
+   "row": "model",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "CS 基礎模型供應商",
+   "nameEn": "Foundation Models for Customer Service",
+   "competition": "oligopoly",
+   "single": "三強寡占 top-3 ~77% · Anthropic 32%（已超 OpenAI，Sierra/大型企業底座）+ OpenAI 25%（Klarna 700 FTE 等效）+ Google 20%（Dialogflow CX 全球最大）；閉源模型佔企業 87% 工作負載——全鏈 agent 新創的毛利與定價權實質握在這三家手中",
+   "desc": "為 CS Agent 平台提供推理底座的基礎模型廠商，供應文字理解、多輪對話、工具呼叫（MCP）、即時語音（Realtime API）能力，是整個客服 AI 價值鏈的核心算力大腦。",
+   "marketSize": "2025 Contact Center AI TAM USD 4.2B，全球 CS AI 節省勞動成本 USD 80B（2026E Gartner）",
+   "growth": "Agentic AI in Contact Center CAGR 44.5%（market.us）；AI for CS CAGR 22%（MarketsandMarkets）",
+   "share": "null",
+   "analysis": "OpenAI GPT-4o Realtime API 是 Sierra/Decagon 等主流 CS agent 底層，Klarna 2024 初 230 萬次/月對話等效 700 FTE；Anthropic Claude 3.7 Sonnet 被 Sierra、Decagon（公開客戶案例）及大型企業廣泛採用，ARR 2025 中 USD 1B+；Google CCAI + Dialogflow CX 是全球最大 CCaaS 嵌入對話 AI，Q1 2026 Cloud 營收 USD 12.3B（+28% YoY），與 NICE/Genesys/Five9 深度整合。【2026-H1】Sierra/Decagon 改採多模型架構（混用 OpenAI/Anthropic/Meta/Cohere），客服 AI 對前沿 LLM 形成穩定且放大的下游需求，亦使 agent 廠對上游供給/定價形成依賴。",
+   "companies": [
+    {
+     "name": "OpenAI",
+     "ticker": "—",
+     "country": "US",
+     "share": "CS agent 最廣泛使用底層模型；Klarna 230 萬次/月對話 = 700 FTE",
+     "products": "GPT-4o、GPT-4o Realtime API（低延遲語音）、Assistants API、Fine-tuning for CS",
+     "note": "private；2025/3 Series D+ USD 40B @ USD 300B；2025 底年化營收破 USD 20B（2024 為 USD 6B，CFO Sarah Friar 2026/1 證實）",
+     "src": "https://platform.openai.com/docs/guides/realtime"
+    },
+    {
+     "name": "Anthropic",
+     "ticker": "—",
+     "country": "US",
+     "share": "Claude 被 Sierra、大型企業廣泛採用；ARR 2025 中 USD 1B+",
+     "products": "Claude 3.7 Sonnet、Claude 3.5 Haiku（低成本高頻 CS）、MCP（Model Context Protocol）、Amazon Bedrock 整合",
+     "note": "private；2025/3 Series E USD 3.5B @ USD 61.5B（Lightspeed 領投，Bessemer/General Catalyst/Salesforce Ventures 等跟投）",
+     "src": "https://www.anthropic.com/claude"
+    },
+    {
+     "name": "Google Cloud（CCAI/Gemini）",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "Dialogflow CX 是全球最大 CCaaS 嵌入對話 AI；Q1 2026 Cloud 營收 USD 12.3B（+28% YoY）",
+     "products": "Contact Center AI（CCAI）、Dialogflow CX（Gemini 加持）、Agent Assist、CCAI Insights、Vertex AI Search for RAG",
+     "note": "與 NICE、Genesys、Five9 深度整合；Gemini 1.5 Pro 支援 1M context 長客服文件",
+     "src": "https://cloud.google.com/solutions/contact-center"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "cs_agent_platform_us"
+    },
+    {
+     "id": "cs_agent_platform_asia"
+    },
+    {
+     "id": "ccaas_global"
+    }
+   ],
+   "sources": [
+    {
+     "label": "OpenAI Realtime API 官方文件",
+     "url": "https://platform.openai.com/docs/guides/realtime"
+    },
+    {
+     "label": "Anthropic Claude 官方頁面",
+     "url": "https://www.anthropic.com/claude"
+    },
+    {
+     "label": "Google Cloud Contact Center AI 解決方案",
+     "url": "https://cloud.google.com/solutions/contact-center"
+    }
+   ]
+  },
+  {
+   "id": "cs_agent_platform_us",
+   "row": "platform",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "美系 CS Agent 平台新創",
+   "nameEn": "US CS Agent SaaS Platforms",
+   "competition": "highgrowth",
+   "single": "雙領頭 · Sierra USD 15.8B 估值 + Decagon USD 4.5B 估值，outcome-based pricing 重塑市場",
+   "desc": "在基礎模型之上建構全渠道（chat/voice/email/SMS）CS Agent 平台的美系新創，以 outcome-based pricing（每次解決計費）顛覆傳統 per-seat SaaS，並提供企業客戶 no-code/low-code agent builder。",
+   "marketSize": "2025 Contact Center AI TAM USD 4.2B；Sierra ARR USD 150M+（18 個月 0→100M）；Decagon USD 4.5B 估值",
+   "growth": "Sierra ARR YoY 成長（18 月 0→USD 150M）；Intercom Fin ARR USD 100M+，NRR 146%；Agentic AI in CS CAGR 44.5%",
+   "share": "null",
+   "analysis": "Sierra 2026/5 Series E USD 950M @ USD 15.8B（Tiger Global+GV 領投），ARR USD 150M（推出後僅七季），客戶含 Fortune 50 40%+、SoFi/ADT/Prudential/Cigna/Blue Cross Blue Shield/Rocket Mortgage 及全球前三大銀行之一；已被點名為 NICE 等老牌 CCaaS 最大威脅之一，並明確將語音 Agent 列為核心擴張、瞄準仍佔約 80% 的電話客服互動；Decagon 2026/1 Series D USD 250M @ USD 4.5B（估值翻三倍），去年新增 100+ 企業客戶含 Hertz/Duolingo/Deutsche Telekom/Mercado Libre/Avis Budget Group，2026 春季版新增 outbound voice；Intercom Fin 2026/4 總 ARR USD 400M、NRR 146%，Fin ARR USD 100M+，累計逾 4,000 萬次 AI 解決對話（平均解決率 67%、頂尖客戶上看 93%）；Klarna 2025/5 CEO 公開承認過度 AI 化導致服務品質下降，Human-in-the-loop 成產品標配。",
+   "companies": [
+    {
+     "name": "Sierra AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR USD 200M（2026/5，兩季內自 USD 100M 翻倍；2025 底約 USD 130M）；Fortune 50 40%+ 採用；新標竿客戶 Nordstrom（5 週上線語音）/Cigna（8 週、認證時間 -80%）/Singtel（10 週解決率 >70%）；新標竿客戶 Nordstrom（5 週上線語音）/Cigna（8 週、認證時間 -80%）/Singtel（10 週解決率 >70%）",
+     "products": "Sierra Agent OS（chat/voice/email/SMS/WhatsApp）、Sierra Studio、AgentSDK",
+     "note": "private；2026/5/4 Series E USD 950M @ USD 15.8B（Tiger Global+GV 領投）；Bret Taylor（前 Salesforce co-CEO）+ Clay Bavor 共同創辦；2026 三連購：Opera Tech（東京，切入日本企業）+ Receptive AI（補語音/IVR 原生能力）+ Fragment（法國 YC 新創），跨美日歐擴張；2026 三連購：Opera Tech（東京，切入日本企業）+ Receptive AI（補語音/IVR 原生能力）+ Fragment（法國 YC 新創），跨美日歐擴張",
+     "src": "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+    },
+    {
+     "name": "Decagon",
+     "ticker": "—",
+     "country": "US",
+     "share": "去年新增 100+ 全球企業客戶；Hertz/Eventbrite/Duolingo/Deutsche Telekom/Mercado Libre/Avis Budget Group",
+     "products": "Decagon AI Agents、Agent Operating Procedures（AOP）（企業知識流程自動化）、Outbound Voice（2026 春季版：主動外撥/活動/回撥/語音信箱）",
+     "note": "private；2026/1 Series D USD 250M @ USD 4.5B（Coatue+Index Ventures 領投，估值翻三倍）；總募資 USD 481M；多模型架構混用 OpenAI/Anthropic（Claude 公開客戶案例）/Meta/Cohere",
+     "src": "https://www.cmswire.com/contact-center/decagon-triples-valuation-to-45b-with-250m-series-d/"
+    },
+    {
+     "name": "Intercom（Fin）",
+     "ticker": "—",
+     "country": "IE",
+     "share": "Fin ARR USD 100M+（YoY +350%）；Intercom 總 ARR USD 400M（2026/4）；NRR 146%；8,000+ 企業",
+     "products": "Fin AI Agent 4.0（USD 0.99/resolution outcome pricing）、Fin API Platform（USD 250K/yr 起）、Intercom Messenger",
+     "note": "2026/6/15 Salesforce 簽約以 USD 3.6B 收購 Fin（前 Intercom），預計 FY27 Q4 完成；Fin 自研 Apex 模型號稱資解率勝 OpenAI/Anthropic 前沿模型、平均 76% 端到端自解；2026/3 曾從 Hercules Capital 拿 USD 250M 風險債券",
+     "src": "https://www.intercom.com/fin"
+    },
+    {
+     "name": "Cresta",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025 ARR USD 52M；估值 USD 1.6B；Contact-Center Copilot + 全自動 Virtual Agent",
+     "products": "Cresta AI Platform（real-time agent assist、virtual agent、knowledge）、Cresta Opera（智慧路由）",
+     "note": "2024/11 Series D USD 125M（WiL+QIA 領投，Accenture/Workday Ventures/Qualcomm/LG Tech Ventures 跟投）；總募資 USD 270M+",
+     "src": "https://cresta.com/press/cresta-closes-125m-series-d-to-accelerate-adoption-of-human-centric-ai-in-the-contact-center"
+    },
+    {
+     "name": "Ada",
+     "ticker": "—",
+     "country": "CA",
+     "share": "350+ 企業客戶，自動解決率最高達 83%，AI Voice 2nd Gen 2025 春季推出",
+     "products": "Ada AI Agent Platform（text+voice+email 全渠道）、Ada Voice AI（2025 重建版）",
+     "note": "累計募資 USD 200M（7 輪）；2021 Series C @ USD 1.2B（Spark Capital 領投）",
+     "src": "https://www.ada.cx/platform/voice/"
+    },
+    {
+     "name": "Maven AGI",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025/2 上線五個月即達 USD 7M ARR；Zendesk/Salesforce/Freshdesk 整合",
+     "products": "Maven AGI Enterprise AI Agent Platform、Maven Copilot",
+     "note": "2025/6 Series B USD 50M（Dell Technologies Capital+Cisco Investments+Lux Capital 共同領投）；2025/12 Series B+ USD 28M",
+     "src": "https://www.mavenagi.com/resources/series-b"
+    },
+    {
+     "name": "Wonderful",
+     "ticker": "—",
+     "country": "IL",
+     "share": "成立 13 個月即達 USD 2B 估值；聚焦非英語 hyper-local 市場（電信/金融/醫療/製造），30+ 市場在地部署團隊",
+     "products": "Wonderful Enterprise AI Agent Platform（依各市場語言/文化/法規微調，派駐在地團隊管理部署）",
+     "note": "private；2026/3 Series B USD 150M @ USD 2B（Insight Partners 領投，Index Ventures/IVP/Bessemer/Vine Ventures 跟投）；2025/11 Series A USD 100M；總募資 USD 286M；年底人力擬自 350 擴至 ~900",
+     "src": "https://techcrunch.com/2026/03/12/wonderful-raises-150m-series-b-at-2b-valuation/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "voice_speech_us"
+    },
+    {
+     "id": "cs_foundation"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "crm_integration"
+    },
+    {
+     "id": "bpo_partners"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sierra AI Series E USD 950M @ USD 15.8B（TechCrunch 2026-05-04）",
+     "url": "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+    },
+    {
+     "label": "Sierra AI 100M ARR 官方部落格",
+     "url": "https://sierra.ai/blog/100m-arr"
+    },
+    {
+     "label": "Decagon Series C USD 131M @ USD 1.5B（BusinessWire 2025-06-23）",
+     "url": "https://www.businesswire.com/news/home/20250623894798/en/Decagon-Raises-$131M-at-$1.5B-Valuation-to-Deliver-Concierge-Customer-Experience-with-AI-Agents"
+    },
+    {
+     "label": "Cresta Series D USD 125M 官方 PR（2024-11）",
+     "url": "https://cresta.com/press/cresta-closes-125m-series-d-to-accelerate-adoption-of-human-centric-ai-in-the-contact-center"
+    }
+   ]
+  },
+  {
+   "id": "voice_agent_infra",
+   "row": "platform",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "新世代 Voice Agent 基礎設施",
+   "nameEn": "Next-Gen Voice Agent Infrastructure",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "為開發者提供 API-first 語音 Agent 基礎設施，支援企業自行部署 inbound/outbound 語音 AI 客服，與上層 CS Agent 平台形成補充或替代關係。",
+   "marketSize": "Voice AI 全球融資 2025 USD 2.1B（+8× YoY）；Vapi 每日處理 1-5M 通電話；Retell ARR USD 60M",
+   "growth": "Retell AI ARR +650% YoY（2026/4）；Vapi 1B+ calls 完成（2026/5）",
+   "share": "null",
+   "analysis": "Vapi 2026/5 Series B USD 50M @ USD 500M，Amazon Ring 從 40 家供應商中獨選，1B+ calls、1M+ 開發者；Retell AI ARR USD 60M（+650% YoY），月 50M+ 實時 AI 電話；Bland AI 100M+ 同時通話容量，Series B USD 40M；Synthflow 無需程式碼快速上線為核心賣點，Series A USD 20M（Accel 領投）。",
+   "companies": [
+    {
+     "name": "Vapi",
+     "ticker": "—",
+     "country": "US",
+     "share": "1B+ calls 完成，2.7M unique agents，1M+ 開發者；每日 1-5M 通電話；Amazon Ring 獨選",
+     "products": "Vapi Voice AI Platform（API-first）、Vapi Enterprise（governance/guardrails/SLA）",
+     "note": "private；2026/5 Series B USD 50M @ USD 500M（Peak XV Partners 領投，M12/Kleiner Perkins/Bessemer 跟投）",
+     "src": "https://www.globenewswire.com/news-release/2026/05/12/3292882/0/en/vapi-raises-50m-series-b-as-it-reaches-1-billion-calls-powering-the-next-generation-of-enterprise-voice-ai.html"
+    },
+    {
+     "name": "Retell AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR USD 60M（+650% YoY，2026/4）；月 50M+ 實時 AI 電話；Wing VC Enterprise Tech 30 2026",
+     "products": "Retell Voice Agent Platform（real-time inbound/outbound AI phone agents）、Retell Dashboard",
+     "note": "總募資 USD 14M（種子）；ARR 成長速度超越大部分同期 voice AI 同儕",
+     "src": "https://finance.yahoo.com/news/upgraded-retell-ai-voice-platform-150000580.html"
+    },
+    {
+     "name": "Bland AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "100M+ 同時通話容量；40+ 語言，23 種支援實時翻譯；Sears/Samsara/Snapchat 等客戶",
+     "products": "Bland AI Voice Platform（programmable 入站/出站語音 AI agent）、Bland Voice、Bland API",
+     "note": "private；2025/2 Series B USD 40M（Emergence Capital 領投）；總募資 USD 65M；YC S23",
+     "src": "https://www.bland.ai/blogs/bland-raises-a-40m-series-b"
+    },
+    {
+     "name": "Synthflow AI",
+     "ticker": "—",
+     "country": "DE",
+     "share": "4,500 萬次通話，節省 500 萬小時客服人工；200+ CRM/行事曆/電信整合",
+     "products": "Synthflow Voice Agent Builder（no-code）、Voice API",
+     "note": "private；2025/6 Series A USD 20M（Accel 領投，Atlantic Labs+Singular 跟投）；總募資 USD 30M",
+     "src": "https://synthflow.ai/news/synthflow-raises-20m-series-a"
+    },
+    {
+     "name": "PolyAI",
+     "ticker": "—",
+     "country": "UK",
+     "share": "100+ 全球企業（Marriott/Caesars/UniCredit/Foot Locker/PG&E）；每日數百萬通電話",
+     "products": "PolyAI Agent Studio、企業級語音 AI call center 助理（金融/醫療/旅宿/能源/零售）",
+     "note": "private；2025/12 Series D USD 86M @ USD 750M（Georgian/Hedosophia/Khosla 共同領投，NVIDIA NVentures+Zendesk Ventures+Citi Ventures+Point72 跟投）；劍橋大學分拆；總募資 USD 200M+",
+     "src": "https://siliconangle.com/2025/12/15/call-center-chatbot-startup-polyai-raises-86m-750m-valuation/"
+    },
+    {
+     "name": "PolyAI",
+     "ticker": "—",
+     "country": "UK",
+     "share": "100+ 全球企業（Marriott/Caesars/UniCredit/Foot Locker/PG&E）；每日數百萬通電話",
+     "products": "PolyAI Agent Studio、企業級語音 AI call center 助理（金融/醫療/旅宿/能源/零售）",
+     "note": "private；2025/12 Series D USD 86M @ USD 750M（Georgian/Hedosophia/Khosla 共同領投，NVIDIA NVentures+Zendesk Ventures+Citi Ventures+Point72 跟投）；劍橋大學分拆；總募資 USD 200M+",
+     "src": "https://siliconangle.com/2025/12/15/call-center-chatbot-startup-polyai-raises-86m-750m-valuation/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "voice_speech_us"
+    },
+    {
+     "id": "cs_foundation"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cs_agent_platform_us"
+    },
+    {
+     "id": "crm_integration"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Vapi Series B USD 50M（GlobeNewswire 2026-05-12）",
+     "url": "https://www.globenewswire.com/news-release/2026/05/12/3292882/0/en/vapi-raises-50m-series-b-as-it-reaches-1-billion-calls-powering-the-next-generation-of-enterprise-voice-ai.html"
+    },
+    {
+     "label": "Retell AI ARR USD 60M +650% YoY（Yahoo Finance）",
+     "url": "https://finance.yahoo.com/news/upgraded-retell-ai-voice-platform-150000580.html"
+    },
+    {
+     "label": "Bland AI Series B USD 40M（官方部落格）",
+     "url": "https://www.bland.ai/blogs/bland-raises-a-40m-series-b"
+    },
+    {
+     "label": "Synthflow Series A USD 20M（官方 PR）",
+     "url": "https://synthflow.ai/news/synthflow-raises-20m-series-a"
+    }
+   ]
+  },
+  {
+   "id": "cs_agent_platform_asia",
+   "row": "platform",
+   "col": 4,
+   "span": 2,
+   "kind": "stage",
+   "name": "亞洲 CS Agent 平台",
+   "nameEn": "Asia CS Agent Platforms",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "亞洲在地 CS Agent 平台，深度整合本地語言、法規與業務流程，涵蓋日本 PKSHA voicebot、韓國三大電信 AICC、東南亞 FPT.AI 等，為當地企業 CCaaS 服務的核心整合商。",
+   "marketSize": "日本 CCaaS USD 383M（2025）→ USD 1,550M（2035）CAGR 15%；韓國 AICC 2027 目標 KRW 1 兆；APAC CCaaS CAGR ~23%",
+   "growth": "日本 Contact Center Software 2025-2033 CAGR 26.9%；SEA 電商 CS AI 2026 市場 >USD 200B",
+   "share": "null",
+   "analysis": "PKSHA Technology 日本 voicebot 市占 24.7%（Fuji Chimera 2026），FY2025 Q3 累計 ¥153.9B +25.1% YoY，部署瑞穗銀行 AI-IVR 多輪詢問；KT 於 MWC26 展示 Agentic AICC（從諮詢到解決全流程自動化），為亞洲最早 Agentic Contact Center 產品；SKT AICC（AIX 部門）YoY +32%；FPT.AI 月 5,000 萬通語音電話，聲稱自動化 70% call center 工作量。",
+   "companies": [
+    {
+     "name": "PKSHA Technology",
+     "ticker": "3993.T",
+     "country": "JP",
+     "share": "日本 voicebot 市占 24.7%（Fuji Chimera 2026）；50+ 大型 call center；月 >300,000 通",
+     "products": "PKSHA VoiceAgent（voicebot）、PKSHA AI Suite for Contact Center、AIAgent",
+     "note": "FY2025 Q3 累計 ¥153.9B（+25.1% YoY）；2026-03 為瑞穗銀行部署 AI-IVR「Multi-Turn Hearing」；與 Microsoft Japan 合作",
+     "src": "https://www.pkshatech.com/news/20260305/"
+    },
+    {
+     "name": "KT Corporation（Agentic AICC）",
+     "ticker": "030200.KS",
+     "country": "KR",
+     "share": "2027 年 AICC 等客製化 AI 業務銷售額目標 KRW 1 兆；2025 AI 累計投資 KRW 7 兆（約 USD 5.4B）",
+     "products": "KT AICC（NLU 自動接待+座席輔助）、KT Agentic AICC（2026-03 MWC26，多 AI agent 協作）",
+     "note": "亞洲最早官方披露 Agentic Contact Center；ADR: KT.US；NVIDIA 合作訓練智慧音箱及客服 LLM",
+     "src": "https://www.telecomtv.com/content/digital-platforms-services/kt-to-invest-5-4bn-in-ai-service-developments-by-2027-47792/"
+    },
+    {
+     "name": "SK Telecom（AICC + Adot Biz）",
+     "ticker": "017670.KS",
+     "country": "KR",
+     "share": "AIX 部門（含 AICC）FY2025 YoY +32%；2025-09 Adot Biz 擴展至 SK 集團 25 家子公司（~80,000 員工）",
+     "products": "SK Telecom AICC（語音辨識+自動相談）、Adot Biz（B2B AI agent）",
+     "note": "ADR: SKM.US；FY2025 整體 KRW 17.099 兆；2024-12 宣佈重組以強化 AI",
+     "src": "https://news.sktelecom.com/en/2706"
+    },
+    {
+     "name": "NTT Communications / NTT DATA",
+     "ticker": "9432.T",
+     "country": "JP",
+     "share": "NTT DATA CCaaS 全球部署，AI agentic 自主解決率達 50%；最大日本 SMS+Voice delivery 網路",
+     "products": "NTT CPaaS（SMS/Voice/IVR/Live Chat omnichannel API）、NTT DATA CCaaS（AI agentic）、AI 語音路由",
+     "note": "2025-01 NTT CPaaS 上線（與 Infobip 合作）；三菱 UFJ 銀行免付費電話 2025-12 AI 語音路由上線；計劃部署 200 種 AI Agent",
+     "src": "https://www.nttcoms.com/news/2025010801/en/"
+    },
+    {
+     "name": "Naver Cloud（CLOVA AiCall）",
+     "ticker": "035420.KS",
+     "country": "KR",
+     "share": "韓國政府 AI Champion 5 社計劃受益者；CLOVA AiCall 整合 Naver Cloud Platform + 電信夥伴 CCaaS",
+     "products": "CLOVA AiCall（語音 AI 客服，inbound/outbound bot）、CLOVA Studio（LLM API）、HyperCLOVA X",
+     "note": "Naver Q1 2025 整體 KRW 2.8 兆（+10.8% YoY）；韓語訓練資料是 GPT-4 的 6,500 倍",
+     "src": "https://guide.ncloud-docs.com/docs/en/clovaaicall-aicall-1-1"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "voice_speech_asia"
+    },
+    {
+     "id": "cs_foundation"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "crm_integration"
+    },
+    {
+     "id": "jp_kr_cs"
+    },
+    {
+     "id": "sea_cs"
+    }
+   ],
+   "sources": [
+    {
+     "label": "PKSHA Technology 瑞穗銀行 VoiceAgent 導入（2026-03）",
+     "url": "https://www.pkshatech.com/news/20260305/"
+    },
+    {
+     "label": "KT AI 投資 USD 5.4B 官方聲明（TelecomTV）",
+     "url": "https://www.telecomtv.com/content/digital-platforms-services/kt-to-invest-5-4bn-in-ai-service-developments-by-2027-47792/"
+    },
+    {
+     "label": "SK Telecom FY2025 業績（官方 Newsroom）",
+     "url": "https://news.sktelecom.com/en/2706"
+    },
+    {
+     "label": "NTT CPaaS 上線官方 PR（2025-01）",
+     "url": "https://www.nttcoms.com/news/2025010801/en/"
+    }
+   ]
+  },
+  {
+   "id": "ccaas_global",
+   "row": "ccaas",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "CCaaS 傳統巨頭 AI 化",
+   "nameEn": "CCaaS Incumbents with AI",
+   "competition": "oligopoly",
+   "single": "三強格局但 top-3 僅 ~55%（NICE 22.2% + Genesys 19.7% + Five9 13.1%，未達 70% 真寡占門檻，長尾分散）；NICE 2025/9 USD 955M 收購 Cognigy 擴大領先；上游 LLM 定價權外流（87% 嵌入 OpenAI/Anthropic/Google）",
+   "desc": "傳統 CCaaS 雲端聯絡中心供應商積極 AI 化，在既有通話錄音/工單/路由等功能上疊加 Virtual Agent、Agent Copilot、Quality Management AI，向企業提供 all-in-one AI CCaaS 平台。",
+   "marketSize": "全球 CCaaS：NICE 22.2% / Genesys 19.7% / Five9 13.1%（Metrigy Q1 2025）；Genesys Cloud ARR USD 2.4B（Q3 FY26）；NICE 2025 全年 USD 2.945B",
+   "growth": "Genesys Cloud ARR FY26 Q3 USD 2.4B（YoY +33%）；NICE AI ARR USD 328M（+66% YoY）；Five9 Enterprise AI 營收 Q4 FY25 +50% YoY",
+   "share": "null",
+   "analysis": "NICE 2025/9 以 USD 955M 完成 Cognigy 收購，號稱唯一統合 voice/digital/agentic AI 的 enterprise 平台，AI ARR USD 328M（+66% YoY）；Genesys 2025/7 獲 Salesforce+ServiceNow 聯合投資 USD 1.5B，Cloud ARR FY26 Q3 達 USD 2.4B（+33% YoY），IPO 延後至 2026+；Five9 FY25 全年 USD 1.1B 創紀錄；Twilio 2026/4 推 Flex Embeddable SDK，Gartner CPaaS MQ Leader 第三連任；NICE 於 NICE World 2026 將 agentic AI 定位為核心架構，Cognigy 預估 2026 年底 exit ARR USD 85M（+80%）。",
+   "companies": [
+    {
+     "name": "NICE Ltd.",
+     "ticker": "NICE",
+     "country": "IL",
+     "share": "2025 全年 USD 2.945B（+8% YoY）；AI ARR USD 328M（+66% YoY）；Q1 2026 USD 768.6M（+9.8% YoY）",
+     "products": "CXone Mpower（AI-native CX）、CXone Mpower Orchestrator（Agentic AI 協作）、Cognigy（2025/9 併入）、Enlighten AI",
+     "note": "2025/9/8 以 USD 955M 完成 Cognigy 收購；CCaaS 全球市占 22.2%（Metrigy Q1 2025）；NICE World 2026 將 agentic AI 定位為核心架構，以併購 Cognigy 消除對第三方虛擬客服技術依賴（Cognigy 預估 2026 年底 exit ARR USD 85M，+80%）",
+     "src": "https://www.cmswire.com/contact-center/nice-makes-its-move-at-nice-world-2026-agentic-ai-is-now-the-architecture/"
+    },
+    {
+     "name": "Genesys",
+     "ticker": "—",
+     "country": "US",
+     "share": "Cloud ARR Q3 FY26 近 USD 2.4B（+30%+ YoY，2025-12 披露），NRR 120%+；AI ARR USD 250M+；55%+ 客戶使用 AI",
+     "products": "Genesys Cloud CX、AI Experience（Virtual Agent/Agent Copilot/Knowledge）",
+     "note": "private；2025/7/31 Salesforce+ServiceNow 聯合投資 USD 1.5B；CCaaS 全球市占 19.7%；2024/10 機密遞件 S-1（目標估值 USD 21B），IPO 確認延至 2026",
+     "src": "https://www.genesys.com/company/newsroom/announcements/genesys-announces-1-5-billion-investment-by-salesforce-and-servicenow"
+    },
+    {
+     "name": "Five9",
+     "ticker": "FIVN",
+     "country": "US",
+     "share": "FY25 全年 USD 1.1B（創紀錄）；Enterprise AI 收入 Q4 FY25 +50% YoY，占 Enterprise 訂閱 10%",
+     "products": "Genius AI Suite（Agentic Quality Management、Genius Routing、OneVUE Analytics、No-Code Adaptive Digital）",
+     "note": "CCaaS 全球市占 13.1%；2028 預估 USD 1.4B；Q1 2026 USD 305.3M（+9% YoY）",
+     "src": "https://ir.five9.com/news-releases/news-release-details/five9-reports-first-quarter-2026-results"
+    },
+    {
+     "name": "Twilio Flex",
+     "ticker": "TWLO",
+     "country": "US",
+     "share": "2025 全年 USD 5.07B（+14% YoY）；Q1 2026 USD 1.41B（+20% YoY）；Gartner CPaaS MQ Leader 第三連任",
+     "products": "Twilio Flex（可嵌入 SDK 的 CCaaS）、Flex Embeddable SDK（2026/4）、Salesforce Voice 整合、Segment CDP for CX",
+     "note": "2026/4 推出 Flex Embeddable SDK，支援任意 Web App 嵌入 CCaaS",
+     "src": "https://www.twilio.com/en-us/flex"
+    },
+    {
+     "name": "Verint Systems",
+     "ticker": "VRNT",
+     "country": "US",
+     "share": "AI ARR USD 354M（+24% YoY），占訂閱 ARR 近 50%；4M agents 使用 Verint 軟體",
+     "products": "Verint Open CCaaS Platform、50+ Specialized Bots（Knowledge/QM/Forecasting/Coaching）",
+     "note": "FY26 全年訂閱 ARR guidance USD 768M（+8% YoY）；FY26 Q1 USD 208.1M",
+     "src": "https://www.verint.com/resources/press-releases/"
+    },
+    {
+     "name": "Microsoft Dynamics 365 Contact Center",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "Copilot Studio Realtime Voice Agents 2025 GA；客戶含 Nubank/Geely",
+     "products": "Dynamics 365 Contact Center（全渠道 AI CCaaS）、Customer Intent Agent、Copilot Studio Real-time Voice Agents、Azure Voice Live API",
+     "note": "2025/1 Customer Intent Agent GA；利用 Azure OpenAI GPT-4o Realtime API 驅動語音對話；2025/10–2026/6 限時 40% 折扣",
+     "src": "https://www.microsoft.com/en-us/dynamics-365/products/contact-center/pricing"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cs_foundation"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "crm_integration"
+    },
+    {
+     "id": "bpo_partners"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NICE FY2025 Q4 業績（+14% Cloud YoY，AI ARR USD 328M）",
+     "url": "https://www.nice.com/press-releases/nice-reports-14-year-over-year-cloud-revenue-growth-for-fourth-quarter-and-13-growth-for-full-year-2025"
+    },
+    {
+     "label": "Genesys USD 1.5B Salesforce+ServiceNow 投資（BusinessWire 2025-07-31）",
+     "url": "https://www.businesswire.com/news/home/20250731777013/en/Genesys-Announces-$1.5-Billion-Investment-by-Salesforce-and-ServiceNow"
+    },
+    {
+     "label": "Five9 Q1 2026 業績（官方 IR）",
+     "url": "https://ir.five9.com/news-releases/news-release-details/five9-reports-first-quarter-2026-results"
+    },
+    {
+     "label": "Microsoft Dynamics 365 Contact Center 定價頁面",
+     "url": "https://www.microsoft.com/en-us/dynamics-365/products/contact-center/pricing"
+    }
+   ]
+  },
+  {
+   "id": "crm_integration",
+   "row": "ccaas",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "CRM 嵌入式客服 Agent",
+   "nameEn": "CRM-Embedded CS Agents",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "CRM 廠商在既有客戶資料與工單管理基礎上，深度嵌入 AI Agents 提供全自動客服解決方案，以 outcome-based pricing 加速滲透，形成「CRM＋AI Agent」的 one-stop-shop 競爭格局。",
+   "marketSize": "Salesforce Agentforce ARR USD 1.2B（FY27 Q1，+205% YoY）；Zendesk AI ARR USD 200M（2026 目標 USD 500M）；ServiceNow Now Assist ACV 目標上調至 USD 1.5B（FY26）",
+   "growth": "Salesforce Agentforce ARR +205% YoY（FY27 Q1）；ServiceNow Now Assist USD 1M+ ACV 客戶 +130% YoY；HubSpot FY25 USD 3.1B（+21% YoY）；採用拐點：66% 服務組織已導入 AI Agent（2025 僅 39%），91% CX 主管面臨高層導入壓力（Salesforce/Gartner）",
+   "share": "null",
+   "analysis": "Salesforce Agentforce FY26 Q4 ARR USD 800M（+169% YoY），29,000+ deals，60%+ bookings 來自既有客戶擴張，全年 USD 41.5B（+10% YoY）；ServiceNow Q1 2026 訂閱 USD 3.671B（+22% YoY），AI ACV 目標上調至 USD 1.5B；Zendesk 2026/3 以二十年來最大併購收購 Forethought（每月逾 10 億次互動），路線圖提前逾一年、並預期今年自主 AI 互動首度超過人工；HubSpot Breeze 2026/4 轉 outcome pricing（USD 0.50/resolved conversation）。",
+   "companies": [
+    {
+     "name": "Salesforce（Agentforce for Service）",
+     "ticker": "CRM",
+     "country": "US",
+     "share": "Agentforce ARR FY27 Q1 USD 1.2B（+205% YoY）；FY26 Q4 近 USD 800M（+169% YoY，累計 29,000+ 客戶交易）；Agentforce+Data 360 ARR 近 USD 3.4B（含 Informatica Cloud USD 1.1B）；FY27 Q1 營收 USD 11.13B（+13% YoY）",
+     "products": "Agentforce 3 for Service、Agentforce Contact Center（直攻 NICE/Genesys）、Service Cloud、Voice Agentforce（NovaSonic 驅動）",
+     "note": "60%+ AI bookings 來自既有客戶擴張；上調 FY27 全年營收指引至 USD 459-462 億；Agentforce 計價演進為消費制（Flex Credits 每動作 20 credits=$0.10／每次對話 $2，兩者不可同 org 並用）；2026/6/15 簽約以 USD 3.6B 收購 Fin（前 Intercom）強化 agentic CX",
+     "src": "https://www.salesforce.com/news/press-releases/2026/05/27/fy27-q1-earnings/"
+    },
+    {
+     "name": "ServiceNow（Now Assist for CSM）",
+     "ticker": "NOW",
+     "country": "US",
+     "share": "Q1 2026 訂閱 USD 3.671B（+22% YoY）；Now Assist USD 1M+ ACV 客戶 YoY +130%；AI ACV 目標 USD 1.5B（FY26）",
+     "products": "ServiceNow CSM、Now Assist for CSM（Agent Copilot+Virtual Agent）、AI Agents（Pro Plus/Enterprise Plus SKU）",
+     "note": "與 Sierra AI 互通整合；Q1 2026 業績超標但股價年初至今跌 40%（中東 on-prem deal 滑點）",
+     "src": "https://investor.servicenow.com/news-releases/news-release-details/servicenow-inc-reports-first-quarter-2026-financial-results"
+    },
+    {
+     "name": "Zendesk（AI Agents + Forethought）",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025 AI ARR USD 200M，20,000+ 客戶；2026/3 完成 Forethought 收購（其 2025 已支撐每月逾 10 億次互動）",
+     "products": "Zendesk AI Agents（chat/email/voice）、Forethought AI Agents by Zendesk（B2B/B2C/B2E 自主 workflow）、Zendesk Suite",
+     "note": "2022 私有化 @ USD 10.2B；2024/3 先前收購 Ultimate.ai（德國，80% 工單自動解決）；2026/3 併購 Forethought 為二十年來最大併購、產品路線圖提前逾一年，並預期今年自主 AI 處理的服務互動將首度超過人工",
+     "src": "https://techcrunch.com/2026/03/11/zendesk-acquires-agentic-customer-service-startup-forethought/"
+    },
+    {
+     "name": "HubSpot（Breeze）",
+     "ticker": "HUBS",
+     "country": "US",
+     "share": "FY25 全年 USD 3.1B（+21% YoY）；Customer Agent 8,000+ 客戶啟用，mid-60% 工單解決率",
+     "products": "Breeze Customer Agent（USD 0.50/resolved conversation，2026/4 outcome pricing）、Breeze Prospecting Agent（USD 1/lead）、Breeze Copilot",
+     "note": "2026/4 降價並提供 28 天免費試用加速採用；Q1 2026 USD 912.3M billings（+19% YoY）",
+     "src": "https://ir.hubspot.com/news-releases/news-release-details/hubspot-reports-strong-q4-and-full-year-2025-results"
+    },
+    {
+     "name": "Amazon Connect（AWS AI）",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "最大雲端 CCaaS 市佔之一；2025 底推出 Nova Sonic 2 Speech-to-Speech",
+     "products": "Amazon Connect（CCaaS）、Amazon Lex（NLU/語音機器人）、Amazon Bedrock Knowledge Bases（RAG）、Nova Sonic 2（語音對語音）",
+     "note": "Connect 深度整合 AWS Lambda+Bedrock+Lex；Vapi 被 Amazon Ring 從 40 家廠商中選中",
+     "src": "https://aws.amazon.com/products/connect/customer/ai-agents/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cs_agent_platform_us"
+    },
+    {
+     "id": "ccaas_global"
+    },
+    {
+     "id": "cs_agent_platform_asia"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "jp_kr_cs"
+    },
+    {
+     "id": "sea_cs"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Salesforce FY26 Q4 業績（Agentforce ARR USD 800M）",
+     "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Fourth-Quarter-Fiscal-2026-Results/default.aspx"
+    },
+    {
+     "label": "ServiceNow Q1 2026 業績（官方 IR）",
+     "url": "https://investor.servicenow.com/news-releases/news-release-details/servicenow-inc-reports-first-quarter-2026-financial-results"
+    },
+    {
+     "label": "Zendesk 完成 Forethought 收購（2026-03）",
+     "url": "https://www.zendesk.com/newsroom/press-releases/zendesk-completes-acquisition-of-forethought/"
+    },
+    {
+     "label": "Amazon Connect AI Agents 官方頁面",
+     "url": "https://aws.amazon.com/products/connect/customer/ai-agents/"
+    }
+   ]
+  },
+  {
+   "id": "bpo_partners",
+   "row": "ccaas",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "BPO + AI 轉型夥伴",
+   "nameEn": "BPO Partners Embracing AI",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "全球大型 BPO 廠商從純外包轉型為 AI-BPO 科技公司，以自有 AI 工具（iX Suite/TP.ai/TaskUs Agentic AI）提升自動化比例，同時服務企業 AI 導入顧問需求。",
+   "marketSize": "Concentrix FY26 guidance USD 10.0-10.2B；Teleperformance FY25 EUR 10.2B；TaskUs FY25 USD 1.184B（創紀錄）",
+   "growth": "Concentrix iX Suite AI 技術驅動交易 wins +61% YoY（Q1 2026）；TaskUs AI Services FY25 +59% YoY（已達 USD 200M+）",
+   "share": "null",
+   "analysis": "Concentrix Q1 2026 USD 2.50B（+5.4% YoY），iX Suite AI 驅動 deals wins +61% YoY，從純外包轉型為 AI-BPO 科技公司；TaskUs AI Services FY25 +59% YoY 達 USD 200M+，連續 6 季 30%+ 成長；Teleperformance FY26 550+ AI 專案，推出 TP.ai FAB 轉型 AI-native CX 技術公司；Klarna 2025/5 過度 AI 化警示（CEO 公開承認服務品質下降、重啟人類客服），BPO + Human-in-the-loop 成為更謹慎的企業選擇。【絃外之音】per-seat 計費正被 per-resolution（如 HubSpot USD 0.50/件、Intercom USD 0.99/件）取代，BPO 帳面營收尚穩但商業模式遭釜底抽薪——Teleperformance 股價曾兩月暴跌逾 60%，FOBO（fear of being obsolete）已被市場 price-in，Concentrix/TP 為 AI 替代風險最直接的二階受害者。",
+   "companies": [
+    {
+     "name": "Concentrix",
+     "ticker": "CNXC",
+     "country": "US",
+     "share": "Q1 2026 USD 2.50B（+5.4% YoY）；FY26 guidance USD 10.0-10.2B；iX Suite AI deals wins +61% YoY",
+     "products": "iX Hello（AI 語音 agent）、iX Hero（AI 員工輔助）、iX Suite 整合 AI BPO",
+     "note": "全球最大 CX BPO 之一；從純外包轉型為 AI-BPO 科技公司",
+     "src": "https://www.stocktitan.net/news/CNXC/concentrix-reports-first-quarter-2026-3rpvml7jvufn.html"
+    },
+    {
+     "name": "TaskUs",
+     "ticker": "TASK",
+     "country": "US",
+     "share": "FY25 全年 USD 1.184B（創紀錄）；AI Services +59% YoY 達 USD 200M+；Q1 2026 +36.1% YoY（連續 6 季 30%+）",
+     "products": "TaskUs AI Services（數據標注+AI 評估+AI 安全）、Agentic AI Consulting Practice（2025/2 推出）、數位 CX+Trust & Safety",
+     "note": "2025/2 推出 Agentic AI 顧問實務，幫客戶整合 AI agent 進支援流程",
+     "src": "https://ir.taskus.com/news-releases/news-release-details/taskus-reports-first-quarter-2026-results"
+    },
+    {
+     "name": "Teleperformance",
+     "ticker": "TEP",
+     "country": "FR",
+     "share": "FY25 EUR 10.2B；Q1 2026 550+ AI 專案，50+ AI deal wins",
+     "products": "TP.ai FAB（Foundational AI Backbone）、Revenue-as-a-Service、Enhanced Data Services for AI",
+     "note": "FY26 guidance 同比 0-2% 成長；從傳統 BPO 轉型 AI-native CX 技術公司；TEP on Euronext",
+     "src": "https://www.tp.com/en/press-releases/teleperformance-2025-results"
+    },
+    {
+     "name": "TTEC Holdings",
+     "ticker": "TTEC",
+     "country": "US",
+     "share": "TTEC Digital 榮獲 2025-2026 Microsoft AI Business Solutions Inner Circle Award",
+     "products": "TTEC Digital（AI CCaaS 整合/自動化顧問）、TTEC Engage（人工+AI 混合 CX 外包）",
+     "note": "股票 2024 年來承壓（BPO AI 替代風險）；定位為 AI ROI 實現顧問差異化",
+     "src": "https://ir.ttec.com/press-releases"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cs_agent_platform_us"
+    },
+    {
+     "id": "ccaas_global"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Concentrix Q1 2026 業績（StockTitan）",
+     "url": "https://www.stocktitan.net/news/CNXC/concentrix-reports-first-quarter-2026-3rpvml7jvufn.html"
+    },
+    {
+     "label": "TaskUs Q1 2026 業績（官方 IR）",
+     "url": "https://ir.taskus.com/news-releases/news-release-details/taskus-reports-first-quarter-2026-results"
+    },
+    {
+     "label": "Teleperformance FY2025 業績（官方 PR）",
+     "url": "https://www.tp.com/en/press-releases/teleperformance-2025-results"
+    }
+   ]
+  },
+  {
+   "id": "jp_kr_cs",
+   "row": "asia",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "日韓在地 CS 終端客戶",
+   "nameEn": "Japan & Korea CS AI End-Users",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "日韓本地企業（金融/電信/零售）作為 CS AI 終端採購方，整合本地平台商（PKSHA/Naver/KT）與全球 CCaaS（NICE/Genesys）技術，部署 AI 客服以降低人工成本並提升服務品質。",
+   "marketSize": "日本 Contact Center Software USD 2,565M（2025）→ USD 16,964M（2033）；韓國 AICC + 金融/電信垂直 KRW 1 兆+目標",
+   "growth": "日本 CAGR 26.9%（Grand View Research）；韓國三大電信 AICC 同步加速；Kakao 2025 全年 OPM +59.1% YoY",
+   "share": "null",
+   "analysis": "KDDI 2025-03 上線 au Support AI Advisor 數位人客服，持股 ELYZA 43%；Kakao Enterprise 以 Kakao i Connect Center 主打金融/電信垂直，教保生命保險為標竿案例；中華電信 InventAI 2025-10 分拆子公司，FY2025 合併 NT$236.1B（USD 7.5B）；玉山銀行「小玉」24/7 AI 客服 Stevie Awards 認可；momo × 微軟 Azure OpenAI 客服準確率逾 90%。",
+   "companies": [
+    {
+     "name": "KDDI（au / ELYZA）",
+     "ticker": "9433.T",
+     "country": "JP",
+     "share": "ELYZA 持股 43%；GSMA Foundry 案例；2025-03 上線 au Support AI Advisor",
+     "products": "au Support AI Advisor（數位人+GenAI）、ELYZA LLM 客服整合、KDDI au contact center AI platform",
+     "note": "ELYZA 2026-03 日本數位廳選定部署 18 萬政府人員；Llama-3.1-ELYZA-JP-70B",
+     "src": "https://newsroom.kddi.com/english/news/detail/kddi_nr-463_3742.html"
+    },
+    {
+     "name": "Kakao Enterprise（Kakao i Connect Center）",
+     "ticker": "—",
+     "country": "KR",
+     "share": "母公司 Kakao 2025 全年 KRW 8.09 兆（+2.9% YoY），OPM +59.1% YoY；Connect Center 已部署教保生命保險",
+     "products": "Kakao i Connect Center（AICC：語音辨識+NLU+語音合成+24 小時客服）、KakaoTalk Channel API",
+     "note": "母公司 035720.KS；Kakao 與 Google/OpenAI 建立全棧 AI 合作（2025）；主打金融/電信垂直",
+     "src": "https://www.kakaocorp.com/page/detail/11812?lang=ENG"
+    },
+    {
+     "name": "中華電信（InventAI）",
+     "ticker": "2412.TW",
+     "country": "TW",
+     "share": "FY2025 合併 NT$236.1B（USD 7.5B），純益 NT$40.5B（創歷史新高）；2023 年 AI+人工文字服務合計 1,133 萬次",
+     "products": "AI 2.0 智慧客服回應助理（線上文字客服）、AI 語音外撥調查（每年逾百萬通）、InventAI Co., Ltd.（2025-10 分拆子公司）",
+     "note": "ADR: CHT.US；InventAI 成立後可對外提供商業 AI 服務",
+     "src": "https://www.cht.com.tw/home/enterprise/news/success-case/2026/20260106_1"
+    },
+    {
+     "name": "玉山銀行 E.SUN Bank",
+     "ticker": "2884.TW",
+     "country": "TW",
+     "share": "智能客服「小玉」24/7；多次獲 Stevie Awards Asia Pacific 認可",
+     "products": "玉山智能客服「小玉」（24 小時線上文字+語音）、行動銀行網路電話整合客服",
+     "note": "母公司玉山金控 2884.TW；小玉提供 FAQ/帳戶查詢/金融交易導引；台灣數位銀行先驅",
+     "src": "https://robot.esunbank.com.tw/introduction/index.html"
+    },
+    {
+     "name": "momo 富邦媒",
+     "ticker": "8454.TWO",
+     "country": "TW",
+     "share": "AI 客服準確率逾 90%；自助服務意願 +5%（相當於客服人力 +5.7%）",
+     "products": "momo AI 智慧客服（Azure OpenAI+RAG，2025-07 正式上線）、下一步：AI 購物顧問",
+     "note": "合作夥伴：台灣微軟；繁體中文 LLM 覆蓋強化；接 order status/SKU 頁/政策文件",
+     "src": "https://news.microsoft.com/source/asia/2025/10/20/momo-ai-customer-sevice/?lang=zh-hant"
+    },
+    {
+     "name": "Lotte Group（Dustin / HAVI）",
+     "ticker": "023530.KS",
+     "country": "KR",
+     "share": "Dustin（Lotte Dept. Store chatbot，AWS Bedrock）2025-12 上線；HAVI（AI shopping agent）2026-04 beta",
+     "products": "Dustin（Lotte Dept. Store AI chatbot）、HAVI（Lotte Hi-Mart AI shopping agent）、롯데홈쇼핑 ChatGPT App",
+     "note": "多品牌並行 AI CS 部署；不同品牌採不同 AI 夥伴（Anthropic/Sendbird/AWS）",
+     "src": "https://cm.asiae.co.kr/en/article/2025121721224128104"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cs_agent_platform_asia"
+    },
+    {
+     "id": "crm_integration"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "KDDI au Support AI Advisor 官方 PR（2025-03）",
+     "url": "https://newsroom.kddi.com/english/news/detail/kddi_nr-463_3742.html"
+    },
+    {
+     "label": "中華電信 AI 語音客服進化官方 PR（2026-01）",
+     "url": "https://www.cht.com.tw/home/enterprise/news/success-case/2026/20260106_1"
+    },
+    {
+     "label": "momo × Microsoft AI 客服官方 PR（2025-10）",
+     "url": "https://news.microsoft.com/source/asia/2025/10/20/momo-ai-customer-sevice/?lang=zh-hant"
+    },
+    {
+     "label": "Kakao Q3 2025 業績（官方 IR）",
+     "url": "https://www.kakaocorp.com/page/detail/11812?lang=ENG"
+    }
+   ]
+  },
+  {
+   "id": "sea_cs",
+   "row": "asia",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "東南亞 CS AI 終端",
+   "nameEn": "SEA CS AI End-Users & Platforms",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "東南亞（印尼/越南/新加坡/泰國/菲律賓）大型科技與電信公司部署在地語言 CS AI，本地語言 LLM（GoTo Sahabat-AI 70B 印尼語、FPT 越南語）為差異化核心，Shopee 押注全球最強模型（OpenAI Operator）形成兩條路線競爭。",
+   "marketSize": "SEA 電商市場 2026 預計 >USD 200B；FPT AI+Cloud FY2025 新合約 VND 9,130 億（+48.4% YoY）",
+   "growth": "APAC CCaaS CAGR ~23%；GoTo Sahabat-AI 2025-06 上線；Grab 連續 13 季 Adj. EBITDA 擴張",
+   "share": "null",
+   "analysis": "Sea/Shopee 2025-02 與 OpenAI 合作 Operator（AI agent 自動瀏覽購物），為 SEA+巴西 launch partner；GoTo Sahabat-AI 70B（GoTo×Indosat，2025-06）為印尼最大本地 LLM，支援爪哇語/巽他語/峇里語等；FPT.AI 月處理 5,000 萬通電話，宣稱自動化 70% call center 工作量；Grab 連續 13 季 Adj. EBITDA 擴張，AI chat support 工程重構實現峰值智能排隊+動態路由。",
+   "companies": [
+    {
+     "name": "Sea Limited / Shopee",
+     "ticker": "SE",
+     "country": "SG",
+     "share": "東南亞最大電商平台（8 國 800+ 城市）；OpenAI Operator SEA+巴西 launch partner（2025-02）",
+     "products": "Shopee AI chatbot「Choki」（NLP 多語言，24/7）、OpenAI Operator 合作（AI agent 自動瀏覽購物）",
+     "note": "FY2025 第二次年度盈利；AI 工具使廣告主提升支出意願同時客服成本降低",
+     "src": "https://www.sea.com/news/348"
+    },
+    {
+     "name": "Grab Holdings",
+     "ticker": "GRAB",
+     "country": "SG",
+     "share": "連續 13 季 Adj. EBITDA 擴張；Trailing 12M Adj. FCF USD 157M；AI chat support 智能排隊+動態路由",
+     "products": "Grab AI chat support（智能路由+即時排程）、GrabAssist（重構後 AI routing system）",
+     "note": "峰值期智能排隊+動態路由；具體 AICC 佔比未拆分披露",
+     "src": "https://engineering.grab.com/reshaping-chat-support"
+    },
+    {
+     "name": "GoTo Group（Sahabat-AI）",
+     "ticker": "GOTO.JK",
+     "country": "ID",
+     "share": "Sahabat-AI 70B 為印尼最大本地 LLM（2025-06 上線）；GoTo+Indosat 合作",
+     "products": "Sahabat-AI（70B 多語言 LLM）、GoPay chatbot、Gojek+Tokopedia CS chatbot",
+     "note": "合作夥伴 Indosat Ooredoo Hutchison（ISAT.JK）；支援印尼語+爪哇語/巽他語/峇里語/巴塔克語",
+     "src": "https://www.gotocompany.com/news/press/sahabat-ai-semakin-canggih-indosat-dan-goto-luncurkan-model-70-miliar-parameter-dengan-layanan-chat-multibahasa"
+    },
+    {
+     "name": "FPT Corporation / FPT.AI",
+     "ticker": "FPT.HM",
+     "country": "VN",
+     "share": "月 5,000 萬通語音電話；FY2025 AI+Cloud 新合約 VND 9,130 億（+48.4% YoY）；200+ 客戶、15 國",
+     "products": "FPT.AI Voice Agent、FPT AI Engage（下一代虛擬客服平台）、FPT CX Suite",
+     "note": "宣稱自動化 70% call center 工作量；越南 Make in Vietnam 數位平台認證；NVIDIA GPU 升級案例",
+     "src": "https://fptsmartcloud.com/en/ceo-le-hong-viet-ai-can-support-10-million-customers-each-month/"
+    },
+    {
+     "name": "Kakao i（東南亞 KakaoTalk Channel）",
+     "ticker": "035720.KS",
+     "country": "KR",
+     "share": "KakaoTalk 國際版覆蓋部分 SEA 市場；Kakao 2025 OPM +59.1% YoY",
+     "products": "KakaoTalk Channel API（B2C 訊息通道）、Kakao i 國際 AI chatbot 方案",
+     "note": "主力仍在韓國市場；東南亞佈局以 KakaoTalk 國際版為橋頭堡",
+     "src": "https://www.kakaocorp.com/page/detail/11812?lang=ENG"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cs_agent_platform_asia"
+    },
+    {
+     "id": "crm_integration"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Sea Limited × OpenAI Operator 合作官方 PR",
+     "url": "https://www.sea.com/news/348"
+    },
+    {
+     "label": "GoTo Sahabat-AI 70B 上線官方 PR（2025-06）",
+     "url": "https://www.gotocompany.com/news/press/sahabat-ai-semakin-canggih-indosat-dan-goto-luncurkan-model-70-miliar-parameter-dengan-layanan-chat-multibahasa"
+    },
+    {
+     "label": "FPT Smart Cloud AI 客服月 1,000 萬客戶（官方文章）",
+     "url": "https://fptsmartcloud.com/en/ceo-le-hong-viet-ai-can-support-10-million-customers-each-month/"
+    },
+    {
+     "label": "Grab Engineering Chat Support 重構（官方工程部落格）",
+     "url": "https://engineering.grab.com/reshaping-chat-support"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "voice_speech_us",
+   "cs_agent_platform_us"
+  ],
+  [
+   "voice_speech_us",
+   "voice_agent_infra"
+  ],
+  [
+   "voice_speech_asia",
+   "cs_agent_platform_asia"
+  ],
+  [
+   "voice_speech_asia",
+   "jp_kr_cs"
+  ],
+  [
+   "cs_foundation",
+   "cs_agent_platform_us"
+  ],
+  [
+   "cs_foundation",
+   "cs_agent_platform_asia"
+  ],
+  [
+   "cs_foundation",
+   "ccaas_global"
+  ],
+  [
+   "voice_agent_infra",
+   "cs_agent_platform_us"
+  ],
+  [
+   "voice_agent_infra",
+   "crm_integration"
+  ],
+  [
+   "cs_agent_platform_us",
+   "crm_integration"
+  ],
+  [
+   "cs_agent_platform_us",
+   "bpo_partners"
+  ],
+  [
+   "cs_agent_platform_asia",
+   "crm_integration"
+  ],
+  [
+   "cs_agent_platform_asia",
+   "jp_kr_cs"
+  ],
+  [
+   "cs_agent_platform_asia",
+   "sea_cs"
+  ],
+  [
+   "ccaas_global",
+   "crm_integration"
+  ],
+  [
+   "ccaas_global",
+   "bpo_partners"
+  ],
+  [
+   "crm_integration",
+   "jp_kr_cs"
+  ],
+  [
+   "crm_integration",
+   "sea_cs"
+  ]
+ ],
+ "_proposed": {}
+}

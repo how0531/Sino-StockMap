@@ -1,0 +1,616 @@
+{
+ "id": "chiplet_ucie",
+ "tab": "Chiplet/UCIe",
+ "title": "Chiplet / UCIe / Die-to-Die 互連 IP 供應鏈 (Chiplet & UCIe)",
+ "subtitle": "Chiplet & UCIe — 異質整合（chiplet）是繞過單晶片良率與光罩極限的主路徑，UCIe 3.0（2025-08 發布、64GT/s，2026 Q1 完成首次跨供應商 live 互通實測）把 die-to-die PHY/控制器 IP 變成每顆 AI 晶片必繳的「互連收費站」。價值鏈：D2D PHY/控制器 IP（Synopsys/Cadence 雙寡占；Alphawave 2025-12 被高通 $2.4B 收編並下市、IP 併入 AI200/AI250；Eliyan 完成 $50M 戰投）→ NoC/系統 IP（Arteris Q1 2026 +39%、2026-01 收 Cycuity 補資安、累計部署 >40 億顆）→ 先進封裝互連介面（UCIe-A bump/hybrid bonding；Broadcom 2026-02 出貨首顆 2nm 3.5D F2F SoC；Ayar Labs $500M E 輪推全球首顆 UCIe 光學 chiplet）→ chiplet 設計服務（世芯 Trainium 3 2026-05 量產/創意/Broadcom/Marvell；Nvidia 投資 Marvell $2B+NVLink Fusion UCIe 橋接）→ UCIe 聯盟（12 promoter、120+ 會員）→ AI XPU 終端（OpenAI 成 Broadcom 第 6 客）。D2D IP 市場 2025 $1.8B→2033 $3.72B、UCIe 佔 53%。有別於 icdesign（EDA/CPU IP 廣義）與 asic（XPU 終端），本題聚焦 chiplet 互連經濟學。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "26+"
+  },
+  {
+   "k": "D2D IP 市場",
+   "v": "$1.8B→$3.72B",
+   "sub": "2025→2033 CAGR 9.57%·UCIe 佔 53%",
+   "hot": true
+  },
+  {
+   "k": "催化",
+   "v": 4,
+   "sub": "UCIe 光學 chiplet(Ayar $500M)·Nvidia 投 Marvell $2B+NVLink Fusion·Broadcom 2nm 3.5D 出貨·Alphawave 併入高通",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "ip",
+   "label": "D2D 互連 IP / NoC 系統 IP  Interconnect & System IP",
+   "main": false
+  },
+  {
+   "id": "pkg",
+   "label": "先進封裝互連介面  Advanced-Packaging Interface",
+   "main": false
+  },
+  {
+   "id": "service",
+   "label": "chiplet 設計服務 / UCIe 標準  Design Service & Standard",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "AI XPU / HPC 終端需求  Offtake & Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "d2d_phy",
+   "row": "ip",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "D2D PHY / 控制器 / 協定 IP",
+   "nameEn": "Die-to-Die PHY · Controller IP",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · UCIe 3.0 64GT/s 收費站；Synopsys/Cadence 雙寡占、Alphawave 被高通 $2.4B 收編",
+   "desc": "UCIe-S（標準封裝）/ UCIe-A（先進封裝）的實體層 PHY 與協定控制器 IP（mapping PCIe/CXL/AXI/CHI-C2C/streaming），是 chiplet 互連最直接的「收費站」，每顆多晶粒 AI 晶片皆需授權＋權利金。",
+   "marketSize": "$1.8B→$3.72B(2033)",
+   "growth": "UCIe 佔 D2D IP 53%",
+   "share": "null",
+   "analysis": "UCIe 3.0（2025-08-05 發布）峰值速率由 32GT/s 倍增至 48/64GT/s、>20Tbps/mm、sideband 延伸 100mm；2026 Q1 完成首次跨供應商 live 互通實測。雙寡占：Synopsys（SNPS，Q2 FY26 營收 $2.276B、UCIe lifetime wins >150 並再添新 win、於 2nm 完成 64G tape-out、出業界首顆 HBM4 IP 測試晶片、PCIe 7.0 IP win-rate >90%；IP 已於 Q1 觸底、2H 逐季回升）、Cadence（CDNS，2025-12 於 TSMC N3P 完成 64Gbps UCIe tape-out、2026-03 與 Intel 跨公司 UCIe-S 互通實測；Q1 2026 IP 營收 +22% YoY、UCIe/HBM 在 Samsung/Rapidus/Intel 14A 搶單、全年指引上調至 +17%）。Alphawave Semi（業界首發 64Gb UCIe D2D 子系統、TSMC 3nm）已被高通（QCOM）$2.4B 於 2025-12-18 收購完成、2025-12-19 自 LSE 下市，IP（HBM PHY/UCIe/PCIe/Ethernet）併入高通 AI200/AI250 資料中心推論平台。挑戰者 Eliyan（未上市，NuLink PHY/NuGear chiplet/UMI 通用記憶體介面，宣稱 4x 效能/半功耗；2026-01-28 完成 AMD/Arm/Coherent/Meta + 既有 Samsung/Intel 戰略投資 $50M；NuGear 鎖定 1.6–12.8Tbps scale-up、NuLink-XD 224G→448G SerDes）。台廠：M31 科技（6643.TWO，CES 2026 列名 Cadence chiplet IP 夥伴生態）、力旺 eMemory（3529.TWO，嵌入式記憶體/安全 IP 列名同生態）。",
+   "companies": [
+    {
+     "name": "Synopsys",
+     "ticker": "SNPS",
+     "country": "US",
+     "share": "D2D IP 雙寡占之一",
+     "products": "UCIe PHY/控制器 / SerDes / HBM4 IP",
+     "note": "Q2 FY26 營收 $2.276B；UCIe lifetime win >150 並再添新 win、2nm 完成 64G tape-out、出業界首顆 HBM4 IP 測試晶片、PCIe 7.0 win-rate >90%；IP 於 Q1 觸底、2H 逐季回升",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/05/27/synopsys-snps-q2-2026-earnings-transcript/"
+    },
+    {
+     "name": "Cadence",
+     "ticker": "CDNS",
+     "country": "US",
+     "share": "D2D IP 雙寡占之一",
+     "products": "UCIe IP / 3DIC / PCIe/CXL/AXI",
+     "note": "2025-12 TSMC N3P 完成 64Gbps UCIe tape-out；2026-03 與 Intel 互通實測；Q1 2026 IP +22% YoY，UCIe/HBM 於 Samsung/Rapidus/Intel 14A 搶單",
+     "src": "https://www.tikr.com/blog/cadence-design-systems-stock-q1-2026-earnings-every-segment-grew-double-digits"
+    },
+    {
+     "name": "Alphawave Semi → Qualcomm",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "首發 64Gb UCIe 子系統",
+     "products": "UCIe D2D 子系統 / HBM PHY / SerDes / 客製矽 / chiplet",
+     "note": "業界首發 64Gb UCIe D2D（TSMC 3nm、20Tbps/mm）；$2.4B 被高通 2025-12-18 收購完成、2025-12-19 自 LSE 下市；IP 併入高通 AI200/AI250 資料中心推論平台",
+     "src": "https://www.qualcomm.com/news/onq/2026/03/ai-inference-that-scales-qualcomm-ai200-infrastructure-management-suite"
+    },
+    {
+     "name": "Eliyan",
+     "ticker": "—",
+     "country": "US",
+     "share": "D2D IP 挑戰者",
+     "products": "NuLink PHY / NuGear chiplet / UMI 通用記憶體介面",
+     "note": "未上市；2026-01-28 完成 AMD/Arm/Coherent/Meta + 既有 Samsung/Intel 戰投 $50M；NuGear 鎖定 1.6–12.8Tbps scale-up、NuLink-XD 224G→448G；宣稱 4x 效能/半功耗",
+     "src": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/"
+    },
+    {
+     "name": "M31 科技 M31",
+     "ticker": "6643.TWO",
+     "country": "TW",
+     "share": "台系介面 IP",
+     "products": "介面/MIPI/foundation IP",
+     "note": "CES 2026 列名 Cadence chiplet IP 夥伴生態",
+     "src": "https://www.chipestimate.com/Accelerating-Chiplet-Innovation-with-a-New-Partner-Ecosystem/Cadence/Technical-Article/2026/05/26"
+    },
+    {
+     "name": "力旺 eMemory",
+     "ticker": "3529.TWO",
+     "country": "TW",
+     "share": "嵌入式記憶體/安全 IP",
+     "products": "OTP/eNVM / 安全 IP",
+     "note": "列名 Cadence chiplet IP 夥伴生態",
+     "src": "https://www.chipestimate.com/Accelerating-Chiplet-Innovation-with-a-New-Partner-Ecosystem/Cadence/Technical-Article/2026/05/26"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "pkg_interface"
+    },
+    {
+     "id": "chiplet_service"
+    }
+   ],
+   "sources": [
+    {
+     "label": "UCIe 3.0 64GT/s 規格 (Design&Reuse)",
+     "url": "https://www.design-reuse.com/news/202529142-ucie-consortium-introduces-3-0-specification-with-64-gt-s-performance-and-enhanced-manageability/"
+    },
+    {
+     "label": "高通完成 $2.4B 收購 Alphawave (ITPro)",
+     "url": "https://www.itpro.com/business/acquisition/qualcomm-the-data-center-with-usd2-4-billion-alphawave-semi-acquisition"
+    },
+    {
+     "label": "Eliyan $50M 六大戰投 (官方)",
+     "url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/"
+    }
+   ]
+  },
+  {
+   "id": "noc_sys",
+   "row": "ip",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "NoC / 一致性 / 系統 IP",
+   "nameEn": "NoC · Coherency · System IP",
+   "competition": "highgrowth",
+   "single": "chiplet 數越多 NoC 用量越多；Arteris 累計部署 >40 億顆、AI 佔授權金 >50%",
+   "desc": "晶粒內 network-on-chip 與跨晶粒一致性結構，是把多顆 chiplet 串成一個邏輯晶片的「系統黏著劑」；chiplet 化使單一 SoC 的 NoC 用量倍增。",
+   "marketSize": "RPO $118.3M(Q1 2026)",
+   "growth": "AI 佔授權金 >50%",
+   "share": "null",
+   "analysis": "Arteris（AIP，FlexNoC 結構 / FlexGen 智慧自動化 NoC / Ncore 一致性互連 / CodaCache 記憶體子系統 IP；Q1 2026 營收 $22.9M(+39% YoY)、ACV+royalty 創 $92.8M(+39%)、變動權利金 $7.9M(+67%)、RPO $118.3M、AI 佔授權金 >50%、NoC 累計部署 >40 億顆晶片/chiplet；FlexGen 已 30+ 量產裝置/10 客戶；2026-01 以 $43.1M 收購 Cycuity 補強半導體資安驗證 IP、FY26 指引上調至 $91–95M、Q4 拚 non-GAAP 營益轉正、2030 營收目標 $250M）為純 NoC 系統 IP 標的。Arm（ARM，CSS 運算子系統與 chiplet 系統 IP、UCIe promoter）從架構端切入。本環節與 D2D PHY 互補：PHY 解決「跨晶粒的線」，NoC 解決「晶粒內外的流量結構」。",
+   "companies": [
+    {
+     "name": "Arteris",
+     "ticker": "AIP",
+     "country": "US",
+     "share": "純 NoC 系統 IP 領先",
+     "products": "FlexNoC / FlexGen 智慧 NoC / Ncore 一致性 / CodaCache",
+     "note": "Q1 2026 營收 $22.9M(+39% YoY)、ACV+royalty $92.8M(+39%)、變動權利金 $7.9M(+67%)、RPO $118.3M；FlexGen 已達 30+ 量產裝置/10 客戶；2026-01 以 $43.1M 收 Cycuity 補資安驗證 IP；FY26 指引上調至 $91–95M、Q4 拚 non-GAAP 營益轉正",
+     "src": "https://www.stocktitan.net/sec-filings/AIP/10-q-arteris-inc-quarterly-earnings-report-320f157e5932.html"
+    },
+    {
+     "name": "Arm Holdings",
+     "ticker": "ARM",
+     "country": "US",
+     "share": "架構/系統 IP",
+     "products": "CSS 運算子系統 / chiplet 系統 IP",
+     "note": "UCIe promoter；CSS 切入多晶粒系統設計",
+     "src": "https://www.uciexpress.org/membership"
+    },
+    {
+     "name": "Synopsys (system IP)",
+     "ticker": "SNPS",
+     "country": "US",
+     "share": "系統/介面 IP 廣度",
+     "products": "互連 / 記憶體子系統 IP",
+     "note": "與 D2D PHY 同源、整套 IP 平台銷售",
+     "src": "https://www.synopsys.com/blogs/chip-design/ucie-3-0-chiplet-ip-solutions.html"
+    },
+    {
+     "name": "Cadence (system IP)",
+     "ticker": "CDNS",
+     "country": "US",
+     "share": "系統/協定 IP",
+     "products": "CHI-C2C / AXI / 介面 IP",
+     "note": "與 D2D IP 同源；協定 mapping 至 SoC 結構",
+     "src": "https://www.embedded.com/cadence-advances-chiplet-development/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "d2d_phy"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "chiplet_service"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Arteris 2025 10-K 營收 $71M (StockTitan)",
+     "url": "https://www.stocktitan.net/sec-filings/AIP/10-k-arteris-inc-files-annual-report-4edc314938e9.html"
+    },
+    {
+     "label": "Arteris NoC 累計 >40 億顆 (GlobeNewswire)",
+     "url": "https://www.globenewswire.com/news-release/2026/02/12/3237679/0/en/Arteris-Network-on-Chip-Technology-Achieves-Deployment-Milestone-of-4-Billion-Chips-and-Chiplets.html"
+    }
+   ]
+  },
+  {
+   "id": "pkg_interface",
+   "row": "pkg",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "先進封裝互連介面 (UCIe-A bump / hybrid bonding)",
+   "nameEn": "Advanced-Packaging Interconnect Interface",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · UCIe-A 物理介面綁 TSMC 3DFabric / Broadcom 3.5D / hybrid bonding 產能",
+   "desc": "UCIe-A（先進封裝）所需的 micro-bump / hybrid bonding 物理介面與整合平台，是 chiplet 互連 IP 落地的實體載體。與 cowos/substrate 主題互補：那邊講封裝產能與載板，本題聚焦「互連規格與整合平台」。",
+   "marketSize": "與封裝產能互補",
+   "growth": "綁 CoWoS/3.5D 產能",
+   "share": "null",
+   "analysis": "TSMC（2330.TW / TSM，3DFabric/CoWoS/SoIC 平台承載 UCIe-A 互連、Alphawave/Synopsys UCIe IP 皆在其 3nm tape-out）為實體介面龍頭。Broadcom（AVGO，3.5D XDSiP F2F 平台最大 6000mm²、12 顆 HBM、結合 3D 堆疊＋2.5D；2026-02-26 已出貨業界首顆 2nm 3.5D F2F 客製 SoC，首位客戶富士通 Monaka）把封裝介面與設計整合。Intel（INTC，EMIB/Foveros + UCIe-A，2026-03 Chiplet Summit 與 Cadence 完成跨公司 UCIe-S 互通實測）。ASE（3711.TW，UCIe promoter、OSAT 端推 2.5D/3D 封裝）。⚠ 新變數：光學互連介面正式進場——Ayar Labs（未上市）2026-03 完成 $500M E 輪（估值 $3.75B、Nvidia/AMD/世芯/聯發科入股）、推出全球首顆 UCIe 光學 chiplet（TeraPHY 8Tbps）並加入 NVLink Fusion，把 UCIe 介面從電氣 bump 延伸到 co-packaged optics，量產樣品 2026。⚠ 標準化使標準 wire bond/flip-chip OSAT 端面臨 10–20% 毛利壓縮；跨 foundry 互通受製程差異與訊號完整性限制，尚非即插即用。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "先進封裝介面龍頭",
+     "products": "3DFabric / CoWoS / SoIC + UCIe-A",
+     "note": "Alphawave/Synopsys UCIe IP 皆在其 3nm tape-out",
+     "src": "https://awavesemi.com/press-release/alphawave-semi-delivers-cutting-edge-ucie-chiplet-ip-on-tsmc-3dfabric-platform/"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "3.5D 整合平台",
+     "products": "3.5D XDSiP（F2F／6000mm²/12 HBM）",
+     "note": "2026-02-26 已出貨業界首顆 2nm 3.5D F2F 客製 SoC（4 顆 N2 運算 die+1 IO die+6 HBM，首位客戶富士通 Monaka）；AI 半導體 Q1 FY26 +106%、Q2 FY26 指引 $10.7B(+140%)、OpenAI 成第 6 大 hyperscaler 客戶",
+     "src": "https://www.globenewswire.com/news-release/2026/02/26/3245680/19933/en/Broadcom-Ships-3-5D-Face-to-Face-Compute-SoC-Powering-AI-Revolution.html"
+    },
+    {
+     "name": "Intel Foundry",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "EMIB/Foveros + UCIe-A",
+     "products": "EMIB / Foveros / UCIe-A 測試晶片",
+     "note": "2026-03 Chiplet Summit 完成跨公司 UCIe-S 互通實測",
+     "src": "https://machineherald.io/article/2026-03/23-chiplets-enter-the-production-era-as-ucie-30-massive-packaging-expansions-and-multi-die-ai-accelerators-converge/"
+    },
+    {
+     "name": "ASE 日月光",
+     "ticker": "3711.TW",
+     "country": "TW",
+     "share": "OSAT 端 2.5D/3D",
+     "products": "2.5D/3D 先進封裝 / 異質整合",
+     "note": "UCIe promoter；OSAT 端面臨標準化毛利壓縮",
+     "src": "https://www.uciexpress.org/membership"
+    },
+    {
+     "name": "Samsung 三星",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "封裝介面 + 代工",
+     "products": "I-Cube/X-Cube + UCIe IP tape-out 平台",
+     "note": "UCIe promoter；Synopsys UCIe PHY 在其節點 tape-out",
+     "src": "https://www.synopsys.com/articles/ucie-3-0-64gbps-challenges.html"
+    },
+    {
+     "name": "Ayar Labs",
+     "ticker": "—",
+     "country": "US",
+     "share": "光學 UCIe chiplet 首發",
+     "products": "TeraPHY 光學 I/O chiplet（8Tbps）/ SuperNova 多波長雷射",
+     "note": "未上市；2026-03 完成 $500M E 輪（累計 $870M、估值 $3.75B），Nvidia/AMD/世芯/聯發科入股；推出全球首顆 UCIe 光學 chiplet、加入 NVLink Fusion；量產樣品 2026",
+     "src": "https://www.datacenterdynamics.com/en/news/optical-interconnect-startup-ayar-labs-closes-500m-funding-round-backed-by-nvidia-and-amd/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "d2d_phy"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "chiplet_service"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Alphawave UCIe IP on TSMC 3DFabric (官方)",
+     "url": "https://awavesemi.com/press-release/alphawave-semi-delivers-cutting-edge-ucie-chiplet-ip-on-tsmc-3dfabric-platform/"
+    },
+    {
+     "label": "Broadcom 出貨 2nm 3.5D F2F SoC (GlobeNewswire)",
+     "url": "https://www.globenewswire.com/news-release/2026/02/26/3245680/19933/en/Broadcom-Ships-3-5D-Face-to-Face-Compute-SoC-Powering-AI-Revolution.html"
+    },
+    {
+     "label": "Ayar Labs $500M E 輪/光學 UCIe chiplet (DCD)",
+     "url": "https://www.datacenterdynamics.com/en/news/optical-interconnect-startup-ayar-labs-closes-500m-funding-round-backed-by-nvidia-and-amd/"
+    }
+   ]
+  },
+  {
+   "id": "chiplet_service",
+   "row": "service",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "chiplet 設計服務 / 多晶粒整合",
+   "nameEn": "Chiplet Design Service & Integration",
+   "competition": "competitive",
+   "single": "把 IP＋封裝整合成可量產多晶粒 XPU；專案制營收季度波動大（世芯 2026 Q1 年減）",
+   "desc": "把 D2D IP、NoC、先進封裝整合成可量產的多晶粒 XPU 的設計服務商，是 chiplet 從規格走向出貨的關鍵接合層。",
+   "marketSize": "Marvell lifetime funnel $75B",
+   "growth": "ASIC 2028 超越 GPU",
+   "share": "null",
+   "analysis": "Broadcom（AVGO，3.5D + 客製 XPU，2H26 多客戶量產）、Marvell（MRVL，多晶粒封裝平台 + 自研 interposer，新 IP UCIe 頻寬密度 3x/晶粒面積省至 15%；3Q FY26 DC 營收 $1.52B +37.8%、18 個 XPU/XPU-attach 設計案、含封裝內電氣 I/O chiplet、lifetime funnel $75B）為 merchant + 設計服務混合。台廠純設計服務：世芯 Alchip（3661.TW，2.5D/3DIC + CoWoS/chiplet 設計管理、接 AWS Trainium 3 3nm 2026 Q2 量產、多個 2nm 案在跑；⚠ 2026 Q1 營收 $132.4M 年減，專案 NRE→量產時間差）、創意電子 GUC（3443.TW，TSMC 體系、2026 AI server tracker 領先）、聯發科 MediaTek（2454.TW，與 GUC/世芯同列 CSP ASIC 受惠者）。⚠ 設計服務為專案制非訂閱制，季度能見度低。",
+   "companies": [
+    {
+     "name": "Marvell",
+     "ticker": "MRVL",
+     "country": "US",
+     "share": "merchant+設計服務",
+     "products": "多晶粒封裝平台 / 自研 interposer / UCIe IP / NVLink Fusion 相容 XPU",
+     "note": "Q1 FY27 創紀錄營收 $2.418B(+28% YoY)、FY27 指引上調至 $11B(+30%)、custom FY26 倍增至 $1.5B、FY28 至少再倍增；Nvidia 2026-03-31 投資 $2B 並把 Marvell 納入 NVLink Fusion（外接 XPU 經 UCIe-to-NVLink 橋接 chiplet 接入）；UCIe 頻寬密度 3x；lifetime funnel $75B",
+     "src": "https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "3.5D + 客製 XPU",
+     "products": "3.5D XDSiP F2F 客製 SoC",
+     "note": "2026-02 出貨首顆 2nm 3.5D F2F SoC（首客富士通 Monaka）；OpenAI 成第 6 大客戶；AI 半導體 Q2 FY26 指引 $10.7B(+140%)",
+     "src": "https://www.globenewswire.com/news-release/2026/02/26/3245680/19933/en/Broadcom-Ships-3-5D-Face-to-Face-Compute-SoC-Powering-AI-Revolution.html"
+    },
+    {
+     "name": "世芯 Alchip",
+     "ticker": "3661.TW",
+     "country": "TW",
+     "share": "高階 2.5D/3DIC 設計",
+     "products": "CoWoS/chiplet 設計管理 / sub-5nm ASIC",
+     "note": "關鍵客戶 AI 晶片(AWS Trainium 3)2026-05 已進入量產、Q3 起 QoQ 強勁放量；多 2nm 案年底 tape-out；亦入股 Ayar Labs 光學 chiplet；2026 Q1 營收 $132.4M(NT$41.9 億、毛利率 50.2%)年減",
+     "src": "https://www.trendforce.com/news/2026/05/26/news-alchip-says-key-customers-ai-chip-enters-mass-production-in-may-asics-seen-outpacing-gpu-cagr/"
+    },
+    {
+     "name": "創意電子 GUC",
+     "ticker": "3443.TW",
+     "country": "TW",
+     "share": "TSMC 體系設計服務",
+     "products": "ASIC / chiplet 設計服務",
+     "note": "2026 AI server tracker 領先 Faraday/Alchip",
+     "src": "https://www.digitimes.com/news/a20260512VL219/taiwan-monthly-tracker-alchip-faraday-guc-asic-design-revenue-2026.html"
+    },
+    {
+     "name": "聯發科 MediaTek",
+     "ticker": "2454.TW",
+     "country": "TW",
+     "share": "大廠跨入 ASIC",
+     "products": "CSP 客製 ASIC / chiplet",
+     "note": "與 GUC/世芯同列 2H26 CSP ASIC 受惠者(TrendForce)",
+     "src": "https://www.trendforce.com/news/2026/03/20/news-csps-accelerate-asic-push-in-2h26-challenging-nvidia-as-mediatek-guc-alchip-benefit/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "d2d_phy"
+    },
+    {
+     "id": "noc_sys"
+    },
+    {
+     "id": "pkg_interface"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_xpu_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Marvell 多晶粒平台/UCIe 3x (Futurum)",
+     "url": "https://futurumgroup.com/insights/marvell-q1-fy-2026-results-driven-by-custom-silicon-and-data-center-momentum/"
+    },
+    {
+     "label": "世芯 2026 Q1 財報 (官方)",
+     "url": "https://www.alchip.com/en/Newsroom/Alchip_2026_Q1_financial_results"
+    }
+   ]
+  },
+  {
+   "id": "ucie_consortium",
+   "row": "service",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "UCIe 標準 / 聯盟治理",
+   "nameEn": "UCIe Consortium & Standard",
+   "competition": "monopoly",
+   "single": "鎖喉點 · 唯一主流開放 D2D 互通標準；12 promoter 董事級＋120+ 會員",
+   "desc": "定義 chiplet 跨供應商互通與相容性測試規則的標準制定機構，是整條鏈的橫向治理層；誰進董事會，誰就影響規格走向。",
+   "marketSize": "規則制定者",
+   "growth": "會員 120+",
+   "share": "null",
+   "analysis": "UCIe Consortium（2022 成立，2026 有 12 家 promoter 董事級：AMD、ASE、Alibaba Cloud、Arm、Google Cloud、Intel、Meta、Microsoft、Nvidia、Qualcomm、Samsung、TSMC；會員 120+）。UCIe 3.0（2025-08）為現行規格（64GT/s、>20Tbps/mm、sideband 100mm），2026 Q1 完成首次跨供應商 live 互通實測（Cadence×Intel UCIe-S）、Chiplet Summit 2026 標準從規格走向落地；UCIe 佔 D2D IP 市場 53%、CAGR 最快。光學 UCIe（Ayar Labs）把標準延伸到 co-packaged optics。⚠ 絃外之音：UCIe 把差異化從 PHY 往上推到「系統整合與架構」，標準 OSAT 端毛利受壓；且跨 foundry 互通受製程差異限制，單獨通過 compliance 不保證合體效能，multi-vendor chiplet marketplace 仍需大量 co-design，尚非即插即用；Nvidia NVLink Fusion 雖以 UCIe 橋接外接 XPU，但同時把 scale-up fabric 收斂回自家標準，形成競合。",
+   "companies": [
+    {
+     "name": "UCIe Consortium",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "主流開放 D2D 標準",
+     "products": "UCIe 1.0/2.0/3.0 規格 / 相容性測試",
+     "note": "2022 成立；12 promoter 董事級；會員 120+；2026 Q1 首次跨供應商 live 互通實測；UCIe 佔 D2D IP 53%",
+     "src": "https://www.uciexpress.org/post/chiplet-summit-2026-ucie-momentum-across-a-growing-ecosystem"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "UCIe 創始/董事",
+     "products": "規格制定 / EMIB/Foveros 測試晶片",
+     "note": "2026-03 與 Cadence 完成跨公司 UCIe-S 互通實測",
+     "src": "https://www.uciexpress.org/post/chiplet-summit-2026-ucie-momentum-across-a-growing-ecosystem"
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "UCIe 創始/董事",
+     "products": "規格制定 / chiplet CPU/GPU",
+     "note": "promoter；亦戰略投資 Eliyan",
+     "src": "https://www.uciexpress.org/membership"
+    },
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "UCIe 董事 + 封裝平台",
+     "products": "規格制定 / 3DFabric 承載 UCIe-A",
+     "note": "promoter；先進封裝實體承載",
+     "src": "https://www.uciexpress.org/membership"
+    },
+    {
+     "name": "ASE 日月光",
+     "ticker": "3711.TW",
+     "country": "TW",
+     "share": "UCIe 董事 (OSAT)",
+     "products": "規格制定 / 2.5D/3D 封裝",
+     "note": "promoter；OSAT 端唯一董事代表",
+     "src": "https://www.uciexpress.org/membership"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "d2d_phy"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_xpu_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "UCIe 會員/promoter 名單 (官方)",
+     "url": "https://www.uciexpress.org/membership"
+    },
+    {
+     "label": "Chiplet Summit 2026 互通實測 (UCIe)",
+     "url": "https://www.uciexpress.org/post/chiplet-summit-2026-ucie-momentum-across-a-growing-ecosystem"
+    }
+   ]
+  },
+  {
+   "id": "ai_xpu_demand",
+   "row": "demand",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "AI XPU / HPC 終端需求 (Offtake)",
+   "nameEn": "AI XPU & HPC Demand",
+   "competition": "oligopoly",
+   "single": "hyperscaler 自研 XPU 是需求錨點；皆為 UCIe promoter，多晶粒成標配",
+   "desc": "hyperscaler 自研 XPU 與多晶粒 AI 加速器是 chiplet/UCIe 的需求錨點，把上游 D2D IP 與設計服務的成長拉動起來。",
+   "marketSize": "需求錨點",
+   "growth": "ASIC 2028 超越 GPU",
+   "share": "null",
+   "analysis": "Nvidia（NVDA，Rubin 世代走多晶粒、UCIe promoter；2026-03 投資 Marvell $2B 並開放 NVLink Fusion——外接 XPU 經 UCIe-to-NVLink 橋接 chiplet 1.8TB/s 接入 Nvidia 機架，把半客製 XPU 拉進其生態）、AMD（AMD，chiplet CPU/GPU 先行者；promoter＋投資 Eliyan/Ayar Labs）、Google（GOOGL，TPU；promoter）、Meta（META，MTIA；promoter＋投資 Eliyan）、Microsoft（MSFT，Maia；promoter）、Amazon（AMZN，Trainium 3 由世芯設計、3nm，2026-05 已量產）；OpenAI 2026 成 Broadcom 第 6 大客製客戶。⚠ 風險：D2D IP 與設計服務深綁 AI capex，一旦 hyperscaler 投資放緩，NRE 與權利金同步下修；大客戶自研 D2D PHY（Marvell/Eliyan 客戶化）亦壓縮第三方 IP TAM；NVLink Fusion 雖以 UCIe 橋接，卻把 scale-up fabric 重新收斂回 Nvidia 標準，對純開放 UCIe marketplace 形成競合張力。",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI 加速器龍頭",
+     "products": "Rubin 多晶粒 GPU / NVLink Fusion",
+     "note": "UCIe promoter；2026-03 投資 Marvell $2B 並開放 NVLink Fusion（外接 XPU 經 UCIe-to-NVLink 橋接 chiplet 1.8TB/s 接入）；亦入股 Ayar Labs 光學 chiplet",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion"
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "chiplet 先行者",
+     "products": "EPYC/Instinct chiplet",
+     "note": "promoter；戰略投資 Eliyan",
+     "src": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/"
+    },
+    {
+     "name": "Google",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "自研 TPU",
+     "products": "TPU / Axion",
+     "note": "UCIe promoter；CSP ASIC 需求方",
+     "src": "https://www.uciexpress.org/membership"
+    },
+    {
+     "name": "Meta",
+     "ticker": "META",
+     "country": "US",
+     "share": "自研 MTIA",
+     "products": "MTIA 推論加速器",
+     "note": "promoter；戰略投資 Eliyan",
+     "src": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/"
+    },
+    {
+     "name": "Amazon AWS",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "自研 Trainium",
+     "products": "Trainium 3 (世芯設計)",
+     "note": "3nm；關鍵 ASIC 2026-05 已進入量產、Q3 起放量",
+     "src": "https://www.trendforce.com/news/2026/05/26/news-alchip-says-key-customers-ai-chip-enters-mass-production-in-may-asics-seen-outpacing-gpu-cagr/"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "自研 Maia",
+     "products": "Maia AI 加速器",
+     "note": "UCIe promoter",
+     "src": "https://www.uciexpress.org/membership"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "chiplet_service"
+    },
+    {
+     "id": "ucie_consortium"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "UCIe promoter 名單 (官方)",
+     "url": "https://www.uciexpress.org/membership"
+    },
+    {
+     "label": "AMD/Meta 戰略投資 Eliyan (官方)",
+     "url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "d2d_phy",
+   "noc_sys"
+  ],
+  [
+   "d2d_phy",
+   "pkg_interface"
+  ],
+  [
+   "noc_sys",
+   "chiplet_service"
+  ],
+  [
+   "d2d_phy",
+   "chiplet_service"
+  ],
+  [
+   "pkg_interface",
+   "chiplet_service"
+  ],
+  [
+   "d2d_phy",
+   "ucie_consortium"
+  ],
+  [
+   "chiplet_service",
+   "ai_xpu_demand"
+  ],
+  [
+   "ucie_consortium",
+   "ai_xpu_demand"
+  ]
+ ],
+ "_proposed": {}
+}

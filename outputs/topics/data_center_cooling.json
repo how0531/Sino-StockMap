@@ -1,0 +1,735 @@
+{
+ "id": "data_center_cooling",
+ "tab": "資料中心散熱",
+ "title": "AI 資料中心散熱供應鏈 (Data Center Liquid Cooling)",
+ "subtitle": "Data Center Liquid Cooling — AI 機櫃功耗從 GB300 ~136kW 衝向 Rubin/Kyber 600kW–1MW，氣冷已撞牆、液冷由選配變標配，2026 液冷滲透率直衝 ~76%、單櫃散熱系統產值由 GB300 ~$3.5 萬美元跳升至 VR200 ~$6.3–6.5 萬美元（+>50%）。全鏈：晶片側 TIM/均熱片 → 冷板 cold plate（DTC 核心）→ CDU 冷卻液分配單元 → UQD 快接/分歧管 → 後門/浸沒 → 二次側設施散熱（板式熱交換器/乾冷器/風扇）。台廠卡最深兩單點：冷板（奇鋐 3017+雙鴻 3324 合計 ~60–75%）與硬銲型板式熱交換器（高力 8996 台灣唯一）；歐美整合者 Vertiv/Schneider(Motivair)/Ecolab(CoolIT)/Nidec 搶整機與 CDU 生態。確定性最高的 AI 賣鏟人，量價齊揚。⚠ 估值偏高、競爭加劇、外資對個股看法分化。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 8
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "2026 液冷滲透率",
+   "v": "~76%",
+   "sub": "AI 伺服器跨入全液冷時代",
+   "hot": true
+  },
+  {
+   "k": "市場規模 CAGR",
+   "v": "26–51%",
+   "sub": "液冷 2026 ~$6B→2033 ~$27–29B；DLC 上看 $310 億",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "chip",
+   "label": "晶片/板側熱介面 Chip-Side Thermal",
+   "main": false
+  },
+  {
+   "id": "rack",
+   "label": "機櫃側液冷（一次側）Rack Liquid Cooling",
+   "main": true
+  },
+  {
+   "id": "facility",
+   "label": "二次側 / 設施側散熱 Facility-Side",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "tim_spreader",
+   "row": "chip",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "TIM 導熱介面 / 均熱片 / VC",
+   "nameEn": "TIM · IHS · Vapor Chamber",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "晶片與冷板之間的熱介面：TIM 導熱膏/相變材料、均熱片(IHS)、均熱板(VC)、熱導管；氣冷殘存與向液冷過渡的銜接層。",
+   "marketSize": "晶片側過渡",
+   "growth": "升級中",
+   "share": "null",
+   "analysis": "TIM/均熱片：健策（3653.TW，精密鍛造均熱片→水冷板升級，附加價值跳升）、Honeywell、Henkel、信越/Dow（液態金屬/相變 TIM）。VC/熱導管：超眾（6230.TWO，月產能百萬級）、奇鋐/雙鴻（同步做冷板）。此層在 >100kW 機櫃逐步被冷板取代，但 ASIC/CPU/交換器仍大量沿用，是散熱升級的「前哨」。健策由 ILM/均熱片切水冷板，是台廠價值升級代表。",
+   "companies": [
+    {
+     "name": "健策精密 Jentech",
+     "ticker": "3653.TW",
+     "country": "TW",
+     "share": "均熱片→水冷板升級",
+     "products": "均熱片/IHS/微通道蓋板/水冷板",
+     "note": "2026/05 營收 23.13 億 YoY+37.75%；投顧上修 2026/27 EPS 至 69.72/155.58、目標價 5757",
+     "src": "https://www.pocket.tw/school/report/SCHOOL/6817/"
+    },
+    {
+     "name": "超眾 Chaun-Choung",
+     "ticker": "6230.TWO",
+     "country": "TW",
+     "share": "VC/熱導管台廠",
+     "products": "vapor chamber/heat pipe",
+     "note": "月產能百萬級、氣冷+混合"
+    },
+    {
+     "name": "Honeywell",
+     "ticker": "HON",
+     "country": "US",
+     "share": "TIM/相變材料",
+     "products": "PCM/導熱介面材料",
+     "note": "資料中心 TIM 供應"
+    },
+    {
+     "name": "Henkel",
+     "ticker": "HEN.DE",
+     "country": "DE",
+     "share": "TIM 領導",
+     "products": "導熱膏/間隙填料/相變 TIM",
+     "note": "Bergquist 品牌"
+    },
+    {
+     "name": "信越化學 Shin-Etsu",
+     "ticker": "4063.T",
+     "country": "JP",
+     "share": "高階導熱材料",
+     "products": "液態金屬/相變 TIM",
+     "note": "高階熱介面材料"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "cold_plate"
+    },
+    {
+     "id": "inpackage_dlc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "健策 ILM→水冷板 (口袋學堂)",
+     "url": "https://www.pocket.tw/school/report/SCHOOL/6817/"
+    }
+   ]
+  },
+  {
+   "id": "inpackage_dlc",
+   "row": "chip",
+   "col": 4,
+   "span": 2,
+   "kind": "stage",
+   "name": "封裝內直接液冷 In-Package DLC（微通道）",
+   "nameEn": "In-Package Direct Liquid Cooling",
+   "competition": "emerging",
+   "single": "新興鎖喉點 · TSMC 把微通道液冷導入 3DFabric，散熱往封裝內延伸；內腔檢測為良率瓶頸",
+   "desc": "散熱往封裝內延伸的新層：把微通道流道直接做進先進封裝（3DFabric/CoWoS/SoIC）內部，以『封裝內直接液冷 in-package DLC』與晶片級直接冷卻取代部分外掛冷板；微通道冷板/蓋（MCP/MCL）內腔檢測 cavity inspection 成量產良率瓶頸。",
+   "marketSize": "DTCO 核心 / 良率卡關",
+   "growth": "封裝級新層",
+   "share": "null",
+   "analysis": "TSMC（2330.TW）把微通道液冷導入 3DFabric 平台，探索封裝內直接液冷與晶片級直接冷卻，將散熱視為 DTCO（設計-製程協同優化）核心；Nvidia Vera Rubin 已導入微通道冷板（MCP/MCCP）與微通道蓋（MCL）兩種方案、採 45°C 溫水單相 DLC。此層 2026-H1 仍屬研發/小量驗證，但若量產化將把散熱價值鏈往晶圓代工/先進封裝端上移、重塑外掛冷板分工；內腔檢測良率仍卡關。",
+   "companies": [
+    {
+     "name": "台積電 TSMC",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "in-package DLC 推動者",
+     "products": "3DFabric 微通道液冷/晶片級直接冷卻",
+     "note": "2026-H1 將微通道液冷導入 3DFabric、探索封裝內直接液冷，把散熱納入 DTCO 協同優化",
+     "src": "https://global.iteschina.com/en/news/details/2781"
+    },
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "微通道冷板/蓋規格定義",
+     "products": "Rubin MCP/MCCP/MCL/45°C 溫水單相 DLC",
+     "note": "VR200 導入微通道冷板與微通道蓋兩方案、運算與網路 tray 全液冷",
+     "src": "https://ecothermgroup.com/liquid-cold-plate-nvidia-rubin-cooling/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "tim_spreader"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cold_plate"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC 3DFabric 微通道液冷 (ITESchina)",
+     "url": "https://global.iteschina.com/en/news/details/2781"
+    }
+   ]
+  },
+  {
+   "id": "cold_plate",
+   "row": "rack",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "冷板 Cold Plate / 水冷板（DTC 核心）",
+   "nameEn": "Cold Plate · Direct-to-Chip",
+   "competition": "highgrowth",
+   "single": "鎖喉點 · 台廠主場：奇鋐+雙鴻冷板合計約 60–75%、GB300/VR 主供",
+   "desc": "直接貼在 GPU/CPU/ASIC 上的水冷板，DTC（direct-to-chip）液冷的最核心元件；2026 占液冷市場 >55%、值 >$3.1B。",
+   "marketSize": ">$3.1B (>55% 液冷)",
+   "growth": "DTC TAM CAGR ~51%",
+   "share": "null",
+   "analysis": "台廠主場：奇鋐（3017.TW，冷板 #1、GB300 主供）、雙鴻（3324.TW，冷板 #2、取得 GB300 液冷認證、升級液冷整機）、健策（3653.TW，由均熱片切水冷板）；歐美：CoolIT（私有，4kW 單相 DLC 冷板為 GB300 設計、Nvidia 多代夥伴，2026 Ecolab $4.75B 收購）、BOYD（私有，冷板/液冷模組）。奇鋐+雙鴻冷板合計約 60–75%（產業估），是台廠在 AI 散熱最深的單點。DTC TAM 2025–30 CAGR 達 51%、規模上看 $310 億。⚠ 2026/03 GTC Nvidia 將 Vera Rubin（VR200）液冷由選配改列標準配置、收回冷板等關鍵零件採購權，明確指定四家冷板合格供應商：奇鋐(AVC)、Cooler Master、健策(Jentech)、台達(Delta)；被指定者地位鞏固、未入列者（含雙鴻及自有設計整合廠）議價與份額遭壓縮，Cooler Master 為新進切入者打破奇鋐+雙鴻雙頭格局。每套 Rubin 冷卻基礎設施成本逾 $5.7 萬；微通道冷板內腔檢測(cavity inspection)良率仍卡關，恐影響 Rubin 2026H2 量產時程。",
+   "companies": [
+    {
+     "name": "奇鋐 AVC",
+     "ticker": "3017.TW",
+     "country": "TW",
+     "share": "冷板 #1（GB200/GB300 水冷板 ~40–50%）",
+     "products": "cold plate/水冷板/微通道/整櫃液冷",
+     "note": "2026/05 營收 158.71 億 YoY+60.6%、2026Q1 EPS 20.17；大和喊散熱大贏家、目標價 1840、2026 EPS 上看 65",
+     "src": "https://wantrich.chinatimes.com/news/20251028900400-420101"
+    },
+    {
+     "name": "雙鴻 Auras",
+     "ticker": "3324.TW",
+     "country": "TW",
+     "share": "冷板 #2（液冷整機）",
+     "products": "cold plate/manifold/CDU/浸沒",
+     "note": "取得 Nvidia GB300 液冷認證、打入 Meta/AWS/微軟；3Q 獲利 YoY+1.44 倍、毛利率 29.77%、前三季 EPS 18.13",
+     "src": "https://money.udn.com/money/story/5607/9169444"
+    },
+    {
+     "name": "健策精密 Jentech",
+     "ticker": "3653.TW",
+     "country": "TW",
+     "share": "水冷板新進",
+     "products": "水冷板/微通道蓋板",
+     "note": "2025Q4 小量、2026H2 放量；2025 全年營收 202.76 億"
+    },
+    {
+     "name": "CoolIT Systems",
+     "ticker": "—",
+     "country": "CA",
+     "share": "Nvidia 冷板夥伴",
+     "products": "OMNI/4kW 單相 DLC 冷板",
+     "note": "為 GB300 Blackwell Ultra 設計；2026 Ecolab 以 $4.75B 收購",
+     "src": "https://www.tweaktown.com/news/103966/coolit-unveils-4kw-single-phase-dlc-cold-plate-ready-for-nvidia-gb300-blackwell-ultra-ai-gpus/index.html"
+    },
+    {
+     "name": "Boyd Thermal (Eaton)",
+     "ticker": "ETN",
+     "country": "US",
+     "share": "被 Eaton 併入（DTC 冷板/CDU）",
+     "products": "冷板/液冷模組/CDU/manifold",
+     "note": "2026/03/12 Eaton 以 $9.5B 完成收購 Boyd Thermal（22.5x EBITDA）；2026 預估營收 $1.7B（液冷 $1.5B）、墨西哥產能倍增",
+     "src": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-completes-acquisition-of-leading-liquid-cooling-solutions-provider-boyd-thermal.html"
+    },
+    {
+     "name": "Cooler Master",
+     "ticker": "—",
+     "country": "TW",
+     "share": "Nvidia VR200 MLCP 新進合格供應商",
+     "products": "微通道液冷板 MLCP/冷板/散熱模組",
+     "note": "2026/03 列入 Nvidia Vera Rubin 微通道冷板四家合格供應商之一（與奇鋐/雙鴻/台達同列）；Group A 由 Nvidia 直接採購、綁 Bianca 主機板包售，正式打破奇鋐+雙鴻雙頭格局",
+     "src": "https://www.digitimes.com/news/a20260318PD231/nvidia-rubin-liquid-cooling-ai-server-launch.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "tim_spreader"
+    },
+    {
+     "id": "inpackage_dlc"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cdu"
+    },
+    {
+     "id": "manifold_uqd"
+    }
+   ],
+   "sources": [
+    {
+     "label": "大和：2026 散熱大贏家 (旺得富)",
+     "url": "https://wantrich.chinatimes.com/news/20251028900400-420101"
+    }
+   ]
+  },
+  {
+   "id": "cdu",
+   "row": "rack",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "CDU 冷卻液分配單元",
+   "nameEn": "CDU · Coolant Distribution Unit",
+   "competition": "oligopoly",
+   "single": "系統樞紐 · 歐美整合者領先（Vertiv/Schneider-Motivair/Nidec），台廠台達/奇鋐追趕",
+   "desc": "CDU 是液冷系統的心臟：調節冷卻液溫度/流量/壓力，隔離機櫃一次側（TCS）與設施二次側（FWS）。分 L2L（液對液）/L2A（液對氣）、in-rack/in-row/sidecar/MW 級。",
+   "marketSize": "~$2.38B (最大元件)",
+   "growth": "CAGR 21.4%",
+   "share": "null",
+   "analysis": "歐美整合者領先：Vertiv（VRT，整櫃 CDU 領導、2026Q1 營收 $2.65B YoY+30%、TTM 有機訂單 +81%、2026/06 完成 ThermoKey 收購、4 月收 Strategic Thermal Labs）、Schneider/Motivair（SU.PA，CDU 105kW–2.5MW、支援 top10 超算 6 座）、Nidec（6594.T，Project Deschutes 2MW OCP CDU、累計出貨 >1 萬台零失效）；台廠：台達（2308.TW，L2L/L2A CDU + 整櫃）、奇鋐/雙鴻（冷板+CDU 整機）、CoolIT（CHx2000 支援 12 座 GB300 NVL72）。CDU 為 2025 最大「元件」細分（~$2.38B、~35%），市場 2026–33 CAGR 21.4%、2033 達 ~$7.05B。⚠ 新進者湧入：Google 洽購中國 Envicool（占其 2026 CDU 訂單約 25%）、Johnson Controls 推 Silent-Aire CDU（500kW–10MW）、Flex 推模組化機櫃級 CDU、AAON/Modine 拿下雲端訂單動能轉強；近期整併：Eaton 併 Boyd、Vertiv 併 PurgeRite、Daikin 併 Chilldyne。Dell'Oro 示警 CDU 賽道走向飽和、未來收斂至不到 10 家主要廠、淘汰與整併『不可避免』；亞太占 CDU 市場逾 38%（2026 ~$7.21 億）。",
+   "companies": [
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "液冷市場 #1（2025 ~11.3%、精密散熱 ~23%）",
+     "products": "CDU/RDHx/整櫃熱管理",
+     "note": "2026Q1 營收 $2.65B YoY+30%、營益率 20.8%、TTM 有機訂單 +81%、在手訂單 ~$15B；2026 收 ThermoKey + Strategic Thermal Labs",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001674101/000162828026026379/q12026exhibit991vrt04222026.htm"
+    },
+    {
+     "name": "Schneider Electric / Motivair",
+     "ticker": "SU.PA",
+     "country": "FR",
+     "share": "CDU+RDHx 全鏈",
+     "products": "CDU 105kW–2.5MW/ChilledDoor/HDU/動態冷板",
+     "note": "2025 收 Motivair；支援全球 top10 超算 6 座",
+     "src": "https://www.se.com/ww/en/about-us/newsroom/news/press-releases/schneider-electric-unveils-liquid-cooling-portfolio-with-motivair-featuring-dedicated-solutions-and-services-for-hpc-and-ai-workloads-68d69e595c9dbb622505caf3/"
+    },
+    {
+     "name": "Nidec",
+     "ticker": "6594.T",
+     "country": "JP",
+     "share": "OCP CDU 量產",
+     "products": "Project Deschutes 2MW CDU/in-rack",
+     "note": "Google OCP 規格、80 PSI；CDU 累計出貨 >1 萬台零品質失效",
+     "src": "https://www.nidec.com/en/product/news/2025/news1203-01/"
+    },
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "CDU+整櫃台廠",
+     "products": "L2L/L2A CDU/in-row/sidecar",
+     "note": "電源散熱雙引擎；2026/03、/04 營收創高受惠 AI 液冷",
+     "src": "https://www.digitimes.com/news/a20260410PD202/revenue-delta-electronics-liquid-cooling-ai-server-growth.html"
+    },
+    {
+     "name": "CoolIT Systems",
+     "ticker": "—",
+     "country": "CA",
+     "share": "AI CDU",
+     "products": "CHx2000 AI CDU",
+     "note": "支援 12 座 GB300 NVL72 機櫃；2026 Ecolab $4.75B 收購",
+     "src": "https://www.coolitsystems.com/resources/news/chx2000-the-ai-cdu/"
+    },
+    {
+     "name": "奇鋐 / 雙鴻",
+     "ticker": "3017.TW",
+     "country": "TW",
+     "share": "冷板廠延伸 CDU",
+     "products": "整櫃 CDU/液冷整機",
+     "note": "由冷板向 CDU/整機系統延伸"
+    },
+    {
+     "name": "英維克 Envicool",
+     "ticker": "002837.SZ",
+     "country": "CN",
+     "share": "Google CDU 新供應商（中國首度切入美系 hyperscaler）",
+     "products": "Project Deschutes 規格 CDU/液冷",
+     "note": "2026 Google 採購團赴中洽購、傳占其 2026 CDU 訂單約 25%（人民幣 20–30 億）；市值約 $14B、前九月營收 YoY+40%、客戶含 Nvidia/阿里、擴廣東+泰國+美國產能",
+     "src": "https://finance.yahoo.com/news/google-talks-chinas-envicool-others-060454035.html"
+    },
+    {
+     "name": "晟銘電 Shing Ming",
+     "ticker": "3013.TW",
+     "country": "TW",
+     "share": "水冷機櫃/Sidecar 整機",
+     "products": "水冷機櫃/Sidecar/manifold/不漏水系統/PSU/BBU",
+     "note": "突破 Sidecar 水冷瓶頸，與廣達合拿 Meta >4 萬櫃大單、列前三大 ODM Rubin 機櫃供應；2026/01 液冷營收 YoY+107%、中壢二廠+泰國廠 2026 產能倍增",
+     "src": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/230595"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cold_plate"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "manifold_uqd"
+    },
+    {
+     "id": "plate_hx"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Vertiv 2026Q1 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001674101/000162828026026379/q12026exhibit991vrt04222026.htm"
+    }
+   ]
+  },
+  {
+   "id": "manifold_uqd",
+   "row": "rack",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "分歧管 / UQD 快接頭 / 軟管",
+   "nameEn": "Manifold · UQD Quick Disconnect",
+   "competition": "oligopoly",
+   "single": "規格鎖喉 · CPC/Parker/Staubli/Danfoss 主導 UQD 規格，OCP 標準綁定",
+   "desc": "機櫃內冷卻液分配的 manifold（分歧管）、盲插快接頭 UQD（Universal Quick Disconnect）、防漏軟管；UQD 須符合 OCP 規格、相容多種冷卻液，是維運與可靠度關鍵。",
+   "marketSize": "規格綁定",
+   "growth": "盲插剛需",
+   "share": "null",
+   "analysis": "UQD 規格主導者：CPC Colder Products（Dover 旗下 DOV，Everis UQD、OCP 規格制定者）、Parker Hannifin（PH，UQD 系列、OCP 相容）、Staubli（私有/瑞士，UQD/UQDB 自動盲插）、Danfoss（私有/丹麥，Hansen UQD）；台廠：富世達（3010.TWO，快接頭/UQD 切入、散熱四雄延伸）、雙鴻（manifold 整合）。UQD 因須通過 OCP 規格 + 客戶認證，規格綁定強、是隱性鎖喉點；陸廠 JONHON、Envicool 等亦進場。",
+   "companies": [
+    {
+     "name": "CPC (Colder Products)",
+     "ticker": "DOV",
+     "country": "US",
+     "share": "UQD 規格主導",
+     "products": "Everis UQD/盲插快接/manifold",
+     "note": "Dover 旗下、OCP 規格制定者",
+     "src": "https://www.cpcworldwide.com/Liquid-Cooling/Products/Universal-Quick-Disconnects-UQDs"
+    },
+    {
+     "name": "Parker Hannifin",
+     "ticker": "PH",
+     "country": "US",
+     "share": "UQD 系列",
+     "products": "UQD 快接/non-spill 連接",
+     "note": "OCP 相容、color-coded push-button",
+     "src": "https://ph.parker.com/us/en/product-list/non-spill-liquid-cooling-universal-quick-disconnect-couplings-uqd-series"
+    },
+    {
+     "name": "Staubli",
+     "ticker": "—",
+     "country": "CH",
+     "share": "UQD 自動盲插",
+     "products": "UQD/UQDB 自動快接",
+     "note": "AI 液冷快接",
+     "src": "https://www.staubli.com/us/en/fluid-connectors/products/quick-and-dry-disconnect-couplings/thermal-management/uqd-universal-quick-disconnect.html"
+    },
+    {
+     "name": "Danfoss",
+     "ticker": "—",
+     "country": "DK",
+     "share": "UQD/Hansen 快接",
+     "products": "Hansen UQD/閥件",
+     "note": "液冷快接與閥件"
+    },
+    {
+     "name": "富世達 Foxconn-Suzhou (FSDA)",
+     "ticker": "3010.TWO",
+     "country": "TW",
+     "share": "台廠 UQD 主供（冷板+UQD 垂直整合）",
+     "products": "快接頭/UQD/連接器/冷板方案",
+     "note": "UQD 提前通過 Nvidia 認證、切入 GB200/GB300，冷板+UQD 整合打入北美四大 CSP；2026Q1 營收 41.83 億 YoY+85.81%",
+     "src": "https://news.cnyes.com/news/id/6392216"
+    },
+    {
+     "name": "雙鴻 Auras",
+     "ticker": "3324.TW",
+     "country": "TW",
+     "share": "manifold 整合",
+     "products": "manifold/分歧管/整機",
+     "note": "液冷整機含 manifold+UQD"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cold_plate"
+    },
+    {
+     "id": "cdu"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "rdhx_immersion"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CPC Everis UQD (官方)",
+     "url": "https://www.cpcworldwide.com/Liquid-Cooling/Products/Universal-Quick-Disconnects-UQDs"
+    }
+   ]
+  },
+  {
+   "id": "rdhx_immersion",
+   "row": "rack",
+   "col": 7,
+   "span": 2,
+   "kind": "stage",
+   "name": "後門熱交換器 / 浸沒式",
+   "nameEn": "Rear-Door HX · Immersion",
+   "competition": "emerging",
+   "single": "⚠ 過渡與題材：RDHx 為混合過渡（≤75kW/櫃）；兩相浸沒因 3M 退出 PFAS+EPA 法規崩跌、僅存極高密度利基，DTC 成主流",
+   "desc": "後門熱交換器(RDHx)：機櫃後門液對氣，氣冷→液冷的過渡/混合方案（單櫃 ≤75kW）。浸沒式(Immersion)：單相/雙相浸沒 + 介電冷卻液，效率高但量產落後 DTC。",
+   "marketSize": "混合部署",
+   "growth": "過渡/題材",
+   "share": "null",
+   "analysis": "RDHx：Vertiv（VRT）、Schneider/Motivair（ChilledDoor ≤75kW）、台達、奇鋐/雙鴻均有產品，為過渡/混合部署主力。浸沒式系統：雙鴻（3324.TW，DTC+浸沒雙架構）、GRC/Submer/LiquidStack（私有）；介電冷卻液：Shell、Castrol(bp)、Engineered Fluids（3M Fluorinert/Novec 2025 因 PFAS 退出）。浸沒式效率最高（號稱比冷板高達 +80% 能效），但因維運/材料相容/生態未成熟，2026 仍以 DTC 為主流（單相 DTC 約占液冷 55%），浸沒屬中長線題材。⚠ 2026-H1 兩相浸沒競爭地位崩跌：3M 2025 年底全面停產 Novec 等 PFAS 冷媒（最後下單日 2025/3/31），疊加 EPA 法規與市場估約 $125 億美元健康訴訟，兩相浸沒回不去 2022 前軌跡、僅存極高密度利基；PFAS-free 替代（ZutaCore、Chemours）量產時程拖至 2026–2027。",
+   "companies": [
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "RDHx/混合",
+     "products": "後門熱交換器/L2A",
+     "note": "過渡/混合部署"
+    },
+    {
+     "name": "Schneider / Motivair",
+     "ticker": "SU.PA",
+     "country": "FR",
+     "share": "ChilledDoor RDHx",
+     "products": "RDHx ≤75kW/櫃",
+     "note": "rack-agnostic 設計",
+     "src": "https://www.se.com/ww/en/about-us/newsroom/news/press-releases/schneider-electric-unveils-liquid-cooling-portfolio-with-motivair-featuring-dedicated-solutions-and-services-for-hpc-and-ai-workloads-68d69e595c9dbb622505caf3/"
+    },
+    {
+     "name": "雙鴻 Auras",
+     "ticker": "3324.TW",
+     "country": "TW",
+     "share": "DTC+浸沒雙架構",
+     "products": "浸沒式液冷系統",
+     "note": "升級為液冷整機系統供應商",
+     "src": "https://news.cnyes.com/news/id/6392216"
+    },
+    {
+     "name": "LiquidStack / GRC / Submer",
+     "ticker": "—",
+     "country": "US",
+     "share": "浸沒系統商",
+     "products": "單相/雙相浸沒槽",
+     "note": "浸沒式新創（私有）"
+    },
+    {
+     "name": "Shell / Castrol(bp)",
+     "ticker": "SHEL",
+     "country": "UK",
+     "share": "介電冷卻液",
+     "products": "浸沒冷卻液/介電液",
+     "note": "3M 2025 退出 PFAS 後接棒"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "manifold_uqd"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "plate_hx"
+    }
+   ],
+   "sources": [
+    {
+     "label": "液冷革命：DTC+浸沒 (鉅亨網)",
+     "url": "https://news.cnyes.com/news/id/6392216"
+    }
+   ]
+  },
+  {
+   "id": "plate_hx",
+   "row": "facility",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "板式熱交換器 / 乾冷器 / chiller",
+   "nameEn": "Plate HX · Dry Cooler · Chiller",
+   "competition": "oligopoly",
+   "single": "硬銲板式 HX 台灣唯一：高力 8996；設施散熱由 CDU 後段放量",
+   "desc": "二次側/設施側散熱：板式熱交換器（CDU 後段冷熱交換）、乾冷器(dry cooler)、冷卻塔、chiller、設施水循環(FWS)——把熱排到外界。市場聚焦冷板，此環節相對被低估。",
+   "marketSize": "被低估環節",
+   "growth": "二次側放量",
+   "share": "null",
+   "analysis": "高力（8996.TW，台灣唯一硬銲型板式熱交換器供應商、AI 液冷+氫燃料電池雙引擎、2026 前 2 月營收 YoY+260%、2025 EPS 9.07 創高、法人估 2026 EPS 17–18.4、ROE ~36%、2026/03 投資 >42 億擴廠）；歐美：Vertiv、Schneider、Munters、SPX、Alfa Laval（AALB.ST，板式 HX 國際龍頭）、ThermoKey（Vertiv 2026 收購）。CDU 後段（板式 HX/乾冷器/設施水循環）是高力等的放量點，且競爭較冷板不紅海，是被低估的散熱二次側。",
+   "companies": [
+    {
+     "name": "高力 KAORI",
+     "ticker": "8996.TW",
+     "country": "TW",
+     "share": "硬銲板式 HX 台灣唯一",
+     "products": "硬銲型板式熱交換器/液冷散熱",
+     "note": "AI 液冷+氫能雙引擎；2026 前 2 月營收 YoY+260%、2025 EPS 9.07 創高、法人估 2026 EPS 17–18.4、ROE ~36%、投資 >42 億擴廠",
+     "src": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/216393/"
+    },
+    {
+     "name": "Alfa Laval",
+     "ticker": "ALFA.ST",
+     "country": "SE",
+     "share": "板式 HX 國際龍頭",
+     "products": "板式熱交換器/設施散熱",
+     "note": "工業/資料中心板式 HX"
+    },
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "設施散熱整合",
+     "products": "chiller/乾冷器/熱排",
+     "note": "2026 收 ThermoKey 擴 EMEA 熱鏈",
+     "src": "https://www.datacenterdynamics.com/en/news/schneider-electric-and-motivair-unveil-first-joint-liquid-cooling-portfolio/"
+    },
+    {
+     "name": "Schneider Electric",
+     "ticker": "SU.PA",
+     "country": "FR",
+     "share": "設施散熱",
+     "products": "chiller/設施水循環/HDU",
+     "note": "L2A 散熱單元"
+    },
+    {
+     "name": "Munters",
+     "ticker": "MTRS.ST",
+     "country": "SE",
+     "share": "資料中心冷卻",
+     "products": "乾冷器/蒸發冷卻",
+     "note": "資料中心散熱"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cdu"
+    },
+    {
+     "id": "rdhx_immersion"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fan_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "高力 EPS 翻倍、擴廠 42 億 (理財周刊)",
+     "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/216393/"
+    }
+   ]
+  },
+  {
+   "id": "fan_demand",
+   "row": "facility",
+   "col": 3,
+   "span": 2,
+   "kind": "demand",
+   "name": "風扇 / 終端需求 / 機櫃功率曲線",
+   "nameEn": "Fans · Demand · Rack Power Curve",
+   "competition": "highgrowth",
+   "single": "需求催化：Nvidia 架構定義、hyperscaler+ASIC 推升液冷；EC 風扇/blower 仍剛需",
+   "desc": "氣冷殘存的高效風扇/EC blower（L2A 輔助、混合架構）＋終端需求：Nvidia 架構定義、hyperscaler 與 ASIC 客戶推升液冷滲透。AI 機櫃功率曲線是整個散熱板塊的需求錨點。",
+   "marketSize": "需求錨點",
+   "growth": "結構性催化",
+   "share": "null",
+   "analysis": "風扇：建準（2421.TW，高效風扇核心+EC blower、切入水冷板/CDU、2026Q1 營收創高 50.2 億 EPS 2.36、伺服器佔 47.3%、2026H2 水冷板放量）、台達（2308.TW，伺服器風扇）、Nidec（6594.T，馬達/風扇）。終端需求：Nvidia（NVDA，GB300 NVL72 ~136kW→Vera Rubin 600kW 2027、液冷參考設計定義者）、hyperscaler（MSFT/GOOG/AMZN/Meta，全採 DTC 液冷）、AMD/Broadcom（高功率 ASIC 推升液冷）。2026 滲透率 76%、單櫃散熱產值由 GB300 ~$3.5 萬躍升至 VR200 ~$6.3–6.5 萬，是量價齊揚的結構性催化。",
+   "companies": [
+    {
+     "name": "建準 Sunon",
+     "ticker": "2421.TW",
+     "country": "TW",
+     "share": "高效風扇+EC blower",
+     "products": "伺服器風扇/EC 風扇/水冷板/CDU",
+     "note": "2026Q1 營收創高 50.2 億、EPS 2.36，伺服器佔 47.3%、AI 伺服器 22.6%；2026H2 水冷板放量",
+     "src": "https://finance.biggo.com.tw/news/TW_2421.TW_2026-05-08"
+    },
+    {
+     "name": "台達電 Delta",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "伺服器風扇",
+     "products": "高轉速伺服器風扇/L2A",
+     "note": "氣冷+液冷整合"
+    },
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "架構定義者",
+     "products": "GB300 NVL72→Vera Rubin 600kW",
+     "note": "液冷參考設計、Rubin 2027 600kW/櫃",
+     "src": "https://introl.com/blog/nvidia-vera-rubin-gpu-600kw-racks-2027"
+    },
+    {
+     "name": "MSFT / GOOGL / AMZN / Meta",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "hyperscaler 需求",
+     "products": "AI 資料中心/自研 ASIC 機櫃",
+     "note": "全採 DTC 液冷、簽認證",
+     "src": "https://techcommunity.microsoft.com/blog/azureinfrastructureblog/reimagining-ai-at-scale-nvidia-gb300-nvl72-on-azure/4464556"
+    },
+    {
+     "name": "AMD / Broadcom",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "ASIC/GPU 需求",
+     "products": "MI400/TPU/ASIC 機櫃",
+     "note": "高功率 ASIC 推升液冷"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "plate_hx"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "建準 2026Q1 法說 (BigGo 財經)",
+     "url": "https://finance.biggo.com.tw/news/TW_2421.TW_2026-05-08"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "tim_spreader",
+   "cold_plate"
+  ],
+  [
+   "tim_spreader",
+   "inpackage_dlc"
+  ],
+  [
+   "inpackage_dlc",
+   "cold_plate"
+  ],
+  [
+   "cold_plate",
+   "cdu"
+  ],
+  [
+   "cold_plate",
+   "manifold_uqd"
+  ],
+  [
+   "cdu",
+   "manifold_uqd"
+  ],
+  [
+   "cdu",
+   "plate_hx"
+  ],
+  [
+   "manifold_uqd",
+   "rdhx_immersion"
+  ],
+  [
+   "rdhx_immersion",
+   "plate_hx"
+  ],
+  [
+   "plate_hx",
+   "fan_demand"
+  ]
+ ],
+ "_proposed": {}
+}

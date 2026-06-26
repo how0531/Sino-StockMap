@@ -1,0 +1,614 @@
+{
+ "id": "evtol_uam",
+ "tab": "低空經濟/eVTOL",
+ "title": "低空經濟 / eVTOL 城市空中交通供應鏈 (Low-Altitude Economy / eVTOL Urban Air Mobility)",
+ "subtitle": "低空經濟 — 把人與貨從二維道路搬到三維天空的『新質生產力』賽道，2026 公認為載人 eVTOL『商業化元年』。中國市場規模 2026 估突破 1 兆元人民幣（樂觀估約 1.06 兆）、其中 eVTOL 本體市場約 950 億元，2026–2030 eVTOL CAGR 估 ~52.9%、2035 設備保有量上看 5 萬架。鏈條：上游航空級電池（CATL 凝聚態 / 半固態 350–500 Wh/kg）＋分布式電推進電機（臥龍電驅 600580.SH 全球首款 eVTOL 電機獲認證）＋碳纖維複合材機體（中復神鷹）＋飛控航電 → 中游 eVTOL 整機 OEM（億航 EH 全球首張載人 eVTOL TC/PC/OC『三證』、萬豐奧威 002085.SZ 收 Volocopter 核心資產、Joby/Archer 在美衝 FAA 認證）→ 下游起降場(vertiport)＋低空空管 → 載人載貨運營（中信海直 000099.SZ 通航龍頭、中直股份 600038.SH 直升機整機）。2026 關鍵數字：億航 Q1 交付 4 架、全年營收目標 RMB 6 億、毛利率 62.5%；Joby FAA 過第 4 階段、全年營收指引 $1.05–1.15 億、現金 $25 億；Archer 首家完成 FAA 第 3 階段、現金約 $18 億；UAE 對時的科技下 $100 億／350 架、泰國對沃飛 $175 億／500 架超級訂單。絃外之音：①eVTOL 整機仍重虧、估值靠『認證里程碑＋訂單故事』撐，真正先賺錢的是『賣鏟人』——電池/電機/碳纖維上游與既有通航運營商（中信海直已實質獲利、低空僅第二曲線）；②中美雙軌——中國靠政策＋產能搶『先商業化』、美國靠 FAA 認證＋資本搶『先載客』，億航『三證齊全』領先但量產交付才是試金石。⚠ 與既有 drone_uav（小型無人機）、leosat、auto_semi 主題在感測/電池/碳纖維等零組件層部分重疊；本主題聚焦『載人載貨 eVTOL 整機×電推進×起降運營』視角。非投資建議。",
+ "category": "industrial",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "中國低空經濟市場",
+   "v": "1兆人民幣",
+   "sub": "2026 估破 1 兆（eVTOL 本體約 950 億）→ 2035 上看 5 兆；eVTOL 2026–30 CAGR ~52.9%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "2026 載人 eVTOL 商業化元年·認證里程碑＋出海超級訂單；整機重虧＋量產與適航不確定",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "上游：航空電池・電推進電機・碳纖維機體・飛控航電",
+   "main": false
+  },
+  {
+   "id": "oem",
+   "label": "中游：eVTOL 整機 OEM（載人／載貨）",
+   "main": true
+  },
+  {
+   "id": "infra",
+   "label": "下游基建：起降場 vertiport・低空空管",
+   "main": false
+  },
+  {
+   "id": "ops",
+   "label": "終端：載人載貨運營・通航服務",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "battery",
+   "row": "upstream",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "航空級電池 / 高能量密度電芯",
+   "nameEn": "Aviation-Grade Battery & High-Density Cells",
+   "competition": "oligopoly",
+   "single": "隱性卡位 · eVTOL 對能量密度＋大倍率充放＋安全冗餘要求遠高於車用，CATL 凝聚態（半固態）瞄準 500 Wh/kg 鎖定 eVTOL 與高性能 EV",
+   "desc": "eVTOL 的『燃料箱』——須同時滿足高能量密度（決定航程）、大倍率快充快放（垂直起降耗能尖峰）與航空級安全冗餘，門檻遠高於車用電池。",
+   "marketSize": "eVTOL 電池為低空經濟最關鍵零組件之一",
+   "growth": "現役 eVTOL 電芯能量密度約 300–400 Wh/kg；半固態已小批量",
+   "share": "null",
+   "analysis": "電池是 eVTOL 能否真正載人載貨的物理天花板。CATL（寧德時代 300750.SZ）連 9 年全球動力電池龍頭、2026 Q1 市佔擴至 40.7%，旗下凝聚態（半固態）電池瞄準 500 Wh/kg 專攻 eVTOL 與高性能 EV、麒麟電芯達 350 Wh/kg，並已測試 4 噸級電動飛機、入股 eVTOL 廠 AutoFlight（沃蘭特相關），是『電池龍頭跨界鎖死 eVTOL 上游』的代表。EVE（億緯鋰能 300014.SZ）半固態 300–450 Wh/kg 進入限量生產。國軒高科（002074.SZ）亦布局。絃外之音：eVTOL 整機廠重虧時，電池龍頭以既有車用規模＋利潤跨界吃下航空級電池增量——是最早能變現的上游環節之一。",
+   "companies": [
+    {
+     "name": "寧德時代 CATL",
+     "ticker": "300750.SZ",
+     "country": "CN",
+     "share": "全球動力電池龍頭（Q1 市佔 40.7%）",
+     "products": "凝聚態(半固態)電池 500Wh/kg / 麒麟 350Wh/kg",
+     "note": "已測 4 噸級電動飛機、入股 eVTOL 廠 AutoFlight；連 9 年全球第一",
+     "src": "https://thedriven.io/2026/04/22/catl-debuts-six-stunning-battery-innovations-including-1500km-ev-option-and-6-minute-charge/"
+    },
+    {
+     "name": "億緯鋰能 EVE",
+     "ticker": "300014.SZ",
+     "country": "CN",
+     "share": "半固態 300–450 Wh/kg",
+     "products": "高能量密度電芯 / 半固態",
+     "note": "半固態已進入限量生產，瞄準 eVTOL/電動航空",
+     "src": "https://www.fortunebusinessinsights.com/evtol-batteries-market-114318"
+    },
+    {
+     "name": "Amprius Technologies",
+     "ticker": "AMPX",
+     "country": "US",
+     "share": "矽負極高能量密度",
+     "products": "SiCore/SiMaxx 矽負極電芯（450Wh/kg+）",
+     "note": "美系 eVTOL/電動航空電池供應商，矽負極路線",
+     "src": "https://www.intelmarketresearch.com/evtol-battery-technology-market-38248"
+    },
+    {
+     "name": "國軒高科",
+     "ticker": "002074.SZ",
+     "country": "CN",
+     "share": "中系電池後段",
+     "products": "動力電池 / 半固態研發",
+     "note": "切入低空經濟電池增量",
+     "src": "https://www.intelmarketresearch.com/evtol-battery-technology-market-38248"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "oem_cn"
+    },
+    {
+     "id": "oem_us"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CATL 2026/4 發表凝聚態等六款電池（瞄準 eVTOL）",
+     "url": "https://thedriven.io/2026/04/22/catl-debuts-six-stunning-battery-innovations-including-1500km-ev-option-and-6-minute-charge/"
+    },
+    {
+     "label": "eVTOL 電池技術市場展望 2026–2034",
+     "url": "https://www.intelmarketresearch.com/evtol-battery-technology-market-38248"
+    },
+    {
+     "label": "CATL 入股 eVTOL 開發商 AutoFlight (AeroTime)",
+     "url": "https://www.aerotime.aero/articles/battery-leader-catl-invests-in-evtol-developer-autoflight"
+    }
+   ]
+  },
+  {
+   "id": "propulsion",
+   "row": "upstream",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "分布式電推進 / 航空電機",
+   "nameEn": "Distributed Electric Propulsion & Aviation Motors",
+   "competition": "competitive",
+   "single": "技術里程碑 · 臥龍電驅取得『全球首款 eVTOL 電機認證』，分布式電推進(DEP)以多電機取代單發、是 eVTOL 區別於直升機的核心架構",
+   "desc": "eVTOL 的『肌肉』——分布式電推進(DEP)用多顆高功率密度航空電機＋電控驅動多旋翼/傾轉旋翼，取代傳統單一渦軸發動機，是 eVTOL 安全冗餘與低噪音的關鍵。",
+   "marketSize": "電機為 eVTOL 動力總成核心",
+   "growth": "null",
+   "share": "null",
+   "analysis": "分布式電推進是 eVTOL 與直升機的根本分野：多電機冗餘＋電控分配讓單點失效不致墜機。臥龍電驅（600580.SH）2019 起布局航空電驅，已取得『全球首款 eVTOL 電機認證』，與中國商飛、沃飛長空、山河星航等共同研發。宗申動力（001696.SZ）以摩托/通用機械引擎起家、布局航空動力與油電混合，是低空經濟動力總成代表。海外則有 BETA Technologies（與 Eve Air Mobility 簽最高 $10 億電機合約）、Evolito（供 Vertical Aerospace）等專業電推進廠。此環節進入門檻在『航空級可靠度＋功率密度』，與車用電機不同。",
+   "companies": [
+    {
+     "name": "臥龍電驅 Wolong",
+     "ticker": "600580.SH",
+     "country": "CN",
+     "share": "全球首款 eVTOL 電機認證",
+     "products": "航空電機 / 分布式電推進系統",
+     "note": "2019 布局航空電驅；客戶含中國商飛、沃飛長空、山河星航",
+     "src": "https://m.21jingji.com/article/20250207/herald/9de2d91591349cc4d3e5ecaab7d4b670.html"
+    },
+    {
+     "name": "宗申動力 Zongshen",
+     "ticker": "001696.SZ",
+     "country": "CN",
+     "share": "低空經濟動力總成",
+     "products": "航空動力 / 油電混合 / 通用機械",
+     "note": "摩托/通用引擎起家，布局航空動力與新能源高端零件",
+     "src": "https://caifuhao.eastmoney.com/news/20241226122311900792940"
+    },
+    {
+     "name": "BETA Technologies",
+     "ticker": "—",
+     "country": "US",
+     "share": "電推進 + 整機雙線",
+     "products": "電機（供 Eve Air Mobility，合約上看 $10 億）",
+     "note": "未上市；自有 ALIA eVTOL/eCTOL，亦對外供電機",
+     "src": "https://verticalmag.com/press-releases/eve-air-mobility-selects-beta-technologies-as-pusher-motor-supplier/"
+    },
+    {
+     "name": "Evolito",
+     "ticker": "—",
+     "country": "UK",
+     "share": "軸向磁通電機",
+     "products": "電推進單元（供 Vertical Aerospace Valo）",
+     "note": "英系軸向磁通航空電機新創",
+     "src": "https://evolito.aero/vertical-aerospace-selects-evolito-as-electric-engine-partner-for-valo-evtol/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "oem_cn"
+    },
+    {
+     "id": "oem_us"
+    }
+   ],
+   "sources": [
+    {
+     "label": "全球首款 eVTOL 電機獲認證·國內廠商競逐 (21 財經)",
+     "url": "https://m.21jingji.com/article/20250207/herald/9de2d91591349cc4d3e5ecaab7d4b670.html"
+    },
+    {
+     "label": "Eve Air Mobility 選 BETA 為電機供應商",
+     "url": "https://verticalmag.com/press-releases/eve-air-mobility-selects-beta-technologies-as-pusher-motor-supplier/"
+    },
+    {
+     "label": "Vertical Aerospace 選 Evolito 為 Valo 電推進夥伴",
+     "url": "https://evolito.aero/vertical-aerospace-selects-evolito-as-electric-engine-partner-for-valo-evtol/"
+    }
+   ]
+  },
+  {
+   "id": "composite",
+   "row": "upstream",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "碳纖維複合材機體 / 飛控航電",
+   "nameEn": "Carbon-Fiber Composite Airframe & Avionics",
+   "competition": "oligopoly",
+   "single": "輕量化卡位 · eVTOL 機體大量採碳纖維複材以壓低重量換航程，國產 T700/T800 級碳纖維國產化是低空經濟降本關鍵",
+   "desc": "eVTOL 機體須極致輕量化以換取航程與載重，大量使用碳纖維複合材料；加上飛控、航電、感測（毫米波雷達/光達）構成『航空大腦與骨架』。",
+   "marketSize": "航空級碳纖維 + 飛控航電",
+   "growth": "null",
+   "share": "null",
+   "analysis": "eVTOL 沒有渦輪推力餘裕，每減一公斤都直接換成航程——碳纖維複材機體因此是剛需。中復神鷹（688295.SH）為國產碳纖維龍頭，T700/T800 級量產供航空航天；光威復材（300699.SZ）全產業鏈布局、T300 級民航航太應用逾十年；中航高科（600862.SH）為航空複材主供。飛控航電與感測層與既有 drone_uav 主題部分重疊（毫米波雷達/光達避障）。絃外之音：碳纖維國產化進度決定 eVTOL 機體降本曲線，是低空經濟能否從『示範』走向『規模』的隱形瓶頸。",
+   "companies": [
+    {
+     "name": "中復神鷹",
+     "ticker": "688295.SH",
+     "country": "CN",
+     "share": "國產碳纖維龍頭",
+     "products": "T700/T800 級碳纖維（航空航天）",
+     "note": "國產高端碳纖維量產領先，供 eVTOL/航空複材",
+     "src": "https://hao.cnyes.com/post/192020"
+    },
+    {
+     "name": "光威復材",
+     "ticker": "300699.SZ",
+     "country": "CN",
+     "share": "碳纖維全產業鏈",
+     "products": "T300 級碳纖維 / 複材製品",
+     "note": "T300 級民航航太應用逾十年、全產業鏈布局",
+     "src": "https://hao.cnyes.com/post/192020"
+    },
+    {
+     "name": "中航高科",
+     "ticker": "600862.SH",
+     "country": "CN",
+     "share": "航空複材主供",
+     "products": "航空預浸料 / 複合材料",
+     "note": "中航工業旗下航空複材核心供應商",
+     "src": "https://hao.cnyes.com/post/192020"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "oem_cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "軍工/碳纖維產業鏈全景（中復神鷹/光威/中航高科）(鉅亨)",
+     "url": "https://hao.cnyes.com/post/192020"
+    }
+   ]
+  },
+  {
+   "id": "oem_cn",
+   "row": "oem",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "中國 eVTOL 整機 OEM（載人／載貨）",
+   "nameEn": "China eVTOL Aircraft OEMs",
+   "competition": "highgrowth",
+   "single": "全球領先單點 · 億航 EH216-S 為全球首款集齊 TC型號／PC生產／OC運營『三證』的載人 eVTOL，定義中國『先商業化』路線",
+   "desc": "中國 eVTOL 整機廠——以政策＋空域開放＋產能＋出海訂單搶『先商業化』。億航走無人駕駛多旋翼自動駕駛載人路線，萬豐奧威靠收購 Volocopter 補齊機型，沃飛/峰飛/時的/小鵬匯天等以噸級貨運與傾轉旋翼衝適航。",
+   "marketSize": "中國 eVTOL 本體市場 2026 約 950 億人民幣",
+   "growth": "億航 Q1 交付 4 架、全年營收目標 RMB 6 億、毛利率 62.5%",
+   "share": "null",
+   "analysis": "億航（EH，US ADR）是全球載人 eVTOL 認證最前沿者：EH216-S 取得型號(TC)、生產(PC)、運營(OC)『三證』，2025/3 起兩家運營商累計逾 3,000 次安全飛行、零事故；2026 Q1 交付 4 架、營收 RMB 2,570 萬（航拍約占 40%）、毛利率 62.5%，但仍重虧（淨損 RMB 1.26 億）、全年營收目標維持 RMB 6 億、並啟動 $3,000 萬庫藏股。萬豐奧威（002085.SZ）完成收購 Volocopter 核心資產，補齊『通航固定翼-eVTOL-無人機』矩陣，VoloCity 估 2026 底歐洲取證。出海超級訂單井噴：UAE 對時的科技 $100 億／350 架 E20、泰國對沃飛 $175 億／500 架天際龍、小鵬匯天杜拜 600 架飛行汽車訂單；沃飛累計訂單逾 1,900 架（1/3 來自海外）。絃外之音：中國路線贏在『政策＋產能＋訂單故事』搶先量產，但訂單多為框架/意向，真實交付與適航才是試金石；整機普遍重虧，先賺錢的仍是上游與運營。",
+   "companies": [
+    {
+     "name": "億航智能 EHang",
+     "ticker": "EH",
+     "country": "CN",
+     "share": "全球載人 eVTOL 認證領先（三證齊全）",
+     "products": "EH216-S（自動駕駛載人）/ VT35 / 航拍",
+     "note": "全球首款 TC/PC/OC 三證 eVTOL；Q1 2026 交付 4 架、營收 RMB2,570 萬、毛利率 62.5%、淨損 RMB1.26 億、全年目標 RMB6 億、啟動 $30M 庫藏股",
+     "src": "https://www.stocktitan.net/news/EH/e-hang-reports-first-quarter-2026-unaudited-financial-64t2l18b1xbu.html"
+    },
+    {
+     "name": "萬豐奧威 Wanfeng",
+     "ticker": "002085.SZ",
+     "country": "CN",
+     "share": "全產業鏈布局者（收 Volocopter）",
+     "products": "Volocopter VoloCity/2X eVTOL / eDA40 / DART 通航機 / 鎂鋁合金輕量化",
+     "note": "完成收購 Volocopter 核心資產交割；VoloCity 估 2026 底歐洲取證、國內同步推進",
+     "src": "https://finance.sina.com.cn/stock/relnews/cn/2026-02-12/doc-inhmpyyc9695402.shtml"
+    },
+    {
+     "name": "沃飛長空 / 峰飛 / 時的科技",
+     "ticker": "—",
+     "country": "CN",
+     "share": "傾轉旋翼/噸級貨運衝適航",
+     "products": "VE25-100 天際龍(5噸級) / E20 / 盛世龍",
+     "note": "未上市；泰國 $175 億/500 架、UAE $100 億/350 架超級訂單；沃飛累計訂單逾 1,900 架(1/3 海外)、靠自貢 70+ 起降點試運營",
+     "src": "https://www.21jingji.com/article/20251218/f3eac28720085a22cb6d8c606a180816.html"
+    },
+    {
+     "name": "小鵬匯天 XPeng AeroHT",
+     "ticker": "XPEV",
+     "country": "CN",
+     "share": "飛行汽車（母公司小鵬上市）",
+     "products": "陸地航母 / 飛行汽車",
+     "note": "小鵬汽車(XPEV)旗下；杜拜獲 600 架飛行汽車訂單",
+     "src": "https://www.thepaper.cn/newsDetail_forward_32624684"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "battery"
+    },
+    {
+     "id": "propulsion"
+    },
+    {
+     "id": "composite"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "vertiport"
+    }
+   ],
+   "sources": [
+    {
+     "label": "億航 Q1 2026 財報：交付 4 架、$30M 庫藏股 (StockTitan)",
+     "url": "https://www.stocktitan.net/news/EH/e-hang-reports-first-quarter-2026-unaudited-financial-64t2l18b1xbu.html"
+    },
+    {
+     "label": "萬豐奧威：eVTOL 取證、政策落地與機型研發 (新浪財經)",
+     "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-02-12/doc-inhmpyyc9695402.shtml"
+    },
+    {
+     "label": "中國 eVTOL 史無前例『出海』訂單爆發 (21 經濟網)",
+     "url": "https://www.21jingji.com/article/20251218/f3eac28720085a22cb6d8c606a180816.html"
+    },
+    {
+     "label": "BCG 中國載人 eVTOL 行業白皮書 (2025/9)",
+     "url": "https://web-assets.bcg.com/b0/36/66430fcb44768194f26f5fbf275d/bcg-whitepaper-on-chinas-manned-evtol-market-cn-sept-2025.pdf"
+    }
+   ]
+  },
+  {
+   "id": "oem_us",
+   "row": "oem",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "美/歐 eVTOL 整機 OEM（FAA 認證路線）",
+   "nameEn": "US/EU eVTOL OEMs (FAA Certification Track)",
+   "competition": "highgrowth",
+   "single": "認證競賽單點 · Archer 為全球首家完成 FAA 型號認證第 3 階段、Joby 過第 4 階段，美系以 FAA 認證＋資本搶『先載客』",
+   "desc": "美/歐 eVTOL 廠以傾轉旋翼／升力＋推進構型衝 FAA 型號認證，與航空公司／車廠／國防結盟，路線是『先把認證做到位再載客』，與中國『先商業化』形成雙軌。",
+   "marketSize": "美系龍頭現金充裕（Joby $25 億、Archer $18 億）",
+   "growth": "Joby 2026 營收指引 $1.05–1.15 億；Archer 2026 起初步運營",
+   "share": "null",
+   "analysis": "美系雙雄是『認證＋資本』路線代表。Joby（JOBY）已完成 FAA 五階段型號認證的第 4 階段、型號證估 2026 底核發，與 Delta 合作、入選白宮 eVTOL 整合試點(eIPP)、2026 夏紐約首飛，全年營收指引 $1.05–1.15 億、Q1 營收 $2,400 萬、現金 $25 億、2027 目標月產 4 架。Archer（ACHR）2026/4 成全球首家完成 FAA 型號認證第 3 階段、同步推進第 4 階段，喬治亞廠由 Stellantis 注資 $1.65 億、2030 目標年產 650 架、與 Anduril 結盟切國防、瞄準 LA28 奧運，Q1 末流動性約 $18 億。歐系 Vertical Aerospace、Lilium（破產重整）等進度落後。絃外之音：美系現金厚、認證嚴謹但商業化時點晚於中國億航；中美各擅勝場——『先載客 vs 先量產』是 2026–27 最大看點。",
+   "companies": [
+    {
+     "name": "Joby Aviation",
+     "ticker": "JOBY",
+     "country": "US",
+     "share": "FAA 認證最前沿（過第 4 階段）",
+     "products": "Joby S4 傾轉旋翼 eVTOL（4 客＋1 駕）",
+     "note": "型號證估 2026 底；與 Delta 合作、入選白宮 eIPP、2026 夏紐約首飛；2026 營收指引 $1.05–1.15 億、Q1 營收 $2,400 萬、現金 $25 億",
+     "src": "https://www.stocktitan.net/sec-filings/JOBY/8-k-joby-aviation-inc-reports-material-event-92fce79b5947.html"
+    },
+    {
+     "name": "Archer Aviation",
+     "ticker": "ACHR",
+     "country": "US",
+     "share": "首家完成 FAA 第 3 階段",
+     "products": "Midnight eVTOL（4 客）",
+     "note": "2026/4 首家完成 FAA 型號認證第 3 階段；喬治亞廠 Stellantis 注資 $1.65 億、2030 年產 650 架；與 Anduril 結盟、瞄準 LA28；Q1 末流動性約 $18 億",
+     "src": "https://news.archer.com/archer-announces-first-quarter-2026-results-highlighting-record-faa-certification-progress-with-initial-us-operations-expected-in-2026"
+    },
+    {
+     "name": "Vertical Aerospace",
+     "ticker": "EVTL",
+     "country": "UK",
+     "share": "歐系認證路線",
+     "products": "VX4 / Valo eVTOL",
+     "note": "英系 eVTOL，EASA/CAA 認證路線，進度落後美系雙雄",
+     "src": "https://aerospaceglobalnews.com/news/vertical-aerospace-evolito-engine-supplier-valo-evtol/"
+    },
+    {
+     "name": "Eve Air Mobility",
+     "ticker": "EVEX",
+     "country": "US",
+     "share": "Embraer 分拆",
+     "products": "Eve eVTOL",
+     "note": "巴西航太 Embraer 分拆；選 BETA 電機，訂單簿龐大但尚未認證",
+     "src": "https://verticalmag.com/press-releases/eve-air-mobility-selects-beta-technologies-as-pusher-motor-supplier/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "battery"
+    },
+    {
+     "id": "propulsion"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "vertiport"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Joby Q1 2026 財報：營收 $24M、現金 $25 億 (StockTitan)",
+     "url": "https://www.stocktitan.net/sec-filings/JOBY/8-k-joby-aviation-inc-reports-material-event-92fce79b5947.html"
+    },
+    {
+     "label": "Archer Q1 2026 財報：首家完成 FAA 第 3 階段",
+     "url": "https://news.archer.com/archer-announces-first-quarter-2026-results-highlighting-record-faa-certification-progress-with-initial-us-operations-expected-in-2026"
+    },
+    {
+     "label": "Joby 清第 4 階段·2026 底商業化目標 (Aircraft Insider)",
+     "url": "https://www.aircraftinsider.com/joby-aviation-clears-faa-stage-4-certification-commercial-evtol-passenger-flights-could-launch-by-end-of-2026/"
+    }
+   ]
+  },
+  {
+   "id": "vertiport",
+   "row": "infra",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "下游基建：起降場 vertiport / 低空空管",
+   "nameEn": "Vertiports & Low-Altitude Air Traffic Management",
+   "competition": "emerging",
+   "single": "地方政府主導 · 低空空域開放＋起降網路是 eVTOL 規模化前提，沃飛靠自貢政府 70+ 起降點試運營、各地競逐『低空經濟第一城』",
+   "desc": "讓 eVTOL 真正『跑起來』的地面與空中基建：垂直起降場(vertiport)網路、充電/維修、低空空域劃設與智能空管(UTM)、低空通信導航監視。中國由地方政府＋國央企主導投建。",
+   "marketSize": "低空基建為低空經濟三大支柱之一",
+   "growth": "各地競逐『低空經濟第一城』；空域開放是最大政策變數",
+   "share": "null",
+   "analysis": "起降場與低空空管是 eVTOL 從『示範飛行』走向『規模通勤』的最大瓶頸——沒有起降網路＋空域開放，再多 eVTOL 也飛不起來。中國低空基建三件套：①空域＋智能空管（含低空智聯網）②起降設施（含 vertiport）③飛行保障服務。模式由地方政府主導：沃飛長空依託自貢政府逾 70 個起降點試運營，各地競逐『低空經濟第一城』。央國企（中國電科、深城交 300846.SZ）切低空空管/智聯網，基建商投建 vertiport。絃外之音：空域開放與低空管制改革是整條鏈最大的『政策 β』——政策一鬆，上游全鏈受惠；政策若慢，整機交付再多也只能停在地面。此環節商業模式與獲利仍最不確定。",
+   "companies": [
+    {
+     "name": "深城交",
+     "ticker": "300846.SZ",
+     "country": "CN",
+     "share": "低空智聯/空管規劃",
+     "products": "低空智能網聯 / 空管系統規劃",
+     "note": "切低空交通基礎設施與智能管理",
+     "src": "https://www.cls.cn/detail/1718721"
+    },
+    {
+     "name": "中國電科 CETC（國企）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "低空空管/通信導航監視",
+     "products": "低空智聯網 / UTM / 通導監",
+     "note": "央企，低空空管與通信導航監視核心力量",
+     "src": "https://www.stcn.com/article/detail/1562020.html"
+    },
+    {
+     "name": "地方政府 / vertiport 投建商",
+     "ticker": "—",
+     "country": "CN",
+     "share": "起降場網路投建",
+     "products": "vertiport / 充電維修 / 起降點",
+     "note": "如自貢逾 70 起降點；各地競逐『低空經濟第一城』",
+     "src": "https://www.thepaper.cn/newsDetail_forward_29872855"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "oem_cn"
+    },
+    {
+     "id": "oem_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "operators"
+    }
+   ],
+   "sources": [
+    {
+     "label": "直升機/無人機/eVTOL 長期並存·低空基建三支柱 (財聯社)",
+     "url": "https://www.cls.cn/detail/1718721"
+    },
+    {
+     "label": "萬億賽道迎『空』而上·低空經濟蓄勢待飛 (證券時報)",
+     "url": "https://www.stcn.com/article/detail/1562020.html"
+    },
+    {
+     "label": "eVTOL 載人商業化運營·地方如何助力起飛 (澎湃)",
+     "url": "https://m.thepaper.cn/newsDetail_forward_29872855"
+    }
+   ]
+  },
+  {
+   "id": "operators",
+   "row": "ops",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "終端：載人載貨運營 / 通航服務",
+   "nameEn": "Passenger/Cargo Operations & General Aviation Services",
+   "competition": "fragmented",
+   "single": "已獲利的『非夢想』環節 · 中信海直為國內通航運營龍頭，低空經濟僅其『第二曲線』，本業直升機運營已穩定獲利",
+   "desc": "低空經濟的終端需求——把 eVTOL／直升機運營成載人通勤、低空旅遊、貨運物流、應急救援、醫療轉運等真實營收，回頭拉動整機與上游用量。",
+   "marketSize": "低空運營含通航＋eVTOL＋無人機物流",
+   "growth": "中信海直 2025 前三季營收 RMB16.3 億(+9%)、淨利 RMB2.45 億(+25.5%)",
+   "share": "null",
+   "analysis": "運營端是整鏈唯一已實質獲利的環節——但獲利來自既有通航/直升機本業，eVTOL 仍是『故事』。中信海直（000099.SZ）為中信集團旗下、國內唯一通用航空主板上市龍頭，累計安全飛行逾 50 萬小時，2024 設低空經濟事業部、把低空當『第二增長曲線』（低空＋文旅/醫療/應急/科教/公共服務），2025 前三季營收 RMB16.3 億(+9.05%)、淨利 RMB2.45 億(+25.53%)——本業穩賺、低空提供成長想像。中直股份（600038.SH，中航直升機/AVICOPTER）為中國最大直升機整機製造商，重組整合後產業鏈協同、把自身定位低空經濟核心企業。絃外之音：在整機廠燒錢搶認證時，市場願給中信海直/中直股份『本業獲利＋低空期權』的雙重估值——這是低空經濟最務實的投資切口；直升機與 eVTOL/無人機將長期並存，而非互相取代。",
+   "companies": [
+    {
+     "name": "中信海直",
+     "ticker": "000099.SZ",
+     "country": "CN",
+     "share": "國內通航運營龍頭",
+     "products": "直升機運營 / 低空＋文旅/醫療/應急/救援",
+     "note": "中信集團旗下唯一通航主板上市；安全飛行逾 50 萬小時；2025 前三季營收 RMB16.3 億(+9%)、淨利 RMB2.45 億(+25.5%)；低空為第二曲線",
+     "src": "https://www.21jingji.com/article/20251030/herald/9e68e0d8bf854cbaf9ec04b363e1efa2.html"
+    },
+    {
+     "name": "中直股份 AVICOPTER",
+     "ticker": "600038.SH",
+     "country": "CN",
+     "share": "中國最大直升機整機製造",
+     "products": "民用直升機整機 / 零部件 / 轉包",
+     "note": "中航工業旗下；重組整合後產業鏈協同、自我定位低空經濟核心企業",
+     "src": "https://finance.stockstar.com/IG2025062400021355.shtml"
+    },
+    {
+     "name": "漢翔航空 AIDC",
+     "ticker": "2634.TW",
+     "country": "TW",
+     "share": "台灣航太/無人機機體龍頭",
+     "products": "航太機體結構 / 無人機 / 引擎零件",
+     "note": "台灣『無人機國家隊』核心、267 家聯盟要角；亞利桑那設廠切美國國防供應鏈；台灣低空/無人載具相關上市標的",
+     "src": "https://money.udn.com/money/story/5612/9456165"
+    },
+    {
+     "name": "EHang 運營端",
+     "ticker": "EH",
+     "country": "CN",
+     "share": "整機廠自營載人/航拍運營",
+     "products": "EH216-S 載人觀光 / 航拍 / 低空旅遊",
+     "note": "兩運營商累計逾 3,000 次安全飛行、零事故；以泰國為海外運營標竿市場",
+     "src": "https://www.stocktitan.net/news/EH/e-hang-reports-first-quarter-2026-unaudited-financial-64t2l18b1xbu.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vertiport"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "中信海直『十四五』答卷：低空經濟第二增長曲線 (21 經濟網)",
+     "url": "https://www.21jingji.com/article/20251030/herald/9e68e0d8bf854cbaf9ec04b363e1efa2.html"
+    },
+    {
+     "label": "中直股份：低空經濟已有布局·民用直升機已應用 (證券之星)",
+     "url": "https://finance.stockstar.com/IG2025062400021355.shtml"
+    },
+    {
+     "label": "漢翔等台廠搶攻無人機/低空商機 (經濟日報)",
+     "url": "https://money.udn.com/money/story/5612/9456165"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "battery",
+   "oem_cn"
+  ],
+  [
+   "battery",
+   "oem_us"
+  ],
+  [
+   "propulsion",
+   "oem_cn"
+  ],
+  [
+   "propulsion",
+   "oem_us"
+  ],
+  [
+   "composite",
+   "oem_cn"
+  ],
+  [
+   "oem_cn",
+   "vertiport"
+  ],
+  [
+   "oem_us",
+   "vertiport"
+  ],
+  [
+   "vertiport",
+   "operators"
+  ]
+ ],
+ "_proposed": {}
+}

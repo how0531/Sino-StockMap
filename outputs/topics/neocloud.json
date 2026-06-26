@@ -1,0 +1,522 @@
+{
+ "id": "neocloud",
+ "tab": "AI 算力雲",
+ "title": "AI 算力雲 / GPU 租賃 (AI Neoclouds / GPU Cloud)",
+ "subtitle": "AI Neoclouds — 專為 AI 打造、以 GPU-as-a-Service 為核心的新一代雲。商模：買 NVIDIA GPU → 折舊 → 以 3-5 年長約出租，毛利來自租金減 GPU 折舊+電力+網路的價差，並用 GPU 庫存+客戶長約當抵押融資(GPU-collateralized debt)。CoreWeave(CRWV) Q1'26 營收 $2.08B(+112% YoY)、backlog $99.4B、2026 以 ~$9B 全股票併 Core Scientific 取 ~590MW 自有電力垂直整合；Nebius(NBIS) 與微軟簽 5 年 $17.4B、與 Meta 簽 5 年 $27B。Neocloud 2025 市場 >$25B、Synergy 估 2030 ~$180B(~58% CAGR)。有別於 server(ODM 硬體) 與 agentic_ai(應用)，這是算力基礎設施租賃/金融層。⚠ 2026H1 競爭核心由「搶 GPU」轉「搶電力與融資」(power wars)、微軟成最大房客(>$60B)、折舊風險、$4.2B GPU debt wall、NVIDIA 循環融資泡沫質疑。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 5
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "25+"
+  },
+  {
+   "k": "Neocloud 市場(2025)",
+   "v": ">$25B",
+   "sub": "Q4 單季 $9B(+223% YoY)；Synergy 估 2030 ~$180B、2031 近 $400B(~58% CAGR)"
+  },
+  {
+   "k": "催化／風險",
+   "v": 3,
+   "sub": "AI 算力需求催化·客戶集中·GPU 折舊/債務風險",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "supply",
+   "label": "GPU / 硬體供給 GPU & Hardware Supply",
+   "main": false
+  },
+  {
+   "id": "neoflow",
+   "label": "Neocloud 租賃 → 融資 → 客戶 Lease · Finance · Customers",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "融資層 · 終端客戶 Finance & Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "gpu_supply",
+   "row": "supply",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "GPU / 加速器供給",
+   "nameEn": "GPU & Accelerator Supply",
+   "competition": "monopoly",
+   "single": "鎖喉點 · NVIDIA GPU 為 neocloud 唯一不可繞過的物理瓶頸，同時是供應商+股東+終端租用方(循環)",
+   "desc": "neocloud 的核心生產資料：NVIDIA Hopper/Blackwell(GB200/GB300 NVL72)GPU，搭配 ODM 機櫃、HBM、網路與光模組。",
+   "marketSize": "事實壟斷",
+   "growth": "AI 算力核心",
+   "share": "null",
+   "analysis": "NVIDIA(NVDA)在 AI 訓練/推論加速器近事實壟斷，是 neocloud 成本與單點瓶頸；更特殊的是 NVIDIA 同時對 CoreWeave/Nebius/Lambda 入股(供應商兼股東)、又向其租回算力(終端客戶)，形成循環。2026 NVIDIA 對 AI 股權押注逾 $40B，對 CoreWeave $2B(2025/1)持股已增值至約 $4.4B、約佔其上市股權組合 28%，2026/1 再投 $2B。上游機櫃由鴻海/廣達/緯創 ODM 組裝(見 server 主題)、HBM 由 SK 海力士主導(見 hbm)、網路/光模組見 networking/optical_module。hyperscaler 則以自研 ASIC(Google TPU、AWS Trainium/Inferentia)分流 NVIDIA。",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI GPU 近壟斷",
+     "products": "Hopper / Blackwell GB200·GB300 NVL72 / Rubin",
+     "note": "⚑ neocloud 供應商+股東+租用方；循環融資核心",
+     "src": "https://thenextweb.com/news/nvidia-40bn-ai-equity-investments-2026"
+    },
+    {
+     "name": "鴻海 Foxconn / 廣達 / 緯創",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "GB200/GB300 機櫃 ODM",
+     "products": "NVL72 液冷機櫃整合",
+     "note": "上游硬體，詳見 server 主題"
+    },
+    {
+     "name": "SK 海力士",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "HBM 主供",
+     "products": "HBM3E / HBM4",
+     "note": "GPU 記憶體瓶頸，詳見 hbm 主題"
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "GPU 次源",
+     "products": "Instinct MI300X / MI355X",
+     "note": "Oracle OCI 等採用，分散 NVIDIA 依賴"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "網路/自研 ASIC",
+     "products": "Tomahawk/Jericho 交換器 + hyperscaler 客製 ASIC",
+     "note": "AI 叢集網路與客製加速器，詳見 networking/asic 主題",
+     "src": "https://www.cnbc.com/2025/11/21/nvidia-gpus-google-tpus-aws-trainium-comparing-the-top-ai-chips.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "neocloud_pure"
+    },
+    {
+     "id": "hyperscaler_gpu"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA 2026 逾 $40B AI 股權押注 (TNW)",
+     "url": "https://thenextweb.com/news/nvidia-40bn-ai-equity-investments-2026"
+    }
+   ]
+  },
+  {
+   "id": "neocloud_pure",
+   "row": "neoflow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "獨立 Neocloud（純算力租賃）",
+   "nameEn": "Pure-play Neoclouds",
+   "competition": "highgrowth",
+   "single": "⚑ 2026H1 競爭核心由「搶 GPU」轉「搶電力與融資」(power wars)；CoreWeave 併 Core Scientific 取 ~590MW 電力垂直整合；礦轉算 IREN/Nscale 崛起",
+   "desc": "專為 AI 打造、裸金屬優先的純 GPU-as-a-Service 供應商，以 3-5 年長約把 NVIDIA GPU 算力出租給 AI 實驗室與 hyperscaler。",
+   "marketSize": "稀缺純算力標的",
+   "growth": "營收 +100~800% YoY",
+   "share": "null",
+   "analysis": "CoreWeave(CRWV，最大純 neocloud，自 crypto 轉型)Q1'26 營收 $2.08B(+112% YoY)、backlog 一度近 $100B、FY26 guidance 營收 $12-13B/exit ARR $18-19B/capex $30-35B；Nebius(NBIS)Q1'26 集團營收 $399M(核心 AI 雲 +841% YoY)、2025 底 ARR run-rate $1.25B、FY26 目標營收 $3.0-3.4B/ARR $7-9B、與微軟+Meta 合計約 $46B 協議；Crusoe(未上市，能源優先)合約容量近 4.9GW、pipeline 逾 40GW、供 Oracle 與微軟；Lambda(未上市，2H26 潛在 IPO)Series E 募逾 $1.5B、與微軟簽多年合約；Together AI(未上市，偏推論/開源)2026/2 ARR $1B、傳以 $7.5B pre-money 募約 $1B。CRWV/NBIS 是少數可直接押 AI 算力租賃的上市標的，但估值對利率/AI capex 情緒極敏感。2026H1 競爭核心由「搶 GPU」轉為「搶並通電的 MW」(power wars)：放款前須先有電力合約、部分地區併網排隊達 10 年，電力成最關鍵單點；CoreWeave 以 ~$9B 全股票併比特幣礦商 Core Scientific(取 ~590MW 自有電力)補上電力單點、轉垂直整合；比特幣礦商(IREN、Core Scientific)集體轉型成第三梯隊新進者、以礦業電力資產為入場券搶下微軟大單(IREN $9.7B、Nscale 多地)。",
+   "companies": [
+    {
+     "name": "CoreWeave",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "最大純 neocloud",
+     "products": "GPU-as-a-Service / W&B Weave(LLMOps) / 自有電力資料中心(Core Scientific)",
+     "note": "⚑ 2026 以全股票 ~$9B 收購比特幣礦商 Core Scientific、取得 ~590MW 自有電力→由依賴第三方基礎設施轉為垂直整合全棧；Q1'26 營收 $2.08B(+112%)、調後 EBITDA $1.16B(margin 56%)、活躍電力破 1GW；backlog $99.4B(含 Meta 累計 ~$35B 至 2032/Anthropic 多年約/Jane Street $6B)；FY26 capex 指引 $30-35B；6/22 納入 Nasdaq-100",
+     "src": "https://wf.coreweave.com/blog/coreweave-to-acquire-core-scientific"
+    },
+    {
+     "name": "Nebius Group",
+     "ticker": "NBIS",
+     "country": "US",
+     "share": "成長最快 neocloud",
+     "products": "AI 雲 / 自有 AI factory",
+     "note": "與微軟簽 5 年 $17.4B(前付 ~$6.96B)、與 Meta 簽 5 年 $27B($12B 專屬算力+$15B 選擇性容量)；Q1'26 核心 AI 雲 +841% YoY、contracted power 破 3.5GW(超原 3GW 目標、上調至少 4GW)；2026/6/10 完成收購推論優化商 Eigen AI(向上整合)；維持 ARR $7-9B/集團營收 $3.0-3.4B 指引；6/22 與 CRWV 同納入 Nasdaq-100",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/05/13/nebius-nbis-q1-2026-earnings-transcript/"
+    },
+    {
+     "name": "Crusoe",
+     "ticker": "—",
+     "country": "US",
+     "share": "能源優先 AI factory",
+     "products": "Crusoe Cloud / BYO power AI 園區",
+     "note": "未上市；合約容量近 4.9GW、pipeline 逾 40GW；供 Oracle(Abilene 1.2GW)與微軟(900MW)",
+     "src": "https://www.globenewswire.com/news-release/2026/06/09/3309072/0/en/Crusoe-s-Contracted-AI-Infrastructure-Capacity-Approaches-5-Gigawatts-Across-Data-Centers-and-Cloud.html"
+    },
+    {
+     "name": "Lambda",
+     "ticker": "—",
+     "country": "US",
+     "share": "GPU 雲 + 潛在 IPO",
+     "products": "GPU 雲 / on-demand 叢集",
+     "note": "未上市；2025/11 Series E 募逾 $1.5B(累計 >$2.3B)；與微軟簽 GB300 NVL72 多年約；2H26 潛在 IPO",
+     "src": "https://www.datacenterdynamics.com/en/news/microsoft-signs-multi-billion-dollar-cloud-capacity-deal-with-lambda/"
+    },
+    {
+     "name": "Together AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "推論/開源 AI 雲",
+     "products": "Instant Clusters(H100/H200/B200) / 推論 API",
+     "note": "未上市；2026/2 ARR $1B；傳 $7.5B pre-money 募約 $1B",
+     "src": "https://sacra.com/c/together-ai/"
+    },
+    {
+     "name": "IREN",
+     "ticker": "IREN",
+     "country": "AU",
+     "share": "礦轉算上市 neocloud",
+     "products": "AI Cloud(Blackwell/GB300)/ DSX AI factory(Horizon·Childress)",
+     "note": "⚑ 2026 簽微軟 5 年 $9.7B GB300 約(Childress 200MW IT load、20% 預付)、股價單日 +30% 創高；另與 NVIDIA 簽 $2.1B/5GW、Together/Fireworks/Fluidstack 多年約；目標 14 萬 GPU、CY26 ARR $3.4B(客戶預付涵蓋 ~95% GPU capex)",
+     "src": "https://w.media/neocloud-provider-iren-secures-us9-7bn-ai-cloud-deal-with-microsoft/"
+    },
+    {
+     "name": "Nscale",
+     "ticker": "—",
+     "country": "UK",
+     "share": "歐洲最大 neocloud(礦轉算)",
+     "products": "AI factory(挪/德州/葡)/ Vera Rubin·GB300 叢集",
+     "note": "未上市；2026/3 $2B Series C 估值 $14.5B(累計募資 >$3.7B)、規劃 2026 IPO；微軟租賃橫跨挪威(52,000 GPU)/德州(~104,000 顆 GB300、上看 $14B)/葡萄牙(12,600 GPU)；接手 OpenAI 退出的 Stargate Norway(230MW Narvik)",
+     "src": "https://siliconangle.com/2026/03/09/ai-cloud-startup-nscale-raises-2b-funding-14-6b-valuation/"
+    },
+    {
+     "name": "Vast Data / Voltage Park / RunPod",
+     "ticker": "—",
+     "country": "US",
+     "share": "長尾 neocloud",
+     "products": "GPU 雲 / 資料平台",
+     "note": "未上市；長尾競爭，天花板多為被收編",
+     "src": "https://www.abiresearch.com/blog/leading-neocloud-companies"
+    },
+    {
+     "name": "General Compute",
+     "ticker": "—",
+     "country": "US",
+     "share": "首個非 NVIDIA 推論 neocloud",
+     "products": "SambaNova SN50 氣冷推論雲(~600-700 tok/s)",
+     "note": "新進者；2026/6 $15M 種子輪(投後 $60M、FUSE VC 領投)、$300M SN50 在手；鎖定 colo/crypto 礦場改造，繞過液冷新建",
+     "src": "https://dataphoenix.info/general-compute-raises-15m-to-build-inference-neocloud-on-sambanova-chips/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "gpu_supply"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "gpu_debt"
+    },
+    {
+     "id": "ai_customers"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CoreWeave Q1'26 earnings (CNBC)",
+     "url": "https://www.cnbc.com/2026/05/07/coreweave-crwv-q1-earnings-report-2026.html"
+    },
+    {
+     "label": "Profiling Seven Leading Neoclouds (ABI Research)",
+     "url": "https://www.abiresearch.com/blog/leading-neocloud-companies"
+    },
+    {
+     "label": "CoreWeave 收購 Core Scientific 取自有電力 (CoreWeave)",
+     "url": "https://wf.coreweave.com/blog/coreweave-to-acquire-core-scientific"
+    },
+    {
+     "label": "礦商轉型 neocloud：IREN 微軟 $9.7B 大單 (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/news/microsofts-97-billion-deal-with-iren-shows-bitcoin-miners-ai-pivot-is-paying-off-165316526.html"
+    }
+   ]
+  },
+  {
+   "id": "hyperscaler_gpu",
+   "row": "neoflow",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "Hyperscaler GPU 租賃 + 自研 ASIC",
+   "nameEn": "Hyperscaler GPU Rental & In-house ASIC",
+   "competition": "oligopoly",
+   "single": "三巨頭寡占 · 既是 neocloud 最大客戶(向其租產能)，又自營 GPU 雲並自研 ASIC(TPU/Trainium)去 NVIDIA 綁定",
+   "desc": "AWS/Azure/GCP/Oracle 同時提供 NVIDIA GPU 租賃，並自研 AI ASIC 分流 NVIDIA；與純 neocloud 既競爭又合作(向其外包尖峰產能)。",
+   "marketSize": "三巨頭+Oracle",
+   "growth": "雙軌(租+自研)",
+   "share": "null",
+   "analysis": "微軟 Azure(MSFT)既自營 GPU 雲，又是 CoreWeave/Nebius/Lambda 最大客戶(向其簽巨額長約租產能)；Oracle OCI(ORCL)裸金屬優先、13 個 GPU 系列(含 AMD MI300X/MI355X)、RoCE v2 叢集網路，是 Stargate 主要承載方之一；Google Cloud(GOOGL)自研 TPU(推論時代強)+NVIDIA GPU 租賃；AWS(AMZN)雙 ASIC 策略(Trainium 訓練/Inferentia 推論)+NVIDIA GPU 租賃。自研 ASIC 是 hyperscaler 對 NVIDIA 去綁定的手段，與純 neocloud 純押 NVIDIA 形成對比；長期可能壓縮 neocloud 議價。詳見 asic / agentic_ai 主題。",
+   "companies": [
+    {
+     "name": "Microsoft Azure",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "最大 neocloud 客戶+自營雲",
+     "products": "Azure GPU / Maia ASIC",
+     "note": "向 CoreWeave/Nebius/Lambda 簽巨額長約租產能",
+     "src": "https://www.fool.com/investing/2026/04/02/nebius-just-signed-46-billion-in-ai-cloud-deals-wi/"
+    },
+    {
+     "name": "Oracle (OCI)",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "裸金屬 GPU 雲",
+     "products": "OCI 裸金屬 GPU(NVIDIA+AMD)",
+     "note": "Stargate 主要承載方；供 Crusoe 園區算力",
+     "src": "https://aimultiple.com/cloud-gpu-providers"
+    },
+    {
+     "name": "Google Cloud",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "TPU + GPU 雙軌",
+     "products": "TPU(自研)+ NVIDIA GPU 租賃",
+     "note": "推論時代 TPU 競爭力強",
+     "src": "https://www.cnbc.com/2025/11/21/nvidia-gpus-google-tpus-aws-trainium-comparing-the-top-ai-chips.html"
+    },
+    {
+     "name": "AWS",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "Trainium/Inferentia + GPU",
+     "products": "Trainium(訓練)/Inferentia(推論)+ GPU 租賃",
+     "note": "雙 ASIC 策略去 NVIDIA 綁定",
+     "src": "https://www.cnbc.com/2025/11/21/nvidia-gpus-google-tpus-aws-trainium-comparing-the-top-ai-chips.html"
+    },
+    {
+     "name": "CoreWeave / Nebius(向其外包)",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "尖峰產能外包對象",
+     "products": "純 neocloud 承接 hyperscaler 溢出需求",
+     "note": "微軟向 neocloud 租產能=既競爭又合作",
+     "src": "https://www.fool.com/investing/2026/04/02/nebius-just-signed-46-billion-in-ai-cloud-deals-wi/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "gpu_supply"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_customers"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA GPU vs Google TPU vs AWS Trainium (CNBC)",
+     "url": "https://www.cnbc.com/2025/11/21/nvidia-gpus-google-tpus-aws-trainium-comparing-the-top-ai-chips.html"
+    }
+   ]
+  },
+  {
+   "id": "gpu_debt",
+   "row": "demand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "融資層：GPU 抵押債 / 循環融資",
+   "nameEn": "GPU-collateralized Debt & Circular Financing",
+   "competition": "emerging",
+   "single": "⚠ 命門 · 用 GPU 庫存+客戶長約當抵押融資；折舊年限爭議+$4.2B debt wall+循環融資泡沫質疑；2026H1 放款先看電力合約(backlog 多簽在未通電容量)",
+   "desc": "neocloud 商模的金融層：以 NVIDIA GPU 庫存與客戶長約為抵押的債務融資、私募信貸、可轉債，是高槓桿買折舊資產出租的命門。",
+   "marketSize": "GPU 抵押債 >$20B",
+   "growth": "高槓桿擴張",
+   "share": "null",
+   "analysis": "neocloud 用 GPU 庫存+客戶長約當抵押融資(GPU-collateralized debt)；CoreWeave Q1'26 底負債已近 $25B、2026 capex 上修至 $31-35B、因第三方資料中心開發商延宕而下修營收 guidance；全產業 GPU 抵押債逾 $20B；2026/6 Roundhill 向 SEC 申報 Neocloud ETF(以 GPUaaS 營收/backlog/capex 占比≥50% 定義成分股)，標誌 neocloud 已成獨立可投資類別。三大爭議：(1)折舊年限不確定——Amazon 2025/2 將伺服器使用年限由 6 年下修至 5 年、Meta 上調至 5.5 年，當大廠對 GPU 殘值莫衷一是,抵押品假設即脆弱；(2)CoreWeave 2026 稍晚約 $4.2B 本金到期(市場稱 GPU debt wall)、再融資依賴市場情緒；(3)循環融資——NVIDIA 入股 neocloud→neocloud 向 NVIDIA 買 GPU→GPU 營收回流 NVIDIA,被質疑墊高估值、是 AI 泡沫訊號。空頭 Jim Chanos 形容此模式為「以折舊中資產為抵押的虧損企業」並預測違約。NVIDIA 背書則使被投 neocloud 能以更低利率取得債務,建置速度領先。2026H1 融資門檻再升級:投資人放款前要求先有電力合約(power wars)、backlog(如 CRWV $99.4B)多簽在尚未建成/通電的容量上,COD(商轉日)延後直接威脅履約與再融資;CoreWeave 總負債自 2024 的 <$8B 增至逾 $21B、現金僅約 $2.27B,2026 capex $30-35B 形成逾 $17B 資金缺口、高度仰賴債權融資(IPO 後股權發行僅 $3.5B vs 債務逾 $18.8B)。",
+   "companies": [
+    {
+     "name": "NVIDIA(股權背書)",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "循環融資核心",
+     "products": "對 CoreWeave/Nebius/Lambda 入股",
+     "note": "⚑ 背書降低被投者融資成本；亦為泡沫質疑來源",
+     "src": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom"
+    },
+    {
+     "name": "CoreWeave(債務結構)",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "GPU debt wall 代表",
+     "products": "GPU 抵押債 / 私募信貸",
+     "note": "⚠ 2026 約 $4.2B 本金到期；18 個月募資逾 $25B",
+     "src": "https://business.wapakdailynews.com/wapakdailynews/article/finterra-2026-2-23-the-gpu-debt-wall-a-deep-dive-into-coreweave-crwv-and-the-2026-ai-financing-crisis"
+    },
+    {
+     "name": "Nebius(可轉債)",
+     "ticker": "NBIS",
+     "country": "US",
+     "share": "可轉債融資",
+     "products": "約 $4.3B 可轉債",
+     "note": "微軟前付 ~$6.96B 改善現金流",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926064092/nbis-20260331xex99d1.htm"
+    },
+    {
+     "name": "全產業 GPU 抵押債",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": ">$20B 待償",
+     "products": "GPU 抵押債",
+     "note": "⚠ 折舊年限爭議使抵押品價值不確定",
+     "src": "https://davefriedman.substack.com/p/neoclouds-hold-more-than-20-billion"
+    },
+    {
+     "name": "私募信貸 / 大型銀行(承貸方)",
+     "ticker": "—",
+     "country": "US",
+     "share": "GPU 債承貸",
+     "products": "GPU 抵押貸款 / 銀團 / 私募信貸",
+     "note": "Blackstone/Magnetar 等私募信貸與大型銀行為 neocloud 主要債權人；2026/1 NVIDIA-xAI 之 Valor(VCI)SPV 募 $5.4B(Apollo $3.5B 債+NVIDIA $1.9B)被 Burry 稱 fugazi",
+     "src": "https://247wallst.com/investing/2026/06/01/michael-burry-just-called-nvidias-spacex-chip-deal-fugazi-heres-why-it-all-seems-wrong/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "neocloud_pure"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_customers"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA 循環融資 (io-fund)",
+     "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom"
+    },
+    {
+     "label": "Neocloud >$20B GPU 抵押債/折舊風險 (Dave Friedman)",
+     "url": "https://davefriedman.substack.com/p/neoclouds-hold-more-than-20-billion"
+    }
+   ]
+  },
+  {
+   "id": "ai_customers",
+   "row": "demand",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "終端客戶 / 需求（客戶集中）",
+   "nameEn": "End Customers & Demand Concentration",
+   "competition": "oligopoly",
+   "single": "⚠ 客戶集中 · 微軟佔 CoreWeave 2025 營收 67%；OpenAI/Meta 各承諾最高 $22-35B 長約",
+   "desc": "少數 hyperscaler 與 AI 實驗室的巨額長約構成 neocloud 絕大多數 backlog,既是能見度來源,也是集中度風險。",
+   "marketSize": "需求錨點",
+   "growth": "巨額長約",
+   "share": "null",
+   "analysis": "微軟佔 CoreWeave 2025 營收 67%(2024 為 62%),管理層預期 2026 隨 OpenAI/Meta 約量產降至 50% 以下;OpenAI 與 CoreWeave 累計承諾最高約 $22.4B(2025/3 起分批擴約);Meta 累計承諾最高約 $35.2B(至 2032);Crusoe 供 Oracle、Lambda/Nebius 供微軟。巨額長約給 neocloud 多年現金流能見度(CRWV backlog 近 $100B、NBIS 與微軟+Meta 約 $46B),但客戶集中度是核心風險:單一客戶毀約/砍單即重創,且這些客戶(微軟/Google/Meta/Amazon)同時自建算力,長期是潛在競爭者。注意巨額數字多為「最高金額(up to)」承諾,非已實現營收。",
+   "companies": [
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "最大 neocloud 房客",
+     "products": "向 neocloud 租產能",
+     "note": "⚠ 2025Q4-2026H1 累計向 Nscale/Nebius/CoreWeave/IREN/Lambda 承諾 >$60B 租賃(IREN $9.7B、Nebius $17.4B、Nscale 多地)；佔 CoreWeave 2025 營收 67%；接手 OpenAI 退出的 Stargate Norway 算力→hyperscaler 反成 neocloud 主要客戶與議價方",
+     "src": "https://w.media/neocloud-provider-iren-secures-us9-7bn-ai-cloud-deal-with-microsoft/"
+    },
+    {
+     "name": "OpenAI",
+     "ticker": "—",
+     "country": "US",
+     "share": "CRWV 巨額長約",
+     "products": "訓練/推論算力長約",
+     "note": "與 CoreWeave 累計承諾最高約 $22.4B；2026H1 退出 Stargate Norway(230MW Narvik)並暫停英國類似專案、由微軟接手→OpenAI 收縮直租、下游需求洗牌",
+     "src": "https://www.cnbc.com/2026/04/15/openai-stargate-norway-project-microsoft.html"
+    },
+    {
+     "name": "Anthropic",
+     "ticker": "—",
+     "country": "US",
+     "share": "CRWV 新增多年客戶",
+     "products": "Claude 訓練/部署算力多年約",
+     "note": "2026/4 與 CoreWeave 簽多年約、算力 2026 下半上線；neocloud 需求方再添一 AI 實驗室",
+     "src": "https://tech-insider.org/coreweave-anthropic-multibillion-deal-meta-66-billion-backlog-2026/"
+    },
+    {
+     "name": "Meta",
+     "ticker": "META",
+     "country": "US",
+     "share": "CRWV 巨額長約",
+     "products": "AI 算力長約(至 2032)",
+     "note": "與 CoreWeave 累計承諾最高約 $35.2B；另與 Nebius 簽最高約 $27B，Meta 對兩家 neocloud 合計約 $48B",
+     "src": "https://brandergroup.net/2026/04/coreweaves-21b-meta-deal-ignites-the-ai-battleground/"
+    },
+    {
+     "name": "Oracle / AI 實驗室 / 企業 AI",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "需求長尾",
+     "products": "GPU 算力租用",
+     "note": "Crusoe 供 Oracle;Anthropic/各 AI 實驗室為潛在客戶",
+     "src": "https://www.globenewswire.com/news-release/2026/06/09/3309072/0/en/Crusoe-s-Contracted-AI-Infrastructure-Capacity-Approaches-5-Gigawatts-Across-Data-Centers-and-Cloud.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "neocloud_pure"
+    },
+    {
+     "id": "hyperscaler_gpu"
+    },
+    {
+     "id": "gpu_debt"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "CoreWeave 客戶集中度/OpenAI/Meta 承諾 (MLQ.ai)",
+     "url": "https://mlq.ai/research/coreweave/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "gpu_supply",
+   "neocloud_pure"
+  ],
+  [
+   "gpu_supply",
+   "hyperscaler_gpu"
+  ],
+  [
+   "neocloud_pure",
+   "gpu_debt"
+  ],
+  [
+   "neocloud_pure",
+   "ai_customers"
+  ],
+  [
+   "hyperscaler_gpu",
+   "ai_customers"
+  ],
+  [
+   "gpu_debt",
+   "ai_customers"
+  ]
+ ],
+ "_proposed": {}
+}

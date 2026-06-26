@@ -1,0 +1,1263 @@
+{
+ "id": "hbm",
+ "tab": "HBM",
+ "title": "HBM 高頻寬記憶體供應鏈",
+ "subtitle": "High Bandwidth Memory — 堆疊 DRAM 緊鄰 AI GPU/ASIC，是 AI 算力與 CoWoS 的共同瓶頸。三強寡占；2026 Q1 SK hynix 全球首批 HBM4 量產（Nvidia Rubin ~70% 配額）、Micron 2026 Q1 已 HVM 出貨 HBM4 36GB 12H、Samsung HBM3E 12H 2025/9 通過 Nvidia 認證+2026/2 HBM4 全球首發 MP。HBM4 邏輯基底晶片改由台積電 N3 生產（Samsung 仍自家 4nm）。需求 2026 +70%、三家售罄。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 19
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "75+"
+  },
+  {
+   "k": "獨佔／客戶獨家單點",
+   "v": 9,
+   "sub": "ASML·Disco·Namics·Hanmi·Soulbrain·Duksan·PSK·TSMC",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "equip",
+   "label": "設備（含韓日台生態）Equipment",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "HBM 主製程流 Main Flow",
+   "main": true
+  },
+  {
+   "id": "material",
+   "label": "材料・化學・IP Materials & IP",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "eq-litho",
+   "row": "equip",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "EUV / DUV 微影",
+   "nameEn": "EUV / DUV Litho",
+   "competition": "monopoly",
+   "single": "獨佔 · ASML EUV 100%，High-NA 首裝 SK Hynix；DRAM 1c 用 5+ 層 EUV",
+   "desc": "DRAM 微縮所需的 EUV/DUV 微影。1c nm 世代 DRAM 導入多層 EUV。",
+   "marketSize": "鎖喉點",
+   "growth": "DRAM 1c 用 EUV",
+   "share": "null",
+   "analysis": "ASML 100% 獨佔 EUV，High-NA（EXE:5200B, NA0.55）首裝 SK Hynix；DRAM 微縮唯一微影供應商，是 HBM 上游最深鎖喉點。",
+   "companies": [
+    {
+     "name": "ASML",
+     "ticker": "ASML",
+     "country": "EU",
+     "share": "EUV 100%",
+     "products": "NXE / High-NA EXE:5200B",
+     "note": "DRAM 微縮唯一微影",
+     "src": "https://news.skhynix.com/sk-hynix-introduces-industrys-first-commercial-high-na-euv/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-dram"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SK Hynix 首裝 High-NA EUV (SK Hynix)",
+     "url": "https://news.skhynix.com/sk-hynix-introduces-industrys-first-commercial-high-na-euv/"
+    }
+   ]
+  },
+  {
+   "id": "eq-front",
+   "row": "equip",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "DRAM 前段設備",
+   "nameEn": "DRAM Front-end (Etch/Depo/CMP)",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "DRAM 晶圓的蝕刻、沉積、CMP、塗佈顯影、製程控制設備。",
+   "marketSize": "null",
+   "growth": "蝕刻 ~75% 三強",
+   "share": "null",
+   "analysis": "AMAT+Lam+TEL 控蝕刻 ~75%，TEL 塗佈顯影近獨佔（88–90%）；KLA 製程控制、Ebara CMP/電鍍。",
+   "companies": [
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "蝕刻 ~32%",
+     "products": "蝕刻/PVD/CVD/CMP",
+     "note": "前段全製程核心"
+    },
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "蝕刻 ~28%",
+     "products": "導體蝕刻/DRIE",
+     "note": "TSV 深蝕刻"
+    },
+    {
+     "name": "Tokyo Electron",
+     "ticker": "8035.T",
+     "country": "JP",
+     "share": "塗顯 88–90%",
+     "products": "蝕刻/coater/ALD",
+     "note": "EUV 配套塗顯獨佔"
+    },
+    {
+     "name": "KLA / Ebara",
+     "ticker": "KLAC / 6361.T",
+     "country": "US",
+     "share": "製程控制/CMP",
+     "products": "缺陷檢測/CMP/電鍍",
+     "note": "良率/平坦化"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-dram"
+    }
+   ],
+   "sources": [
+    {
+     "label": "蝕刻設備市佔 (Intel Market Research)",
+     "url": "https://www.intelmarketresearch.com/semiconductor-etch-equipment-market-market-16371"
+    }
+   ]
+  },
+  {
+   "id": "eq-tsv",
+   "row": "equip",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "TSV / 減薄 / 切割",
+   "nameEn": "TSV · Thinning · Dicing",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · Disco 晶圓減薄/切割（突破 HBM 775µm 限高物理瓶頸）",
+   "desc": "DRAM 晶粒的 TSV 矽穿孔、晶圓減薄（~30µm）與切割，是 HBM 堆疊高度的物理瓶頸。",
+   "marketSize": "鎖喉點",
+   "growth": "775µm 限高瓶頸",
+   "share": "null",
+   "analysis": "Disco 在減薄/切割近乎獨佔（所有 HBM 廠採用），是打通 775µm 封裝限高的關鍵；Lam 主導 TSV 深矽蝕刻。",
+   "companies": [
+    {
+     "name": "Disco",
+     "ticker": "6146.T",
+     "country": "JP",
+     "share": "減薄/切割近獨佔",
+     "products": "backgrinder(~30µm)/dicing/DBG",
+     "note": "突破限高瓶頸"
+    },
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "TSV 蝕刻",
+     "products": "Bosch DRIE TSV",
+     "note": "TSV 製程主力"
+    },
+    {
+     "name": "EO Technics",
+     "ticker": "039030.KQ",
+     "country": "KR",
+     "share": "雷射切割",
+     "products": "femto-second grooving/full-cut",
+     "note": "★HBM4 20–30µm 超薄晶圓由刀片轉雷射"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-dram"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Disco DBG 減薄切割 (Disco)",
+     "url": "https://technology.discousa.com/method/dicing-before-grinding/"
+    }
+   ]
+  },
+  {
+   "id": "eq-tcb",
+   "row": "equip",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "TC 熱壓鍵合設備",
+   "nameEn": "TC Bonder",
+   "competition": "oligopoly",
+   "single": "客戶獨家轉移 · Hanmi SK Hynix TC bonder 歷史獨家(2017–)，2025–26 轉多源；SK hynix 現有 ~50 台 HBM4 TCB 中 ASMPT 約佔半數；Hanmi 與 SK hynix 2025/11 簽署新設備合約修復關係（KRW 15.7B），Macquarie 下修 Hanmi 2026 營收預估至 KRW 822B",
+   "desc": "晶粒逐層熱壓鍵合（TC-NCF）所需的 TC bonder，是 HBM 堆疊核心設備。",
+   "marketSize": "客戶獨家轉移",
+   "growth": "轉多源",
+   "share": "null",
+   "analysis": "HBM TC bonder 集中度下降（2026 Q1 起）：Hanmi 歷史 71% 因 SK hynix 將 HBM4 訂單分流給 ASMPT（7 台 dual-head、~KRW 30B，2025/11 簽約），2026 Hanmi 在 SK 占比預估降至 20–30%；Hanmi 2026 Q1 營收 −65.5% YoY、營業利益 −87.9% YoY（bonder 銷售僅 40 億韓元、年減 96.6%）；Q2 2026 TCB 全面反彈，分析師預估 Q2 營收 2,276 億韓元（季增 +347%）、OPM 48.5%；SEMES（三星 captive）、Micron HBM4 改採 BESI。",
+   "companies": [
+    {
+     "name": "Hanmi Semiconductor",
+     "ticker": "042700.KS",
+     "country": "KR",
+     "share": "HBM TCB 71.2%",
+     "products": "Dual TC Bonder / TC BONDER 4(HBM4) / Griffin 4.5",
+     "note": "SK 海力士主供（歷史獨家已被稀釋）；2026/6/8 獲 SK hynix KRW 44.2B『TC Bonder 4.5 Griffin』首單（~15 台、2026/9/2 前交付青州 M15X P&T）；券商估此單帶動 Hanmi 2Q26 營收回升至 ~KRW 2,276 億、營業利益 ~KRW 1,103 億",
+     "src": "https://www.techtimes.com/articles/318013/20260609/sk-hynix-orders-hanmi-tc-bonder-45-griffin-hbm4-first-griffin-contract-worth-287m.htm"
+    },
+    {
+     "name": "SEMES",
+     "ticker": "—",
+     "country": "KR",
+     "share": "HBM TCB 13.1%",
+     "products": "TC bonder (NCF)",
+     "note": "三星 captive、未上市"
+    },
+    {
+     "name": "ASMPT",
+     "ticker": "0522.HK",
+     "country": "SG",
+     "share": "HBM TCB 5.6%",
+     "products": "Dual-head TC bonder",
+     "note": "SK 海力士 HBM4 部分訂單"
+    },
+    {
+     "name": "Yamaha/Shinkawa",
+     "ticker": "7272.T",
+     "country": "JP",
+     "share": "HBM TCB 5.6%",
+     "products": "TC bonder",
+     "note": "Shinkawa；三星已停用"
+    },
+    {
+     "name": "BESI / Hanwha 精機",
+     "ticker": "BESI.AS / 489790.KS",
+     "country": "EU",
+     "share": "Micron HBM4 / 訴訟中",
+     "products": "TC bonder + d2w",
+     "note": "Micron HBM4 改 BESI；Hanwha 訴訟持續中；ASMPT 7 台 dual-head 已交付 SK hynix HBM4 量產線；目前 SK hynix HBM4 TCB ~50 台中 ASMPT 約佔半數；M15X 擴產 ~100 台採購持續推進"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-stack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TC bonder 專利戰與多源 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/04/23/news-the-tc-bonder-drama-could-hanmis-supply-shift-the-hbm-race-between-micron-sk-hynix-and-samsung/"
+    }
+   ]
+  },
+  {
+   "id": "eq-hybond",
+   "row": "equip",
+   "col": 6,
+   "span": 1,
+   "kind": "rail",
+   "name": "混合鍵合設備",
+   "nameEn": "Hybrid Bonding",
+   "competition": "emerging",
+   "single": "null",
+   "desc": "銅對銅無凸塊（bumpless）混合鍵合，為 HBM4/未來世代關鍵，尚無量產主導者。",
+   "marketSize": "null",
+   "growth": "下世代 HBM",
+   "share": "null",
+   "analysis": "BESI（die-to-wafer，與 AMAT 合作）領導、EVG（W2W）老牌。⚠ HBM4 業界確認仍走 microbump（JEDEC）；全面混合鍵合延至 HBM4E/2027+。BESI Q1 2026 hybrid bonder 訂單季增 +104.5% 創歷史新高、客戶數達 20 家；HBM4E 客戶評估進入 order 轉換、若順利 2027 HBM4E 可進入主流量產；hybrid bonder 市場預估 2028 達 $2B。",
+   "companies": [
+    {
+     "name": "BESI",
+     "ticker": "BESI.AS",
+     "country": "EU",
+     "share": "D2W 領導",
+     "products": "hybrid bonder（sub-µm 對準）",
+     "note": "用於 HBM4/4E 試產"
+    },
+    {
+     "name": "EV Group",
+     "ticker": "—",
+     "country": "AT",
+     "share": "W2W 老牌",
+     "products": "W2W 鍵合（與 AMAT）",
+     "note": "量產級 W2W"
+    },
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "整合製程",
+     "products": "表面處理/沉積/CMP 整合",
+     "note": "整合式 hybrid bonding"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-stack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "HBM hybrid bonder 需求 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/07/28/news-hbm-hybrid-bonder-demand-reportedly-rising-in-2h25-as-besi-and-asmpt-eye-growth/"
+    }
+   ]
+  },
+  {
+   "id": "eq-test",
+   "row": "equip",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "測試 / 探針卡 / 測試座",
+   "nameEn": "ATE · Probe Card · Socket",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "HBM 晶圓級與成品測試（ATE）、探針卡與測試座；台廠封測代工。",
+   "marketSize": "null",
+   "growth": "探針卡 11% CAGR",
+   "share": "null",
+   "analysis": "Advantest+Teradyne 合佔 ATE ~95%（Advantest 記憶體測試龍頭）；探針卡 FormFactor/Technoprobe 領先，台廠旺矽/中華精測/穎崴；韓系測試座 ISC/Leeno；台廠力成/京元電封測代工。",
+   "companies": [
+    {
+     "name": "Advantest",
+     "ticker": "6857.T",
+     "country": "JP",
+     "share": "記憶體 ATE 龍頭",
+     "products": "HBM 晶圓級測試（與 FormFactor）",
+     "note": "ATE 界 ASML"
+    },
+    {
+     "name": "Teradyne",
+     "ticker": "TER",
+     "country": "US",
+     "share": "ATE 雙雄(~95%)",
+     "products": "SoC/記憶體 ATE",
+     "note": "HBM/邏輯測試"
+    },
+    {
+     "name": "FormFactor / 旺矽",
+     "ticker": "FORM / 6223.TWO",
+     "country": "US",
+     "share": "探針卡領先/台廠",
+     "products": "DRAM/HBM 晶圓級探針卡",
+     "note": "測試介面"
+    },
+    {
+     "name": "DI Corp / UniTest / Techwing",
+     "ticker": "003160.KS / 086390.KQ / 089030.KQ",
+     "country": "KR",
+     "share": "韓系後段測試",
+     "products": "HBM4 wafer tester / burn-in / CubeProber",
+     "note": "DI Corp HBM4 wafer tester 準單點",
+     "src": "https://www.thelec.net/news/articleView.html?idxno=6186"
+    },
+    {
+     "name": "ISC / Leeno",
+     "ticker": "095340.KQ / 058470.KQ",
+     "country": "KR",
+     "share": "測試座領導",
+     "products": "矽橡膠測試座/pogo pin",
+     "note": "貼近 Samsung/SK Hynix"
+    },
+    {
+     "name": "力成 PTI / 京元電 KYEC",
+     "ticker": "6239.TW / 2449.TW",
+     "country": "TW",
+     "share": "封測代工",
+     "products": "DRAM/HBM 封測/測試代工",
+     "note": "記憶體封測台廠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-hbm"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Advantest/Teradyne ATE 雙佔 (Axiomatic)",
+     "url": "https://axiomaticresearch.substack.com/p/deep-dive-advantestteradyne"
+    }
+   ]
+  },
+  {
+   "id": "eq-reflow",
+   "row": "equip",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "reflow / 退火 / 翹曲控制",
+   "nameEn": "Reflow · Anneal · Warpage",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · PSK Holdings 唯一供三強(SK/三星/Micron) HBM mass reflow+descum；DIT 雷射退火 HBM3E 起導入",
+   "desc": "HBM 堆疊的 mass reflow（hMR）、descum、雷射退火與翹曲控制；SK Hynix HBM4 改 heated mass reflow。",
+   "marketSize": "韓系單點",
+   "growth": "HBM4 導入",
+   "share": "null",
+   "analysis": "PSK Holdings（reflow+descum，唯一供 SK/三星/Micron 三強的韓廠、準單點）；DIT（雷射退火，HBM3E 起導入修補缺陷、避翹曲，優於 RTA）。HBM4 結構轉移使此環節重要性升高。",
+   "companies": [
+    {
+     "name": "PSK Holdings",
+     "ticker": "031980.KQ",
+     "country": "KR",
+     "share": "唯一供三強",
+     "products": "mass reflow + descum",
+     "note": "準單點",
+     "src": "https://www.thelec.net/news/articleView.html?idxno=4859"
+    },
+    {
+     "name": "DIT",
+     "ticker": "110990.KQ",
+     "country": "KR",
+     "share": "雷射退火",
+     "products": "雷射退火",
+     "note": "HBM3E 起導入、避翹曲"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-stack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "PSK Holdings 供三強 reflow (TheElec)",
+     "url": "https://www.thelec.net/news/articleView.html?idxno=4859"
+    }
+   ]
+  },
+  {
+   "id": "f-dram",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "HBM DRAM 晶粒製造",
+   "nameEn": "HBM DRAM Die",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "HBM 的核心 DRAM 晶粒製造（cell array + TSV），製程節點 1b/1c/1γ nm，部分世代導入 EUV。",
+   "marketSize": "三強寡占",
+   "growth": "1b/1c nm",
+   "share": "null",
+   "analysis": "由 SK Hynix、Samsung、Micron 三家 IDM 自製，前三家近 100%。製程節點與 EUV 採用、TSV 良率決定 HBM 容量與頻寬。★潛在新進入者：中國 CXMT 已量產 12 層堆疊 HBM3、2026 目標 HBM3 量產、2027 HBM3E，並推進約 42 億美元 IPO；惟受美設備出口管制與缺乏先進邏輯 base die 限制，HBM4 預料落於落後製程、與韓廠差距約 3–4 年，短期難撼動高階供應、長線可能侵蝕中低階 HBM。",
+   "companies": [
+    {
+     "name": "SK Hynix",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "領先",
+     "products": "1b nm DRAM die + TSV",
+     "note": "HBM3E 12-hi/HBM4 16-hi"
+    },
+    {
+     "name": "Samsung",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "第二",
+     "products": "1c nm DRAM die",
+     "note": "垂直整合"
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "country": "US",
+     "share": "第三",
+     "products": "DRAM die + TSV",
+     "note": "美系唯一"
+    },
+    {
+     "name": "CXMT 長鑫存儲",
+     "ticker": "—",
+     "country": "CN",
+     "share": "潛在新進入者（落後 ~3–4 年）",
+     "products": "12 層 HBM3（量產中）/ HBM3 2026 / HBM3E 2027",
+     "note": "中國自主、推 ~$42 億 IPO；受美設備管制與無先進 base die 限制，短期難進高階",
+     "src": "https://www.financialcontent.com/article/tokenring-2026-1-23-chinas-cxmt-targets-2026-hbm3-production-with-42-billion-ipo"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "eq-litho"
+    },
+    {
+     "id": "eq-front"
+    },
+    {
+     "id": "eq-tsv"
+    },
+    {
+     "id": "m-wafer"
+    },
+    {
+     "id": "m-chem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-stack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "HBM 三強市佔 (Astute Group)",
+     "url": "https://www.astutegroup.com/news/general/sk-hynix-holds-62-of-hbm-micron-overtakes-samsung-2026-battle-pivots-to-hbm4/"
+    }
+   ]
+  },
+  {
+   "id": "f-base",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "邏輯基底晶片 Base Die",
+   "nameEn": "Logic Base Die (HBM4)",
+   "competition": "monopoly",
+   "single": "新鎖喉 · HBM4/HBM4E base die 製造權由記憶體廠自製結構性轉向台積電晶圓代工（SK Hynix 4nm/12nm 主流、評估 3nm 旗艦/Google TPU；Micron 標準+客製），台積電成 HBM 上游新單點瓶頸",
+   "desc": "HBM4 把最底層 base die 從記憶體製程升級為邏輯製程晶片，控制 I/O 與邏輯，是純記憶體供應鏈史上最大結構轉移。",
+   "marketSize": "TSMC 雙獨家",
+   "growth": "HBM4 新轉移",
+   "share": "null",
+   "analysis": "HBM4/HBM4E base die 製造權結構性轉移到台積電晶圓代工：SK Hynix 用 TSMC 4nm/12nm（主流）並評估 3nm（旗艦/Google TPU），Micron 與台積電合作生產標準與客製 base die（NVIDIA/Google 客製走 N3、HBM4E base die 改委台積電 2027 量產），創意（GUC）提供 C-HBM4E 客製設計入口；Samsung 自製 4nm base die 避開對台積電依賴。把台積電從「CoWoS 整合者」延伸成「HBM 本體新鎖喉」——SK 集團會長崔泰源 2026/6/4 與台積電魏哲家會面確保供應；惟 TSMC 4nm base die 加工成本約一般 DRAM 兩倍，墊高 HBM 成本結構、削弱記憶體廠議價力。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "HBM4 base die 主導",
+     "products": "N4/N12/N5/N3 base die、C-HBM4E",
+     "note": "SK Hynix（4nm/12nm 主流+評估 3nm）/Micron（標準+客製）/NVIDIA；崔泰源 6/4 會魏哲家確保供應",
+     "src": "https://www.digitimes.com/news/a20260604VL212/tsmc-hbm4-chairman-sk-group-sk-hynix.html"
+    },
+    {
+     "name": "創意 GUC",
+     "ticker": "3443.TW",
+     "country": "TW",
+     "share": "客製設計入口",
+     "products": "C-HBM4E base die 設計服務",
+     "note": "台積電生態系"
+    },
+    {
+     "name": "Samsung Foundry",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "唯一自製",
+     "products": "4nm logic base die",
+     "note": "垂直整合避依賴"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-stack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "HBM4 base die 改用 TSMC (Digitimes)",
+     "url": "https://www.digitimes.com/news/a20251201PD210/tsmc-hbm4-micron-sk-hynix.html"
+    }
+   ]
+  },
+  {
+   "id": "f-stack",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "晶粒堆疊與鍵合方式",
+   "nameEn": "Die Stacking & Bonding",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "把 DRAM 晶粒與 base die 垂直堆疊鍵合：MR-MUF（一次回流模封底填，散熱佳）/ TC-NCF（逐層熱壓非導電膜）/ 混合鍵合（bumpless Cu-Cu，未來）。方法決定材料設備鏈。",
+   "marketSize": "技術分歧點",
+   "growth": "方法之爭",
+   "share": "null",
+   "analysis": "SK Hynix = Advanced MR-MUF（綁 Namics 樹脂 + Resonac/住友 EMC）；Micron/Samsung = TC-NCF（綁 Resonac NCF）；Samsung HBM4 押注混合鍵合（早期良率約 10%，綁 BESI/AMAT/Hanwha 設備）。方法決定誰買哪家材料/設備。",
+   "companies": [
+    {
+     "name": "SK Hynix (MR-MUF)",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "MR-MUF 路線",
+     "products": "Advanced MR-MUF 堆疊",
+     "note": "散熱佳、綁 Namics"
+    },
+    {
+     "name": "Micron / Samsung (TC-NCF)",
+     "ticker": "MU / 005930.KS",
+     "country": "US",
+     "share": "TC-NCF 路線",
+     "products": "逐層熱壓 NCF",
+     "note": "綁 Resonac NCF"
+    },
+    {
+     "name": "Samsung (Hybrid, 規劃中)",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "混合鍵合驗證",
+     "products": "bumpless Cu-Cu",
+     "note": "HBM4 仍 microbump、混合鍵合延至 HBM4E/HBM5；SK hynix P&T7 已規劃 bumpless hybrid bonding 產線（2027 量產）"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-dram"
+    },
+    {
+     "id": "f-base"
+    },
+    {
+     "id": "eq-tcb"
+    },
+    {
+     "id": "eq-hybond"
+    },
+    {
+     "id": "eq-reflow"
+    },
+    {
+     "id": "m-mruf"
+    },
+    {
+     "id": "m-ncf"
+    },
+    {
+     "id": "m-emc"
+    },
+    {
+     "id": "m-bump"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-hbm"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SK Hynix HBM4 MR-MUF vs TC bonder (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/01/13/news-sk-hynix-may-stick-with-mr-muf-for-hbm4-16-high-despite-asmpt-tc-bonder-orders/"
+    }
+   ]
+  },
+  {
+   "id": "f-hbm",
+   "row": "flow",
+   "col": 7,
+   "span": 2,
+   "kind": "stage",
+   "name": "HBM 成品（三強市佔）",
+   "nameEn": "HBM Product",
+   "competition": "oligopoly",
+   "single": "三強全認證 · Jensen Huang 2026/6/5 首爾確認三家均在量產、Vera Rubin Q3 出貨；需求 2026 +70% 且售罄",
+   "desc": "完成堆疊封測的 HBM 成品（HBM3E 12-hi / HBM4 16-hi），按容量/頻寬分級，賣給 AI 加速器廠。",
+   "marketSize": "售罄",
+   "growth": "+70% (2026)",
+   "share": "null",
+   "analysis": "三強寡占且供不應求：SK Hynix（1Q26 約 58%，自 ~62% 略降，NVIDIA 主力）領先、Samsung（Vera Rubin ~25–30%、年底估升至 ~30%，垂直整合追趕）、Micron（2026/6/5 與三星、SK hynix 同獲 NVIDIA Vera Rubin HBM4 認證、供應剩餘配額；HBM4 HVM 出貨中）。黃仁勳 6/5 確認三家全員通過 HBM4 認證，三星正式重返一線，『SK 一強』轉向三雄並進。需求 2025 +130%、2026 +70% 且售罄；2026 全年 HBM 產能全部售罄並預售給 Microsoft/Google/Meta 等雲端巨頭；★DRAM 價格史詩級飆漲：TrendForce 估本季 DRAM 均價較 2025 Q4 上漲 50–55%（『前所未見』），HBM 已吃掉約 23% DRAM 晶圓產能，排擠手機/PC/車用記憶體（Apple MacBook Pro 漲價最高 $400）；HBM4 漲價落地：SK 海力士對 NVIDIA 的 HBM4 12-Hi 單價約 $500 級、較 HBM3E（$300 級）高約 60–70%，2026 營收結構估 ~55% HBM4 / 45% HBM3E、HBM3E 另漲 ~20%；Micron 2026 HBM4 全年產能已綁定長約（含首份五年合約）；★絃外之音：定價權在賣方——三家年年售罄、2026 HBM3E 報價已調漲 ~20%，買方 NVIDIA 雖吃 >60% HBM 卻無議價力，HBM 是少數『客戶極度集中 vs 供應商握定價權』並存的賣方市場，價格鬆動最快要等 2027H2-2028 新產能開出；Micron HBM4 爬坡速度達 HBM3E 兩倍、16-hi（48GB）已送樣；Samsung 罷工 5/20 取消不影響生產；Samsung 2026/5/29 出貨業界首批 HBM4E 12H 樣品（3.6 TB/s、14 Gbps、+20% vs HBM4，樣品領先 SK hynix 約半年）；SK hynix 於 Computex 2026/6 預展 HBM4E 48GB 12-Hi（1c-nm DRAM、TSMC N3 base die、4.0 TB/s、+38% vs 前代），原訂 2H26 的樣品時程已提前至 2026/6/18 正式出貨主要客戶 12 層 HBM4E 48GB（16Gbps/pin、4.0 TB/s、效率 +20%），追平 Samsung 5/29 的領先、消息帶動股價創新高；HBM4E 鎖定 2027 起 AI 加速器、客戶驗證啟動；另傳最快 2026/8 赴 Nasdaq 上市（ADR、最高募資 ~$14B、市值破 $1T、SEC 機密申報約 6/22 核准）。⚠ 市佔依季度/口徑差異大；Rubin 出貨時程存在 CoWoS 良率風險。",
+   "companies": [
+    {
+     "name": "SK Hynix",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "1Q26 ~58%（自 ~62% 略降）；2026 全年估降至 ~43%",
+     "products": "HBM3E 12-hi / HBM4 16-hi / HBM4E 48GB 12H",
+     "note": "NVIDIA 主供、技術領導；1Q26 市佔約 58%（較先前 ~62% 略降，Samsung/Micron 各約 21% 分食）；2026 全年估再降至 ~43%；Vera Rubin HBM4 配額 ~60–70%；1Q26 創歷史紀錄（營收 52.58 兆韓元首破 50 兆、營業利益 37.61 兆韓元 YoY +405%、營益率 72%）、未來三年客戶 HBM 需求已超過規劃產能；2026/6/18 HBM4E 12H 48GB 樣品提前出貨（16Gbps、耐熱 +17% vs HBM4、Advanced MR-MUF），並評估改用 TSMC 3nm logic die 反超 Samsung",
+     "src": "https://www.astutegroup.com/news/general/sk-hynix-holds-62-of-hbm-micron-overtakes-samsung-2026-battle-pivots-to-hbm4/"
+    },
+    {
+     "name": "Samsung",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "1Q26 ~21%（被 Micron 並列/超越）／Vera Rubin HBM4 ~25–30%、年底估升至 ~30%",
+     "products": "HBM3E 12-hi / HBM4 36GB / HBM4E 12H",
+     "note": "唯一 foundry+memory+封裝整合；現貨 bit 市占自 41% 崩落至 ~21% 退居第三，靠 HBM4 大反攻重返一線——2026/1-2 月通過 Nvidia 與 AMD HBM4 最終認證（1c 製程達 11.7Gbps、超越 10Gbps 要求）、2 月起量產供貨 Rubin，分析師估 HBM4 市占由 HBM3E 世代低雙位數升至 2026 年底約 30%；2026/5/30 出貨業界首批 HBM4E 樣品（3.6TB/s、16Gbps，宣稱領先約半年）",
+     "src": "https://www.financialcontent.com/article/tokenring-2026-2-5-samsung-stages-massive-ai-comeback-as-hbm4-passes-nvidia-verification-for-rubin-platform"
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "country": "US",
+     "share": "1Q26 ~21%（超越 Samsung 升第二）",
+     "products": "HBM3E（供 NVIDIA）/HBM4 12H/16H（48GB）",
+     "note": "美系唯一、押架構創新；Counterpoint 1Q26 bit 市占與 Samsung 並列 21%、正式超車三星；HBM4 16-hi 48GB 已送樣、速度 >11Gbps；FY26 Q2 營收 guide ~$18.7B（遠超共識 $14.2B），分析師（Rosenblatt）稱已從落後者升為 HBM4 領導競爭者；HBM4E base die 改委由 TSMC、2027 量產",
+     "src": "https://www.cnbc.com/2026/03/18/micron-mu-q2-earnings-report-2026.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-stack"
+    },
+    {
+     "id": "eq-test"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "d-ai"
+    }
+   ],
+   "sources": [
+    {
+     "label": "HBM 季度市佔與 +77% (Astute Group)",
+     "url": "https://www.astutegroup.com/news/general/sk-hynix-holds-62-of-hbm-micron-overtakes-samsung-2026-battle-pivots-to-hbm4/"
+    }
+   ]
+  },
+  {
+   "id": "d-ai",
+   "row": "flow",
+   "col": 9,
+   "span": 2,
+   "kind": "demand",
+   "name": "AI 加速器 / 終端需求",
+   "nameEn": "AI Accelerators (Demand)",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "HBM 最終客戶：AI GPU/ASIC，HBM 與 CoWoS 同步售罄；NVIDIA 對三家有優先分配權。",
+   "marketSize": "售罄綁定",
+   "growth": "需求爆發",
+   "share": "null",
+   "analysis": "NVIDIA 主導 >60% HBM 消耗（Rubin R200 用 HBM4 288GB×8 stack、Rubin Ultra 2027 H2 才用 HBM4E）、佔台積電 CoWoS >70%；★絃外之音：NVIDIA 是最大買家卻非定價方——HBM 三家售罄使議價權反握在賣方，NVIDIA 因此自 2027 規劃自研 HBM logic die，意在繞過 TSMC+SK hynix 取回供應鏈槓桿；AMD（MI400 用 HBM4）、Broadcom（Google TPU/Meta ASIC，帶動 HBM +80%）、Google/AWS 自研 ASIC 跟進。HBM 裝在 CoWoS 中介層上，與先進封裝產能連動。",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "HBM >60% 消耗",
+     "products": "Rubin (288GB HBM4×8, ~22TB/s) / Rubin Ultra (HBM4E)",
+     "note": "需求節奏定義者",
+     "src": "https://oplexa.com/ai-chip-packaging-bottleneck-2026/"
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "第二大買家",
+     "products": "MI400 (432GB HBM4)",
+     "note": "HBM4 延遲壓出貨"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "ASIC HBM 整合",
+     "products": "Google TPU/Meta ASIC + HBM4",
+     "note": "ASIC 帶動 HBM +80%"
+    },
+    {
+     "name": "Google / AWS",
+     "ticker": "GOOGL / AMZN",
+     "country": "US",
+     "share": "自研 ASIC",
+     "products": "TPU / Trainium + HBM",
+     "note": "雲端自研需求"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-hbm"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "AI 封裝瓶頸與 HBM 消耗 (Oplexa)",
+     "url": "https://oplexa.com/ai-chip-packaging-bottleneck-2026/"
+    }
+   ]
+  },
+  {
+   "id": "m-wafer",
+   "row": "material",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "矽晶圓",
+   "nameEn": "Silicon Wafer",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "製作 DRAM 晶粒所需的 300mm 矽晶圓。",
+   "marketSize": "null",
+   "growth": "前五 ~85%",
+   "share": "null",
+   "analysis": "五大廠控 300mm ~85%（信越+SUMCO ~54%）；SK Siltron 與 SK Hynix 同集團，提供在地晶圓。",
+   "companies": [
+    {
+     "name": "信越 Shin-Etsu",
+     "ticker": "4063.T",
+     "country": "JP",
+     "share": "全球第一",
+     "products": "300mm 高階矽晶圓",
+     "note": "龍頭"
+    },
+    {
+     "name": "SUMCO",
+     "ticker": "3436.T",
+     "country": "JP",
+     "share": "全球第二",
+     "products": "300mm AI 級晶圓",
+     "note": "雙雄"
+    },
+    {
+     "name": "SK Siltron",
+     "ticker": "—",
+     "country": "KR",
+     "share": "韓系龍頭",
+     "products": "300mm 矽晶圓",
+     "note": "SK Hynix 同集團"
+    },
+    {
+     "name": "環球晶 / Siltronic",
+     "ticker": "6488.TWO / WAF.DE",
+     "country": "TW",
+     "share": "第三/第四",
+     "products": "300mm 矽晶圓",
+     "note": "前五 ~85%"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-dram"
+    }
+   ],
+   "sources": [
+    {
+     "label": "矽晶圓五強 (WaferPro)",
+     "url": "https://waferpro.com/top-5-silicon-wafer-manufacturing-companies/"
+    }
+   ]
+  },
+  {
+   "id": "m-chem",
+   "row": "material",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "特用化學 / 光阻 / Slurry",
+   "nameEn": "Chemicals · Photoresist · Slurry",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · Soulbrain HBM CMP slurry 對 Samsung + SK Hynix 雙獨家",
+   "desc": "DRAM 製程的光阻、蝕刻液、清洗劑、CMP slurry、前驅物。",
+   "marketSize": "客戶獨家",
+   "growth": "韓系在地化",
+   "share": "null",
+   "analysis": "光阻日系四強約 76%（TOK/JSR/信越/Fujifilm）；韓系在地化高成長：Soulbrain（HBM CMP slurry 對 Samsung+SK Hynix 雙獨家、etchant、前驅物）、Dongjin（光阻/slurry）。",
+   "companies": [
+    {
+     "name": "Soulbrain",
+     "ticker": "036830.KQ",
+     "country": "KR",
+     "share": "HBM slurry 雙獨家",
+     "products": "HBM CMP slurry/etchant/前驅物",
+     "note": "韓系特化龍頭",
+     "src": "https://www.businesskorea.co.kr/news/articleView.html?idxno=203197"
+    },
+    {
+     "name": "Dongjin Semichem",
+     "ticker": "005290.KQ",
+     "country": "KR",
+     "share": "韓系光阻/slurry",
+     "products": "ArF/EUV 光阻、HBM slurry",
+     "note": "SK Hynix 多元化"
+    },
+    {
+     "name": "TOK / JSR / Merck",
+     "ticker": "4186.T / — / MRK.DE",
+     "country": "JP",
+     "share": "光阻四強 ~76%",
+     "products": "EUV/ArF 光阻、前驅物",
+     "note": "JSR 已 JIC 私有化下市"
+    },
+    {
+     "name": "DNF / Hansol / DS Techopia",
+     "ticker": "092070.KQ / 014680.KS / —",
+     "country": "KR",
+     "share": "韓系前驅物",
+     "products": "HCDS DRAM/HBM 前驅物",
+     "note": "DNF 三星佔營收 >90%、HCDS 在地化核心"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-dram"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Soulbrain HBM slurry 獨家 (Business Korea)",
+     "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=203197"
+    }
+   ]
+  },
+  {
+   "id": "m-mruf",
+   "row": "material",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "MR-MUF / Underfill 材料",
+   "nameEn": "MR-MUF / Underfill",
+   "competition": "monopoly",
+   "single": "客戶主力（高壁壘） · Namics（DIC）SK Hynix MR-MUF 樹脂主力共同開發；Samsung 經 Nagase + 自研 SDI 嘗試導入、壁壘高但非絕對獨家",
+   "desc": "MR-MUF（Mass Reflow Molded Underfill）一次回流模封底填樹脂，是 SK Hynix 堆疊路線的關鍵材料。",
+   "marketSize": "客戶獨家",
+   "growth": "SK Hynix 綁定",
+   "share": "null",
+   "analysis": "Namics（DIC 集團）為 SK Hynix MR-MUF 樹脂主力供應、共同開發，壁壘極高；但非絕對獨家——Samsung 已公開洽購 Nagase（8012.T）MUF 料並與自研 SDI（006400.KS）並進。仍為 HBM 鏈最關鍵材料咽喉之一；Henkel 為 underfill/NCF 替代。★絃外之音：HBM 真正的單點瓶頸不在三大記憶體廠，而在這類『斷一家全鏈停』的隱性料件——Namics(MR-MUF)、Duksan(微焊球 ~70%)、Disco(減薄切割)、PSK(唯一供三強 reflow)，皆為日韓中小廠卻握 SK hynix 量產生殺權，是被低估的卡位者。",
+   "companies": [
+    {
+     "name": "Namics (DIC)",
+     "ticker": "4631.T",
+     "country": "JP",
+     "share": "SK Hynix 獨家",
+     "products": "MR-MUF 絕緣樹脂/液態底填 LMUF",
+     "note": "HBM 鏈最關鍵單點",
+     "src": "https://www.3dincites.com/2024/06/why-are-hbm-manufacturers-choosing-liquid-mold-underfill/"
+    },
+    {
+     "name": "Nagase ChemteX / Samsung SDI",
+     "ticker": "8012.T / 006400.KS",
+     "country": "JP",
+     "share": "MUF 第二源/自研",
+     "products": "MUF 模封底填料",
+     "note": "★打破 Namics「獨家」：SK Hynix 第二源、Samsung 在地化"
+    },
+    {
+     "name": "Henkel",
+     "ticker": "HEN3.DE",
+     "country": "EU",
+     "share": "替代供應",
+     "products": "NCF 底填/underfill",
+     "note": "替代供應商"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-stack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "為何選 MR-MUF / Namics (3DInCites)",
+     "url": "https://www.3dincites.com/2024/06/why-are-hbm-manufacturers-choosing-liquid-mold-underfill/"
+    }
+   ]
+  },
+  {
+   "id": "m-ncf",
+   "row": "material",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "NCF 非導電膜",
+   "nameEn": "Non-Conductive Film",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "TC-NCF 路線（Samsung/Micron）逐層熱壓所需的非導電膜底填材料。",
+   "marketSize": "null",
+   "growth": "TC-NCF 路線",
+   "share": "null",
+   "analysis": "Resonac（昭和電工）為 NCF 全球龍頭（Goi 廠擴產 3.5–5×），積水、東麗供應；是 TC-NCF 路線核心材料。",
+   "companies": [
+    {
+     "name": "Resonac 昭和電工",
+     "ticker": "4004.T",
+     "country": "JP",
+     "share": "NCF 全球龍頭",
+     "products": "NCF + TIM",
+     "note": "TC-NCF 核心"
+    },
+    {
+     "name": "Sekisui 積水 / Toray 東麗",
+     "ticker": "4204.T / 3402.T",
+     "country": "JP",
+     "share": "供應生態",
+     "products": "封裝薄膜/高分子 NCF",
+     "note": "薄膜材料"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-stack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Resonac NCF 擴產 (Resonac)",
+     "url": "https://www.resonac.com/news/2024/03/29/3007.html"
+    }
+   ]
+  },
+  {
+   "id": "m-emc",
+   "row": "material",
+   "col": 6,
+   "span": 1,
+   "kind": "rail",
+   "name": "EMC 封裝材",
+   "nameEn": "Epoxy Molding Compound",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "HBM 模封與散熱所需的環氧封裝材（含 MR-MUF 模封料）。",
+   "marketSize": "null",
+   "growth": "日系三強 ~40%",
+   "share": "null",
+   "analysis": "日系三家（住友電木/Resonac/Panasonic）合佔 EMC ~40%；Resonac 高導熱 EMC 用於 Advanced MR-MUF（散熱~1.6×）。",
+   "companies": [
+    {
+     "name": "住友電木 Sumitomo Bakelite",
+     "ticker": "4203.T",
+     "country": "JP",
+     "share": "全球龍頭",
+     "products": "SUMIKON EME 高導熱 EMC",
+     "note": "IC 封裝料領導"
+    },
+    {
+     "name": "Resonac",
+     "ticker": "4004.T",
+     "country": "JP",
+     "share": "三強之一",
+     "products": "高導熱 EMC（MR-MUF 模封）",
+     "note": "散熱 ~1.6×"
+    },
+    {
+     "name": "Panasonic",
+     "ticker": "6752.T",
+     "country": "JP",
+     "share": "三強之一",
+     "products": "環氧模封料",
+     "note": "EMC 寡占"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-stack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "住友電木 EMC (Sumitomo Bakelite)",
+     "url": "https://www.sumibe.co.jp/english/product/it-materials/epoxy/sumikon-eme/"
+    }
+   ]
+  },
+  {
+   "id": "m-ip",
+   "row": "material",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "HBM Controller / PHY IP",
+   "nameEn": "HBM Controller / PHY IP",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "GPU/ASIC 端的 HBM 記憶體控制器與實體層（PHY）IP，決定主機端如何驅動 HBM。",
+   "marketSize": "null",
+   "growth": "HBM4 介面",
+   "share": "null",
+   "analysis": "Synopsys（HBM4 controller/PHY IP 領導、全球首顆 HBM4 IP 測試晶片）、Cadence（HBM4E PHY 12.8GT/s）、Rambus（HBM4E controller 16GT/s）主導，整合在 GPU/ASIC 端。",
+   "companies": [
+    {
+     "name": "Synopsys",
+     "ticker": "SNPS",
+     "country": "US",
+     "share": "HBM4 IP 領導",
+     "products": "HBM4 Controller+PHY IP",
+     "note": "首顆 HBM4 IP 測試晶片"
+    },
+    {
+     "name": "Cadence",
+     "ticker": "CDNS",
+     "country": "US",
+     "share": "HBM4E PHY",
+     "products": "HBM4E PHY 12.8GT/s",
+     "note": "IP 業務 +22%"
+    },
+    {
+     "name": "Rambus",
+     "ticker": "RMBS",
+     "country": "US",
+     "share": "controller IP",
+     "products": "HBM4E controller 16GT/s",
+     "note": "C-HBM4E 支援"
+    },
+    {
+     "name": "Marvell / Alphawave(→QCOM) / Eliyan",
+     "ticker": "MRVL / (QCOM) / —",
+     "country": "US",
+     "share": "custom HBM 陣營",
+     "products": "Custom HBM(CHBM) 3nm PHY / NuLink",
+     "note": "HBM4E custom HBM 主軸；Alphawave 2025/12 已併入 Qualcomm"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "d-ai"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Synopsys HBM4 controller IP",
+     "url": "https://www.synopsys.com/designware-ip/interface-ip/hbm/hbm4-controller.html"
+    }
+   ]
+  },
+  {
+   "id": "m-bump",
+   "row": "material",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "微凸塊 / 焊球材料",
+   "nameEn": "Microbump · Solder Ball",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · Duksan Hi-Metal 微焊球全球 ~70%；MK Electron HBM 低溫(<150°C)燒結焊球",
+   "desc": "HBM 晶粒間互連的微焊球（MSB）、Cu pillar 與 flux 助焊材；HBM4 焊球縮至 ~10µm 使專屬性升高。",
+   "marketSize": "韓系近單點",
+   "growth": "HBM4 ~10µm",
+   "share": "null",
+   "analysis": "Duksan Hi-Metal 微焊球全球 ~70% 近乎單點；MK Electron（全球焊球 #3、HBM 低溫燒結焊球）、千住金屬（flux 助焊）。HBM4 ~10µm 化提升門檻（原檔曾誤判此類專屬性低）。",
+   "companies": [
+    {
+     "name": "Duksan Hi-Metal",
+     "ticker": "077360.KQ",
+     "country": "KR",
+     "share": "微焊球 ~70%",
+     "products": "微焊球 MSB",
+     "note": "近乎單點",
+     "src": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=431067"
+    },
+    {
+     "name": "MK Electron",
+     "ticker": "033160.KQ",
+     "country": "KR",
+     "share": "焊球 #3",
+     "products": "HBM 低溫燒結焊球",
+     "note": "<150°C、多層熱預算關鍵"
+    },
+    {
+     "name": "千住金屬 Senju",
+     "ticker": "—",
+     "country": "JP",
+     "share": "flux 老牌",
+     "products": "微焊球 / flux 助焊",
+     "note": "日系 flux"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-stack"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Duksan 微焊球 ~70% (Pinpoint)",
+     "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=431067"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "f-dram",
+   "f-stack"
+  ],
+  [
+   "f-base",
+   "f-stack"
+  ],
+  [
+   "f-stack",
+   "f-hbm"
+  ],
+  [
+   "f-hbm",
+   "d-ai"
+  ],
+  [
+   "eq-litho",
+   "f-dram"
+  ],
+  [
+   "eq-front",
+   "f-dram"
+  ],
+  [
+   "eq-tsv",
+   "f-dram"
+  ],
+  [
+   "eq-tcb",
+   "f-stack"
+  ],
+  [
+   "eq-hybond",
+   "f-stack"
+  ],
+  [
+   "eq-reflow",
+   "f-stack"
+  ],
+  [
+   "eq-test",
+   "f-hbm"
+  ],
+  [
+   "m-wafer",
+   "f-dram"
+  ],
+  [
+   "m-chem",
+   "f-dram"
+  ],
+  [
+   "m-mruf",
+   "f-stack"
+  ],
+  [
+   "m-ncf",
+   "f-stack"
+  ],
+  [
+   "m-emc",
+   "f-stack"
+  ],
+  [
+   "m-bump",
+   "f-stack"
+  ],
+  [
+   "m-ip",
+   "d-ai"
+  ]
+ ],
+ "_proposed": {}
+}

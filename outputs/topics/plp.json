@@ -1,0 +1,1066 @@
+{
+ "id": "plp",
+ "tab": "面板級封裝",
+ "title": "面板級封裝 PLP / FOPLP 供應鏈",
+ "subtitle": "Panel Level Packaging — AI reticle 放大（Rubin 5.5x，12 吋僅容 4–7 顆）逼出方形面板封裝。雙速產業：消費小晶片（PMIC/RF/穿戴）已商轉、AI/HPC 大晶片試量產（2027–2029）。頭號障礙＝翹曲(warpage)＋die-shift。台積電 CoPoS 2026/6 試產線完工（SCHMID 確認）、2028–29 量產；力成 AMD/Broadcom 背書 FOPLP capex NT$50B；群創 RDL/TGV 認證衝刺；AMAT 收購 ASMPT NEXX（US$120M）。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 16
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "60+"
+  },
+  {
+   "k": "關鍵單點／領先者",
+   "v": 7,
+   "sub": "TSMC CoPoS·群創·Towa·Corning·味之素…",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "equip",
+   "label": "面板級設備（翹曲/大面板為瓶頸）Equipment",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "FOPLP 服務商・CoPoS・面板廠 → 終端 Providers · Demand",
+   "main": true
+  },
+  {
+   "id": "material",
+   "label": "材料・載板・玻璃基板 Materials",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "eq-litho",
+   "row": "equip",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "面板微影 / RDL 曝光",
+   "nameEn": "Panel Litho · RDL",
+   "competition": "oligopoly",
+   "single": "PLP 專用 · Onto JetStep 面板 stepper（即時對焦補償翹曲+zone overlay 補 die-shift）；Canon 率先 515mm 次微米",
+   "desc": "大尺寸矩形面板的 RDL 重佈線曝光，需即時翹曲對焦補償與 zone overlay 補 die-shift。",
+   "marketSize": "PLP 專用",
+   "growth": "大面板門檻",
+   "share": "null",
+   "analysis": "面板專用大尺寸 stepper 是門檻：Onto Innovation（JetStep X500 515×510mm 單次曝光 250×250、S3500 up to 650×650mm，翹曲/die-shift 補償領導）、Canon（率先 515mm 次微米）；ASML/Nikon 以晶圓級為主、FOPLP 非主場。",
+   "companies": [
+    {
+     "name": "Onto Innovation",
+     "ticker": "ONTO",
+     "country": "US",
+     "share": "PLP 微影領導",
+     "products": "JetStep X500 515×510mm／S3500 up to 650×650mm",
+     "note": "翹曲對焦+zone overlay 補償；JetStep 已獲兩家 AI 元件封裝廠認證、2027 放量、SAM ~US$200M；2026 先進封裝營收估 +50%（2026/05/05 Q1 FY26 法說）"
+    },
+    {
+     "name": "Canon",
+     "ticker": "7751.T",
+     "country": "JP",
+     "share": "515mm 次微米",
+     "products": "大尺寸 stepper",
+     "note": "率先大面板曝光"
+    },
+    {
+     "name": "Nikon / ASML",
+     "ticker": "7731.T / ASML",
+     "country": "JP",
+     "share": "晶圓級為主",
+     "products": "stepper",
+     "note": "FOPLP 非主場"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Onto JetStep PLP 微影",
+     "url": "https://ontoinnovation.com/products/jetstep-x500/"
+    }
+   ]
+  },
+  {
+   "id": "eq-plating",
+   "row": "equip",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "電鍍 / 沉積 / 蝕刻",
+   "nameEn": "Plating · Depo · Etch",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "面板級銅電鍍（RDL/UBM）、沉積與蝕刻，矩形大面積均勻度是瓶頸。",
+   "marketSize": "null",
+   "growth": "矩形均勻度瓶頸",
+   "share": "null",
+   "analysis": "ACM 盛美最積極（Ultra ECP ap-p 水平電鍍 515×510→600×600mm、2025/11 首台商用面板電鍍機出貨）；Atotech（MKS，MultiPlate 650×610mm）電鍍化學+設備領導；友威科（台，STM 意法+群創 FOPLP 已量產實績、拓日本）濺鍍；Applied Materials 2026/05 以 US$120M 購入 ASMPT NEXX（面板 ECD 電化學沉積），補足面板電鍍組合。",
+   "companies": [
+    {
+     "name": "ACM 盛美",
+     "ticker": "ACMR",
+     "country": "US",
+     "share": "面板電鍍最積極",
+     "products": "Ultra ECP ap-p / 邊緣刻蝕",
+     "note": "515×510→600×600mm、2025/11 首台商用出貨"
+    },
+    {
+     "name": "Atotech (MKS)",
+     "ticker": "MKSI",
+     "country": "DE",
+     "share": "電鍍化學+設備",
+     "products": "MultiPlate + Innolyte 銅 RDL",
+     "note": "650×610mm（MKS 母公司 US）"
+    },
+    {
+     "name": "友威科 / ClassOne",
+     "ticker": "3580.TWO / —",
+     "country": "TW",
+     "share": "沉積/電鍍",
+     "products": "濺鍍 / Solstice RDL",
+     "note": "STM+群創 FOPLP 已量產、拓日本"
+    },
+    {
+     "name": "Manz Asia 亞智科技",
+     "ticker": "—",
+     "country": "TW",
+     "share": "面板級 ECD 新進者",
+     "products": "Omni x-series ECD（310x／510x／700x）",
+     "note": "2026/06 出貨全球首台 310×310mm PLP 級量產 ECD 系統（整合清洗/顯影/蝕刻/去膜濕製程），支援 FOPLP/CoPoS/TGV、對應 TSMC CoPoS 310mm 標準，補上電鍍/沉積本土量產級新節點"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ACM Ultra ECP ap-p 面板電鍍 (ACMR IR)",
+     "url": "https://ir.acmr.com/news-releases/news-release-details/acm-research-strengthens-its-fan-out-panel-level-packaging"
+    },
+    {
+     "label": "友威科 STM+群創 FOPLP 量產 (法說會)",
+     "url": "https://blog.fugle.tw/post/earnings-call-3580-2025-12-24"
+    },
+    {
+     "label": "Manz 全球首台 310mm PLP ECD 量產系統 (Digitimes)",
+     "url": "https://www.digitimes.com/news/a20260615PD231/manz-equipment-foplp-packaging-tsmc.html"
+    }
+   ]
+  },
+  {
+   "id": "eq-mold",
+   "row": "equip",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "模封 / 壓合 / 固化",
+   "nameEn": "Molding · Lamination · Cure",
+   "competition": "oligopoly",
+   "single": "壓模霸主 · Towa molding 整體 ~66%／HBM 壓縮模封 ~80–90%；台廠志聖大面板真空壓膜+烘烤（CoPoS 最關鍵熱穩定）",
+   "desc": "壓縮模封（molding）、大面板真空壓膜與固化烘烤，EMC 固化收縮致非線性 die-shift。",
+   "marketSize": "Towa 壓模獨大",
+   "growth": "熱穩定關鍵",
+   "share": "null",
+   "analysis": "Towa 壓縮模封霸主（molding 整體 ~66%／HBM 壓縮模封 ~80–90%；CPM1080 PLP 320×320、CPM1180 625×620mm）；台廠志聖（G2C+ 主導，大面板真空壓膜+熱烘烤）、群翊（最大 700×700mm FOPLP 設備、出貨美系衛星廠）、科嶠。",
+   "companies": [
+    {
+     "name": "Towa",
+     "ticker": "6315.T",
+     "country": "JP",
+     "share": "壓縮模封 ~66%／HBM 80–90%",
+     "products": "CPM 系列（CPM1080 320×320／CPM1180 625×620mm）",
+     "note": "壓縮模封霸主；隱性單點：HBM/PLP 壓模幾無替代，面板大尺寸 CPM1180 625×620mm 唯一可量產級壓模機"
+    },
+    {
+     "name": "志聖 GP Tech",
+     "ticker": "2467.TW",
+     "country": "TW",
+     "share": "大面板熱製程",
+     "products": "真空壓膜/烘烤/UV",
+     "note": "CoPoS 熱穩定關鍵"
+    },
+    {
+     "name": "群翊 / 科嶠",
+     "ticker": "6664.TWO / 4542.TWO",
+     "country": "TW",
+     "share": "面板壓合",
+     "products": "乾膜壓合（最大 700×700mm）/曝光/顯影",
+     "note": "出貨美系衛星廠（科嶠專用機待證）"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Towa 壓模 (Towa)",
+     "url": "https://www.towajapan.co.jp/en/products/molding/cpm/"
+    }
+   ]
+  },
+  {
+   "id": "eq-debond",
+   "row": "equip",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "暫時鍵合 / 解鍵合 / 翹曲控制",
+   "nameEn": "Temp Bond · Debond · Warpage",
+   "competition": "oligopoly",
+   "single": "PLP 核心瓶頸 · 脫載板應力釋放致翹曲，面積越大越嚴重（CoPoS 頭號量產障礙）",
+   "desc": "暫時鍵合、雷射/機械解鍵合與翹曲控制——脫載板應力釋放致翹曲，是 PLP 最大量產障礙。",
+   "marketSize": "核心瓶頸",
+   "growth": "PLP 頭號瓶頸",
+   "share": "null",
+   "analysis": "EVG（TB/DB 領導、IR 雷射解鍵合）；台廠辛耘（TBDB，對應台積電 CoWoS）、均豪（G2C+，CoPoS 檢測/研磨/真空壓合/精密剝離）；SUSS。翹曲/die-shift 良率為最大變數。",
+   "companies": [
+    {
+     "name": "EV Group",
+     "ticker": "—",
+     "country": "AT",
+     "share": "TB/DB 領導",
+     "products": "EVG850 TB/DB / IR 雷射解鍵合",
+     "note": "暫時鍵合龍頭"
+    },
+    {
+     "name": "辛耘 Scientech",
+     "ticker": "3583.TW",
+     "country": "TW",
+     "share": "台廠 TBDB",
+     "products": "暫時鍵合/解鍵合",
+     "note": "對應台積電 CoWoS"
+    },
+    {
+     "name": "均豪 GPM",
+     "ticker": "5443.TWO",
+     "country": "TW",
+     "share": "翹曲控制",
+     "products": "精密剝離/研磨/量測",
+     "note": "G2C+；群創 FOPLP"
+    },
+    {
+     "name": "SUSS MicroTec",
+     "ticker": "SMHN.DE",
+     "country": "DE",
+     "share": "鍵合",
+     "products": "bonding/coater",
+     "note": "面板型號待證"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "EVG 暫時鍵合解鍵合",
+     "url": "https://www.evgroup.com/technologies/temporary-bonding-and-debonding"
+    }
+   ]
+  },
+  {
+   "id": "eq-place",
+   "row": "equip",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "點膠 / 晶粒貼放 / 搬運",
+   "nameEn": "Dispense · Placement · AMHS",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "晶粒高速高精度貼放（die-shift 誤差 >50µm 遠高於晶圓）、點膠與大面板搬運。",
+   "marketSize": "null",
+   "growth": "die-shift 瓶頸",
+   "share": "null",
+   "analysis": "ASMPT（NUCLEUS XLplus FOPLP 專用 P&P、AMICRA ±0.2µm）／BESI 雙寡占（die-attach 細分 BESI 42% 全球第一）；台廠萬潤（點膠/封膠，供台積電部分機種/合格供應商）、均華（CoPoS 高精度晶粒挑揀黏著）、盟立（面板搬運自動化）。",
+   "companies": [
+    {
+     "name": "ASMPT",
+     "ticker": "0522.HK",
+     "country": "HK",
+     "share": "die-bond 雙寡占之一",
+     "products": "NUCLEUS XLplus / AMICRA ±0.2µm",
+     "note": "FOPLP 專用 P&P（SG/DE 營運）；NEXX 部門 2026/05 以 US$120M 售予 Applied Materials（面板 ECD，最大支援 ~510×515mm、補 fine-pitch I/O；交易擬於 2026/07/29 前完成）"
+    },
+    {
+     "name": "BESI",
+     "ticker": "BESI.AS",
+     "country": "NL",
+     "share": "die-attach 全球第一(42%)",
+     "products": "die attach / hybrid bonding",
+     "note": "與 ASMPT 雙寡占"
+    },
+    {
+     "name": "K&S",
+     "ticker": "KLIC",
+     "country": "US",
+     "share": "die-bond/打線第三",
+     "products": "die attach/wire bond",
+     "note": "面板專用型號待證"
+    },
+    {
+     "name": "萬潤 / 均華 / 盟立",
+     "ticker": "6187.TWO / 6640.TWO / 2464.TW",
+     "country": "TW",
+     "share": "點膠/貼放/搬運",
+     "products": "點膠封膠 / 晶粒挑揀 / AMHS",
+     "note": "供台積電部分機種(合格供應商)"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASMPT NUCLEUS XLplus FOPLP (Global SMT)",
+     "url": "https://www.globalsmt.net/advanced-packaging/versatile-performer-panel-level-pick-place-solution-with-multi-purpose-capabilities-nucleus-xlplus-from-asmpt/"
+    }
+   ]
+  },
+  {
+   "id": "eq-dice",
+   "row": "equip",
+   "col": 6,
+   "span": 1,
+   "kind": "rail",
+   "name": "切割 / 研磨",
+   "nameEn": "Dicing · Grinding",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "面板/玻璃的切割與研磨，雷射全切適合面板與玻璃窄切割道。",
+   "marketSize": "null",
+   "growth": "玻璃窄道",
+   "share": "null",
+   "analysis": "Disco（切割/研磨霸主、雷射全切適面板玻璃）、Accretech（切割+研磨+解鍵合清洗）日系雙雄。",
+   "companies": [
+    {
+     "name": "Disco",
+     "ticker": "6146.T",
+     "country": "JP",
+     "share": "切割研磨霸主",
+     "products": "laser full cut / grinding",
+     "note": "適面板/玻璃窄道"
+    },
+    {
+     "name": "Accretech",
+     "ticker": "7729.T",
+     "country": "JP",
+     "share": "第二",
+     "products": "dicer/grinder",
+     "note": "雙雄"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Disco 雷射切割",
+     "url": "https://www.disco.co.jp/eg/solution/library/laser/laser.html"
+    }
+   ]
+  },
+  {
+   "id": "eq-clean",
+   "row": "equip",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "清洗",
+   "nameEn": "Clean",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "面板級濕式清洗。",
+   "marketSize": "null",
+   "growth": "面板濕製程",
+   "share": "null",
+   "analysis": "SCREEN 晶圓清洗霸主；台廠弘塑（CoWoS 濕製程主力外溢面板級）。",
+   "companies": [
+    {
+     "name": "SCREEN",
+     "ticker": "7735.T",
+     "country": "JP",
+     "share": "清洗霸主",
+     "products": "wet clean",
+     "note": "面板型號待證"
+    },
+    {
+     "name": "弘塑 GPTC",
+     "ticker": "3131.TWO",
+     "country": "TW",
+     "share": "台廠濕製程",
+     "products": "wet clean",
+     "note": "CoWoS 外溢面板"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "弘塑 FOPLP 濕製程 (鉅亨)",
+     "url": "https://news.cnyes.com/news/id/5986290"
+    }
+   ]
+  },
+  {
+   "id": "eq-aoi",
+   "row": "equip",
+   "col": 8,
+   "span": 1,
+   "kind": "rail",
+   "name": "AOI 檢測 / 量測 / 測試",
+   "nameEn": "AOI · Metrology · Test",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "大面積拼接精度檢測、die placement 量測與測試。",
+   "marketSize": "null",
+   "growth": "大面積拼接難題",
+   "share": "null",
+   "analysis": "台廠牧德（PCB AOI 最大、ASE 日月光參股、2025 雙軌四線元年、FOPLP/FOWLP 晶圓 AOI 與計量已貢獻營收）、由田（機器視覺 AOI）；Camtek（IL，先進封裝量測領導）/Onto/KLA（US，同步 die placement 量測+Orbotech AOI）、致茂（測試）。",
+   "companies": [
+    {
+     "name": "牧德 Machvision",
+     "ticker": "3563.TWO",
+     "country": "TW",
+     "share": "PCB AOI 最大轉封裝",
+     "products": "AOI / Laser Via <5µm；大板面+pixel-by-pixel",
+     "note": "ASE 參股、FOPLP AOI 已貢獻營收"
+    },
+    {
+     "name": "由田 Utechzone",
+     "ticker": "3455.TWO",
+     "country": "TW",
+     "share": "機器視覺 AOI",
+     "products": "AOI",
+     "note": "PCB 跨半導體"
+    },
+    {
+     "name": "Camtek",
+     "ticker": "CAMT",
+     "country": "IL",
+     "share": "先進封裝量測領導",
+     "products": "metrology / AOI (Eagle/Hawk)",
+     "note": "FOPLP/面板級延伸"
+    },
+    {
+     "name": "Onto / KLA",
+     "ticker": "ONTO / KLAC",
+     "country": "US",
+     "share": "量測/AOI 領導",
+     "products": "Firefly / Orbotech AOI",
+     "note": "die placement 量測"
+    },
+    {
+     "name": "致茂 Chroma",
+     "ticker": "2360.TW",
+     "country": "TW",
+     "share": "測試",
+     "products": "test",
+     "note": "面板級機種待證"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "牧德 ASE 參股/雙軌四線 FOPLP AOI (CMmews)",
+     "url": "https://cmnews.com.tw/article/sara-58cfc697-d8cb-11ef-9985-54df1f6496d7"
+    }
+   ]
+  },
+  {
+   "id": "f-foplp",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "FOPLP / OSAT 服務商",
+   "nameEn": "FOPLP / OSAT Providers",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "扇出型面板級封裝服務商：消費小晶片已商轉、AI/HPC 大晶片試量產。RDL→chip-attach→molding→debond→切割測試 一條龍。",
+   "marketSize": "$1.6→6 億 (Yole)",
+   "growth": "雙速放量",
+   "share": "null",
+   "analysis": "雙速：力成（PiFO 小晶片 PMIC/功率已量產、515×510 大面板 2026 建置高峰、2027 量產放量、2026 capex 上修至 NT$50B（原 NT$40B、+25%）、FOPLP 良率達 95%、2026H2 客戶驗證、收購友達竹科廠）、日月光（高雄線 2025Q3 試產、2026 客戶認證、ASE 2026/4 購群創南科 Fab5 NT$148.5B）為台 OSAT 最積極；Nepes（韓，2017 最早商業化、傳 2024 停 PLP 線）；JCET/華天/成都奕成（中）追隨；Amkor 推 HPLT 650×650mm 玻璃面板 pilot。純 PLP 市場 Yole 估 2024 ~1.6 億→2030 逾 6 億（27% CAGR）。",
+   "companies": [
+    {
+     "name": "力成 PTI",
+     "ticker": "6239.TW",
+     "country": "TW",
+     "share": "台 OSAT 最積極",
+     "products": "PiFO（PMIC/功率已量產、515×510 大面板）",
+     "note": "大面板 2027 量產、2026 capex 上修至 NT$50B（~US$1.6B，較原規劃 +25%）、FOPLP 良率達 95%、2026H2 啟動客戶驗證、AMD Zen 7（A14、2028）正評估採用其 FOPLP（2026/05/25 TrendForce）、AMD CEO 蘇姿丰親訪力成",
+     "src": "https://finance.technews.tw/2025/11/14/pti-buy-auo-plant/"
+    },
+    {
+     "name": "日月光 ASE",
+     "ticker": "3711.TW",
+     "country": "TW",
+     "share": "2026 商轉",
+     "products": "FOPLP 300→600mm",
+     "note": "高雄線/K28（2026 完工目標）、ASE 以 NT$148.5 億購群創 Fab5（2026/04）、SPIL 以 NT$63.25 億購群創 Fab2（2026/03）、600×600mm FOPLP 量產線中；2026/05/26 發表業界首條自動化 310×310mm PLP 線（支援 FOCoS／FOCoS-Bridge、L/S 2/2µm 與 8/8µm、有效面積 96,100mm²），2027H1 投產、再擴至 600×600mm"
+    },
+    {
+     "name": "Nepes",
+     "ticker": "—",
+     "country": "KR",
+     "share": "最早商業化（傳 2024 停線）",
+     "products": "消費 FO（Deca M-Series 600mm）",
+     "note": "2024 停舊 PLP 線（列停業虧損）；2025H2 轉型 AI 2.5D 封裝；原 600mm 96,000 片/年廠為 Cheongan Campus"
+    },
+    {
+     "name": "JCET / 華天 / 成都奕成",
+     "ticker": "600584.SS / 002185.SZ / —",
+     "country": "CN",
+     "share": "追隨",
+     "products": "XDFOI / Pangu / FOMCM",
+     "note": "2026 小批量"
+    },
+    {
+     "name": "Amkor / Deca",
+     "ticker": "AMKR / —",
+     "country": "US",
+     "share": "追隨(pilot)/技術授權",
+     "products": "HPLT 650×650mm glass pilot / M-Series IP",
+     "note": "Deca 賦能 Nepes"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "d-app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "力成購友達廠/2027 量產 (TechNews)",
+     "url": "https://finance.technews.tw/2025/11/14/pti-buy-auo-plant/"
+    },
+    {
+     "label": "Nepes 2024 傳停 PLP 線 (SemiEngineering)",
+     "url": "https://semiengineering.com/the-rise-of-panel-level-packaging/"
+    }
+   ]
+  },
+  {
+   "id": "f-copos",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "TSMC CoPoS（大面板先進封裝）",
+   "nameEn": "TSMC CoPoS",
+   "competition": "monopoly",
+   "single": "AI 大晶片龍頭 · TSMC CoPoS 試產線 2026/6 完成、2028H2–2029 量產、Nvidia 首發客戶（嘉義 AP7）",
+   "desc": "台積電面板級先進封裝 CoPoS（Chip-on-Panel-on-Substrate），鎖定 AI/HPC 超大晶片，突破 CoWoS reticle 尺寸限制。",
+   "marketSize": "AI/HPC 龍頭",
+   "growth": "2028–29 量產",
+   "share": "null",
+   "analysis": "台積電 CoPoS 由 300/310mm 起步 → 後期 620×750mm，試產線 2026/6 完成、2028H2–2029 量產，Nvidia 為首發客戶（Feynman/Rubin Ultra 唯一可量產去處，後續 AMD/Broadcom；嘉義 AP7，傳采鈺/精材 5374 操刀試線、待官方證實）；是 AI 大晶片封裝的下世代龍頭，但翹曲/良率仍待驗證。2026/06 TrendForce 揭露龍潭試產線採『全球大廠 vs 台廠』雙軌評比：搬運/貼膜 Disco/Lintec/Nitto/Yamada/Tazmo 對上家登 Gudeng/盟立；沉積清洗 AMAT/TEL/SCREEN 對上辛耘/弘塑；AOI 由田/精材/均豪 對上 KLA/Camtek——本土設備生態正被逐項拉進量產評比。2026/06 TSMC 另測試 Hitachi DuPont 非感光型 PI 將翹曲降 79%（矽基板）/95%（陶瓷），材料端翹曲解方逐步成形。絃外之音：CoPoS 是 sole-source 單點壟斷，但 TSMC 把『無 interposer』的定價權往上游讓給玻璃基板（Corning/Absolics）與 ABF（味之素），二階受惠者卡位比 OSAT 更硬；AP7 單一地理集中是 AI 鏈最大暗流。",
+   "companies": [
+    {
+     "name": "TSMC（CoPoS）",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "AI 大晶片龍頭",
+     "products": "CoPoS 310→620×750mm",
+     "note": "Nvidia 首發、2028–29 量產、傳精材 5374 試線；魏哲家 2026/06/04 股東會親證 CoPoS 試產線已建、距大規模量產仍 2–3 年；2026/06/16 首度揭露與 Ibiden+群創三方玻璃基板共驗數據（翹曲↓16%、有效 CTE↓19%、彈性模數↑31%；0.8mm 玻璃核心、5x reticle CoW、85×110mm）；2026/06/17 TrendForce 確認 CoPoS 起步格式標準化為 310×310mm（2026 為設備/材料驗證年、2027 pilot、2028H2 量產），韓媒『2027 量產』說遭台廠斥為過早（2026/06/16 Digitimes）",
+     "src": "https://www.tradingkey.com/analysis/stocks/us-stocks/261969147-tsm-ibiden-abf-copos-tradingkey"
+    },
+    {
+     "name": "Rapidus",
+     "ticker": "—",
+     "country": "JP",
+     "share": "探索",
+     "products": "玻璃基板上 PLP",
+     "note": "圖跨越式領先"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "d-app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC CoPoS 試產線 2028–29 量產 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/04/13/news-tsmc-advances-panel-level-packaging-copos-pilot-line-reportedly-set-for-june-completion-2028-29-ramp-eyed/"
+    }
+   ]
+  },
+  {
+   "id": "f-panel",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "面板廠跨入封裝",
+   "nameEn": "Panel Makers → Packaging",
+   "competition": "emerging",
+   "single": "面板廠最成功 · 群創 G3.5 620×750mm 玻璃面板已量產（月產 >4000 萬顆）、台灣首家供 SpaceX 衛星 RF",
+   "desc": "顯示面板廠以大尺寸面板與玻璃製程經驗跨入 FOPLP，以中低階（PMIC/RF/車用）為主。",
+   "marketSize": "群創領先",
+   "growth": "玻璃面板路線",
+   "share": "null",
+   "analysis": "群創（Chip-First 已量產月產 >4000 萬顆良率佳、G3.5 620×750mm 玻璃、克服 warpage、供 SpaceX RF、賣廠入袋 197 億）面板廠跨封裝最成功；三星 SEMCO（Galaxy Watch APU 已量產 510×415mm→800×600mm）消費領先；友達（L3C 廠售力成 NT$68.98 億、不主攻 FOPLP 轉 CPO/衛星）、BOE（玻璃基板，跟隨）。",
+   "companies": [
+    {
+     "name": "群創 Innolux",
+     "ticker": "3481.TW",
+     "country": "TW",
+     "share": "面板跨封裝最成功（消費 PLP 量產龍頭）",
+     "products": "FOPLP 玻璃面板 620×750mm（Chip-First）",
+     "note": "月產 >4000 萬顆（年增 10 倍）、產能滿載出貨排至 2026H1 之後、供 SpaceX RF；傳與台積電龍潭合作 AI FOPLP（2026/06/10 公司不評論）；TGV 驗證 2026–27。被低估卡位者：唯一在『大尺寸玻璃面板＋克服 warpage』真正量產者，其量產 know-how 為 CoPoS 玻璃路線的潛在外溢標的",
+     "src": "https://money.udn.com/money/story/5612/9494078"
+    },
+    {
+     "name": "三星 SEMCO",
+     "ticker": "009150.KS",
+     "country": "KR",
+     "share": "消費領先",
+     "products": "FOPLP 共封 APU (510×415→800×600mm)",
+     "note": "Galaxy Watch 已量產；世宗 pilot 線已啟動；與住友化學合資設立玻璃核心材料 JV（2025/11）；2026 ABF 基板產能已全被 Big Tech 訂滿"
+    },
+    {
+     "name": "友達 AUO / BOE",
+     "ticker": "2409.TW / 000725.SZ",
+     "country": "TW",
+     "share": "不主攻FOPLP/跟隨",
+     "products": "售廠轉 CPO·衛星 / 玻璃基板",
+     "note": "友達主攻 CPO/LEO 衛星，不主攻 FOPLP；2026 售廠（Fab2→SPIL、Fab5→ASE）換現金再投 FOPLP RDL/TGV"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "d-app"
+    }
+   ],
+   "sources": [
+    {
+     "label": "群創玻璃面板 SpaceX 訂單 (TechNews)",
+     "url": "https://technews.tw/2025/12/31/innolux-spacex-order-2/"
+    }
+   ]
+  },
+  {
+   "id": "d-app",
+   "row": "flow",
+   "col": 7,
+   "span": 2,
+   "kind": "demand",
+   "name": "終端應用",
+   "nameEn": "Applications (Demand)",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "PLP 終端：消費（PMIC/RF/穿戴）已量產為主；AI/HPC（GPU/ASIC）待 2027–2029 放量。",
+   "marketSize": "AI/HPC 待放量",
+   "growth": "雙速",
+   "share": "null",
+   "analysis": "雙速需求：消費 PMIC/RF/穿戴/車用已商轉（群創/SEMCO/Nepes）；AI/HPC 大晶片由 Nvidia/AMD 拉動 CoPoS（2027–2029）。NVIDIA Rubin 5.5x reticle 是逼出方形面板的核心動力。",
+   "companies": [
+    {
+     "name": "Nvidia / AMD",
+     "ticker": "NVDA / AMD",
+     "country": "US",
+     "share": "AI/HPC 拉動",
+     "products": "GPU/ASIC（CoPoS）／CPU CCD（FOPLP）",
+     "note": "5.5x reticle 動力；AMD Zen 7 CCD（A14、2028）傳評估力成 FOPLP"
+    },
+    {
+     "name": "消費 PMIC/RF/穿戴",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "已量產",
+     "products": "PMIC/RF/穿戴 SoC",
+     "note": "雙速的已商轉端"
+    },
+    {
+     "name": "SpaceX（衛星 RF）",
+     "ticker": "—",
+     "country": "US",
+     "share": "利基量產",
+     "products": "衛星 RF",
+     "note": "群創供應"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-foplp"
+    },
+    {
+     "id": "f-copos"
+    },
+    {
+     "id": "f-panel"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "PLP 雙速產業 (Yole)",
+     "url": "https://www.yolegroup.com/strategy-insights/is-panel-level-packaging-plp-finally-emerging/"
+    }
+   ]
+  },
+  {
+   "id": "m-rdl",
+   "row": "material",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "RDL 介電 / 乾膜防焊",
+   "nameEn": "RDL Dielectric · Dry Film",
+   "competition": "monopoly",
+   "single": "日系集中 · 味之素 RDL 介電（ABF）領導（2µm L/S）；旭化成 Sunfort 乾膜鎖定 AI 伺服器封裝",
+   "desc": "面板 RDL 重佈線的介電材料（ABF/PID）、乾膜光阻與防焊。",
+   "marketSize": "味之素獨大",
+   "growth": "日系集中",
+   "share": "null",
+   "analysis": "味之素 RDL 介電（ABF on panel，2µm L/S、CTE 7–8ppm）領導；旭化成（Sunfort TA 乾膜）；台廠長興（乾膜/防焊）、太陽油墨（LPI/噴墨防焊）。2026/06 TSMC 測試 Hitachi DuPont 非感光型 PI，於蝕刻通孔達 CD 目標同時將翹曲降 79%（矽基板）/95%（陶瓷），介電材料端成為翹曲解方關鍵戰場。",
+   "companies": [
+    {
+     "name": "味之素 Ajinomoto",
+     "ticker": "2802.T",
+     "country": "JP",
+     "share": "ABF 介電 ~80-98%",
+     "products": "ABF build-up film",
+     "note": "ABF 全球近獨佔（市售估 80-98%）；隱性單點：味之素停供整條 RDL 重佈線停擺；2µm L/S（ABF on panel 待證）"
+    },
+    {
+     "name": "旭化成 Asahi Kasei",
+     "ticker": "3407.T",
+     "country": "JP",
+     "share": "乾膜",
+     "products": "Sunfort TA 乾膜光阻",
+     "note": "鎖定 AI 伺服器封裝"
+    },
+    {
+     "name": "長興 / 太陽油墨",
+     "ticker": "1717.TW / 4626.T",
+     "country": "TW",
+     "share": "乾膜/防焊",
+     "products": "乾膜/防焊 / LPI",
+     "note": "台廠材料"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "旭化成 Sunfort TA 乾膜",
+     "url": "https://www.asahi-kasei.com/news/2025/e250526.html"
+    }
+   ]
+  },
+  {
+   "id": "m-emc",
+   "row": "material",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "EMC 模封料 / 液態封裝",
+   "nameEn": "EMC · Liquid Encapsulant",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "面板模封用環氧封裝材（granular EMC）與液態封裝材，固化收縮影響 die-shift。",
+   "marketSize": "null",
+   "growth": "先進封裝雙雄 >40%",
+   "share": "null",
+   "analysis": "先進封裝 EMC 雙雄 Resonac（原昭和電工/日立化成，領導）+ 住友電木合計 >40%（整體 EMC 住友 ~20%、Resonac ~10%、長春 ~4%）；Resonac 2025/09 主導 JOINT3 面板級 interposer 聯盟（含 AMAT/TEL/Lam，515×510 原型 2026）；Panasonic 為其他玩家（非確切 top-3）；信越（液態環氧 SMC）；台廠長春（環氧樹脂/銅箔，國產替代）。",
+   "companies": [
+    {
+     "name": "Resonac",
+     "ticker": "4004.T",
+     "country": "JP",
+     "share": "先進封裝 EMC 領導",
+     "products": "granular EMC / panel interposer",
+     "note": "與住友電木雙雄 >40%、主導 JOINT3"
+    },
+    {
+     "name": "住友電木 Sumitomo Bakelite",
+     "ticker": "4203.T",
+     "country": "JP",
+     "share": "EMC 雙雄（整體 ~20%）",
+     "products": "SUMICON EME granular EMC",
+     "note": "2025 蘇州新廠擴產 1.3x"
+    },
+    {
+     "name": "Panasonic",
+     "ticker": "6752.T",
+     "country": "JP",
+     "share": "EMC 玩家（非 top-3）",
+     "products": "EMC",
+     "note": "其他玩家之一"
+    },
+    {
+     "name": "信越 / 長春",
+     "ticker": "4063.T / —",
+     "country": "JP",
+     "share": "液態/國產",
+     "products": "液態環氧 / 環氧樹脂銅箔",
+     "note": "長春(TW)國產替代 ~4%"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "先進封裝 EMC Resonac+住友 >40% (24chemical)",
+     "url": "https://www.24chemicalresearch.com/reports/294540/epoxy-molding-compound-for-advanced-packaging-forecast-market"
+    },
+    {
+     "label": "Resonac JOINT3 面板級聯盟 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/09/04/news-resonac-teams-up-with-applied-materials-tel-and-other-chip-giants-on-panel-level-interposers/"
+    }
+   ]
+  },
+  {
+   "id": "m-cu",
+   "row": "material",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "銅 / 濕化學",
+   "nameEn": "Copper · Wet Chemistry",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "面板 RDL/UBM 銅電鍍化學、晶種層與濕製程化學品。",
+   "marketSize": "null",
+   "growth": "面板電鍍",
+   "share": "null",
+   "analysis": "Atotech（MKS）濕化學龍頭（VitroCoat GI 直攻玻璃細線金屬化）；ACM（2025/11 首台商用面板電鍍機出貨）；台廠長春（電子化學）。",
+   "companies": [
+    {
+     "name": "Atotech (MKS)",
+     "ticker": "MKSI",
+     "country": "DE",
+     "share": "濕化學龍頭",
+     "products": "electroless Cu / VitroCoat GI",
+     "note": "玻璃細線金屬化（MKS 母公司 US）"
+    },
+    {
+     "name": "ACM 盛美",
+     "ticker": "ACMR",
+     "country": "US",
+     "share": "面板電鍍領先(首台商用機)",
+     "products": "Ultra ECP ap-p / bevel etch",
+     "note": "2025/11 首台商用面板電鍍機出貨"
+    },
+    {
+     "name": "長春 CCP",
+     "ticker": "—",
+     "country": "TW",
+     "share": "電子化學/國產",
+     "products": "電子化學品/銅箔",
+     "note": "台廠濕化學延伸"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-foplp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Atotech 玻璃金屬化",
+     "url": "https://www.atotech.com/mks-presents-future-ready-pcb-solutions-at-hkpca-2025/"
+    }
+   ]
+  },
+  {
+   "id": "m-glass",
+   "row": "material",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "玻璃基板 / 面板載體",
+   "nameEn": "Glass Substrate · Carrier",
+   "competition": "oligopoly",
+   "single": "寡占成形中 · Corning 技術最強、Absolics(SKC) 全球首座玻璃基板量產廠（喬治亞、2026/01 供 AMD MI400 樣品、2026 底量產）",
+   "desc": "面板載體（玻璃/金屬）與玻璃核心基板（TGV）——下世代封裝載體，尺寸標準(515×510/600×600)未收斂。",
+   "marketSize": "下世代載體",
+   "growth": "寡占成形中",
+   "share": "null",
+   "analysis": "玻璃基板寡占成形中：Corning（技術最強、2025–26 送樣）、Absolics(SKC)（全球首座量產廠、產能 5k→20k 片/月、CHIPS Act $75M 已領 $40M、2026/01 供 AMD MI400 樣品、2026 底量產）、DNP（久喜廠試產 FY2028 量產）、三星電機 SEMCO（世宗試產 2026 量產）、AGC/NEG/SCHOTT/HOYA。⚠ 面板尺寸標準未收斂。",
+   "companies": [
+    {
+     "name": "Corning",
+     "ticker": "GLW",
+     "country": "US",
+     "share": "技術最強",
+     "products": "advanced packaging glass carrier/core",
+     "note": "2025–26 送樣"
+    },
+    {
+     "name": "Absolics (SKC)",
+     "ticker": "011790.KS",
+     "country": "KR",
+     "share": "全球首座量產廠",
+     "products": "TGV 玻璃核心基板 / non-embedding",
+     "note": "5k→20k 片/月、2026/01 供 AMD MI400、電性/訊號驗證完成進入良率穩定期、2026 底拚全球首家商業量產；SK 集團 2026/05/19 透過 SKC 增資 ₩1.17 兆（~US$779M），其中約 ₩589.6B（~US$393M）挹注喬治亞玻璃基板量產（業界視為 SK 海力士-TSMC-群創三角聯盟）",
+     "src": "https://finance.biggo.com/news/Y6kXPp4BpwxG186NwbY7"
+    },
+    {
+     "name": "DNP 大日本印刷",
+     "ticker": "7912.T",
+     "country": "JP",
+     "share": "試產",
+     "products": "TGV 玻璃核心基板",
+     "note": "久喜廠試產、FY2028 量產"
+    },
+    {
+     "name": "Ibiden",
+     "ticker": "4062.T",
+     "country": "JP",
+     "share": "ABF 載板雙雄+CoPoS 玻璃共驗",
+     "products": "ABF 載板 / CoPoS 玻璃基板共驗",
+     "note": "2026/06 首度與 TSMC＋群創三方揭露 CoPoS 玻璃基板共驗數據（3 層設計：玻璃核心夾於兩層 ABF 之間）；NVIDIA/AMD ABF 載板主供；2026/02 核定 ¥500B（~US$3.3B，FY2026–28）擴產（一期 ¥220B Gama 廠 FY2027 量產、二期 ¥280B Ono 廠），先進封裝載板轉玻璃路線最被低估二階玩家"
+    },
+    {
+     "name": "三星電機 SEMCO",
+     "ticker": "009150.KS",
+     "country": "KR",
+     "share": "試產（客戶擴至 Apple/Broadcom）",
+     "products": "TGV 玻璃核心基板",
+     "note": "世宗試產、量產延至 2027（2026/02 專案自先進研發移交事業部）、2028 玻璃中介層；2026/04 玻璃基板樣品供 Apple＋Broadcom（客戶基礎擴大）；與住友化學玻璃核心 JV 預計 2026H2 設立"
+    },
+    {
+     "name": "AGC / NEG / SCHOTT",
+     "ticker": "5201.T / 5214.T / —",
+     "country": "JP",
+     "share": "玻璃四強",
+     "products": "玻璃原片/載板",
+     "note": "R&D 廠（SCHOTT=DE）"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-copos"
+    },
+    {
+     "id": "f-panel"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SKC/Absolics 玻璃基板量產 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/05/08/news-skc-said-to-speed-glass-substrate-mass-production-by-year-end-advances-new-non-embedding-tech-for-u-s-client/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "eq-litho",
+   "f-foplp"
+  ],
+  [
+   "eq-plating",
+   "f-foplp"
+  ],
+  [
+   "eq-mold",
+   "f-foplp"
+  ],
+  [
+   "eq-debond",
+   "f-foplp"
+  ],
+  [
+   "eq-place",
+   "f-foplp"
+  ],
+  [
+   "eq-dice",
+   "f-foplp"
+  ],
+  [
+   "eq-clean",
+   "f-foplp"
+  ],
+  [
+   "eq-aoi",
+   "f-foplp"
+  ],
+  [
+   "m-rdl",
+   "f-foplp"
+  ],
+  [
+   "m-emc",
+   "f-foplp"
+  ],
+  [
+   "m-cu",
+   "f-foplp"
+  ],
+  [
+   "m-glass",
+   "f-copos"
+  ],
+  [
+   "m-glass",
+   "f-panel"
+  ],
+  [
+   "f-foplp",
+   "d-app"
+  ],
+  [
+   "f-copos",
+   "d-app"
+  ],
+  [
+   "f-panel",
+   "d-app"
+  ]
+ ],
+ "_proposed": {}
+}

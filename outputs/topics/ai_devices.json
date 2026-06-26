@@ -1,0 +1,493 @@
+{
+ "id": "ai_devices",
+ "tab": "AI 終端裝置",
+ "title": "AI 終端裝置 / 智慧眼鏡供應鏈 (AI Devices & Smart Glasses)",
+ "subtitle": "AI Devices — AI 從手機/PC 走向「隨身原生裝置」：智慧眼鏡、AI 別針、穿戴。Meta Ray-Ban H2'25 出貨市占 82%、2025 銷量翻逾 3 倍、Gen 2 內建 Llama 4，Meta×EssilorLuxottica 商議 2026 底產能倍增至 2,000 萬副/年；智慧眼鏡 2026 出貨業界共識下修至約 13.4–13.6M 副（IDC/Qualcomm 口徑）。光學顯示（波導/micro-LED/micro-OLED）是體驗鎖喉；SoC（Qualcomm AR1/恒玄）+ 音訊+感測 為運算核心；組裝由歌爾（Meta 主力）、立訊（OpenAI 裝置）掌握。OpenAI 首裝置（Gumdrop）2026-01 確認改由鴻海獨家組裝（越南/美國、立訊丟單）、Davos 確認 2026H2 上市、目標 40-50M 台；Apple N50 加入戰局。中國握全球 AI 眼鏡供應鏈逾 80%（BofA）。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "40+"
+  },
+  {
+   "k": "鎖喉／關鍵單點",
+   "v": 2,
+   "sub": "光學波導/micro-LED·歌爾/立訊組裝",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "parts",
+   "label": "光學顯示 / SoC / 感測 Components",
+   "main": false
+  },
+  {
+   "id": "device",
+   "label": "品牌 / ODM 組裝 Brands & Assembly",
+   "main": true
+  },
+  {
+   "id": "asia",
+   "label": "台日韓供應 Asia Supply",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "optics_display",
+   "row": "parts",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "光學顯示（波導 / micro-LED / micro-OLED）",
+   "nameEn": "Optics & Display",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 波導 + micro-LED 光引擎是 AR 眼鏡體驗瓶頸；JBD 綠光/LEDoS 光引擎『幾近獨佔』，是全鏈最深單點",
+   "desc": "智慧眼鏡的顯示核心：繞射光波導、micro-LED/micro-OLED 微顯示、光機模組，決定 AR 體驗與成本。",
+   "marketSize": "鎖喉點",
+   "growth": "顯示瓶頸",
+   "share": "null",
+   "analysis": "波導：Lumus（以色列）、DigiLens、舜宇光學 Sunny（2382.HK，光學模組+波導）；micro-LED 光引擎：JBD 顯耀（未上市，綠光 micro-LED 近獨佔）、鎵特；micro-OLED：Sony（6758.T）、視涯、SeeYA、BOE（000725.SZ）；光學鏡片：水晶光電（002273.SZ）、舜宇、大立光。EssilorLuxottica 收 micro-LED 廠 Plessey（歌爾協助）。2026 鬆動訊號：南韓 Sapien（背板 IC/LEDoS，搭 GlobalFoundries）獲選 Meta 2027H2 AR 眼鏡、日本 Cellid（DOE 波導，與 Foxconn 合作）供 Jorjin J9，台日韓開始侵蝕中國 80%／JBD 近獨佔的鎖喉。光學顯示仍是 AR 眼鏡最深技術鎖喉。",
+   "companies": [
+    {
+     "name": "舜宇光學 Sunny Optical",
+     "ticker": "2382.HK",
+     "country": "CN",
+     "share": "光學模組+波導領先",
+     "products": "光波導 / 攝像模組 / 光機",
+     "note": "與歌爾組光學聯盟",
+     "src": "https://www.sunnyoptical.com/"
+    },
+    {
+     "name": "JBD 顯耀顯示",
+     "ticker": "—",
+     "country": "CN",
+     "share": "LEDoS 光引擎近獨佔",
+     "products": "micro-LED 微顯示光引擎",
+     "note": "未上市；TrendForce：LEDoS 光引擎供應幾近被 JBD 壟斷，2024 已導入 30+ 款 AR 眼鏡（Rokid/INMO/Vuzix/OPPO）。真正的 AR 顯示卡位者＝隱性定價權單點"
+    },
+    {
+     "name": "Sony",
+     "ticker": "6758.T",
+     "country": "JP",
+     "share": "micro-OLED 領先",
+     "products": "micro-OLED 微顯示 / CIS",
+     "note": "高階 AR/VR 顯示"
+    },
+    {
+     "name": "水晶光電 / 視涯 SeeYA",
+     "ticker": "002273.SZ / —",
+     "country": "CN",
+     "share": "光學鏡片 / micro-OLED",
+     "products": "光學薄膜/鏡片 / micro-OLED",
+     "note": "光學元件供應"
+    },
+    {
+     "name": "Lumus / DigiLens",
+     "ticker": "— / —",
+     "country": "IL",
+     "share": "波導技術領先",
+     "products": "反射式/繞射式波導",
+     "note": "private；AR 波導 IP"
+    },
+    {
+     "name": "BOE 京東方",
+     "ticker": "000725.SZ",
+     "country": "CN",
+     "share": "顯示面板巨頭",
+     "products": "micro-OLED / 顯示",
+     "note": "切入 AR 微顯示"
+    },
+    {
+     "name": "Sapien Semiconductor",
+     "ticker": "—",
+     "country": "KR",
+     "share": "Meta AR 背板 IC（2027H2）",
+     "products": "LEDoS micro-LED 背板 IC / Memory-in-Pixel",
+     "note": "private；獲選供 Meta 2027H2 AR 眼鏡 LEDoS 背板 IC、與 GlobalFoundries 洽產；MiP 技術省電 75%、成本減約 50%，首度鬆動 JBD 對光引擎的近獨佔與中國 80% 供應鏈鎖喉。src: digitimes 2025-12"
+    },
+    {
+     "name": "Cellid",
+     "ticker": "—",
+     "country": "JP",
+     "share": "DOE 波導 + Foxconn 合作",
+     "products": "繞射光波導模組（最大視角）",
+     "note": "private；與 Foxconn 集團共研次世代波導，2026-04 供 Jorjin J9 AI 眼鏡（2026Q2 公布）；台日波導勢力切入、分散中國依賴"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "brand_global"
+    },
+    {
+     "id": "cn_brand"
+    },
+    {
+     "id": "assembly"
+    }
+   ],
+   "sources": [
+    {
+     "label": "舜宇/歌爾光學聯盟 (Bamboo Works)",
+     "url": "https://thebambooworks.com/sunny-optical-goertek-forge-optical-alliance-in-bet-on-ai-glasses/"
+    }
+   ]
+  },
+  {
+   "id": "soc_audio_sensor",
+   "row": "parts",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "SoC / 音訊 / 感測",
+   "nameEn": "SoC / Audio / Sensor",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "智慧眼鏡的運算與感知：低功耗 AR SoC、音訊 SoC、影像感測器、MEMS 麥克風、健康感測。",
+   "marketSize": "null",
+   "growth": "低功耗 AI",
+   "share": "null",
+   "analysis": "SoC：Qualcomm（QCOM，Snapdragon AR1/AR1+ 智慧眼鏡主控）、恒玄科技 Bestechnic（688608.SS，TWS+眼鏡音訊 SoC）、MediaTek（2454.TW）；影像感測：Sony（6758.T）、豪威 OmniVision（韋爾 603501.SS）；MEMS 麥克風：歌爾、瑞聲 AAC（2018.HK）、Knowles（KN）；觸控/健康：Goodix 匯頂。SoC 低功耗化是全天候 AI 眼鏡的關鍵。",
+   "companies": [
+    {
+     "name": "Qualcomm",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "AR SoC 主控",
+     "products": "Snapdragon AR1 / AR1+ Gen 1 / START 套件 / Reality Elite",
+     "note": "智慧眼鏡主控平台。2026-H1 推 Snapdragon START（Scalable Turnkey AI-Ready Toolkit，2026-06-19）：以 AR1+ 模組綁軟體＋iOS/Android app＋AI 雲＋3 款白牌參考設計（音訊相機/單眼顯示/雙眼顯示），讓品牌商免自建技術堆疊，加速非中國陣營（Samsung/三星 Android XR）出貨；另推 Snapdragon Reality Elite 高階 XR 晶片。是西方陣營對抗中國 80% 供應鏈鎖喉的關鍵賦能者"
+    },
+    {
+     "name": "恒玄科技 Bestechnic",
+     "ticker": "688608.SS",
+     "country": "CN",
+     "share": "音訊+眼鏡 SoC",
+     "products": "智慧眼鏡/TWS 音訊 SoC",
+     "note": "中國 AI 眼鏡 SoC 主力"
+    },
+    {
+     "name": "豪威 OmniVision (韋爾)",
+     "ticker": "603501.SS",
+     "country": "CN",
+     "share": "CIS 第二",
+     "products": "影像感測器",
+     "note": "眼鏡攝像"
+    },
+    {
+     "name": "瑞聲 AAC / Knowles",
+     "ticker": "2018.HK / KN",
+     "country": "CN",
+     "share": "聲學/MEMS mic",
+     "products": "MEMS 麥克風 / 揚聲器",
+     "note": "聲學元件"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "assembly"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Qualcomm Snapdragon AR1",
+     "url": "https://www.qualcomm.com/products/mobile/snapdragon/xr-vr-ar/snapdragon-ar1-gen-1-platform"
+    }
+   ]
+  },
+  {
+   "id": "brand_global",
+   "row": "device",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "全球品牌生態",
+   "nameEn": "Global Brands",
+   "competition": "monopoly",
+   "single": "客戶獨家 · Meta×EssilorLuxottica Ray-Ban 引爆智慧眼鏡；Apple N50、Google Android XR 跟進",
+   "desc": "智慧眼鏡/AI 裝置品牌：Meta 領先（Ray-Ban Display 售罄、需求暴衝暫緩國際上市），Apple（N50 延至 2027 底）/Google/Samsung（Galaxy Glasses 2026 秋上市）/Xiaomi 與 AI 平台廠跟進；Qualcomm START 白牌套件降低非中國陣營進入門檻；Nothing 2027 推 AI 眼鏡、Sesame（前 Oculus 團隊）募得 $250M B 輪加入戰局。",
+   "marketSize": "品牌主力",
+   "growth": "Meta 引爆",
+   "share": "null",
+   "analysis": "Meta（META，Ray-Ban/Oakley + Ray-Ban Display + Llama 4，H2'25 智慧眼鏡市占 82%、Q1'26 IDC 口徑 69.2%；Ray-Ban Display $799 售罄、需求暴衝暫緩英法義加上市、首季僅出 1.5 萬副；商議 2026 底產能倍增至 2,000 萬副、上看 3,000 萬副）、EssilorLuxottica（EL.PA，全球最大眼鏡商、2026-02 確認 2025 Meta 眼鏡銷量翻逾 3 倍、共售逾 700 萬副、貢獻 EL 逾 1/3 營收成長、提前逼近 1,000 萬副年產能）；Apple（AAPL，N50 無顯示音訊版 2026-05 確認延至 2027 底量產、Vision Air 2029）、Google（GOOGL，Android XR + Samsung 合作、2026 秋上市）、Samsung（005930.KS，Galaxy Glasses 2026 秋／傳 7 月上市、$379–499、Gemini 整合、2027 LEDoS 顯示版）、Xiaomi（1810.HK，AI 眼鏡）、Alibaba（Quark 眼鏡）、ByteDance。Qualcomm START 白牌套件降低非中國陣營門檻。Meta 以 Ray-Ban 定義品類、惟 2026 起 Samsung/Apple/Google 三星級玩家陸續入局，準壟斷面臨首波正面挑戰。",
+   "companies": [
+    {
+     "name": "Meta Platforms",
+     "ticker": "META",
+     "country": "US",
+     "share": "智慧眼鏡市占 Q1'26 69.2%",
+     "products": "Ray-Ban/Oakley Meta / Ray-Ban Display / Oakley Vanguard",
+     "note": "Counterpoint H1'25 73%、H2'25 82%，Q1'26 IDC 口徑回落至 69.2%（仍準壟斷）；RayNeo 3.4%/Xiaomi 3.1%/Viture 2.5% 追趕。IDC 估 2026 全球（無顯示）智慧眼鏡出貨 13.6M 副、營收 $5.1B、2030 達 27.3M（CAGR 18.9%）。帶顯示款 Ray-Ban Display（$799）2025 秋上市即售罄、等候名單排到 2026，Meta 因供不應求暫緩英/法/義/加國際上市；IDC 估首季僅出 1.5 萬副、占新生帶顯示品類 6%（產能受 micro-LED/波導鎖喉）。與 EL 商議 2026 底產能倍增至 2,000 萬副、需求若續強上看 3,000 萬副（Bloomberg 2026-01）。隱性風險：Meta 對 EssilorLuxottica 持股約 3%（$3.5B、擬升至 5%）＋鏡架/通路全靠 EL，眼鏡『品牌』實質是 Meta×EL 雙頭，品牌定價權對上游零件單點仍偏弱",
+     "src": "https://www.meta.com/ai-glasses/"
+    },
+    {
+     "name": "EssilorLuxottica",
+     "ticker": "EL.PA",
+     "country": "FR",
+     "share": "全球最大眼鏡商",
+     "products": "Ray-Ban / Oakley 製造 + 通路",
+     "note": "Meta 合作、收 Plessey micro-LED；2026-02-11 財報確認 2025 年 Meta AI 眼鏡銷量『翻逾 3 倍』、共售逾 700 萬副、貢獻 EL 逾 1/3 營收成長；已提前逼近原訂 2026 底 1,000 萬副/年產能目標，與 Meta 商議倍增至 2,000 萬副（需求續強上看 3,000 萬副）",
+     "src": "https://www.essilorluxottica.com/en/brands/smart-eyewear-solutions/"
+    },
+    {
+     "name": "Apple / Google",
+     "ticker": "AAPL / GOOGL",
+     "country": "US",
+     "share": "跟進者",
+     "products": "N50 智慧眼鏡 / Android XR",
+     "note": "Apple N50（無顯示、Siri/Apple Intelligence 音訊版）2026-05 確認延至 2027 底量產（Q2'27 MP，郭明錤）、Vision Air 2029；正測試 4 款鏡框設計。Google×Samsung Android XR 眼鏡 2026 秋（Fall）上市、攜 Gentle Monster/Warby Parker，micro-LED 顯示版 2027"
+    },
+    {
+     "name": "Xiaomi / Alibaba / ByteDance",
+     "ticker": "1810.HK / BABA / —",
+     "country": "CN",
+     "share": "中國平台廠",
+     "products": "AI 眼鏡 / Quark 眼鏡",
+     "note": "AI 平台延伸硬體"
+    },
+    {
+     "name": "Samsung Electronics",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "新進品牌（2026 秋上市）",
+     "products": "Galaxy Glasses（Android XR、無顯示音訊版）",
+     "note": "2026-03-06 公布首款 AI 眼鏡細節（12MP 自動對焦相機、手勢操控、155mAh 全天電池、Gemini 深整合），SM-O200P/SM-O200J 兩型、估價 $379–499、2026 秋（傳 7 月）上市；自研 LEDoS micro-OLED 顯示版 2027；正式加入全球 AI 眼鏡品牌戰局，挑戰 Meta 準壟斷",
+     "src": "https://www.cnbc.com/2026/03/06/samsung-ai-smart-glasses-first-details-specs-release-date.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "optics_display"
+    },
+    {
+     "id": "soc_audio_sensor"
+    },
+    {
+     "id": "assembly"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Meta AI Glasses (官方)",
+     "url": "https://www.meta.com/ai-glasses/"
+    }
+   ]
+  },
+  {
+   "id": "cn_brand",
+   "row": "device",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國 AR/AI 眼鏡新勢力",
+   "nameEn": "China AR Glasses",
+   "competition": "redocean",
+   "single": "null",
+   "desc": "中國 AR/AI 眼鏡品牌「百鏡大戰」，以性價比與本土 AI 助理切入。",
+   "marketSize": "null",
+   "growth": "百鏡大戰",
+   "share": "null",
+   "analysis": "雷鳥創新 RayNeo（TCL 系）、Rokid、XREAL（消費 AR 領先）、Even Realities、INMO、李未可。中國「百鏡大戰」百家爭鳴，靠供應鏈成本 + 本土 LLM 助理，2026 為放量年。",
+   "companies": [
+    {
+     "name": "XREAL",
+     "ticker": "—",
+     "country": "CN",
+     "share": "消費 AR 領先",
+     "products": "XREAL One / Air AR 眼鏡",
+     "note": "private；消費 AR 出貨領先"
+    },
+    {
+     "name": "雷鳥創新 RayNeo",
+     "ticker": "—",
+     "country": "CN",
+     "share": "TCL 系",
+     "products": "RayNeo X / V AI 眼鏡",
+     "note": "TCL 電子孵化"
+    },
+    {
+     "name": "Rokid / Even Realities",
+     "ticker": "—",
+     "country": "CN",
+     "share": "AI 眼鏡新創",
+     "products": "Rokid Glasses / Even G1",
+     "note": "private"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "optics_display"
+    },
+    {
+     "id": "assembly"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "中國智慧眼鏡市場 (DigiTimes)",
+     "url": "https://www.digitimes.com/news/a20250915PD218/smart-glasses-ar-display-luxshare-sunny-optical.html"
+    }
+   ]
+  },
+  {
+   "id": "assembly",
+   "row": "asia",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "ODM 組裝",
+   "nameEn": "ODM Assembly",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · 歌爾 Meta 智慧眼鏡主力組裝；OpenAI 首裝置訂單 2026-01 確認轉鴻海獨拿（立訊丟單）；中台廠掌握組裝",
+   "desc": "AI 裝置的精密組裝：歌爾、立訊主導，台廠廣達/和碩切入。",
+   "marketSize": "客戶獨家",
+   "growth": "AI 裝置放量",
+   "share": "null",
+   "analysis": "歌爾股份 GoerTek（002241.SZ，Meta Quest + Ray-Ban 主力組裝、控股上海歐菲/Plessey、對 Apple 依賴從 48% 降至 32%）；立訊精密 Luxshare（002475.SZ，與 OpenAI 合作組裝 AI 裝置）；龍旗、華勤；台廠廣達（2382.TW）、和碩（4938.TW）、英業達切入。組裝是中台廠的關鍵卡位。",
+   "companies": [
+    {
+     "name": "歌爾股份 GoerTek",
+     "ticker": "002241.SZ",
+     "country": "CN",
+     "share": "Meta 眼鏡主力組裝",
+     "products": "智慧眼鏡 / VR 整機組裝 + 聲學",
+     "note": "Hypernova 組裝；對 Apple 依賴降至 32%。地緣暗流：Meta 雖稱供應鏈多元化、實際歌爾仍『tighten grip』近乎單一來源，美方施壓下歌爾控制力反升 — 客戶集中度＋地緣雙風險集於一身",
+     "src": "https://www.tipranks.com/news/meta-faces-china-supply-chain-risks-as-goertek-builds-new-hypernova-glasses"
+    },
+    {
+     "name": "立訊精密 Luxshare",
+     "ticker": "002475.SZ",
+     "country": "CN",
+     "share": "OpenAI 裝置組裝",
+     "products": "AI 裝置 / 精密組裝",
+     "note": "曾簽 OpenAI 合作；惟 OpenAI 首款 AI 硬體（Gumdrop）訂單 2026-01 已確認轉給鴻海獨家、改在越南/美國組裝以避紅色供應鏈，立訊丟單；本業正常、押注 AI 眼鏡組裝",
+     "src": "https://technode.com/2025/09/22/openai-teams-up-with-luxshare-and-goertek-to-develop-new-ai-device/"
+    },
+    {
+     "name": "廣達 / 和碩",
+     "ticker": "2382.TW / 4938.TW",
+     "country": "TW",
+     "share": "台廠組裝",
+     "products": "AR/AI 裝置 ODM",
+     "note": "台廠切入穿戴/AI 裝置"
+    },
+    {
+     "name": "龍旗 / 華勤",
+     "ticker": "603341.SS / 603296.SS",
+     "country": "CN",
+     "share": "ODM",
+     "products": "智慧硬體 ODM",
+     "note": "中國 ODM"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "brand_global"
+    },
+    {
+     "id": "cn_brand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "OpenAI×立訊×歌爾 AI 裝置 (TechNode)",
+     "url": "https://technode.com/2025/09/22/openai-teams-up-with-luxshare-and-goertek-to-develop-new-ai-device/"
+    }
+   ]
+  },
+  {
+   "id": "tw_optics",
+   "row": "asia",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "台灣光學 / 元件",
+   "nameEn": "Taiwan Optics & Components",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "台灣光學鏡頭、VCSEL、光機元件切入智慧眼鏡供應鏈。",
+   "marketSize": "null",
+   "growth": "切入 AR",
+   "share": "null",
+   "analysis": "大立光（3008.TW，光學鏡頭龍頭）、玉晶光（3406.TW，AR 光學）、穩懋（3105.TW，VCSEL 感測光源）、亞光（3019.TW）。台灣光學軍團以鏡頭/VCSEL/光機切入 AR 眼鏡，與手機鏡頭技術相通。",
+   "companies": [
+    {
+     "name": "大立光 Largan",
+     "ticker": "3008.TW",
+     "country": "TW",
+     "share": "光學鏡頭龍頭",
+     "products": "微型光學鏡頭",
+     "note": "手機+AR 鏡頭"
+    },
+    {
+     "name": "玉晶光 GSEO",
+     "ticker": "3406.TW",
+     "country": "TW",
+     "share": "AR 光學",
+     "products": "AR/VR 光學鏡片",
+     "note": "蘋果系光學"
+    },
+    {
+     "name": "穩懋 WIN Semi",
+     "ticker": "3105.TW",
+     "country": "TW",
+     "share": "VCSEL 代工",
+     "products": "VCSEL 感測光源",
+     "note": "3D 感測/眼動追蹤"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "optics_display"
+    }
+   ],
+   "sources": [
+    {
+     "label": "大立光 (公開資訊)",
+     "url": "https://www.largan.com.tw/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "optics_display",
+   "brand_global"
+  ],
+  [
+   "optics_display",
+   "cn_brand"
+  ],
+  [
+   "optics_display",
+   "assembly"
+  ],
+  [
+   "soc_audio_sensor",
+   "assembly"
+  ],
+  [
+   "tw_optics",
+   "optics_display"
+  ],
+  [
+   "assembly",
+   "brand_global"
+  ],
+  [
+   "assembly",
+   "cn_brand"
+  ]
+ ],
+ "_proposed": {}
+}

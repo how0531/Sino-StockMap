@@ -1,0 +1,1834 @@
+{
+ "id": "agentic_ai",
+ "tab": "Agentic AI",
+ "title": "Agentic AI / 企業軟體 AI 自動化（雲端 → 模型 → 平台 → 應用）",
+ "subtitle": "2024–2026 企業 AI 化浪潮：Anthropic（企業 API 40%，ARR USD 47B+，Series H USD 65B at USD 965B 已完成、2026-06-01 秘密遞交 S-1）、OpenAI（27%，ARR USD 25B+，GPT-5.5 取代 GPT-5.3，USD 122B 融資完成）、Google（21%）三強模型供應；Salesforce Agentforce（Q1 FY27 ARR USD 1.2B，+205% YoY，Data 360 合計 USD 3.4B）、ServiceNow Now Assist（2026 ACV 目標 USD 1.5B）、Microsoft Copilot Studio（23 萬組織）三強企業平台；Cursor（ARR USD 2B+，2026/02）、Claude Code（ARR USD 2.5B+）主導 Coding Agent。MCP 由 Anthropic 2024-11 釋出，2025 年被 OpenAI/Google/Microsoft 全面採納，成為 Agentic AI tool 整合的事實標準，2025-12 捐贈 Linux Foundation AAIF 治理（170 家成員，SDK 月下載 110M+）。NVIDIA GPU 算力為全鏈條唯一不可繞過的物理瓶頸（DeepSeek V4 已轉向 Huawei Ascend 950 形成中國算力替代）。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 15
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "150+"
+  },
+  {
+   "k": "壟斷/關鍵單點",
+   "v": 4,
+   "sub": "MCP 標準·Anthropic 企業 API·NVIDIA GPU·Cursor 編輯器",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "compute",
+   "label": "算力 / 雲端 Cloud & GPU",
+   "main": false
+  },
+  {
+   "id": "model",
+   "label": "基礎模型 Foundation Models",
+   "main": false
+  },
+  {
+   "id": "platform",
+   "label": "Agent 平台 / 編排層 Platform & Orchestration",
+   "main": true
+  },
+  {
+   "id": "data",
+   "label": "資料 / 工具 / 安全治理 Data, Tooling, Governance",
+   "main": false
+  },
+  {
+   "id": "app",
+   "label": "垂直應用 / 系統整合 Vertical Apps & SI",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "cloud_us",
+   "row": "compute",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "美系雲端算力",
+   "nameEn": "US Hyperscaler & Neocloud GPU",
+   "competition": "oligopoly",
+   "single": "三巨頭寡占 · AWS ~28% / Azure ~21% / GCP ~14%；NVIDIA GPU 為算力物理瓶頸",
+   "desc": "美國三大雲服務商（AWS／Azure／GCP）加上 Oracle 與新興 Neocloud（CoreWeave、Nebius、Lambda、Crusoe），構成 Agentic AI 模型訓練與推論的底層算力供給。",
+   "marketSize": "2025 IaaS+PaaS 約 USD 419B，AI GPU capex USD 318B（四大 hyperscaler 合計）",
+   "growth": "YoY +30%（Q4 雲端服務）；AI GPU capex YoY +50%+",
+   "share": "null",
+   "analysis": "AWS 以 ~28% 市占居冠，Project Rainier 近 50 萬顆 Trainium2 為 Anthropic Claude 主力算力；Azure ~21% 市占與 OpenAI 深度綁定，FY2026 capacity 提升 >80%；GCP ~14% 市占，2025-10 與 Anthropic 簽 up to 1M TPU 擴展協議；CoreWeave Q1 2025 收入 USD 981.6M（YoY +420%），Customer A（Microsoft）佔比 72%。",
+   "companies": [
+    {
+     "name": "Amazon Web Services",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "~28% 公有雲市占",
+     "products": "Bedrock（>100,000 Claude 客戶）、Trainium2/3、EC2 UltraCluster",
+     "note": "Anthropic 主要算力夥伴，Project Rainier 近 50 萬顆 Trainium2",
+     "src": "https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster"
+    },
+    {
+     "name": "Microsoft Azure",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "~21% 公有雲市占",
+     "products": "Azure AI Foundry Agent Service、ND H200/GB200 Series、Fairwater DC",
+     "note": "同時提供 OpenAI GPT 與 Claude；2026 capex +80%",
+     "src": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/"
+    },
+    {
+     "name": "Google Cloud Platform",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "~14% 公有雲市占",
+     "products": "Vertex AI、TPU Ironwood、AI Hypercomputer",
+     "note": "2025-10 與 Anthropic 簽 up to 1M TPU；AI workload 增速最高",
+     "src": "https://www.googlecloudpresscorner.com/2025-10-23-Anthropic-to-Expand-Use-of-Google-Cloud-TPUs-and-Services"
+    },
+    {
+     "name": "Oracle Cloud Infrastructure",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "AI capacity 成長最快之一",
+     "products": "OCI Zettascale10（16 zettaFLOPS）、OCI Supercluster",
+     "note": "與 OpenAI Stargate 4.5GW 增量算力、$300B+ 五年合約",
+     "src": "https://www.oracle.com/news/announcement/ai-world-oracle-unveils-next-generation-oci-zettascale10-cluster-for-ai-2025-10-14/"
+    },
+    {
+     "name": "CoreWeave",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "最大純 GPU Neocloud，Q1 2025 ARR +420% YoY",
+     "products": "HGX H100/H200/GB200/GB300 NVL72、W&B（Weights & Biases）",
+     "note": "Microsoft 佔 Q1 2025 收入 72%；IPO 前與 OpenAI 簽 5 年 $11.9B 算力合約",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962825000014/crwv-20250331.htm"
+    },
+    {
+     "name": "IBM",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "企業 hybrid AI 主力",
+     "products": "watsonx.ai、watsonx Orchestrate（500+ tools）、LinuxONE 5",
+     "note": "累計 GenAI book of business 超 USD 12.5B；企業 Agent Governance 領先"
+    },
+    {
+     "name": "Lambda Labs",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有 Neocloud，2025 融資 USD 2.3B",
+     "products": "Lambda 1-Click Clusters、HGX B200/GB300 NVL72",
+     "note": "2025 與 Microsoft 簽多年 multi-billion USD NVIDIA GPU 算力合約"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "foundation_us"
+    },
+    {
+     "id": "foundation_cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AWS Project Rainier 近 50 萬顆 Trainium2（2025-11）",
+     "url": "https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster"
+    },
+    {
+     "label": "Google Cloud × Anthropic 1M TPU 擴展協議（2025-10-23）",
+     "url": "https://www.googlecloudpresscorner.com/2025-10-23-Anthropic-to-Expand-Use-of-Google-Cloud-TPUs-and-Services"
+    },
+    {
+     "label": "OCI Zettascale10 Cluster for AI（2025-10-14）",
+     "url": "https://www.oracle.com/news/announcement/ai-world-oracle-unveils-next-generation-oci-zettascale10-cluster-for-ai-2025-10-14/"
+    },
+    {
+     "label": "CoreWeave 10-Q Q1 2025 SEC filing",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962825000014/crwv-20250331.htm"
+    }
+   ]
+  },
+  {
+   "id": "cloud_asia",
+   "row": "compute",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "亞洲雲端算力",
+   "nameEn": "Asia Cloud + Neocloud GPU",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "亞洲公有雲、電信雲與 GPU-as-a-Service neocloud，承載 Agentic AI 訓練與推論；涵蓋中國國產 GPU 雲（Ascend 910C）、日韓主權 AI cloud、台星 GPUaaS。",
+   "marketSize": "2025 亞太 AI cloud TAM ~USD 95B；日本 GPU cloud ¥135B 政府補貼；韓國 260,000 GPU 部署",
+   "growth": "APAC AI cloud spend YoY +40~50%；中國大模型調用市場年增 ~3x",
+   "share": "null",
+   "analysis": "Alibaba Cloud 2025 Q3 雲端營收 +34% YoY，APAC IaaS 市占 22.5% 居冠；華為 Ascend 910C 年產 ~30 萬顆（2026 翻倍），中國算力主權加速；SoftBank Stargate Japan 北海道 1GW 計畫；台灣 GMI Cloud USD 500M、7,000 顆 Blackwell Ultra AI Factory 為 NVIDIA NCP 旗艦。",
+   "companies": [
+    {
+     "name": "阿里雲 Alibaba Cloud",
+     "ticker": "9988.HK",
+     "country": "CN",
+     "share": "中國公有雲 #1 32.8%，APAC IaaS #1 22.5%",
+     "products": "Qwen3-Max + PAI 訓練平台 + Cloud GPU",
+     "note": "三年 RMB 380B AI 與雲基建投資；Q3 2025 雲營收 RMB 39B +34% YoY",
+     "src": "https://www.alibabacloud.com/blog/alibaba-maintains-leading-position-by-revenue-as-asia-pacifics-largest-cloud-provider-with-growing-market-share_603054"
+    },
+    {
+     "name": "Huawei Cloud / 華為雲",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國公有雲 #2~3",
+     "products": "Ascend 910C、Atlas 900 A3 SuperPoD（384 顆、300 PFLOPS）、Pangu 5.0",
+     "note": "910C 2025/5 量產，年產 ~30 萬顆、2026 翻倍；推論性能達 H100 ~60%",
+     "src": "https://www.huaweicloud.com/intl/en-us/news/20250620192415143.html"
+    },
+    {
+     "name": "ByteDance Volcano Engine / 火山引擎",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國大模型公有雲調用市佔 49.2%（H1 2025）",
+     "products": "Doubao 1.6 大模型 + Volcano Ark 平台",
+     "note": "2025 目標 RMB 25B 營收；日 token 用量 16.4 兆（5 月，年增 137x）",
+     "src": "https://www.cloudflare.com/press/press-releases/2025/cloudflare-and-jd-cloud-announce-partnership-to-accelerate-ai-inference/"
+    },
+    {
+     "name": "SoftBank / SB Intuitions",
+     "ticker": "9434.T",
+     "country": "JP",
+     "share": "日本 AI 算力 #1",
+     "products": "Stargate Japan 北海道 1GW DC + DGX SuperPOD 4,000+ B200",
+     "note": "與 OpenAI 合資 SB OpenAI Japan；堺市 Sharp 廠改 250MW AIDC",
+     "src": "https://group.softbank/en/news/press/20250924"
+    },
+    {
+     "name": "NHN Cloud",
+     "ticker": "181710.KS",
+     "country": "KR",
+     "share": "韓國政府 AI 算力 #1，B200 7,656 顆",
+     "products": "Yangpyeong AI-only DC + B200 液冷集群（最大 4,000 顆）",
+     "note": "2025/7 取得政府合約約 1 trillion KRW（USD 671M）"
+    },
+    {
+     "name": "GMI Cloud / 礪算科技",
+     "ticker": "—",
+     "country": "TW",
+     "share": "台灣 neocloud #1（NVIDIA NCP elite）",
+     "products": "Taiwan AI Factory（7,000 顆 Blackwell Ultra、96 GB300 NVL72 rack）",
+     "note": "2025/11 宣布 USD 500M Taiwan AI Factory；2M tokens/sec",
+     "src": "https://www.prnewswire.com/news-releases/gmi-cloud-to-launch-next-gen-ai-factory-in-taiwan-with-nvidia-to-power-the-future-of-ai-infrastructure-in-asia-302616532.html"
+    },
+    {
+     "name": "Singtel / Nxera",
+     "ticker": "Z74.SI",
+     "country": "SG",
+     "share": "東南亞電信 GPU cloud #1",
+     "products": "Nxera DC Tuas（58MW）+ GPUaaS H100/GB200 + Nscale 合作",
+     "note": "NVIDIA NCP 夥伴；H2 2025 起在新加坡、泰國、印尼、馬來西亞上線"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "foundation_cn"
+    },
+    {
+     "id": "foundation_jpkr"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Alibaba Cloud APAC 22.5% 市占（Gartner 2025）",
+     "url": "https://www.alibabacloud.com/blog/alibaba-maintains-leading-position-by-revenue-as-asia-pacifics-largest-cloud-provider-with-growing-market-share_603054"
+    },
+    {
+     "label": "SoftBank Stargate 7GW / USD 400B（2025-09-24）",
+     "url": "https://group.softbank/en/news/press/20250924"
+    },
+    {
+     "label": "Huawei Atlas 900 A3 SuperPoD 384 Ascend 910C（2025/9）",
+     "url": "https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech"
+    },
+    {
+     "label": "GMI Cloud USD 500M Taiwan AI Factory（2025-11-17）",
+     "url": "https://www.prnewswire.com/news-releases/gmi-cloud-to-launch-next-gen-ai-factory-in-taiwan-with-nvidia-to-power-the-future-of-ai-infrastructure-in-asia-302616532.html"
+    }
+   ]
+  },
+  {
+   "id": "foundation_us",
+   "row": "model",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "美歐基礎模型",
+   "nameEn": "US/EU Foundation Model Labs",
+   "competition": "oligopoly",
+   "single": "三強寡占 · Anthropic 企業 API 40% + Coding agents 54%；OpenAI 27%；Google 21%",
+   "desc": "訓練並提供前沿 LLM／多模態模型 API 的美歐實驗室，是企業 Agentic AI 的「大腦」。前沿模型透過自有 API、雲端通路（Bedrock/Vertex/Azure）與開源權重三條路徑供貨。",
+   "marketSize": "2025 企業 LLM API 支出 ~USD 8.4B（Menlo Ventures），全年上看 USD 15-18B",
+   "growth": "YoY +140%（2024 H2 USD 3.5B → 2025 H1 USD 8.4B）",
+   "share": "null",
+   "analysis": "競爭從 OpenAI 一家獨大轉為三強鼎立：Anthropic 企業 API 40%，ARR USD 5B（2025/08）→ USD 30B（2026/04），Claude Code ARR > USD 2.5B；OpenAI 企業 API 27%，ARR USD 20B（2025 末）；Google Gemini 2.5 Pro 企業 API 21%，以 Computer Use 進場 Agentic 場景。",
+   "companies": [
+    {
+     "name": "Anthropic",
+     "ticker": "—",
+     "country": "US",
+     "share": "企業 API 40%、Coding agents 54%",
+     "products": "Claude Fable 5（2026-06-09 公開，定位 Opus 家族之上，SWE/agentic/長上下文多數基準超越 Opus 4.8，$10/$50 per Mtok）/ Opus 4.8（敏感領域回退）/ Sonnet 4.6、Claude Code、Computer Use",
+     "note": "private；Series G USD 30B at USD 380B（2026/02）；Series H USD 65B at USD 965B post-money（2026-05-28 完成，Altimeter / Dragoneer / Greenoaks / Sequoia / Capital Group / Coatue / D1 共同領投；估值超越 OpenAI USD 852B 成為最高估值 AI 公司）；ARR USD 47B+（run-rate mid-May 2026）；2026-06-01 向 SEC 秘密遞交 S-1，鎖定 10 月 Nasdaq 上市、募資 >USD 60B（Goldman Sachs/JPMorgan/Morgan Stanley 主辦）；2026-05-04 與 Goldman Sachs / Blackstone / Hellman & Friedman 合資成立 USD 1.5B 企業 AI 導入服務公司（forward-deployed 模式）；2026-05-04 與 Goldman Sachs / Blackstone / Hellman & Friedman 合資成立 USD 1.5B 企業 AI 導入服務公司（forward-deployed 模式）",
+     "src": "https://www.anthropic.com/news/claude-opus-4-5"
+    },
+    {
+     "name": "OpenAI",
+     "ticker": "—",
+     "country": "US",
+     "share": "企業 API 27%",
+     "products": "GPT-5 / GPT-5 Pro / o4-mini、ChatGPT Enterprise、Agents SDK",
+     "note": "private；2026/02 ARR USD 25B+（Sacra）；2026/02 完成 USD 122B 募資 at USD 852B 估值（Amazon USD 50B + SoftBank USD 30B + NVIDIA USD 30B 領投）；GPT-5.5 Instant（2026-05-05 GA，取代 GPT-5.3 Instant，hallucination -52.5%）；ChatGPT 企業客戶 9M+ 付費商業用戶（Fortune 500 92% 採用）"
+    },
+    {
+     "name": "Alphabet / Google DeepMind",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "企業 API 21%",
+     "products": "Gemini 2.5 Pro / 2.5 Flash / Computer Use（Project Mariner）、Gemma 開源",
+     "note": "TPU v5p/Ironwood 垂直整合；Cloud 2025 YoY +30%+",
+     "src": "https://blog.google/technology/google-deepmind/gemini-computer-use-model/"
+    },
+    {
+     "name": "Meta Platforms",
+     "ticker": "META",
+     "country": "US",
+     "share": "開源權重模型市場領先",
+     "products": "Llama 4 Scout（17B/10M context）、Maverick（128 experts）、Behemoth（288B active）",
+     "note": "AI capex 2025 USD 60-65B；Llama 為主權/成本敏感企業首選",
+     "src": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+    },
+    {
+     "name": "Mistral AI",
+     "ticker": "—",
+     "country": "FR",
+     "share": "歐洲主權 AI 旗艦",
+     "products": "Mistral Large 3（41B active/675B MoE）、Codestral 25、Devstral 2",
+     "note": "private；Series C €1.7B at €11.7B（ASML 領投 €1.3B，約 11% 股權）",
+     "src": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai"
+    },
+    {
+     "name": "Cohere",
+     "ticker": "—",
+     "country": "CA",
+     "share": "企業 RAG/主權 AI 利基，ARR USD 240M",
+     "products": "Command R+ / Command A、Embed v3、Rerank、North（企業 Agent 平台）",
+     "note": "private；2025/08 USD 500M 融資 at USD 6.8B",
+     "src": "https://cohere.com/blog/august-2025-funding-round"
+    },
+    {
+     "name": "Databricks",
+     "ticker": "—",
+     "country": "US",
+     "share": "企業資料平台 + AI 訓練微調通路，ARR USD 5.4B（YoY +65%）",
+     "products": "DBRX（132B MoE 開源）、Mosaic AI Agent Framework、Vector Search",
+     "note": "2025/12 Series L USD 4B at USD 134B；AI 產品 ARR USD 1.4B",
+     "src": "https://techcrunch.com/2025/12/16/databricks-raises-4b-at-134b-valuation-as-its-ai-business-heats-up/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cloud_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "agent_platform"
+    },
+    {
+     "id": "framework_oss"
+    },
+    {
+     "id": "vertical_coding"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Menlo Ventures 2025 中期 LLM 市場報告（Anthropic 40%）",
+     "url": "https://menlovc.com/perspective/2025-mid-year-llm-market-update/"
+    },
+    {
+     "label": "Anthropic Claude Opus 4.5 官方發布（2025-11-24）",
+     "url": "https://www.anthropic.com/news/claude-opus-4-5"
+    },
+    {
+     "label": "Gartner：2030 年 1T 參數模型 inference 成本降 90%+",
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2026-03-25-gartner-predicts-that-by-2030-performing-inference-on-an-llm-with-1-trillion-parameters-will-cost-genai-providers-over-90-percent-less-than-in-2025"
+    },
+    {
+     "label": "Meta 官方 Llama 4 Scout/Maverick/Behemoth 發布（2025-04-05）",
+     "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+    }
+   ]
+  },
+  {
+   "id": "foundation_cn",
+   "row": "model",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國基礎模型",
+   "nameEn": "China Foundation Model Players",
+   "competition": "redocean",
+   "single": "null",
+   "desc": "中國前沿 LLM 業者，提供 API、開源權重與企業私有部署，涵蓋互聯網大廠（BAT、字節）、AI 六小虎（DeepSeek、月之暗面、MiniMax）與專業派（科大訊飛、商湯）。",
+   "marketSize": "2025 中國大模型市場約 RMB 480-550 億；Token 調用量 YoY +500%+",
+   "growth": "YoY +126%~145%（大模型解決方案市場）；2026/2 中國週 Token 4.12 兆首超美國",
+   "share": "null",
+   "analysis": "DeepSeek V3.2 開源對標 GPT-5，引爆 Token 通縮價格戰（字節 Doubao 1.6 較前代降價 63%）；阿里 Qwen3.7-Max 支援 1000+ tool call、35 小時長時自主運行；MiniMax（2469.HK）、智譜（6066.HK）於 2026 H1 集體港股上市。",
+   "companies": [
+    {
+     "name": "DeepSeek / 深度求索",
+     "ticker": "—",
+     "country": "CN",
+     "share": "開源前沿模型全球下載量領先；2026/2 單週 Token 14.37 兆全球第一",
+     "products": "DeepSeek V4-Pro / V4-Flash（2026/04 preview，開源，agentic 推理升級）；V4 以 Huawei Ascend 950 Supernode 叢集支撐算力",
+     "note": "private；2026-06-16 首輪 USD 74 億融資完成（估值 ~USD 60B，較 4 月 USD 10B 估值 6 倍跳升；騰訊 ~RMB 100 億、寧德時代 ~RMB 50 億、網易／京東各 ~RMB 30 億；商業投資人全數接受 5 年鎖定且交出投票權，僅國家級 AI 基金保留投票權；創辦人梁文鋒自投 ~RMB 200 億為單一最大出資人）；V4 全面跑在 Huawei Ascend 950PR Supernode，脫離 NVIDIA GPU",
+     "src": "https://api-docs.deepseek.com/news/news251201"
+    },
+    {
+     "name": "阿里通義千問 (阿里巴巴)",
+     "ticker": "9988.HK",
+     "country": "CN",
+     "share": "中國企業 API 領先，2026/2 週 Token 5.59 兆全球第二",
+     "products": "Qwen3.7-Max（agentic-first，1000+ tool call）、Qwen3.6 開源",
+     "note": "三年 RMB 3,800 億算力 capex",
+     "src": "https://qwenlm.github.io/blog/qwen3/"
+    },
+    {
+     "name": "ByteDance Doubao / 火山引擎",
+     "ticker": "—",
+     "country": "CN",
+     "share": "豆包 MAU ~1.57 億；日 Token 處理量 120 兆（2026/3）",
+     "products": "Doubao Seed 2.0（2026/2 旗艦）、Seed 1.8、Seed 1.6（256K）",
+     "note": "2025 Volcano Engine 營收 RMB 250 億（YoY +108%）",
+     "src": "https://seed.bytedance.com/en/blog"
+    },
+    {
+     "name": "Baidu / 百度",
+     "ticker": "9888.HK",
+     "country": "CN",
+     "share": "AI Cloud 2025 全年收入 RMB 300 億，ERNIE MAU > 2 億",
+     "products": "ERNIE 5.0（2.4 兆參數原生多模態）、ERNIE 5.1 Preview（訓練算力僅同級 6%）",
+     "note": "2025 Core AI 業務 RMB 400 億（YoY +48%）",
+     "src": "https://www.prnewswire.com/news-releases/baidu-unveils-ernie-5-0-and-a-series-of-ai-applications-at-baidu-world-2025--ramps-up-global-push-302614531.html"
+    },
+    {
+     "name": "MiniMax",
+     "ticker": "2469.HK",
+     "country": "CN",
+     "share": "全球首家 IPO 中國大模型公司",
+     "products": "MiniMax M1（推理）、Hailuo-02（影片）、Speech-02（TTS）",
+     "note": "2026/1/9 港交所掛牌，首日漲 109%；股東含 MiHoYo、阿里、騰訊",
+     "src": "https://www.cnbc.com/2026/01/09/minimax-hong-kong-ipo-ai-tigers-zhipu.html"
+    },
+    {
+     "name": "Moonshot AI / 月之暗面（Kimi）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "開源 1T MoE Kimi K2，長文本與 Agentic 領先",
+     "products": "Kimi K2.6（1T MoE、300-agent swarm、256K）、Kimi K2 Thinking",
+     "note": "2026/2 完成 USD 7 億輪（估值 USD 100 億）；阿里、騰訊參投"
+    },
+    {
+     "name": "iFlytek / 科大訊飛",
+     "ticker": "002230.SZ",
+     "country": "CN",
+     "share": "A 股 AI 龍頭，多語言（130+）教育/醫療垂直領先",
+     "products": "Spark X1.5（2025/11 全國產算力）、Spark X1（2025/7 對標 o3）",
+     "note": "與華為 Ascend 共建中國首個全國產算力訓練平台",
+     "src": "https://www.caict.ac.cn/kxyj/qwfb/bps/202602/P020260202487301304903.pdf"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cloud_us"
+    },
+    {
+     "id": "cloud_asia"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "agent_platform"
+    }
+   ],
+   "sources": [
+    {
+     "label": "DeepSeek V3.2 官方發布",
+     "url": "https://api-docs.deepseek.com/news/news251201"
+    },
+    {
+     "label": "Qwen3 官方部落格",
+     "url": "https://qwenlm.github.io/blog/qwen3/"
+    },
+    {
+     "label": "Baidu World 2025 ERNIE 5.0 新聞稿",
+     "url": "https://www.prnewswire.com/news-releases/baidu-unveils-ernie-5-0-and-a-series-of-ai-applications-at-baidu-world-2025--ramps-up-global-push-302614531.html"
+    },
+    {
+     "label": "MiniMax 港交所掛牌（CNBC 2026-01-09）",
+     "url": "https://www.cnbc.com/2026/01/09/minimax-hong-kong-ipo-ai-tigers-zhipu.html"
+    }
+   ]
+  },
+  {
+   "id": "foundation_jpkr",
+   "row": "model",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "日韓台東南亞主權模型",
+   "nameEn": "JP/KR/TW/SEA Sovereign & Domestic Models",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "日韓台東南亞各國以「主權 AI」名義，由政府補貼或大型集團開發在地語言、文化、法規可控的基礎模型，對抗 OpenAI/Anthropic/Google 與中國模型的雙重壓力。",
+   "marketSize": "2025 全球 Sovereign AI 基礎設施 TAM ~USD 15B；APAC ~USD 3.4B（22.8%）",
+   "growth": "APAC sovereign AI infra 2025-2034 CAGR 約 29.2%；YoY 2025 預估 +35-40%",
+   "share": "null",
+   "analysis": "日本 GENIAC 補助（¥10T 框架、已執行至第三輪 30+ 專案），SoftBank Sarashina 460B、NTT tsuzumi 2（30B 單 H100 可跑）、Fujitsu Takane（~104B）領跑；韓國 MSIT 選出 Naver/LG AI/SKT/NC AI/Upstage 五隊（₩200B≈USD 147M 補助）；台灣 TAIDE-LX-7B + 聯發科 Breeze2（3B/8B 多模態）；東南亞 SEA-LION v3 涵蓋 13+ SEA 語言。",
+   "companies": [
+    {
+     "name": "Naver / NAVER Cloud",
+     "ticker": "035420.KS",
+     "country": "KR",
+     "share": "韓國最大本土 LLM + K-AI 國家隊",
+     "products": "HyperCLOVA X SEED 32B THINK / SEED 8B Omni（原生全模態）",
+     "note": "韓語訓練資料是 GPT-4 的 6,500 倍；與 Saudi NEOM 合作 digital twin",
+     "src": "https://www.navercorp.com/en/media/pressReleasesDetail?seq=34256"
+    },
+    {
+     "name": "SoftBank / SB Intuitions",
+     "ticker": "9984.T",
+     "country": "JP",
+     "share": "GENIAC 主力，自建 4,000+ B200 DGX SuperPOD",
+     "products": "Sarashina（460B 自研 LLM）/ Sarashina API（2025/11 enterprise GA）",
+     "note": "與 OpenAI 合資 SB OpenAI Japan",
+     "src": "https://www.sbintuitions.co.jp/en/news/press/20250724_01/"
+    },
+    {
+     "name": "NTT",
+     "ticker": "9432.T",
+     "country": "JP",
+     "share": "純國產輕量高效 LLM、政府/電信主力",
+     "products": "tsuzumi 2（30B，單 H100 可跑，2025/10/20 GA）",
+     "note": "2026/3 入選 Digital Agency Government AI 7 家供應商",
+     "src": "https://group.ntt/en/newsrelease/2025/10/20/251020a.html"
+    },
+    {
+     "name": "LG AI Research",
+     "ticker": "066570.KS",
+     "country": "KR",
+     "share": "K-AI 5 隊之一，韓國最強 open-weight",
+     "products": "EXAONE 4.0（32B expert + 1.2B on-device，MMLU-Pro 81.8）；EXAONE Deep（推理專版，2026 H1）；EXAONE Deep（推理專版，2026 H1）",
+     "note": "通過韓國 6 項國家專業執照筆試；2025/8 入選 K-AI 國家隊",
+     "src": "https://www.prnewswire.com/news-releases/lg-unveils-koreas-first-open-weight-hybrid-ai-exaone-4-0-302505577.html"
+    },
+    {
+     "name": "MediaTek / 聯發科",
+     "ticker": "2454.TW",
+     "country": "TW",
+     "share": "台灣最強商用繁中模型供應商",
+     "products": "Breeze2（Llama 3.2 基礎，3B/8B 多模態 + function calling）、Breeze ASR 25",
+     "note": "2025 營收 NT$595.97B（YoY +12.32%）",
+     "src": "https://www.meti.go.jp/english/policy/mono_info_service/geniac/index.html"
+    },
+    {
+     "name": "AI Singapore（SEA-LION）",
+     "ticker": "—",
+     "country": "SG",
+     "share": "東南亞最具代表性多語言主權模型",
+     "products": "SEA-LION v3 / Embedding（2026/3）/ SEA-Guard（安全模型）",
+     "note": "涵蓋 13+ SEA 語言；與 Google Gemma 2、Alibaba Cloud 合作",
+     "src": "https://sea-lion.ai/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cloud_asia"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "agent_platform"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SB Intuitions Sarashina API GA（2025-07-24）",
+     "url": "https://www.sbintuitions.co.jp/en/news/press/20250724_01/"
+    },
+    {
+     "label": "NTT tsuzumi 2 發布（2025-10-20）",
+     "url": "https://group.ntt/en/newsrelease/2025/10/20/251020a.html"
+    },
+    {
+     "label": "LG EXAONE 4.0 發布（K-AI 韓國首個 open-weight hybrid）",
+     "url": "https://www.prnewswire.com/news-releases/lg-unveils-koreas-first-open-weight-hybrid-ai-exaone-4-0-302505577.html"
+    },
+    {
+     "label": "SEA-LION 官網",
+     "url": "https://sea-lion.ai/"
+    }
+   ]
+  },
+  {
+   "id": "agent_platform",
+   "row": "platform",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "企業 Agent 平台 / 編排層",
+   "nameEn": "Enterprise Agent Platforms (Orchestration)",
+   "competition": "competitive",
+   "single": "三強平台 · Salesforce Agentforce Q1 FY27 ARR USD 1.2B（+205% YoY）/ ServiceNow Now Assist Q1 FY26 ACV 翻倍 YoY / Microsoft Copilot Studio MCP GA 展開",
+   "desc": "在基礎模型之上提供建構、編排、部署、治理多代理工作流的企業 SaaS 平台，涵蓋 Agent Builder、Workflow Orchestrator、Marketplace、可觀測性與治理層。",
+   "marketSize": "2026 全球 Agentic AI 平台 TAM ~USD 10.8B；Gartner 估 2035 達 USD 450B",
+   "growth": "YoY +42~46%（CAGR 至 2030 約 44%）",
+   "share": "null",
+   "analysis": "Salesforce Agentforce FY27 Q1 ARR 升至 USD 1.2B（+205% YoY），Agentforce + Data 360 合計近 USD 3.4B、累計交付 3.8B Agentic Work Units（QoQ +111%）；ServiceNow Now Assist USD 1M+ ACV 客戶 +130% YoY，全年 ACV 目標自 USD 1B 上修至 USD 1.5B；Microsoft Copilot Studio 被 230,000+ 組織使用，已內建 MCP 與 Claude 整合；獨立新創 Sierra（USD 15.8B 估值、ARR USD 200M）與 Glean（USD 7.2B 估值、ARR ~USD 300M）。⚠ 2026-H1 結構新變局——『Agent 執行層』併購潮（5/28–6/1 集中爆發）：平台大廠由上而下收編能『動手執行』的工具/領域資料層——Salesforce 簽約收購 Contentful（composable CMS）補原生內容層、Asana USD 75M 收 StackAI（no-code agent builder）、Coupa 收 Rossum（IDP）深化 source-to-pay、Vertice 收 Vendr 組成全球最大採購情報資料集（USD 75B 間接支出、32,000 供應商）；定價權正從『編排層』再往下游『執行/領域資料層』移動。⚠ 同時 Agent token 經濟泡沫顯性化：agentic 任務較對話式多耗 5–30x token，Uber 給 5,000 工程師用 Claude Code 後 2026/4 即燒光全年 AI 預算、僅 11–14% 企業試點達規模化，預示獨立 Agent 新創 2026 下半年現金耗盡的整併潮。⚠ 結構：本層仍為『大廠群雄競爭』而非寡占，最大純玩家 Agentforce ARR 約僅 TAM USD 10.8B 的 11%，無 top-3 >70%；真正定價權被夾在上游（模型供應＋MCP 標準＋『模型廠自帶 agent runtime』Anthropic Agent SDK/OpenAI Agents SDK）與下游（SI 導入通路＋執行/領域資料併購）兩端。",
+   "companies": [
+    {
+     "name": "Salesforce (Agentforce 3)",
+     "ticker": "CRM",
+     "country": "US",
+     "share": "FY27 Q1 Agentforce ARR USD 1.2B（+205% YoY）；Agentforce + Data 360 合計近 USD 3.4B（含 Informatica Cloud ARR USD 1.1B）",
+     "products": "Agentforce 3, Voice, Data Cloud, MuleSoft, Atlas Reasoning Engine, Contentful（簽約收購中，headless CMS、Headless 360 原生內容層）",
+     "note": "逾 50% bookings 來自既有客戶擴張；累計交付 3.8B Agentic Work Units（QoQ +111%）；2026-06 連環收購 Fin（USD 3.6B 客服）+ Contentful（內容層）補齊 Agentforce 上下游",
+     "src": "https://www.salesforce.com/news/press-releases/2026/05/27/fy27-q1-earnings/"
+    },
+    {
+     "name": "ServiceNow (Now Assist)",
+     "ticker": "NOW",
+     "country": "US",
+     "share": "Q1 FY26 訂閱 USD 3.671B（+22% YoY）；Now Assist ACV Q1 入口 USD 750M（+125% YoY）；2026 全年目標上調至 USD 1.5B；244 筆 USD 1M+ ACV 交易（+40% YoY）；16 筆 USD 5M+ 淨新 ACV（+80% YoY）；2030 目標 USD 30B 訂閱（AI 佔 1/3 ACV）",
+     "products": "Now Assist (ITSM/HRSD/CSM), AI Agents, AI Control Tower",
+     "note": "USD 1M+ ACV 客戶 +130% YoY；cRPO USD 12.85B（+25% YoY）",
+     "src": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000041/now2025ars.pdf"
+    },
+    {
+     "name": "Microsoft (Copilot Studio + Azure AI Foundry)",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "230,000+ 組織使用 Copilot Studio；M365 Copilot 規模化部署",
+     "products": "Copilot Studio (low-code), Azure AI Foundry, M365 Copilot Agents, Security Copilot",
+     "note": "內建 MCP support；與 Anthropic Claude 整合（2025）",
+     "src": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/"
+    },
+    {
+     "name": "UiPath (Maestro)",
+     "ticker": "PATH",
+     "country": "US",
+     "share": "AI product ARR 接近 USD 200M；Q3 FY26 ARR USD 1.782B（+11% YoY）",
+     "products": "UiPath Maestro (orchestrator), Agent Builder, Autopilot",
+     "note": "USI Insurance 用 Maestro 預估 3 年省 USD 32M"
+    },
+    {
+     "name": "Palantir (AIP)",
+     "ticker": "PLTR",
+     "country": "US",
+     "share": "Q1 FY26 美國商用 USD 595M（+133% YoY）；US Commercial RDV USD 4.92B",
+     "products": "AIP (Artificial Intelligence Platform), Warp Speed, Foundry",
+     "note": "海軍部 Warp Speed 將 BoM 審批從 200 小時降至 15 秒",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000028/pltr-20260331.htm"
+    },
+    {
+     "name": "Sierra AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR 升至 2026/5 約 USD 200M；估值 USD 15.8B",
+     "products": "Sierra Agent OS, Voice Agents, Sierra Studio, AgentSDK",
+     "note": "2026/5 Series E USD 950M；Prudential/Cigna/Rocket Mortgage 為客戶",
+     "src": "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+    },
+    {
+     "name": "Glean",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR 由 2025 末 USD 208M 升至 2026/5 約 USD 300M；估值 USD 7.2B",
+     "products": "Glean Work AI, Glean Agents, Glean Apps",
+     "note": "2025/6 Series F USD 150M at USD 7.2B；2026/5 ARR ~USD 300M（水平知識 agent 快速放量，但相對 Agentforce ARR USD 1.2B 仍為利基）；年化 100M+ agent actions",
+     "src": "https://futurumgroup.com/insights/glean-doubles-arr-to-200m-can-its-knowledge-graph-beat-copilot/"
+    },
+    {
+     "name": "SAP (Joule Agents)",
+     "ticker": "SAP",
+     "country": "DE",
+     "share": "Joule 涵蓋 28,000 全球客戶、3 億 SAP 用戶",
+     "products": "Joule, Joule Studio (Q1 2026 GA), 14 個新 Joule Agents",
+     "note": "設立 EUR 100M partner fund；2026 Sapphire 推出 Joule Studio"
+    },
+    {
+     "name": "Asana (+ StackAI)",
+     "ticker": "ASAN",
+     "country": "US",
+     "share": "work-management 平台向 Agent 執行層擴張",
+     "products": "Asana AI Studio, Work Graph, StackAI（no-code agent builder，跨 ERP/CRM/ITSM/Salesforce/AWS/Oracle 執行）",
+     "note": "2026-H1 以 USD 75M 收購 StackAI，補上『可動手執行』的 no-code agent 層；屬 2026-05/06『Agent 執行層併購潮』一環",
+     "src": "https://erp.today/enterprise-software-ai-acquisitions-execution-layer"
+    },
+    {
+     "name": "Vertice (+ Vendr)",
+     "ticker": "—",
+     "country": "UK",
+     "share": "全球最大採購情報資料集（USD 75B 間接支出、32,000 供應商、250,000 已談合約）",
+     "products": "自主 AI 採購談判 agent、SaaS/雲端支出管理；合計 60+ 採購 agent、1,000+ 客戶",
+     "note": "2026-H1 收購 Vendr 整合成自主採購談判平台；屬『Agent 執行/領域資料層併購潮』，定價權往下游領域資料層移動",
+     "src": "https://erp.today/enterprise-software-ai-acquisitions-execution-layer"
+    },
+    {
+     "name": "Coupa (+ Rossum)",
+     "ticker": "—",
+     "country": "US",
+     "share": "source-to-pay 龍頭向 Agent 執行層深化",
+     "products": "Coupa AI、Total Spend Management、Rossum（IDP 智慧文件處理）",
+     "note": "2026-H1 收購 IDP 廠 Rossum 深化 source-to-pay 自動執行；屬『Agent 執行層併購潮』",
+     "src": "https://erp.today/enterprise-software-ai-acquisitions-execution-layer"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "foundation_us"
+    },
+    {
+     "id": "foundation_cn"
+    },
+    {
+     "id": "foundation_jpkr"
+    },
+    {
+     "id": "framework_oss"
+    },
+    {
+     "id": "mcp_tooling"
+    },
+    {
+     "id": "data_vector"
+    },
+    {
+     "id": "security_gov"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "vertical_cs"
+    },
+    {
+     "id": "vertical_pro"
+    },
+    {
+     "id": "si_global"
+    },
+    {
+     "id": "si_asia"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Salesforce FY27 Q1 業績（Agentforce ARR USD 1.2B，2026-05-27）",
+     "url": "https://www.salesforce.com/news/press-releases/2026/05/27/fy27-q1-earnings/"
+    },
+    {
+     "label": "Salesforce 簽約收購 Contentful（headless CMS）",
+     "url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-contentful/"
+    },
+    {
+     "label": "企業軟體『Agent 執行層』併購潮（2026-05/06）",
+     "url": "https://erp.today/enterprise-software-ai-acquisitions-execution-layer"
+    },
+    {
+     "label": "ServiceNow Q1 FY26 8-K（Now Assist ACV >USD 600M）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001373715/000137371526000054/erq1fy26.htm"
+    },
+    {
+     "label": "Microsoft Ignite 2025 Copilot & Agents 部落格",
+     "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/"
+    },
+    {
+     "label": "Sierra AI Series E USD 950M（TechCrunch 2026-05-04）",
+     "url": "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+    }
+   ]
+  },
+  {
+   "id": "framework_oss",
+   "row": "platform",
+   "col": 4,
+   "span": 2,
+   "kind": "rail",
+   "name": "開源 Agent 框架 / 開發者工具鏈",
+   "nameEn": "Open-Source Agent Frameworks & Dev Tooling",
+   "competition": "fragmented",
+   "single": "MCP 壟斷 · Anthropic 發起、OpenAI/Google/MSFT 全面採納，2025-12 捐贈 Linux Foundation",
+   "desc": "工程師用來建構、編排與部署 AI Agent 的開源框架與開發者工具鏈，通常自行部署在雲端或地端。涵蓋 LangGraph、CrewAI、AutoGen、Claude Agent SDK、Google ADK 等。",
+   "marketSize": "LangChain 月下載 90M+；MCP SDK 月下載 97M+（2025-12）；CrewAI 累計 27M 下載",
+   "growth": "YoY adoption +200-400%（多數框架 GitHub stars YoY 3-5x）",
+   "share": "null",
+   "analysis": "LangChain 2025/10 Series B USD 125M（IVP 領投，估值 USD 1.25B）；Anthropic 2024/11 發表 MCP 在 2025 年被 OpenAI/Google/MSFT 全面採納，2025/12 捐 Linux Foundation 旗下 AAIF（170 家成員，4 個月超越 CNCF 同期規模 2 倍，含 Google/MSFT/AWS/Cloudflare/Bloomberg）；2026/04 AAIF MCP Dev Summit 紐約（1,200 人）；MCP SDK 月下載突破 110M；MCP Apps（互動式 UI extension）2026/01/26 GA，Claude/ChatGPT/VS Code/Copilot/Goose 全採納；Uber：5,000+ 工程師、1,500+ 月活 agent、60,000+ agent executions/週；2026 Roadmap：Enterprise SSO 認證 + 標準審計軌跡 + gRPC transport；2026 全球峰會：Mumbai 6/14、Seoul 8/13、Shanghai 9/6、Tokyo 9/10、Amsterdam AGNTCon 9/17、San Jose MCPCon 10/22；Dify GitHub 123k stars，2026/03 Series Pre-A USD 30M。",
+   "companies": [
+    {
+     "name": "LangChain Inc.",
+     "ticker": "—",
+     "country": "US",
+     "share": "GitHub 100k+ stars，90M monthly downloads，Fortune 500 採用 35%",
+     "products": "LangChain, LangGraph, LangSmith, Agent Builder",
+     "note": "2025/10 Series B USD 125M at USD 1.25B（IVP 領投）",
+     "src": "https://www.langchain.com/blog/series-b"
+    },
+    {
+     "name": "Anthropic (Claude Agent SDK)",
+     "ticker": "—",
+     "country": "US",
+     "share": "MCP 發起方；Claude Agent SDK Python + TypeScript",
+     "products": "claude-agent-sdk-python, claude-agent-sdk-typescript, Claude Code, MCP",
+     "note": "同時為 MCP 標準發起人；2025/12 捐贈 MCP 至 Linux Foundation AAIF",
+     "src": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"
+    },
+    {
+     "name": "CrewAI Inc.",
+     "ticker": "—",
+     "country": "US",
+     "share": "GitHub 47.8k+ stars，2B agent executions/年，150+ 企業客戶",
+     "products": "CrewAI OSS, CrewAI Enterprise",
+     "note": "2024/10 Series A USD 18M（Insight Partners 領投）；Fortune 500 近半數採用"
+    },
+    {
+     "name": "Microsoft (AutoGen / Agent Framework)",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "AutoGen GitHub 50k+ stars；2026/04 Microsoft Agent Framework 1.0 GA",
+     "products": "Microsoft Agent Framework, Magentic-One, Semantic Kernel",
+     "note": "MAF 為 AutoGen + Semantic Kernel 合併產品"
+    },
+    {
+     "name": "Google (Agent Development Kit, ADK)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "2025/04 發表，Python/TypeScript/Go/Java 四語言",
+     "products": "adk-python, adk-js, adk-go, adk-java",
+     "note": "graph-based execution engine；Gemini Enterprise Agent Platform 整合"
+    },
+    {
+     "name": "LangGenius Inc. (Dify)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "GitHub 123k stars（全球第 51 大開源專案），1.4M+ 機器運行，175+ 國家",
+     "products": "Dify OSS, Dify Cloud, Dify Marketplace",
+     "note": "2026/03 Series Pre-A USD 30M at USD 180M（HSG 領投）",
+     "src": "https://www.businesswire.com/news/home/20260309511426/en/Dify-Raises-$30-million-Series-Pre-A-to-Power-Enterprise-Grade-Agentic-Workflows"
+    },
+    {
+     "name": "Composio",
+     "ticker": "—",
+     "country": "US",
+     "share": "100,000+ 開發者，3,000+ cloud apps 整合，MCP/LangChain 深度支援",
+     "products": "Composio Tools, Composio Skills, MCP servers, Auth layer",
+     "note": "2025/07 Series A USD 25M（Lightspeed 領投）；被視為「Agentic AI 的 Stripe」",
+     "src": "https://www.prnewswire.com/news-releases/composio-raises-29m-to-solve-ais-learning-problem-building-skills-that-actually-improve-over-time-302510684.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "foundation_us"
+    },
+    {
+     "id": "mcp_tooling"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "agent_platform"
+    },
+    {
+     "id": "vertical_coding"
+    }
+   ],
+   "sources": [
+    {
+     "label": "LangChain Series B 官方公告（2025/10）",
+     "url": "https://www.langchain.com/blog/series-b"
+    },
+    {
+     "label": "Anthropic 捐贈 MCP 至 Linux Foundation AAIF（2025-12）",
+     "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"
+    },
+    {
+     "label": "Dify Series Pre-A USD 30M（2026-03）",
+     "url": "https://www.businesswire.com/news/home/20260309511426/en/Dify-Raises-$30-million-Series-Pre-A-to-Power-Enterprise-Grade-Agentic-Workflows"
+    },
+    {
+     "label": "OpenAI Agents SDK 官方文件（2025/03）",
+     "url": "https://openai.github.io/openai-agents-python/"
+    }
+   ]
+  },
+  {
+   "id": "data_vector",
+   "row": "data",
+   "col": 1,
+   "span": 2,
+   "kind": "rail",
+   "name": "企業資料平台 + 向量檢索",
+   "nameEn": "Enterprise Data Platforms + Vector / Retrieval",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "Agentic AI 賴以「記憶」與「檢索」的底層資料倉儲、湖倉、向量資料庫與串流上下文層。Agent 透過 RAG/Tool-call 對此層發出結構化、語意與即時三類查詢。",
+   "marketSize": "2026 向量 DB TAM ~USD 3.2-3.7B；Enterprise Data Layer for AI 整體 2026 TAM ~USD 25-30B",
+   "growth": "向量 DB 子市場 YoY +23-28%；data lakehouse + OLTP-for-AI 整體約 +20-25% YoY",
+   "share": "null",
+   "analysis": "雙頭格局：Snowflake Cortex 對上 Databricks Mosaic AI；純 vector DB 三足（Pinecone ~USD 750M 估值、Weaviate、Qdrant）；pgvector 暗線（Supabase 估值 USD 5B）侵蝕純向量 DB 中端市場；Confluent 2026/3 被 IBM 以 USD 11B 收購，「資料 in motion」正式成為 Agent 一等公民。⚠ 結構翻轉：2025-26『向量已從資料庫類別降格為資料型別』——Postgres/pgvector + MongoDB/Oracle 原生向量化吞噬獨立 vector DB；Pinecone 傳出尋求出售並面臨客戶流失，Elastic CEO 公開稱『向量 DB 是功能、不是生意』。Snowflake（收 Crunchy Data）＋Databricks（USD 1B 收 Neon）合計約 USD 1.25B 買 PostgreSQL 廠，把記憶/檢索層的定價權收攏回 lakehouse 雙雄 + Postgres 生態，純向量 DB 的『隱性單點』地位正在瓦解。",
+   "companies": [
+    {
+     "name": "Snowflake",
+     "ticker": "SNOW",
+     "country": "US",
+     "share": "Q4 FY2026 product revenue USD 1.23B（+30% YoY）；FY2027 指引 USD 5.66B",
+     "products": "Cortex Search / Analyst / Agents / Snowflake Intelligence / Snowflake Postgres",
+     "note": "2025/6 以 ~USD 250M 收購 Crunchy Data，推 Snowflake Postgres",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001640147/000162828026011631/fy2026q4earnings.htm"
+    },
+    {
+     "name": "Databricks",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR USD 5.4B（2026/01，YoY +65%）；Series L USD 4B at USD 134B；AI 產品 ARR USD 1.4B；IPO 進程 2026 H1",
+     "products": "Mosaic AI / Agent Bricks / Genie / Lakebase（Neon-based Postgres）/ Vector Search",
+     "note": "2025/5 以 ~USD 1B 收購 Neon（>80% 資料庫由 AI agent 建立）",
+     "src": "https://techcrunch.com/2025/12/16/databricks-raises-4b-at-134b-valuation-as-its-ai-business-heats-up/"
+    },
+    {
+     "name": "MongoDB",
+     "ticker": "MDB",
+     "country": "US",
+     "share": "Q4 FY2026 USD 695.1M（+27% YoY）；Atlas 佔比 72%，>USD 2B 年化",
+     "products": "Atlas Vector Search / Voyage AI Embeddings（自動 embedding）/ Atlas Search",
+     "note": "FY2027 Atlas 成長指引 21-23%",
+     "src": "https://www.stocktitan.net/news/MDB/mongo-db-inc-announces-fourth-quarter-fiscal-2026-financial-t0n63lj6sx5y.html"
+    },
+    {
+     "name": "Elastic",
+     "ticker": "ESTC",
+     "country": "US",
+     "share": "FY2026 全年指引 USD 1.734B（+17%）；>2,700 vector DB Cloud 用戶",
+     "products": "Elasticsearch + ELSER（sparse vector）/ Search AI / Inference API",
+     "note": "ELSER 把「無需自帶 embedding」做成預設；CRPO >USD 1B"
+    },
+    {
+     "name": "Supabase",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 USD 5B（4 個月由 USD 2B 翻倍）；開發者 >4M；ARR ~USD 70M",
+     "products": "Supabase Postgres / pgvector / Edge Functions / Auth / Storage",
+     "note": "開發者端 Postgres + pgvector 事實標準，AI-native 後端",
+     "src": "https://techcrunch.com/2025/10/03/supabase-nabs-5b-valuation-four-months-after-hitting-2b/"
+    },
+    {
+     "name": "Pinecone",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 USD 750M；2024 ARR USD 26.6M（+66.6% YoY）",
+     "products": "Pinecone Serverless（gen-2）/ Pinecone Assistant / Inference API",
+     "note": "純 vector DB 領跑者；2024 上線 Anyscale/LangChain/Mistral 合作計畫"
+    },
+    {
+     "name": "Confluent（現為 IBM）",
+     "ticker": "—",
+     "country": "US",
+     "share": "FY2025 訂閱 USD 1,119.7M（+21%）",
+     "products": "Confluent Cloud / Kafka / Flink / Tableflow / Confluent Intelligence",
+     "note": "2026/3/17 被 IBM 以 USD 11B 收購；「資料 in motion for Agent」旗艦",
+     "src": "https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "agent_platform"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Snowflake Q4 FY2026 8-K（product revenue USD 1.23B）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001640147/000162828026011631/fy2026q4earnings.htm"
+    },
+    {
+     "label": "Databricks USD 134B Series L（TechCrunch 2025-12-16）",
+     "url": "https://techcrunch.com/2025/12/16/databricks-raises-4b-at-134b-valuation-as-its-ai-business-heats-up/"
+    },
+    {
+     "label": "IBM 完成 Confluent 收購（USD 11B，2026-03-17）",
+     "url": "https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents"
+    },
+    {
+     "label": "Supabase USD 5B Series E（TechCrunch 2025-10-03）",
+     "url": "https://techcrunch.com/2025/10/03/supabase-nabs-5b-valuation-four-months-after-hitting-2b/"
+    }
+   ]
+  },
+  {
+   "id": "mcp_tooling",
+   "row": "data",
+   "col": 3,
+   "span": 2,
+   "kind": "rail",
+   "name": "工具串接層（MCP / iPaaS）",
+   "nameEn": "Tool Integration Layer (MCP, Function Calling, iPaaS)",
+   "competition": "fragmented",
+   "single": "MCP 事實標準 · Anthropic 2024-11 釋出，2025 被 OpenAI/Google/MSFT 全面採納，SDK 月下載 97M+",
+   "desc": "AI Agent 與企業 SaaS/資料庫/API 之間的整合管線層。MCP 由 Anthropic 2024-11 釋出，採 JSON-RPC 2.0，一年內完成事實標準收割；傳統 iPaaS（Zapier/Workato/n8n）全數推出官方 MCP server。",
+   "marketSize": "2025 iPaaS TAM ~USD 12.8-17.6B；Workflow Automation ~USD 11.6B；合計約 USD 25-30B",
+   "growth": "iPaaS YoY +30%；Agentic AI tool calling 子市場 2025 估 +200% YoY",
+   "share": "null",
+   "analysis": "MCP 2024-11 釋出後，2025-03 OpenAI 全線採用，2025-05 Microsoft Copilot Studio GA，2025-12 捐給 Linux Foundation；Zapier 8,000+ apps、30,000+ actions，2025 ARR 估 USD 400M；n8n 2025-10 Series C USD 180M（Accel+NVentures），估值 USD 2.5B，2025 末 SAP 戰略投資推升至 USD 5.2B。⚠ 標準控制力 vs 帳面市占：MCP 捐給 Linux Foundation AAIF 後已無單一擁有者、屬開放標準（OpenAI/Block 共同創始，AWS/Google/MSFT/Cloudflare/GitHub/Bloomberg 支持），故非傳統壟斷；但 Anthropic 以『發起者 + 規範主導者 + 同時是 Claude Code 龍頭』身分，握有標準演進方向的隱性卡位——標準開放化反而擴大了 Anthropic 在 agent 工具生態的議程設定權，是『把護城河外部化以鎖定生態』的範例。",
+   "companies": [
+    {
+     "name": "Anthropic (MCP 標準制定)",
+     "ticker": "—",
+     "country": "US",
+     "share": "MCP 發起人；SDK 月下載 97M+（2025-12）",
+     "products": "MCP 規範（JSON-RPC 2.0）+ Python/TS/C#/Java SDK + Claude Code/Desktop 內建 MCP host",
+     "note": "2024-11-25 釋出；2025-12 捐贈 Linux Foundation AAIF；2026 全球 MCP Dev Summit 系列（Mumbai 6/14-15 與 KubeCon India 同場）",
+     "src": "https://www.anthropic.com/news/model-context-protocol"
+    },
+    {
+     "name": "Zapier",
+     "ticker": "—",
+     "country": "US",
+     "share": "8,000+ apps，30,000+ actions；2025 ARR 估 USD 400M",
+     "products": "Zapier Agents（2025-05 GA）、Zapier MCP Server",
+     "note": "最大 SaaS 連接器庫；Sequoia 2021 USD 5B 估值"
+    },
+    {
+     "name": "n8n",
+     "ticker": "—",
+     "country": "DE",
+     "share": "3,000+ 企業客戶（Vodafone/Delivery Hero/Microsoft）；2025-07 ARR USD 40M，年增 10x",
+     "products": "n8n workflow engine、AI Agent node、自託管 MCP server",
+     "note": "2025-10 Series C USD 180M（Accel+NVentures）at USD 2.5B；2025 末 SAP 投資推升至 USD 5.2B",
+     "src": "https://techcrunch.com/2025/03/24/fair-code-pioneer-n8n-raises-60m-for-ai-powered-workflow-automation/"
+    },
+    {
+     "name": "Workato",
+     "ticker": "—",
+     "country": "US",
+     "share": "企業級 iPaaS 前 3 名，ARR USD 250M+",
+     "products": "Enterprise MCP（安全存取企業內部系統）、Workato Agents、1,200+ connectors",
+     "note": "2021 Series E USD 5.7B 估值；2025 收購 DeepConverse + XMAD.ai"
+    },
+    {
+     "name": "MuleSoft（Salesforce）",
+     "ticker": "CRM",
+     "country": "US",
+     "share": "企業 API/整合龍頭；Salesforce FY26 指引 >USD 40B",
+     "products": "Anypoint Platform、MuleSoft MCP Connector（2025-07 GA）、A2A Connector",
+     "note": "2018 被 Salesforce USD 6.5B 收購；既有 API 直接轉 MCP server 供 Agentforce 呼叫",
+     "src": "https://www.salesforce.com/news/stories/mulesoft-dreamforce-24/"
+    },
+    {
+     "name": "Composio",
+     "ticker": "—",
+     "country": "US",
+     "share": "100,000+ 開發者，3,000+ apps connectors，200+ 公司在 production 使用",
+     "products": "Composio Tool SDK（含 RL 自學層）、Composio MCP servers、Auth layer",
+     "note": "2025 累積 USD 29M（Lightspeed 領投）；被視為「Agentic AI 的 Stripe」"
+    },
+    {
+     "name": "Microsoft Power Automate / Copilot Studio",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "全球第一大企業生產力套件；Copilot Studio 串接 1,400+ 系統",
+     "products": "Power Automate、Copilot Studio MCP GA（2025-05）、Azure AI Foundry MCP",
+     "note": "MCP 於 Copilot Studio 2025/5 GA；11 月再擴展至 1,400+ connector",
+     "src": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/model-context-protocol-mcp-is-now-generally-available-in-microsoft-copilot-studio/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "agent_platform"
+    },
+    {
+     "id": "framework_oss"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Anthropic MCP 官方發布（2024-11-25）",
+     "url": "https://www.anthropic.com/news/model-context-protocol"
+    },
+    {
+     "label": "MCP 一週年回顧：97M+ 月下載、全面採納（2025-11-25）",
+     "url": "https://blog.modelcontextprotocol.io/posts/2025-11-25-first-mcp-anniversary/"
+    },
+    {
+     "label": "Microsoft Copilot Studio MCP GA（2025-05）",
+     "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/model-context-protocol-mcp-is-now-generally-available-in-microsoft-copilot-studio/"
+    },
+    {
+     "label": "Anthropic 捐贈 MCP 至 Linux Foundation AAIF（2025-12）",
+     "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"
+    }
+   ]
+  },
+  {
+   "id": "security_gov",
+   "row": "data",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "AI 安全治理 + 可觀測 + Eval",
+   "nameEn": "AI Security, Guardrails, Observability & Eval",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "為生產環境 LLM/Agent 提供 runtime guardrails（prompt injection、PII、jailbreak）、tracing 與評測（eval/red-team）能力的控制層。",
+   "marketSize": "LLM Observability 2025 ~USD 1.97-3.2B；廣義 AI Security TAM ~USD 5-7B",
+   "growth": "CAGR ~36%（LLM Observability，2025-2029）；Gartner 預測 2028 年 50% GenAI 部署將強制納入 LLM Observability",
+   "share": "null",
+   "analysis": "傳統資安大廠加速卡位：Palo Alto 2025/7 以 USD 700M 收 Protect AI 推 Prisma AIRS 2.0；Check Point 2025/9 以 ~USD 300M 收 Lakera；Cisco 2024/10 收 Robust Intelligence；ClickHouse 2026 收 Langfuse。LangSmith（LangChain Series B 共投）monthly trace 量 YoY 12x。",
+   "companies": [
+    {
+     "name": "Palo Alto Networks",
+     "ticker": "PANW",
+     "country": "US",
+     "share": "2025/7 完成 USD 700M 收 Protect AI",
+     "products": "Prisma AIRS 2.0（2025/10 launch）、Cortex XSIAM、Strata",
+     "note": "Prisma AIRS 2.0 覆蓋 AI apps/agents/models/data 四層",
+     "src": "https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-completes-acquisition-of-protect-ai"
+    },
+    {
+     "name": "Cisco Systems",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "2024/10 收 Robust Intelligence + 2024/3 完成 USD 28B Splunk",
+     "products": "Cisco AI Defense, Splunk Observability Cloud（LLM/Agent Monitoring）",
+     "note": "2025/9 .conf25 推 Agentic AI-powered Splunk Observability",
+     "src": "https://blogs.cisco.com/news/fortifying-the-future-of-security-for-ai-cisco-announces-intent-to-acquire-robust-intelligence"
+    },
+    {
+     "name": "Datadog",
+     "ticker": "DDOG",
+     "country": "US",
+     "share": "LLM Observability 2024/6 GA，2025/6 擴張至 Agentic AI",
+     "products": "LLM Observability, AI Agent Monitoring, LLM Experiments, AI Agents Console",
+     "note": "與 APM 原生整合；投資 Arize Series C 與 LangChain Series B",
+     "src": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-expands-llm-observability-with-new-capabilities-to-monitor-agentic-ai-accelerate-development-and-improve-model-performance/"
+    },
+    {
+     "name": "LangChain Inc. (LangSmith)",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025/10 Series B USD 125M at USD 1.25B；monthly trace 量 YoY 12x",
+     "products": "LangSmith Observability, LangSmith Evaluation, LangGraph Platform",
+     "note": "Fortune 500 35% 使用；投資人含 Cisco/Datadog/Databricks/ServiceNow",
+     "src": "https://blog.langchain.com/series-b/"
+    },
+    {
+     "name": "Check Point Software",
+     "ticker": "CHKP",
+     "country": "IL",
+     "share": "2025/9 以 ~USD 300M 收 Lakera AI（蘇黎世）",
+     "products": "Check Point + Lakera Guard, Lakera Red（AI red-teaming）",
+     "note": "Lakera 累積 USD 30M；最後一輪 2024/7 USD 20M Series A（Atomico）",
+     "src": "https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/"
+    },
+    {
+     "name": "Arize AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025/2 Series C USD 70M（累計 USD 131M）",
+     "products": "Arize AX, Phoenix（OSS）, Arize Copilot",
+     "note": "Adams Street 領投；客戶含 Uber、Duolingo、PepsiCo"
+    },
+    {
+     "name": "CoreWeave / Weights & Biases",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "2025/5 完成併購 W&B",
+     "products": "W&B Weave（LLM Observability/Eval）、W&B Models",
+     "note": "W&B Weave 為主要 LLM tracing/eval 模組",
+     "src": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Completes-Acquisition-of-Weights--Biases/default.aspx"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "agent_platform"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Palo Alto Networks 完成收購 Protect AI（2025-07）",
+     "url": "https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-completes-acquisition-of-protect-ai"
+    },
+    {
+     "label": "Check Point 收購 Lakera AI（2025-09）",
+     "url": "https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/"
+    },
+    {
+     "label": "Datadog LLM Observability Agentic AI 擴張（2025-06）",
+     "url": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-expands-llm-observability-with-new-capabilities-to-monitor-agentic-ai-accelerate-development-and-improve-model-performance/"
+    },
+    {
+     "label": "CoreWeave 完成收購 Weights & Biases（2025-05）",
+     "url": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Completes-Acquisition-of-Weights--Biases/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "vertical_cs",
+   "row": "app",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "垂直應用：客服 / 銷售 Agent",
+   "nameEn": "Customer-Facing Agent Applications",
+   "competition": "redocean",
+   "single": "null",
+   "desc": "以 LLM 驅動的 AI agent 取代或輔助人類客服/銷售，提供 24/7 多渠道（chat/email/voice）自動化對話，並以 resolution-based outcome pricing 計價。",
+   "marketSize": "2025 AI for Customer Service TAM ~USD 11-13B；2030 預估 USD 47.8B",
+   "growth": "YoY +40-45%（agentic AI in contact center CAGR 44.5% 至 2034）",
+   "share": "null",
+   "analysis": "Sierra AI 在 18 個月 ARR 從 0 到 USD 150M+（估值 USD 15.8B）；⚠ 2026-06-15 Salesforce 以 USD 3.6B 收購 Fin（前 Intercom，30,000 客戶、自動解決率 ~76%）併入 Agentforce，獨立客服 Agent 純玩家被最大平台收編、紅海整併加速；NICE 2025/9 以 USD 955M 併購 Cognigy；Salesforce Agentforce for Service 是最大 entry point，HubSpot 2026/4 採 outcome-based（USD 0.50/resolved conversation）。",
+   "companies": [
+    {
+     "name": "Sierra AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR USD 150M+（18 個月達成）；估值 USD 15.8B",
+     "products": "Sierra Agent OS, Voice Agents, Sierra Studio, AgentSDK",
+     "note": "Bret Taylor + Clay Bavor 創辦；2026/5 Series E USD 950M",
+     "src": "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+    },
+    {
+     "name": "Fin（前 Intercom，現為 Salesforce）",
+     "ticker": "CRM",
+     "country": "US",
+     "share": "Fin ARR USD 100M+（YoY +350%）；30,000+ 企業客戶；自動解決率 ~76%",
+     "products": "Fin AI Agent 4.0（Apex 自研客服模型）, Fin API Platform, Intercom Messenger",
+     "note": "2026-06-15 Salesforce 簽約以 USD 3.6B 收購（FY27 Q4 完成），併入 Agentforce；USD 0.99/resolution outcome-based pricing",
+     "src": "https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/"
+    },
+    {
+     "name": "Decagon",
+     "ticker": "—",
+     "country": "US",
+     "share": "客戶含 Hertz、Duolingo、Notion；最多砍 80% 客服人力",
+     "products": "Decagon AI Agents, Agent Operating Procedures（AOP）",
+     "note": "2025/6 Series C USD 131M at USD 1.5B；2026/01 Series D USD 250M at USD 4.5B（Coatue + Index 領投）",
+     "src": "https://www.businesswire.com/news/home/20250623894798/en/Decagon-Raises-$131M-at-$1.5B-Valuation-to-Deliver-Concierge-Customer-Experience-with-AI-Agents"
+    },
+    {
+     "name": "NICE Ltd",
+     "ticker": "NICE",
+     "country": "IL",
+     "share": "2025 全年 USD 2.945B（+8% YoY）；Q1 AI & self-service ARR +42% YoY",
+     "products": "CXone Mpower, CXone Mpower Orchestrator（2025/3 GA）, Cognigy（併購）",
+     "note": "2025/9 以 USD 955M 收購 Cognigy，為當年 CCaaS 最大併購"
+    },
+    {
+     "name": "Salesforce (Agentforce for Service)",
+     "ticker": "CRM",
+     "country": "US",
+     "share": "Agentforce ARR Q3 FY26 突破 USD 500M（+330% YoY）",
+     "products": "Agentforce 3 for Service, Service Cloud, Voice Agentforce",
+     "note": "CSM 場景是 Agentforce 最大 entry point；與 Sierra/Decagon 直接競爭"
+    },
+    {
+     "name": "Zendesk",
+     "ticker": "—",
+     "country": "US",
+     "share": "收購 Ultimate.ai（可解 80% 工單）+ Forethought（2026/3）",
+     "products": "Zendesk AI Agents, Zendesk Suite, Ultimate（autonomous agents）",
+     "note": "2022 由 H&F + Permira USD 10.2B 下市；AI agent resolution-based 定價",
+     "src": "https://techcrunch.com/2026/03/11/zendesk-acquires-agentic-customer-service-startup-forethought/"
+    },
+    {
+     "name": "Vapi",
+     "ticker": "—",
+     "country": "US",
+     "share": "2026/5 估值 USD 500M；Amazon Ring 從 40 家中選中",
+     "products": "Vapi Voice AI Platform（API-first developer infra for voice agents）",
+     "note": "2026/5 Series B USD 50M（Peak XV Partners / M12 / Kleiner Perkins）",
+     "src": "https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "agent_platform"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "si_global"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sierra AI Series E USD 950M（TechCrunch 2026-05-04）",
+     "url": "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+    },
+    {
+     "label": "Decagon Series C USD 131M（2025-06-23）",
+     "url": "https://www.businesswire.com/news/home/20250623894798/en/Decagon-Raises-$131M-at-$1.5B-Valuation-to-Deliver-Concierge-Customer-Experience-with-AI-Agents"
+    },
+    {
+     "label": "Zendesk 收購 Forethought（TechCrunch 2026-03-11）",
+     "url": "https://techcrunch.com/2026/03/11/zendesk-acquires-agentic-customer-service-startup-forethought/"
+    },
+    {
+     "label": "Vapi USD 500M 估值（TechCrunch 2026-05-12）",
+     "url": "https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/"
+    }
+   ]
+  },
+  {
+   "id": "vertical_coding",
+   "row": "app",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "垂直應用：Coding Agent / 開發者 AI",
+   "nameEn": "Coding Agents & Developer AI",
+   "competition": "oligopoly",
+   "single": "雙頭寡占（質變中）· Cursor 年化營收 ~USD 4B（2026/06，B2B ~USD 2.6B）、6/16 被 SpaceX USD 60B 全股票收購轉巨頭內部資產；Claude Code ARR USD 2.5B+",
+   "desc": "將 LLM 包裝為 IDE 副駕駛、CLI 代理或自主 SWE 代理，自動完成程式碼撰寫、重構、測試與 PR 提交，是 Agentic AI 中第一個大規模商業化的垂直應用層。",
+   "marketSize": "2025 全球 AI Coding Assistant 市場 ~USD 6.8-12.8B；Mordor 估 2026 USD 16.1B",
+   "growth": "YoY +65%（2025→2026）；頭部廠商 ARR 多以 5-10 倍速度膨脹",
+   "share": "null",
+   "analysis": "Cursor ARR 從 2025/01 USD 100M 衝到 2026/02 USD 2B、2026/06 年化營收 ~USD 4B（企業 B2B ~USD 2.6B，跑在約 50% Fortune 500 工程師機器上）；⚠ 2026-06-16 SpaceX 宣布以 USD 60B 全股票收購 Cursor（併入 xAI/SpaceX AI 部門），雙頭寡占中 Cursor 端由獨立龍頭轉為巨頭內部資產、結構質變；Claude Code ARR USD 2.5B（>50% 來自企業客戶）；GitHub Copilot 達 20M 累計用戶、4.7M 付費（+75% YoY）；Lovable 2026/02 ARR USD 400M（2025/07 USD 100M），估值 USD 6.6B。",
+   "companies": [
+    {
+     "name": "Anysphere / Cursor（被 SpaceX 收購中）",
+     "ticker": "—",
+     "country": "US",
+     "share": "年化營收 ~USD 4B（2026/06；其中企業 B2B ~USD 2.6B，跑在約 50% Fortune 500 工程師機器上）；2026-06-16 SpaceX 宣布以 USD 60B 全股票收購（預計 Q3 完成）",
+     "products": "Cursor IDE、Cursor Agents（Background）、Composer",
+     "note": "2026-06-16 SpaceX 同意以 USD 60B 全股票收購 Anysphere，併入 xAI/SpaceX AI 部門（4 月已簽 buy-or-pay USD 10B break-up fee 協議）；雙頭寡占中 Cursor 端由獨立龍頭轉為巨頭內部資產；前輪 2025/06 Series C USD 900M、2025/11 再募 USD 2.3B",
+     "src": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/"
+    },
+    {
+     "name": "Anthropic (Claude Code)",
+     "ticker": "—",
+     "country": "US",
+     "share": "Claude Code ARR USD 2.5B+（2026/02）；企業客戶 >50%",
+     "products": "Claude Code、Claude Agent SDK、Skills、Plugins、MCP",
+     "note": "模型主力升級至 Claude Fable 5（2026-06-09 公開，超越 Opus 4.8）；企業客戶 500+（$1M+ ARR）含 8/Fortune 10",
+     "src": "https://www.anthropic.com/news/claude-opus-4-7"
+    },
+    {
+     "name": "GitHub Copilot (Microsoft)",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "累計用戶 20M；付費 4.7M（+75% YoY）；Fortune 100 90% 採用",
+     "products": "Copilot Chat、Agent Mode（多檔自主編輯＋MCP）、Copilot Workspace",
+     "note": "Satya Nadella 宣示 2026 全面轉 usage-based billing",
+     "src": "https://techcrunch.com/2025/07/30/github-copilot-crosses-20-million-all-time-users/"
+    },
+    {
+     "name": "Cognition AI (Devin + Windsurf)",
+     "ticker": "—",
+     "country": "US",
+     "share": "Devin ARR USD 73M；收購 Windsurf 後合併 ARR +30%；估值 USD 10.2B",
+     "products": "Devin（自主 SWE Agent）、Windsurf IDE、Cascade",
+     "note": "2025/07 以 ~USD 2.4B 收購 Codeium/Windsurf；Goldman Sachs/Citi 為客戶",
+     "src": "https://techcrunch.com/2025/07/14/cognition-maker-of-the-ai-coding-agent-devin-acquires-windsurf/"
+    },
+    {
+     "name": "Replit",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025/09 ARR USD 150M（年初僅 USD 2.8M）；估值 USD 9B",
+     "products": "Replit Agent 4（並行多 agent）、Replit Workspace",
+     "note": "2026/03 Series D USD 400M（Georgian 領投）；目標 ARR USD 1B"
+    },
+    {
+     "name": "Lovable",
+     "ticker": "—",
+     "country": "SE",
+     "share": "2026/02 ARR USD 400M（7 個月內 4x）；估值 USD 6.6B",
+     "products": "Lovable（文字 prompt 直接生成 Web App）",
+     "note": "2025/12 Series B USD 330M（CapitalG/Menlo/NVentures/Salesforce/Databricks）",
+     "src": "https://lovable.dev/blog/series-b"
+    },
+    {
+     "name": "Poolside AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 USD 12B；ARR 估 USD 50M+",
+     "products": "Malibu（複雜任務模型）、Point（低延遲補全）、企業內 deploy SWE Agent",
+     "note": "2025/10 NVIDIA 投資 USD 500M-1B；總募 USD 2B",
+     "src": "https://www.mordorintelligence.com/industry-reports/ai-code-generation-and-developer-assistant-market"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "foundation_us"
+    },
+    {
+     "id": "framework_oss"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "si_global"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cursor Series C USD 900M，ARR USD 500M+（TechCrunch 2025-06-05）",
+     "url": "https://techcrunch.com/2025/06/05/cursors-anysphere-nabs-9-9b-valuation-soars-past-500m-arr/"
+    },
+    {
+     "label": "Anthropic Claude Opus 4.7 發布（含 Claude Code ARR）",
+     "url": "https://www.anthropic.com/news/claude-opus-4-7"
+    },
+    {
+     "label": "GitHub Copilot 超過 2000 萬用戶（TechCrunch 2025-07-30）",
+     "url": "https://techcrunch.com/2025/07/30/github-copilot-crosses-20-million-all-time-users/"
+    },
+    {
+     "label": "Cognition 收購 Windsurf（TechCrunch 2025-07-14）",
+     "url": "https://techcrunch.com/2025/07/14/cognition-maker-of-the-ai-coding-agent-devin-acquires-windsurf/"
+    }
+   ]
+  },
+  {
+   "id": "vertical_pro",
+   "row": "app",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "垂直應用：專業服務 Agent",
+   "nameEn": "Professional-Services Agents (Legal, Medical, Finance)",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "將 LLM 與 agentic workflow 嵌入律師、醫師、會計師、金融分析師工作流程，以「準確性 + 領域資料護城河 + 監管合規」為核心競爭力。",
+   "marketSize": "2025 全球專業服務 Vertical AI TAM ~USD 18-22B（Legal ~USD 3-4B、Healthcare ~USD 4-5B、FinTech/Research ~USD 6-8B）",
+   "growth": "YoY +55-70%（ambient clinical AI / legal LLM 助理 YoY +100%+）",
+   "share": "null",
+   "analysis": "Legal 頭部極化：Harvey 2026/3 估值 USD 11B（ARR 破 USD 100M），AmLaw 100 約 80%+ 部署；Medical ambient scribe：Abridge（USD 5.3B 估值、ARR USD 100M+）、Hippocratic AI（USD 3.5B）；Finance 老牌資料商以 Bloomberg AI/S&P Spark Assist/FactSet Mercury 防守。",
+   "companies": [
+    {
+     "name": "Harvey AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "AmLaw 100 約 80%+ 部署；ARR USD 100M+；500+ 企業客戶",
+     "products": "Harvey 法律 LLM 助理 / Workflows / Vault",
+     "note": "2026/3 Series USD 2 億 at USD 11B；累計 Series E-F USD 5 億+",
+     "src": "https://www.harvey.ai/blog/harvey-raises-at-dollar11-billion-valuation-to-scale-agents-across-law-firms-and-enterprises"
+    },
+    {
+     "name": "Thomson Reuters CoCounsel",
+     "ticker": "TRI",
+     "country": "CA",
+     "share": "20,000+ 法律事務所與企業法務部",
+     "products": "CoCounsel Legal / CoCounsel Tax / Practical Law Deep Research",
+     "note": "每年投入 USD 2 億+ AI 開發；2024 USD 6.5 億收購 Casetext",
+     "src": "https://www.thomsonreuters.com/en/press-releases/2025/october/thomson-reuters-continues-driving-legal-ai-innovation-with-deep-research-on-practical-law-cocounsel-integrations-and-global-expansion"
+    },
+    {
+     "name": "Abridge",
+     "ticker": "—",
+     "country": "US",
+     "share": "150+ 美國大型 health system；ARR USD 100M+",
+     "products": "Abridge ambient AI scribe + medical coding（Epic 深度整合）",
+     "note": "2025/6 Series E USD 3 億 at USD 5.3B（a16z / Khosla）",
+     "src": "https://www.abridge.com/blog/series-e-media-recap"
+    },
+    {
+     "name": "Hippocratic AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "多家美國 health system 部署 voice nursing agent",
+     "products": "病患/護理 voice agent，多語言，<300ms 延遲",
+     "note": "2025/11 Series C USD 1.26 億 at USD 3.5B；累計 USD 4 億",
+     "src": "https://hippocraticai.com/hippocratic-ai-announces-series-c-funding-126-million/"
+    },
+    {
+     "name": "AlphaSense",
+     "ticker": "—",
+     "country": "US",
+     "share": "S&P 100 中 88% 採用；5,000+ 客戶含 Amazon/NVIDIA/JPM/Pfizer",
+     "products": "AlphaSense market intelligence + Tegus expert content",
+     "note": "private；累計 USD 14 億，估值 USD 4B；2024 USD 9.3 億收購 Tegus"
+    },
+    {
+     "name": "Veeva Systems",
+     "ticker": "VEEV",
+     "country": "US",
+     "share": "全球前 20 大藥廠近全數採用 Vault",
+     "products": "Veeva AI（Vault Platform agentic）+ Vault CRM/PromoMats agents",
+     "note": "2025/12 首波上線；採 Anthropic + Amazon LLM on Bedrock",
+     "src": "https://www.veeva.com/resources/veeva-ai-agents-to-be-released-across-all-veeva-applications/"
+    },
+    {
+     "name": "Bloomberg AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "Bloomberg Terminal ~35 萬+ 訂戶內嵌",
+     "products": "BloombergGPT（50B 參數）/ ASKB 對話介面 / Document Search & Analysis",
+     "note": "2025 推 ASKB beta；2025 末推文件分析 GenAI 工具",
+     "src": "https://www.bloomberg.com/company/press/investors-harness-bloombergs-expanded-ai-tools-to-discover-and-summarize-news/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "agent_platform"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "si_global"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Harvey USD 11B 估值融資（2026-03）",
+     "url": "https://www.harvey.ai/blog/harvey-raises-at-dollar11-billion-valuation-to-scale-agents-across-law-firms-and-enterprises"
+    },
+    {
+     "label": "Abridge Series E USD 3 億 at USD 5.3B（2025-06）",
+     "url": "https://www.abridge.com/blog/series-e-media-recap"
+    },
+    {
+     "label": "Hippocratic AI Series C USD 1.26 億 at USD 3.5B（2025-11）",
+     "url": "https://hippocraticai.com/hippocratic-ai-announces-series-c-funding-126-million/"
+    },
+    {
+     "label": "Veeva AI agents 跨應用發布計畫（2025-12）",
+     "url": "https://www.veeva.com/resources/veeva-ai-agents-to-be-released-across-all-veeva-applications/"
+    }
+   ]
+  },
+  {
+   "id": "si_global",
+   "row": "app",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "全球系統整合 / 導入服務",
+   "nameEn": "Global Systems Integrators & GenAI Consulting",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "全球頂級顧問與 SI 公司，承接企業 Agentic AI 從策略規劃到大規模生產部署的端到端服務；同時兼任基礎模型廠商（Anthropic/OpenAI/Google/AWS）與企業客戶之間的「擴散通路」。⚠ 隱性卡位：SI 通路是模型廠搶不到也繞不開的『最後一哩定價權』——Tier-1（Accenture/IBM/Deloitte/PwC/Capgemini）合計掌握 AI 顧問市場 50-55%，模型廠正反向爭奪此通路：Anthropic 2026-03 推 Claude Partner Network（USD 100M，Accenture/Deloitte/Cognizant/Infosys 為錨）、Google Cloud Next 2026 設 USD 750M 夥伴基金。誰綁住 SI，誰就決定企業端用哪家模型，SI 是被低估的『模型戰爭裁判』。",
+   "marketSize": "2025 全球 AI/GenAI 顧問與導入服務 TAM ~USD 11.07B；2026 ~USD 14.07B",
+   "growth": "YoY +26-28%（AI consulting market）；GenAI-attached bookings 在 Accenture/IBM/Capgemini 以 +50-80% YoY 增長",
+   "share": "null",
+   "analysis": "Accenture FY25 GenAI 新簽訂單 USD 5.9B（Q4 USD 1.8B）；IBM 累計 GenAI book of business 突破 USD 12.5B（Consulting USD 10.5B+）；Capgemini Q4 GenAI/agentic 佔訂單 10%+，首筆 EUR 600M+ agentic mega-deal；Deloitte 2030 前投入 USD 3B 擴大 Agentic AI 能力。⚠ 2026-H1 需求側制度化轉強：JPMorgan 把 2026 科技預算定為 USD 19.8B、配置 2,000 名 AI 專職人員，並把 agent 投資重新歸類為與資安同級的『不可妥協』項目；Gartner 預估 2026 年底 40% 企業應用將內嵌任務型 agent（2025 年 <5%），為 SI 導入通路放大需求基數。",
+   "companies": [
+    {
+     "name": "Accenture",
+     "ticker": "ACN",
+     "country": "US",
+     "share": "FY25 GenAI 新簽 USD 5.9B；FY25 全年營收 USD 69.7B（+7% YoY）",
+     "products": "AI Refinery, Foundation Model Services, Agentic AI Solutions, Accenture Anthropic Business Group",
+     "note": "2025/12/9 與 Anthropic 簽三年戰略夥伴；培訓 30,000 名 Claude 專業人員",
+     "src": "https://newsroom.accenture.com/news/2025/accenture-and-anthropic-launch-multi-year-partnership-to-drive-enterprise-ai-innovation-and-value-across-industries"
+    },
+    {
+     "name": "IBM Consulting",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "Q4 2025 累計 GenAI book of business 超 USD 12.5B（Consulting USD 10.5B+）",
+     "products": "IBM Consulting Advantage, watsonx Orchestrate, watsonx Code Assistant",
+     "note": "GenAI 已佔 Consulting backlog 1/3 以上（backlog USD 32B）",
+     "src": "https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"
+    },
+    {
+     "name": "Deloitte",
+     "ticker": "—",
+     "country": "UK",
+     "share": "FY2025 全球營收 USD 70.5B（最大專業服務公司）；承諾 2030 前投入 USD 3B",
+     "products": "Zora AI, Deloitte AI Factory, Omnia（內建 GenAI）, Intela",
+     "note": "與 NVIDIA 合作 Zora AI；Tax & Legal 業務 AI 驅動 +5.4% 成長"
+    },
+    {
+     "name": "Capgemini",
+     "ticker": "CAP.PA",
+     "country": "FR",
+     "share": "2025 全年訂單 EUR 24.356B（Q4 book-to-bill 1.21）；Q4 GenAI/agentic 佔訂單 10%+",
+     "products": "Generative AI for CX, Resonance AI Agents Studio, WNS Intelligent Operations",
+     "note": "Q4 首筆 EUR 600M+ agentic mega-deal；與 Mistral AI/Anthropic/Google 深度 alliance",
+     "src": "https://www.capgemini.com/news/press-releases/full-year-2025-results/"
+    },
+    {
+     "name": "Infosys",
+     "ticker": "INFY",
+     "country": "IN",
+     "share": "FY2025 全年 USD 19.3B（+4.2%）；累計交付 400+ GenAI 專案，200+ agentic AI agents",
+     "products": "Infosys Topaz, Topaz Fabric（multi-agent）, Topaz BankingSuite",
+     "note": "與 Anthropic 在受監管產業建立聯盟；NHS UK USD 1.6B agentic 訂單"
+    },
+    {
+     "name": "Tata Consultancy Services",
+     "ticker": "TCS.NS",
+     "country": "IN",
+     "share": "AI 服務 ARR 突破 USD 1.5B；700+ active GenAI 客戶專案",
+     "products": "TCS WisdomNext, ignio, TCS DigiBOLT, AI for Engineering",
+     "note": "與 AMD 合作 enterprise AI；AI 案毛利率較傳統 AMS 高 300-400 bps",
+     "src": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-financial-results-q2-fy-2026"
+    },
+    {
+     "name": "McKinsey QuantumBlack",
+     "ticker": "—",
+     "country": "US",
+     "share": "~5,000 名 AI/data 科學專家；三大策略顧問合計佔 AI consulting ~25-30%",
+     "products": "QuantumBlack Horizon, QuantumBlack AI Studio, Lilli（內部 GenAI assistant）",
+     "note": "Lilli 已部署於 40,000+ 顧問；與 Microsoft/AWS/NVIDIA/Anthropic 合作"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "agent_platform"
+    },
+    {
+     "id": "vertical_cs"
+    },
+    {
+     "id": "vertical_pro"
+    },
+    {
+     "id": "vertical_coding"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "si_asia"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Accenture FY2025 Q4 業績（GenAI 新簽 USD 5.9B）",
+     "url": "https://newsroom.accenture.com/news/2025/accenture-reports-fourth-quarter-and-full-year-fiscal-2025-results"
+    },
+    {
+     "label": "Accenture × Anthropic 多年夥伴關係（2025-12-09）",
+     "url": "https://newsroom.accenture.com/news/2025/accenture-and-anthropic-launch-multi-year-partnership-to-drive-enterprise-ai-innovation-and-value-across-industries"
+    },
+    {
+     "label": "IBM Q4 2025 業績（GenAI book of business > USD 12.5B）",
+     "url": "https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"
+    },
+    {
+     "label": "Capgemini 2025 全年業績",
+     "url": "https://www.capgemini.com/news/press-releases/full-year-2025-results/"
+    }
+   ]
+  },
+  {
+   "id": "si_asia",
+   "row": "app",
+   "col": 5,
+   "span": 1,
+   "kind": "stage",
+   "name": "亞洲 SI + AI 工廠 + 數位勞工",
+   "nameEn": "Asia SIs, AI Factories & Digital Workforce",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "日本 NTT Data/NEC/Fujitsu/Hitachi、韓國 Samsung SDS/LG CNS、台灣 ODM 五大（鴻海/廣達/緯創/緯穎/英業達）與東南亞 Singtel NCS，把 NVIDIA/Anthropic/OpenAI 模型「最後一哩路」交付到亞洲企業內網。",
+   "marketSize": "JP/KR/TW 三地企業 GenAI TAM 合計約 USD 15-18B（2026E）；台灣 AI server ODM 出貨 >USD 200B（2025-26 累計）",
+   "growth": "JP/KR 企業 GenAI 採購 YoY +35-40%；台灣 AI server ODM 營收 YoY +60-80%（2025）",
+   "share": "null",
+   "analysis": "鴻海、廣達、緯創、緯穎、英業達五大 ODM 包辦 NVIDIA GB200/GB300/Blackwell Ultra 全球 >90% 出貨並轉型自有 AI Cloud；Samsung SDS FabriX 全棧平台化；LG CNS 2025/2 KOSPI IPO 募資 ~USD 821M；日本 NTT Data 獲選 Digital Agency 政府 AI 平台供應商（2026/3）。",
+   "companies": [
+    {
+     "name": "Foxconn / 鴻海精密",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "全球最大 AI server EMS；TW/US/MX 三地量產 GB300 NVL72",
+     "products": "AI Factory infra + Big Innovation Cloud（NVIDIA NCP #1 in TW）",
+     "note": "與 NVIDIA 三平台合資；自建 10,000 顆 Blackwell GPU AI Factory（2026 全面運轉）",
+     "src": "https://nvidianews.nvidia.com/news/foxconn-builds-ai-factory-in-partnership-with-taiwan-and-nvidia"
+    },
+    {
+     "name": "Quanta / 廣達",
+     "ticker": "2382.TW",
+     "country": "TW",
+     "share": "GB200/GB300 主力 ODM；Google/AWS/Meta 三大 hyperscaler 訂單",
+     "products": "QCT QuantaGrid D75B/D75E + GB300 NVL72 整機 + QCT AI Cloud Service",
+     "note": "AI server 已佔營收 >60%（2025）；泰國新廠投資 ~USD 87M"
+    },
+    {
+     "name": "Wiwynn / 緯穎",
+     "ticker": "6669.TW",
+     "country": "TW",
+     "share": "全球 hyperscale AI server ~50% 市佔；GB300 NVL72 液冷整櫃首批出貨",
+     "products": "GB300 NVL72 液冷整櫃 + ConnectX-8 800G SuperNIC + OCP 規格 AI rack",
+     "note": "Meta + Microsoft 主力供應商；緯創持股（緯穎為緯創子公司）",
+     "src": "https://www.wiwynn.com/news/wiwynn-showcases-ai-servers-featuring-nvidia-gb300-nvl72-platform-and-liquid-cooling-innovations-at-gtc-2025"
+    },
+    {
+     "name": "Samsung SDS",
+     "ticker": "018260.KS",
+     "country": "KR",
+     "share": "2025 營收 KRW 13.93T；雲業務 KRW 2.68T（+15.4% YoY）",
+     "products": "FabriX（企業 GenAI 平台）、Brity Copilot、Cello Square 物流 SaaS",
+     "note": "「Full-Stack AI」策略—IDC + Cloud + Platform + Copilot 全垂直整合",
+     "src": "https://www.samsungsds.com/en/news/financial-260126.html"
+    },
+    {
+     "name": "LG CNS",
+     "ticker": "010060.KS",
+     "country": "KR",
+     "share": "2025/2 KOSPI IPO 募資 ~USD 821M；企業價值 ~USD 5.1B",
+     "products": "AI Center + AI Agent 顧問 + SAP S/4HANA（韓國最大 partner）+ Physical AI 機器人",
+     "note": "CEO 定調「AI 轉型 = 生存策略」；衝刺 KRW 6 兆營收",
+     "src": "https://www.koreaherald.com/article/10386877"
+    },
+    {
+     "name": "NTT Data（日本 SI）",
+     "ticker": "9613.T",
+     "country": "JP",
+     "share": "日本最大 SI；2025 連兩年 HFS Generative Enterprise Services Leader",
+     "products": "tsuzumi 2（7B 國產 LLM）+ Generative AI Foundry + Microsoft Azure MaaS 整合",
+     "note": "2026/3 獲選 Digital Agency 政府 AI 平台（Gennai，180K 公務員）",
+     "src": "https://group.ntt/en/newsrelease/2025/10/20/251020a.html"
+    },
+    {
+     "name": "NCS Group（Singtel）",
+     "ticker": "Z74.SI",
+     "country": "SG",
+     "share": "2025/7 宣布 S$130M / 3 年 AI 轉型；APAC 12 國滲透",
+     "products": "Sunshine.AI suite（GenAI + Agentic AI）+ Google Cloud AI CTO 認證夥伴 + 政府/國防 SI",
+     "note": "Frost & Sullivan 2025 SG Managed IT Services Company of the Year",
+     "src": "https://www.ncs.co/en-sg/about-us/newsroom/ncs-launches-130m-ai-transformation-initiative-across-asia-pacific-focused-on-intelligentisation-internationalisation-and-inspiration/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "si_global"
+    },
+    {
+     "id": "agent_platform"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Foxconn × NVIDIA AI Factory 官方 PR",
+     "url": "https://nvidianews.nvidia.com/news/foxconn-builds-ai-factory-in-partnership-with-taiwan-and-nvidia"
+    },
+    {
+     "label": "NTT tsuzumi 2 發布（2025-10-20）",
+     "url": "https://group.ntt/en/newsrelease/2025/10/20/251020a.html"
+    },
+    {
+     "label": "Samsung SDS 2025 全年業績",
+     "url": "https://www.samsungsds.com/en/news/financial-260126.html"
+    },
+    {
+     "label": "NCS S$130M AI 轉型計畫",
+     "url": "https://www.ncs.co/en-sg/about-us/newsroom/ncs-launches-130m-ai-transformation-initiative-across-asia-pacific-focused-on-intelligentisation-internationalisation-and-inspiration/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "cloud_us",
+   "foundation_us"
+  ],
+  [
+   "cloud_us",
+   "foundation_cn"
+  ],
+  [
+   "cloud_asia",
+   "foundation_cn"
+  ],
+  [
+   "cloud_asia",
+   "foundation_jpkr"
+  ],
+  [
+   "foundation_us",
+   "agent_platform"
+  ],
+  [
+   "foundation_us",
+   "framework_oss"
+  ],
+  [
+   "foundation_us",
+   "vertical_coding"
+  ],
+  [
+   "foundation_cn",
+   "agent_platform"
+  ],
+  [
+   "foundation_jpkr",
+   "agent_platform"
+  ],
+  [
+   "framework_oss",
+   "agent_platform"
+  ],
+  [
+   "framework_oss",
+   "vertical_coding"
+  ],
+  [
+   "mcp_tooling",
+   "agent_platform"
+  ],
+  [
+   "mcp_tooling",
+   "framework_oss"
+  ],
+  [
+   "data_vector",
+   "agent_platform"
+  ],
+  [
+   "security_gov",
+   "agent_platform"
+  ],
+  [
+   "agent_platform",
+   "vertical_cs"
+  ],
+  [
+   "agent_platform",
+   "vertical_pro"
+  ],
+  [
+   "agent_platform",
+   "si_global"
+  ],
+  [
+   "agent_platform",
+   "si_asia"
+  ],
+  [
+   "vertical_coding",
+   "si_global"
+  ],
+  [
+   "vertical_cs",
+   "si_global"
+  ],
+  [
+   "vertical_pro",
+   "si_global"
+  ],
+  [
+   "si_global",
+   "si_asia"
+  ]
+ ],
+ "_proposed": {}
+}

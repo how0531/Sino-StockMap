@@ -1,0 +1,1286 @@
+{
+ "id": "coding_ai",
+ "tab": "Coding AI",
+ "title": "AI Coding / DevSecOps（IDE → SWE Agents → Code Review → Testing → DevSecOps → CI/CD）",
+ "subtitle": "整體 AI 代碼工具市場 2026E 約 USD 12.8B（窄口徑 AI code assistants 約 USD 4–5B、開發者滲透率約 85%）；Cursor 估值 USD 29.3B→SpaceX USD 60B 全股票收購 2026-06-16 正式簽約（X67 Inc. 合併、Q3 2026 完成），且自研 Composer 2/2.5（底座中國 Moonshot Kimi K2.5、成本約 1/10）『去 Anthropic 化』；Anthropic 企業 coding 市佔 42%→54%（6 個月）、run-rate USD 47B（2026/5）並於 2026-06-01 秘密遞交 IPO S-1（投後 USD 965B）；GitHub Copilot 470 萬付費（2026-06-01 轉 token billing 引發 10-50× 成本反彈）三強鼎立；OpenAI Codex 週活約 400 萬（相對 Claude Code 使用量 5%→40%）快速逼近；Cognition/Devin 完成 USD 1B at USD 26B（2026-05-27）ARR USD 492M、自家程式碼 89% 由 Devin 撰寫；Snyk ARR USD 326M（+7% YoY）CEO 離職、估值自 USD 8.5B 崩至 USD 2B、PE 收購破局；JFrog Q1 FY2026 USD 154M（+26% YoY）、GitLab Q1 FY2027 USD 264M（+23%）、Datadog Q1 2026 首破 USD 1B；亞太 CAGR 37.9% 維持全球最快。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 12
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "60+"
+  },
+  {
+   "k": "關鍵單點",
+   "v": 3,
+   "sub": "Cursor IDE + Claude Code + GitHub Copilot 三強",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "ide",
+   "label": "AI IDE + Inline Assistant",
+   "main": true
+  },
+  {
+   "id": "agent",
+   "label": "自主 SWE Agents",
+   "main": false
+  },
+  {
+   "id": "review",
+   "label": "Code Review + Testing",
+   "main": false
+  },
+  {
+   "id": "sec",
+   "label": "DevSecOps + SAST/DAST + CI/CD",
+   "main": false
+  },
+  {
+   "id": "asia",
+   "label": "亞洲 Coding AI 在地玩家",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ide_assistant",
+   "row": "ide",
+   "col": 1,
+   "span": 5,
+   "kind": "stage",
+   "name": "AI IDE + Inline Assistant",
+   "nameEn": "AI IDE & Inline Code Assistant",
+   "competition": "oligopoly",
+   "single": "三強鼎立但 share 流動：Copilot 工作場景採用率自 67%→51%→近 29%、Cursor 與 Claude Code 各約 18%（JetBrains 2026/4）；隱性單點＝Lovable/Bolt/v0 與 Claude Code 本身幾乎全跑在 Anthropic Claude 上，定價權在上游模型層——惟此單點 2026 起首現裂縫：Cursor 改用自研 Composer 2/2.5（底座中國 Moonshot Kimi K2.5、成本約前沿模型 1/10）『去 Anthropic 化』，Microsoft（MAI-Code-1-Flash）與 Google（Antigravity）亦各自內製模型回收定價權",
+   "desc": "直接嵌入 IDE 或以 IDE 形式存在的 AI 輔助開發工具，提供 inline autocomplete、chat、diff 建議、Agent Mode 等能力。2025 年市場進入整合期：Cognition 收購 Windsurf（USD ~250M）、Google 以 USD ~2.4B 挖走 Windsurf CEO 與 40 人團隊。",
+   "marketSize": "2026E AI Code Assistants（窄口徑）USD 4–5B；付費工具市占：GitHub Copilot 42%",
+   "growth": "YoY +75%（Copilot 付費用戶）；Claude Code ARR USD 1B→2.5B（2025/11→2026/2）",
+   "share": "null",
+   "analysis": "Cursor 2025/11 Series D USD 2.3B at USD 29.3B，2026-06-16 SpaceX USD 60B 全股票收購正式簽約（取代原 a16z/Thrive/Nvidia USD 50B 私募輪、揭露 USD 10B 終止費），AI coding 龍頭首度被超大型基礎設施／模型集團整併；Claude Code 2025/5 GA，ARR 從 USD 1B（2025/11）→ 2.5B（2026/2），Anthropic 企業 coding 市佔 42%→54%（6 個月）；GitHub Copilot 2026/1 達 470 萬付費訂閱（+75% YoY）、2026-06-01 轉 token billing；OpenAI Codex 週活躍開發者約 400 萬（3 個月 5×）、相對 Claude Code 使用量 5%→40%，GPT-5.5 後多榜登頂；JetBrains Junie 2026/1 GA，BYOK 支援四大模型。2026/H1 模型層內製化加速三線並進：Cursor 自研 Composer 2/2.5（底座 Moonshot Kimi K2.5、成本約前沿模型 1/10）、Microsoft Build 2026（06-02）發表自研 MAI-Code-1-Flash（5B）供 Copilot、Google I/O 2026（05-21）推 Antigravity 2.0 並宣布 Gemini CLI 於 06-18 退役改由閉源 Antigravity CLI 接手——平台/應用層向模型層回收定價權，反向擠壓 Anthropic/OpenAI 純模型銷售。",
+   "companies": [
+    {
+     "name": "Anysphere / Cursor",
+     "ticker": "—",
+     "country": "US",
+     "share": "SpaceX USD 60B 全股票收購 2026-06-16 正式簽約（X67 Inc. 合併、Q3 2026 完成）；ARR USD 4B+（2026/6 初，其中 B2B 約 USD 2.6B），原 a16z/Thrive/Nvidia USD 50B 輪被取代",
+     "products": "Cursor IDE（VS Code fork）、AI pair programming、tab completion、Composer agent mode、自研 Composer 2/2.5 模型（底座 Moonshot Kimi K2.5）",
+     "note": "SpaceX 06-12 創紀錄 IPO（定價 USD 135、首日收漲 19% 至 USD 161、市值逾 USD 2.1T），06-16 簽署定義性合併協議（X67 Inc. 與 Cursor 合併、Cursor 股東換 SpaceX A 股、預計 Q3 2026 完成）；揭露 USD 10B 終止費 + USD 4B 反壟斷費。【新結構/去 Anthropic 化】Cursor 為擺脫對 Anthropic 模型的依賴與定價權壓制，自研 Composer 2（2026-03）與 Composer 2.5（2026-05-18），底座採用中國 Moonshot AI 開源 Kimi K2.5 checkpoint（約 1/4 預訓練自基礎模型、其餘為 Cursor RL 微調），標準層每百萬 input token USD 0.50（約 Opus 4.7／GPT-5.5 的 1/10）；Composer 2.5 Terminal-Bench 2.0 61.7%→69.3%、SWE-bench Multilingual 73.7%→79.8%——美國營收第一 coding 工具首次以中國開源模型為新上游，出現應用層對模型層『去 Anthropic 化』的結構裂縫",
+     "src": "https://thenewstack.io/cursor-composer-benchmarks/"
+    },
+    {
+     "name": "Anthropic（Claude Code）",
+     "ticker": "—",
+     "country": "US",
+     "share": "企業 AI coding 市佔約 42%（2025 末）→54%（2026-H1，6 個月 +12pp）；Claude Code ARR USD 2.5B（2026/2）；企業 API 40%",
+     "products": "Claude Code（terminal-first agentic IDE）、Max subscription、API、背景 agent 執行",
+     "note": "2025/5 GA；Claude Code ARR USD 2.5B（2026/2）持續攀升；【市佔擴大】企業 AI coding 估計市佔 42%（2025 末）→54%（2026-H1），主由 Claude Code 與其作為 Cursor/Lovable/Bolt/v0 共同上游的雙重地位推動；Anthropic 整體 run-rate USD 14B（2026/2）→30B（2026/4）→47B（2026/5，半年約 5× 成長、USD 1M+ 企業客戶逾 1,000 家）；2026-06-01 同日宣布 Series H USD 65B（投後 USD 965B，Altimeter/Dragoneer/Greenoaks/Sequoia 領投）並向 SEC 秘密遞交 IPO S-1（目標最快 2026-10 上市）；Claude 為 GitLab Duo Agent Platform 預設模型；Q2 2026 收入預估 USD 10.9B、首季獲利 USD 559M。【結構洞察】Anthropic 是應用層三強的隱性共同上游（Lovable/Bolt/v0 皆以 Claude 為底座，惟 Cursor 2026 起改用自研 Composer/Kimi K2.5 脫離），同時靠 Claude Design（2026/4，Opus 4.7）/native app builder 反向與 Lovable、v0 競爭——既是賣鏟人又是淘金者，定價權雙重壓制下游 wrapper",
+     "src": "https://www.ideaplan.io/blog/ai-coding-assistant-market-share-2026"
+    },
+    {
+     "name": "GitHub Copilot（Microsoft）",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "470 萬付費訂閱（2026/1，+75% YoY）；付費 AI 工具市占 42%；50,000+ 企業用戶",
+     "products": "Copilot inline、Copilot Chat、Copilot for CLI、Copilot Workspace、Copilot Agent",
+     "note": "Fortune 100 滲透率 90%；USD 39/user/mo（Enterprise）；2026-06-01 全面轉 token-based billing（AI Credits）正式生效，重度 agentic 使用者帳單估增 10-50×（有人從 USD 29→750、USD 50→3,000），GitHub 社群 400+ 留言、近 900 downvotes 反彈；code completions 不耗 credits；訂閱數維持 470 萬（2026/1）；月約 Pro/Pro+ 於 2026-06-01 自動轉用量計價、年約用戶到期前維持舊制（轉月約可獲剩餘價值按比例 credit），且 Business/Enterprise 於 Jun–Aug 2026 提供臨時促銷 credit（+USD 30/+USD 70 每月）緩衝反彈。【結構洞察】此計費改制是「AI coding 按 compute 計價、非按軟體計價」事實的第一道裂縫——flat-fee 在 power user 上必虧，毛利池往持有推理的模型/雲端層移；反彈也讓開發者重新評估 Cursor/Claude Code/OpenCode；【新結構】Microsoft 於 Build 2026（2026-06-02）發表首個 100% 自研 coding 模型 MAI-Code-1-Flash（5B，直接以 Copilot 生產工作流訓練、SWE-Bench Pro 領先 Claude Haiku 4.5 16 分、難題省 60% token），標誌「模型層內製化」反向下沉——Copilot 開始降低對 Anthropic/OpenAI 上游的依賴，定價權從模型供應商往平台方回收；【新結構】Microsoft 於 Build 2026（2026-06-02）發表首個 100% 自研 coding 模型 MAI-Code-1-Flash（5B，直接以 Copilot 生產工作流訓練、SWE-Bench Pro 領先 Claude Haiku 4.5 16 分、難題省 60% token），標誌「模型層內製化」反向下沉——Copilot 開始降低對 Anthropic/OpenAI 上游的依賴，定價權從模型供應商往平台方回收",
+     "src": "https://github.com/features/copilot/plans"
+    },
+    {
+     "name": "Codeium / Windsurf（→ Cognition）",
+     "ticker": "—",
+     "country": "US",
+     "share": "Windsurf ARR USD 82M（2025/12 被收購時）；350+ 企業客戶",
+     "products": "Windsurf IDE、Cascade agent、Wave model series",
+     "note": "2025/7 Google 以 USD ~2.4B 挖角 CEO+40 人；2025/12 Cognition 以 ~USD 250M 收 Windsurf IP",
+     "src": "https://cognition.ai/blog/windsurf"
+    },
+    {
+     "name": "JetBrains AI Assistant + Junie",
+     "ticker": "—",
+     "country": "CZ",
+     "share": "私有；AI Assistant USD 0–30/月，4 tier；12 款 IDE 涵蓋",
+     "products": "AI Assistant（IDE inline）、Junie（autonomous agent，2026/1 GA）、IntelliJ/PyCharm/WebStorm",
+     "note": "Junie CLI 2026 上線，BYOK 支援 Anthropic/OpenAI/Google/xAI；LLM-agnostic",
+     "src": "https://www.jetbrains.com/junie/"
+    },
+    {
+     "name": "Tabnine",
+     "ticker": "—",
+     "country": "IL",
+     "share": "企業版 USD 39/user/mo；金融/政府 on-prem 定位",
+     "products": "Tabnine Enterprise（on-prem / air-gap 部署）、無雲端數據分享",
+     "note": "隱私/合規差異化；早期估值 USD ~200M（2021 Series B USD 15.5M）"
+    },
+    {
+     "name": "Augment Code",
+     "ticker": "—",
+     "country": "US",
+     "share": "融資 USD 252M（Series B USD 227M，2024/4）；ARR USD 20M（2025/10）；100,000+ 開發者",
+     "products": "Context Engine（200k token）、企業代碼庫感知、multi-repo 支援、Copilot 替代",
+     "note": "Sutter Hill、Index Ventures、Lightspeed 領投；Fortune 500 客戶",
+     "src": "https://www.augmentcode.com/blog/augment-inc-raises-227-million"
+    },
+    {
+     "name": "Sourcegraph / Cody",
+     "ticker": "—",
+     "country": "US",
+     "share": "企業版 USD 59/user/mo；美國前 6 大銀行 4 家、15+ 聯邦機構客戶",
+     "products": "Cody Enterprise（AI chat + completion）、Code Search、Sourcegraph Cloud",
+     "note": "2025/7 後轉型純企業，放棄 SMB；代碼搜尋深度差異化"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "swe_agent_us"
+    },
+    {
+     "id": "code_review"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cursor Series D USD 29.3B（Businesswire 2025-11-13）",
+     "url": "https://www.businesswire.com/news/home/20251113939996/en/Cursor-Secures-$2.3-Billion-Series-D-Financing-at-$29.3-Billion-Valuation-to-Redefine-How-Software-is-Written"
+    },
+    {
+     "label": "Claude Code ARR USD 2.5B（MindStudio 2026-02）",
+     "url": "https://www.mindstudio.ai/blog/claude-code-2-5-billion-annualized-revenue-terminal-tool"
+    },
+    {
+     "label": "GitHub Copilot pricing page",
+     "url": "https://github.com/features/copilot/plans"
+    },
+    {
+     "label": "Cognition 收購 Windsurf（blog 2025-12）",
+     "url": "https://cognition.ai/blog/windsurf"
+    },
+    {
+     "label": "JetBrains Junie 官方頁面",
+     "url": "https://www.jetbrains.com/junie/"
+    }
+   ]
+  },
+  {
+   "id": "swe_agent_us",
+   "row": "agent",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "自主 SWE Agents（US / Global）",
+   "nameEn": "Autonomous SWE Agents — US & Global",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "能接受高階任務、自主規劃並執行多步驟代碼生成、修復、部署的 AI 軟體工程師代理。Cognition 收購 Windsurf 後形成「IDE + Agent」垂直整合先例。",
+   "marketSize": "2025 SWE Agent 融資總額 >USD 3B；頭部 3 家（Cognition/Replit/Lovable）估值合計 USD 25B+",
+   "growth": "Lovable ARR 0→USD 200M（12 個月）；Replit USD 3B→9B（6 個月）",
+   "share": "null",
+   "analysis": "Cognition/Devin 2025/9 USD 400M at USD 10.2B，傳 2026/4 談判至 USD 25B；Replit 2026/3 Series D USD 400M at USD 9B（Georgian+Prysm）；Lovable 2025/12 Series B USD 552.5M at USD 6.6B，ARR USD 200M；Vercel 2025/9 USD 300M at USD 9.3B；Bolt.new 5 個月 ARR USD 40M；OpenHands GitHub 74,400+ stars，490+ contributors，全球 self-hosted 事實標準。",
+   "companies": [
+    {
+     "name": "Cognition AI / Devin",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 USD 26B post-money（2026-05-27 USD 1B 輪 closed，pre-money USD 25B）；ARR USD 492M（12 個月 USD 37M→492M）；2025/12 收購 Windsurf",
+     "products": "Devin（autonomous SWE agent）、Windsurf IDE（合併後）、SWE-1.5 model",
+     "note": "2026/5 USD 1B 輪（Lux Capital+General Catalyst+8VC 領投，Ribbit/Atreides 新進）；企業客戶 Mercedes-Benz、NASA、Goldman Sachs、Santander；估值從 USD 10.2B→26B（9 個月 2.5×）；收購 Windsurf ~USD 250M（2025/12）；【結構驗證】Cognition 自家程式碼由 Devin 撰寫比例自 2025-12 的 13% 升至 2026-05 的 89%，驗證『agent-first』架構對傳統 IDE 工具的挑戰",
+     "src": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/"
+    },
+    {
+     "name": "Replit",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 USD 9B（2026/3 Series D）；50M+ 用戶；ARR USD 240M（2026/3），目標 USD 1B（2026E）；Google Cloud 2026 AI Tooling Partner of the Year",
+     "products": "Replit Agent、Replit IDE（browser-based）、Deployments、Ghostwriter",
+     "note": "Georgian 領投；NVIDIA AI Futures Fund 參與；Agent 3.0 '10× more autonomous'",
+     "src": "https://www.prnewswire.com/il/news-releases/replit-closes-250-million-in-funding-to-build-on-customer-momentum-302551540.html"
+    },
+    {
+     "name": "Lovable",
+     "ticker": "—",
+     "country": "SE",
+     "share": "ARR USD 400M（2026/2，+100% in 6 weeks）；估值 USD 6.6B（2025/12 Series B 維持）；146 員工，USD 2.77M ARR/employee；Lovable Hunts Acquisitions（2026/3）",
+     "products": "Lovable（自然語言 → 全棧 web app）、AI app builder、vibe coding",
+     "note": "CapitalG+Menlo Ventures 領投；NVIDIA Ventures/Salesforce Ventures 參與；總融資 USD 552.5M",
+     "src": "https://lovable.dev/blog/series-b"
+    },
+    {
+     "name": "Bolt.new / StackBlitz",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 ~USD 700M（2025/1 Series B）；ARR 5 個月達 USD 40M",
+     "products": "Bolt.new（browser-based full-stack AI app builder）、WebContainers、StackBlitz IDE",
+     "note": "融資 USD 135M；Emergence Capital+GV 領投；使用 Claude 3.5 Sonnet 為基礎模型",
+     "src": "https://sacra.com/c/bolt-new/"
+    },
+    {
+     "name": "v0 / Vercel",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 USD 9.3B（2025/9 Series F）；v0 用戶 350 萬+",
+     "products": "v0（UI/frontend code gen）、Next.js、Vercel Edge Network",
+     "note": "USD 300M Series F，Accel+GIC 領投；Teams/Enterprise 貢獻 v0 營收 50%+",
+     "src": "https://www.businesswire.com/news/home/20250930898216/en/Vercel-Closes-Series-F-at-$9.3B-Valuation-to-Scale-the-AI-Cloud"
+    },
+    {
+     "name": "Poolside AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 USD 3B（2024 Series B）；傳談判 USD 12B（2025/10）；ARR USD 50M（2025）；融資 USD 625M",
+     "products": "Poolside Base、Malibu 代碼模型、企業 AI 開發助理",
+     "note": "NVIDIA 2024 Series B 參與；傳潛在追加 USD 500-1,000M；Paris/SF 雙據點",
+     "src": "https://techcrunch.com/2025/10/30/nvidia-is-reportedly-investing-up-to-1-billion-in-poolside/"
+    },
+    {
+     "name": "OpenAI Codex（CLI + Cloud）",
+     "ticker": "—",
+     "country": "US",
+     "share": "約 400 萬週活躍開發者（3 個月 5× 成長、MoM +70%）；GPT-5.5/5.5-Codex 後多榜評為 #1 coding agent（2026/6）",
+     "products": "Codex CLI（terminal agent）、Codex Cloud（雲端背景 agent）、IDE 擴充、GPT-5.5-Codex 模型",
+     "note": "OpenAI 將 Codex 定位為跨任務企業 agent 平台；與 Claude Code、Gemini CLI 並列為企業實測三大 terminal-native agent；【挑戰者崛起】使用量相對 Claude Code 自 2025-09 約 5% 升至 2026-01 約 40%，GPT-5.5 刷新後攻佔多個排行榜第一，正侵蝕 Anthropic 在 terminal-native agent 的領先",
+     "src": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+     "name": "OpenAI Codex（CLI + Cloud）",
+     "ticker": "—",
+     "country": "US",
+     "share": "約 400 萬週活躍開發者（3 個月 5× 成長、MoM +70%）；GPT-5.5/5.5-Codex 後多榜評為 #1 coding agent（2026/6）",
+     "products": "Codex CLI（terminal agent）、Codex Cloud（雲端背景 agent）、IDE 擴充、GPT-5.5-Codex 模型",
+     "note": "OpenAI 將 Codex 定位為跨任務企業 agent 平台；與 Claude Code、Gemini CLI 並列為企業實測三大 terminal-native agent；【挑戰者崛起】使用量相對 Claude Code 自 2025-09 約 5% 升至 2026-01 約 40%，GPT-5.5 刷新後攻佔多個排行榜第一，正侵蝕 Anthropic 在 terminal-native agent 的領先",
+     "src": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+     "name": "OpenHands / All-Hands-AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "GitHub 74,400+ stars（2026/5）；490+ contributors；Series A USD 18.8M",
+     "products": "OpenHands（open-source SWE agent platform）、Software Agent SDK、MIT license",
+     "note": "OSS 事實標準，self-hosted 部署；v1.6.0（2026/3）",
+     "src": "https://github.com/OpenHands/OpenHands"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ide_assistant"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "code_review"
+    },
+    {
+     "id": "testing_quality"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cognition AI USD 400M Series B（TechCrunch 2025-09-08）",
+     "url": "https://techcrunch.com/2025/09/08/cognition-ai-defies-turbulence-with-a-400m-raise-at-10-2b-valuation/"
+    },
+    {
+     "label": "Replit USD 250M 融資（PR Newswire）",
+     "url": "https://www.prnewswire.com/il/news-releases/replit-closes-250-million-in-funding-to-build-on-customer-momentum-302551540.html"
+    },
+    {
+     "label": "Lovable Series B（官方 blog）",
+     "url": "https://lovable.dev/blog/series-b"
+    },
+    {
+     "label": "Vercel Series F USD 9.3B（Businesswire 2025-09-30）",
+     "url": "https://www.businesswire.com/news/home/20250930898216/en/Vercel-Closes-Series-F-at-$9.3B-Valuation-to-Scale-the-AI-Cloud"
+    }
+   ]
+  },
+  {
+   "id": "swe_agent_oss",
+   "row": "agent",
+   "col": 4,
+   "span": 2,
+   "kind": "rail",
+   "name": "開源 / 低代碼 App Builder",
+   "nameEn": "OSS SWE Agent Frameworks & Low-Code App Builders",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "以開源框架或低代碼方式加速應用生成的 SWE agent 工具，作為企業 self-hosted 或 vibe coding 的替代路線。Magic AI 長上下文差異化；SWE-bench OSS 工具持續推高 baseline。",
+   "marketSize": "OSS SWE agent GitHub Stars 合計 200,000+；Magic AI 融資 ~USD 465M",
+   "growth": "OSS 路線年增 3-5x GitHub stars；低代碼 app builder ARR YoY 3-10x",
+   "share": "null",
+   "analysis": "Magic AI 融資 ~USD 465M，Eric Schmidt 個人投資，LTM（Long-term Memory Network）技術差異化；OpenHands 全球 74,400+ stars，作為 SWE-bench 自動化評測標準；Sweep YC S23 提供 GitHub issue → PR 自動化輕量解法。",
+   "companies": [
+    {
+     "name": "Magic AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "融資 ~USD 465M；傳估值 USD 1.5B（2025/7）",
+     "products": "Magic LTM（長上下文代碼模型）、AI coding agent、企業私有部署",
+     "note": "Eric Schmidt、CapitalG、Atlassian、Sequoia 投資；Long-term Memory Network 技術差異化",
+     "src": "https://techcrunch.com/2024/08/29/generative-ai-coding-startup-magic-lands-320m-investment-from-eric-schmidt-atlassian-and-others/"
+    },
+    {
+     "name": "Sweep AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "YC S23；OSS + SaaS；輕量化定位",
+     "products": "Sweep（GitHub issue → PR automation）、JetBrains IDE assistant",
+     "note": "YC 支持；輕量化 GitHub native 自動化；OSS 路線"
+    },
+    {
+     "name": "OpenCode（SST）",
+     "ticker": "—",
+     "country": "US",
+     "share": "8M 月活躍開發者（2026/6，1 年內）；GitHub 150k+ stars（超越 OpenHands 成為 OSS 第一）；ARR USD 25M",
+     "products": "OpenCode（開源 terminal coding agent）、OpenCode Zen（hosted 模型）、provider-agnostic（支援任意 LLM）",
+     "note": "創辦人 Jay V 於 Toronto DevTools meetup 推出；Cloudflare 等企業採用；以模型中立 + 純 OSS 成為自托管事實標準，挑戰 Claude Code/Codex CLI 的封閉路線",
+     "src": "https://techfundingnews.com/opencode-the-background-story-on-the-most-popular-open-source-coding-agent-in-the-world/"
+    },
+    {
+     "name": "OpenCode（SST）",
+     "ticker": "—",
+     "country": "US",
+     "share": "8M 月活躍開發者（2026/6，1 年內）；GitHub 150k+ stars（超越 OpenHands 成為 OSS 第一）；ARR USD 25M",
+     "products": "OpenCode（開源 terminal coding agent）、OpenCode Zen（hosted 模型）、provider-agnostic（支援任意 LLM）",
+     "note": "創辦人 Jay V 於 Toronto DevTools meetup 推出；Cloudflare 等企業採用；以模型中立 + 純 OSS 成為自托管事實標準，挑戰 Claude Code/Codex CLI 的封閉路線",
+     "src": "https://techfundingnews.com/opencode-the-background-story-on-the-most-popular-open-source-coding-agent-in-the-world/"
+    },
+    {
+     "name": "LangGenius / Dify",
+     "ticker": "—",
+     "country": "CN",
+     "share": "GitHub 123k stars（全球第 51 大 OSS 專案）；1.4M+ 機器運行；175+ 國家",
+     "products": "Dify OSS、Dify Cloud、Dify Marketplace、agentic workflow builder",
+     "note": "2026/3 Series Pre-A USD 30M at USD 180M（HSG 領投）；可用於 coding agent workflow 搭建",
+     "src": "https://www.businesswire.com/news/home/20260309511426/en/Dify-Raises-$30-million-Series-Pre-A-to-Power-Enterprise-Grade-Agentic-Workflows"
+    },
+    {
+     "name": "Bolt.new 開源生態 / StackBlitz",
+     "ticker": "—",
+     "country": "US",
+     "share": "WebContainers 技術為瀏覽器原生 Node.js 執行環境事實標準",
+     "products": "StackBlitz WebContainers、browser-based Dev environment SDK",
+     "note": "Bolt.new 基礎技術層；多家 AI app builder fork WebContainers"
+    },
+    {
+     "name": "Antithesis",
+     "ticker": "—",
+     "country": "US",
+     "share": "融資 USD 182M（Series A USD 105M，2025/12）；200,000+ scans/month",
+     "products": "Antithesis（deterministic simulation testing platform）、混沌工程、分佈式系統測試",
+     "note": "Jane Street 領投；Amplify、Spark Capital 參與；Ethereum 網絡使用；Patrick Collison 投資",
+     "src": "https://www.finsmes.com/2025/12/antithesis-raises-105m-in-series-a-funding.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ide_assistant"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "code_review"
+    },
+    {
+     "id": "testing_quality"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Magic AI USD 320M（TechCrunch 2024-08-29）",
+     "url": "https://techcrunch.com/2024/08/29/generative-ai-coding-startup-magic-lands-320m-investment-from-eric-schmidt-atlassian-and-others/"
+    },
+    {
+     "label": "Dify Series Pre-A USD 30M（Businesswire 2026-03）",
+     "url": "https://www.businesswire.com/news/home/20260309511426/en/Dify-Raises-$30-million-Series-Pre-A-to-Power-Enterprise-Grade-Agentic-Workflows"
+    },
+    {
+     "label": "Antithesis USD 105M Series A（FinSMEs 2025-12）",
+     "url": "https://www.finsmes.com/2025/12/antithesis-raises-105m-in-series-a-funding.html"
+    }
+   ]
+  },
+  {
+   "id": "code_review",
+   "row": "review",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "AI Code Review + PR 自動化",
+   "nameEn": "AI Code Review & Pull Request Automation",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "整合至 PR/MR 流程的 AI 代碼審查、bug 偵測、代碼品質分析工具。GitHub 平台化效應壓縮獨立工具生存空間，差異化關鍵在 repo-level 理解深度與 severity ranking 準確度。",
+   "marketSize": "2024-2025 AI 代碼審查類別融資合計 >USD 1.2B；GitHub Marketplace 頭部工具 YoY 10x 成長",
+   "growth": "CodeRabbit 營收 YoY 10×；PR 自動化採用率 YoY +150%（Fortune 500）",
+   "share": "null",
+   "analysis": "CodeRabbit 2025/9 Series B USD 60M，GitHub Marketplace 下載量第一，營收 YoY 10×；Greptile 2025/9 USD 25M Series A（Benchmark 領投），定位比 CodeRabbit 更深的 repo-wide dependency graph 理解；GitHub Advanced Security USD 49/user/mo，Copilot Autofix 覆蓋 90% 常見 CWE；Qodo（前 CodiumAI）以測試生成為差異化起點，Gartner MQ 2025 Visionary。",
+   "companies": [
+    {
+     "name": "CodeRabbit",
+     "ticker": "—",
+     "country": "US",
+     "share": "GitHub Marketplace 下載量第一；ARR USD 40M（2026/4，+700% YoY）；2025/9 Series B USD 60M at USD 550M（總融資 USD 88M）",
+     "products": "CodeRabbit（PR inline AI review）、severity ranking、repo-level context、自動修復建議",
+     "note": "支援 GitHub/GitLab/Bitbucket；8,000+ 付費客戶、2M+ 連接 repo、13M+ PR 處理（2026），standalone PR review 安裝量第一。【結構洞察】此層正收斂為 CodeRabbit（獨立工具龍頭）vs GitHub Copilot Reviews（2026/3 GA、綁入 Copilot Business/Enterprise 免費分發）雙雄；分發力凌駕功能力——任何已上 Copilot Business 的組織自動獲得 review，獨立工具被夾擊",
+     "src": "https://siliconangle.com/2025/09/23/greptile-bags-25m-funding-take-coderabbit-graphite-ai-code-validation/"
+    },
+    {
+     "name": "Greptile",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025/9 USD 25M Series A（Benchmark 領投）；YC、Initialized Capital 支持",
+     "products": "Greptile（repo-wide dependency graph PR review）、hidden dependency detection",
+     "note": "YC S23；定位比 CodeRabbit 更深的 repo-level 理解"
+    },
+    {
+     "name": "Qodo（前 CodiumAI）",
+     "ticker": "—",
+     "country": "IL",
+     "share": "Series A USD 40M；Gartner Magic Quadrant AI Code Assistants 2025 Visionary",
+     "products": "Qodo Gen（test generation）、Qodo Merge（PR review）、Qodo Cover",
+     "note": "以測試生成為差異化起點；IDF/政府客戶"
+    },
+    {
+     "name": "GitHub Advanced Security（Microsoft）",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "企業版 USD 49/user/mo；Copilot Autofix 覆蓋 90% 常見 CWE",
+     "products": "Copilot PR summary、Copilot auto-fix、code scanning（CodeQL）、Advanced Security",
+     "note": "原生 GitHub 整合；GHAS 獨立計費",
+     "src": "https://azure.microsoft.com/en-us/products/github/advanced-security"
+    },
+    {
+     "name": "GitLab Duo Code Review",
+     "ticker": "GTLB",
+     "country": "US",
+     "share": "Q1 FY2027 營收 USD 264.2M（+23% YoY，2026-06-02 報告，超引導 4pp）；FY2027 引導 USD 1.099-1.118B；Duo Agent Platform 首季 net new ARR 超越 Duo Pro+Enterprise 任一季合計",
+     "products": "GitLab Duo（AI coding + chat + security scanning）、AI Code Review、Duo Agent Platform",
+     "note": "SAST/DAST/Container Scanning 原生整合；AI Credits 計費擴展",
+     "src": "https://ir.gitlab.com/news/news-details/2025/GitLab-Reports-Fourth-Quarter-and-Full-Fiscal-Year-2025-Financial-Results/default.aspx"
+    },
+    {
+     "name": "Sourcegraph / Cody Review",
+     "ticker": "—",
+     "country": "US",
+     "share": "企業版 USD 59/user/mo；美國前 4 大銀行客戶",
+     "products": "Cody（deep code search + review）、Batch Changes、Code Insights",
+     "note": "2025/7 後純企業；代碼搜尋深度差異化"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "swe_agent_us"
+    },
+    {
+     "id": "swe_agent_oss"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "testing_quality"
+    },
+    {
+     "id": "devsecops_sast"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CodeRabbit + Greptile 融資（SiliconANGLE 2025-09-23）",
+     "url": "https://siliconangle.com/2025/09/23/greptile-bags-25m-funding-take-coderabbit-graphite-ai-code-validation/"
+    },
+    {
+     "label": "GitHub Advanced Security（Azure 產品頁）",
+     "url": "https://azure.microsoft.com/en-us/products/github/advanced-security"
+    },
+    {
+     "label": "GitLab FY2025 IR",
+     "url": "https://ir.gitlab.com/news/news-details/2025/GitLab-Reports-Fourth-Quarter-and-Full-Fiscal-Year-2025-Financial-Results/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "testing_quality",
+   "row": "review",
+   "col": 4,
+   "span": 2,
+   "kind": "rail",
+   "name": "測試自動化 + QA",
+   "nameEn": "AI Test Automation & Quality Engineering",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "AI 驅動的單元測試生成、E2E 測試、混沌測試、自動化 QA 工具。Antithesis 定位 deterministic simulation 差異化；Tricentis 推出 Agentic Quality Engineering Platform；Diffblue 聚焦 Java 企業 codebase。",
+   "marketSize": "AI 測試自動化 Top 20 累計融資 USD 1.5B+；Tricentis ARR ~USD 425M",
+   "growth": "AI-generated test coverage YoY 3x（Tricentis）；Antithesis 200,000 scans/month+",
+   "share": "null",
+   "analysis": "Antithesis 是 2025 最大融資事件（USD 105M，Jane Street 領投）；Tricentis ARR ~USD 425M（Vista Equity 持股），2025 推 Agentic QE Platform；Diffblue 牛津大學衍生，專攻 Java 單元測試自動生成；Mabl 雲原生 E2E 測試，以 LLM 生成 + self-healing 差異化；Applitools AI visual diff 服務 400+ Fortune 500。",
+   "companies": [
+    {
+     "name": "Antithesis",
+     "ticker": "—",
+     "country": "US",
+     "share": "融資 USD 182M（Series A USD 105M，2025/12）；200,000+ scans/month",
+     "products": "Antithesis（deterministic simulation testing）、混沌工程、分佈式系統測試",
+     "note": "Jane Street 領投；Stripe CEO Patrick Collison 個人投資；Ethereum 網絡使用",
+     "src": "https://www.finsmes.com/2025/12/antithesis-raises-105m-in-series-a-funding.html"
+    },
+    {
+     "name": "Tricentis",
+     "ticker": "—",
+     "country": "AT",
+     "share": "2024 ARR ~USD 425M（+60% 新客 YoY）；Vista Equity 持股",
+     "products": "Tosca（企業 E2E）、NeoLoad（性能）、qTest（ALM）、Agentic Quality Engineering Platform",
+     "note": "2025 推出 Agentic QE Platform；企業 E2E 最完整套件",
+     "src": "https://www.executivebiz.com/articles/tricentis-agentic-quality-engineering-platform-launch"
+    },
+    {
+     "name": "Diffblue",
+     "ticker": "—",
+     "country": "UK",
+     "share": "融資 USD ~46M（共 7 輪）；英國 Innovate UK £1M 補助（2025/3）",
+     "products": "Diffblue Cover（Java 單元測試自動生成）、Diffblue Explore",
+     "note": "牛津大學衍生公司；Java codebase 測試覆蓋率自動提升",
+     "src": "https://www.diffblue.com/resources/diffblue-expands-ai-for-code-platform-raises-8m-in-new-funding/"
+    },
+    {
+     "name": "Mabl",
+     "ticker": "—",
+     "country": "US",
+     "share": "融資 USD 76.1M（Amplify/CRV/GV）",
+     "products": "Mabl（cloud-native AI E2E 測試）、低代碼 test authoring、自動 test self-healing",
+     "note": "LLM 生成測試案例 + 自動維護差異化"
+    },
+    {
+     "name": "Applitools",
+     "ticker": "—",
+     "country": "IL",
+     "share": "融資 USD ~160M；400+ Fortune 500 客戶；Gartner Cool Vendor",
+     "products": "Eyes（AI visual testing）、Ultrafast Test Cloud、NML（自然語言測試生成）",
+     "note": "AI visual diff 為核心；支援 Selenium/WebdriverIO/Playwright"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "swe_agent_us"
+    },
+    {
+     "id": "code_review"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "devsecops_sast"
+    },
+    {
+     "id": "cicd_release"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Antithesis USD 105M Series A（FinSMEs 2025-12）",
+     "url": "https://www.finsmes.com/2025/12/antithesis-raises-105m-in-series-a-funding.html"
+    },
+    {
+     "label": "Tricentis Agentic QE Platform launch",
+     "url": "https://www.executivebiz.com/articles/tricentis-agentic-quality-engineering-platform-launch"
+    },
+    {
+     "label": "Diffblue funding announcement",
+     "url": "https://www.diffblue.com/resources/diffblue-expands-ai-for-code-platform-raises-8m-in-new-funding/"
+    }
+   ]
+  },
+  {
+   "id": "devsecops_sast",
+   "row": "sec",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "DevSecOps + SAST/DAST/SCA",
+   "nameEn": "DevSecOps, SAST/DAST/SCA & AI Security Scanning",
+   "competition": "competitive",
+   "single": "無單一霸主：SAST/AppSec top5 僅占全球營收 ~35%、企業安裝 ~52%（Checkmarx ~14%/IBM ~12%）；Snyk ARR 增速崩塌 50%→26%→7% 留出缺口、GitHub Advanced Security 以原生分發侵蝕、ZeroPath 等 AI-native 降 10× 假陽性搶份額",
+   "desc": "SAST/DAST/SCA/secret scanning/supply chain security 等整合至 CI/CD 的 AI 安全工具。2025 關鍵事件：Harness 收購 Qwiet AI（前 ShiftLeft）形成 CI/CD + AppSec 整合；ZeroPath 以 AI-native SAST 降低 10× 假陽性。",
+   "marketSize": "DevSecOps 市場 2024 USD 5.9B → 2032E USD 24.2B（CAGR +19.4%）",
+   "growth": "Snyk ARR YoY +18.5%（USD 343.8M→407.8M）；JFrog Cloud +50% YoY；Harness USD 5.5B 估值",
+   "share": "null",
+   "analysis": "Snyk 估值 USD 7.4B，2025/5 Microsoft 戰略合作整合至 Azure DevOps+GitHub，IPO 候選 2026 USD 10B+；JFrog（FROG）2025 Q3 USD 136.9M（+26% YoY），Cloud +50% YoY，USD 1M+ 客戶 71 家（+54%）；Harness 2025/12 Series E USD 240M at USD 5.5B，收購 Qwiet AI 後 AppSec 大幅增強；GitLab Duo 原生整合 SAST/DAST；ZeroPath RSAC 2026 Innovation Sandbox Top 10，200,000+ scans/月，3× ARR YoY。",
+   "companies": [
+    {
+     "name": "Snyk",
+     "ticker": "—",
+     "country": "UK",
+     "share": "ARR USD 326M（+7% YoY，Sacra Feb 2026）；估值自高點 USD 8.5B 崩至約 USD 2B（2026/4 Hiive，NPM 每股 USD 3.17@2026-06-05）；CEO Peter McKay 2026/2 離職；PE 收購談判破局（一家 PE 出價低於 USD 3B 遭 Snyk 拒絕）；若無滿意收購擬 2026 IPO（IPO 停滯中）",
+     "products": "Snyk Code（SAST）、Snyk Open Source（SCA）、Snyk Container、Snyk IaC、Snyk AppRisk",
+     "note": "2025/5 Microsoft 戰略合作；IPO 計劃中止/停滯（CEO 離職後）；探討 PE 收購（已接觸 3 家 PE）；競爭壓力來自 GitHub Advanced Security 原生分發 + AI-native SAST 新創（ZeroPath 等，降 10× 假陽性）瓜分 AppSec 領導真空；ARR 增速從 50%（2023）→26%（2024）→7%（2026/2）快速下滑；2026 Snyk 報告指近 48% AI 生成程式碼含漏洞，反推 AppSec 需求",
+     "src": "https://www.theinformation.com/articles/cybersecurity-startup-snyk-considers-buyout-interest-ipo-plans-stall"
+    },
+    {
+     "name": "JFrog",
+     "ticker": "FROG",
+     "country": "IL",
+     "share": "Q1 FY2026 USD 154.0M（+26% YoY）；Cloud USD 78.9M（+50% YoY）；USD 1M+ ARR 客戶 80 家（vs. 54 年前）；NDR 120%",
+     "products": "JFrog Artifactory、Xray（DevSecOps scanning）、JFrog ML（MLOps）、AppTrust（GRC）、AI Catalog、JFrog Fly（agentic repo）",
+     "note": "NASDAQ: FROG；2025 統一 DevOps+DevSecOps+MLOps；AI 模型安全交付新功能",
+     "src": "https://jfrog.com/press-room/jfrog-announces-fourth-quarter-and-fiscal-2025-results/"
+    },
+    {
+     "name": "Harness（含 Qwiet AI）",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 USD 5.5B（2025/12 Series E）；融資總額 USD 614M；2025/9 收購 Qwiet AI",
+     "products": "Harness CI/CD、Harness STO（Security Testing Orchestration）、Qwiet（SAST + reachability analysis）、Software Delivery Knowledge Graph",
+     "note": "Goldman Sachs 領投 USD 240M；收購 Qwiet（前 ShiftLeft）後 AppSec 大幅增強",
+     "src": "https://techfundingnews.com/harness-raises-240m-ai-software-delivery-goldman-sachs/"
+    },
+    {
+     "name": "ZeroPath",
+     "ticker": "—",
+     "country": "US",
+     "share": "200,000+ 掃描/月；1,000+ 組織；3× ARR YoY；RSAC 2026 Innovation Sandbox Top 10",
+     "products": "ZeroPath（AI-native SAST）、AI agent 漏洞驗證、10× 假陽性降低",
+     "note": "2026/3 Morningstar 公告規模化；AI-native 顛覆傳統 SAST 假陽性問題",
+     "src": "https://www.morningstar.com/news/business-wire/20260313797057/zeropath-scales-ai-native-application-security-for-the-modern-development-era"
+    },
+    {
+     "name": "Checkmarx",
+     "ticker": "—",
+     "country": "IL",
+     "share": "Gartner MQ AST Leader 多年；H&F 2020 USD ~1.15B 收購",
+     "products": "Checkmarx One（SAST+DAST+SCA+API security）、exploitable path detection",
+     "note": "Hellman & Friedman 持股；CI/CD native 整合；SAST+DAST 最完整套組"
+    },
+    {
+     "name": "Sonatype",
+     "ticker": "—",
+     "country": "US",
+     "share": "400 億以上開源組件掃描記錄/月；Vista Equity 2019 收購",
+     "products": "Nexus Lifecycle（SCA）、Repository Manager、OSS Index、Supply Chain Security",
+     "note": "開源治理/SCA 標桿；Nexus Repository 業界最廣泛使用"
+    },
+    {
+     "name": "Veracode",
+     "ticker": "—",
+     "country": "US",
+     "share": "TA Associates 2017 收購；大企業政策執行定位",
+     "products": "Veracode SAST、DAST、SCA、Veracode Fix（AI 自動修復）、Binary Static Analysis",
+     "note": "AI autofix 功能 2024/2025 強化；大企業合規驅動採購"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "code_review"
+    },
+    {
+     "id": "testing_quality"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cicd_release"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Snyk Series G 融資新聞稿",
+     "url": "https://snyk.io/news/snyk-closes-196-5-million-series-g-funding-at-7-4-billion-valuation/"
+    },
+    {
+     "label": "JFrog Q4 FY2025 press release",
+     "url": "https://jfrog.com/press-room/jfrog-announces-fourth-quarter-and-fiscal-2025-results/"
+    },
+    {
+     "label": "Harness USD 240M Series E（TFN 2025-12）",
+     "url": "https://techfundingnews.com/harness-raises-240m-ai-software-delivery-goldman-sachs/"
+    },
+    {
+     "label": "ZeroPath RSAC 2026（Morningstar/Businesswire）",
+     "url": "https://www.morningstar.com/news/business-wire/20260313797057/zeropath-scales-ai-native-application-security-for-the-modern-development-era"
+    }
+   ]
+  },
+  {
+   "id": "cicd_release",
+   "row": "sec",
+   "col": 4,
+   "span": 2,
+   "kind": "rail",
+   "name": "CI/CD + Release Agents + 可觀測性",
+   "nameEn": "CI/CD, Release Automation & AI Observability",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "自動化構建、測試、部署、發布的 pipeline 工具，2025 起加入 AI agent 規劃和自動修復能力。Datadog 以「AI Observability + Bits AI」切入 post-deployment SRE agent 場景。GitHub Actions 生態效應最強，但 AI 智能化仍是差異化機會。",
+   "marketSize": "CI/CD + Release Automation 合計 TAM ~USD 12B（2026E）；Datadog 2025 Q3 年化 >USD 3.5B",
+   "growth": "GitHub Actions 生態 YoY 30%+；Datadog LLM Observability YoY 12x trace 量",
+   "share": "null",
+   "analysis": "GitHub Actions 2,000 萬+ 用戶基礎，Copilot 整合自動生成 workflow YAML；Harness 收購 Qwiet 後形成 CI/CD + Security 最完整端到端 AI 平台；Datadog 2025 DASH 推出 Agentic SRE（Bits AI），LLM Observability 月 trace YoY 12x；CircleCI 推出 Chunk（AI-scale CI/CD agent）；Octopus+Buildkite 兩家澳洲公司均由 Insight Partners 支持。",
+   "companies": [
+    {
+     "name": "GitHub Actions（Microsoft）",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "最廣泛使用 CI/CD 工具；2,000 萬+ 用戶基礎；marketplace 20,000+ actions",
+     "products": "GitHub Actions（workflow automation）、Copilot for Actions、marketplace",
+     "note": "平台優勢顯著；Copilot 整合自動生成 workflow YAML；免費 2,000 min/月",
+     "src": "https://github.com/features/actions"
+    },
+    {
+     "name": "Harness",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 USD 5.5B（2025/12）；CI/CD + AppSec 最完整",
+     "products": "Harness CD/CI、Feature Flags、Chaos Engineering、STO；Software Delivery Knowledge Graph",
+     "note": "AI 三層架構：Agent Network + Knowledge Graph + Orchestration Engine（詳見 DevSecOps 層）",
+     "src": "https://techfundingnews.com/harness-raises-240m-ai-software-delivery-goldman-sachs/"
+    },
+    {
+     "name": "Datadog",
+     "ticker": "DDOG",
+     "country": "US",
+     "share": "Q1 2026 USD 1,006M（+32% YoY，首次單季破 USD 1B）；~4,550 個 USD 100K+ ARR 客戶；FY2026 引導 USD 4.30-4.34B",
+     "products": "Bits AI（SRE/Dev/Security agents）、AI Observability、LLM Observability、Datadog MCP Server、TOTO（time-series foundation model）",
+     "note": "NASDAQ: DDOG；DASH 2025 Agentic SRE；LLM Observability 月 trace YoY 12x",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001561550/000156155025000310/ex-991x20250930x8k.htm"
+    },
+    {
+     "name": "CircleCI",
+     "ticker": "—",
+     "country": "US",
+     "share": "30,000+ 活躍組織用戶；Sumeru Equity 2023 收購",
+     "products": "CircleCI（雲原生 CI/CD）、Chunk（AI-scale CI/CD agent，2026）、AI commit 驗證",
+     "note": "Chunk 針對 AI 生成代碼的 real-time 驗證定位",
+     "src": "https://circleci.com/product/chunk/"
+    },
+    {
+     "name": "Octopus Deploy",
+     "ticker": "—",
+     "country": "AU",
+     "share": "估值 USD ~882M（2025/10）；融資總額 USD 204M",
+     "products": "Octopus Deploy（release orchestration）、Runbooks、Config as Code",
+     "note": "Insight Partners 支持；聚焦 release 階段；複雜環境（K8s+on-prem）差異化"
+    },
+    {
+     "name": "Buildkite",
+     "ticker": "—",
+     "country": "AU",
+     "share": "融資 USD ~220M（Insight Partners 2022）；Shopify/Lyft/PagerDuty 客戶",
+     "products": "Buildkite（enterprise pipeline）、Test Splitting、Test Analytics、Packages",
+     "note": "高吞吐量大型 monorepo 構建差異化；Hybrid cloud/on-prem"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "devsecops_sast"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Datadog SEC 8-K Q3 FY2025",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001561550/000156155025000310/ex-991x20250930x8k.htm"
+    },
+    {
+     "label": "GitHub Actions 產品頁",
+     "url": "https://github.com/features/actions"
+    },
+    {
+     "label": "CircleCI Chunk 產品頁",
+     "url": "https://circleci.com/product/chunk/"
+    },
+    {
+     "label": "Octopus Deploy 融資（Startup Daily）",
+     "url": "https://www.startupdaily.net/topic/funding/software-veteran-octopus-deploy-wraps-around-another-45-million-raise/"
+    }
+   ]
+  },
+  {
+   "id": "cn_coding",
+   "row": "asia",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "中國 Coding AI",
+   "nameEn": "China AI Coding Tools",
+   "competition": "redocean",
+   "single": "null",
+   "desc": "中國本土 AI Coding 工具生態，以 Alibaba 通義靈碼（Lingma）、Baidu Comate X、ByteDance Trae/MarsCode、騰訊 CodeBuddy、Zhipu CodeGeeX、Moonshot Kimi Code、華為 CodeArts 為主力；DeepSeek Coder-V2 開源模型成為多廠底座。",
+   "marketSize": "中國 AI Code Tools 2030E USD 2.73B（CAGR 31.3%，Grand View Research）",
+   "growth": "GitHub Copilot 中國市占 64.5%；通義靈碼 12.9%；本土工具 YoY 滲透+10-15pp",
+   "share": "null",
+   "analysis": "Alibaba 通義靈碼中國市占 12.9%，Qwen3-Coder 480B 超越 GPT-4.1；Baidu Comate 內部採用率 >80%，生成內部 43%+ 程式碼；ByteDance Trae 整合 DeepSeek-V3，Bug 修復準確率 75.3%；騰訊 CodeBuddy 內部 >50% 工程師使用，R&D 效率 +16%；華為 CodeArts Doer 2026/2 公測，支援 DeepSeek/Zhipu 多底座；DeepSeek Coder-V2 開源策略使企業推理成本低 80-90%。",
+   "companies": [
+    {
+     "name": "阿里巴巴 通義靈碼（Lingma）",
+     "ticker": "9988.HK",
+     "country": "CN",
+     "share": "中國市場 12.9%；計劃 ≥20% 程式碼由 AI 生成；2M+ 下載",
+     "products": "Tongyi Lingma / Qoder CN（VS Code+JetBrains）、Enterprise Standard/Dedicated、100+ 語言",
+     "note": "Qwen3-Coder 480B 2025-07 超越 GPT-4.1；2026/2 新增 DeepSeek-V3/R1 671B 模型選擇（via 阿里雲百煉）；持續深化企業端本地化推理能力",
+     "src": "https://www.alibabacloud.com/en/product/lingma"
+    },
+    {
+     "name": "百度 Comate X",
+     "ticker": "9888.HK",
+     "country": "CN",
+     "share": "內部採用率 >80%；~200 企業合作夥伴測試；生成 Baidu 內部 43%+ 程式碼",
+     "products": "Comate X（AI IDE，multimodal+multi-agent）、Comate Stack Toolkit、SaaS 版（100 語言）",
+     "note": "2025/1 發布業界首個多模態 AI IDE；Baidu 2025 AI 業務 >RMB 400B（YoY 43%）",
+     "src": "https://comate.baidu.com/"
+    },
+    {
+     "name": "ByteDance Trae / MarsCode",
+     "ticker": "—",
+     "country": "CN",
+     "share": "2025/2 整合 DeepSeek；Bug 修復準確率 75.3%（2025/2）",
+     "products": "Trae IDE（原 MarsCode）、Trae Plugin、Doubao 驅動、Cloud IDE",
+     "note": "2025 品牌整合至 Trae；API 月費 ¥9.9 起；2026/2 推出 Doubao-Seed-2.0 Code 版本（深度推理+IMO/ICPC 評測），定位競爭 GPT 5.2/Gemini 3 Pro，token 價格低一個數量級",
+     "src": "https://www.trae.ai/"
+    },
+    {
+     "name": "騰訊 CodeBuddy（原 CodeFuse）",
+     "ticker": "0700.HK",
+     "country": "CN",
+     "share": "內部 >50% 工程師使用；R&D 效率 +16%；程式碼撰寫時間 -40%",
+     "products": "CodeBuddy（含 Craft Mode agentic agent）、Tencent Cloud AI Code Assistant、ADP 3.0 企業 agent 平台",
+     "note": "Craft Mode 端對端需求→程式碼→測試；Hunyuan LLM 底座",
+     "src": "https://www.codebuddy.ai/"
+    },
+    {
+     "name": "智譜 CodeGeeX",
+     "ticker": "—",
+     "country": "CN",
+     "share": "VS Code 安裝數 1.1M+；個人用戶 100 萬+；HumanEval 82.3%",
+     "products": "CodeGeeX4（開源，GLM-4-9B 基礎）、VS Code+JetBrains 插件、企業私有部署版",
+     "note": "<10B 參數模型排名第一；100+ 語言；完全開源可私有部署",
+     "src": "https://codegeex.cn/"
+    },
+    {
+     "name": "月之暗面 Kimi Code",
+     "ticker": "—",
+     "country": "CN",
+     "share": "K2.6 支援 300 sub-agents / 4,000 協調步驟；長時程 agentic coding 定位；開源 K2.5 checkpoint 成 Cursor 自研 Composer 2/2.5 底座",
+     "products": "Kimi Code（CLI+IDE agent）、Kimi K2.5/K2.6 基礎模型、支援 VSCode/Cursor/JetBrains/Zed via ACP",
+     "note": "K2.6 2026-04-20 發布；強調 stamina 而非單次 reasoning；【新下游】開源 Kimi K2.5 checkpoint 被 Cursor 採為自研 Composer 2（2026-03）/2.5（2026-05-18）的基礎模型（約 1/4 預訓練、其餘為 Cursor RL 微調），首度使中國開源模型成為美國營收第一 coding 工具的上游",
+     "src": "https://thenewstack.io/cursor-composer-benchmarks/"
+    },
+    {
+     "name": "DeepSeek Coder-V2",
+     "ticker": "—",
+     "country": "CN",
+     "share": "被 Huawei/ByteDance 等大廠採用為底座；企業推理成本低 80-90%",
+     "products": "DeepSeek-Coder-V2（MoE，開源）、338 語言、128K context、Ollama 本地部署",
+     "note": "開源策略推動亞洲多廠採用；Coder-V2 性能比肩 GPT-4 Turbo",
+     "src": "https://github.com/deepseek-ai/DeepSeek-Coder-V2"
+    },
+    {
+     "name": "華為雲 CodeArts Doer",
+     "ticker": "—",
+     "country": "CN",
+     "share": "2026-02 公測 15,000+ 用戶；token 消耗比業界低 30%；R&D 效率 +40%",
+     "products": "CodeArts Code Intelligence Agent、Pangu Doer（VS Code+JetBrains）、CloudIDE、6 大專業 agent",
+     "note": "2026-01-17 啟動公測；支援 DeepSeek/Zhipu/Pangu 三底座可選",
+     "src": "https://abit.ee/en/artificial-intelligence/huawei-cloud-codearts-ai-coding-agent-deepseek-v32-glm-50-pangu-devsecops-public-beta-en"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "asia_devsec"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Alibaba Lingma 官方文件",
+     "url": "https://www.alibabacloud.com/help/en/lingma/product-overview/introduction-of-lingma"
+    },
+    {
+     "label": "Baidu Comate 官方",
+     "url": "https://comate.baidu.com/"
+    },
+    {
+     "label": "Moonshot Kimi K2.6（MarkTechPost 2026-04-20）",
+     "url": "https://www.marktechpost.com/2026/04/20/moonshot-ai-releases-kimi-k2-6"
+    },
+    {
+     "label": "Huawei CodeArts 公測公告",
+     "url": "https://abit.ee/en/artificial-intelligence/huawei-cloud-codearts-ai-coding-agent-deepseek-v32-glm-50-pangu-devsecops-public-beta-en"
+    },
+    {
+     "label": "Grand View Research China AI Code Tools",
+     "url": "https://www.grandviewresearch.com/horizon/outlook/ai-code-tools-market/china"
+    }
+   ]
+  },
+  {
+   "id": "jp_kr_coding",
+   "row": "asia",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "日韓 Coding AI",
+   "nameEn": "Japan & Korea AI Coding Tools",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "日本以 SI 廠商整合居多（NTT Data Smart AI Agent™ 生態）；韓國 LG CNS 與 Cline 合作打造企業 Agentic 開發平台，Samsung SDS FabriX 走全棧 AI 路線，Naver HyperCLOVA X 提供韓語 coding 能力。",
+   "marketSize": "亞太 AI Code Generation CAGR 37.9%（2026-2031，Mordor Intelligence）；日韓企業 SI 市場主導",
+   "growth": "LG CNS AI Programmer 2025/5 正式發布；韓國 Brity Copilot 覆蓋 57 個中央政府機關",
+   "share": "null",
+   "analysis": "NTT Data Smart AI Agent™ Ecosystem 2025/5 發布，定位 SI/MSP 整合者而非自研 LLM，企業+政府多行業部署；LG CNS 2025/12 與 Cline 合作發布企業 Agentic 開發方案，強調代碼不外洩；Samsung SDS FabriX 連接多 LLM 至企業系統，2025 全年營收 13.93 兆韓元；Naver HyperCLOVA X Think 2025/6 發布，訓練數據含韓語是 GPT-4 的 6,500 倍。",
+   "companies": [
+    {
+     "name": "NTT Data Smart AI Agent™ Ecosystem",
+     "ticker": "9613.T",
+     "country": "JP",
+     "share": "日本最大 IT 服務商之一；enterprise 多行業部署",
+     "products": "Smart AI Agent™ Ecosystem（2025-05）、SDI Agent（軟體定義基礎設施 agent）、coding agent 整合服務",
+     "note": "定位 SI/MSP 整合者；Salesforce Agentforce 等合作；主要客戶日本大型企業與政府",
+     "src": "https://www.nttdata.com/global/en/news/press-release/2025/may/051600"
+    },
+    {
+     "name": "LG CNS AI Programmer（DevOn AIDD）",
+     "ticker": "010060.KS",
+     "country": "KR",
+     "share": "韓國企業 IT 強競爭者；2025-12 與 Cline 合作發布企業 Agentic 開發方案",
+     "products": "AI Programmer（原 DevOn AIDD）、自研 code LLM、Cline Agentic AI Solution（企業版）",
+     "note": "2025-01 IPO；涵蓋需求分析→設計→編碼→測試→QA 全流程；代碼不外洩",
+     "src": "https://cline.ghost.io/cline-and-lg-cns-partner-to-develop-agentic-ai-solution-for-enterprise-development/"
+    },
+    {
+     "name": "Samsung SDS FabriX / Brity Copilot",
+     "ticker": "018260.KS",
+     "country": "KR",
+     "share": "韓國政府 57 個中央機關部署；2025 全年營收 13.93 兆韓元",
+     "products": "FabriX（企業 GenAI 平台）、Brity Copilot（個人 AI 工作助理）、Brity Automation（RPA）",
+     "note": "多 LLM 連接（不綁定單一模型）；整合 AWS/Azure；全棧 AI SI 定位",
+     "src": "https://www.samsungsds.com/en/news/realsummit-250912.html"
+    },
+    {
+     "name": "Naver HyperCLOVA X（coding）",
+     "ticker": "035420.KS",
+     "country": "KR",
+     "share": "韓國 LLM 市場領先者；訓練韓語是 GPT-4 的 6,500 倍",
+     "products": "HyperCLOVA X Think（2025-06）、CLOVA Studio（開發者工具）、HyperCLOVA X SEED 32B",
+     "note": "coding assistant 為 HyperCLOVA X 應用場景之一；與 NEOM 合作 digital twin",
+     "src": "https://www.navercorp.com/en/media/pressReleasesDetail?seq=34256"
+    },
+    {
+     "name": "PFN（Preferred Networks）PLaMo",
+     "ticker": "—",
+     "country": "JP",
+     "share": "估值逾 USD 3B；2024-12 完成 190 億日圓融資；日本主權 AI 旗艦",
+     "products": "PLaMo™（日本自製 LLM）、Preferred Computing Platform（MN-Core 2 驅動）",
+     "note": "主要聚焦製造業 AI（Toyota 等）；自研 MN-Core 晶片；coding 為 PLaMo 應用場景之一"
+    },
+    {
+     "name": "SCSK Corporation DevSecOps SI",
+     "ticker": "9719.T",
+     "country": "JP",
+     "share": "日本前 10 大 SI 廠商；員工 7,300+",
+     "products": "DevSecOps 整合服務、AI 驅動系統開發、製造業 AI 解決方案",
+     "note": "整合 AWS/Azure/GCP 上的 AI 工具；GitHub Copilot/Claude Code 企業部署 SI"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "asia_devsec"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NTT Data Smart AI Agent™ Ecosystem（2025-05）",
+     "url": "https://www.nttdata.com/global/en/news/press-release/2025/may/051600"
+    },
+    {
+     "label": "LG CNS × Cline 官方部落格",
+     "url": "https://cline.ghost.io/cline-and-lg-cns-partner-to-develop-agentic-ai-solution-for-enterprise-development/"
+    },
+    {
+     "label": "Samsung SDS 2025 全棧 AI 策略",
+     "url": "https://www.samsungsds.com/en/news/realsummit-250912.html"
+    },
+    {
+     "label": "Mordor Intelligence AI Code Generation CAGR",
+     "url": "https://www.mordorintelligence.com/industry-reports/ai-code-generation-and-developer-assistant-market"
+    }
+   ]
+  },
+  {
+   "id": "tw_coding",
+   "row": "asia",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "台灣 Coding AI",
+   "nameEn": "Taiwan AI Coding & Dev Tools",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "台灣半導體強，但軟體 AI 工具以整合美系為主。Foxconn Foxbrain LLM 聚焦工廠/城市 AI 而非開發者工具；ASUS AI SuperBuild Developer Toolkit 走硬體+開發工具包路線。GitHub Copilot/Cursor 為台灣開發者主力工具。",
+   "marketSize": "台灣無獨立上市 AI coding SaaS 公司；硬體邊緣 AI 開發場景為主",
+   "growth": "Foxconn AI Factory USD 510M 高雄投資；ASUS AI SuperBuild 2025/5 與 Intel 聯合發布",
+   "share": "null",
+   "analysis": "鴻海 Foxbrain 為工廠&城市 AI 底座，2025/5 與 NVIDIA 合建台灣 AI Factory（Blackwell 基礎設施），高雄 USD 510M，非對外 SaaS coding 工具；ASUS 2025/5 與 Intel 聯合發布 AI SuperBuild Developer Toolkit，面向邊緣 AI 開發者；台灣 AI Coding 市場以 GitHub Copilot/Cursor 為主流，本土工具欠缺。",
+   "companies": [
+    {
+     "name": "Foxconn / 鴻海 Foxbrain AI",
+     "ticker": "2317.TW",
+     "country": "TW",
+     "share": "內部應用為主；2025/5 與 NVIDIA 合建台灣 AI Factory；高雄投資 USD 510M",
+     "products": "Foxbrain（自研 LLM）、CityGPT（智慧城市 GenAI 平台）、Intrinsic Flowstate JV、RTX PRO 基礎設施",
+     "note": "聚焦工廠+城市 AI；非對外 SaaS coding 工具；NVIDIA Blackwell 底座",
+     "src": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1906"
+    },
+    {
+     "name": "ASUS AI SuperBuild（with Intel）",
+     "ticker": "2357.TW",
+     "country": "TW",
+     "share": "2025/5 與 Intel 聯合發布；面向邊緣 AI 開發者",
+     "products": "ASUS AI SuperBuild Developer Toolkit、AI NUC 15 Pro（本地 AI 推理硬體）",
+     "note": "Intel NPU + ASUS 硬體；硬體+開發工具包定位；非雲端 coding assistant",
+     "src": "https://press.asus.com/news/press-releases/asus-intel-ai-developer-toolkit/"
+    },
+    {
+     "name": "MediaTek Breeze2（繁中模型）",
+     "ticker": "2454.TW",
+     "country": "TW",
+     "share": "台灣最強商用繁中模型；Llama 3.2 基礎（3B/8B 多模態）",
+     "products": "Breeze2（function calling、多模態）、Breeze ASR 25、On-device 部署",
+     "note": "2025 營收 NT$595.97B（+12.32%）；coding 能力透過 Breeze2 API 開放"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "asia_devsec"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Foxconn AI Factory（官方 + NVIDIA）",
+     "url": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1906"
+    },
+    {
+     "label": "ASUS AI SuperBuild Developer Toolkit（2025-05）",
+     "url": "https://press.asus.com/news/press-releases/asus-intel-ai-developer-toolkit/"
+    }
+   ]
+  },
+  {
+   "id": "in_coding",
+   "row": "asia",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "印度 Coding AI",
+   "nameEn": "India AI Coding & Sovereign LLM",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "印度主權 AI 快速追趕：Krutrim（Ola）自研 LLM + GPU 雲，強調 22 種印度語言支援；Sarvam AI 105B MoE 有政府算力背書；Zoho Zia 為全球 100M+ 用戶生態提供 no-code/low-code 開發 AI。",
+   "marketSize": "MeitY IndiaAI Mission GPU 算力支持；Krutrim AI Pods 從 ₹24/hr 起",
+   "growth": "Sarvam 105B 模型 2026/2 發布；Krutrim-2 code 準確率 80%；Zoho Zia 2025/7 正式發布",
+   "share": "null",
+   "analysis": "Krutrim-2（12B）code generation 準確率 80%，支援 22 種印度語言，自研晶片路線（Bodhi/Sarv/Ojas），AI Pods GPU A100 80GB ₹189/hr；Sarvam AI 2026/2 發布 30B+105B 雙旗艦（MoE，128K context），MeitY IndiaAI Mission 選定合作夥伴，企業+政府+coding 定位；Zoho Zia LLM 2025/7 正式發布，25+ ready-to-deploy agents，MCP Server 整合。",
+   "companies": [
+    {
+     "name": "Krutrim AI（Ola Krutrim）",
+     "ticker": "—",
+     "country": "IN",
+     "share": "印度主權 AI 先驅；AI Pods GPU 雲；Krutrim-2 code 準確率 80%",
+     "products": "Krutrim-2（12B，22 種印度語言）、AI Studio、AI Pods（GPU 租用）、Kruti agentic assistant",
+     "note": "自研晶片路線（Bodhi/Sarv/Ojas）；2T tokens 訓練；GPU A100 ₹189/hr",
+     "src": "https://www.olakrutrim.com/"
+    },
+    {
+     "name": "Sarvam AI",
+     "ticker": "—",
+     "country": "IN",
+     "share": "MeitY IndiaAI Mission 合作夥伴；2026/2 發布 30B+105B 旗艦",
+     "products": "Sarvam-M（24B）、Sarvam-30B（MoE）、Sarvam-105B（MoE，128K context）",
+     "note": "印度政府 GPU 算力支持；Indic 語言+coding+推理；開源計劃中",
+     "src": "https://www.sarvam.ai/"
+    },
+    {
+     "name": "Zoho Zia LLM / Zia Agent Studio",
+     "ticker": "—",
+     "country": "IN",
+     "share": "全球 100M+ 用戶生態；2025/7 正式發布 Zia LLM",
+     "products": "Zia LLM（自研）、Zia Agents（25+ ready-to-deploy）、Zia Agent Studio（no-code）、CoCreator（low-code app）、MCP Server",
+     "note": "整合至 Zoho 全套 SaaS；MCP server 連接第三方 agent 系統",
+     "src": "https://www.businesswire.com/news/home/20250717118204/en/Zoho-Launches-Zia-LLM-and-Deepens-AI-Portfolio"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "asia_devsec"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sarvam 105B 發布（2026-02-18）",
+     "url": "https://www.sarvam.ai/"
+    },
+    {
+     "label": "Zoho Zia LLM 發布（BusinessWire 2025-07-17）",
+     "url": "https://www.businesswire.com/news/home/20250717118204/en/Zoho-Launches-Zia-LLM-and-Deepens-AI-Portfolio"
+    },
+    {
+     "label": "Mordor Intelligence APAC CAGR 37.9%",
+     "url": "https://www.mordorintelligence.com/industry-reports/ai-code-generation-and-developer-assistant-market"
+    }
+   ]
+  },
+  {
+   "id": "asia_devsec",
+   "row": "asia",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "亞洲 DevSecOps",
+   "nameEn": "Asia DevSecOps & Security Scanning",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "亞洲 DevSecOps 以日本 Trend Micro（4704.T）+ Snyk 聯盟、韓國 Ahnlab（053800.KQ）AI Plus + XDR 為代表。Trend Micro AI Defense 針對 AI 生成程式碼的安全防護；Ahnlab 以 agentic AI 安全技術 agentic-ize XDR pipeline。",
+   "marketSize": "亞太 DevSecOps 市場 2025 USD 3.17B → 2026E USD 3.7B（CAGR 15.1%，Grand View Research）",
+   "growth": "Trend Micro AI Defense 2025 H1 AI 安全報告；Ahnlab AI Plus 2024/4 發布後持續整合",
+   "share": "null",
+   "analysis": "Trend Micro 與 Snyk 聯盟為日系廠商最完整的 DevSecOps 組合，每個漏洞節省約 8 小時，整合 GitHub/Jenkins/Azure DevOps；2025 H1 發布 AI 安全報告為業界參考；Ahnlab AI Plus 2024/4 發布，每日偵測 >130,000 新惡意碼，V3 AI + XDR，2026 計劃擴展至遠端監控+滲透測試。",
+   "companies": [
+    {
+     "name": "Trend Micro（Cloud One + Snyk 聯盟）",
+     "ticker": "4704.T",
+     "country": "JP",
+     "share": "全球網路安全前 10；亞太 DevSecOps 重要玩家；每漏洞節省 8 小時",
+     "products": "Cloud One - Open Source Security by Snyk、Trend Micro AI Defense（AI 生成程式碼安全）、DevSecOps pipeline 整合",
+     "note": "整合 GitHub/Jenkins/Azure DevOps；2025 H1 State of AI Security 報告",
+     "src": "https://snyk.io/blog/trend-micro-launches-cloud-one-open-source-security-powered-by-snyk/"
+    },
+    {
+     "name": "Ahnlab AI Plus + XDR",
+     "ticker": "053800.KQ",
+     "country": "KR",
+     "share": "韓國最大資安廠商；每日偵測 >130,000 新惡意碼",
+     "products": "AhnLab AI Plus（agentic AI 安全）、V3 AI、AhnLab XDR、遠端安全監控、滲透測試 AI",
+     "note": "2025 核心戰略 'AI 中心化轉型'；2024/4 發布 AI Plus；2026 擴展至滲透測試",
+     "src": "https://www.ahnlab.com/"
+    },
+    {
+     "name": "Snyk（亞洲區擴張）",
+     "ticker": "—",
+     "country": "UK",
+     "share": "2025/5 Microsoft 整合至 Azure DevOps；Trend Micro 聯盟強化亞太佈局",
+     "products": "Snyk Code、Snyk Open Source、Snyk Container、Snyk IaC",
+     "note": "詳見 DevSecOps 層；亞太透過 Trend Micro 聯盟及 Microsoft Azure 渠道滲透",
+     "src": "https://snyk.io/news/snyk-closes-196-5-million-series-g-funding-at-7-4-billion-valuation/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cn_coding"
+    },
+    {
+     "id": "jp_kr_coding"
+    },
+    {
+     "id": "tw_coding"
+    },
+    {
+     "id": "in_coding"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Trend Micro × Snyk DevSecOps 聯盟",
+     "url": "https://snyk.io/blog/trend-micro-launches-cloud-one-open-source-security-powered-by-snyk/"
+    },
+    {
+     "label": "Grand View Research APAC DevSecOps",
+     "url": "https://www.grandviewresearch.com/horizon/outlook/devsecops-market/asia-pacific"
+    },
+    {
+     "label": "Mordor Intelligence AI Code Gen 全球市場",
+     "url": "https://www.mordorintelligence.com/industry-reports/ai-code-generation-and-developer-assistant-market"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "ide_assistant",
+   "swe_agent_us"
+  ],
+  [
+   "ide_assistant",
+   "swe_agent_oss"
+  ],
+  [
+   "ide_assistant",
+   "code_review"
+  ],
+  [
+   "swe_agent_us",
+   "code_review"
+  ],
+  [
+   "swe_agent_us",
+   "testing_quality"
+  ],
+  [
+   "swe_agent_oss",
+   "code_review"
+  ],
+  [
+   "swe_agent_oss",
+   "testing_quality"
+  ],
+  [
+   "code_review",
+   "devsecops_sast"
+  ],
+  [
+   "code_review",
+   "testing_quality"
+  ],
+  [
+   "testing_quality",
+   "devsecops_sast"
+  ],
+  [
+   "testing_quality",
+   "cicd_release"
+  ],
+  [
+   "devsecops_sast",
+   "cicd_release"
+  ],
+  [
+   "cn_coding",
+   "asia_devsec"
+  ],
+  [
+   "jp_kr_coding",
+   "asia_devsec"
+  ],
+  [
+   "tw_coding",
+   "asia_devsec"
+  ],
+  [
+   "in_coding",
+   "asia_devsec"
+  ],
+  [
+   "asia_devsec",
+   "devsecops_sast"
+  ],
+  [
+   "cn_coding",
+   "swe_agent_oss"
+  ]
+ ],
+ "_proposed": {}
+}

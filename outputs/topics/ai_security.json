@@ -1,0 +1,1345 @@
+{
+ "id": "ai_security",
+ "tab": "AI Security",
+ "title": "AI Security / Agent Security / Identity / Governance（Runtime → Identity → DLP → Red Team → Compliance）",
+ "subtitle": "2025-2026 M&A 整合爆發：PANW 收 Protect AI（USD 700M）發布 Prisma AIRS 3.0（2026-03-23，覆蓋 agentic AI 全生命周期）；CSCO 收 Robust Intelligence＋Astrix NHI（合計 ~USD 800M）；CHKP 收 Lakera（USD 300M）；SentinelOne 收 Prompt Security（USD 250M）；Cato 收 Aim（USD 350M）；Veeam 收 Securiti（USD 1.725B）。Okta Agent IdP、CYBR Secure AI Agents、SAIL IGA IPO 構成 Agent 身份治理 backbone；NVIDIA NeMo Guardrails 為開源 guardrails 事實標準。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 11
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "60+"
+  },
+  {
+   "k": "關鍵單點",
+   "v": 3,
+   "sub": "Cisco/PANW 收購整合; Okta Agent IdP; NVIDIA NeMo Guardrails",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "runtime",
+   "label": "Agent Runtime / Guardrails",
+   "main": true
+  },
+  {
+   "id": "ident",
+   "label": "Identity for AI Agents",
+   "main": false
+  },
+  {
+   "id": "dlp",
+   "label": "Prompt Firewall + DLP",
+   "main": false
+  },
+  {
+   "id": "red",
+   "label": "Model Safety + Red Team",
+   "main": false
+  },
+  {
+   "id": "gov",
+   "label": "Governance + Compliance",
+   "main": false
+  },
+  {
+   "id": "asia",
+   "label": "亞洲 AI Security — Asia Regional",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "agent_runtime_security_us",
+   "row": "runtime",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "Agent Runtime Security（美系）",
+   "nameEn": "US Agent Runtime Security / Guardrails",
+   "competition": "competitive",
+   "single": "市場仍中度集中、無單一廠 >15% 市占（Mordor）→ 結構為大廠競爭非寡占；NVIDIA NeMo Guardrails 為開源 guardrails 事實標準（GitHub 16k+ stars），是少數真正不可繞過的『中性技術單點』，CSCO/PANW/CRWD 皆內嵌",
+   "desc": "為企業 AI Agent 提供 runtime 防護的平台層，涵蓋 prompt injection 偵測、jailbreak 防禦、PII 過濾、行為異常告警、AI 應用可見性。2024-2026 主要資安大廠透過 M&A 快速卡位。",
+   "marketSize": "廣義 AI Runtime Security TAM 2025 ~USD 5-7B；Gartner 2028 年 50% GenAI 部署強制納入 LLM guardrails",
+   "growth": "CAGR ~36%（LLM Observability 2025-2029）；M&A 溢價 12-13x 反映高速成長",
+   "share": "null",
+   "analysis": "Cisco AI Defense（GA 2025-03）整合 Robust Intelligence（USD ~400M）+ Splunk 可觀測；2026-05 再收 Astrix NHI（USD ~400M）補強非人類身份層；2026 把 Robust Intelligence 整進 AI Defense 並加入 MCP 掃描、agentic red teaming 與護欄；Cisco Live US 2026-06-02 再推 AI Defense: Explorer Edition（自助紅隊）、Duo IAM agent identity（Zero Trust for agents）、開源 DefenseClaw 框架（整合 NVIDIA OpenShell）。CrowdStrike/PANW（Prisma AIRS）/Cisco 三強在『AI 執行期防護 + 紅隊』正面交鋒，把 Lakera、HiddenLayer 等專業新創推向被整併或邊緣化壓力。PANW Prisma AIRS 3.0（2026-03-23）升級覆蓋 agentic AI 全生命周期（Discovery 盤點 agent/model/連線、Agent Artifact Security + AI Red Teaming 評估、AI Agent Gateway 統一控制面 limited preview），承接 2.0（2025-10）整合 Protect AI（USD 700M，完成 2025-07）的 AI app/agent/model/data 四層。SentinelOne 收 Prompt Security（USD 250M，2025-08），Cato Networks 收 Aim Security（USD ~350M，2025-09）；78% 企業採用 AI 但僅 6% 有足夠 guardrails。",
+   "companies": [
+    {
+     "name": "Cisco AI Defense",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "Cisco AI Defense GA 2025-03；市值 ~USD 240B",
+     "products": "AI Cloud Visibility、Supply Chain Risk Mgmt、Model/App Validation、AI Runtime Protection；Agentic Era + AI-Aware SASE（2026-02）",
+     "note": "整合 Robust Intelligence（USD ~400M，2024-09）+ Splunk（USD 28B，2024-03）+ Astrix Security（USD ~400M，2026-05）",
+     "src": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m01/cisco-unveils-ai-defense-to-secure-the-ai-transformation-of-enterprises.html"
+    },
+    {
+     "name": "Palo Alto Networks Prisma AIRS 3.0",
+     "ticker": "PANW",
+     "country": "US",
+     "share": "Q3 FY2026（截至 2026-04-30）營收 +31% YoY 達 USD 3B；Next-Gen Security ARR +60% YoY 達 USD 81.3B；USD 700M 收 Protect AI（完成 2025-07）",
+     "products": "Prisma AIRS 3.0（2026-03）：從『觀察 AI 互動』升級到『安全授權自主執行』的完整 agentic 生命週期防護；AI Runtime Security Engine、AI Agent & Model Inspection；Cortex XSIAM 整進 NVIDIA DOCA Argus 框架（塞進 NVIDIA AI factory）",
+     "note": "全面上修財測、點名 AI 需求與 CyberArk/Chronosphere 整合加速為動能；78% 企業採 AI 但僅 6% 有足夠 guardrails",
+     "src": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-secures-agentic-ai-with-prisma-airs-3-0"
+    },
+    {
+     "name": "SentinelOne + Prompt Security",
+     "ticker": "S",
+     "country": "US",
+     "share": "Q1 FY27（2026-05-28）營收 USD 277M（+21% YoY）；AI Security ARR 近翻倍；USD 250M 收 Prompt Security（2025-08）",
+     "products": "Prompt Security（整合至 Singularity Platform）：GenAI 防護、prompt injection、Shadow AI 可見性；覆蓋 250+ AI 模型",
+     "note": "Prompt Security 成立 2023-08，以色列 8200 部隊出身；延伸 Singularity 至 GenAI/Agentic AI 安全",
+     "src": "https://investors.sentinelone.com/press-releases/news-details/2025/SentinelOne-to-Acquire-Prompt-Security-to-Advance-GenAI-Security-and-Agent-Security-Strategy/default.aspx"
+    },
+    {
+     "name": "CrowdStrike Charlotte AI + AgentWorks",
+     "ticker": "CRWD",
+     "country": "US",
+     "share": "Q1 FY27（截至 2026-04-30）營收 USD 1.39B（+26%）；ARR +24% 達 USD 55B；單季淨新增 ARR 創 USD 256M 紀錄；宣布 4:1 股票分割",
+     "products": "Charlotte AI AgentWorks 生態系（RSA 2026 / 2026-03-25）+ Continuous Identity for AI Agents（Falcon Next-Gen Identity Security，對每個 agent 動作即時授權）；agentic SOAR orchestration；Falcon AIDR + NVIDIA NeMo Guardrails 整合；ISO 42001 認證 AI 治理",
+     "note": "AgentWorks launch 夥伴含 Anthropic、OpenAI、NVIDIA、AWS、Salesforce、Accenture、Deloitte，把上游 frontier model 廠與下游顧問/雲端商綁進其 agent 安全平台",
+     "src": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-charlotte-ai-agentworks-ecosystem-for-building-secure-agents/"
+    },
+    {
+     "name": "F5 + CalypsoAI",
+     "ticker": "FFIV",
+     "country": "US",
+     "share": "市值 ~USD 12B；USD 180M 收 CalypsoAI（2025-09）",
+     "products": "CalypsoAI Inference Platform：real-time AI 決策點可見性、agentic red-teaming、prompt-injection & jailbreak 偵測 runtime guardrails",
+     "note": "2025-10-08 完成收購並推出 F5 AI Guardrails（AI 模型/agent runtime 防護，整合至 ADSP 平台）；CalypsoAI 成立 2018，累計融資 USD 40M+",
+     "src": "https://www.f5.com/company/news/press-releases/f5-to-acquire-calypsoai-to-bring-advanced-ai-guardrails-to-large-enterprises"
+    },
+    {
+     "name": "Cato Networks + Aim Security",
+     "ticker": "—",
+     "country": "IL",
+     "share": "Cato 估值 USD 3B+；Aim 收購價 USD ~350M（2025-09）",
+     "products": "Aim Security AI Security Platform（整合至 Cato SASE Cloud）：GenAI 風險管理、Shadow AI 偵測、AI app 可見性",
+     "note": "約 12-13x 投資回報率；Aim 成立 2022，投資方含 YL Ventures、Canaan Partners",
+     "src": "https://www.prnewswire.com/news-releases/cato-networks-acquires-aim-security-to-extend-sase-leadership-and-secure-enterprise-ai-transformation-302543642.html"
+    },
+    {
+     "name": "HiddenLayer AISec Platform",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；總融資 USD 56M（Series A 2023-09，M12 領投）",
+     "products": "AISec Platform 2.0（2025-04）：ML Model Scanner、Model Detection & Response、AI Red Teaming；Microsoft Azure AI Studio catalog 獨家掃描合作",
+     "note": "投資者含 M12（Microsoft）、Booz Allen Ventures、IBM Ventures、Capital One Ventures",
+     "src": "https://hiddenlayer.com/company/newsroom/hiddenlayer-raises-series-a-to-safeguard-ai/"
+    },
+    {
+     "name": "Noma Security（AI Agent Security）",
+     "ticker": "—",
+     "country": "IL",
+     "share": "私有；2026 完成 USD 100M B 輪；ARR 一年內成長逾 1,300%（號稱該類別成長最快）",
+     "products": "AI/agentic AI 安全平台：AI 供應鏈與資料管線安全、agent runtime 防護、AI 紅隊與態勢管理；end-to-end AI lifecycle 防護",
+     "note": "2026 agentic AI 安全新創合計募資約 USD 3.6B，純玩家快速從大廠切出新賽道",
+     "src": "https://noma.security/blog/noma-security-raises-100m-to-drive-adoption-of-ai-agent-security/"
+    },
+    {
+     "name": "Zenity（Agentic AI Security）",
+     "ticker": "—",
+     "country": "IL",
+     "share": "私有；2026 完成 USD 38M B 輪（累計逾 USD 55M）",
+     "products": "Agentic AI 安全與治理平台：low-code/no-code 與 AI agent 風險可見性、agent 行為監控與防護、prompt injection 與越權偵測",
+     "note": "聚焦企業自建 AI agent / copilot 的安全治理；agentic AI 安全純玩家代表之一",
+     "src": "https://noma.security/blog/noma-security-raises-100m-to-drive-adoption-of-ai-agent-security/"
+    },
+    {
+     "name": "NVIDIA NeMo Guardrails",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "開源 guardrails 事實標準；GitHub 16,000+ stars",
+     "products": "NeMo Guardrails NIMs（2025）：content safety NIM、topic control NIM、jailbreak detection NIM；open-source（Apache 2.0）+ 企業授權 USD 4,500/GPU/年",
+     "note": "Cisco AI Defense、PANW Prisma AIRS、CrowdStrike Falcon AIDR 均整合；50% 更好防護，+0.5 秒延遲",
+     "src": "https://venturebeat.com/ai/nvidia-boosts-agentic-ai-safety-with-nemo-guardrails-promising-better-protection-with-low-latency"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "identity_agent_us"
+    },
+    {
+     "id": "prompt_firewall_dlp"
+    },
+    {
+     "id": "model_safety_red_team"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cisco AI Defense 發布（2025-01）",
+     "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m01/cisco-unveils-ai-defense-to-secure-the-ai-transformation-of-enterprises.html"
+    },
+    {
+     "label": "PANW 完成 Protect AI 收購（USD 700M，2025-07-22）",
+     "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-completes-acquisition-protect-ai"
+    },
+    {
+     "label": "SentinelOne 收購 Prompt Security（USD 250M，2025-08-05）",
+     "url": "https://investors.sentinelone.com/press-releases/news-details/2025/SentinelOne-to-Acquire-Prompt-Security-to-Advance-GenAI-Security-and-Agent-Security-Strategy/default.aspx"
+    },
+    {
+     "label": "F5 收購 CalypsoAI（USD 180M，2025-09-11）",
+     "url": "https://www.f5.com/company/news/press-releases/f5-to-acquire-calypsoai-to-bring-advanced-ai-guardrails-to-large-enterprises"
+    },
+    {
+     "label": "Cato Networks 收購 Aim Security（USD ~350M，2025-09-04）",
+     "url": "https://www.prnewswire.com/news-releases/cato-networks-acquires-aim-security-to-extend-sase-leadership-and-secure-enterprise-ai-transformation-302543642.html"
+    },
+    {
+     "label": "NVIDIA NeMo Guardrails NIMs 發布（VentureBeat）",
+     "url": "https://venturebeat.com/ai/nvidia-boosts-agentic-ai-safety-with-nemo-guardrails-promising-better-protection-with-low-latency"
+    },
+    {
+     "label": "PANW Prisma AIRS 3.0 保護 agentic AI（2026-03）",
+     "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-secures-agentic-ai-with-prisma-airs-3-0"
+    },
+    {
+     "label": "Noma Security USD 100M B 輪（agentic AI 安全）",
+     "url": "https://noma.security/blog/noma-security-raises-100m-to-drive-adoption-of-ai-agent-security/"
+    },
+    {
+     "label": "Cisco AI Defense agentic era（MCP 掃描 + agentic 紅隊）",
+     "url": "https://blogs.cisco.com/ai/security-for-the-agentic-era-cisco-ai-defense-breaks-new-ground"
+    },
+    {
+     "label": "CrowdStrike Charlotte AI AgentWorks 生態系（RSA 2026）",
+     "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-charlotte-ai-agentworks-ecosystem-for-building-secure-agents/"
+    },
+    {
+     "label": "CrowdStrike/PANW AI 資安需求拐點（CybersecurityDive）",
+     "url": "https://www.cybersecuritydive.com/news/crowdstrike-palo-alto-networks-ai-cyber-demand/821999/"
+    }
+   ]
+  },
+  {
+   "id": "agent_runtime_asia",
+   "row": "runtime",
+   "col": 4,
+   "span": 2,
+   "kind": "stage",
+   "name": "Agent Runtime Security（亞洲）",
+   "nameEn": "Asia Agent Runtime Security",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "亞洲各市場的 AI/Agent 執行安全廠商，涵蓋日系全球平台（Trend Micro）、中國國產替代（奇安信/深信服/天融信）、韓國 Ahnlab Agentic AI，以及台灣 CHT Security。",
+   "marketSize": "亞太 AI Security 市場 2025 ~USD 12-15B；日本 Vision One ARR USD 467M（+58% YoY）；中國 AI 安全平台市場 ~RMB 50-60 億",
+   "growth": "APAC AI Security CAGR ~25-30%（2025-2030）；中國政府採購帶動 +30%+",
+   "share": "null",
+   "analysis": "Trend Micro TrendAI Vision One ARR USD 467M（+58% YoY），2026-03 推 Agentic Governance Gateway（agent-to-agent 授權管控）；中國奇安信 TTM 收入 ~USD 623M 為政府核心供應商；Sangfor Athena AI Security GPT（AI SOC Agent，日均 7-8 萬告警→100-200 高風險事件）；AhnLab AI Plus Agentic AI（2025-04 發布）、AhnLab XDR「Annie」AI；台灣 CHT Security H1 2025 收入 +250% YoY。",
+   "companies": [
+    {
+     "name": "Trend Micro TrendAI Vision One",
+     "ticker": "4704.T",
+     "country": "JP",
+     "share": "FY2025 淨收入 ¥276B（~USD 1.77B）；大企業 Vision One ARR USD 467M（+58% YoY）",
+     "products": "TrendAI Vision One™ AI-native XDR/SIEM/CNAPP；Agentic Governance Gateway（agent-to-agent 授權管控，2026-03）；NVIDIA OpenShell 協作保護自主 AI Agent",
+     "note": "2026 指引淨銷售 ¥301.5B；創辦於台灣（1988），總部東京",
+     "src": "https://newsroom.trendmicro.com/2026-02-18-Trend-Micro-Reports-Earnings-Results-for-Q4-2025-and-FY-2025"
+    },
+    {
+     "name": "Qi-AnXin（奇安信）",
+     "ticker": "688561.SS",
+     "country": "CN",
+     "share": "TTM 收入 ~USD 623M（~RMB 45B）；7,419 名員工；中國最大政府級資安廠",
+     "products": "Q-GPT 安全機器人（LLM 安全助手）；天眼威脅情報；終端 / 網路 / 雲端全棧安全",
+     "note": "國資委認可「國家隊」；STAR Market 科創板；IDC AI Agent 安全市場概覽 2025 收錄",
+     "src": "https://en.qianxin.com/about/"
+    },
+    {
+     "name": "Sangfor Athena AI（深信服）",
+     "ticker": "300454.SZ",
+     "country": "CN",
+     "share": "FY2025 收入 RMB 8.04B（+6.96% YoY）；資安業務 RMB 3.54B；淨利 +99.5% YoY",
+     "products": "Sangfor Athena AI 安全平台（XDR + NGFW + SASE）；Security GPT（AI SOC Agent，7-8 萬告警→100-200 高風險事件）；AI Agent 沙箱隔離保護",
+     "note": "雲端業務 +18.5%（RMB 4.01B）補資安業務微跌；AI 整合深度業界領先",
+     "src": "https://news.futunn.com/en/post/71275951/sangfor-technologies-300454-comprehensive-deepening-of-ai-development-strategy-with"
+    },
+    {
+     "name": "AhnLab AI Plus（Agentic）",
+     "ticker": "053800.KQ",
+     "country": "KR",
+     "share": "2025-Q3 EPS ₩1,423（+48% YoY）；最新季 EPS ₩2,520；收入 ₩83.6B（單季）",
+     "products": "AhnLab AI Plus（Agentic AI，2025-04 發布）；AhnLab XDR AI assistant「Annie」；V3 防毒（AI 日均偵測 13 萬+ 新惡意程式）",
+     "note": "2026 策略「Agentic AI: Optimizing Security Operations」；Frost & Sullivan 2025 KR 年度公司獎",
+     "src": "https://cm.asiae.co.kr/en/article/2026012911142811472"
+    },
+    {
+     "name": "CHT Security（中華資安國際）",
+     "ticker": "—",
+     "country": "TW",
+     "share": "H1 2025 收入 +250% YoY；台灣首家資安服務上市公司（2025 Q3）；母公司 2412.TW",
+     "products": "AI-powered SOC（AI Agent 自動化分析，縮短 MTTD/MTTR）；AI 應用安全評估服務；Radware AI WAF 合作；90 萬用戶、4 萬+ SMB、300 政府客戶",
+     "note": "Frost & Sullivan 2025 台灣年度資安公司；中華電信子公司；東南亞資安服務擴展",
+     "src": "https://www.globenewswire.com/news-release/2025/03/05/3037220/8980/en/Radware-and-CHT-Security-Join-Forces-to-Deliver-AI-Powered-Application-Security-in-Taiwan.html"
+    },
+    {
+     "name": "Topsec / 天融信（DeepSeek AI）",
+     "ticker": "002212.SZ",
+     "country": "CN",
+     "share": "H1 2025 收入 RMB 8.26億；淨利 +68.56% YoY；智算雲 H1 RMB 1.02億",
+     "products": "DeepSeek 安全智算一體機（2025-02）；可信網路防火牆；AI + 雲計算融合安全；智算雲平台（AI 推理安全）",
+     "note": "政府/軍工網路安全傳統大廠；DeepSeek 整合為差異化賣點",
+     "src": "http://www.topsec.com.cn/Artificial-Intelligence"
+    },
+    {
+     "name": "Huawei HiSec AI Firewall",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國企業 NGFW #1（市場估計）；私有（華為集團）",
+     "products": "HiSec Endpoint（3-in-1，2025 Tolly 認證）；Xinghe AI 統一 SASE（零信任 2025 升級）；HiSecEngine USG6700F AI Firewall（未知威脅偵測率 95%）",
+     "note": "政府採購主力；完整「端-網-雲」AI 安全棧；受美國制裁但中國內需強勁",
+     "src": "https://e.huawei.com/en/news/2025/solutions/enterprise-network/xinghe-ai-cyber-security"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "identity_agent_us"
+    },
+    {
+     "id": "governance_compliance"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Trend Micro FY2025 Q4 Earnings（2026-02-18）",
+     "url": "https://newsroom.trendmicro.com/2026-02-18-Trend-Micro-Reports-Earnings-Results-for-Q4-2025-and-FY-2025"
+    },
+    {
+     "label": "AhnLab AI Plus Agentic AI Strategy（2026-01-29）",
+     "url": "https://cm.asiae.co.kr/en/article/2026012911142811472"
+    },
+    {
+     "label": "CHT Security × Radware AI WAF（2025-03-05）",
+     "url": "https://www.globenewswire.com/news-release/2025/03/05/3037220/8980/en/Radware-and-CHT-Security-Join-Forces-to-Deliver-AI-Powered-Application-Security-in-Taiwan.html"
+    },
+    {
+     "label": "Huawei Xinghe AI Cyber Security（2025）",
+     "url": "https://e.huawei.com/en/news/2025/solutions/enterprise-network/xinghe-ai-cyber-security"
+    }
+   ]
+  },
+  {
+   "id": "identity_agent_us",
+   "row": "ident",
+   "col": 1,
+   "span": 5,
+   "kind": "stage",
+   "name": "Identity for AI Agents（Agent IdP / IGA / PAM）",
+   "nameEn": "AI Agent Identity, IGA & Privileged Access",
+   "competition": "oligopoly",
+   "single": "Okta Agent IdP（企業 IAM #1）+ CYBR PAM（特權訪問 #1）+ SAIL IGA（IPO 2025-02）三足鼎立；Microsoft Entra Agent ID 公開預覽覆蓋 Azure 生態",
+   "desc": "為 AI Agent 提供身份驗證、授權、特權訪問管理（PAM）、Identity Governance（IGA）的平台層。傳統 IAM 廠商快速延伸至「非人類身份（NHI）」管理，machine identity 爆炸成長。",
+   "marketSize": "IGA 市場 2025 ~USD 6-8B；PAM 市場 ~USD 5B；Gartner：machine identity 對 human 比超 80:1",
+   "growth": "IGA CAGR ~12-15%；PAM CAGR ~18-22%；AI Agent identity 子市場 YoY +50%+（新興）",
+   "share": "null",
+   "analysis": "純玩家側 NewCore（Tel Aviv/SF）2026-06-15 帶 USD 66M 種子（Cyberstarts 領投，Index/Evolution 參投，估值 USD 300M）出 stealth，把人類與 AI agent 身份統一治理、AI agent 視為一等公民身份（含 Agentic Skill 讓 Claude Code/Codex/Cursor 以受管身份登入）；GitGuardian 2026-02 再融 USD 50M 擴 NHI/agent 身份。Okta 2025-10 發布 Okta for AI Agents（EA）：Agent IdP、shadow AI agent 自動發現、ID-JAG 跨平台標準。CYBR Secure AI Agents GA 2025-11：just-in-time access、zero standing privileges；machine identity 對 human 比超 80:1（Gartner：2028 年 25% 企業外洩將與 AI agent 濫用相關）。⚠ 結構真相：身份層是這條鏈唯一在『收斂』的權力中心——PANW 以 USD 25B 收購 CyberArk（2026-02-11 完成，PANW 史上最大案），把 identity 升為平台第六大支柱（與網路/SecOps 並列）、宣告『identity 是 AI 時代新邊界』；runtime/DLP/red-team 三層仍分散，唯有控制『誰能授權 agent 動作』的身份層握有真實定價權與綁約能力。⚠ 新單點關卡：MCP（Model Context Protocol）身分驗證成為 agentic AI 連線的 chokepoint——2026-01 導入 OAuth 2.1 強制 PKCE，但僅 8.5% MCP server 已實作，形成大規模合規缺口；MCP-I 規格 2026-03 捐給 DIF、Auth0『Auth for MCP』2026-05-06 GA、MCP 規格 2026-07-28 改寫授權機制（移除 sessions），誰掌握 MCP 身分標準層誰就握住 agent 連線瓶頸。SAIL IPO 2025-02（自 ARM 以來最大科技 IPO，超額 20x）；Saviynt 2025-12 KKR 領投 USD 700M（估值 USD 3B）；Cisco 2026-05 收 Astrix NHI（USD ~400M）。SAIL IPO 2025-02（最大科技 IPO 自 ARM 以來，超額認購 20x）。Saviynt 2025-12 KKR 領投 USD 700M（估值 USD 3B）。Cisco 2026-05 收 Astrix Security NHI（USD ~400M）補強 CSCO AI Defense 非人類身份層。PANW 2026-05-12 發表 Idira 統一身份平台（整合 CyberArk PAM + machine/agentic identity），把 identity-first 正式產品化。純玩家側 Oasis Security 2026-03 完成 USD 120M Series B（Craft Ventures 領投，累計 USD 195M，估值未揭、新 ARR YoY +5x），主打 agentic access management（NHI 數量遠超人類），多數客戶為 Fortune 500，是 NHI/agentic 身份層尚能獨立做大的代表新創。",
+   "companies": [
+    {
+     "name": "Okta（Agent IdP）",
+     "ticker": "OKTA",
+     "country": "US",
+     "share": "Q1 FY27（2026-05-28）營收 USD 765M（+11% YoY）；FY27 指引上修至 ~USD 3.2B；企業 IAM #1",
+     "products": "Okta for AI Agents（EA 2025-10，GA 2026-04-30）：Universal Directory 把每個 agent 當獨立身分、ISPM Agent Discovery 偵測 shadow AI、單一 agent 清單、ID-JAG 跨平台標準；整合 Axiom Security 雲原生 PAM；Auth0 + Workforce Identity",
+     "note": "整合 2025-09 完成併購之 Axiom Security（以色列雲原生 PAM，傳約 USD 75M）；主張跨 IdP（Entra、Ping）的 agent identity 安全層；88% 組織遇過 AI agent 安全事件、僅 22% 把 agent 當身分實體看待",
+     "src": "https://www.okta.com/newsroom/press-releases/okta-secures-the-agentic-enterprise-with-new-tools-for-discovering-and-mitigating-shadow-ai-risks/"
+    },
+    {
+     "name": "Microsoft Entra Agent ID",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "市值 ~USD 3.2T；Entra Agent ID 2026-04 正式 GA（自 2025 公開預覽）",
+     "products": "Microsoft Entra Agent ID（GA 2026-04）：跨 AWS Bedrock / Google Vertex / Databricks / Salesforce 單一 registry 註冊 agent 身分、Conditional Access 強制最小權限、agent fleet 完整清單；Microsoft Purview 延伸 DLP 至 agent 動作",
+     "note": "Security FY2025 年化收入突破 USD 20B+；把 agent 身分綁進既有 IAM 基座，直接擠壓純身分廠商（Okta/SailPoint/CyberArk）地盤",
+     "src": "https://www.bighatgroup.com/blog/entra-agent-id-ga-deep-dive/"
+    },
+    {
+     "name": "CyberArk Secure AI Agents",
+     "ticker": "PANW",
+     "country": "IL",
+     "share": "已被 PANW 以 ~USD 25B 收購（2026-02-11 完成，每股 $45 現金 + 2.2005 股 PANW）；PAM 特權訪問管理 #1",
+     "products": "Idira 次世代身份安全平台（GA 2026-05-12）：整合 modern PAM + machine/agentic identity，dynamic privilege controls 跨 human/machine/AI agent、消除 standing privileges；前身 CyberArk Secure AI Agents（GA 2025-11）",
+     "note": "PANW 完成收購（USD 25B，2026-02-11）後正式把『身分安全（Identity Security）』設為平台第六大支柱、5/12 發表 Idira；覆蓋 human/machine/agentic 三類身分；CyberArk 研究：AI agent 採用 3 年內達 76%，但不足 10% 企業有足夠安全控制",
+     "src": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-cyberark-to-secure-the-ai-era"
+    },
+    {
+     "name": "SailPoint（SAIL）",
+     "ticker": "SAIL",
+     "country": "US",
+     "share": "IPO 2025-02-13，估值 USD 12.8B；最大科技 IPO 自 ARM 2023-09 以來",
+     "products": "SailPoint Atlas Platform：IGA + 特權訪問管理 + AI 驅動異常偵測；Agentic Fabric（2026-05-11，把 IGA 延伸到 AI agent 與 NHI：發現 agent、對應人類 owner、即時授權）+ Agentic Business 新方案；覆蓋 human/machine/AI 身份",
+     "note": "從 Thoma Bravo 私有化後重返 NASDAQ；超額認購 20x，募資 USD 1.38B；Gartner 已把『AI agent 的 IAM』列入 2026 CISO 優先議程",
+     "src": "https://www.sailpoint.com/blog/sailpoint-framework-governing-ai-agents"
+    },
+    {
+     "name": "Saviynt（Identity Cloud）",
+     "ticker": "—",
+     "country": "US",
+     "share": "USD 700M / USD 3B 估值（KKR 領投，2025-12）；600+ 全球企業客戶，20%+ Fortune 100",
+     "products": "Identity Cloud：IGA + PAM + AAG + ISPM + Access Gateway；AI-enabled access certification / provisioning / access review",
+     "note": "2025-12 KKR 領投 Series B USD 700M（Sixth Street Growth、TenEleven、Carrick Capital 參與）",
+     "src": "https://saviynt.com/press-release/saviynt-raises-700m-in-kkr-led-round-to-establish-identity-security-as-the-foundation-for-the-ai-era"
+    },
+    {
+     "name": "BeyondTrust Modern PAM",
+     "ticker": "—",
+     "country": "US",
+     "share": "已同意由 Veritas Capital 收購（Francisco Partners 出脫）；PAM 老牌廠",
+     "products": "BeyondTrust Modern PAM：Identity Security Insights、JIT access（2024-04 收購 Entitle）、Privileged Remote Access（PRA）；AI agent PAM 擴展路線圖",
+     "note": "2024-04 收購 Entitle 強化雲端 IGA；Francisco Partners 自 2018 持有",
+     "src": "https://www.beyondtrust.com/press/beyondtrust-acquires-entitle"
+    },
+    {
+     "name": "JumpCloud Agentic IAM",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；累計融資 USD 400M+；SMB-中型企業",
+     "products": "JumpCloud Agentic IAM（2026-04-27）：AI Discovery & Directory、AI Gateway（OIDC 認證）、real-time OS 健康驗證、risk-based 人工授權 checkpoint",
+     "note": "92% 組織在安全擴展 AI agent 上有重大限制；66% 組織給 AI agent 等同或超過人類的系統訪問",
+     "src": "https://jumpcloud.com/press/jumpcloud-launches-agentic-iam-to-govern-the-ai-lifecycle"
+    },
+    {
+     "name": "Cisco Astrix Security（NHI）",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "Astrix 收購 USD ~400M（完成 2026-05）；非人類身份（NHI）管理",
+     "products": "Astrix NHI Security：服務帳戶、API key、OAuth token、AI agent 身份清單與異常偵測；整合至 Cisco AI Defense",
+     "note": "強化 Cisco AI Defense 非人類身份層；Astrix 為 NHI 安全領域頭部新創",
+     "src": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m01/cisco-unveils-ai-defense-to-secure-the-ai-transformation-of-enterprises.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "agent_runtime_security_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "prompt_firewall_dlp"
+    },
+    {
+     "id": "governance_compliance"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Okta for AI Agents Showcase 2026 公告",
+     "url": "https://www.okta.com/newsroom/press-releases/showcase-2026/"
+    },
+    {
+     "label": "CyberArk Secure AI Agents GA 2025-11",
+     "url": "https://www.cyberark.com/press/cyberark-introduces-first-identity-security-solution-purpose-built-to-protect-ai-agents-with-privilege-controls/"
+    },
+    {
+     "label": "SailPoint IPO 定價公告（2025-02）",
+     "url": "https://investor.sailpoint.com/news-releases/news-release-details/sailpoint-announces-pricing-upsized-initial-public-offering"
+    },
+    {
+     "label": "Saviynt USD 700M KKR 融資（2025-12）",
+     "url": "https://saviynt.com/press-release/saviynt-raises-700m-in-kkr-led-round-to-establish-identity-security-as-the-foundation-for-the-ai-era"
+    },
+    {
+     "label": "JumpCloud Agentic IAM（2026-04-27）",
+     "url": "https://jumpcloud.com/press/jumpcloud-launches-agentic-iam-to-govern-the-ai-lifecycle"
+    },
+    {
+     "label": "PANW Idira 身份安全平台（GA 2026-05-12）",
+     "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-introduces-idira--the-next-generation-identity-security-platform-built-for-the-ai-enterprise"
+    },
+    {
+     "label": "Oasis Security USD 120M Series B（2026-03-19）",
+     "url": "https://siliconangle.com/2026/03/19/oasis-security-raises-120m-secure-non-human-identities-across-ai-cloud-environments/"
+    },
+    {
+     "label": "PANW Idira 身份安全平台（GA 2026-05-12）",
+     "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-introduces-idira--the-next-generation-identity-security-platform-built-for-the-ai-enterprise"
+    },
+    {
+     "label": "Oasis Security USD 120M Series B（2026-03-19）",
+     "url": "https://siliconangle.com/2026/03/19/oasis-security-raises-120m-secure-non-human-identities-across-ai-cloud-environments/"
+    },
+    {
+     "label": "PANW Idira 身份安全平台（GA 2026-05-12）",
+     "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-introduces-idira--the-next-generation-identity-security-platform-built-for-the-ai-enterprise"
+    },
+    {
+     "label": "Oasis Security USD 120M Series B（2026-03-19）",
+     "url": "https://siliconangle.com/2026/03/19/oasis-security-raises-120m-secure-non-human-identities-across-ai-cloud-environments/"
+    },
+    {
+     "label": "Microsoft Entra Agent ID（TechZine）",
+     "url": "https://www.techzine.eu/news/security/136456/microsoft-entra-eliminates-identity-risks-posed-by-ai-agents/"
+    },
+    {
+     "label": "PANW 完成併購 CyberArk（USD 25B，2026-02-11）",
+     "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-cyberark-to-secure-the-ai-era"
+    },
+    {
+     "label": "Microsoft Entra Agent ID GA 深度解析（2026-04）",
+     "url": "https://www.bighatgroup.com/blog/entra-agent-id-ga-deep-dive/"
+    },
+    {
+     "label": "Okta 保護 agentic enterprise + shadow AI（GA 2026-04-30）",
+     "url": "https://www.okta.com/newsroom/press-releases/okta-secures-the-agentic-enterprise-with-new-tools-for-discovering-and-mitigating-shadow-ai-risks/"
+    },
+    {
+     "label": "SailPoint Agentic Fabric 治理 AI agent（2026-05-11）",
+     "url": "https://www.sailpoint.com/blog/sailpoint-framework-governing-ai-agents"
+    },
+    {
+     "label": "MCP agent 身分驗證 2026 規格（WorkOS）",
+     "url": "https://workos.com/blog/mcp-2026-spec-agent-authentication"
+    }
+   ]
+  },
+  {
+   "id": "prompt_firewall_dlp",
+   "row": "dlp",
+   "col": 1,
+   "span": 5,
+   "kind": "rail",
+   "name": "Prompt Firewall + DLP + DSPM",
+   "nameEn": "Prompt Firewall, Data Leak Prevention & Data Security Posture Mgmt",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "為 AI Agent 與 GenAI 應用提供雙向 prompt / 回應過濾（防資料外洩）、資料安全態勢管理（DSPM）、PII / 敏感資料偵測的安全控制層。",
+   "marketSize": "DLP 市場 2025 ~USD 6-7B；DSPM 新興子市場 ~USD 1-2B；AI-native DLP 快速侵蝕傳統 DLP",
+   "growth": "DSPM CAGR ~35-40%（2025-2030）；Cyera 一年內估值 3x（USD 3B→USD 9B）",
+   "share": "null",
+   "analysis": "Veeam 2025-12 以 USD 1.725B 收 Securiti AI（最大 DSPM M&A）；Cyera 2026-01 完成 Series F USD 400M（估值 USD 9B，一年三倍增長）；WitnessAI 2026-01 USD 58M（Qualcomm/Samsung Ventures 參投）；Microsoft Purview 2025-03 擴展 agent 動作 DLP；BigID 達 ARR USD 100M+（DSPM Centaur）；Nightfall 為首創 GenAI DLP 廠商。⚠ 結構暗流：DSPM 是純新創唯一還能獨立做大的窗口，但正被兩股力量夾殺——(1) 平台廠由上而下併購（Veeam/Securiti、CRWD/Flow、Fortinet/Next DLP、IBM/Polar、Netskope/Dasera），(2) 微軟 Purview 把 DLP 變成 M365 內建『免費功能』、agent 自動繼承人類保護規則，逐步侵蝕獨立 DLP 利潤池；Cyera 一年估值 USD 3B→9B 的高倍數，賭的正是『搶在被吞噬前成為下一個平台級買家』而非被買。",
+   "companies": [
+    {
+     "name": "Veeam + Securiti AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "Securiti 以 USD 1.725B 被收購（2025-12-11）；DSPM 最大 M&A",
+     "products": "Securiti Unified Data Intelligence：DSPM、隱私管理、資料訪問治理、AI Trust；整合至 Veeam Trusted Data Platform",
+     "note": "Securiti CEO Rehan Jalil 出任 Veeam President of Security and AI；600 名員工整合",
+     "src": "https://www.veeam.com/company/press-release/veeam-acquires-securiti-ai.html"
+    },
+    {
+     "name": "Cyera DSPM",
+     "ticker": "—",
+     "country": "IL",
+     "share": "USD 600M / USD 12B 估值（2026-06，Evolution Equity 領投）；累計融資 USD 2.3B；服務 20% Fortune 500；1,500+ 員工",
+     "products": "AI-native Data Security Platform：DSPM、資料發現與分類、隱私、DLP、agentic security；18 個月新增 100+ 功能",
+     "note": "估值 18 個月四倍（2024-12 USD 3B → 2025-06 USD 6B → 2026-01 USD 9B → 2026-06 USD 12B）；Cyberstarts、Temasek 新進",
+     "src": "https://www.businesswire.com/news/home/20260108628439/en/Cyera-Raises-$400M-to-Meet-Rapidly-Growing-Demand-for-AI-Security-Among-Enterprises"
+    },
+    {
+     "name": "WitnessAI（AI Firewall）",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；總融資 USD 85.5M（2026-01 USD 58M，Qualcomm/Samsung Ventures 參投）",
+     "products": "Secure AI Enablement Platform：AI 使用可觀測性、AI Firewall（bidirectional prompt injection / 回應過濾）、AI Agent 治理（multi-tenant 主權）；企業閘道模式",
+     "note": "2024-05 Series A USD 27.5M（Google Ventures + Ballistic Ventures 領投）；2026-01 USD 58M 策略融資（Sound Ventures 領投）",
+     "src": "https://www.prnewswire.com/news-releases/witnessai-raises-58-million-for-global-expansion-and-announces-new-ways-to-secure-ai-agents-302659319.html"
+    },
+    {
+     "name": "Akamai + LayerX（瀏覽器 AI 安全）",
+     "ticker": "AKAM",
+     "country": "US",
+     "share": "LayerX 以 USD 205M 被收購（2026-05 宣布，預計 Q3 2026 完成）；LayerX 年底 ARR ~USD 10M",
+     "products": "LayerX 企業瀏覽器安全：browser/app/IDE 內 user+agentic 活動即時可見控制、Shadow AI 發現、GenAI DLP、AI 工具存取控制、AI 瀏覽器/外掛防護；整合至 Akamai Zero Trust",
+     "note": "瀏覽器成為 AI agent/GenAI 使用的主要管控點；以色列新創，併入 Akamai Zero Trust 組織",
+     "src": "https://www.securityweek.com/akamai-to-acquire-ai-and-browser-security-firm-layerx-for-205-million/"
+    },
+    {
+     "name": "Akamai + LayerX（瀏覽器 AI 安全）",
+     "ticker": "AKAM",
+     "country": "US",
+     "share": "LayerX 以 USD 205M 被收購（2026-05 宣布，預計 Q3 2026 完成）；LayerX 年底 ARR ~USD 10M",
+     "products": "LayerX 企業瀏覽器安全：browser/app/IDE 內 user+agentic 活動即時可見控制、Shadow AI 發現、GenAI DLP、AI 工具存取控制、AI 瀏覽器/外掛防護；整合至 Akamai Zero Trust",
+     "note": "瀏覽器成為 AI agent/GenAI 使用的主要管控點；以色列新創，併入 Akamai Zero Trust 組織",
+     "src": "https://www.securityweek.com/akamai-to-acquire-ai-and-browser-security-firm-layerx-for-205-million/"
+    },
+    {
+     "name": "Akamai + LayerX（瀏覽器 AI 安全）",
+     "ticker": "AKAM",
+     "country": "US",
+     "share": "LayerX 以 USD 205M 被收購（2026-05 宣布，預計 Q3 2026 完成）；LayerX 年底 ARR ~USD 10M",
+     "products": "LayerX 企業瀏覽器安全：browser/app/IDE 內 user+agentic 活動即時可見控制、Shadow AI 發現、GenAI DLP、AI 工具存取控制、AI 瀏覽器/外掛防護；整合至 Akamai Zero Trust",
+     "note": "瀏覽器成為 AI agent/GenAI 使用的主要管控點；以色列新創，併入 Akamai Zero Trust 組織",
+     "src": "https://www.securityweek.com/akamai-to-acquire-ai-and-browser-security-firm-layerx-for-205-million/"
+    },
+    {
+     "name": "Microsoft Purview（AI DLP）",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "Microsoft Security FY2025 年化收入 USD 20B+；Purview 覆蓋 M365 所有服務",
+     "products": "Microsoft Purview DLP for M365 Copilot、Purview for Agent 365（agent 動作 DLP）、Information Protection label 延伸至 agent、Fabric DLP",
+     "note": "2025-03 擴展至 agent 保護；agent 繼承與人類使用者相同的保護規則",
+     "src": "https://www.microsoft.com/en-us/security/blog/2025/03/31/new-innovations-in-microsoft-purview-for-protected-ai-ready-data/"
+    },
+    {
+     "name": "Nightfall AI（GenAI DLP）",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；Series B USD 40M（2022-08）；GenAI DLP 首創廠商",
+     "products": "AI-Native DLP Platform：GenAI DLP、SaaS SSPM、endpoint DLP；Spring 2025 產品發布延伸 DLP 至 AI 時代；覆蓋 GitHub、Slack、Google Drive",
+     "note": "行業首創 GenAI DLP；Bain Capital Ventures、Venrock、WestBridge Capital 支持",
+     "src": "https://www.globenewswire.com/news-release/2024/03/11/2843808/0/en/Nightfall-AI-Transforms-Enterprise-DLP-with-AI-Native-Platform.html"
+    },
+    {
+     "name": "BigID（DSPM）",
+     "ticker": "—",
+     "country": "US",
+     "share": "USD 1.3B 估值（2024）；ARR USD 100M+；DSPM 首家 Centaur",
+     "products": "Data Intelligence Platform：DSPM、AI 管線資料衛生（discovery→staging→enrichment）、GenAI 模型資料訪問追蹤、PII 偵測；第一家 DSPM 達 USD 100M 年收入",
+     "note": "2024-03 USD 60M 融資（Riverwood Capital 領投）；連續 4 年 Deloitte Fast 500",
+     "src": "https://www.prnewswire.com/news-releases/ai-security-market-fuels-a-60m-growth-round-for-unicorn-bigid-to-accelerate-ai-data-security-innovation-and-power-acquisitions-302091045.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "identity_agent_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "governance_compliance"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Veeam 完成 Securiti AI 收購（USD 1.725B，2025-12-11）",
+     "url": "https://www.veeam.com/company/press-release/veeam-acquires-securiti-ai.html"
+    },
+    {
+     "label": "Cyera USD 600M / USD 12B 估值（2026-06）",
+     "url": "https://www.cyera.com/press-releases/cyera-raises-600-million-at-12-billion-valuation-to-continue-building-the-trust-layer-for-the-ai-era"
+    },
+    {
+     "label": "WitnessAI USD 58M 策略融資（2026-01）",
+     "url": "https://www.prnewswire.com/news-releases/witnessai-raises-58-million-for-global-expansion-and-announces-new-ways-to-secure-ai-agents-302659319.html"
+    },
+    {
+     "label": "Akamai 收購 LayerX（USD 205M，2026-05）",
+     "url": "https://www.securityweek.com/akamai-to-acquire-ai-and-browser-security-firm-layerx-for-205-million/"
+    },
+    {
+     "label": "Akamai 收購 LayerX（USD 205M，2026-05）",
+     "url": "https://www.securityweek.com/akamai-to-acquire-ai-and-browser-security-firm-layerx-for-205-million/"
+    },
+    {
+     "label": "Akamai 收購 LayerX（USD 205M，2026-05）",
+     "url": "https://www.securityweek.com/akamai-to-acquire-ai-and-browser-security-firm-layerx-for-205-million/"
+    },
+    {
+     "label": "Microsoft Purview AI-ready data 保護創新（2025-03）",
+     "url": "https://www.microsoft.com/en-us/security/blog/2025/03/31/new-innovations-in-microsoft-purview-for-protected-ai-ready-data/"
+    },
+    {
+     "label": "Nightfall AI-Native DLP Platform（2024-03）",
+     "url": "https://www.globenewswire.com/news-release/2024/03/11/2843808/0/en/Nightfall-AI-Transforms-Enterprise-DLP-with-AI-Native-Platform.html"
+    },
+    {
+     "label": "BigID USD 60M 融資（2024-03）",
+     "url": "https://www.prnewswire.com/news-releases/ai-security-market-fuels-a-60m-growth-round-for-unicorn-bigid-to-accelerate-ai-data-security-innovation-and-power-acquisitions-302091045.html"
+    }
+   ]
+  },
+  {
+   "id": "model_safety_red_team",
+   "row": "red",
+   "col": 1,
+   "span": 3,
+   "kind": "rail",
+   "name": "Model Safety + AI Red Team",
+   "nameEn": "Model Safety, Adversarial Testing & AI Red Teaming",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "為 LLM / 多模態模型 / AI Agent 提供對抗測試（red team）、模型漏洞掃描、backdoor 偵測、Constitutional AI 對齊的安全基礎設施層。",
+   "marketSize": "AI Red Teaming 市場 2025 ~USD 500M-1B（新興）；LLM Safety TAM ~USD 3-5B（含 Observability）",
+   "growth": "CAGR ~40-50%；監管驅動（EU AI Act 2026 全面適用 + NIST AI RMF）",
+   "share": "null",
+   "analysis": "CHKP 2025-09 以 USD 300M 收 Lakera（Gandalf AI Security Platform，Lakera Guard + Lakera Red）；Check Point 成立 Global Center of Excellence for AI Security。⚠ 2026-03 OpenAI 宣布以 ~USD 86M 收 Promptfoo（125k 開發者、25%+ Fortune 500 使用之開源紅隊工具），整入 OpenAI Frontier，標誌基礎模型廠開始由下而上收編 red-team 層，與資安平台廠形成雙邊爭奪。Anthropic Constitutional AI / RSP 為業界安全標準參照；NVIDIA NeMo Guardrails 技術栈被 CSCO/PANW/CRWD 廣泛整合。Mindgard（英國蘭卡斯特大學 spinoff）2024-12 完成 USD 8M，獨立自動化 AI Red Teaming 利基廠。⚠ 隱性結構：Red-Team 層碎片化（多為 10-30 人 8200/學術 spinoff），無一家可獨立規模化，注定是『被併購的零件供應商』——已被收的 Lakera(CHKP)、Robust Intelligence(CSCO)、Protect AI(PANW)、CalypsoAI(F5)、Prompt Security(S) 皆如此；剩下未被收的 Adversa/Lasso/Mindgard/HiddenLayer 是下一波 M&A 標的。真正『定價權』不在這些工具廠，而在制定安全標準的 Anthropic（Constitutional AI/RSP）與 NVIDIA（NeMo Guardrails 事實標準），平台廠買的是技術而非市占。",
+   "companies": [
+    {
+     "name": "Check Point + Lakera AI",
+     "ticker": "CHKP",
+     "country": "IL",
+     "share": "市值 ~USD 25B；USD 300M 收 Lakera（完成 2025-10-22）",
+     "products": "Lakera Gandalf AI Security Platform：prompt injection 防護、LLM 安全測試、AI 應用 runtime 保護；整合至 Check Point Infinity Platform；Global Center of Excellence for AI Security",
+     "note": "Lakera 累積 USD 30M；2024-07 Series A USD 20M（Atomico 領投）；Gandalf 為互動式安全演示知名創作",
+     "src": "https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/"
+    },
+    {
+     "name": "Anthropic Trust & Safety",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；估值 USD 61.5B（2025-03）；AI 安全研究基礎設施提供商",
+     "products": "Constitutional AI、RLHF 安全對齊、紅隊測試基礎設施、Claude 模型安全護欄；Claude 3.7 Sonnet extended thinking 安全層；Responsible Scaling Policy（RSP）AI 安全框架",
+     "note": "設立 USD 1M+ Long-Term Benefit Trust；多國政府 AI 安全合作；Amazon Bedrock Guardrails 底層技術合作方",
+     "src": "https://www.anthropic.com/research"
+    },
+    {
+     "name": "Adversa AI（Continuous Red Team）",
+     "ticker": "—",
+     "country": "IL",
+     "share": "私有；種子輪（Moxxie Ventures、VentureIsrael）；OECD AI 目錄工具",
+     "products": "Continuous Red Teaming for GenAI：LLM Threat Modeling、LLM Vulnerability Audit（數百個已知 LLM 漏洞）、LLM Red Teaming（AI 增強攻擊模擬）",
+     "note": "2024-07 入選 AI Fintech Global 100；Gartner 認可 AI/LLM 安全廠商",
+     "src": "https://www.prnewswire.com/news-releases/adversa-ai-red-teaming-platform-for-llm-in-global-100-ai-fintech-list-2024-302190009.html"
+    },
+    {
+     "name": "Mindgard（Automated AI Red Team）",
+     "ticker": "—",
+     "country": "UK",
+     "share": "私有；總融資 USD 11.6M；英國蘭卡斯特大學 spinoff",
+     "products": "自動化 AI Red Teaming 平台：LLM/GenAI 漏洞測試、adversarial robustness 評估、AI 安全態勢持續監控；UK 最創新網路 SME 2024（Infosecurity Europe）",
+     "note": "2024-12 完成 USD 8M（.406 Ventures 領投，Atlantic Bridge、IQ Capital、Lakestar 參與）；擴展美國市場",
+     "src": "https://techcrunch.com/2024/12/20/british-university-spinoff-mindgard-protects-companies-from-ai-threats/"
+    },
+    {
+     "name": "Trail of Bits（AI Security Audit）",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；高信譽安全研究機構；DARPA、Google、iCloud 等客戶",
+     "products": "AI 安全審計、AI/ML 紅隊測試、LLM 安全研究；Slither（智能合約分析）、osquery 等開源工具；AI 安全報告「Toward Comprehensive AI Governance」",
+     "note": "為政府與頂級企業提供 AI 系統安全評估；Anthropic、Amazon 安全審計夥伴",
+     "src": "https://www.trailofbits.com/"
+    },
+    {
+     "name": "Lasso Security（GenAI Risk Mgmt）",
+     "ticker": "—",
+     "country": "IL",
+     "share": "私有；總融資 USD 14.5M；2024 Gartner Cool Vendor in AI Security",
+     "products": "GenAI 風險管理：LLM 安全測試、AI 應用防護、GenAI 資料外洩偵測；Lasso Federal（公共部門版）",
+     "note": "種子 USD 6M（Entrée Capital、Samsung Next）；CyberArk Ventures 參與；被點名為最熱門 M&A 標的之一",
+     "src": "https://www.lasso.security/resources/lasso-security-funding-announcement-2023"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "agent_runtime_security_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "governance_compliance"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Check Point 收購 Lakera AI（2025-09-17 宣布，2025-10-22 完成）",
+     "url": "https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/"
+    },
+    {
+     "label": "Anthropic 安全研究中心",
+     "url": "https://www.anthropic.com/research"
+    },
+    {
+     "label": "Mindgard USD 8M 融資（TechCrunch 2024-12-20）",
+     "url": "https://techcrunch.com/2024/12/20/british-university-spinoff-mindgard-protects-companies-from-ai-threats/"
+    },
+    {
+     "label": "Adversa AI 入選 AI Fintech Global 100（2024-07）",
+     "url": "https://www.prnewswire.com/news-releases/adversa-ai-red-teaming-platform-for-llm-in-global-100-ai-fintech-list-2024-302190009.html"
+    }
+   ]
+  },
+  {
+   "id": "governance_compliance",
+   "row": "red",
+   "col": 4,
+   "span": 2,
+   "kind": "rail",
+   "name": "AI Governance + Compliance（EU AI Act / NIST）",
+   "nameEn": "AI Governance, Risk & Compliance Platforms",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "為企業 AI 系統提供風險評估、合規管理（EU AI Act / NIST AI RMF / ISO 42001）、AI 資產清單、供應鏈 AI 治理的 SaaS 平台，受 EU AI Act 2026-08 全面適用催化。",
+   "marketSize": "AI Governance TAM 2025 ~USD 2-4B；Gartner 2025 AI Governance Platforms Market Guide（獨立品類）",
+   "growth": "EU AI Act 2026-05-07 Omnibus 政治協議將 Annex III 高風險義務由 2026-08-02 延後至 2027-12-02、Annex I 內嵌型延至 2028-08-02，近期合規需求拉力被遞延；NIST AI RMF 美國政府採購要求；CAGR ~30-35%",
+   "share": "null",
+   "analysis": "Credo AI 2024-07 USD 21M（Fast Company 2026 年度最創新 AI 公司第 6 名）；IBM watsonx.governance 2025 IDC MarketScape + Forrester Wave Leader；OneTrust ARR USD 500M+，2025 下半年傳出 PE 出售探索（估值 USD 10B+）；SAS Viya 金融業 SR 11-7 合規最深；歐洲 FairNow 聚焦 EU AI Act 自動化合規。⚠ 監理時程鬆動：EU AI Act 2026-05-07 Omnibus 政治協議把高風險義務由 2026-08 延後至 2027-12，治理合規帶來的近期需求拉力被遞延，可能拖慢部分 AI 治理工具的採用節奏。",
+   "companies": [
+    {
+     "name": "IBM watsonx.governance",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "市值 ~USD 215B；2025 IDC MarketScape Worldwide Unified AI Governance Platforms Leader",
+     "products": "watsonx.governance：AI 模型生命周期治理、風險評估、bias 偵測、可解釋性監控、合規框架（EU AI Act / NIST AI RMF / ISO 42001）；支援 OpenAI、AWS、Meta 第三方模型",
+     "note": "2025 Forrester Wave AI Governance Solutions Leader；金融/醫療/政府受監管行業",
+     "src": "https://www.ibm.com/new/announcements/ibm-named-a-leader-in-the-2025-idc-marketscape-worldwide-unified-ai-governance-platforms-2025-vendor-assessment"
+    },
+    {
+     "name": "OneTrust（Trust Intelligence）",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；ARR USD 500M+；潛在 PE 出售估值 USD 10B+；14,000+ 客戶，75% Fortune 100",
+     "products": "Trust Intelligence Platform：隱私合規（GDPR/CCPA）、AI Governance（EU AI Act mapping）、GRC、第三方風險管理、Cookie Consent",
+     "note": "2024 Forbes Cloud 100 連續 6 年；2025 Forrester Privacy Management Software Wave Leader；2025 下半年傳出 PE 出售探索",
+     "src": "https://www.onetrust.com/news/onetrust-trustweek-2024-momentum/"
+    },
+    {
+     "name": "Credo AI（AI Governance）",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有；USD 101M 估值（2024-07）；Fast Company 2026 年度最創新 AI 公司第 6 名（Applied AI）",
+     "products": "AI Governance Platform：AI 風險評估、合規管理（EU AI Act / NIST AI RMF / ISO 42001）、AI 資產清單、供應鏈 AI 治理",
+     "note": "2024-07-30 USD 21M 融資（CrimsoNox Capital、Mozilla Ventures）；全球夥伴含 Microsoft、IBM、Databricks、McKinsey",
+     "src": "https://www.businesswire.com/news/home/20240730411517/en/Credo-AI-Announces-$21-Million-in-New-Capital-Grows-Leadership-Team-to-Match-the-Rapid-Pace-of-AI-Innovation-Emerges-as-the-Standard-of-Responsible-AI-Governance"
+    },
+    {
+     "name": "SAS Viya（Model Risk Governance）",
+     "ticker": "—",
+     "country": "US",
+     "share": "私有（員工持股）；USD 14.7B IPO 路演估值（2022，後撤回）；金融服務 AI 模型治理市場領導者",
+     "products": "SAS Viya：Model Risk Governance（金融業 SR 11-7 / SS1/23 合規）、偏差偵測、模型監控、可解釋性；2025 AI & Governance Suite 強化 LLM 治理",
+     "note": "SR 11-7（美聯儲模型風險管理指引）compliance 最深；金融、保險、製藥重度客戶",
+     "src": "https://www.sas.com/en_us/software/viya.html"
+    },
+    {
+     "name": "Holistic AI（EU AI Act Readiness）",
+     "ticker": "—",
+     "country": "UK",
+     "share": "私有；英國倫敦 + 美國紐約；EU AI Act 主要合規受益者",
+     "products": "AI Governance & Risk Management：EU AI Act 合規評估、AI 審計、bias 測試、AI 系統 risk scoring；EU AI Act Readiness Assessment",
+     "note": "EU AI Act 2024-08 生效，2026-08 全面適用；為企業提供高風險 AI 文件化合規路徑圖",
+     "src": "https://www.holisticai.com/eu-ai-act-readiness"
+    },
+    {
+     "name": "FairNow（EU AI Act Automation）",
+     "ticker": "—",
+     "country": "DK",
+     "share": "私有；丹麥哥本哈根 + 美國；EU AI Act 合規自動化利基",
+     "products": "AI Compliance & Governance Platform：EU AI Act 自動合規映射、AI 系統清單、風險分類、bias 審計、GDPR 與 AI 法規交叉合規；SMB 至企業 SaaS",
+     "note": "EU AI Act 2025-02 禁止系統條款生效後需求加速；深度專注 EU AI Act 合規自動化",
+     "src": "https://www.fairnow.ai/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "model_safety_red_team"
+    },
+    {
+     "id": "identity_agent_us"
+    },
+    {
+     "id": "prompt_firewall_dlp"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "IBM watsonx.governance IDC MarketScape Leader（2025）",
+     "url": "https://www.ibm.com/new/announcements/ibm-named-a-leader-in-the-2025-idc-marketscape-worldwide-unified-ai-governance-platforms-2025-vendor-assessment"
+    },
+    {
+     "label": "Credo AI USD 21M 融資（2024-07）",
+     "url": "https://www.businesswire.com/news/home/20240730411517/en/Credo-AI-Announces-$21-Million-in-New-Capital-Grows-Leadership-Team-to-Match-the-Rapid-Pace-of-AI-Innovation-Emerges-as-the-Standard-of-Responsible-AI-Governance"
+    },
+    {
+     "label": "OneTrust TrustWeek 2024 Momentum",
+     "url": "https://www.onetrust.com/news/onetrust-trustweek-2024-momentum/"
+    },
+    {
+     "label": "SAS Viya 官網",
+     "url": "https://www.sas.com/en_us/software/viya.html"
+    },
+    {
+     "label": "Holistic AI EU AI Act Readiness 官網",
+     "url": "https://www.holisticai.com/eu-ai-act-readiness"
+    },
+    {
+     "label": "EU AI Act 2026 規格與 agent 身分標準（WorkOS）",
+     "url": "https://workos.com/blog/mcp-2026-spec-agent-authentication"
+    }
+   ]
+  },
+  {
+   "id": "cn_security",
+   "row": "asia",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國 AI Security",
+   "nameEn": "China AI Security",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "中國本土 AI Security 廠商，受政府採購政策保護形成國產替代生態，以奇安信（國家隊）、深信服、天融信、綠盟、山石網科為核心，華為 HiSec 在政府市場佔主導。",
+   "marketSize": "中國網路安全市場 2025 ~RMB 700-800B；AI 安全平台 ~RMB 50-60 億；政府採購驅動",
+   "growth": "YoY +25-35%（AI 安全）；深信服淨利 +99.5% YoY；奇安信 TTM +YoY",
+   "share": "null",
+   "analysis": "奇安信 Q-GPT 安全機器人為中國首款企業級 LLM 安全助手；深信服 Athena AI Security GPT 日均 7-8 萬告警→100-200 高風險事件（AI SOC Agent）；山石網科 ASIC 安全專用晶片 2025 量產（中國 NGFW 國產替代關鍵）；綠盟 Fengyunwei 整合 DeepSeek；天融信 DeepSeek 安全智算一體機。",
+   "companies": [
+    {
+     "name": "Qi-AnXin（奇安信）",
+     "ticker": "688561.SS",
+     "country": "CN",
+     "share": "TTM 收入 ~RMB 45B；中國最大政府級資安廠；國資委認可「國家隊」",
+     "products": "Q-GPT 安全機器人（LLM 安全助手）；天眼威脅情報；終端 / 網路 / 雲端全棧安全；政府 + 央企核心供應商",
+     "note": "STAR Market 科創板；IDC AI Agent 安全市場概覽 2025 收錄",
+     "src": "https://en.qianxin.com/about/"
+    },
+    {
+     "name": "Sangfor Technologies（深信服）",
+     "ticker": "300454.SZ",
+     "country": "CN",
+     "share": "FY2025 收入 RMB 8.04B（+6.96% YoY）；淨利 RMB 3.93億（+99.5% YoY）",
+     "products": "Sangfor Athena AI 安全平台（XDR + NGFW + SASE）；Security GPT（AI SOC Agent）；AI Agent 沙箱隔離保護",
+     "note": "雲端業務 +18.5%（RMB 4.01B）；AI 整合深度業界領先",
+     "src": "https://news.futunn.com/en/post/71275951/sangfor-technologies-300454-comprehensive-deepening-of-ai-development-strategy-with"
+    },
+    {
+     "name": "NSFOCUS（綠盟科技）",
+     "ticker": "300369.SZ",
+     "country": "CN",
+     "share": "2024 收入 RMB 2.358B（+40.29% YoY）；AI 資料安全雙重聚焦",
+     "products": "Fengyunwei（鳳雲衛）AI 安全能力平台（已整合 DeepSeek）；DDoS 防護；NGSOC 態勢感知；網路邊界安全",
+     "note": "DeepSeek 整合最積極廠商之一；AI + 資料安全雙重佈局",
+     "src": "https://news.futunn.com/en/post/65799145/nsfocus-300369-focusing-on-ai-and-data-security-cultivating-future"
+    },
+    {
+     "name": "Hillstone Networks（山石網科）",
+     "ticker": "688030.SS",
+     "country": "CN",
+     "share": "2025 年度營收 RMB 9.11億；ASIC 研發投入中（淨利 RMB -1.92億）",
+     "products": "ASIC 安全專用晶片（2025 量產準備）；AI/ML 整合 XDR/SecOps；政府 + 金融 + 電信 20,000+ 客戶；2025 Global Infosec Awards AI 資安創新者",
+     "note": "ASIC 晶片為中國 NGFW 國產替代關鍵；2019 上市募資 USD 132M",
+     "src": "https://www.marketscreener.com/quote/stock/HILLSTONE-NETWORKS-CO-LTD-66660728/"
+    },
+    {
+     "name": "Huawei HiSec AI Firewall",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國企業 NGFW #1；私有（華為集團）",
+     "products": "HiSec Endpoint（3-in-1）；Xinghe AI 統一 SASE；HiSecEngine USG6700F AI Firewall（未知威脅偵測率 95%）",
+     "note": "完整「端-網-雲」AI 安全棧；政府採購主力；受美國制裁但中國內需強勁",
+     "src": "https://e.huawei.com/en/news/2025/solutions/enterprise-network/xinghe-ai-cyber-security"
+    },
+    {
+     "name": "Topsec Technologies（天融信）",
+     "ticker": "002212.SZ",
+     "country": "CN",
+     "share": "H1 2025 收入 RMB 8.26億；淨利 +68.56% YoY",
+     "products": "DeepSeek 安全智算一體機（2025-02）；可信網路防火牆；AI + 雲計算融合安全；智算雲平台",
+     "note": "政府/軍工網路安全傳統大廠；DeepSeek 整合為差異化賣點",
+     "src": "http://www.topsec.com.cn/Artificial-Intelligence"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "agent_runtime_asia"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "governance_compliance"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Qi-AnXin About（奇安信官網）",
+     "url": "https://en.qianxin.com/about/"
+    },
+    {
+     "label": "Sangfor FY2025 AI 發展策略（Futunn）",
+     "url": "https://news.futunn.com/en/post/71275951/sangfor-technologies-300454-comprehensive-deepening-of-ai-development-strategy-with"
+    },
+    {
+     "label": "NSFOCUS AI & Data Security（Futunn）",
+     "url": "https://news.futunn.com/en/post/65799145/nsfocus-300369-focusing-on-ai-and-data-security-cultivating-future"
+    },
+    {
+     "label": "Huawei Xinghe AI Cyber Security（2025）",
+     "url": "https://e.huawei.com/en/news/2025/solutions/enterprise-network/xinghe-ai-cyber-security"
+    }
+   ]
+  },
+  {
+   "id": "jp_security",
+   "row": "asia",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "日本 AI Security",
+   "nameEn": "Japan AI Security",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "日本 AI Security 生態以 Trend Micro TrendAI Vision One 全球平台領軍，NEC/NTT/Fujitsu 三大 SI 提供政府與電信客戶 AI-integrated 防禦服務，LAC 獨立 SOC 與 Macnica 分銷為補充。",
+   "marketSize": "日本 IT 安全市場 2025 ~JPY 1.5-2T；Trend Micro 大企業 Vision One ARR USD 467M（+58% YoY）",
+   "growth": "Trend Micro FY2025 淨收入 ¥276B；2026 指引 ¥301.5B（+9.2%）",
+   "share": "null",
+   "analysis": "Trend Micro 2026-03 推 Agentic Governance Gateway（agent-to-agent 授權管控），為全球 AI agent security 最前沿產品；NTT DATA 2025-12 宣布 6 座全球 AI-Powered Cyber Defense Centers；Fujitsu Data e-TRUST IDYX 身份交換為 agent identity 新方向；Cybertrust Japan PKI 為 AI agent 身份信任根基礎設施。",
+   "companies": [
+    {
+     "name": "Trend Micro TrendAI Vision One",
+     "ticker": "4704.T",
+     "country": "JP",
+     "share": "FY2025 淨收入 ¥276B（~USD 1.77B）；大企業 Vision One ARR USD 467M（+58% YoY）",
+     "products": "TrendAI Vision One™ AI-native XDR/SIEM/CNAPP；Agentic Governance Gateway（agent-to-agent 授權管控，2026-03）",
+     "note": "2026 指引 ¥301.5B；創辦於台灣（1988），總部東京；2026 成 ~USD 8.5B PE 收購戰標的（Bain/Advent/EQT/KKR 競逐 take-private）；NVIDIA OpenShell 協作保護自主 AI Agent",
+     "src": "https://newsroom.trendmicro.com/2026-02-18-Trend-Micro-Reports-Earnings-Results-for-Q4-2025-and-FY-2025"
+    },
+    {
+     "name": "NEC Cyber Security Platform（NCSP）",
+     "ticker": "6701.T",
+     "country": "JP",
+     "share": "FY2025 收入 ¥3,423.4B（+5.3% YoY）；BluStellar 雙位數成長",
+     "products": "NEC Cyber Security Platform（NCSP）；Data-Driven Cybersecurity Service（DDCS）；生成式 AI「cotomi」整合威脅分析；零信任架構服務",
+     "note": "政府 / 金融 / 電信主要 SI；與 cotomi LLM 深度整合安全告警分析",
+     "src": "https://www.nec.com/en/global/ir/library/annual/index.html"
+    },
+    {
+     "name": "NTT DATA AI-Powered Cyber Defense",
+     "ticker": "9432.T",
+     "country": "JP",
+     "share": "NTT DATA 資安部門收入達 USD 2B；6 座全球 AI-Powered Cyber Defense Centers（2025-12）",
+     "products": "AI-Powered Cyber Defense Centers；Microsoft Security Copilot 整合 MSSP；CrowdStrike Falcon 合作擴大；Quantum-Secure Zero Trust（NTT Research）",
+     "note": "NTT DATA 全球 MSSP 前三；日本最大 MNO 集團",
+     "src": "https://services.global.ntt/en-us/newsroom/ntt-data-announces-six-new-ai-powered-cyber-defense-centers"
+    },
+    {
+     "name": "Fujitsu Data e-TRUST（IDYX）",
+     "ticker": "6702.T",
+     "country": "JP",
+     "share": "FY2025 合併收入 ¥3.6T（~USD 23B）；日本數位服務市占第一",
+     "products": "Fujitsu Data e-TRUST（IDYX 身份交換 + CDL 鏈資料血統）；Frontria 聯盟（AI 信賴度 / 假冒偵測）；Fujitsu Cloud Service Generative AI Platform（機密資料隔離）",
+     "note": "IDYX 是 agent identity 新方向；跨產業防偽合作",
+     "src": "https://global.fujitsu/en-global/pr/news/2025/12/02-01"
+    },
+    {
+     "name": "LAC（JSOC）",
+     "ticker": "3857.T",
+     "country": "JP",
+     "share": "TTM 收入 ~USD 348M；日本最大獨立 SOC 服務商之一",
+     "products": "JSOC（Japan Security Operation Center）；AI Threat Analysis；2025-10 完成收購 KDDI Digital Security",
+     "note": "KDDI 合併後規模倍增；電信資安 SI 市場重要玩家",
+     "src": "https://pitchbook.com/profiles/company/158409-73"
+    },
+    {
+     "name": "Cybertrust Japan（PKI / CA）",
+     "ticker": "4498.T",
+     "country": "JP",
+     "share": "SB Technology 旗下；TSE Prime 上市；日本 CA 市場核心",
+     "products": "SSL/TLS CA（DigiCert 日本合作）；PKI / 客戶端憑證；IoT 安全認證平台；Linux/OSS 安全分發",
+     "note": "PKI 為 AI agent 身份信任根基礎設施；日本政府 / 電信客戶群",
+     "src": "https://stockanalysis.com/quote/tyo/4498/company/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "agent_runtime_asia"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "governance_compliance"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Trend Micro FY2025 Q4 Earnings（2026-02-18）",
+     "url": "https://newsroom.trendmicro.com/2026-02-18-Trend-Micro-Reports-Earnings-Results-for-Q4-2025-and-FY-2025"
+    },
+    {
+     "label": "NTT DATA 6 座 AI-Powered Cyber Defense Centers（2025-12）",
+     "url": "https://services.global.ntt/en-us/newsroom/ntt-data-announces-six-new-ai-powered-cyber-defense-centers"
+    },
+    {
+     "label": "Fujitsu Data e-TRUST 發布（2025-12-02）",
+     "url": "https://global.fujitsu/en-global/pr/news/2025/12/02-01"
+    }
+   ]
+  },
+  {
+   "id": "kr_security",
+   "row": "asia",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "韓國 AI Security",
+   "nameEn": "Korea AI Security",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "韓國 AI Security 以 AhnLab「AI-centric」轉型為核心（Agentic AI 策略 2026）、SK Shieldus MDR 快速擴張、Penta Security WAF 三年蟬聯 Frost & Sullivan 獎，S2W Lab AI 原生威脅情報為新創代表。",
+   "marketSize": "韓國 IT 보안 시장 2025 ~KRW 2-3T；AhnLab 季收入 ₩83.6B（+48% EPS YoY）",
+   "growth": "AhnLab EPS YoY +48%；SK Shieldus IDC 2026 APAC MDR Major Player；KT Cloud +27.4% YoY",
+   "share": "null",
+   "analysis": "AhnLab AI Plus Agentic AI（2025-04）：AI-driven XDR + Annie AI assistant，2026 RSAC 展示 Agentic AI 策略；SK Shieldus Secudium MDR 被 IDC 2026-02 評為 APAC Major Player；KT AICT 轉型整合 Azure OpenAI；S2W DarkBERT AI 威脅情報，INTERPOL 暗網分析合作。",
+   "companies": [
+    {
+     "name": "AhnLab AI Plus（Agentic AI）",
+     "ticker": "053800.KQ",
+     "country": "KR",
+     "share": "2025-Q3 EPS ₩1,423（+48% YoY）；韓國 endpoint security 霸主",
+     "products": "AhnLab AI Plus（Agentic AI，2025-04）；AhnLab XDR AI assistant「Annie」；V3 防毒（AI 日均偵測 13 萬+ 新惡意程式）；2026 策略「Agentic AI: Optimizing Security Operations」",
+     "note": "Frost & Sullivan 2025 KR 年度公司獎；RSAC 2026 展示 AI-driven strategy",
+     "src": "https://cm.asiae.co.kr/en/article/2026012911142811472"
+    },
+    {
+     "name": "SK Shieldus Secudium MDR",
+     "ticker": "—",
+     "country": "KR",
+     "share": "SK Square 子公司；IDC 2026-02 APAC MDR Major Player；AI/R&D 投入超 USD 15M",
+     "products": "Secudium 次世代平台（AI MDR/MSS）；EDR（惡意程式溯源）；物理 + 網路融合安全",
+     "note": "韓國最大融合資安（線上 + 線下）；MDR 服務快速擴張",
+     "src": "https://www.manilatimes.net/2026/02/05/tmt-newswire/pr-newswire/sk-shieldus-recognized-by-idc-as-a-major-player-for-mdr-in-asia-pacific/2272089"
+    },
+    {
+     "name": "Penta Security WAPPLES AI WAF",
+     "ticker": "—",
+     "country": "KR",
+     "share": "私有；Frost & Sullivan 2025 韓國 WAF 年度公司獎（連三年）",
+     "products": "WAPPLES AI WAF（COCEP™ 行為邏輯引擎，非特徵碼）；API 安全；AWS/Azure/NAVER Cloud 多雲整合；身份認證 DBSAFER",
+     "note": "28 年 WAF 專家；政府、金融、電商重點客戶；東南亞拓展中",
+     "src": "https://www.prnewswire.com/news-releases/penta-security-receives-frost--sullivans-2025-south-korea-company-of-the-year-recognition-for-excellence-in-web-application-firewall-technology-302505311.html"
+    },
+    {
+     "name": "S2W Lab（DarkBERT AI 威脅情報）",
+     "ticker": "—",
+     "country": "KR",
+     "share": "私有；融資 USD 13.5M Series B；IPO 籌備中；Microsoft Pegasus Program",
+     "products": "DarkBERT AI 威脅情報模型；暗網監控 + Attack Surface Management；INTERPOL 暗網分析合作；VB Conference 連五年入選",
+     "note": "AI-native 威脅情報新創；大型 SIEM/SOAR 廠商整合目標",
+     "src": "https://www.crunchbase.com/organization/s2w-lab"
+    },
+    {
+     "name": "KT Corporation（KT Cybersecurity）",
+     "ticker": "030200.KS",
+     "country": "KR",
+     "share": "KT Cloud 收入 +27.4% YoY；5 年 KRW 1 兆資安承諾",
+     "products": "KT AI 防騷擾 / 防釣魚服務（V3 引擎整合）；AICT 轉型（AI + ICT）；Azure OpenAI LLM 整合 Genie TV 安全服務",
+     "note": "2024 資料外洩後大規模重建信任；電信 + AI 安全融合",
+     "src": "https://www.itiger.com/news/2517958836"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "agent_runtime_asia"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "governance_compliance"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AhnLab AI Plus Agentic AI Strategy（2026-01-29）",
+     "url": "https://cm.asiae.co.kr/en/article/2026012911142811472"
+    },
+    {
+     "label": "SK Shieldus IDC APAC MDR Major Player（2026-02-05）",
+     "url": "https://www.manilatimes.net/2026/02/05/tmt-newswire/pr-newswire/sk-shieldus-recognized-by-idc-as-a-major-player-for-mdr-in-asia-pacific/2272089"
+    },
+    {
+     "label": "Penta Security Frost & Sullivan 2025 KR WAF 年度公司獎",
+     "url": "https://www.prnewswire.com/news-releases/penta-security-receives-frost--sullivans-2025-south-korea-company-of-the-year-recognition-for-excellence-in-web-application-firewall-technology-302505311.html"
+    }
+   ]
+  },
+  {
+   "id": "tw_security",
+   "row": "asia",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "台灣 AI Security",
+   "nameEn": "Taiwan AI Security",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "台灣 AI Security 以 CHT Security（中華電信子公司，台灣首家資安服務上市公司）領軍，宏碁資安 AI 自動化攻擊模擬為新興方向，中華電信母公司提供 IDC + SD-WAN 資源支撐。",
+   "marketSize": "台灣 ICT 安全市場 2025 ~TWD 15-20B；CHT Security H1 2025 收入 +250% YoY",
+   "growth": "CHT Security 高速成長；Chunghwa Telecom ICT 收入 +14.5% YoY；東南亞市場拓展",
+   "share": "null",
+   "analysis": "CHT Security H1 2025 收入 +250% YoY（AI-powered SOC + Radware AI WAF 合作），Frost & Sullivan 2025 台灣年度資安公司；宏碁資安 AI 輔助將資安事件調查時間從數天縮至數小時；中華電信 InventAI 子公司推進 AI 商業化，東南亞安全服務客戶首次突破。",
+   "companies": [
+    {
+     "name": "CHT Security（中華資安國際）",
+     "ticker": "—",
+     "country": "TW",
+     "share": "H1 2025 收入 +250% YoY；台灣首家資安服務上市公司（2025 Q3）；母公司 2412.TW",
+     "products": "AI-powered SOC（AI Agent 自動化分析、縮短 MTTD/MTTR）；AI 應用安全評估服務；Radware AI WAF 合作；90 萬用戶、4 萬+ SMB、300 政府客戶",
+     "note": "Frost & Sullivan 2025 台灣年度資安公司；中華電信子公司；東南亞資安服務擴展",
+     "src": "https://www.globenewswire.com/news-release/2025/03/05/3037220/8980/en/Radware-and-CHT-Security-Join-Forces-to-Deliver-AI-Powered-Application-Security-in-Taiwan.html"
+    },
+    {
+     "name": "Chunghwa Telecom（企業資安業務）",
+     "ticker": "2412.TW",
+     "country": "TW",
+     "share": "2025 ICT 收入 +14.5%；台灣 AI 專利持有最多；CHT Security IPO 母公司",
+     "products": "IDC / 雲端 / 資安服務三引擎；CHT Security 子公司上市；InventAI 子公司（AI 商業化）；東南亞資安服務首次突破",
+     "note": "CHT Security IPO 為台灣資安里程碑；母公司提供 IDC + SD-WAN 資源",
+     "src": "https://www.prnewswire.com/news-releases/chunghwa-telecom-reports-un-audited-consolidated-operating-results-for-the-fourth-quarter-of-2025-302677394.html"
+    },
+    {
+     "name": "Acer Cyber Security（宏碁資安）",
+     "ticker": "—",
+     "country": "TW",
+     "share": "私有（Acer 2353.TW 子公司）；預估 2025 雙位數成長；東南亞拓展（泰國優先）",
+     "products": "AI 自動化攻擊路徑模擬；WebGuard 網站安全；惡意活動偵測；資安事件調查時間從數天縮至數小時（AI 輔助）",
+     "note": "宏碁集團資安業務獨立化；原 Acer CSI；聚焦中大型企業與政府",
+     "src": "https://www.digitimes.com/news/a20241128PD205/adoption-cybersecurity-demand-security-taiwan.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "agent_runtime_asia"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "governance_compliance"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CHT Security × Radware AI WAF（2025-03-05）",
+     "url": "https://www.globenewswire.com/news-release/2025/03/05/3037220/8980/en/Radware-and-CHT-Security-Join-Forces-to-Deliver-AI-Powered-Application-Security-in-Taiwan.html"
+    },
+    {
+     "label": "Chunghwa Telecom Q4 2025 季報（PR Newswire）",
+     "url": "https://www.prnewswire.com/news-releases/chunghwa-telecom-reports-un-audited-consolidated-operating-results-for-the-fourth-quarter-of-2025-302677394.html"
+    }
+   ]
+  },
+  {
+   "id": "in_sea_security",
+   "row": "asia",
+   "col": 5,
+   "span": 1,
+   "kind": "stage",
+   "name": "印度 / 東南亞 AI Security",
+   "nameEn": "India / SEA AI Security & MSSP",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "印度大型 IT 外包廠商（HCLTech、Wipro）提供 APAC 企業 AI-driven Managed SASE / MDR 服務；Tata Communications AXIOM 統一安全框架覆蓋亞太企業網路安全出口。",
+   "marketSize": "印度資安市場 2025 USD 8.58B → 2030 USD 16.86B（CAGR ~14.5%）；APAC MSSP 快速成長",
+   "growth": "HCLTech IDC MarketScape Managed SASE Leader 2025；Wipro AI Security Lab H200 叢集",
+   "share": "null",
+   "analysis": "HCLTech 2025 IDC MarketScape Managed SASE Leader（APAC 最高評級）；FENIX AI 整合 Google Gemini；Wipro AI Security Lab 200 顆 NVIDIA H200，每週 10,000 次量子模擬，資安合約 AI 帶動 25% 成本降低；Tata AXIOM 統一安全框架（SD-WAN + SASE + SSE）覆蓋東南亞企業客戶。",
+   "companies": [
+    {
+     "name": "HCLTech Managed SASE（AI-Driven）",
+     "ticker": "HCLTECH.NS",
+     "country": "IN",
+     "share": "Q1 FY26 AI 合約 USD 2.4B 累計；IDC MarketScape 2025 Managed SASE Leader",
+     "products": "AI-Driven Managed SASE（SD-WAN + SSE 統一）；多供應商生態 + 自有 AI 平台；FENIX AI（Google Gemini 整合）；India CSM 市場核心 SI",
+     "note": "IDC Leader 評級為 APAC MSSP 最高肯定；東南亞政府採購入場",
+     "src": "https://scanx.trade/stock-market-news/stocks/hcl-technologies-named-leader-in-idc-marketscape-for-managed-sase-services-2025/30436853"
+    },
+    {
+     "name": "Tata Communications AXIOM（SASE）",
+     "ticker": "TATACOMM.NS",
+     "country": "IN",
+     "share": "集團收入 FY2025 ~USD 3B；SASE/SSE 業務高增長",
+     "products": "AXIOM 統一安全框架（SD-WAN + SASE + SSE）；身份為中心零信任架構；MOVE 全球企業安全網路平台",
+     "note": "全球 MPLS + 資安融合大廠；亞太 enterprise 零信任入口",
+     "src": "https://apacnewsnetwork.com/2025/08/tata-communications-emphasizes-a-unified-and-intelligent-framework-for-security-with-axiom-methodology-andrew-winney-global-head-of-product-management-sdwan-sase-sse-t/"
+    },
+    {
+     "name": "Wipro Cyber Defense（AI Security Lab）",
+     "ticker": "WIT",
+     "country": "IN",
+     "share": "印度資安市場前三；250,000 員工 AI 培訓；AI lab 200 顆 NVIDIA H200",
+     "products": "CyberTransform 平台（零信任 + 雲端安全 + SOC 現代化）；AI Security Lab（每週 10,000 次量子模擬）；資安合約 AI 帶動 25% 成本降低",
+     "note": "全球外包資安 SI；AI lab 強化生成式 AI 安全研究",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/india-cybersecurity-companies.asp"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "agent_runtime_asia"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "governance_compliance"
+    }
+   ],
+   "sources": [
+    {
+     "label": "HCLTech IDC MarketScape Managed SASE Leader 2025",
+     "url": "https://scanx.trade/stock-market-news/stocks/hcl-technologies-named-leader-in-idc-marketscape-for-managed-sase-services-2025/30436853"
+    },
+    {
+     "label": "Tata Communications AXIOM 統一安全框架（APAC）",
+     "url": "https://apacnewsnetwork.com/2025/08/tata-communications-emphasizes-a-unified-and-intelligent-framework-for-security-with-axiom-methodology-andrew-winney-global-head-of-product-management-sdwan-sase-sse-t/"
+    },
+    {
+     "label": "India Cybersecurity Companies（MarketsandMarkets）",
+     "url": "https://www.marketsandmarkets.com/ResearchInsight/india-cybersecurity-companies.asp"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "agent_runtime_security_us",
+   "identity_agent_us"
+  ],
+  [
+   "agent_runtime_asia",
+   "identity_agent_us"
+  ],
+  [
+   "agent_runtime_security_us",
+   "prompt_firewall_dlp"
+  ],
+  [
+   "agent_runtime_security_us",
+   "model_safety_red_team"
+  ],
+  [
+   "identity_agent_us",
+   "prompt_firewall_dlp"
+  ],
+  [
+   "identity_agent_us",
+   "governance_compliance"
+  ],
+  [
+   "prompt_firewall_dlp",
+   "governance_compliance"
+  ],
+  [
+   "model_safety_red_team",
+   "governance_compliance"
+  ],
+  [
+   "agent_runtime_asia",
+   "cn_security"
+  ],
+  [
+   "agent_runtime_asia",
+   "jp_security"
+  ],
+  [
+   "agent_runtime_asia",
+   "kr_security"
+  ],
+  [
+   "agent_runtime_asia",
+   "tw_security"
+  ],
+  [
+   "agent_runtime_asia",
+   "in_sea_security"
+  ],
+  [
+   "cn_security",
+   "governance_compliance"
+  ],
+  [
+   "jp_security",
+   "governance_compliance"
+  ],
+  [
+   "agent_runtime_security_us",
+   "agent_runtime_asia"
+  ]
+ ],
+ "_proposed": {}
+}

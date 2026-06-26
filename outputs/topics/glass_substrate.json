@@ -1,0 +1,609 @@
+{
+ "id": "glass_substrate",
+ "tab": "玻璃基板",
+ "title": "玻璃基板 / TGV / CoPoS 供應鏈 (Glass Substrate & TGV)",
+ "subtitle": "Glass Substrate & TGV — 以玻璃核心取代 ABF、以方形玻璃面板取代矽中介層，是 AI 晶片下一代封裝載體。2026-H1 進度：TSMC CoPoS 試線 2026/6 完工、量產延至 2028H2、魏哲家 6/4 股東會重申『沒捷徑、至少 2-3 年』；TSMC×Ibiden×群創 三方共驗公開（COP +16%、CTE −19%、電感 −42%、成本估降 ~30%）；Absolics 喬治亞廠月產能爬坡至 ~20,000 片、AMD/AWS 在測、認證順利則 2026 底商業量產；Samsung 電機 2/月將專案轉事業部、4/7 對 Apple 送樣、瞄準 2027；Intel/3DGS 印度 Odisha US$3.3B 廠 4/19 動土。三路線並進：玻璃核心載板（Absolics/Samsung電機/Intel/DNP）、CoPoS 面板（TSMC/群創/Ibiden）、CoWoS-G 中介層（Corning/AGC、HVM 2026H2）。⚠ 仍試產年：良率 75-85%、成本 2-3x、TGV 銅填為頭號殺手、路線未定。有別於 substrate（ABF）與 plp（面板級扇出）。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "CoPoS 試線完工",
+   "v": "2026/6",
+   "sub": "TSMC 試線完工·量產延 2028H2；三方共驗 COP +16%、CTE −19%、電感 −42%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "Absolics ~20k片/月爬坡·Samsung 對Apple送樣·康寧 CoWoS-G HVM 2026H2·良率 75-85%·量產仍 2-3 年",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "material",
+   "label": "玻璃基材 Glass Material",
+   "main": false
+  },
+  {
+   "id": "equip",
+   "label": "TGV 設備 / 製程 Equipment & Process",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "玻璃核心載板・CoPoS 整合 → 終端 Glass-Core · CoPoS · Demand",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "封裝整合 / 終端需求 Integration & Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "glass_material",
+   "row": "material",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "玻璃基材 / 母玻璃",
+   "nameEn": "Glass Material & Mother Glass",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 玻璃基材寡占；AGC、Schott 合計玻璃基板市佔 >35%(2025)；CoWoS-G 玻璃由 Corning/AGC 雙源",
+   "desc": "提供 CTE 匹配、低介電損耗的半導體級母玻璃與玻璃中介層，是整條玻璃封裝鏈最上游、最集中的環節。面板尺寸由 510×515mm 走向 550×650mm、CoPoS 規劃至 750×620mm。",
+   "marketSize": "AGC+PlanOptik+Corning+Schott ~90%",
+   "growth": "CoWoS-G 拉貨",
+   "share": "null",
+   "analysis": "玻璃基材高度寡占：AGC+PlanOptik+Corning+Schott 約占全球玻璃基材營收 ~90%（2025）、AGC 與 Schott 合計玻璃基板市佔 >35%。Corning（GLW，與 TSMC 台灣廠共同開發 CoWoS 製程專用特殊玻璃載體、2025/6 拿下領先封裝公司玻璃中介層大單、推 SGS、2026 capex $1.7B；分析師估 CoWoS-G 2027 達 5 萬片/月當量、透過 TSMC 供應鏈年貢獻玻璃基板營收 $800M-$1B）、AGC（5201.T，與 TSMC 多份 CoWoS-G 中介層協議、傳與 Nvidia/AMD 共同開發 Rubin/CDNA4 玻璃封裝）、Schott（DE，第三大、510×515mm）、NEG（5214.T，2025/5 開發雷射改質+CO₂ 兩型 TGV 玻璃核心、515×510mm）。中國凱盛/凱德石英布局國產母玻璃。⚠ 玻璃基材是繞過味之素 ABF 膜獨佔的長線解，但 2026-28 仍與 ABF 並存。",
+   "companies": [
+    {
+     "name": "Corning 康寧",
+     "ticker": "GLW",
+     "country": "US",
+     "share": "西方玻璃基材龍頭",
+     "products": "Semiconductor Glass Substrate(SGS) / CoWoS-G 玻璃載體 / 玻璃中介層",
+     "note": "與 TSMC 台廠共同開發；2025/6 拿下玻璃中介層大單；CoWoS-G 2027 估年貢獻 $800M-$1B；2026 capex $1.7B",
+     "src": "https://www.financialcontent.com/article/finterra-2026-3-25-corning-inc-nyse-glw-the-material-architect-of-the-ai-and-broadband-era"
+    },
+    {
+     "name": "AGC 旭硝子",
+     "ticker": "5201.T",
+     "country": "JP",
+     "share": "CoWoS-G 第二源",
+     "products": "玻璃中介層 / 玻璃核心母玻璃(550×650mm)",
+     "note": "與 TSMC 多份 CoWoS-G 協議；傳與 Nvidia/AMD 共同開發 Rubin/CDNA4 玻璃封裝",
+     "src": "https://insights.trendforce.com/p/glass-substrate-development"
+    },
+    {
+     "name": "Schott",
+     "ticker": "—",
+     "country": "DE",
+     "share": "玻璃基材第三大",
+     "products": "半導體級玻璃(510×515mm)",
+     "note": "未上市（凱傲家族控股）；AGC+Schott 合計玻璃基板市佔 >35%",
+     "src": "https://www.businesswire.com/news/home/20251009327475/en/"
+    },
+    {
+     "name": "Nippon Electric Glass NEG",
+     "ticker": "5214.T",
+     "country": "JP",
+     "share": "TGV 玻璃核心母玻璃",
+     "products": "TGV 玻璃核心(雷射改質+蝕刻 / CO₂ 兩型) 515×510mm",
+     "note": "2025/5 開發兩型 TGV 玻璃核心、自製 TGV 與未加工母玻璃並售",
+     "src": "https://www.neg.co.jp/en/news/20250522-1.html"
+    },
+    {
+     "name": "PlanOptik",
+     "ticker": "—",
+     "country": "DE",
+     "share": "玻璃晶圓/載體",
+     "products": "玻璃晶圓 / TGV 載體",
+     "note": "AGC+PlanOptik+Corning+Schott 合計玻璃基材營收 ~90%",
+     "src": "https://www.businesswire.com/news/home/20251009327475/en/"
+    },
+    {
+     "name": "凱盛科技 Kaisheng",
+     "ticker": "600552.SS",
+     "country": "CN",
+     "share": "中系國產玻璃材料",
+     "products": "光電顯示玻璃 / UTG / 玻璃基材布局",
+     "note": "全球僅 4 家 UTG 原片供應商之一；玻璃基板概念股、跨半導體玻璃材料",
+     "src": "https://insights.trendforce.com/p/glass-substrate-development"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "tgv_equip"
+    },
+    {
+     "id": "copos_integ"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Corning AI 材料架構者 (FinancialContent)",
+     "url": "https://www.financialcontent.com/article/finterra-2026-3-25-corning-inc-nyse-glw-the-material-architect-of-the-ai-and-broadband-era"
+    },
+    {
+     "label": "玻璃基板黑馬/基材寡占 (TrendForce)",
+     "url": "https://insights.trendforce.com/p/glass-substrate-development"
+    }
+   ]
+  },
+  {
+   "id": "tgv_equip",
+   "row": "equip",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "TGV 設備 / 製程（雷射成孔・金屬化・檢測）",
+   "nameEn": "TGV Equipment & Process",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · LPKF LIDE 為 TGV 業界標準、>80% 全球主要玩家已選用；瓶頸集中雷射成孔/金屬化/檢測",
+   "desc": "玻璃通孔（TGV）成孔、銅填金屬化、研磨減薄、大面板曝光與計量檢測——是「玻璃還沒贏」前就先吃到驗證/試產 capex 的賣鏟人環節，瓶頸高度集中。",
+   "marketSize": "瓶頸集中",
+   "growth": "試產 capex 先行",
+   "share": "null",
+   "analysis": "供應鏈瓶頸集中於雷射成孔、金屬化與光學檢測。據 TrendForce 2026/6/17，完整設備分工為：LPKF 供 TGV(LIDE)、SCHOTT/Corning/AGC/NEG 供低 CTE 玻璃、Lam Research 供蝕刻與電鍍、Disco 供切割、Onto 與 KLA 供檢測、SUSS 與 EVG 供暫時鍵合/解鍵合。LPKF（LPK.DE，LIDE 雷射誘導深蝕刻為 TGV 業界標準；NEXAR LIDE 5000 深寬比達 1:50、次微米、無微裂/熱損傷；全製程鏈含 TGV/LIDE/ABF 燒蝕/玻璃對玻璃焊接；>80% 全球主要玩家已選用 LPKF、自評 2027 量產）為純度最高標的。Onto Innovation（ONTO，大尺寸面板 stepper JetStep + TGV 計量/檢測、即時翹曲對焦/die-shift 補償）、Disco（6146.T，玻璃研磨/切割/減薄龍頭）、ASMPT（0522.HK，電鍍/封裝，NEXX 電鍍被 AMAT 收購）、Applied Materials（AMAT，金屬化/PVD、收購 ASMPT NEXX $120M 卡位面板電鍍）、大族雷射（002008.SZ，中國雷射成孔）。⚠ TGV 銅填一致性與大面積翹曲控制是四大量產瓶頸核心，也是良率 75-85% 的主因。",
+   "companies": [
+    {
+     "name": "LPKF Laser & Electronics",
+     "ticker": "LPK.DE",
+     "country": "DE",
+     "share": "TGV 業界標準",
+     "products": "LIDE 雷射誘導深蝕刻 / NEXAR LIDE 5000(深寬比 1:50)",
+     "note": ">80% 全球主要玩家已選用；全製程鏈；自評 2027 量產",
+     "src": "https://www.thelec.net/news/articleView.html?idxno=6674"
+    },
+    {
+     "name": "Onto Innovation",
+     "ticker": "ONTO",
+     "country": "US",
+     "share": "面板曝光/計量檢測",
+     "products": "JetStep 面板 stepper / TGV 計量檢測",
+     "note": "即時翹曲對焦+die-shift 補償；大尺寸面板優勢",
+     "src": "https://lide.lpkf.com/en/"
+    },
+    {
+     "name": "Disco",
+     "ticker": "6146.T",
+     "country": "JP",
+     "share": "玻璃研磨/切割龍頭",
+     "products": "玻璃研磨 / 切割 / 減薄",
+     "note": "玻璃基板薄化與切割關鍵設備",
+     "src": "https://www.yolegroup.com/press-release/glass-materials-for-semiconductor-manufacturing-a-strategic-platform-reshaping-the-future-of-devices-process-and-supply-chains/"
+    },
+    {
+     "name": "ASMPT",
+     "ticker": "0522.HK",
+     "country": "HK",
+     "share": "電鍍/封裝設備",
+     "products": "電鍍 / 面板級封裝設備",
+     "note": "NEXX 線寬電鍍業務被 AMAT 收購",
+     "src": "https://www.yolegroup.com/press-release/glass-materials-for-semiconductor-manufacturing-a-strategic-platform-reshaping-the-future-of-devices-process-and-supply-chains/"
+    },
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "金屬化/PVD",
+     "products": "PVD / 面板電鍍(收購 NEXX)",
+     "note": "收購 ASMPT NEXX $120M 卡位面板級電鍍",
+     "src": "https://www.yolegroup.com/press-release/glass-materials-for-semiconductor-manufacturing-a-strategic-platform-reshaping-the-future-of-devices-process-and-supply-chains/"
+    },
+    {
+     "name": "大族雷射 Han's Laser",
+     "ticker": "002008.SZ",
+     "country": "CN",
+     "share": "中系雷射成孔",
+     "products": "玻璃雷射成孔 / TGV 設備",
+     "note": "中國國產 TGV 雷射設備",
+     "src": "https://insights.trendforce.com/p/glass-substrate-development"
+    },
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "蝕刻/電鍍設備",
+     "products": "玻璃面板蝕刻 / TGV 銅電鍍金屬化",
+     "note": "TrendForce 2026/6/17 點名玻璃核心設備分工：Lam 供蝕刻與電鍍、為 TGV 金屬化關鍵設備商",
+     "src": "https://www.trendforce.com/presscenter/news/20260617-13107.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "glass_material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "glass_core"
+    },
+    {
+     "id": "copos_integ"
+    },
+    {
+     "id": "china_glass"
+    }
+   ],
+   "sources": [
+    {
+     "label": "LPKF 2027 量產 (The Elec)",
+     "url": "https://www.thelec.net/news/articleView.html?idxno=6674"
+    },
+    {
+     "label": "玻璃設備瓶頸 (Yole)",
+     "url": "https://www.yolegroup.com/press-release/glass-materials-for-semiconductor-manufacturing-a-strategic-platform-reshaping-the-future-of-devices-process-and-supply-chains/"
+    }
+   ]
+  },
+  {
+   "id": "glass_core",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "玻璃核心載板（取代 ABF 核心）",
+   "nameEn": "Glass-Core Substrate",
+   "competition": "emerging",
+   "single": "⚠ 量產卡位戰 · Absolics 唯一已蓋好量產廠+AMD/AWS 在測；Samsung 電機送 Apple/Broadcom；無量產主導者",
+   "desc": "以玻璃核心取代 ABF 有機載板核心層的 FC-BGA 載板，是題材敘事核心。散熱/平整度/大尺寸優於有機，但量產良率與成本仍未過關，是「卡位戰」而非「已分勝負」。",
+   "marketSize": "$920M(2026)→$1.87B(2034)",
+   "growth": "CAGR 9.3%",
+   "share": "null",
+   "analysis": "玻璃核心基板市場 $920M(2026)→$1.87B(2034)、CAGR 9.3%。量產最前沿 Absolics（SKC，喬治亞 Covington 全球首座玻璃基板量產廠(US$600M)、2026H1 月產能爬坡至 ~20,000 片/月、已完成電性/訊號驗證進入良率穩定化、由 AMD/AWS 測試、認證順利則 2026 底啟動商業量產、雙軌 embedded+non-embedded、2026/5 為美系客戶推 non-embedding 新製程、SKC 注資 ~$408M、獲 CHIPS $75M+R&D $100M）。Samsung 電機（009150.KS，世宗試線 TGV 深寬比 10:1、2026/2 由研究單位轉入事業部瞄準 2027 量產、2026/4/7 正式對 Apple 送樣、Broadcom 為最大潛在客戶、2025/11 與住友化學簽 MOU 設玻璃核心 JV 預計 2026H2 成立）。Intel（INTC，2023 業界首發玻璃核心、目前僅 Chandler 試線、Rio Rancho 擬成全球首座量產基地、印度 Odisha US$3.3B 廠 2026/4/19 動土、3DGS+EMIB+CPO 玻璃、量產 2030）。DNP（7912.T，Kuki 廠 2025/12 試線、2026 初送樣、FY2028 量產、filled+conformal 兩型）、Toppan（7911.T，FY2028 後量產）、Ibiden（4062.T，ABF 龍頭跨足玻璃、參與 TSMC CoPoS 三方共驗）。⚠ 韓國雙雄（Absolics vs Samsung 電機）競賽卡位 AI 資料中心；商轉節奏比市場預期更謹慎、市場真正放量估 2027 後。",
+   "companies": [
+    {
+     "name": "Absolics (SKC)",
+     "ticker": "011790.KS",
+     "country": "KR",
+     "share": "量產最前沿",
+     "products": "玻璃核心載板(embedded+non-embedded 雙軌)",
+     "note": "喬治亞 Covington 廠(US$600M)2026H1 月產能爬坡至 ~20,000 片/月、已完成電性/訊號驗證進入良率穩定化；AMD/AWS 在測、認證順利則 2026 底啟動全球首座商業量產；2026/5 為美系客戶推 non-embedding 新製程；SKC 注資 ~$408M、CHIPS $75M",
+     "src": "https://www.trendforce.com/news/2026/05/08/news-skc-said-to-speed-glass-substrate-mass-production-by-year-end-advances-new-non-embedding-tech-for-u-s-client/"
+    },
+    {
+     "name": "Samsung 電機 SEMCO",
+     "ticker": "009150.KS",
+     "country": "KR",
+     "share": "韓系雙雄之一",
+     "products": "玻璃核心載板(TGV 深寬比 10:1)",
+     "note": "世宗試線；2026/2 將玻璃基板專案由研究單位轉入事業部、瞄準 2027 量產；2026/4/7 正式對 Apple 送樣(Broadcom 為最大潛在客戶、客製 ASIC 供 Google/Meta/OpenAI)；住友化學玻璃核心 JV 預計 2026H2 成立",
+     "src": "https://www.thelec.net/news/articleView.html?idxno=6400"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "先行者（自研）",
+     "products": "玻璃核心 + EMIB + CPO(3DGS)",
+     "note": "2023 業界首發、目前僅 Chandler 試線；Rio Rancho 擬全球首座量產基地；印度 Odisha 玻璃核心+HDI 廠(US$3.3B、~70,000 片/年、5-6 年)2026/4/19 動土、2026/5/29 於新德里簽 MoU；量產目標 2030",
+     "src": "https://www.trendforce.com/news/2026/06/01/news-intel-advances-glass-substrate-push-with-3dgs-us3-3-billion-india-plant-set-for-five-to-six-year-buildout/"
+    },
+    {
+     "name": "DNP 大日本印刷",
+     "ticker": "7912.T",
+     "country": "JP",
+     "share": "日系 TGV 試產",
+     "products": "TGV 玻璃核心(filled+conformal 兩型)",
+     "note": "Kuki 廠 2025/12 試線、2026 初送樣、FY2028 量產",
+     "src": "https://www.global.dnp/en/news/detail/2025/12/1216_20177773/"
+    },
+    {
+     "name": "Toppan 凸版",
+     "ticker": "7911.T",
+     "country": "JP",
+     "share": "日系 TGV",
+     "products": "玻璃核心載板",
+     "note": "FY2028 之後量產",
+     "src": "https://www.trendforce.com/news/2026/06/05/news-glass-substrates-eye-2027-launch-scale-toward-2030-as-cowos-costs-rise-and-hyperscaler-demand-grows/"
+    },
+    {
+     "name": "Ibiden",
+     "ticker": "4062.T",
+     "country": "JP",
+     "share": "ABF 龍頭跨足",
+     "products": "玻璃核心 / CoPoS 載板",
+     "note": "ABF 載板龍頭轉身；參與 TSMC CoPoS 三方共驗(玻璃夾於兩層 ABF 3 層設計)；2026/2 拍板 ¥500B(US$3.3B) FY26-28 載板擴產、AI 伺服器載板產能 2.5x；AI 高階載板市佔 70-80%",
+     "src": "https://www.tradingkey.com/analysis/stocks/us-stocks/261969147-tsm-ibiden-abf-copos-tradingkey"
+    },
+    {
+     "name": "3DGS",
+     "ticker": "—",
+     "country": "US",
+     "share": "印度玻璃核心整合方",
+     "products": "玻璃核心 / HDI 載板（Intel 印度 Odisha 廠夥伴）",
+     "note": "未上市；與 Intel 於印度 Odisha 投 US$3.3B 建玻璃核心+HDI 載板廠(~70,000 片/年、5-6 年)、2026/4/19 動土、2026/5/29 簽 MoU",
+     "src": "https://www.digitimes.com/news/a20260530VL200/manufacturing-intel-mou-packaging-glass-substrate.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "tgv_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "osat_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Absolics 喬治亞廠 (NIST CHIPS)",
+     "url": "https://www.nist.gov/chips/absolics-georgia-covington"
+    },
+    {
+     "label": "SKC ₩1.17 兆現增 (Korea Herald)",
+     "url": "https://www.koreaherald.com/article/10683364"
+    },
+    {
+     "label": "DNP Kuki TGV 試線 (DNP 官方)",
+     "url": "https://www.global.dnp/en/news/detail/2025/12/1216_20177773/"
+    }
+   ]
+  },
+  {
+   "id": "copos_integ",
+   "row": "flow",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "CoPoS 面板整合",
+   "nameEn": "CoPoS Panel Integration",
+   "competition": "emerging",
+   "single": "⚠ TSMC CoPoS 試線 2026/6 完工、量產延至 2028H2；三方共驗公開；台灣面板廠大尺寸優勢被低估",
+   "desc": "CoPoS（Chip-on-Panel-on-Substrate）以方形玻璃面板 + 多層 RDL 取代矽中介層，結合 CoWoS 與面板級扇出。面板廠在 750×620mm 級大尺寸玻璃處理有天然 know-how；圓轉方使 12 吋圓晶材料利用率由 <70% 升至 >90%、成本估降 ~30%。",
+   "marketSize": "TSMC 主導",
+   "growth": "試線 6/完工",
+   "share": "null",
+   "analysis": "TSMC（2330.TW，CoPoS 310×310mm 產品線、面板規劃至 750×620mm、CoPoS 試線 2026/6 完工、小量試產 2027、量產 2028H2 於 Jiaoxi AP7、初期客戶 Nvidia；玻璃核心採『玻璃夾於兩層 ABF』3 層設計、商轉估 2030 後；CoWoS-G HVM 2026H2 起；魏哲家 2026/6/4 股東會重申量產『沒有捷徑、至少 2-3 年』）2026/6 首度公開 TSMC×Ibiden×群創 三方共驗：玻璃基板使封裝翹曲 COP 改善 16%、有效 CTE 降 19%、有效模數升 31%、電阻降 27%、電感降 42%。群創（3481.TW，面板廠跨足、RDL-first 2026 認證、TGV 2026-2027 量產、Chip-first 已量產車用/PMIC、產能 10x）為三方共驗台廠受惠者。CoPoS 把圓轉方使 12 吋圓晶材料利用率由 <70% 升至 >90%、成本估降 ~30%。⚠ CoPoS『真正勝負手在 oS（面板級 on Substrate），不在 CoP』——台灣面板廠憑 620×750mm 大面板量產經驗（FOPLP 成熟製程已量產）是被低估的二階受惠者(TrendForce 2026/6/17)。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "CoPoS 主導/驗證方",
+     "products": "CoPoS 310×310mm / CoWoS-G",
+     "note": "CoPoS 試線 2026/6 完工、試產 2027、量產 2028H2(Jiaoxi AP7)；2026/6 公開三方共驗；魏哲家 2026/6/4 股東會：量產沒捷徑、至少 2-3 年",
+     "src": "https://www.trendforce.com/news/2026/04/13/news-tsmc-advances-panel-level-packaging-copos-pilot-line-reportedly-set-for-june-completion-2028-29-ramp-eyed/"
+    },
+    {
+     "name": "群創 Innolux",
+     "ticker": "3481.TW",
+     "country": "TW",
+     "share": "面板廠跨足/共驗台廠",
+     "products": "RDL + TGV 面板級封裝",
+     "note": "RDL-first 2026 認證、TGV 2026-2027 量產、Chip-first 已量產、產能 10x",
+     "src": "https://www.digitimes.com/news/a20260424PD201/innolux-packaging-foplp-technology-chips.html"
+    },
+    {
+     "name": "Ibiden",
+     "ticker": "4062.T",
+     "country": "JP",
+     "share": "ABF 龍頭共驗方",
+     "products": "CoPoS 載板 / ABF→玻璃",
+     "note": "TSMC CoPoS 三方共驗成員",
+     "src": "https://www.digitimes.com/news/a20260616PD217/tsmc-innolux-ibiden-packaging-cowos.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "glass_material"
+    },
+    {
+     "id": "tgv_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "osat_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC×Ibiden×群創 三方共驗數據 (TradingKey)",
+     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261969147-tsm-ibiden-abf-copos-tradingkey"
+    },
+    {
+     "label": "TSMC CoPoS 時程 (DigiTimes)",
+     "url": "https://www.digitimes.com/news/a20260616PD217/tsmc-innolux-ibiden-packaging-cowos.html"
+    }
+   ]
+  },
+  {
+   "id": "china_glass",
+   "row": "flow",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "中系玻璃基板（國產替代）",
+   "nameEn": "China Glass Substrate",
+   "competition": "emerging",
+   "single": "⚠ 受設備管制激勵國產自主；沃格光電 10 萬 m²/年 TGV 線、CPO 玻璃基已批量送樣",
+   "desc": "獨立於歐美日韓的第五極。受美國先進設備管制激勵，中國加速 TGV/玻璃基材國產自主，從顯示面板跨向先進封裝。中國互補玻璃基板封裝市場 2026-2030 CAGR 估 >55%。",
+   "marketSize": "獨立第五極",
+   "growth": "CAGR >55%",
+   "share": "null",
+   "analysis": "沃格光電（603773.SS，中國玻璃基龍頭、>500 項專利、全製程 TGV 能力；子公司湖北通格年產 10 萬 m² TGV 線、2026/4 進小批量供貨；CPO 玻璃基產品批量送樣、SEMICON China 2026 亮相）、BOE 京東方（000725.SZ，2024 IPC 首發顯示面板跨先進封裝玻璃基板、量產目標 2026 後）、Visionox 維信諾（002387.SZ，加入賽局）。TGV 應用除 CPO 光模組外，延伸至 Chiplet 異質整合、RF 前端、車載 LiDAR、MEMS、AR/VR 微顯示。⚠ 國產良率與設備自主仍落後歐美日韓 1-2 世代，但政策驅動下為不可忽視的獨立路線。",
+   "companies": [
+    {
+     "name": "沃格光電 Wotop",
+     "ticker": "603773.SS",
+     "country": "CN",
+     "share": "中國玻璃基龍頭",
+     "products": "TGV 玻璃基板 / CPO 玻璃基(10 萬 m²/年)",
+     "note": ">500 專利、全製程 TGV；湖北通格 2026/4 小批量供貨；CPO 玻璃基批量送樣",
+     "src": "http://www.iccsz.com/4g/news.Asp?ID=ef7f070c900e4d57a638698abce20fed"
+    },
+    {
+     "name": "BOE 京東方",
+     "ticker": "000725.SZ",
+     "country": "CN",
+     "share": "顯示跨先進封裝",
+     "products": "玻璃基板面板級封裝",
+     "note": "2024 IPC 首發；量產目標 2026 後",
+     "src": "https://www.trendforce.com/news/2026/01/19/news-china-steps-up-glass-substrate-as-boe-reportedly-targets-2026-mass-production-visionox-joins-the-race/"
+    },
+    {
+     "name": "Visionox 維信諾",
+     "ticker": "002387.SZ",
+     "country": "CN",
+     "share": "面板廠加入",
+     "products": "玻璃基板布局",
+     "note": "2026/1 加入玻璃基板賽局",
+     "src": "https://www.trendforce.com/news/2026/01/19/news-china-steps-up-glass-substrate-as-boe-reportedly-targets-2026-mass-production-visionox-joins-the-race/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "tgv_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "osat_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "沃格光電 CPO 玻璃基送樣 (訊石)",
+     "url": "http://www.iccsz.com/4g/news.Asp?ID=ef7f070c900e4d57a638698abce20fed"
+    },
+    {
+     "label": "中國 BOE/Visionox 玻璃基板 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/01/19/news-china-steps-up-glass-substrate-as-boe-reportedly-targets-2026-mass-production-visionox-joins-the-race/"
+    }
+   ]
+  },
+  {
+   "id": "osat_demand",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "封裝整合 / 終端需求（Hyperscaler）",
+   "nameEn": "Integration & Demand",
+   "competition": "oligopoly",
+   "single": "需求驅動 · CoWoS 成本攀升+Rubin Ultra reticle 9x(~7,470mm²) 逼出玻璃；Nvidia/AMD/AWS/Apple 在測",
+   "desc": "AI 加速器與超大規模業者是把玻璃基板提前商轉的需求錨點。Rubin Ultra reticle 達 9x（約 7,470 mm²）、傳統矽中介層與有機載板在大尺寸下翹曲/訊號失控，CoWoS 成本逐年攀升推動玻璃替代。",
+   "marketSize": "需求錨點",
+   "growth": "結構性催化",
+   "share": "null",
+   "analysis": "Nvidia（NVDA，CoWoS-G/CoPoS 首批高階 AI 晶片客戶、Rubin/Rubin Ultra 世代、reticle 9x ~7,470mm²）、AMD（AMD，測試 Absolics 玻璃基板、MI/CDNA4 世代）、AWS（AMZN，測試 Absolics prototype）、Apple/Broadcom（收 Samsung 電機玻璃基板樣品）。需求催化與既有 cowos/substrate/plp 主題共享「AI 封裝載體」結構性敘事，但玻璃基板屬更長天期、選擇權式佈局——2026 仍為試產年、量產 2027-2030、PPA/qual 多為訊號性承諾。⚠ 良率 75-85% vs 有機 90-95%、成本 2-3x，economically viable yield 未達標前需求轉換有限。",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "首批 AI 晶片客戶",
+     "products": "Rubin/Rubin Ultra(CoWoS-G/CoPoS)",
+     "note": "reticle 9x ~7,470mm² 逼出玻璃；CoWoS-G HVM 2026 起",
+     "src": "https://insights.trendforce.com/p/glass-substrate-development"
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "玻璃基板測試客戶",
+     "products": "MI/CDNA4 玻璃封裝",
+     "note": "測試 Absolics 玻璃基板；傳與 AGC 共同開發",
+     "src": "https://www.trendforce.com/news/2026/05/08/news-skc-said-to-speed-glass-substrate-mass-production-by-year-end-advances-new-non-embedding-tech-for-u-s-client/"
+    },
+    {
+     "name": "AWS (Amazon)",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "Hyperscaler 測試",
+     "products": "自研 AI 晶片玻璃封裝",
+     "note": "測試 Absolics prototype",
+     "src": "https://www.trendforce.com/news/2026/05/08/news-skc-said-to-speed-glass-substrate-mass-production-by-year-end-advances-new-non-embedding-tech-for-u-s-client/"
+    },
+    {
+     "name": "Apple",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "終端品牌測試",
+     "products": "AI 晶片玻璃基板",
+     "note": "收 Samsung 電機玻璃基板樣品",
+     "src": "https://www.ic-pcb.com/advanced-samsung-electro-mechanics-supplies-glass-substrate-samples-to-apple-and-broadcom-paving-way-for-next-gen-ai-chips.html"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "ASIC 客戶測試",
+     "products": "客製 AI ASIC 玻璃封裝",
+     "note": "收 Samsung 電機玻璃基板樣品",
+     "src": "https://www.ic-pcb.com/advanced-samsung-electro-mechanics-supplies-glass-substrate-samples-to-apple-and-broadcom-paving-way-for-next-gen-ai-chips.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "glass_core"
+    },
+    {
+     "id": "copos_integ"
+    },
+    {
+     "id": "china_glass"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "玻璃突破 AI 封裝瓶頸/Rubin reticle (TrendForce)",
+     "url": "https://insights.trendforce.com/p/glass-substrate-development"
+    },
+    {
+     "label": "Samsung 電機送樣 Apple/Broadcom (IC-PCB)",
+     "url": "https://www.ic-pcb.com/advanced-samsung-electro-mechanics-supplies-glass-substrate-samples-to-apple-and-broadcom-paving-way-for-next-gen-ai-chips.html"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "glass_material",
+   "tgv_equip"
+  ],
+  [
+   "glass_material",
+   "copos_integ"
+  ],
+  [
+   "tgv_equip",
+   "glass_core"
+  ],
+  [
+   "tgv_equip",
+   "copos_integ"
+  ],
+  [
+   "tgv_equip",
+   "china_glass"
+  ],
+  [
+   "glass_core",
+   "osat_demand"
+  ],
+  [
+   "copos_integ",
+   "osat_demand"
+  ],
+  [
+   "china_glass",
+   "osat_demand"
+  ]
+ ],
+ "_proposed": {}
+}

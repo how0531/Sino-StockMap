@@ -1,0 +1,716 @@
+{
+ "id": "fpga",
+ "tab": "FPGA",
+ "title": "FPGA 可程式化邏輯供應鏈 (FPGA & Programmable Logic)",
+ "subtitle": "FPGA — 2026 年迎三重催化：①Altera 自 Intel 分拆（Silver Lake 以 $4.46B 收 51%、估值 $8.75B、對比 2015 年 Intel 收購價 $17B 腰斬），目標 2026 年底 IPO，將成 Xilinx 下市後最大純 FPGA 上市公司；②Lattice Q1 FY26 營收 $170.9M（+42% YoY）、AI 伺服器推升 Compute & Comm +86% YoY、伺服器佔營收 38%，再以 $1.65B（$1.0B 現金 + ~$650M 股票、賣方 THL Partners）併韌體龍頭 AMI、與台灣信驊（5274）結盟搶 AI 資料中心管理控制路徑，股價 2026 YTD 約 +92%（6/2 創 52 週新高 ~$151、6/9 回檔）；③中國國產替代（安路科技定增 12.62 億 RMB 攻超大規模 FPGA）。全球 FPGA 市場 2026 約 $110 億、2031 $172 億（CAGR ~9.4%）；AMD ~55% + Altera ~30% 雙寡頭。⚠ AI 主算力仍是 GPU/ASIC、FPGA 週期性強、Altera IPO 時程風險。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "2026 FPGA 市場",
+   "v": "$110億",
+   "sub": "2031 $172 億、CAGR ~9.4%；AMD ~55% + Altera ~30%"
+  },
+  {
+   "k": "催化／風險",
+   "v": 3,
+   "sub": "Altera IPO 2026 底·Lattice +42% YoY·AI 算力主場仍是 GPU/ASIC",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "EDA / IP / 晶圓代工 Upstream",
+   "main": false
+  },
+  {
+   "id": "chip",
+   "label": "FPGA 晶片商 FPGA Vendors",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "AI 資料中心 / 防務 / 通訊應用 Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "fpga_eda_proto",
+   "row": "upstream",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "EDA / IP / FPGA 原型驗證",
+   "nameEn": "EDA, IP & FPGA Prototyping",
+   "competition": "oligopoly",
+   "single": "閉環鎖喉 · Synopsys HAPS / Cadence Protium 原型驗證系統內建數十顆最大規格 FPGA（AMD VP1902）——AI ASIC 流片潮反向拉動高階 FPGA 需求",
+   "desc": "FPGA 開發工具（綜合/佈局佈線）、處理器 IP（Arm/RISC-V 軟核），以及用 FPGA 做 ASIC 流片前原型驗證的 HAPS/Protium 系統。",
+   "marketSize": "null",
+   "growth": "AI ASIC 設計潮拉動",
+   "share": "null",
+   "analysis": "FPGA 廠自有工具（AMD Vivado、Altera Quartus、Lattice Radiant、Microchip Libero）+ 三大 EDA 的綜合與原型驗證：Synopsys 2026/3/11 發表 HAPS-200（支援 10.8B gates RTL 原型）與 ZeBu-200（15.4B gates、2026 Q3 出貨），效能/容量翻倍瞄準 AI 晶片驗證；Cadence Protium 採用業界最大量產 FPGA——AMD VP1902 Versal。Arm/SiFive 提供 FPGA SoC 軟硬核 IP。AI ASIC 設計專案越多，原型驗證用高階 FPGA 採購越強，形成與 asic 主題的隱性連動。【絃外之音】這層是 FPGA 高階需求的「隱性定價權」所在：三大 EDA（Synopsys/Cadence/Siemens 合計 >70% 營收）的 HAPS/Protium/ZeBu 原型驗證系統一台內建數十顆最大規格 FPGA（AMD VP1902），AI ASIC 流片潮越熱、EDA 採購的高階 FPGA 越多——FPGA 雙寡頭的高階出貨有一塊其實是被 EDA 寡頭「需求綁架」而非自己終端開拓的，二階受惠者反而是 EDA 三強。",
+   "companies": [
+    {
+     "name": "Synopsys",
+     "ticker": "SNPS",
+     "country": "US",
+     "share": "原型驗證/綜合龍頭",
+     "products": "HAPS-200 原型 / ZeBu-200 模擬 / Synplify",
+     "note": "HAPS-200 2026/3 發表、效能 2x",
+     "src": "https://www.eenewseurope.com/en/worlds-largest-fpga-boosts-synopsys-prototyping-emulation-systems/"
+    },
+    {
+     "name": "Cadence",
+     "ticker": "CDNS",
+     "country": "US",
+     "share": "模擬/原型雙平台",
+     "products": "Protium 原型 / Palladium 模擬",
+     "note": "Protium 採 AMD VP1902 最大 FPGA",
+     "src": "https://www.cadence.com/en_US/home/tools/system-design-and-verification/emulation-and-prototyping/protium.html"
+    },
+    {
+     "name": "Siemens EDA",
+     "ticker": "SIE.DE",
+     "country": "DE",
+     "share": "EDA 三強",
+     "products": "FPGA 綜合 / 驗證工具",
+     "note": "前 Mentor Graphics"
+    },
+    {
+     "name": "Arm",
+     "ticker": "ARM",
+     "country": "UK",
+     "share": "FPGA SoC 硬核 IP",
+     "products": "Cortex 核（Versal/Agilex/AST1840 內嵌）",
+     "note": "FPGA SoC 標配處理器"
+    },
+    {
+     "name": "SiFive",
+     "ticker": "—",
+     "country": "US",
+     "share": "RISC-V 軟核",
+     "products": "RISC-V IP（FPGA 軟核部署）",
+     "note": "未上市；RISC-V 滲透 FPGA SoC"
+    },
+    {
+     "name": "思爾芯 S2C",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國原型驗證",
+     "products": "FPGA 原型驗證系統",
+     "note": "中國本土 HAPS 對標",
+     "src": "https://www.esmchina.com/news/6118.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "fpga_highend"
+    },
+    {
+     "id": "fpga_lowpower"
+    },
+    {
+     "id": "fpga_china"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Synopsys HAPS-200/ZeBu-200 (eeNews)",
+     "url": "https://www.eenewseurope.com/en/worlds-largest-fpga-boosts-synopsys-prototyping-emulation-systems/"
+    },
+    {
+     "label": "Cadence Protium (官方)",
+     "url": "https://www.cadence.com/en_US/home/tools/system-design-and-verification/emulation-and-prototyping/protium.html"
+    }
+   ]
+  },
+  {
+   "id": "fpga_foundry",
+   "row": "upstream",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "晶圓代工 / 封裝",
+   "nameEn": "Foundry & Packaging",
+   "competition": "oligopoly",
+   "single": "TSMC 製造 AMD Versal（7nm）/Lattice Avant（16nm）；Altera Agilex 7 在 Intel 10nm——Altera 獨立後代工去向是 TSMC vs Intel Foundry 角力觀察點",
+   "desc": "FPGA 製造橫跨先進與成熟製程：高階 7-10nm（Versal/Agilex），中低階 16-28nm（Avant/Nexus/PolarFire）。",
+   "marketSize": "null",
+   "growth": "先進+成熟並行",
+   "share": "null",
+   "analysis": "AMD Versal 採 TSMC 7nm；Altera Agilex 7 採 Intel 10nm（Stratix 10 為 Intel 14nm）、新世代 Agilex 3/5 部分轉 TSMC——Altera 自 Intel 獨立後的代工配置是 Intel Foundry 留客能力的指標。Lattice/Microchip 多用 Samsung/UMC 28nm 等成熟製程（低功耗 FD-SOI/SONOS flash），毛利結構穩定。TSMC 2025-2026 年均建設/轉換 9 座 fab 期，先進產能向 AI 傾斜，FPGA 屬「穩定長尾」客戶。【隱性單點】高階 FPGA 的真正瓶頸不是設計而是先進製程產能：AMD Versal 全壓 TSMC 7nm、Agilex 新世代亦轉 TSMC，等於高階 FPGA 雙寡頭對自家最賺錢產品「無代工議價權」、且要與 AI GPU/ASIC 爭搶同一條 N7/N5 產線——這是帳面 85% 市占看不出的供給天花板。",
+   "companies": [
+    {
+     "name": "台積電 TSMC",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "高階 FPGA 主代工",
+     "products": "7nm Versal / 16nm Avant / Agilex 新品",
+     "note": "2025-26 年均 9 座 fab 期建設",
+     "src": "https://www.tomshardware.com/tech-industry/semiconductors/analyzing-tsmcs-fab-expansion-roadmap-multi-fab-n2-ramp-cowos-soic-and-uncorking-bottlenecks"
+    },
+    {
+     "name": "Intel Foundry",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "Agilex 7/Stratix 製造",
+     "products": "Intel 10nm/14nm FPGA",
+     "note": "Altera 獨立後留客觀察點",
+     "src": "https://www.tomshardware.com/reviews/agilex-intel-fpga-10nm-chiplet,6062.html"
+    },
+    {
+     "name": "Samsung Foundry",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "低功耗 FPGA 代工",
+     "products": "28nm FD-SOI（Lattice Nexus 系）",
+     "note": "低功耗利基製程"
+    },
+    {
+     "name": "聯電 UMC",
+     "ticker": "2303.TW",
+     "country": "TW",
+     "share": "成熟製程 FPGA",
+     "products": "28nm（Microchip PolarFire 系）",
+     "note": "成熟製程供應"
+    },
+    {
+     "name": "日月光 ASE",
+     "ticker": "3711.TW",
+     "country": "TW",
+     "share": "封測",
+     "products": "FPGA 封裝測試 / chiplet 封裝",
+     "note": "Agilex/Versal 均為 chiplet 架構"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "fpga_highend"
+    },
+    {
+     "id": "fpga_lowpower"
+    },
+    {
+     "id": "fpga_china"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC vs Intel Foundry 2026 (SemiWiki)",
+     "url": "https://semiwiki.com/semiconductor-manufacturers/tsmc/366523-tsmc-vs-intel-foundry-vs-samsung-foundry-2026/"
+    },
+    {
+     "label": "Agilex 10nm chiplet (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/reviews/agilex-intel-fpga-10nm-chiplet,6062.html"
+    }
+   ]
+  },
+  {
+   "id": "fpga_highend",
+   "row": "chip",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "高階 FPGA 雙寡頭",
+   "nameEn": "High-End FPGA Duopoly",
+   "competition": "oligopoly",
+   "single": "★ 板塊催化 · Altera（估值 $8.75B、Silver Lake 51%/Intel 49%）目標 2026 年底 IPO——Xilinx 下市後最大純 FPGA 上市標的，路演將重新定價整個賽道",
+   "desc": "資料中心/防務/電信級高階 FPGA：AMD（Xilinx）Versal 與 Altera Agilex 兩強合計 >80% 份額。",
+   "marketSize": "2026 全市場 ~$110 億",
+   "growth": "null",
+   "share": "AMD ~55% + Altera ~30%",
+   "analysis": "AMD：FPGA 份額 ~55%，Embedded 部門 Q1 2026 營收 $873M（+6% YoY、庫存去化後回溫），Versal Premium 112G PAM4 瞄準次世代雷達、VP1902 為業界最大量產 FPGA（被 EDA 原型驗證系統採用）。Altera：份額 ~30%，2025/9 Silver Lake 以 $4.46B 收 51%（估值 $8.75B vs Intel 2015 收購價 $17B）、Intel 留 49%，CEO Raghib Hussain（2025/5/5 接替 Sandra Rivera）帶隊，惟 IPO 時程已不再是 2026 年底、執行長暗示恐延後至約 2028-2029；Agilex 3 量產、2026/6/8 發表 Agilex 9 Direct RF（雷達/電子戰）、2026/3 推 Physical AI 機器人方案。Achronix（私有）以 Speedster7t/eFPGA IP 卡位 AI 推論利基。",
+   "companies": [
+    {
+     "name": "AMD (Xilinx)",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "~55%",
+     "products": "Versal Prime/Premium/RF Gen 2 / Kintex UltraScale+ Gen 2 / Spartan / Artix / VP1902",
+     "note": "Embedded Q1 2026 $873M、+6% YoY；新增量產 Versal RF Series（單晶片整合 RF ADC/DAC + AI Engine）與 Kintex UltraScale+ Gen 2 中階家族",
+     "src": "https://www.amd.com/en/blogs/2026/announcing-new-amd-versal-prime-series-gen-2-devices.html"
+    },
+    {
+     "name": "Altera",
+     "ticker": "—",
+     "country": "US",
+     "share": "~30%",
+     "products": "Agilex 3/5/7/9 / Quartus",
+     "note": "估值 $8.75B；IPO 時程延後（CEO 稱 Silver Lake 擬持有 5 年以上、不急變現）",
+     "src": "https://www.eetimes.com/altera-ceo-we-need-to-fully-focus-on-execution/"
+    },
+    {
+     "name": "Silver Lake",
+     "ticker": "—",
+     "country": "US",
+     "share": "Altera 51% 控股",
+     "products": "私募股權",
+     "note": "$4.46B 入主、主導 IPO",
+     "src": "https://www.tomshardware.com/tech-industry/intel-sells-51-percent-of-altera-fpga-business-to-silver-lake-for-usd4-46-billion"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "Altera 49% 股權",
+     "products": "持股 + 部分代工",
+     "note": "IPO 變現受惠者"
+    },
+    {
+     "name": "Achronix",
+     "ticker": "—",
+     "country": "US",
+     "share": "高階利基",
+     "products": "Speedster7t / AC7t800 / eFPGA IP",
+     "note": "未上市；AI 推論/SmartNIC",
+     "src": "https://www.achronix.com/press-releases/achronix-releases-groundbreaking-speedster-ac7t800-mid-range-fpga-driving-innovation"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fpga_eda_proto"
+    },
+    {
+     "id": "fpga_foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fpga_ai_server"
+    },
+    {
+     "id": "fpga_defense_comm"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Intel 售 Altera 51% (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/intel-sells-51-percent-of-altera-fpga-business-to-silver-lake-for-usd4-46-billion"
+    },
+    {
+     "label": "Altera 2026 IPO 路徑 (KAD)",
+     "url": "https://www.kad8.com/hardware/altera-in-2026-intel-silver-lake-and-the-fpga-reset/"
+    },
+    {
+     "label": "Agilex 9 Direct RF 發表 (Business Wire)",
+     "url": "https://www.morningstar.com/news/business-wire/20260608517153/altera-introduces-next-generation-agilex-9-direct-rf-series-soc-fpga-to-power-the-future-of-high-performance-rf-systems"
+    }
+   ]
+  },
+  {
+   "id": "fpga_lowpower",
+   "row": "chip",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "中低階 / 低功耗 FPGA",
+   "nameEn": "Mid-Range & Low-Power FPGA",
+   "competition": "highgrowth",
+   "single": "Lattice = AI 伺服器控制路徑代表股：Q1 FY26 +42% YoY、Q2 指引 +50%、$1.65B 併 AMI 後目標 Q4 2026 年化營收 $1B+",
+   "desc": "低功耗/小尺寸 FPGA 與 CPLD：AI 伺服器安控、電源時序、工業 edge AI 的「控制路徑」主力。",
+   "marketSize": "null",
+   "growth": "Lattice +42% YoY",
+   "share": "null",
+   "analysis": "Lattice（LSCC）：Q1 FY26 營收 $170.9M（+42% YoY）、non-GAAP EPS $0.41（+86%）、Compute & Comm $106.6M（+86% YoY 創紀錄）、伺服器佔營收 38%、AI 相關營收 2026 估達 25%；$1.65B（$1.0B 現金 + ~$650M 股票、賣方 THL Partners）併韌體龍頭 AMI（BIOS/BMC，2026 營收 >$200M、Q3 交割）轉型「安全管理控制平台」；Q2 FY26 指引 $175-195M（中位 $185M、約 +50% YoY）；股價 2026 YTD 約 +92%（6/2 創 52 週新高 ~$151），6/9 起隨晶片股回檔至 ~$149。Microchip：PolarFire 軍規/航太低功耗利基（企業 FPGA mindshare 19.1%）。Efinix/QuickLogic：edge AI 新銳；Renesas ForgeFPGA 攻超低成本。",
+   "companies": [
+    {
+     "name": "Lattice",
+     "ticker": "LSCC",
+     "country": "US",
+     "share": "低功耗 FPGA 龍頭",
+     "products": "Nexus / Avant / MachXO / Radiant",
+     "note": "Q1 FY26 $170.9M、+42% YoY；併 AMI $1.65B；2026/6 獲 AI Excellence Award（與 NVIDIA 合作 Edge AI）",
+     "src": "https://www.businesswire.com/news/home/20260616903720/en/Lattice-to-Showcase-Industry-Leading-FPGA-Innovations-at-FPGA-Conference-Europe-2026"
+    },
+    {
+     "name": "Microchip",
+     "ticker": "MCHP",
+     "country": "US",
+     "share": "軍規/航太利基",
+     "products": "PolarFire FPGA/SoC / RTG4",
+     "note": "防務級安全 + rad-tolerant",
+     "src": "https://www.microchip.com/en-us/products/fpgas-and-plds/fpgas/polarfire-fpgas"
+    },
+    {
+     "name": "AMI (被併購中)",
+     "ticker": "—",
+     "country": "US",
+     "share": "伺服器韌體龍頭",
+     "products": "BIOS / BMC 韌體 / 遠端管理",
+     "note": "2026 營收 >$200M；Lattice $1.65B 收購",
+     "src": "https://ir.latticesemi.com/news-releases/news-release-details/lattice-acquire-ami-creating-industrys-most-complete-secure"
+    },
+    {
+     "name": "Efinix",
+     "ticker": "—",
+     "country": "US",
+     "share": "edge AI 新銳",
+     "products": "Titanium / Trion FPGA",
+     "note": "未上市；低功耗 edge AI"
+    },
+    {
+     "name": "QuickLogic",
+     "ticker": "QUIK",
+     "country": "US",
+     "share": "eFPGA IP",
+     "products": "eFPGA IP / 感測 hub",
+     "note": "企業 FPGA mindshare 9.3%（2026/6）",
+     "src": "https://www.peerspot.com/products/comparisons/microchip-polarfire_vs_quicklogic-fpga"
+    },
+    {
+     "name": "Renesas",
+     "ticker": "6723.T",
+     "country": "JP",
+     "share": "超低成本 FPGA",
+     "products": "ForgeFPGA",
+     "note": "日系小型 FPGA"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fpga_eda_proto"
+    },
+    {
+     "id": "fpga_foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fpga_ai_server"
+    },
+    {
+     "id": "fpga_defense_comm"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Lattice Q1 FY26 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000855658/000143774926014654/ex_943286.htm"
+    },
+    {
+     "label": "Lattice 2026 +50% 與 AMI (TIKR)",
+     "url": "https://www.tikr.com/blog/lattice-semiconductor-stock-surges-50-in-2026-and-the-ami-deal-can-push-it-even-higher"
+    }
+   ]
+  },
+  {
+   "id": "fpga_china",
+   "row": "chip",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國國產 FPGA",
+   "nameEn": "China Domestic FPGA",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "美管制下軍工/工業國產替代最剛性品類之一；安路科技定增 12.62 億 RMB 直攻超大規模 FPGA。",
+   "marketSize": "null",
+   "growth": "安路 2026E +33%",
+   "share": "null",
+   "analysis": "安路科技（688107.SS）：分析師估 2025-2027 營收 6.23/8.30/10.24 億 RMB（2026E +33% YoY），2026/1 公告定增不超過 12.62 億 RMB 投向先進工藝超大規模 FPGA 與 FPSoC 產業化；復旦微電（688385.SS）FPGA+安全晶片、軍工色彩濃；紫光同創（紫光國微 002049.SZ 旗下）通訊級 FPGA；高雲半導體（未上市）攻消費/工業小型 FPGA。低階內卷價格戰、高階受製程出口管制（14nm+）雙重壓力，但軍用需求剛性。【結構真相】中國 FPGA 是碎片化（非萌芽）：安路/高雲/紫光同創/復旦微/智多晶多家小廠各據細分、無單一集中度，2025 安路+高雲+紫光同創合計出貨僅約 230 萬顆、低階淪價格戰；真正卡脖子在 EDA（國產 Quartus/Vivado 對標仍弱）與 14nm+ 先進製程代工管制，帳面市占成長掩蓋不了高階仍靠不到先進產能的事實。美 2024/10 BIS 新規把頻寬 >600GBps 或 >1000 DSP slices 的高階 FPGA（AMD Versal Premium、Altera Agilex 9）移出中國可售清單、EU 2025/1 跟進，反向加速國產採購（GOWIN+安路+紫光同創 2025 合計出貨 ~230 萬顆）。",
+   "companies": [
+    {
+     "name": "安路科技 Anlogic",
+     "ticker": "688107.SS",
+     "country": "CN",
+     "share": "中國 FPGA 龍頭",
+     "products": "PHOENIX / EAGLE / FPSoC",
+     "note": "Q1 2026 營收 1.66 億 RMB、+77% YoY；定增 12.62 億攻高階",
+     "src": "https://www.stcn.com/article/detail/3612988.html"
+    },
+    {
+     "name": "復旦微電",
+     "ticker": "688385.SS",
+     "country": "CN",
+     "share": "軍工 FPGA",
+     "products": "億門級 FPGA / 安全晶片",
+     "note": "軍工/航太國產替代"
+    },
+    {
+     "name": "紫光國微 (紫光同創)",
+     "ticker": "002049.SZ",
+     "country": "CN",
+     "share": "通訊級 FPGA",
+     "products": "Titan / Logos 系列",
+     "note": "紫光同創為其 FPGA 平台"
+    },
+    {
+     "name": "高雲半導體 Gowin",
+     "ticker": "—",
+     "country": "CN",
+     "share": "消費/工業小 FPGA",
+     "products": "晨熙 / 小蜜蜂 / Arora GW1AN·GW3A 新系列",
+     "note": "未上市；2026/3 發表新一代 Arora 家族；與安路+紫光同創 2025 合計出貨 ~230 萬顆",
+     "src": "https://www.gowinsemi.com/en/about/detail/latest_news/97/"
+    },
+    {
+     "name": "智多晶 Intelliprop",
+     "ticker": "—",
+     "country": "CN",
+     "share": "新創",
+     "products": "中小規模 FPGA",
+     "note": "未上市、早期"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fpga_eda_proto"
+    },
+    {
+     "id": "fpga_foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fpga_defense_comm"
+    }
+   ],
+   "sources": [
+    {
+     "label": "安路定增 12.62 億 (證券時報)",
+     "url": "https://www.stcn.com/article/detail/3612988.html"
+    },
+    {
+     "label": "安路盈利預測 (同花順)",
+     "url": "https://basic.10jqka.com.cn/688107/worth.html"
+    }
+   ]
+  },
+  {
+   "id": "fpga_ai_server",
+   "row": "demand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI 資料中心 / 伺服器管理",
+   "nameEn": "AI Datacenter & Server Management",
+   "competition": "highgrowth",
+   "single": "台股連動 · 信驊（5274）AST1840 內嵌 Lattice FPGA（2026 Q3 上市）——BMC 龍頭 + 低功耗 FPGA 結盟卡位 AI 機櫃管理控制路徑",
+   "desc": "GPU/ASIC 吃運算，但每台 AI 伺服器的安控（Root of Trust）、電源時序、BMC 周邊控制都需要低功耗 FPGA/CPLD。",
+   "marketSize": "需求新主場",
+   "growth": "Lattice 伺服器佔比 38%",
+   "share": "null",
+   "analysis": "Lattice 伺服器營收佔比從低十位數%升至 38%、AI 相關營收 2026 估佔 25%，是「控制路徑」需求的結構性證據；AMI（BIOS/BMC 韌體，hyperscale 伺服器標配）被 Lattice $1.65B 收購後形成晶片+韌體平台；信驊（ASPEED, 5274）為 BMC 晶片龍頭，2026/5/28 與 Lattice 結盟推 AST1840 Satellite Management Controller（Arm + 內嵌 Lattice FPGA、瞄準 AI 模組化機櫃、2026 Q3 上市）。Supermicro 等 ODM 與 hyperscaler（MSFT/META/GOOGL）的安控/管理規格升級為持續拉力。【絃外之音】Lattice $1.65B 併 AMI（BIOS/BMC 韌體 hyperscale 標配）＋綁定信驊 AST1840，等於把單顆「控制路徑 FPGA」升級成「晶片+韌體+BMC」的平台卡位——真正的定價權不在 FPGA 矽片本身，而在掌握伺服器 Root-of-Trust 與遠端管理軟硬整合的能力；這也是 Lattice 估值跑贏 9% 本業 CAGR 的核心，但隱含客戶集中度風險（綁定少數 hyperscaler 安控規格）。",
+   "companies": [
+    {
+     "name": "信驊 ASPEED",
+     "ticker": "5274.TWO",
+     "country": "TW",
+     "share": "BMC 晶片龍頭",
+     "products": "AST 系列 BMC / AST1840（內嵌 Lattice FPGA）",
+     "note": "2026/5/28 與 Lattice 策略結盟",
+     "src": "https://www.prnewswire.com/news-releases/aspeed-technology-and-lattice-semiconductor-announce-strategic-partnership-to-advance-next-generation-control-for-datacenter-management-302784108.html"
+    },
+    {
+     "name": "Lattice",
+     "ticker": "LSCC",
+     "country": "US",
+     "share": "控制路徑 FPGA",
+     "products": "MachXO5 安控 / 電源時序 FPGA",
+     "note": "伺服器佔營收 38%（Q1 FY26）",
+     "src": "https://www.investing.com/news/company-news/lattice-q1-2026-slides-86-eps-growth-on-ai-demand-surge-93CH-4674819"
+    },
+    {
+     "name": "AMI",
+     "ticker": "—",
+     "country": "US",
+     "share": "BMC/BIOS 韌體",
+     "products": "MegaRAC BMC 韌體 / Aptio BIOS",
+     "note": "hyperscale 伺服器韌體標配",
+     "src": "https://www.eetimes.com/fpga-makers-strategic-pivot-into-firmware-world/"
+    },
+    {
+     "name": "Supermicro",
+     "ticker": "SMCI",
+     "country": "US",
+     "share": "AI 伺服器 ODM",
+     "products": "AI 機櫃（含 FPGA/BMC 管理）",
+     "note": "管理控制規格升級拉力"
+    },
+    {
+     "name": "Microsoft / Meta",
+     "ticker": "MSFT / META",
+     "country": "US",
+     "share": "hyperscaler 需求錨",
+     "products": "OCP 伺服器安控/管理規格",
+     "note": "平台級 Root of Trust 要求"
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI 機櫃定義者",
+     "products": "MGX/NVL 機櫃（管理控制器生態）",
+     "note": "機櫃管理規格影響 FPGA 用量"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fpga_highend"
+    },
+    {
+     "id": "fpga_lowpower"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "ASPEED-Lattice AST1840 (PR Newswire)",
+     "url": "https://www.prnewswire.com/news-releases/aspeed-technology-and-lattice-semiconductor-announce-strategic-partnership-to-advance-next-generation-control-for-datacenter-management-302784108.html"
+    },
+    {
+     "label": "Lattice Q1 slides AI 需求 (Investing)",
+     "url": "https://www.investing.com/news/company-news/lattice-q1-2026-slides-86-eps-growth-on-ai-demand-surge-93CH-4674819"
+    }
+   ]
+  },
+  {
+   "id": "fpga_defense_comm",
+   "row": "demand",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "防務 / 通訊 / 工業機器人",
+   "nameEn": "Defense, Comms & Industrial",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "FPGA 傳統高毛利主場：雷達/電子戰/衛星（抗輻射）、5G/6G 基站、工業自動化與機器人 edge AI。",
+   "marketSize": "null",
+   "growth": "雷達/電子戰升級週期",
+   "share": "null",
+   "analysis": "防務：Agilex 9 Direct RF（2026/6/8 發表，直接 RF 取樣雷達/電子戰）、AMD Versal Premium（112G PAM4、次世代雷達）、Microchip PolarFire 軍規——RTX/Lockheed/BAE 等 prime 的雷達與電子戰升級週期是高毛利壓艙石（與 defense 主題的 rad-hard 利基互補）。通訊：Nokia/Ericsson 基站 fronthaul/beamforming 長期用 FPGA。工業/機器人：Altera 2026/3 推 FPGA-based Physical AI（機器人/edge），Rivera 稱 2026 年 >50% edge 應用將內含 AI。",
+   "companies": [
+    {
+     "name": "RTX",
+     "ticker": "RTX",
+     "country": "US",
+     "share": "雷達/電子戰 prime",
+     "products": "雷達 / EW 系統（FPGA 大戶）",
+     "note": "防務 FPGA 需求錨；AMD Versal RF 單晶片 RF 取樣切入雷達/EW 訊號鏈"
+    },
+    {
+     "name": "Lockheed Martin",
+     "ticker": "LMT",
+     "country": "US",
+     "share": "防務 prime",
+     "products": "飛彈/雷達/衛星系統",
+     "note": "Versal/Agilex 9 RF 導入場景",
+     "src": "https://www.morningstar.com/news/business-wire/20260608517153/altera-introduces-next-generation-agilex-9-direct-rf-series-soc-fpga-to-power-the-future-of-high-performance-rf-systems"
+    },
+    {
+     "name": "BAE Systems",
+     "ticker": "BA.L",
+     "country": "UK",
+     "share": "歐系 prime + rad-hard",
+     "products": "電子戰 / 抗輻射電子",
+     "note": "與 defense 主題 rad-hard 節點互補"
+    },
+    {
+     "name": "Nokia",
+     "ticker": "NOK",
+     "country": "FI",
+     "share": "基站 FPGA 大戶",
+     "products": "5G/6G 基站（fronthaul/beamforming）",
+     "note": "通訊為 FPGA 傳統最大終端"
+    },
+    {
+     "name": "Ericsson",
+     "ticker": "ERIC",
+     "country": "SE",
+     "share": "基站 FPGA 大戶",
+     "products": "5G RAN 設備",
+     "note": "通訊復甦觀察點"
+    },
+    {
+     "name": "Altera (Physical AI)",
+     "ticker": "—",
+     "country": "US",
+     "share": "機器人 edge AI 方案",
+     "products": "FPGA Physical AI 平台",
+     "note": "2026/3/4 發表、機器人/edge",
+     "src": "https://www.businesswire.com/news/home/20260304080110/en/Altera-Advances-FPGA-Based-Physical-AI-for-Robotics-and-Edge-Applications"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fpga_highend"
+    },
+    {
+     "id": "fpga_lowpower"
+    },
+    {
+     "id": "fpga_china"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Agilex 9 Direct RF (Business Wire)",
+     "url": "https://www.morningstar.com/news/business-wire/20260608517153/altera-introduces-next-generation-agilex-9-direct-rf-series-soc-fpga-to-power-the-future-of-high-performance-rf-systems"
+    },
+    {
+     "label": "Microchip 防務 FPGA (官方)",
+     "url": "https://www.microchip.com/en-us/solutions/aerospace-and-defense/products/fpgas"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "fpga_eda_proto",
+   "fpga_highend"
+  ],
+  [
+   "fpga_eda_proto",
+   "fpga_lowpower"
+  ],
+  [
+   "fpga_eda_proto",
+   "fpga_china"
+  ],
+  [
+   "fpga_foundry",
+   "fpga_highend"
+  ],
+  [
+   "fpga_foundry",
+   "fpga_lowpower"
+  ],
+  [
+   "fpga_foundry",
+   "fpga_china"
+  ],
+  [
+   "fpga_highend",
+   "fpga_ai_server"
+  ],
+  [
+   "fpga_highend",
+   "fpga_defense_comm"
+  ],
+  [
+   "fpga_lowpower",
+   "fpga_ai_server"
+  ],
+  [
+   "fpga_lowpower",
+   "fpga_defense_comm"
+  ],
+  [
+   "fpga_china",
+   "fpga_defense_comm"
+  ]
+ ],
+ "_proposed": {}
+}

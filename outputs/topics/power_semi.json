@@ -1,0 +1,738 @@
+{
+ "id": "power_semi",
+ "tab": "功率半導體",
+ "title": "功率半導體 SiC / GaN 供應鏈 (Power Semiconductor: SiC & GaN)",
+ "subtitle": "Power SiC & GaN — 「電力是新的算力瓶頸」第二章：核能/SMR 解決發電，GaN/SiC 解決電怎麼進機櫃。NVIDIA 為 1MW Kyber 機櫃（576 顆 Rubin Ultra、2027 上線）定義 800 VDC 架構，onsemi 估每櫃功率半導體含量從 $9.5K 跳至 $115K（~12 倍）；官方矽夥伴名單 14 家（Infineon/Navitas/onsemi/PI/TI/MPS/Innoscience…）。雙引擎需求：AI 資料中心（Yole 估 GaN 資料中心段 CAGR 53%）＋ EV 800V（近 40% 新中高階車款全 SiC）。上游基板陷中國價格戰（6 吋殺到 $500/片以下、天岳 2025 反超 Wolfspeed 登頂）；TSMC 2027/7 退出 GaN 代工，訂單流向力積電/世界先進/漢磊，台廠重組受惠。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "38+"
+  },
+  {
+   "k": "GaN 功率元件市場",
+   "v": "CAGR 42%",
+   "sub": "Yole：2024 $3.55 億 → 2030 ~$30 億；資料中心段 CAGR 53%、車用 73%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "NVIDIA 800VDC（2027 Kyber）·中國基板價格戰＋題材股估值風險",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "mat",
+   "label": "上游材料：SiC 基板 / 磊晶",
+   "main": false
+  },
+  {
+   "id": "dev",
+   "label": "功率元件（SiC IDM / GaN 平台）",
+   "main": true
+  },
+  {
+   "id": "mfg",
+   "label": "化合物代工 / 二極體模組（台廠鏈）",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "終端需求：800VDC AI 資料中心 / EV 800V",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "sic_substrate",
+   "row": "mat",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "SiC 基板（長晶）",
+   "nameEn": "SiC Substrates",
+   "competition": "redocean",
+   "single": "null",
+   "desc": "SiC 單晶基板：6 吋已商品化、8 吋（200mm）轉換是技術分水嶺。中國價格戰使「基板賣鏟人」邏輯失效，價值往元件/系統端移動。",
+   "marketSize": "2024 約 $10.4 億（YoY -9%，量增價跌）",
+   "growth": "null",
+   "share": "2025：天岳 6 吋 27.5% / 8 吋 51.3%（高階段龍頭）",
+   "analysis": "2024 市占 Wolfspeed 33.7% 居首；2025 天岳先進以 6 吋 27.5% 反超 Wolfspeed 躍居全球第一，並於 SEMICON China 2026 揭露其 2025 年「8 吋 SiC 基板」市占達 51.3%，成首家領導高階段的中國廠商——中系不再只是 6 吋價格戰受害者，而是掌控戰略段的潛在卡點。2026 戰場主軸由「6 吋價格戰」轉向「8 吋（200mm）技術分水嶺」：8 吋滲透率將自 <2% 升至 2026 約 15%，誰掌握 8 吋良率與成本，誰就掌握 SiC 元件降本曲線；Wolfspeed/Coherent 在 8 吋競賽落後加劇地位惡化。Wolfspeed 2025/9/29 完成 Chapter 11 重整（債務 -70%）後 Q3 FY26 營收 $150.2M、non-GAAP 毛利率 -21%，惟中高壓垂直（AI 資料中心）營收 QoQ +50%，並於 2026/1 展示 300mm(12 吋) 單晶 SiC 技術突破（里程碑非量產）。投資啟示：避開 6 吋基板純玩家，焦點轉向 8 吋良率/成本領先者。",
+   "companies": [
+    {
+     "name": "天岳先進 SICC",
+     "ticker": "688234.SS",
+     "country": "CN",
+     "share": "2025 6 吋 27.5% / 8 吋 51.3%（全球 #1）",
+     "products": "6/8 吋 SiC 基板",
+     "note": "SEMICON China 2026 揭露 2025 年 8 吋 SiC 基板市占 51.3%，成首家領導高階段的中國廠商；8 吋已量產導電型基板並持續交付，掌控 SiC 元件降本關鍵段；關係企業 Innoscience 2026/6/13 對 Infineon 取得中國終審勝訴（禁售中國），惟 6/18 慕尼黑反判其侵 Infineon 德國專利，中系 WBG 法律籌碼僅限本土",
+     "src": "https://govt.chinadaily.com.cn/s/202603/27/WS69cb9278498e23165e06e797/jinan-based-sicc-crowns-global-sic-substrate-market.html"
+    },
+    {
+     "name": "Wolfspeed",
+     "ticker": "WOLF",
+     "country": "US",
+     "share": "2025 #2（6 吋）；8 吋競賽落後",
+     "products": "SiC 基板/磊晶/元件 IDM",
+     "note": "Chapter 11 重整完成（債務 -70%）；Q3 FY26 營收 $150.2M、毛利率 -21%，惟中高壓垂直（AI 資料中心）營收 QoQ +50%；2026/1 完成 CFIUS 核准向 Renesas America 發行約 1,685 萬股，Renesas（已放棄 SiC 自製）轉為客戶兼股東；2026/1 展示 300mm(12 吋) 單晶 SiC 技術突破（里程碑非量產）；2026/6 轉攻 AI 高壓系統——6/8 與 GE Aerospace 簽 10kV SiC MOU、6/9 發表 Gen 5 SiC MOSFET（1200V RSP -27%）",
+     "src": "https://www.sec.gov/Archives/edgar/data/0000895419/000119312526030582/d39825dex991.htm"
+    },
+    {
+     "name": "天科合達 TanKeBlue",
+     "ticker": "未上市",
+     "country": "CN",
+     "share": "2025 #3（18.2%）",
+     "products": "SiC 基板",
+     "note": "$500/片以下價格戰主力之一"
+    },
+    {
+     "name": "Coherent",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "2025 約 4.5%",
+     "products": "SiC 基板/磊晶",
+     "note": "份額快速流失，轉向高值化"
+    },
+    {
+     "name": "SK Siltron",
+     "ticker": "未上市",
+     "country": "KR",
+     "share": "前五",
+     "products": "SiC 基板",
+     "note": "SK 集團；車用客戶為主"
+    },
+    {
+     "name": "SiCrystal（ROHM）",
+     "ticker": "6963.T",
+     "country": "JP",
+     "share": "歐系車用供應",
+     "products": "SiC 基板",
+     "note": "ROHM 垂直整合上游"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "epitaxy"
+    },
+    {
+     "id": "sic_idm"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TrendForce：2024 SiC 基板市場 $1.04B、8 吋路線",
+     "url": "https://www.trendforce.com/presscenter/news/20250512-12574.html"
+    },
+    {
+     "label": "2025 基板市占反轉（SICC 27.6%）",
+     "url": "https://drrobertcastellano.substack.com/p/coherent-targets-the-most-valuable"
+    },
+    {
+     "label": "SICC 拿下全球 8 吋 SiC 基板 51.3%（SEMICON China 2026）",
+     "url": "https://govt.chinadaily.com.cn/s/202603/27/WS69cb9278498e23165e06e797/jinan-based-sicc-crowns-global-sic-substrate-market.html"
+    },
+    {
+     "label": "Wolfspeed 300mm SiC 技術突破 / 8 吋分水嶺",
+     "url": "https://www.wolfspeed.com/company/news-events/news/wolfspeed-achieves-300mm-silicon-carbide-sic-technology-breakthrough/"
+    },
+    {
+     "label": "Wolfspeed 破產訊號與中國 $500 價格戰",
+     "url": "https://www.trendforce.com/news/2025/05/21/news-wolfspeed-reportedly-to-file-bankruptcy-in-weeks-as-chinas-aggressive-pricing-weak-demand-bite/"
+    }
+   ]
+  },
+  {
+   "id": "epitaxy",
+   "row": "mat",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "磊晶 Epitaxy",
+   "nameEn": "SiC / GaN Epitaxy",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "在基板上長磊晶層，決定元件耐壓與良率。台廠嘉晶為外售磊晶利基龍頭之一，GaN 磊晶受 AI 資料中心/快充需求帶動暴衝。",
+   "marketSize": "null",
+   "growth": "嘉晶 GaN 磊晶 Q1 2026 QoQ +73%",
+   "share": "null",
+   "analysis": "嘉晶 Q1 2026 獲利近 7 季新高（年增逾 34 倍）、Q2 營收看增逾 2 成；GaN 磊晶 QoQ +73%（AI 資料中心/快充/機器人），產能滿載、2025 擴產 ~30% 仍被預訂一空；8 吋 SiC 磊晶通過日本 IDM 驗證、Q2 2026 起導入訂單。SiC 磊晶仍在去化（YoY -27%）——GaN 強、SiC 弱的分化是 2026 主旋律。",
+   "companies": [
+    {
+     "name": "嘉晶電子",
+     "ticker": "3016.TW",
+     "country": "TW",
+     "share": "外售 Si/SiC/GaN 磊晶利基龍頭",
+     "products": "Si / SiC / GaN 磊晶片",
+     "note": "Q1 2026 獲利近 7 季高、GaN QoQ +73%、8 吋 SiC 過日系 IDM 驗證",
+     "src": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=53348425-3556-451f-a91b-449b5ea07c76"
+    },
+    {
+     "name": "Resonac（昭和電工）",
+     "ticker": "4004.T",
+     "country": "JP",
+     "share": "外售 SiC 磊晶龍頭之一",
+     "products": "SiC 磊晶片",
+     "note": "供應歐美日 IDM"
+    },
+    {
+     "name": "瀚天天成 EpiWorld",
+     "ticker": "未上市",
+     "country": "CN",
+     "share": "中系外售磊晶主力",
+     "products": "SiC 磊晶",
+     "note": "配合中系元件廠擴張"
+    },
+    {
+     "name": "東莞天域",
+     "ticker": "未上市",
+     "country": "CN",
+     "share": "中系第二梯隊",
+     "products": "SiC 磊晶",
+     "note": "價格競爭者"
+    },
+    {
+     "name": "Coherent",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "基板＋磊晶一體",
+     "products": "SiC 基板/磊晶",
+     "note": "高值化轉型中"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "sic_substrate"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "sic_idm"
+    },
+    {
+     "id": "gan_device"
+    }
+   ],
+   "sources": [
+    {
+     "label": "嘉晶 Q1 2026 獲利、GaN/8 吋 SiC 進度",
+     "url": "https://wantrich.chinatimes.com/news/20260506900305-420101"
+    },
+    {
+     "label": "嘉晶 Q1 年增 34 倍、擴產規劃",
+     "url": "https://www.ctee.com.tw/news/20260430700272-439901"
+    }
+   ]
+  },
+  {
+   "id": "sic_idm",
+   "row": "dev",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "SiC 元件 IDM",
+   "nameEn": "SiC Device IDMs",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "SiC MOSFET/二極體五強寡占（>70%）：Infineon、ST、onsemi、ROHM、Bosch。EV 800V 為現有最大市場，AI 資料中心為新增引擎。",
+   "marketSize": "SiC 元件 2026 約 $61.4 億（上修自 $48.9 億）；2027 EV 占 >70%",
+   "growth": "null",
+   "share": "null",
+   "analysis": "AI 資料中心成 IDM 業績與估值重估的邊際買家，車用 SiC 疲軟被 AI 高壓電源接棒。Infineon：Q2 FY26 營收 €38.1 億，Q3 FY26 指引營收約 €41 億（優於共識）、FY26 上修為「顯著年增」、毛利率拉至 40-45% 中段；AI 資料中心電源 FY26 €15 億 → FY27 €25 億（供給受限），推出 30kW 800VDC/±400VDC T-Type PFC 評估板；2026/5/28 加入 NVIDIA MGX 生態系。ST：Tesla SiC 主供，2026 資料中心營收確認約 $10 億（2027 翻倍）；與三安 $32 億重慶 200mm SiC 合資廠全面營運。onsemi：AI 資料中心營收 QoQ +30%、2026 有望翻倍、毛利率回升至 38.5%；估 800V 機櫃功率含量 $115K vs 傳統 $9.5K；宣稱為「首家量產垂直 GaN」者（700V/1200V 樣品、GaN 漏斗 >$15 億），以全電壓 IDM 方案橫跨 SiC/GaN 擠壓純玩家題材股。Renesas 2025/6 放棄 SiC 自製，2026/1 轉為 Wolfspeed 客戶兼股東——價格戰下的退出訊號。短期逆風：2025-26 歐美 EV 需求疲軟壓低車用 SiC 稼動率。",
+   "companies": [
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "車用功率 #1、WBG 整體領導",
+     "products": "SiC/GaN/Si 全線功率",
+     "note": "AI DC 電源 FY26 €1.5B → FY27 €2.5B；NVIDIA MGX 夥伴；GaN 專利戰中德雙戰場：6/13 中國最高法院終審判 Infineon 侵 Innoscience 專利禁售中國大陸，但 6/18 慕尼黑地方法院反判 Innoscience 侵 Infineon 兩項 GaN 專利、德國禁售並賠償（Innoscience 稱僅涉已停產舊品）——歐洲法律籌碼扳回一城",
+     "src": "https://www.investing.com/news/transcripts/earnings-call-transcript-infineon-technologies-q2-2026-sees-stock-rise-on-positive-outlook-93CH-4661787"
+    },
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "EU",
+     "share": "SiC 元件先驅、Tesla 主供",
+     "products": "SiC MOSFET/模組",
+     "note": "2026 資料中心營收上修至 ~$1B；ST-三安重慶 200mm JV",
+     "src": "https://convergedigest.com/stmicroelectronics-raises-data-center-revenue-ambitions/"
+    },
+    {
+     "name": "onsemi",
+     "ticker": "ON",
+     "country": "US",
+     "share": "SiC 全球第二",
+     "products": "EliteSiC / Treo 平台",
+     "note": "AI DC 營收 QoQ +30%、2026 看翻倍；GaN 訂單漏斗 >$15 億",
+     "src": "https://www.stocktitan.net/news/ON/onsemi-reports-first-quarter-2026-gs4gw3jyioon.html"
+    },
+    {
+     "name": "ROHM",
+     "ticker": "6963.T",
+     "country": "JP",
+     "share": "SiC 垂直整合（SiCrystal）",
+     "products": "SiC MOSFET/模組",
+     "note": "EV 客戶集中、獲利承壓"
+    },
+    {
+     "name": "Bosch",
+     "ticker": "未上市",
+     "country": "DE",
+     "share": "車用 Tier-1 自製",
+     "products": "SiC 元件",
+     "note": "Roseville 200mm 廠 2026 起轉產 SiC"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "sic_substrate"
+    },
+    {
+     "id": "epitaxy"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "demand_800vdc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Infineon Q2 FY26 與 AI 電源指引",
+     "url": "https://www.eetimes.com/automotive-and-ai-lift-infineon-q2-point-to-fy2026-revenue-above-18b/"
+    },
+    {
+     "label": "onsemi $115K/rack 內容價值",
+     "url": "https://www.investing.com/news/company-news/on-semiconductor-q1-2026-slides-ai-data-center-surge-drives-recovery-93CH-4657646"
+    },
+    {
+     "label": "SiC 市場 2026 $6.14B 上修",
+     "url": "https://www.powerelectronicsnews.com/the-number-of-silicon-carbide-sic-players-is-on-steep-rise/"
+    }
+   ]
+  },
+  {
+   "id": "gan_device",
+   "row": "dev",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "GaN 元件 / 平台",
+   "nameEn": "GaN Power Devices",
+   "competition": "highgrowth",
+   "single": "題材單點 · Navitas/Innoscience 為 NVIDIA 800VDC「純度最高」標的（高 beta 高估值風險）",
+   "desc": "GaN 吃高頻中低壓（~1MHz DC-DC、PDB），SiC 吃高壓大功率——互補而非互斥。NVIDIA 800VDC 是 2026 最大催化。",
+   "marketSize": "Yole：power GaN 2024 $3.55 億 → 2030 ~$30 億（CAGR 42%）",
+   "growth": "資料中心段 CAGR 53%、車用 CAGR 73%",
+   "share": "null",
+   "analysis": "GaN 競局 2026-H1 重整：IDM 巨頭以「垂直 GaN」+ 全電壓整合擠壓純玩家題材股的差異化空間。onsemi 宣稱為『首家量產垂直 GaN』者（700V/1200V 已對早期客戶送樣、2026 下半年量產，GaN 設計漏斗突破 $15 億：10 顆送樣、20 顆 H2 2026 跟進）——相對 Navitas/Innoscience 的橫向 GaN，垂直 GaN 可做更高壓/高功率密度，IDM（onsemi/Infineon/ST）以全電壓（0.8V–800V）方案直接競爭。Navitas：NVIDIA 800VDC 指標股，但 Q1 2026 營收僅 $8.6M、Q2 指引約 $10M（QoQ +16%、non-GAAP 毛利率 39.25%、高功率 YoY +35%、AI 基建 QoQ +50%）、仍虧損——估值與營收嚴重背離，題材股高 beta 回檔風險續存；2026/6/3 加入 NVIDIA MGX 生態系，20kW 800V→6V PDB 效率 97.5%。Power Integrations：唯一量產 1250V/1700V 高壓 GaN（PowiGaN），累計出貨 >1.75 億顆。Innoscience：全球最大 GaN IDM（8 吋）、唯一 15V-1200V 全電壓段，FY25 營收 RMB 12 億（+46.4%），2025-28 CAGR 預估 ~77%，獲 NVIDIA GaN Supplier Award。專利戰確立「中國禁 Infineon、德國禁 Innoscience 舊品、美國 ITC（5/7）裁 Innoscience 侵權」的地理分裂格局，WBG 設計與認證被迫按地理切割。",
+   "companies": [
+    {
+     "name": "Navitas",
+     "ticker": "NVTS",
+     "country": "US",
+     "share": "power GaN 全球 #2（2024 約 16.5%）",
+     "products": "GaNFast + GeneSiC",
+     "note": "COMPUTEX 2026 NVIDIA MGX Showcase 點名其 800V→6V DC-DC 板（效率 97.5%、2,100 W/in³），6/12 單日急漲約 22-25% 至 ~$31.9；Q1 營收 $8.6M、估值風險極高；GaN 晶圓原『全押台積電一家』，2027/7 台積退出後轉力積電——供應單點",
+     "src": "https://www.stocktitan.net/news/NVTS/navitas-semiconductor-announces-first-quarter-2026-financial-0o2455ucfllj.html"
+    },
+    {
+     "name": "Power Integrations",
+     "ticker": "POWI",
+     "country": "US",
+     "share": "高壓 GaN 唯一量產者（整體 GaN 約 9.8%）",
+     "products": "PowiGaN 1250V/1700V",
+     "note": "累計 >1.75 億顆 GaN switch；800V bus 夥伴",
+     "src": "https://investors.power.com/news/news-details/2025/Power-Integrations-Details-1250-V-and-1700-V-PowiGaN-Technology-for-Next-Generation-800-VDC-AI-Data-Centers/default.aspx"
+    },
+    {
+     "name": "英諾賽科 Innoscience",
+     "ticker": "2577.HK",
+     "country": "CN",
+     "share": "power GaN 全球 #1（2024 約 29.9%）",
+     "products": "15V-1200V 全電壓 GaN",
+     "note": "FY25 營收 +46.4%；2025-28 CAGR ~77% 預估；NVIDIA 供應商獎；GaN 專利戰中德分裂：6/13 中國最高法院終審判 Infineon 侵其專利禁售中國大陸（主場勝），但 6/18 慕尼黑地方法院判其侵 Infineon 兩專利、德國禁售（Innoscience 主張僅涉已停產 650-700V 舊品），歐洲市場受制",
+     "src": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/01/innoscience-revenue-seen-surging-59percent-yoy-in-2025-with-77percent-cagr-through-2028"
+    },
+    {
+     "name": "EPC",
+     "ticker": "未上市",
+     "country": "US",
+     "share": "低壓 GaN 先驅",
+     "products": "eGaN FET",
+     "note": "NVIDIA 矽夥伴名單"
+    },
+    {
+     "name": "onsemi",
+     "ticker": "ON",
+     "country": "US",
+     "share": "首家量產『垂直 GaN』者",
+     "products": "垂直 GaN 700V/1200V",
+     "note": "2026-H1 宣布首家量產垂直 GaN（700V/1200V 已送樣、2026 下半年量產），GaN 設計漏斗 >$15 億（10 顆送樣、20 顆 H2 2026 跟進）；以全電壓 IDM 方案直接擠壓 GaN 純玩家差異化",
+     "src": "https://www.investing.com/news/company-news/on-semiconductor-q1-2026-slides-ai-data-center-surge-drives-recovery-93CH-4657646"
+    },
+    {
+     "name": "Texas Instruments",
+     "ticker": "TXN",
+     "country": "US",
+     "share": "類比巨頭跨入",
+     "products": "GaN + 控制器整合",
+     "note": "NVIDIA 矽夥伴名單"
+    },
+    {
+     "name": "MPS",
+     "ticker": "MPWR",
+     "country": "US",
+     "share": "電源模組強者",
+     "products": "電源管理 + GaN",
+     "note": "NVIDIA 矽夥伴名單"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "epitaxy"
+    },
+    {
+     "id": "compound_foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "demand_800vdc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Yole：GaN 市場 6 倍擴張至 2030",
+     "url": "https://www.yolegroup.com/press-release/from-chargers-to-data-centers-power-gan-market-set-for-rapid-sixfold-expansion-by-2030/"
+    },
+    {
+     "label": "Navitas × NVIDIA MGX（2026/6/3）",
+     "url": "https://www.globenewswire.com/news-release/2026/06/03/3306044/0/en/navitas-collaborates-with-nvidia-mgx-ecosystem-to-accelerate-800-vdc-ai-infrastructure.html"
+    },
+    {
+     "label": "onsemi 首家量產垂直 GaN、漏斗 >$15 億",
+     "url": "https://www.investing.com/news/company-news/on-semiconductor-q1-2026-slides-ai-data-center-surge-drives-recovery-93CH-4657646"
+    },
+    {
+     "label": "GaN 專利戰：Infineon vs Innoscience（地理分裂）",
+     "url": "https://www.prnewswire.com/news-releases/infineon-wins-patent-infringement-case-against-innoscience-302804722.html"
+    },
+    {
+     "label": "NVTS 估值爭議（共識 Hold）",
+     "url": "https://www.ibtimes.com.au/navitas-semiconductor-stock-buy-ai-power-surge-sell-after-400-2026-run-1868600"
+    }
+   ]
+  },
+  {
+   "id": "compound_foundry",
+   "row": "mfg",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "化合物晶圓代工",
+   "nameEn": "Compound Semi Foundry",
+   "competition": "competitive",
+   "single": "產能單點移轉 · TSMC 2027/7 退出 GaN 代工：力積電承接 Navitas、世界先進獲平台授權 2028 量產",
+   "desc": "GaN fabless（Navitas 等）依賴代工。TSMC 退出後台廠卡位：力積電、世界先進、漢磊為三大受惠者。",
+   "marketSize": "null",
+   "growth": "null",
+   "share": "null",
+   "analysis": "TSMC 2027/7/31 前退出 GaN 代工（6 吋月產能 3,000-4,000 片、Navitas 占逾半），廠房轉先進封裝。絃外之音：台積過去是 Navitas 等 NVIDIA 800VDC 純玩家的『唯一』GaN 晶圓來源，退出等於把整條題材股的供應安全與定價權移交給力積電/世界先進/漢磊——名單上閃亮的 fabless 其實受制於上游代工單點。力積電承接 Navitas 100V-650V 訂單（100V 家族 2026 上半年投產）。世界先進取得 TSMC 低壓+高壓 GaN 平台授權，2028 上半年量產，並與漢磊合建 8 吋化合物產線。漢磊為台灣最大化合物代工：6 吋 SiC 5,000 片/月＋GaN 2,000 片/月＋8 吋 1,500 片/月規劃，SiC 訂單 2025H2 回升（HoH +10-20%）、2026 營收看雙位數成長，8 吋線 2026 上半年裝機試產。",
+   "companies": [
+    {
+     "name": "漢磊科技",
+     "ticker": "3707.TWO",
+     "country": "TW",
+     "share": "台灣最大化合物代工",
+     "products": "SiC / GaN 晶圓代工",
+     "note": "8 吋線 2026H1 試產；2026 營收看雙位數成長",
+     "src": "https://www.sinotrade.com.tw/richclub/hotstock/台股法說-漢磊-3707-2026年營收有望再度呈現雙位數成長-0918-68cbbdb9116e6b846ac219eb"
+    },
+    {
+     "name": "力積電",
+     "ticker": "6770.TW",
+     "country": "TW",
+     "share": "Navitas GaN 主要承接者",
+     "products": "8 吋 GaN-on-Si 代工（100V-650V）",
+     "note": "承接 Navitas 自台積電（2027/7 退出）轉單，8 吋 GaN-on-Si H1 2026 量產",
+     "src": "https://www.stocktitan.net/news/NVTS/navitas-semiconductor-announces-first-quarter-2026-financial-0o2455ucfllj.html"
+    },
+    {
+     "name": "世界先進",
+     "ticker": "5347.TWO",
+     "country": "TW",
+     "share": "TSMC GaN 製程授權者",
+     "products": "GaN 代工（80V/650V）",
+     "note": "授權 TSMC 80V/650V GaN 製程，2028 上半年量產；與漢磊合建 8 吋化合物產線",
+     "src": "https://techovedas.com/tsmc-gan-exit-sparks-a-new-power-chip-era-why-vis-and-globalfoundries-could-be-the-real-winners/"
+    },
+    {
+     "name": "台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "退出中（2027/7 止）",
+     "products": "GaN 代工（退出）",
+     "note": "廠房轉先進封裝；Navitas 轉單",
+     "src": "https://www.trendforce.com/news/2025/07/03/news-tsmc-to-exit-gan-production-by-july-2027-reportedly-repurposes-fab-for-advanced-packaging/"
+    },
+    {
+     "name": "X-Fab",
+     "ticker": "XFAB.PA",
+     "country": "DE",
+     "share": "歐系選項",
+     "products": "SiC/GaN 代工",
+     "note": "歐美客戶分散風險選擇"
+    },
+    {
+     "name": "GlobalFoundries",
+     "ticker": "GFS",
+     "country": "US",
+     "share": "美系選項",
+     "products": "GaN 代工",
+     "note": "美國本土供應鏈訴求"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "gan_device"
+    },
+    {
+     "id": "discrete_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC 退出 GaN（TrendForce）",
+     "url": "https://www.trendforce.com/news/2025/07/03/news-tsmc-to-exit-gan-production-by-july-2027-reportedly-repurposes-fab-for-advanced-packaging/"
+    },
+    {
+     "label": "漢磊 8 吋轉機、AI/機器人 GaN 需求",
+     "url": "https://n.yam.com/Article/20260526922871"
+    }
+   ]
+  },
+  {
+   "id": "discrete_module",
+   "row": "mfg",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "二極體 / 功率模組（台廠）",
+   "nameEn": "Discretes & Power Modules (TW)",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "台廠中游功率鏈：二極體/MOSFET/車用模組。受惠安世（Nexperia）事件轉單＋AI 伺服器高壓電源新需求。",
+   "marketSize": "null",
+   "growth": "null",
+   "share": "null",
+   "analysis": "強茂：台灣最大功率半導體 IDM（二極體 44%/MOSFET 33%），車用占比 ~32%、毛利率 >30%；2025 底切入 CSP ASIC 伺服器供應鏈，法人估 AI 占比 2026 達 9-12%、全年營收 +15-20%、EPS 挑戰 4.76-5 元（「2026 放量元年」）；受惠安世事件轉單。朋程：車用整流二極體『全球』龍頭、市占 >50%（路上逾半新車用其整流器），Q1 2026 營收 NT$20.4 億（QoQ +10.8%）；Bosch 退出後承接大單；SiC/IGBT 模組向歐洲客戶交付 B sample、接獲「排除中國供應鏈」新專案；2026 目標雙位數成長、毛利率拚回 30%+。結構真相：此節點非碎片化，而是各擁全球/台灣龍頭地位的隱形冠軍——被低估的卡位者。",
+   "companies": [
+    {
+     "name": "強茂",
+     "ticker": "2481.TW",
+     "country": "TW",
+     "share": "台灣最大功率 IDM",
+     "products": "二極體/MOSFET/保護元件",
+     "note": "2026 AI 占比看 9-12%、EPS 挑戰 4.76-5 元",
+     "src": "https://news.cnyes.com/news/id/6297189"
+    },
+    {
+     "name": "朋程科技",
+     "ticker": "8255.TWO",
+     "country": "TW",
+     "share": "車用整流二極體全球龍頭",
+     "products": "車用二極體/48V/SiC 模組",
+     "note": "Q1 2026 QoQ +10.8%；歐系「去中」新專案",
+     "src": "https://cmnews.com.tw/article/newsyoudeservetoknow-14e42ed1-2899-11f1-9460-fab1ba917e83"
+    },
+    {
+     "name": "台半",
+     "ticker": "5425.TWO",
+     "country": "TW",
+     "share": "車用/工控二極體",
+     "products": "二極體/整流元件",
+     "note": "車用比重提升中"
+    },
+    {
+     "name": "德微科技",
+     "ticker": "3675.TWO",
+     "country": "TW",
+     "share": "Diodes 子公司",
+     "products": "二極體/整流",
+     "note": "受惠集團轉單"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "compound_foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "demand_800vdc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "強茂 2026 放量元年（鉅亨）",
+     "url": "https://news.cnyes.com/news/id/6297189"
+    },
+    {
+     "label": "朋程 2026 雙位數成長目標",
+     "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/222547"
+    }
+   ]
+  },
+  {
+   "id": "demand_800vdc",
+   "row": "demand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "終端需求：800VDC AI 資料中心 / EV 800V",
+   "nameEn": "800VDC AI DC & EV Demand",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "需求定義權自 NVIDIA 單點擴散為超大規模聯盟：NVIDIA Kyber 800VDC（2027 商用、效率 +5%、維護 -70%）＋ Google 偕 Meta/Microsoft 的 Mount Diablo（Diablo）800VDC「sidecar 機櫃」並行兩套標準；另一引擎 EV 800V 平台（近 40% 新中高階車款全 SiC）。",
+   "marketSize": "汽車級 SiC 元件 2026 $82.4 億 → 2034 $319.1 億",
+   "growth": "null",
+   "share": "null",
+   "analysis": "終端需求 2026-H1 從「單一客戶定義」升級為「跨超大規模業者共識」：除 NVIDIA Kyber（576 顆 Rubin Ultra，2027 上線、Vertiv 發布 800 VDC MGX 參考架構）外，Google 偕 Meta、Microsoft 推出 Mount Diablo / Diablo 800VDC『sidecar 機櫃』規範（支援 100kW–1MW、AC-DC 轉換移出運算櫃），與 NVIDIA MGX 800VDC 並行成第二套產業標準——擴大 SiC/GaN 上游可定址市場並降低單一客戶集中風險。電力系統夥伴台達/光寶/Flex；CoreWeave、Lambda、Nebius、OCI 已在設計 800V 資料中心。EV 端 Tesla（ST 供 SiC）、BYD、Hyundai E-GMP、保時捷 800V 平台持續放量——但 2025-26 歐美 EV 需求疲軟是 SiC 短期逆風，AI 資料中心成為估值重估的邊際買家。事件時間軸：2026H1 漢磊試產/力積電投產 → 2026H2 Vera Rubin 出貨 → 2027 Kyber 商用＋TSMC GaN 退出 → 2028 世界先進量產。",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "MGX 800VDC 架構定義者（之一）",
+     "products": "Kyber 機櫃/MGX 生態系",
+     "note": "14 家矽夥伴名單；2027 Kyber 上線；定義權 2026-H1 起與 Google/Meta/Microsoft 的 Diablo 標準並行",
+     "src": "https://developer.nvidia.com/blog/building-the-800-vdc-ecosystem-for-efficient-scalable-ai-factories/"
+    },
+    {
+     "name": "Google",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "Diablo 800VDC 標準主導者",
+     "products": "Mount Diablo sidecar 機櫃規範",
+     "note": "偕 Meta、Microsoft 推出 Mount Diablo / Diablo 800VDC sidecar 機櫃（支援 100kW–1MW、AC-DC 轉換移出運算櫃），與 NVIDIA MGX 並行成第二套產業標準",
+     "src": "https://datacenterrichness.substack.com/p/ai-factories-prepare-for-800-vdc"
+    },
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "電力系統整合",
+     "products": "800 VDC MGX 參考架構",
+     "note": "與 NVIDIA 共推平台設計",
+     "src": "https://www.vertiv.com/en-us/about/news-and-events/corporate-news/from-vision-to-readiness-vertiv-collaborates-with-nvidia-to-advance-800-vdc-platform-designs-to-power-the-next-generation-of-ai-factories/"
+    },
+    {
+     "name": "台達電",
+     "ticker": "2308.TW",
+     "country": "TW",
+     "share": "電源系統龍頭",
+     "products": "800V HVDC 電源方案",
+     "note": "±400V/800V 獲美系 AI 客戶採用（見 power 主題）"
+    },
+    {
+     "name": "Tesla",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "SiC 上車先驅",
+     "products": "全 SiC 逆變器",
+     "note": "ST 為 SiC 主供"
+    },
+    {
+     "name": "BYD 比亞迪",
+     "ticker": "1211.HK",
+     "country": "CN",
+     "share": "自製 SiC",
+     "products": "800V 平台/SiC 模組",
+     "note": "BYD 半導體垂直整合"
+    },
+    {
+     "name": "Hyundai 現代",
+     "ticker": "005380.KS",
+     "country": "KR",
+     "share": "E-GMP 800V",
+     "products": "800V 快充平台",
+     "note": "Ioniq 系列放量"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "sic_idm"
+    },
+    {
+     "id": "gan_device"
+    },
+    {
+     "id": "discrete_module"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "NVIDIA 官方 800VDC 生態系",
+     "url": "https://developer.nvidia.com/blog/building-the-800-vdc-ecosystem-for-efficient-scalable-ai-factories/"
+    },
+    {
+     "label": "Google/Meta/Microsoft Mount Diablo 800VDC sidecar 標準",
+     "url": "https://datacenterrichness.substack.com/p/ai-factories-prepare-for-800-vdc"
+    },
+    {
+     "label": "汽車級 SiC 市場預測（FBI）",
+     "url": "https://www.fortunebusinessinsights.com/silicon-carbide-sic-devices-market-112103"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "sic_substrate",
+   "epitaxy"
+  ],
+  [
+   "sic_substrate",
+   "sic_idm"
+  ],
+  [
+   "epitaxy",
+   "sic_idm"
+  ],
+  [
+   "epitaxy",
+   "gan_device"
+  ],
+  [
+   "compound_foundry",
+   "gan_device"
+  ],
+  [
+   "compound_foundry",
+   "discrete_module"
+  ],
+  [
+   "sic_idm",
+   "demand_800vdc"
+  ],
+  [
+   "gan_device",
+   "demand_800vdc"
+  ],
+  [
+   "discrete_module",
+   "demand_800vdc"
+  ]
+ ],
+ "_proposed": {}
+}

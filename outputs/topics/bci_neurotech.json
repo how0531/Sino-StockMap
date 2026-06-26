@@ -1,0 +1,541 @@
+{
+ "id": "bci_neurotech",
+ "tab": "腦機介面/神經調控",
+ "title": "腦機介面與神經調控供應鏈 (Brain-Computer Interface & Neuromodulation)",
+ "subtitle": "把『讀寫大腦』從科幻變成可植入的醫材——本主題鏈結直接植入人體、讀寫神經訊號的閉迴路電子裝置：電極陣列/超細導線/植入式 ASIC＋神經解碼 AI → 植入裝置 OEM → 上市神經調控代理 → 癱瘓/帕金森/癲癇/中風病患。2026 兩條成長曲線並行：①已上市、會賺錢的『神經調控』——Medtronic（MDT）BrainSense 自適應 DBS 是史上最大商業化 BCI（全球逾 4 萬名 Percept 病患），2026/5 取得加拿大許可；Boston Scientific（BSX）神經調控 Q1 2026 營收 $3.18 億（+17.4%，全公司成長最快段）、1 月併購 Nalu 微型 SCS；NeuroPace（NPCE）閉迴路癲癇 RNS 2025 營收約 $1 億（+25%）、IGE 適應症 PMA 拚 2026 年中過關；LivaNova（LIVN）VNS 2026 營收成長 7–8%；CVRx（CVRX）Barostim 心衰竭 2026 拚 $0.63–0.67 億、Cat I CPT 碼上路；Inspire（INSP）因 Inspire V 編碼亂流把 2026 財測由近 $10 億下修至 $8.25–8.75 億——提醒『給付/編碼』是神經電子裝置的真正命門。②尚未上市、估值狂飆的『侵入式 BCI』——Neuralink（$90 億估值、植入約 20 人）、Synchron（2025/11 完成 $2 億 D 輪、累計 $3.45 億、2026 樞紐試驗拚首張 BCI PMA）、Precision Neuroscience（Layer 7 已獲 FDA 510(k)）、Paradromics（Connexus 進臨床）。Morgan Stanley 估光美國 BCI TAM 達 $4,000 億。絃外之音：市場熱錢全押『侵入式 BCI 新創』，但 2026 真正在賺錢、且已是『最大規模 BCI』的，是把既有神經調控植入物 AI 化（自適應/閉迴路）的醫材龍頭 MDT/BSX；真正的卡脖子在上游——超低功耗植入式神經 ASIC 由 TSMC 等少數先進 BCD/CMOS 製程代工，神經訊號解碼 AI 是新護城河。⚠ 與 surgical_robotics 零重疊（彼為體外手術器械、此為體內神經電子）；與 ai_pharma/medtech 部分概念交集。非投資建議。",
+ "category": "health",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "25+"
+  },
+  {
+   "k": "美國 BCI TAM（Morgan Stanley）",
+   "v": "$4,000億",
+   "sub": "早期 $800 億（重度損傷者）＋中期 $3,200 億（後續採用者）",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "2026 Synchron 樞紐試驗拚首張 BCI PMA·MDT 自適應 DBS 放量；風險：給付/編碼亂流(INSP 下修)＋侵入式新創未獲利",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "上游：電極/超細導線・植入式 ASIC・神經解碼 AI",
+   "main": false
+  },
+  {
+   "id": "oem",
+   "label": "中游：植入裝置 OEM / 侵入式 BCI 新創",
+   "main": false
+  },
+  {
+   "id": "agent",
+   "label": "下游：上市神經調控代理（DBS/SCS/VNS/閉迴路）",
+   "main": true
+  },
+  {
+   "id": "patient",
+   "label": "終端：癱瘓/帕金森/癲癇/中風病患・給付方",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "electrode_chip",
+   "row": "upstream",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "電極陣列 / 超細導線 / 植入式 ASIC",
+   "nameEn": "Electrode Arrays · Microwires · Implantable ASIC",
+   "competition": "oligopoly",
+   "single": "隱性單點 · 超低功耗植入式神經 ASIC 由 TSMC 65nm／0.13µm BCD 等少數先進混訊製程代工，是 BCI『讀寫頻寬』的物理上限",
+   "desc": "BCI 的物理底層——直接接觸皮層/腦溝的電極陣列與超細導線，以及把微伏級神經訊號放大、數位化、刺激回送的植入式類比前端 ASIC（功耗/散熱受限於不可傷腦）。",
+   "marketSize": "神經介面元件＋醫療 ASIC（隨 BCI 放量擴張）",
+   "growth": "null",
+   "share": "null",
+   "analysis": "電極與導線決定『能讀幾個神經元』：Blackrock Neurotech 的 Utah Array（96–128 通道矽針，植入逾 30 人、20 年臨床基準）、Neuralink 的柔性線（>1,000 通道、機器人縫線）、Precision 的 Layer 7（1,024 通道、薄膜貼皮層）、Paradromics 的 Connexus（>1,000 通道微線束）路線各異。真正卡脖子在『植入式神經 ASIC』——要在不傷腦的功耗/散熱下，同時做數百~數千通道的低噪放大、SAR ADC、無線供電與刺激回送；學界與業界的神經前端晶片多以 TSMC 65nm 混訊、0.13µm BCD（Bipolar-CMOS-DMOS）製程流片——這把 BCI 的『讀寫頻寬』直接綁進先進混訊製程供應鏈，是台廠最直接的隱性卡位。imec 等研究機構提供超小型植入 ASIC IP。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "植入式神經 ASIC 代工（65nm 混訊／0.13µm BCD）",
+     "products": "低功耗混訊/BCD 製程，神經前端 ASIC 流片",
+     "note": "BCI 神經 ASIC 多用 TSMC 65nm 混訊與 0.13µm BCD；BCI 讀寫頻寬綁進先進混訊製程供應鏈——台廠最直接隱性卡位",
+     "src": "https://www.imec-int.com/en/articles/power-asics-implantable-devices-illustrated-ultrasmall-migraine-implant-and-energy"
+    },
+    {
+     "name": "Blackrock Neurotech",
+     "ticker": "—",
+     "country": "US",
+     "share": "Utah Array 臨床基準（侵入式電極）",
+     "products": "Utah Array（96–128 通道矽針）/ NeuroPort",
+     "note": "未上市（Tether 2024 控股）；植入逾 30 人、20 年臨床長期記錄基準",
+     "src": "https://www.science.org/doi/10.1126/sciadv.aay2789"
+    },
+    {
+     "name": "imec",
+     "ticker": "—",
+     "country": "BE",
+     "share": "植入式 ASIC / 神經探針 IP",
+     "products": "超小型植入 ASIC / Neuropixels 探針技術",
+     "note": "比利時研究機構；神經 ASIC IP 與 Neuropixels 探針授權來源",
+     "src": "https://www.imec-int.com/en/articles/power-asics-implantable-devices-illustrated-ultrasmall-migraine-implant-and-energy"
+    },
+    {
+     "name": "Texas Instruments",
+     "ticker": "TXN",
+     "country": "US",
+     "share": "醫療類比前端/低功耗 MCU",
+     "products": "生醫感測類比前端(AFE) / 超低功耗 MCU",
+     "note": "植入式裝置常用其低功耗類比/電源元件（非神經專用）",
+     "src": "https://www.nxp.com/docs/en/white-paper/ICIMDOVWP.pdf"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "decode_ai"
+    },
+    {
+     "id": "device_oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "imec：植入式裝置 ASIC 的威力（超小型植入晶片）",
+     "url": "https://www.imec-int.com/en/articles/power-asics-implantable-devices-illustrated-ultrasmall-migraine-implant-and-energy"
+    },
+    {
+     "label": "Science Advances：大規模微線陣列＋CMOS 晶片神經記錄",
+     "url": "https://www.science.org/doi/10.1126/sciadv.aay2789"
+    },
+    {
+     "label": "NXP：植入式醫療裝置積體電路概論",
+     "url": "https://www.nxp.com/docs/en/white-paper/ICIMDOVWP.pdf"
+    }
+   ]
+  },
+  {
+   "id": "decode_ai",
+   "row": "upstream",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "神經訊號處理 / 解碼 AI",
+   "nameEn": "Neural Signal Processing & Decoding AI",
+   "competition": "emerging",
+   "single": "新護城河 · 把原始神經電訊號翻成意圖/語言/動作的解碼 AI 模型，是侵入式 BCI 從『會記錄』跨到『會用』的關鍵差異化",
+   "desc": "把皮層放電的原始訊號即時翻譯成游標/語言/機械動作的解碼模型——閉迴路 BCI/自適應 DBS 的『軟體大腦』，也是各家最不願公開的差異化資產。",
+   "marketSize": "BCI 軟體/解碼層（隨裝置裝機量放大）",
+   "growth": "null",
+   "share": "null",
+   "analysis": "硬體決定能讀到多少訊號，解碼 AI 決定能用出多少價值：Neuralink 2025 展示語言+游標雙突破、Synchron 與 NVIDIA/雲端 AI 合作建『神經基礎模型』、Precision 主打高解析皮層訊號餵 AI。神經調控龍頭同樣把 AI 內建進閉迴路——Medtronic BrainSense 自適應 DBS 用感測腦波即時調整刺激（設定時間縮 85%）、NeuroPace RNS 持續監測顱內 EEG 辨識個人化異常放電才放電。此層尚屬新興、無純玩家上市，多由 OEM/新創自研或與雲端 AI 廠合作——是『裝置裝得越多、資料越多、解碼越準』的資料飛輪，構成新護城河。",
+   "companies": [
+    {
+     "name": "神經解碼 AI（OEM/新創自研）",
+     "ticker": "—",
+     "country": "US",
+     "share": "閉迴路 BCI 軟體大腦",
+     "products": "意圖/語言/動作解碼模型 / 神經基礎模型",
+     "note": "Neuralink 語言+游標解碼、Synchron 與 NVIDIA 建神經基礎模型；資料飛輪=新護城河",
+     "src": "https://nextwavesinsight.com/bci-neuralink-synchron-clinical-trials-2026/"
+    },
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "神經 AI 訓練算力",
+     "products": "GPU / Holoscan 邊緣推論",
+     "note": "Synchron 等 BCI 神經基礎模型訓練/推論算力底層",
+     "src": "https://nextwavesinsight.com/bci-neuralink-synchron-clinical-trials-2026/"
+    },
+    {
+     "name": "Medtronic（BrainSense AI）",
+     "ticker": "MDT",
+     "country": "US",
+     "share": "自適應 DBS 閉迴路演算法",
+     "products": "BrainSense Adaptive 感測即時調整",
+     "note": "感測腦波自動調刺激、設定時間縮 85%；詳見下游神經調控段",
+     "src": "https://news.medtronic.com/2025-02-24-Medtronic-earns-U-S-FDA-approval-for-the-worlds-first-Adaptive-deep-brain-stimulation-system-for-people-with-Parkinsons"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "electrode_chip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "device_oem"
+    },
+    {
+     "id": "neuromod_agent"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BCI 臨床試驗 2026：Neuralink/Synchron/Precision 解碼路線",
+     "url": "https://nextwavesinsight.com/bci-neuralink-synchron-clinical-trials-2026/"
+    },
+    {
+     "label": "Medtronic FDA 核准全球首個自適應 DBS（閉迴路 AI）",
+     "url": "https://news.medtronic.com/2025-02-24-Medtronic-earns-U-S-FDA-approval-for-the-worlds-first-Adaptive-deep-brain-stimulation-system-for-people-with-Parkinsons"
+    }
+   ]
+  },
+  {
+   "id": "device_oem",
+   "row": "oem",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "植入裝置 OEM / 侵入式 BCI 新創",
+   "nameEn": "Implant Device OEM · Invasive BCI Startups",
+   "competition": "highgrowth",
+   "single": "估值狂飆但未獲利 · Neuralink $90 億估值（植入約 20 人）、Synchron 2026 樞紐試驗拚『首張可植入 BCI PMA』——終局尚未定",
+   "desc": "把上游電極/ASIC/解碼 AI 整合成可植入完整裝置的整機商——侵入式 BCI 新創（治癱瘓/失語）是資本熱點，但多未上市、未獲利、靠估值與里程碑驅動。",
+   "marketSize": "侵入式 BCI 早期市場（美國 TAM 早期 $800 億）",
+   "growth": "Neuralink $90 億估值；Synchron 2026 樞紐試驗；Precision Layer 7 已 FDA 510(k)",
+   "share": "null",
+   "analysis": "侵入式 BCI 是 2026 最熱、估值最高、卻最未證明商業模式的一段，路線各異：Neuralink（植入式柔性線＋手術機器人，2025 完成 $6.5 億 E 輪、估值 $90 億、累計植入約 20 名重度癱瘓者，2026 拚二代裝置與語言+視覺雙突破）；Synchron（Stentrode 經血管植入、不開顱，2025/11 完成 $2 億 D 輪、累計 $3.45 億，2026 進樞紐臨床試驗、若成功將是史上首張可永久植入 BCI 的 PMA 申請者，投資人含 Bezos/Gates/QIA/NVIDIA 生態）；Precision Neuroscience（Layer 7 薄膜 1,024 通道，2025/4 獲 FDA 510(k)、可植入 30 天，市場視為首件 BCI 商品化監管里程碑）；Paradromics（Connexus 微線束，Connect-One 臨床獲 FDA 核准）。絃外之音：這些新創『無一上市、無一獲利』，市場買的是『首張 BCI PMA』與 $4,000 億 TAM 的期權——真正當期可投資、且已是最大規模 BCI 的，是下游已上市的神經調控龍頭。",
+   "companies": [
+    {
+     "name": "Neuralink",
+     "ticker": "—",
+     "country": "US",
+     "share": "侵入式 BCI 估值龍頭",
+     "products": "N1 植入物（柔性線>1,024 通道）+ R1 手術機器人",
+     "note": "未上市；2025 完成 $6.5 億 E 輪、估值 $90 億（vs 2023 $35 億）；累計植入約 20 名重度癱瘓者；2026 拚二代裝置/語言+視覺雙突破",
+     "src": "https://techcrunch.com/2025/05/28/elon-musks-neuralink-raises-600m-at-9b-valuation/"
+    },
+    {
+     "name": "Synchron",
+     "ticker": "—",
+     "country": "US",
+     "share": "經血管 BCI（不開顱）",
+     "products": "Stentrode（血管支架式電極）",
+     "note": "未上市；2025/11 完成 $2 億 D 輪（Double Point 領投）、累計 $3.45 億；2026 進樞紐試驗、若成功為首張可植入 BCI PMA 申請者；投資人含 Bezos/Gates/QIA",
+     "src": "https://www.businesswire.com/news/home/20251106150841/en/Synchron-Raises-$200-Million-Series-D-to-Advance-Brain-Computer-Interface-Technology"
+    },
+    {
+     "name": "Precision Neuroscience",
+     "ticker": "—",
+     "country": "US",
+     "share": "高解析皮層薄膜 BCI",
+     "products": "Layer 7 Cortical Interface（1,024 通道薄膜）",
+     "note": "未上市；2025/4 獲 FDA 510(k)（可植入 30 天）；市場視為首件 BCI 商品化監管里程碑",
+     "src": "https://www.medtechdive.com/news/precision-neuroscience-brain-implant-fda-cleared/745913/"
+    },
+    {
+     "name": "Paradromics",
+     "ticker": "—",
+     "country": "US",
+     "share": "微線束高頻寬 BCI",
+     "products": "Connexus（>1,000 通道微線束）",
+     "note": "未上市；Connect-One 臨床研究獲 FDA 核准（語言恢復）",
+     "src": "https://paradromics.com/news/paradromics-receives-fda-approval-for-the-connect-one-clinical-study-with-the-connexus-brain-computer-interface/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "electrode_chip"
+    },
+    {
+     "id": "decode_ai"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "neuromod_agent"
+    },
+    {
+     "id": "patient_payer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Neuralink 完成 $6 億+ 募資、估值 $90 億（TechCrunch）",
+     "url": "https://techcrunch.com/2025/05/28/elon-musks-neuralink-raises-600m-at-9b-valuation/"
+    },
+    {
+     "label": "Synchron 完成 $2 億 D 輪、推進 BCI 商業化",
+     "url": "https://www.businesswire.com/news/home/20251106150841/en/Synchron-Raises-$200-Million-Series-D-to-Advance-Brain-Computer-Interface-Technology"
+    },
+    {
+     "label": "Precision Neuroscience 獲 FDA 清關（Layer 7 BCI）",
+     "url": "https://www.medtechdive.com/news/precision-neuroscience-brain-implant-fda-cleared/745913/"
+    },
+    {
+     "label": "Synchron 2026 樞紐試驗拚首張 BCI PMA",
+     "url": "https://theroboticsmedia.com/article/synchron-stentrode-pivotal-trial-2026-fda-pma-bci-200-million-series-d"
+    }
+   ]
+  },
+  {
+   "id": "neuromod_agent",
+   "row": "agent",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "上市神經調控代理：DBS / SCS / 自適應",
+   "nameEn": "Listed Neuromod Leaders: DBS · SCS · Adaptive",
+   "competition": "oligopoly",
+   "single": "已商業化最大 BCI · Medtronic BrainSense 自適應 DBS 服務全球逾 4 萬名 Percept 病患，是史上最大規模商業化 BCI（會賺錢的那一端）",
+   "desc": "已上市、會賺錢的神經調控龍頭——深腦刺激(DBS，帕金森)、脊髓刺激(SCS，慢性疼痛)，並把既有植入物 AI 化（自適應/閉迴路），是當期最可投資的 BCI 暴露。",
+   "marketSize": "神經調控裝置市場 2026 約 $70 億（DBS 成長最快段）",
+   "growth": "MDT 神經調控 FY +11%；BSX 神經調控 Q1 2026 +17.4%（全公司最快）",
+   "share": "null",
+   "analysis": "這是『會賺錢的 BCI』：Medtronic（MDT）BrainSense 自適應 DBS（FDA 2025/2 核准、2026/5 取得加拿大許可）服務全球逾 4 萬名 Percept 病患，是史上最大規模商業化 BCI——感測腦波即時調整刺激、設定時間縮 85%；神經調控段 FY 營收 +11%。Boston Scientific（BSX）神經調控 Q1 2026 營收 $3.18 億（+17.4%，全公司成長最快段），2026/1 併購 Nalu 微型 SCS、疼痛業務中雙位數成長；惟全公司因 EP/WATCHMAN 逆風把 FY26 有機成長下修至 6.5–8%。Abbott（ABT）Liberta RC（號稱最小可充電 DBS、一年僅充 10 次）切入。神經調控市場 2026 約 $70 億、DBS 為成長最快段。絃外之音：相較侵入式新創的純期權，MDT/BSX 是『把存量植入物 AI 化』的當期現金流 BCI——但須留意它們 BCI 暴露佔整體營收比重有限。",
+   "companies": [
+    {
+     "name": "Medtronic",
+     "ticker": "MDT",
+     "country": "US",
+     "share": "DBS 全球龍頭・最大商業化 BCI",
+     "products": "Percept + BrainSense Adaptive DBS（閉迴路自適應）",
+     "note": "FDA 2025/2 核准全球首個自適應 DBS、2026/5 取得加拿大許可；服務全球逾 4 萬名 Percept 病患=史上最大規模商業化 BCI；神經調控段 FY +11%、設定時間縮 85%",
+     "src": "https://news.medtronic.com/2025-02-24-Medtronic-earns-U-S-FDA-approval-for-the-worlds-first-Adaptive-deep-brain-stimulation-system-for-people-with-Parkinsons"
+    },
+    {
+     "name": "Boston Scientific",
+     "ticker": "BSX",
+     "country": "US",
+     "share": "SCS/神經調控成長最快",
+     "products": "WaveWriter SCS / DBS / Nalu 微型 SCS",
+     "note": "神經調控 Q1 2026 營收 $3.18 億(+17.4%)、全公司最快段；2026/1 併 Nalu 微型 SCS；惟全公司 FY26 有機成長下修至 6.5–8%（EP/WATCHMAN 逆風）",
+     "src": "https://finance.yahoo.com/sectors/healthcare/articles/bsx-q1-neuromodulation-sales-rise-152500241.html"
+    },
+    {
+     "name": "Abbott",
+     "ticker": "ABT",
+     "country": "US",
+     "share": "DBS/SCS 第三勢力",
+     "products": "Liberta RC DBS / Eterna SCS",
+     "note": "Liberta RC 號稱最小可充電 DBS、一年僅充 10 次；神經調控 2023 約 $8.9 億(+15.5%)",
+     "src": "https://www.medtechdive.com/news/abbott-approval-rechargeable-deep-brain-stimulation-liberta/705603/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "decode_ai"
+    },
+    {
+     "id": "device_oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "patient_payer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Medtronic 全球首個自適應 DBS、逾 4 萬 Percept 病患（最大商業化 BCI）",
+     "url": "https://news.medtronic.com/2025-02-24-Medtronic-earns-U-S-FDA-approval-for-the-worlds-first-Adaptive-deep-brain-stimulation-system-for-people-with-Parkinsons"
+    },
+    {
+     "label": "Boston Scientific 神經調控 Q1 2026 +17.4%（Yahoo/Zacks）",
+     "url": "https://finance.yahoo.com/sectors/healthcare/articles/bsx-q1-neuromodulation-sales-rise-152500241.html"
+    },
+    {
+     "label": "神經調控裝置市場規模/CAGR（Grand View Research）",
+     "url": "https://www.grandviewresearch.com/industry-analysis/neuromodulation-devices-market-report"
+    }
+   ]
+  },
+  {
+   "id": "closed_loop_agent",
+   "row": "agent",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "閉迴路 / 利基神經調控（VNS・閉迴路・心衰）",
+   "nameEn": "Closed-loop & Niche Neuromod (VNS · Responsive · HF)",
+   "competition": "competitive",
+   "single": "真・閉迴路 BCI 純玩家 · NeuroPace RNS 持續監測顱內 EEG、辨識個人化異常放電才放電，是已上市的響應式閉迴路 BCI",
+   "desc": "利基與閉迴路神經調控純玩家——閉迴路癲癇(響應式 RNS)、迷走神經刺激(VNS)、壓力反射(心衰)、舌下神經(睡眠呼吸中止)——小型、純暴露、給付敏感的上市標的。",
+   "marketSize": "利基神經調控（閉迴路/VNS/心衰/OSA）合計數十億美元",
+   "growth": "NPCE 2025 +25%、2026 拚 $99–101M；CVRX Q1 +20%；INSP 2026 下修",
+   "share": "null",
+   "analysis": "純暴露但給付敏感：NeuroPace（NPCE）RNS 是已上市的響應式閉迴路 BCI——持續監測顱內 EEG、辨識個人化異常放電才精準放電，2025 營收約 $1 億（+25%）、累計逾 8,000 名病患、2026 拚 $99–101M（核心 RNS +21–23%），IGE 適應症 PMA 拚 2026 年中過關（潛在放大適應人群）。LivaNova（LIVN）VNS 治癲癇/難治型憂鬱，2026 營收成長 7–8%（cc）、RECOVER 憂鬱 24 月耐久性數據、OSPREY 近端舌下神經刺激切入 OSA。CVRx（CVRX）Barostim 壓力反射治心衰，2026 拚 $0.63–0.67 億、Q1 +20%、2026 Cat I CPT 碼取代 Cat III（給付確定性大增）、BENEFIT-HF 試驗若成可放大適應人群約 3 倍。Inspire（INSP）舌下神經刺激治睡眠呼吸中止，但因 Inspire V 編碼亂流把 2026 財測由近 $10 億重砍至 $8.25–8.75 億——血淋淋示範『給付/編碼』是神經電子裝置的真正命門。",
+   "companies": [
+    {
+     "name": "NeuroPace",
+     "ticker": "NPCE",
+     "country": "US",
+     "share": "閉迴路癲癇 BCI 純玩家",
+     "products": "RNS System（響應式閉迴路顱內 EEG）",
+     "note": "已上市響應式閉迴路 BCI；2025 營收約 $1 億(+25%)、累計逾 8,000 病患；2026 拚 $99–101M、核心 RNS +21–23%；IGE PMA 拚 2026 年中",
+     "src": "https://investors.neuropace.com/news/news-details/2026/NeuroPace-Reports-First-Quarter-2026-Financial-Results-and-Raises-2026-Revenue-Guidance/"
+    },
+    {
+     "name": "LivaNova",
+     "ticker": "LIVN",
+     "country": "UK",
+     "share": "VNS 全球龍頭",
+     "products": "VNS Therapy（癲癇/難治型憂鬱）/ OSPREY pHGNS",
+     "note": "2026 營收成長 7–8%(cc)、adj EPS $4.15–4.25；RECOVER 憂鬱 24 月耐久數據；OSPREY 切入 OSA",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001639691/000163969126000031/a1q2026earningspressrelease.htm"
+    },
+    {
+     "name": "CVRx",
+     "ticker": "CVRX",
+     "country": "US",
+     "share": "壓力反射治心衰純玩家",
+     "products": "Barostim（baroreflex activation）",
+     "note": "2026 營收拚 $0.63–0.67 億、Q1 +20%、毛利 87%；2026 Cat I CPT 碼上路；BENEFIT-HF 若成放大適應人群約 3x",
+     "src": "https://www.stocktitan.net/sec-filings/CVRX/8-k-cv-rx-inc-reports-material-event-41e08ff8dc4a.html"
+    },
+    {
+     "name": "Inspire Medical",
+     "ticker": "INSP",
+     "country": "US",
+     "share": "舌下神經刺激治 OSA",
+     "products": "Inspire V（hypoglossal nerve stimulation）",
+     "note": "2026 財測因 Inspire V 編碼亂流由近 $10 億下修至 $8.25–8.75 億；給付/編碼是神經電子命門的血淋淋示範",
+     "src": "https://www.globenewswire.com/news-release/2026/05/04/3287119/0/en/Inspire-Medical-Systems-Inc-Announces-First-Quarter-2026-Financial-Results-and-Updates-2026-Guidance.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "decode_ai"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "patient_payer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NeuroPace Q1 2026 財報、上修 2026 財測（閉迴路 RNS）",
+     "url": "https://investors.neuropace.com/news/news-details/2026/NeuroPace-Reports-First-Quarter-2026-Financial-Results-and-Raises-2026-Revenue-Guidance/"
+    },
+    {
+     "label": "LivaNova Q1 2026 財報（VNS 7–8% 成長）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001639691/000163969126000031/a1q2026earningspressrelease.htm"
+    },
+    {
+     "label": "CVRx Q1 2026：營收 +20%、上修指引（Barostim）",
+     "url": "https://www.stocktitan.net/sec-filings/CVRX/8-k-cv-rx-inc-reports-material-event-41e08ff8dc4a.html"
+    },
+    {
+     "label": "Inspire 2026 財測下修（編碼亂流）",
+     "url": "https://www.globenewswire.com/news-release/2026/05/04/3287119/0/en/Inspire-Medical-Systems-Inc-Announces-First-Quarter-2026-Financial-Results-and-Updates-2026-Guidance.html"
+    }
+   ]
+  },
+  {
+   "id": "patient_payer",
+   "row": "patient",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端：病患族群 / 給付方",
+   "nameEn": "Patients & Payers (Paralysis · Parkinson's · Epilepsy · Stroke)",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "BCI/神經調控的終端需求——癱瘓/ALS/帕金森/癲癇/中風/慢性疼痛/睡眠呼吸中止病患，以及決定能否放量的 Medicare/保險給付方（CPT 編碼是命門）。",
+   "marketSize": "美國 BCI 候選者近 1,000 萬人；TAM 早期 $800 億→中期 $3,200 億",
+   "growth": "Morgan Stanley：BCI 至 2045 滲透率 2.8%、2030–45 累計植入營收逾 $120 億",
+   "share": "null",
+   "analysis": "需求端拉動全鏈、但給付方握生殺大權：Morgan Stanley 估美國早/中期約近 1,000 萬名 BCI 候選者（ALS/多發性硬化/中風攝取最高）、TAM 早期 $800 億＋中期 $3,200 億、合計約 $4,000 億；惟商業化估約 5 年、至 2035 年 BCI 營收尚不足 $15 億，是『大 TAM、慢爬坡』。神經調控當期已是數十億美元實打實市場（帕金森 DBS、慢性疼痛 SCS、癲癇 VNS/RNS、心衰 Barostim、OSA）。⚠ 給付/編碼是命門：CVRx 因 Cat I CPT 上路而確定性大增、Inspire 卻因 Inspire V 編碼亂流被迫腰斬財測——同一年、相反方向，凸顯『FDA 過關只是門票，Medicare 給付才是放量鑰匙』。終端把用量回饋到上游電極/ASIC/解碼 AI，形成裝機量→資料→解碼精度的飛輪。",
+   "companies": [
+    {
+     "name": "病患族群（癱瘓/帕金森/癲癇/中風）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "BCI/神經調控終端",
+     "products": "ALS/脊髓損傷/帕金森/癲癇/中風/慢性疼痛/OSA",
+     "note": "美國 BCI 候選者近 1,000 萬；裝機量回饋上游解碼飛輪",
+     "src": "https://www.massdevice.com/analysts-see-400b-bci-opportunity/"
+    },
+    {
+     "name": "Medicare / 商保給付方",
+     "ticker": "—",
+     "country": "US",
+     "share": "放量生殺大權",
+     "products": "CPT 編碼 / 事前審查 / 給付決策",
+     "note": "CVRx Cat I CPT 上路=利多、Inspire V 編碼亂流=財測腰斬；FDA 過關只是門票、給付才是鑰匙",
+     "src": "https://www.stocktitan.net/news/CVRX/cv-rx-announces-implementation-of-new-category-i-cpt-codes-for-yd4bdyxythas.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "device_oem"
+    },
+    {
+     "id": "neuromod_agent"
+    },
+    {
+     "id": "closed_loop_agent"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Morgan Stanley：BCI 美國 TAM $4,000 億（MassDevice）",
+     "url": "https://www.massdevice.com/analysts-see-400b-bci-opportunity/"
+    },
+    {
+     "label": "CVRx Cat I CPT 碼上路（給付確定性）",
+     "url": "https://www.stocktitan.net/news/CVRX/cv-rx-announces-implementation-of-new-category-i-cpt-codes-for-yd4bdyxythas.html"
+    },
+    {
+     "label": "BCI 臨床試驗 2026 全景（病患適應症）",
+     "url": "https://nextwavesinsight.com/bci-neuralink-synchron-clinical-trials-2026/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "electrode_chip",
+   "decode_ai"
+  ],
+  [
+   "electrode_chip",
+   "device_oem"
+  ],
+  [
+   "decode_ai",
+   "device_oem"
+  ],
+  [
+   "decode_ai",
+   "neuromod_agent"
+  ],
+  [
+   "device_oem",
+   "neuromod_agent"
+  ],
+  [
+   "device_oem",
+   "patient_payer"
+  ],
+  [
+   "neuromod_agent",
+   "patient_payer"
+  ],
+  [
+   "closed_loop_agent",
+   "patient_payer"
+  ],
+  [
+   "decode_ai",
+   "closed_loop_agent"
+  ]
+ ],
+ "_proposed": {}
+}

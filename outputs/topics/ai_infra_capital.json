@@ -1,0 +1,721 @@
+{
+ "id": "ai_infra_capital",
+ "tab": "AI 基建融資",
+ "title": "AI 基礎設施融資 / 資料中心 REIT 供應鏈 (AI Infra Capital & DC REITs)",
+ "subtitle": "AI 資本循環的金融層 — 不是「誰賣算力」(見 neocloud)，而是「誰出錢、用什麼結構出錢、風險最後堆在誰身上」。2026 hyperscaler capex 指引上看 $700B+，Morgan Stanley 估到 2028 需約 $1.5 兆外部融資、多走私募信貸；私募信貸對 AI 放款從近零升至 >$200B。價值鏈：LP 資金(保險/主權/退休) → 另類資產管理人+私募信貸(Blackstone/Apollo/KKR/Brookfield/Blue Owl/DigitalBridge) → 證券化/SPV(GPU 抵押債·DC ABS·超大規模表外) → 上市載具資料中心 REIT(Equinix/Digital Realty/Iron Mountain/Keppel DC) → 開發商/終端用款(連 neocloud)。里程碑：CoreWeave $8.5B 首筆投資級 GPU 抵押債、Meta $30B Blue Owl/PIMCO SPV、Apollo+Blackstone 為 Anthropic 籌 $35B、Brookfield $100B AI 基建基金(NVIDIA+KIA)。⚠ Burry 指 AI 高收益債占 38%、BofA 34% 經理人視為系統性信用事件源；表外 SPV 把資本風險由科技巨頭轉嫁華爾街與壽險。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "AI 外部融資缺口(至2028)",
+   "v": "~$1.5兆",
+   "sub": "MS 估 2025-28 DC 總支出 $3 兆、半數靠私募信貸;2028 到期牆飆 $215B",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 3,
+   "sub": "AI capex 結構性催化·私募信貸/GPU 債泡沫·表外 SPV 風險轉嫁",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "lp",
+   "label": "資金來源 LP Capital Sources",
+   "main": false
+  },
+  {
+   "id": "alloc",
+   "label": "資本配置 · 私募信貸 Allocators & Private Credit",
+   "main": false
+  },
+  {
+   "id": "struct",
+   "label": "證券化 · SPV 結構層 Securitization & SPV",
+   "main": false
+  },
+  {
+   "id": "reit",
+   "label": "上市載具：資料中心 REIT DC REITs",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "開發商 · 終端用款 Developers & End-Borrowers",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "capital_sources",
+   "row": "lp",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "資金來源：保險 / 主權基金 / 退休金 / 銀行",
+   "nameEn": "LP Capital: Insurers, SWFs, Pensions, Banks",
+   "competition": "fragmented",
+   "single": "⚠ 最終接盤者 · 壽險約 $1 兆綁在私募信貸；AI 風險最後落在保戶/退休金等最不該承受者身上",
+   "desc": "AI 基建融資的最上游資金池：壽險、主權財富基金、退休金、銀行。它們透過另類資產管理人與私募信貸間接承擔 AI 建置風險。",
+   "marketSize": "壽險私募信貸 ~$1兆",
+   "growth": "資金總池龐大",
+   "share": "null",
+   "analysis": "大型壽險約 $1 兆資金綁在私募信貸，是這條鏈最後、也最沉默的風險承擔者(CNBC 2026-04：單一 AI 園區估值已達 $10-20B，保險承保能力被『壓力測試』)。主權基金直接入場：科威特投資局(KIA)入股 Brookfield BAIIF；阿布達比 MGX 為 Stargate 初始股權方。承貸/安排行：Morgan Stanley、JPMorgan、Goldman Sachs、MUFG 為 CoreWeave $8.5B 安排行，大摩獨家承做 Meta $30B SPV。BIS 2026-02 專題警示融資正由『自由現金流』轉向『舉債』，把資本風險由矽谷轉嫁至華爾街與保險系統——絃外之音：保戶與退休金成為 AI 風險的隱形持有人。",
+   "companies": [
+    {
+     "name": "Morgan Stanley(安排行)",
+     "ticker": "MS",
+     "country": "US",
+     "share": "AI 基建債主安排行",
+     "products": "SPV 架構 / 銀團 / 承銷",
+     "note": "獨家承做 Meta $30B SPV;CoreWeave $8.5B 安排行;估 2026 hyperscaler+JV 發行 $250-300B",
+     "src": "https://pe-insights.com/blue-owl-and-meta-close-record-30bn-financing-for-ai-data-centre-expansion-in-louisiana/"
+    },
+    {
+     "name": "JPMorgan(安排/研究)",
+     "ticker": "JPM",
+     "country": "US",
+     "share": "DC 證券化主力",
+     "products": "ABS/CMBS 安排 / 槓桿融資",
+     "note": "估 2026-27 年化 DC 證券化 $30-40B(占 CMBS+ABS 7-10%);AI 槓桿融資未來 5 年 $150B",
+     "src": "https://www.theaiconsultingnetwork.com/blog/ai-data-center-gpu-debt-financing-insurance-cre-investors-2026"
+    },
+    {
+     "name": "壽險業(最終 LP)",
+     "ticker": "—",
+     "country": "US",
+     "share": "私募信貸最大持有人",
+     "products": "私募信貸 / 結構債配置",
+     "note": "⚠ 約 $1 兆綁私募信貸;承保能力被壓力測試;AI 風險隱形持有人",
+     "src": "https://www.cnbc.com/2026/04/06/ai-data-centers-financing-insurance-deals-gpu-debt.html"
+    },
+    {
+     "name": "Kuwait Investment Authority",
+     "ticker": "—",
+     "country": "KZ",
+     "share": "主權基金 LP",
+     "products": "Brookfield BAIIF 出資",
+     "note": "與 NVIDIA 同為 BAIIF 背書方",
+     "src": "https://www.datacenterdynamics.com/en/news/brookfield-launches-100bn-ai-infrastructure-fund-secures-nvidia-and-kia-as-backers/"
+    },
+    {
+     "name": "MGX(阿布達比)",
+     "ticker": "—",
+     "country": "AE",
+     "share": "主權 AI 基金",
+     "products": "Stargate 初始股權方",
+     "note": "與 OpenAI/SoftBank/Oracle 同列 Stargate 股權方",
+     "src": "https://en.wikipedia.org/wiki/Stargate_LLC"
+    },
+    {
+     "name": "Goldman Sachs / MUFG(承貸)",
+     "ticker": "GS",
+     "country": "US",
+     "share": "GPU 債承貸",
+     "products": "GPU 抵押融資安排",
+     "note": "與大摩/JPM 同列 CoreWeave $8.5B 安排行",
+     "src": "https://www.datacenterdynamics.com/en/news/coreweave-secures-85bn-loan-for-gpu-purchases/"
+    },
+    {
+     "name": "BIS(監理觀點)",
+     "ticker": "—",
+     "country": "CH",
+     "share": "系統性風險示警",
+     "products": "AI 融資專題報告",
+     "note": "2026-02《Financing the AI boom》警示由現金流轉向舉債",
+     "src": "https://www.bis.org/publ/bisbull120.pdf"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "allocators"
+    }
+   ],
+   "sources": [
+    {
+     "label": "保險被 AI DC 融資壓力測試 (CNBC)",
+     "url": "https://www.cnbc.com/2026/04/06/ai-data-centers-financing-insurance-deals-gpu-debt.html"
+    },
+    {
+     "label": "Financing the AI boom (BIS Bulletin)",
+     "url": "https://www.bis.org/publ/bisbull120.pdf"
+    }
+   ]
+  },
+  {
+   "id": "allocators",
+   "row": "alloc",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "另類資產管理人 / 私募信貸（資本配置層）",
+   "nameEn": "Alt Asset Managers & Private Credit",
+   "competition": "oligopoly",
+   "single": "核心配置層 · 不論哪家 hyperscaler/neocloud 勝出都收費;Brookfield $100B 基金、Apollo 2025 部署 >$40B",
+   "desc": "把 LP 資金配置進 AI 基建的另類資產管理人與私募信貸巨頭。這是『賣鏟人』中的賣鏟人——押注資本搬運而非算力贏家。",
+   "marketSize": "私募信貸對 AI >$200B",
+   "growth": "高費率 AUM 引擎",
+   "share": "null",
+   "analysis": "Blackstone(BX)2025 為資料中心/數位基建部署 >$25B(含賓州 Digital/Energy Hub、QTS+PPL JV);與 Apollo 為 Anthropic 籌 $35B 晶片擔保 SPV;Blackstone Credit & Insurance 為 CoreWeave $8.5B 錨定方。Apollo(APO)2025 部署 >$40B 於次世代資料中心/基建(含 Valor/xAI $3.5B、Stream Data Centers 多數股權)。KKR 已投 ~$34B 股權於數位基建、橫跨 23 筆、5 個平台、>155 設施、15GW 管線;入股 Brookfield 系 Compass。Brookfield(BAM)推 $100B AI 基建基金 BAIIF(目標 $10B 股權、已募 $5B、NVIDIA+KIA 背書)。Blue Owl(OWL)主導 Meta Louisiana $30B SPV。DigitalBridge(DBRG)純數位基建管理人 AUM $119B(2026-03)、被 SoftBank $4B 收購中。絃外之音:KKR 建獨立營運公司、Blackstone 建內部集中部門,24 小時內對同一機會做相反架構選擇,顯示『最優融資結構』仍在試錯。",
+   "companies": [
+    {
+     "name": "Blackstone",
+     "ticker": "BX",
+     "country": "US",
+     "share": "數位基建部署最大",
+     "products": "私募信貸 / 數位基建股權",
+     "note": "2025 DC/數位基建 >$25B;Anthropic $35B 平台(與 Apollo+Broadcom、2028 前 >20GW);CoreWeave $8.5B 錨定;QTS 母公司",
+     "src": "https://capacityglobal.com/news/anthropic-blackstone-apollo-35bn-ai-infrastructure-spv/"
+    },
+    {
+     "name": "Apollo Global",
+     "ticker": "APO",
+     "country": "US",
+     "share": "次世代 DC 部署 >$40B",
+     "products": "私募信貸 / GPU+晶片擔保債",
+     "note": "2025 部署 >$40B(Valor/xAI $3.5B、Stream 多數股權);Anthropic $35B 平台(與 Blackstone+Broadcom、首批 1GW 自 2026 中)",
+     "src": "https://finance.yahoo.com/sectors/technology/articles/apollo-blackstone-lend-35b-against-220610560.html"
+    },
+    {
+     "name": "KKR",
+     "ticker": "KKR",
+     "country": "US",
+     "share": "數位基建股權 ~$34B",
+     "products": "DC 平台股權 / 基建債",
+     "note": "23 筆、5 平台、>155 設施、15GW 管線;入股 Compass Datacenters",
+     "src": "https://www.globaldatacenterhub.com/p/what-kkr-and-blackstone-just-signaled"
+    },
+    {
+     "name": "Brookfield",
+     "ticker": "BAM",
+     "country": "CA",
+     "share": "$100B AI 基建基金",
+     "products": "BAIIF(能源/土地/DC/算力)",
+     "note": "目標 $10B 股權、已募 $5B;NVIDIA+科威特 KIA 背書;DC 3.6GW 開發潛能",
+     "src": "https://www.datacenterdynamics.com/en/news/brookfield-launches-100bn-ai-infrastructure-fund-secures-nvidia-and-kia-as-backers/"
+    },
+    {
+     "name": "Blue Owl Capital",
+     "ticker": "OWL",
+     "country": "US",
+     "share": "超大規模 SPV 主導",
+     "products": "數位基建私募信貸",
+     "note": "主導 Meta Louisiana $30B SPV;Oracle 等數十億建置融資",
+     "src": "https://pe-insights.com/blue-owl-and-meta-close-record-30bn-financing-for-ai-data-centre-expansion-in-louisiana/"
+    },
+    {
+     "name": "DigitalBridge",
+     "ticker": "DBRG",
+     "country": "US",
+     "share": "純數位基建管理人",
+     "products": "塔/DC/光纖/邊緣資產管理",
+     "note": "AUM $119B、FEEUM $40.8B(2026-03);SoftBank $4B 收購中",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001679688/000167968826000054/digitalbridge-1q26xearni.htm"
+    },
+    {
+     "name": "PIMCO(私募信貸)",
+     "ticker": "—",
+     "country": "US",
+     "share": "SPV 錨定 LP",
+     "products": "私募信貸 / 結構債",
+     "note": "Meta $30B SPV 錨定 ~$18B;保險/私募信貸大本營(Allianz 旗下)",
+     "src": "https://www.globaldatacenterhub.com/p/meta-blue-owls-27b-bet-is-this-the"
+    },
+    {
+     "name": "Stonepeak(基建 PE)",
+     "ticker": "—",
+     "country": "US",
+     "share": "DC 基建 PE",
+     "products": "DC/光纖基建股權",
+     "note": "向 American Tower 買 CoreSite 29% 股(~$2.5B)",
+     "src": "https://dgtlinfra.com/american-tower-minority-coresite-data-centers/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "capital_sources"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "securitization"
+    },
+    {
+     "id": "dc_developers"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Anthropic $35B Blackstone+Apollo SPV (Capacity)",
+     "url": "https://capacityglobal.com/news/anthropic-blackstone-apollo-35bn-ai-infrastructure-spv/"
+    },
+    {
+     "label": "KKR/Blackstone 對 AI 基建資本訊號 (GDC Hub)",
+     "url": "https://www.globaldatacenterhub.com/p/what-kkr-and-blackstone-just-signaled"
+    }
+   ]
+  },
+  {
+   "id": "securitization",
+   "row": "struct",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "GPU 抵押債 / 資料中心 ABS / 超大規模 SPV",
+   "nameEn": "GPU-backed Debt, DC ABS & Hyperscaler SPV",
+   "competition": "emerging",
+   "single": "⚠ 命門+泡沫指標 · GPU 殘值折舊爭議使擔保品脆弱;表外 SPV 不透明、把風險轉嫁華爾街+保險",
+   "desc": "把實體資產(GPU、DC 租約)轉成可交易債券的結構層：GPU 抵押債、資料中心 ABS/CMBS、超大規模表外 SPV。2026 正成形為獨立資產類別。",
+   "marketSize": "DC 證券化 2026-27 $30-40B/年",
+   "growth": "新資產類別成形",
+   "share": "null",
+   "analysis": "GPU 抵押債=新資產類別:CoreWeave DDTL 4.0 $8.5B 為首筆投資級(A3/A(low))GPU/HPC 抵押非追索融資(Meta 合約擔保、SOFR+225bp 浮動+~5.9% 固定、2032-03 到期、Blackstone Credit 錨定且嚴重超額認購),續推 DDTL 5.0 $3.1B 為首筆『公開銀團』HPC 融資、開啟次級市場;CoreWeave 過去 12 個月股+債籌資已達 ~$28B。資料中心 ABS/CMBS:JPMorgan 估 2026-27 年化 $30-40B(占 CMBS+ABS 7-10%);Moody's 已發布 DC ABS 評等方法論(租約現金流、master trust 可加新擔保品)。超大規模表外 SPV:Meta Hyperion(Beignet Investor LLC)$29.5B($27.294B 6.581% 優先擔保票 2049 到期 +225bp、A+ + $2.5B 股)為史上最大非併購投資級債,PIMCO 認購 $18B、BlackRock 認購 $3B;Meta 僅留 20% 股權並回租轉 capex 為 opex,是『不上資產負債表擴張』範本(Meta 2026 capex 指引上修至 $115-135B)。整體:AI 相關企業去年至少向債市籌 >$200B(很可能低估);S&P 估 DC 相關到期債由 2026 的 $56.6B 跳升至 2028 的 $215B。⚠ 三大爭議:(1)GPU 殘值不確定(Amazon 改 5 年、Meta 5.5 年)使 ABS 擔保品脆弱;(2)表外 SPV 被質疑『藏 AI 債』、風險轉嫁華爾街+壽險;(3)Burry 指 AI 占高收益債 38%、投資級債 49%、循環融資墊高估值。",
+   "companies": [
+    {
+     "name": "CoreWeave(GPU 債發行)",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "GPU 抵押債開創者",
+     "products": "投資級 GPU 抵押非追索債",
+     "note": "DDTL 4.0 $8.5B 首筆投資級(A3/A(low))、SOFR+225bp/~5.9%、2032-03 到期;DDTL 5.0 $3.1B 首筆公開銀團 HPC 融資;12 個月籌資 ~$28B",
+     "src": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-Landmark-8-5-Billion-Financing-Facility-Achieving-First-Investment-Grade-Rated-GPU-backed-Financing/default.aspx"
+    },
+    {
+     "name": "Meta(表外 SPV)",
+     "ticker": "META",
+     "country": "US",
+     "share": "超大規模 SPV 範本",
+     "products": "Hyperion Louisiana SPV(Beignet)",
+     "note": "$29.5B($27.294B 6.581% 票 2049+225bp A+ + $2.5B 股)史上最大非併購投資級債;僅留 20% 股權、回租轉 opex;2026 capex 指引 $115-135B",
+     "src": "https://pe-insights.com/blue-owl-and-meta-close-record-30bn-financing-for-ai-data-centre-expansion-in-louisiana/"
+    },
+    {
+     "name": "Moody's(評等方法)",
+     "ticker": "MCO",
+     "country": "US",
+     "share": "DC ABS 評等標準制定",
+     "products": "DC ABS 評等方法論",
+     "note": "租約現金流、master trust 可加新擔保品;為 CoreWeave A3",
+     "src": "https://asreport.americanbanker.com/news/moodys-issues-ratings-methodology-for-data-center-abs"
+    },
+    {
+     "name": "S&P Global(評等)",
+     "ticker": "SPGI",
+     "country": "US",
+     "share": "SPV/公司債評等",
+     "products": "DC SPV / 公司債評等",
+     "note": "予 Meta SPV 債 A+;Oracle 投資級債評等",
+     "src": "https://www.globaldatacenterhub.com/p/meta-blue-owls-27b-bet-is-this-the"
+    },
+    {
+     "name": "全產業 GPU 抵押債",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "AI 債 >$200B 已發",
+     "products": "GPU 抵押債 / DC ABS",
+     "note": "⚠ AI 相關去年向債市籌 >$200B(低估);折舊爭議使擔保品脆弱",
+     "src": "https://www.bloomberg.com/news/articles/2026-05-19/ai-data-center-borrowing-rapidly-climbs-wall-street-s-risk-list"
+    },
+    {
+     "name": "DBRS Morningstar(評等)",
+     "ticker": "—",
+     "country": "CA",
+     "share": "GPU 債共同評等",
+     "products": "GPU 抵押債評等",
+     "note": "予 CoreWeave $8.5B A(low)",
+     "src": "https://www.globaldatacenterhub.com/p/is-coreweaves-85-billion-deal-the"
+    },
+    {
+     "name": "BlackRock(SPV 共同 LP)",
+     "ticker": "BLK",
+     "country": "US",
+     "share": "Meta SPV 第二大認購",
+     "products": "結構債 / 數位基建私募信貸",
+     "note": "認購 Meta Hyperion SPV 票 $3B(PIMCO $18B 之外);GIP 數位基建平台",
+     "src": "https://www.globaldatacenterhub.com/p/meta-blue-owls-27b-bet-is-this-the"
+    },
+    {
+     "name": "Broadcom(客製矽+網路平台)",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "Apollo+Blackstone $35B 平台技術方",
+     "products": "Anthropic 客製 ASIC / 網路",
+     "note": "與 Apollo/Blackstone 合推 $35B 平台、目標 2028 前供 >20GW 算力予 AI 實驗室(含 OpenAI);首批 1GW 自 2026 中於 Fluidstack 場址",
+     "src": "https://thetechcapital.com/broadcom-apollo-and-blackstone-launch-35-billion-ai-infrastructure-platform/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "allocators"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dc_developers"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CoreWeave $8.5B 首筆投資級 GPU 債 (官方)",
+     "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-Landmark-8-5-Billion-Financing-Facility-Achieving-First-Investment-Grade-Rated-GPU-backed-Financing/default.aspx"
+    },
+    {
+     "label": "Moody's DC ABS 評等方法論 (Asset Securitization Report)",
+     "url": "https://asreport.americanbanker.com/news/moodys-issues-ratings-methodology-for-data-center-abs"
+    }
+   ]
+  },
+  {
+   "id": "ai_credit_risk",
+   "row": "struct",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "系統性信用風險 / 泡沫指標",
+   "nameEn": "Systemic Credit Risk & Bubble Signal",
+   "competition": "emerging",
+   "single": "⚠ 真正的泡沫保險絲盒 · 看泡沫盯利差不盯 P/E;BofA 34% 經理人視為系統性信用事件源",
+   "desc": "AI 資本循環的風險監測：私募信貸與 GPU 債才是泡沫真正先爆點,股價只是表象。",
+   "marketSize": "AI 高收益債占 38%",
+   "growth": "風險快速累積",
+   "share": "null",
+   "analysis": "Michael Burry(2026-05 更新數據)直指 AI 占創投 87%(1999 不到 40%)、占高收益債發行 38%、占投資級債發行 49%、循環融資(NVIDIA 入股→買 GPU→營收回流)墊高估值、規模似 1999 TMT 泡沫蔓延進信用體系。BofA 經理人調查 34% 認為 hyperscaler capex 是下一個系統性信用事件最可能來源(4 月的兩倍)。⚠ 監理升級:FSB 2026-05 正式示警 AI 私募信貸『sharp correction 將造成 sizeable 損失』(AI 占 2025 私募信貸交易逾 1/3、前五年僅 17%;業界 2025 收入 ~$600 億 vs capex ~$4,000 億);四位美國參議員 2026-01 致函監理機構,警示企業靠『複雜不透明債市』舉巨債、無力償還恐引連鎖金融危機;Dallas Fed 與 BIS 同步研究 AI 舉債對利率/久期供給的衝擊;S&P 估 DC 相關到期債由 2026 的 $56.6B 跳升至 2028 的 $215B(到期牆)。MS 估 2025-28 全球 DC 支出 $3 兆、半數靠私募信貸。銀行已開始把 AI DC 債往外轉售以降低曝險。絃外之音:『Forget NVIDIA: where AI stress shows up first』——要看泡沫,盯的是私募信貸利差不是 P/E;Oracle $18B 投資級債 2025-12 起利差走闊、價格『像垃圾債』、帳面損失約 $1.35B、遭債權人就揭露提告,正是用款方信用外溢的活樣本。",
+   "companies": [
+    {
+     "name": "Michael Burry(空方)",
+     "ticker": "—",
+     "country": "US",
+     "share": "AI 信用泡沫旗手",
+     "products": "AI 高收益債示警",
+     "note": "2026-05 更新:AI 占創投 87%、高收益債 38%、投資級債 49%;循環融資;規模似 1999 TMT;做空 NVIDIA",
+     "src": "https://en.cryptonomist.ch/2026/05/20/michael-burry-ai-bubble-warning/"
+    },
+    {
+     "name": "BofA 經理人調查",
+     "ticker": "BAC",
+     "country": "US",
+     "share": "系統性風險晴雨表",
+     "products": "全球基金經理人調查",
+     "note": "34% 視 hyperscaler capex 為系統性信用事件源(翻倍)",
+     "src": "https://www.bloomberg.com/news/articles/2026-05-19/ai-data-center-borrowing-rapidly-climbs-wall-street-s-risk-list"
+    },
+    {
+     "name": "Oracle(用款方信用外溢)",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "風險外溢樣本",
+     "products": "$18B 投資級公司債",
+     "note": "⚠ 利差走闊『像垃圾債』、帳損 ~$1.35B、遭告揭露不實",
+     "src": "https://www.bloomberg.com/news/articles/2026-01-15/oracle-sued-over-disclosures-tied-to-18-billion-bond-offering"
+    },
+    {
+     "name": "私募信貸(泡沫指標)",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "真正先爆點",
+     "products": "AI 資料中心私募信貸",
+     "note": "從近零升至 >$200B;占 2025 私募信貸交易逾 1/3(前五年僅 17%);銀行已開始往外轉售 AI DC 債",
+     "src": "https://riffon.com/insight/ins_hi8j135yhyp0"
+    },
+    {
+     "name": "FSB(金融穩定委員會)",
+     "ticker": "—",
+     "country": "CH",
+     "share": "監理正式示警",
+     "products": "私募信貸脆弱性報告",
+     "note": "2026-05 警示 AI 私募信貸 sharp correction 將釀 sizeable 損失;業界 2025 收入 ~$600 億 vs capex ~$4,000 億",
+     "src": "https://www.fsb.org/2026/05/fsb-warns-on-private-credit-vulnerabilities/"
+    },
+    {
+     "name": "Morgan Stanley(融資缺口估算)",
+     "ticker": "MS",
+     "country": "US",
+     "share": "融資缺口權威估算",
+     "products": "AI 外部融資缺口研究",
+     "note": "估 2025-28 全球 DC 支出 $3 兆、半數靠私募信貸;到 2028 外部融資缺口 ~$1.5 兆",
+     "src": "https://www.cnbc.com/2026/04/06/ai-data-centers-financing-insurance-deals-gpu-debt.html"
+    },
+    {
+     "name": "Quinn Emanuel(訴訟風險)",
+     "ticker": "—",
+     "country": "US",
+     "share": "AI DC 融資訴訟示警",
+     "products": "AI DC 融資訴訟法律警示",
+     "note": "示警 GPU 債/SPV 揭露與估值訴訟風險升高",
+     "src": "https://www.quinnemanuel.com/the-firm/publications/client-alert-emerging-litigation-risks-in-financing-ai-data-centers-boom/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "securitization"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "AI DC 借貸登上華爾街風險榜 (Bloomberg)",
+     "url": "https://www.bloomberg.com/news/articles/2026-05-19/ai-data-center-borrowing-rapidly-climbs-wall-street-s-risk-list"
+    },
+    {
+     "label": "私募信貸才是 AI 泡沫真指標 (RiffOn)",
+     "url": "https://riffon.com/insight/ins_hi8j135yhyp0"
+    }
+   ]
+  },
+  {
+   "id": "dc_reits",
+   "row": "reit",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "資料中心 / 數位基建 REIT（最可投資的上市曝險）",
+   "nameEn": "Data Center & Digital Infra REITs",
+   "competition": "oligopoly",
+   "single": "main · 最乾淨的 AI 上市曝險;EQIX 互連護城河 + DLR hyperscale 經營槓桿,現金流可見度高於上游硬體",
+   "desc": "把資料中心實體資產證券化為可交易股權的上市 REIT,是散戶/法人取得 AI 基建曝險最直接的工具,現金流(AFFO/FFO/股利)可見度高。",
+   "marketSize": "EQIX ~$108B·DLR ~$67B 市值",
+   "growth": "AFFO/FFO 雙位數",
+   "share": "null",
+   "analysis": "Equinix(EQIX)Q1'26 營收 $2.444B(+10% YoY)、調整後 EBITDA $1.245B(51% 紀錄毛利)、AFFO $1.065B(+12%)、首季年化總 bookings 紀錄 $378M;2026 AFFO 指引上修 $4.198-4.278B(+12-14% as-reported)、AFFO/股 $42.31-43.11、capex ~$4.1B;互連紀錄 >500,000 條(護城河);xScale JV 規模上看 $15B(股價三個月 +28%)。Digital Realty(DLR)Q1'26 營收 $1.6B(+16% YoY)、core FFO/股 $2.04(+15%)、總 bookings $706.9M(DLR 份額 $422.8M);2026 core FFO/股指引上修 +$0.10 至 $8.00-8.10(中位 +9%);在建 1.2GW(61% 已預租)、backlog 創高 $1.8B;3 月完成 $3.25B 美國 hyperscale 基金、~$10B 可用於 hyperscale 開發;槓桿降至多年低點 4.7x。Iron Mountain(IRM)Q1'26 營收 $1.94B(+21.6%)、AFFO 紀錄 $426M(+22%)、17% 有機成長為 25 年新高;季配息升 10% 至 $0.864;2026 AFFO/股指引上修 $5.79-5.86;DC 全年租賃預期『顯著高於 100MW』指引(YTD 已 32MW)。亞太:Keppel DC REIT(亞洲首檔純 DC REIT、AUM S$8.3B、1Q26 DPU +13.2%、殖利率 ~4.4%)、GDS(中國最大第三方、最高風險/報酬)、NEXTDC(澳洲高階 colocation 龍頭)。American Tower(AMT)旗下 CoreSite Q4'25 營收 $281M(+19% YoY)、towerco 轉向 AI-ready DC。EQIX vs DLR 是品質 vs 成長:EQIX 贏互連護城河、DLR 贏 hyperscale 經營槓桿。",
+   "companies": [
+    {
+     "name": "Equinix",
+     "ticker": "EQIX",
+     "country": "US",
+     "share": "全球互連龍頭",
+     "products": "IBX colocation / 互連 / xScale",
+     "note": "Q1'26 營收 $2.444B(+10%)、AFFO $1.065B(+12%)、bookings 紀錄 $378M;2026 AFFO/股 $42.31-43.11;互連 >50 萬條;xScale $15B JV",
+     "src": "https://news.alphastreet.com/equinix-eqix-has-an-interconnection-and-backlog-engine-bigger-than-a-rate-sensitive-reit-trade/"
+    },
+    {
+     "name": "Digital Realty",
+     "ticker": "DLR",
+     "country": "US",
+     "share": "hyperscale 經營槓桿",
+     "products": "hyperscale + colocation DC",
+     "note": "Q1'26 $1.6B(+16%)、core FFO/股 $2.04(+15%);2026 FFO/股上修 $8.00-8.10;backlog 創高 $1.8B、在建 1.2GW(61% 預租);完成 $3.25B hyperscale 基金、槓桿 4.7x",
+     "src": "https://www.stocktitan.net/news/DLR/digital-realty-reports-first-quarter-2026-yqdayjm36wn1.html"
+    },
+    {
+     "name": "Iron Mountain",
+     "ticker": "IRM",
+     "country": "US",
+     "share": "DC 高成長轉型",
+     "products": "DC + 文件儲存",
+     "note": "Q1'26 營收 $1.94B(+21.6%)、AFFO 紀錄 $426M(+22%);配息+10% 至 $0.864;2026 AFFO/股 $5.79-5.86;DC 全年顯著高於 100MW",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/04/30/iron-mountain-irm-q1-2026-earnings-transcript/"
+    },
+    {
+     "name": "American Tower(CoreSite)",
+     "ticker": "AMT",
+     "country": "US",
+     "share": "towerco 轉 AI DC",
+     "products": "CoreSite colocation / 互連",
+     "note": "CoreSite Q4'25 $281M(+19%);2024 全年 $924.8M(+11%)",
+     "src": "https://dgtlinfra.com/american-tower-minority-coresite-data-centers/"
+    },
+    {
+     "name": "Keppel DC REIT",
+     "ticker": "ME8U.SI",
+     "country": "SG",
+     "share": "亞洲首檔純 DC REIT",
+     "products": "亞太+歐洲 25 座 DC",
+     "note": "AUM S$8.3B;1Q26 DPU +13.2%;殖利率 ~4.4%;接手 Keppel JV 2 座 S$1.38B",
+     "src": "https://growbeansprout.com/quote/AJBU.SI"
+    },
+    {
+     "name": "GDS Holdings",
+     "ticker": "GDS",
+     "country": "CN",
+     "share": "中國最大第三方 DC",
+     "products": "中國 hyperscale colocation",
+     "note": "最高風險/報酬;亞太成長標的",
+     "src": "https://investingengineer.com/10-best-data-center-reits/"
+    },
+    {
+     "name": "NEXTDC",
+     "ticker": "NXT.AX",
+     "country": "AU",
+     "share": "澳洲 colocation 龍頭",
+     "products": "AI-ready 高階 colocation",
+     "note": "擴張亞太 AI-ready 足跡",
+     "src": "https://investingengineer.com/10-best-data-center-reits/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "dc_developers"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Equinix 互連+backlog 引擎 (Alphastreet)",
+     "url": "https://news.alphastreet.com/equinix-eqix-has-an-interconnection-and-backlog-engine-bigger-than-a-rate-sensitive-reit-trade/"
+    },
+    {
+     "label": "最佳 AI 受惠 DC REIT EQIX/DLR (MarketWise)",
+     "url": "https://marketwise.com/investing/best-data-center-reits-ai-infrastructure/"
+    }
+   ]
+  },
+  {
+   "id": "dc_developers",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "資料中心開發商 / 建置平台 / 終端用款",
+   "nameEn": "DC Developers & End-Borrowers",
+   "competition": "competitive",
+   "single": "下游用款方 · 多由 PE 持有的私有建置平台 + Stargate/Oracle/neocloud;鏈條任一環違約都回傳上游",
+   "desc": "把上游資本變成實體鋼筋水泥與機櫃的開發商與建置平台,以及最終向債市/私募信貸用款的科技巨頭與 neocloud(連 neocloud 主題)。",
+   "marketSize": "Stargate $500B/10GW",
+   "growth": "建置爆量",
+   "share": "null",
+   "analysis": "私有建置平台(多由 PE 持有):Vantage、QTS(Blackstone)、CyrusOne(KKR/GIP)、Compass(Brookfield/KKR)、Switch、Stream(Apollo)、CloudHQ、STACK——hyperscale 純做平台估值溢價於多元 colocation。Stargate:OpenAI+SoftBank+Oracle+MGX,$500B/4 年、10GW;初始股權 OpenAI 與 SoftBank 各 $19B;Crusoe 建 Abilene;Oracle 計劃 2026 籌 $45-50B 債+股、已分別承做 $38B(德州+威州)與 $18B(新墨西哥)銀團。Oracle(ORCL)2025-09 發 $18B 投資級債(年度最大之一),為終端用款方信用樣本。新增大型用款方:Anthropic 2025-11 宣布 $50B 美國 AI 基建(先與 Fluidstack 建德州+紐約)、由 Apollo+Blackstone+Broadcom 籌 $35B 客製矽平台(首批 1GW 自 2026 中、目標 2028 前 >20GW 供 AI 實驗室含 OpenAI)。neocloud 用款方:CoreWeave/Nebius/Crusoe/Lambda/Nscale/Fluidstack(詳見 neocloud 主題,Nebius 發 $3.75B 可轉債建 DC、OpenAI 簽 Oracle 5 年 $300B 算力約)。絃外之音:SoftBank 不只當 Stargate LP,還 $4B 買下 DigitalBridge(2026H2 完成),把金融層垂直整合進 AI 帝國;鏈條任一環(開發商延宕、用款方違約)都會沿融資鏈回傳至上游 LP 與保險。",
+   "companies": [
+    {
+     "name": "Stargate(OpenAI/SoftBank/Oracle/MGX)",
+     "ticker": "—",
+     "country": "US",
+     "share": "史上最大 AI 建置",
+     "products": "$500B/4 年、10GW",
+     "note": "初始股權 OpenAI+SoftBank 各 $19B;Crusoe 建 Abilene",
+     "src": "https://en.wikipedia.org/wiki/Stargate_LLC"
+    },
+    {
+     "name": "Oracle(終端用款)",
+     "ticker": "ORCL",
+     "country": "US",
+     "share": "用款方信用樣本",
+     "products": "$18B 公司債 / 計劃籌 $45-50B",
+     "note": "OpenAI 5 年 $300B 算力約;2026 大規模舉債建 DC",
+     "src": "https://www.nextplatform.com/compute/2026/02/03/oracles-financing-primes-the-openai-pump/4092157"
+    },
+    {
+     "name": "QTS(Blackstone)",
+     "ticker": "—",
+     "country": "US",
+     "share": "Blackstone 系平台",
+     "products": "hyperscale DC 建置",
+     "note": "未上市;賓州 Digital/Energy Hub + PPL JV",
+     "src": "https://www.commercialsearch.com/news/whos-funding-the-data-center-boom/"
+    },
+    {
+     "name": "Vantage / CyrusOne / Compass",
+     "ticker": "—",
+     "country": "US",
+     "share": "PE 系建置平台",
+     "products": "hyperscale 建置平台",
+     "note": "未上市;CyrusOne(KKR/GIP)、Compass(Brookfield/KKR)",
+     "src": "https://www.bloomberg.com/news/articles/2025-12-05/kkr-to-invest-in-assets-of-brookfield-backed-compass-datacenters"
+    },
+    {
+     "name": "Stream Data Centers(Apollo)",
+     "ticker": "—",
+     "country": "US",
+     "share": "Apollo 系平台",
+     "products": "hyperscale DC 開發",
+     "note": "未上市;Apollo 取多數股權",
+     "src": "https://www.pehub.com/apollo-blackstone-kkr-and-others-are-investing-heavily-in-data-center-infrastructure-healthcare-education-attracts-private-equity/"
+    },
+    {
+     "name": "Crusoe(Stargate 建置/neocloud)",
+     "ticker": "—",
+     "country": "US",
+     "share": "Stargate Abilene 建置",
+     "products": "AI DC 建置 / GPU 雲",
+     "note": "未上市;建 Stargate Abilene;詳見 neocloud",
+     "src": "https://www.nextplatform.com/compute/2026/02/03/oracles-financing-primes-the-openai-pump/4092157"
+    },
+    {
+     "name": "CoreWeave / Nebius(neocloud 用款)",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "GPU 債主要用款方",
+     "products": "GPUaaS / GPU 抵押債用款",
+     "note": "Nebius 發 $3.75B 可轉債;詳見 neocloud 主題",
+     "src": "https://thegpu.ai/p/issue-63-openai-nvidia-nscale-bring-billions-to-uk-neocloud-nebius-microsoft-oracle-300b-contract"
+    },
+    {
+     "name": "Anthropic(終端用款·未上市)",
+     "ticker": "—",
+     "country": "US",
+     "share": "新增大型用款方",
+     "products": "$50B AI 基建 / $35B 客製矽 SPV",
+     "note": "與 Fluidstack 建德州+紐約;Apollo+Blackstone+Broadcom $35B 平台、2028 前 >20GW;已募資 ~$33.7B 但未獲利",
+     "src": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure"
+    },
+    {
+     "name": "SoftBank(LP+垂直整合)",
+     "ticker": "9984.T",
+     "country": "JP",
+     "share": "Stargate 主導 + 買管理人",
+     "products": "Stargate $19B + DigitalBridge $4B",
+     "note": "DigitalBridge 收購($16/股)預計 2026H2 完成(尚未交割);把金融層垂直整合進 AI 帝國;另 $41B 投資 OpenAI",
+     "src": "https://www.digitalbridge.com/news/2025-12-29-softbank-group-to-acquire-digitalbridge-for-4-billion-to-scale-next-gen-ai-infrastructure"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "allocators"
+    },
+    {
+     "id": "securitization"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dc_reits"
+    }
+   ],
+   "sources": [
+    {
+     "label": "誰在出錢給資料中心熱潮 (CPE)",
+     "url": "https://www.commercialsearch.com/news/whos-funding-the-data-center-boom/"
+    },
+    {
+     "label": "Oracle 融資為 OpenAI 打底 (NextPlatform)",
+     "url": "https://www.nextplatform.com/compute/2026/02/03/oracles-financing-primes-the-openai-pump/4092157"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "capital_sources",
+   "allocators"
+  ],
+  [
+   "allocators",
+   "securitization"
+  ],
+  [
+   "allocators",
+   "dc_developers"
+  ],
+  [
+   "securitization",
+   "ai_credit_risk"
+  ],
+  [
+   "securitization",
+   "dc_developers"
+  ],
+  [
+   "dc_developers",
+   "dc_reits"
+  ]
+ ],
+ "_proposed": {}
+}

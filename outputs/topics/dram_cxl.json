@@ -1,0 +1,613 @@
+{
+ "id": "dram_cxl",
+ "tab": "DRAM/CXL",
+ "title": "DRAM / 伺服器記憶體 / CXL 記憶體供應鏈 (DRAM, Server Memory & CXL)",
+ "subtitle": "DRAM, Server Memory & CXL — 2026 商品 DRAM 超級循環：三強（Samsung/SK hynix/Micron）把產能押向 HBM 與先進製程，留下 DDR5 伺服器 RDIMM 與 DDR4 利基 DRAM 的供給真空。TrendForce 估 1Q26 DRAM 產業營收 +81% QoQ 達 $97B、傳統 DRAM 合約價單季漲 93~98%，2026 全年 DRAM 營收估 $404.3B（YoY +144%）；server DRAM 1Q26 漲逾 60% QoQ、原廠砍配額 30% 使雲端滿足率僅 ~70%。台廠全鏈受惠：南亞科 1 月營收 YoY +608%、華邦 2026 營收挑戰 NT$1000 億、威剛 5 月 +210% YoY。DDR5 多了 RCD/MRCD/PMIC 介面晶片（瀾起/Rambus/Renesas），含金量提升；hyperscaler 用 CXL 記憶體擴充（Astera Leo/Marvell Structera）繞過 DDR5 牆。⚠ 屬週期股、高基期；2027 Micron-PSMC/CXMT 擴產為反轉風險。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "1Q26 DRAM 產業營收",
+   "v": "$97B",
+   "sub": "+81% QoQ；合約價單季 +93~98%",
+   "hot": true
+  },
+  {
+   "k": "2026 全年 DRAM 營收",
+   "v": "$404B",
+   "sub": "YoY +144%（TrendForce）",
+   "hot": true
+  },
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  }
+ ],
+ "rows": [
+  {
+   "id": "fab",
+   "label": "DRAM 原廠 / 利基製程 DRAM IDM & Foundry",
+   "main": true
+  },
+  {
+   "id": "chip",
+   "label": "介面晶片 / CXL 控制器 Interface & CXL",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "模組 / AI 伺服器需求 Modules & Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "dram_idm",
+   "row": "fab",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "DRAM 原廠（三強寡占）",
+   "nameEn": "DRAM IDM (Big-3 Oligopoly)",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Samsung+SK hynix+Micron 三強握全球 DRAM ~90%；產能押向 HBM 製造商品 DRAM 真空",
+   "desc": "標準型 DRAM（DDR5/DDR4/LPDDR）與伺服器 DRAM 原廠。三強同步把先進產能押向 HBM，導致商品 DRAM 供給緊縮、合約價暴漲。",
+   "marketSize": "2026 $404B",
+   "growth": "1Q26 +81% QoQ",
+   "share": "三強 ~90%",
+   "analysis": "Samsung（005930.KS，1Q26 DRAM 市占 38.6% 重回第一、綜合記憶體 ASP 較 2025 全年均價暴增約 146%）、SK hynix（000660.KS，1Q26 DRAM 營收 $27.98B +62.5% QoQ、市占 28.8%、整體營益率 ~72%）、Micron（MU，1Q26 DRAM 營收 $21.75B +81.6% QoQ、市占 22.4%）三強合計約 90%，是真正的寡占鎖喉。中國 CXMT 長鑫存儲（未上市）已升格全球第四大 DRAM 廠、產能市占約 15%，DDR5/LPDDR5 量產放量並展示 DDR5-8000、LPDDR5X-10667，Corsair（Vengeance）已採用、HP 與 Dell 開始認證 CXMT 顆粒，中低階 PC/手機出現本土替代壓力；惟受美出口管制（無 EUV、列入美國防部清單）限制，量產良率落在 2028 後——中長期國產替代是供給變數。三強把產能傾斜 HBM 既是商品 DRAM 漲價主因，也意味供給彈性差、循環一旦反轉跌幅亦大。",
+   "companies": [
+    {
+     "name": "Samsung Electronics 三星",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "1Q26 DRAM 38.6%",
+     "products": "DDR5/DDR4 / 伺服器 DRAM / LPDDR",
+     "note": "1Q26 重回 DRAM 第一；ASP +146%；商品+伺服器 DRAM 拉動",
+     "src": "https://www.techtimes.com/articles/318052/20260609/samsung-leads-dram-market-share-386-sk-hynix-trails-revenue-tops-profit-margins.htm"
+    },
+    {
+     "name": "SK hynix",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "1Q26 DRAM 28.8%",
+     "products": "DDR5 RDIMM / 伺服器 DRAM / HBM",
+     "note": "1Q26 DRAM 營收 $27.98B +62.5% QoQ；整體營益率 ~72% 創紀錄",
+     "src": "https://www.trendforce.com/presscenter/news/20260601-13070.html"
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "country": "US",
+     "share": "1Q26 DRAM 22.4%",
+     "products": "DDR5 / 伺服器 DRAM / G9 製程",
+     "note": "1Q26 DRAM 營收 $21.75B +81.6% QoQ；已完成 $1.8B 收購 PSMC 銅鑼 P5 廠，2H27 起貢獻 DRAM 產出",
+     "src": "https://www.trendforce.com/presscenter/news/20260119-12883.html"
+    },
+    {
+     "name": "CXMT 長鑫存儲",
+     "ticker": "—",
+     "country": "CN",
+     "share": "~15%·全球第四",
+     "products": "DDR5-8000 / DDR4 / LPDDR5X-10667",
+     "note": "升格全球第四大 DRAM 廠、產能市占約 15%；展示 DDR5-8000、LPDDR5X-10667；Corsair(Vengeance) 採用、HP/Dell 認證顆粒；受美設備管制(無 EUV、列入美國防部清單)，量產良率落在 2028 後",
+     "src": "https://www.tomshardware.com/pc-components/ram/chinese-memory-vendors-snub-industry-giants-in-favor-of-homegrown-ram-chips-samsung-micron-and-sk-hynix-face-a-chinese-supply-chain-revolt"
+    },
+    {
+     "name": "Samsung / SK hynix（伺服器 DDR5）",
+     "ticker": "005930.KS / 000660.KS",
+     "country": "KR",
+     "share": "server DRAM 主供",
+     "products": "DDR5 RDIMM（伺服器）",
+     "note": "1Q26 砍確認配額 30%，雲端訂單滿足率僅 ~70%；server DRAM 1Q26 +逾60% QoQ",
+     "src": "https://www.techpowerup.com/342331/server-dram-pricing-jumps-50-only-70-of-orders-getting-filled"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "interface_chip"
+    },
+    {
+     "id": "cxl_controller"
+    },
+    {
+     "id": "dram_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "1Q26 DRAM +81% QoQ (TrendForce)",
+     "url": "https://www.trendforce.com/presscenter/news/20260601-13070.html"
+    },
+    {
+     "label": "Server DRAM 漲價/配額 (TechPowerUp)",
+     "url": "https://www.techpowerup.com/342331/server-dram-pricing-jumps-50-only-70-of-orders-getting-filled"
+    }
+   ]
+  },
+  {
+   "id": "niche_dram",
+   "row": "fab",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "利基 / 成熟製程 DRAM（台廠）",
+   "nameEn": "Niche & Mature-Node DRAM",
+   "competition": "highgrowth",
+   "single": "★ 台廠最大受惠 · 三強退出 DDR4/DDR3，南亞科/華邦承接轉單暴利",
+   "desc": "DDR4/DDR3、利基型與成熟製程 DRAM。三強將成熟製程退出、轉進 HBM/先進製程，留下的市場由台廠承接，毛利率與營收暴衝。",
+   "marketSize": "DDR4/DDR3 真空",
+   "growth": "南亞科 YoY +608%",
+   "share": "null",
+   "analysis": "南亞科（2408.TW，1Q26 營收 ~$1.55B +60% QoQ、淨利 NT$260 億、1 月營收 YoY +608%）是 DDR4/DDR3 轉單最大受惠者，2026/4/8 完成 NT$78.72B（~$2.5B）私募增資，Kioxia/SanDisk/Solidigm(SK hynix)/Cisco 四巨頭共持 10.19%（NAND/SSD/雲端首度集體入股台廠鎖 DDR4 供給）；6/2 股價創歷史新高 NT$417.5、外資街高目標價 NT$805；華邦電（2344.TW，1Q26 營收近 $568M +91.4% QoQ、總裁指 2026 營收挑戰 NT$1000 億）利基 DRAM + NOR + CUBE；力積電 PSMC（6770.TWO）成熟製程 DRAM 代工 + 自有 DDR4，Micron 擬收銅鑼廠、長約合作（2027 放量）。利基 DRAM 因三強撤出成「結構性缺貨」、DDR4 緊張外溢至 DDR3，台廠定價權短期極強且南亞科已被下游用股權綁定供給；但 CXMT 與 PSMC/Micron 擴產為中期供給回補風險。",
+   "companies": [
+    {
+     "name": "南亞科 Nanya",
+     "ticker": "2408.TW",
+     "country": "TW",
+     "share": "利基 DRAM 龍頭",
+     "products": "DDR4/DDR3 / 低功耗 DRAM",
+     "note": "1Q26 營收 ~$1.55B +60% QoQ、淨利 NT$260 億；1 月營收 NT$153.1 億 YoY +608%；2026/4 完成 ~$2.5B 私募，Kioxia/SanDisk/Solidigm(SK hynix)/Cisco 持股 10.19%；2Q ASP 再漲雙位數，產能訂至 2027",
+     "src": "https://www.digitimes.com/news/a20260413PD229/nanya-technology-dram-profit-demand-2026.html"
+    },
+    {
+     "name": "華邦電 Winbond",
+     "ticker": "2344.TW",
+     "country": "TW",
+     "share": "利基 DRAM + NOR",
+     "products": "利基 DRAM / NOR Flash / CUBE",
+     "note": "1Q26 營收近 $568M +91.4% QoQ；2026 營收挑戰 NT$1000 億；6/2 股價漲停創新高 NT$184.5，大摩目標價 NT$100→NT$222；產能booked 至 2027、估 6 月底 DRAM 價約為去年底 4 倍",
+     "src": "https://x.com/dnystedt/status/1980088232592474249"
+    },
+    {
+     "name": "力積電 PSMC",
+     "ticker": "6770.TWO",
+     "country": "TW",
+     "share": "成熟製程 DRAM 代工",
+     "products": "DRAM 代工 / 自有 DDR4",
+     "note": "已售銅鑼 P5 廠予 Micron（$1.8B 完成）+ 後段封測長約；轉攻晶圓代工 + 與印度 Tata Electronics 合資擴產",
+     "src": "https://www.trendforce.com/presscenter/news/20260119-12883.html"
+    },
+    {
+     "name": "晶豪科 ESMT",
+     "ticker": "3006.TW",
+     "country": "TW",
+     "share": "利基 DRAM 設計",
+     "products": "利基 DRAM / SRAM IC 設計",
+     "note": "利基 DRAM 漲價循環受惠",
+     "src": "https://www.digitimes.com/news/a20251105PD222/dram-ddr4-demand-nanya-technology-winbond-2025.html"
+    },
+    {
+     "name": "鈺創 Etron",
+     "ticker": "5351.TWO",
+     "country": "TW",
+     "share": "利基 DRAM 設計",
+     "products": "利基 DRAM / USB 控制",
+     "note": "利基 DRAM 缺貨受惠",
+     "src": "https://www.digitimes.com/news/a20251105PD222/dram-ddr4-demand-nanya-technology-winbond-2025.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "dram_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "南亞科 1Q26 獲利 (DigiTimes)",
+     "url": "https://www.digitimes.com/news/a20260413PD229/nanya-technology-dram-profit-demand-2026.html"
+    },
+    {
+     "label": "華邦/南亞 DDR4 受惠 (DigiTimes)",
+     "url": "https://www.digitimes.com/news/a20251105PD222/dram-ddr4-demand-nanya-technology-winbond-2025.html"
+    }
+   ]
+  },
+  {
+   "id": "interface_chip",
+   "row": "chip",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "記憶體介面晶片（RCD/MRCD/PMIC）",
+   "nameEn": "Memory Interface Chips",
+   "competition": "oligopoly",
+   "single": "DDR5 比 DDR4 多 RCD/MRCD/MDB/PMIC/SPD Hub；瀾起+Rambus+Renesas 寡占 RCD",
+   "desc": "DDR5 模組需配 RCD（暫存時脈驅動）、MRCD/MDB（MRDIMM）、PMIC（電源管理）、SPD Hub、溫度感測等介面晶片，每根模組 BOM 較 DDR4 提高，是漲價循環的「賣鏟人」。",
+   "marketSize": "DDR5 BOM 增量",
+   "growth": "DDR5 含金量↑",
+   "share": "null",
+   "analysis": "RCD 三強寡占：Montage 瀾起科技（688008.SS，1Q26 營收 RMB 1.46B +19.51% YoY、歸母淨利 RMB 847.38M +61.30% YoY，DDR5 Gen2/Gen3 RCD 主導、另有 MRCD/MDB、PCIe Retimer，2026/2 港股二上市 6809.HK）、Rambus（RMBS，DDR5 server RCD + 三規格 PMIC PMIC5000/5010/5020 + SPD Hub + 溫度感測）、Renesas（6723.T，DDR5 介面晶片三大供應商之一）。PMIC：Monolithic Power（MPS）、立錡 Richtek（隸屬聯發科）為 DDR5 模組 PMIC 主力。DDR5 介面晶片市場隨 server DDR5 滲透率與 MRDIMM 升級結構性成長，且競爭格局高度集中。",
+   "companies": [
+    {
+     "name": "Montage 瀾起科技",
+     "ticker": "688008.SS",
+     "country": "CN",
+     "share": "DDR5 RCD 領導之一",
+     "products": "RCD/MRCD/MDB / PCIe Retimer / CXL MXC",
+     "note": "1Q26 營收 RMB 1.46B +19.51% YoY、歸母淨利 RMB 847.38M +61.30% YoY；2026/2 港股二上市",
+     "src": "https://www.tipranks.com/news/company-announcements/montage-technology-delivers-strong-q1-2026-growth-with-surging-profit-and-cash-flow"
+    },
+    {
+     "name": "Rambus",
+     "ticker": "RMBS",
+     "country": "US",
+     "share": "DDR5 RCD + server PMIC",
+     "products": "DDR5 server RCD / PMIC5000-5020 / SPD Hub",
+     "note": "DDR5 含金量提升直接受惠；三規格 server PMIC",
+     "src": "https://www.rambus.com/memory-interface-chips/ddr5-dimm-chipset/ddr5-server-pmics/"
+    },
+    {
+     "name": "Renesas 瑞薩",
+     "ticker": "6723.T",
+     "country": "JP",
+     "share": "DDR5 介面晶片三強之一",
+     "products": "DDR5 RCD / 介面晶片",
+     "note": "與瀾起、Rambus 並列 RCD 三大供應商",
+     "src": "https://www.rambus.com/memory-interface-chips/"
+    },
+    {
+     "name": "Monolithic Power (MPS)",
+     "ticker": "MPWR",
+     "country": "US",
+     "share": "DDR5 模組 PMIC",
+     "products": "DDR5 DIMM PMIC（MP5431 等）",
+     "note": "DDR5 模組電源管理主力",
+     "src": "https://www.monolithicpower.com/en/mp5431.html"
+    },
+    {
+     "name": "立錡 Richtek（聯發科）",
+     "ticker": "2454.TW",
+     "country": "TW",
+     "share": "DDR5 PMIC",
+     "products": "DDR5 SODIMM/UDIMM PMIC（RTQ5132 等）",
+     "note": "隸屬聯發科；DDR5 模組 PMIC 供應",
+     "src": "https://www.richtek.com/m/~/media/AN%20PDF/SG022_2026.pdf"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "dram_idm"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dram_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "瀾起 1Q26 業績 (TipRanks)",
+     "url": "https://www.tipranks.com/news/company-announcements/montage-technology-delivers-strong-q1-2026-growth-with-surging-profit-and-cash-flow"
+    },
+    {
+     "label": "Rambus 記憶體介面晶片 (官方)",
+     "url": "https://www.rambus.com/memory-interface-chips/"
+    }
+   ]
+  },
+  {
+   "id": "cxl_controller",
+   "row": "chip",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "CXL 記憶體控制器（新賽道）",
+   "nameEn": "CXL Memory Controllers",
+   "competition": "highgrowth",
+   "single": "★ 繞過 DDR5 牆 · Astera Leo 首發、Marvell Structera 對打；hyperscaler 用 CXL 緩解供給",
+   "desc": "CXL（Compute Express Link）記憶體擴充/池化控制器，讓伺服器透過 PCIe Gen5 介面外掛大容量 DRAM，繞過 DDR5 通道與供給瓶頸，是新興高成長賽道。",
+   "marketSize": "2025 ~$500M",
+   "growth": "CAGR ~25%",
+   "share": "null",
+   "analysis": "Astera Labs（ALAB，Leo CXL 控制器首發業者，1Q26 總營收 $308.4M +93% YoY、2Q26 指引 $355-365M，Leo 在 Azure M 系列 VM 首度商用部署、功能與時程領先）、Marvell（MRVL，Structera A：16 Arm Neoverse V2 核 + 四通道 DDR5-6400 5nm；Structera X：首支四通道 DDR4/DDR5，主打用 CXL 緩解 DDR5 供給）、Montage 瀾起（688008.SS，全球首發 CXL MXC、已供 Samsung/SK hynix，2025/9 推 CXL 3.1 控制器 64GT/s）、Rambus/Microchip（CXL 2.0 控制器 IP / 擴充 ASIC）。2026-H1 CXL 從樣品轉向實機部署：SK hynix 於 HPE Discover 展出第二代 256GB CXL 3.2 模組（單代容量翻倍）並自研 CXL 3.0/3.1 控制器，Samsung 規劃 2026 年內推出 CXL 3.2 Pangea v3 與 CMM-D 2.0（128/256GB），Google 已在生產環境部署 CXL、Nvidia Vera CPU 將支援 CXL 3.1；惟具規模商用普及估仍要到 2027。是 DDR5 超級循環下的結構性受益新 TAM，但放量節奏不確定。",
+   "companies": [
+    {
+     "name": "Astera Labs",
+     "ticker": "ALAB",
+     "country": "US",
+     "share": "CXL 控制器首發/領先",
+     "products": "Leo CXL Smart Memory Controller",
+     "note": "1Q26 營收 $308.4M +93% YoY、2Q26 指引 $355-365M；Leo 於 Azure M 系列 VM 首度商用（GA 估 2026 底）；再拿第二筆 CXL KV Cache 卸載客製設計（新 hyperscaler、AI 推論，2027 出貨）",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001736297/000173629726000017/q126exhibit991.htm"
+    },
+    {
+     "name": "Marvell",
+     "ticker": "MRVL",
+     "country": "US",
+     "share": "Structera 直接對打",
+     "products": "Structera A/X CXL 控制器 / Structera S CXL 交換器",
+     "note": "Structera A=16 Arm 核+四通道 DDR5；Structera X 首支四通道 DDR4/DDR5；OFC2026 推 Structera S 30260 機櫃級 CXL 交換器（260 lane/48TB 共享/4TB/s，3Q26 sampling）",
+     "src": "https://www.servethehome.com/this-cxl-memory-controller-has-16-arm-cores-marvell-structera-a/"
+    },
+    {
+     "name": "Montage 瀾起科技",
+     "ticker": "688008.SS",
+     "country": "CN",
+     "share": "CXL MXC 全球首發",
+     "products": "CXL 2.0/3.1 MXC（M88MX6852）",
+     "note": "已供 Samsung/SK hynix；2025/9 CXL 3.1 控制器 x8 達 64GT/s",
+     "src": "https://newsletter.semianalysis.com/p/astera-labs-is-first-to-cxl-memory"
+    },
+    {
+     "name": "Rambus",
+     "ticker": "RMBS",
+     "country": "US",
+     "share": "CXL 2.0 控制器 IP",
+     "products": "CXL 2.0 Controller IP",
+     "note": "以矽驗證 PCIe 5.0 控制器為基底",
+     "src": "https://www.rambus.com/interface-ip/cxl/cxl2-controller/"
+    },
+    {
+     "name": "Microchip",
+     "ticker": "MCHP",
+     "country": "US",
+     "share": "CXL 記憶體擴充 ASIC",
+     "products": "CXL 記憶體擴充控制器",
+     "note": "與 Astera/瀾起/Marvell/Rambus 並列主要玩家",
+     "src": "https://www.datainsightsmarket.com/reports/cxl-memory-expander-controller-171427"
+    },
+    {
+     "name": "SK hynix（CXL 模組/自研控制器）",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "CXL 模組原廠+自研控制器",
+     "products": "第二代 256GB CXL 3.2 模組 / 自研 CXL 3.0/3.1 控制器",
+     "note": "2026/6 HPE Discover 展出第二代 256GB CXL 3.2 模組（單代容量翻倍）並自研 CXL 3.0/3.1 控制器",
+     "src": "https://www.techtimes.com/articles/318703/20260619/sk-hynix-shows-its-full-ai-server-memory-stack-cxl-32-modules-hpe-discover.htm"
+    },
+    {
+     "name": "Samsung（CXL 模組/控制器）",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "CXL 模組原廠",
+     "products": "CXL 3.2 Pangea v3 / CMM-D 2.0（128/256GB）",
+     "note": "規劃 2026 年內推出 CXL 3.2 規格 Pangea v3、CMM-D 2.0（128/256GB）",
+     "src": "https://www.techtimes.com/articles/318703/20260619/sk-hynix-shows-its-full-ai-server-memory-stack-cxl-32-modules-hpe-discover.htm"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "dram_idm"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "dram_module"
+    },
+    {
+     "id": "ai_server_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Astera Labs 1Q26 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001736297/000173629726000017/q126exhibit991.htm"
+    },
+    {
+     "label": "CXL 緩解 DDR5 供給 (ServeTheHome)",
+     "url": "https://www.servethehome.com/hyper-scalers-are-using-cxl-to-lower-the-impact-of-ddr5-supply-constraints-marvell-arm/"
+    }
+   ]
+  },
+  {
+   "id": "dram_module",
+   "row": "demand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "記憶體模組 / RDIMM 成品",
+   "nameEn": "DRAM Modules & RDIMM",
+   "competition": "competitive",
+   "single": "Kingston 模組龍頭(2024 市占 66%)；台系威剛/十銓/創見/宜鼎漲價循環直接受惠",
+   "desc": "DRAM 模組（UDIMM/SODIMM/RDIMM）與 CXL 記憶體模組成品。漲價循環下，模組商低價庫存增值、ASP 拉升，是最直接受惠的一環。",
+   "marketSize": "漲價直接受惠",
+   "growth": "威剛 +210% YoY",
+   "share": "null",
+   "analysis": "Kingston 金士頓（未上市，2024 全球 DRAM 模組龍頭、市占 66%）；台系：威剛 ADATA（3260.TWO，5 月營收 NT$129.4 億 +210% YoY、手握約 NT$400 億低價庫存）、十銓 Team Group（4967.TW，電競/伺服器模組、1Q26 獲利大增）、創見 Transcend（2451.TW，工控/消費模組）、宜鼎 Innodisk（5289.TWO，工控/伺服器模組）。模組商在漲價初期靠低價庫存賺取最大價差，但屬通路/組裝環節、議價力低於原廠，循環反轉時庫存跌價風險也最直接。",
+   "companies": [
+    {
+     "name": "Kingston 金士頓",
+     "ticker": "—",
+     "country": "US",
+     "share": "全球模組龍頭 66%",
+     "products": "DRAM 模組 / RDIMM / 伺服器記憶體",
+     "note": "未上市；2024 全球 DRAM 模組市占 66%",
+     "src": "https://www.businesswire.com/news/home/20251007661389/en/Kingston-Technology-Remains-Top-DRAM-Module-Supplier-for-2024"
+    },
+    {
+     "name": "威剛 ADATA",
+     "ticker": "3260.TWO",
+     "country": "TW",
+     "share": "台系模組龍頭",
+     "products": "DRAM 模組 / 工控 / SSD",
+     "note": "5 月營收 NT$129.4 億 +210% YoY；手握約 NT$400 億低價庫存",
+     "src": "https://news.cnyes.com/news/id/6488735"
+    },
+    {
+     "name": "十銓 Team Group",
+     "ticker": "4967.TW",
+     "country": "TW",
+     "share": "電競/伺服器模組",
+     "products": "電競記憶體 / 伺服器 DRAM 模組",
+     "note": "1Q26 獲利大增、伺服器模組放量",
+     "src": "https://www.businesswire.com/news/home/20251007661389/en/Kingston-Technology-Remains-Top-DRAM-Module-Supplier-for-2024"
+    },
+    {
+     "name": "創見 Transcend",
+     "ticker": "2451.TW",
+     "country": "TW",
+     "share": "工控/消費模組",
+     "products": "工控記憶體模組 / 消費 DRAM",
+     "note": "漲價循環受惠",
+     "src": "https://www.businesswire.com/news/home/20251007661389/en/Kingston-Technology-Remains-Top-DRAM-Module-Supplier-for-2024"
+    },
+    {
+     "name": "宜鼎 Innodisk",
+     "ticker": "5289.TWO",
+     "country": "TW",
+     "share": "工控/伺服器模組",
+     "products": "工控 DRAM 模組 / 邊緣 AI",
+     "note": "工控/伺服器模組漲價受惠",
+     "src": "https://news.cnyes.com/news/id/6488735"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "dram_idm"
+    },
+    {
+     "id": "niche_dram"
+    },
+    {
+     "id": "interface_chip"
+    },
+    {
+     "id": "cxl_controller"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_server_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Kingston 模組龍頭 (BusinessWire)",
+     "url": "https://www.businesswire.com/news/home/20251007661389/en/Kingston-Technology-Remains-Top-DRAM-Module-Supplier-for-2024"
+    },
+    {
+     "label": "威剛 5 月營收 +210% (cnYES)",
+     "url": "https://news.cnyes.com/news/id/6488735"
+    }
+   ]
+  },
+  {
+   "id": "ai_server_demand",
+   "row": "demand",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "AI 伺服器 / CSP 需求",
+   "nameEn": "AI Server & CSP Demand",
+   "competition": "emerging",
+   "single": "hyperscaler 優先鎖 server DDR5 + 推 CXL 擴充，是漲價與配額緊張的源頭",
+   "desc": "AI 伺服器與雲端服務商（CSP）是 server DDR5 與 CXL 記憶體擴充的最大新增需求，優先鎖貨直接造成商品 DRAM 配額緊張。",
+   "marketSize": "需求錨點",
+   "growth": "結構性催化",
+   "share": "null",
+   "analysis": "Microsoft/Amazon/Google/Meta（US）等 hyperscaler 優先鎖定 server DDR5 供給、並推動 CXL 記憶體擴充繞過 DDR5 通道與供給瓶頸，是 1Q26 原廠砍配額 30%、雲端滿足率僅 ~70% 的源頭；有 LTA 長約者享優先配額、無約企業與 SMB 只能在現貨市場競價，買方議價力明顯分層。OpenAI Stargate 與 Samsung、SK hynix 簽 LOI，目標每月供應達 90 萬片 DRAM 晶圓、估吃掉全球 DRAM 產出約 40%，是本期供需失衡的最大單一推手（惟 2026/3 Oracle 與 OpenAI 因融資談不攏取消 Abilene 600MW 擴建，為需求路徑添不確定）。Dell（DELL）、Supermicro（SMCI）為 AI 伺服器 OEM 出海口。AI 訓練/推論對記憶體容量與頻寬的需求是整個 DRAM 漲價循環的根本驅動，且 CXL 採用使記憶體需求進一步擴張。",
+   "companies": [
+    {
+     "name": "Microsoft / Amazon",
+     "ticker": "MSFT / AMZN",
+     "country": "US",
+     "share": "CSP 鎖貨領先",
+     "products": "AI 雲 infra / server DDR5 鎖貨 / CXL",
+     "note": "優先鎖 server DDR5；Astera Leo 於 Azure M 系列首度商用",
+     "src": "https://www.servethehome.com/hyper-scalers-are-using-cxl-to-lower-the-impact-of-ddr5-supply-constraints-marvell-arm/"
+    },
+    {
+     "name": "Google / Meta",
+     "ticker": "GOOGL / META",
+     "country": "US",
+     "share": "CSP 鎖貨",
+     "products": "AI 訓練/推論 infra / CXL 擴充",
+     "note": "推動 CXL 記憶體擴充緩解 DDR5 供給",
+     "src": "https://www.servethehome.com/hyper-scalers-are-using-cxl-to-lower-the-impact-of-ddr5-supply-constraints-marvell-arm/"
+    },
+    {
+     "name": "Dell Technologies",
+     "ticker": "DELL",
+     "country": "US",
+     "share": "AI 伺服器 OEM",
+     "products": "AI 伺服器 / RDIMM 整機",
+     "note": "server DDR5 整機出海口",
+     "src": "https://www.techpowerup.com/342331/server-dram-pricing-jumps-50-only-70-of-orders-getting-filled"
+    },
+    {
+     "name": "Supermicro",
+     "ticker": "SMCI",
+     "country": "US",
+     "share": "AI 伺服器 OEM",
+     "products": "AI 伺服器 / 大容量記憶體整機",
+     "note": "高密度記憶體伺服器出海口",
+     "src": "https://www.techpowerup.com/342331/server-dram-pricing-jumps-50-only-70-of-orders-getting-filled"
+    },
+    {
+     "name": "Nvidia（記憶體需求驅動）",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI GPU 平台",
+     "products": "GB/Rubin 平台 / 大量 server DRAM / Vera CPU 支援 CXL 3.1",
+     "note": "AI GPU 機櫃帶動 server DDR5 與 CXL 容量需求；Vera CPU 將支援 CXL 3.1",
+     "src": "https://www.servethehome.com/hyper-scalers-are-using-cxl-to-lower-the-impact-of-ddr5-supply-constraints-marvell-arm/"
+    },
+    {
+     "name": "OpenAI（Stargate 需求斷層）",
+     "ticker": "—",
+     "country": "US",
+     "share": "最大單一 DRAM 需求推手",
+     "products": "Stargate AI infra / server DRAM LOI",
+     "note": "與 Samsung、SK hynix 簽 LOI、目標每月供 90 萬片 DRAM 晶圓、估吃全球 DRAM 產出約 40%；2026/3 Oracle 取消 Abilene 600MW 擴建添不確定",
+     "src": "https://www.tomshardware.com/pc-components/dram/openais-stargate-project-to-consume-up-to-40-percent-of-global-dram-output-inks-deal-with-samsung-and-sk-hynix-to-the-tune-of-up-to-900-000-wafers-per-month"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "dram_module"
+    },
+    {
+     "id": "cxl_controller"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "hyperscaler CXL 緩解 DDR5 (ServeTheHome)",
+     "url": "https://www.servethehome.com/hyper-scalers-are-using-cxl-to-lower-the-impact-of-ddr5-supply-constraints-marvell-arm/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "dram_idm",
+   "interface_chip"
+  ],
+  [
+   "dram_idm",
+   "cxl_controller"
+  ],
+  [
+   "dram_idm",
+   "dram_module"
+  ],
+  [
+   "niche_dram",
+   "dram_module"
+  ],
+  [
+   "interface_chip",
+   "dram_module"
+  ],
+  [
+   "cxl_controller",
+   "dram_module"
+  ],
+  [
+   "cxl_controller",
+   "ai_server_demand"
+  ],
+  [
+   "dram_module",
+   "ai_server_demand"
+  ]
+ ],
+ "_proposed": {}
+}

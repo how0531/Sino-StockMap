@@ -1,0 +1,915 @@
+{
+ "id": "solar_pv",
+ "tab": "太陽能",
+ "title": "太陽能 PV 供應鏈 (Solar Photovoltaics)",
+ "subtitle": "Solar PV — AI 資料中心綠電與全球能源轉型撐起全球最大單一發電硬體供應鏈，2025 全球裝置量約 650GW、製造產值 $347 億。五段垂直鏈：多晶矽 → 矽片/長晶 → 電池 → 組件 → 逆變器/系統，加光伏玻璃/EVA膠膜/銀漿輔材。中國全鏈主導：多晶矽 ~93%、矽片 ~97%、電池/組件 ~80%。2026 投資主軸＝深度週期底部（多晶矽 N 型 2026Q1 跌至 ¥40,500/噸、QoQ −24.7% 後企穩，供給側「反內卷」減產催化通威/Daqo 彈升）＋ 盈利拐點（陽光電源 5 月市值登頂中國光伏第一、First Solar 1Q26 毛利率 47% 創紀錄、backlog 47.9GW/$144 億）＋ 技術升級（鈣鈦礦/TOPCon 疊層 34.82%）＋ 美國本土化溢價（45X 約 17 美分/瓦＋FEOC）＋ AI 綠電 PPA（Google-Total 單筆 1GW）。⚠ 但產能過剩 ~2 倍、22 家中國龍頭 1Q26 仍合計虧 105 億人民幣、BNEF 估 2026 裝置量首度年減 0.9% 至 649GW；本質為價值/轉機題材而非單純高成長。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "40+"
+  },
+  {
+   "k": "全球裝置量",
+   "v": "~650GW",
+   "sub": "2025;2026 估 649GW(BNEF −0.9% 首度年減)",
+   "hot": true
+  },
+  {
+   "k": "中國主導",
+   "v": "80–97%",
+   "sub": "多晶矽 93%·矽片 97%·電池/組件 80%",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "up",
+   "label": "上游：多晶矽 / 矽片 / 輔材 Upstream",
+   "main": false
+  },
+  {
+   "id": "mid",
+   "label": "中游：電池 / 逆變器 Cell & Inverter",
+   "main": false
+  },
+  {
+   "id": "module",
+   "label": "組件 / 美國本土化 Module & US Localization",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "系統 / EPC / AI 綠電終端 System & Offtake",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "polysilicon",
+   "row": "up",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "多晶矽 Polysilicon",
+   "nameEn": "Polysilicon",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 中國 ~93% 全球產能；通威+GCL+Daqo+Xinte 約 65% 全球產出",
+   "desc": "太陽能級多晶矽（純度 9–11N，遠低於半導體電子級）是整條鏈最上游，價格高度週期、是 2026 投資底部反轉最大彈性來源。",
+   "marketSize": "N型 ¥40,500/噸",
+   "growth": "2026Q1 築底",
+   "share": "中國 ~93% 產能",
+   "analysis": "中國控制約 93% 全球多晶矽產能、產出約 91%（IEA/Bernreuter）。價格 2023 從 ¥230,000/噸崩至 ¥65,000，N 型 2026Q1 進一步跌至 ¥40,500/噸（QoQ −24.7%）。⚠ 2026-01 中國市場監管總局（SAMR）以涉壟斷叫停由通威/GCL/Daqo/Xinte/East Hope/Asia Silicon 六大廠主導、總額 70 億美元、OPEC 式的多晶矽去產能整併平台（已註冊的『北京廣合前程』、初始資本 ¥30 億形同停擺），要求停止對產量/售價的協同『自律』——鎖喉點供給側自救被掐斷，價格續探歷史低點、築底進程被打斷。供給側雖『有意識縮表』（1 月產量 MoM −8.3%、2 月再 −17.3% 至 ~8.44 萬噸），但庫存仍逾 52 萬噸、6 月通威等復產使供給回升，築底為『紀律』而非新景氣循環。通威 Tongwei（600438.SS，全球第一，產能約 91 萬噸/年三廠，但 2025 全年預虧 90–100 億人民幣並宣布減產）、協鑫 GCL Tech（3800.HK，約 48 萬噸/年、顆粒矽 FBR 成本優勢）、大全 Daqo（DQ NYSE/688303.SS，約 35 萬噸/年；1Q26 多晶矽銷量 QoQ −88.3%、營收由 $2.217 億崩至 $2,670 萬、由毛利 $1,540 萬轉為毛損 $1.394 億——SAMR 介入後龍頭被迫減產但下游需求未回、上游議價力短期反惡化）、新特 Xinte（1799.HK，約 30 萬噸/年）。在地化/西方：Wacker（WCH.DE，德+美田納西、太陽能+電子級）、Hemlock（美密西根 32kt/年，未上市）、OCI（010060.KS，韓+馬來西亞）。⚠ 美國 BIS Section 232 多晶矽國安調查（2025-07 啟動，最遲 2026-03 應結案）懸而未決，若肯定裁定恐重塑全球多晶矽—組件貿易流。CR4（通威+GCL+Daqo+Xinte）約 65% 全球產出。",
+   "companies": [
+    {
+     "name": "通威 Tongwei",
+     "ticker": "600438.SS",
+     "country": "CN",
+     "share": "全球第一 ~91萬噸/年",
+     "products": "多晶矽 / 電池 / 組件一體化",
+     "note": "2025 全年預虧 90–100 億人民幣；宣布減產",
+     "src": "https://www.pv-magazine.com/2026/01/23/chinese-pv-industry-brief-longi-tongwei-announce-sharp-losses-for-fiscal-2025/"
+    },
+    {
+     "name": "協鑫科技 GCL Tech",
+     "ticker": "3800.HK",
+     "country": "HK",
+     "share": "全球第二 ~48萬噸/年",
+     "products": "顆粒矽 FBR 多晶矽",
+     "note": "FBR 顆粒矽成本優勢；鈣鈦礦布局",
+     "src": "https://www.bernreuter.com/polysilicon/manufacturers/"
+    },
+    {
+     "name": "大全新能源 Daqo",
+     "ticker": "DQ",
+     "country": "US",
+     "share": "全球第三 ~35萬噸/年",
+     "products": "高純多晶矽",
+     "note": "NYSE 上市；西方可投資純多晶矽標的；1Q26 銷量 QoQ −88.3%、營收崩至 $2,670 萬、轉毛損 $1.394 億",
+     "src": "https://www.saurenergy.com/solar-energy-news/daqos-high-losses-point-to-chinas-polysilicon-conundrum-11781000"
+    },
+    {
+     "name": "新特能源 Xinte",
+     "ticker": "1799.HK",
+     "country": "HK",
+     "share": "~30萬噸/年",
+     "products": "多晶矽",
+     "note": "特變電工子公司",
+     "src": "https://www.bernreuter.com/polysilicon/manufacturers/"
+    },
+    {
+     "name": "Wacker Chemie",
+     "ticker": "WCH.DE",
+     "country": "DE",
+     "share": "西方龍頭",
+     "products": "太陽能級+電子級多晶矽",
+     "note": "德國+美國田納西廠；非中國供應卡位",
+     "src": "https://www.pv-magazine.com/2025/03/27/the-current-state-of-u-s-polysilicon-production/"
+    },
+    {
+     "name": "Hemlock Semiconductor",
+     "ticker": "—",
+     "country": "US",
+     "share": "美國最大",
+     "products": "太陽能級+電子級多晶矽",
+     "note": "密西根 32kt/年；未上市（陶氏-信越系）；FEOC 受益",
+     "src": "https://www.pv-magazine.com/2025/03/27/the-current-state-of-u-s-polysilicon-production/"
+    },
+    {
+     "name": "OCI",
+     "ticker": "010060.KS",
+     "country": "KR",
+     "share": "韓系",
+     "products": "多晶矽",
+     "note": "馬來西亞為主力產能、規避對華關稅",
+     "src": "https://www.bernreuter.com/polysilicon/manufacturers/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "wafer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "中國多晶矽產能主導 (Bernreuter)",
+     "url": "https://www.bernreuter.com/polysilicon/manufacturers/"
+    },
+    {
+     "label": "多晶矽價格/虧損 (pv magazine)",
+     "url": "https://www.pv-magazine.com/2026/05/15/chinese-pv-industry-brief-daqo-longi-aiko-solar-post-q1-losses/"
+    },
+    {
+     "label": "SAMR 叫停 70 億美元多晶矽整併 (pv magazine)",
+     "url": "https://www.pv-magazine.com/2026/01/09/chinas-competition-regulator-halts-7-billion-polysilicon-consolidation-plan/"
+    },
+    {
+     "label": "Section 232 多晶矽國安調查 (PV Tech)",
+     "url": "https://www.pv-tech.org/section-232-polysilicon-tariffs-could-be-clarified-by-end-of-the-month/"
+    }
+   ]
+  },
+  {
+   "id": "wafer",
+   "row": "up",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "矽片 / 長晶 Ingot & Wafer",
+   "nameEn": "Ingot & Wafer",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 中國產 >97% 全球矽片/長晶；高純石英坩堝為長晶關鍵耗材",
+   "desc": "多晶矽鑄錠拉晶後切片成矽片，是電池的基板；中國掌握逾 97%，幾無西方產能，是供應鏈最集中的環節之一。",
+   "marketSize": "中國 ~97%",
+   "growth": "210mm 大尺寸",
+   "share": "中國 ~97% 全球",
+   "analysis": "中國 2024 產約 97% 全球矽錠與矽片（IEA）。隆基綠能 LONGi（601012.SS，全球最大矽片+組件一體化龍頭，2025 全年預虧 60–65 億人民幣，主打 BC 背接觸 HPBC2.0）、TCL 中環 TCL Zhonghuan（002129.SZ，第二大矽片廠、210mm 大尺寸領先）為雙龍頭。高純石英坩堝為長晶關鍵耗材（高純石英砂 IOTA/挪威 TQC/Sibelco 近寡占）。美國 Qcells 喬治亞 Cartersville 為極少數在地矽片產能（2026Q3 各 3.3GW 錠/片/電池）。",
+   "companies": [
+    {
+     "name": "隆基綠能 LONGi",
+     "ticker": "601012.SS",
+     "country": "CN",
+     "share": "全球矽片+組件龍頭",
+     "products": "單晶矽片 / BC 電池 / 組件",
+     "note": "2025 全年預虧 60–65 億人民幣；HPBC2.0 背接觸",
+     "src": "https://www.pv-magazine.com/2026/01/23/chinese-pv-industry-brief-longi-tongwei-announce-sharp-losses-for-fiscal-2025/"
+    },
+    {
+     "name": "TCL 中環 TCL Zhonghuan",
+     "ticker": "002129.SZ",
+     "country": "CN",
+     "share": "第二大矽片廠",
+     "products": "210mm 大尺寸矽片",
+     "note": "G12 大尺寸領先；出貨第三梯隊組件",
+     "src": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary"
+    },
+    {
+     "name": "弘元綠能 Hongyuan",
+     "ticker": "603185.SS",
+     "country": "CN",
+     "share": "中國矽片廠",
+     "products": "單晶矽片",
+     "note": "矽片專業廠",
+     "src": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary"
+    },
+    {
+     "name": "京運通 Jingyuntong",
+     "ticker": "601908.SS",
+     "country": "CN",
+     "share": "中國矽片/長晶設備",
+     "products": "矽片 / 單晶爐",
+     "note": "長晶設備+矽片",
+     "src": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary"
+    },
+    {
+     "name": "雙良節能 Shuangliang",
+     "ticker": "600481.SS",
+     "country": "CN",
+     "share": "矽片+還原爐",
+     "products": "矽片 / 多晶矽還原爐",
+     "note": "上游設備+矽片",
+     "src": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "polysilicon"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cell"
+    }
+   ],
+   "sources": [
+    {
+     "label": "矽片中國 97% 主導 (IEA)",
+     "url": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary"
+    },
+    {
+     "label": "LONGi 2025 虧損 (pv magazine)",
+     "url": "https://www.pv-magazine.com/2026/01/23/chinese-pv-industry-brief-longi-tongwei-announce-sharp-losses-for-fiscal-2025/"
+    }
+   ]
+  },
+  {
+   "id": "materials",
+   "row": "up",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "輔材：光伏玻璃 / EVA / 銀漿",
+   "nameEn": "Glass · EVA · Silver Paste",
+   "competition": "oligopoly",
+   "single": "光伏玻璃雙寡頭：信義光能 ~30% + 福萊特 ~18%，合計 ~48%",
+   "desc": "光伏玻璃、EVA/POE 膠膜、正面銀漿、焊帶、背板等輔材橫向供給整條鏈，光伏玻璃為高度集中的雙寡頭。",
+   "marketSize": "Xinyi 30%+Flat 18%",
+   "growth": "玻璃雙寡頭",
+   "share": "null",
+   "analysis": "光伏玻璃：信義光能 Xinyi Solar（0968.HK，全球第一、市佔約 30%、熔量約 23,200 噸/日）、福萊特 Flat Glass（6865.HK/601865.SS，第二、約 18%）合計約 48%（雙寡頭）；2026 初玻璃價跌破現金成本而暫停點火新窯。EVA/POE 膠膜：福斯特 Foster（603806.SS，膠膜龍頭）。正面金屬化銀漿：亞太佔 >70% 全球消費（聚和 SHC 帝科 300842.SZ）；焊帶/背板/石英坩堝（石英股份 603688.SS）等。銀漿成本對電池毛利敏感。",
+   "companies": [
+    {
+     "name": "信義光能 Xinyi Solar",
+     "ticker": "0968.HK",
+     "country": "HK",
+     "share": "光伏玻璃全球第一 ~30%",
+     "products": "太陽能光伏玻璃",
+     "note": "熔量約 23,200 噸/日；全球最大",
+     "src": "https://www.mordorintelligence.com/industry-reports/solar-photovoltaic-glass-market"
+    },
+    {
+     "name": "福萊特玻璃 Flat Glass",
+     "ticker": "6865.HK",
+     "country": "HK",
+     "share": "光伏玻璃第二 ~18%",
+     "products": "雙玻組件玻璃",
+     "note": "與信義合計 ~48% 雙寡頭",
+     "src": "https://www.mordorintelligence.com/industry-reports/solar-photovoltaic-glass-market"
+    },
+    {
+     "name": "福斯特 Foster",
+     "ticker": "603806.SS",
+     "country": "CN",
+     "share": "EVA/POE 膠膜龍頭",
+     "products": "封裝膠膜",
+     "note": "光伏封裝膠膜全球第一",
+     "src": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary"
+    },
+    {
+     "name": "帝科股份 DK Electronic",
+     "ticker": "300842.SZ",
+     "country": "CN",
+     "share": "正面銀漿領先",
+     "products": "導電銀漿(正面金屬化)",
+     "note": "亞太佔 >70% 全球銀漿消費",
+     "src": "https://www.targray.com/solar/conductive-paste/silver-paste"
+    },
+    {
+     "name": "石英股份 Pacific Quartz",
+     "ticker": "603688.SS",
+     "country": "CN",
+     "share": "高純石英坩堝",
+     "products": "石英坩堝 / 石英砂",
+     "note": "長晶關鍵耗材",
+     "src": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary"
+    },
+    {
+     "name": "Sibelco / TQC",
+     "ticker": "—",
+     "country": "EU",
+     "share": "高純石英砂寡占",
+     "products": "IOTA 高純石英砂",
+     "note": "比利時/挪威；石英坩堝原料近寡占",
+     "src": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "cell"
+    },
+    {
+     "id": "module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "光伏玻璃雙寡頭市佔 (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/solar-photovoltaic-glass-market"
+    },
+    {
+     "label": "信義光能 (官方)",
+     "url": "https://www.xinyisolar.com/en/SolarPvGlass/index.aspx"
+    }
+   ]
+  },
+  {
+   "id": "cell",
+   "row": "mid",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "太陽能電池 + 技術路線 Cell",
+   "nameEn": "Solar Cell (TOPCon/HJT/Perovskite)",
+   "competition": "redocean",
+   "single": "⚠ 紅海殺價 · TOPCon 主導(>78%);鈣鈦礦/TOPCon 疊層 34.82% 為下一曲線",
+   "desc": "矽片經摻雜/鈍化/金屬化製成電池，是技術路線競爭核心：N 型 TOPCon 已取代 PERC 成主力，HJT/BC/鈣鈦礦疊層為下一代。",
+   "marketSize": "TOPCon 市佔 >78%",
+   "growth": "疊層 34.82%",
+   "share": "null",
+   "analysis": "技術路線：TOPCon（N 型，PV InfoLink 估 2028 前市佔 >78%）、HJT 異質接面（效率高但成本待降）、BC/HPBC 背接觸（LONGi/Aiko 主打）、鈣鈦礦/疊層（效率天花板更高的下一代）。效率紀錄：JinkoSolar 鈣鈦礦/TOPCon 疊層 34.82%、LONGi 實驗室 34.85%、JinkoSolar N 型 TOPCon 27.79%、Oxford PV 疊層組件量產 26.9%。Tongwei+LONGi 2026-03 成立 5GW 鈣鈦礦-TOPCon 合資（2027 目標 28%）。⭑ 疊層商品化新上下游關係：Oxford PV 與天合光能 Trina（688599.SS）簽『中國境內專屬』鈣鈦礦/矽疊層專利授權（含再授權權），由天合在中國製造銷售、已展示 TÜV SÜD 認證 808W 疊層組件；Oxford PV 同步於德國 Brandenburg 廠出貨首批商用疊層組件（2026 推 26% 產品、GW 廠 2026–27），疊層由實驗室走向商用供應鏈。電池專業廠：愛旭股份 Aiko Solar（600732.SS，ABC 全背接觸，但 2026Q1 仍虧）；組件廠多自製電池（晶科/隆基/天合/晶澳）。鈣鈦礦新創：UtmoLight 極電光能（2025-02 啟 1GW 線、25 年功率保固）、GCL 鈣鈦礦、纖納 Microquanta、Caelux（美，鈣鈦礦玻璃 28%）、Tandem PV（美）——皆 100MW 中試規模。⚠ 西方若慢，中國恐先把疊層商品化。",
+   "companies": [
+    {
+     "name": "愛旭股份 Aiko Solar",
+     "ticker": "600732.SS",
+     "country": "CN",
+     "share": "ABC 全背接觸領先",
+     "products": "ABC 背接觸電池 / 組件",
+     "note": "效率領先但 2026Q1 仍虧損",
+     "src": "https://www.pv-magazine.com/2026/05/15/chinese-pv-industry-brief-daqo-longi-aiko-solar-post-q1-losses/"
+    },
+    {
+     "name": "晶科能源 JinkoSolar",
+     "ticker": "JKS",
+     "country": "US",
+     "share": "TOPCon 效率紀錄保持者",
+     "products": "TOPCon 電池 / 鈣鈦礦疊層",
+     "note": "疊層 34.82%、N型 TOPCon 27.79%；NYSE ADR",
+     "src": "https://www.perovskite-info.com/jinko-solar-announces-3482-efficiency-record-its-perovskitetopcon-tandem-cells"
+    },
+    {
+     "name": "鈞達股份 Jietai",
+     "ticker": "002865.SZ",
+     "country": "CN",
+     "share": "純電池代工龍頭",
+     "products": "TOPCon 電池",
+     "note": "專業電池代工（OEM）",
+     "src": "https://www.surgepv.com/blog/topcon-vs-hjt-vs-perovskite-solar-panels"
+    },
+    {
+     "name": "Oxford PV",
+     "ticker": "—",
+     "country": "UK",
+     "share": "西方鈣鈦礦疊層領先",
+     "products": "鈣鈦礦/矽疊層組件",
+     "note": "未上市；量產組件效率 26.9%；德 Brandenburg 出貨首批商用疊層；與天合簽中國境內專屬疊層授權",
+     "src": "https://www.pv-magazine.com/2025/04/09/oxford-pv-trina-solar-enter-patent-licensing-agreement-for-perovskite-silicon-tandem-solar/"
+    },
+    {
+     "name": "天合光能 Trina Solar",
+     "ticker": "688599.SS",
+     "country": "CN",
+     "share": "鈣鈦礦疊層商品化授權方",
+     "products": "鈣鈦礦/矽疊層組件(授權自 Oxford PV)",
+     "note": "獲 Oxford PV 中國境內專屬疊層授權；展示 TÜV SÜD 認證 808W 疊層組件",
+     "src": "https://www.pv-magazine.com/2025/04/09/oxford-pv-trina-solar-enter-patent-licensing-agreement-for-perovskite-silicon-tandem-solar/"
+    },
+    {
+     "name": "Caelux",
+     "ticker": "—",
+     "country": "US",
+     "share": "美鈣鈦礦玻璃",
+     "products": "鈣鈦礦塗層玻璃(疊層)",
+     "note": "未上市；美製疊層、效率達 28%",
+     "src": "https://www.pv-tech.org/caelux-tandem-pv-announce-progress-on-us-perovskite-solar-modules/"
+    },
+    {
+     "name": "極電光能 UtmoLight",
+     "ticker": "—",
+     "country": "CN",
+     "share": "鈣鈦礦量產先行",
+     "products": "鈣鈦礦組件",
+     "note": "未上市；2025-02 啟 1GW 線、25 年功率保固",
+     "src": "https://exoswan.com/perovskite-stocks/"
+    },
+    {
+     "name": "協鑫光電 GCL Perovskite",
+     "ticker": "—",
+     "country": "CN",
+     "share": "鈣鈦礦中試",
+     "products": "鈣鈦礦組件",
+     "note": "GCL 系；100MW 中試線",
+     "src": "https://exoswan.com/perovskite-stocks/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "wafer"
+    },
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "JinkoSolar 疊層 34.82% (Perovskite-Info)",
+     "url": "https://www.perovskite-info.com/jinko-solar-announces-3482-efficiency-record-its-perovskitetopcon-tandem-cells"
+    },
+    {
+     "label": "TOPCon/HJT/鈣鈦礦路線比較 (SurgePV)",
+     "url": "https://www.surgepv.com/blog/topcon-vs-hjt-vs-perovskite-solar-panels"
+    },
+    {
+     "label": "Oxford PV–天合 鈣鈦礦疊層授權 (pv magazine)",
+     "url": "https://www.pv-magazine.com/2025/04/09/oxford-pv-trina-solar-enter-patent-licensing-agreement-for-perovskite-silicon-tandem-solar/"
+    }
+   ]
+  },
+  {
+   "id": "inverter",
+   "row": "mid",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "逆變器 Inverter",
+   "nameEn": "Solar Inverter",
+   "competition": "oligopoly",
+   "single": "真‧賣鏟人 · 華為 24.8% + 陽光電源並列第一；陽光電源 2026-05 市值登頂中國光伏第一、儲能營收首超逆變器",
+   "desc": "逆變器把直流轉交流併網，分串式/集中式/微逆變/功率優化器，是這條鏈相對製造端最早脫離虧損、靠軟體與儲能整合維持盈利的環節；2026-H1 產業價值龍頭由製造紅海正式移轉至『逆變器+儲能』。",
+   "marketSize": "Top10 佔 71%",
+   "growth": "盈利拐點",
+   "share": "null",
+   "analysis": "2026 Wood Mackenzie 排名：華為 Huawei（未上市，市佔 24.8%、串式全球第一）與陽光電源 Sungrow（300274.SZ，並列第一）並列龍頭。⚠ 結構轉折：Sungrow 2026-05 以約 ¥2,931 億（$546 億）市值登頂中國光伏第一、超越所有純製造龍頭；且 2025『儲能系統』營收（¥372.87 億、YoY +49.4%、佔總營收 41.8%）首度超越光伏逆變器（¥311.36 億），確立『賣鏟+儲能整合』脫離製造紅海。惟價格戰外溢：Sungrow 1Q26 營收 YoY −18% 至 ¥156 億、淨利 −40% 至 ¥23 億，盈利拐點尚未全面確立。SMA Solar（S92.DE，德國第三）、固德威 GoodWe（688390.SS，第四）、Enphase（ENPH，美國微逆變器龍頭、住宅）、SolarEdge（SEDG，以色列/美，功率優化器，住宅去庫存後轉機）。其他 Top10：錦浪 Solis（300763.SZ）、Hoymiles 昱能（688032.SS）、Fronius（奧）、Solplanet、APsystems。Top10 佔 71% 市佔。",
+   "companies": [
+    {
+     "name": "華為 Huawei",
+     "ticker": "—",
+     "country": "CN",
+     "share": "逆變器全球第一 24.8%",
+     "products": "串式逆變器 / FusionSolar",
+     "note": "未上市；市佔 24.8% 串式第一",
+     "src": "https://www.pv-magazine.com/2026/01/05/huawei-sungrow-lead-wood-mackenzies-solar-inverter-market-ranking/"
+    },
+    {
+     "name": "陽光電源 Sungrow",
+     "ticker": "300274.SZ",
+     "country": "CN",
+     "share": "並列第一·儲能營收已超逆變器",
+     "products": "光伏逆變器 / 儲能 PCS",
+     "note": "2026-05 市值 ¥2,931 億登頂中國光伏第一；2025 儲能營收 ¥372.87 億(+49.4%) 首超逆變器；惟 1Q26 營收 −18%、淨利 −40%",
+     "src": "https://www.pv-magazine.com/2026/04/03/chinese-pv-industry-brief-sungrow-revenue-up-15-as-storage-surpasses-inverters/"
+    },
+    {
+     "name": "SMA Solar",
+     "ticker": "S92.DE",
+     "country": "DE",
+     "share": "全球第三",
+     "products": "串式/集中式逆變器",
+     "note": "德系龍頭",
+     "src": "https://www.solarpowerworldonline.com/2026/01/woodmac-huawei-and-sungrow-held-largest-inverter-market-share-in-1st-half-of-2025/"
+    },
+    {
+     "name": "固德威 GoodWe",
+     "ticker": "688390.SS",
+     "country": "CN",
+     "share": "全球第四",
+     "products": "戶用/工商業逆變器",
+     "note": "Top5",
+     "src": "https://www.solarpowerworldonline.com/2026/01/woodmac-huawei-and-sungrow-held-largest-inverter-market-share-in-1st-half-of-2025/"
+    },
+    {
+     "name": "Enphase Energy",
+     "ticker": "ENPH",
+     "country": "US",
+     "share": "微逆變器龍頭",
+     "products": "微逆變器 / 戶用儲能",
+     "note": "美國住宅市場主力；Top5",
+     "src": "https://www.pv-magazine.com/2026/01/05/huawei-sungrow-lead-wood-mackenzies-solar-inverter-market-ranking/"
+    },
+    {
+     "name": "SolarEdge",
+     "ticker": "SEDG",
+     "country": "IL",
+     "share": "功率優化器領先",
+     "products": "功率優化器 / 逆變器",
+     "note": "住宅去庫存後轉機",
+     "src": "https://www.solarpowerworldonline.com/2026/01/woodmac-huawei-and-sungrow-held-largest-inverter-market-share-in-1st-half-of-2025/"
+    },
+    {
+     "name": "錦浪科技 Ginlong Solis",
+     "ticker": "300763.SZ",
+     "country": "CN",
+     "share": "Top10 串式",
+     "products": "串式逆變器",
+     "note": "Solis 品牌；Top10",
+     "src": "https://www.solarpowerworldonline.com/2026/01/woodmac-huawei-and-sungrow-held-largest-inverter-market-share-in-1st-half-of-2025/"
+    },
+    {
+     "name": "昱能科技 Hoymiles",
+     "ticker": "688032.SS",
+     "country": "CN",
+     "share": "Top10 微逆",
+     "products": "微逆變器 / 優化器",
+     "note": "2026 首入 Top10（第六）",
+     "src": "https://www.solarpowerworldonline.com/2026/01/woodmac-huawei-and-sungrow-held-largest-inverter-market-share-in-1st-half-of-2025/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cell"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "system"
+    }
+   ],
+   "sources": [
+    {
+     "label": "華為/陽光電源逆變器排名 (pv magazine)",
+     "url": "https://www.pv-magazine.com/2026/01/05/huawei-sungrow-lead-wood-mackenzies-solar-inverter-market-ranking/"
+    },
+    {
+     "label": "WoodMac H1 2025 逆變器排名 (Solar Power World)",
+     "url": "https://www.solarpowerworldonline.com/2026/01/woodmac-huawei-and-sungrow-held-largest-inverter-market-share-in-1st-half-of-2025/"
+    },
+    {
+     "label": "Sungrow 儲能營收首超逆變器 (pv magazine)",
+     "url": "https://www.pv-magazine.com/2026/04/03/chinese-pv-industry-brief-sungrow-revenue-up-15-as-storage-surpasses-inverters/"
+    }
+   ]
+  },
+  {
+   "id": "module",
+   "row": "module",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "組件 Module（晶矽）",
+   "nameEn": "PV Module (c-Si)",
+   "competition": "redocean",
+   "single": "⚠ 紅海 · 2025 上市廠出貨 536GW、CR4 ~58%；龍頭全面虧損",
+   "desc": "電池串焊、層壓、裝框成組件，是出貨量最大、品牌最分散、價格戰最慘烈的環節，中國 ~80% 產能。",
+   "marketSize": "2025 出貨 536GW",
+   "growth": "CR4 ~58%",
+   "share": "null",
+   "analysis": "2025 全球上市廠組件出貨約 536GW、CR4 約 58%（InfoLink/TaiyangNews）。晶科能源 JinkoSolar（JKS/688223.SS，80–90GW 並列第一，TOPCon 3.0）、隆基綠能 LONGi（601012.SS，80–90GW 並列第一，BC 路線）、天合光能 Trina Solar（688599.SS，60–70GW，210/210R）、晶澳科技 JA Solar（002459.SZ，60–70GW，TOPCon 3.0+BC）為前四強；通威、正泰新能 Astronergy 為第三梯隊（30–50GW）；阿特斯 Canadian Solar（CSIQ，20–30GW，美股可投資、儲能 e-Storage 雙引擎）。⚠ 1Q26 龍頭全面虧損但內部分化：隆基淨虧擴大 34.2% 至 ¥19.2 億（部分匯損）、晶科淨虧 ¥13.5 億，唯獨天合營收 YoY +17.4% 至 ¥168.3 億、淨虧大幅收窄 78.55% 至 ¥2.83 億——成本控制與儲能/海外轉佳者開始拉開差距；組件報價 RMB0.70/W 級徘徊成本線。",
+   "companies": [
+    {
+     "name": "晶科能源 JinkoSolar",
+     "ticker": "JKS",
+     "country": "US",
+     "share": "出貨並列第一 80–90GW",
+     "products": "TOPCon 3.0 組件",
+     "note": "NYSE ADR；A 股 688223.SS",
+     "src": "https://taiyangnews.info/business/solar-module-shipment-2025-ranking"
+    },
+    {
+     "name": "隆基綠能 LONGi",
+     "ticker": "601012.SS",
+     "country": "CN",
+     "share": "出貨並列第一 80–90GW",
+     "products": "BC 組件 / Hi-MO",
+     "note": "BC 背接觸路線；2025 預虧 60–65 億；1Q26 淨虧擴大 34.2% 至 ¥19.2 億（含匯損）",
+     "src": "https://www.pv-magazine.com/2026/05/08/chinese-pv-industry-brief-jinkosolar-longi-trina-solar-ja-solar-post-q1-losses/"
+    },
+    {
+     "name": "天合光能 Trina Solar",
+     "ticker": "688599.SS",
+     "country": "CN",
+     "share": "出貨第三 60–70GW",
+     "products": "210/210R Vertex 組件",
+     "note": "210 大尺寸標準化；1Q26 營收 +17.4% 至 ¥168.3 億、淨虧收窄 78.55% 至 ¥2.83 億（同業中最佳）",
+     "src": "https://www.pv-magazine.com/2026/05/08/chinese-pv-industry-brief-jinkosolar-longi-trina-solar-ja-solar-post-q1-losses/"
+    },
+    {
+     "name": "晶澳科技 JA Solar",
+     "ticker": "002459.SZ",
+     "country": "CN",
+     "share": "出貨並列第三 60–70GW",
+     "products": "TOPCon 3.0 + BC 組件",
+     "note": "DeepBlue 系列",
+     "src": "https://taiyangnews.info/business/solar-module-shipment-2025-ranking"
+    },
+    {
+     "name": "阿特斯 Canadian Solar",
+     "ticker": "CSIQ",
+     "country": "CA",
+     "share": "20–30GW + 儲能",
+     "products": "組件 / e-Storage 儲能",
+     "note": "NASDAQ；組件+儲能雙引擎",
+     "src": "https://taiyangnews.info/business/solar-module-shipment-2025-ranking"
+    },
+    {
+     "name": "正泰新能 Astronergy",
+     "ticker": "601877.SS",
+     "country": "CN",
+     "share": "第三梯隊 30–50GW",
+     "products": "TOPCon 組件",
+     "note": "正泰電器系（601877.SS 為母）",
+     "src": "https://taiyangnews.info/business/solar-module-shipment-2025-ranking"
+    },
+    {
+     "name": "通威 Tongwei",
+     "ticker": "600438.SS",
+     "country": "CN",
+     "share": "第三梯隊 30–50GW",
+     "products": "多晶矽→電池→組件一體化",
+     "note": "向下游組件延伸",
+     "src": "https://www.infolink-group.com/energy-article/solar-topic-infolink-2025-global-module-shipment-ranking-combined-shipments-reach-536-gw"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "cell"
+    },
+    {
+     "id": "materials"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "system"
+    }
+   ],
+   "sources": [
+    {
+     "label": "2025 組件出貨排名 536GW (TaiyangNews)",
+     "url": "https://taiyangnews.info/business/solar-module-shipment-2025-ranking"
+    },
+    {
+     "label": "InfoLink 2025 組件出貨排名",
+     "url": "https://www.infolink-group.com/energy-article/solar-topic-infolink-2025-global-module-shipment-ranking-combined-shipments-reach-536-gw"
+    },
+    {
+     "label": "晶科/隆基/天合/晶澳 1Q26 虧損分化 (pv magazine)",
+     "url": "https://www.pv-magazine.com/2026/05/08/chinese-pv-industry-brief-jinkosolar-longi-trina-solar-ja-solar-post-q1-losses/"
+    }
+   ]
+  },
+  {
+   "id": "us_local",
+   "row": "module",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "美國本土化（First Solar / Qcells）",
+   "nameEn": "US Localization",
+   "competition": "highgrowth",
+   "single": "政策護城河 · Sec 201 已到期 + 對印/印尼/寮 AD/CVD 封死改道；美交貨組件 $0.27–0.32/W vs 東南亞 ~$0.10/W",
+   "desc": "美國藉 IRA 45X 製造稅額（組件約 17 美分/瓦）+ 對華/東南亞關稅 + FEOC（禁受中國控制實體）推動本土製造，催生有別於中國紅海的政策溢價環節。",
+   "marketSize": "backlog 47.9GW",
+   "growth": "毛利率 47%",
+   "share": "null",
+   "analysis": "⚠ 2026-H1 美國市場規則重大重設：Section 201 進口面板防衛關稅（末期 14%）已於 2026-02-06 到期；同時 Commerce 對印度/印尼/寮國新一輪 AD/CVD（印度補貼稅率高達 ~126%、合併現金保證金 100–234%）封死『東南亞改道』，使美國交貨組件報價拉高至 $0.27–0.32/W（東南亞用中國多晶矽僅 ~$0.10/W），大幅強化 FEOC 受益本土產能護城河。First Solar（FSLR，CdTe 薄膜非晶矽，天然繞開晶矽關稅與 FEOC）：1Q26 營收 $10.4 億（YoY +24%）、毛利率 47%（+6pp、主因 45X）、出貨 3.8GW（美產 3GW、稼動率 96%）、合約 backlog 47.9GW/$144 億（至 2030、產能至 2028 已大致售罄）；CuRe 技術已於 Perrysburg 完成導入、2028H1 前複製全 Series 6/7 產線（額外最高 $6 億技術調整營收）；美國 14GW 製造產能（阿拉巴馬/路易斯安那/俄亥俄）+南卡新廠。Hanwha Qcells（韓 Hanwha 子公司）：喬治亞州 Cartersville「Solar Hub」2026 啟用、2026 已在美量產電池、錠/片/電池/組件全鏈，2026Q3 各 3.3GW（電池）+3.5GW（組件），美國最大矽基組件廠（總產能 8.6GW），與 First Solar(CdTe) 形成晶矽/薄膜雙本土供應軸。⚠ 護城河高度綁定美國政策延續性（45X 至 2032、2030 起退坡）+ Section 232 多晶矽裁定方向。",
+   "companies": [
+    {
+     "name": "First Solar",
+     "ticker": "FSLR",
+     "country": "US",
+     "share": "美國 CdTe 薄膜龍頭",
+     "products": "CdTe 薄膜組件",
+     "note": "1Q26 毛利率 47%、backlog 47.9GW/$144 億（產能至 2028 售罄）；CuRe 量產複製貢獻額外 $6 億；繞開晶矽關稅",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/04/30/first-solar-fslr-q1-2026-earnings-transcript/"
+    },
+    {
+     "name": "Hanwha Qcells",
+     "ticker": "009830.KS",
+     "country": "KR",
+     "share": "美國最大矽基組件廠",
+     "products": "錠/片/電池/組件全鏈",
+     "note": "喬治亞 Cartersville Solar Hub；美產能 8.6GW",
+     "src": "https://www.solarpowerworldonline.com/2026/06/qcells-starts-production-of-solar-cells-in-united-states/"
+    },
+    {
+     "name": "Hemlock Semiconductor",
+     "ticker": "—",
+     "country": "US",
+     "share": "美國多晶矽本土供應",
+     "products": "太陽能級多晶矽",
+     "note": "密西根 32kt/年；FEOC 受益（未上市）",
+     "src": "https://www.pv-magazine.com/2025/03/27/the-current-state-of-u-s-polysilicon-production/"
+    },
+    {
+     "name": "REC Silicon",
+     "ticker": "RECSI.OL",
+     "country": "NO",
+     "share": "美 FBR 多晶矽",
+     "products": "FBR 顆粒多晶矽",
+     "note": "華盛頓州廠；Hanwha 持股",
+     "src": "https://www.pv-magazine.com/2025/03/27/the-current-state-of-u-s-polysilicon-production/"
+    },
+    {
+     "name": "Maxeon Solar",
+     "ticker": "MAXN",
+     "country": "US",
+     "share": "美在地組件/IBC",
+     "products": "IBC 電池 / 組件",
+     "note": "TCL 系；新墨西哥廠布局",
+     "src": "https://www.canarymedia.com/articles/clean-energy-manufacturing/us-solar-manufacturing-in-2026"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "polysilicon"
+    },
+    {
+     "id": "cell"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "system"
+    }
+   ],
+   "sources": [
+    {
+     "label": "First Solar 1Q26 創紀錄 (PV Tech)",
+     "url": "https://www.pv-tech.org/first-solar-sees-record-sales-and-income-growth-in-q1-2026/"
+    },
+    {
+     "label": "Qcells 美國電池量產 (Solar Power World)",
+     "url": "https://www.solarpowerworldonline.com/2026/06/qcells-starts-production-of-solar-cells-in-united-states/"
+    },
+    {
+     "label": "Section 201 進口面板關稅到期 (Solar Power World)",
+     "url": "https://www.solarpowerworldonline.com/2026/02/end-of-an-era-sec-201-tariffs-on-imported-solar-panels-expire/"
+    },
+    {
+     "label": "First Solar 1Q26 法說逐字稿 (Fool)",
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/04/30/first-solar-fslr-q1-2026-earnings-transcript/"
+    }
+   ]
+  },
+  {
+   "id": "system",
+   "row": "demand",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "系統 / EPC / 電站 / AI 綠電終端",
+   "nameEn": "System · EPC · Utility · AI Offtake",
+   "competition": "competitive",
+   "single": "AI 綠電 PPA：Google-TotalEnergies 單筆 1GW；超大規模業者包下全球約半數清潔能源 PPA",
+   "desc": "組件+逆變器+支架+EPC 整合成電站，終端為公用事業/工商業/住宅，AI 資料中心 GW 級太陽能 PPA 成新需求錨。",
+   "marketSize": "~650GW/年",
+   "growth": "AI PPA 錨",
+   "share": "null",
+   "analysis": "終端需求：2025 全球裝置量約 650GW（中國約 372GW），BNEF 估 2026 首度年減 0.9% 至 649GW、2027 反彈 688GW；非中國（印度/非洲/美國）續增至約 308GW。AI 綠電 PPA：2026-02 TotalEnergies 與 Google 簽兩筆 15 年共 1GW 德州太陽能 PPA（首見單筆 GW 級）；Amazon/Meta/Google/Microsoft 2025 包下全球約半數清潔能源 PPA。電站開發/EPC：NextEra Energy（NEE，美最大再生能源開發商）、Brookfield Renewable（BEPC）、TotalEnergies（TTE）。支架追蹤系統：Nextracker（NXT，全球追蹤支架龍頭）、Array Technologies（ARRY）、Shoals（SHLS，電氣平衡系統 BOS）。⚠ 太陽能間歇性使其多搭配 ess 儲能/核能成 24/7 組合，PPA 為需求底而非即時獲利。",
+   "companies": [
+    {
+     "name": "NextEra Energy",
+     "ticker": "NEE",
+     "country": "US",
+     "share": "美最大再生能源開發",
+     "products": "太陽能/風電/儲能電站",
+     "note": "公用事業級開發龍頭",
+     "src": "https://pv-magazine-usa.com/2026/03/13/ai-datacenters-rewrite-the-solar-ppa-playbook/"
+    },
+    {
+     "name": "Nextracker",
+     "ticker": "NXT",
+     "country": "US",
+     "share": "追蹤支架全球第一",
+     "products": "單軸追蹤支架系統",
+     "note": "公用事業電站追蹤系統龍頭",
+     "src": "https://pv-magazine-usa.com/2026/03/13/ai-datacenters-rewrite-the-solar-ppa-playbook/"
+    },
+    {
+     "name": "Array Technologies",
+     "ticker": "ARRY",
+     "country": "US",
+     "share": "追蹤支架第二",
+     "products": "DuraTrack 追蹤支架",
+     "note": "美追蹤支架",
+     "src": "https://pv-magazine-usa.com/2026/03/13/ai-datacenters-rewrite-the-solar-ppa-playbook/"
+    },
+    {
+     "name": "Shoals Technologies",
+     "ticker": "SHLS",
+     "country": "US",
+     "share": "電氣 BOS",
+     "products": "電氣平衡系統 / 線束",
+     "note": "電站電氣連接 BOS",
+     "src": "https://pv-magazine-usa.com/2026/03/13/ai-datacenters-rewrite-the-solar-ppa-playbook/"
+    },
+    {
+     "name": "TotalEnergies",
+     "ticker": "TTE.PA",
+     "country": "FR",
+     "share": "AI 綠電 PPA 供應",
+     "products": "太陽能電站 / PPA",
+     "note": "2026-02 與 Google 簽 1GW 德州 PPA（首見單筆 GW 級）",
+     "src": "https://enkiai.com/solar/gigawatt-ppas-how-ai-redefined-hyperscaler-energy-in-2026/"
+    },
+    {
+     "name": "Brookfield Renewable",
+     "ticker": "BEPC",
+     "country": "CA",
+     "share": "全球再生能源資產",
+     "products": "太陽能/水電/風電電站",
+     "note": "與 Microsoft 簽大規模再生能源框架",
+     "src": "https://enkiai.com/solar/gigawatt-ppas-how-ai-redefined-hyperscaler-energy-in-2026/"
+    },
+    {
+     "name": "Google (Alphabet)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "AI 綠電 PPA 需求方",
+     "products": "GW 級太陽能 PPA 採購",
+     "note": "2026-02 簽 1GW 德州太陽能 PPA",
+     "src": "https://enkiai.com/solar/gigawatt-ppas-how-ai-redefined-hyperscaler-energy-in-2026/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "module"
+    },
+    {
+     "id": "inverter"
+    },
+    {
+     "id": "us_local"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "AI 資料中心改寫太陽能 PPA (pv magazine USA)",
+     "url": "https://pv-magazine-usa.com/2026/03/13/ai-datacenters-rewrite-the-solar-ppa-playbook/"
+    },
+    {
+     "label": "2026 裝置量首度年減 (TaiyangNews)",
+     "url": "https://taiyangnews.info/business/global-solar-pv-installations-to-decline-in-2026"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "polysilicon",
+   "wafer"
+  ],
+  [
+   "wafer",
+   "cell"
+  ],
+  [
+   "materials",
+   "cell"
+  ],
+  [
+   "materials",
+   "module"
+  ],
+  [
+   "cell",
+   "module"
+  ],
+  [
+   "cell",
+   "inverter"
+  ],
+  [
+   "cell",
+   "us_local"
+  ],
+  [
+   "polysilicon",
+   "us_local"
+  ],
+  [
+   "module",
+   "system"
+  ],
+  [
+   "inverter",
+   "system"
+  ],
+  [
+   "us_local",
+   "system"
+  ]
+ ],
+ "_proposed": {}
+}

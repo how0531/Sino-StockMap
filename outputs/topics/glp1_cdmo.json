@@ -1,0 +1,495 @@
+{
+ "id": "glp1_cdmo",
+ "tab": "GLP-1/胜肽 CDMO",
+ "title": "GLP-1 / 胜肽藥物製造委外供應鏈 (GLP-1 / Peptide CDMO & Fill-Finish)",
+ "subtitle": "GLP-1（瘦瘦針/減重藥）終端市場 2024 約 $535 億 → 2030 上看 $1,567 億（CAGR ~17%），但真正稀缺的不是分子、而是「能合成出公斤級高純度胜肽 + 把它無菌充填進注射筆」的產能——這是製造端的賣鏟人，與 ai_pharma（藥物發現）零重疊。價值鏈四層：①上游 SPPS 樹脂／Fmoc 保護胺基酸／製程工具（Iris Biotech、CEM、Danaher-Cytiva 層析）→ ②胜肽原料藥 API CDMO（本主題樞紐）→ ③無菌充填／製劑／注射筆裝置（West 高值元件、Catalent 已被 Novo 買下）→ ④品牌藥廠＋生物相似藥（Novo、Lilly＋2026 專利到期後的學名藥群）。2026 關鍵數字：Bachem（BANB.SW）2025 銷售 CHF 6.95 億（本幣 +19%），2026 指引本幣 +35~45%、Building K 大規模產線通過瑞士藥監查核；PolyPeptide（PPGN.SW）2025 營收 €3.89 億（+15.6%）、2026 固定匯率指引 +20~25%、比利時 Braine 模組化新產能支撐一張大型 GLP-1 商業合約；Lonza（LONN.SW）整合胜肽 API＋製劑＋生物共軛（ADC）一站式；CordenPharma（未上市）€900m 擴 SPPS、Colorado 反應器 2028 翻倍至 >42,000L；藥明康德（603259.SS / 2359.HK 為藥明生物，注意區分）TIDES 多肽 2024 收入 58 億元（+70%）、固相反應釜 2025 突破 100,000L、GLP-1 佔在手訂單 20%+；West Pharma（WST）Q1'26 高值元件 +30%、GLP-1 約佔總營收 10%、定調 18% 營收機會。絃外之音：① 真正的瓶頸正從「SPPS 合成反應器」往下游「無菌充填＋層析純化耗材」轉移——當全球 SPPS 反應器 2028 翻倍後，吃緊的會是 fill-finish 與 TFF 純化膜，這是 West、Danaher-Cytiva 被低估的二階受惠；② Novo 以 $165 億買下 Catalent 三座充填廠，等於把最稀缺的充填產能「內部化」，反讓獨立充填產能更值錢；③ 口服 GLP-1（口服 semaglutide、orforglipron 小分子）放量會改變劑型結構，對純胜肽 API CDMO 是變數而非單純利多；④ 2026 司美格鲁肽在中國（3 月）／美國（6 月起）等地專利陸續到期，中國胜肽 API（圣诺、诺泰）搶生物相似藥訂單，但 30+ 廠擠入恐 2026-27 出現原料藥產能過剩。⚠ 與既有主題的重疊：與 ai_pharma（AI 藥物發現）零重疊、為其製造端互補；與 glass_substrate/cdmo 類無交集。非投資建議。",
+ "category": "health",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "GLP-1 終端市場",
+   "v": "$1,567億",
+   "sub": "2024 $535 億 → 2030 $1,567 億（CAGR ~17%）；胜肽 CDMO CAGR ~12.5%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "2026 司美格鲁肽多地專利到期＋SPPS 反應器 2028 翻倍 / 中國原料藥產能過剩＋口服劑型改變需求結構",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "上游：SPPS 樹脂・保護胺基酸・製程工具（賣鏟人的鏟）",
+   "main": false
+  },
+  {
+   "id": "api",
+   "label": "中游：胜肽原料藥 API CDMO（樞紐・產能瓶頸）",
+   "main": true
+  },
+  {
+   "id": "finish",
+   "label": "下游：無菌充填・製劑・注射筆裝置",
+   "main": false
+  },
+  {
+   "id": "brand",
+   "label": "終端：品牌藥廠 + 生物相似藥需求",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "spps_reagents",
+   "row": "upstream",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "上游：SPPS 樹脂 / Fmoc 保護胺基酸 / 偶聯試劑",
+   "nameEn": "SPPS Resins · Protected Amino Acids · Coupling Reagents",
+   "competition": "oligopoly",
+   "single": "卡位點 · 高純度 Fmoc 保護胺基酸與樹脂是 SPPS 良率關鍵，Iris Biotech 的 Palm-Glu(OSu)-OtBu 等脂肪酸側鏈試劑直接決定 liraglutide/semaglutide 合成",
+   "desc": "固相合成（SPPS）的「原料的原料」——樹脂（聚苯乙烯/PEG）、Fmoc 保護胺基酸、偶聯活化劑（Oxyma/HATU），以及脂肪酸修飾側鏈試劑。是賣鏟人手上的那把鏟。",
+   "marketSize": "胜肽合成試劑/樹脂，併入胜肽合成大盤",
+   "growth": "隨 GLP-1 SPPS 反應器擴產同步放量",
+   "share": "null",
+   "analysis": "GLP-1（semaglutide/liraglutide/tirzepatide）以 SPPS 逐步合成，純度與良率高度依賴上游試劑品質：Iris Biotech（德國，未上市）供應保護胺基酸、樹脂與關鍵脂肪酸側鏈試劑（如 liraglutide 用的 Palm-Glu(OSu)-OtBu），是隱性卡位；CEM（美國，未上市）以微波 SPPS 全套試劑＋Oxyma 活化劑見長；Bachem（BANB.SW）除做 API 也自供胺基酸衍生物（垂直整合）。此層集中度高、技術門檻在「難合成胜肽的雜質控制」，是上游被低估的護城河。",
+   "companies": [
+    {
+     "name": "Iris Biotech",
+     "ticker": "—",
+     "country": "DE",
+     "share": "保護胺基酸/樹脂利基領導",
+     "products": "Fmoc 保護胺基酸 / 樹脂 / 脂肪酸側鏈試劑",
+     "note": "未上市；liraglutide 用 Palm-Glu(OSu)-OtBu 等關鍵試劑供應商",
+     "src": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6648002/"
+    },
+    {
+     "name": "CEM Corporation",
+     "ticker": "—",
+     "country": "US",
+     "share": "微波 SPPS 試劑領導",
+     "products": "Fmoc 胺基酸 / PEG・聚苯乙烯樹脂 / Oxyma 活化劑",
+     "note": "未上市；微波加速 SPPS、難合成胜肽試劑",
+     "src": "https://cem.com/en/spps-chemicals"
+    },
+    {
+     "name": "Bachem（自供胺基酸）",
+     "ticker": "BANB.SW",
+     "country": "CH",
+     "share": "垂直整合自供原料",
+     "products": "胺基酸衍生物 / 偶聯試劑（內部+外售）",
+     "note": "API 龍頭同時自供上游試劑，垂直整合降成本",
+     "src": "https://www.bachem.com/knowledge-center/solid-phase-peptide-synthesis-spps-explained/"
+    },
+    {
+     "name": "Merck KGaA / Sigma-Aldrich",
+     "ticker": "MRK.DE",
+     "country": "DE",
+     "share": "通用試劑大盤",
+     "products": "胺基酸 / 試劑 / 耗材",
+     "note": "通用生命科學試劑供應"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "peptide_api"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Liraglutide SPPS 用 BAL 樹脂與 Iris Biotech 脂肪酸試劑 (PMC)",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6648002/"
+    },
+    {
+     "label": "CEM SPPS 試劑/樹脂/Oxyma",
+     "url": "https://cem.com/en/spps-chemicals"
+    }
+   ]
+  },
+  {
+   "id": "process_tools",
+   "row": "upstream",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "上游：製程工具 / 層析純化 / TFF 膜",
+   "nameEn": "Process Tools · Chromatography · TFF Membranes",
+   "competition": "oligopoly",
+   "single": "二階瓶頸 · GLP-1 缺乏耐受嚴苛濃縮條件的低分子量截留 TFF 純化膜——當 SPPS 反應器翻倍後，純化耗材成下一個吃緊環節",
+   "desc": "胜肽合成後的純化與製程設備：製備級／製程層析（純化粗胜肽）、切向流過濾（TFF）膜、單次性反應器與生物製程耗材——賣鏟人的「精煉廠設備」。",
+   "marketSize": "製程層析/生物製程工具 數十億美元",
+   "growth": "Danaher 生技 Q1'26 +9%、設備訂單 YoY +30%",
+   "share": "null",
+   "analysis": "胜肽 CDMO 擴產不只缺合成反應器，更缺下游純化產能：Danaher（DHR）旗下 Cytiva 是製程層析耗材龍頭，Q1'26 生技營收 +9%、設備訂單 YoY +30%（近兩年首見正成長），層析與 TFF 純化是 GLP-1 良率關鍵。Thermo Fisher（TMO）同為製程層析雙雄。產業痛點：GLP-1 濃縮缺乏「化學耐受、低分子量截留」的 TFF 膜，是被低估的二階卡位。Sartorius（SRT.DE）供單次性與過濾耗材。",
+   "companies": [
+    {
+     "name": "Danaher (Cytiva)",
+     "ticker": "DHR",
+     "country": "US",
+     "share": "製程層析耗材龍頭",
+     "products": "Cytiva 層析樹脂 / TFF / X-platform 反應器",
+     "note": "Q1'26 生技 +9%、設備訂單 YoY +30%；GLP-1 純化耗材受惠",
+     "src": "https://www.labmanager.com/what-danaher-s-q1-2026-earnings-mean-for-lab-managers-bioprocessing-turns-a-corner-new-diagnostics-tools-arrive-and-ai-takes-center-stage-35279"
+    },
+    {
+     "name": "Thermo Fisher",
+     "ticker": "TMO",
+     "country": "US",
+     "share": "製程層析雙雄",
+     "products": "製備/製程層析 / 純化耗材",
+     "note": "與 Danaher 並列製程層析領導",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/preparative-process-chromatography-market.asp"
+    },
+    {
+     "name": "Sartorius",
+     "ticker": "SRT.DE",
+     "country": "DE",
+     "share": "單次性/過濾耗材",
+     "products": "TFF 膜 / 單次性生物製程 / 過濾",
+     "note": "GLP-1 濃縮純化的過濾耗材供應"
+    },
+    {
+     "name": "Merck KGaA (MilliporeSigma)",
+     "ticker": "MRK.DE",
+     "country": "DE",
+     "share": "過濾/純化耗材",
+     "products": "層析 / 過濾膜",
+     "note": "製程過濾與純化耗材"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "peptide_api"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Danaher Q1 2026：Cytiva 生技回溫、設備訂單 +30%",
+     "url": "https://www.labmanager.com/what-danaher-s-q1-2026-earnings-mean-for-lab-managers-bioprocessing-turns-a-corner-new-diagnostics-tools-arrive-and-ai-takes-center-stage-35279"
+    },
+    {
+     "label": "製程層析雙雄：Danaher 與 Thermo Fisher (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/ResearchInsight/preparative-process-chromatography-market.asp"
+    }
+   ]
+  },
+  {
+   "id": "peptide_api",
+   "row": "api",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "中游：胜肽原料藥 API CDMO（樞紐）",
+   "nameEn": "Peptide API CDMO (Hub)",
+   "competition": "highgrowth",
+   "single": "全鏈樞紐 · 公斤級高純度 GLP-1 胜肽 API 產能是整條鏈最稀缺的環節，SPPS 反應器總量是市佔的硬指標",
+   "desc": "把胺基酸逐步接成 GLP-1 胜肽原料藥（API）並做純化、GMP 量產——這是整條供應鏈的樞紐與瓶頸，產能（SPPS 反應器升數）即護城河。",
+   "marketSize": "胜肽/寡核苷酸 CDMO 2030 約 $56.7 億（CAGR ~12.5%）",
+   "growth": "Bachem 2026 指引 +35~45%；藥明 TIDES 2024 +70%",
+   "share": "null",
+   "analysis": "這層是賣鏟人的核心——誰有最多公斤級 GMP 反應器，誰就接得到 Novo/Lilly 的大單。Bachem（BANB.SW）2025 銷售 CHF 6.95 億（本幣 +19%）、EBITDA 利潤率 30.9%，2026 指引本幣 +35~45%、Building K 大規模產線 2025 底通過瑞士藥監查核，是純胜肽 CDMO 龍頭。PolyPeptide（PPGN.SW）2025 營收 €3.89 億（+15.6%）、EBITDA 利潤率回升至 11~12%，2026 固定匯率指引 +20~25%、比利時 Braine 模組化新產能支撐一張大型 GLP-1 商業合約、史特拉斯堡 SPPS 產能翻倍。Lonza（LONN.SW）以「胜肽 API＋製劑＋生物共軛」一站式整合差異化。CordenPharma（未上市）€900m 擴產、Colorado 反應器 2028 翻倍至 >42,000L、目標 2028 胜肽營收 €10 億。藥明康德（603259.SS）TIDES 2024 收入 58 億元（+70%）、固相反應釜 2025 突破 100,000L、GLP-1 佔在手訂單 20%+；中國圣诺生物（688117.SS）、诺泰生物（688076.SS）搶生物相似藥原料藥——但 30+ 廠擠入，2026-27 中國原料藥恐產能過剩。",
+   "companies": [
+    {
+     "name": "Bachem",
+     "ticker": "BANB.SW",
+     "country": "CH",
+     "share": "純胜肽 CDMO 龍頭",
+     "products": "GLP-1 胜肽 API / GMP 量產 / 寡核苷酸",
+     "note": "2025 銷售 CHF 6.95 億(本幣 +19%)、EBITDA 30.9%；2026 指引本幣 +35~45%；Building K 通過查核",
+     "src": "https://www.bachem.com/articles/news/ad-hoc/bachem-reports-strong-sales-growth-and-sustained-high-profitability/"
+    },
+    {
+     "name": "PolyPeptide Group",
+     "ticker": "PPGN.SW",
+     "country": "CH",
+     "share": "純胜肽 CDMO 第二",
+     "products": "GLP-1 胜肽 API / 大規模 SPPS",
+     "note": "2025 營收 €3.89 億(+15.6%)、EBITDA 11~12%；2026 固定匯率 +20~25%；Braine 模組化新產能",
+     "src": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/37118762/polypeptide-lifts-revenue-and-margins-in-2025-as-glp-1-demand-powers-growth/"
+    },
+    {
+     "name": "Lonza",
+     "ticker": "LONN.SW",
+     "country": "CH",
+     "share": "綜合 CDMO 巨頭",
+     "products": "胜肽 API + 製劑 + 生物共軛(ADC) 一站式",
+     "note": "整合 API＋製劑差異化；Visp/Oss 生物共軛 2026 上線",
+     "src": "https://www.lonza.com/media-advisories/2026-02-19-09-00"
+    },
+    {
+     "name": "CordenPharma",
+     "ticker": "—",
+     "country": "DE",
+     "share": "胜肽平台快速擴張",
+     "products": "GLP-1 胜肽 API / SPPS 大規模",
+     "note": "未上市；€900m 擴產、Colorado 反應器 2028 >42,000L、目標 2028 胜肽營收 €10 億",
+     "src": "https://cordenpharma.com/articles/press-release-cordenpharma-invests-900-million-euros-in-transformational-peptide-platform-expansion-in-usa-and-europe/"
+    },
+    {
+     "name": "藥明康德 (WuXi STA/TIDES)",
+     "ticker": "603259.SS",
+     "country": "CN",
+     "share": "TIDES 全球主要供應商",
+     "products": "胜肽+寡核苷酸 CDMO / GLP-1 API",
+     "note": "TIDES 2024 收入 58 億元(+70%)；固相反應釜 2025 破 100,000L；GLP-1 佔在手訂單 20%+",
+     "src": "https://news.bioon.com/article/4df18691044e.html"
+    },
+    {
+     "name": "圣诺生物",
+     "ticker": "688117.SS",
+     "country": "CN",
+     "share": "中國 GLP-1 原料藥",
+     "products": "司美格鲁肽等胜肽 API / CDMO",
+     "note": "多肽原料藥產線擴至 850kg/年；瞄準生物相似藥；產能過剩風險",
+     "src": "https://static.cninfo.com.cn/finalpage/2026-04-24/1225172388.PDF"
+    },
+    {
+     "name": "诺泰生物",
+     "ticker": "688076.SS",
+     "country": "CN",
+     "share": "多肽 CXO 高增速",
+     "products": "胜肽 API / CDMO",
+     "note": "多肽 CXO 中報增近 400%；601/602 車間各 +5 噸/年；€1.02 億 CDMO 長約",
+     "src": "https://www.pharnexcloud.com/zixun/sx_8032"
+    },
+    {
+     "name": "北極星藥業-KY",
+     "ticker": "6550.TW",
+     "country": "TW",
+     "share": "台廠 GLP-1 API 布局",
+     "products": "GLP-1 多胜肽原料藥（霖揚生技） / 抗癌新藥",
+     "note": "台股唯一 GLP-1 API 純玩家；新廠動土、5 年投 80 億；惟子公司曾重整減資，執行待觀察",
+     "src": "https://news.gbimonthly.com/tw/invest/show2.php?num=162"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "spps_reagents"
+    },
+    {
+     "id": "process_tools"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fill_finish"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Bachem 2025 全年財報：銷售 CHF 6.95 億、2026 指引 +35~45%",
+     "url": "https://www.bachem.com/articles/news/ad-hoc/bachem-reports-strong-sales-growth-and-sustained-high-profitability/"
+    },
+    {
+     "label": "PolyPeptide 2025 營收 €3.89 億、2026 指引 +20~25% (Globe and Mail)",
+     "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/37118762/polypeptide-lifts-revenue-and-margins-in-2025-as-glp-1-demand-powers-growth/"
+    },
+    {
+     "label": "CordenPharma €900m 擴 SPPS、2028 >42,000L",
+     "url": "https://cordenpharma.com/articles/press-release-cordenpharma-invests-900-million-euros-in-transformational-peptide-platform-expansion-in-usa-and-europe/"
+    },
+    {
+     "label": "藥明康德 TIDES 雙千億後勁 (生物谷)",
+     "url": "https://news.bioon.com/article/4df18691044e.html"
+    },
+    {
+     "label": "胜肽/寡核苷酸 CDMO 2030 $56.7 億、CAGR 12.5% (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/peptide-and-oligonucleotide-cdmo-market"
+    }
+   ]
+  },
+  {
+   "id": "fill_finish",
+   "row": "finish",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "下游：無菌充填 / 製劑 / 注射筆裝置",
+   "nameEn": "Sterile Fill-Finish · Formulation · Pen Injectors",
+   "competition": "oligopoly",
+   "single": "下一個瓶頸 · West 的彈性體高值元件是 GLP-1 注射筆「不可替代」的密封元件，無菌充填產能是 2026-28 比 SPPS 更吃緊的環節",
+   "desc": "把 API 配成製劑、無菌充填進針劑/注射筆，並供應筆裝置的關鍵高值元件（彈性體膠塞、針頭、West Vantage 整合）——產能稀缺、轉換成本高。",
+   "marketSize": "GLP-1 充填/裝置與高值元件 高速成長",
+   "growth": "West Q1'26 高值元件 +30%、GLP-1 約佔總營收 10%",
+   "share": "null",
+   "analysis": "充填與裝置是被低估的下游卡位：West Pharmaceutical（WST）的彈性體膠塞、Westar/NovaPure 高值元件與 West Vantage 是 GLP-1 注射筆的「不可替代密封件」——Q1'26 高值元件 +30%（有機 +22.6%）、GLP-1 約佔總營收 10%、定調 18% 營收的多年成長機會，是最乾淨的賣鏟人。Stevanato（STVN）供玻璃針管與裝置。Catalent 原為獨立充填龍頭，已被 Novo Holdings 以 $165 億收購（三座充填廠內部化）——反讓剩餘獨立充填產能更值錢。Gerresheimer（GXI.DE）供藥用玻璃與裝置。絃外之音：當 SPPS 反應器 2028 翻倍，瓶頸會往無菌充填＋膠塞元件移轉。",
+   "companies": [
+    {
+     "name": "West Pharmaceutical",
+     "ticker": "WST",
+     "country": "US",
+     "share": "注射筆高值元件龍頭",
+     "products": "彈性體膠塞 / Westar・NovaPure / West Vantage",
+     "note": "Q1'26 高值元件 +30%(有機 +22.6%)；GLP-1 約佔總營收 10%；定調 18% 營收機會",
+     "src": "https://www.sec.gov/Archives/edgar/data/0000105770/000010577026000047/exh991q12026earningsrelease.htm"
+    },
+    {
+     "name": "Stevanato Group",
+     "ticker": "STVN",
+     "country": "IT",
+     "share": "玻璃針管+裝置",
+     "products": "玻璃針管 / 注射筆裝置 / 充填",
+     "note": "GLP-1 一級包材與裝置供應"
+    },
+    {
+     "name": "Catalent (Novo Holdings)",
+     "ticker": "—",
+     "country": "US",
+     "share": "充填產能被內部化",
+     "products": "無菌充填 / 製劑 CDMO",
+     "note": "已被 Novo Holdings $165 億收購；三座充填廠歸 Novo，反使獨立充填更稀缺",
+     "src": "https://intuitionlabs.ai/articles/glp-1-drug-manufacturing-cdmo-tech-transfer"
+    },
+    {
+     "name": "Gerresheimer",
+     "ticker": "GXI.DE",
+     "country": "DE",
+     "share": "藥用玻璃+裝置",
+     "products": "藥用玻璃 / 注射筆 / 微泵",
+     "note": "一級包材與藥物輸送裝置"
+    },
+    {
+     "name": "Ypsomed",
+     "ticker": "YPSN.SW",
+     "country": "CH",
+     "share": "自動注射筆專家",
+     "products": "autoinjector / 注射筆平台",
+     "note": "GLP-1 自動注射裝置代工"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "peptide_api"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "brand_biosimilar"
+    }
+   ],
+   "sources": [
+    {
+     "label": "West Pharmaceutical Q1 2026 財報（高值元件 +30%、GLP-1）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000105770/000010577026000047/exh991q12026earningsrelease.htm"
+    },
+    {
+     "label": "Novo Holdings $165 億收購 Catalent 三座充填廠 (IntuitionLabs)",
+     "url": "https://intuitionlabs.ai/articles/glp-1-drug-manufacturing-cdmo-tech-transfer"
+    }
+   ]
+  },
+  {
+   "id": "brand_biosimilar",
+   "row": "brand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "終端：品牌藥廠 + 生物相似藥需求",
+   "nameEn": "Brand Pharma + Biosimilar Demand",
+   "competition": "oligopoly",
+   "single": "需求引擎 · Novo/Lilly 雙寡占決定 CDMO 大單流向；2026 司美格鲁肽多地專利到期啟動學名藥群，把需求往中國/印度 API CDMO 擴散",
+   "desc": "GLP-1 供應鏈的需求源頭——品牌雙雄（Novo、Lilly）＋下一代藥（口服、新適應症）＋2026 專利到期後的生物相似藥群，回頭拉動上游全層產能。",
+   "marketSize": "GLP-1 終端 2024 $535 億 → 2030 $1,567 億（CAGR ~17%）",
+   "growth": "口服 GLP-1 放量 + 2026 多地專利到期",
+   "share": "null",
+   "analysis": "需求端是全鏈成長引擎：Novo Nordisk（NVO，semaglutide/Wegovy/Ozempic）與 Eli Lilly（LLY，tirzepatide/Zepbound、口服 orforglipron）雙寡占，自建＋委外並行——Novo 買下 Catalent、Lilly 在荷蘭蓋 $30 億口服 GLP-1 廠，但溢出產能仍餵養 Bachem/CordenPharma 等。次世代開發者如 Viking Therapeutics（VKTX，VK2735）放大 CDMO 早期管線需求。2026 司美格鲁肽在中國（3 月）／美國（6 月起）等地核心專利陸續到期，啟動生物相似藥／學名藥群（中國 30+ 廠、印度 CDMO），把需求往中國/印度原料藥 CDMO 擴散。絃外之音：口服小分子 GLP-1（orforglipron）放量會把部分需求從「胜肽 API」轉向「小分子合成＋口服固體製劑」，對純胜肽 CDMO 是結構變數。",
+   "companies": [
+    {
+     "name": "Novo Nordisk",
+     "ticker": "NVO",
+     "country": "DK",
+     "share": "GLP-1 品牌雙雄之一",
+     "products": "semaglutide（Ozempic/Wegovy/口服）",
+     "note": "自建+委外並行；買下 Catalent 內部化充填；溢出產能餵養 CDMO",
+     "src": "https://intuitionlabs.ai/articles/glp-1-drug-manufacturing-cdmo-tech-transfer"
+    },
+    {
+     "name": "Eli Lilly",
+     "ticker": "LLY",
+     "country": "US",
+     "share": "GLP-1 品牌雙雄之一",
+     "products": "tirzepatide（Zepbound/Mounjaro）/ 口服 orforglipron",
+     "note": "荷蘭 $30 億口服 GLP-1 廠；口服小分子改變劑型需求結構",
+     "src": "https://www.fiercepharma.com/manufacturing/eli-lilly-looks-ahead-oral-obesity-med-manufacturing-plans-injectable-supply-squeezes"
+    },
+    {
+     "name": "Viking Therapeutics",
+     "ticker": "VKTX",
+     "country": "US",
+     "share": "次世代開發者",
+     "products": "VK2735（皮下/口服 GLP-1/GIP）",
+     "note": "管線放大 CDMO 早期/商業化前需求"
+    },
+    {
+     "name": "生物相似藥群（中國/印度）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "2026 專利到期受益",
+     "products": "司美格鲁肽生物相似藥/學名藥",
+     "note": "中國 30+ 廠布局；專利到期把需求往 API CDMO 擴散",
+     "src": "https://www.pharnexcloud.com/zixun/sdsl_114121"
+    },
+    {
+     "name": "美時化學製藥",
+     "ticker": "1795.TW",
+     "country": "TW",
+     "share": "台廠學名藥代表",
+     "products": "學名藥 / 利基製劑",
+     "note": "台股學名藥廠，GLP-1 學名藥/製劑潛在受益者"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fill_finish"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "GLP-1 終端 2024 $535 億→2030 $1,567 億 (市場研究)",
+     "url": "https://intuitionlabs.ai/articles/glp-1-drug-manufacturing-cdmo-tech-transfer"
+    },
+    {
+     "label": "Lilly 口服 GLP-1（orforglipron）製造布局 (FiercePharma)",
+     "url": "https://www.fiercepharma.com/manufacturing/eli-lilly-looks-ahead-oral-obesity-med-manufacturing-plans-injectable-supply-squeezes"
+    },
+    {
+     "label": "司美格鲁肽 2026 中國專利到期、30+ 廠激戰 (摩熵醫藥)",
+     "url": "https://www.pharnexcloud.com/zixun/sdsl_114121"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "spps_reagents",
+   "peptide_api"
+  ],
+  [
+   "process_tools",
+   "peptide_api"
+  ],
+  [
+   "peptide_api",
+   "fill_finish"
+  ],
+  [
+   "fill_finish",
+   "brand_biosimilar"
+  ]
+ ],
+ "_proposed": {}
+}

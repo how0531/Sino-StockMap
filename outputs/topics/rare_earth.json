@@ -1,0 +1,724 @@
+{
+ "id": "rare_earth",
+ "tab": "稀土/關鍵礦物",
+ "title": "稀土與關鍵礦物供應鏈 (Rare Earth & Critical Minerals)",
+ "subtitle": "Rare Earth & Critical Minerals — 稀土永磁(NdFeB)是機器人馬達/EV/風電/國防/電子的命脈，也是中美科技戰最硬的中國籌碼。中國 2025-10 祭出史上最廣出口管制（含「0.1% 域外管轄」可掐境外磁材鏈），雖暫緩一年但隨時可重啟。集中度驚人：分離精煉 >90%、NdFeB 磁材 ~85-90%、中重稀土 Dy/Tb 近 100% 在中國。去中化卡位爆發：DoD 注資 MP $400M 成最大股東+設 $110/kg NdPr 地板；DoW 對 Vulcan/ReElement $1.4B；Lynas 為西方唯一規模重稀土分離者。價格 2026 飆：NdPr 年初 ~$53→4 月底 ~$137/kg(YTD ~+160%)、Tb 氧化物 ~$4,028/kg(YTD+103%)、Dy ~$930/kg。非中國/中國境內現「雙軌價差」約 4-6 倍。⚠ 2026-06-22 中國反制美方列 ~80 家中企，直接把 MP 與 USA Rare Earth 兩家美國旗艦廠列入出口管制清單——單點要害武器化升級；倫敦框架(6/11 暫停 2025-10 管制一年)的「恢復出口」承諾隨時可被許可延遲架空。永磁市場 2026 約 $54.9B(CAGR 6.2%)；人形機器人(每台約 1.3kg NdPr)是 EV 之外的第二需求曲線。⚠ 二階受惠在最上游礦+分離+重稀土，整機商反為成本承受方。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "中國分離精煉占比",
+   "v": ">90%",
+   "sub": "NdFeB 磁材 ~85-90%·中重稀土 Dy/Tb 近 100%",
+   "hot": true
+  },
+  {
+   "k": "政策催化／價格",
+   "v": 2,
+   "sub": "中國管制+去中化撥款·Tb $4,028/kg(YTD+103%)",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "礦山開採 / 中重稀土瓶頸 Mining & HRE",
+   "main": false
+  },
+  {
+   "id": "midstream",
+   "label": "分離精煉 / 磁材製造 Separation & Magnets",
+   "main": true
+  },
+  {
+   "id": "alt",
+   "label": "回收 / 無稀土替代 Recycling & RE-free",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "終端需求 End Markets",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "mining",
+   "row": "upstream",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "稀土礦山開採",
+   "nameEn": "Rare Earth Mining",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "輕稀土（Nd/Pr）與重稀土（Dy/Tb）礦山開採，是整條鏈的源頭。中國北方稀土（白雲鄂博）控全球約 40% 供給；西方靠 MP Mountain Pass 與 Lynas Mt Weld 兩大礦撐起去中化。",
+   "marketSize": "中國控約 60-70% 開採",
+   "growth": "去中化擴產",
+   "share": "null",
+   "analysis": "中國主導：北方稀土（600111.SS，全球最大、控約 40% 供給、2026 產量目標約 58,800 噸；2026Q1 淨利 9-9.4 億人民幣、YoY +124%、2026 營收目標 >440 億）、中國稀土集團/五礦稀土（000831.SZ，南方離子型重稀土）。西方兩大礦：MP Materials（MP，加州 Mountain Pass，北美唯一規模礦+精煉；2026Q1 NdPr 氧化物產量 917 噸 +63%；DoD 成最大股東約 15%、$110/kg NdPr 地板）、Lynas（LYC.AX，西澳 Mt Weld 高品位輕稀土；2026Q3 REO 3,200 噸 +67%）。澳洲後備軍：Iluka（ILU.AX，Eneabba 澳洲首座全整合精煉）、Arafura（ARU.AX，Nolans mine-to-oxide）。⚠ 開採易、難在分離——西方礦多仍把精礦運往中國/Lynas 精煉。",
+   "companies": [
+    {
+     "name": "北方稀土 China Northern RE",
+     "ticker": "600111.SS",
+     "country": "CN",
+     "share": "全球最大·控約 40% 供給",
+     "products": "輕稀土精礦 / Nd/Pr 氧化物",
+     "note": "2026 產量目標約 58,800 噸；2026Q1 淨利 9-9.4 億人民幣 YoY +124%",
+     "src": "https://www.smartkarma.com/home/newswire/earnings-alerts/china-northern-rare-earth-group-high-tech-600111-earnings-surge-1q-net-income-expected-at-900m-to-940m-yuan-amid-market-strength/"
+    },
+    {
+     "name": "MP Materials",
+     "ticker": "MP",
+     "country": "US",
+     "share": "北美唯一規模礦+精煉",
+     "products": "Mountain Pass 精礦 / NdPr 氧化物",
+     "note": "2026Q1 NdPr 917 噸 +63%；DoD 最大股東~15%、$110/kg 地板；⚠2026-06-22 遭中國商務部列入出口管制清單(反制美方列 ~80 家中企)",
+     "src": "https://www.bloomberg.com/news/articles/2026-06-22/china-places-two-us-rare-earths-producers-on-export-control-list"
+    },
+    {
+     "name": "Lynas Rare Earths",
+     "ticker": "LYC.AX",
+     "country": "AU",
+     "share": "中國以外最大分離礦商",
+     "products": "Mt Weld 精礦 / 輕重稀土氧化物",
+     "note": "2026Q3 REO 3,200 噸 +67%",
+     "src": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2748095-lynas-rare-earth-output-rises-in-3q"
+    },
+    {
+     "name": "中國稀土集團 / 五礦稀土",
+     "ticker": "000831.SZ",
+     "country": "CN",
+     "share": "南方重稀土主導",
+     "products": "離子型礦 / Dy/Tb 配額",
+     "note": "南方重稀土配額龍頭",
+     "src": "https://rare-earth-mining.com/chinese-rare-earth-companies/"
+    },
+    {
+     "name": "Iluka Resources",
+     "ticker": "ILU.AX",
+     "country": "AU",
+     "share": "澳洲整合精煉",
+     "products": "Eneabba 全整合稀土精煉",
+     "note": "澳洲首座全整合稀土精煉廠",
+     "src": "https://rare-earth-mining.com/top-10-rare-earth-mining-companies/"
+    },
+    {
+     "name": "Arafura Rare Earths",
+     "ticker": "ARU.AX",
+     "country": "AU",
+     "share": "mine-to-oxide",
+     "products": "Nolans 垂直整合 NdPr",
+     "note": "construction-ready、垂直整合",
+     "src": "https://rare-earth-mining.com/top-10-rare-earth-mining-companies/"
+    },
+    {
+     "name": "Energy Fuels",
+     "ticker": "UUUU",
+     "country": "US",
+     "share": "鈾+稀土雙軌",
+     "products": "White Mesa 稀土精煉 / Dy/Tb 試產",
+     "note": "美系鈾+稀土整合",
+     "src": "https://rare-earth-mining.com/top-10-rare-earth-mining-companies/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "separation"
+    },
+    {
+     "id": "hre_bottleneck"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Top 10 rare earth mining companies 2026 (RE Mining)",
+     "url": "https://rare-earth-mining.com/top-10-rare-earth-mining-companies/"
+    },
+    {
+     "label": "北方稀土 2026Q1 淨利 (Smartkarma)",
+     "url": "https://www.smartkarma.com/home/newswire/earnings-alerts/china-northern-rare-earth-group-high-tech-600111-earnings-surge-1q-net-income-expected-at-900m-to-940m-yuan-amid-market-strength/"
+    },
+    {
+     "label": "中國 6/22 列管 MP+USAR (Bloomberg)",
+     "url": "https://www.bloomberg.com/news/articles/2026-06-22/china-places-two-us-rare-earths-producers-on-export-control-list"
+    }
+   ]
+  },
+  {
+   "id": "hre_bottleneck",
+   "row": "upstream",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "中重稀土 / 關鍵礦物瓶頸 (Dy/Tb/Ga/Sm)",
+   "nameEn": "Heavy RE & Critical Minerals",
+   "competition": "monopoly",
+   "single": "鎖喉點 · 中重稀土(Dy/Tb)中國近乎 100% 掌控；西方 Tb ~$4,028/kg(YTD+103%)、Dy ~$930/kg(YTD+105%)，雙軌價差約中國境內 4-6 倍",
+   "desc": "鏑(Dy)、鋱(Tb)為高溫永磁（EV/國防馬達）必加元素；鎵(Ga)、鈧(Sc)、釤(Sm,SmCo 國防磁)亦在中國 2025 管制清單。這是整條鏈最硬的鎖喉點。",
+   "marketSize": "中國近 100%",
+   "growth": "價格飆升",
+   "share": "null",
+   "analysis": "中國對中重稀土近乎 100% 掌控、全在 2025-10 管制清單；2026 版管制目錄再新增釤(Sm)/釓(Gd)/鎦(Lu)化合物，2025-10 域外管制條款延至 2026-11 執行。價格 2026 飆升：Dy 氧化物 2026-03 約 $191/kg(YTD +105%)、Tb 氧化物 2026-03 約 $4,028/kg（YTD +103%、全球年產僅 300-400 噸）、NdPr 合金 2026-06 約 $109.55/kg、氧化釹 5 月東北亞達 $144/kg(+13.6%)。⚠ 非中國重稀土分離仍僅 Lynas 一家規模化、量級極小（2026Q1 Dy+Tb 合計僅約 8 噸）。西方破局者：Lynas（LYC.AX，2025-05 首產分離態氧化鏑、2025-06 首產氧化鋱、2026-04 投產 Mt Weld 釤；HRE 線約 1,500 噸/年→FY28 3,000+）、MP Materials（MP，Mountain Pass Dy/Tb 分離即將商業試車；⚠2026-06-22 遭中國列管）、USA Rare Earth（USAR，2026-04 約 $2.8B 併巴西 Serra Verde/Pela Ema——亞洲外唯一規模供應全四磁性稀土+釔，加德州 Round Top；⚠同遭中國列管）、Energy Fuels（UUUU，Dy/Tb 試產）。⚠ 鎵亦為 GaN/GaAs 半導體關鍵——與 power_semi 主題交叉。",
+   "companies": [
+    {
+     "name": "北方稀土 / 中國稀土集團",
+     "ticker": "600111.SS",
+     "country": "CN",
+     "share": "中重稀土壟斷",
+     "products": "Dy / Tb / Sm 氧化物 / 鎵",
+     "note": "中國近乎 100% 掌控中重稀土",
+     "src": "https://rare-earth-mining.com/dysprosium-price/"
+    },
+    {
+     "name": "Lynas Rare Earths",
+     "ticker": "LYC.AX",
+     "country": "AU",
+     "share": "西方規模重稀土分離者",
+     "products": "Dy / Tb / Sm 氧化物",
+     "note": "2025 首產 Dy、2026-06 起續產 Tb、2026-03 首產 Sm；HRE 線約 1,500 噸/年、FY28 擴至 3,000+ 噸（中國外唯一規模）",
+     "src": "https://www.mining.com/lynas-becomes-first-producer-of-heavy-rare-earths-outside-china/"
+    },
+    {
+     "name": "USA Rare Earth",
+     "ticker": "USAR",
+     "country": "US",
+     "share": "西方唯一全四磁性稀土整合者",
+     "products": "Dy/Tb/Nd/Pr（巴西 Pela Ema + 德州 Round Top）",
+     "note": "2026-04 約 $2.8B 併購巴西 Serra Verde/Pela Ema（西方首座運轉中離子型礦、亞洲外唯一規模供全四磁性稀土+釔）；交易附美政府 SPV 15 年 100% 包銷+四元素地板；⚠2026-06-22 與 MP 同遭中國列入出口管制清單",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001970622/000121390026045342/ea028691001ex99-1.htm"
+    },
+    {
+     "name": "Energy Fuels",
+     "ticker": "UUUU",
+     "country": "US",
+     "share": "Dy/Tb 試產",
+     "products": "重稀土試產 / 鈾",
+     "note": "White Mesa 重稀土試產",
+     "src": "https://rare-earth-mining.com/top-10-terbium-producers/"
+    },
+    {
+     "name": "US Critical Materials",
+     "ticker": "—",
+     "country": "US",
+     "share": "稀土+鎵製程路線",
+     "products": "Montana 稀土 / 鎵製程",
+     "note": "未上市；2026 蒙大拿稀土+鎵製程路線圖",
+     "src": "https://www.alcircle.com/press-release/u-s-critical-materials-reveals-domestic-rare-earth-and-gallium-processing-roadmap-119839"
+    },
+    {
+     "name": "盛和資源 Shenghe Resources",
+     "ticker": "600392.SS",
+     "country": "CN",
+     "share": "稀土/鎵加工",
+     "products": "稀土分離 / 鎵 / MP 精礦加工",
+     "note": "MP 大股東+精礦加工（2022-24 占 MP 營收 >80%）",
+     "src": "https://www.kharon.com/brief/mp-materials-rare-earths-stock-market-us-china-solvay"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "magnet"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Dysprosium price 2026 (RE Mining)",
+     "url": "https://rare-earth-mining.com/dysprosium-price/"
+    },
+    {
+     "label": "Terbium price 2026 +103% (RE Mining)",
+     "url": "https://rare-earth-mining.com/terbium-price/"
+    }
+   ]
+  },
+  {
+   "id": "separation",
+   "row": "midstream",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "分離精煉（氧化物）",
+   "nameEn": "Separation & Refining",
+   "competition": "monopoly",
+   "single": "鎖喉點 · 中國掌全球 >90% 分離精煉；Lynas 為中國外唯一規模分離者",
+   "desc": "把混合稀土精礦分離成單一元素氧化物（如 NdPr、Dy、Tb），是整條鏈最高技術門檻、最難複製（>10 年建廠+環評）、中國最壟斷的一環。",
+   "marketSize": "中國 >90%",
+   "growth": "西方鎖喉點",
+   "share": "null",
+   "analysis": "中國掌全球 >90% 分離精煉產能（北方稀土/中國稀土集團）。西方破局：Lynas（LYC.AX，馬來西亞 LAMP + 西澳 Kalgoorlie + 德州 Seadrift，中國外唯一規模分離；LAMP 執照 2026-03 續 10 年、2025 首產重稀土）、MP Materials（MP，Mountain Pass 精煉，NdPr 2026Q1 創 917 噸新高）、ReElement Technologies（AREC 子，與 Vulcan/DoW $1.4B 合作的分離/金屬化）、Solvay（SOLB.BR，法國 La Rochelle 重啟磁材級分離）、Neo Performance（NEO.TO，愛沙尼亞 Silmet 分離）。⚠ 多數「美國磁廠」初期仍需進口中國/Lynas 氧化物——瓶頸不在組裝而在這裡。",
+   "companies": [
+    {
+     "name": "北方稀土 / 中國稀土集團",
+     "ticker": "600111.SS",
+     "country": "CN",
+     "share": "全球 >90% 分離精煉",
+     "products": "NdPr / Dy / Tb 氧化物",
+     "note": "中國分離精煉壟斷核心",
+     "src": "https://www.csis.org/analysis/chinas-new-rare-earth-and-magnet-restrictions-threaten-us-defense-supply-chains"
+    },
+    {
+     "name": "Lynas Rare Earths",
+     "ticker": "LYC.AX",
+     "country": "AU",
+     "share": "中國外唯一規模分離",
+     "products": "NdPr / Dy / Tb / Sm 氧化物",
+     "note": "LAMP(馬)+Kalgoorlie+Seadrift(德州)；2026-03 LAMP 續照 10 年",
+     "src": "https://www.metaltechnews.com/story/2026/03/25/tech-metals/lynas-expands-heavy-rare-earth-production/2691.html"
+    },
+    {
+     "name": "MP Materials",
+     "ticker": "MP",
+     "country": "US",
+     "share": "美國精煉",
+     "products": "NdPr 氧化物 / Dy/Tb 分離 / 回收料",
+     "note": "2026Q1 NdPr 產 917 噸、銷 1,006 噸創新高；磁體營收 $21.1M YoY +306%（正式起量）；Dy/Tb 重稀土分離即將商業試車；10X 磁廠(德州 Northlake)動工；⚠2026-06-22 遭中國列管",
+     "src": "https://rare-earth-mining.com/mp-materials/"
+    },
+    {
+     "name": "ReElement Technologies",
+     "ticker": "AREC",
+     "country": "US",
+     "share": "分離/金屬化新銳",
+     "products": "稀土分離 / 金屬化",
+     "note": "與 Vulcan/DoW $1.4B 合作",
+     "src": "https://www.tectonicdefense.com/vulcan-elements-inks-1-4b-deal-with-the-us-government-and-reelement/"
+    },
+    {
+     "name": "Solvay",
+     "ticker": "SOLB.BR",
+     "country": "EU",
+     "share": "歐洲分離",
+     "products": "La Rochelle 磁材級稀土分離",
+     "note": "歐洲重啟磁材級分離",
+     "src": "https://www.iea.org/commentaries/with-new-export-controls-on-critical-minerals-supply-concentration-risks-become-reality"
+    },
+    {
+     "name": "Neo Performance Materials",
+     "ticker": "NEO.TO",
+     "country": "CA",
+     "share": "愛沙尼亞分離",
+     "products": "Silmet 分離 / 磁材",
+     "note": "歐洲分離+磁材整合",
+     "src": "https://rare-earth-mining.com/top-10-rare-earth-mining-companies/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "mining"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "magnet"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CSIS — China rare earth defense threat",
+     "url": "https://www.csis.org/analysis/chinas-new-rare-earth-and-magnet-restrictions-threaten-us-defense-supply-chains"
+    },
+    {
+     "label": "Lynas expands heavy rare earth (Metal Tech News)",
+     "url": "https://www.metaltechnews.com/story/2026/03/25/tech-metals/lynas-expands-heavy-rare-earth-production/2691.html"
+    }
+   ]
+  },
+  {
+   "id": "magnet",
+   "row": "midstream",
+   "col": 2,
+   "span": 2,
+   "kind": "stage",
+   "name": "NdFeB 永磁製造",
+   "nameEn": "NdFeB Permanent Magnet",
+   "competition": "oligopoly",
+   "single": "日中主導 · 全球年產約 10 萬噸、非中國僅約 1%；Proterial 市占約 15.5%",
+   "desc": "把稀土金屬/合金做成燒結或黏結 NdFeB 永磁，是 EV/機器人/風電/國防馬達的核心。永磁市場 2026 約 $54.9B(CAGR 6.2%)、稀土磁材 2026 約 $20.3B。",
+   "marketSize": "永磁 $54.9B(2026)·稀土磁 $20.3B",
+   "growth": "CAGR 6-7%",
+   "share": "null",
+   "analysis": "全球 NdFeB 年產約 100,000 噸、中國約 85,000 噸（~85-90%），非中國僅約 1%、預估 2027-28 才達需求 10-12%。日系高階：Proterial（原日立金屬，永磁龍頭市占約 15.5%，Bain 持有未上市）、信越化學（4063.T，2026-02 投 $310M 於 Takefu 加 3,000 噸、>50 MGOe 高階溢價 30-40%）、TDK（6762.T，高矯頑力車用磁材）。中系規模：金力永磁（300748.SZ，全球最大高性能 NdFeB、產能 2025 衝 40,000 噸/2027 約 60,000 噸、切入人形機器人磁組件+Tesla）、中科三環（000970.SZ）。歐洲：VACUUMSCHMELZE/VAC（DE，Hanau 燒結 +30%、take-or-pay 長約，三星 SDI/Apollo 入主、未上市）。美系去中化新銳：USA Rare Earth（USAR，Stillwater 廠 2026-03 首條產線投產、滿產約 5,000 噸/年；2026-06 加南卡 Cherokee County 新磁廠）、Vulcan Elements（北卡 Benson $918M 廠目標 10,000 噸、$1.4B DoW 合作；與 Ucore 簽 MOU，2027 起取得路州 RapidSX 之 NdPr/Dy 氧化物）、Noveon Magnetics（德州 sintered NdFeB）。",
+   "companies": [
+    {
+     "name": "Proterial（原日立金屬 Hitachi Metals）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "永磁龍頭·市占約 15.5%",
+     "products": "高階 NdFeB / SmCo",
+     "note": "Bain Capital 持有、未上市；車用整合領先",
+     "src": "https://www.mordorintelligence.com/industry-reports/permanent-magnet-market"
+    },
+    {
+     "name": "信越化學 Shin-Etsu",
+     "ticker": "4063.T",
+     "country": "JP",
+     "share": "高階磁材",
+     "products": "高性能 NdFeB（>50 MGOe）",
+     "note": "2026-02 投 $310M 加 3,000 噸；高階溢價 30-40%",
+     "src": "https://www.mordorintelligence.com/industry-reports/permanent-magnet-market"
+    },
+    {
+     "name": "金力永磁 JL MAG",
+     "ticker": "300748.SZ",
+     "country": "CN",
+     "share": "全球最大高性能 NdFeB",
+     "products": "高性能 NdFeB / 機器人磁組件",
+     "note": "產能 2025 衝 40,000 噸/2027 約 60,000 噸；切入人形機器人+Tesla",
+     "src": "https://www.yicaiglobal.com/news/china-jl-mag-rare-earth-hits-limit-up-on-tesla-permanent-magnet-deal"
+    },
+    {
+     "name": "TDK",
+     "ticker": "6762.T",
+     "country": "JP",
+     "share": "高矯頑力磁材",
+     "products": "車用/電子 NdFeB",
+     "note": "高矯頑力 NdFeB",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/rare-earth-magnets-companies.asp"
+    },
+    {
+     "name": "VACUUMSCHMELZE (VAC)",
+     "ticker": "—",
+     "country": "DE",
+     "share": "歐洲磁材龍頭",
+     "products": "NdFeB / SmCo",
+     "note": "未上市（三星SDI/Apollo）；Hanau 燒結 +30%、take-or-pay",
+     "src": "https://www.manufacturingdive.com/news/cyclic-materials-vacuumschmelze-critical-materials-magnet-recycling/803993/"
+    },
+    {
+     "name": "USA Rare Earth",
+     "ticker": "USAR",
+     "country": "US",
+     "share": "美系去中化磁廠·亞洲外唯一礦到磁全鏈",
+     "products": "燒結 NdFeB / 帶鑄/金屬合金",
+     "note": "Stillwater 廠 2026Q2 出貨、滿產約 5,000 噸/年；Blacksburg 廠目標 6,400 噸/年磁體+5,000 噸帶鑄；美本土合計目標 10,000 噸/年磁體+10,000 噸重稀土合金；橫跨美/英/法/巴西礦到磁平台",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001970622/000121390026063832/ea029312701ex99-1.htm"
+    },
+    {
+     "name": "Vulcan Elements",
+     "ticker": "—",
+     "country": "US",
+     "share": "美系去中化磁廠",
+     "products": "燒結 NdFeB",
+     "note": "未上市；北卡 Benson $918M、目標 10,000 噸；$1.4B DoW 合作",
+     "src": "https://vulcanelements.com/vulcan-elements-selects-benson-north-carolina-for-1-billion-magnet-facility/"
+    },
+    {
+     "name": "中科三環 Zhongke Sanhuan",
+     "ticker": "000970.SZ",
+     "country": "CN",
+     "share": "中系 NdFeB 大廠",
+     "products": "燒結 NdFeB",
+     "note": "Tesla/特斯拉供應鏈",
+     "src": "https://www.marketsandmarkets.com/ResearchInsight/rare-earth-magnets-companies.asp"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "separation"
+    },
+    {
+     "id": "hre_bottleneck"
+    },
+    {
+     "id": "recycling"
+    },
+    {
+     "id": "re_free"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "end_markets"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Permanent magnet market (Mordor Intelligence)",
+     "url": "https://www.mordorintelligence.com/industry-reports/permanent-magnet-market"
+    },
+    {
+     "label": "Rare earth magnets companies (MarketsandMarkets)",
+     "url": "https://www.marketsandmarkets.com/ResearchInsight/rare-earth-magnets-companies.asp"
+    }
+   ]
+  },
+  {
+   "id": "recycling",
+   "row": "alt",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "稀土磁材回收",
+   "nameEn": "Magnet Recycling",
+   "competition": "emerging",
+   "single": "null",
+   "desc": "從報廢馬達/硬碟/磁材廢料回收稀土，是繞過中國礦的去中化捷徑。2026 資本大舉湧入，微軟/亞馬遜氣候基金與 EXIM/DoD 撥款加持。",
+   "marketSize": "去中化支線",
+   "growth": "資本湧入",
+   "share": "null",
+   "analysis": "Cyclic Materials（CA，未上市，2026-02 Series C $75M + 南卡 McBee $82M 園區；微軟/亞馬遜氣候基金背書；與 VAC 簽回收協議）、HyProMag USA（UK/US，HPMS 製程；達拉斯廠獲 EXIM $92M 意向、Nevada/南卡跟進；母 Mkango/CoTec）、Noveon Magnetics（US，德州回收+原生混合料 sintered NdFeB）、MP Materials（MP，Mountain Pass 回收，Apple $500M 約用 100% 回收料製磁）。⚠ 回收量體仍小、難撼動百萬噸級需求，但政策+ESG 順風強。",
+   "companies": [
+    {
+     "name": "Cyclic Materials",
+     "ticker": "—",
+     "country": "CA",
+     "share": "回收領先新銳",
+     "products": "稀土磁材回收（REE）",
+     "note": "未上市；2026-02 Series C $75M + 南卡 $82M；微軟/亞馬遜基金",
+     "src": "https://chargedevs.com/newswire/the-tech/cyclic-materials-raises-75-million-to-scale-rare-earth-magnet-recycling/"
+    },
+    {
+     "name": "HyProMag USA",
+     "ticker": "—",
+     "country": "UK",
+     "share": "HPMS 回收製程",
+     "products": "回收 NdFeB（HPMS）",
+     "note": "達拉斯廠獲 EXIM $92M 意向；母 Mkango/CoTec",
+     "src": "https://www.wastedive.com/news/rare-earth-magnet-recycler-facility-domestic-supply-chain/816833/"
+    },
+    {
+     "name": "Noveon Magnetics",
+     "ticker": "—",
+     "country": "US",
+     "share": "回收+原生混合",
+     "products": "sintered NdFeB（回收料）",
+     "note": "德州；drone/EV 去中化供應",
+     "src": "https://chargedevs.com/newswire/the-tech/cyclic-materials-raises-75-million-to-scale-rare-earth-magnet-recycling/"
+    },
+    {
+     "name": "MP Materials（回收）",
+     "ticker": "MP",
+     "country": "US",
+     "share": "回收磁材",
+     "products": "100% 回收料 NdFeB",
+     "note": "Apple $500M 約用 100% 回收料製磁",
+     "src": "https://investingnews.com/apple-mp-materials-rare-earths/"
+    },
+    {
+     "name": "Phoenix Tailings",
+     "ticker": "—",
+     "country": "US",
+     "share": "零酸冶金回收",
+     "products": "尾礦/廢料回收稀土金屬",
+     "note": "未上市；2025 募 $76.4M；目標 4,000 噸/年",
+     "src": "https://news.crunchbase.com/venture/funding-startups-recycle-batteries-mining-scarce-materials/"
+    },
+    {
+     "name": "Geomega Resources",
+     "ticker": "GMA.V",
+     "country": "CA",
+     "share": "NdFeB 回收示範廠",
+     "products": "NdFeB 磁材回收→稀土氧化物",
+     "note": "魁北克示範廠 1.5 噸/日；2026-06 取得環評許可",
+     "src": "https://www.metaltechnews.com/story/2026/06/10/tech-bytes/geomega-clears-magnet-recycling-permit/2787.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "magnet"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cyclic Materials $75M Series C (Charged EVs)",
+     "url": "https://chargedevs.com/newswire/the-tech/cyclic-materials-raises-75-million-to-scale-rare-earth-magnet-recycling/"
+    },
+    {
+     "label": "Apple $500M MP Materials deal (InvestingNews)",
+     "url": "https://investingnews.com/apple-mp-materials-rare-earths/"
+    }
+   ]
+  },
+  {
+   "id": "re_free",
+   "row": "alt",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "無稀土磁鐵替代",
+   "nameEn": "Rare-Earth-Free Magnets",
+   "competition": "emerging",
+   "single": "⚠ 長天期選擇權 · Niron 鐵氮磁成本約少 50%、2027 才投產約佔美需 3%",
+   "desc": "鐵氮（iron nitride）等無稀土磁材，徹底繞過中國稀土。能量積仍低於高階 NdFeB，但若機器人/EV 放量採用則是顛覆者。",
+   "marketSize": "顛覆性技術",
+   "growth": "長天期選擇權",
+   "share": "null",
+   "analysis": "Niron Magnetics（US，未上市，鐵氮磁；累計募資 $214M，GM/Stellantis/Samsung Ventures/Magna/Allison 創投+明尼蘇達大學；成本約少 50%；Sartell 1,500 噸/年廠 2027 初投產、約佔美需 3%；與 Stellantis 合作鐵氮永磁牽引馬達）。⚠ 鐵氮能量積仍不及高階 NdFeB，短期難撼動，是 5-10 年的選擇權式佈局——但車廠重金背書顯示需求方積極尋求去稀土路線。亦與 magnetic-reluctance（無永磁）馬達競爭。",
+   "companies": [
+    {
+     "name": "Niron Magnetics",
+     "ticker": "—",
+     "country": "US",
+     "share": "鐵氮無稀土磁先驅",
+     "products": "iron nitride 永磁",
+     "note": "未上市；累計募資 $214M（GM/Stellantis/Samsung/Magna）；成本約少 50%；2027 投產",
+     "src": "https://nironmagnetics.com/niron-magnetics-secures-33m-from-leading-automotive-manufacturers-to-meet-growing-demand-for-rare-earth-free-magnets/"
+    },
+    {
+     "name": "GM / Stellantis（策略投資）",
+     "ticker": "GM",
+     "country": "US",
+     "share": "車廠去稀土需求方",
+     "products": "鐵氮馬達合作",
+     "note": "創投入股 Niron；Stellantis 合作鐵氮牽引馬達",
+     "src": "https://spectrum.ieee.org/permanent-magnet-motor"
+    },
+    {
+     "name": "Astemo（本田/日立）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "無稀土同步磁阻馬達",
+     "products": "SynRM + 鐵氧體輔助馬達 + SiC",
+     "note": "2025-10 發表無稀土馬達、180kW、體積僅增 30%",
+     "src": "https://www.astemo.com/en/news/20251027-01/"
+    },
+    {
+     "name": "Renault / Valeo",
+     "ticker": "RNO.PA",
+     "country": "FR",
+     "share": "全無稀土 EV 馬達",
+     "products": "完全無稀土 EV 馬達（wound-field）",
+     "note": "聯合開發、約 2027 量產",
+     "src": "https://emag.directindustry.com/2026/02/04/rare-earth-free-motors-ev-supply-chain-oem/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "magnet"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Niron $33M from GM/Stellantis (Niron)",
+     "url": "https://nironmagnetics.com/niron-magnetics-secures-33m-from-leading-automotive-manufacturers-to-meet-growing-demand-for-rare-earth-free-magnets/"
+    },
+    {
+     "label": "GM/Stellantis back RE-free magnet (IEEE Spectrum)",
+     "url": "https://spectrum.ieee.org/permanent-magnet-motor"
+    }
+   ]
+  },
+  {
+   "id": "end_markets",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端需求（EV/機器人/風電/國防/電子）",
+   "nameEn": "End Markets",
+   "competition": "highgrowth",
+   "single": "結構性催化 · 人形機器人每台約 1.3kg NdPr、2050 較 2030 +167%（Morgan Stanley）",
+   "desc": "稀土永磁的終端：EV 牽引馬達、人形機器人關節馬達、風電直驅發電機、國防（F-35/神盾艦）、消費電子（音圈/喇叭/硬碟）。是把整條鏈推向結構性成長的需求錨點。",
+   "marketSize": "需求錨點",
+   "growth": "機器人 S 曲線",
+   "share": "null",
+   "analysis": "EV：每台 BEV 約需 1-2kg NdFeB（Tesla/比亞迪/各車廠）。人形機器人＝EV 之外第二需求曲線：Morgan Stanley 估每台約需 1.3kg NdPr、2050 較 2030 +167%；Tesla Optimus 2026 底 Fremont 投產、長期目標 100 萬台/年（與 robot/humanoid_components 主題交叉）。風電：直驅永磁發電機。國防：F-35 每架約 400kg、神盾艦約 2,600kg 稀土（與 defense 主題交叉）。消費電子：Apple 等（Apple $500M MP 約）。⚠ 整機商是成本承受方、定價權在上游——二階受惠者是礦+分離+重稀土，而非終端。",
+   "companies": [
+    {
+     "name": "Tesla（EV+Optimus 機器人）",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "EV+人形機器人需求",
+     "products": "永磁馬達 / Optimus",
+     "note": "Optimus 2026 底 Fremont 投產、目標 100 萬台/年；金力永磁/三環供應",
+     "src": "https://www.valuethemarkets.com/analysis/are-humanoids-the-next-rare-earth-demand-shock"
+    },
+    {
+     "name": "Apple",
+     "ticker": "AAPL",
+     "country": "US",
+     "share": "消費電子去中化",
+     "products": "回收料 NdFeB 磁材",
+     "note": "$500M 約向 MP 採購 100% 回收料磁材",
+     "src": "https://investingnews.com/apple-mp-materials-rare-earths/"
+    },
+    {
+     "name": "比亞迪 BYD",
+     "ticker": "1211.HK",
+     "country": "CN",
+     "share": "EV 永磁馬達大戶",
+     "products": "EV 牽引永磁馬達",
+     "note": "中系 EV 龍頭、稀土磁需求巨大",
+     "src": "https://www.idtechex.com/en/research-article/electrification-and-robotics-to-drive-future-rare-earth-magnet-demand/34117"
+    },
+    {
+     "name": "美國國防部 DoD / DoW",
+     "ticker": "—",
+     "country": "US",
+     "share": "國防需求+撥款方",
+     "products": "F-35/神盾艦稀土 / 去中化撥款",
+     "note": "成 MP 最大股東、$110/kg 地板；Vulcan/ReElement $1.4B",
+     "src": "https://mpmaterials.com/news/mp-materials-announces-transformational-public-private-partnership-with-the-department-of-defense-to-accelerate-u-s-rare-earth-magnet-independence/"
+    },
+    {
+     "name": "西門子能源 / GE Vernova（風電）",
+     "ticker": "GEV",
+     "country": "US",
+     "share": "風電直驅需求",
+     "products": "永磁直驅發電機",
+     "note": "離岸風電直驅永磁需求",
+     "src": "https://www.idtechex.com/en/research-article/electrification-and-robotics-to-drive-future-rare-earth-magnet-demand/34117"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "magnet"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Humanoids next rare earth demand shock (Value The Markets)",
+     "url": "https://www.valuethemarkets.com/analysis/are-humanoids-the-next-rare-earth-demand-shock"
+    },
+    {
+     "label": "Electrification & robotics drive RE magnet demand (IDTechEx)",
+     "url": "https://www.idtechex.com/en/research-article/electrification-and-robotics-to-drive-future-rare-earth-magnet-demand/34117"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "mining",
+   "separation"
+  ],
+  [
+   "mining",
+   "hre_bottleneck"
+  ],
+  [
+   "separation",
+   "magnet"
+  ],
+  [
+   "hre_bottleneck",
+   "magnet"
+  ],
+  [
+   "recycling",
+   "magnet"
+  ],
+  [
+   "re_free",
+   "magnet"
+  ],
+  [
+   "magnet",
+   "end_markets"
+  ]
+ ],
+ "_proposed": {}
+}

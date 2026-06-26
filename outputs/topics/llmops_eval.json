@@ -1,0 +1,1149 @@
+{
+ "id": "llmops_eval",
+ "tab": "LLMOps/Eval",
+ "title": "LLMOps / Observability / Eval（觀測 → Eval / 紅隊 → Agent 監控 → 治理）",
+ "subtitle": "LLM Observability TAM 2025 USD 1.97B→2026 USD 2.69B（CAGR +36.3%）；廣義 LLMOps 2026 USD 7.14B（CAGR +21.3%）。M&A 整合潮席捲：W&B→CoreWeave USD 1.7B、Langfuse→ClickHouse、HumanLoop→Anthropic、Robust Intelligence→Cisco、Lakera→Check Point USD 300M、CalypsoAI→F5 USD 180M。供應鏈覆蓋四層：LLM 觀測/Tracing → Eval/Red-team → Agent Runtime 監控 → 治理/MRM。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 11
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "55+"
+  },
+  {
+   "k": "關鍵單點",
+   "v": 2,
+   "sub": "LangSmith + Arize OSS Phoenix; Datadog/Dynatrace incumbent",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "obs",
+   "label": "LLM Observability / Tracing",
+   "main": true
+  },
+  {
+   "id": "eval",
+   "label": "Eval / Red-team / Benchmark",
+   "main": false
+  },
+  {
+   "id": "agent",
+   "label": "Agent Runtime Monitoring",
+   "main": false
+  },
+  {
+   "id": "gov",
+   "label": "Governance / Model Risk",
+   "main": false
+  },
+  {
+   "id": "asia",
+   "label": "亞洲 LLMOps Asia Regional",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "llm_observability_us",
+   "row": "obs",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "LLM 觀測 / Tracing 平台（美系）",
+   "nameEn": "LLM Observability & Tracing (US/Global)",
+   "competition": "fragmented",
+   "single": "雙核心 · LangSmith（LangChain Series B USD 1.25B）+ Arize Phoenix OSS；Datadog/Dynatrace 以 APM 原生整合進場",
+   "desc": "為生產環境 LLM 應用提供 prompt/response 追蹤、token 成本監控、延遲分析、RAG pipeline 可見性與多模型比較的觀測層。Langfuse 被 ClickHouse 收購（2026/1）、Helicone 被 Mintlify 收購（2026/3）、WhyLabs 被 Apple 收購（2025/1），整合潮已至。",
+   "marketSize": "2025 LLM Observability TAM USD 1.97B；2026 USD 2.69B（CAGR +36.3%）",
+   "growth": "YoY +36.3%；LangSmith monthly trace 量 YoY 12x（2025）；Arize Phoenix 月下載 2M+",
+   "share": "null",
+   "analysis": "LangSmith 為最大獨立商業 LLM Obs 平台，Series B USD 125M（IVP 領投，Datadog/Cisco/Databricks/ServiceNow 策略投資），月活 25K+ 團隊、12x YoY trace 成長；Arize Phoenix 開源 OSS 路線月下載 2M+，Series C USD 70M（Adams Street + M12）；Datadog LLM Obs GA 2024/6，2025/6 擴至 Agentic AI Monitoring，是最大 incumbent 進場者；Braintrust 2026/2 Series B USD 80M 估值 USD 800M，Notion/Cloudflare/Vercel 為客戶。",
+   "companies": [
+    {
+     "name": "LangChain Inc. (LangSmith)",
+     "ticker": "—",
+     "country": "US",
+     "share": "25K+ 月活團隊；12x YoY trace 量；LangChain/LangGraph 合計月下載 ~9,000 萬；Fortune 500 35% 採用；ARR ~USD 16M",
+     "products": "LangSmith（tracing、eval、prompt mgmt、agent monitoring）；Insights Agent（自動歸類 trace 找失敗模式，Plus/Enterprise GA）；Multi-turn Evals；LangSmith Fleet（前 Agent Builder 改名）；LangGraph Cloud；LangGraph Platform",
+     "note": "2025/10 Series B USD 125M at USD 1.25B（IVP 領投，Datadog/Cisco/Databricks/ServiceNow 策略投資）；H1 2026 產品主軸轉向 agent 評測（thread 列為第一方概念）",
+     "src": "https://blog.langchain.com/insights-agent-multiturn-evals-langsmith/"
+    },
+    {
+     "name": "Arize AI (+ Phoenix OSS)",
+     "ticker": "—",
+     "country": "US",
+     "share": "Phoenix OSS 2M+ 月下載；9,000+ GitHub stars；Series C 最大單筆 AI Obs 投資（2025/2）",
+     "products": "Arize AX Enterprise（eval + observability + agents + voice）；Arize Phoenix OSS（OpenTelemetry-based tracing/eval）",
+     "note": "2025/2 Series C USD 70M（Adams Street Partners 領投，M12/OMERS/Datadog/PagerDuty）；累計超 USD 100M",
+     "src": "https://arize.com/blog/arize-ai-raises-70m-series-c-to-build-the-gold-standard-for-ai-evaluation-observability/"
+    },
+    {
+     "name": "Datadog (LLM Obs + AI Agent Monitoring)",
+     "ticker": "DDOG",
+     "country": "US",
+     "share": "FY2025 營收 USD 3.43B（+28% YoY）；Q1 FY2026 ARR 首破 USD 40 億；USD 100k+ ARR 客戶約 4,550 家",
+     "products": "LLM Observability；AI Agent Monitoring（GA Jun 2025）；LLM Experiments（Preview）；Bits AI SRE Agent",
+     "note": "APM 原生整合，LangChain Series B 策略投資人；Q1 2026 營收 USD 1.006B（+32% YoY）首破單季十億，LLM Obs spans QoQ 近 3 倍；管理層首度確認 LLM Observability『對帳單實質貢獻』；FY2026 指引上修至 USD 4.30-4.34B",
+     "src": "https://investors.datadoghq.com/news-releases/news-release-details/datadog-announces-first-quarter-2026-financial-results/"
+    },
+    {
+     "name": "Dynatrace (Davis AI + LLM Obs)",
+     "ticker": "DT",
+     "country": "US",
+     "share": "FY2026 ARR USD 2.054B（+18% YoY，截至 2026/3/31）；Q4 FY2026 營收 USD 532M（+19% YoY）；NVIDIA AI Factory 整合 2025/5",
+     "products": "Davis AI（自動化 root cause + LLM 成本異常偵測）；AI & LLM Observability（Multi-model tracing、RAG pipeline）；Grail 資料平台",
+     "note": "Gartner Magic Quadrant Leaders 常客；FY2025 非 GAAP 營業利益率 29%",
+     "src": "https://www.dynatrace.com/news/press-release/dynatrace-nvidia-ai-llm-observability/"
+    },
+    {
+     "name": "Langfuse（within ClickHouse）",
+     "ticker": "—",
+     "country": "DE",
+     "share": "26M+ SDK 安裝/月；6M+ Docker pulls；2,000+ 付費客戶；Fortune 50 中 19 家、Fortune 500 中 63 家採用",
+     "products": "開源 LLM Observability（tracing、eval、prompt mgmt）；Langfuse Cloud；MIT 授權核心 OSS；維持 vendor-neutral／OpenTelemetry GenAI 基礎",
+     "note": "2026/1/16 ClickHouse 完成 USD 400M D 輪（估值 USD 15B）同步併購；觀測資料綁進 ClickHouse 分析資料庫形成垂直整合單點；承諾維持獨立品牌與 100% MIT 開源",
+     "src": "https://clickhouse.com/blog/clickhouse-acquires-langfuse-open-source-llm-observability"
+    },
+    {
+     "name": "Braintrust",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 USD 800M；Notion/Replit/Cloudflare/Ramp/Dropbox/Vercel 為客戶",
+     "products": "AI-native Observability Platform（trace、eval、prompt 管理、production 監控、LLM drift 偵測）",
+     "note": "2026/2 Series B USD 80M（ICONIQ Capital 領投，a16z/Greylock/Basecase/Elad Gil）；Enterprise Tech 30 #8 Mid Stage",
+     "src": "https://siliconangle.com/2026/02/17/braintrust-lands-80m-series-b-funding-round-become-observability-layer-ai/"
+    },
+    {
+     "name": "Confident AI (DeepEval)",
+     "ticker": "—",
+     "country": "US",
+     "share": "150K+ 開發者；Fortune 500 採用率 50%+；每日 1 億次 evals",
+     "products": "DeepEval（開源 LLM Evaluation 框架，50+ eval metrics）；Confident AI 平台（eval + observability + guardrail 一體化）",
+     "note": "2025/8 Seed USD 2.2M（YC/Flex Capital/Liquid 2 Ventures）",
+     "src": "https://www.confident-ai.com/blog/how-i-closed-confident-ais-2-2m-seed-round-in-5-days"
+    },
+    {
+     "name": "New Relic (Agentic AI Monitoring)",
+     "ticker": "—",
+     "country": "US",
+     "share": "AI 監控使用率 42%（2024）→ 54%（2025）；2023 USD 6.5B 私有化（Francisco Partners + TPG）",
+     "products": "Agentic AI Monitoring（GA Nov 2025）；LLM Observability（prompt/response tracing）；New Relic AI MCP Server（Jun 2025）",
+     "note": "Jun 2025 發布 MCP Server，整合 Claude/ChatGPT；Nov 2025 GA Agentic AI Monitoring",
+     "src": "https://newrelic.com/press-release/20251104-0"
+    },
+    {
+     "name": "Comet ML (Opik)",
+     "ticker": "—",
+     "country": "US",
+     "share": "Opik Apache-2 開源；定位 LangSmith 開源替代",
+     "products": "Comet ML（ML 實驗追蹤）；Opik（開源 LLM eval & observability，支援 tracing/LLM-as-a-judge/RAG eval/agent pipeline 監控）",
+     "note": "2024 年底 Opik 開源；支援 prompt versioning、eval metrics、生產環境監控儀表板",
+     "src": "https://www.comet.com/site/products/opik/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "eval_red_team_us"
+    },
+    {
+     "id": "agent_runtime_monitoring"
+    }
+   ],
+   "sources": [
+    {
+     "label": "LangChain Series B USD 125M（2025/10）",
+     "url": "https://blog.langchain.com/series-b/"
+    },
+    {
+     "label": "Arize AI Series C USD 70M（2025/2）",
+     "url": "https://arize.com/blog/arize-ai-raises-70m-series-c-to-build-the-gold-standard-for-ai-evaluation-observability/"
+    },
+    {
+     "label": "Datadog LLM Obs Agentic AI 擴張（2025/6）",
+     "url": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-expands-llm-observability-with-new-capabilities-to-monitor-agentic-ai-accelerate-development-and-improve-model-performance/"
+    },
+    {
+     "label": "Langfuse 加入 ClickHouse（2026/1/16）",
+     "url": "https://langfuse.com/blog/joining-clickhouse"
+    },
+    {
+     "label": "Braintrust Series B USD 80M（2026/2）",
+     "url": "https://siliconangle.com/2026/02/17/braintrust-lands-80m-series-b-funding-round-become-observability-layer-ai/"
+    }
+   ]
+  },
+  {
+   "id": "observability_incumbent",
+   "row": "obs",
+   "col": 4,
+   "span": 2,
+   "kind": "rail",
+   "name": "傳統 APM / SIEM 轉型進場",
+   "nameEn": "APM & SIEM Incumbents Entering LLMOps",
+   "competition": "oligopoly",
+   "single": "Datadog 雙棲 · 同時覆蓋 APM 原生客戶（27K+ 企業）與 LLMOps 新客；Dynatrace 以 NVIDIA AI Factory 認證進場",
+   "desc": "Datadog、Dynatrace、New Relic、Cisco（Splunk）、IBM（Instana）等傳統監控大廠，將 LLM Observability 功能包裝為現有 APM 平台的擴充模組，以「現有合約追加 SKU」方式快速佔據企業市場，對新創形成下壓。",
+   "marketSize": "APM + SIEM TAM 2025 合計約 USD 18-22B；AI Observability 附加值 USD 1-2B（FY2026 預估）",
+   "growth": "APM 整體 YoY +12-15%；AI/LLM Obs 附加值 YoY +50-80%（incumbent 客戶上行交叉銷售）",
+   "share": "null",
+   "analysis": "Datadog 以 USD 1M+ ARR 客戶 603 個（+30% YoY）的企業基礎，將 LLM Obs 作為 APM 追加 SKU，預計 FY2026 開始實質貢獻；Cisco 2024/3 完成 USD 28B Splunk 收購後，2025/9 .conf25 推 Agentic AI-powered Splunk Observability；Dynatrace 2025/5 整合 NVIDIA AI Factory；IBM Instana 2025 更新支援 LLM trace/span 標準。",
+   "companies": [
+    {
+     "name": "Datadog",
+     "ticker": "DDOG",
+     "country": "US",
+     "share": "FY2025 全年 USD 3.43B（+28% YoY）；27K+ 客戶；LLM Obs GA 客戶 rolling out",
+     "products": "LLM Observability + AI Agent Monitoring + LLM Experiments + Bits AI SRE",
+     "note": "FY2026 指引 USD 4.06-4.1B；LangChain Series B 策略投資人",
+     "src": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-expands-llm-observability-with-new-capabilities-to-monitor-agentic-ai-accelerate-development-and-improve-model-performance/"
+    },
+    {
+     "name": "Dynatrace",
+     "ticker": "DT",
+     "country": "US",
+     "share": "FY2025 ARR USD 1.73B；Non-GAAP 營業利益率 29%",
+     "products": "Davis AI + Grail + NVIDIA AI Factory 整合 + AI & LLM Observability",
+     "note": "2025/5 NVIDIA Enterprise AI Factory 驗證；2026/3 FY2025 全年 USD 1.7B（+19% YoY）",
+     "src": "https://www.dynatrace.com/news/press-release/dynatrace-nvidia-ai-llm-observability/"
+    },
+    {
+     "name": "Cisco / Splunk (AI Observability)",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "Splunk 2025 ARR 約 USD 4.5B；企業監控市場 Top 3",
+     "products": "Cisco AI Defense + Splunk Observability Cloud LLM/Agent Monitoring（2025/9 .conf25）",
+     "note": "2024/3 完成 USD 28B Splunk 收購；2024/10 收 Robust Intelligence（AI Security）",
+     "src": "https://blogs.cisco.com/news/fortifying-the-future-of-security-for-ai-cisco-announces-intent-to-acquire-robust-intelligence"
+    },
+    {
+     "name": "IBM Instana (AI Observability)",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "FY2025 全年 USD 63.5B；watsonx.governance Forrester Wave Q3 2025 Leader",
+     "products": "IBM Instana（LLM trace/span 標準支援）；watsonx.governance（治理 + observability）",
+     "note": "2025 watsonx.governance 2.1 GA；Governed Agentic Catalog 新功能",
+     "src": "https://www.ibm.com/new/announcements/ibm-unveils-watsonx-governance-2-1-to-transform-your-ai-governance-experience"
+    },
+    {
+     "name": "Fiddler AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "總融資 USD 100M；Lightspeed/Lux Capital/Insight/Capgemini Ventures 投資",
+     "products": "AI Control Plane for Enterprise Agents（telemetry、eval、monitoring、policy enforcement、audit）；ML 效能監控（bias/drift/explainability）",
+     "note": "2026/1 Series C USD 30M（RPS Ventures 領投）；定位由 MLOps 轉向「AI Agent Control Plane」；Cisco Investments 為 Series B 策略投資人",
+     "src": "https://www.fiddler.ai/press-releases/fiddler-raises-30m-series-c"
+    },
+    {
+     "name": "Logz.io",
+     "ticker": "—",
+     "country": "IL",
+     "share": "融資超 USD 200M；Petabytes 資料/週由 AI Agents 分析；30-70% 分類時間節省",
+     "products": "AI-First Observability Platform；Observability IQ；Logz.io AI Agent（自動 RCA）；LLM Observability 模組；全球首個 observability MCP Server",
+     "note": "2025 重大更新聚焦 AI Agents 為 first-class citizens；發布全球首個 observability MCP Server（整合 Claude/ChatGPT/Cursor）",
+     "src": "https://logz.io/blog/major-product-announcements-new-era-of-ai-first-observability/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "eval_red_team_us"
+    },
+    {
+     "id": "agent_runtime_monitoring"
+    },
+    {
+     "id": "model_governance_risk"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Dynatrace × NVIDIA AI LLM Observability（2025/5）",
+     "url": "https://www.dynatrace.com/news/press-release/dynatrace-nvidia-ai-llm-observability/"
+    },
+    {
+     "label": "Cisco AI Defense（Robust Intelligence 收購）",
+     "url": "https://blogs.cisco.com/news/fortifying-the-future-of-security-for-ai-cisco-announces-intent-to-acquire-robust-intelligence"
+    },
+    {
+     "label": "IBM watsonx.governance 2.1 GA",
+     "url": "https://www.ibm.com/new/announcements/ibm-unveils-watsonx-governance-2-1-to-transform-your-ai-governance-experience"
+    },
+    {
+     "label": "Fiddler AI Series C USD 30M（2026/1）",
+     "url": "https://www.fiddler.ai/press-releases/fiddler-raises-30m-series-c"
+    }
+   ]
+  },
+  {
+   "id": "eval_red_team_us",
+   "row": "eval",
+   "col": 1,
+   "span": 5,
+   "kind": "stage",
+   "name": "Eval / Red-team / Benchmark 平台",
+   "nameEn": "Eval, Red-team & Benchmark Platforms",
+   "competition": "fragmented",
+   "single": "企業整合 · Cisco 收 Robust Intelligence＋Galileo(2026/5，併入 Splunk Observability AI Agent Monitoring) / Check Point 收 Lakera(USD 300M) / F5 收 CalypsoAI(USD 180M) / OpenAI 收 Promptfoo(USD 86M)；純創業公司 Patronus(Series B USD 50M)/Braintrust 估值攀升。⚠ 結構真相：eval/red-team 是被資安+雲大廠系統性收購的『退場跑道』，連估值最高、收入 +834% 的 Galileo 也於 2026/5 被 Cisco 收編，獨立新創罕見 IPO。⚠ 2026/6 OpenAI 收掉第一方 Evals/Agent Builder（11/30 下線）改推 Agents SDK，移除免費內建競品，反為 Braintrust/LangSmith/Arize 等獨立 eval 平台利多",
+   "desc": "提供自動化 LLM 評測（hallucination 偵測、準確率、RAG 品質）、adversarial red-teaming（prompt injection、jailbreak、PII 洩漏）與 benchmark 標準化的平台層。M&A 整合加速：Cisco 收 Robust Intelligence（2024/9）、Check Point 收 Lakera（2025/9 USD 300M）、F5 收 CalypsoAI（2025/9 USD 180M）、OpenAI 收 Promptfoo（2026/3 約 USD 86M，整合進企業 Agent 平台 Frontier）、Cisco 再收 Galileo（2026/5/22 完成，條款未揭露）。",
+   "marketSize": "AI Testing & Eval 市場 2025 ~USD 1.2-1.8B；廣義 AI Security（含 red-team）~USD 5-7B（2025）",
+   "growth": "YoY +40-50%（eval 工具採用隨企業 AI 部署加速）；Galileo 2024 年收入 +834%",
+   "share": "null",
+   "analysis": "Galileo 2024 年收入 +834%，Series B USD 45M（Scale VP 領投，Databricks/ServiceNow/Amex Ventures）；Patronus AI 以 FinanceBench 切入金融垂直（USD 40.1M 總融資）；HiddenLayer 專注 ML 模型本身安全（M12/Booz Allen 投資，2025 收入 USD 34.9M）；Adversa AI 定位「Continuous AI Red Teaming」，2025 Fortress Cybersecurity Award；UK AISI Inspect 成為 frontier model safety eval 事實標準之一（200+ eval 套件）。",
+   "companies": [
+    {
+     "name": "Galileo（within Cisco CSCO / Splunk Observability）",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "2024 年收入 +834%；Fortune 50 客戶 6 家；累計募資僅約 USD 68M；2026/5/22 Cisco 完成收購（條款未揭露）",
+     "products": "Galileo Evaluation Intelligence（GenAI eval、agent eval、hallucination 偵測）；Agentic Evaluations；Galileo Luna 評測模型；技術併入 Splunk Observability Cloud 的 AI Agent Monitoring",
+     "note": "2024/10 Series B USD 45M（Scale VP 領投）後，2026/4/9 Cisco 宣布、2026/5/22 完成收購；併後與 Datadog/Dynatrace 在『統一可觀測性控制面』正面競爭；未揭露金額且累計募資僅約 USD 68M，反映獨立 eval 標的退出價或低於前輪私募預期",
+     "src": "https://siliconangle.com/2026/04/09/cisco-buys-galileo-strengthen-splunks-agentic-monitoring-capabilities/"
+    },
+    {
+     "name": "Patronus AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "FinanceBench 業界首個金融 LLM benchmark；MEMTRACK agent 長記憶 benchmark（2025/10）；Series B USD 50M、總融資約 USD 70M",
+     "products": "自動化 LLM Eval & Security 平台（hallucination 偵測、著作權違規、PII 洩漏）；Agent Evaluation Suite（2026/3，含 adversarial red-team LLM）；FinanceBench；MEMTRACK",
+     "note": "Series B USD 50M（2026，總融資躍至約 USD 70M，未揭露領投/估值）；2024 Series A USD 17M（Notable Capital 領投，Lightspeed/Factorial/Datadog）；產品由單一回應 eval 轉向 agent eval",
+     "src": "https://www.patronus.ai/"
+    },
+    {
+     "name": "Robust Intelligence（within Cisco CSCO）",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "2024/9 完成收購（est. USD 400M）；整合至 Cisco AI Defense & Foundation AI",
+     "products": "AI 應用安全平台（自動化 AI 模型安全測試、安全漏洞評估）；Cisco AI Defense 核心組件",
+     "note": "Cisco 2024/8 宣布意向，9 月完成；SOC 2 Type 2 認證；Tom Gillis（Cisco Security SVP）主導整合",
+     "src": "https://www.cisco.com/site/us/en/products/security/ai-defense/robust-intelligence-is-part-of-cisco/index.html"
+    },
+    {
+     "name": "Lakera（within Check Point CHKP）",
+     "ticker": "CHKP",
+     "country": "IL",
+     "share": "Q4 2025 完成收購（est. USD 300M）；Zurich 成 Check Point 全球 AI Security Centre of Excellence",
+     "products": "Lakera Guard（AI-native prompt injection 防護、LLM red-teaming、agentic AI 安全）；整合至 Check Point Infinity",
+     "note": "創辦人來自 Google、Meta、航太業；2024/7 USD 20M Series A（Atomico）；最後累計融資 USD 30M",
+     "src": "https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/"
+    },
+    {
+     "name": "CalypsoAI（within F5 FFIV）",
+     "ticker": "FFIV",
+     "country": "IE",
+     "share": "2025/9 收購 USD 180M（官方確認現金支付）；~50 人團隊；總融資 USD 40M",
+     "products": "企業級 AI 安全平台（inference layer guardrail、AI red-teaming、LLM input/output 過濾、audit trail）；RSA 2025 Innovation Sandbox Top 2",
+     "note": "F5 SEC Form 8-K 確認；Paladin Capital、Lockheed Martin 為原投資人",
+     "src": "https://www.f5.com/company/news/press-releases/f5-to-acquire-calypsoai-to-bring-advanced-ai-guardrails-to-large-enterprises"
+    },
+    {
+     "name": "HiddenLayer",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025 收入 USD 34.9M；169 名員工；Fortune 500 客戶群；總融資 USD 56M",
+     "products": "Machine Learning Security（MLSec）Platform；AI 模型文件掃描（供應鏈安全）；模型逆向工程防護；LLM 運行時安全監控",
+     "note": "M12（Microsoft Ventures）、Moore Strategic Ventures、Booz Allen Ventures、IBM Ventures、Capital One Ventures；Series A USD 50M（2023/9）",
+     "src": "https://www.hiddenlayer.com/news/hiddenlayer-raises-50m-in-series-a-funding-to-safeguard-ai"
+    },
+    {
+     "name": "UK AISI Inspect（英國 AI Security Institute）",
+     "ticker": "—",
+     "country": "UK",
+     "share": "200+ 預建 eval 套件；50+ 社群貢獻者；frontier model safety eval 事實標準之一",
+     "products": "Inspect AI（開源 LLM Eval 框架）；Inspect Evals（200+ 標準化評估套件）；Inspect Sandboxing Toolkit（agent eval 安全沙箱）",
+     "note": "2024/5 開源；涵蓋 coding/agentic tasks/reasoning/knowledge/behavior/multi-modal；VS Code Extension 輔助撰寫",
+     "src": "https://inspect.aisi.org.uk/"
+    },
+    {
+     "name": "Adversa AI",
+     "ticker": "—",
+     "country": "IL",
+     "share": "Fortune 500 及政府客戶（美、歐、亞）；2025 Fortress Cybersecurity Award；2026 BIG Innovation Award",
+     "products": "Agentic AI Security Platform（持續 AI Red Teaming）；自動化 adversarial testing（GenAI apps、AI agents、MCP 架構）；OWASP GenAI Security Project 認證",
+     "note": "創辦於 2021 年；CSA Pitchapalooza 2025 得獎；研究顯示 35% 真實世界 AI 安全事件由簡單 prompt 引發",
+     "src": "https://adversa.ai/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "llm_observability_us"
+    },
+    {
+     "id": "observability_incumbent"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "agent_runtime_monitoring"
+    },
+    {
+     "id": "model_governance_risk"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Galileo Series B USD 45M（2024/10）",
+     "url": "https://www.prnewswire.com/news-releases/galileo-raises-45m-series-b-funding-to-bring-evaluation-intelligence-to-generative-ai-teams-everywhere-302276383.html"
+    },
+    {
+     "label": "Patronus AI Series A USD 17M",
+     "url": "https://www.patronus.ai/announcements/patronus-ai-raises-17-million-to-detect-llm-mistakes-at-scale"
+    },
+    {
+     "label": "Check Point 收購 Lakera AI（2025/9）",
+     "url": "https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/"
+    },
+    {
+     "label": "F5 收購 CalypsoAI USD 180M（2025/9）",
+     "url": "https://www.f5.com/company/news/press-releases/f5-to-acquire-calypsoai-to-bring-advanced-ai-guardrails-to-large-enterprises"
+    },
+    {
+     "label": "UK AISI Inspect 官網",
+     "url": "https://inspect.aisi.org.uk/"
+    }
+   ]
+  },
+  {
+   "id": "agent_runtime_monitoring",
+   "row": "agent",
+   "col": 1,
+   "span": 5,
+   "kind": "stage",
+   "name": "Agent Runtime 監控 / Action Audit",
+   "nameEn": "Agent Runtime Monitoring & Action Audit",
+   "competition": "emerging",
+   "single": "CoreWeave/W&B Weave 整合 · USD 1.7B 收購後 6 週即發布首批 agent eval 整合；LangSmith 跨 obs→eval→agent 三層最完整。⚠ 萌芽市場（USD 400-600M、無固化領導者）：獨立新創天花板是被收編而非上市，定價權正向算力/雲/資安收編層轉移",
+   "desc": "針對多步驟、長時自主執行的 AI Agent 提供 real-time 行動審計、工具呼叫追蹤、異常中斷偵測與 ROI 量化的運行時監控層。隨著 Agentic AI 部署規模化，此層從 LLM Obs 中獨立出來成為新需求。",
+   "marketSize": "Agent Runtime Monitoring 2025 新興市場約 USD 400-600M；2027 預估 USD 2-3B（agent 部署規模化驅動）",
+   "growth": "YoY 早期高速成長（基數小）；W&B Weave 2025/6 上架 AWS Marketplace AI Agents & Tools 分類",
+   "share": "null",
+   "analysis": "W&B（CoreWeave USD 1.7B 收購，2025/5）6 週後即發布 W&B Weave for Agent Online Evals（AWS Marketplace）；Anthropic 2025/8 acqui-hire HumanLoop 全團隊，eval 功能整合至 Console；TruLens（Snowflake 2024/5 收購 TruEra）成為 Snowflake Cortex AI 的評估層；Fiddler AI 2026/1 Series C 後定位轉向「AI Agent Control Plane」；Mona Labs 聚焦 AI-first 公司生產 AI 持續優化。",
+   "companies": [
+    {
+     "name": "CoreWeave / W&B Weave",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "2025/5 完成 USD 1.7B 收購 W&B；1,400+ 組織使用 W&B（含 AstraZeneca、NVIDIA）",
+     "products": "W&B Weave（AI Agent Online Evaluations、real-time agent performance monitoring）；W&B Models（ML 實驗追蹤）；W&B Inference；Mission Control Integration",
+     "note": "收購後 6 週（Jun 2025）即發布首批整合；W&B Weave 上架 AWS Marketplace AI Agents & Tools 分類",
+     "src": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Completes-Acquisition-of-Weights--Biases/default.aspx"
+    },
+    {
+     "name": "Anthropic Console（含 HumanLoop eval）",
+     "ticker": "—",
+     "country": "US",
+     "share": "Claude API 月活開發者數百萬；2025/8 acqui-hire HumanLoop 全團隊",
+     "products": "Anthropic Console（API 使用監控、token 用量、成本追蹤）；Claude Workbench（prompt 測試）；Evaluations Tab（前 HumanLoop eval 功能）",
+     "note": "HumanLoop 平台 2025/9/8 下線；功能整合至 Console；Anthropic 2026/5 Series H USD 65B（Altimeter/Dragoneer/Greenoaks/Sequoia），投後估值 USD 965B",
+     "src": "https://humanloop.com/blog/joining-anthropic"
+    },
+    {
+     "name": "TruLens / TruEra（within Snowflake SNOW）",
+     "ticker": "SNOW",
+     "country": "US",
+     "share": "2024/5 Snowflake 收購 TruEra；整合至 Snowflake Cortex AI",
+     "products": "TruLens（開源 LLM eval + agent 追蹤框架）；TruEra Platform（診斷、監控）；整合 Snowflake Cortex AI（RAG eval、hallucination 偵測）",
+     "note": "TruLens 成為 Snowflake 工程維護開源專案；定位 Snowflake AI Data Cloud 生態的 eval 與治理層",
+     "src": "https://truera.com/snowflake-is-acquiring-the-truera-ai-observability-platform/"
+    },
+    {
+     "name": "Fiddler AI (AI Agent Control Plane)",
+     "ticker": "—",
+     "country": "US",
+     "share": "總融資 USD 100M；Lightspeed/Lux Capital/Insight/Capgemini Ventures/Cisco 投資",
+     "products": "AI Control Plane for Enterprise Agents（telemetry、eval、monitoring、policy enforcement、audit）；LLM observability；Fiddler Auditor",
+     "note": "2026/1 Series C USD 30M（RPS Ventures 領投）；金融、醫療等高監管行業客群；Cisco Investments 為 Series B 策略投資人",
+     "src": "https://www.fiddler.ai/press-releases/fiddler-raises-30m-series-c"
+    },
+    {
+     "name": "Mona Labs",
+     "ticker": "—",
+     "country": "IL",
+     "share": "Seed USD 2M（R Ventures/Plug and Play/TELUS Global Ventures）；AI-first 公司生產監控專家",
+     "products": "Intelligent AI & ML Monitoring Platform；production AI 行為監控（NLP/LLM）；real-time anomaly detection；業務指標關聯分析",
+     "note": "創辦人來自 Google 與 McKinsey；強調「持續優化生產 AI 系統」而非一次性 eval",
+     "src": "https://www.monalabs.io/"
+    },
+    {
+     "name": "InsightFinder AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "2026/4 Series B USD 15M（總融資 USD 35M）；多家 Fortune 500 部署；團隊 <30 人",
+     "products": "Autonomous Reliability Insights（ARI，composite AI 驅動的可靠性 agent，涵蓋偵測/診斷/修復/預防全 incident 生命週期）；AI Agent 失效根因分析；IT 穩定性平台",
+     "note": "2026/4/16 Series B（Yu Galaxy 領投）；創辦人 Helen Gu（NC State 教授，前 IBM/Google）；首批銷售/行銷團隊擴編",
+     "src": "https://techcrunch.com/2026/04/16/insightfinder-raises-15m-to-help-companies-figure-out-where-ai-agents-go-wrong/"
+    },
+    {
+     "name": "Respan（前 Keywords AI）",
+     "ticker": "—",
+     "country": "US",
+     "share": "100+ AI 新創 + 企業客戶；每月處理 1B+ logs、2T+ tokens、6.5M+ 終端用戶；2025 營收 8x YoY",
+     "products": "Respan（業界首個 proactive AI observability：單一平台同時擁有 gateway/observability/eval/prompt 四原語）；自動化 evaluation agent（metric-first，連續評估生產 agent 行為並回饋 prompt 更新/回歸測試/品質漂移告警）",
+     "note": "2026/3 Seed USD 5M（Gradient/Y Combinator/Hat-Trick Capital 等）；Google AI Fund 參投；定位『從 eval 到 production 閉環』",
+     "src": "https://siliconangle.com/2026/03/18/respan-raises-5m-bring-proactive-observability-ai-agents/"
+    },
+    {
+     "name": "InsightFinder AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "2026/4 Series B USD 15M（總融資 USD 35M）；多家 Fortune 500 部署；團隊 <30 人",
+     "products": "Autonomous Reliability Insights（ARI，composite AI 驅動的可靠性 agent，涵蓋偵測/診斷/修復/預防全 incident 生命週期）；AI Agent 失效根因分析；IT 穩定性平台",
+     "note": "2026/4/16 Series B（Yu Galaxy 領投）；創辦人 Helen Gu（NC State 教授，前 IBM/Google）；首批銷售/行銷團隊擴編",
+     "src": "https://techcrunch.com/2026/04/16/insightfinder-raises-15m-to-help-companies-figure-out-where-ai-agents-go-wrong/"
+    },
+    {
+     "name": "Respan（前 Keywords AI）",
+     "ticker": "—",
+     "country": "US",
+     "share": "100+ AI 新創 + 企業客戶；每月處理 1B+ logs、2T+ tokens、6.5M+ 終端用戶；2025 營收 8x YoY",
+     "products": "Respan（業界首個 proactive AI observability：單一平台同時擁有 gateway/observability/eval/prompt 四原語）；自動化 evaluation agent（metric-first，連續評估生產 agent 行為並回饋 prompt 更新/回歸測試/品質漂移告警）",
+     "note": "2026/3 Seed USD 5M（Gradient/Y Combinator/Hat-Trick Capital 等）；Google AI Fund 參投；定位『從 eval 到 production 閉環』",
+     "src": "https://siliconangle.com/2026/03/18/respan-raises-5m-bring-proactive-observability-ai-agents/"
+    },
+    {
+     "name": "OpenAI Usage Dashboard",
+     "ticker": "—",
+     "country": "US",
+     "share": "ChatGPT 週活躍用戶 9 億+（2026/2）；企業客戶 100 萬+；2026/3/31 完成 USD 122B 融資（Amazon/NVIDIA/SoftBank），投後估值 USD 852B",
+     "products": "OpenAI Platform Usage Dashboard（API 呼叫追蹤、token 成本、model latency、rate limit 監控）；Agents SDK（取代下線的 Agent Builder）；Fine-tuning monitor；Playground",
+     "note": "無獨立 observability 品牌；2026/6/3 宣布收掉第一方 Evals 與 Agent Builder（Evals 10/31 轉唯讀、平台 11/30 下線），改推 Agents SDK；模型廠退出自建評測工具，對 Braintrust/LangSmith/Arize/Galileo 等獨立 eval 平台為利多（移除免費內建競品）",
+     "src": "https://developers.openai.com/api/docs/deprecations"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "llm_observability_us"
+    },
+    {
+     "id": "eval_red_team_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "model_governance_risk"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CoreWeave 完成收購 Weights & Biases USD 1.7B（2025/5）",
+     "url": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Completes-Acquisition-of-Weights--Biases/default.aspx"
+    },
+    {
+     "label": "Anthropic acqui-hire HumanLoop（2025/8）",
+     "url": "https://humanloop.com/blog/joining-anthropic"
+    },
+    {
+     "label": "Snowflake 收購 TruEra（2024/5）",
+     "url": "https://truera.com/snowflake-is-acquiring-the-truera-ai-observability-platform/"
+    },
+    {
+     "label": "Fiddler AI Series C USD 30M（2026/1）",
+     "url": "https://www.fiddler.ai/press-releases/fiddler-raises-30m-series-c"
+    }
+   ]
+  },
+  {
+   "id": "model_governance_risk",
+   "row": "gov",
+   "col": 1,
+   "span": 5,
+   "kind": "stage",
+   "name": "Governance / Model Risk Management（MRM）",
+   "nameEn": "AI Governance, Model Risk & Compliance",
+   "competition": "fragmented",
+   "single": "企業大廠主導 · IBM watsonx.governance Forrester Wave Leader（Q3 2025）；SAS Viya Model Manager 鎖定銀行/保險 MRM；Credo AI Gartner Cool Vendor + Forrester Leader 雙認可。⚠ 市場僅 USD 309M(2025) 但 CAGR ~35%：EU AI Act 強制合規是真正定價權來源，惟 2026-05 Omnibus 將高風險強制期由 2025-08 延後至 2027-12，短期合規急迫性下降、需求遞延，法規而非技術決定誰勝出",
+   "desc": "為 AI 系統全生命週期提供 model inventory、bias 偵測、fairness 評估、EU AI Act 合規、audit trail 與 Model Risk Management（MRM）的治理平台層。EU AI Act 高風險 AI 系統強制合規是最大市場催化劑，惟 2026-05-07 Omnibus 政治協議已將 Annex III 強制期延後至 2027-12-02、需求遞延；金融、醫療、保險等高監管行業為主要客群。",
+   "marketSize": "AI Governance Platforms 2025 ~USD 800M-1.2B；廣義 AI Risk & Compliance ~USD 2-3B；2028 預估 USD 5-7B（EU AI Act 強制驅動）",
+   "growth": "YoY +35-45%；EU AI Act『Digital Omnibus』2026-05-07 政治協議，高風險（Annex III）系統強制合規由 2025-08 延後至 2027-12-02，Annex I 內嵌型延至 2028-08；Gartner 2028 預測 50% GenAI 部署將強制納入 LLM Observability",
+   "share": "null",
+   "analysis": "IBM watsonx.governance 2.1 GA（2025），Forrester Wave Q3 2025 Leaders，新增 Agentic monitoring/Evaluation Studio/Guardrails；SAS Viya 2025/5 重大更新加入 governed agentic AI + AI Navigator（Q3 2026 Azure 上市）；Credo AI Gartner Cool Vendor + Forrester Wave Leaders 雙認可（2025）；ModelOp 推業界首個 AI Governance Score 量化指標；Holistic AI IDC 2025 報告認可。",
+   "companies": [
+    {
+     "name": "IBM watsonx.governance",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "Forrester Wave AI Governance Leaders Q3 2025；watsonx.governance 2.1 GA；Gartner Peer Insights 4.3/5",
+     "products": "watsonx.governance（model inventory、eval、bias 偵測、AI guardrails、agentic AI 治理、shadow AI 偵測）；Evaluation Studio；Governed Agentic Catalog；Enterprise Governance Accelerator",
+     "note": "FY2025 全年 USD 63.5B；2025 年 Agentic monitoring、Evaluation Studio、Guardrails 新功能；Australia/NZ Cloud 擴張",
+     "src": "https://www.ibm.com/new/announcements/ibm-unveils-watsonx-governance-2-1-to-transform-your-ai-governance-experience"
+    },
+    {
+     "name": "SAS Institute (Viya Model Manager + AI Navigator)",
+     "ticker": "—",
+     "country": "US",
+     "share": "SAS Viya 銀行業 MRM 深度佈局；私有公司估值約 USD 15-17B；SAS AI Navigator Q3 2026 Azure 上市",
+     "products": "SAS Viya Model Manager（ML/AI 模型全生命週期：register/validate/compare/deploy/monitor）；SAS AI Navigator（企業 AI model inventory + 政策管理 SaaS）；Agentic AI 治理框架",
+     "note": "2025/5 重大更新：governed AI assistants + agentic AI capabilities；統一治理平台鎖定銀行等高度監管行業",
+     "src": "https://www.prnewswire.com/news-releases/sas-expands-sas-viya-with-governed-ai-assistants-and-agentic-ai-capabilities-302755495.html"
+    },
+    {
+     "name": "Credo AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "Gartner 2025 Cool Vendor AI Cybersecurity Governance；Forrester Wave AI Governance Leaders Q3 2025；CB Insights AI 100（2025）",
+     "products": "AI Governance Platform（AI lifecycle governance、風險合規、model inventory、shadow AI 偵測、EU AI Act 合規）；Policy Engine；AI Risk Assessment",
+     "note": "2024/7 USD 21M 新資本輪（CrimsoNox Capital/Mozilla Ventures/FPV Ventures）；總融資 USD 41.3M；Andrew Ng AI Fund 早期投資人",
+     "src": "https://www.businesswire.com/news/home/20240730411517/en/Credo-AI-Announces-$21-Million-in-New-Capital"
+    },
+    {
+     "name": "ModelOp",
+     "ticker": "—",
+     "country": "US",
+     "share": "Gartner 2025 Market Guide AI Governance Platforms 收錄；業界首個 AI Governance Score",
+     "products": "ModelOp Center v3.3（AI Governance 軟體）；AI Governance Score（量化跨 AI 專案風險合規指標）；模型 inventory/版本控制/audit trail/合規報告",
+     "note": "2024/8 Series B USD 10M（Baird Capital 領投）；金融、醫療等高監管行業",
+     "src": "https://www.modelop.com/blog/a-milestone-moment-modelop-raises-10-million-to-accelerate-the-growth-of-its-leading-ai-governance-software"
+    },
+    {
+     "name": "Holistic AI",
+     "ticker": "—",
+     "country": "UK",
+     "share": "IDC 2025 Worldwide AI Governance Platforms ProductScape 收錄；43 名員工",
+     "products": "Holistic AI Governance Platform（bias 偵測、security、compliance、AI lifecycle risk mgmt）；EU AI Act 合規工具；Model Cards 自動生成；AI Impact Assessment",
+     "note": "英國 + 美國雙總部；服務金融、醫療、人力資源等高風險 AI 應用場景",
+     "src": "https://www.holisticai.com/"
+    },
+    {
+     "name": "Palo Alto Networks (Prisma AIRS 2.0)",
+     "ticker": "PANW",
+     "country": "US",
+     "share": "2025/7 完成收購 Protect AI；Prisma AIRS 2.0 覆蓋 AI apps/agents/models/data 四層",
+     "products": "Prisma AIRS 2.0（2025/10 launch）；Cortex XSIAM；Strata；AI Security Posture Management（AI-SPM）",
+     "note": "FY2025 Q4 NGS ARR USD 4.81B（+34% YoY）；Protect AI 收購強化 ML supply chain security",
+     "src": "https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-completes-acquisition-of-protect-ai"
+    },
+    {
+     "name": "C3.ai (AI Governance in Agentic Platform)",
+     "ticker": "AI",
+     "country": "US",
+     "share": "FY2026（至 2026/4/30）訂閱+優先工程服務營收 USD 245.1M（佔總營收 98%）；Q4 FY2026 總營收 USD 51.6M；2026/6/3 Siebel 回任 CEO 並以 USD 11.16/股自購 617 萬股；現金 USD 673M（2026/6/3）",
+     "products": "C3 Agentic AI Platform（data governance、role-based access control、audit trail）；C3 Code（Apr 2026）；AI Type System（統一資料抽象層）",
+     "note": "治理功能內嵌於 agentic platform；2026/4 C3 Code 為重大新品；US HHS 選擇 C3 為 AI 平台（2025）",
+     "src": "https://c3.ai/c3-agentic-ai-platform/data/governance/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "eval_red_team_us"
+    },
+    {
+     "id": "agent_runtime_monitoring"
+    },
+    {
+     "id": "observability_incumbent"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "cn_llmops"
+    },
+    {
+     "id": "jp_llmops"
+    },
+    {
+     "id": "kr_llmops"
+    },
+    {
+     "id": "tw_llmops"
+    },
+    {
+     "id": "in_sea_llmops"
+    }
+   ],
+   "sources": [
+    {
+     "label": "IBM watsonx.governance 2.1 GA",
+     "url": "https://www.ibm.com/new/announcements/ibm-unveils-watsonx-governance-2-1-to-transform-your-ai-governance-experience"
+    },
+    {
+     "label": "SAS Viya governed AI + agentic（2025/5）",
+     "url": "https://www.prnewswire.com/news-releases/sas-expands-sas-viya-with-governed-ai-assistants-and-agentic-ai-capabilities-302755495.html"
+    },
+    {
+     "label": "Credo AI USD 21M 融資（2024/7）",
+     "url": "https://www.businesswire.com/news/home/20240730411517/en/Credo-AI-Announces-$21-Million-in-New-Capital"
+    },
+    {
+     "label": "Palo Alto Networks 完成收購 Protect AI（2025/7）",
+     "url": "https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-completes-acquisition-of-protect-ai"
+    }
+   ]
+  },
+  {
+   "id": "cn_llmops",
+   "row": "asia",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國 LLMOps",
+   "nameEn": "China LLMOps Platforms",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "阿里 PAI/DashScope、百度千帆、騰訊 TI Platform、字節火山方舟四大 hyperscaler 形成閉環 LLMOps 生態；Dify（開源）、商湯 SenseCore、華為 ModelArts 補足長尾；寒武紀提供國產算力替代路線。",
+   "marketSize": "中國 LLMOps/MLOps 市場 2025 約 RMB 80-120 億；大模型調用量 YoY +500%+",
+   "growth": "ByteDance 火山引擎 H1 2025 中國公有雲 LLM API 調用佔比 49.2%（IDC）；阿里 Qwen API 成長 +200% YoY",
+   "share": "null",
+   "analysis": "字節火山方舟 2025 H1 IDC 報告公有雲 LLM API 調用量佔比 49.2%（第一），日處理 ~30 兆 token；Dify 2026/3 Pre-A USD 3,000 萬（HSG 領投，估值 USD 1.8 億），GitHub 131k stars；商湯 SenseCore 2.0 25,000 PFLOPS算力，2025/12 再融資 HK$ 31.46 億；寒武紀 2025 H1 收入 RMB 28.8 億（同比+4,348%）首次大規模盈利。",
+   "companies": [
+    {
+     "name": "Alibaba Cloud PAI + DashScope / Qwen-Agent",
+     "ticker": "9988.HK",
+     "country": "CN",
+     "share": "2025 Gartner GenAI Model Providers Emerging Leader；Qwen GitHub 下載 4,000 萬次+",
+     "products": "PAI（PAI-EAS/PAI-DLC/PAI-DSW）；DashScope API；Qwen-Agent Framework（OSS，支援 function calling/MCP/RAG）；AgentScope",
+     "note": "三年 RMB 3,800 億算力 capex；PAI 提供資料標注→訓練→評估→壓縮→部署一站式 LLMOps",
+     "src": "https://www.alibabacloud.com/help/en/pai/product-overview/service-architecture"
+    },
+    {
+     "name": "Baidu 千帆大模型平台（Qianfan）",
+     "ticker": "9888.HK",
+     "country": "CN",
+     "share": "2025/3 首家通過中國信通院「可信 AI 大模型一體機性能評估」；千帆社群開發者生態活躍",
+     "products": "千帆（Qianfan）：LLM 開發及應用平台（資料服務/標注/知識庫/RLHF/評估/壓縮/服務 API）；Qianfan LLMOps SDK",
+     "note": "Core AI 業務 2025 全年 RMB 400 億（+48% YoY）；ERNIE MAU > 2 億",
+     "src": "https://cloud.baidu.com/product-s/qianfan_home"
+    },
+    {
+     "name": "ByteDance 火山方舟（Volcano Ark）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "H1 2025 IDC：中國公有雲 LLM API 調用佔比 49.2%（第一），全年升至 49.5%；阿里雲 27%、百度雲 17% 居二三 → top-3 約 93.5% 為典型寡占；日處理 ~30 兆 token",
+     "products": "火山方舟（模型微調/評估/推理/Fine-tuning）；HiAgent（生命週期管理）；MCP Market；veRL（Reinforcement Learning for LLMs，OSS）",
+     "note": "火山引擎 2025 目標收入 RMB 250 億；2026 春晚獨家 AI 雲合作夥伴",
+     "src": "https://www.volcengine.com/product/ark"
+    },
+    {
+     "name": "Tencent TI Platform (TI-ONE + ADP)",
+     "ticker": "0700.HK",
+     "country": "CN",
+     "share": "ADP 3.0（2025/9）支援 LLM+RAG/Workflow/Multi-Agent；WeData 端對端 AI 觀測",
+     "products": "TI-ONE（ML 平台）；AI Agent Development Platform 3.0（ADP）；WeData（資料 lineage/根因分析/即時監控）；AI-Infra-Guard OSS（全棧 AI 紅隊含 LLM 越獄評估）",
+     "note": "2025 全年收入 HKD 6,785 億（HKEX）；AI 相關業務高速成長",
+     "src": "https://www.tencentcloud.com/products/ti"
+    },
+    {
+     "name": "Dify（LangGenius）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "GitHub 131k stars（全球第 51 大開源）；140 萬台機器部署；175 國；280+ 企業客戶",
+     "products": "Dify 開源 LLMOps 平台（Agentic Workflow/RAG pipeline/提示詞管理/Observability/評估）",
+     "note": "2026/3 Pre-A USD 3,000 萬（HSG 領投，GL Ventures/5Y Capital/Alt-Alpha/Mizuho Leaguer）；估值 USD 1.8 億",
+     "src": "https://www.businesswire.com/news/home/20260309511426/en/Dify-Raises-$30-million-Series-Pre-A-to-Power-Enterprise-Grade-Agentic-Workflows"
+    },
+    {
+     "name": "SenseTime SenseCore 2.0 + SenseTrust",
+     "ticker": "0020.HK",
+     "country": "CN",
+     "share": "SenseCore 2.0 25,000 PFLOPS（2025/8）；SenseTrust AI 治理平台",
+     "products": "SenseCore 2.0（大規模 AI 基礎設施）；SenseTrust（AI 治理：倫理評估/安全評估/應用治理）；SenseNova 基礎模型套件",
+     "note": "2025/12 再配售 HK$ 31.46 億用於 AI 基礎設施；中國大模型平台市場份額前三",
+     "src": "https://www.sensetime.com/en/news-detail/51169897?categoryId=1072"
+    },
+    {
+     "name": "Huawei ModelArts",
+     "ticker": "—",
+     "country": "CN",
+     "share": "一站式 AI 開發平台；Ascend NPU 適配 vLLM 推理；工具鏈提升開發效率 50%",
+     "products": "ModelArts（DataOps/MLOps/DevOps 全鏈路；LLM 訓練及推論）；Ascend 910B/C 系列 NPU 整合",
+     "note": "ModelArts 持續更新（2025/12/9 最新版）；LLM Inference 最佳實踐文件 2025/11 更新",
+     "src": "https://www.huaweicloud.com/intl/en-us/product/modelarts.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "model_governance_risk"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Dify Pre-A USD 3,000 萬（BusinessWire 2026/3/9）",
+     "url": "https://www.businesswire.com/news/home/20260309511426/en/Dify-Raises-$30-million-Series-Pre-A-to-Power-Enterprise-Grade-Agentic-Workflows"
+    },
+    {
+     "label": "SenseTime SenseCore 2.0 升級（2025/4）",
+     "url": "https://www.sensetime.com/en/news-detail/51169897?categoryId=1072"
+    },
+    {
+     "label": "Alibaba Cloud PAI 服務架構（官方）",
+     "url": "https://www.alibabacloud.com/help/en/pai/product-overview/service-architecture"
+    },
+    {
+     "label": "Tencent TI Platform 官網",
+     "url": "https://www.tencentcloud.com/products/ti"
+    }
+   ]
+  },
+  {
+   "id": "jp_llmops",
+   "row": "asia",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "日本 LLMOps",
+   "nameEn": "Japan LLMOps",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "ABEJA（東證 5574.T）為上市純 LLMOps 新創；NTT Data Smart AI Agent™ 切入企業 AgentOps；Preferred Networks PLaMo 以全棧支援進入金融/政府 LLM 部署；Fujitsu Takane 領跑製造/政府場景；Stockmark 專注日文幻覺最低化。",
+   "marketSize": "2025 日本企業 GenAI 採購 ~JPY 2-3 兆；GENIAC 補助框架 ¥10T；NEDO 相關 LLM 計畫 ¥135B",
+   "growth": "YoY +35-40%（企業 GenAI 採購）；ABEJA LLM 相關專案佔比 ~80%（FY2026 Q1）",
+   "share": "null",
+   "analysis": "ABEJA FY2025 計畫銷售額 ¥34.5 億（+24.7% YoY），LLM 相關專案佔 ~80%；NTT Data 2025/1 國際發布 Smart AI Agent™，目標 2027 年達 USD 20 億 AgentOps 營收；PFN PLaMo 2.1 Prime 支援自動 tool calling 與多資料庫 Agent 協作，2025/12 Digital Agency Gennai 採用；Fujitsu 2026/2 中央省廳 AI 試驗正確率 80%+。",
+   "companies": [
+    {
+     "name": "ABEJA Platform",
+     "ticker": "5574.T",
+     "country": "JP",
+     "share": "LLM 相關專案佔 ~80% 收入；FY2025 計畫銷售額 ¥34.5 億（+24.7%）；llm-leaderboard-v3（日文 OSS eval）",
+     "products": "ABEJA Platform（資料生成/收集/處理/AI 建模/持續運營全端 LLMOps）；Human in the Loop 系統；llm-leaderboard-v3（日文任務評估）",
+     "note": "NEDO 框架下構建高精度小型 LLM；製造、金融、公共主力客戶；決算短信 2025/10/15",
+     "src": "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20251015/20251015573952.pdf"
+    },
+    {
+     "name": "NTT Data（Smart AI Agent™ / AgentOps）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "2025/9/26 自東證下市（NTT TOB ¥4,000/股完全子公司化）；2025/1 國際發布 Smart AI Agent™；ISG Provider Lens 2025/11 Leader（Agentic AI）；目標 2027 USD 20 億 AgentOps 營收",
+     "products": "Smart AI Agent™（企業級自主 AI Agent 平台）；TechHub（Agent 構建工具）；AgentOps（端對端 Agent 生命週期管理）；WitnessAI 合作（日本企業 AI 安全控制）",
+     "note": "NTT 集團 FY2025 收入 ¥13.7 兆；2026/3 獲選 Digital Agency 政府 AI 平台（Gennai，180K 公務員）",
+     "src": "https://www.nttdata.com/global/en/news/press-release/2025/january/012800"
+    },
+    {
+     "name": "Preferred Networks（PLaMo + LLMOps）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "GENIAC 計畫所有階段入選；Digital Agency Gennai 採用（2025/12）；AWS Bedrock Marketplace 私有部署",
+     "products": "PLaMo 2.1 Prime（自動 tool calling、多資料庫 Agent 協作）；PLaMo-fin-base（金融 LLM）；PLaMo Translate（政府採用）",
+     "note": "企業 LLM 全棧支援（問題識別→開發→運營）；150+ 地方政府採用 QommonsAI（PLaMo 底座）",
+     "src": "https://www.preferred.jp/en/news/pr20251007-2"
+    },
+    {
+     "name": "Fujitsu（Takane LLM + LLMOps）",
+     "ticker": "6702.T",
+     "country": "JP",
+     "share": "FY2025 合併收入 ¥3.6 兆（日本數位服務市場佔率第一）；中央省廳 AI 試驗正確率 80%+（2026/2）",
+     "products": "Takane LLM（日文增強企業 LLM）；Nutanix Enterprise AI 整合（私有部署）；政府意見分類＋摘要自動化；FY2026 生成式 AI 服務",
+     "note": "2025/4 Takane 對客戶提供認證 LLM；2025/7 Fujitsu 管理服務上線；法令立法 AI 化路線圖 FY2026",
+     "src": "https://global.fujitsu/en-global/pr/news/2026/02/03-01"
+    },
+    {
+     "name": "Stockmark（Aconnect + Stockmark-2-100B）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "2024/10 D 輪融資 ¥45 億（Polaris Capital 領投）；日文幻覺最低化為核心差異；AWS Trainium 日文 LLM 開發",
+     "products": "Aconnect（AI 驅動商業情報平台，日/英/中三語）；Stockmark-2-100B-Instruct（開源 100B 日文 LLM）；SAT（工業用 AI Agent）",
+     "note": "GENIAC 計畫所有階段入選；製造業為主要客群",
+     "src": "https://stockmark.co.jp/news/20251007"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "model_governance_risk"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "ABEJA FY2025 決算短信（TDnet 2025/10/15）",
+     "url": "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20251015/20251015573952.pdf"
+    },
+    {
+     "label": "NTT Data Smart AI Agent™ 國際發布（2025/1/28）",
+     "url": "https://www.nttdata.com/global/en/news/press-release/2025/january/012800"
+    },
+    {
+     "label": "PFN PLaMo 2.1 Prime 發布（2025/10/7）",
+     "url": "https://www.preferred.jp/en/news/pr20251007-2"
+    },
+    {
+     "label": "Fujitsu 中央省廳 AI 試驗（2026/2/3）",
+     "url": "https://global.fujitsu/en-global/pr/news/2026/02/03-01"
+    }
+   ]
+  },
+  {
+   "id": "kr_llmops",
+   "row": "asia",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "韓國 LLMOps",
+   "nameEn": "Korea LLMOps",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "Samsung SDS FabriX 為韓國最大企業 GenAI 全棧平台（約 10 萬用戶）；Allganize Alli LLMOps 為最具代表本土 LLMOps 新創（200+ 企業/公共機構客戶）；CLOVA Studio（Naver）提供完整 LLMOps pipeline；LG CNS DAP GenAI 走私有部署防幻覺路線；KT 切入電信/客服 AI 監控。",
+   "marketSize": "2025 韓國 AI/GenAI 企業服務市場 ~USD 3-4B；Samsung SDS FabriX 約 10 萬企業用戶（韓最大）",
+   "growth": "YoY +35-40%；Samsung SDS 2025 雲業務 KRW 2.68T（+15.4% YoY）；LG CNS 2025 KOSPI IPO",
+   "share": "null",
+   "analysis": "Samsung SDS FabriX 2025/9 全棧 AI 策略發布，CES 2026 Agentic AI 展示，Multi-Agent 支援 MCP + A2A；LG CNS 2025/2 KOSPI IPO 募資 ~USD 821M，企業價值 ~USD 5.1B，CEO 定調「AI 轉型 = 生存策略」；Allganize Series B USD 2,000 萬（SKT/KB Investment/LG Technology Ventures 投資）；CLOVA Studio 1,000+ 企業用戶，韓、日、新加坡、德、美多國服務。",
+   "companies": [
+    {
+     "name": "Samsung SDS（FabriX + Agent Studio）",
+     "ticker": "018260.KS",
+     "country": "KR",
+     "share": "韓國最大企業生成式 AI 服務平台，約 10 萬用戶；2025 FabriX 全棧 AI 策略；CES 2026 Agentic AI 展示",
+     "products": "FabriX（Multi-LLM/Agent Studio/Multi-Agent 含 MCP+A2A）；Brity Copilot（協作工具 18 萬全球用戶）；Cello Square 物流 SaaS",
+     "note": "2025 全年雲業務 KRW 2.68T（+15.4% YoY）；政府通用 AI 基礎設施專案採用",
+     "src": "https://www.samsungsds.com/en/ai-fabrix/fabrix.html"
+    },
+    {
+     "name": "Allganize（Alli LLMOps）",
+     "ticker": "—",
+     "country": "KR",
+     "share": "200+ 企業及公共機構客戶（韓/美/日）；7 家金融機構 + 4 家公共機構 live；累計融資 USD 3,500 萬",
+     "products": "Alli LLMOps（多 LLM 閘道/RAG 2.0/Alli LLM App Market）；韓國唯一企業 LLM App 市場；金融/公共垂直 App",
+     "note": "Series B USD 2,000 萬（2023/11，InterVest/Murex/SK Telecom/KB Investment/LG Technology Ventures）；2025 日本 IPO 計畫",
+     "src": "https://www.allganize.ai/ko/products/alli-llm-ops"
+    },
+    {
+     "name": "Naver Cloud（CLOVA Studio LLMOps）",
+     "ticker": "035420.KS",
+     "country": "KR",
+     "share": "1,000+ 企業/機構用戶；韓、日、新加坡、德、美多國服務；K-AI 5 隊之一",
+     "products": "CLOVA Studio（LLM 探索/訓練/微調/評估/部署/監控）；HyperCLOVA X THINK（Technical Report 2025/6）；SEA-LION 合作",
+     "note": "2025/6 HyperCLOVA X THINK Technical Report 發布；CLOVA Studio 對外 API 持續開放",
+     "src": "https://clova.ai/en"
+    },
+    {
+     "name": "LG CNS（DAP GenAI + LLMOps）",
+     "ticker": "010060.KS",
+     "country": "KR",
+     "share": "2025/2 KOSPI IPO 募資 ~USD 821M；企業價值 ~USD 5.1B；S-Oil 蔚山煉油廠 AI 轉型合作",
+     "products": "DAP GenAI（LLMOps 模組：微調/RAG/向量 DB/多模態；Cohere Command R+ 整合）；私有部署防幻覺設計；銀行業自訂 LLM live 案例",
+     "note": "CEO 定調「AI 轉型 = 生存策略」；2025/8 S-Oil AI 轉型合作；韓國首座海外 AI 資料中心計畫",
+     "src": "https://www.lgcns.com/en/service/ai/ax-platform"
+    },
+    {
+     "name": "KT Corporation（AICC + LLMOps）",
+     "ticker": "030200.KS",
+     "country": "KR",
+     "share": "KT AI 投資 USD 54 億（2025）；泰語 LLM + GPU Farm 2025/4",
+     "products": "KT AICC（AI Contact Centre，NLP 驅動客服）；KT LLMOps（泰語特化 LLM + GPU Farm）；NVIDIA DGX SuperPOD + NeMo 框架",
+     "note": "KED Global 2025/4 泰語 LLM 發布；KT-NVIDIA 合作建立大規模 LLM 訓練基礎",
+     "src": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202504150004"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "model_governance_risk"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Samsung SDS FabriX 官網",
+     "url": "https://www.samsungsds.com/en/ai-fabrix/fabrix.html"
+    },
+    {
+     "label": "Allganize Alli LLMOps 官方",
+     "url": "https://www.allganize.ai/ko/products/alli-llm-ops"
+    },
+    {
+     "label": "LG CNS AX Platform 官網",
+     "url": "https://www.lgcns.com/en/service/ai/ax-platform"
+    },
+    {
+     "label": "KT 泰語 LLM（KED Global 2025/4）",
+     "url": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202504150004"
+    }
+   ]
+  },
+  {
+   "id": "tw_llmops",
+   "row": "asia",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "台灣 LLMOps",
+   "nameEn": "Taiwan LLMOps",
+   "competition": "emerging",
+   "single": "null",
+   "desc": "APMIC 為台灣首家整合 NVIDIA B200 GPU 的軟體服務商，Twinkle Eval 為開源評測框架（ACE-1 台灣主權 AI 評測第一，2026/5）；中華電信 InventAI/Bishop 提供本地化繁中 LLM 評測，是台灣唯一本地化繁中 LLM 評測平台。",
+   "marketSize": "台灣企業 AI 軟體市場 2025 ~NT$ 30-50 億；主要由 CHT InventAI/APMIC 切入私有化部署",
+   "growth": "早期階段 YoY +40-50%；APMIC Series A 2026/3（AIPO 領投，Trend Micro 參投）",
+   "share": "null",
+   "analysis": "APMIC 2026/3 Series A USD 700 萬（AIPO 領投，Trend Micro 參投），Jensen Huang CES/Computex 2024-2025 連續兩年點名，ACE-1 繁中模型台灣主權 AI 評測第一（2026/5/6）；CHT 2025/10 分拆 InventAI（AI 研究院商業化主體），Bishop 評測平台為台灣唯一本地化繁中 LLM 評測平台，MLOps 平台節省 50% 模型部署時間。",
+   "companies": [
+    {
+     "name": "APMIC（加速私有機器智慧）",
+     "ticker": "—",
+     "country": "TW",
+     "share": "台灣首家整合 NVIDIA B200 GPU 軟體服務商；800+ 客戶；NVIDIA CEO 連續兩年點名；ACE-1 台灣主權 AI 評測第一（2026/5）",
+     "products": "CaiGunn LLM 平台（企業私有化部署）；Formosa-1（3B 繁中推理模型）；Twinkle Eval（開源評測框架，整合 NVIDIA NeMo Evaluator）；ACE-1 繁中模型；S1 Distillation Solution",
+     "note": "2026/3 Series A USD 700 萬（AIPO 領投，Trend Micro 參投，Digitimes 2026/3/13）",
+     "src": "https://www.apmic.ai/en/news/3bmobiletraditionalchineseinferencemodel"
+    },
+    {
+     "name": "中華電信 InventAI + Bishop 評測平台",
+     "ticker": "2412.TW",
+     "country": "TW",
+     "share": "台灣最大 AI 相關專利組合；全球 AI City Challenge 第一；Bishop = 台灣唯一本地化繁中 LLM 評測平台",
+     "products": "InventAI（2025/10 分拆，AI 研究院商業化主體）；Bishop 評測平台（繁中 LLM 評估）；TLibra（台灣法律 LLM）；MLOps 平台（跨雲部署推論，節省 50% 部署時間）",
+     "note": "CHT 2025 Q3 業績穩健（NYSE CHT Q3 PR 2025/11）；Multi-Agent 系統設計（MOPCON 2025）",
+     "src": "https://www.advtech.cht.com.tw/p2-bishop.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "model_governance_risk"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "APMIC Formosa-1 3B 繁中模型發布",
+     "url": "https://www.apmic.ai/en/news/3bmobiletraditionalchineseinferencemodel"
+    },
+    {
+     "label": "CHT Bishop 評測平台（AdvTech 官網）",
+     "url": "https://www.advtech.cht.com.tw/p2-bishop.html"
+    },
+    {
+     "label": "CHT InventAI 成立公告（MOPS 2025/10）",
+     "url": "https://www.cht.com.tw/zh-tw/home/cht/messages/2025/0822-1650"
+    }
+   ]
+  },
+  {
+   "id": "in_sea_llmops",
+   "row": "asia",
+   "col": 5,
+   "span": 1,
+   "kind": "stage",
+   "name": "印度 / 東南亞 LLMOps",
+   "nameEn": "India & SEA LLMOps",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "印度 Zoho（Zia LLM + AI Governance Dashboard）與 Freshworks（Freddy AI Agent Studio）為最大本土 LLMOps 商業化平台；AI Singapore SEA-LION v4 + SEA-Guard 是東南亞主權 LLMOps/EvalOps 旗艦。",
+   "marketSize": "印度 AI 市場 2025 ~USD 6-8B；東南亞 AI 市場 2025 ~USD 4-5B；Zoho 全球 10 萬+ 企業客戶",
+   "growth": "YoY +40-50%（印度企業 AI 採購）；Freshworks AI 客戶 8,000 家，ARR 貢獻 USD 2,500 萬+",
+   "share": "null",
+   "analysis": "Zoho 2025/7 發布 Zia LLM（自有 LLM，部署於美/印/歐）+ 40 個預建 Zia Agents + Zia Dashboard（AI 使用治理），EMA 評為 Agentic AI + AI Governance 雙重能力；Freshworks 2026/5 Refresh 大會發布 Freddy AI Agent Studio 擴充版（MCP Gateway/AI Insights/xLAs）；AI Singapore SEA-Guard 2026/2 發布，SEA-LION-Embedding 2026/3 區域 SOTA。",
+   "companies": [
+    {
+     "name": "Zoho（Zia LLM + AI Governance）",
+     "ticker": "—",
+     "country": "IN",
+     "share": "全球 10 萬+ 企業客戶；Zia LLM 2025/7 發布；EMA 評 Agentic AI + AI Governance 雙重能力",
+     "products": "Zia LLM（美/印/歐資料中心）；40 個預建 Zia Agents；Zia Agent Studio（無代碼）；Zoho MCP Server；Zia Dashboard（AI 使用治理/Observability）；ASR 模型（英/印地文）",
+     "note": "私有公司；Zia GA 計畫 2025 年底；支援 EU AI Act 合規治理",
+     "src": "https://www.enterprisemanagement.com/product/zoho-doubles-down-on-agentic-ai-with-zia-llm-and-ai-governance/"
+    },
+    {
+     "name": "Freshworks（Freddy AI + Service Health Monitoring）",
+     "ticker": "FRSH",
+     "country": "IN",
+     "share": "AI 客戶 8,000 家；ARR 貢獻 USD 2,500 萬+；47% IT 工單在非上班時間到達（遙測數據）",
+     "products": "Freddy AI Agent Studio（2026/5 Refresh 發布：無代碼 Agent 建立/MCP Gateway/AI Insights with xLAs）；Service Health Monitoring（基礎設施→資產→事件→業務服務全鏈路）",
+     "note": "2026/5 Refresh 大會（BusinessWire 官方 PR）；Gartner Peer Insights 評分持續收集",
+     "src": "https://www.freshworks.com/pressrelease/freshworks-unveils-ai-agent-studio-in-freshservice-to-unlock-service-transformation-that-drives-compounding-business-growth/"
+    },
+    {
+     "name": "AI Singapore（SEA-LION + SEA-Guard EvalOps）",
+     "ticker": "—",
+     "country": "SG",
+     "share": "SEA-Guard 2026/2 發布；SEA-LION-Embedding 2026/3 區域 SOTA；IMDA 國家多模態 LLM 計畫（NMLP）",
+     "products": "SEA-LION v4（Qwen 底座，東南亞 11 語言精調）；SEA-Guard（SEA-LION 專屬安全護欄）；SEA-LION-Embedding suite；NMLP（國家多模態 LLM 計畫）",
+     "note": "IBM 合作強化 SEA-LION（2025）；Qualcomm AI Hub 邊緣部署（2025/6）；SEA-LION Summit 2025 舉辦",
+     "src": "https://sea-lion.ai/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "model_governance_risk"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Zoho Zia LLM + AI Governance（EMA 2025/7）",
+     "url": "https://www.enterprisemanagement.com/product/zoho-doubles-down-on-agentic-ai-with-zia-llm-and-ai-governance/"
+    },
+    {
+     "label": "Freshworks Freddy AI Agent Studio（BusinessWire 2026/5）",
+     "url": "https://www.freshworks.com/pressrelease/freshworks-unveils-ai-agent-studio-in-freshservice-to-unlock-service-transformation-that-drives-compounding-business-growth/"
+    },
+    {
+     "label": "AI Singapore SEA-LION 官網",
+     "url": "https://sea-lion.ai/"
+    },
+    {
+     "label": "IMDA NMLP 官方公告",
+     "url": "https://www.imda.gov.sg/about-imda/emerging-technologies-and-research/national-multimodal-llm-programme"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "llm_observability_us",
+   "eval_red_team_us"
+  ],
+  [
+   "llm_observability_us",
+   "agent_runtime_monitoring"
+  ],
+  [
+   "observability_incumbent",
+   "eval_red_team_us"
+  ],
+  [
+   "observability_incumbent",
+   "agent_runtime_monitoring"
+  ],
+  [
+   "observability_incumbent",
+   "model_governance_risk"
+  ],
+  [
+   "eval_red_team_us",
+   "agent_runtime_monitoring"
+  ],
+  [
+   "eval_red_team_us",
+   "model_governance_risk"
+  ],
+  [
+   "agent_runtime_monitoring",
+   "model_governance_risk"
+  ],
+  [
+   "model_governance_risk",
+   "cn_llmops"
+  ],
+  [
+   "model_governance_risk",
+   "jp_llmops"
+  ],
+  [
+   "model_governance_risk",
+   "kr_llmops"
+  ],
+  [
+   "model_governance_risk",
+   "tw_llmops"
+  ],
+  [
+   "model_governance_risk",
+   "in_sea_llmops"
+  ],
+  [
+   "llm_observability_us",
+   "cn_llmops"
+  ],
+  [
+   "llm_observability_us",
+   "jp_llmops"
+  ],
+  [
+   "eval_red_team_us",
+   "kr_llmops"
+  ]
+ ],
+ "_proposed": {}
+}

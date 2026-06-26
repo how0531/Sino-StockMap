@@ -1,0 +1,504 @@
+{
+ "id": "onsite_power",
+ "tab": "資料中心自有發電",
+ "title": "AI 資料中心自有發電 / 表後電力供應鏈 (Behind-the-Meter Prime Power for AI Data Centers)",
+ "subtitle": "AI 資料中心等不到電網——併網排隊長達 4-7 年，業者乾脆「自帶電廠」（表後 / behind-the-meter prime power），用燃氣渦輪＋往復引擎＋燃料電池就地發電。需求把熱段供應鏈逼到極限：GE Vernova（GEV）燃機合約量 2026 Q1 已達 100GW（backlog 44GW＋預留席次 56GW），目標年底達 110GW、2030 前產能售罄，2026 年化產能衝 20GW；Siemens Energy（ENR.DE）燃機 backlog 60GW＋預留 27GW、總在手單 €1,540 億、FY26 營收成長上修至 14-16%；三菱重工（7011.T）原訂產能 +30%「仍不夠」、改喊兩年內翻倍，交期長達 7 年；斗山（034020.KS）拿下美國大型科技公司 7 台 380MW 級燃機史上最大單。引擎側：Caterpillar（CAT）2GW 級往復機組大單、2027 前售罄、產能擴至 2024 年近 3 倍；Cummins（CMI）資料中心發電需求「持續超預期」。熱段是真瓶頸：Howmet（HWM）2026 Q1 引擎部門營收 +29%、其中工業燃氣渦輪市場 +39%。燃料電池另闢蹊徑：Bloom Energy（BE）2026 營收指引 $31-33 億（+~70%），拿下 AEP 1GW、Oracle 2.8GW，獲 Brookfield 最高 $50 億融資。表後 IPP/EPC（Talen TLN、ProEnergy）把燃機組成「電力孤島」交鑰匙。價值鏈：熱段高溫合金鑄件/葉片 → 燃機/引擎/燃料電池 OEM → 表後 IPP/EPC → AI 資料中心 + LNG 驅動。絃外之音：真正卡關的不是「整機 OEM」（已售罄、產能受限），而是『熱段高溫合金鑄件 / 單晶葉片』這道幾乎無法快速擴產的窄門——HWM 與少數鑄造廠握有定價權，是這波電力超級循環中『被低估的賣鏟人』；台廠最乾淨的切入點不是燃機本體，而是表後電力孤島必備的『變壓器 / GIS / 開關設備』電氣 BOP（重電四雄訂單能見度已見 2028-2030）。⚠ 與 grid_power（電網 T&D／重電）、power（機櫃 PSU/HVDC/散熱）、nuclear_smr（核能發電）部分重疊；本主題聚焦『繞過電網的就地 prime power 發電設備鏈』視角。非投資建議。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "2030 表後自有發電",
+   "v": "15-33GW",
+   "sub": "IEA 估 onsite 天然氣 15-27GW；若 BTM 佔 1/4-1/3 達 33GW",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "GEV 燃機 2030 前售罄＋三菱產能翻倍仍不夠·熱段鑄件瓶頸；風險：交期 4-7 年、天然氣/LNG 價格、併網一旦放行需求或降溫",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "hotsection",
+   "label": "上游：熱段高溫合金鑄件 / 葉片 / 材料（真瓶頸）",
+   "main": true
+  },
+  {
+   "id": "oem",
+   "label": "中游：燃機 / 往復引擎 / 燃料電池 OEM（整機）",
+   "main": false
+  },
+  {
+   "id": "bop",
+   "label": "電氣 BOP / 表後 IPP・EPC（電力孤島交鑰匙）",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "下游：AI 資料中心 + LNG / 天然氣驅動（終端）",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "hot_section",
+   "row": "hotsection",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "熱段高溫合金鑄件 / 單晶葉片",
+   "nameEn": "Hot-Section Superalloy Castings & Single-Crystal Blades",
+   "competition": "oligopoly",
+   "single": "全鏈真瓶頸 · 熱段單晶葉片/導向葉片幾乎無法快速擴產，Howmet 握定價權——燃機售罄的根因在此，是被低估的賣鏟人",
+   "desc": "燃氣渦輪「最熱、最貴、最難做」的一段：第一級動葉/導向葉（single-crystal / DS 鎳基高溫合金）、燃燒室、輪盤。鑄造良率與產能是整條燃機鏈真正的天花板。",
+   "marketSize": "工業燃氣渦輪（IGT）熱段零件 數十億美元、隨燃機循環高速成長",
+   "growth": "Howmet 2026 Q1 引擎部門營收 +29%、IGT 市場 +39%",
+   "share": "null",
+   "analysis": "整機 OEM 售罄、交期拉到 2029-2030，真正卡關的是熱段：單晶葉片要在真空爐裡長成單一晶體、良率低、認證久、爐子與技師都稀缺，產能無法像組裝線一樣擴。Howmet（HWM）2026 Q1 引擎部門營收 $12.5 億（+29%）、調整後 EBITDA +44%，其中工業燃氣渦輪市場 +39%、商用航太 +20%——同一批鑄造產能被航空超級循環與燃機需求雙重搶占，HWM 因此握有罕見定價權，全年估營收 +~10%、EBITDA 利潤率 ~30%。PCC（Berkshire 旗下，未上市）、Doncasters 等並列寡占。材料端鎳/鈷/錸與母合金（Haynes/ATI）是上游。這是『電力超級循環中最被低估的賣鏟人』——買不到葉片，再多訂單也交不出機。",
+   "companies": [
+    {
+     "name": "Howmet Aerospace",
+     "ticker": "HWM",
+     "country": "US",
+     "share": "熱段鑄件/葉片寡占龍頭",
+     "products": "單晶/DS 渦輪葉片・導向葉・燃燒室・結構件",
+     "note": "2026 Q1 引擎部門 +29%、IGT 市場 +39%；航太×燃機雙搶產能 → 定價權",
+     "src": "https://www.howmet.com/financial-release/2026-05-07/howmet-aerospace-reports-first-quarter-2026-results/"
+    },
+    {
+     "name": "Precision Castparts (PCC)",
+     "ticker": "—",
+     "country": "US",
+     "share": "IGT/航太鑄件寡占",
+     "products": "投資鑄造熱段件・大型結構鑄件",
+     "note": "Berkshire Hathaway 旗下未上市；與 HWM 並列熱段雙雄",
+     "src": "https://www.cppcorp.com/industries/industrial-gas-turbines"
+    },
+    {
+     "name": "ATI Inc.",
+     "ticker": "ATI",
+     "country": "US",
+     "share": "高溫合金材料",
+     "products": "鎳基母合金・粉末冶金・鍛件",
+     "note": "供葉片/輪盤用高溫合金，受惠燃機與航太同步"
+    },
+    {
+     "name": "Haynes / Carpenter",
+     "ticker": "CRS",
+     "country": "US",
+     "share": "特殊合金",
+     "products": "耐高溫鎳鈷合金",
+     "note": "Carpenter Technology；燃燒室/熱段板材合金"
+    },
+    {
+     "name": "永冠-KY",
+     "ticker": "1589.TW",
+     "country": "TW",
+     "share": "能源大型鑄件（風電/火電）",
+     "products": "風力/火力發電機鑄件（底座・輪轂・齒輪箱座）",
+     "note": "台廠少數能源大型鑄件商，惟 2026 因財報問題面臨下市風險、不宜視為純受惠標的",
+     "src": "https://www.stockfeel.com.tw/financial/?stock=1589"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "turbine_oem"
+    },
+    {
+     "id": "engine_oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Howmet Aerospace Q1 2026 財報（引擎部門/IGT +39%）",
+     "url": "https://www.howmet.com/financial-release/2026-05-07/howmet-aerospace-reports-first-quarter-2026-results/"
+    },
+    {
+     "label": "CPP：工業燃氣渦輪精密鑄件",
+     "url": "https://www.cppcorp.com/industries/industrial-gas-turbines"
+    }
+   ]
+  },
+  {
+   "id": "turbine_oem",
+   "row": "oem",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "燃氣渦輪 OEM（重型/航改型）",
+   "nameEn": "Gas Turbine OEMs (Heavy-Duty & Aeroderivative)",
+   "competition": "oligopoly",
+   "single": "權力核心 · 重型燃機全球僅 GEV/Siemens Energy/三菱/斗山四家，2030 前產能售罄、交期 4-7 年——稀缺性即定價權",
+   "desc": "把熱段鑄件組成完整燃氣渦輪：重型 H 級（>300MW，搭聯合循環）與航改型（aeroderivative，~50MW，快啟動、做橋接電力）。全球僅四家有能力交付。",
+   "marketSize": "燃機 2030 前 TAM 估 8-10GW（Jefferies）；資料中心驅動",
+   "growth": "GEV 合約量 100GW、目標 110GW；三菱產能兩年翻倍",
+   "share": "null",
+   "analysis": "全球重型燃機是四寡頭：GE Vernova（GEV）2026 Q1 合約量達 100GW（backlog 44GW＋slot 預留 56GW），目標年底 110GW、2030 前全售罄，2026 年化產能衝 20GW、2028 擴至 24GW；單季電氣化部門接了 $24 億資料中心設備單（多過去年全年）。Siemens Energy（ENR.DE）燃機 backlog 60GW＋預留 27GW、總在手單 €1,540 億（book-to-bill 1.72）、FY26 營收成長上修至 14-16%、交期 4 年。三菱重工（7011.T）原訂產能 +30%「不夠」、改喊兩年內翻倍、投 ¥500 億、交期最長 7 年；xAI 已確認向三菱買機。斗山（034020.KS）拿下美國大型科技公司 7 台 380MW 級燃機史上最大單、累計對美 12 台，並另簽 4 台 370MW 蒸汽機。航改型由 GEV LM6000 領軍、Rolls-Royce（RR.L）以 mtu 系列補快啟動缺口。稀缺即定價：售罄反而推升毛利與議價力。",
+   "companies": [
+    {
+     "name": "GE Vernova",
+     "ticker": "GEV",
+     "country": "US",
+     "share": "重型燃機全球龍頭",
+     "products": "H 級重型燃機・LM6000 航改型・聯合循環",
+     "note": "2026 Q1 合約量 100GW、目標 110GW、2030 前售罄；2026 年化產能 20GW→2028 24GW；資料中心電氣化單 $24 億",
+     "src": "https://www.power-eng.com/gas/turbines/data-centers-drive-record-surge-in-ge-vernova-power-equipment-orders-as-turbine-slots-tighten-through-2030/"
+    },
+    {
+     "name": "Siemens Energy",
+     "ticker": "ENR.DE",
+     "country": "DE",
+     "share": "重型燃機全球第二",
+     "products": "SGT 系列重型燃機・聯合循環",
+     "note": "燃機 backlog 60GW＋預留 27GW；總在手單 €1,540 億；FY26 營收 +14-16%；交期 4 年",
+     "src": "https://www.marketscreener.com/news/siemens-energy-books-record-order-backlog-driven-by-ai-data-center-boom-ce7e5adcd08bfe2c"
+    },
+    {
+     "name": "三菱重工 (MHI)",
+     "ticker": "7011.T",
+     "country": "JP",
+     "share": "重型燃機亞洲龍頭",
+     "products": "JAC 級重型燃機・聯合循環・資料中心方案",
+     "note": "產能兩年翻倍（原 +30% 不夠）、投 ¥500 億；交期最長 7 年；xAI 確認採購",
+     "src": "https://www.japantimes.co.jp/business/2025/09/01/companies/mitsubishi-heavy-industries-gas-turbine-boost/"
+    },
+    {
+     "name": "Doosan Enerbility",
+     "ticker": "034020.KS",
+     "country": "KR",
+     "share": "韓國燃機國產化",
+     "products": "380MW 級燃機・蒸汽機・SMR",
+     "note": "拿下美科技巨頭 7 台 380MW 史上最大單、累計對美 12 台；另簽 4 台 370MW 蒸汽機交 Texas",
+     "src": "https://en.sedaily.com/finance/2026/03/07/doosan-enerbility-wins-record-gas-turbine-order-from-us-big-20260307"
+    },
+    {
+     "name": "Rolls-Royce",
+     "ticker": "RR.L",
+     "country": "UK",
+     "share": "mtu 快啟動燃機/引擎",
+     "products": "mtu Series 4000 燃氣機組・Bergen 引擎",
+     "note": "2026 推 20 缸 mtu 4000 L64（2.8MW、45 秒全載）、無齒輪省空間；資料中心連續/備援雙用",
+     "src": "https://www.datacenterdynamics.com/en/news/rolls-royce-launches-new-gas-generator-for-data-center-market/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "hot_section"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "power_island"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GE Vernova：資料中心驅動燃機訂單、2030 前 slot 緊張",
+     "url": "https://www.power-eng.com/gas/turbines/data-centers-drive-record-surge-in-ge-vernova-power-equipment-orders-as-turbine-slots-tighten-through-2030/"
+    },
+    {
+     "label": "Siemens Energy 創紀錄 backlog（AI 資料中心驅動）",
+     "url": "https://www.marketscreener.com/news/siemens-energy-books-record-order-backlog-driven-by-ai-data-center-boom-ce7e5adcd08bfe2c"
+    },
+    {
+     "label": "三菱重工燃機產能兩年翻倍 (Japan Times)",
+     "url": "https://www.japantimes.co.jp/business/2025/09/01/companies/mitsubishi-heavy-industries-gas-turbine-boost/"
+    }
+   ]
+  },
+  {
+   "id": "engine_oem",
+   "row": "oem",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "往復引擎 / 燃料電池 OEM（快交付替代路徑）",
+   "nameEn": "Reciprocating Engine & Fuel-Cell OEMs",
+   "competition": "competitive",
+   "single": "繞開燃機售罄 · 燃料電池(Bloom)＋往復引擎(CAT/Cummins)是『現在就能交貨』的旁路，Bloom 2026 營收 +~70%、獲 Brookfield $50 億",
+   "desc": "燃機等不到、就改用『現在就能交』的方案：大型往復式天然氣引擎機組（模組化、快佈署）與固態氧化物燃料電池 SOFC（不燃燒、可就地長期供電）。",
+   "marketSize": "資料中心引擎/燃料電池發電 高速成長",
+   "growth": "Bloom 2026 營收指引 $31-33 億 (+~70%)；CAT 引擎 2027 前售罄",
+   "share": "null",
+   "analysis": "當重型燃機排到 2030，業者轉向更快交付的旁路。往復引擎：Caterpillar（CAT）接 2GW 級 prime power 機組大單（AIPC）、另有 ProPower 2.1GW 五年單、往復引擎產能擴至 2024 年近 3 倍、燃機 2.5 倍，惟仍 2027 前售罄（Q1 下單 2028 才交）；與 Vertiv 合組電力＋散熱方案。Cummins（CMI）資料中心發電需求「持續超預期」、跨產品線供給。燃料電池：Bloom Energy（BE）SOFC 不燃燒、可模組化就地供電，2026 營收指引 $31-33 億（+~70%）、拿下 AEP 1GW、Oracle 2.8GW、獲 Brookfield 最高 $50 億部署融資——是少數『燃機外、能立即放量』的純發電玩家。FuelCell Energy（FCEL）並列。風險：天然氣/LNG 供應與排放法規。",
+   "companies": [
+    {
+     "name": "Caterpillar",
+     "ticker": "CAT",
+     "country": "US",
+     "share": "大型往復引擎+Solar 燃機",
+     "products": "往復發電機組・Solar Turbines 燃機・prime power",
+     "note": "接 2GW 級 prime power 單＋ProPower 2.1GW；產能擴 ~3 倍、2027 前售罄；攜手 Vertiv",
+     "src": "https://www.tikr.com/blog/caterpillar-power-chief-just-revealed-what-the-data-center-boom-really-means-for-cat-stock"
+    },
+    {
+     "name": "Cummins",
+     "ticker": "CMI",
+     "country": "US",
+     "share": "往復引擎/發電機組",
+     "products": "天然氣/柴油發電機組・備援＋prime power",
+     "note": "資料中心發電需求『持續超預期』、跨產品線供給",
+     "src": "https://www.sec.gov/Archives/edgar/data/0000026172/000002617226000013/cmi2026q18-kex99.htm"
+    },
+    {
+     "name": "Bloom Energy",
+     "ticker": "BE",
+     "country": "US",
+     "share": "SOFC 燃料電池就地發電龍頭",
+     "products": "Bloom Energy Server（固態氧化物燃料電池）",
+     "note": "2026 營收 $31-33 億 (+~70%)；AEP 1GW＋Oracle 2.8GW；Brookfield 最高 $50 億融資",
+     "src": "https://finance.yahoo.com/markets/stocks/articles/bloom-energy-brookfield-deal-links-050358240.html"
+    },
+    {
+     "name": "FuelCell Energy",
+     "ticker": "FCEL",
+     "country": "US",
+     "share": "碳酸鹽燃料電池",
+     "products": "MCFC 燃料電池發電/碳捕捉",
+     "note": "資料中心就地發電替代路徑之一"
+    },
+    {
+     "name": "Generac",
+     "ticker": "GNRC",
+     "country": "US",
+     "share": "備援/工商發電機",
+     "products": "工商業天然氣/柴油發電機組",
+     "note": "資料中心備援電力＋分散式發電；偏備援而非 prime power"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "hot_section"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "power_island"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Caterpillar Power 主管談資料中心榮景 (TIKR)",
+     "url": "https://www.tikr.com/blog/caterpillar-power-chief-just-revealed-what-the-data-center-boom-really-means-for-cat-stock"
+    },
+    {
+     "label": "Bloom Energy×Brookfield $50 億連結 AI 資料中心 (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/bloom-energy-brookfield-deal-links-050358240.html"
+    }
+   ]
+  },
+  {
+   "id": "power_island",
+   "row": "bop",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "電氣 BOP / 表後 IPP・EPC（電力孤島交鑰匙）",
+   "nameEn": "Electrical BOP · Behind-the-Meter IPP & EPC",
+   "competition": "competitive",
+   "single": "台廠最乾淨切入點 · 不在燃機本體，而在電力孤島必備的變壓器/GIS/開關設備電氣 BOP——重電四雄訂單能見度已見 2028-2030",
+   "desc": "把燃機/引擎/燃料電池整合成可運轉的『電力孤島』：發電機、變壓器、GIS 氣體絕緣開關、配電盤、電力轉換散熱（電氣 BOP），再由表後 IPP/EPC 以交鑰匙模式佈署於資料中心旁。",
+   "marketSize": "表後電力孤島＋電氣 BOP，併入資料中心電力資本支出大盤",
+   "growth": "ProEnergy 已售 21 台機組（>1GW）；台廠重電訂單見 2028-2030",
+   "share": "null",
+   "analysis": "燃機只是『發電機頭』，要變成可用電力還需整套電氣 BOP（變壓器、GIS、開關、配電、轉換）＋系統整合。表後 IPP/EPC 把這些組成『電力孤島』交鑰匙交付：ProEnergy 以翻修退役航空引擎（CF6-80C2→PE6000，~50MW/台）做 5-7 年橋接電力、30 天內可上線、已售 21 台（>1GW），2027 可交；Talen Energy（TLN）以併網/表後 IPP 模式（AWS 17 年 $180 億 PPA、1,920MW Susquehanna）示範資料中心專屬電力。電氣 BOP 是台廠最乾淨切入點：表後電力孤島必備變壓器/GIS/開關設備，重電四雄——華城（1519.TW）、中興電（1513.TW）、亞力（1514.TW）、士電（1503.TW）——AIDC 電力變壓器貢獻已破百億台幣、訂單能見度見 2028-2030；Vertiv（VRT）、Eaton（ETN）供電力分配與散熱整合。",
+   "companies": [
+    {
+     "name": "Talen Energy",
+     "ticker": "TLN",
+     "country": "US",
+     "share": "表後/併網 IPP 示範者",
+     "products": "資料中心專屬發電 PPA（核能/燃氣）",
+     "note": "AWS 17 年 $180 億 PPA、Susquehanna 1,920MW；表後→併網零售結構 2026 轉換",
+     "src": "https://www.powermag.com/talen-amazon-launch-18b-nuclear-ppa-a-grid-connected-ipp-model-for-the-data-center-era/"
+    },
+    {
+     "name": "ProEnergy",
+     "ticker": "—",
+     "country": "US",
+     "share": "航改橋接電力 EPC",
+     "products": "PE6000（CF6 翻修燃機 ~50MW）・電力孤島交鑰匙",
+     "note": "未上市；已售 21 台（>1GW）、30 天可上線、5-7 年橋接、2027 可交",
+     "src": "https://www.datacenterfrontier.com/energy/article/55358731/aeroderivative-turbines-move-to-the-center-of-ai-data-center-power-strategy"
+    },
+    {
+     "name": "Vertiv",
+     "ticker": "VRT",
+     "country": "US",
+     "share": "電力分配＋散熱整合",
+     "products": "電力管理・配電・液冷",
+     "note": "與 Caterpillar/Solar 合組發電＋散熱方案；詳見 power/data_center_cooling 主題",
+     "src": "https://www.tikr.com/blog/caterpillar-power-chief-just-revealed-what-the-data-center-boom-really-means-for-cat-stock"
+    },
+    {
+     "name": "Eaton",
+     "ticker": "ETN",
+     "country": "US",
+     "share": "電力管理/開關設備",
+     "products": "中低壓開關・配電・UPS",
+     "note": "電力孤島電氣 BOP；詳見 power/grid_power 主題"
+    },
+    {
+     "name": "華城電機",
+     "ticker": "1519.TW",
+     "country": "TW",
+     "share": "AIDC 電力變壓器台廠龍頭",
+     "products": "電力變壓器・GIS・配電",
+     "note": "AIDC 變壓器貢獻破百億台幣、訂單見 2028-2030；表後電力孤島電氣 BOP 受惠",
+     "src": "https://wantrich.chinatimes.com/news/20260221900001-420101"
+    },
+    {
+     "name": "中興電工",
+     "ticker": "1513.TW",
+     "country": "TW",
+     "share": "重電/GIS",
+     "products": "GIS 氣體絕緣開關・統包工程",
+     "note": "重電四雄；表後/電網 GIS＋EPC 統包"
+    },
+    {
+     "name": "亞力電機",
+     "ticker": "1514.TW",
+     "country": "TW",
+     "share": "配電盤/重電",
+     "products": "配電盤・開關・電力設備",
+     "note": "重電四雄；AIDC 與電網雙引擎、訂單見 2027-2028"
+    },
+    {
+     "name": "士林電機",
+     "ticker": "1503.TW",
+     "country": "TW",
+     "share": "重電/變壓器",
+     "products": "變壓器・配電・馬達",
+     "note": "重電四雄；AIDC 與台電強韌電網受惠"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "turbine_oem"
+    },
+    {
+     "id": "engine_oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "datacenter_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Talen×Amazon $180 億 PPA：資料中心時代 IPP 模式 (POWER)",
+     "url": "https://www.powermag.com/talen-amazon-launch-18b-nuclear-ppa-a-grid-connected-ipp-model-for-the-data-center-era/"
+    },
+    {
+     "label": "航改型燃機成 AI 資料中心電力核心（ProEnergy）(Data Center Frontier)",
+     "url": "https://www.datacenterfrontier.com/energy/article/55358731/aeroderivative-turbines-move-to-the-center-of-ai-data-center-power-strategy"
+    },
+    {
+     "label": "台灣重電四雄訂單能見度見 2028-2030（旺得富）",
+     "url": "https://wantrich.chinatimes.com/news/20260221900001-420101"
+    }
+   ]
+  },
+  {
+   "id": "datacenter_demand",
+   "row": "demand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "下游：AI 資料中心 / 超大規模業者（買方）",
+   "nameEn": "AI Data Centers · Hyperscalers (Demand)",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "需求源頭——超大規模業者與 AI 實驗室為了避開 4-7 年併網排隊，直接在園區旁自建電廠，是整條表後發電鏈的成長引擎。",
+   "marketSize": "資料中心 2030 需求 ~100GW；onsite 天然氣 15-27GW (IEA)",
+   "growth": "IEA：資料中心 2030 前吃掉美國新增供電近一半",
+   "share": "null",
+   "analysis": "下游是把整條鏈拉動的『電力饑渴怪獸』：IEA 估資料中心 2030 前將吃掉美國新增供電近一半、onsite 天然氣 15-27GW；若 BTM 佔資料中心新增需求 1/4-1/3，五年內可達 33GW。超大規模業者（Microsoft/Google/AWS/Meta）與 AI 實驗室（OpenAI/xAI——xAI 已直接向三菱買燃機、Meta 在 Ohio 自建 200MW 燃氣廠）為避開併網排隊與電網限制，直接自帶電廠。絃外之音：終端買方因『時間就是算力』而願付溢價、且傾向長約鎖定，反而讓上游售罄的 OEM 與卡瓶頸的熱段鑄件廠取得罕見議價力——電力短缺把利潤從『買電的科技巨頭』部分轉移給『賣發電設備的傳產』。",
+   "companies": [
+    {
+     "name": "超大規模業者",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "表後發電終端買方",
+     "products": "AI 資料中心園區自建電廠",
+     "note": "Microsoft/Google/AWS/Meta；Meta 在 Ohio 自建 200MW 燃氣廠",
+     "src": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+    },
+    {
+     "name": "AI 實驗室",
+     "ticker": "—",
+     "country": "US",
+     "share": "新興超級算力買方",
+     "products": "AI 訓練/推論算力",
+     "note": "OpenAI/xAI；xAI 已直接向三菱重工採購燃機就地發電"
+    },
+    {
+     "name": "新型雲/Neocloud",
+     "ticker": "CRWV",
+     "country": "US",
+     "share": "GPU 雲園區",
+     "products": "GPU 算力雲",
+     "note": "CoreWeave 等；園區電力是擴張瓶頸，詳見 neocloud 主題"
+    },
+    {
+     "name": "LNG / 天然氣供應",
+     "ticker": "LNG",
+     "country": "US",
+     "share": "燃料供應",
+     "products": "天然氣/LNG 燃料",
+     "note": "Cheniere 等；prime power 經濟性繫於氣價與 LNG 基建"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "power_island"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "IEA：能源與 AI 關鍵問題（onsite 天然氣 15-27GW）",
+     "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+    },
+    {
+     "label": "Meta 在 Ohio 資料中心後方自建 200MW 燃氣廠",
+     "url": "https://mgrid.org/2025/12/01/meta-200mw-gas-plant-behind-ohio-data-center/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "hot_section",
+   "turbine_oem"
+  ],
+  [
+   "hot_section",
+   "engine_oem"
+  ],
+  [
+   "turbine_oem",
+   "power_island"
+  ],
+  [
+   "engine_oem",
+   "power_island"
+  ],
+  [
+   "power_island",
+   "datacenter_demand"
+  ]
+ ],
+ "_proposed": {}
+}

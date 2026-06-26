@@ -1,0 +1,616 @@
+{
+ "id": "memory_storage",
+ "tab": "NAND / eSSD",
+ "title": "NAND / 企業級 SSD 記憶體儲存供應鏈 (NAND & Enterprise SSD)",
+ "subtitle": "NAND & Enterprise SSD — AI 推論（KV cache、向量庫、data lake）讓儲存成為第二個 HBM 級瓶頸：TrendForce 估 2Q26 NAND 合約價季漲 70~75%、1Q26 前五大原廠營收 $38.9B 季增 83.7%、Kioxia 確認 2026 產能全數售罄、有效擴產最快 2027 年底。HDD 結構性缺貨把訂單推向 QLC 企業 SSD（Solidigm 122TB 開賣、八家廠商發表 245TB）。原廠（Samsung/SK hynix-Solidigm/Kioxia/SanDisk/Micron/YMTC）獲利 HBM 級（SKH 1Q26 營益率 72%、Micron 毛利 74%）；台廠全鏈受惠：主控群聯 1Q26 EPS NT$68.8、慧榮 MonTitan 放量、威剛 5 月營收 +210% YoY、南亞科 1Q26 +583% YoY 承接 DDR4 轉單、力成/南茂封測調價三成。⚠ 3Q26 漲幅收斂至 5~10%、YMTC 擴產與高基期估值為主要風險。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "33+"
+  },
+  {
+   "k": "2Q26 NAND 合約價",
+   "v": "+70~75%",
+   "sub": "QoQ·1Q26 前五大原廠營收 +83.7% QoQ",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "原廠 2026 售罄·3Q26 漲幅收斂 + YMTC 擴產風險",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "fab",
+   "label": "NAND 原廠 / 利基記憶體 Wafer & IDM",
+   "main": true
+  },
+  {
+   "id": "mid",
+   "label": "控制晶片 / 記憶體封測 Controller & OSAT",
+   "main": false
+  },
+  {
+   "id": "module",
+   "label": "模組 / 企業級 SSD 成品 Modules & eSSD",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "AI 資料中心需求 AI Datacenter Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "nand_idm",
+   "row": "fab",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "NAND Flash 原廠",
+   "nameEn": "NAND Flash IDM",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 六大原廠掌控全部供給、嚴格控產；Kioxia 確認 2026 產能售罄、有效擴產最快 2027 年底",
+   "desc": "NAND 晶圓製造六雄：自有品牌 eSSD 直供 CSP，亦出顆粒給模組廠。AI 推論需求 + 控產讓定價權完全在供給端。",
+   "marketSize": "1Q26 前五大營收 $38.9B",
+   "growth": "2Q26 合約價 +70~75% QoQ",
+   "share": "null",
+   "analysis": "1Q26 市占：Samsung 29%（營收 +104.7% QoQ）、SK hynix 17.6%（$7.53B，含 Solidigm；4Q25 eSSD 市占 30.2% 追近三星 33.8%）、Kioxia 13.9%（$5.96B、+80% QoQ；FY25 營收 ¥2.34 兆 +37% YoY、籌備美國 ADS 上市）、SanDisk（FQ3 FY26 $5.95B +251% YoY、EPS $23.41、FQ4 指引 $8B/EPS $31、企業級 NAND 單季漲價逾 100% 並要求現金預付）、Micron（FQ2 FY26 NAND $5B +169% YoY、DC SSD 市占連 4 年新高、毛利率 74%）、YMTC（294 層 Gen5 出貨、目標 2026 底全球供給 15%）。SK hynix 1Q26 NAND ASP +mid-70% QoQ、整體營益率 72%——獲利已是 HBM 級。供給紀律延續：三星 NAND 投片由 2024 約 490 萬片降至 2025 約 468 萬片、SK hynix 由 190 萬降至 170 萬（約 −10%），新增有效產能要到 2027 末~2028 才明顯開出；製程競賽進入 300-400 層世代（Kioxia BiCS10 332 層、Samsung V10）。",
+   "companies": [
+    {
+     "name": "Samsung Electronics",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "1Q26 NAND 29%",
+     "products": "V-NAND / 企業級 SSD（BM 系列）",
+     "note": "1Q26 NAND 營收 +104.7% QoQ；2026 投片下修控產",
+     "src": "https://www.trendforce.com/presscenter/news/20260525-13058.html"
+    },
+    {
+     "name": "SK hynix (Solidigm)",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "1Q26 NAND 17.6%",
+     "products": "321 層 NAND / eSSD / Solidigm QLC 122TB·PS1101 245TB",
+     "note": "1Q26 營收 KRW 52.6 兆 +198% YoY、營益率 72%；NAND ASP +mid-70% QoQ",
+     "src": "https://www.shacknews.com/article/148816/sk-hynix-q1-2026-results-198-percent-yoy-revenue-growth"
+    },
+    {
+     "name": "Kioxia 鎧俠",
+     "ticker": "285A.T",
+     "country": "JP",
+     "share": "1Q26 NAND 13.9%",
+     "products": "BiCS NAND / BiCS10（332 層）/ 資料中心 SSD",
+     "note": "FY25 營收 ¥2.34 兆 +37% YoY；2026 產能售罄；6/19 股價破 ¥10 萬、市值逾 ¥56 兆躍居日本上市公司市值第 1；籌備美國 ADS 上市（5/15 宣布、Citi/JPM 已遞 F-6）；FY26-28 年均 capex 約 ¥4,700 億（+66% vs FY25）、傳評估北上第三廠與 M&A；BiCS10（332 層）由原訂 2H27 提前至 2026 量產、2026 夏季送樣，技術節奏直逼三星/SKH",
+     "src": "https://www.trendforce.com/news/2026/06/03/news-kioxia-targets-%C2%A5470b-yearly-capex-in-fy26-28-up-66-from-fy25-reportedly-weighing-third-kitakami-fab-and-ma/"
+    },
+    {
+     "name": "SanDisk",
+     "ticker": "SNDK",
+     "country": "US",
+     "share": "1Q26 NAND 13%",
+     "products": "BiCS NAND（與 Kioxia JV）/ 企業級 NAND / HBF 高頻寬快閃",
+     "note": "FQ3 FY26 營收 $5.95B +251% YoY、EPS $23.41；FQ4 指引 $8B；與 SK hynix 共推 HBF（NAND 版 HBM、OCP 標準化、2H26 送樣、Samsung 已加入）；YTD 一度 +509%",
+     "src": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-02-25-sandisk-and-sk-hynix-begin-global-standardization-of-next-generation-memory-solution-high-bandwidth-flash-hbf"
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "country": "US",
+     "share": "1Q26 NAND 13%",
+     "products": "G8/G9 NAND / 資料中心 SSD（9550 等）",
+     "note": "FQ2 FY26 NAND 營收 $5B +169% YoY；DC NAND 單季倍增創新高",
+     "src": "https://investors.micron.com/static-files/e089f8c0-065d-47b8-9d02-bfa863cdb357"
+    },
+    {
+     "name": "YMTC 長江存儲",
+     "ticker": "—",
+     "country": "CN",
+     "share": "1Q26 出貨 13%·目標 15%",
+     "products": "Xtacking 4.0 / 294 層 Gen5 TLC",
+     "note": "出貨市占已達 13%、2025 營收市占 11.8%、Micron 已在射程內；武漢三廠 2H26 提前量產（國產設備線、150K WSPM），已跨過北京『50% 國產設備』門檻並再規劃兩座同規模新廠（各滿載 100K WSPM）；2027 後供給衝擊主要變數",
+     "src": "https://www.digitimes.com/news/a20260603VL209/market-nand-ymtc-revenue-nand-flash.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "memory_osat"
+    },
+    {
+     "id": "essd_module"
+    },
+    {
+     "id": "ai_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "1Q26 前五大 NAND 營收 +83.7% QoQ (TrendForce)",
+     "url": "https://www.trendforce.com/presscenter/news/20260525-13058.html"
+    },
+    {
+     "label": "2Q26 NAND 合約價 +70~75% (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/pc-components/dram/dram-and-nand-contract-prices-to-climb-again-in-q2"
+    },
+    {
+     "label": "原廠減產撐價、有效產能 2027-28 才開 (Blocks & Files)",
+     "url": "https://blocksandfiles.com/2026/01/20/flash-fab-giants-lowering-production/"
+    }
+   ]
+  },
+  {
+   "id": "niche_memory",
+   "row": "fab",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "利基 DRAM / NOR",
+   "nameEn": "Niche DRAM & NOR Flash",
+   "competition": "highgrowth",
+   "single": "美光/三星/SKH 退出 DDR4 轉攻 HBM/DDR5，台廠承接轉單；Morgan Stanley 估 2H26 DDR4 供給缺口 19~20%；TrendForce 估 1H26 NOR/SLC NAND 累漲逾 100%、2H26 SLC NAND 仍漲 70~75%、高密度 NOR 再漲 60~65%",
+   "desc": "利基型 DRAM（DDR3/DDR4）與 NOR Flash：原廠產能轉向 AI 高階品後留下的結構性缺口，台廠為最大受惠者。⚠ 2027 後 DDR4 供給將高度集中於南亞科＋華邦電——『高成長缺口』正收斂為台廠雙占，屆時定價反映稀缺而非成本。",
+   "marketSize": "null",
+   "growth": "DDR4 2H26 缺口 19~20%",
+   "share": "null",
+   "analysis": "南亞科（2408.TW，1Q26 營收 NT$490.9 億、+63% QoQ／+583% YoY、淨利率逾 5 成，報價看漲到 2026 年底）、華邦電（2344.TW，1Q26 自結營收 NT$382.5 億 +43.7% QoQ、3 月記憶體營收首破百億）、旺宏（NOR/ROM）、晶豪科/鈺創（利基 DRAM 設計）。外資連環上修目標價，但此環節與 NAND 主軸為平行受惠、漲價斜率同樣是風險。",
+   "companies": [
+    {
+     "name": "南亞科",
+     "ticker": "2408.TW",
+     "country": "TW",
+     "share": "利基 DRAM 龍頭",
+     "products": "DDR4/DDR3 / 低功耗 DRAM",
+     "note": "5 月營收 NT$276.7 億 +730% YoY、前 5 月破千億；1Q26 +583% YoY、淨利率 >50%",
+     "src": "https://wantrich.chinatimes.com/news/20260413900314-420101"
+    },
+    {
+     "name": "華邦電",
+     "ticker": "2344.TW",
+     "country": "TW",
+     "share": "利基 DRAM + NOR",
+     "products": "利基 DRAM / NOR Flash / CUBE",
+     "note": "1Q26 營收 NT$382.5 億 +43.7% QoQ；3 月記憶體首破百億；6/16 股價首破 NT$200 創高（NOR/SLC NAND 漲 100~150%）",
+     "src": "https://wantrich.chinatimes.com/news/20260413900314-420101"
+    },
+    {
+     "name": "旺宏",
+     "ticker": "2337.TW",
+     "country": "TW",
+     "share": "NOR/ROM 龍頭",
+     "products": "NOR Flash / SLC NAND / ROM",
+     "note": "車用/工控 NOR 受惠；NOR/SLC NAND 上半年漲 100~150%、6/16 挑戰 NT$180",
+     "src": "https://www.businesstoday.com.tw/article/category/183008/post/202604130024/"
+    },
+    {
+     "name": "晶豪科",
+     "ticker": "3006.TW",
+     "country": "TW",
+     "share": "利基 DRAM 設計",
+     "products": "利基 DRAM / SRAM IC 設計",
+     "note": "利基 DRAM 漲價受惠",
+     "src": "https://www.businessweekly.com.tw/business/blog/3021561"
+    },
+    {
+     "name": "鈺創",
+     "ticker": "5351.TWO",
+     "country": "TW",
+     "share": "利基 DRAM 設計",
+     "products": "利基 DRAM / USB 控制",
+     "note": "矽電容為新成長動能",
+     "src": "https://www.businessweekly.com.tw/business/blog/3021561"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "memory_osat"
+    },
+    {
+     "id": "essd_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "南亞科/華邦電 1Q26、Q2 記憶體再漲 40% (旺得富)",
+     "url": "https://wantrich.chinatimes.com/news/20260413900314-420101"
+    },
+    {
+     "label": "外資成熟記憶體報告 DDR4 缺口 (聯合)",
+     "url": "https://udn.com/news/story/7251/9538703"
+    }
+   ]
+  },
+  {
+   "id": "ssd_controller",
+   "row": "mid",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "SSD 控制晶片",
+   "nameEn": "SSD Controllers",
+   "competition": "oligopoly",
+   "single": "獨立主控雙雄群聯/慧榮均為台廠；Broadcom 鎖定 Solidigm 高容量 AI eSSD 客製主控長約",
+   "desc": "SSD 主控 IC 與韌體：消費級寡占成熟，企業級/CSP 客製主控為 2026 高成長戰場，邏輯 IC 漸成儲存效能瓶頸與價值核心。",
+   "marketSize": "2026 主控 IC ~$6-8B",
+   "growth": "企業級主控放量",
+   "share": "null",
+   "analysis": "群聯（8299.TWO，1Q26 營收 NT$409.7 億 +79.7% QoQ／+196% YoY、毛利率 61.3%、EPS NT$68.8 創高；5 月營收 NT$228.3 億 +301% YoY；企業級 SSD 朝營收 30% 推進、aiDAPTIV+ 以 NAND 擴充 DRAM 跑 LLM 推論）、慧榮（SIMO，1Q26 營收 $342.1M 創高 +105% YoY；2Q26 指引 $393-411M；MonTitan 企業主控 2 客戶量產＋5 家 CSP 年內 ramp、2026 占營收 5-10%）、Marvell（客製 DC 儲存晶片）、Broadcom（Solidigm 高容量 eSSD 主控）、FADU（韓系 Gen5 企業主控，Meta 供應鏈）。",
+   "companies": [
+    {
+     "name": "群聯 Phison",
+     "ticker": "8299.TWO",
+     "country": "TW",
+     "share": "獨立主控龍頭",
+     "products": "企業級 SSD 主控/模組 / aiDAPTIV+",
+     "note": "1Q26 EPS NT$68.8、毛利率 61.3% 新高；5 月營收 +301% YoY",
+     "src": "https://www.bnext.com.tw/article/90889/phison-q1-2026"
+    },
+    {
+     "name": "慧榮 Silicon Motion",
+     "ticker": "SIMO",
+     "country": "TW",
+     "share": "主控雙雄",
+     "products": "PCIe 5 客戶端主控 / MonTitan 企業平台",
+     "note": "1Q26 $342.1M 創高；MonTitan 2 客戶量產＋5 家 CSP 將 ramp",
+     "src": "https://finance.yahoo.com/markets/stocks/articles/silicon-motion-q1-surge-highlights-232008823.html"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "高容量 eSSD 客製主控",
+     "products": "Solidigm 122TB+ SSD 主控",
+     "note": "與 Solidigm 延長 AI 高容量 SSD 主控協議",
+     "src": "https://news.solidigm.com/en-WW/246267-solidigm-extends-agreement-with-broadcom-on-high-capacity-ssd-controllers-for-ai/"
+    },
+    {
+     "name": "Marvell",
+     "ticker": "MRVL",
+     "country": "US",
+     "share": "DC 儲存晶片",
+     "products": "客製 SSD 主控 / DC 儲存互連",
+     "note": "CSP 客製儲存晶片",
+     "src": "https://www.hdinresearch.com/news/1217"
+    },
+    {
+     "name": "FADU",
+     "ticker": "440110.KQ",
+     "country": "KR",
+     "share": "Gen5 企業主控新勢力",
+     "products": "PCIe Gen5/Gen6 企業 SSD 主控",
+     "note": "Gen5 主控出貨放量、瞄準 CSP 直供",
+     "src": "https://www.businesskorea.co.kr/news/articleView.html?idxno=119036"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "essd_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "群聯 1Q26 法說 (CMoney)",
+     "url": "https://cmnews.com.tw/article/cmoney-e708d394-4c8c-11f1-9a46-b66ee0888251"
+    },
+    {
+     "label": "SIMO 1Q26 企業/AI 儲存 (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/silicon-motion-q1-surge-highlights-232008823.html"
+    }
+   ]
+  },
+  {
+   "id": "memory_osat",
+   "row": "mid",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "記憶體封測",
+   "nameEn": "Memory OSAT",
+   "competition": "oligopoly",
+   "single": "原廠/利基廠衝刺出貨、台系記憶體封測產能近滿載，力成/華東/南茂調價上看三成",
+   "desc": "記憶體專業封測：NAND/DRAM 顆粒封裝與測試，價量齊揚的賣鏟人環節。",
+   "marketSize": "null",
+   "growth": "報價調漲上看 30%",
+   "share": "null",
+   "analysis": "力成（6239.TW，封裝/測試稼動率約 90%/85%、法人估 2026 EPS 挑戰歷史新高、並擴充高階封測資本支出）、南茂（8150.TW，DDR4 占營收 7-8 成、最受惠利基 DRAM 復甦）、華東（8110.TW，NAND 封測）、華泰（2329.TW，記憶體封測/模組代工、Kingston 供應鏈）。2026 為記憶體封測「價量齊揚」年，漲價效益自 1Q26 起逐步入帳。",
+   "companies": [
+    {
+     "name": "力成 PTI",
+     "ticker": "6239.TW",
+     "country": "TW",
+     "share": "記憶體封測龍頭",
+     "products": "NAND/DRAM 封測 / FOPLP",
+     "note": "稼動率 90%/85%；2026 EPS 挑戰新高",
+     "src": "https://blog.fugle.tw/post/earnings-call-6239-2026-04-28"
+    },
+    {
+     "name": "南茂",
+     "ticker": "8150.TW",
+     "country": "TW",
+     "share": "DRAM 封測",
+     "products": "DRAM/NAND 封測 / 驅動 IC",
+     "note": "DDR4 占 7-8 成、利基 DRAM 復甦代表",
+     "src": "https://money.udn.com/money/story/5612/9258921"
+    },
+    {
+     "name": "華東",
+     "ticker": "8110.TW",
+     "country": "TW",
+     "share": "NAND 封測",
+     "products": "NAND Flash 封測",
+     "note": "封測調價上看三成",
+     "src": "https://money.udn.com/money/story/5612/9258921"
+    },
+    {
+     "name": "華泰 OSE",
+     "ticker": "2329.TW",
+     "country": "TW",
+     "share": "記憶體封測/模組",
+     "products": "記憶體封測 / SSD 模組代工",
+     "note": "Kingston 供應鏈",
+     "src": "https://money.udn.com/money/story/5612/9258921"
+    },
+    {
+     "name": "福懋科",
+     "ticker": "8131.TW",
+     "country": "TW",
+     "share": "記憶體封測",
+     "products": "DRAM/Flash 封測",
+     "note": "記憶體封測族群",
+     "src": "https://money.udn.com/money/story/5612/9258921"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "nand_idm"
+    },
+    {
+     "id": "niche_memory"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "essd_module"
+    }
+   ],
+   "sources": [
+    {
+     "label": "記憶體封測調價三成 (經濟日報)",
+     "url": "https://money.udn.com/money/story/5612/9258921"
+    },
+    {
+     "label": "力成法說 2026-04-28 (富果)",
+     "url": "https://blog.fugle.tw/post/earnings-call-6239-2026-04-28"
+    }
+   ]
+  },
+  {
+   "id": "essd_module",
+   "row": "module",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "記憶體模組 / 企業級 SSD 成品",
+   "nameEn": "Memory Modules & eSSD",
+   "competition": "competitive",
+   "single": "漲價循環中模組廠享『低價庫存 × 漲價出貨』雙重紅利；威剛手握約 NT$400 億低價庫存",
+   "desc": "模組廠採購 NAND 顆粒/主控組裝 SSD 與 DRAM 模組：消費/工控/企業級出貨，是漲價循環中股價彈性最大環節，也是循環反轉時風險最大環節。",
+   "marketSize": "低價庫存重估紅利",
+   "growth": "威剛 5 月營收 +210% YoY",
+   "share": "null",
+   "analysis": "Kingston（全球模組一哥，未上市）、威剛（3260.TWO，2026 年 5 月營收 NT$129.4 億 +210% YoY 連三月創高、前 5 月 NT$496.1 億 +175.8% 已近 2025 全年；SSD 占 36.5%；陳立白看缺貨到 2027 加劇）、宜鼎（5289.TWO，工控/車用利基模組，3 月營收 NT$56.7 億 +484.8% YoY）、創見（2451.TW，工控模組）、十銓（4967.TW，電競/伺服器模組）、江波龍（301308.SZ，中國模組龍頭、吃 YMTC 顆粒）。外資估 2026 NAND ASP +40%，模組廠毛利率隨庫存重估跳升；但若 3Q26 起漲幅收斂，高價庫存將反噬。",
+   "companies": [
+    {
+     "name": "Kingston 金士頓",
+     "ticker": "—",
+     "country": "US",
+     "share": "全球模組一哥",
+     "products": "DRAM 模組 / SSD",
+     "note": "未上市；華泰等台廠為其代工鏈",
+     "src": "https://www.businessweekly.com.tw/business/blog/3021561"
+    },
+    {
+     "name": "威剛 ADATA",
+     "ticker": "3260.TWO",
+     "country": "TW",
+     "share": "台系模組龍頭",
+     "products": "DRAM 模組 / SSD / 工控",
+     "note": "5 月營收 NT$129.4 億 +210% YoY；手握約 NT$400 億低價庫存",
+     "src": "https://news.cnyes.com/news/id/6488735"
+    },
+    {
+     "name": "宜鼎 Innodisk",
+     "ticker": "5289.TWO",
+     "country": "TW",
+     "share": "工控儲存龍頭",
+     "products": "工控 SSD / DRAM 模組 / 邊緣 AI",
+     "note": "2026 年 3 月營收 NT$56.7 億 +484.8% YoY",
+     "src": "https://statementdog.com/analysis/5289/monthly-revenue-growth-rate"
+    },
+    {
+     "name": "創見 Transcend",
+     "ticker": "2451.TW",
+     "country": "TW",
+     "share": "工控/消費模組",
+     "products": "工控 SSD / 記憶卡 / 模組",
+     "note": "漲價循環受惠",
+     "src": "https://wantrich.chinatimes.com/news/20260508900291-420101"
+    },
+    {
+     "name": "十銓 Team Group",
+     "ticker": "4967.TW",
+     "country": "TW",
+     "share": "電競/伺服器模組",
+     "products": "電競記憶體 / 伺服器 SSD",
+     "note": "1Q26 獲利大增、伺服器模組放量",
+     "src": "https://wantrich.chinatimes.com/news/20260504900002-420101"
+    },
+    {
+     "name": "江波龍 Longsys",
+     "ticker": "301308.SZ",
+     "country": "CN",
+     "share": "中國模組龍頭",
+     "products": "嵌入式儲存 / SSD / 企業級",
+     "note": "搭配 YMTC 顆粒的中國替代鏈",
+     "src": "https://www.tomshardware.com/pc-components/ssds/chinas-ymtc-moves-to-break-free-of-u-s-sanctions-by-building-production-line-with-homegrown-tools-aims-to-capture-15-percent-of-nand-market-by-late-2026"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "nand_idm"
+    },
+    {
+     "id": "niche_memory"
+    },
+    {
+     "id": "ssd_controller"
+    },
+    {
+     "id": "memory_osat"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "威剛 5 月營收連三高 (鉅亨)",
+     "url": "https://news.cnyes.com/news/id/6488735"
+    },
+    {
+     "label": "威剛低價庫存、NAND ASP +40% (ETtoday)",
+     "url": "https://finance.ettoday.net/news/3108287"
+    }
+   ]
+  },
+  {
+   "id": "ai_demand",
+   "row": "demand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI 資料中心 / CSP 儲存需求",
+   "nameEn": "AI Datacenter Storage Demand",
+   "competition": "oligopoly",
+   "single": "鎖喉點（買方）· 4-5 家 hyperscaler 以多年長約鎖定 eSSD 供給形成寡占式買方（oligopsony）；HDD 缺貨 + AI 推論把訂單推向 QLC 大容量 eSSD（122TB→245TB）。買方集中度＝漲價可持續性的真正開關",
+   "desc": "AI 推論基礎設施（KV cache、向量資料庫、AI data lake）為 NAND 需求最大新增來源；hyperscaler 長約鎖貨壓縮現貨供給。",
+   "marketSize": "需求錨點",
+   "growth": "AI 伺服器儲存 8~10 倍",
+   "share": "null",
+   "analysis": "AI 伺服器儲存需求約為傳統伺服器 8~10 倍；CSP（Microsoft/Amazon/Google/Meta）以長期協議鎖定 2Q26 起供給；1Q26 前五大企業級 SSD 營收創 $18.46B 新高、季增 86.1%（AI Agent 服務 + CSP 採購所驅動、單季漲價約 80%、原廠庫存降至歷史低點）——Samsung $7.05B（38.2%、+92.8% QoQ）、SK hynix 集團含 Solidigm $4.64B（25.1%、對三星差距由 4Q25 的 8.3pp 收斂至 3.6pp）、Micron $3.09B（16.7%）、Kioxia $2.22B（12.0%）、SanDisk $1.47B（8.0%）。eSSD 已成 NAND 最大應用、約佔全球 NAND 產出 60%。企業級 HDD 因 AI 需求出現約兩年缺貨/後補，迫使訂單轉向 QLC eSSD——Solidigm 122TB D5-P5336 開賣（約 $12,400、能效 4.88 TB/W、較 WD 32TB HDD 的 3.4 TB/W 高 43%）、全球已 8 家廠商發表 245TB eSSD（SK hynix PS1101 與 Dell 合作亮相、Samsung/Micron/Solidigm/Kioxia/SanDisk 2026 底前跟進）。Dell/Supermicro 等伺服器 OEM 與 VAST 等 AI 儲存軟體商為中介需求層。此格本質是寡占式買方（oligopsony）：2026 hyperscaler capex 估 $600-700B、記憶體升至 DC 支出 30%（較 2023 增約 4 倍），4-5 家 CSP 以多年長約把原廠 2026 產能綁死，既撐起漲價、也把整鏈循環風險集中於少數客戶。客戶端 SSD 被供給端犧牲、消費市場漲價恐壓抑總量，為需求面主要變數。",
+   "companies": [
+    {
+     "name": "Microsoft / Amazon",
+     "ticker": "MSFT / AMZN",
+     "country": "US",
+     "share": "CSP 長約鎖貨",
+     "products": "AI 推論 infra / eSSD 長約",
+     "note": "2Q26 起以長期協議鎖定供給",
+     "src": "https://www.trendforce.com/presscenter/news/20260331-12995.html"
+    },
+    {
+     "name": "Google / Meta",
+     "ticker": "GOOGL / META",
+     "country": "US",
+     "share": "CSP 長約鎖貨",
+     "products": "AI data lake / 推論儲存",
+     "note": "AI 伺服器儲存需求 8~10 倍於傳統",
+     "src": "https://www.hdinresearch.com/news/1217"
+    },
+    {
+     "name": "Dell Technologies",
+     "ticker": "DELL",
+     "country": "US",
+     "share": "AI 伺服器 OEM",
+     "products": "AI 伺服器 / 儲存系統",
+     "note": "與 SK hynix 合作首發 245TB PS1101",
+     "src": "https://www.techradar.com/pro/samsung-archrival-showcases-245tb-pcie-gen5-ssd-joining-kioxia-huawei-and-sandisk-with-solidigm-samsung-and-micron-expected-to-launch-similar-products-in-2026"
+    },
+    {
+     "name": "Supermicro",
+     "ticker": "SMCI",
+     "country": "US",
+     "share": "AI 伺服器 OEM",
+     "products": "AI 伺服器 / JBOF 儲存",
+     "note": "大容量 eSSD 整機出海口",
+     "src": "https://www.techradar.com/pro/guess-where-all-the-nand-flash-components-are-going-the-8th-yes-eighth-245tb-ssd-has-been-announced-amidst-race-to-quench-ai-storage-thirst-of-hyperscalers"
+    },
+    {
+     "name": "Solidigm（SK hynix 子公司）",
+     "ticker": "—",
+     "country": "US",
+     "share": "QLC eSSD 旗艦",
+     "products": "D5-P5336 122TB / 245TB 路線圖",
+     "note": "122TB 開賣約 $12,400；AI data lake 主打",
+     "src": "https://www.techradar.com/pro/worlds-largest-ssd-is-on-sale-for-almost-usd12-400-and-yes-it-is-quite-a-bargain-if-you-can-afford-it-of-course"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "nand_idm"
+    },
+    {
+     "id": "essd_module"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "CSP 長約鎖供給 2Q26 (TrendForce)",
+     "url": "https://www.trendforce.com/presscenter/news/20260331-12995.html"
+    },
+    {
+     "label": "SK hynix 245TB QLC eSSD (TechRadar)",
+     "url": "https://www.techradar.com/pro/samsung-archrival-showcases-245tb-pcie-gen5-ssd-joining-kioxia-huawei-and-sandisk-with-solidigm-samsung-and-micron-expected-to-launch-similar-products-in-2026"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "nand_idm",
+   "memory_osat"
+  ],
+  [
+   "nand_idm",
+   "essd_module"
+  ],
+  [
+   "nand_idm",
+   "ai_demand"
+  ],
+  [
+   "niche_memory",
+   "memory_osat"
+  ],
+  [
+   "niche_memory",
+   "essd_module"
+  ],
+  [
+   "ssd_controller",
+   "essd_module"
+  ],
+  [
+   "memory_osat",
+   "essd_module"
+  ],
+  [
+   "essd_module",
+   "ai_demand"
+  ]
+ ],
+ "_proposed": {}
+}

@@ -1,0 +1,436 @@
+{
+ "id": "ip_collectibles",
+ "tab": "谷子/潮玩 IP",
+ "title": "谷子經濟 / 潮玩 IP 供應鏈 (Anime Goods · Designer Toys · Collectible IP)",
+ "subtitle": "「谷子經濟」（goods，二次元 IP 周邊：盲盒/潮玩/集換卡牌/痛包/吧唧/手辦）是 Z 世代『為熱愛買單』的內需新引擎——中國谷子市場 2024 約 1,689 億元（YoY +40%）、2026 上看 2,400 億、2027 破 3,000 億。本主題以『消費 IP 供應鏈』串起價值鏈：上游內容版權/IP 授權（光線傳媒《哪吒2》154 億票房、衍生品上看千億；奧飛娛樂喜羊羊/超級飛俠 IP 全產業鏈）→ 中游設計開發＋玩具製造代工（潮玩 85% 產自東莞、泡泡瑪特零自有工廠全外包，是看不見的『賣鏟人』）→ 下游品牌零售（泡泡瑪特 9992.HK 2025 營收 371 億 +185%、Labub/Monsters 系列單 IP 破 141 億；布魯可 0325.HK 拼搭角色玩具中國前三；名創優品 TOP TOY 35.9 億 +88%）→ 海外出海渠道（Labubu 全球爆紅、北美營收 +748%）。核心節點＝『製造代工』：它是泡泡瑪特/卡游/52TOYS/TOP TOY 共同的隱形供應商，谷子赴港 IPO 潮（卡游、52TOYS、TOP TOY 排隊）只會放大代工與包裝的訂單。絃外之音：真正可持續的不是某隻爆款玩偶（Labubu 退潮股價曾單日 −22%），而是『擁有自有 IP × 全球零售網路 × 用量計費的授權分成』者——多數谷子公司 IP 多為授權（卡游 70 個 IP 僅 1 個自有、2025-27 大量授權到期），這是版權懸崖風險；包裝/代工反而是『賣給所有人』的中性受惠者。⚠ 與既有 ai_media_gen（內容生成）無直接重疊；本主題聚焦『實體 IP 消費品供應鏈 × 上市櫃投資視角』。非投資建議。",
+ "category": "industrial",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "25+"
+  },
+  {
+   "k": "中國谷子市場",
+   "v": "¥2,400億",
+   "sub": "2024 ¥1,689 億（YoY +40%）→ 2026 ~¥2,400 億 → 2027 破 ¥3,000 億",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "谷子赴港 IPO 潮（卡游/52TOYS/TOP TOY）+ Labubu 全球出海·風險：IP 授權到期＋爆款退潮波動",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "ip",
+   "label": "上游：內容版權 / IP 授權（IP 的源頭）",
+   "main": false
+  },
+  {
+   "id": "make",
+   "label": "中游：設計開發 / 玩具製造代工（賣鏟人）",
+   "main": true
+  },
+  {
+   "id": "retail",
+   "label": "下游：品牌零售（直營＋加盟＋集合店）",
+   "main": false
+  },
+  {
+   "id": "global",
+   "label": "海外：出海渠道 / 終端消費",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "content_ip",
+   "row": "ip",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "上游：內容版權 / IP 創造",
+   "nameEn": "Content & Original IP Creation",
+   "competition": "fragmented",
+   "single": "源頭定生死 · 一部爆款（《哪吒2》154 億票房）即可點燃整條谷子鏈，但 IP 命中率極低、難複製",
+   "desc": "谷子的『源頭活水』——動畫/電影/遊戲/漫畫等內容 IP。內容方靠票房＋IP 衍生授權分成變現，是整條供應鏈的價值起點，但 IP 能否成爆款帶有極高隨機性。",
+   "marketSize": "中國泛二次元＋周邊 2024 約 ¥5,977 億",
+   "growth": "光線傳媒 2025 淨利 15-19 億（+414~551%）",
+   "share": "null",
+   "analysis": "內容是谷子鏈最上游也最不可預測的一環。光線傳媒（300251.SZ）《哪吒之魔童鬧海》154.5 億國內票房登全球動畫之冠，帶動 2025 淨利預增 414~551% 至 15-19 億，董事長王長田估《哪吒2》衍生品銷售上看千億、已覆蓋 30+ 品類 500+ 產品，公司正轉型為『IP 創造者與運營商』。奧飛娛樂（002292.SZ）以喜羊羊/超級飛俠/鎧甲勇士打造『動畫＋玩具＋授權＋實景』全產業鏈，2025 營收 24.7 億、扭虧為盈，喜羊羊授權合作商超 1,000 家。絃外之音：內容方掌握 IP 母權但變現靠下游，授權分成是『輕資產高毛利』，可惜爆款難複製——這是上游的高風險高報酬本質。",
+   "companies": [
+    {
+     "name": "光線傳媒",
+     "ticker": "300251.SZ",
+     "country": "CN",
+     "share": "頭部動畫電影 IP",
+     "products": "《哪吒》系列 / IP 衍生授權",
+     "note": "《哪吒2》154.5 億票房登全球動畫之冠；2025 淨利預增 414~551% 至 15-19 億；衍生品上看千億、覆蓋 30+ 品類",
+     "src": "https://m.thepaper.cn/newsDetail_forward_32492315"
+    },
+    {
+     "name": "奧飛娛樂",
+     "ticker": "002292.SZ",
+     "country": "CN",
+     "share": "IP 全產業鏈平台",
+     "products": "喜羊羊 / 超級飛俠 / 鎧甲勇士 + 玩具",
+     "note": "2025 營收 24.7 億、扭虧為盈（淨利 0.72 億）；玩具業務 9.5 億；喜羊羊授權合作商 1,000+",
+     "src": "https://www.chwang.com/article/191715714830"
+    },
+    {
+     "name": "閱文集團",
+     "ticker": "0772.HK",
+     "country": "HK",
+     "share": "網文 IP 衍生",
+     "products": "全職高手等 IP 授權 / 衍生品",
+     "note": "2025H1 衍生品 GMV 達 4.8 億；網文→動畫→谷子的 IP 孵化源頭",
+     "src": "https://m.163.com/dy/article/K6RR43RN0512D03F.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "design_dev"
+    },
+    {
+     "id": "toy_oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "光線傳媒 2025 淨利預增超 4 倍（哪吒2）",
+     "url": "https://m.thepaper.cn/newsDetail_forward_32492315"
+    },
+    {
+     "label": "奧飛娛樂 2025 玩具/IP 業績",
+     "url": "https://www.chwang.com/article/191715714830"
+    },
+    {
+     "label": "谷子經濟：IP 驅動產業鏈協同（華龍證券）",
+     "url": "https://pdf.dfcfw.com/pdf/H3_AP202508101724810437_1.pdf?1754833850000.pdf"
+    }
+   ]
+  },
+  {
+   "id": "design_dev",
+   "row": "make",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "設計開發 / IP 簽約授權",
+   "nameEn": "Design, Development & IP Licensing",
+   "competition": "competitive",
+   "single": "授權到期＝版權懸崖 · 多數谷子公司 IP 靠『租』（卡游 70 IP 僅 1 自有、2025-27 大量到期），自有 IP 含量決定估值天花板",
+   "desc": "把上游 IP 轉成可量產商品的設計研發＋授權談判環節：簽 IP 授權、做產品設計/原型、IP 矩陣管理。授權 IP vs 自有 IP 的比例，是谷子公司護城河與風險的核心分水嶺。",
+   "marketSize": "嵌入各品牌研發/授權成本",
+   "growth": "TOP TOY 自有 IP 潮玩 2025 +28 倍",
+   "share": "null",
+   "analysis": "這是谷子鏈『最被低估的風險點』。多數公司 IP 靠授權租用：卡游（擬港股 IPO）70 個 IP 僅 1 個自有、2025 有 38 份授權到期、2026 再 39 份；52TOYS 核心授權（迪士尼 2025、貓和老鼠 2026 到期）懸崖在即；TOP TOY 24 自有＋42 授權，2025 自有 IP 潮玩收入飆 +28 倍至 2 億、占比快速提升——自有 IP 含量正成市場給估值的關鍵。泡泡瑪特最強：Molly/Labubu/Dimoo 多為簽約藝術家自有 IP，掌握設計與藝術家網路。絃外之音：授權 IP 像『租房』、自有 IP 像『買房』——版權懸崖風險讓資本市場願給自有 IP 公司更高本益比。",
+   "companies": [
+    {
+     "name": "泡泡瑪特(設計/藝術家)",
+     "ticker": "9992.HK",
+     "country": "HK",
+     "share": "自有 IP 設計龍頭",
+     "products": "Molly / Labubu / Dimoo / CRYBABY 設計開發",
+     "note": "簽約藝術家自有 IP 矩陣 + PDC 設計中心；2026 一週一新 IP『去 Labubu 化』降單一依賴",
+     "src": "https://www.morketing.com/detail/28236"
+    },
+    {
+     "name": "卡游(Kayou)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "集換卡牌設計龍頭",
+     "products": "奧特曼等卡牌設計 / IP 矩陣 70 個",
+     "note": "擬港股 IPO（對賭 2026 前上市）；70 IP 僅 1 自有、2025/26 各 38/39 份授權到期=版權懸崖",
+     "src": "https://finance.sina.com.cn/jjxw/2026-04-08/doc-inhtuiyh1611258.shtml"
+    },
+    {
+     "name": "52TOYS(樂自天成)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "收藏玩具設計第三",
+     "products": "蠟筆小新/變形機甲設計 / 35 自有+80 授權 IP",
+     "note": "擬港股 IPO；核心授權迪士尼 2025、貓和老鼠 2026 到期；2024 營收 6.3 億",
+     "src": "https://finance.sina.com.cn/stock/stockzmt/2025-06-11/doc-ineztrwy7628559.shtml"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "content_ip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "toy_oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "卡游 IP 矩陣與授權到期（新浪財經）",
+     "url": "https://finance.sina.com.cn/jjxw/2026-04-08/doc-inhtuiyh1611258.shtml"
+    },
+    {
+     "label": "52TOYS 招股書：授權 IP 到期風險",
+     "url": "https://finance.sina.com.cn/stock/stockzmt/2025-06-11/doc-ineztrwy7628559.shtml"
+    },
+    {
+     "label": "泡泡瑪特『去 Labubu 化』一週一新 IP",
+     "url": "https://www.morketing.com/detail/28236"
+    }
+   ]
+  },
+  {
+   "id": "toy_oem",
+   "row": "make",
+   "col": 2,
+   "span": 2,
+   "kind": "stage",
+   "name": "玩具製造代工 / 包裝（賣鏟人）",
+   "nameEn": "Toy Manufacturing OEM & Packaging",
+   "competition": "fragmented",
+   "single": "隱形賣鏟人 · 全球 85% 潮玩產自東莞、泡泡瑪特『零自有工廠』全外包——代工/包裝是賣給泡泡瑪特/卡游/52TOYS/TOP TOY 所有人的中性受惠者",
+   "desc": "把設計稿變實體商品的製造環節：PVC 注塑/搪膠公仔、毛絨、拼搭積木、卡牌印刷、盲盒包裝。品牌方多採輕資產全外包模式，代工集群（東莞）與包裝廠是整條鏈最『中性』的受惠者。",
+   "marketSize": "東莞潮玩產業帶 4,000+ 玩具企業",
+   "growth": "裕同科技 2025H1 營收 78.8 億 +7.1%",
+   "share": "null",
+   "analysis": "這是本主題的核心節點——『谷子鏈的台積電位置』。泡泡瑪特沒有自有工廠、產品全外包，東莞承擔其約 70% 產能；全球近 1/4 動漫衍生品、85% 潮玩產自東莞（2023 獲『中國潮玩之都』）。代工分三層：被大單『鎖死』99% 產能的專屬廠、重點合作廠、上下游配件廠。包裝環節由裕同科技（002831.SZ）主導，獨家提供 3D 浮雕/UV 印刷等特殊工藝、占泡泡瑪特外包裝約 70%，2025H1 營收 78.8 億 +7.1%。布魯可（0325.HK）則自建拼搭積木產能、以奧特曼等 IP 做角色玩具，登中國拼搭玩具前三。絃外之音：代工/包裝『賣給所有谷子品牌』，不押單一爆款、不擔版權懸崖——谷子 IPO 潮越熱、訂單越多，是最被忽略的中性 picks-and-shovels。",
+   "companies": [
+    {
+     "name": "裕同科技",
+     "ticker": "002831.SZ",
+     "country": "CN",
+     "share": "盲盒包裝主力(~70%)",
+     "products": "盲盒外包裝 / 3D 浮雕 / UV 印刷",
+     "note": "泡泡瑪特外包裝 ~70% 份額、獨家特殊工藝；2025H1 營收 78.8 億 +7.1%、淨利 5.5 億 +11.4%",
+     "src": "https://www.cfi.net.cn/p20260428000570.html"
+    },
+    {
+     "name": "布魯可(Bloks)",
+     "ticker": "0325.HK",
+     "country": "HK",
+     "share": "拼搭角色玩具中國前三",
+     "products": "奧特曼/變形金剛拼搭積木 / 自建產能",
+     "note": "2025H1 營收 13.38 億 +27.9%、轉盈；19 IP / 925 SKU；2025/1 上市超購近 6,000 倍",
+     "src": "https://finance.sina.com.cn/stock/hkstock/hkzmt/2025-01-10/doc-ineenauc6326863.shtml"
+    },
+    {
+     "name": "東莞潮玩代工集群",
+     "ticker": "—",
+     "country": "CN",
+     "share": "全球潮玩 ~85% 產地",
+     "products": "PVC 注塑 / 搪膠 / 毛絨 OEM/ODM",
+     "note": "4,000+ 玩具企業；承擔泡泡瑪特 ~70% 產能；專屬廠『鎖死』99% 產能=中性賣鏟人",
+     "src": "https://finance.sina.com.cn/roll/2025-06-24/doc-infccuqu3642899.shtml"
+    },
+    {
+     "name": "華立科技",
+     "ticker": "301011.SZ",
+     "country": "CN",
+     "share": "搪膠/IP 衍生製造",
+     "products": "搪膠類玩具大規模生產 / IP 衍生",
+     "note": "為泡泡瑪特等供搪膠公仔；遊藝+IP 衍生雙線",
+     "src": "https://finance.sina.com.cn/roll/2025-06-24/doc-infccuqu3642899.shtml"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "content_ip"
+    },
+    {
+     "id": "design_dev"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "brand_retail"
+    }
+   ],
+   "sources": [
+    {
+     "label": "揭秘泡泡瑪特供應鏈：東莞代工 70% 產能、裕同包裝 70%",
+     "url": "https://finance.sina.com.cn/roll/2025-06-24/doc-infccuqu3642899.shtml"
+    },
+    {
+     "label": "裕同科技 2025 年報摘要（中財網）",
+     "url": "https://www.cfi.net.cn/p20260428000570.html"
+    },
+    {
+     "label": "布魯可登陸港交所、市值超 252 億港元",
+     "url": "https://finance.sina.com.cn/stock/hkstock/hkzmt/2025-01-10/doc-ineenauc6326863.shtml"
+    }
+   ]
+  },
+  {
+   "id": "brand_retail",
+   "row": "retail",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "下游：品牌零售（直營＋加盟＋集合店）",
+   "nameEn": "Branded Retail · Stores · Goods Malls",
+   "competition": "redocean",
+   "single": "規模＋自有 IP 雙護城河 · 泡泡瑪特 2025 營收 371 億 +185%、Monsters 單 IP 破 141 億，是谷子鏈唯一千億級龍頭",
+   "desc": "把實體商品賣給消費者的品牌零售層：自有品牌直營店、機器人商店、加盟、谷子集合店（如 TOP TOY、名創優品）、線上電商。這是品牌價值與毛利的最終兌現點。",
+   "marketSize": "中國谷子市場 2026 上看 ¥2,400 億",
+   "growth": "泡泡瑪特 2025 營收 +184.7%、淨利 +284.5%",
+   "share": "null",
+   "analysis": "下游是紅海競爭但龍頭極強。泡泡瑪特（9992.HK）2025 營收 371 億（+184.7%）、調整後淨利 130.8 億（+284.5%），Labubu 所屬 The Monsters 系列收入 141.6 億（+365.7%）成首個破百億 IP（占營收 ~38%），2026 王寧定調『戰略整固年』、目標增長不低於 20%。名創優品（9896.HK）2025 營收 214 億 +26%，旗下潮玩集合店 TOP TOY 收入 35.9 億 +88%、Q4 同店 +112%、擬分拆赴港 IPO 募約 3 億美元。布魯可亦走品牌零售＋分銷。絃外之音：能穿越爆款週期的是『自有 IP × 規模化全球零售網』——Labubu 退潮時泡泡瑪特股價曾單日 −22%，提醒單一 IP 集中度是估值雙面刃。",
+   "companies": [
+    {
+     "name": "泡泡瑪特",
+     "ticker": "9992.HK",
+     "country": "HK",
+     "share": "潮玩零售全球龍頭",
+     "products": "盲盒/手辦直營+機器人商店+樂園+POPOP 珠寶",
+     "note": "2025 營收 371.2 億 +184.7%、調整淨利 130.8 億 +284.5%；Monsters 系列 141.6 億；2026 定調整固年、目標 +20%",
+     "src": "https://www.tradingkey.com/zh-hans/analysis/stocks/hk-stock/261717258-pop-mart-revenue-surpasses-30-billion-why-stock-price-plummet-15-tradingkey"
+    },
+    {
+     "name": "名創優品 (TOP TOY)",
+     "ticker": "9896.HK",
+     "country": "HK",
+     "share": "谷子集合店第一",
+     "products": "TOP TOY 潮玩集合店 / IP 雜貨零售",
+     "note": "2025 集團營收 214 億 +26%；TOP TOY 35.9 億 +88%、Q4 同店 +112%；TOP TOY 擬分拆港股 IPO 募 ~$3 億",
+     "src": "https://www.hkmoneyclub.com/2026/04/01/%E5%90%8D%E5%89%B5%E5%84%AA%E5%93%81%EF%BC%9A%E5%A4%A7%E5%BA%97%E5%A2%9E%E6%94%B6%EF%BC%8C%E6%B5%B7%E5%A4%96%E5%A2%9E%E5%88%A9%EF%BC%8Cip-%E9%9B%B6%E5%94%AE%E5%8D%B3%E5%B0%87%E8%BF%8E%E4%BE%86/"
+    },
+    {
+     "name": "布魯可(零售/分銷)",
+     "ticker": "0325.HK",
+     "country": "HK",
+     "share": "拼搭玩具品牌零售",
+     "products": "經銷 + 自營零售 + 線上",
+     "note": "拼搭角色玩具中國前三；以高性價比＋IP 矩陣鋪貨大眾通路",
+     "src": "https://finance.sina.com.cn/stock/hkstock/hkzmt/2025-01-10/doc-ineenauc6326863.shtml"
+    },
+    {
+     "name": "卡游(零售/分銷)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "集換卡牌零售 71% 市佔",
+     "products": "卡牌分銷 / 旗艦店 / 文具",
+     "note": "2024 營收 100.6 億、調整淨利 44.7 億；卡牌市佔 71.1%；擬港股 IPO",
+     "src": "https://news.qq.com/rain/a/20250415A06SBA00"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "toy_oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "overseas"
+    }
+   ],
+   "sources": [
+    {
+     "label": "泡泡瑪特 2025 全年業績（營收 371 億 +185%）",
+     "url": "https://www.tradingkey.com/zh-hans/analysis/stocks/hk-stock/261717258-pop-mart-revenue-surpasses-30-billion-why-stock-price-plummet-15-tradingkey"
+    },
+    {
+     "label": "名創優品/TOP TOY 2025 業績與分拆 IPO",
+     "url": "https://www.hkmoneyclub.com/2026/04/01/%E5%90%8D%E5%89%B5%E5%84%AA%E5%93%81%EF%BC%9A%E5%A4%A7%E5%BA%97%E5%A2%9E%E6%94%B6%EF%BC%8C%E6%B5%B7%E5%A4%96%E5%A2%9E%E5%88%A9%EF%BC%8Cip-%E9%9B%B6%E5%94%AE%E5%8D%B3%E5%B0%87%E8%BF%8E%E4%BE%86/"
+    },
+    {
+     "label": "卡游 2024 營收百億、淨利 45 億",
+     "url": "https://news.qq.com/rain/a/20250415A06SBA00"
+    }
+   ]
+  },
+  {
+   "id": "overseas",
+   "row": "global",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "海外：出海渠道 / 終端消費",
+   "nameEn": "Overseas Channels & End Consumers",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "谷子/潮玩出海的終端需求層：海外直營店、跨境電商、本地分銷、終端 Z 世代/收藏家消費。Labubu 全球爆紅證明中國 IP 可破圈出海，海外是估值想像力來源也是匯率/關稅/退潮風險所在。",
+   "marketSize": "泛二次元周邊 2029 上看 ¥8,344 億",
+   "growth": "泡泡瑪特美洲營收 2025 +748%",
+   "share": "null",
+   "analysis": "海外是谷子鏈 2026 最大成長變量。泡泡瑪特美洲營收由 2024 的 8 億暴增至 2025 的 68.1 億（+748.4%）、亞太 80.1 億（+157.6%），2026 計畫北美門店翻倍、貢獻營收上看 135 億，並與 Sony Pictures 合拍 Labubu 電影、推《Labubu and Friends》動畫——把單品爆款升級為全球文化符號（迪士尼式 IP 長青策略）。風險端：Labubu 退潮使股價曾單日 −22%，且傳被美方以新疆棉/強迫勞動為由審查海關，地緣與關稅是出海逆風。絃外之音：出海拉動的不只是品牌方，更回頭放大上游東莞代工與包裝的出口訂單——這是谷子出海的『二階受惠』邏輯。",
+   "companies": [
+    {
+     "name": "海外 Z 世代/收藏家",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "谷子終端買方",
+     "products": "盲盒/潮玩/卡牌 海外消費",
+     "note": "Labubu 全球爆紅帶動中國 IP 破圈；終端用量回饋上游代工/包裝訂單"
+    },
+    {
+     "name": "泡泡瑪特(海外)",
+     "ticker": "9992.HK",
+     "country": "HK",
+     "share": "中國潮玩出海龍頭",
+     "products": "海外直營+電商+樂園 / Sony 合拍 Labubu 電影",
+     "note": "美洲營收 2025 +748%、亞太 +157.6%；2026 北美門店翻倍、貢獻上看 135 億",
+     "src": "https://www.bella.tw/articles/design&gadget/53538/pop-mart-sees-revenue-hitting-over-4-bln-this-year"
+    },
+    {
+     "name": "名創優品(海外)",
+     "ticker": "9896.HK",
+     "country": "HK",
+     "share": "全球零售網出海",
+     "products": "海外大店 + TOP TOY 出海",
+     "note": "2025 海外增利、以大店模式輸出 IP 零售；海外為利潤主引擎之一",
+     "src": "https://www.hkmoneyclub.com/2026/04/01/%E5%90%8D%E5%89%B5%E5%84%AA%E5%93%81%EF%BC%9A%E5%A4%A7%E5%BA%97%E5%A2%9E%E6%94%B6%EF%BC%8C%E6%B5%B7%E5%A4%96%E5%A2%9E%E5%88%A9%EF%BC%8Cip-%E9%9B%B6%E5%94%AE%E5%8D%B3%E5%B0%87%E8%BF%8E%E4%BE%86/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "brand_retail"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "泡泡瑪特海外擴張與 Labubu 出海（CEO 放話破 40 億美元）",
+     "url": "https://hypebeast.com/zh/2025/8/pop-mart-company-over-4-billion-usd-revenue-this-year-labubu-reports"
+    },
+    {
+     "label": "Labubu 退潮股價單日 −22%（CNBC）",
+     "url": "https://www.cnbc.com/2026/03/25/pop-mart-labubu-sluggish-crybaby-monster-family-sales-.html"
+    },
+    {
+     "label": "中國二次元產業崛起：谷子經濟（Finance730）",
+     "url": "https://finance730.com.hk/2025/01/14/%E8%B0%B7%E5%AD%90%E7%B6%93%E6%BF%9F/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "content_ip",
+   "design_dev"
+  ],
+  [
+   "content_ip",
+   "toy_oem"
+  ],
+  [
+   "design_dev",
+   "toy_oem"
+  ],
+  [
+   "toy_oem",
+   "brand_retail"
+  ],
+  [
+   "brand_retail",
+   "overseas"
+  ]
+ ],
+ "_proposed": {}
+}

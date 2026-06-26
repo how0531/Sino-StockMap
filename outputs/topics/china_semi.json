@@ -1,0 +1,947 @@
+{
+ "id": "china_semi",
+ "tab": "中國半導體",
+ "title": "中國國產半導體生態 (China Domestic Semiconductor)",
+ "subtitle": "China Domestic Semiconductor — 美國管制反成國產化最大催化劑，2026H1 進入「強制執行期」。北京反向限制 Nvidia 進口、政府採購白名單只納華為與寒武紀，把中國 AI 算力需求強制導向本土——2026H1 國產 AI 晶片市佔首破 41%（華為約 20%）、Nvidia 中國市佔由 95% 崩落至約 55%（部分報告趨近 0）。完整國產鏈：AI 晶片設計 → SMIC/華虹晶圓代工（華虹併華力微後雙雄並列 7nm 級、7nm 產能兩年估增 5 倍）→ 北方華創/中微/新凱來/上海微電子設備（強制『新增產能至少 50% 國產設備』門檻落地）→ CXMT/長存記憶體（DDR5 首攻 Corsair/HP/Dell、國產 HBM3 2026 年底）→ 華大九天 EDA → 鼎龍光刻膠材料 → 長電/通富 Chiplet 封測。⚠ 2026 熱度爆量：寒武紀 2025 營收 +453%、曾為 A 股股王，摩爾線程 IPO 首日 +400%，SMIC 2025 營收創紀錄 $9.3B。⚠ 三大鎖喉：7nm 良率（無量產 EUV，惟 2025 底深圳產出 13.5nm 原型）、HBM 供應、光刻機落後 ASML 約十年；題材擁擠、政策回吐與二次制裁為主要風險。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "40+"
+  },
+  {
+   "k": "投資熱度",
+   "v": "極高",
+   "sub": "2026H1 國產 AI 晶片市佔首破 41%(華為約 20%)·Nvidia 中國市佔 95%→約 55%·寒武紀 2025 +453% 曾為 A 股股王",
+   "hot": true
+  },
+  {
+   "k": "鎖喉／風險",
+   "v": 3,
+   "sub": "7nm 無 EUV·HBM 供應·光刻落後 ASML 約十年",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "design",
+   "label": "AI 晶片 / CPU / GPU 設計 Compute Chip Design",
+   "main": true
+  },
+  {
+   "id": "foundry",
+   "label": "晶圓代工 Foundry",
+   "main": false
+  },
+  {
+   "id": "equip",
+   "label": "半導體設備 Equipment",
+   "main": false
+  },
+  {
+   "id": "memory",
+   "label": "記憶體 / EDA / 材料 Memory · EDA · Materials",
+   "main": false
+  },
+  {
+   "id": "package",
+   "label": "先進封測 Advanced Packaging & Test",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ai_chip",
+   "row": "design",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "國產 AI 晶片 / CPU / GPU 設計",
+   "nameEn": "Domestic AI / CPU / GPU Design",
+   "competition": "highgrowth",
+   "single": "鎖喉催化 · 2026H1 國產 AI 晶片市佔首破 41%、Nvidia 中國市佔由 95%→約 55%(部分報告趨近 0)；政府白名單只納華為+寒武紀",
+   "desc": "受美管制下的國產 AI 加速器、CPU 與 GPU 設計商。美國限制 Nvidia H20/B 系列 + 北京反向限制進口、政府採購白名單只納華為與寒武紀，把中國 AI 算力需求強制導向本土晶片，形成政策保證的訂單。2026H1 國產廠出貨 165 萬顆、市佔首度突破 41%。",
+   "marketSize": "政策保證需求",
+   "growth": "在地化首破 41% 市佔",
+   "share": "null",
+   "analysis": "2026H1 結構性轉折：中國本土 AI 加速器出貨 165 萬顆、市佔首度突破 41%，華為昇騰以約 81.2 萬顆（約 20%）居首；同期 Nvidia 中國市佔由 95% 崩落至約 55%（多份報告甚至指 H20/H200 遭官方勸退而趨近 0）。2026 全年預測：華為約 50%、AMD 約 12%、寒武紀約 9%。華為昇騰（海思 HiSilicon，未上市）為國產算力龍頭：910C 2026 產量目標翻倍至 60 萬顆（2025 約 30 萬）、全系列可達 160 萬 die、AI 晶片營收上看約 120 億美元（前一年 75 億）、客戶含阿里/字節跳動/騰訊；CloudMatrix 384 超節點以 384 顆 910C 全互聯達 300 PFLOPs(BF16)、近 Nvidia GB200 NVL72 兩倍，以「拼架構補製程」繞道製程落後；Atlas 950（8,192 卡）2026 Q4。寒武紀（688256.SS）2025 營收 64.97 億元(YoY +453%)、淨利 20.59 億元(轉盈)，2025 股價漲超 5 倍、8 月曾超越貴州茅台成 A 股股王，2026-04 突破 1,600 元創高，2026 目標出貨 50 萬顆。海光信息（688041.SS）CPU+DCU 雙輪、技術源自 AMD，2025 營收 143.77 億元(+56.92%)、淨利 25.45 億元(+31.79%)。摩爾線程（688795.SS）2025-12 上海 IPO 首日 +400%、收 600.5 元（發行價 5 倍）。壁仞 Biren 啟動港股 IPO（23 家基石）。絃外之音：真正的鎖喉非 7nm 邏輯，而是 HBM——SemiAnalysis 指 TSMC die bank 已枯竭、外購 HBM 用罄，2026 真瓶頸在記憶體；估值已部分透支，中美緩和或 Nvidia 重獲准入即可能殺溢價。",
+   "companies": [
+    {
+     "name": "華為昇騰 Huawei Ascend (海思)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國 AI 晶片約 20%(2026H1)·全年估 50%",
+     "products": "Ascend 910C / CloudMatrix 384 / Atlas 950 超節點",
+     "note": "未上市；2026H1 出貨約 81.2 萬顆居中國第一；AI 晶片營收上看約 $12B（前一年 $7.5B）；910C 2026 產量翻倍至 60 萬顆、全系列 160 萬 die；CloudMatrix 384 達 300 PFLOPs、近 GB200 NVL72 兩倍；列政府核可白名單",
+     "src": "https://www.tomshardware.com/tech-industry/huawei-expects-12-billion-in-ai-chip-revenue-this-year-as-nvidias-china-market-share-hits-zero"
+    },
+    {
+     "name": "寒武紀 Cambricon",
+     "ticker": "688256.SS",
+     "country": "CN",
+     "share": "中國 AI 晶片全年估 9%",
+     "products": "思元 MLU AI 加速卡",
+     "note": "與華為同列政府核可 AI 硬體白名單（Nvidia/AMD 未入列）；2026 目標出貨 50 萬顆；2026 Q1 營收 28.9 億元(+160%)、淨利 10 億元(+185%)；ByteDance 預訂約 20 萬顆思元 590；2025 營收 64.97 億元(+453%)、曾為 A 股股王",
+     "src": "https://www.tomshardware.com/tech-industry/artificial-intelligence/china-starts-list-of-government-approved-ai-hardware-suppliers-cambricon-and-huawei-are-in-nvidia-is-not"
+    },
+    {
+     "name": "海光信息 Hygon",
+     "ticker": "688041.SS",
+     "country": "CN",
+     "share": "國產 CPU+DCU 雙輪",
+     "products": "Hygon CPU / DCU 加速卡",
+     "note": "2025 營收 143.77 億元(+56.92%)、淨利 25.45 億元(+31.79%)；技術源自 AMD；信創主力",
+     "src": "https://news.futunn.com/en/post/71309305/haiguang-information-688041-steady-performance-growth-with-dual-driven-support"
+    },
+    {
+     "name": "摩爾線程 Moore Threads",
+     "ticker": "688795.SS",
+     "country": "CN",
+     "share": "「中國 Nvidia」GPU",
+     "products": "全功能 GPU / AI 訓練卡",
+     "note": "2025-12 上海 IPO 首日 +400%、收 600.5 元（發行價 5 倍）；2023 美制裁",
+     "src": "https://www.cnbc.com/2025/12/05/china-nvidia-moore-threads-trading-debut-1-billion-listing-ipo-shanghai-gpu-enflame-biren.html"
+    },
+    {
+     "name": "壁仞科技 Biren",
+     "ticker": "—",
+     "country": "CN",
+     "share": "GPGPU 新創",
+     "products": "壁礪 BR100 GPGPU",
+     "note": "2026-01-02 港股掛牌首日 +82%、募資 HK$5.58B；首家在港上市的中國 GPU 商；列安可採購清單(壁礪 166)；2023 列 Entity List",
+     "src": "https://www.tomshardware.com/tech-industry/biren-kicks-off-hong-kong-ipo"
+    },
+    {
+     "name": "燧原 Enflame",
+     "ticker": "—",
+     "country": "CN",
+     "share": "AI 訓推晶片新創",
+     "products": "邃思 DTU 訓練/推理卡",
+     "note": "未上市；申報 IPO；騰訊系",
+     "src": "https://www.tomshardware.com/pc-components/gpus/blacklisted-chinese-gpu-makers-line-up-to-file-for-ipos-as-us-sanctions-and-trade-war-take-toll-on-ai-hardware-market"
+    },
+    {
+     "name": "海思 HiSilicon (麒麟)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "華為自研 SoC",
+     "products": "麒麟 Kirin 9000S / 昇騰 SoC",
+     "note": "未上市；Kirin 9000S 用 SMIC 7nm + Chiplet 突破",
+     "src": "https://semiconductorx.com/spotlight-huawei-hisilicon.html"
+    },
+    {
+     "name": "Nvidia（被擠出者）",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "中國市佔 95%→約 55%(部分報告趨近 0)",
+     "products": "H20 / H200 受限版資料中心 GPU",
+     "note": "2026H1 中國市佔由 95% 崩落；H20/H200 遭官方勸退、未列政府核可白名單；制度性『去 Nvidia 化』需求轉向本土",
+     "src": "https://www.tomshardware.com/tech-industry/huawei-expects-12-billion-in-ai-chip-revenue-this-year-as-nvidias-china-market-share-hits-zero"
+    },
+    {
+     "name": "AMD（對照外商）",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "中國 AI 晶片全年估 12%",
+     "products": "Instinct MI 系列受限版",
+     "note": "未列政府核可白名單；2026 全年中國 AI 晶片市佔預估約 12%，居外商之首但仍受採購門檻壓抑",
+     "src": "https://www.tomshardware.com/tech-industry/artificial-intelligence/china-starts-list-of-government-approved-ai-hardware-suppliers-cambricon-and-huawei-are-in-nvidia-is-not"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "smic"
+    },
+    {
+     "id": "advpkg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Huawei Ascend 910C 2026 翻倍 (WebProNews)",
+     "url": "https://www.webpronews.com/huawei-to-double-ascend-910c-ai-chip-output-to-600000-in-2026-rivaling-nvidia/"
+    },
+    {
+     "label": "Cambricon 2025 業績快報 (Futubull)",
+     "url": "https://news.futunn.com/en/post/69413023/cambrian-u-688256-2025-earnings-flash-commentary-lpu-leads-innovation"
+    },
+    {
+     "label": "CloudMatrix 384 超節點 (量子位)",
+     "url": "https://www.qbitai.com/2025/05/284657.html"
+    }
+   ]
+  },
+  {
+   "id": "smic",
+   "row": "foundry",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "晶圓代工 (SMIC / 華虹)",
+   "nameEn": "Foundry (SMIC / Hua Hong)",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 無 EUV、7nm(N+2) 為中國最先進量產製程；華虹併華力微後形成 SMIC+華虹『雙先進製程廠』格局",
+   "desc": "中國本土晶圓代工雙雄。SMIC 以 DUV 多重曝光做到 7nm（中國最先進量產製程），華虹併華力微後切入先進製程。EUV 缺位仍是先進製程的實質天花板。2026 起成熟製程因海外大廠轉向先進製程而嚴重缺貨、海外訂單回流中國。",
+   "marketSize": "$9.3B (SMIC 2025)",
+   "growth": "7nm 兩年估增 5 倍、整併加速",
+   "share": "null",
+   "analysis": "2026H1 產業整併加速：華虹半導體（Hua Hong）以人民幣 82.7 億收購華力微（Huali）約 97.5% 股權，注入 65/55nm、40nm 製程並新增約每月 3.8 萬片產能，使中國形成 SMIC 與華虹『兩家先進製程廠（7nm 級）』格局；SMIC 亦以人民幣 406 億（約 58 億美元）收購北京子公司剩餘 49% 股權；2025 前九月中國半導體 M&A 達 93 件、年增 33%。SMIC 中芯國際（0981.HK / 688981.SS）2025 營收創紀錄 93 億美元(YoY +16.2%)、淨利 +39% 至 6.85 億美元；7nm 及以下先進產能由 2025 年底約每月 4.5 萬片擴至 2026 約 6 萬片、2027 約 8 萬片（N+2 製程 2026 達每月 4 萬片）、5nm 進入試產供華為/阿里；首季末折合 8 吋月產能達 107.83 萬片(+10.8%)。成熟製程缺貨使 SMIC 2026Q2 營收季增指引高達 14–16%、工業與汽車佔比由 9.6% 拉升至 14.0%、2025 年底起調漲約一成。但 7nm 良率僅約 20–40% 拖累毛利（毛利率約 20.1%）、5nm 多重曝光成本/良率極差，且無 EUV——這是「製程天花板」的核心。華虹 Hua Hong（1347.HK / 688347.SS）成熟製程代工第二大、功率/類比/嵌入式記憶體，國產替代受益。絃外之音：市場聚焦 SMIC 7nm，但華為「拼架構補製程」（CloudMatrix 超節點）已部分繞過單晶片製程落後，降低「EUV 卡脖子=中國 AI 出局」的恐慌定價；SMIC 同時掛港股與科創板、688981.SS 溢價顯著，存在 A/H 估值與流動性差異。",
+   "companies": [
+    {
+     "name": "SMIC 中芯國際",
+     "ticker": "0981.HK",
+     "country": "CN",
+     "share": "中國最先進量產製程",
+     "products": "7nm(N+2) / 14nm / 28nm 代工",
+     "note": "2025 營收創紀錄 $9.3B(+16.2%)、淨利 +39% 至 $685M；7nm 先進產能 25 年底 4.5 萬→26 年 6 萬→27 年 8 萬片/月、5nm 試產；以人民幣 406 億收購北京子公司剩餘 49%；2026Q2 季增指引 14–16%；亦掛 688981.SS",
+     "src": "https://www.trendforce.com/news/2026/02/25/news-china-reportedly-aims-to-boost-7nm-5nm-output-fivefold-in-two-years-driven-by-smic-and-hua-hong/"
+    },
+    {
+     "name": "華虹半導體 Hua Hong",
+     "ticker": "1347.HK",
+     "country": "CN",
+     "share": "成熟製程代工第二大·新切先進製程",
+     "products": "功率 / 類比 / 嵌入式記憶體 / 65-40nm 代工",
+     "note": "以人民幣 82.7 億收購華力微約 97.5%、注入 65/55/40nm 與約 3.8 萬片/月產能、與 SMIC 並列『7nm 級先進製程廠』；亦掛 688347.SS",
+     "src": "https://www.trendforce.com/news/2026/01/02/news-chinas-chip-consolidation-heats-up-hua-hong-acquires-97-5-of-huali-following-smics-earlier-move/"
+    },
+    {
+     "name": "華力微 Huali (HLMC)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "華虹併入·先進製程注入",
+     "products": "65/55nm / 40nm 邏輯代工",
+     "note": "2026 被華虹以人民幣 82.7 億收購約 97.5% 股權並注入先進製程與約 3.8 萬片/月產能；原屬華虹集團",
+     "src": "https://www.trendforce.com/news/2026/01/02/news-chinas-chip-consolidation-heats-up-hua-hong-acquires-97-5-of-huali-following-smics-earlier-move/"
+    },
+    {
+     "name": "SMIC (科創板)",
+     "ticker": "688981.SS",
+     "country": "CN",
+     "share": "A 股科創板掛牌",
+     "products": "同 SMIC 代工業務",
+     "note": "科創板溢價顯著；A/H 雙重定價",
+     "src": "https://en.wikipedia.org/wiki/Semiconductor_Manufacturing_International_Corporation"
+    },
+    {
+     "name": "粵芯半導體 CanSemi",
+     "ticker": "—",
+     "country": "CN",
+     "share": "區域成熟製程",
+     "products": "28nm 以上特色製程",
+     "note": "未上市；地方政府投資；成熟製程國產化補位",
+     "src": "https://americanaffairsjournal.org/2026/02/innovation-under-pressure-chinas-semiconductor-industry-at-a-crossroads/"
+    },
+    {
+     "name": "晶合集成 Nexchip",
+     "ticker": "688249.SS",
+     "country": "CN",
+     "share": "顯示驅動代工",
+     "products": "DDIC / CIS 成熟製程代工",
+     "note": "面板驅動 IC 代工龍頭；成熟製程國產化",
+     "src": "https://chinabizinsider.com/chinas-chip-breakthrough-battle-an-in-depth-look-at-the-semiconductor-industrys-push-for-self-sufficiency-in-2025/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ai_chip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "advpkg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SMIC 2025 創紀錄 $9.3B (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/02/11/news-smic-posts-record-9-3b-in-2025-sales-7nm-yields-reportedly-weigh-on-margins/"
+    },
+    {
+     "label": "SMIC 7nm 產能翻倍 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/08/29/news-smic-1h25-net-profit-rises-35-6-7nm-capacity-reportedly-to-double-in-2026/"
+    },
+    {
+     "label": "華虹併華力微·中國代工整併 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/01/02/news-chinas-chip-consolidation-heats-up-hua-hong-acquires-97-5-of-huali-following-smics-earlier-move/"
+    },
+    {
+     "label": "成熟製程缺貨·SMIC Q1 2026 訂單回流 (AIPostHub)",
+     "url": "https://www.aiposthub.com/smic-q1-2026-ai-chip-shortage-orders-china-semiconductor/"
+    }
+   ]
+  },
+  {
+   "id": "litho",
+   "row": "foundry",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "光刻機 (上海微電子 SMEE)",
+   "nameEn": "Lithography (SMEE)",
+   "competition": "monopoly",
+   "single": "鎖喉點 · 全鏈最弱環節；2025 底深圳完成首台國產 EUV 原型機（產出 13.5nm）、SMEE 規劃 2026 小批量交付，但仍落後 ASML 約十年",
+   "desc": "光刻是中國半導體全鏈最弱、最依賴進口的鎖喉環節。上海微電子（SMEE）為唯一本土光刻機商，量產僅到 28nm 浸沒 DUV，先進節點與 EUV 全面落後 ASML；2025 底深圳完成首台國產 EUV 原型機並產出 13.5nm 極紫外光，惟距量產仍遠。",
+   "marketSize": "全鏈最弱環節",
+   "growth": "EUV 原型驗證·SMEE 2026 小批量",
+   "share": "null",
+   "analysis": "2026 里程碑：2025 年底國內首台 EUV 原型機在深圳完成組裝，採 LPP-EUV 光源與國產光學，成功產生 13.5nm 極紫外光並完成初步光刻試驗；上海微電子 SMEE 規劃 2026 年小批量交付，國產光刻設備在成熟製程市場滲透率突破 40%。SMEE（未上市）SSA800 系列：65nm 已量產；28nm 浸沒 DUV（SSA800-10W）2025-09 進 SMIC 測試，單次曝光 28nm、多重圖案化至 11nm、套刻精度 1.9nm、體積僅 ASML NXT:2000i 約 1/3；2025-12 中標 1.1 億元光刻訂單。但整體仍落後 ASML 約十年、無量產級 EUV 能力——這是中國先進製程的最硬天花板，也是強制 50% 國產設備門檻對先進製程暫予豁免的主因。ASML（ASML，荷蘭）仍壟斷先進節點所有 DUV/EUV 工具，對中國禁售 EUV、限制 DUV。絃外之音：中國設備自給率 2026-01 達約 35%（2 年前約 25%、2024 約 13.6%），但「35%」是加權平均——刻蝕/清洗/爐管國產化已高，光刻/量測/離子注入仍極低；誰先突破光刻/光刻膠，誰吃超額利潤；EUV 原型雖具象徵意義，量產良率與光源功率仍是長路。",
+   "companies": [
+    {
+     "name": "上海微電子 SMEE",
+     "ticker": "—",
+     "country": "CN",
+     "share": "唯一本土光刻機商·成熟製程滲透>40%",
+     "products": "SSA800 系列 DUV 光刻機",
+     "note": "未上市；28nm 浸沒 DUV 2025-09 進 SMIC 測試、套刻 1.9nm；規劃 2026 年小批量交付；成熟製程市場滲透率突破 40%；仍落後 ASML 約十年、無量產 EUV",
+     "src": "https://www.bnext.com.tw/article/85567/china-hand-made-euv"
+    },
+    {
+     "name": "ASML（對照壟斷者）",
+     "ticker": "ASML",
+     "country": "NL",
+     "share": "先進光刻全球壟斷",
+     "products": "EUV / DUV 浸沒光刻機",
+     "note": "對中國禁售 EUV、限制 DUV；中國先進製程最硬鎖喉",
+     "src": "https://www.digitimes.com/news/a20251226PD229/smee-asml-government-manufacturing-equipment.html"
+    },
+    {
+     "name": "國望光學 / 光刻零組件",
+     "ticker": "—",
+     "country": "CN",
+     "share": "光刻光學/雷射國產化",
+     "products": "投影物鏡 / 光源 / 工件台",
+     "note": "光刻零組件國產化攻關；多未上市",
+     "src": "https://business.smdailypress.com/smdailypress/article/tokenring-2026-1-21-china-reaches-35-semiconductor-equipment-self-sufficiency-amid-advanced-lithography-breakthroughs"
+    },
+    {
+     "name": "蘇州智光 / 福晶科技",
+     "ticker": "002222.SZ",
+     "country": "CN",
+     "share": "雷射晶體/光學",
+     "products": "雷射晶體 / 光學元件",
+     "note": "福晶科技為雷射光學元件；光刻光源國產化關聯",
+     "src": "https://americanaffairsjournal.org/2026/02/innovation-under-pressure-chinas-semiconductor-industry-at-a-crossroads/"
+    },
+    {
+     "name": "茂萊光學 Maolai",
+     "ticker": "688502.SS",
+     "country": "CN",
+     "share": "精密光學國產化",
+     "products": "精密光學鏡頭 / 量測光學",
+     "note": "半導體量測/光刻精密光學供應商",
+     "src": "https://business.smdailypress.com/smdailypress/article/tokenring-2026-1-21-china-reaches-35-semiconductor-equipment-self-sufficiency-amid-advanced-lithography-breakthroughs"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ai_chip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "smic"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SMEE 中標光刻訂單 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/12/26/news-chinas-smee-reportedly-wins-rmb-110m-lithography-tool-contract-amid-domestic-push/"
+    },
+    {
+     "label": "SMEE vs ASML 落後十年 (Digitimes)",
+     "url": "https://www.digitimes.com/news/a20251226PD229/smee-asml-government-manufacturing-equipment.html"
+    },
+    {
+     "label": "中國首台國產 EUV 原型機產出 13.5nm (數位時代)",
+     "url": "https://www.bnext.com.tw/article/85567/china-hand-made-euv"
+    }
+   ]
+  },
+  {
+   "id": "front_equip",
+   "row": "equip",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "前道設備 (刻蝕/薄膜/清洗/量測)",
+   "nameEn": "Front-End Equipment",
+   "competition": "competitive",
+   "single": "賣鏟人 · 強制執行『新增產能至少 50% 國產設備』審批門檻全面落地；北方華創平台型龍頭、控股芯源微",
+   "desc": "刻蝕、薄膜沉積（CVD/PVD/ALD）、清洗、量測檢測等前道設備。美設備斷供 + SMIC/華虹擴產 + 中國強制『新建/擴產晶圓廠新增設備至少 50% 國產化』審批門檻，使本土設備商訂單能見度極高，是國產替代最確定的「賣鏟人」beta。",
+   "marketSize": "國產替代主戰場",
+   "growth": "強制 50% 國產化門檻落地",
+   "share": "null",
+   "analysis": "2026 最重要新發展——強制國產化政策落地：中國對新建/擴產晶圓廠實施未公開但強制執行的『新增設備至少 50% 國產化』審批門檻，未達標的新廠申請直接被拒（成熟製程最嚴、先進製程因缺乏國產光刻機暫時豁免），國產替代由市場行為轉為制度性強制；蝕刻/薄膜/清洗設備已進長江存儲與 SMIC 產線、去光阻/清洗等領域國產自給率約 50%。設備商整併亦加速（北方華創控股芯源微 Kingsemi）。北方華創 NAURA（002371.SZ）平台型龍頭（刻蝕/PVD/CVD/清洗/爐管），2025 前三季營收 273.01 億元(+32.97%)、單機種累計出貨破千台、全年增速逾 40%。中微公司 AMEC（688012.SS）刻蝕專家，2025 刻蝕設備營收 98.32 億元(+35.12%)、CCP 累計裝機破 5,000 反應台、ICP 1,800 台、介質刻蝕進入 5nm 驗證線。拓荆科技 Piotech（688072.SS）薄膜沉積（CVD/ALD），3D NAND 與先進邏輯關鍵。盛美上海 ACM（688082.SS）清洗設備龍頭、2025 營收增速逾 40%。中科飛測（688361.SS）量測/檢測。中國設備自給率 2026-01 約 35%（加權平均）。絃外之音：與整機（昇騰未上市、寒武紀估值高）相比，設備商吃整條鏈擴產的 capex、beta 分散，是更確定的卡位；強制 50% 門檻把這層 beta 從「市場滲透」升級為「政策保證訂單」；但高端（光刻/量測/離子注入）國產率仍低。",
+   "companies": [
+    {
+     "name": "北方華創 NAURA",
+     "ticker": "002371.SZ",
+     "country": "CN",
+     "share": "平台型設備龍頭",
+     "products": "刻蝕 / PVD / CVD / 清洗 / 爐管",
+     "note": "2025 前三季營收 273.01 億元(+34.14%)；全年指引 467.9~520.2 億元；單機種出貨破千台",
+     "src": "https://news.futunn.com/en/post/64169069/naura-technology-group-002371-q3-results-meet-market-expectations-platform"
+    },
+    {
+     "name": "中微公司 AMEC",
+     "ticker": "688012.SS",
+     "country": "CN",
+     "share": "刻蝕設備龍頭",
+     "products": "CCP / ICP 電漿刻蝕機",
+     "note": "2025 刻蝕營收 98.32 億元(+35.12%)；CCP 裝機破 5,000 反應台；介質刻蝕進 5nm 驗證線",
+     "src": "https://news.futunn.com/en/post/64195325/amec-688012-25q3-revenue-exceeds-expectations-high-aspect-ratio-etching"
+    },
+    {
+     "name": "拓荆科技 Piotech",
+     "ticker": "688072.SS",
+     "country": "CN",
+     "share": "薄膜沉積卡位",
+     "products": "PECVD / ALD 薄膜沉積",
+     "note": "3D NAND 與先進邏輯關鍵；存儲擴產受益",
+     "src": "https://markets.financialcontent.com/stocks/article/tokenring-2026-1-21-china-reaches-35-semiconductor-equipment-self-sufficiency-amid-advanced-lithography-breakthroughs"
+    },
+    {
+     "name": "盛美上海 ACM Research",
+     "ticker": "688082.SS",
+     "country": "CN",
+     "share": "清洗設備龍頭",
+     "products": "單片/槽式清洗 / 電鍍",
+     "note": "亦掛美股 ACMR；清洗設備國產化領先",
+     "src": "https://basic.10jqka.com.cn/688082/"
+    },
+    {
+     "name": "中科飛測 Skyverse",
+     "ticker": "688361.SS",
+     "country": "CN",
+     "share": "量測/檢測",
+     "products": "明場/暗場檢測 / 量測設備",
+     "note": "量測檢測國產化攻關環節",
+     "src": "https://news.10jqka.com.cn/20260427/c676306800.shtml"
+    },
+    {
+     "name": "華海清科 / 萬業 等",
+     "ticker": "688120.SS",
+     "country": "CN",
+     "share": "CMP / 離子注入",
+     "products": "CMP 拋光機 / 離子注入機",
+     "note": "華海清科 CMP 龍頭；萬業企業離子注入",
+     "src": "https://chinabizinsider.com/chinas-chip-breakthrough-battle-an-in-depth-look-at-the-semiconductor-industrys-push-for-self-sufficiency-in-2025/"
+    },
+    {
+     "name": "芯源微 Kingsemi",
+     "ticker": "688037.SS",
+     "country": "CN",
+     "share": "塗膠顯影/清洗·北方華創控股",
+     "products": "塗膠顯影機 (Track) / 單片清洗",
+     "note": "2026 被北方華創控股，補齊平台型設備龍頭的 Track/清洗版圖；設備商整併加速代表案例",
+     "src": "https://technews.tw/2026/03/30/semicon-china-2026/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "smic"
+    },
+    {
+     "id": "memory_cn"
+    }
+   ],
+   "sources": [
+    {
+     "label": "NAURA 002371 Q3 (Futubull)",
+     "url": "https://news.futunn.com/en/post/64169069/naura-technology-group-002371-q3-results-meet-market-expectations-platform"
+    },
+    {
+     "label": "AMEC 688012 2025Q3 (Futubull)",
+     "url": "https://news.futunn.com/en/post/64195325/amec-688012-25q3-revenue-exceeds-expectations-high-aspect-ratio-etching"
+    },
+    {
+     "label": "China 35% 設備自給率 (FinancialContent)",
+     "url": "https://markets.financialcontent.com/stocks/article/tokenring-2026-1-21-china-reaches-35-semiconductor-equipment-self-sufficiency-amid-advanced-lithography-breakthroughs"
+    },
+    {
+     "label": "強制 50% 國產設備門檻 (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/semiconductors/china-tells-chipmakers-to-use-homegrown-chipmaking-tools-for-50-percent-of-new-capacity-decree-designed-to-squeeze-foreign-suppliers-out-of-supply-chain"
+    },
+    {
+     "label": "SEMICON China 2026·設備整併 (TechNews)",
+     "url": "https://technews.tw/2026/03/30/semicon-china-2026/"
+    }
+   ]
+  },
+  {
+   "id": "sicarrier",
+   "row": "equip",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "華為系整機 (新凱來 SiCarrier)",
+   "nameEn": "SiCarrier (Huawei-linked)",
+   "competition": "emerging",
+   "single": "⚠ 華為系神秘整機商 · 估值 RMB 650 億、在手訂單破百億；未上市、財報不透明",
+   "desc": "新凱來 SiCarrier 是華為系神秘設備整機商，2021 年成立、深圳市政府背書，一次展出 30 款全鏈整機，專攻 7nm 以下，被視為對標 Applied Materials/ASML 的國家隊。2025 底傳華為+SiCarrier+哈工大+長春光機所聯手以 LDP（雷射放電電漿）路線研製國產 EUV、原型已驗證、目標 2028 上線（外界存疑）。",
+   "marketSize": "RMB 650 億估值",
+   "growth": "2026 營收估 75 億",
+   "share": "null",
+   "analysis": "新凱來 SiCarrier（未上市）2021-08 成立、深圳市政府背書、與華為深度合作，2025 SEMICON China 展約 30 款整機，覆蓋製程量測、刻蝕、薄膜沉積等前道全環節，專攻 7nm 以下。2025 估值約 RMB 650 億、在手訂單破百億、客戶含 SMIC/華虹/YMTC；不含光刻營收 2025 估 45 億→2026 75 億→2028 169 億元；子公司亦推出國產 EDA。技術長戴軍兼任大基金二期監事、SMIC 董事——直指國家隊背景。絃外之音：SiCarrier 是「華為自建設備鏈」的代理變數，若其整機真能在 SMIC 先進線量產，將大幅降低對 Applied/Lam/TEL 的依賴；但公司高度不透明、未上市、性能多為自述，可驗證性低於上市設備商，屬高賠率高風險的卡位。大基金三期（國家集成電路產業投資基金）為背後資金主軸。",
+   "companies": [
+    {
+     "name": "新凱來 SiCarrier",
+     "ticker": "—",
+     "country": "CN",
+     "share": "華為系全鏈整機",
+     "products": "刻蝕 / 薄膜 / 量測 等 30 款整機",
+     "note": "未上市；估值 RMB 650 億、在手訂單破百億；不含光刻 2026 營收估 75 億元；客戶 SMIC/華虹/YMTC；牽頭 LDP 路線國產 EUV、目標 2028",
+     "src": "https://www.trendforce.com/news/2025/09/05/news-chinas-chip-tool-maker-sicarrier-reportedly-hits-rmb65b-valuation-secures-billion-yuan-orders/"
+    },
+    {
+     "name": "大基金三期 Big Fund III",
+     "ticker": "—",
+     "country": "CN",
+     "share": "國家級資金主軸",
+     "products": "國家集成電路產業投資基金",
+     "note": "驅動設備/材料/記憶體全鏈擴產；政策驅動需求",
+     "src": "https://en.wikipedia.org/wiki/China_Integrated_Circuit_Industry_Investment_Fund"
+    },
+    {
+     "name": "Applied Materials（對照）",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "全球設備龍頭",
+     "products": "前道設備全品類",
+     "note": "對中先進設備出口受限；SiCarrier 對標對象",
+     "src": "https://www.trendforce.com/news/2025/03/27/news-decoding-sicarrier-chinas-chip-tool-firm-set-to-challenge-applied-materials-and-asml/"
+    },
+    {
+     "name": "華為海思（系統整合方）",
+     "ticker": "—",
+     "country": "CN",
+     "share": "設備鏈整合需求方",
+     "products": "昇騰/麒麟自研 SoC",
+     "note": "未上市；SiCarrier 設備鏈最終服務的系統整合方",
+     "src": "https://semiconductorx.com/spotlight-huawei-hisilicon.html"
+    },
+    {
+     "name": "屹唐股份 / 華卓精科 等",
+     "ticker": "—",
+     "country": "CN",
+     "share": "去膠/工件台設備",
+     "products": "乾法去膠 / 光刻雙工件台",
+     "note": "屹唐去膠設備、華卓精科光刻雙工件台（未上市）；設備鏈長尾國產化",
+     "src": "https://chinabizinsider.com/chinas-chip-breakthrough-battle-an-in-depth-look-at-the-semiconductor-industrys-push-for-self-sufficiency-in-2025/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "smic"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SiCarrier RMB650 億估值 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/09/05/news-chinas-chip-tool-maker-sicarrier-reportedly-hits-rmb65b-valuation-secures-billion-yuan-orders/"
+    },
+    {
+     "label": "Decoding SiCarrier (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/03/27/news-decoding-sicarrier-chinas-chip-tool-firm-set-to-challenge-applied-materials-and-asml/"
+    }
+   ]
+  },
+  {
+   "id": "memory_cn",
+   "row": "memory",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "記憶體 (CXMT / 長存)",
+   "nameEn": "Memory (CXMT / YMTC)",
+   "competition": "highgrowth",
+   "single": "鎖喉點 · CXMT DDR5 首攻入主流供應鏈(Corsair/HP/Dell)；國產 HBM3 2026 年底才量產、產能遠不足",
+   "desc": "長鑫存儲 CXMT（DRAM）與長江存儲 YMTC（NAND）為中國本土記憶體雙雄。2026H1 CXMT DDR5 首度打入主流供應鏈、開始替代 Samsung/Micron；但 HBM 仍是昇騰算力的真鎖喉——國產 HBM3 要 2026 年底才量產、產能遠不足需求，且高階仍落後韓美約一個世代。",
+   "marketSize": "CXMT IPO 估值 $42B",
+   "growth": "國產 HBM3 2026-27",
+   "share": "null",
+   "analysis": "2026H1 記憶體首度被本土廠攻入主流供應鏈：CXMT 的 DDR5（最高 8000 Mbps、16/24Gb）打入 Corsair Vengeance，並獲 HP、Dell 認證導入，國產記憶體開始替代 Samsung/Micron；CXMT 計畫 2026 年底量產 HBM3 並供樣給華為等 AI 晶片商，挑戰韓系三強的單點地位。長鑫存儲 CXMT（未上市，擬上市）中國最大 DRAM、以產能計全球第 4，2025 營收暴增、申報上海 IPO 估值約 420 億美元；上海廠規劃 2~3 倍合肥產能、2027 量產。長江存儲 YMTC（未上市，擬上市）2025 Q3 全球 NAND 市佔 13%、270 層 3D NAND、武漢三期提前至 2026H2 量產；子公司 XMC 自研 HBM 封裝、月產能約 3,000 片。兆易創新（603986.SS）NOR Flash/利基 DRAM。絃外之音：2026 全球記憶體漲價，CXMT/長存擬大舉擴產反成搶市佔契機；但 SemiAnalysis 估 CXMT 2026 僅能產約 200 萬顆 HBM stack，遠不及 1.6 百萬顆 910C 封裝所需，且 CXMT/YMTC 仍落後韓美約一個世代（24Gb vs 32Gb DDR5）、低規 HBM 與標準品為主——HBM 才是昇騰估值的真實天花板，而非 SMIC 7nm。",
+   "companies": [
+    {
+     "name": "長鑫存儲 CXMT",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國最大 DRAM·全球第 4",
+     "products": "DDR5(8000Mbps,16/24Gb) / LPDDR / 國產 HBM3",
+     "note": "未上市；DDR5 2026H1 打入 Corsair Vengeance、獲 HP/Dell 認證導入、開始替代 Samsung/Micron；HBM3 規劃 2026 年底量產並供樣華為；申報上海 IPO 估值約 $42B；上海廠 2027 量產",
+     "src": "https://www.tomshardware.com/pc-components/ram/chinese-memory-vendors-snub-industry-giants-in-favor-of-homegrown-ram-chips-samsung-micron-and-sk-hynix-face-a-chinese-supply-chain-revolt"
+    },
+    {
+     "name": "長江存儲 YMTC",
+     "ticker": "—",
+     "country": "CN",
+     "share": "NAND 全球市佔 13%",
+     "products": "270 層 3D NAND / Xtacking",
+     "note": "未上市；2025Q3 NAND 13%；武漢三期提前 2026H2 量產；子公司 XMC 自研 HBM 封裝",
+     "src": "https://technews.tw/2026/02/03/china-cxmt-and-ymtc-expand-memory-output/"
+    },
+    {
+     "name": "兆易創新 GigaDevice",
+     "ticker": "603986.SS",
+     "country": "CN",
+     "share": "NOR Flash 領先",
+     "products": "NOR Flash / 利基 DRAM / MCU",
+     "note": "上市記憶體標的；利基市場國產化",
+     "src": "https://stock.cngold.org/c/2026-04-10/c10435839.html"
+    },
+    {
+     "name": "XMC 武漢新芯",
+     "ticker": "—",
+     "country": "CN",
+     "share": "HBM 封裝攻關",
+     "products": "HBM 封裝 / 特色製程",
+     "note": "YMTC 控股；自研 HBM 封裝、月產能約 3,000 片",
+     "src": "https://www.tomshardware.com/pc-components/dram/chinese-semiconductor-industry-gears-up-for-domestic-hbm3-production-by-the-end-of-2026-cxmt-to-produce-chips-while-naura-maxwell-and-u-preseason-design-tools-for-assembly"
+    },
+    {
+     "name": "瀾起科技 Montage",
+     "ticker": "688008.SS",
+     "country": "CN",
+     "share": "記憶體介面晶片",
+     "products": "DDR5 RCD / MRDIMM 介面晶片",
+     "note": "記憶體模組介面晶片國產化；DDR5/HBM 周邊受益",
+     "src": "https://stock.cngold.org/c/2026-04-10/c10435839.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "front_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "advpkg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CXMT/YMTC 國產 HBM3 2026 (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/pc-components/dram/chinese-semiconductor-industry-gears-up-for-domestic-hbm3-production-by-the-end-of-2026-cxmt-to-produce-chips-while-naura-maxwell-and-u-preseason-design-tools-for-assembly"
+    },
+    {
+     "label": "CXMT/YMTC 擴產搶市 (TechNews)",
+     "url": "https://technews.tw/2026/02/03/china-cxmt-and-ymtc-expand-memory-output/"
+    },
+    {
+     "label": "CXMT DDR5 攻入 Corsair/HP/Dell (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/pc-components/ram/chinese-memory-vendors-snub-industry-giants-in-favor-of-homegrown-ram-chips-samsung-micron-and-sk-hynix-face-a-chinese-supply-chain-revolt"
+    }
+   ]
+  },
+  {
+   "id": "eda_cn",
+   "row": "memory",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "國產 EDA / IP",
+   "nameEn": "Domestic EDA / IP",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · 美 EDA 斷供風險最直接；華大九天為國產 EDA 第一股、全流程工具",
+   "desc": "EDA（晶片設計軟體）是最直接受美斷供威脅的卡脖子軟體環節。華大九天為國產 EDA 第一股、唯一具部分全流程能力，與概倫電子/廣立微構成國產 EDA 第二梯隊。",
+   "marketSize": "卡脖子軟體",
+   "growth": "華大九天 +28.5%",
+   "share": "null",
+   "analysis": "2026 政策反覆但加速國產替代：美國 2025 年中曾限制對中 EDA（尤其 3nm 以下）供貨後又於 7 月解除，新思/楷登/西門子恢復供貨；惟華大九天等國產 EDA 持續突破（類比設計全流程、電路模擬支援至 5nm），政策不確定性反而強化在地自主可控的長線需求。華大九天（301269.SZ）國產 EDA 第一股、唯一具部分全流程工具，2025 營收 20.3 億元(+28.5%)、淨利 3.7 億元(+32.1%)、2026 Q1 +35.2%；2025-06 美 EDA 斷供傳聞曾觸發漲停。概倫電子（688206.SS）器件建模/良率，廣立微（301095.SZ）良率/測試，Q1 增速約 20~25%。新凱來子公司亦推 EDA。全球 EDA 由 Synopsys/Cadence/Siemens EDA 三寡頭壟斷、對中先進製程工具受限。絃外之音：EDA 是國產替代「最後一哩」中最難啃的軟體護城河——全流程驗證、製程設計套件（PDK）需與晶圓廠長期共生，華大九天即使高增速，先進節點全流程仍有缺口；但正因「斷供即停擺」的剛性、加上 2025 年限制反覆的教訓，政策確定性與估值彈性最高。",
+   "companies": [
+    {
+     "name": "華大九天 Empyrean",
+     "ticker": "301269.SZ",
+     "country": "CN",
+     "share": "國產 EDA 第一股",
+     "products": "類比/平板顯示全流程 EDA",
+     "note": "2025 營收 20.3 億元(+28.5%)、淨利 3.7 億元(+32.1%)；2026Q1 +35.2%；美斷供受益",
+     "src": "https://caifuhao.eastmoney.com/news/20260522181240658322060"
+    },
+    {
+     "name": "概倫電子 Primarius",
+     "ticker": "688206.SS",
+     "country": "CN",
+     "share": "器件建模/良率 EDA",
+     "products": "器件建模 / DTCO / 良率工具",
+     "note": "局部領域領先；Q1 增速約 20~25%",
+     "src": "https://www.nbd.com.cn/articles/2025-05-29/3893503.html"
+    },
+    {
+     "name": "廣立微 Semitronix",
+     "ticker": "301095.SZ",
+     "country": "CN",
+     "share": "良率/測試 EDA",
+     "products": "良率分析 / 測試晶片 EDA",
+     "note": "良率提升工具國產化",
+     "src": "https://www.nbd.com.cn/articles/2025-05-29/3893503.html"
+    },
+    {
+     "name": "芯原股份 VeriSilicon",
+     "ticker": "688521.SS",
+     "country": "CN",
+     "share": "國產 IP / 設計服務",
+     "products": "GPU/NPU/ISP IP / SiPaaS",
+     "note": "國產半導體 IP 與設計服務龍頭；2026 電子業淨流入居前",
+     "src": "https://www.stcn.com/article/detail/3892162.html"
+    },
+    {
+     "name": "Synopsys/Cadence（對照）",
+     "ticker": "SNPS",
+     "country": "US",
+     "share": "全球 EDA 寡頭",
+     "products": "全流程 EDA / IP",
+     "note": "對中先進製程工具受限；2025-06 斷供傳聞",
+     "src": "https://finance.sina.com.cn/stock/relnews/cn/2025-06-03/doc-ineyuyez1271615.shtml"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "front_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_chip"
+    }
+   ],
+   "sources": [
+    {
+     "label": "華大九天 EDA 龍頭 (東方財富)",
+     "url": "https://caifuhao.eastmoney.com/news/20260522181240658322060"
+    },
+    {
+     "label": "國產 EDA 崛起 (NBD)",
+     "url": "https://www.nbd.com.cn/articles/2025-05-29/3893503.html"
+    },
+    {
+     "label": "美 EDA 對中限制 7 月解除·新思楷登恢復供貨 (華盛通)",
+     "url": "https://www.hstong.com/news/hk/detail/25070413030774058"
+    }
+   ]
+  },
+  {
+   "id": "material_cn",
+   "row": "memory",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "半導體材料 (光刻膠/特氣/矽片)",
+   "nameEn": "Materials (Photoresist/Gas/Wafer)",
+   "competition": "redocean",
+   "single": "鎖喉點 · 高端光刻膠 ArF/EUV 國產率 <2%、仍重度依賴日本 JSR/信越/TOK",
+   "desc": "光刻膠、電子特氣、大矽片、CMP 拋光液等半導體材料。低端國產化已高，但高端光刻膠（ArF/EUV）國產率 <2%、仍重度依賴日本，是國產替代「最後攻堅」的材料環節。",
+   "marketSize": "ArF/EUV 國產<2%",
+   "growth": "由實驗室→量產",
+   "share": "null",
+   "analysis": "鼎龍股份 Dinglong（300054.SZ）ArF/KrF 光刻膠通過客戶評估、獲兩家國產晶圓廠訂單，國產光刻膠由實驗室走向量產。南大光電（300346.SZ）ArF 光刻膠 + 電子特氣。滬硅產業 SGSI（688126.SS）12 吋大矽片國產化。安集科技（688019.SS）CMP 拋光液。華特氣體（688268.SS）電子特氣。現況：光刻膠 g/i-line 國產 ~30%、KrF ~10%、ArF/EUV <2%——高端仍依賴日本 JSR/信越/TOK，且缺光刻膠單體/樹脂/光敏劑等上游關鍵原料。絃外之音：材料是中美/中日博弈的「反制武器」——中國若收緊鎵/鍺/稀土，日本若收緊光刻膠，互為要害；材料國產化「由實驗室到量產」的拐點，是 2026 最被低估、最具長尾爆發力的環節。",
+   "companies": [
+    {
+     "name": "鼎龍股份 Dinglong",
+     "ticker": "300054.SZ",
+     "country": "CN",
+     "share": "光刻膠量產突破",
+     "products": "ArF/KrF 光刻膠 / CMP 拋光墊",
+     "note": "ArF/KrF 光刻膠通過客戶評估、獲兩家國產晶圓廠訂單；由實驗室走向量產",
+     "src": "https://www.digitimes.com/news/a20260319VL211/photoresist-materials-commercial-arf-production.html"
+    },
+    {
+     "name": "南大光電 Nata Opto",
+     "ticker": "300346.SZ",
+     "country": "CN",
+     "share": "ArF 光刻膠+特氣",
+     "products": "ArF 光刻膠 / 電子特氣 / 前驅體",
+     "note": "高端光刻膠與電子特氣雙線",
+     "src": "https://www.tomshardware.com/tech-industry/china-developing-critical-chipmaking-supply-chains-photoresist-ecosystem-emerges-for-arf-and-krf-lasers"
+    },
+    {
+     "name": "滬硅產業 SGSI",
+     "ticker": "688126.SS",
+     "country": "CN",
+     "share": "12 吋大矽片國產化",
+     "products": "300mm 拋光片 / 外延片",
+     "note": "大矽片國產替代龍頭",
+     "src": "https://news.10jqka.com.cn/20260427/c676306800.shtml"
+    },
+    {
+     "name": "安集科技 Anji",
+     "ticker": "688019.SS",
+     "country": "CN",
+     "share": "CMP 拋光液",
+     "products": "CMP 拋光液 / 功能性濕電子化學品",
+     "note": "CMP 材料國產化領先",
+     "src": "https://chinabizinsider.com/chinas-chip-breakthrough-battle-an-in-depth-look-at-the-semiconductor-industrys-push-for-self-sufficiency-in-2025/"
+    },
+    {
+     "name": "華特氣體 Huate Gas",
+     "ticker": "688268.SS",
+     "country": "CN",
+     "share": "電子特氣",
+     "products": "特種電子氣體 / 光刻氣",
+     "note": "電子特氣國產化；光刻用混合氣",
+     "src": "https://www.digitimes.com/news/a20250113PD217/photoresist-localization-semiconductor-industry-high-end-arf.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "front_equip"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "smic"
+    }
+   ],
+   "sources": [
+    {
+     "label": "China 光刻膠由實驗室到量產 (Digitimes)",
+     "url": "https://www.digitimes.com/news/a20260319VL211/photoresist-materials-commercial-arf-production.html"
+    },
+    {
+     "label": "China 光刻膠生態 (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/china-developing-critical-chipmaking-supply-chains-photoresist-ecosystem-emerges-for-arf-and-krf-lasers"
+    }
+   ]
+  },
+  {
+   "id": "advpkg",
+   "row": "package",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "先進封測 (Chiplet / 2.5D-3D)",
+   "nameEn": "Advanced Packaging & Test",
+   "competition": "competitive",
+   "single": "繞道關鍵 · 長電 XDFOI 2.5D/3D 支援昇騰、4nm Chiplet 量產；以先進封裝補製程落後",
+   "desc": "Chiplet 與 2.5D/3D 先進封裝是中國「繞道先進製程」的關鍵——用本土封測把多顆 7nm 小晶片+HBM 整合，達成系統級高算力，是昇騰/麒麟突破的工程基礎。",
+   "marketSize": "繞道先進製程關鍵",
+   "growth": "Chiplet 繞道製程",
+   "share": "null",
+   "analysis": "長電科技 JCET（600584.SH）全球 OSAT 前三、與 SMIC 合作 Chiplet、XDFOI 2.5D/3D 封裝支援昇騰、4nm Chiplet 量產；華為昇騰 910B 透過 SiP 整合 4 顆 HBM2e。通富微電 Tongfu（002156.SZ）AMD 主力封測夥伴、Chiplet 大規模量產（占營收 10~20%）。華天科技（002185.SZ）、甬矽電子（688362.SS）為國產 OSAT 前段班。絃外之音：先進封裝是中國「拼架構補製程」最務實的工程支點——既然單晶片卡在 7nm、無 EUV，就用 Chiplet/2.5D/3D 把多顆小晶片+國產 HBM 拼成大算力（CloudMatrix 超節點即此邏輯的系統級延伸）。封測本就是中國半導體相對成熟、最接近全球水準的環節，是國產鏈「確定性最高、卡脖子最少」的一段，亦是 AMD/海思共用的二階受益者。",
+   "companies": [
+    {
+     "name": "長電科技 JCET",
+     "ticker": "600584.SS",
+     "country": "CN",
+     "share": "全球 OSAT 前三",
+     "products": "XDFOI 2.5D/3D / SiP / 晶圓級封裝",
+     "note": "與 SMIC 合作 Chiplet；XDFOI 支援昇騰；4nm Chiplet 量產",
+     "src": "https://pro.huxiu.com/article/813770.html"
+    },
+    {
+     "name": "通富微電 Tongfu",
+     "ticker": "002156.SZ",
+     "country": "CN",
+     "share": "AMD 主力封測夥伴",
+     "products": "Chiplet / 2.5D / FCBGA 封裝",
+     "note": "AMD Chiplet 大規模量產（占營收 10~20%）；國產算力封測受益",
+     "src": "https://www.cls.cn/detail/1093131"
+    },
+    {
+     "name": "華天科技 Huatian",
+     "ticker": "002185.SZ",
+     "country": "CN",
+     "share": "國產 OSAT 前段班",
+     "products": "扇出型 / SiP / 先進封裝",
+     "note": "OSAT Top；扇出型/SiP 國產化",
+     "src": "https://en.wikipedia.org/wiki/Huatian_Technology"
+    },
+    {
+     "name": "甬矽電子 Yongsi",
+     "ticker": "688362.SS",
+     "country": "CN",
+     "share": "新興先進封測",
+     "products": "高密度 / 系統級封裝",
+     "note": "先進封裝新興 OSAT",
+     "src": "https://www.semibay.cn/zhdt/166"
+    },
+    {
+     "name": "盛合晶微 / 通富檳城等",
+     "ticker": "—",
+     "country": "CN",
+     "share": "2.5D/3D 攻關",
+     "products": "矽中介層 / TSV / 混合鍵合",
+     "note": "2.5D/3D 與混合鍵合攻關；多未上市",
+     "src": "https://www.semibay.cn/zhdt/166"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ai_chip"
+    },
+    {
+     "id": "smic"
+    },
+    {
+     "id": "memory_cn"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "封測 Chiplet 國產鏈 (虎嗅)",
+     "url": "https://pro.huxiu.com/article/813770.html"
+    },
+    {
+     "label": "Chiplet 先進封裝機遇 (財聯社)",
+     "url": "https://www.cls.cn/detail/1093131"
+    },
+    {
+     "label": "封測 OSAT Top12 (Semibay)",
+     "url": "https://www.semibay.cn/zhdt/166"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "ai_chip",
+   "smic"
+  ],
+  [
+   "ai_chip",
+   "advpkg"
+  ],
+  [
+   "litho",
+   "smic"
+  ],
+  [
+   "front_equip",
+   "smic"
+  ],
+  [
+   "front_equip",
+   "memory_cn"
+  ],
+  [
+   "sicarrier",
+   "smic"
+  ],
+  [
+   "smic",
+   "advpkg"
+  ],
+  [
+   "memory_cn",
+   "advpkg"
+  ],
+  [
+   "eda_cn",
+   "ai_chip"
+  ],
+  [
+   "material_cn",
+   "smic"
+  ]
+ ],
+ "_proposed": {}
+}

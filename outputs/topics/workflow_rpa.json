@@ -1,0 +1,1197 @@
+{
+ "id": "workflow_rpa",
+ "tab": "Workflow/RPA",
+ "title": "Workflow Automation / RPA / iPaaS / Tool Execution（傳統 RPA → iPaaS → Browser-Use → 文件 IDP → 編排）",
+ "subtitle": "RPA 3.0：UiPath ARR $1.901B（FY27Q1）首季 GAAP 獲利 + Maestro Case；iPaaS：n8n 估值 $5.2B（SAP 策略投資）、2026 Gartner MQ Workato Leader 8 連霸 + Boomi 12 連霸、Zapier ARR $420M；Temporal Replay 2026 推 Serverless Workers 稱霸 Durable Execution；ServiceNow 收 Veza/Armis 推 Autonomous Workforce；Browser/Computer Use 模型層由雙雄擴為四強（Google Gemini Computer Use 加入）；韓國 LG CNS Q1 2026 營業利益超越 Samsung SDS。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 11
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "60+"
+  },
+  {
+   "k": "關鍵單點",
+   "v": 2,
+   "sub": "UiPath Maestro + MSFT Power Automate; Temporal/Inngest 編排",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "rpa",
+   "label": "傳統 RPA + Agent 化 Classic RPA",
+   "main": false
+  },
+  {
+   "id": "ipaaS",
+   "label": "iPaaS 整合平台",
+   "main": true
+  },
+  {
+   "id": "browser",
+   "label": "Browser / Computer Use Agent",
+   "main": false
+  },
+  {
+   "id": "doc",
+   "label": "Document AI / IDP",
+   "main": false
+  },
+  {
+   "id": "orch",
+   "label": "Workflow Orchestrator + Asia",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "rpa_classic_us",
+   "row": "rpa",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "美系 RPA 巨頭 + Agentic 化",
+   "nameEn": "US/IL Classic RPA + Agentic",
+   "competition": "oligopoly",
+   "single": "UiPath + MSFT Power Automate 雙寡占；Maestro 為企業 Agentic Orchestration 事實標準候選",
+   "desc": "美系傳統 RPA 廠商快速 Agentic AI 化，整合 LLM 與多 Agent 編排，從單一機器人升級為可自主決策的「Digital Worker」。UiPath Maestro、MSFT Power Automate + Copilot Studio 為主力競爭者。",
+   "marketSize": "全球 RPA 市場 2026 USD 35.3B；2035 年 USD 247.3B（GlobeNewswire Dec 2025）",
+   "growth": "YoY +22–25%；CAGR ~24% 至 2035",
+   "share": "null",
+   "analysis": "UiPath FY2027 Q1（2026/05/28）ARR $1.901B（+12% YoY）、營收 $418M（+17% YoY），史上首次 Q1 GAAP 獲利，前 20 大訂單 16 個含 AI；Maestro 端對端 Orchestration 覆蓋 Claims/Loans/Disputes，2026/06/16 推出 Maestro Case（AI-native 案件管理；早期採用者案件處理時間 -60~80%、無人介入解決率 3-5x、SLA +25pp，某金融客戶估年省 >USD 12M）；MSFT Power Automate 近 3,000 個 connector + Copilot Studio AI Agent Orchestrator 2025/3 GA；NICE AI ARR +66% YoY Q1 2026；Automation Anywhere 收購 Aisera（2025/11），推 Agentic Process Automation。",
+   "companies": [
+    {
+     "name": "UiPath",
+     "ticker": "PATH",
+     "country": "US",
+     "share": "ARR $1.901B（FY2027Q1, +12% YoY）；FY26 全年 + FY27Q1（史上首次 Q1）GAAP 獲利",
+     "products": "Agent Builder（MCP plug-in）+ Maestro（Agentic Orchestration）+ Maestro Case（AI-native 案件管理，2026/06/16）+ Document Understanding + Autopilot",
+     "note": "FY2027 ARR 指引上調至 $2.058–2.063B；Q2 FY2027 ARR 指引 $1.929–1.934B（2026/05/28）；GAAP 營業利益 +$28M（首季 GAAP 獲利）；加入 Agentic AI Foundation（AAIF）Gold Member 推互通；日本 ITR RPA 市占連 8 年 #1",
+     "src": "https://ir.uipath.com/news/detail/431/uipath-reports-fourth-quarter-and-full-year-fiscal-2026-financial-results"
+    },
+    {
+     "name": "Microsoft Power Automate",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "全球最大企業生產力套件；Power Automate 近 3,000 connector",
+     "products": "Power Automate（RPA + Cloud Flow）+ Copilot Studio（AI Agent Orchestrator）+ Dynamics 365 Agentic",
+     "note": "Build 2026（2026/06/02-03）Agent Framework GA；Copilot Studio 2026/05 新版 Workflows 統一畫布（agent 節點直接嵌入工作流）+ Computer-Using Agents 強化",
+     "src": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/03/18/2026-release-wave-1-plans-for-microsoft-dynamics-365-microsoft-power-platform-and-copilot-studio-offerings/"
+    },
+    {
+     "name": "Automation Anywhere",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值討論中（2019 高峰 $6.8B）；2025/11 收購 Aisera",
+     "products": "Agentic Process Automation（APA）+ Document Automation + Aisera（IT/HR/CS AI Agent）",
+     "note": "10 大前 20 全球大型銀行採用；2026/01 傳與 C3.AI 洽談反向合併 [未官方背書]",
+     "src": "https://www.automationanywhere.com/company/press-room/automation-anywhere-acquires-aisera-supercharge-autonomous-enterprise"
+    },
+    {
+     "name": "Blue Prism（SS&C）",
+     "ticker": "SSNC",
+     "country": "UK",
+     "share": "SS&C Intelligent Automation 部門 2024 Revenue ~$558M",
+     "products": "Blue Prism Studio + Control Room；整合 SS&C 金融服務流程（保險、資產管理）",
+     "note": "2022 被 SS&C 收購；Q3 2025 SS&C 集團總 Rev $1.569B（+7% YoY）",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001402436/000095017025097888/ssnc-ex99_1.htm"
+    },
+    {
+     "name": "NICE Robotic Automation",
+     "ticker": "NICE",
+     "country": "IL",
+     "share": "2026 全年指引 $3.17–3.19B；AI ARR +66% YoY Q1 2026",
+     "products": "NICE RPA + CXone AI（聯絡中心 agentic）+ Automation Finder（AI 流程探索）",
+     "note": "Cloud Rev $603.4M（79% 佔比，+14.6%）；主攻金融服務 / 聯絡中心",
+     "src": "https://www.nice.com/press-releases"
+    },
+    {
+     "name": "Pegasystems",
+     "ticker": "PEGA",
+     "country": "US",
+     "share": "Q1 2026 ACV $1.622B（+12% YoY）；Pega Cloud ACV >$900M（+29% YoY）",
+     "products": "Pega Platform（Low-code BPM + CRM + Intelligent Automation）+ Pega GenAI Blueprint + Knowledge Buddy",
+     "note": "聚焦金融、保險、電信、公共事業；Q1 2026 Rev $430M（-10% YoY，授權認列時點波動）；FCF $207M",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001013857/000101385725000217/q32025_ex-991.htm"
+    },
+    {
+     "name": "WorkFusion",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025/09 融資 $45M（Georgian 領投）；每日節省 5,000 FTE",
+     "products": "Agentic AI for Financial Crime Compliance（AML、Sanctions、KYC、Fraud）；100 萬+ 警報事件/日",
+     "note": "服務全球前 20 大銀行中的 10 家",
+     "src": "https://www.workfusion.com/news/workfusion-raises-45-million-in-funding-to-fuel-growth-for-agentic-ai-for-financial-crime-compliance/"
+    },
+    {
+     "name": "IBM watsonx Orchestrate",
+     "ticker": "IBM",
+     "country": "US",
+     "share": "IBM AI BoB inception-to-date ~$1B；watsonx 5–6x multiplier",
+     "products": "watsonx Orchestrate（150+ Domain-specific AI Agents）+ Cloud Pak for Business Automation",
+     "note": "HR、Sales、Procurement、IT 預建 agent；on-premises 及 SaaS 雙模",
+     "src": "https://www.ibm.com/products/watsonx-orchestrate/resources"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "ipaas_us"
+    },
+    {
+     "id": "browser_computer_use"
+    },
+    {
+     "id": "document_ai_idp"
+    }
+   ],
+   "sources": [
+    {
+     "label": "UiPath FY2026 Q4 Full-Year Results（ARR $1.853B）",
+     "url": "https://ir.uipath.com/news/detail/431/uipath-reports-fourth-quarter-and-full-year-fiscal-2026-financial-results"
+    },
+    {
+     "label": "Automation Anywhere 收購 Aisera（2025-11-04）",
+     "url": "https://www.automationanywhere.com/company/press-room/automation-anywhere-acquires-aisera-supercharge-autonomous-enterprise"
+    },
+    {
+     "label": "MSFT 2026 Release Wave 1 Power Platform + Copilot Studio",
+     "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/03/18/2026-release-wave-1-plans-for-microsoft-dynamics-365-microsoft-power-platform-and-copilot-studio-offerings/"
+    },
+    {
+     "label": "GlobeNewswire RPA Market 2026-2035（Dec 2025）",
+     "url": "https://www.globenewswire.com/news-release/2025/12/16/3206126/0/en/Robotic-Process-Automation-RPA-Market-Size-Expands-from-USD-35-27-Bn-in-2026-to-USD-247-34-Bn-by-2035-Fueled-by-AI-Powered-Automation-and-Digitalization.html"
+    }
+   ]
+  },
+  {
+   "id": "rpa_jp",
+   "row": "rpa",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "日本 RPA + Workflow",
+   "nameEn": "Japan RPA & Workflow Automation",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "日本本土 RPA 雙強：WinActor（Fuji Chimera 新裝量 #1）與 UiPath（ITR 收入份額連 8 年 #1）形成雙軌競爭；NTT DATA Smart AI Agent 目標 2027 年 USD 20 億收入；Recruit Holdings Air BusinessTools 深耕 SME 自動化。",
+   "marketSize": "日本 RPA 市場 2025 USD 9.11 億（IMARC）；2034 年 USD 57.8 億",
+   "growth": "CAGR 22.79%（2025-2034）；AI OCR 日文手寫辨識為本土壁壘",
+   "share": "null",
+   "analysis": "WinActor 在地化強（76 國、AI OCR 日文手寫）；UiPath 大型金融製造企業滲透深；NTT DATA Smart AI Agent 2025/01 發佈，整合 AWS/Azure/GCP；Otsuka Corporation FY2025 收入 JPY 1.32 兆（+19.4%），Windows 10 EOL 換機潮驅動 RPA 需求。【結構真相】日本 RPA 實為雙寡占而非碎片化：UiPath 以 ITR 收入市占連 8 年第一（大型企業），WinActor 以 Fuji Chimera 新裝安裝量第一（在地中小+政府），兩者按口徑各據第一形成穩定雙軌；AI OCR 日文手寫辨識構成外商難跨的在地進入障礙，新進者長期被夾在雙龍頭之間。",
+   "companies": [
+    {
+     "name": "WinActor（NTT DATA）",
+     "ticker": "9613.T",
+     "country": "JP",
+     "share": "Fuji Chimera 2025 日本 RPA 新裝安裝量 #1；全球銷往 76 國",
+     "products": "WinActor v7.x（Windows 桌面/伺服器 RPA）；AI OCR 日文手寫辨識",
+     "note": "Microsoft Marketplace 上架；39 個海外合作夥伴",
+     "src": "https://winactorsupport.com/winactor-continues-to-lead-japans-rpa-market-in-2025/"
+    },
+    {
+     "name": "NTT DATA Smart AI Agent",
+     "ticker": "9613.T",
+     "country": "JP",
+     "share": "目標 2027 年貢獻 USD 20 億收入；2025/01 正式發佈",
+     "products": "Smart AI Agent™ Ecosystem（Task Planning、Multi-Agent）+ Legacy Bot→Agentic AI 外掛",
+     "note": "與 Tokyo Gas 等合作；整合 AWS/Azure/GCP",
+     "src": "https://www.nttdata.com/global/en/news/press-release/2025/january/012800"
+    },
+    {
+     "name": "NEC",
+     "ticker": "6701.T",
+     "country": "JP",
+     "share": "AI Agent for Procurement Negotiations 2025/12 上市；POC 覆蓋 ~1,300 零件",
+     "products": "Automated Negotiation AI + iProcessRobo（廠內 RPA）+ NEC AI Governance",
+     "note": "NEC 集團內部驗證後對外商業化；專攻製造業採購談判自動化",
+     "src": "https://www.nec.com/en/press/202512/global_20251202_01.html"
+    },
+    {
+     "name": "Fujitsu",
+     "ticker": "6702.T",
+     "country": "JP",
+     "share": "FY2025 合併收入 JPY 3.6 兆；日本數位服務市占 #1",
+     "products": "Fujitsu Workflow Automation + GLOVIA One（ERP+AI+RPA，2026/04 發布）",
+     "note": "GLOVIA One 整合 AI、RPA、accounting、HR/payroll 全模組",
+     "src": "https://global.fujitsu/en-global/pr/news/2026/04/20-01"
+    },
+    {
+     "name": "SCSK Corporation",
+     "ticker": "9719.T",
+     "country": "JP",
+     "share": "FY2026E 目標收入 JPY 7,900 億（YoY +32.5%）",
+     "products": "RPA SI 導入顧問；SAP/UiPath 整合；與 FPT Software 合作 AUTOSAR RPA",
+     "note": "定位從勞力密集 SI 轉型至「共創型」高附加值服務",
+     "src": "https://fptsoftware.com/newsroom/news-and-press-releases/press-release/fpt-software-and-scsk-join-hands-to-launch-a-comprehensive-autosar-solution-leveraging-japanese-automotive-technology"
+    },
+    {
+     "name": "Otsuka Corporation（大塚商会）",
+     "ticker": "4768.T",
+     "country": "JP",
+     "share": "FY2025 收入 JPY 1.32 兆（YoY +19.4%，歷史新高）",
+     "products": "IT 產品流通 + SI + RPA/AI 解決方案導入；覆蓋中堅企業 DX",
+     "note": "Windows 10 EOL 驅動換機潮帶動 RPA 需求",
+     "src": "https://www.otsuka-shokai.co.jp/english/corporate/ir/media/intege2025p.pdf"
+    },
+    {
+     "name": "BizteX",
+     "ticker": "—",
+     "country": "JP",
+     "share": "累計融資 ~USD 9.98M；J-Startup 認定；日本首家雲端 RPA SaaS",
+     "products": "cobit（雲端 iPaaS 整合，200+ SaaS）+ BizteX RPA（雲端 RPA）",
+     "note": "合作夥伴涵蓋 KDDI；日本本土 iPaaS 代表",
+     "src": "https://www.j-startup.go.jp/en/startups/158-biztex.html"
+    },
+    {
+     "name": "Recruit Holdings（Air BusinessTools）",
+     "ticker": "6098.T",
+     "country": "JP",
+     "share": "Air BusinessTools 覆蓋 346 萬帳號；每年節省 JPY 230 億勞動成本",
+     "products": "Air REGI / Air Shift / Air Karte / Air Work 等 15+ 服務；workflow 自動化為 SME 主軸",
+     "note": "累計釋放 2,172 萬小時人力；HRTech 主業帶動 SME 生態",
+     "src": "https://recruit-holdings.com/en/blog/post_20240126_0001/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "workflow_orchestrator_us"
+    }
+   ],
+   "sources": [
+    {
+     "label": "WinActor Japan RPA Market Leader 2025",
+     "url": "https://winactorsupport.com/winactor-continues-to-lead-japans-rpa-market-in-2025/"
+    },
+    {
+     "label": "UiPath Japan ITR RPA #1 連 8 年（2025）",
+     "url": "https://www.uipath.com/ja/newsroom/uipath-ranked-no1-in-the-rpa-market-share-in-japan-for-the-eighth-consecutive-year-in-itrs-survey-report"
+    },
+    {
+     "label": "NTT DATA Smart AI Agent 發佈（Jan 2025）",
+     "url": "https://www.nttdata.com/global/en/news/press-release/2025/january/012800"
+    },
+    {
+     "label": "IMARC Japan RPA Market 2025-33（USD 9.11 億）",
+     "url": "https://www.imarcgroup.com/japan-robotic-process-automation-market"
+    }
+   ]
+  },
+  {
+   "id": "rpa_kr",
+   "row": "rpa",
+   "col": 4,
+   "span": 1,
+   "kind": "stage",
+   "name": "韓國 RPA + Agentic AI",
+   "nameEn": "Korea RPA & Agentic Workflow",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "韓國大型財閥 IT 子公司主導 RPA/Agentic AI，快速升級政府與企業自動化。Samsung SDS Brity Works 覆蓋 57 個政府部會；LG CNS AgenticWorks 2025/08 發佈；Hancom 規劃 2026H1 推出首款 Twin-Type Agentic OS。",
+   "marketSize": "韓國 IT 服務市場 2025 USD 21.3B；CAGR 11.87% 至 2030 年 USD 37.3B",
+   "growth": "Agentic AI 採購爆增；Samsung SDS Cloud KRW +23.5%；LG CNS IPO 後資本支出加速",
+   "share": "null",
+   "analysis": "Samsung SDS FY2025 收入 KRW 13.93 兆；Brity Works + Brity Copilot 2025/11 起向行政安全部、科學技術資通部、食品醫藥品安全處 3 部會試行；LG CNS Q1 2026 收入 KRW 1.315 兆（+8.6%）、營業利益 KRW 942 億（+19.4%）、AI+Cloud 佔 ~58%，AgenticWorks 規模化使其 Q1 2026 營業利益首度超越 Samsung SDS——韓國雙雄座次因 Agentic AI 落地速度出現分化；SK C&C DWP 月費制 SaaS RPA 主打中小企業；Hancom Agentic OS 24 小時模擬員工。",
+   "companies": [
+    {
+     "name": "Samsung SDS",
+     "ticker": "018260.KS",
+     "country": "KR",
+     "share": "FY2025 收入 KRW 13.93 兆；Cloud KRW 2.32 兆（+23.5%）",
+     "products": "Brity RPA + Brity Works（協作 + GenAI Brity Copilot）；部署至 57 個政府部會",
+     "note": "2025/11 起試行，擴展至全中央政府；Agentic AI 公私部門商業化計畫",
+     "src": "https://www.samsungsds.com/en/news/financial-260126.html"
+    },
+    {
+     "name": "LG CNS",
+     "ticker": "064400.KS",
+     "country": "KR",
+     "share": "Q1 2026 收入 KRW 1.315 兆（+8.6% YoY）、營業利益 KRW 942 億（+19.4% YoY）；AI+Cloud KRW 7,654 億佔 ~58%",
+     "products": "AgenticWorks（6 模組全棧式 Agentic AI，2025/08，Q1 2026 規模化）+ DAP GenAI Platform + RPA",
+     "note": "2025/02 IPO 募資 USD 827M；整合 Cohere + LG AI Research EXAONE LLM；Q1 2026 營業利益超越 Samsung SDS",
+     "src": "https://en.sedaily.com/news/2026/04/30/lg-cns-q1-revenue-hits-13-trillion-won-on-ax-business-growth"
+    },
+    {
+     "name": "SK C&C",
+     "ticker": "—",
+     "country": "KR",
+     "share": "DWP 月費制 SaaS RPA；300+ 既有 RPA 模板雲端化",
+     "products": "Digital Workforce Platform（DWP SaaS）；AI OCR 財務審查、稅務申報",
+     "note": "月費制無需購買授權；SK 集團 AI Agent 稅務管理探索中",
+     "src": "https://www.kscnc.co.kr/prdt/rpa.ks?lang=en"
+    },
+    {
+     "name": "KT Corporation",
+     "ticker": "030200.KS",
+     "country": "KR",
+     "share": "電信轉型「AI 公司」；2024/09 與 Microsoft 簽大型 AI 協議",
+     "products": "KT RPA（電信運維、網路障礙偵測）+ Azure OpenAI 整合 + KT AI 語音機器人",
+     "note": "Microsoft Fabric + Azure OpenAI 建立新數據平台",
+     "src": "https://news.microsoft.com/source/2024/09/29/kt-corporation-and-microsoft-take-giant-step-to-accelerate-ai-innovation-in-korea/"
+    },
+    {
+     "name": "Hancom",
+     "ticker": "030520.KS",
+     "country": "KR",
+     "share": "原辦公軟體廠商，轉型雲端 + AI；Agentic OS 2026H1 商業化",
+     "products": "Hancom Office RPA 整合 + Hancom Docs SaaS + Agentic OS（規劃中，24h 模擬員工）",
+     "note": "韓國首款 Twin-Type Agentic OS；原辦公軟體廠轉型 RPA+SaaS",
+     "src": "https://en.sedaily.com/technology/2026/04/23/hancom-to-launch-koreas-first-twin-type-agentic-os"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "workflow_orchestrator_us"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Samsung SDS FY2025 Results（KRW 13.93 兆）",
+     "url": "https://www.samsungsds.com/en/news/financial-260126.html"
+    },
+    {
+     "label": "LG CNS AgenticWorks 發佈（Korea Herald 2025）",
+     "url": "https://www.koreaherald.com/article/10561390"
+    },
+    {
+     "label": "Hancom Agentic OS 2026H1（Seoul Economic Daily）",
+     "url": "https://en.sedaily.com/technology/2026/04/23/hancom-to-launch-koreas-first-twin-type-agentic-os"
+    },
+    {
+     "label": "Mordor Intelligence Korea IT Services 2025",
+     "url": "https://www.mordorintelligence.com/industry-reports/south-korea-it-services-market"
+    }
+   ]
+  },
+  {
+   "id": "ipaas_us",
+   "row": "ipaaS",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "美系 iPaaS 整合平台",
+   "nameEn": "US/EU iPaaS Integration Platforms",
+   "competition": "competitive",
+   "single": "n8n + Workato + MuleSoft 三足鼎立；n8n 最高成長（YoY ARR +10x），NVIDIA 加持帶入 AI infra 生態",
+   "desc": "連接企業 SaaS、資料庫、AI Agent 的整合管線平台。n8n（$180M Series C @ $2.5B，NVIDIA 領投）代表 open-source Fair-code 崛起；Workato Gartner Leader 8 連霸代表企業級穩健；Make.com 代表 SMB/no-code 極致性價比。MuleSoft 為 Salesforce Agentforce 的資料連接層。",
+   "marketSize": "全球 iPaaS 市場 2025 USD 15.8B；2035 年 USD 351.4B（CAGR ~36%）",
+   "growth": "APAC CAGR 23.20% 至 2031；全球 iPaaS +30% YoY；Agentic AI tool calling +200% YoY",
+   "share": "null",
+   "analysis": "n8n 2026/05/12 獲 SAP 策略投資、估值 7 個月翻倍至 $5.2B（SAP 持股 <1.3%，多年協議整合進 SAP Joule Studio AI orchestration 層；2025/10 Series C $180M @ $2.5B，Accel+Meritech+NVIDIA NVentures），ARR $40M（YoY +10x）、1,400+ 企業客戶、170 萬月活 builder，成德國市值最高 AI 公司；2026/03 Gartner iPaaS MQ：Workato Leader 8 連霸 + Furthest in Vision 3 連年（Peer Insights 4.9/5、555 則最多評價），Boomi Leader 12 連霸（史上每屆皆 Leader）+ Highest Ability to Execute；Zapier ARR 2026 Q1 突破 $420M、估值 ~$5B、市占 >7%；Make.com ARR $52.6M 零 VC；Tray.ai Gartner Visionary。",
+   "companies": [
+    {
+     "name": "n8n",
+     "ticker": "—",
+     "country": "DE",
+     "share": "估值 $5.2B（2026/05 SAP 策略投資，7 個月翻倍）；ARR >$40M（YoY +10x）",
+     "products": "n8n（Fair-code 開源 + Cloud）；節點式 AI Agent 工作流；3,000+ 企業客戶",
+     "note": "投資方：Accel、Meritech、Deutsche Telekom、NVIDIA NVentures、Sequoia；79,000+ GitHub Stars",
+     "src": "https://siliconangle.com/2025/10/09/nvidia-backs-180m-round-workflow-automation-startup-n8n/"
+    },
+    {
+     "name": "Workato",
+     "ticker": "—",
+     "country": "US",
+     "share": "累計融資 $441M；2026/03 Gartner iPaaS MQ Leader 8 連霸 + Furthest in Vision 3 連年；Peer Insights 4.9/5（555 則，全市場最多）",
+     "products": "Enterprise Automation（Recipe-based）+ Copilot for Automation + Enterprise MCP for Agentic AI；1,200+ connectors",
+     "note": "2025/08 收購 XMAD.ai；2021 Series E 估值 $5.7B；2025 二級市場 ~$2.4B",
+     "src": "https://www.businesswire.com/news/home/20260318294684/en/Workato-Named-a-Leader-in-the-2026-Gartner-Magic-Quadrant-for-iPaaS-for-the-8th-Consecutive-Time"
+    },
+    {
+     "name": "Zapier",
+     "ticker": "—",
+     "country": "US",
+     "share": "ARR $420M（2026 Q1 突破）；估值 ~$5B；全球 iPaaS 市占 >7%；~69% Fortune 1000 採用",
+     "products": "Zapier（自動化）+ Zapier Tables + Zapier Interfaces + AI Actions + Zapier Agents（2025/05 GA）+ Zapier MCP（連結 30,000+ app actions）",
+     "note": "極高資本效率（僅 $2.68M VC）；SMB/mid-market 主力；Sequoia 2021 投資",
+     "src": "https://sacra.com/c/zapier/"
+    },
+    {
+     "name": "MuleSoft（Salesforce）",
+     "ticker": "CRM",
+     "country": "US",
+     "share": "Salesforce 2018 以 $6.5B 收購；Agentforce 資料連接層",
+     "products": "Anypoint Platform（API 管理 + Data Integration + MQ + Flow Designer）；MuleSoft MCP Connector 2025/07 GA",
+     "note": "既有 API 直接轉 MCP server 供 Agentforce 呼叫；支援混合雲/on-premises",
+     "src": "https://www.salesforce.com/products/mulesoft/overview/"
+    },
+    {
+     "name": "Make.com（前 Integromat）",
+     "ticker": "—",
+     "country": "DE",
+     "share": "ARR $52.6M（2025）；零 VC 融資；約 478 員工",
+     "products": "Make（視覺化 No-code，700+ app）；SMB / 開發者 / 數位代理商主力；定價極具競爭力",
+     "note": "布拉格總部；自力更生（Bootstrapped）；估值 $157.7M",
+     "src": "https://www.make.com/en"
+    },
+    {
+     "name": "Boomi",
+     "ticker": "—",
+     "country": "US",
+     "share": "2023 Revenue $500M；2026/03 Gartner iPaaS MQ Leader 12 連霸（唯一史上每屆皆 Leader）+ Highest Ability to Execute",
+     "products": "Boomi AtomSphere（iPaaS）+ Boomi AI（自動 integration 建議）+ DataHub + API Manager；500+ connector",
+     "note": "2021 Francisco Partners+TPG 以 $4B 自 Dell 買入；2025 收購 Lunar.dev（AI prompt routing）；2026 IPO 傳言 [未官方背書]",
+     "src": "https://boomi.com/content/report/gartner-magic-quadrant-ipaas/"
+    },
+    {
+     "name": "Tray.ai",
+     "ticker": "—",
+     "country": "US",
+     "share": "累計融資 $149.4M；Gartner iPaaS Visionary + Nucleus Research Leader",
+     "products": "Universal Automation Cloud（MCP governance、700+ connector、AI Agent 建構）；付費從 $500/月起",
+     "note": "Composable AI 架構；2025/05 Named Leader",
+     "src": "https://www.globenewswire.com/news-release/2025/05/21/3085940/0/en/Tray-ai-Named-iPaaS-Leader-Validating-its-Role-as-the-Enterprise-Platform-for-Composable-AI-and-Agentic-Automation.html"
+    },
+    {
+     "name": "Celigo",
+     "ticker": "—",
+     "country": "US",
+     "share": "Gartner Peer Insights 2025 Customers' Choice（唯一入選）；G2 Summer 2025 #1 iPaaS",
+     "products": "Integration Platform（ERP 中心，NetSuite / Salesforce / Shopify 深度整合）+ Celigo AI（NLP 流程建置）",
+     "note": "累計融資 $79.7M；Series C",
+     "src": "https://www.businesswire.com/news/home/20251105368559/en/Celigo-is-the-Only-Vendor-Named-as-a-2025-Gartner-Peer-Insights-Customers-Choice-for-Integration-Platform-as-a-Service-iPaaS"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "rpa_classic_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "browser_computer_use"
+    },
+    {
+     "id": "workflow_orchestrator_us"
+    }
+   ],
+   "sources": [
+    {
+     "label": "n8n Series C $180M NVIDIA 參與（SiliconANGLE 2025-10-09）",
+     "url": "https://siliconangle.com/2025/10/09/nvidia-backs-180m-round-workflow-automation-startup-n8n/"
+    },
+    {
+     "label": "Verified Market Research iPaaS 全球市場 2025–2035",
+     "url": "https://www.verifiedmarketresearch.com/product/integration-platform-as-a-service-ipaas-market/"
+    },
+    {
+     "label": "Workato 2026 Gartner iPaaS MQ Leader 8 連霸（BusinessWire 2026-03-18）",
+     "url": "https://www.businesswire.com/news/home/20260318294684/en/Workato-Named-a-Leader-in-the-2026-Gartner-Magic-Quadrant-for-iPaaS-for-the-8th-Consecutive-Time"
+    },
+    {
+     "label": "Celigo Gartner Peer Insights Customers' Choice 2025（BusinessWire）",
+     "url": "https://www.businesswire.com/news/home/20251105368559/en/Celigo-is-the-Only-Vendor-Named-as-a-2025-Gartner-Peer-Insights-Customers-Choice-for-Integration-Platform-as-a-Service-iPaaS"
+    }
+   ]
+  },
+  {
+   "id": "ipaas_in",
+   "row": "ipaaS",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "印度 SaaS iPaaS（Zoho / Freshworks）",
+   "nameEn": "India SaaS iPaaS & Workflow",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "印度本土 SaaS 廠商提供兼具性價比與在地化的 iPaaS/Workflow Automation 服務。Zoho（完全私有，全球 45M+ 用戶）與 Freshworks（NASDAQ 上市）覆蓋全球 SME；ServiceNow India 工程中心承擔 45% 全球研發。",
+   "marketSize": "印度 iPaaS + SaaS 自動化市場 2025 估 USD 1.5-2B；Zoho Flow 全球 iPaaS 市占 0.34%（印度客戶佔 27.59%）",
+   "growth": "印度 SaaS 市場 CAGR ~25%；Zoho FY2025 收入 INR 12,313 億（YoY +~20%）",
+   "share": "null",
+   "analysis": "Zoho FY2025 收入 INR 12,313 億，OP INR 3,191 億，亞洲市場 INR 3,711 億；Freshworks Q2 2025 收入 USD 2.047 億（+18%），Freddy AI Agent Studio 推出垂直預建 workflow；ServiceNow 海德拉巴中心 45% 研發，MERGEN 等合作夥伴 2025 年設立大型 CoE。",
+   "companies": [
+    {
+     "name": "Zoho Corporation",
+     "ticker": "—",
+     "country": "IN",
+     "share": "全球 45M+ 用戶；Zoho Flow iPaaS 全球市占 0.34%，印度客戶 27.59%",
+     "products": "Zoho Flow（200+ SaaS 整合）+ Zoho Creator（low-code RPA）+ Zia AI（跨模組 Agent）",
+     "note": "FY2025 收入 INR 12,313 億；完全私有不上市；印度 SME 主力工具",
+     "src": "https://entrackr.com/fintrackr/zoho-reports-rs-12313-cr-revenue-and-rs-3191-cr-profit-in-fy25-11701761"
+    },
+    {
+     "name": "Freshworks",
+     "ticker": "FRSH",
+     "country": "IN",
+     "share": "Q2 2025 收入 USD 2.047 億（YoY +18%）；NASDAQ 上市（IN 研發）",
+     "products": "Freshservice AI Agent Studio（no-code agentic workflow）+ Freddy AI Vertical Agents（電商/金融/旅遊）",
+     "note": "整合 Workday/Rippling/MS Teams；垂直 AI Agent 預建模板大幅降低重複支援任務",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001544522/000154452225000049/q225quarterlyearningsrelea.htm"
+    },
+    {
+     "name": "TCS Cognitive Automation",
+     "ticker": "TCS.NS",
+     "country": "IN",
+     "share": "FY2025 收入 ~USD 25.7B；Nelson Hall GenAI + Process Automation Banking Leader 2025",
+     "products": "TCS Cognitive Automation Platform + TCS BaNCS RPA + Robotic Automation for Semiconductor（2025）",
+     "note": "Everest Group 生命/年金保險 BPS Leader；全球 RPA 導入規模最大",
+     "src": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-launches-robotic-automation-solutions-accelerate-digital-transformation-semiconductor-industry"
+    },
+    {
+     "name": "Infosys BPM",
+     "ticker": "INFY.NS",
+     "country": "IN",
+     "share": "Q1 FY2026 收入 USD 49.41 億（+3.8%）；ISG Intelligent Automation Leader（美國+歐洲）",
+     "products": "Infosys BPM AP Cloud（AI Agent 發票處理）+ Infosys Cobalt 雲端自動化",
+     "note": "GenAI agent 發票處理 2025 新品；與 RWE AG 合作數位工作場所自動化",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001067491/000106749126000004/exv99w01.htm"
+    },
+    {
+     "name": "HCLTech AI Force 2.0",
+     "ticker": "HCLTECH.NS",
+     "country": "IN",
+     "share": "員工 226,300+ 人；60 國業務；AI Force 2.0 於 2026/04/01 發佈",
+     "products": "AI Force 2.0（GenAI + Agentic AI 全棧，軟體工程/IT 運維/企業流程）；Model-Agnostic",
+     "note": "涵蓋 Engineering、Operations、Applications 三大 intelligence fabric",
+     "src": "https://www.hcltech.com/press-releases/hcltech-launches-ai-force-20-deliver-enterprise-grade-agentic-ai"
+    },
+    {
+     "name": "Wipro Intelligence",
+     "ticker": "WIPRO.NS",
+     "country": "IN",
+     "share": "Q2 FY2026 收入 INR 2,270 億；大型案訂單 USD 29 億（YoY +90.5%）",
+     "products": "Wipro Intelligence（AI-first automation）+ ERP+RPA 整合；2025/12 收購 HARMAN DTS（5,600 人）",
+     "note": "戰略主軸「AI-first world」；HARMAN DTS 強化工程 R&D 自動化能力",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001123799/000119312525245284/d62510dex991.htm"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "workflow_orchestrator_us"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Zoho FY2025 Revenue INR 12,313 億（Entrackr）",
+     "url": "https://entrackr.com/fintrackr/zoho-reports-rs-12313-cr-revenue-and-rs-3191-cr-profit-in-fy25-11701761"
+    },
+    {
+     "label": "Freshworks Q2 2025 8-K（SEC）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001544522/000154452225000049/q225quarterlyearningsrelea.htm"
+    },
+    {
+     "label": "HCLTech AI Force 2.0 發佈（2026-04-01）",
+     "url": "https://www.hcltech.com/press-releases/hcltech-launches-ai-force-20-deliver-enterprise-grade-agentic-ai"
+    },
+    {
+     "label": "6sense Zoho Flow iPaaS 市占（0.34%）",
+     "url": "https://6sense.com/tech/integrations-platform-as-a-service-ipaas/zoho-flow-market-share"
+    }
+   ]
+  },
+  {
+   "id": "browser_computer_use",
+   "row": "browser",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "Browser / Computer Use Agent",
+   "nameEn": "Browser Automation & Computer Use Agents",
+   "competition": "emerging",
+   "single": "OpenAI ChatGPT Agent Mode（前 Operator）覆蓋最廣；模型廠四強（OpenAI CUA / Anthropic Computer Use / Google Gemini Computer Use / Amazon Nova Act）握定價權",
+   "desc": "新世代 AI Agent 透過視覺理解 + 操控 GUI（滑鼠/鍵盤/瀏覽器）完成複雜線上任務。Anthropic Computer Use API、OpenAI ChatGPT Agent Mode、Google Gemini Computer Use（Project Mariner）、Browser Use 開源 library、Browserbase 基礎設施，形成「模型 + 工具 + 雲端 headless browser」三層架構。2026 上半年由 Anthropic / OpenAI 雙雄擴張為模型廠四強並立。",
+   "marketSize": "Browser Automation 2025 TAM 估 USD 1-2B（新興）；ChatGPT Agent Mode 已整合至全球 8 億 ChatGPT 用戶",
+   "growth": "Browser-Use GitHub Stars 79k（2025/03 Seed 後爆發）；WebArena/OSWorld 分數 YoY +20pp+；a16z 估 AI browser agent 市場 2026 達 USD 12B（YoY +200%）",
+   "share": "null",
+   "analysis": "OpenAI Operator 2025/01 推出、2025/07/17 整合為 ChatGPT Agent Mode，2026/04/16 再推 Codex Background Computer Use（agent 跑獨立桌面 session）；Anthropic Computer Use（2024/10 業界首發，WebArena / OSWorld 領先）；Google Gemini Computer Use 2026/03-04 隨 Gemini 3 Pro/Flash 推出（pre-GA，DOM-aware）；Browser Use 2025/03 Seed $17M（Felicis+YC），GitHub 95,000+ Stars；Browserbase 2025/06 Series B $40M @ $300M，5,000 萬+ 瀏覽器 session。【絃外之音】這層的隱性單點是前沿視覺 Action 模型本身：Browser Use、Browserbase、MultiOn 等「工具/基礎設施層」皆向 OpenAI CUA、Anthropic Computer Use 或 Google Gemini Computer Use 取用底層操控能力，模型廠（OpenAI/Anthropic/Google/Amazon Nova Act）才握定價權；開源 library 的高 GitHub Stars 是採用度而非護城河，真正卡位點在誰能自研前沿 GUI-grounding 模型——2026H1 Google 以 Gemini Computer Use 正式加入競局，模型層從雙雄變四強。",
+   "companies": [
+    {
+     "name": "OpenAI（ChatGPT Agent Mode）",
+     "ticker": "—",
+     "country": "US",
+     "share": "全球最廣：整合至 ChatGPT Plus/Pro，8 億用戶覆蓋範圍",
+     "products": "ChatGPT Agent（取代 Operator）：CUA 模型（GPT-4o 視覺+RL）；WebArena 58.1%、OSWorld 38.1%",
+     "note": "2025/07/17 Operator standalone 下架，整合 ChatGPT Agent Mode；Pro $200/月可用",
+     "src": "https://openai.com/index/introducing-chatgpt-agent/"
+    },
+    {
+     "name": "Anthropic Computer Use",
+     "ticker": "—",
+     "country": "US",
+     "share": "Claude Computer Use API；技術基礎層供給 Browser Use 等下游",
+     "products": "Claude Computer Use API：控制螢幕/滑鼠/鍵盤；bash / text editor / 瀏覽器工具",
+     "note": "2024/10 首發為業界首個商業 Computer Use；2025/03 Series E $3.5B；持續迭代",
+     "src": "https://www.anthropic.com/news/3-5-models-and-computer-use"
+    },
+    {
+     "name": "Google Gemini Computer Use",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "源自 Project Mariner；2026/03-04 Computer Use 隨 Gemini 3 Pro / 3 Flash 推出（pre-GA）；Gemini API/SDK 支援 MCP",
+     "products": "Gemini Computer Use（DOM-aware 自動點擊/填表/導航）+ Gemini Enterprise Agent Platform Computer Use sandbox（隔離瀏覽器環境）",
+     "note": "Browserbase 提供 Gemini CUA 模板；DOM 優先於 raw pixel；Gemini 3.5 Pro 2026/06 GA",
+     "src": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/computer-use"
+    },
+    {
+     "name": "Browser Use",
+     "ticker": "—",
+     "country": "CH",
+     "share": "2025/03 Seed $17M（Felicis+YC）；GitHub 95,000+ Stars（成事實標準開源 Web Agent）",
+     "products": "開源 Web Agent Python library（DOM+視覺識別）+ Browser Use Cloud（付費 API）",
+     "note": "Y Combinator W25；Anthropic/Airbnb/Amazon 等使用；最快成長開源 agent 專案之一",
+     "src": "https://browser-use.com/posts/seed-round"
+    },
+    {
+     "name": "Browserbase",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 $300M；2025/06 Series B $40M；5,000 萬+ 瀏覽器 session/2025",
+     "products": "雲端 headless browser 基礎設施（專為 AI Agent 設計）+ Director（No-code 瀏覽器自動化）",
+     "note": "累計融資 $67.5M；服務 1,000+ 客戶；Notable Capital+CRV+Kleiner Perkins",
+     "src": "https://www.browserbase.com/blog/series-b-and-beyond"
+    },
+    {
+     "name": "Amazon Nova Act（前 Adept AI）",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "Adept 2024/06 acqui-hire；Nova Act SDK 2025/03 發布",
+     "products": "Amazon Nova Act SDK（瀏覽器任務自動化 developer toolkit）；原 Adept ACT-1 技術整合",
+     "note": "Amazon AGI Lab 2024/12 成立；大部分 Adept 研發團隊加入 Amazon",
+     "src": "https://techcrunch.com/2024/12/09/amazon-forms-a-new-ai-agent-focused-lab-led-by-adept-co-founder/"
+    },
+    {
+     "name": "MultiOn AI（AGI Inc.）",
+     "ticker": "—",
+     "country": "US",
+     "share": "Beta；General Catalyst / Amazon Alexa Fund / Samsung Next 投資",
+     "products": "MultiOn Agent API：自然語言→完整線上任務（訂位/活動/CRM）；Chrome Extension + Mobile App",
+     "note": "聚焦旅遊、電商垂直場景；仍在 Beta 階段",
+     "src": "https://multion.ai/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "rpa_classic_us"
+    },
+    {
+     "id": "ipaas_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "workflow_orchestrator_us"
+    }
+   ],
+   "sources": [
+    {
+     "label": "OpenAI ChatGPT Agent Mode 整合（2025-07-17）",
+     "url": "https://openai.com/index/introducing-chatgpt-agent/"
+    },
+    {
+     "label": "Anthropic Computer Use 發布（2024-10）",
+     "url": "https://www.anthropic.com/news/3-5-models-and-computer-use"
+    },
+    {
+     "label": "Google Gemini Computer Use（Gemini Enterprise Agent Platform）",
+     "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/computer-use"
+    },
+    {
+     "label": "Browser Use Seed $17M（Felicis+YC，2025-03）",
+     "url": "https://browser-use.com/posts/seed-round"
+    },
+    {
+     "label": "Browserbase Series B $40M @ $300M（2025-06）",
+     "url": "https://www.browserbase.com/blog/series-b-and-beyond"
+    }
+   ]
+  },
+  {
+   "id": "document_ai_idp",
+   "row": "doc",
+   "col": 1,
+   "span": 4,
+   "kind": "stage",
+   "name": "Document AI / IDP（智能文件處理）",
+   "nameEn": "Document AI / Intelligent Document Processing",
+   "competition": "competitive",
+   "single": "Gartner IDP MQ：Hyperscience + ABBYY + Tungsten（Kofax）三強領導；AWS Textract + Azure AI Document Intelligence 雲端入口",
+   "desc": "AI 驅動的文件擷取、分類、理解與工作流程自動化平台。Rossum 2026/05 被 Coupa 收購整合進 Source-to-Pay；ABBYY Vantage 3.0 直接整合 LLM；AWS Textract + Azure AI Document Intelligence 為雲端主流入口。",
+   "marketSize": "全球 IDP 市場 2025 USD 4.5B；2030 年 USD 17.6B（CAGR ~31%）",
+   "growth": "GenAI 整合驅動新一波遷換；ABBYY Vantage 3.0（2026/01）直接整合 LLM；Rossum 被 Coupa 收購整合進 Source-to-Pay",
+   "share": "null",
+   "analysis": "Rossum 2026/05/12 被 Coupa 收購（金額未揭露），整合進 Coupa spend management；ABBYY Vantage 3.0 2026/01 發布，直接整合 GenAI + Compliance + Redaction；Hyperscience Inc. 5000 最快成長 99.5% 準確率；Tungsten TotalAgility（前 Kofax）整合 RPA+IDP+Process Orchestration。",
+   "companies": [
+    {
+     "name": "Hyperscience",
+     "ticker": "—",
+     "country": "US",
+     "share": "2021 Series E $100M（Tiger Global+BOND）；累計融資 $439M；2025 Inc. 5000 最快成長",
+     "products": "Hypercell Platform（資料擷取+AI 分類+流程編排+Agentic Automation）；99.5% 準確率、98% 自動化率",
+     "note": "Gartner IDP MQ 領導者；首家 Gartner IDP MQ 領導者之一",
+     "src": "https://www.hyperscience.ai/newsroom/hyperscience-recognized-on-the-2025-inc-5000-list-of-fastest-growing-private-companies-in-america/"
+    },
+    {
+     "name": "ABBYY",
+     "ticker": "—",
+     "country": "US",
+     "share": "1989 年創立；Gartner IDP MQ Leader；Vantage 3.0 直接整合 GenAI（2026/01）",
+     "products": "ABBYY Vantage 3.0（LLM 直接整合、Compliance、Redaction、AI 模型庫）+ Timeline（Process Mining）",
+     "note": "完全私有，自力發展；全球 IDP 歷史最長品牌之一",
+     "src": "https://www.businesswire.com/news/home/20260120873104/en/ABBYY-Launches-Vantage-3.0-Directly-Integrating-with-Generative-AI-and-Offering-Advanced-Compliance-and-Privacy-Capabilities"
+    },
+    {
+     "name": "Rossum（已被 Coupa 收購）",
+     "ticker": "—",
+     "country": "CZ",
+     "share": "2026/05/12 被 Coupa 收購；2025 Revenue $44.9M；450+ 企業客戶",
+     "products": "交易文件 AI（B2B 發票）；Transactional LLM；整合進 Coupa Source-to-Pay",
+     "note": "2021 Series A $100M（General Catalyst），當時估值 $510M；客戶含 Bosch/Siemens/PepsiCo",
+     "src": "https://www.coupa.com/newsroom/coupa-acquires-rossum-to-accelerate-end-to-end-autonomous-spend-management/"
+    },
+    {
+     "name": "Tungsten Automation（前 Kofax）",
+     "ticker": "—",
+     "country": "US",
+     "share": "Thoma Bravo 2022 ~$1.5B 收購；收入估計 $400M+；Gartner IDP MQ Leader",
+     "products": "Tungsten TotalAgility（RPA + IDP + Process Orchestration 整合套件）；聚焦大型企業帳款/保險索賠",
+     "note": "2022 更名；前身 Kofax 為 Lexmark 子公司",
+     "src": "https://www.tungstenautomation.com/"
+    },
+    {
+     "name": "AWS Textract（Amazon）",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "AWS Q1 2026 Rev $29.3B（+17% YoY）；Textract 按量計費",
+     "products": "Textract（OCR+表格+表單擷取）+ Bedrock GenAI 後處理 + Nova Act SDK + AnalyzeExpense/Lending",
+     "note": "2025 Query 模式精度優化；整合 Amazon Bedrock",
+     "src": "https://aws.amazon.com/textract/"
+    },
+    {
+     "name": "Azure AI Document Intelligence（Microsoft）",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "FY2025 Azure +40% YoY；Document Intelligence 未拆分揭露",
+     "products": "Read / Layout / 預建模型（Invoice/Receipt/ID/W-2）+ 自定義模型；整合 Azure OpenAI 後處理",
+     "note": "hybrid / on-premises container 部署；前 Form Recognizer",
+     "src": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/"
+    },
+    {
+     "name": "Indico Data",
+     "ticker": "—",
+     "country": "US",
+     "share": "累計融資 ~$35M；2024 Series B；聚焦保險/金融垂直",
+     "products": "Unstructured Data AI Platform：文件理解+分類+擷取；Generative Transfer Learning 少樣本訓練",
+     "note": "Canvas Ventures + Osage University Partners；保險/金融服務垂直利基",
+     "src": "https://indicodata.ai/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "rpa_classic_us"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "workflow_orchestrator_us"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Coupa 收購 Rossum（2026-05-12）",
+     "url": "https://www.coupa.com/newsroom/coupa-acquires-rossum-to-accelerate-end-to-end-autonomous-spend-management/"
+    },
+    {
+     "label": "ABBYY Vantage 3.0 整合 GenAI（BusinessWire 2026-01-20）",
+     "url": "https://www.businesswire.com/news/home/20260120873104/en/ABBYY-Launches-Vantage-3.0-Directly-Integrating-with-Generative-AI-and-Offering-Advanced-Compliance-and-Privacy-Capabilities"
+    },
+    {
+     "label": "Hyperscience Inc. 5000 最快成長（2025）",
+     "url": "https://www.hyperscience.ai/newsroom/hyperscience-recognized-on-the-2025-inc-5000-list-of-fastest-growing-private-companies-in-america/"
+    },
+    {
+     "label": "AWS Textract 官方頁面",
+     "url": "https://aws.amazon.com/textract/"
+    }
+   ]
+  },
+  {
+   "id": "workflow_orchestrator_us",
+   "row": "orch",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "Workflow Orchestrator / Durable Execution（美系）",
+   "nameEn": "US Workflow Orchestrator & Durable Execution",
+   "competition": "competitive",
+   "single": "Temporal 稱霸 Durable Execution 基礎設施（$5B 估值）；ServiceNow AI Agent Orchestrator 為最大企業平台客戶入口",
+   "desc": "AI Agent 長時任務、狀態持久化、自動重試的基礎設施層。Temporal Series D $300M @ $5B（a16z 領投，2026/02）為 OpenAI/Netflix/Snap 生產環境核心；ServiceNow $2.5B 收購 Moveworks（2025）加速企業 Agentic Workflow。",
+   "marketSize": "Workflow Orchestration 市場 2025 TAM 估 USD 3-5B（Agentic AI 驅動高速成長）",
+   "growth": "Temporal Revenue YoY +380%；週 active +350%；Mistral AI Workflows 2026/04 建構於 Temporal（每日數百萬執行）；Inngest Series A 2025/09 $21M",
+   "share": "null",
+   "analysis": "Temporal 2026/02 Series D $300M @ $5B（a16z + Lightspeed + GIC + Index），Revenue +380% YoY，9.1 兆 lifetime executions；Replay 2026（2026/H1）推 Serverless Workers + Standalone Activities + Workflow Streams + Google ADK / OpenAI Agents SDK 原生整合，OpenAI VP App Infra 登台背書為其 agentic 規模核心；Inngest 2025/09 Series A $21M（Altimeter）；ServiceNow 2026/03/02 完成收購 Veza（AI-native 身分治理）、2026/04/20 完成 $7.75B 收購 Armis、推出 Autonomous Workforce + Autonomous Security & Risk + AI Control Tower（ACV YoY 翻倍），Employee Works Q1 2026 業務 5x；Airflow/Astronomer 累計融資 $213M。【絃外之音】Durable Execution 子賽道實為 Temporal 準壟斷：以最成熟生態、最完整 retry/timeout 控制成為 OpenAI/Netflix/Snap/Box/Datadog 的事實標準，Inngest/Restate/Trigger.dev 僅在輕量/FaaS 利基差異化。當 Agentic AI 任務愈長、狀態持久化需求愈高，整個上游 RPA/iPaaS/Browser 應用層的可靠性最終都沉澱到 Temporal 這一層——這是被應用層光環掩蓋的真正卡位者。",
+   "companies": [
+    {
+     "name": "Temporal Technologies",
+     "ticker": "—",
+     "country": "US",
+     "share": "估值 $5B（Series D 2026/02）；Revenue YoY +380%；9.1 兆 lifetime executions",
+     "products": "Temporal Cloud + OSS SDK（Go/Java/Python/TS）：Durable Execution；Replay 2026 推 Serverless Workers + Standalone Activities + Workflow Streams（即時可觀測）+ Google ADK / OpenAI Agents SDK 原生整合",
+     "note": "OpenAI（VP App Infra 公開背書為 agentic 規模核心）/Netflix/Snap/Box/Datadog/ADP/Yum!/Block 生產使用；Mistral AI Workflows（2026/04/28）即建構於 Temporal；a16z+Lightspeed+GIC+Index 投資",
+     "src": "https://thenewstack.io/temporal-replay-2026-news/"
+    },
+    {
+     "name": "ServiceNow（AI Agent Orchestrator）",
+     "ticker": "NOW",
+     "country": "US",
+     "share": "Q1 2026 訂閱 Rev $3.671B（+22% YoY，恆定匯率 +19%）；2026/04/20 完成 $7.75B 收購 Armis；2026/03/02 完成收購 Veza（AI-native 身分治理）；2025/12/15 完成 $2.85B 收購 Moveworks；亦收購 Traceloop（AI agent runtime 可觀測）",
+     "products": "Now Platform + AI Agent Orchestrator + AI Agent Studio + Now Assist + Workflow Data Fabric + Employee Works + Autonomous Workforce（2026 推出，編排多 AI 專員從頭到尾執行）+ AI Control Tower（治理全企業 AI agent）",
+     "note": "Autonomous Security & Risk 整合 Armis+Veza 治理每個 AI agent/身分；AI Control Tower ACV YoY 翻倍；Employee Works Q1 2026 業務 5x；cRPO $12.64B（+22.5%）",
+     "src": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-launches-Autonomous-Workforce-that-thinks-and-acts-adds-Moveworks-to-the-ServiceNow-AI-Platform/default.aspx"
+    },
+    {
+     "name": "Inngest",
+     "ticker": "—",
+     "country": "US",
+     "share": "2025/09 Series A $21M（Altimeter 領投）；AWS Marketplace 上架",
+     "products": "Inngest Platform：Durable Workflows（Stateful+自動重試）+ Event-driven Functions + AI Agent Orchestration；TS/Python/Go",
+     "note": "2024/01 先前融資 $6.1M；主打 AI workflow 快速從 prototype 到 production",
+     "src": "https://www.startuphub.ai/ai-news/funding-round/2025/inngest-raises-21m-to-tackle-the-chaos-of-ai-workflow-automation/"
+    },
+    {
+     "name": "Restate",
+     "ticker": "—",
+     "country": "DE",
+     "share": "2024/06 Seed $7M（Redpoint；Datadog 創辦人 + Kafka 創辦人參與）",
+     "products": "Restate（輕量 Durable Execution Engine）；TS/Java/Kotlin SDK；AWS Lambda/Cloudflare Workers 整合",
+     "note": "BSL 授權開源 + Restate Cloud；比 Temporal 更輕量，適合 FaaS 場景",
+     "src": "https://techcrunch.com/2024/06/12/restate-raises-7m-for-its-lightweight-workflows-as-code-platform/"
+    },
+    {
+     "name": "Apache Airflow / Astronomer",
+     "ticker": "—",
+     "country": "US",
+     "share": "Astronomer 累計融資 $213M（a16z 等）；Airflow GitHub 38,000+ Stars",
+     "products": "Apache Airflow（Python DAG 排程）+ Astronomer Cloud（managed Airflow）；Data/ML Pipeline 編排",
+     "note": "Gartner 2024 Workflow Orchestration 最廣泛採用；AI workload 整合以 data-centric 為主",
+     "src": "https://airflow.apache.org/"
+    },
+    {
+     "name": "Prefect",
+     "ticker": "—",
+     "country": "US",
+     "share": "融資約 $32M；Marvin 3.0（2025 下半年）整合 ControlFlow 成 first-party AI Agent Framework",
+     "products": "Prefect 3.x Cloud（Python-first）+ Marvin 3.0 AI Agent Framework（執行於 events/automations 引擎上）",
+     "note": "2026/04 Cloud 新增 enterprise audit trail + bulk operations",
+     "src": "https://www.prefect.io/"
+    },
+    {
+     "name": "Dagster Labs",
+     "ticker": "—",
+     "country": "US",
+     "share": "Series B $33M（2023/05，Georgian+8VC）；累計融資 $47M；GitHub 12,000+ Stars",
+     "products": "Dagster（Asset-centric Data Orchestration）+ Dagster Cloud；2025 支援 AI/ML pipeline 資產定義",
+     "note": "Revenue ~$7.2M；主打 data engineering / analytics team",
+     "src": "https://dagster.io/blog/elementl-series-b"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ipaas_us"
+    },
+    {
+     "id": "browser_computer_use"
+    },
+    {
+     "id": "document_ai_idp"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Temporal Series D $300M @ $5B（2026-02）",
+     "url": "https://temporal.io/blog/temporal-raises-usd300m-series-d-at-a-usd5b-valuation"
+    },
+    {
+     "label": "ServiceNow Autonomous Workforce + Moveworks 整合（2026）",
+     "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-launches-Autonomous-Workforce-that-thinks-and-acts-adds-Moveworks-to-the-ServiceNow-AI-Platform/default.aspx"
+    },
+    {
+     "label": "Temporal Replay 2026：Serverless Workers + Workflow Streams（The New Stack）",
+     "url": "https://thenewstack.io/temporal-replay-2026-news/"
+    },
+    {
+     "label": "Inngest Series A $21M（2025-09）",
+     "url": "https://www.startuphub.ai/ai-news/funding-round/2025/inngest-raises-21m-to-tackle-the-chaos-of-ai-workflow-automation/"
+    },
+    {
+     "label": "Restate Seed $7M（TechCrunch 2024-06-12）",
+     "url": "https://techcrunch.com/2024/06/12/restate-raises-7m-for-its-lightweight-workflows-as-code-platform/"
+    }
+   ]
+  },
+  {
+   "id": "rpa_tw",
+   "row": "orch",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "台灣 RPA / ERP Workflow",
+   "nameEn": "Taiwan RPA & ERP Workflow",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "台灣本土無主流 iPaaS 廠商；Systex（精誠）與 Digiwin（鼎新/鼎捷數智）為主要 RPA/ERP Workflow SI，扮演在地導入角色。美系 Salesforce MuleSoft、Microsoft Power Automate、SAP Integration Suite 主導 iPaaS 層。",
+   "marketSize": "台灣 IT 服務市場 2025 TWD ~NT$5,000 億；RPA 本土廠商以 SI 代理為主",
+   "growth": "製造業 DX + AI 導入加速；Systex FY2025 合併收入 USD 14.1 億（~TWD 450 億）",
+   "share": "null",
+   "analysis": "Systex 2025 收入 USD 14.1 億，作為 UiPath/Automation Anywhere 合作夥伴推廣 RPA；Digiwin 服務台灣 50,000 家企業，METIS 平台整合 AI + RPA + ERP，AI 文件處理效率提升 96%；台灣 iPaaS 空白明顯，主要依賴美系平台。",
+   "companies": [
+    {
+     "name": "Systex 精誠資訊",
+     "ticker": "6214.TW",
+     "country": "TW",
+     "share": "2025 合併收入 USD 14.1 億（~TWD 450 億）；員工 ~4,500 人",
+     "products": "RPA 導入代理（UiPath/Automation Anywhere）+ AI 自動化解決方案 + AIDC 數據中心服務",
+     "note": "台灣最大 IT 系統整合商之一；越南子公司 SYSTEX Vietnam 推 ESG+SI",
+     "src": "https://tw.systex.com/en/company-profile/"
+    },
+    {
+     "name": "Digiwin 鼎新電腦（鼎捷數智）",
+     "ticker": "6112.TW",
+     "country": "TW",
+     "share": "服務台灣 50,000 家企業；44 年製造業 ERP 歷史",
+     "products": "METIS 平台（5G+AI+Cloud+Big Data）+ T100 ERP + AI 文件處理（效率提升 96%）+ RPA 整合工作流程",
+     "note": "TAIROS 2025 展出 RPA；泰國子公司 DigiWin Thailand；不設單獨 RPA 產品，ERP 內嵌自動化",
+     "src": "https://www.digiwin.com.tw/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "rpa_classic_us"
+    },
+    {
+     "id": "ipaas_us"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Systex 精誠資訊官網（2025）",
+     "url": "https://tw.systex.com/en/company-profile/"
+    },
+    {
+     "label": "Digiwin 鼎新官網（2025）",
+     "url": "https://www.digiwin.com.tw/"
+    },
+    {
+     "label": "TAIROS 2025 展商清單（Digiwin）",
+     "url": "https://www.tairos.tw/en/visitorExhibitorDetail.asp?comNo=110358&sno=194696"
+    }
+   ]
+  },
+  {
+   "id": "rpa_in_sea",
+   "row": "orch",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "印度 / 東南亞 RPA SI",
+   "nameEn": "India & SEA RPA System Integrators",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "東南亞 RPA 落地以電信、政府 IT 轉型為主要場景。新加坡 NCS Group（Singtel 子公司）承接政府數位轉型 RPA；菲律賓 Globe Telecom 以 AWS RPA 合作夥伴模式賦能 2,000 員工 citizen developer。",
+   "marketSize": "APAC iPaaS CAGR 23.20% 至 2031；東南亞 RPA 市場 2025 估 USD 3-4B",
+   "growth": "東南亞數位政府 + 金融服務驅動；NCS 政府 IT 轉型；Globe Telecom 2,000 員工 low-code 賦能",
+   "share": "null",
+   "analysis": "NCS Group 2025 年榮獲 Singapore Company of the Year（管理型 IT 服務），透過 Singtel Z74.SI 覆蓋 APAC；Globe Telecom 2,000 員工 AppSheet citizen developer 計畫，2026/02 與 Aeris 推 IoT Accelerator；印度 Automation Anywhere 印度工程中心為全球 RPA 核心。",
+   "companies": [
+    {
+     "name": "NCS Group（Singtel 旗下）",
+     "ticker": "Z74.SI",
+     "country": "SG",
+     "share": "2025 Singapore Company of the Year（管理型 IT 服務）；Singtel 市值 SGD ~300 億",
+     "products": "RPA SI 導入服務 + 政府企業 IT 轉型顧問 + Singtel 雲端+自動化整合",
+     "note": "承接新加坡政府數位轉型 RPA；透過 Singtel 覆蓋澳洲 Optus + 東南亞",
+     "src": "https://www.ncs.co.sg/en-sg/"
+    },
+    {
+     "name": "Globe Telecom（GBiz）",
+     "ticker": "GLO.PS",
+     "country": "PH",
+     "share": "菲律賓最大數位平台；AWS RPA 合作夥伴（2,000 員工 citizen developer）",
+     "products": "AWS RPA + AppSheet citizen developer 計畫 + IoT Accelerator（Aeris，2026/02）",
+     "note": "Dell 基礎設施整合；IoT 新平台 2026 年推出",
+     "src": "https://aws.amazon.com/solutions/case-studies/globe-telecom-rpa/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ipaas_in"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "NCS Singapore 官網",
+     "url": "https://www.ncs.co.sg/en-sg/"
+    },
+    {
+     "label": "AWS Globe Telecom RPA Case Study",
+     "url": "https://aws.amazon.com/solutions/case-studies/globe-telecom-rpa/"
+    },
+    {
+     "label": "Globe Telecom + Aeris IoT Accelerator（BusinessWire 2026-02）",
+     "url": "https://www.businesswire.com/news/home/20260226217158/en/Globe-Business-and-Aeris-Launch-IoT-Accelerator-Platform-in-the-Philippines"
+    },
+    {
+     "label": "Mordor Intelligence iPaaS APAC CAGR 23.20%（2031）",
+     "url": "https://www.mordorintelligence.com/industry-reports/integration-platform-as-a-service-market"
+    }
+   ]
+  },
+  {
+   "id": "asia_si_rpa",
+   "row": "orch",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "亞洲 SI RPA 全球交付（TCS / Infosys / HCL / Wipro）",
+   "nameEn": "Asia Global SI RPA Delivery",
+   "competition": "oligopoly",
+   "single": "印度四大 IT 外包廠商寡占全球企業 RPA 落地服務；Agentic AI 轉型為新成長引擎",
+   "desc": "TCS、Infosys BPM、HCLTech、Wipro 四大印度 IT 集團作為全球企業 RPA/Agentic AI 落地的最大系統整合服務商，透過龐大工程師體系（四家合計超 130 萬員工）提供全球交付。【絃外之音】Agentic AI 對印度 SI 是雙面刃：四強寡占全球 RPA 落地（合計 ~35% 服務市場），但其營收模式本質是「賣人天」，AI Agent 自動化恰恰壓縮人力工時——這是帳面寡占地位下被低估的結構性下行壓力，誰能把交付從『人力套利』轉為『AI 平台訂閱』（HCLTech AI Force 2.0、Wipro AI-first、TCS WisdomNext）誰才能守住定價權。",
+   "marketSize": "印度 IT 服務出口 2025 USD 282B；全球 RPA SI 服務市場 TCS/Infosys/HCL/Wipro 合計佔 ~35%",
+   "growth": "大型案訂單成長：Wipro +90.5% YoY（Q2 FY2026）；Infosys TCV $38B；HCLTech +12% 員工 226k+",
+   "share": "null",
+   "analysis": "TCS Cognitive Automation 被 Nelson Hall 評為 GenAI+Process Automation Banking Leader 2025；Infosys BPM 推 AP Cloud AI Agent 發票處理（2025 新品）；HCLTech AI Force 2.0 2026/04 發佈（涵蓋 Engineering/Operations/Applications）；Wipro 2025/12 收購 HARMAN DTS（5,600 人）強化工程 R&D 自動化。",
+   "companies": [
+    {
+     "name": "TCS（Tata Consultancy Services）",
+     "ticker": "TCS.NS",
+     "country": "IN",
+     "share": "FY2025 收入 ~USD 25.7B；Nelson Hall GenAI+Process Automation Banking Leader 2025",
+     "products": "TCS Cognitive Automation Platform + TCS BaNCS RPA + Robotic Automation for Semiconductor（2025）",
+     "note": "Everest Group 生命/年金保險 BPS Leader；全球最大 RPA 導入服務商之一",
+     "src": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-launches-robotic-automation-solutions-accelerate-digital-transformation-semiconductor-industry"
+    },
+    {
+     "name": "Infosys BPM",
+     "ticker": "INFY.NS",
+     "country": "IN",
+     "share": "Q1 FY2026 收入 USD 49.41 億（+3.8%）；大型案 TCV USD 38 億",
+     "products": "Infosys BPM AP Cloud（AI Agent 發票處理）+ Infosys Cobalt + RWE AG 數位工作場所自動化",
+     "note": "ISG Intelligent Automation Leader（美國+歐洲）；GenAI agent 發票處理 2025 新品",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001067491/000106749126000004/exv99w01.htm"
+    },
+    {
+     "name": "HCLTech AI Force 2.0",
+     "ticker": "HCLTECH.NS",
+     "country": "IN",
+     "share": "員工 226,300+；60 國業務；AI Force 2.0 於 2026/04/01 發佈",
+     "products": "AI Force 2.0（GenAI+Agentic AI 全棧，Engineering/Operations/Applications）；Model-Agnostic",
+     "note": "Responsible AI 治理框架；前版 AI Force 已廣泛商業化",
+     "src": "https://www.hcltech.com/press-releases/hcltech-launches-ai-force-20-deliver-enterprise-grade-agentic-ai"
+    },
+    {
+     "name": "Wipro Intelligence",
+     "ticker": "WIPRO.NS",
+     "country": "IN",
+     "share": "Q2 FY2026 大型案訂單 USD 29 億（YoY +90.5%）；2025/12 收購 HARMAN DTS",
+     "products": "Wipro Intelligence（AI-first automation）+ ERP+RPA 整合 + HARMAN DTS（5,600 人，工程 R&D）",
+     "note": "戰略主軸「AI-first world」；HARMAN DTS 強化工程自動化服務能力",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001123799/000119312525245284/d62510dex991.htm"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ipaas_in"
+    },
+    {
+     "id": "rpa_classic_us"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "TCS Robotic Automation for Semiconductor（2025）",
+     "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-launches-robotic-automation-solutions-accelerate-digital-transformation-semiconductor-industry"
+    },
+    {
+     "label": "Infosys Q1 FY2026 6-K（SEC）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001067491/000106749126000004/exv99w01.htm"
+    },
+    {
+     "label": "HCLTech AI Force 2.0 發佈（2026-04-01）",
+     "url": "https://www.hcltech.com/press-releases/hcltech-launches-ai-force-20-deliver-enterprise-grade-agentic-ai"
+    },
+    {
+     "label": "Wipro 6-K Q2 FY2026（Sep 2025）",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001123799/000119312525245284/d62510dex991.htm"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "rpa_classic_us",
+   "ipaas_us"
+  ],
+  [
+   "rpa_classic_us",
+   "browser_computer_use"
+  ],
+  [
+   "rpa_classic_us",
+   "document_ai_idp"
+  ],
+  [
+   "rpa_jp",
+   "workflow_orchestrator_us"
+  ],
+  [
+   "rpa_kr",
+   "workflow_orchestrator_us"
+  ],
+  [
+   "ipaas_us",
+   "browser_computer_use"
+  ],
+  [
+   "ipaas_us",
+   "workflow_orchestrator_us"
+  ],
+  [
+   "ipaas_in",
+   "workflow_orchestrator_us"
+  ],
+  [
+   "browser_computer_use",
+   "workflow_orchestrator_us"
+  ],
+  [
+   "document_ai_idp",
+   "workflow_orchestrator_us"
+  ],
+  [
+   "workflow_orchestrator_us",
+   "rpa_tw"
+  ],
+  [
+   "workflow_orchestrator_us",
+   "rpa_in_sea"
+  ],
+  [
+   "workflow_orchestrator_us",
+   "asia_si_rpa"
+  ],
+  [
+   "ipaas_in",
+   "rpa_in_sea"
+  ],
+  [
+   "ipaas_in",
+   "asia_si_rpa"
+  ],
+  [
+   "rpa_classic_us",
+   "asia_si_rpa"
+  ]
+ ],
+ "_proposed": {}
+}

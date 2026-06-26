@@ -1,0 +1,688 @@
+{
+ "id": "ate_test",
+ "tab": "晶片測試",
+ "title": "AI 晶片測試供應鏈 (Semiconductor Test & ATE)",
+ "subtitle": "Semiconductor Test & ATE — AI 晶片（GPU/ASIC/HBM）功耗與複雜度暴增，使測試從製程尾端成本變成決定良率與交期的鎖喉環節：先進 AI 封裝測試成本佔晶片總成本 10–15%（傳統手機 SoC ~5%），SLT 系統級測試 + burn-in 預燒成標配、HBM4 測試左移。CY2025 全球 tester 市場 +50% 至 ~$9B；Advantest（SoC ATE ~50% 市占）FY2026 指引營收 ¥1.42 兆（+25.8% YoY）、Teradyne Q1 2026 營收 +87%（AI 佔 70%）；台股測試族群全面爆發：京元電（NVIDIA 測試主力）2026 capex 上修至 NT$500 億創高、穎崴破 10,675 元成台股第二檔萬元股、鴻勁 Q1 營收 +81%。價值鏈：ATE/SLT/Burn-in 設備 → 探針卡/測試座耗材 → OSAT 測試代工/檢測 → AI 晶片。⚠ 高基期高估值、AI capex 循環與客戶集中（NVIDIA/CSP）風險。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "35+"
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "AI 測試強度倍增 · 高基期估值+AI capex 循環風險",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "equip",
+   "label": "測試設備 ATE / SLT / Burn-in Equipment",
+   "main": false
+  },
+  {
+   "id": "interface",
+   "label": "測試介面耗材 Test Interface",
+   "main": false
+  },
+  {
+   "id": "service",
+   "label": "OSAT 測試代工 / 檢測 Test Services",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "AI 晶片需求端 Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ate_tester",
+   "row": "equip",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "ATE 測試機（SoC / 記憶體）",
+   "nameEn": "Automated Test Equipment",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Advantest(整體 ATE ~58%、merchant GPU 近壟斷)+Teradyne(~50% 客製 ASIC)＝tester 約 80% 雙寡占；但 Q1 2026 Teradyne 首獲 merchant GPU 多機台量產測試訂單、成 Advantest 替代供應商，H2 2026 起初步量產營收、FY26 GPU 營收約 $50M——壟斷裂縫首現",
+   "desc": "晶圓測試（CP）與最終測試（FT）核心設備：SoC 測試機、記憶體測試機。AI 晶片電晶體數與 I/O 速率暴增使單顆測試時間倍增，tester 市場 CY2025 暴增 ~50% 至約 $9B。",
+   "marketSize": "ATE ~$9.4B (2026)",
+   "growth": "CY26 SoC tester $8.7–9.5B",
+   "share": "null",
+   "analysis": "Advantest（6857.T，SoC ATE 市占 ~50%、記憶體測試龍頭）FY2025 營收/營益/淨利全創新高，FY2026 指引營收 ¥1.42 兆（+25.8% YoY）、營益 ¥627.5B（+25.7%）、SoC 測試系統 ¥999.5B 且 ~95% 來自 computing/AI，2026 年底前產能擴 70%+，股價一年 +76%、為日經新高雙引擎之一；Teradyne（TER）Q1 2026 營收 $1.282B（+87% YoY）創紀錄、AI 相關佔 70%；Cohu（COHU）Q1 $125.1M（+29%）訂單 +57%；中國華峰測控/長川科技做成熟製程國產替代。",
+   "companies": [
+    {
+     "name": "Advantest 愛德萬",
+     "ticker": "6857.T",
+     "country": "JP",
+     "share": "SoC ATE ~50% / 記憶體測試龍頭",
+     "products": "V93000 / T5801 / 記憶體測試機",
+     "note": "FY26 指引 ¥1.42 兆（+25.8%）、營益 ¥627.5B；產能擴 70%+；股價一年 +76%",
+     "src": "https://www.advantest.com/en/news/2026/a81o6o0000000hgw-att/E_FR_FY2025_FN.pdf"
+    },
+    {
+     "name": "Teradyne",
+     "ticker": "TER",
+     "country": "US",
+     "share": "ATE 雙寡占之一",
+     "products": "UltraFLEX+ SoC / 記憶體測試機",
+     "note": "Q1 26 營收 $1.282B（+87% YoY）創高、AI 佔 70%；握 ~50% 客製 ASIC 測試；Q1 26 首獲 merchant GPU 多機台量產訂單、成 Advantest 替代供應商，H2 26 量產、FY26 GPU 營收約 $50M（fast-follower 策略搶 Advantest 地盤）",
+     "src": "https://www.fool.com/earnings/call-transcripts/2026/04/29/teradyne-ter-q1-2026-earnings-transcript/"
+    },
+    {
+     "name": "Cohu",
+     "ticker": "COHU",
+     "country": "US",
+     "share": "tester+handler+contactor",
+     "products": "Diamondx 測試機 / 分選機 / 接觸件",
+     "note": "Q1 26 營收 $125.1M（+29% YoY）、訂單 +57%；2026 成長指引 20–25%",
+     "src": "https://www.investing.com/news/company-news/cohu-q126-slides-hpc-pipeline-drives-29-revenue-growth-93CH-4651626"
+    },
+    {
+     "name": "華峰測控 Accotest",
+     "ticker": "688200.SS",
+     "country": "CN",
+     "share": "中國類比 ATE 龍頭",
+     "products": "類比 / 混合訊號測試機",
+     "note": "中國國產替代（成熟製程/功率為主）"
+    },
+    {
+     "name": "長川科技",
+     "ticker": "300604.SZ",
+     "country": "CN",
+     "share": "中國測試機+分選機",
+     "products": "數位測試機 / 分選機 / 探針台",
+     "note": "中國國產替代代表，切入中高階"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "osat_test"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Advantest FY2025 財報 (官方 PDF)",
+     "url": "https://www.advantest.com/en/news/2026/a81o6o0000000hgw-att/E_FR_FY2025_FN.pdf"
+    },
+    {
+     "label": "Advantest tester 市場展望 Q&A (官方)",
+     "url": "https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_QA.pdf"
+    },
+    {
+     "label": "Teradyne Q1 2026 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000097210/000119312526188706/ter-ex99_1.htm"
+    }
+   ]
+  },
+  {
+   "id": "handler_slt",
+   "row": "equip",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "Handler / SLT / Burn-in 設備",
+   "nameEn": "Handler, SLT & Burn-in Systems",
+   "competition": "highgrowth",
+   "single": "台廠新霸主 · 鴻勁 2025 營收 +116%、AI/HPC 佔 78%；致茂 SLT 支援 2000W TDP",
+   "desc": "分選機（handler）、主動溫控（ATC）、系統級測試（SLT）與 burn-in 預燒設備。AI 晶片 TDP 朝 2000W 推進，100% SLT 全測 + 高溫高壓 burn-in 成 AI 加速器標配，為測試強度上升最陡環節。",
+   "marketSize": "$0.9B (2026, AI 加速器)",
+   "growth": "BI+SLT 平台 2036 $2.2B",
+   "share": "null",
+   "analysis": "鴻勁（7769.TW）Q1 2026 營收 NT$107 億（+81.4% YoY）、毛利率 56.24%、EPS 25.7 元，AI/HPC/ASIC 佔 78%，2026–28 產能年增 ~50%，高階 ATC handler 2H26 放量（CSP TPU）、CPO 光電同測分選機 2027 初量產；致茂（2360.TW）SLT 支援 2000W TDP、NVIDIA 策略測試夥伴、訂單能見度至 2026 底；Aehr（AEHR）4 月獲 lead hyperscaler $41M PLBI 量產單（公司史上最大、客製 AI ASIC 封裝級燒機）、H2 FY26 接單累計 >$92M、FQ3 FY26 接單 $37.2M、book-to-bill >3.5x，6/17 再獲矽光子客戶 FOX-XP WLBI 後續單；AEM（新加坡）為 SLT 先驅；TechWing 為記憶體 handler 龍頭。AI 加速器 burn-in+SLT 平台市場 2026 $0.9B → 2036 $2.2B（FMI）。",
+   "companies": [
+    {
+     "name": "鴻勁精密",
+     "ticker": "7769.TW",
+     "country": "TW",
+     "share": "AI handler/ATC 新霸主",
+     "products": "分選機 42% / ATC 溫控 33% / 水冷板 23%",
+     "note": "Q1 26 營收 107 億（+81.4%）、GM 56.24%、EPS 25.7；2026 營收看 +100%",
+     "src": "https://blog.fugle.tw/post/earnings-call-7769-2026-05-12"
+    },
+    {
+     "name": "致茂",
+     "ticker": "2360.TW",
+     "country": "TW",
+     "share": "SLT/burn-in 台廠龍頭",
+     "products": "SLT（2000W TDP）/ burn-in / 光測",
+     "note": "NVIDIA 策略測試夥伴；訂單能見度至 2026 底；股價觸 2,530 元天價",
+     "src": "https://www.chinatimes.com/realtimenews/20260507001962-260410"
+    },
+    {
+     "name": "Aehr Test Systems",
+     "ticker": "AEHR",
+     "country": "US",
+     "share": "晶圓級/封裝級 burn-in",
+     "products": "FOX-XP WLBI / Sonoma PLBI",
+     "note": "4/26 獲 lead hyperscaler $41M PLBI 量產單（公司史上最大、客製 AI ASIC 封裝級燒機），H2 FY26 接單累計 >$92M、交付落在 FY2027（6/27 起）；FQ3 26 接單 $37.2M、B/B>3.5x；6/17 再獲 FOX-XP WLBI 後續單（9 晶圓並測，矽光子/光連接客戶）",
+     "src": "https://www.aehr.com/2026/04/aehr-receives-record-41-million-production-order-from-lead-hyperscale-ai-customer-second-half-bookings-exceed-92-million/"
+    },
+    {
+     "name": "AEM Holdings",
+     "ticker": "AWX.SI",
+     "country": "SG",
+     "share": "SLT 系統先驅",
+     "products": "SLT 測試系統",
+     "note": "Intel 主力供應商，拓展 AI 客戶"
+    },
+    {
+     "name": "TechWing",
+     "ticker": "089030.KQ",
+     "country": "KR",
+     "share": "記憶體 handler 龍頭 / Cube Prober",
+     "products": "記憶體測試分選機 / Cube Prober (HBM die 全測)",
+     "note": "2026 取得 SK hynix 首張 Cube Prober 商用單（3 月過認證）、已供貨 Samsung、Micron 認證中——三大 HBM 廠通吃；Cube Prober 對 logic die/DRAM core die 全測、並測 256、−40~150°C，整合 Advantest/Teradyne ATE 做 HBM 測試左移",
+     "src": "https://www.thelec.net/news/articleView.html?idxno=11441"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "osat_test"
+    }
+   ],
+   "sources": [
+    {
+     "label": "鴻勁 Q1 2026 法說 (Fugle)",
+     "url": "https://blog.fugle.tw/post/earnings-call-7769-2026-05-12"
+    },
+    {
+     "label": "Aehr FQ3 2026 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1040470/000165495426003310/aehr_ex991.htm"
+    },
+    {
+     "label": "AI 加速器 Burn-in/SLT 平台市場 (FMI)",
+     "url": "https://www.futuremarketinsights.com/reports/burn-in-and-system-level-test-slt-platforms-for-ai-accelerators-market"
+    }
+   ]
+  },
+  {
+   "id": "probe_card",
+   "row": "interface",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "探針卡（晶圓測試）",
+   "nameEn": "Probe Cards",
+   "competition": "oligopoly",
+   "single": "KGD 黃金鏟子 · FormFactor+Technoprobe+MJC 約 60%（top-5 ~64-73%）寡占；CoWoS 一顆壞 die 賠整個封裝，wafer sort 不能省；隨晶片改版重複採購的客製耗材",
+   "desc": "晶圓測試（wafer sort/CP）介面耗材，隨每次晶片 tape-out 改版重新設計採購。先進封裝 KGD（known good die）需求使探針卡從配角變黃金鏟子，市場 2026 $2.71B → 2031 $4.23B。",
+   "marketSize": "$2.71B (2026)",
+   "growth": "CAGR 9.3% (2026-31)",
+   "share": "null",
+   "analysis": "FormFactor（FORM）Q1 2026 營收 $226.1M（+32% YoY）連兩季新高、HBM 探針卡創紀錄、第二家 HBM 大客戶導入 Smart Matrix（支援 HBM4）、2030 目標營收倍增至 $1.6B；Technoprobe（義）為 SoC 探針卡雙雄之一；台廠旺矽（6223.TWO）5 月營收 19.07 億（+57.8% YoY）單月新高、2026 目標 +30%、MEMS 探針卡產能 2H26 擬擴 +50%；中華精測（6510.TWO）Q1 13.57 億（+17.8%）、先進 MEMS 全自製；日系 MJC/JEM 主攻記憶體探針卡、HBM 受惠。",
+   "companies": [
+    {
+     "name": "FormFactor",
+     "ticker": "FORM",
+     "country": "US",
+     "share": "探針卡全球第一",
+     "products": "MEMS 探針卡 / HBM 探針卡 / SiPh 光學探測",
+     "note": "Q1 26 營收 $226.1M（+32% YoY）；SK hynix 佔營收 29.5%（去年 23.3%）、NVIDIA 首度揭露達 10.2%；CPO 測試營收上修至 $10–20M 高端；2025/12 併購德商 Keystone Photonics（矽光子/CPO 晶圓光學探測先驅），強化 SiPh/CPO 晶圓測試卡位；2030 目標 $1.6B",
+     "src": "https://investors.formfactor.com/news-releases/news-release-details/formfactor-expands-silicon-photonics-test-capabilities/"
+    },
+    {
+     "name": "Technoprobe",
+     "ticker": "TPRO.MI",
+     "country": "IT",
+     "share": "探針卡雙雄之一",
+     "products": "SoC/邏輯 MEMS 探針卡",
+     "note": "與 FormFactor 並列高階雙雄"
+    },
+    {
+     "name": "旺矽",
+     "ticker": "6223.TWO",
+     "country": "TW",
+     "share": "非記憶體探針卡全球第三",
+     "products": "VPC / MEMS 探針卡 / 光電探針台",
+     "note": "5 月營收 19.07 億（+57.8% YoY）新高；1–5 月 +46.2%；產能 2H26 擬 +50%",
+     "src": "https://news.nextapple.com/finance/20260609/791F9A5391F8838B6F30ED4E851A49CB"
+    },
+    {
+     "name": "中華精測",
+     "ticker": "6510.TWO",
+     "country": "TW",
+     "share": "高階 MEMS 全自製",
+     "products": "探針卡 / 測試板 / 測試座",
+     "note": "Q1 26 營收 13.57 億（+17.8% YoY）；3 月單月新高",
+     "src": "https://news.nextapple.com/finance/20260409/173138DCFBFAFA1AB67CBA9BD4AFAB62"
+    },
+    {
+     "name": "Micronics Japan (MJC)",
+     "ticker": "6871.T",
+     "country": "JP",
+     "share": "記憶體探針卡大廠",
+     "products": "記憶體/DRAM 探針卡",
+     "note": "HBM 測試左移受惠"
+    },
+    {
+     "name": "Japan Electronic Materials (JEM)",
+     "ticker": "6855.T",
+     "country": "JP",
+     "share": "日系探針卡",
+     "products": "懸臂/垂直探針卡",
+     "note": "記憶體+SoC 探針卡"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "osat_test"
+    }
+   ],
+   "sources": [
+    {
+     "label": "FormFactor Q1 2026 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001039399/000103939926000020/ex9901-earningsreleasexq126.htm"
+    },
+    {
+     "label": "旺矽/穎崴/精測 5 月營收齊飆 (壹蘋)",
+     "url": "https://news.nextapple.com/finance/20260609/791F9A5391F8838B6F30ED4E851A49CB"
+    },
+    {
+     "label": "探針卡市場 2026-31 (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/probe-card-market"
+    }
+   ]
+  },
+  {
+   "id": "socket_board",
+   "row": "interface",
+   "col": 2,
+   "span": 2,
+   "kind": "stage",
+   "name": "測試座 / 負載板 / Burn-in 板",
+   "nameEn": "Test Sockets & Boards",
+   "competition": "highgrowth",
+   "single": "台股飆股集中地 · 穎崴破 10,675 元成台股第二檔萬元股；5 月營收 +119.8% YoY；高階測試座 top-5(Yamaichi/Enplas/ISC/Leeno/Smiths)約 52-55%、份額隨 AI 流動",
+   "desc": "最終測試（FT）與 burn-in 介面耗材：測試座（socket）、負載板（load board）、老化板（burn-in board）。AI 晶片大封裝、高功率、高速 I/O 使高階測試座單價與技術門檻齊升，高階市場 2027 年估 >$2B。",
+   "marketSize": "AI/HBM 高階放量",
+   "growth": "高階測試座 2027 >$2B",
+   "share": "null",
+   "analysis": "穎崴（6515.TW）高階測試座龍頭，5 月營收 10.73 億（+119.8% YoY）歷史次高、1–5 月 +46.5%，股價衝破 10,675 元成台股第二檔萬元股；韓系 ISC（高階測試座全球市占 ~30%）與 Leeno 主攻記憶體/HBM+SoC；雍智（6683.TWO）load board/burn-in board/探針卡載板三線，Q1 26 營收 6.64 億（+46.3%）、EPS 6.23 元雙創高，法人估 2026 EPS ~28 元（+81.6%）；日系 Yamaichi/Enplas 供應車用與高速測試座。測試介面四雄（穎崴/旺矽/精測/雍智）為 2026 台股最強族群之一。",
+   "companies": [
+    {
+     "name": "穎崴",
+     "ticker": "6515.TW",
+     "country": "TW",
+     "share": "高階測試座龍頭",
+     "products": "AI GPU 測試座 / Socket / 介面板",
+     "note": "5 月營收 10.73 億（+119.8% YoY）；股價破 10,675 元、台股第二檔萬元股",
+     "src": "https://www.sinotrade.com.tw/richclub/hotstock/第二檔萬元股誕生-穎崴-6515-股價衝破10-675元天價-測試介面族群全面爆發—AI-晶片良率戰爭的幕後贏家-股市話題-69e1a6ee8839d70af6b9c0e2"
+    },
+    {
+     "name": "ISC",
+     "ticker": "095340.KQ",
+     "country": "KR",
+     "share": "高階測試座 ~30%",
+     "products": "矽膠/彈簧針測試座",
+     "note": "AI/HBM 測試座，TTM 營收 ~$155M",
+     "src": "https://koreaplus-lifes.com/isc-ai-chip-testing-korea/"
+    },
+    {
+     "name": "Leeno Industrial",
+     "ticker": "058470.KQ",
+     "country": "KR",
+     "share": "探針+測試座韓雄",
+     "products": "彈簧探針 / 測試座",
+     "note": "TTM 營收 ~$263M；高毛利利基"
+    },
+    {
+     "name": "雍智科技",
+     "ticker": "6683.TWO",
+     "country": "TW",
+     "share": "測試載板三產品線",
+     "products": "Load Board / Burn-in Board / 探針卡載板",
+     "note": "Q1 26 營收 6.64 億（+46.3%）、EPS 6.23 創高；2026E EPS ~28 元（+81.6%）",
+     "src": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/227913"
+    },
+    {
+     "name": "Yamaichi Electronics",
+     "ticker": "6941.T",
+     "country": "JP",
+     "share": "日系測試座",
+     "products": "IC 測試座 / 連接器",
+     "note": "車用/高速測試座"
+    },
+    {
+     "name": "Enplas",
+     "ticker": "6961.T",
+     "country": "JP",
+     "share": "日系測試座",
+     "products": "IC 測試座",
+     "note": "邏輯/車用測試座"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "osat_test"
+    }
+   ],
+   "sources": [
+    {
+     "label": "穎崴破萬元 (永豐豐雲學堂)",
+     "url": "https://www.sinotrade.com.tw/richclub/hotstock/第二檔萬元股誕生-穎崴-6515-股價衝破10-675元天價-測試介面族群全面爆發—AI-晶片良率戰爭的幕後贏家-股市話題-69e1a6ee8839d70af6b9c0e2"
+    },
+    {
+     "label": "測試介面四雄股價逆勢漲 (工商時報)",
+     "url": "https://www.ctee.com.tw/news/20260203700217-439901"
+    },
+    {
+     "label": "雍智 2026 展望 (理財周刊)",
+     "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/227913"
+    }
+   ]
+  },
+  {
+   "id": "osat_test",
+   "row": "service",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "OSAT 專業測試代工",
+   "nameEn": "OSAT Test Services",
+   "competition": "competitive",
+   "single": "NVIDIA 測試主力 · 京元電為全球最大純測試廠、握 NVIDIA Hopper/Rubin 成品測試極高市占；2026 capex 上修至 NT$500 億創高、產能擴 30–50%、自製高功率燒機爐構築護城河",
+   "desc": "晶圓測試＋最終測試＋burn-in＋SLT 的專業代工，台灣為全球測試代工樞紐。AI GPU/ASIC 測試時間數倍於手機 SoC，測試代工從低毛利配角變高附加價值核心。",
+   "marketSize": "台灣全球樞紐",
+   "growth": "京元電 1–5 月 +37.7%",
+   "share": "null",
+   "analysis": "京元電（2449.TW，NVIDIA AI GPU 成品測試主力、Rubin 世代續居主力）2026 capex 由 393.7 億上修至 NT$500 億創新高、產能擴 30–50%、重點擴高功率 burn-in；Q1 26 營收 101.92 億（+~40% YoY）新高、1–5 月 +37.7%；2025 EPS 9.01 創高、2026E 營收約 +40% 逼近 500 億/EPS ~10.40、2027 視為『獲利大噴發年』EPS 估 ~14.97–15.50；6 月外資大舉回補，高盛目標價由 210 元升至 388 元（中投信 380、永豐 365、瑞銀 360）。【絃外之音】京元電是全球最大 pure-play 測試廠且握 NVIDIA Hopper 成品測試極高市占（延續至 Rubin）——帳面 competition 標 competitive、實質卻是 NVIDIA GPU 出廠『沒它不行』的隱性單點：高功率 burn-in 爐自製、產能擴張綁定 NVIDIA 一年一代節奏，是被低估為『OSAT 配角』的真瓶頸。欣銓（3264.TWO）Q1 26 營收 39.8 億（+24%）、EPS 1.95 同期新高，龍潭廠 AI ASIC 測試 3Q26 起貢獻、2026 營收目標 +20%；矽格（6257.TW）Q1 EPS 2.1 元（+34%）、AI+矽光子佔 ~21%、capex 59.3 億；日月光/Amkor/力成承接 AI 封測外溢。",
+   "companies": [
+    {
+     "name": "京元電子 KYEC",
+     "ticker": "2449.TW",
+     "country": "TW",
+     "share": "NVIDIA 測試主力",
+     "products": "AI GPU/ASIC 成品測試 / burn-in / CP",
+     "note": "獨家拿下 NVIDIA Vera Rubin 平台預燒+成品測試（Vera CPU 已放量、Rubin GPU 2H26 量產），並接 Google TPU v7p/v7e FT；2026 capex 上修至 500 億創高（新增 100 億主用於 Broadcom×MediaTek TPU 廠房/無塵室/設備——NVIDIA 之外新客戶錨點）；Q1 26 營收 101.92 億（+~40%）新高；2026E EPS ~10.40、2027 估大噴發 ~15.5；大摩 6 月將目標價由 338 升至 388 元、Google/TPU 估佔 2026 營收 ~10%、外資 6 月大舉回補",
+     "src": "https://finance.technews.tw/2026/06/23/morgan-stanley-expects-king-yuan-electronics-revenue-to-grow-by-40-in-2026/"
+    },
+    {
+     "name": "欣銓 Ardentec",
+     "ticker": "3264.TWO",
+     "country": "TW",
+     "share": "晶圓測試專業廠",
+     "products": "CP / FT / 車用 / AI ASIC 測試",
+     "note": "Q1 26 營收 39.8 億（+24% YoY）、EPS 1.95；龍潭廠 AI ASIC 3Q26 貢獻；2026 目標 +20%",
+     "src": "https://news.cnyes.com/news/id/6253980"
+    },
+    {
+     "name": "矽格 Sigurd",
+     "ticker": "6257.TW",
+     "country": "TW",
+     "share": "測試+封裝代工",
+     "products": "RF / AI 手機晶片 / 矽光子測試",
+     "note": "Q1 26 EPS 2.1 元（+34% YoY）；AI+矽光子佔 ~21%；capex 59.3 億",
+     "src": "https://winvest.tw/Stock/Symbol/Comment/6257"
+    },
+    {
+     "name": "日月光投控 ASE",
+     "ticker": "3711.TW",
+     "country": "TW",
+     "share": "全球最大 OSAT",
+     "products": "封測一體 / 先進封裝測試",
+     "note": "先進封裝營收目標翻倍，測試業務同步擴張",
+     "src": "https://www.sinotrade.com.tw/richclub/hotstock/封測業營收利潤齊噴發-京元電EPS-9-01元創新高-日月光先進封裝營收目標翻倍-股市話題-69afd7531a417f62c348f992"
+    },
+    {
+     "name": "Amkor",
+     "ticker": "AMKR",
+     "country": "US",
+     "share": "全球第二大 OSAT",
+     "products": "封測一體 / 美國亞利桑那擴產",
+     "note": "承接美系 AI 晶片封測需求"
+    },
+    {
+     "name": "力成 PTI",
+     "ticker": "6239.TW",
+     "country": "TW",
+     "share": "記憶體封測大廠",
+     "products": "DRAM/HBM 測試 / FOPLP",
+     "note": "記憶體測試+先進封裝雙引擎"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ate_tester"
+    },
+    {
+     "id": "handler_slt"
+    },
+    {
+     "id": "probe_card"
+    },
+    {
+     "id": "socket_board"
+    },
+    {
+     "id": "inspection"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ai_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "京元電 capex 上修 500 億 (經濟日報)",
+     "url": "https://money.udn.com/money/story/5612/9434005"
+    },
+    {
+     "label": "京元電法說備忘錄 (Fugle)",
+     "url": "https://blog.fugle.tw/post/earnings-call-2449-2025-12-03"
+    },
+    {
+     "label": "欣銓 AI 測試研究 (鉅亨)",
+     "url": "https://news.cnyes.com/news/id/6253980"
+    }
+   ]
+  },
+  {
+   "id": "inspection",
+   "row": "service",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "先進封裝檢測 / 計量",
+   "nameEn": "Inspection & Metrology",
+   "competition": "oligopoly",
+   "single": "HBM 訂單能見度至 2027 · Camtek 6/2 再獲 >$105M 新單（tier-1 OSAT $55M + HBM 廠 $50M+，2027 交付）疊加既有 >$260M",
+   "desc": "先進封裝與 HBM 的外觀檢測（AOI）、2D/3D 計量：bump、TSV、hybrid bonding 介面檢測。HBM4 與 2.5D 封裝良率保衛戰使中段檢測需求結構性上升。",
+   "marketSize": "null",
+   "growth": "Camtek H2 較 H1 +25%+",
+   "share": "null",
+   "analysis": "Camtek（CAMT）Q1 2026 營收 $121.7M（AI 相關 ~50%＋其他先進封裝 20%）、Q2 指引 $129–131M、2H26 較 1H26 成長 >25%、已握 2 家 HBM 廠 2026–27 訂單/預測 >$260M；Onto Innovation（ONTO）Q1 26 營收 $292M 超指引、2026 先進封裝營收估 +30%、Dragonfly 檢測平台 +50%、G5 通過 2.5D AI 封裝驗證並獲一線 HBM 廠選為 HBM4 2D 檢測（與該 HBM 廠簽 >$240M 量產採購協議、2Q26 起出貨、因需求加速排程由 1/3-2026 改近 50/50）；KLA 由前段檢測霸主延伸先進封裝製程控制；Cohu Neon 切入 HBM 檢測（SAM $100M）。",
+   "companies": [
+    {
+     "name": "Camtek",
+     "ticker": "CAMT",
+     "country": "IL",
+     "share": "先進封裝 AOI 雙雄",
+     "products": "2D/3D 檢測計量（HBM/2.5D）",
+     "note": "Q1 26 營收 $121.7M、AI ~50%；6/2 再獲 >$105M 新單（tier-1 OSAT 2.5D/3D $55M + HBM 廠 Hawk $50M+，皆 2027 交付）、能見度延至 2027；併購 Visual Layer 強化 visual AI 檢測",
+     "src": "https://www.prnewswire.com/news-releases/camtek-receives-over-105-million-multi-system-orders-from-a-tier-1-osat-and-a-leading-hbm-manufacturer-302788351.html"
+    },
+    {
+     "name": "Onto Innovation",
+     "ticker": "ONTO",
+     "country": "US",
+     "share": "先進封裝檢測雙雄",
+     "products": "Dragonfly G5 檢測 / 計量",
+     "note": "Q1 26 營收 $292M 超指引；2026 先進封裝 +30%、Dragonfly +50%；Dragonfly G5 獲一線 HBM 廠選為 HBM4 2D 檢測，G5+3Di 雙位數系統訂單 2Q26 起出貨；與該 HBM 廠簽 >$240M 量產採購協議（覆蓋至 2027，因需求加速由 1/3-2026 改近 50/50）；併購擴張：取得 Rigaku ~27% 股權（~$710M，2H26 完成）+ Semilab 材料分析線（~$495M）",
+     "src": "https://www.sec.gov/Archives/edgar/data/704532/000119312526158081/onto-ex99_1.htm"
+    },
+    {
+     "name": "KLA",
+     "ticker": "KLAC",
+     "country": "US",
+     "share": "檢測霸主延伸",
+     "products": "先進封裝製程控制",
+     "note": "前段檢測霸主切入封測段"
+    },
+    {
+     "name": "Cohu (Neon)",
+     "ticker": "COHU",
+     "country": "US",
+     "share": "HBM 檢測新進",
+     "products": "Neon HBM 檢測/計量",
+     "note": "SAM $100M；2026 營收估 ~$20M（+80% YoY）",
+     "src": "https://www.investing.com/news/company-news/cohu-q126-slides-hpc-pipeline-drives-29-revenue-growth-93CH-4651626"
+    },
+    {
+     "name": "閎康 MA-tek",
+     "ticker": "3587.TW",
+     "country": "TW",
+     "share": "第三方分析實驗室",
+     "products": "材料分析 / 故障分析 (FA/MA)",
+     "note": "AI 晶片故障分析/可靠度驗證受惠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "osat_test"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Camtek Q1 2026 6-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001109138/000117891326000130/exhibit_99-1.htm"
+    },
+    {
+     "label": "Onto Q1 2026 8-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/704532/000119312526158081/onto-ex99_1.htm"
+    },
+    {
+     "label": "Camtek H2 展望 (Globe and Mail)",
+     "url": "https://www.theglobeandmail.com/investing/markets/stocks/CAMT/pressreleases/1902024/camtek-posts-q1-2026-results-and-projects-strong-second-half-revenue-surge/"
+    }
+   ]
+  },
+  {
+   "id": "ai_demand",
+   "row": "demand",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "AI 晶片需求（GPU / ASIC / HBM）",
+   "nameEn": "AI Silicon Demand",
+   "competition": "oligopoly",
+   "single": "Teradyne AI 佔營收 70%、Advantest SoC 銷售 ~95% computing/AI——需求集中度極高，AI capex 即本鏈 beta；NVIDIA 握 AI 加速器 80-92%、SK hynix 握 HBM ~62%，定價權實際在買方手上",
+   "desc": "測試需求的終端錨點：NVIDIA GPU（Rubin 世代測試強度再升）、CSP 自研 ASIC（每家各需獨立測試方案）、HBM4（base die 邏輯化使記憶體測試 SoC 化、測試左移）。",
+   "marketSize": "需求總閘門",
+   "growth": "美巨頭 2026 AI capex ~$800B",
+   "share": "null",
+   "analysis": "NVIDIA Rubin 世代測試時間/強度再升，京元電為其成品測試主力；CSP ASIC（Google TPU、AWS、Meta、MSFT）各需獨立測試程式/介面/燒機方案——鴻勁 ATC handler 2H26 放量主因即 CSP TPU、欣銓/矽格接美系 ASIC 測試案；HBM（SK hynix/Samsung/Micron）HBM4 base die 邏輯化＋測試左移，Advantest/FormFactor/Camtek/Aehr 直接受惠。美國科技巨頭 2026 年 AI capex 約 $800B 為整體測試需求總閘門，也是最大循環風險。",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "AI GPU 霸主",
+     "products": "Rubin / Rubin Ultra GPU",
+     "note": "京元電為成品測試主力；一年一代加快介面改版"
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "AI GPU 第二",
+     "products": "Instinct MI 系列",
+     "note": "測試外包台廠受惠"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "ASIC 龍頭",
+     "products": "CSP 自研 ASIC 設計",
+     "note": "每顆 ASIC 各需獨立測試方案"
+    },
+    {
+     "name": "Google / CSP 自研",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "TPU 等自研晶片",
+     "products": "TPU / 自研 AI 加速器",
+     "note": "鴻勁 ATC handler 2H26 放量主因"
+    },
+    {
+     "name": "Marvell",
+     "ticker": "MRVL",
+     "country": "US",
+     "share": "ASIC 第二",
+     "products": "CSP ASIC / 互連晶片",
+     "note": "ASIC 多樣化擴增測試客戶數"
+    },
+    {
+     "name": "SK hynix",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "HBM 龍頭",
+     "products": "HBM3e / HBM4",
+     "note": "HBM4 base die 邏輯化→測試左移、強度倍增"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "osat_test"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "日經新高 AI 行情、巨頭 capex (Al Jazeera)",
+     "url": "https://www.aljazeera.com/economy/2026/6/3/japans-stock-market-hits-new-record-as-ai-boom-gathers-steam"
+    },
+    {
+     "label": "HBM 測試左移 (SemiEngineering)",
+     "url": "https://semiengineering.com/hbm-shifts-testing-left-to-preserve-ai-chip-yield/"
+    },
+    {
+     "label": "Teradyne AI 佔 70% (Kalkine)",
+     "url": "https://www.kalkine.com/news/general-news/teradyne-q1-2026-results-ai-driven-semiconductor-test-demand-lifts-revenue-87-and-margins-to-record-highs"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "ate_tester",
+   "osat_test"
+  ],
+  [
+   "handler_slt",
+   "osat_test"
+  ],
+  [
+   "probe_card",
+   "osat_test"
+  ],
+  [
+   "socket_board",
+   "osat_test"
+  ],
+  [
+   "inspection",
+   "osat_test"
+  ],
+  [
+   "osat_test",
+   "ai_demand"
+  ]
+ ],
+ "_proposed": {}
+}

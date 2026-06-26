@@ -1,0 +1,569 @@
+{
+ "id": "ev",
+ "tab": "電動車 EV",
+ "title": "電動車 EV 供應鏈 (Battery · OEM · Power Semi · Charging)",
+ "subtitle": "Electric Vehicle — 全球運輸電氣化主軸，與儲能共用電池供應鏈、與 AI 共用功率半導體。2026 Q1 Tesla 358,023 重奪全球 BEV 龍頭、BYD 310,389 暫居第二（中國購置稅改課 5% 致 BYD 國內 -25.5%），惟 BYD 歐盟登記 +276% 反超 Tesla、加速出海。美國 7,500 美元抵稅 2025/9/30 退場、Q1 新 EV -28% 需求斷崖、庫存天數飆至 130 天。動力電池：CATL Q1 40.7%（連 9 年居首）、BYD 13.7% 退居第二、LG ES 9.7% 第三、CALB 4.8% 第四；中國廠商主導逾 6 成。SiC 功率半導體（Wolfspeed/Infineon/STMicro）是 800V 平台關鍵；中重稀土永磁（中國開採 ~60%、精煉 85-90%、永磁製造 ~90%）為 EV 馬達最關鍵單點瓶頸。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 9
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "48+"
+  },
+  {
+   "k": "鎖喉／領導單點",
+   "v": 3,
+   "sub": "CATL 動力電池 Q1 40.7%·SiC 功率半導體·中重稀土永磁（中國 ~90%）",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "battery",
+   "label": "動力電池 / 材料 Battery & Materials",
+   "main": false
+  },
+  {
+   "id": "oem",
+   "label": "整車 OEM Vehicle Makers",
+   "main": true
+  },
+  {
+   "id": "semi",
+   "label": "功率半導體 / 電驅 Power Semi & Drivetrain",
+   "main": false
+  },
+  {
+   "id": "supply",
+   "label": "Tier-1 / 充電 / 台廠供應 Tier-1 & Charging",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ev_battery",
+   "row": "battery",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "動力電池芯 EV Battery",
+   "nameEn": "EV Traction Battery",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · CATL Q1 2026 動力電池 40.7%（連 9 年居首）；中國廠商逾 6 成、集中度續升",
+   "desc": "EV 動力電池（NCM 三元 + LFP），占整車成本 ~30-40%，是 EV 競爭核心。",
+   "marketSize": "鎖喉點",
+   "growth": "+13.8% YoY (352.7GWh 1-4月)",
+   "share": "null",
+   "analysis": "CATL（300750.SZ，Q1 2026 全球動力電池 40.7%、連 9 年居首；1-4月 40.1%、裝機 141.4GWh +19.8% YoY；Q1 營收 ¥1,291億 +52.5%、淨利 ¥207億 +48.5%；取得約 60GWh 鈉離子供應合約為全球單筆最大、Naxtra 鈉電池 2026 底量產上車）、BYD（002594.SZ，Q1 2026 滑落至 13.7%、裝機 33.5GWh -8.0% YoY 退居第二、刀片電池自供+外供）；中國 7 家進全球前十、合計逾 72%（含中創新航 CALB Q1 4.8% +31.7% 升至第四、國軒、欣旺達）。韓系：LG ES（373220.KS）Q1 9.7% 為非中陣營唯一前三、Q1 營業虧損 ₩2,078億但 46 系列圓柱新單 100GWh+/在手訂單 440GWh+，SK On 3.5%、Samsung SDI 跌出全球前十（但 2026/6 拿下 Mercedes-Benz $6.8B 多年大單、2026 起供 Hyundai，預期重返前十）；日 Panasonic（6752.T，Tesla 主供之一）3.4%。【絃外之音】電池包均價 2025 降至 $108/kWh 歷史新低、中國均價更低至 $84/kWh（-13%，BNEF）——這不是良性降價而是『過剩產能價格戰』：CATL 用規模+麒麟/神行/鈉電池技術溢價獨享利潤，二三線（含韓系）在 $84 紅海被逼到虧損出清，帳面市占分散，實質定價權與利潤高度集中於 CATL 一家。中國 2026/4 EV 電池 LFP 占比創 81.5% 新高；非中車廠對中國電池依賴加深，傳統車廠（本田回購 LGES 俄亥俄廠、GM Ultium 停工）則大幅下修北美電池產能規劃。",
+   "companies": [
+    {
+     "name": "CATL 寧德時代",
+     "ticker": "300750.SZ",
+     "country": "CN",
+     "share": "動力電池 Q1 2026 40.7%（連 9 年居首）",
+     "products": "NCM/LFP / 麒麟/神行/Naxtra 鈉電池",
+     "note": "Q1 2026 40.7%、連 9 年居首；1-4月裝機 141.4GWh +19.8%；Q1 淨利 ¥207億 +48.5%；取得約 60GWh 鈉離子供應合約（全球單筆最大鈉電訂單）；攜 Changan 推出全球首款量產鈉電（Naxtra）乘用車、2026 中上市",
+     "src": "https://cnevpost.com/2026/05/06/global-ev-battery-market-share-jan-mar-2026/"
+    },
+    {
+     "name": "BYD 比亞迪",
+     "ticker": "002594.SZ",
+     "country": "CN",
+     "share": "動力電池 Q1 2026 13.7%（退居第二）",
+     "products": "刀片電池 (LFP)",
+     "note": "Q1 2026 裝機 33.5GWh -8.0% YoY、市佔 13.7% 滑落退居第二；自供為主、份額被 CATL 拉開",
+     "src": "https://cnevpost.com/2026/05/06/global-ev-battery-market-share-jan-mar-2026/"
+    },
+    {
+     "name": "LG ES / SK On / Samsung SDI",
+     "ticker": "373220.KS / — / 006400.KS",
+     "country": "KR",
+     "share": "LG ES Q1 9.7% / SK On 3.5% / SDI 跌出前十",
+     "products": "NCM 圓柱/軟包/方形",
+     "note": "LG ES Q1 2026 9.7% 為唯一進前三的非中廠；美國 IRA 退坡+中系夾擊，韓系三強合計已不足 CATL 三分之一；LG ES 2026/3 簽 Tesla $4.3B 美製 LFP（供 Megapack 3 儲能、密西根 2027 投產）；SDI 2026/6 簽 Mercedes $6.8B 大單、Honda 以 $2.85B 收購 LG ES 俄亥俄廠合資持股（2026/2 結案）",
+     "src": "https://www.wardsauto.com/news/lg-energy-solution-honda-sells-ohio-ev-battery-plant-joint-venture-285B/808762/"
+    },
+    {
+     "name": "Panasonic",
+     "ticker": "6752.T",
+     "country": "JP",
+     "share": "Tesla 主供之一",
+     "products": "2170/4680 圓柱電芯",
+     "note": "北美 Tesla 供應"
+    },
+    {
+     "name": "中創新航 CALB / 國軒高科",
+     "ticker": "3931.HK / 002074.SZ",
+     "country": "CN",
+     "share": "CALB Q1 4.8% 升第四（+31.7%）",
+     "products": "動力電池",
+     "note": "CALB Q1 2026 市佔 4.8% +31.7% YoY 升至全球第四；中國二線份額擴張",
+     "src": "https://cnevpost.com/2026/05/06/global-ev-battery-market-share-jan-mar-2026/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "oem_global"
+    },
+    {
+     "id": "oem_china"
+    }
+   ],
+   "sources": [
+    {
+     "label": "全球 EV 電池市占 Q1 2026 (CnEVPost)",
+     "url": "https://cnevpost.com/2026/05/06/global-ev-battery-market-share-jan-mar-2026/"
+    }
+   ]
+  },
+  {
+   "id": "battery_material",
+   "row": "battery",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "電池材料 正極/負極/隔膜/電解液",
+   "nameEn": "Battery Materials",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "EV 電池四大材料（正極 NCM/LFP、負極石墨/矽碳、隔膜、電解液），中國高度集中。",
+   "marketSize": "null",
+   "growth": "中國主導",
+   "share": "null",
+   "analysis": "正極：容百科技（688005.SS，高鎳 NCM）、當升科技（300073.SZ）、湖南裕能（LFP）；負極：貝特瑞（835185.BJ，全球負極龍頭）、杉杉；隔膜：恩捷股份（002812.SZ）；電解液：天賜材料（002709.SZ）。與 ESS 共用材料供應鏈，中國掌握 ~70%+。",
+   "companies": [
+    {
+     "name": "容百科技 / 當升科技",
+     "ticker": "688005.SS / 300073.SZ",
+     "country": "CN",
+     "share": "高鎳正極領先",
+     "products": "NCM/NCA 三元正極",
+     "note": "高鎳三元主供"
+    },
+    {
+     "name": "貝特瑞 BTR",
+     "ticker": "835185.BJ",
+     "country": "CN",
+     "share": "負極全球龍頭",
+     "products": "石墨 / 矽碳負極",
+     "note": "負極材料第一"
+    },
+    {
+     "name": "恩捷 / 天賜材料",
+     "ticker": "002812.SZ / 002709.SZ",
+     "country": "CN",
+     "share": "隔膜/電解液龍頭",
+     "products": "隔膜 / 電解液",
+     "note": "與 ESS 共用"
+    },
+    {
+     "name": "Umicore / POSCO Future M",
+     "ticker": "UMI.BR / 003670.KS",
+     "country": "EU",
+     "share": "非中正極",
+     "products": "NCM 正極",
+     "note": "歐韓供應鏈"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "ev_battery"
+    }
+   ],
+   "sources": [
+    {
+     "label": "貝特瑞 (北交所)",
+     "url": "http://www.btrchina.com/"
+    }
+   ]
+  },
+  {
+   "id": "oem_global",
+   "row": "oem",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "全球整車 OEM（非中）",
+   "nameEn": "Global OEMs (ex-China)",
+   "competition": "competitive",
+   "single": "Tesla Q1 2026 交付 358K 重奪全球 BEV 龍頭；但歐洲被 BYD 反超、美國抵稅退場需求斷崖",
+   "desc": "非中國整車廠：Tesla 純電領導 + 傳統車廠（VW/GM/Ford/Toyota/Hyundai）電動化轉型。",
+   "marketSize": "整車主力",
+   "growth": "Tesla 重奪龍頭",
+   "share": "null",
+   "analysis": "Tesla（TSLA，Q1 2026 交付 358,023 重奪全球 BEV 龍頭、+6.3% YoY、超越 BYD 310,389、Model Y/3 + Cybertruck + 平價車）；Hyundai-Kia（005380.KS，IONIQ 系，美國銷售強）、VW（VOW3.DE）、GM（GM）、Ford（F）、Toyota（7203.T，固態電池路線）、Stellantis（STLA）。傳統車廠 EV 獲利分歧、部分放緩電動化時程。【絃外之音】Tesla 龍頭地位含金量下滑：歐洲銷量同期下滑、被 BYD 在地登記反超（BYD 歐盟 2025 登記 +276%、市佔 4.4%）；美國 7,500 美元抵稅額 2025/9/30 退場後，Q1 2026 美國新 EV 僅售 212,600 輛 -28% YoY、Tesla 占美國新 EV 比重由 49% 降至約 45%、新車庫存天數飆至 130 天。傳統車廠加速撤退：福特停產 F-150 Lightning、GM Ultium 俄亥俄(Warren)與田納西(Spring Hill)兩廠 1 月起停工約 6 個月、底特律三大累計 EV 減損達 530 億美元、Honda-GM 燃料電池 JV(FCSM)2026 底收攤。",
+   "companies": [
+    {
+     "name": "Tesla",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "全球 BEV #1（含金量下滑）",
+     "products": "Model Y/3 / Cybertruck / 平價車",
+     "note": "Q1 2026 交付 358,023 +6.3% 重奪龍頭、超越 BYD 310,389；惟歐洲被 BYD 反超、美國抵稅退場後占新 EV 比重由 49% 降至 ~45%",
+     "src": "https://insideevs.com/news/792143/tesla-no1-ev-maker-q1-2026/"
+    },
+    {
+     "name": "Hyundai-Kia",
+     "ticker": "005380.KS",
+     "country": "KR",
+     "share": "美國銷售強",
+     "products": "IONIQ 5/6/9 / EV3",
+     "note": "E-GMP 平台"
+    },
+    {
+     "name": "VW / GM / Ford",
+     "ticker": "VOW3.DE / GM / F",
+     "country": "DE",
+     "share": "傳統轉型",
+     "products": "ID / Ultium / Mustang Mach-E",
+     "note": "EV 獲利分歧、部分放緩"
+    },
+    {
+     "name": "Toyota / Stellantis",
+     "ticker": "7203.T / STLA",
+     "country": "JP",
+     "share": "後進+固態",
+     "products": "bZ 系 / 固態電池路線",
+     "note": "Toyota 固態 2027-28"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ev_battery"
+    },
+    {
+     "id": "power_sic"
+    },
+    {
+     "id": "rare_earth_magnet"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Tesla 重奪 EV 龍頭 Q1 2026",
+     "url": "https://carboncredits.com/tesla-reclaims-ev-crown-from-byd-in-q1-2026-tsla-stock/"
+    }
+   ]
+  },
+  {
+   "id": "oem_china",
+   "row": "oem",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "中國整車 OEM / 新勢力",
+   "nameEn": "China EV OEMs",
+   "competition": "redocean",
+   "single": "BYD 全球量第一陣營；中國新勢力（理想/小鵬/小米）+ 出口浪潮",
+   "desc": "中國 EV 整車：BYD 規模領導 + 造車新勢力 + 小米跨界，內捲價格戰 + 出口擴張。",
+   "marketSize": "全球最大市場",
+   "growth": "出口+內捲",
+   "share": "null",
+   "analysis": "BYD（002594.SZ/1211.HK，垂直整合電池+整車、中國 NEV 零售 1-3月 19.8% 居首、4月 21.4%）、理想 Li Auto（LI，增程式）、小鵬 XPeng（XPEV，智駕）、蔚來 NIO（NIO，換電）、小米（1810.HK，SU7/YU7 跨界爆紅）、吉利（0175.HK，13.9% 第二）、零跑 Leapmotor（9863.HK，Stellantis 入股）。【絃外之音】中國整車是真紅海（NEV 滲透率 5 月 62.9%、數十品牌價格戰、BYD Q1 淨利 -55%），但整車廠並非價值鏈贏家——利潤被上游 CATL（電池）與下游智駕/補貼政策夾殺；真正卡位者是『垂直整合電池』的 BYD 與『出海避內捲』的零跑/奇瑞。中國購置稅自 2026 年起由免徵改課 5%，重挫本土純電銷量（BYD Q1 國內年減 25.5%），逼龍頭加速出海。歐盟對中國 EV 共 27% 關稅（10% 基本 + 17% 反補貼）推升中系在地建廠：BYD 匈牙利 Szeged 廠（投資上看 €40 億、年產上看 30 萬輛）Q1 試產、Q2 量產（部分報導偏 Q4 2026），2026 目標海外銷售 160 萬輛（歐/北美/東協各約 1/3）、歐盟 2025 登記 +276% 達 159,869 輛、市佔 4.4% 反超 Tesla。海外才是中系毛利來源。",
+   "companies": [
+    {
+     "name": "BYD 比亞迪",
+     "ticker": "1211.HK",
+     "country": "CN",
+     "share": "全球量最大陣營（純電 Q1 暫居第二）",
+     "products": "王朝/海洋系 / 仰望",
+     "note": "Q1 純電 310,389 -25.5%（中國購置稅改課 5%）、淨利 ¥41億 -55%；海外加速：歐盟 2025 +276%、市佔 4.4% 反超 Tesla，匈牙利 Szeged 廠 Q2 量產規避 27% 關稅、2026 目標海外 160 萬輛",
+     "src": "https://carboncredits.com/byd-surges-272-in-europe-sales-as-tesla-slumps/"
+    },
+    {
+     "name": "小米 Xiaomi",
+     "ticker": "1810.HK",
+     "country": "CN",
+     "share": "跨界爆紅",
+     "products": "SU7 / YU7 / YU7 GT",
+     "note": "科技廠跨界；5月交付 32,759 輛 +16.9% YoY，惟 YU7 月銷自高峰回落、2026 目標 550K 承壓"
+    },
+    {
+     "name": "理想 / 小鵬 / 蔚來",
+     "ticker": "LI / XPEV / NIO",
+     "country": "CN",
+     "share": "新勢力三強",
+     "products": "增程 / 智駕 / 換電",
+     "note": "造車新勢力"
+    },
+    {
+     "name": "吉利 / 零跑 Leapmotor",
+     "ticker": "0175.HK / 9863.HK",
+     "country": "CN",
+     "share": "傳統+新勢力",
+     "products": "極氪 / 零跑",
+     "note": "零跑 Stellantis 入股出海"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ev_battery"
+    },
+    {
+     "id": "power_sic"
+    },
+    {
+     "id": "rare_earth_magnet"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "中國 EV 市占 (CnEVPost)",
+     "url": "https://cnevpost.com/"
+    }
+   ]
+  },
+  {
+   "id": "power_sic",
+   "row": "semi",
+   "col": 1,
+   "span": 2,
+   "kind": "rail",
+   "name": "功率半導體 SiC / IGBT / 電驅",
+   "nameEn": "Power Semi (SiC/IGBT) & Drivetrain",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · SiC（Wolfspeed/Infineon/STMicro/onsemi）是 800V EV 平台關鍵；與 AI server 功率半導體交會",
+   "desc": "EV 電驅與充電的功率半導體：SiC MOSFET（800V 平台）、IGBT、車用 MCU。",
+   "marketSize": "電氣化核心",
+   "growth": "800V 平台",
+   "share": "null",
+   "analysis": "SiC：Wolfspeed（WOLF，2025/9 完成 Chapter 11 重整、2026/6/9 發表 Gen 5 SiC MOSFET（1200V 比導通電阻較競品低達 27%、Mohawk Valley 已可量產）重回技術攻勢、SiC 基板領先但財務脆弱）、Infineon（IFX.DE，車用功率 #1）、STMicro（STM，Tesla SiC 供應）、onsemi（ON）、ROHM（6963.T）、中國三安光電（600703.SS）/士蘭微。【結構】SiC MOSFET 為高度寡占：Infineon/ST/Wolfspeed/onsemi/ROHM 五家合計 >90% 營收、Wolfspeed+Infineon+onsemi 三家 >60%；汽車占 SiC 需求 ~42%。IGBT：Infineon、富士電機、斯達半導（603290.SS）。車用 MCU：NXP/瑞薩/英飛凌。【絃外之音】Wolfspeed 雖完成重整、但 200mm SiC 基板仍是西方 EV 800V 平台的隱性單點——其財務脆弱期正是中國三安/天科合達切入車規基板的窗口，SiC 基板自主化是下一個地緣戰場。與 power（AI server 功率半導體）主題交會、SiC 產能被 AI data center 分流。2026 Infineon 馬來西亞 Kulim €5bn 200mm SiC fab 已成全球最大且運轉中，Wolfspeed 則於 2026 全面轉向 Mohawk Valley 200mm、關閉 Durham 150mm 線——西方寡占內部排序正重新洗牌、產能主導權向 Infineon 傾斜。",
+   "companies": [
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "country": "DE",
+     "share": "車用功率 #1",
+     "products": "SiC / IGBT / 車用 MCU",
+     "note": "電動車功率半導體龍頭"
+    },
+    {
+     "name": "STMicro / onsemi",
+     "ticker": "STM / ON",
+     "country": "EU",
+     "share": "SiC top-5 之列（top-5 占 90%+）",
+     "products": "SiC MOSFET",
+     "note": "Wolfspeed+Infineon+onsemi 三家 SiC MOSFET 合計 >60%；STM 供 Tesla SiC"
+    },
+    {
+     "name": "Wolfspeed",
+     "ticker": "WOLF",
+     "country": "US",
+     "share": "SiC 基板領先",
+     "products": "SiC 晶圓/元件",
+     "note": "2025/9 完成 Chapter 11 重整；2026/6/9 發表 Gen 5 SiC MOSFET（1200V 比導通電阻較競品 -27%）"
+    },
+    {
+     "name": "ROHM / 三安光電",
+     "ticker": "6963.T / 600703.SS",
+     "country": "JP",
+     "share": "SiC 日中",
+     "products": "SiC / 車用功率",
+     "note": "三安中國 SiC 主力"
+    },
+    {
+     "name": "富士電機 Fuji Electric",
+     "ticker": "6504.T",
+     "country": "JP",
+     "share": "IGBT/車用功率",
+     "products": "IGBT 模組 / 功率半導體",
+     "note": "日系 IGBT 大廠、EV 與工業功率供應"
+    },
+    {
+     "name": "斯達半導 / 士蘭微",
+     "ticker": "603290.SS / 600460.SS",
+     "country": "CN",
+     "share": "中國 IGBT/功率",
+     "products": "IGBT 模組 / SiC",
+     "note": "中國車用功率國產替代"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "oem_global"
+    },
+    {
+     "id": "oem_china"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Infineon 車用功率 IR",
+     "url": "https://www.infineon.com/cms/en/about-infineon/investor/"
+    }
+   ]
+  },
+  {
+   "id": "rare_earth_magnet",
+   "row": "semi",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "稀土永磁 / 牽引馬達 NdFeB Magnet",
+   "nameEn": "Rare-Earth Permanent Magnet",
+   "competition": "monopoly",
+   "single": "鎖喉點 · 中國掌握磁用稀土開採 ~60%、精煉 85-90%、永磁製造 ~90%；鏑/鋱出口管制可瞬斷 EV 馬達供應",
+   "desc": "EV 牽引馬達永磁（NdFeB 釹鐵硼，需鏑/鋱中重稀土耐溫），中國高度壟斷、為地緣戰場最關鍵單點。",
+   "marketSize": "null",
+   "growth": "地緣最關鍵單點",
+   "share": "null",
+   "analysis": "中國掌握磁用稀土開採約 60%、精煉 85-90%、永磁製造約 90%——是 EV 供應鏈最關鍵的單點瓶頸。2025/4 對鏑、鋱等中重稀土的兩用出口管制未隨 10 月那波（暫緩至 2026/11）解除，持續觸發出口許可義務，曾迫使歐美車廠降低稼動或短暫停產。【絃外之音】SiC/電池可多元化，但永磁的中重稀土（鏑/鋱）幾乎無西方替代產能——這是比電池更難解的單點：一紙出口許可即可瞬間掐斷 EV 牽引馬達供應，車廠被迫轉向無稀土馬達（如電勵磁/感應馬達）或囤貨，西方稀土自主化（MP Materials、Lynas）爬坡仍遠不足需求。",
+   "companies": [
+    {
+     "name": "中國稀土集團 / 北方稀土",
+     "ticker": "600111.SS",
+     "country": "CN",
+     "share": "開採 ~60% / 精煉 85-90%",
+     "products": "稀土氧化物 / 分離精煉",
+     "note": "鏑/鋱中重稀土兩用出口管制（2025/4 起未解除）為 EV 馬達供應最關鍵單點",
+     "src": "https://www.z2data.com/insights/rare-earths-are-becoming-the-ev-supply-chains-greatest-chokepoint"
+    },
+    {
+     "name": "金力永磁 / 中科三環",
+     "ticker": "300748.SZ / 000970.SZ",
+     "country": "CN",
+     "share": "永磁製造 ~90%",
+     "products": "NdFeB 釹鐵硼永磁",
+     "note": "全球 EV 牽引馬達永磁主供、中國集中度極高",
+     "src": "https://www.z2data.com/insights/rare-earths-are-becoming-the-ev-supply-chains-greatest-chokepoint"
+    },
+    {
+     "name": "MP Materials / Lynas",
+     "ticker": "MP / LYC.AX",
+     "country": "US",
+     "share": "西方自主（爬坡中）",
+     "products": "稀土開採/分離 / 永磁(規劃)",
+     "note": "西方稀土去風險主力、產能遠不足需求、難替代中重稀土",
+     "src": "https://www.z2data.com/insights/rare-earths-are-becoming-the-ev-supply-chains-greatest-chokepoint"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "oem_global"
+    },
+    {
+     "id": "oem_china"
+    }
+   ],
+   "sources": [
+    {
+     "label": "稀土成 EV 供應鏈最大單點 (Z2Data)",
+     "url": "https://www.z2data.com/insights/rare-earths-are-becoming-the-ev-supply-chains-greatest-chokepoint"
+    }
+   ]
+  },
+  {
+   "id": "ev_supply",
+   "row": "supply",
+   "col": 1,
+   "span": 2,
+   "kind": "rail",
+   "name": "Tier-1 / 充電 / 台廠供應",
+   "nameEn": "Tier-1 / Charging / Taiwan",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "傳統 Tier-1（Bosch/Denso/BorgWarner）、充電網（ChargePoint/Tesla Supercharger）與台灣 EV 供應鏈。",
+   "marketSize": "null",
+   "growth": "電氣化外溢",
+   "share": "null",
+   "analysis": "Tier-1：Bosch（未上市）、Denso（6902.T）、BorgWarner（BWA，電驅）、Aptiv（APTV）、Continental（CON.DE）；充電：ChargePoint（CHPT）、EVgo（EVGO）、Tesla Supercharger（NACS 成北美標準）、Wallbox（WBX）；台廠：鴻海 MIH（2317.TW，電動車平台代工）、富田電機（馬達、Tesla 供應）、和大（1536.TW，齒輪）、貿聯-KY（3665.TW，高壓線束）、台達電（2308.TW，車充/電驅）。",
+   "companies": [
+    {
+     "name": "鴻海 MIH / 富田電機",
+     "ticker": "2317.TW / —",
+     "country": "TW",
+     "share": "代工平台 / 馬達",
+     "products": "MIH EV 平台 / 驅動馬達",
+     "note": "富田曾供 Tesla 馬達；鴻海代工切入"
+    },
+    {
+     "name": "BorgWarner / Aptiv / Denso",
+     "ticker": "BWA / APTV / 6902.T",
+     "country": "US",
+     "share": "Tier-1 電驅",
+     "products": "電驅 / 電子電氣架構",
+     "note": "傳統 Tier-1 轉型"
+    },
+    {
+     "name": "ChargePoint / EVgo",
+     "ticker": "CHPT / EVGO",
+     "country": "US",
+     "share": "充電網",
+     "products": "充電樁 / 充電網營運",
+     "note": "Tesla NACS 成北美標準"
+    },
+    {
+     "name": "台達電 / 貿聯-KY / 和大",
+     "ticker": "2308.TW / 3665.TW / 1536.TW",
+     "country": "TW",
+     "share": "車充/線束/齒輪",
+     "products": "車載充電 / 高壓線束 / 減速齒輪",
+     "note": "台廠 EV 供應鏈"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "oem_global"
+    },
+    {
+     "id": "oem_china"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ChargePoint IR",
+     "url": "https://investors.chargepoint.com/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "battery_material",
+   "ev_battery"
+  ],
+  [
+   "ev_battery",
+   "oem_global"
+  ],
+  [
+   "ev_battery",
+   "oem_china"
+  ],
+  [
+   "power_sic",
+   "oem_global"
+  ],
+  [
+   "power_sic",
+   "oem_china"
+  ],
+  [
+   "rare_earth_magnet",
+   "oem_global"
+  ],
+  [
+   "rare_earth_magnet",
+   "oem_china"
+  ],
+  [
+   "ev_supply",
+   "oem_global"
+  ],
+  [
+   "ev_supply",
+   "oem_china"
+  ]
+ ],
+ "_proposed": {}
+}

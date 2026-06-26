@@ -1,0 +1,622 @@
+{
+ "id": "stablecoin_rwa",
+ "tab": "穩定幣/RWA",
+ "title": "穩定幣與真實世界資產代幣化金融基礎設施 (Stablecoins & RWA Tokenization Infrastructure)",
+ "subtitle": "穩定幣與 RWA（真實世界資產）代幣化是 2025–2026 最具確定性的 fintech×blockchain 垂直——把『美元』與『金融資產』重寫成可在公鏈 24/7 結算的程式化貨幣與證券。2025/7/18 GENIUS Act 立法給穩定幣聯邦合法地位，2026/7/18 為各監管機關（OCC/FDIC/Fed/Treasury）規則截止日；OCC 已給 Circle、Paxos、Ripple、Coinbase、BitGo、Fidelity 等國家信託銀行牌照（NTB），把『誰能合法發幣』收斂成牌照賽局。關鍵 2026 數字：穩定幣總市值突破 $3,200 億（USDT $1,896 億約 58%、USDC $776 億），鏈上 RWA 已過 $250 億、代幣化美債約 $148 億；Circle（CRCL）Q1'26 營收 $6.94 億（+20%）、USDC 流通 $770 億、鏈上交易量 $21.5 兆（+263%）、發行 ARC L1（$30 億 FDV 預售）；Coinbase（COIN）抽 Circle 平台外 USDC 儲備收益 50%、平台上 100%，季均託管 $190 億 USDC；BlackRock BUIDL AUM 約 $25 億、Ondo TVL 過 $30 億、Securitize 將以 $12.5 億估值併入 Cantor SPAC 上市（SECZ）。價值鏈：上游發行＋儲備託管（BK/BNY Mellon）→ 中游代幣化資產發行/平台（BUIDL/Ondo/Securitize，本主題樞紐）→ 清算交易所（ICE/NDAQ/DTCC 2026/7 啟動三年代幣化試點，2026/10 上線）＋預言機軌道（Chainlink）→ 分發通路（HOOD/COIN/V/MA）與企業國庫（MSTR）。絃外之音：真正的『賣鏟人』利潤不在發幣本身（GENIUS Act 禁止付息給持有人），而在『利差＋分潤＋牌照護城河＋代幣化平台抽成』——Circle 把儲備利息留給自己與 Coinbase（持有人零息），這套『負成本浮存金』模式才是穩定幣的真正商業模式；同理 RWA 的價值正從『發行人』移向『轉移代理＋預言機＋清算軌道』這層無人能繞過的基礎設施。⚠ 與既有主題重疊：發行人估值與加密交易所動能與 crypto/fintech 類主題相關；代幣化清算基建與 DTCC/交易所主題相鄰；本主題聚焦『美元穩定幣＋RWA 代幣化』金融基礎設施的上市櫃投資視角。非投資建議。",
+ "category": "fin",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "穩定幣總市值",
+   "v": "$3,200億+",
+   "sub": "USDT $1,896 億（~58%）+ USDC $776 億；鏈上 RWA $250 億+、代幣化美債 $148 億",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "2026/7/18 GENIUS Act 規則截止＋DTCC 7 月代幣化試點·風險：禁付息壓縮商業模式＋利率下行侵蝕利差＋牌照集中",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "issue",
+   "label": "上游：穩定幣發行 + 儲備託管（誰能合法發幣）",
+   "main": false
+  },
+  {
+   "id": "tokenize",
+   "label": "中游：鏈上代幣化資產發行 / 平台（美債・基金・股票）",
+   "main": true
+  },
+  {
+   "id": "infra",
+   "label": "基建：清算・交易所 / 預言機・區塊鏈軌道",
+   "main": false
+  },
+  {
+   "id": "distribute",
+   "label": "下游：分發通路 / 鏈上資產配置・企業國庫",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "stablecoin_issue",
+   "row": "issue",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "穩定幣發行（牌照賽局）",
+   "nameEn": "Stablecoin Issuance",
+   "competition": "oligopoly",
+   "single": "權力中心 · GENIUS Act 把發幣收斂成 OCC 國家信託牌照（NTB）賽局——Circle/Paxos/Ripple/Coinbase/BitGo/Fidelity 拿照者築起合規護城河",
+   "desc": "把美元 1:1 鑄成可在公鏈 24/7 流通的程式化貨幣——是整條鏈的源頭。GENIUS Act（2025/7/18）禁止發行人付息給持有人，發行人靠儲備利差＋分潤獲利（負成本浮存金）。",
+   "marketSize": "穩定幣總市值 $3,200 億+（99% 為美元計價）",
+   "growth": "Circle USDC 流通 +28% YoY；Tether 2026 目標獲利 >$100 億",
+   "share": "null",
+   "analysis": "雙寡占：Tether（USDT $1,896 億、約 58% 份額，未上市，Q1'26 淨利 $10.4 億、總資產近 $1,920 億、傳募 $200 億 @ $5,000 億估值）以離岸＋新興市場流動性稱霸；Circle（CRCL，USDC $776 億）走『美國合規＋機構分發』路線——Q1'26 營收 $6.94 億（+20%）、儲備收益 $6.53 億、鏈上交易量 $21.5 兆（+263%），並發行 ARC L1（$30 億 FDV、a16z/BlackRock/Apollo/ICE 入股）。Paxos（PYUSD/PayPal）、Ripple（RLUSD）為合規挑戰者。商業模式核心：GENIUS Act 禁付息→持有人零息→儲備利息全歸發行人＋分潤夥伴（負成本浮存金）；風險是聯準會降息侵蝕利差（Circle 儲備收益率已降 66bps）。",
+   "companies": [
+    {
+     "name": "Circle",
+     "ticker": "CRCL",
+     "country": "US",
+     "share": "USDC 發行人、美國合規龍頭",
+     "products": "USDC / USYC（代幣化貨幣基金）/ ARC L1",
+     "note": "Q1'26 營收 $6.94B(+20%)、USDC $770 億、鏈上交易 $21.5 兆(+263%)；OCC 給 NTB 牌照；ARC $30 億 FDV 預售",
+     "src": "https://www.circle.com/pressroom/circle-reports-first-quarter-2026-results"
+    },
+    {
+     "name": "Tether",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "USDT ~58% 份額（全球最大）",
+     "products": "USDT / Hadron 代幣化平台",
+     "note": "未上市；USDT $1,896 億、Q1'26 淨利 $10.4 億、總資產近 $1,920 億；傳募 $200 億 @ $5,000 億估值",
+     "src": "https://www.coindesk.com/business/2026/05/01/tether-posts-usd1-04-billion-q1-profit-reaches-usd8-23-billion-reserve-buffer"
+    },
+    {
+     "name": "Paxos",
+     "ticker": "—",
+     "country": "US",
+     "share": "PYUSD 技術發行人",
+     "products": "PYUSD（PayPal）/ USDG / 代幣化平台",
+     "note": "未上市；OCC NTB 牌照；OCC 點名 Paxos/PayPal 付息模式為 GENIUS Act 規範對象",
+     "src": "https://www.gibsondunn.com/occ-proposes-comprehensive-stablecoin-regulatory-framework-to-implement-the-genius-act/"
+    },
+    {
+     "name": "Ripple",
+     "ticker": "—",
+     "country": "US",
+     "share": "RLUSD 合規挑戰者",
+     "products": "RLUSD / 跨境支付",
+     "note": "未上市；OCC NTB 牌照；機構跨境結算切入",
+     "src": "https://www.fintechanddigitalassets.com/2026/03/occ-finalizes-rule-on-national-trust-bank-activities/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "reserve_custody"
+    },
+    {
+     "id": "rwa_tokenize"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Circle Q1 2026 財報（USDC 流通/儲備收益）",
+     "url": "https://www.circle.com/pressroom/circle-reports-first-quarter-2026-results"
+    },
+    {
+     "label": "OCC：GENIUS Act 穩定幣監管框架提案 (Gibson Dunn)",
+     "url": "https://www.gibsondunn.com/occ-proposes-comprehensive-stablecoin-regulatory-framework-to-implement-the-genius-act/"
+    },
+    {
+     "label": "Tether Q1 2026 獲利 $10.4 億 (CoinDesk)",
+     "url": "https://www.coindesk.com/business/2026/05/01/tether-posts-usd1-04-billion-q1-profit-reaches-usd8-23-billion-reserve-buffer"
+    }
+   ]
+  },
+  {
+   "id": "reserve_custody",
+   "row": "issue",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "儲備託管 / 準備金銀行",
+   "nameEn": "Reserve Custody & Reserve Banking",
+   "competition": "oligopoly",
+   "single": "隱形守門人 · BNY Mellon 託管 Circle USDC 儲備＋發行穩定幣儲備基金，是穩定幣『美元真的在嗎』的最後背書",
+   "desc": "穩定幣儲備（多為短期美債＋現金）必須由受監管託管銀行保管——這是穩定幣與傳統金融的接點，也是『信任』的物理錨點。",
+   "marketSize": "穩定幣儲備 $3,000 億+（多為短期美債/2a-7 貨基）",
+   "growth": "BNY 預估 2030 穩定幣 $1.5 兆、代幣化存款/貨基 $2.1 兆",
+   "share": "null",
+   "analysis": "BNY Mellon（BK）是穩定幣託管隱形龍頭：託管 Circle USDC 現金部位、推出穩定幣儲備基金、上線代幣化存款（早期參與者含 Circle/Paxos/Ripple/ICE/WisdomTree）——預估 2030 穩定幣達 $1.5 兆。Circle 儲備主體放在 BlackRock 管理的 Circle Reserve Fund（SEC 註冊 2a-7 政府貨幣基金）＋ BNY 等銀行現金。此層的投資邏輯：穩定幣規模愈大→託管／資產管理 AUM 與費收愈大，是『穩定幣中性受惠』——不押哪家發幣勝出，押整體規模成長。",
+   "companies": [
+    {
+     "name": "BNY Mellon",
+     "ticker": "BK",
+     "country": "US",
+     "share": "穩定幣儲備託管龍頭",
+     "products": "USDC 儲備託管 / 穩定幣儲備基金 / 代幣化存款",
+     "note": "託管 Circle USDC 現金；代幣化存款早期客戶含 Circle/Paxos/Ripple/ICE；估 2030 穩定幣 $1.5 兆",
+     "src": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-launches-stablecoin-reserves-fund-expanding-bnys-leadership-digital-assets-130451.html"
+    },
+    {
+     "name": "BlackRock",
+     "ticker": "BLK",
+     "country": "US",
+     "share": "USDC 儲備資產管理人",
+     "products": "Circle Reserve Fund（USDXX 2a-7 貨基）",
+     "note": "管理 USDC 儲備主體；同時為 BUIDL 發行人（見中游）；穩定幣規模成長＝AUM 順風",
+     "src": "https://www.circle.com/transparency"
+    },
+    {
+     "name": "State Street",
+     "ticker": "STT",
+     "country": "US",
+     "share": "託管/代幣化基金服務",
+     "products": "託管 / 與 Ondo/Galaxy 合作 SWEEP 代幣化基金",
+     "note": "傳統託管巨頭切入代幣化資產服務",
+     "src": "https://www.coindesk.com/business/2026/05/04/wall-street-giant-dtcc-plans-tokenized-securities-platform-with-july-pilot-october-launch"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "stablecoin_issue"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "rwa_tokenize"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BNY 推出穩定幣儲備基金（數位資產領導）",
+     "url": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-launches-stablecoin-reserves-fund-expanding-bnys-leadership-digital-assets-130451.html"
+    },
+    {
+     "label": "Circle 透明度頁（儲備組成）",
+     "url": "https://www.circle.com/transparency"
+    }
+   ]
+  },
+  {
+   "id": "rwa_tokenize",
+   "row": "tokenize",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "鏈上代幣化資產發行 / 平台（美債・基金・股票）",
+   "nameEn": "RWA Tokenization Issuers & Platforms",
+   "competition": "highgrowth",
+   "single": "全鏈樞紐 · 價值正從『發行人』移向 Securitize 這種『轉移代理＋發行平台』——它同時是 BUIDL/Apollo/Hamilton Lane 的鏈上骨幹，誰發幣都得過它",
+   "desc": "把美債、貨幣基金、私募信貸、股票『搬上鏈』，發行成可 24/7 結算、可組合的代幣——這是穩定幣之外 RWA 浪潮的核心，也是傳統資管巨頭與加密原生平台的交會點。",
+   "marketSize": "鏈上 RWA $250 億+；代幣化美債 $148 億（65,729 持有人）",
+   "growth": "Ondo TVL 過 $30 億；BUIDL AUM ~$25 億；Securitize 營收 +841% YoY",
+   "share": "null",
+   "analysis": "代幣化美債/貨基領跑：Circle USYC（~$29 億）、Ondo（ONDO，TVL 過 $30 億、OUSG/USDY，並推 Ondo Global Markets 430+ 檔代幣化美股/ETF）、BlackRock BUIDL（BLK，AUM ~$25 億，跨 8 鏈，由 Securitize 代幣化）、Franklin Templeton BENJI（BEN，~$25 億）。樞紐是平台層：Securitize（將以 $12.5 億估值併 Cantor SPAC 上市、代號 SECZ，營收 +841% YoY、預估 2026 營收 $1.1 億）為 BUIDL/Apollo/Hamilton Lane/VanEck 的轉移代理＋發行平台——『誰發幣都得過它』。私募/信貸代幣化由 Apollo（APO）、Hamilton Lane（HLNE）等推進。絃外之音：代幣化把『資產發行』與『資產通路』解綁，價值正從基金品牌移向『無人能繞過的發行/轉移代理基建』。",
+   "companies": [
+    {
+     "name": "Securitize",
+     "ticker": "—",
+     "country": "US",
+     "share": "代幣化平台/轉移代理龍頭",
+     "products": "BUIDL 轉移代理 / Apollo・Hamilton Lane・VanEck 代幣化",
+     "note": "未上市→將以 $12.5 億估值併 Cantor SPAC（SECZ）上市；營收 +841% YoY；預估 2026 營收 $1.1 億",
+     "src": "https://www.prnewswire.com/news-releases/securitize-the-leading-tokenization-platform-to-become-a-public-company-at-1-25b-valuation-via-business-combination-with-cantor-equity-partners-ii-302596208.html"
+    },
+    {
+     "name": "BlackRock",
+     "ticker": "BLK",
+     "country": "US",
+     "share": "代幣化基金 AUM 龍頭",
+     "products": "BUIDL（USD 機構數位流動性基金）",
+     "note": "BUIDL AUM ~$25 億、跨 8 鏈（ETH/SOL/Polygon…）；2026 擴大鏈上基金布局；由 Securitize 代幣化",
+     "src": "https://www.coindesk.com/business/2026/05/09/blackrock-deepens-tokenization-push-with-new-onchain-fund-offerings"
+    },
+    {
+     "name": "Ondo Finance",
+     "ticker": "—",
+     "country": "US",
+     "share": "RWA 原生代幣化龍頭",
+     "products": "OUSG / USDY 代幣化美債 / Ondo Global Markets（430+ 代幣化美股/ETF）",
+     "note": "ONDO 為加密代幣（非美股）；TVL 過 $30 億；與 State Street/Galaxy 合作 SWEEP；幣安/Binance 上架代幣化股",
+     "src": "https://yellow.com/research/ondo-finance-rwa-tokenization-20-billion-2026"
+    },
+    {
+     "name": "Franklin Resources",
+     "ticker": "BEN",
+     "country": "US",
+     "share": "代幣化貨基先行者",
+     "products": "BENJI（FOBXX 鏈上貨幣基金）",
+     "note": "代幣化美債/貨基 AUM ~$25 億；傳統資管最早上鏈者之一",
+     "src": "https://intellectia.ai/blog/tokenized-treasuries-2026-blackrock-buidl"
+    },
+    {
+     "name": "Apollo / Hamilton Lane",
+     "ticker": "APO",
+     "country": "US",
+     "share": "私募/信貸代幣化",
+     "products": "代幣化私募信貸 / ACRED 等",
+     "note": "透過 Securitize 把私募資產上鏈；私募代幣化是下一波 RWA 戰場",
+     "src": "https://www.cryptotimes.io/2026/05/23/blackrock-tokenized-treasury-filings-2026-the-rwa-boom-goes-institutional/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "stablecoin_issue"
+    },
+    {
+     "id": "reserve_custody"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "exchange_clearing"
+    },
+    {
+     "id": "oracle_chain"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Securitize $12.5 億估值併 Cantor SPAC 上市 (PR Newswire)",
+     "url": "https://www.prnewswire.com/news-releases/securitize-the-leading-tokenization-platform-to-become-a-public-company-at-1-25b-valuation-via-business-combination-with-cantor-equity-partners-ii-302596208.html"
+    },
+    {
+     "label": "BlackRock 深化代幣化、新增鏈上基金 (CoinDesk)",
+     "url": "https://www.coindesk.com/business/2026/05/09/blackrock-deepens-tokenization-push-with-new-onchain-fund-offerings"
+    },
+    {
+     "label": "Ondo Finance RWA 代幣化破 $20 億 (Yellow)",
+     "url": "https://yellow.com/research/ondo-finance-rwa-tokenization-20-billion-2026"
+    }
+   ]
+  },
+  {
+   "id": "exchange_clearing",
+   "row": "infra",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "清算 / 交易所基建（華爾街上鏈）",
+   "nameEn": "Clearing & Exchange Infrastructure",
+   "competition": "oligopoly",
+   "single": "卡位點 · DTCC 2026/7 啟動三年代幣化試點、10 月上線——把 $114 兆 DTC 託管資產的清算軌道往鏈上搬，ICE/NDAQ 同步把 USDC 當衍生品擔保品",
+   "desc": "代幣化資產要被機構採用，必須接上交易所掛牌、清算所結算、擔保品管理——這是華爾街既有軌道『上鏈』的環節，由交易所與中央清算機構掌握。",
+   "marketSize": "DTC 託管 $114 兆；可被代幣化的證券軌道",
+   "growth": "DTCC 試點 2026/7 啟動、2026/10 上線；50+ 機構參與",
+   "share": "null",
+   "analysis": "DTCC（未上市，由銀行/券商共有）2026/7 啟動三年代幣化試點（Russell 1000 成分股、主要 ETF、美債），2026/10 全面上線，串接 Canton/Stellar 鏈，50+ 機構（含 BlackRock/JPMorgan）參與——把 $114 兆 DTC 託管資產往鏈上搬。ICE（NYSE 母公司）與 Circle 簽 MOU，探索把 USDC/USYC 用作衍生品交易所與清算所的擔保品、並入股 Circle ARC；Nasdaq（NDAQ）布局代幣化證券交易與市場基建。投資邏輯：交易所/清算是寡占且具網路效應，代幣化是『既有護城河延伸到鏈上』——比發行人更難被顛覆。",
+   "companies": [
+    {
+     "name": "Intercontinental Exchange",
+     "ticker": "ICE",
+     "country": "US",
+     "share": "NYSE 母公司、衍生品/清算寡占",
+     "products": "NYSE / 衍生品交易所 / 清算所 + USDC 擔保品",
+     "note": "與 Circle 簽 MOU 探索 USDC/USYC 作擔保品；入股 Circle ARC 財團",
+     "src": "https://ir.theice.com/press/news-details/2025/ICE-and-Circle-Sign-MOU-to-Explore-Product-Innovation-Based-on-Circles-USDC-and-USYC-Digital-Assets/default.aspx"
+    },
+    {
+     "name": "Nasdaq",
+     "ticker": "NDAQ",
+     "country": "US",
+     "share": "交易所/市場基建",
+     "products": "代幣化證券交易 / 上市基建",
+     "note": "布局代幣化證券交易與結算；交易所軌道上鏈",
+     "src": "https://www.coindesk.com/business/2026/05/04/wall-street-giant-dtcc-plans-tokenized-securities-platform-with-july-pilot-october-launch"
+    },
+    {
+     "name": "DTCC",
+     "ticker": "—",
+     "country": "US",
+     "share": "美國中央證券清算壟斷",
+     "products": "代幣化證券服務 / 清算結算",
+     "note": "未上市（券商共有）；$114 兆 DTC 託管；2026/7 試點、10 月上線；串接 Canton/Stellar",
+     "src": "https://www.dtcc.com/news/2026/may/04/dtcc-advances-development-of-new-tokenization-service"
+    },
+    {
+     "name": "CME Group",
+     "ticker": "CME",
+     "country": "US",
+     "share": "衍生品清算",
+     "products": "加密/代幣化衍生品清算",
+     "note": "衍生品與擔保品清算延伸至數位資產",
+     "src": "https://www.dtcc.com/news/2026/may/04/dtcc-advances-development-of-new-tokenization-service"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "rwa_tokenize"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "distribution"
+    },
+    {
+     "id": "treasury_alloc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ICE 與 Circle 簽 MOU（USDC/USYC 產品創新）",
+     "url": "https://ir.theice.com/press/news-details/2025/ICE-and-Circle-Sign-MOU-to-Explore-Product-Innovation-Based-on-Circles-USDC-and-USYC-Digital-Assets/default.aspx"
+    },
+    {
+     "label": "DTCC 推進代幣化服務、50+ 機構參與",
+     "url": "https://www.dtcc.com/news/2026/may/04/dtcc-advances-development-of-new-tokenization-service"
+    }
+   ]
+  },
+  {
+   "id": "oracle_chain",
+   "row": "infra",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "預言機 / 區塊鏈軌道",
+   "nameEn": "Oracles & Blockchain Rails",
+   "competition": "highgrowth",
+   "single": "隱性單點 · Chainlink 的 Proof-of-Reserve＋CCIP 成 RWA 的『真實性與跨鏈』標準，並打通 SWIFT 11,500+ 銀行——無人能繞過的中間件",
+   "desc": "代幣化資產要可信，需要預言機驗證鏈下儲備/NAV、跨鏈互通、合規執行；底層公鏈/私鏈則提供結算軌道——這是把鏈下資產與鏈上世界連起來的中間件。",
+   "marketSize": "RWA 中間件＋結算鏈（隨 RWA 規模放大）",
+   "growth": "Chainlink CCIP Q1'26 跨鏈量過 $180 億；連 70+ 鏈、整合 SWIFT",
+   "share": "null",
+   "analysis": "Chainlink（LINK，加密代幣）是 RWA 事實標準中間件：Proof-of-Reserve 驗證鏈下儲備、NAVLink 發布代幣化基金 NAV、ACE 自動合規、CCIP 跨鏈互通（連 70+ 鏈、Q1'26 跨鏈量過 $180 億）；2026/4 完成與 SWIFT（11,500+ 銀行）的代幣化債券跨鏈試點——『RWA 規模愈大、每次轉移與驗證都過它』。結算軌道分公鏈（Ethereum、Solana）與機構私鏈（Canton/Digital Asset、Stellar、Circle ARC、Robinhood Chain）。此層多為加密代幣或未上市，投資人多透過上游發行人/下游通路間接參與。",
+   "companies": [
+    {
+     "name": "Chainlink",
+     "ticker": "—",
+     "country": "US",
+     "share": "RWA 預言機/跨鏈事實標準",
+     "products": "Proof-of-Reserve / NAVLink / CCIP / ACE 合規",
+     "note": "LINK 為加密代幣；CCIP 連 70+ 鏈、Q1'26 跨鏈量 >$180 億；2026/4 打通 SWIFT 代幣化債券",
+     "src": "https://chain.link/cross-chain"
+    },
+    {
+     "name": "Digital Asset (Canton)",
+     "ticker": "—",
+     "country": "US",
+     "share": "機構級結算鏈",
+     "products": "Canton Network（DTCC/美債代幣化軌道）",
+     "note": "未上市；DTCC 代幣化試點底層；隱私/合規導向機構鏈",
+     "src": "https://www.winston.com/en/blogs-and-podcasts/capital-markets-and-securities-law-watch/dtcc-partners-with-digital-asset-to-tokenize-dtc-custodied-us-treasury-securities"
+    },
+    {
+     "name": "Coinbase (Base)",
+     "ticker": "COIN",
+     "country": "US",
+     "share": "L2 結算軌道",
+     "products": "Base L2 / 鏈上結算",
+     "note": "Coinbase 自營 Base L2 承載部分 RWA/穩定幣結算（亦見下游通路）",
+     "src": "https://www.coindesk.com/business/2026/05/27/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "rwa_tokenize"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "distribution"
+    },
+    {
+     "id": "treasury_alloc"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Chainlink CCIP 跨鏈互通（連 70+ 鏈、SWIFT）",
+     "url": "https://chain.link/cross-chain"
+    },
+    {
+     "label": "DTCC 與 Digital Asset 用 Canton 代幣化美債 (Winston)",
+     "url": "https://www.winston.com/en/blogs-and-podcasts/capital-markets-and-securities-law-watch/dtcc-partners-with-digital-asset-to-tokenize-dtc-custodied-us-treasury-securities"
+    }
+   ]
+  },
+  {
+   "id": "distribution",
+   "row": "distribute",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "分發通路 / 鏈上交易與支付",
+   "nameEn": "Distribution · Onchain Trading & Payments",
+   "competition": "competitive",
+   "single": "最乾淨受惠者 · Coinbase 不發幣卻抽 Circle 平台外 USDC 儲備收益 50%、平台上 100%——『分發＋託管＋分潤』三吃，季均託管 $190 億 USDC",
+   "desc": "把穩定幣與代幣化資產送到終端用戶手上：加密交易所、券商 App、支付網路——通路決定 USDC/RWA 的真實用量，也是『分潤＋手續費＋託管費』的收割點。",
+   "marketSize": "AI Agent 之外最大鏈上金流通路（隨採用放大）",
+   "growth": "Coinbase 季均託管 $190 億 USDC；Robinhood 喊『代幣化超級週期』",
+   "share": "null",
+   "analysis": "Coinbase（COIN）是穩定幣『最乾淨受惠者』：不承擔發行風險，卻抽 Circle 平台外 USDC 儲備收益 50%、平台上 100%（合約每三年自動續、不可終止），季均託管 $190 億 USDC，並自營 Base L2——分發＋託管＋分潤三吃。Robinhood（HOOD）推 200+ 代幣化美股/ETF（EU 先行）、自建 Robinhood Chain（Arbitrum 技術），CEO 喊『代幣化超級週期』。支付網路 Visa（V）/Mastercard（MA）把穩定幣納入結算軌道（Mastercard 主導 Global Dollar Network，夥伴含 Robinhood/Kraken/DBS）——它們是穩定幣『接入既有 $兆級支付量』的橋。",
+   "companies": [
+    {
+     "name": "Coinbase",
+     "ticker": "COIN",
+     "country": "US",
+     "share": "USDC 最大分發/託管/分潤",
+     "products": "交易所 / 託管 / USDC 分潤 / Base L2",
+     "note": "抽 Circle 平台外 USDC 收益 50%、平台上 100%；合約每三年自動續不可終止；季均託管 $190 億 USDC",
+     "src": "https://decrypt.co/312757/coinbase-circles-residual-usdc-reserve-revenue-filing"
+    },
+    {
+     "name": "Robinhood",
+     "ticker": "HOOD",
+     "country": "US",
+     "share": "代幣化股票零售先行",
+     "products": "200+ 代幣化美股/ETF / Robinhood Chain",
+     "note": "EU 先行 200+ 代幣化股；自建 Arbitrum 系 L2；CEO 喊『代幣化超級週期』",
+     "src": "https://fortune.com/2026/04/29/robinhood-ceo-says-a-tokenization-supercycle-is-underway-firm-looks-past-earnings-miss/"
+    },
+    {
+     "name": "Visa",
+     "ticker": "V",
+     "country": "US",
+     "share": "支付網路、穩定幣結算",
+     "products": "穩定幣結算軌道 / 代幣化美元接口",
+     "note": "把 USDC 等納入卡組織結算；穩定幣接入 $兆級支付量的橋",
+     "src": "https://www.bvp.com/atlas/stablecoins-from-defi-primitive-to-global-financial-infrastructure"
+    },
+    {
+     "name": "Mastercard",
+     "ticker": "MA",
+     "country": "US",
+     "share": "支付網路、Global Dollar Network",
+     "products": "穩定幣結算 / Global Dollar Network",
+     "note": "主導 GDN（夥伴含 Robinhood/Kraken/DBS）；穩定幣支付通路",
+     "src": "https://www.bvp.com/atlas/stablecoins-from-defi-primitive-to-global-financial-infrastructure"
+    },
+    {
+     "name": "凱基金控（凱基銀行）",
+     "ticker": "2883.TW",
+     "country": "TW",
+     "share": "台灣穩定幣/數位資產先行者",
+     "products": "與 Tether 簽 MOU / 虛擬資產保管試辦",
+     "note": "台股代表：凱基銀與 Tether 簽 MOU 推跨境金融；獲核准試辦虛擬資產保管；台灣 2026 下半年擬推 NTD 穩定幣",
+     "src": "https://abmedia.io/kgi-bank-tether-mou-stablecoin"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "exchange_clearing"
+    },
+    {
+     "id": "oracle_chain"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Coinbase 抽 Circle USDC 儲備收益分潤結構 (Decrypt)",
+     "url": "https://decrypt.co/312757/coinbase-circles-residual-usdc-reserve-revenue-filing"
+    },
+    {
+     "label": "Robinhood CEO：代幣化超級週期 (Fortune)",
+     "url": "https://fortune.com/2026/04/29/robinhood-ceo-says-a-tokenization-supercycle-is-underway-firm-looks-past-earnings-miss/"
+    },
+    {
+     "label": "凱基銀與 Tether 簽 MOU（台灣穩定幣）(ABMedia)",
+     "url": "https://abmedia.io/kgi-bank-tether-mou-stablecoin"
+    }
+   ]
+  },
+  {
+   "id": "treasury_alloc",
+   "row": "distribute",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "鏈上資產配置 / 企業國庫",
+   "nameEn": "Onchain Allocation & Corporate Treasury",
+   "competition": "competitive",
+   "single": "需求終端 · 企業把資產負債表搬上鏈——Strategy 以發債/發股囤幣的『加密國庫』模式，是代幣化資產與穩定幣的終極需求池",
+   "desc": "代幣化資產與穩定幣的終端需求：企業國庫配置（持幣/持代幣化美債）、機構鏈上現金管理、DeFi 收益配置——回頭拉動上述全層的鑄造、託管、清算與通路用量。",
+   "marketSize": "企業/機構鏈上資產配置（早期、滲透率低）",
+   "growth": "代幣化美債 65,729 持有人；企業國庫上鏈剛起步",
+   "share": "null",
+   "analysis": "需求端是整條鏈的成長引擎：企業把閒置現金配置到代幣化美債/貨基（24/7、可組合、即時結算）取代傳統貨基；Strategy（MSTR）以發債/發股囤比特幣的『加密國庫』模式為極端代表，帶動企業資產負債表上鏈的論述。機構透過代幣化美債做鏈上現金管理（65,729 持有人）；DeFi 協議把代幣化美債當底層收益資產。絃外之音：穩定幣（零息美元）＋代幣化美債（生息美元）正在鏈上重建『貨幣市場』——誰掌握『鏈上現金＋鏈上美債』的配置入口，誰就掌握下一代資金沉澱地。",
+   "companies": [
+    {
+     "name": "Strategy",
+     "ticker": "MSTR",
+     "country": "US",
+     "share": "企業加密國庫旗艦",
+     "products": "比特幣國庫 / 發債發股囤幣",
+     "note": "『加密國庫』模式代表；帶動企業資產負債表上鏈論述（高槓桿/高波動風險）",
+     "src": "https://www.bvp.com/atlas/stablecoins-from-defi-primitive-to-global-financial-infrastructure"
+    },
+    {
+     "name": "機構/企業客戶",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "鏈上現金/美債配置終端",
+     "products": "代幣化美債/貨基配置 / 鏈上現金管理",
+     "note": "用量回饋全層；企業國庫上鏈滲透率仍低＝成長空間",
+     "src": "https://app.rwa.xyz/treasuries"
+    },
+    {
+     "name": "DeFi 協議（底層收益）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "代幣化美債需求方",
+     "products": "把 OUSG/BUIDL 等當底層收益資產",
+     "note": "DeFi 把代幣化美債組合進收益策略；鏈上『貨幣市場』需求",
+     "src": "https://app.rwa.xyz/treasuries"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "exchange_clearing"
+    },
+    {
+     "id": "oracle_chain"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "RWA.xyz：代幣化美債（持有人/規模）",
+     "url": "https://app.rwa.xyz/treasuries"
+    },
+    {
+     "label": "Bessemer：穩定幣從 DeFi 原語到全球金融基建",
+     "url": "https://www.bvp.com/atlas/stablecoins-from-defi-primitive-to-global-financial-infrastructure"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "stablecoin_issue",
+   "reserve_custody"
+  ],
+  [
+   "stablecoin_issue",
+   "rwa_tokenize"
+  ],
+  [
+   "reserve_custody",
+   "rwa_tokenize"
+  ],
+  [
+   "rwa_tokenize",
+   "exchange_clearing"
+  ],
+  [
+   "rwa_tokenize",
+   "oracle_chain"
+  ],
+  [
+   "exchange_clearing",
+   "distribution"
+  ],
+  [
+   "exchange_clearing",
+   "treasury_alloc"
+  ],
+  [
+   "oracle_chain",
+   "distribution"
+  ],
+  [
+   "oracle_chain",
+   "treasury_alloc"
+  ]
+ ],
+ "_proposed": {}
+}

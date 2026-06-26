@@ -1,0 +1,1067 @@
+{
+ "id": "leosat",
+ "tab": "低軌衛星",
+ "title": "低軌衛星 (LEO) 供應鏈",
+ "subtitle": "Low-Earth-Orbit Satellite — 以 SpaceX Starlink 為核心的低軌寬頻/手機直連（D2C）巨型星系生態。價值鏈：星系營運（太空段）→ 衛星製造/酬載/發射 → 地面設備（用戶終端/相位陣列天線/閘道站）→ RF 晶片/元件 → 終端應用（海事/航空/偏鄉/車用/IoT/國防）。Starlink 在 LEO 寬頻近乎獨佔（Q1 2026：1,030 萬用戶、~9,600 顆在軌、2025 Connectivity 營收 $114 億；SpaceX 2026/06/12 完成 IPO（SPCX 掛牌 Nasdaq、發行價 $135、募資 $750 億創史上最大、首日收 $161 漲 19%、市值 >$2 兆、美股第六大））。Amazon 以 $115.7 億收購 Globalstar（2026/04）+ Apple 衛星服務轉入 Amazon Leo 生態，D2C 格局重組。台灣是地面設備與 RF 元件的關鍵供應地，且多為已上市可投資標的；惟多數衛星營收占比仍低，屬概念/驗證階段。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 14
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "50+"
+  },
+  {
+   "k": "近獨佔／客戶獨家單點",
+   "v": 6,
+   "sub": "Starlink·SpaceX 發射·華通衛星板·昇達科·同欣電·味之素 ABF",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "space",
+   "label": "衛星 · 酬載 · 發射 Space Segment",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "星系營運 → 地面設備 → 終端應用 Operators · Ground · Demand",
+   "main": true
+  },
+  {
+   "id": "ground",
+   "label": "地面設備 · 晶片 Ground & Chips",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "s-mfg",
+   "row": "space",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "衛星本體 / 平台製造",
+   "nameEn": "Satellite Bus / Platform",
+   "competition": "monopoly",
+   "single": "SpaceX 自製 Starlink 衛星（垂直整合），外部廠商難切入本體；台廠僅供零組件",
+   "desc": "巨型星系的衛星本體/平台（結構、電源、姿態控制、星間鏈路）。SpaceX 自製、量產攤平成本是核心護城河。",
+   "marketSize": "垂直整合",
+   "growth": "SpaceX >90%",
+   "share": "null",
+   "analysis": "SpaceX Starlink 自製衛星（v2 mini/v2、S-1 揭露每週 70 顆、年化 ~3,640 顆）垂直整合主導；Airbus（OneWeb Gen-1 與 OneWeb Satellites 合資、Gen-2 規劃）、中系上海垣信（千帆/G60，2026 起高密度發射）、中國星網（GW 國家隊）。台廠僅供本體用 PCB/RF/封裝零組件，非整機。",
+   "companies": [
+    {
+     "name": "SpaceX (Starlink)",
+     "ticker": "—",
+     "country": "US",
+     "share": "自製量產主導",
+     "products": "Starlink v2 mini / v2 / 星間雷射鏈路",
+     "note": "S-1 IPO 申請 2026/05；2025 Connectivity $114 億；每週 70 顆；H2 2026 起 Starship 發射計畫",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001181412/000162828026036936/spaceexplorationtechnologi.htm"
+    },
+    {
+     "name": "Airbus",
+     "ticker": "AIR.PA",
+     "country": "EU",
+     "share": "OneWeb 製造",
+     "products": "OneWeb Gen-1/Gen-2 平台",
+     "note": "OneWeb Satellites 合資（法/EU）"
+    },
+    {
+     "name": "上海垣信 Spacesail",
+     "ticker": "—",
+     "country": "CN",
+     "share": "千帆/G60 營運製造",
+     "products": "Qianfan 衛星",
+     "note": "上海國資、2025/12 增資 ~$932M（未上市）",
+     "src": "https://en.wikipedia.org/wiki/Qianfan"
+    },
+    {
+     "name": "中國星網 China SatNet",
+     "ticker": "—",
+     "country": "CN",
+     "share": "GW 國家隊",
+     "products": "GuoWang 星系",
+     "note": "國資、~1.3 萬顆規劃（未上市）"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-operator"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Qianfan / 上海垣信 千帆星系 (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Qianfan"
+    }
+   ]
+  },
+  {
+   "id": "s-launch",
+   "row": "space",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "發射服務",
+   "nameEn": "Launch Services",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · SpaceX Falcon 9 可回收火箭佔全球商業發射運能絕大多數，自發 Starlink",
+   "desc": "把衛星送上低軌的火箭發射服務。可回收火箭使單位發射成本崩跌，是巨星系經濟性的根本。",
+   "marketSize": "近獨佔",
+   "growth": "可回收降本",
+   "share": "null",
+   "analysis": "SpaceX Falcon 9（可回收、自發 Starlink、占全球商業入軌運能絕大多數）近乎獨佔，Starship V3 已 2026/05/22 首飛、單箭可載 150 噸（~Falcon 9 十倍）H2 2026 起載 V3 衛星；Rocket Lab（Electron 小型、Neutron 中型 2026 首飛、2025/12 獲 SDA $816M 18 顆衛星訂單）為西方第二極；★Blue Origin New Glenn 2026/05/28 靜火爆炸毀唯一發射台 LC-36、Amazon Leo 24 趟訂單凍結（業界估復飛需 12–18 月），加上 ULA Vulcan 自 2 月 USSF-87 SRB 噴嘴燒穿停飛，西方非 SpaceX 運能近乎全斷——SpaceX 發射獨佔地位反而更強。中系長征/民營（藍箭等）支撐國產星系。",
+   "companies": [
+    {
+     "name": "SpaceX",
+     "ticker": "—",
+     "country": "US",
+     "share": "商業入軌近獨佔",
+     "products": "Falcon 9 / Starship",
+     "note": "可回收、自發 Starlink（未上市）"
+    },
+    {
+     "name": "Rocket Lab",
+     "ticker": "RKLB",
+     "country": "US",
+     "share": "西方第二",
+     "products": "Electron / Neutron(2026)",
+     "note": "2025/12 SDA $816M 18 顆衛星約",
+     "src": "https://ts2.tech/en/rocket-lab-rklb-stock-in-focus-on-dec-20-2025-816m-sda-satellite-win-faster-launch-cadence-and-neutrons-2026-countdown/"
+    },
+    {
+     "name": "長征系 / 民營 (CASC 等)",
+     "ticker": "—",
+     "country": "CN",
+     "share": "國產星系運能",
+     "products": "長征火箭 / 可回收驗證",
+     "note": "支撐千帆/GW（多未上市）"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-operator"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Rocket Lab SDA 訂單與發射節奏 (TS2)",
+     "url": "https://ts2.tech/en/rocket-lab-rklb-stock-in-focus-on-dec-20-2025-816m-sda-satellite-win-faster-launch-cadence-and-neutrons-2026-countdown/"
+    }
+   ]
+  },
+  {
+   "id": "s-pcb",
+   "row": "space",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "衛星板 PCB / HDI",
+   "nameEn": "Satellite PCB / HDI",
+   "competition": "monopoly",
+   "single": "客戶獨家（待證）· 華通 Starlink 衛星 HDI 板獨家供應、Kuiper 第二大客戶；衛星板 2025 >150 億",
+   "desc": "衛星本體與酬載用高密度互連（HDI）印刷電路板，是台廠在 LEO『太空段』最實質的營收貢獻環節。",
+   "marketSize": "客戶獨家單點",
+   "growth": "發射量翻倍",
+   "share": "null",
+   "analysis": "華通為 Starlink 衛星 HDI 板獨家供應商（市場/券商說法、SpaceX 未官方背書），且 Amazon Kuiper 為第二大衛星板客戶，2025 衛星板營收 >150 億元，是少數營收已落地的台廠；燿華供地面/衛星板第二源；台光電（CCL）為上游材料。屬發射量翻倍直接受惠者。★絃外之音：華通實質為全球 LEO 衛星板『唯一可量產來源』（券商：most space PCBs exclusively/primarily supplied by Compeq），但帳面護城河被 SpaceX 垂直整合 v3 衛星與『SpaceX 未背書』兩大不確定性壓低估值；真正槓桿是 v3（每箭 60 顆、頻寬 ×10）量產起量＋Kuiper 雙吃，衛星板 2026 估上看 200 億（占營收 ~25%）。",
+   "companies": [
+    {
+     "name": "華通 Compeq",
+     "ticker": "2313.TW",
+     "country": "TW",
+     "share": "Starlink 衛星板獨家(待證)",
+     "products": "衛星 HDI / 高頻 PCB",
+     "note": "Kuiper 第二客戶、2025 衛星板 >151 億（占營收 ~20%）、Q1 2026 營收 195.5 億（+16.9% YoY）、2026 衛星板估 185–200 億（+22~30%）；惟 2026/04 單月營收 63.15 億（-9% MoM、-2.9% YoY、低於市場預期 ~11%），受 Starship 發射時程延後衝擊衛星板出貨 → 短期出貨繫於 V3 發射節奏",
+     "src": "https://money.udn.com/money/story/5710/9266904"
+    },
+    {
+     "name": "燿華 Yaohua",
+     "ticker": "2367.TW",
+     "country": "TW",
+     "share": "地面/衛星板第二源",
+     "products": "衛星/地面站 PCB",
+     "note": "概念股、占比驗證中"
+    },
+    {
+     "name": "台光電 EMC (Elite Material)",
+     "ticker": "2383.TW",
+     "country": "TW",
+     "share": "高頻 CCL",
+     "products": "低損耗銅箔基板",
+     "note": "衛星板上游材料"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "g-abf"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "s-mfg"
+    },
+    {
+     "id": "f-operator"
+    }
+   ],
+   "sources": [
+    {
+     "label": "華通 SpaceX 衛星板獨家夥伴 (理財周刊)",
+     "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/223955"
+    }
+   ]
+  },
+  {
+   "id": "s-payload",
+   "row": "space",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "酬載 RF 模組 / 太空封裝",
+   "nameEn": "Payload RF Module · Space Pkg",
+   "competition": "oligopoly",
+   "single": "市場傳 同欣電 供 SpaceX 衛星 RF 收發模組（待證，SpaceX 未背書）",
+   "desc": "衛星酬載的射頻收發（T/R）模組與高頻陶瓷封裝，每顆 LEO 衛星搭載大量收發單元，量隨發射數放大。",
+   "marketSize": "高門檻",
+   "growth": "每顆多收發",
+   "share": "null",
+   "analysis": "市場傳同欣電以高頻陶瓷封裝/RF 收發模組切入 SpaceX 衛星本體（待證，SpaceX 未官方背書），屬高技術門檻太空零組件；穩懋早期參與 SpaceX 計畫（星間高頻連結/地面/D2C）；台亞半導體（光感測）等為利基。國際酬載多 SpaceX 自製或航太大廠內製。",
+   "companies": [
+    {
+     "name": "同欣電 Tong Hsing",
+     "ticker": "6271.TW",
+     "country": "TW",
+     "share": "衛星 RF 收發模組(待證)",
+     "products": "高頻陶瓷封裝 / T-R 模組",
+     "note": "市場傳供 SpaceX 衛星本體",
+     "src": "https://statementdog.com/news/15659"
+    },
+    {
+     "name": "穩懋 WIN Semi",
+     "ticker": "3105.TWO",
+     "country": "TW",
+     "share": "早期參與 SpaceX",
+     "products": "GaAs/GaN MMIC 代工",
+     "note": "星間/地面/D2C 高頻；2026 衛星占基建~40%"
+    },
+    {
+     "name": "SpaceX (自製酬載)",
+     "ticker": "—",
+     "country": "US",
+     "share": "多自製",
+     "products": "相位陣列酬載/星間雷射",
+     "note": "垂直整合（未上市）"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "g-rf"
+    },
+    {
+     "id": "g-foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "s-mfg"
+    }
+   ],
+   "sources": [
+    {
+     "label": "同欣電 供 SpaceX 衛星 RF 模組 (財報狗)",
+     "url": "https://statementdog.com/news/15659"
+    }
+   ]
+  },
+  {
+   "id": "s-filter",
+   "row": "space",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "微波元件 / 濾波器 / 波導",
+   "nameEn": "Microwave · Filter · Waveguide",
+   "competition": "oligopoly",
+   "single": "昇達科 衛星純度最高台股 · 濾波器/波導管打入 Starlink 與 Kuiper、毛利 >50%",
+   "desc": "Ka/Ku/V 頻段微波被動元件——濾波器、波導管、雙工器、毫米波天線饋網，用於衛星酬載與地面站/閘道。",
+   "marketSize": "客戶獨家",
+   "growth": "純度最高指標",
+   "share": "null",
+   "analysis": "昇達科為台股『衛星純度最高』指標——濾波器/波導管同時打入 Starlink 與 Amazon Kuiper、毛利率 >50%，2026 衛星營收占比上看 8 成、全年營收成長目標 ~90%（屬營收已落地者）；科建/利基微波廠為次級。元件同時供太空段酬載與地面段閘道站。★絃外之音：昇達科真正成長引擎已從 SpaceX 換成 Amazon——截至 2026 Amazon Leo 已躍居昇達科『第一大客戶』超越先行者 Starlink，毛利率 2025 ~51%→2026 估 ~60%、在手 LEO 訂單 >18 億；台廠衛星純度雙雄（昇達科+華通）的二階驅動力其實是『Amazon 追趕 SpaceX 的軍備競賽』，Kuiper 部署越急、台廠交貨越猛。",
+   "companies": [
+    {
+     "name": "昇達科 Microelectronics(MTI)",
+     "ticker": "3491.TWO",
+     "country": "TW",
+     "share": "衛星純度最高台股",
+     "products": "濾波器/波導管/雙工器",
+     "note": "Starlink+Kuiper；Q1 2026 營收 10.2 億（+64.5% YoY）、LEO 占 80%（8.15 億、+131% YoY）、毛利率 58%、在手 LEO 訂單 18 億（H1 2026 交貨）",
+     "src": "https://news.cnyes.com/news/id/6416748"
+    },
+    {
+     "name": "科建 / 利基微波廠",
+     "ticker": "—",
+     "country": "TW",
+     "share": "次級利基",
+     "products": "微波被動元件",
+     "note": "概念/驗證中"
+    },
+    {
+     "name": "Rogers / 國際微波材料",
+     "ticker": "ROG",
+     "country": "US",
+     "share": "高頻基材",
+     "products": "微波 PCB 材料/介質",
+     "note": "濾波器上游材料"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "s-payload"
+    },
+    {
+     "id": "f-ground"
+    }
+   ],
+   "sources": [
+    {
+     "label": "昇達科 衛星營收占比與毛利 (經濟日報)",
+     "url": "https://money.udn.com/money/story/5607/9211751"
+    }
+   ]
+  },
+  {
+   "id": "f-operator",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "星系營運 / 衛星寬頻商",
+   "nameEn": "Constellation Operators",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · Starlink 2026/06 用戶破 1,200 萬（164 個市場；Q1 2026 1,030 萬、+10.5% YoY）、在軌逾 10,400 顆、每週產 70 顆（S-1 揭露）；2026/06/12 SPCX 完成史上最大 IPO；Amazon Leo 獲 FCC 鬆綁惟 7/31 後失發射優先權、其餘多在早期布建",
+   "desc": "經營低軌星系、直接面向終端用戶/電信商收取訂閱費的營運商，是整條鏈的需求源頭與鎖喉點。",
+   "marketSize": "鎖喉點",
+   "growth": "33% CAGR",
+   "share": "null",
+   "analysis": "Starlink 近乎獨佔（Q1 2026：1,030 萬用戶（164 個市場；2025 底 890 萬、2024 底 440 萬）、~9,600 顆在軌、Connectivity 2025 $114 億、Q1 2026 單季 Connectivity 營收 $32.6 億（占 SpaceX 總營收 ~69%、單季獲利 $11.9 億）、市場估全年用戶上看 ~1,700 萬；S-1 揭露製造線每週 70 顆；D2C 650 顆星座部署完成、150Mbps 目標、AT&T+T-Mobile+Verizon 頻譜共用 JV 籌組 2026/05）；Amazon Leo（原 Kuiper；331 顆在軌（2026/06）、FCC 2026/06 鬆綁 1,618 顆部署期限、惟 2026/07/31 後喪失發射優先權且須證明不干擾 SpaceX 等他星系，2026/06/17 LE-03（Ariane 6）將再射 36 顆；2026/01 FCC 批准 Gen2 +4,500 顆至 7,727 顆總量；2026/04 以 $115.7 億收購 Globalstar、Apple 衛星服務整入 Leo 生態）；Eutelsat OneWeb（LEO rev Q1 +65% YoY、440 顆 Gen-1 後繼星訂單、264 顆 Iris2 LEO for EU；2026/03 €50 億（~$58 億）再融資完成、340 顆 Gen-1 後繼星交 Airbus 製造）；AST SpaceMobile（Block 1 BlueBird 98.9 Mbps 峰值、目標 ~45 顆 2026 底、Q1 rev $14.7M、全年 $150–200M guidance、AT&T+Verizon 等 >$12 億注資）；Globalstar（被 Amazon 收購、Apple 服務轉入 Leo 後端，GSAT 獨立角色終結）、Iridium（Q1 2026 rev $219.1M +2%、2.56M 用戶 +5%、NTN Direct 年內推出）；中系千帆/GW（國家隊）。市場 2025 ~$77 億→2035 >4,300 萬訂閱（Informa）。",
+   "companies": [
+    {
+     "name": "SpaceX Starlink",
+     "ticker": "—",
+     "country": "US",
+     "share": "衛寬 ~76%（2026/06 突破 1,200 萬用戶）",
+     "products": "LEO 寬頻 + D2C 手機直連（150Mbps 目標）",
+     "note": "2026/06/04 用戶破 1,200 萬（160+ 國）；2026/06/12 SPCX 完成 IPO（價 $135、首日收 $161、市值 ~$2.1 兆）；Starship V3 已 5/22 首飛、V3 衛星 H2 2026 起量產（單箭 60 Tbps）；2026 已射逾 1,500 顆",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001181412/000162828026036936/spaceexplorationtechnologi.htm"
+    },
+    {
+     "name": "Amazon Leo（前 Kuiper）",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "追趕者（FCC 期限危機）",
+     "products": "LEO 寬頻 + D2D（收購 Globalstar 後）",
+     "note": "發射斷鏈：New Glenn 2026/05/28 爆炸毀 LC-36，24 趟 New Glenn 訂單全面凍結、Gen2 部署恐延至 2027（Vulcan 自 2/USSF-87 仍停飛）；已發射 367 顆生產衛星；FCC 2026/06 鬆綁期限惟 7/31 後失發射優先權（且須證明不干擾他星系）；2026/04 $115.7 億收購 Globalstar、Apple 衛星服務轉入 Leo",
+     "src": "https://www.geekwire.com/2026/fcc-gives-amazon-leo-more-leeway-on-its-satellite-deployment-schedule/"
+    },
+    {
+     "name": "Eutelsat OneWeb",
+     "ticker": "ETL.PA",
+     "country": "EU",
+     "share": "企業/政府",
+     "products": "~648 顆 LEO（1200km）+ 440 顆 Gen-1 後繼星訂單",
+     "note": "LEO rev Q1 +65% YoY；Iris2 264 顆 LEO（EU 主權 €2.1B）；2026/02 取得法國 Bpifrance ECA 出口信貸 ~€10 億（€975M 國家擔保）採購 Airbus 340 顆 Gen-2 衛星（2026 底起交付）；€7.16 億增資後法國政府持股 ~29.99%、Bharti ~18.7%（法政府另否決地面段出售案視為國防戰略資產）；340 顆後繼星交 Airbus（總計 1,040 顆星座）、Rocket Lab 供太陽能板（~80kW）；航海/航空/政府（法/EU）",
+     "src": "https://www.satellitetoday.com/finance/2026/02/11/eutelsat-secures-french-export-credit-financing-to-fund-new-oneweb-satellites/"
+    },
+    {
+     "name": "AST SpaceMobile",
+     "ticker": "ASTS",
+     "country": "US",
+     "share": "D2C 手機直連",
+     "products": "BlueBird Block1/2 太空基地台",
+     "note": "Q1 rev $14.7M、FY2026 $150–200M guidance；2026/06/17 已成功以 Falcon 9 發射 BlueBird 8-10（Block 2、史上最大商用相位陣列、近 200Mbps D2C，因 New Glenn NG-3 失利改由 SpaceX 發射）、美 FCC 已核准商用 SCS D2D 服務；目標 ~45 顆 2026 底；AT&T+Verizon >$12 億注資",
+     "src": "https://www.businesswire.com/news/home/20260617420856/en/AST-SpaceMobile-Announces-Successful-Orbital-Launch-of-BlueBirds-8-9-and-10"
+    },
+    {
+     "name": "Amazon Leo（Globalstar 整併）/ Iridium",
+     "ticker": "AMZN / IRDM",
+     "country": "US",
+     "share": "D2D 整入 Leo / 窄帶 IoT",
+     "products": "Apple 衛星服務轉入 Amazon Leo / L 頻 IoT 語音 NTN",
+     "note": "Globalstar：2026/04 Amazon $115.7 億收購協議（預計 2027 完成）、Apple 服務整入 Leo；Iridium Q1 2026 rev $219.1M +2%、2.56M 用戶 +5%、NTN Direct 服務年內推出",
+     "src": "https://investors.globalstar.com/news-releases/news-release-details/amazon-acquire-globalstar-and-expand-amazon-leo-satellite/"
+    },
+    {
+     "name": "千帆 Qianfan / 中國星網 GW",
+     "ticker": "— / —",
+     "country": "CN",
+     "share": "國家隊",
+     "products": "G60 / GuoWang LEO",
+     "note": "2026 起高密度發射（未上市）"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "s-mfg"
+    },
+    {
+     "id": "s-launch"
+    },
+    {
+     "id": "s-pcb"
+    },
+    {
+     "id": "f-ground"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "衛星寬頻訂閱與市占（Deloitte 2026 預測）",
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/next-gen-satellite-internet.html"
+    },
+    {
+     "label": "Starlink ~940 萬用戶 / 2025 營收 (idemest)",
+     "url": "https://idemest.com/reports/starlink-company-profile/"
+    }
+   ]
+  },
+  {
+   "id": "f-ground",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "地面終端 / 相位陣列天線 / 閘道站",
+   "nameEn": "User Terminal · Phased Array · Gateway",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "用戶端終端（UT/天線碟）、平板相位陣列天線、低雜訊降頻（LNB）、閘道站（Gateway）整機與結構件。這是台灣最完整、最可投資的 LEO 環節。",
+   "marketSize": "台廠重倉",
+   "growth": "發射翻倍拉動",
+   "share": "null",
+   "analysis": "相位陣列天線（衛星時速 ~2.7 萬 km/h、需電子相位掃描追星）是用戶終端核心。台廠：啟碁（地面接收站/天線/LNB）、台揚（寬頻衛通設備、供 SpaceX/OneWeb/Kymeta 地面站）、智易（UT/CPE 整機）、金寶（SpaceX 地面接收站整機組裝）、正文（相位陣列 UT/高頻天線模組）、耀登（RF 天線設計+量測認證，衛星占 3–5%）、譁裕（天線）、公準（散熱/結構）、信錦（地面接收結構件、已入 Starlink）。多數衛星營收占比仍低 → 概念/驗證中。",
+   "companies": [
+    {
+     "name": "啟碁 WNC (Wistron NeWeb)",
+     "ticker": "6285.TW",
+     "country": "TW",
+     "share": "地面接收/天線/LNB",
+     "products": "用戶終端/天線/LNB",
+     "note": "SpaceX 供應鏈、寬頻網通整機；2026/05 營收 121.7 億（+34.8% YoY）連三月創歷史新高",
+     "src": "https://www.ctee.com.tw/news/20260610700266-439901"
+    },
+    {
+     "name": "台揚 Microelectronics(Microelec)",
+     "ticker": "2314.TW",
+     "country": "TW",
+     "share": "地面站/閘道設備",
+     "products": "寬頻衛通設備/Gateway",
+     "note": "供 SpaceX/OneWeb/Kymeta 地面站",
+     "src": "https://www.pocket.tw/school/report/perspective/6846/"
+    },
+    {
+     "name": "金寶 Kinpo / 智易 Arcadyan",
+     "ticker": "2312.TW / 3596.TW",
+     "country": "TW",
+     "share": "整機組裝 / UT-CPE",
+     "products": "地面站整機 / 用戶終端 CPE",
+     "note": "金寶=SpaceX 地面站整機代工(待證)"
+    },
+    {
+     "name": "正文 Gemtek / 耀登 Auden",
+     "ticker": "4906.TW / 3138.TW",
+     "country": "TW",
+     "share": "相位陣列 UT / RF 天線設計",
+     "products": "相位陣列終端/高頻天線 / 天線+量測認證",
+     "note": "耀登衛星占 3–5%（驗證中）",
+     "src": "https://www.ctee.com.tw/news/20260411700008-430201"
+    },
+    {
+     "name": "譁裕 SEMCO / 公準 / 信錦",
+     "ticker": "3419.TW / 3178.TWO / 1582.TW",
+     "country": "TW",
+     "share": "天線 / 散熱結構 / 結構件",
+     "products": "天線 / 散熱模組 / 地面接收結構件",
+     "note": "信錦已入 Starlink；公準散熱（概念股）"
+    },
+    {
+     "name": "群創 Innolux",
+     "ticker": "3481.TW",
+     "country": "TW",
+     "share": "FOPLP 地面端封裝（新進）",
+     "products": "Chip-First FOPLP 地面接收元件封裝",
+     "note": "傳以 Chip-First FOPLP 切入 SpaceX 地面接收元件、單一客戶良率 >90%、產線滿載月產 200 萬顆；2026 攻 RDL/TGV 製程；惟 SpaceX 規劃自建 PCB→FOPLP→晶圓自主供應鏈（德州 FOPLP 廠 Q3 2026 小量）為長期變數",
+     "src": "https://technews.tw/2025/12/31/innolux-spacex-order/"
+    },
+    {
+     "name": "群創 Innolux",
+     "ticker": "3481.TW",
+     "country": "TW",
+     "share": "FOPLP 地面端封裝（新進）",
+     "products": "Chip-First FOPLP 地面接收元件封裝",
+     "note": "傳以 Chip-First FOPLP 切入 SpaceX 地面接收元件、單一客戶良率 >90%、產線滿載月產 200 萬顆；2026 攻 RDL/TGV 製程；惟 SpaceX 規劃自建 PCB→FOPLP→晶圓自主供應鏈（德州 FOPLP 廠 Q3 2026 小量）為長期變數",
+     "src": "https://technews.tw/2025/12/31/innolux-spacex-order/"
+    },
+    {
+     "name": "Kymeta / 國際相位陣列",
+     "ticker": "—",
+     "country": "US",
+     "share": "平板相位陣列",
+     "products": "電子掃描平板天線",
+     "note": "車載/移動終端（未上市）"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "s-filter"
+    },
+    {
+     "id": "g-rf"
+    },
+    {
+     "id": "g-baseband"
+    },
+    {
+     "id": "g-abf"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-operator"
+    }
+   ],
+   "sources": [
+    {
+     "label": "台廠 LEO 地面設備供應鏈總整理 (口袋學堂)",
+     "url": "https://www.pocket.tw/school/report/perspective/6846/"
+    },
+    {
+     "label": "SpaceX 上市前 台廠地面設備 (工商時報)",
+     "url": "https://www.ctee.com.tw/news/20260411700008-430201"
+    }
+   ]
+  },
+  {
+   "id": "f-demand",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "demand",
+   "name": "終端應用 / 市場需求",
+   "nameEn": "End-Market Demand",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "LEO 連網的最終市場：海事、航空（IFC 機上聯網）、偏鄉寬頻、車用/移動、IoT、國防/政府。需求是整條鏈的擴產動力。",
+   "marketSize": "跨市場",
+   "growth": ">30% CAGR",
+   "share": "null",
+   "analysis": "偏鄉/家用寬頻為 Starlink 最大基盤（美零售 ~72%）；航空 IFC（聯合航空等導入 Starlink）、海事（郵輪/商船）成長快；手機直連 D2C（Starlink/AST/Apple-Globalstar）是 2025-2027 最大新題材；國防/政府（SDA Tracking Layer、烏俄戰證需求）為高毛利錨點；車用/IoT 早期。全球衛寬訂閱 2025 ~1180 萬→2035 >4300 萬。",
+   "companies": [
+    {
+     "name": "偏鄉/家用寬頻",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "最大基盤",
+     "products": "固定/攜帶式寬頻",
+     "note": "Starlink 零售主力"
+    },
+    {
+     "name": "航空 IFC / 海事",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "高成長",
+     "products": "機上/船上聯網",
+     "note": "航空公司/郵輪導入"
+    },
+    {
+     "name": "手機直連 D2C",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "最大新題材",
+     "products": "Direct-to-Cell",
+     "note": "Starlink/AST/Apple-Globalstar"
+    },
+    {
+     "name": "國防 / 政府",
+     "ticker": "—",
+     "country": "US",
+     "share": "高毛利錨點",
+     "products": "SDA Tracking Layer / Golden Dome / 軍用通訊",
+     "note": "2026/05 SpaceX 連拿 Golden Dome 兩單：SB-AMTI $4.16B＋Starshield Space Data Network Backbone $2.29B（合計 ~$64.5 億）；戰場驗證需求",
+     "src": "https://thenextweb.com/news/spacex-4-billion-golden-dome-amti-satellite-contract"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-operator"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "衛星寬頻 2035 >4300 萬訂閱 (GlobeNewswire)",
+     "url": "https://www.globenewswire.com/news-release/2026/04/02/3267273/0/en/Satellite-Broadband-Reaches-an-Inflection-Point-as-Global-Subscriptions-Set-to-Exceed-43-Million-by-2035.html"
+    }
+   ]
+  },
+  {
+   "id": "g-rf",
+   "row": "ground",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "RF 前端 / GaN·GaAs PA / LNA",
+   "nameEn": "RF Front-End · GaN/GaAs PA",
+   "competition": "oligopoly",
+   "single": "STMicro 為 Starlink 相位陣列 RF 主力（>5M 顆/日，SpaceX 十年合作）；美系 Skyworks/Qorvo 退 Android/5G PA，穩懋/宏捷科/全新 接轉單；GaN 攻衛星/D2C",
+   "desc": "地面終端與酬載的射頻前端——功率放大器（PA，GaN/GaAs）、低雜訊放大器（LNA）、開關，決定收發效能。",
+   "marketSize": "台廠受惠",
+   "growth": "美系退場轉單",
+   "share": "null",
+   "analysis": "STMicro（BiCMOS 相位陣列 RF）為 Starlink 十年 RF 主力（已出貨 >50 億顆、>5M 顆/日 PLP 量產、2027 倍增）、Filtronic（GaN E-band SSPA）獲 SpaceX £47.3M 大單；美系 Skyworks/Qorvo 加速退出 Android/5G PA，台系穩懋（GaAs/GaN MMIC 代工龍頭）、宏捷科、全新接轉單；GaN PA 切入衛星酬載/D2C/相位陣列；立積（4968 Wi-Fi/RF FEM）為設計端。★絃外之音：Starlink 終端 RF 真正的鎖喉點是 STMicro（每終端含其 BiCMOS 晶片、>5M 顆/日、SpaceX 共同設計十年），台系 PA 三雄是『美系退場轉單』的二階受惠而非 Starlink 直供核心；終端天線整機 SpaceX 自製（日產 ~2 萬台），台廠難切相位陣列本體，卡位集中在 LNB/結構/地面站。",
+   "companies": [
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "country": "EU",
+     "share": "Starlink RF 主力(>5M 顆/日)",
+     "products": "BiCMOS 相位陣列 RF 晶片",
+     "note": "SpaceX 十年合作、2027 倍增（SEC 6-K 2025/12）",
+     "src": "https://investors.st.com/"
+    },
+    {
+     "name": "Filtronic",
+     "ticker": "FTC.L",
+     "country": "UK",
+     "share": "GaN E-band SSPA",
+     "products": "E-band 固態功率放大器",
+     "note": "SpaceX £47.3M 大單、FY2027 出貨",
+     "src": "https://www.filtronic.com/investors/"
+    },
+    {
+     "name": "穩懋 WIN Semi",
+     "ticker": "3105.TWO",
+     "country": "TW",
+     "share": "GaAs/GaN 代工龍頭",
+     "products": "PA/LNA/switch MMIC 代工",
+     "note": "美系退場最大受惠、2026 衛星占基建~40%",
+     "src": "https://money.udn.com/money/story/12040/9463306"
+    },
+    {
+     "name": "宏捷科 AWSC / 全新 VPEC",
+     "ticker": "8086.TWO / 2455.TW",
+     "country": "TW",
+     "share": "PA 代工/磊晶",
+     "products": "GaAs PA 代工 / 磊晶",
+     "note": "PA 三雄、轉單受惠"
+    },
+    {
+     "name": "立積 RichWave",
+     "ticker": "4968.TW",
+     "country": "TW",
+     "share": "RF FEM 設計",
+     "products": "Wi-Fi/RF 前端模組",
+     "note": "IoT/終端 RF"
+    },
+    {
+     "name": "Qorvo / Skyworks",
+     "ticker": "QRVO / SWKS",
+     "country": "US",
+     "share": "退 Android/轉高階",
+     "products": "PA/FEM/濾波器",
+     "note": "退出 5G/Android PA、釋出轉單"
+    },
+    {
+     "name": "MACOM / Qualcomm RF",
+     "ticker": "MTSI / QCOM",
+     "country": "US",
+     "share": "GaN/前端",
+     "products": "GaN PA / RF360 前端",
+     "note": "衛星/D2C 國際大廠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-ground"
+    },
+    {
+     "id": "s-payload"
+    }
+   ],
+   "sources": [
+    {
+     "label": "美系 RF 退場、PA 三雄轉單 (經濟日報)",
+     "url": "https://money.udn.com/money/story/12040/9463306"
+    }
+   ]
+  },
+  {
+   "id": "g-baseband",
+   "row": "ground",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "基頻 / NTN 數據機晶片",
+   "nameEn": "Baseband · NTN Modem",
+   "competition": "oligopoly",
+   "single": "MediaTek 完成 5G NTN 衛星基頻、Qualcomm/MTK 主導手機直連晶片",
+   "desc": "非地面網路（NTN）基頻/數據機晶片，讓手機與 IoT 裝置直連衛星（3GPP NTN 標準）。",
+   "marketSize": "5G NTN",
+   "growth": "NTN 標準化",
+   "share": "null",
+   "analysis": "MediaTek（5G NTN 衛星基頻晶片、與多家測試直連）、Qualcomm（X80 等含 NTN）主導手機直連數據機；Sateliot/Skylo 等 IoT-NTN 平台；台系 IC 設計（聯發科旗下、創意/世芯為 ASIC 服務）切入終端 SoC。NTN 標準化是 D2C 規模化關鍵。",
+   "companies": [
+    {
+     "name": "MediaTek 聯發科",
+     "ticker": "2454.TW",
+     "country": "TW",
+     "share": "5G NTN 基頻",
+     "products": "NTN 衛星數據機/手機 SoC",
+     "note": "完成 5G NTN 衛星連線測試"
+    },
+    {
+     "name": "Qualcomm",
+     "ticker": "QCOM",
+     "country": "US",
+     "share": "手機 NTN 主導",
+     "products": "Snapdragon X NTN modem",
+     "note": "D2C 晶片龍頭"
+    },
+    {
+     "name": "Skylo / Sateliot",
+     "ticker": "—",
+     "country": "EU",
+     "share": "IoT-NTN 平台",
+     "products": "NB-IoT NTN 服務",
+     "note": "IoT 直連平台（未上市）"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-ground"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MediaTek 5G NTN 衛星基頻 (商周低軌衛星)",
+     "url": "https://www.businessweekly.com.tw/business/blog/3021459"
+    }
+   ]
+  },
+  {
+   "id": "g-foundry",
+   "row": "ground",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "RF / 化合物半導體代工",
+   "nameEn": "RF & Compound Foundry",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "RF 晶片代工：RFSOI（聯電強項）、矽 RF、GaN-on-SiC（高功率），是衛星/D2C 射頻 IC 的製造基底。",
+   "marketSize": "製造基底",
+   "growth": "RFSOI/GaN",
+   "share": "null",
+   "analysis": "聯電（UMC，RFSOI 全球領先、RF 開關/天線調諧）、台積電（先進製程基頻 SoC、RF 後段）；化合物 GaN/GaAs 由穩懋/宏捷科代工（見 RF 前端）；GlobalFoundries（RFSOI）為國際同級。台灣為 RF 製造重鎮。",
+   "companies": [
+    {
+     "name": "聯電 UMC",
+     "ticker": "2303.TW",
+     "country": "TW",
+     "share": "RFSOI 全球領先",
+     "products": "RFSOI / RF switch / 天線調諧",
+     "note": "RF 前端晶圓代工龍頭"
+    },
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "基頻 SoC 製程",
+     "products": "先進製程 NTN SoC",
+     "note": "MTK/Qualcomm 基頻代工"
+    },
+    {
+     "name": "GlobalFoundries",
+     "ticker": "GFS",
+     "country": "US",
+     "share": "RFSOI 國際",
+     "products": "RFSOI / SiGe",
+     "note": "RF 代工國際同級"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "s-payload"
+    },
+    {
+     "id": "g-rf"
+    }
+   ],
+   "sources": [
+    {
+     "label": "低軌衛星台灣供應鏈 RF 代工 (Ray Sin notes)",
+     "url": "https://dotblogs.com.tw/Ray_Sin_blog/2026/02/17/Low_Earth_Orbit"
+    }
+   ]
+  },
+  {
+   "id": "g-abf",
+   "row": "ground",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "高頻載板 / 封裝基板",
+   "nameEn": "HF Substrate · ABF",
+   "competition": "oligopoly",
+   "single": "味之素 ABF 膜 95–98% 近獨佔（衛星/AiP 高階載板共用最深單點）",
+   "desc": "相位陣列天線封裝（AiP）、RF 模組與衛星板用的高頻/高層數載板與其關鍵增層膜（ABF）。",
+   "marketSize": "上游",
+   "growth": "AiP 拉動",
+   "share": "null",
+   "analysis": "AiP（Antenna-in-Package）與 RF 模組封裝拉動高頻載板需求：欣興（ABF FC-BGA）、景碩；最上游增層膜由味之素 ABF 膜 ~98% 近乎獨佔（>94% 絕緣增層膜份額、味之素自身 ~35% 終端市佔、top-3 ~99%；與 AI/HPC 封裝共用最深單點）；高頻 CCL 由台光電/聯茂供應。★絃外之音：LEO 相位陣列 AiP 與 AI 伺服器搶同一條 ABF 膜＋ABF 載板產能，衛星量起飛時最先被排擠的是 LEO（單價/量遠不如 AI GPU），ABF 是『跨主題共用單點』的隱性供給天花板。",
+   "companies": [
+    {
+     "name": "欣興 Unimicron / 景碩 Kinsus",
+     "ticker": "3037.TW / 3189.TW",
+     "country": "TW",
+     "share": "ABF/RF 載板",
+     "products": "FC-BGA / AiP 高頻載板",
+     "note": "AiP 封裝載板"
+    },
+    {
+     "name": "味之素 Ajinomoto",
+     "ticker": "2802.T",
+     "country": "JP",
+     "share": "ABF 膜 95–98%",
+     "products": "Ajinomoto Build-up Film",
+     "note": "高階載板最深單點"
+    },
+    {
+     "name": "台光電 / 聯茂",
+     "ticker": "2383.TW / 6213.TW",
+     "country": "TW",
+     "share": "高頻 CCL",
+     "products": "低損耗銅箔基板",
+     "note": "天線/RF 板材料"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-ground"
+    },
+    {
+     "id": "s-pcb"
+    }
+   ],
+   "sources": [
+    {
+     "label": "低軌衛星 PCB/載板供應鏈 (Yahoo 股市)",
+     "url": "https://tw.stock.yahoo.com/news/%E4%BD%8E%E8%BB%8C%E8%A1%9B%E6%98%9F%E5%95%86%E6%A9%9F%E7%88%86%E7%99%BC-%E8%8F%AF%E9%80%9A%E7%AA%81%E7%A0%B4%E7%99%BE%E5%85%83%E9%97%9C%E5%8D%A1-pcb%E8%8F%AF%E9%80%9A%E8%88%87abf%E6%AC%A3%E8%88%88%E5%B8%B6%E7%B5%A6%E6%8A%95%E8%B3%87%E4%BA%BA%E7%9A%84%E5%95%9F%E7%A4%BA%E9%8C%84-035340017.html"
+    }
+   ]
+  },
+  {
+   "id": "g-network",
+   "row": "ground",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "網通系統 / 交換 / 閘道路由",
+   "nameEn": "Networking · Switch · Gateway",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "閘道站的交換器、路由、伺服器與整機系統，把衛星流量接入地面網際網路骨幹。",
+   "marketSize": "系統整合",
+   "growth": "地面骨幹",
+   "share": "null",
+   "analysis": "智邦（資料中心/電信交換器，閘道站系統）、智易（CPE/路由整機）、光寶（電源/光通訊模組、地面站供電與連接）；中華電信等電信商建置 MEO/LEO 地面站（如與 SES O3b mPower 合作）。系統整合是地面骨幹環節。",
+   "companies": [
+    {
+     "name": "智邦 Accton",
+     "ticker": "2345.TW",
+     "country": "TW",
+     "share": "交換器系統",
+     "products": "閘道站交換/白牌網通",
+     "note": "地面骨幹整合"
+    },
+    {
+     "name": "光寶 Lite-On",
+     "ticker": "2301.TW",
+     "country": "TW",
+     "share": "電源/光模組",
+     "products": "地面站電源/光通訊",
+     "note": "供電與連接"
+    },
+    {
+     "name": "中華電信 CHT",
+     "ticker": "2412.TW",
+     "country": "TW",
+     "share": "電信營運/地面站",
+     "products": "MEO/LEO 地面站(Gateway)",
+     "note": "與 SES O3b mPower 合作",
+     "src": "https://www.pocket.tw/school/report/perspective/6846/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-ground"
+    }
+   ],
+   "sources": [
+    {
+     "label": "中華電信 SES 地面站 / 台廠網通 (口袋學堂)",
+     "url": "https://www.pocket.tw/school/report/perspective/6846/"
+    }
+   ]
+  },
+  {
+   "id": "g-test",
+   "row": "ground",
+   "col": 11,
+   "span": 1,
+   "kind": "rail",
+   "name": "量測 / 天線認證 / 測試",
+   "nameEn": "Measurement · Antenna Cert · Test",
+   "competition": "emerging",
+   "single": "null",
+   "desc": "毫米波/相位陣列天線的 OTA 量測、認證與 RF 測試服務，是純天線製造之上的系統性門檻。",
+   "marketSize": "服務壁壘",
+   "growth": "系統門檻",
+   "share": "null",
+   "analysis": "耀登整合 RF 設計＋量測設備＋測試認證服務，較純天線廠有更高系統壁壘（衛星占 3–5%）；國際儀器商 Keysight/R&S 提供毫米波/NTN 測試平台。認證與量測是 LEO 終端進入供應鏈的隱形門檻。",
+   "companies": [
+    {
+     "name": "耀登 Auden",
+     "ticker": "3138.TW",
+     "country": "TW",
+     "share": "天線設計+量測認證",
+     "products": "RF 設計/OTA 量測/認證",
+     "note": "系統壁壘高於純天線（衛星占 3–5%）",
+     "src": "https://news.cnyes.com/news/id/6287050"
+    },
+    {
+     "name": "Keysight",
+     "ticker": "KEYS",
+     "country": "US",
+     "share": "毫米波量測",
+     "products": "NTN/相位陣列測試平台",
+     "note": "OTA 量測國際"
+    },
+    {
+     "name": "Rohde & Schwarz",
+     "ticker": "—",
+     "country": "DE",
+     "share": "RF 測試",
+     "products": "衛星/NTN 量測儀器",
+     "note": "未上市"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-ground"
+    }
+   ],
+   "sources": [
+    {
+     "label": "耀登 RF 設計+量測+認證隱形冠軍 (鉅亨)",
+     "url": "https://news.cnyes.com/news/id/6287050"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "s-mfg",
+   "f-operator"
+  ],
+  [
+   "s-launch",
+   "f-operator"
+  ],
+  [
+   "s-pcb",
+   "f-operator"
+  ],
+  [
+   "s-pcb",
+   "s-mfg"
+  ],
+  [
+   "s-payload",
+   "s-mfg"
+  ],
+  [
+   "s-filter",
+   "s-payload"
+  ],
+  [
+   "g-rf",
+   "s-payload"
+  ],
+  [
+   "g-foundry",
+   "s-payload"
+  ],
+  [
+   "g-rf",
+   "f-ground"
+  ],
+  [
+   "g-foundry",
+   "g-rf"
+  ],
+  [
+   "g-baseband",
+   "f-ground"
+  ],
+  [
+   "g-abf",
+   "f-ground"
+  ],
+  [
+   "g-abf",
+   "s-pcb"
+  ],
+  [
+   "s-filter",
+   "f-ground"
+  ],
+  [
+   "g-network",
+   "f-ground"
+  ],
+  [
+   "g-test",
+   "f-ground"
+  ],
+  [
+   "f-ground",
+   "f-operator"
+  ],
+  [
+   "f-operator",
+   "f-demand"
+  ]
+ ],
+ "_proposed": {}
+}

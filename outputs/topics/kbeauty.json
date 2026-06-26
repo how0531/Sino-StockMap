@@ -1,0 +1,586 @@
+{
+ "id": "kbeauty",
+ "tab": "K-Beauty 美妝",
+ "title": "K-Beauty 韓妝供應鏈 (Korean Beauty: ODM 代工 × Indie 品牌 × 跨境通路)",
+ "subtitle": "K-Beauty — 2026 年從「韓流話題」升格為「全球美妝供應鏈核心」的消費出口主題。2025 韓妝出口首破 $114 億、躍居全球第二大化妝品出口國（僅次法國 $243 億，超越美國 $108 億），對美出口 +15% 至 $22 億、首度成韓國第一大出口目的地；韓妝在美進口市占 22.2%（$14.05 億）超越法國成第一大來源。價值鏈骨幹是世界級的「ODM 代工雙雄」：Cosmax（192820.KS，全球最大化妝品 ODM、服務 600+ 品牌、Q1 2026 營收 ₩6,820 億 +16%、淨利 +312%）與 Kolmar Korea（161890.KS，防曬 UV 配方龍頭、2026 成首家被列為大企業集團的 ODM）——它們是 indie 品牌爆發的「賣鏟人」，indie 不需建廠即可下單。品牌端：愛茉莉太平洋（090430.KS，靠 Cosrx/Laneige 拿下美國市場、Q1 美洲 +11%、美國銷售首超中國）、LG 生活健康（051900.KS）為傳統大廠；APR/에이피알（278470.KS，Medicube + AGE-R 美容儀，2026 營收目標 ₩2.1 兆 +40%、海外占 80%、進駐 3,200 家 Walmart）是 indie 兼美容科技黑馬。跨境通路端，Silicon2/실리콘투（257720.KQ，StyleKorean 全球 K-beauty 平台、2026F 營收 ₩1.4 兆、歐洲 34%＋北美 24%）是「賣給賣鏟人的賣鏟人」——不押單一品牌、賺整個 K-beauty 出海的物流與分銷財。絃外之音：真正的高確定性受惠者不是任一爆紅品牌（網紅品牌生命週期短），而是『與出口總量正相關、不挑品牌』的代工（Cosmax/Kolmar/Cosmecca）、包材（Pumtech 251970.KQ，indie 占客戶 60-70%、2026 營收 ₩4,502 億）與跨境通路（Silicon2）——品牌會輪替，鏟子永遠在賣。最大風險：2025/8 美國取消 de minimis 免稅 + 課 15% 關稅，8 月對美出口一度月減 37%，indie 品牌利潤受擠壓是 2026 最大變數。⚠ 與既有半導體/AI 主題無重疊（純消費出口）；非投資建議。",
+ "category": "industrial",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "韓妝全球出口",
+   "v": "$114億",
+   "sub": "2025 出口 +/-；躍居全球第二大化妝品出口國（僅次法國），美國市占 22.2% 居第一",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "indie+Amazon/Ulta 爆發、對美第一大來源 vs. de minimis 取消＋15% 關稅擠壓利潤",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "上游：原料活性成分 / 包材容器",
+   "main": false
+  },
+  {
+   "id": "odm",
+   "label": "中游：ODM/OEM 代工製造（賣鏟人）",
+   "main": true
+  },
+  {
+   "id": "brand",
+   "label": "品牌端：大廠 + Indie 品牌",
+   "main": false
+  },
+  {
+   "id": "channel",
+   "label": "下游：跨境電商 / 海外通路（美・日・東南亞）",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ingredients",
+   "row": "upstream",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "上游：活性原料 / 機能成分",
+   "nameEn": "Active Ingredients & Functional Actives",
+   "competition": "competitive",
+   "single": "null",
+   "desc": "韓妝配方的核心輸入——菸鹼醯胺、玻尿酸、胜肽、膠原、植萃與防曬濾劑等機能性活性成分；多由全球特化／生技廠供給，韓國 ODM 自研專利原料是配方差異化關鍵。",
+   "marketSize": "全球菸鹼醯胺 ~$23.5 億（CAGR 8-10%）；化妝品原料數百億美元級",
+   "growth": "胜肽/玻尿酸/菸鹼醯胺整合進約 48% 新護膚品",
+   "share": "null",
+   "analysis": "活性原料是韓妝「成分黨」敘事的底層——韓國 ODM（Cosmax/Kolmar）自研專利原料形成配方護城河，但通用活性（玻尿酸、菸鹼醯胺、膠原）多向全球特化巨頭採購：玻尿酸由 Kewpie（日）、HTL Biotechnology（法）等供給，機能原料由 Croda、DSM-Firmenich、Givaudan 等掌握。膠原/生醫級原料領域 PharmaResearch（214450.KQ）等韓廠崛起。此環節定價權在上游特化廠，但成分趨勢（clean beauty、純素膠原）由韓妝品牌帶動需求。",
+   "companies": [
+    {
+     "name": "PharmaResearch",
+     "ticker": "214450.KQ",
+     "country": "KR",
+     "share": "膠原/生醫級原料",
+     "products": "Rejuran 膠原/PN 注射、護膚原料",
+     "note": "韓國生醫護膚原料代表；K-beauty 醫美化趨勢受惠",
+     "src": "https://stockanalysis.com/quote/kosdaq/214450/"
+    },
+    {
+     "name": "Givaudan (Active Beauty)",
+     "ticker": "GIVN.SW",
+     "country": "CH",
+     "share": "全球香精/活性原料龍頭",
+     "products": "機能活性原料 / 香精",
+     "note": "全球最大香精＋活性成分商，供應韓妝 ODM"
+    },
+    {
+     "name": "Croda International",
+     "ticker": "CRDA.L",
+     "country": "UK",
+     "share": "特化美妝原料",
+     "products": "乳化劑/活性成分",
+     "note": "Beauty Actives 全球領導"
+    },
+    {
+     "name": "Kewpie",
+     "ticker": "2809.T",
+     "country": "JP",
+     "share": "藥用級玻尿酸供應",
+     "products": "玻尿酸（sodium hyaluronate）",
+     "note": "日廠掌握醫藥/化妝品級玻尿酸原料"
+    },
+    {
+     "name": "DSM-Firmenich",
+     "ticker": "DSFIR.AS",
+     "country": "NL",
+     "share": "維生素/防曬濾劑/活性",
+     "products": "維生素 B3/防曬濾劑/胜肽",
+     "note": "菸鹼醯胺、防曬活性全球供應"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "packaging"
+    },
+    {
+     "id": "odm_manufacturing"
+    }
+   ],
+   "sources": [
+    {
+     "label": "PharmaResearch (214450.KQ) 概況",
+     "url": "https://stockanalysis.com/quote/kosdaq/214450/"
+    },
+    {
+     "label": "化妝品原料/菸鹼醯胺市場 (BusinessResearchInsights)",
+     "url": "https://www.businessresearchinsights.com/market-reports/cosmetic-raw-materials-market-100628"
+    }
+   ]
+  },
+  {
+   "id": "packaging",
+   "row": "upstream",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "包材 / 容器 / 噴頭泵",
+   "nameEn": "Packaging · Containers · Pumps & Dispensers",
+   "competition": "oligopoly",
+   "single": "隱性受惠者 · Pumtech（251970.KQ）客戶 60-70% 是 indie 品牌、用預製模具快速供貨，是 K-beauty indie 爆發最直接的包材純玩家（2026 營收 ₩4,502 億）",
+   "desc": "化妝品容器、噴頭、泵、氣密瓶（airless）與管材——韓妝「精緻包裝」體驗的硬體底層；indie 品牌不自製容器，全靠包材廠的快速打樣與小量彈性供貨。",
+   "marketSize": "韓國化妝品包材隨出口高速成長",
+   "growth": "Pumtech 2026 營收 ₩4,502 億、營益 ₩677 億；2024 +18.6%",
+   "share": "null",
+   "analysis": "包材是 indie 爆發最乾淨的二階受惠者：Pumtech Korea（251970.KQ）是韓國最大上市包材廠，客戶 60-70% 為 indie 品牌、靠預製模具（pre-mold）彈性供貨小量訂單，2026 預估營收 ₩4,502 億、營益 ₩677 億、EPS ₩3,848，第四廠投產＋紐約設點接美單；被券商評為「韓妝記錄出口最大受惠者」。SMCG（화장품 容器）股價亦隨 K-beauty 包材需求飆升。值得注意：氣密泵龍頭 Yonwoo 已於 2022 被 Kolmar Korea 收購，代工集團向上整合包材——強化 ODM「一站式」護城河。",
+   "companies": [
+    {
+     "name": "Pumtech Korea",
+     "ticker": "251970.KQ",
+     "country": "KR",
+     "share": "韓國最大上市包材廠",
+     "products": "泵/氣密瓶(airless)/容器/管材",
+     "note": "客戶 60-70% indie；2026 營收 ₩4,502 億、營益 ₩677 億；第四廠＋紐約設點",
+     "src": "https://www.kedglobal.com/us/beauty-cosmetics/newsView/ked202504210007"
+    },
+    {
+     "name": "SMCG",
+     "ticker": "—",
+     "country": "KR",
+     "share": "化妝品容器",
+     "products": "容器/包材",
+     "note": "股價隨 K-beauty 包材需求飆升（KED Global）",
+     "src": "https://www.packaginginsights.com/news/k-beauty-packaging-stock-rise.html"
+    },
+    {
+     "name": "Yonwoo (隸 Kolmar)",
+     "ticker": "—",
+     "country": "KR",
+     "share": "氣密泵龍頭",
+     "products": "化妝品泵/airless 容器",
+     "note": "韓國首創化妝品泵；2022 被 Kolmar Korea 收購，代工向上整合包材",
+     "src": "https://www.cosmeticsbusiness.com/news/article_page/Yonwoo_Korea_lists_on_Seoul_Stock_Exchange/113897"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ingredients"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "odm_manufacturing"
+    }
+   ],
+   "sources": [
+    {
+     "label": "K-beauty 包材股飆升：Pumtech/SMCG (KED Global)",
+     "url": "https://www.kedglobal.com/us/beauty-cosmetics/newsView/ked202504210007"
+    },
+    {
+     "label": "Pumtech：韓妝記錄出口最大受惠者 (Asia Business Daily)",
+     "url": "https://www.asiae.co.kr/en/article/stock-disclosure/2026060908094454153"
+    }
+   ]
+  },
+  {
+   "id": "odm_manufacturing",
+   "row": "odm",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "ODM/OEM 代工製造（賣鏟人）",
+   "nameEn": "ODM/OEM Contract Manufacturing (the picks-and-shovels)",
+   "competition": "oligopoly",
+   "single": "供應鏈權力中心 · Cosmax＋Kolmar 兩家服務全球逾千個品牌，是 indie 不需建廠即可上市的『K-beauty 製造作業系統』，與出口總量正相關、不挑品牌",
+   "desc": "K-Beauty 真正的核心競爭力——配方研發 + 量產代工。全球最大化妝品 ODM 雙雄（Cosmax、Kolmar）讓任何人都能「無工廠創品牌」，是 indie 爆發、出口暴衝背後的隱形冠軍。",
+   "marketSize": "全球化妝品 OEM/ODM，亞太占約 39% 份額",
+   "growth": "Cosmax Q1 2026 營收 +16%、淨利 +312%；Kolmar 2025 營收 ₩2.72 兆",
+   "share": "null",
+   "analysis": "這是本主題最關鍵的一層、也是 K-beauty 的『護國神山』：Cosmax（192820.KS）是全球最大化妝品 ODM、服務 600+ 品牌，2026 全年導引營收 ₩2.68 兆、Q1 2026 營收 ₩6,820 億（+16%）、營益 ₩530 億、淨利暴增 312% 至 ₩438 億——全球 K-beauty 需求直接灌進產能利用率。Kolmar Korea（161890.KS）是防曬 UV 配方無可爭議的龍頭（全球防曬需求爆發），2025 營收創新高 ₩2.72 兆、營益 ₩2,396 億，2026/4 成為首家被韓國公平會列為「大企業集團」的化妝品 ODM。Cosmecca Korea（241710.KQ）以美國子公司 Englewood Lab 雙基地（韓國做 indie 低成本、美國做高階）切入美單，Q1 2026 營益 +78%、TTM 營收 ₩7,077 億 +37%。台灣的 TCI 大江生醫（8436.TWO）為亞洲機能保養＋保健 CDMO，是台股少數沾邊韓／亞洲美妝代工的標的。",
+   "companies": [
+    {
+     "name": "Cosmax",
+     "ticker": "192820.KS",
+     "country": "KR",
+     "share": "全球最大化妝品 ODM",
+     "products": "ODM 配方研發＋量產（600+ 品牌）",
+     "note": "2026 導引營收 ₩2.68 兆；Q1 營收 ₩6,820 億 +16%、淨利 +312%；indie 爆發核心受惠",
+     "src": "https://khealthhub.com/article/articles/848-cosmax-reports-remarkable-q1-2026-financial-growth"
+    },
+    {
+     "name": "Kolmar Korea",
+     "ticker": "161890.KS",
+     "country": "KR",
+     "share": "防曬 UV 配方龍頭",
+     "products": "ODM/OEM（防曬/護膚/彩妝）",
+     "note": "2025 營收創新高 ₩2.72 兆；2026/4 成首家『大企業集團』ODM；防曬需求爆發受惠",
+     "src": "https://en.sedaily.com/business/2026/04/29/kolmar-korea-becomes-first-cosmetics-odm-to-join"
+    },
+    {
+     "name": "Cosmecca Korea",
+     "ticker": "241710.KQ",
+     "country": "KR",
+     "share": "美單 ODM 黑馬",
+     "products": "ODM＋美國子公司 Englewood Lab",
+     "note": "Q1 2026 營益 +78%；TTM 營收 ₩7,077 億 +37%；韓美雙基地接 indie 美單",
+     "src": "https://en.sedaily.com/finance/2026/05/08/cosmecca-korea-q1-operating-profit-jumps-78-percent-on-k"
+    },
+    {
+     "name": "TCI 大江生醫",
+     "ticker": "8436.TWO",
+     "country": "TW",
+     "share": "亞洲機能保養/保健 CDMO",
+     "products": "護膚＋保健食品 CDMO/ODM",
+     "note": "台股少數美妝代工沾邊標的；功能性飲品/保健＋護膚一站式",
+     "src": "https://en.wikipedia.org/wiki/TCI_Bio"
+    },
+    {
+     "name": "Intercos",
+     "ticker": "ICOS.MI",
+     "country": "IT",
+     "share": "歐系全球 ODM",
+     "products": "彩妝/護膚 ODM",
+     "note": "歐洲 ODM 巨頭；與韓系雙雄全球競爭"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ingredients"
+    },
+    {
+     "id": "packaging"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "majors"
+    },
+    {
+     "id": "indie_brands"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Cosmax Q1 2026 淨利 +312% (K-Health Hub)",
+     "url": "https://khealthhub.com/article/articles/848-cosmax-reports-remarkable-q1-2026-financial-growth"
+    },
+    {
+     "label": "Kolmar 成首家大企業集團 ODM (Seoul Economic Daily)",
+     "url": "https://en.sedaily.com/business/2026/04/29/kolmar-korea-becomes-first-cosmetics-odm-to-join"
+    },
+    {
+     "label": "Cosmecca Q1 2026 營益 +78% (Seoul Economic Daily)",
+     "url": "https://en.sedaily.com/finance/2026/05/08/cosmecca-korea-q1-operating-profit-jumps-78-percent-on-k"
+    }
+   ]
+  },
+  {
+   "id": "majors",
+   "row": "brand",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "品牌：傳統大廠（自有製造＋多品牌）",
+   "nameEn": "Heritage Majors (Amorepacific / LG H&H)",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "韓國兩大美妝集團——自有製造＋多品牌矩陣，靠收購 indie（如 Cosrx）與美國/日本通路擴張轉型，從『中國依賴』轉向『北美驅動』。",
+   "marketSize": "韓國前二大集團合計營收近 ₩9 兆級",
+   "growth": "愛茉莉 Q1 2026 美洲 +11%、美國首超中國；LG H&H 復甦中",
+   "share": "null",
+   "analysis": "傳統大廠是品牌端的『重資產旗艦』：愛茉莉太平洋（090430.KS）旗下 Sulwhasoo/Laneige/Innisfree/Cosrx，2025 重返『₩4 兆營收俱樂部』、Q1 2026 集團營收 ₩1.227 兆、營益 ₩1,378 億；關鍵是 2024 收購 Cosrx（₩7,551 億）＋Laneige／Cosrx 帶動美洲 2025 +20%、Q1 2026 +11%，美國銷售首度超越大中華——成功從中國依賴轉向北美。LG 生活健康（051900.KS，The History of Whoo/Belif/CNP）Q1 2026 營收 ₩1.58 兆、營益 ₩1,078 億（受國內通路重整年減但季增改善，復甦訊號）。大廠的看點在『用收購＋通路把 indie 動能內化』。",
+   "companies": [
+    {
+     "name": "愛茉莉太平洋 Amorepacific",
+     "ticker": "090430.KS",
+     "country": "KR",
+     "share": "韓國第一大美妝集團",
+     "products": "Sulwhasoo/Laneige/Innisfree/Cosrx",
+     "note": "2025 重返 ₩4 兆營收；Q1 2026 美洲 +11%、美國首超中國；2024 收購 Cosrx ₩7,551 億",
+     "src": "https://stories.amorepacific.com/en/amorepacific-amorepacific-group-announces-q1-2026-business-performance/"
+    },
+    {
+     "name": "LG 生活健康 LG H&H",
+     "ticker": "051900.KS",
+     "country": "KR",
+     "share": "韓國第二大美妝集團",
+     "products": "The History of Whoo/Belif/CNP/OHUI",
+     "note": "Q1 2026 營收 ₩1.58 兆、營益 ₩1,078 億；國內重整年減但季增復甦",
+     "src": "https://en.sedaily.com/markets/2026/04/30/lg-hh-swings-to-q1-operating-profit-of-1078-billion-won"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "odm_manufacturing"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ecommerce"
+    }
+   ],
+   "sources": [
+    {
+     "label": "愛茉莉太平洋 Q1 2026 業績（美國首超中國）",
+     "url": "https://stories.amorepacific.com/en/amorepacific-amorepacific-group-announces-q1-2026-business-performance/"
+    },
+    {
+     "label": "LG H&H Q1 2026 營益 ₩1,078 億 (Seoul Economic Daily)",
+     "url": "https://en.sedaily.com/markets/2026/04/30/lg-hh-swings-to-q1-operating-profit-of-1078-billion-won"
+    }
+   ]
+  },
+  {
+   "id": "indie_brands",
+   "row": "brand",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "品牌：Indie 爆款 + 美容科技",
+   "nameEn": "Indie Hits & Beauty-Tech (APR / Anua / BOJ / Tirtir)",
+   "competition": "highgrowth",
+   "single": "成長最猛但生命週期最短 · APR（278470.KS）以 Medicube＋AGE-R 美容儀 2026 營收目標 ₩2.1 兆 +40%、海外 80%、進 3,200 家 Walmart，是 indie 兼美容科技黑馬",
+   "desc": "輕資產 indie 品牌——靠 ODM 代工＋Amazon/社群爆紅、再進 Ulta/Sephora/Walmart/Target 實體通路；成長爆發但網紅品牌生命週期短，是高 beta 也高風險的一層。",
+   "marketSize": "K-beauty indie 在美高速滲透，多品牌 1,000+ 通路點",
+   "growth": "APR 2026 營收目標 ₩2.1 兆 +40%；Tirtir 美國拚翻倍",
+   "share": "null",
+   "analysis": "indie 是 K-beauty 第二波浪潮的引擎、也是 ODM/包材/通路的需求源頭：APR/에이피알（278470.KS）以 Medicube 護膚＋AGE-R 家用美容儀轉型『消費科技』，2026 營收目標 ₩2.1 兆（+40%）、營益率 ~25%、海外占 80%，6 月進 3,200 家 Walmart、已進 1,500+ Target、洽 Costco——是少數能上市投資的 indie。其餘爆款多未上市：Tirtir 拿下 Amazon 粉底品類第一、美國目標翻倍、夏季進 Ulta；Beauty of Joseon（Relief Sun 防曬爆紅）夏季進 Sephora；Anua 進 Ulta。絃外之音：投資人很難押中下一個 Tirtir，但這些 indie 全部下單給 Cosmax/Kolmar/Cosmecca 代工、Pumtech 包材、Silicon2 出海——『買鏟子比買品牌穩』。",
+   "companies": [
+    {
+     "name": "APR / 에이피알",
+     "ticker": "278470.KS",
+     "country": "KR",
+     "share": "indie + 美容科技黑馬",
+     "products": "Medicube 護膚 / AGE-R 美容儀",
+     "note": "2026 營收目標 ₩2.1 兆 +40%、營益率 ~25%、海外 80%；進 3,200 Walmart＋1,500 Target",
+     "src": "https://finance.yahoo.com/markets/stocks/articles/apr-targets-3-200-walmart-184934117.html"
+    },
+    {
+     "name": "Tirtir",
+     "ticker": "—",
+     "country": "KR",
+     "share": "Amazon 粉底品類第一",
+     "products": "氣墊粉底/底妝",
+     "note": "未上市；拿下 Amazon 粉底第一、美國拚翻倍、夏季進 Ulta",
+     "src": "https://www.koreaherald.com/article/10773583"
+    },
+    {
+     "name": "Beauty of Joseon",
+     "ticker": "—",
+     "country": "KR",
+     "share": "防曬爆款 indie",
+     "products": "Relief Sun 防曬/韓方護膚",
+     "note": "未上市；夏季進 Sephora 美國；解決防曬泛白痛點爆紅",
+     "src": "https://www.koreaherald.com/article/10773583"
+    },
+    {
+     "name": "Anua",
+     "ticker": "—",
+     "country": "KR",
+     "share": "社群爆紅 indie",
+     "products": "魚腥草/精華護膚",
+     "note": "未上市；進 Amazon＋Ulta；積極全球零售擴張",
+     "src": "https://www.koreaherald.com/article/10773583"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "odm_manufacturing"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "ecommerce"
+    }
+   ],
+   "sources": [
+    {
+     "label": "APR 進 3,200 家 Walmart (Yahoo Finance)",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/apr-targets-3-200-walmart-184934117.html"
+    },
+    {
+     "label": "K-beauty 第二波：indie 與製造強權 (Korea Herald)",
+     "url": "https://www.koreaherald.com/article/10773583"
+    }
+   ]
+  },
+  {
+   "id": "ecommerce",
+   "row": "channel",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "下游：跨境平台 / 分銷物流（賣給賣鏟人的鏟子）",
+   "nameEn": "Cross-border Platform & Distribution",
+   "competition": "competitive",
+   "single": "不挑品牌的出海莊家 · Silicon2（257720.KQ）以 StyleKorean 平台把上百個 K-beauty 品牌分銷全球，2026F 營收 ₩1.4 兆、歐洲 34%＋北美 24%，賺整個 K-beauty 出海財",
+   "desc": "把韓妝送出海的跨境 B2B/D2C 平台、海外倉與分銷物流——不押單一品牌，與 K-beauty 出口總量正相關，是『賣給賣鏟人的賣鏟人』。",
+   "marketSize": "Silicon2 2026F 營收 ₩1.4 兆",
+   "growth": "Silicon2 2024 前三季營收 +60%；2026F 營益 ₩2,836 億",
+   "share": "null",
+   "analysis": "通路平台是 indie 出海的隱形高速公路：Silicon2/실리콘투（257720.KQ）以 StyleKorean 全球平台，把上百個 K-beauty 品牌（含眾多 indie）以 B2B/D2C＋海外倉分銷全球，2026F 營收 ₩1.4 兆、營益 ₩2,836 億；2025 Q3 區域：歐洲 34%、北美 24%、亞洲、中東——CA（企業帳戶）核心業務占 93.4%。它不押單一品牌、賺整個 K-beauty 出海的物流＋分銷財，是『與出口總量正相關、品牌會輪替但平台恆在』的最佳代表。Amazon/Olive Young Global 等亦是關鍵跨境節點。",
+   "companies": [
+    {
+     "name": "Silicon2 / 실리콘투",
+     "ticker": "257720.KQ",
+     "country": "KR",
+     "share": "全球 K-beauty 分銷平台龍頭",
+     "products": "StyleKorean / B2B / D2C / 海外倉",
+     "note": "2026F 營收 ₩1.4 兆、營益 ₩2,836 億；歐洲 34%＋北美 24%；CA 占 93.4%",
+     "src": "https://www.siliconii.com/sub/sub05_02.php"
+    },
+    {
+     "name": "Amazon",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "美國 K-beauty 線上主戰場",
+     "products": "電商平台（K-beauty store）",
+     "note": "indie 爆紅起點；Tirtir/Anua/BOJ 主要放量管道"
+    },
+    {
+     "name": "Olive Young",
+     "ticker": "—",
+     "country": "KR",
+     "share": "韓國美妝零售龍頭＋Global",
+     "products": "H&B 連鎖＋Olive Young Global 跨境",
+     "note": "未上市（CJ 集團）；外國觀光客＋全球網購重要節點"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "majors"
+    },
+    {
+     "id": "indie_brands"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "retail_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Silicon2 (257720.KQ) IR 資料",
+     "url": "https://www.siliconii.com/sub/sub05_02.php"
+    },
+    {
+     "label": "Silicon2：booming US demand 賭注 (Silicon2 News)",
+     "url": "https://www.siliconii.com/en/sub/sub03_01.php?mNum=3&sNum=1&boardid=newsen&mode=view&idx=6"
+    }
+   ]
+  },
+  {
+   "id": "retail_demand",
+   "row": "channel",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "終端：美國通路與消費需求（含關稅風險）",
+   "nameEn": "US Retail Demand & Tariff Risk (Ulta/Sephora/Target/Costco)",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "K-beauty 的終端需求引擎——美國實體與線上通路（Ulta/Sephora/Target/Costco/Walmart）＋日本/東南亞市場；2025/8 美國取消 de minimis 並課 15% 關稅是最大下行變數。",
+   "marketSize": "韓妝對美出口 2025 $22 億（+15%，第一大目的地）",
+   "growth": "韓妝美進口市占 22.2%（$14.05 億）超越法國居第一",
+   "share": "null",
+   "analysis": "終端需求把全鏈拉動起來：美國成韓國化妝品第一大出口目的地（2025 +15% 至 $22 億），韓妝在美進口市占 22.2%（$14.05 億）超越法國居首；Ulta/Sephora/Target/Costco/Walmart 自 2023 起大舉擴 K-beauty 貨架，BOJ/Cosrx/Laneige/Anua 等已進 1,000+ 通路點。但 2025/7/31 美國取消 de minimis 免稅、對韓妝課 15% 關稅，8 月上旬對美出口一度月減 37%、基礎護膚腰斬——關稅是 2026 最大下行變數，擠壓 indie 利潤、迫使在美設倉/在地製造（Cosmecca/Cosmax 美國產能因此受惠）。絃外之音：關稅反而強化『在美有產能的代工』與『有海外倉的通路平台』的相對優勢。",
+   "companies": [
+    {
+     "name": "Ulta Beauty",
+     "ticker": "ULTA",
+     "country": "US",
+     "share": "美國美妝零售龍頭",
+     "products": "K-beauty 專區零售",
+     "note": "Tirtir/Anua/Cosrx 等進駐；K-beauty 貨架持續擴張"
+    },
+    {
+     "name": "美國消費者/通路（Sephora/Target/Costco）",
+     "ticker": "—",
+     "country": "US",
+     "share": "K-beauty 終端買方",
+     "products": "實體＋線上 K-beauty 通路",
+     "note": "需求引擎；de minimis 取消＋15% 關稅是最大下行變數",
+     "src": "https://www.kedglobal.com/beauty-cosmetics/newsView/ked202508120003"
+    },
+    {
+     "name": "Walmart",
+     "ticker": "WMT",
+     "country": "US",
+     "share": "大眾通路放量",
+     "products": "Medicube 等 K-beauty 上架",
+     "note": "APR Medicube 進 3,200 店；大眾市場滲透"
+    },
+    {
+     "name": "日本/東南亞市場",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "次要出口成長市場",
+     "products": "K-beauty 跨境需求",
+     "note": "愛茉莉日本動能、東南亞滲透；分散對美關稅風險"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "ecommerce"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "韓妝對美出口受 15% 關稅衝擊 (KED Global)",
+     "url": "https://www.kedglobal.com/beauty-cosmetics/newsView/ked202508120003"
+    },
+    {
+     "label": "韓妝美進口市占 22.2% 超越法國居首 (Global Cosmetics News)",
+     "url": "https://www.globalcosmeticsnews.com/south-korea-surpasses-us-in-cosmetics-exports-now-second-only-to-france/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "ingredients",
+   "packaging"
+  ],
+  [
+   "ingredients",
+   "odm_manufacturing"
+  ],
+  [
+   "packaging",
+   "odm_manufacturing"
+  ],
+  [
+   "odm_manufacturing",
+   "majors"
+  ],
+  [
+   "odm_manufacturing",
+   "indie_brands"
+  ],
+  [
+   "majors",
+   "ecommerce"
+  ],
+  [
+   "indie_brands",
+   "ecommerce"
+  ],
+  [
+   "ecommerce",
+   "retail_demand"
+  ]
+ ],
+ "_proposed": {}
+}

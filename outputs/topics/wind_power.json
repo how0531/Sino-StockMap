@@ -1,0 +1,823 @@
+{
+ "id": "wind_power",
+ "tab": "風電",
+ "title": "風力發電供應鏈 (Wind Power: Onshore & Offshore)",
+ "subtitle": "Wind Power — 2025 全球風電裝機 169.2GW（+37.9%）創歷史新高、惟離岸 -30% 至 8.1GW，GWEC 預估 2026-2030 再裝 969GW、浮動式離岸 CAGR 51.7%。中國整機商首度包辦 BNEF 市占前六（金風續居第一、Q1-26 外售 +133%；Vestas 滑落第七）。價值鏈：葉片樹脂/玻纖/磁石 → 葉片/齒輪箱/軸承/塔筒 → 整機 OEM（Vestas/西門子能源/GE Vernova/金風/明陽）→ 離岸結構（水下基礎/海纜/安裝船）→ 開發售電。投資鐵律：整機紅海殺價、毛利薄（Vestas Q1-26 EBIT 僅 3.2%），真正定價權在寡占「賣鏟人」——海纜（Prysmian/Nexans/NKT 占 ~75%、鋪纜船 2026 後斷貨）、軸承（SKF ~50%）、安裝船（Cadeler 積壓 €2,705M）、台廠水下基礎獨家世紀鋼。⚠ 美國政府離岸官司 5 戰全敗、5 場獲放行復工但未來 3 年幾無新案；GE Vernova 風電 Q1-26 EBITDA 虧損擴大至 $382M。",
+ "category": "energy",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "45+"
+  },
+  {
+   "k": "2025 裝機",
+   "v": "+38%",
+   "sub": "169.2GW 創高·惟離岸 -30%·GWEC 2026-30 再 969GW",
+   "hot": true
+  },
+  {
+   "k": "瓶頸/風險",
+   "v": 2,
+   "sub": "鋪纜船 2026 後斷貨定價權·美國離岸 5 戰全敗仍幾無新案+整機紅海",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "material",
+   "label": "上游材料 / 大型零組件 Materials & Drivetrain",
+   "main": false
+  },
+  {
+   "id": "structure",
+   "label": "葉片 / 塔筒 Blades & Towers",
+   "main": false
+  },
+  {
+   "id": "oem",
+   "label": "整機 OEM Wind Turbine OEM",
+   "main": true
+  },
+  {
+   "id": "offshore",
+   "label": "離岸結構 / 海纜 / 海事 Offshore BoP & Cables",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "開發 / 營運 / 售電 Developers & Offtake",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "drivetrain",
+   "row": "material",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "齒輪箱 / 軸承 / 發電機磁石 (Drivetrain)",
+   "nameEn": "Gearbox, Bearings & PMSG Magnets",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · SKF 風電軸承約 50% 市占；ZF/Flender 寡占齒輪箱；PMSG 直驅機 ~650kg 釹鐵硼磁石/MW",
+   "desc": "風機傳動系統：齒輪箱（雙饋機）、軸承、發電機與永磁直驅 PMSG 所需釹鐵硼磁石，是風機本體最寡占、毛利相對穩的環節。",
+   "marketSize": "傳動系統瓶頸",
+   "growth": "大型化升級",
+   "share": "null",
+   "analysis": "齒輪箱由 ZF Wind Power（DE，SHIFT 模組化平台 10 年、與 Vestas 離岸出貨 >10GW）與 Flender（DE，原 Siemens Energy 分拆）寡占。軸承：SKF（SKF-B.ST，全球最大軸承廠、風電約 50% 市占、DuraPro 齒輪箱軸承）、Schaeffler（SHA.DE）、日系 NSK/NTN（6471.T）。發電機磁石：PMSG 直驅機每 MW 約 650kg 釹鐵硼（中速 160kg、高速 80kg），NdFeB 約 $80-140/kg、中國掌握供應鏈（與既有 rare_earth 主題交集）。大型風機鑄件：永冠-KY（1589.TW，>80 噸輪轂全球僅 3 家能造、泰國新廠產能爆滿、但財務承壓有下市風險）。",
+   "companies": [
+    {
+     "name": "SKF",
+     "ticker": "SKF-B.ST",
+     "country": "SE",
+     "share": "風電軸承約 50%",
+     "products": "齒輪箱/主軸軸承 / DuraPro",
+     "note": "全球最大軸承廠；與 ZF 預測維護合作縮短維修 85%",
+     "src": "https://www.windpowermonthly.com/article/960903/supplies-whom-wind-industry-gearboxes-bearings"
+    },
+    {
+     "name": "ZF Wind Power",
+     "ticker": "—",
+     "country": "DE",
+     "share": "齒輪箱龍頭",
+     "products": "SHIFT 模組化齒輪箱",
+     "note": "ZF 集團未獨立上市；與 Vestas 離岸出貨 >10GW",
+     "src": "https://www.zf.com/products/en/wind/home/wind.html"
+    },
+    {
+     "name": "Schaeffler",
+     "ticker": "SHA.DE",
+     "country": "DE",
+     "share": "軸承主供",
+     "products": "風機軸承",
+     "note": "德系軸承大廠",
+     "src": "https://www.windpowermonthly.com/article/960903/supplies-whom-wind-industry-gearboxes-bearings"
+    },
+    {
+     "name": "Flender",
+     "ticker": "—",
+     "country": "DE",
+     "share": "齒輪箱寡占",
+     "products": "風機齒輪箱",
+     "note": "原 Siemens Energy 分拆；齒輪箱主供",
+     "src": "https://www.zf.com/products/en/wind/home/wind.html"
+    },
+    {
+     "name": "NSK / NTN",
+     "ticker": "6471.T",
+     "country": "JP",
+     "share": "日系軸承",
+     "products": "風機軸承",
+     "note": "日系軸承供應",
+     "src": "https://www.skf.com/group/industries/wind-energy/drivetrain/gearbox"
+    },
+    {
+     "name": "永冠-KY Yonguan",
+     "ticker": "1589.TW",
+     "country": "TW",
+     "share": "大型風電鑄件",
+     "products": ">80 噸輪轂 / 主機座鑄件",
+     "note": ">80 噸輪轂全球僅 3 家能造；泰國新廠產能爆滿；財務承壓有下市風險",
+     "src": "https://www.cw.com.tw/article/5140797"
+    },
+    {
+     "name": "釹鐵硼磁石供應鏈",
+     "ticker": "—",
+     "country": "CN",
+     "share": "PMSG 直驅機磁石",
+     "products": "NdFeB 永磁",
+     "note": "直驅機 ~650kg 磁石/MW；NdFeB $80-140/kg；上溯 rare_earth 主題",
+     "src": "https://thundersaidenergy.com/downloads/wind-turbine-generators-dfigs-or-rare-earth-magnets/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SKF 軸承 ~50% 市占 (Windpower Monthly)",
+     "url": "https://www.windpowermonthly.com/article/960903/supplies-whom-wind-industry-gearboxes-bearings"
+    },
+    {
+     "label": "永冠 >80 噸輪轂全球三家 (天下)",
+     "url": "https://www.cw.com.tw/article/5140797"
+    }
+   ]
+  },
+  {
+   "id": "blade_material",
+   "row": "material",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "葉片樹脂 / 玻纖 / 碳纖 (Blade Materials)",
+   "nameEn": "Blade Resins & Composites",
+   "competition": "competitive",
+   "single": "台股題材：上緯 Swancor 可回收熱固樹脂 EzCiclo + Adani/明陽合作",
+   "desc": "葉片用樹脂（vinyl ester/infusion）、玻璃纖維、碳纖維與芯材，隨葉片大型化（115m 碳玻混合）與可回收化升級。",
+   "marketSize": "複材 $25.5B(2032)",
+   "growth": "可回收升級",
+   "share": "null",
+   "analysis": "風機複材市場 2032 上看 $25.5B。樹脂台股題材：上緯投控（3708.TWO，vinyl ester/infusion 樹脂、可回收熱固樹脂 EzCiclo；2025 Q4 與印度 Adani 合作可回收風場、與明陽合作中國首座全可回收風機）、上緯新材（688585.SS，A 股風電葉片材料）。玻纖：Owens Corning（OC，US）、中國巨石（600176.SS，CN）。碳纖：Toray（3402.T，JP）、三菱化學。LM 2025-03 推 115m 碳玻混合離岸葉片（更高出力、更省料）。",
+   "companies": [
+    {
+     "name": "上緯投控 Swancor",
+     "ticker": "3708.TWO",
+     "country": "TW",
+     "share": "葉片樹脂題材",
+     "products": "vinyl ester / infusion 樹脂 / EzCiclo 可回收",
+     "note": "2025Q4 與 Adani 合作可回收風場；與明陽合作中國首座全可回收風機",
+     "src": "https://www.compositesworld.com/news/swancor-adani-sign-mou-for-recyclable-wind-farm-in-india"
+    },
+    {
+     "name": "上緯新材 Swancor Advanced",
+     "ticker": "688585.SS",
+     "country": "CN",
+     "share": "A 股葉片材料",
+     "products": "風電葉片樹脂材料",
+     "note": "上緯集團 A 股；中國葉片材料供應",
+     "src": "https://finance.yahoo.com/quote/688585.SS/"
+    },
+    {
+     "name": "Owens Corning",
+     "ticker": "OC",
+     "country": "US",
+     "share": "玻纖龍頭",
+     "products": "玻璃纖維",
+     "note": "葉片增強纖維",
+     "src": "https://www.grandviewresearch.com/industry-analysis/wind-turbine-composites-market-report"
+    },
+    {
+     "name": "中國巨石 Jushi",
+     "ticker": "600176.SS",
+     "country": "CN",
+     "share": "中國玻纖龍頭",
+     "products": "玻璃纖維",
+     "note": "全球玻纖最大產能",
+     "src": "https://www.grandviewresearch.com/industry-analysis/wind-turbine-composites-market-report"
+    },
+    {
+     "name": "Toray",
+     "ticker": "3402.T",
+     "country": "JP",
+     "share": "碳纖領先",
+     "products": "碳纖維",
+     "note": "大型葉片碳玻混合",
+     "src": "https://www.mordorintelligence.com/industry-reports/wind-turbine-rotor-blades-market"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "blade"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Swancor×Adani 可回收風場 (CompositesWorld)",
+     "url": "https://www.compositesworld.com/news/swancor-adani-sign-mou-for-recyclable-wind-farm-in-india"
+    },
+    {
+     "label": "風機複材市場 (Grand View)",
+     "url": "https://www.grandviewresearch.com/industry-analysis/wind-turbine-composites-market-report"
+    }
+   ]
+  },
+  {
+   "id": "blade",
+   "row": "structure",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "葉片 (Blades)",
+   "nameEn": "Wind Turbine Blades",
+   "competition": "oligopoly",
+   "single": "LM(GE Vernova)+TPI+西門子歌美颯 三家 2024 合計 >35% 市占",
+   "desc": "葉片是風機最關鍵結構件，隨機型大型化（115m+）持續升級；OEM 多自製，獨立葉片廠以 TPI 為首。",
+   "marketSize": "LM+TPI+SGRE >35%",
+   "growth": "大型化",
+   "share": "null",
+   "analysis": "LM Wind Power（GE Vernova 子公司，DK/US）為全球葉片龍頭，2025-03 推 115m 碳玻混合離岸葉片；LM+TPI+SGRE 合計 >35% 市占（2024）。TPI Composites（TPIC，US）為獨立葉片廠龍頭，2001 來累計造 >100,000 片、與 Vestas 擴大合作、印度/土耳其擴產。中國：中材科技 Sinoma（002080.SZ，中國葉片龍頭）、時代新材（600458.SS）。葉片大型化推升碳纖/可回收樹脂需求。",
+   "companies": [
+    {
+     "name": "LM Wind Power",
+     "ticker": "GEV",
+     "country": "DK",
+     "share": "葉片龍頭",
+     "products": "離岸 115m 碳玻混合葉片",
+     "note": "GE Vernova 子公司；LM+TPI+SGRE >35% 市占",
+     "src": "https://www.mordorintelligence.com/industry-reports/wind-turbine-rotor-blades-market"
+    },
+    {
+     "name": "TPI Composites",
+     "ticker": "TPIC",
+     "country": "US",
+     "share": "獨立葉片廠龍頭",
+     "products": "風機葉片代工",
+     "note": "2001 來累計 >100,000 片；與 Vestas 擴大合作、印度/土耳其擴產",
+     "src": "https://elevategreen.org/tpi-composites/"
+    },
+    {
+     "name": "中材科技 Sinoma",
+     "ticker": "002080.SZ",
+     "country": "CN",
+     "share": "中國葉片龍頭",
+     "products": "風機葉片",
+     "note": "中國最大葉片廠",
+     "src": "https://www.mordorintelligence.com/industry-reports/wind-turbine-rotor-blades-market"
+    },
+    {
+     "name": "時代新材 Zhuzhou Times",
+     "ticker": "600458.SS",
+     "country": "CN",
+     "share": "中國葉片",
+     "products": "風機葉片 / 減震",
+     "note": "中國車-中車系葉片",
+     "src": "https://www.mordorintelligence.com/industry-reports/wind-turbine-rotor-blades-market"
+    },
+    {
+     "name": "Siemens Gamesa (葉片)",
+     "ticker": "ENR.DE",
+     "country": "DE",
+     "share": "離岸葉片自製",
+     "products": "離岸大型葉片",
+     "note": "Siemens Energy 子公司；離岸機種自製葉片",
+     "src": "https://www.windpowermonthly.com/article/1806090/vestas-expands-blade-supply-partnership-tpi-composites"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "blade_material"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "葉片市場 LM/TPI/SGRE >35% (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/wind-turbine-rotor-blades-market"
+    },
+    {
+     "label": "Vestas×TPI 擴大合作 (Windpower Monthly)",
+     "url": "https://www.windpowermonthly.com/article/1806090/vestas-expands-blade-supply-partnership-tpi-composites"
+    }
+   ]
+  },
+  {
+   "id": "tower",
+   "row": "structure",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "塔筒 (Towers)",
+   "nameEn": "Wind Towers",
+   "competition": "competitive",
+   "single": "CS Wind 全球第一塔筒廠；美國 Pueblo 擴建為全球最大塔筒廠",
+   "desc": "支撐機艙/葉片的鋼塔（離岸還含過渡段），製造重資產、運輸成本高，趨向在地化生產。",
+   "marketSize": "$32.25B(2026)",
+   "growth": "在地化",
+   "share": "null",
+   "analysis": "塔筒市場 2026 約 $32.25B。CS Wind（112610.KS，KR，全球第一塔筒廠，越南/中國/加拿大/英國產基，美國 Pueblo 擴建為全球最大塔筒廠、增 850 職）為龍頭。中國：天順風能 Titan Wind（002531.SZ，中國塔筒龍頭）。美國：Arcosa（ACA，塔筒+基建）、Broadwind（BWEN，塔筒/鑄件）。運輸成本高使塔筒高度在地化、毛利受鋼價與物流牽動。",
+   "companies": [
+    {
+     "name": "CS Wind",
+     "ticker": "112610.KS",
+     "country": "KR",
+     "share": "全球第一塔筒廠",
+     "products": "陸域/離岸鋼塔",
+     "note": "越南/中國/加拿大/英國產基；美國 Pueblo 擴建為全球最大塔筒廠、增 850 職",
+     "src": "https://www.burnsmcd.com/news/wind-turbine-tower-manufacturing-plant"
+    },
+    {
+     "name": "天順風能 Titan Wind",
+     "ticker": "002531.SZ",
+     "country": "CN",
+     "share": "中國塔筒龍頭",
+     "products": "陸域/離岸塔筒",
+     "note": "中國最大塔筒商",
+     "src": "https://en.wikipedia.org/wiki/CS_Wind"
+    },
+    {
+     "name": "Arcosa",
+     "ticker": "ACA",
+     "country": "US",
+     "share": "美國塔筒",
+     "products": "塔筒 / 基建構件",
+     "note": "美國塔筒+基建組合",
+     "src": "https://www.fortunebusinessinsights.com/wind-tower-market-103299"
+    },
+    {
+     "name": "Broadwind",
+     "ticker": "BWEN",
+     "country": "US",
+     "share": "美國塔筒/鑄件",
+     "products": "鋼塔 / 齒輪 / 鑄件",
+     "note": "美國本土塔筒供應",
+     "src": "https://www.fortunebusinessinsights.com/wind-tower-market-103299"
+    },
+    {
+     "name": "大金重工 Dajin",
+     "ticker": "002487.SZ",
+     "country": "CN",
+     "share": "中國離岸塔筒/基礎",
+     "products": "離岸塔筒 / 管樁 / 導管架",
+     "note": "中國離岸塔筒+管樁出口歐洲",
+     "src": "https://www.fortunebusinessinsights.com/wind-tower-market-103299"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "oem"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CS Wind Pueblo 擴建 (Burns & McD)",
+     "url": "https://www.burnsmcd.com/news/wind-turbine-tower-manufacturing-plant"
+    },
+    {
+     "label": "塔筒市場 (Fortune BI)",
+     "url": "https://www.fortunebusinessinsights.com/wind-tower-market-103299"
+    }
+   ]
+  },
+  {
+   "id": "oem",
+   "row": "oem",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "整機 OEM（風機製造）",
+   "nameEn": "Wind Turbine OEM",
+   "competition": "redocean",
+   "single": "⚠ 紅海殺價 · 中國整機商包辦 BNEF 市占前六、Vestas 滑落第七；可投資者僅 Vestas/Nordex，GE Vernova 風電 Q1-26 虧損擴大至 $382M",
+   "desc": "整機 OEM 是題材敘事核心，但中國殺價 + 服務成本 + 關稅讓毛利薄。前六全中國（金風裝機全球第一），西方以 Vestas/SGRE/Nordex 為主。",
+   "marketSize": "紅海殺價·毛利薄",
+   "growth": "2025 裝機 +38%",
+   "share": "null",
+   "analysis": "【2026-H1】全球 2025 裝機 169.2GW（+37.9%，陸域 +45% 達 161GW、離岸 -30% 至 8.1GW），中國占 125.7GW（~75%）；中國整機商首度包辦 BNEF 市占前六、Vestas 滑落第七。Vestas（VWS.CO，DK）Q1-26 營收 €3,966M（+14.4%）、離岸出貨 263→812MW 帶動 EBIT 利潤率 3.2%（2018 來最佳 Q1）、訂單積壓創高 €36.3B、合計（含服務）€76.1B；維持 2026 指引 €20-22B、EBIT 利潤率 6-8%，**離岸龍頭 + 高毛利服務後市場仍是最可投資整機股**。Siemens Gamesa（ENR.DE，DE，Siemens Energy 子）H1-FY26 虧損大幅收窄 85% 至 €90M（Q2 僅 -€44M）、目標 FY26 損益兩平→FY26/27 轉正；母公司 Siemens Energy Q2-FY26 營收 €10.3B、訂單創高 €17.7B、積壓 €154B。GE Vernova（GEV，US）Q1-26 風電 EBITDA 虧損擴大至 $382M（2025 同期 -$146M，陸域出貨萎縮 -25%+關稅+離岸合約虧損）、預估 2026 全年風電 EBIT 仍虧約 $4 億、關稅成本 $2.5-3.5 億——股價漲靠燃氣+電網非風電。中國：金風 Goldwind（002202.SZ）Q1-26 外售 6,041MW（+133%）、營收 RMB 154.85 億（+64%）、淨利 +60%，續居全球第一；明陽 Mingyang（601615.SS，全球最大 20MW 離岸機）、Envision 遠景（未上市，全球前三）、運達 Windey、上海電氣。Nordex（NDX1.DE，DE）Q1-26 EBITDA 利潤率升至 8.2%（YoY +2.7pt）、訂單積壓創高 €17B、ASP 升至 €0.91M/MW、服務利潤率 19.2%、中期目標上調至 10-12%。⚠ 整機是「敘事核心、利潤毒藥」：西方僅 Vestas/Nordex 可投資，GE Vernova 風電仍深陷虧損，美國離岸新案實質停擺。",
+   "companies": [
+    {
+     "name": "Vestas",
+     "ticker": "VWS.CO",
+     "country": "DK",
+     "share": "離岸龍頭 / 2025 滑落第七",
+     "products": "陸域/離岸風機 + 服務",
+     "note": "Q1-26 營收 €3,966M(+14.4%)、EBIT 利潤率 3.2%(2018 來最佳 Q1)；積壓創高 €36.3B、合計 €76.1B；2026 指引 €20-22B/6-8%",
+     "src": "https://greentechlead.com/wind/vestas-q1-2026-revenue-jumps-14-as-offshore-growth-record-backlog-and-service-business-support-full-year-outlook-53334"
+    },
+    {
+     "name": "Siemens Gamesa",
+     "ticker": "ENR.DE",
+     "country": "DE",
+     "share": "離岸第一",
+     "products": "離岸/陸域風機",
+     "note": "Siemens Energy 子；H1-FY26 虧損收窄 85% 至 €90M(Q2 -€44M)；目標 FY26 損益兩平→FY26/27 轉正",
+     "src": "https://www.windtech-international.com/company-news/siemens-gamesa-nears-break-even-as-turnaround-progresses"
+    },
+    {
+     "name": "GE Vernova (Wind)",
+     "ticker": "GEV",
+     "country": "US",
+     "share": "美西方整機",
+     "products": "陸域/離岸風機 + LM 葉片",
+     "note": "Q1-26 風電 EBITDA 虧損擴大至 $382M(去年 -$146M)；2026 全年風電 EBIT 仍虧約 $4 億+關稅 $2.5-3.5 億；股價漲靠燃氣+電網",
+     "src": "https://www.windtech-international.com/company-news/ge-vernova-reports-mixed-wind-performance-with-onshore-growth-and-offshore-project-progress"
+    },
+    {
+     "name": "Goldwind 金風",
+     "ticker": "002202.SZ",
+     "country": "CN",
+     "share": "全球裝機第一",
+     "products": "陸域/離岸直驅風機",
+     "note": "Q1-26 外售 6,041MW(+133%)、營收 RMB154.85 億(+64%)、淨利 +60%；續居 BNEF 全球第一",
+     "src": "https://www.investing.com/news/company-news/goldwind-q1-2026-slides-revenue-jumps-64-on-larger-turbine-sales-93CH-4648604"
+    },
+    {
+     "name": "Mingyang 明陽",
+     "ticker": "601615.SS",
+     "country": "CN",
+     "share": "離岸大型化領先",
+     "products": "20MW 離岸風機",
+     "note": "2024 推全球最大 20MW 離岸機；率先進 20MW 時代",
+     "src": "https://chinessima.com/en/2025/11/wind-energy-mingyangs-entry-into-the-20-mw-era-boosts-chinas-entire-supply-chain.html"
+    },
+    {
+     "name": "Nordex",
+     "ticker": "NDX1.DE",
+     "country": "DE",
+     "share": "陸域轉盈",
+     "products": "陸域風機 + 服務",
+     "note": "Q1-26 EBITDA 利潤率 8.2%(YoY+2.7pt)、積壓創高 €17B、ASP €0.91M/MW、服務 19.2%；中期目標上調 10-12%",
+     "src": "https://www.nordex-online.com/en/2026/04/nordex-group-reports-solid-q1-2026-results-with-continued-margin-improvement-year-on-year/"
+    },
+    {
+     "name": "Envision 遠景",
+     "ticker": "—",
+     "country": "CN",
+     "share": "全球前三",
+     "products": "陸域風機 / 智慧風場",
+     "note": "未上市；陸域裝機強",
+     "src": "https://about.bnef.com/insights/clean-energy/chinese-turbine-suppliers-seize-the-spotlight-as-global-wind-power-installations-hit-all-time-high-bloombergnef-report-shows/"
+    },
+    {
+     "name": "上海電氣 / 運達 Windey",
+     "ticker": "601727.SS",
+     "country": "CN",
+     "share": "中國前六之一",
+     "products": "陸域/離岸風機",
+     "note": "2025 首度市占前六全中國",
+     "src": "https://about.bnef.com/insights/clean-energy/chinese-turbine-suppliers-seize-the-spotlight-as-global-wind-power-installations-hit-all-time-high-bloombergnef-report-shows/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "drivetrain"
+    },
+    {
+     "id": "blade"
+    },
+    {
+     "id": "tower"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "subsea_cable"
+    },
+    {
+     "id": "developer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Vestas Q1-26 EBIT 3.2% 積壓 €76.1B (GreentechLead)",
+     "url": "https://greentechlead.com/wind/vestas-q1-2026-revenue-jumps-14-as-offshore-growth-record-backlog-and-service-business-support-full-year-outlook-53334"
+    },
+    {
+     "label": "中國包辦前六 / 金風續第一 / 2025 裝機 169GW (BNEF)",
+     "url": "https://about.bnef.com/insights/clean-energy/chinas-goldwind-retains-turbine-supplier-lead-as-global-wind-additions-hit-new-high-according-to-bloombergnef/"
+    }
+   ]
+  },
+  {
+   "id": "foundation",
+   "row": "offshore",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "水下基礎 / 安裝船 (Foundations & WTIV)",
+   "nameEn": "Foundations & Installation Vessels",
+   "competition": "oligopoly",
+   "single": "台股獨家：世紀鋼為台灣唯一能造大型水下基礎（興達海基退場後）",
+   "desc": "離岸專屬的單樁/套管式水下基礎、浮台與風機安裝船（WTIV），是離岸風電的關鍵瓶頸環節。",
+   "marketSize": "離岸專屬",
+   "growth": "離岸瓶頸",
+   "share": "null",
+   "analysis": "【2026-H1】單樁龍頭 Sif Group（SIFG.AS，NL，Q1-26 營收 €63.8M、訂單簿 476 Kton、產量 60 Kton(+54% YoY)、調整後 EBITDA €21M(去年 €9.6M)；Maasvlakte II 新巨型廠 2026-Q2 底達滿產）、EEW SPC（DE，未上市，單樁專家、>200 支/年）、Bladt/Smulders（DK/BE，OWFA）。台股獨家：世紀鋼/世紀風電（9958.TWO，**台灣唯一能造大型水下基礎**，興達海基退場後；3-1/3-2 期+拼接樁累計訂單破百億台幣、拼接樁報價已對齊國際；已與 Ørsted、CIP 洽 3-3 區塊、擴及國產與非國產品項；2026-29 業績逐年攀升、未來 4-5 年需 >300 座水下基礎；世紀風電 2026-03 轉上市掛牌）。安裝船龍頭 Cadeler（CADLR，DK，Q1-26 營收 €125M(去年 €65M)、EBITDA €47M、積壓 €2,705M(82% 已 FID)、10 船隊；2026-03 私募增資 €175M 籌建兩艘 T-class 新船(2030/2031 交付)；維持 2026 指引營收 €854-944M）。安裝船全球緊俏，是離岸工期關鍵。",
+   "companies": [
+    {
+     "name": "世紀鋼/世紀風電",
+     "ticker": "9958.TWO",
+     "country": "TW",
+     "share": "台灣唯一大型水下基礎",
+     "products": "單樁 / 套管式水下基礎 / 拼接樁",
+     "note": "興達海基退場後台灣唯一；3-1/3-2 累計訂單破百億台幣；已與 Ørsted/CIP 洽 3-3 區塊；未來 4-5 年需 >300 座；世紀風電 2026-03 轉上市",
+     "src": "https://technews.tw/2026/03/31/centary-iron-and-steel"
+    },
+    {
+     "name": "Sif Group",
+     "ticker": "SIFG.AS",
+     "country": "NL",
+     "share": "單樁龍頭",
+     "products": "單樁 / 過渡段",
+     "note": "Q1-26 營收 €63.8M、訂單簿 476 Kton、產量 +54% YoY、EBITDA €21M；Maasvlakte II 新廠 2026-Q2 底滿產",
+     "src": "https://sif-group.com/newsroom/trading-update-q1-2026/"
+    },
+    {
+     "name": "Cadeler",
+     "ticker": "CADLR",
+     "country": "DK",
+     "share": "安裝船龍頭",
+     "products": "風機安裝船 WTIV",
+     "note": "Q1-26 營收 €125M、EBITDA €47M、積壓 €2,705M(82% FID)；增資 €175M 籌建兩艘 T-class(2030/31)；2026 指引 €854-944M",
+     "src": "https://www.cadeler.com/news/q1-2026-earnings-release-cadeler-reports-strong-q1-performance-driven-by-fleet-expansion-and-operational-activity-in-line-with-expectations"
+    },
+    {
+     "name": "EEW SPC",
+     "ticker": "—",
+     "country": "DE",
+     "share": "單樁專家",
+     "products": "單樁",
+     "note": "未上市；產能 >200 支/年",
+     "src": "https://eew-group.com/products/structural-pipe-offshore-wind/monopiles/"
+    },
+    {
+     "name": "Bladt / Smulders",
+     "ticker": "—",
+     "country": "DK",
+     "share": "歐洲基礎/轉接段",
+     "products": "套管/轉接段 (jacket/TP)",
+     "note": "OWFA 成員；歐洲離岸結構",
+     "src": "https://matrixbcg.com/blogs/competitors/sif-group"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "developer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "世紀鋼 3-3 區塊洽 Ørsted/CIP (TechNews)",
+     "url": "https://technews.tw/2026/03/31/centary-iron-and-steel"
+    },
+    {
+     "label": "Cadeler Q1-26 積壓 €2,705M (Cadeler)",
+     "url": "https://www.cadeler.com/news/q1-2026-earnings-release-cadeler-reports-strong-q1-performance-driven-by-fleet-expansion-and-operational-activity-in-line-with-expectations"
+    }
+   ]
+  },
+  {
+   "id": "subsea_cable",
+   "row": "offshore",
+   "col": 2,
+   "span": 2,
+   "kind": "stage",
+   "name": "海纜 / 海底電纜 (Submarine Power Cables)",
+   "nameEn": "Submarine Power Cables",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Prysmian/Nexans/NKT 合計 ~75%；鋪纜船 2026 後幾無新船下水、歐洲海纜 2028 年缺口 2,200-4,500km/年",
+   "desc": "離岸風場併網與跨境互聯所需 HVDC/HVAC 海底電纜，是全板塊定價權最強的寡占瓶頸環節。",
+   "marketSize": "$8.64B(2025)",
+   "growth": "鋪纜船斷貨",
+   "share": "null",
+   "analysis": "【2026-H1】海纜市場 2025 約 $8.64B。三強寡占（CR3 ~75%）：Prysmian（PRY.MI，IT，市占 ~40%，Q1-26 EBITDA 與利潤率超預期、Transmission 帶動、積壓再創高；2026-04 拿美國 Atlantic Shores 離岸海纜新約；技術突破——首套 525kV 擠製 HVDC 海纜，單迴路傳輸從 2GW 升至 2.5GW）、Nexans（NEX.PA，FR，~21%，Aurora 鋪纜船 €4 億/1 萬噸纜艙/±640kV XLPE/3,000m 水深）、NKT（NKT.CO，DK，~14%，拿英國 Eastern Green Link 3 的 €2.2B HVDC 大單、積壓大增）。中國：東方電纜（603606.SS，中國離岸海纜龍頭）、中天科技（600522.SS）。台灣：華新麗華（1605.TW）、大亞（1609.TW）海纜在地化。⚠ 鋪纜船斷貨危機：2026 年後幾乎沒有新鋪纜船（CLV）下水；歐洲三強年產能僅 4,500-5,500km，2028 年確認的歐洲離岸需求 5,500-7,500km/年 + 互聯需求 1,200-2,500km/年，2028 年起年缺口 2,200-4,500km——供需缺口擴大、定價權外溢海纜商（類似半導體 CoWoS 瓶頸邏輯）。",
+   "companies": [
+    {
+     "name": "Prysmian",
+     "ticker": "PRY.MI",
+     "country": "IT",
+     "share": "海纜 ~40%",
+     "products": "HVDC/HVAC 海底電纜",
+     "note": "Q1-26 EBITDA/利潤率超預期、積壓再創高；2026-04 拿美國 Atlantic Shores 海纜；首套 525kV 擠製 HVDC 海纜(2→2.5GW)",
+     "src": "https://www.ad-hoc-news.de/boerse/news/ueberblick/prysmian-s-p-a-stock-it0004176001-new-us-submarine-cable-project-keeps/69377015"
+    },
+    {
+     "name": "Nexans",
+     "ticker": "NEX.PA",
+     "country": "FR",
+     "share": "海纜 ~21%",
+     "products": "±640kV XLPE HVDC 海纜",
+     "note": "Aurora 鋪纜船(€4 億/1 萬噸/3,000m)；歐洲海纜產能瓶頸受惠",
+     "src": "https://neomarketdata.com/best-subsea-power-cable-companies-for-offshore-wind-investors"
+    },
+    {
+     "name": "NKT",
+     "ticker": "NKT.CO",
+     "country": "DK",
+     "share": "海纜 ~14%",
+     "products": "±525kV HVDC 海纜",
+     "note": "拿英國 Eastern Green Link 3 €2.2B HVDC 大單、積壓大增；最聚焦高壓 DC",
+     "src": "https://www.jaynemesis.com/post/cable-cluster-q1-earnings"
+    },
+    {
+     "name": "東方電纜 Orient Cable",
+     "ticker": "603606.SS",
+     "country": "CN",
+     "share": "中國離岸海纜龍頭",
+     "products": "離岸海纜 / 臍帶纜",
+     "note": "中國海纜第一",
+     "src": "https://www.fortunebusinessinsights.com/industry-reports/sub-sea-power-cables-market-100478"
+    },
+    {
+     "name": "中天科技 Zhongtian",
+     "ticker": "600522.SS",
+     "country": "CN",
+     "share": "中國海纜",
+     "products": "海底電纜 / 光纜",
+     "note": "中國海纜大廠",
+     "src": "https://www.fortunebusinessinsights.com/industry-reports/sub-sea-power-cables-market-100478"
+    },
+    {
+     "name": "華新麗華 Walsin",
+     "ticker": "1605.TW",
+     "country": "TW",
+     "share": "台灣海纜在地化",
+     "products": "離岸海纜",
+     "note": "台灣海纜本土化供應",
+     "src": "https://www.fortunebusinessinsights.com/industry-reports/sub-sea-power-cables-market-100478"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "oem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "developer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "海纜市占 Prysmian/Nexans/NKT (NeoMarketData)",
+     "url": "https://neomarketdata.com/best-subsea-power-cable-companies-for-offshore-wind-investors"
+    },
+    {
+     "label": "鋪纜船斷貨 / 2028 缺口 2.2-4.5k km (Energy-Solutions)",
+     "url": "https://energy-solutions.co/reports/subsea-cable-vessel-crisis/"
+    }
+   ]
+  },
+  {
+   "id": "developer",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "開發 / 營運 / 售電 (Developers & Offtake)",
+   "nameEn": "Developers, IPPs & Offtake",
+   "competition": "fragmented",
+   "single": "⚠ 美國離岸：政府官司 5 戰全敗、5 場（含 Revolution/Empire/CVOW）獲放行復工，但未來 3 年幾無其他新案能推進",
+   "desc": "離岸/陸域風場開發商、獨立電廠（IPP）與電力公司，是風機需求的源頭；AI 資料中心電力與歐洲能源安全為結構性催化。",
+   "marketSize": "需求錨點",
+   "growth": "結構性需求",
+   "share": "null",
+   "analysis": "【2026-H1】全球離岸開發龍頭 Ørsted（ORSTED.CO，DK）、RWE（RWE.DE，DE，歐洲離岸/陸域大開發商）、Iberdrola（IBE.MC，ES）、NextEra（NEE，US，美國最大風電業者）、中廣核新能源（1798.HK）/龍源電力（916.HK）中國風電運營。結構性催化：AI 資料中心電力需求 + 歐洲能源安全（GWEC 呼籲離岸列為關鍵基礎設施）。⚠ 美國川普政策法律戰塵埃落定：政府對離岸風電 5 場官司「5 戰全敗」，Vineyard Wind、Revolution Wind、Empire Wind、CVOW、Empire 等已獲法院放行復工；內政部 2026-04 放棄上訴期限，這 5 場可如期完工併網。但專家評估「未來三年除這 5 場外幾無其他美國離岸新案能推進」——美國離岸實質停擺、僅存量續建。歐洲（2026-30 新增 151GW、風電 2030 取代核能成 EU 最大電力來源）+ 亞太 + 中國（2025 陸域單年破 100GW、中國占全球新增 ~75%）為成長主力。",
+   "companies": [
+    {
+     "name": "Ørsted",
+     "ticker": "ORSTED.CO",
+     "country": "DK",
+     "share": "全球離岸開發龍頭",
+     "products": "離岸風場開發/營運",
+     "note": "Hornsea 系列；全球最大離岸開發商",
+     "src": "https://www.windtech-international.com/projects-and-contracts/cadeler-and-orsted-complete-first-monopile-foundation-installation-at-hornsea-3-offshore-wind-farm"
+    },
+    {
+     "name": "RWE",
+     "ticker": "RWE.DE",
+     "country": "DE",
+     "share": "歐洲大開發商",
+     "products": "離岸/陸域風場",
+     "note": "歐洲離岸/陸域大開發商",
+     "src": "https://windeurope.org/data/products/wind-energy-in-europe-2025-statistics-and-the-outlook-for-2026-2030/"
+    },
+    {
+     "name": "Iberdrola",
+     "ticker": "IBE.MC",
+     "country": "ES",
+     "share": "西班牙再生能源巨頭",
+     "products": "離岸/陸域風場",
+     "note": "歐美離岸主力開發商",
+     "src": "https://windeurope.org/data/products/wind-energy-in-europe-2025-statistics-and-the-outlook-for-2026-2030/"
+    },
+    {
+     "name": "NextEra Energy",
+     "ticker": "NEE",
+     "country": "US",
+     "share": "美國最大風電業者",
+     "products": "陸域風場 / IPP",
+     "note": "美國最大再生能源業者",
+     "src": "https://www.fool.com/investing/stock-market/market-sectors/energy/wind-energy-stocks/"
+    },
+    {
+     "name": "龍源電力 Longyuan",
+     "ticker": "916.HK",
+     "country": "HK",
+     "share": "中國風電運營龍頭",
+     "products": "風場開發/營運",
+     "note": "中國最大風電運營商之一",
+     "src": "https://about.bnef.com/insights/clean-energy/chinese-turbine-suppliers-seize-the-spotlight-as-global-wind-power-installations-hit-all-time-high-bloombergnef-report-shows/"
+    },
+    {
+     "name": "中廣核新能源 CGN",
+     "ticker": "1798.HK",
+     "country": "HK",
+     "share": "中國風電運營",
+     "products": "離岸/陸域風場",
+     "note": "中廣核系新能源運營",
+     "src": "https://about.bnef.com/insights/clean-energy/chinese-turbine-suppliers-seize-the-spotlight-as-global-wind-power-installations-hit-all-time-high-bloombergnef-report-shows/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "oem"
+    },
+    {
+     "id": "foundation"
+    },
+    {
+     "id": "subsea_cable"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "WindEurope 2026-30 展望",
+     "url": "https://windeurope.org/data/products/wind-energy-in-europe-2025-statistics-and-the-outlook-for-2026-2030/"
+    },
+    {
+     "label": "政府離岸官司 5 戰全敗、5 場復工 (Electrek)",
+     "url": "https://electrek.co/2026/04/10/us-offshore-wind-backlash-grows-as-empire-revolution-wind-sue-trump-admin/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "drivetrain",
+   "oem"
+  ],
+  [
+   "blade_material",
+   "blade"
+  ],
+  [
+   "blade",
+   "oem"
+  ],
+  [
+   "tower",
+   "oem"
+  ],
+  [
+   "oem",
+   "foundation"
+  ],
+  [
+   "oem",
+   "subsea_cable"
+  ],
+  [
+   "oem",
+   "developer"
+  ],
+  [
+   "foundation",
+   "developer"
+  ],
+  [
+   "subsea_cable",
+   "developer"
+  ]
+ ],
+ "_proposed": {}
+}

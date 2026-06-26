@@ -1,0 +1,773 @@
+{
+ "id": "robotaxi",
+ "tab": "Robotaxi 自駕營運",
+ "title": "Robotaxi 自動駕駛營運供應鏈 (Robotaxi Operations)",
+ "subtitle": "Robotaxi Operations — 2026 是自駕計程車從示範轉放量的轉折年。Waymo 2026-02 完成 $16B 募資、估值 $126B（史上最大 AV 融資），週付費載客 2026-03 達 50 萬趟（一年翻倍）、目標年底破 100 萬、~3,000 輛無人車隊擴張 20+ 城（含倫敦 100 輛 I-Pace 測試、東京路測）。中國 Pony.ai(PONY) Q1 robotaxi 營收 YoY +395%（總營收 $34.3M +145%、淨損擴大至 $53.5M）並在 Zagreb 開歐洲首個商業 robotaxi；WeRide(WRD) Q1 總營收 +57.6%、全球 L4 車隊 ~2,800/robotaxi ~1,300、12 國;百度蘿蔔快跑累計 >2,200 萬趟、週 30 萬+、進軍南韓並取得瑞士 L4 准入（AmiGo×PostBus）。Tesla Austin 圍欄擴至 245 平方英里、Cybercab 已於 Giga Texas 投產卻僅約 42 無人車（押 FSD v15）；Zoox(Amazon) Las Vegas 累計載客 35 萬+、向 NHTSA 申請 2,500 車 FMVSS 豁免、夏季接入 Uber App。本主題刻意有別於 auto_semi（晶片）、lidar（感測），聚焦其上的 AV 軟體棧 → 營運商 → 車隊營運 → 叫車平台四層。⚠ 關鍵洞見：自駕 AI 僅占一趟車成本 ~7%、車隊營運 ~37%——賣鏟人比整機更可投。⚠ 風險：整機普遍深虧、單車經濟未證實、安全事件凍牌、監管未定。",
+ "category": "sw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 6
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "36+"
+  },
+  {
+   "k": "Waymo 估值/募資",
+   "v": "$126B / $16B",
+   "sub": "2026-02 史上最大 AV 融資·週載客 50 萬→目標 100 萬·~3,000 車",
+   "hot": true
+  },
+  {
+   "k": "成本結構洞見",
+   "v": "AI 7% / 車隊 37%",
+   "sub": "自駕 AI 僅占一趟 ~7%、車隊營運 ~37%·賣鏟人更可投",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "vehicle",
+   "label": "整車 / AV 軟體棧 Vehicle & AV Stack",
+   "main": false
+  },
+  {
+   "id": "operator",
+   "label": "Robotaxi 營運商 Operators",
+   "main": true
+  },
+  {
+   "id": "fleet",
+   "label": "車隊營運 / 賣鏟人 Fleet Ops (Picks & Shovels)",
+   "main": false
+  },
+  {
+   "id": "platform",
+   "label": "叫車平台 / 需求 + 監管 Platform & Regulation",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "vehicle_oem",
+   "row": "vehicle",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "Robotaxi 整車 / 線控底盤",
+   "nameEn": "Purpose-Built Robotaxi Vehicles",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · Zeekr(Geely) 成隱形贏家：Waymo 旗艦 Ojai 中國製、硬體中性軟體美系規避地緣風險",
+   "desc": "為無人營運從零設計的整車與線控底盤（無方向盤/對坐式/低地板），是 robotaxi 規模化的硬體載體；多由中國 EV 廠或 Lucid 等供應，屬不押單一營運商的中性曝險。",
+   "marketSize": "整車中性曝險",
+   "growth": "purpose-built 轉向",
+   "share": "null",
+   "analysis": "Waymo 從改裝車轉向 purpose-built：旗艦 Ojai 由 Zeekr（Geely SEA-M 架構、瑞典設計中國製造）供應、並加入 Hyundai Ioniq 5（同代軟硬體），長期車隊將偏向 Zeekr+Hyundai。Zoox（Amazon）自製「對坐無方向盤」整車、SF Bay 量產廠滿產目標年 10,000 輛。Uber-Nuro-Lucid（LCID）以 Lucid Gravity 為平台、6 年部署 35,000+ 輛（$300M tie-up）。中國 Pony.ai/WeRide 與 Toyota/GAC/BAIC 等合作整車。Zeekr/Geely 是隱形贏家：硬體中性、軟體美系，規避「中國 AV 軟體」地緣疑慮。",
+   "companies": [
+    {
+     "name": "Zeekr / Geely",
+     "ticker": "ZK",
+     "country": "CN",
+     "share": "Waymo Ojai 整車供應",
+     "products": "Ojai robotaxi（SEA-M 架構）/ RT 車型",
+     "note": "Waymo 旗艦 purpose-built；瑞典設計、中國製造；供 Waymo/Pony 等",
+     "src": "https://techcrunch.com/2026/05/28/waymos-newest-robotaxi-is-chinese-made-built-to-make-money-and-now-accepting-riders/"
+    },
+    {
+     "name": "Hyundai Motor",
+     "ticker": "005380.KS",
+     "country": "KR",
+     "share": "Waymo 第二整車源",
+     "products": "Ioniq 5 robotaxi",
+     "note": "同代軟硬體；Waymo 長期車隊偏向 Zeekr+Hyundai",
+     "src": "https://insideevs.com/news/797217/waymo-zeekr-ojai-robotaxis-ev/"
+    },
+    {
+     "name": "Lucid Group",
+     "ticker": "LCID",
+     "country": "US",
+     "share": "Uber-Nuro 整車平台",
+     "products": "Lucid Gravity（搭 Nuro 自駕）",
+     "note": "Uber+Nuro 6 年部署 35,000+ 輛、$300M 合作",
+     "src": "https://www.nuro.ai/nuro-lucid-uber-robotaxi"
+    },
+    {
+     "name": "Zoox (Amazon)",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "自製對坐整車",
+     "products": "carriage-style 無方向盤整車",
+     "note": "SF Bay 量產廠；滿產目標年 10,000 輛；NHTSA 受理 FMVSS 豁免",
+     "src": "https://www.therobotreport.com/zoox-sets-geographic-milestones-product-features-robotaxi/"
+    },
+    {
+     "name": "Toyota Motor",
+     "ticker": "7203.T",
+     "country": "JP",
+     "share": "整車平台合作",
+     "products": "Sienna/bZ 等 robotaxi 平台",
+     "note": "與 Pony.ai/Waymo 等整車合作",
+     "src": "https://www.sec.gov/Archives/edgar/data/1969302/000110465926034888/tm269906d1_ex99-1.htm"
+    },
+    {
+     "name": "GAC / BAIC",
+     "ticker": "601238.SS",
+     "country": "CN",
+     "share": "中國整車合作",
+     "products": "Aion/Arcfox robotaxi 平台",
+     "note": "供 Pony.ai/WeRide/百度 中國車隊",
+     "src": "https://www.stocktitan.net/news/PONY/pony-ai-inc-reports-first-quarter-2026-financial-results-with-7evtvu02na5l.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "waymo"
+    },
+    {
+     "id": "china_ops"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Waymo Ojai 中國製整車 (TechCrunch)",
+     "url": "https://techcrunch.com/2026/05/28/waymos-newest-robotaxi-is-chinese-made-built-to-make-money-and-now-accepting-riders/"
+    },
+    {
+     "label": "Nuro-Lucid-Uber robotaxi (Nuro)",
+     "url": "https://www.nuro.ai/nuro-lucid-uber-robotaxi"
+    }
+   ]
+  },
+  {
+   "id": "av_stack",
+   "row": "vehicle",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "AV Driver 軟體棧 / L4 算力參考平台",
+   "nameEn": "AV Driver Stack & L4 Compute",
+   "competition": "competitive",
+   "single": "Nvidia DRIVE Hyperion 10 = Uber 100,000 車 L4 參考平台；惟 AI 僅占一趟成本 ~7%",
+   "desc": "自駕「大腦」軟體（感知/規劃/控制）與其運算平台。非自營車隊的純軟體/算力供應商，成為不押單一營運商的中性曝險，但自駕 AI 僅占一趟車成本約 7%。",
+   "marketSize": "成本僅占一趟 ~7%",
+   "growth": "Hyperion 10 平台化",
+   "share": "null",
+   "analysis": "Nvidia（NVDA）DRIVE AGX Hyperion 10 為 Uber 100,000 車 L4 網路參考平台，生態夥伴含 Avride、May Mobility、Momenta、Nuro、Pony.ai、Wayve、WeRide；BYD/Geely/Nissan（搭 Wayve 軟體）採 Hyperion 開發 L4。純軟體新創 Wayve（UK，端到端學習）、Nuro（US，授權自駕給 Lucid/Uber）、Momenta（CN）、Avride、May Mobility（US，micro-transit L4）。⚠ AI/軟體僅占一趟車成本約 7%——是技術核心但非價值最大環節。",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "L4 參考平台主導",
+     "products": "DRIVE AGX Hyperion 10 / DRIVE OS",
+     "note": "Uber 100,000 車 L4 參考平台；7 家 AV 軟體生態夥伴",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-uber-robotaxi"
+    },
+    {
+     "name": "Wayve",
+     "ticker": "—",
+     "country": "UK",
+     "share": "端到端學習領先",
+     "products": "embodied AI 自駕軟體",
+     "note": "未上市；Nissan L4 搭 Wayve；London Uber 採 Wayve",
+     "src": "https://nvidianews.nvidia.com/news/drive-hyperion-level-4"
+    },
+    {
+     "name": "Nuro",
+     "ticker": "—",
+     "country": "US",
+     "share": "授權型自駕棧",
+     "products": "Nuro Driver（授權 Lucid/Uber）",
+     "note": "未上市；Uber+Lucid 35,000 車自駕供應",
+     "src": "https://www.nuro.ai/nuro-lucid-uber-robotaxi"
+    },
+    {
+     "name": "Momenta",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國 AV 軟體",
+     "products": "L4 自駕軟體棧",
+     "note": "未上市；Nvidia Hyperion 生態夥伴",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-uber-robotaxi"
+    },
+    {
+     "name": "May Mobility",
+     "ticker": "—",
+     "country": "US",
+     "share": "micro-transit L4",
+     "products": "L4 接駁/公共運輸自駕",
+     "note": "未上市；Uber/Nvidia 生態夥伴",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-uber-robotaxi"
+    },
+    {
+     "name": "Avride",
+     "ticker": "—",
+     "country": "US",
+     "share": "Yandex 系自駕",
+     "products": "L4 robotaxi/delivery 軟體",
+     "note": "未上市；Nvidia Hyperion 生態夥伴",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-uber-robotaxi"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "waymo"
+    },
+    {
+     "id": "china_ops"
+    },
+    {
+     "id": "us_challenger"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Nvidia×Uber 100,000 車 L4 (Nvidia)",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-uber-robotaxi"
+    },
+    {
+     "label": "Hyperion L4 BYD/Geely/Nissan (Nvidia)",
+     "url": "https://nvidianews.nvidia.com/news/drive-hyperion-level-4"
+    }
+   ]
+  },
+  {
+   "id": "waymo",
+   "row": "operator",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "Waymo（Alphabet）營運龍頭",
+   "nameEn": "Waymo — US Operations Leader",
+   "competition": "monopoly",
+   "single": "美國唯一真正無人商業營運龍頭；$126B 估值、~3,000 車、週載客 50 萬→目標 100 萬",
+   "desc": "Alphabet 旗下 robotaxi 龍頭，美國唯一達成真正無安全員商業營運規模者，是整個板塊的標竿與估值錨。",
+   "marketSize": "$126B 估值",
+   "growth": "週載客一年翻倍至 50 萬",
+   "share": "null",
+   "analysis": "Waymo（Alphabet/GOOGL）2026-02 完成 $16B 募資、估值 $126B（史上最大 AV 融資，Dragoneer/DST/Sequoia 領投，a16z/Mubadala/Silver Lake/Tiger/T.Rowe 跟投）。2026-03 週付費載客達 50 萬趟（一年翻倍、占全美商業無人載客約 9 成）、每週 >400 萬無人里程、目標 2026 年底破 100 萬趟；~3,000 輛真正無人車隊、10 個美國城市營運，年內擴張 20+ 城含首批國際市場 Tokyo（路測中）、London（100 輛 Jaguar I-Pace、100 平方英里測試、待英國政府批准）。第 6 代 Driver + Ojai 整車降本。London/Miami 改用 Moove 自管車隊——signal 不再需要 Uber 通路。⚠ 整機估值溢價高 vs 真實放量。",
+   "companies": [
+    {
+     "name": "Waymo (Alphabet)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "美國無人營運龍頭",
+     "products": "Waymo One robotaxi / 6th-gen Driver",
+     "note": "$126B 估值、$16B 募資；~3,000 車、50 萬趟/週→目標 100 萬；擴 20+ 城+Tokyo/London",
+     "src": "https://electrek.co/2026/02/02/waymo-raises-16-billion-round-at-126-billion-valuation-plans-expansion/"
+    },
+    {
+     "name": "Waymo (Alphabet)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "國際化首發",
+     "products": "Tokyo 路測 / London 100 輛 I-Pace 測試",
+     "note": "首批國際市場；倫敦 100 平方英里測試待批；London/Miami 改 Moove 自管車隊",
+     "src": "https://techcrunch.com/2026/04/14/london-gets-closer-to-its-first-robotaxi-service-as-waymo-begins-testing/"
+    },
+    {
+     "name": "Waymo (Alphabet)",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "週載客衝刺",
+     "products": "1M 週載客目標 / Premier 訂閱",
+     "note": "2026-03 週載客一年翻倍達 50 萬、每週 >400 萬里程、目標 2026 末破 100 萬",
+     "src": "https://mexicobusiness.news/automotive/news/waymo-aims-1-million-weekly-us-robotaxi-rides-2026"
+    },
+    {
+     "name": "Cruise (GM, 已退出)",
+     "ticker": "GM",
+     "country": "US",
+     "share": "前美國第二、已退出",
+     "products": "（robotaxi 業務 2024 收攤）",
+     "note": "GM 終止 robotaxi 載客、轉個人 AV；安全事件凍牌前車之鑑",
+     "src": "https://electrek.co/2026/05/15/uber-turns-on-waymo-10-billion-robotaxi-alternatives/"
+    },
+    {
+     "name": "Moove (車隊夥伴)",
+     "ticker": "—",
+     "country": "US",
+     "share": "Waymo 自管車隊",
+     "products": "Waymo London/Miami 車隊管理",
+     "note": "未上市；Uber 投資；Waymo 改 Moove 自管、繞過 Uber 通路",
+     "src": "https://www.techtimes.com/articles/318284/20260612/waymo-premier-subscription-costs-3x-uber-one-av-fleet-control-makes-priority-real.htm"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vehicle_oem"
+    },
+    {
+     "id": "av_stack"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fleet_ops"
+    },
+    {
+     "id": "platform_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Waymo $16B/$126B 募資 (Electrek)",
+     "url": "https://electrek.co/2026/02/02/waymo-raises-16-billion-round-at-126-billion-valuation-plans-expansion/"
+    },
+    {
+     "label": "Waymo 目標週載客 100 萬 (MexicoBusiness)",
+     "url": "https://mexicobusiness.news/automotive/news/waymo-aims-1-million-weekly-us-robotaxi-rides-2026"
+    }
+   ]
+  },
+  {
+   "id": "china_ops",
+   "row": "operator",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "中國營運三雄（Pony / WeRide / 蘿蔔快跑）",
+   "nameEn": "China Operators (PONY/WRD/Apollo Go)",
+   "competition": "oligopoly",
+   "single": "三位數成長但深虧：Pony 淨損擴大至 $53.5M（Q4 曾首見 GAAP 獲利後回虧）；單車經濟未證實",
+   "desc": "中國 robotaxi 三雄：Pony.ai、WeRide 美中雙掛牌、百度 Apollo Go（蘿蔔快跑）為母集團平台；以規模+政策+國際化（歐/中東/星/韓）放量，但普遍深虧。",
+   "marketSize": "規模+國際化",
+   "growth": "robotaxi 營收 +395%、總營收 +57~145%",
+   "share": "null",
+   "analysis": "Pony.ai（PONY, NASDAQ + 2026.HK）Q1 2026 總營收 $34.3M（YoY +145%、毛利率 16.2%）、其中 robotaxi 營收 RMB 59.12M（約 $8.6M，YoY +395%、QoQ +28.7%）；Q1 淨損擴大至 $53.5M（2025Q4 曾首見單季 GAAP 獲利後回虧）；車隊 1,700→全年目標上修 3,000→3,500/20+ 城；2026-04 在 Zagreb（Croatia）開歐洲首個商業 robotaxi（Verne App，Uber App 接入中），並進 Doha(Qatar/Karwa)、Singapore、South Korea——共 9 國；Gen-7 整車 2027 目標降至 <RMB 230k（~$33k）。WeRide（WRD, NASDAQ + 0800.HK）Q1 總營收 RMB 114.1M（$16.5M，YoY +57.6%，產品營收 +115.8%、毛利率 34.7%）、robotaxi 車隊約 1,300/全球 L4 ~2,800、12 國 40+ 城、Dubai 與 Uber+RTA 全無人收費、Abu Dhabi、Singapore Punggol 與 Grab 開營。百度 Apollo Go（BIDU）累計 >2,200 萬趟、Q1 320 萬無人趟/週峰值 30 萬+（YoY +120%）、RT6 整車約 $30k、Dubai 商業營運、進軍 South Korea、瑞士取得 L4 准入（AmiGo×Swiss Post PostBus）、與 Lyft 進軍歐洲、全球 27 城。⚠ 三位數成長本質是車隊規模×補貼，單車經濟與獲利拐點待證。",
+   "companies": [
+    {
+     "name": "Pony.ai",
+     "ticker": "PONY",
+     "country": "CN",
+     "share": "robotaxi 營收 +395%",
+     "products": "Gen-7 robotaxi / 9 國 20+ 城",
+     "note": "Q1 總營收 $34.3M(+145%)、robotaxi RMB 59.12M(+395%)；淨損擴大 $53.5M；車隊 1,700→3,500；Zagreb 開歐洲首例",
+     "src": "https://www.stocktitan.net/news/PONY/pony-ai-inc-reports-first-quarter-2026-financial-results-with-7evtvu02na5l.html"
+    },
+    {
+     "name": "WeRide",
+     "ticker": "WRD",
+     "country": "CN",
+     "share": "Q1 總營收 +57.6%",
+     "products": "robotaxi/robobus/環衛 L4",
+     "note": "Q1 總營收 $16.5M(+57.6%)、產品營收 +115.8%、毛利率 34.7%；robotaxi 車隊 ~1,300/L4 ~2,800、12 國 40+ 城",
+     "src": "https://www.benzinga.com/markets/earnings/26/05/52534905/weride-q1-revenue-jumps-58-as-global-robotaxi-fleet-hits-1300"
+    },
+    {
+     "name": "百度 Apollo Go (蘿蔔快跑)",
+     "ticker": "BIDU",
+     "country": "CN",
+     "share": "累計載客最高",
+     "products": "Apollo Go / RT6 整車（~$30k）",
+     "note": "累計 >2,200 萬趟、週 30 萬+(+120%)；27 城；Dubai/南韓營運；瑞士 L4 准入(AmiGo×PostBus)；與 Lyft 進軍歐洲",
+     "src": "https://electrek.co/2026/06/16/baidu-apollo-go-amigo-switzerland-level-4-approval/"
+    },
+    {
+     "name": "Pony.ai",
+     "ticker": "2026.HK",
+     "country": "CN",
+     "share": "港股雙掛牌",
+     "products": "robotaxi 香港上市",
+     "note": "NASDAQ:PONY + HKEX:2026 雙掛牌",
+     "src": "https://stockanalysis.com/stocks/pony/"
+    },
+    {
+     "name": "WeRide",
+     "ticker": "0800.HK",
+     "country": "CN",
+     "share": "港股雙掛牌",
+     "products": "robotaxi 香港上市",
+     "note": "NASDAQ:WRD + HKEX:0800 雙掛牌；Q1 robotaxi 收入仍三位數成長",
+     "src": "https://grafa.com/en/news/united-states/weride-earnings-q12026-robotaxi-expansion"
+    },
+    {
+     "name": "AutoGo (K2)",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "中東在地夥伴 (UAE)",
+     "products": "Abu Dhabi 全無人營運(與百度)",
+     "note": "未上市；UAE 在地夥伴；與 Apollo Go 取得 Abu Dhabi 首批全無人商業牌照",
+     "src": "https://www.prnewswire.com/news-releases/baidus-apollo-go-and-k2s-autogo-commence-fully-autonomous-ride-hailing-service-on-yas-island-announce-phased-expansion-across-abu-dhabi-302663468.html"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vehicle_oem"
+    },
+    {
+     "id": "av_stack"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fleet_ops"
+    },
+    {
+     "id": "platform_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Pony.ai Q1 2026 財報 (StockTitan)",
+     "url": "https://www.stocktitan.net/news/PONY/pony-ai-inc-reports-first-quarter-2026-financial-results-with-7evtvu02na5l.html"
+    },
+    {
+     "label": "WeRide Q1 2026 總營收 +57.6% (Benzinga)",
+     "url": "https://www.benzinga.com/markets/earnings/26/05/52534905/weride-q1-revenue-jumps-58-as-global-robotaxi-fleet-hits-1300"
+    }
+   ]
+  },
+  {
+   "id": "us_challenger",
+   "row": "operator",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "美國挑戰者（Tesla / Zoox）",
+   "nameEn": "US Challengers (Tesla / Zoox)",
+   "competition": "emerging",
+   "single": "⚠ Tesla Cybercab 已投產卻僅約 42 無人車（押 FSD v15）；敘事與放量落差最大",
+   "desc": "美國 robotaxi 後進挑戰者：Tesla 以 FSD 全自研路線、Zoox 以自製整車+Amazon 資源切入，敘事溢價高但真實放量仍小。",
+   "marketSize": "落差最大",
+   "growth": "敘事溢價 vs 真實放量",
+   "share": "null",
+   "analysis": "Tesla（TSLA）2026-06-03 把 Austin 圍欄擴至約 245 平方英里（含機場）、宣示 H1 擴 7 城（Dallas/Houston/Phoenix/Miami/Orlando/Tampa/Las Vegas），但實際無安全員車隊僅約 42 輛（Austin 28+Dallas 5+Houston 6；總車隊約 700 多需安全員）；Cybercab 已於 Giga Texas 投產但尚未投入載客。Musk 把規模化押在 FSD v15 改寫（模型 ~10 億→~100 億參數），放量推遲到 2026 末/2027 初、Cybercab 實質營收要 2027。Texas 對比 Waymo 577 vs Tesla 42——「地圖大、車很少」。Zoox（Amazon/AMZN）自製對坐無方向盤整車、Las Vegas 累計載客 35 萬+/近 200 萬里程（仍免費待收費）、SF Bay 量產廠滿產年 10,000，SF/Austin/Miami 接力；2026-03 NHTSA 受理 Zoox FMVSS 豁免（最多 2,500 車、免雨刷/後視鏡），夏季接入 Uber App、2027 進 LA。⚠ 兩者敘事溢價 vs 真實規模落差為板塊最大。",
+   "companies": [
+    {
+     "name": "Tesla",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "FSD 全自研路線",
+     "products": "Robotaxi（Austin/Dallas/Houston）",
+     "note": "Austin 圍欄 245 sq mi 但僅約 42 無人車（總車隊 ~700 多需安全員）；押 FSD v15（~100 億參數）放量延後",
+     "src": "https://www.automotiveworld.com/news/tesla-robotaxi-fleet-hits-25-as-musk-defers-scale-to-fsd-v15/"
+    },
+    {
+     "name": "Tesla",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "Cybercab 投產",
+     "products": "Cybercab（Giga Texas 投產）",
+     "note": "2026-04 起 Giga Texas 量產 Cybercab 但尚未載客；產線目標年 5M、實質營收要 2027",
+     "src": "https://finance.yahoo.com/markets/stocks/articles/tesla-begins-cybercab-robotaxi-production-154930610.html"
+    },
+    {
+     "name": "Zoox (Amazon)",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "自製整車+Amazon 資源",
+     "products": "Zoox robotaxi（Vegas/SF/Austin/Miami）",
+     "note": "Vegas 累計載客 35 萬+/近 200 萬里程（仍免費）；量產廠年 10,000；夏季接入 Uber App、2027 進 LA",
+     "src": "https://www.cnbc.com/2026/03/24/amazon-zoox-robotaxi-rides-austin-miami.html"
+    },
+    {
+     "name": "Zoox (Amazon)",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "監管里程碑",
+     "products": "FMVSS 豁免申請（無方向盤整車）",
+     "note": "2026-03-11 NHTSA 公開徵詢；申請最多 2,500 車；免雨刷/後視鏡等人駕設備",
+     "src": "https://www.hunton.com/the-nickel-report/nhtsa-takes-notable-steps-to-address-avs-and-develop-a-federal-uniform-av-standard"
+    },
+    {
+     "name": "Zoox (Amazon)",
+     "ticker": "AMZN",
+     "country": "US",
+     "share": "量產產能",
+     "products": "SF Bay 量產廠（年 10,000 輛目標）",
+     "note": "serial production 廠開幕；Vegas/SF 上線後 100 車上路",
+     "src": "https://www.therobotreport.com/zoox-sets-geographic-milestones-product-features-robotaxi/"
+    },
+    {
+     "name": "Tesla",
+     "ticker": "TSLA",
+     "country": "US",
+     "share": "整車自製垂直整合",
+     "products": "Cybercab / Model Y robotaxi",
+     "note": "自製整車+FSD+車隊垂直整合；單車經濟潛在最低成本路線",
+     "src": "https://en.wikipedia.org/wiki/Tesla_Robotaxi"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vehicle_oem"
+    },
+    {
+     "id": "av_stack"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "fleet_ops"
+    },
+    {
+     "id": "platform_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Tesla Austin 245 sq mi 僅 20 車 (Electrek)",
+     "url": "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/"
+    },
+    {
+     "label": "Zoox Austin/Miami 擴張 (CNBC)",
+     "url": "https://www.cnbc.com/2026/03/24/amazon-zoox-robotaxi-rides-austin-miami.html"
+    }
+   ]
+  },
+  {
+   "id": "fleet_ops",
+   "row": "fleet",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "車隊營運 / 賣鏟人（充電·維修·清潔·調度·遠端）",
+   "nameEn": "Fleet Ops & Picks-and-Shovels",
+   "competition": "highgrowth",
+   "single": "鎖喉點 · 車隊營運占一趟車成本 ~37%（AI 僅 7%）；Moove 接 Waymo London/Miami",
+   "desc": "充電、清潔、維修、感測器校準、調度、遠端支援(teleoperation)、車庫 depot——把無人車隊真正跑起來的營運層，占一趟車成本約 37%，是最被低估的「賣鏟人」環節。",
+   "marketSize": "最被低估環節",
+   "growth": "占成本 37%",
+   "share": "null",
+   "analysis": "成本洞見：自駕 AI 僅占一趟車成本約 7%、車隊營運約 37%（充電/清潔/depot/維修/遠端）。Moove（Uber 投資）接手 Waymo 在 London/Miami 的車隊管理——首見 Waymo 繞過 Uber 自管。Hertz（HTZ）2026-04-30 正式成立 Oro Mobility 子公司、與 Uber 簽兩份車隊協議，為 Uber AV（Lucid+Nuro）提供充電/維修/清潔/depot 人力，SF Bay 年內上線、2027 擴張；NJ 司機制車隊 2026 春先行。車隊營運商版圖成形：Oro(Hertz)、Avomo、Moove、Transdev（2019 起跑 Waymo 車隊）、Avis、Lyft Flexdrive。Amerit Fleet Solutions（US）做 AV 維修與 lidar/radar/camera 校準。Joule Labs（US）建 robotaxi 充電/depot。Uber 自建 Houston 充電+維修 depot 支援 Lucid Gravity/Nuro 車隊。⚠ 這段現金流更早、估值更低，是不押單一營運商的務實佈局。",
+   "companies": [
+    {
+     "name": "Hertz / Oro Mobility",
+     "ticker": "HTZ",
+     "country": "US",
+     "share": "Uber AV 車隊資產管理",
+     "products": "充電/維修/清潔/depot 人力",
+     "note": "2026-04-30 正式成立 Oro Mobility、與 Uber 簽兩約（Lucid+Nuro）；SF Bay 年內上線、2027 擴張",
+     "src": "https://techcrunch.com/2026/04/30/uber-taps-hertz-to-clean-charge-and-fix-its-lucid-motors-robotaxis/"
+    },
+    {
+     "name": "Avis Budget Group",
+     "ticker": "CAR",
+     "country": "US",
+     "share": "Waymo 達拉斯獨家車隊管理",
+     "products": "Waymo Dallas 充電/維修/depot/整備",
+     "note": "首家租車商管 Waymo 車隊；管 Jaguar I-Pace 車隊、可擴他城；走 Waymo 自有 App",
+     "src": "https://techcrunch.com/2025/07/28/waymo-taps-avis-to-manage-robotaxi-fleet-in-dallas/"
+    },
+    {
+     "name": "Moove",
+     "ticker": "—",
+     "country": "US",
+     "share": "Waymo 自管車隊夥伴",
+     "products": "robotaxi 車隊管理(London/Miami)",
+     "note": "未上市；Uber 投資；接 Waymo London/Miami——繞過 Uber 通路",
+     "src": "https://www.techtimes.com/articles/318284/20260612/waymo-premier-subscription-costs-3x-uber-one-av-fleet-control-makes-priority-real.htm"
+    },
+    {
+     "name": "Amerit Fleet Solutions",
+     "ticker": "—",
+     "country": "US",
+     "share": "AV 維修/校準",
+     "products": "lidar/radar/camera 校準 / 快速周轉",
+     "note": "未上市；班次間清潔校準、保護營運時數",
+     "src": "https://www.ameritfleetsolutions.com/industries/autonomous-vehicles/"
+    },
+    {
+     "name": "Joule Labs",
+     "ticker": "—",
+     "country": "US",
+     "share": "充電/depot 基建",
+     "products": "robotaxi 充電 depot / 無人化驗車",
+     "note": "未上市；大量 AV 充電+檢查+清潔+驗證",
+     "src": "https://www.joulelabs.com/robotaxi-charging-infrastructure"
+    },
+    {
+     "name": "Uber (自建 depot)",
+     "ticker": "UBER",
+     "country": "US",
+     "share": "自建充電維修 depot",
+     "products": "Houston Lucid/Nuro depot",
+     "note": "押注掌控充電/維修 depot 為勝負關鍵",
+     "src": "https://www.axios.com/2026/06/17/why-uber-is-spending-big-on-robotaxi-depots-and-charging-infrastructure"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "waymo"
+    },
+    {
+     "id": "china_ops"
+    },
+    {
+     "id": "us_challenger"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "platform_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "車隊營運占成本 37% (BusinessModelAnalyst)",
+     "url": "https://businessmodelanalyst.com/robotaxi-fleet-operations-picks-and-shovels/"
+    },
+    {
+     "label": "Hertz/Oro×Uber 車隊營運 (Hertz)",
+     "url": "https://newsroom.hertz.com/press-releases/press-release-details/hertz-and-uber-partner-to-power-autonomous-robotaxi-and-driver-led-fleet-operations/"
+    }
+   ]
+  },
+  {
+   "id": "platform_demand",
+   "row": "platform",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "叫車平台 / 需求聚合 + 監管保險",
+   "nameEn": "Ride Platforms, Demand & Regulation",
+   "competition": "oligopoly",
+   "single": "⚠ Uber 一邊當 Waymo 通路、一邊自投 >$10B 養替代品——平台與營運商攤牌",
+   "desc": "Uber/Lyft/Bolt/Grab 等以聚合多家 AV 夥伴掌握需求流量入口，同時自投對沖；疊加 NHTSA FMVSS/AV STEP 監管與保險責任歸屬，是放量的解鎖鍵。",
+   "marketSize": "流量入口",
+   "growth": "Uber ~20 AV 夥伴",
+   "share": "null",
+   "analysis": "Uber（UBER）已鎖定約 20 家 AV 夥伴（含 Waymo、WeRide、Pony.ai、Avride(Dallas)、Nuro+Lucid 20,000+ 車、Zoox(Vegas 夏季接入)、Verne 等），目標 2026 末 10+ 國；但同時自投 >$10B 做「Waymo 替代品」對沖（Wayve/Nuro/Lucid/Rivian/自有 depot），Lucid-Nuro 2026 末進 SF、Houston 2027 上線。Lyft（LYFT）與百度 Apollo Go 合作進軍歐洲（英/德 RT6）。Bolt/Grab 為歐洲/東南亞需求端。⚠ Waymo 改用 Moove 自管車隊（London/Miami）= 不再需要 Uber 通路，平台與營運商從夥伴變對手。監管：NHTSA 2026-03-11 受理 Zoox FMVSS 豁免（最多 2,500 車）、03-16 修 FMVSS 102/103/104 容納 ADS、提出 AV STEP 國家計畫、瑞士 FEDRO 給 Apollo Go(AmiGo) L4 准入；保險/責任歸屬（製造商 vs 營運商 vs 保險）未定，是放量隱性天花板。",
+   "companies": [
+    {
+     "name": "Uber Technologies",
+     "ticker": "UBER",
+     "country": "US",
+     "share": "AV 聚合平台龍頭",
+     "products": "~20 AV 夥伴 / 10+ 國",
+     "note": "Waymo/WeRide/Pony/Avride/Zoox(Vegas 夏季)/Nuro+Lucid 20,000+ 車；自投 >$10B 對沖",
+     "src": "https://techcrunch.com/2026/02/23/uber-autonomous-solutions-av-robotaxi"
+    },
+    {
+     "name": "Uber Technologies",
+     "ticker": "UBER",
+     "country": "US",
+     "share": "對沖自建",
+     "products": "Wayve/Nuro/Lucid/自有 depot",
+     "note": "一邊當 Waymo 通路、一邊養替代品；Waymo 改 Moove 反制",
+     "src": "https://electrek.co/2026/05/15/uber-turns-on-waymo-10-billion-robotaxi-alternatives/"
+    },
+    {
+     "name": "Lyft",
+     "ticker": "LYFT",
+     "country": "US",
+     "share": "次大平台",
+     "products": "與百度 Apollo Go 合作(英/德 RT6)",
+     "note": "RT6 進軍英國/德國等歐洲市場；瑞士 Apollo Go(AmiGo) 取得 L4 准入",
+     "src": "https://electrek.co/2026/06/16/baidu-apollo-go-amigo-switzerland-level-4-approval/"
+    },
+    {
+     "name": "Bolt",
+     "ticker": "—",
+     "country": "EU",
+     "share": "歐洲需求端",
+     "products": "歐洲叫車平台(Uber/Nvidia 生態)",
+     "note": "未上市；歐洲 robotaxi 需求聚合",
+     "src": "https://nvidianews.nvidia.com/news/nvidia-uber-robotaxi"
+    },
+    {
+     "name": "Grab",
+     "ticker": "GRAB",
+     "country": "SG",
+     "share": "東南亞需求端",
+     "products": "新加坡 robotaxi(與 WeRide)",
+     "note": "WeRide Punggol 與 Grab 合作開營",
+     "src": "https://grafa.com/en/news/united-states/weride-earnings-q12026-robotaxi-expansion"
+    },
+    {
+     "name": "NHTSA / AV STEP (監管)",
+     "ticker": "—",
+     "country": "US",
+     "share": "聯邦監管框架",
+     "products": "FMVSS 102/103/104 修法 / AV STEP",
+     "note": "2026-03 修法容納 ADS；Zoox FMVSS 豁免；crash-report SGO 2026 到期",
+     "src": "https://www.foley.com/insights/publications/2025/11/driving-into-2026-the-state-of-nhtsa-and-the-future-of-vehicle-safety-regulation/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "fleet_ops"
+    },
+    {
+     "id": "waymo"
+    },
+    {
+     "id": "china_ops"
+    },
+    {
+     "id": "us_challenger"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "Uber 25+ AV 夥伴 (TechCrunch)",
+     "url": "https://techcrunch.com/2026/02/23/uber-autonomous-solutions-av-robotaxi"
+    },
+    {
+     "label": "Uber 自投 >$10B 對沖 Waymo (Electrek)",
+     "url": "https://electrek.co/2026/05/15/uber-turns-on-waymo-10-billion-robotaxi-alternatives/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "vehicle_oem",
+   "waymo"
+  ],
+  [
+   "vehicle_oem",
+   "china_ops"
+  ],
+  [
+   "vehicle_oem",
+   "us_challenger"
+  ],
+  [
+   "av_stack",
+   "waymo"
+  ],
+  [
+   "av_stack",
+   "china_ops"
+  ],
+  [
+   "av_stack",
+   "us_challenger"
+  ],
+  [
+   "waymo",
+   "fleet_ops"
+  ],
+  [
+   "china_ops",
+   "fleet_ops"
+  ],
+  [
+   "us_challenger",
+   "fleet_ops"
+  ],
+  [
+   "waymo",
+   "platform_demand"
+  ],
+  [
+   "china_ops",
+   "platform_demand"
+  ],
+  [
+   "us_challenger",
+   "platform_demand"
+  ],
+  [
+   "fleet_ops",
+   "platform_demand"
+  ]
+ ],
+ "_proposed": {}
+}

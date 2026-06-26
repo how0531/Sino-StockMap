@@ -1,0 +1,2201 @@
+{
+ "id": "cowos",
+ "tab": "CoWoS",
+ "title": "CoWoS 先進封裝供應鏈",
+ "subtitle": "Chip-on-Wafer-on-Substrate — TSMC 主導的 2.5D 先進封裝，是 AI 加速器最關鍵的產能瓶頸。本版補齊先前漏掉的台日韓封裝設備生態（濕製程、暫時鍵合、點膠、固化、雷射、檢測、自動化、廠務、耗材、特化、載具）。獨佔/客戶獨家單點：台積電（中介層+CoW）、味之素 ABF 膜、Disco 切割、家登 EUV 光罩盒、弘塑 SoIC 濕清洗、新應材 Rinse。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 31
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "125+"
+  },
+  {
+   "k": "獨佔/客戶獨家單點",
+   "v": 10,
+   "sub": "TSMC·ABF·Disco·家登·弘塑·新應材·健策·旭化成…",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "equip",
+   "label": "設備・自動化・廠務（含台日韓生態）Equipment",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "CoWoS 主製程流 Main Flow",
+   "main": true
+  },
+  {
+   "id": "material",
+   "label": "原材料・耗材・化學・載具 Materials & Consumables",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "eq-etch",
+   "row": "equip",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "蝕刻 / 沉積設備",
+   "nameEn": "Etch · Deposition",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "中介層與 TSV 的深矽蝕刻（DRIE Bosch）、介電/阻障/晶種沉積設備。",
+   "marketSize": "null",
+   "growth": "9.9% CAGR",
+   "share": "null",
+   "analysis": "Lam 為蝕刻整體龍頭（~50%、先進節點/導體蝕刻 >80%）、AMAT 介電蝕刻＋沉積龍頭、東京威力第三；三家 ~75–90%。中國 Naura/AMEC 各約 5% 快速崛起（本土替代）。",
+   "companies": [
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "蝕刻整體 ~50%",
+     "products": "DRIE Bosch 深矽/導體/選擇性蝕刻",
+     "note": "蝕刻龍頭、TSV 主力",
+     "src": "https://www.morningstar.com/company-reports/1168500-lam-research-dominates-etch-and-deposition-and-merits-a-wide-moat"
+    },
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "介電蝕刻 ~32%/沉積#1",
+     "products": "dielectric/ALE 蝕刻 + PVD/CVD",
+     "note": "介電蝕刻+沉積龍頭"
+    },
+    {
+     "name": "Tokyo Electron",
+     "ticker": "8035.T",
+     "country": "JP",
+     "share": "蝕刻 ~15%（第三）",
+     "products": "Tactras 蝕刻線",
+     "note": "塗佈顯影近獨佔"
+    },
+    {
+     "name": "Naura 北方華創 / AMEC 中微",
+     "ticker": "002371.SZ / 688012.SS",
+     "country": "CN",
+     "share": "各 ~5%",
+     "products": "蝕刻/CVD/PVD/清洗",
+     "note": "中國本土替代龍頭、快速崛起"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-tsv"
+    }
+   ],
+   "sources": [
+    {
+     "label": "蝕刻設備市佔 (Intel Market Research)",
+     "url": "https://www.intelmarketresearch.com/semiconductor-etch-equipment-market-market-16371"
+    }
+   ]
+  },
+  {
+   "id": "eq-litho",
+   "row": "equip",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "微影設備",
+   "nameEn": "Lithography",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "中介層 RDL 重佈線與凸塊層曝光。先進封裝佔微影設備市場約 37%（2025）。",
+   "marketSize": "null",
+   "growth": "封裝新戰場",
+   "share": "null",
+   "analysis": "前段 EUV 由 ASML 獨佔；封裝專用微影 ASML 2025 以 i-line 高產能機台切入，Canon、Nikon 在封裝 stepper 仍有份額。",
+   "companies": [
+    {
+     "name": "ASML",
+     "ticker": "ASML",
+     "country": "EU",
+     "share": "封裝微影新進者",
+     "products": "Twinscan XT i-line scanner",
+     "note": "前段 EUV 獨佔"
+    },
+    {
+     "name": "Canon",
+     "ticker": "7751.T",
+     "country": "JP",
+     "share": "封裝 stepper 主力",
+     "products": "FPA i-line stepper",
+     "note": "RDL 曝光"
+    },
+    {
+     "name": "Nikon",
+     "ticker": "7731.T",
+     "country": "JP",
+     "share": "封裝 stepper",
+     "products": "FX 系列 stepper",
+     "note": "凸塊/RDL 微影"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-interposer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASML 封裝微影 (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/semiconductors/asml-launches-revolutionary-lithography-scanner-for-advanced-3d-packaging-twinscan-xt-360-machine-quadruples-throughput"
+    }
+   ]
+  },
+  {
+   "id": "eq-cmp",
+   "row": "equip",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "CMP / 電鍍設備",
+   "nameEn": "CMP · Plating",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "中介層平坦化（CMP）與 TSV 銅填充電鍍設備。",
+   "marketSize": "null",
+   "growth": "TSV $273M",
+   "share": "null",
+   "analysis": "CMP 由 AMAT 與荏原（Ebara）雙雄主導；TSV 銅電鍍較分散，中國 ACM Research 推本土替代。",
+   "companies": [
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "CMP ~42%",
+     "products": "Reflexion CMP + ECD 電鍍",
+     "note": "中介層平坦化+銅填充"
+    },
+    {
+     "name": "Ebara 荏原",
+     "ticker": "6361.T",
+     "country": "JP",
+     "share": "CMP ~27%/電鍍領先",
+     "products": "F-REX300 CMP + 銅電鍍",
+     "note": "支援 hybrid bonding（雙雄 ~69%）"
+    },
+    {
+     "name": "Hitachi High-Tech",
+     "ticker": "6501.T",
+     "country": "JP",
+     "share": "CMP 第三",
+     "products": "CMP 系統",
+     "note": "日立製作所旗下"
+    },
+    {
+     "name": "ACM Research 盛美",
+     "ticker": "ACMR / 688082.SS",
+     "country": "US",
+     "share": "本土化",
+     "products": "Ultra ECP 電鍍",
+     "note": "上海 STAR 雙掛牌、中國 TSV/凸塊電鍍"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-interposer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSV 銅電鍍系統市場 (Intel Market Research)",
+     "url": "https://www.intelmarketresearch.com/tsv-copper-filled-plating-system-market-24919"
+    }
+   ]
+  },
+  {
+   "id": "eq-dicing",
+   "row": "equip",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "切割 / 研磨設備",
+   "nameEn": "Dicing · Grinding",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · Disco 切割/研磨 >70–80%",
+   "desc": "晶圓減薄、研磨與切割設備，是大尺寸 CoWoS 晶圓良率的關鍵與單點瓶頸。",
+   "marketSize": "$8.2 億",
+   "growth": "6.3% CAGR",
+   "share": "null",
+   "analysis": "Disco 在精密切割/研磨/拋光近乎獨佔（估 >70–80%），Accretech 第二，中國大族雷射以雷射切割切入。",
+   "companies": [
+    {
+     "name": "Disco",
+     "ticker": "6146.T",
+     "country": "JP",
+     "share": ">70–80%",
+     "products": "dicing saw + grinder + DBG",
+     "note": "切割/研磨近乎獨佔"
+    },
+    {
+     "name": "Accretech 東京精密",
+     "ticker": "7729.T",
+     "country": "JP",
+     "share": "第二",
+     "products": "dicing saw + grinder",
+     "note": "第二源"
+    },
+    {
+     "name": "大族雷射 Han's Laser",
+     "ticker": "002008.SZ",
+     "country": "CN",
+     "share": "本土替代",
+     "products": "雷射切割設備",
+     "note": "中國選項"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-cow"
+    }
+   ],
+   "sources": [
+    {
+     "label": "晶圓切割設備市場 (Mordor)",
+     "url": "https://www.mordorintelligence.com/industry-reports/dicing-equipment-market"
+    }
+   ]
+  },
+  {
+   "id": "eq-wet",
+   "row": "equip",
+   "col": 6,
+   "span": 1,
+   "kind": "rail",
+   "name": "濕製程清洗 / 去膠",
+   "nameEn": "Wet Clean · PR Strip",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · 弘塑 TSMC SoIC 濕清洗獨家、CoWoS ~50%、ASE/SPIL 近 100%",
+   "desc": "晶圓單片/槽式清洗、濕蝕刻、去光阻（PR strip）。CoWoS/SoIC 製程的關鍵濕製程環節。",
+   "marketSize": "客戶獨家單點",
+   "growth": "清洗 $246 億(2032)",
+   "share": "null",
+   "analysis": "全球單片清洗由 SCREEN(~42%)/TEL/Lam 三家 >90%；但台積電封裝端由【弘塑】單點掌控——CoWoS 濕清洗約 50%、ASE/SPIL 近 100%、且為【台積電 SoIC 濕清洗獨家供應商】，是被市佔視角埋沒的客戶獨家咽喉。",
+   "companies": [
+    {
+     "name": "弘塑 GPTC",
+     "ticker": "3131.TWO",
+     "country": "TW",
+     "share": "TSMC CoWoS~50%／SoIC獨家",
+     "products": "單片旋轉清洗/槽式酸洗/濕蝕刻/去光阻",
+     "note": "CoWoS 濕製程王者、SoIC 單點咽喉",
+     "src": "https://technews.tw/2025/06/30/gptc/"
+    },
+    {
+     "name": "辛耘 Scientech",
+     "ticker": "3583.TW",
+     "country": "TW",
+     "share": "自製>60%",
+     "products": "Wet Bench/單片清洗/再生晶圓",
+     "note": "供 TSMC 南科/亞利桑那",
+     "src": "https://www.cw.com.tw/article/5134117"
+    },
+    {
+     "name": "SCREEN Holdings",
+     "ticker": "7735.T",
+     "country": "JP",
+     "share": "單片清洗全球 ~42%",
+     "products": "單片/批次清洗",
+     "note": "全球清洗龍頭"
+    },
+    {
+     "name": "Tokyo Electron",
+     "ticker": "8035.T",
+     "country": "JP",
+     "share": "全球前段",
+     "products": "批次+單片清洗",
+     "note": "三家 >90%"
+    },
+    {
+     "name": "SEMES",
+     "ticker": "—",
+     "country": "KR",
+     "share": "三星內製",
+     "products": "單片/兆聲波清洗",
+     "note": "三星全資、未上市（韓國國家核心技術）"
+    },
+    {
+     "name": "Shibaura / ACM 盛美",
+     "ticker": "6590.T / ACMR",
+     "country": "JP",
+     "share": "第三梯隊/中國挑戰者",
+     "products": "單片旋轉清洗 / 兆聲波清洗",
+     "note": "Shibaura 東芝系；ACM 688082.SS"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-cow"
+    }
+   ],
+   "sources": [
+    {
+     "label": "弘塑 CoWoS/SoIC 濕製程 (科技新報)",
+     "url": "https://technews.tw/2025/06/30/gptc/"
+    },
+    {
+     "label": "辛耘 台積唯一優良設備台廠 (天下)",
+     "url": "https://www.cw.com.tw/article/5134117"
+    },
+    {
+     "label": "半導體清洗設備市場 (Intel Market Research)",
+     "url": "https://www.intelmarketresearch.com/semiconductor-cleaning-device-market-10304"
+    }
+   ]
+  },
+  {
+   "id": "eq-tcb",
+   "row": "equip",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "TCB 熱壓鍵合",
+   "nameEn": "TCB Bonder",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "熱壓鍵合（TCB）設備，將晶片接合至中介層、並用於 HBM 堆疊。",
+   "marketSize": "null",
+   "growth": "15% CAGR",
+   "share": "null",
+   "analysis": "HBM TC bonder 高度集中（2025Q3 累計營收）：Hanmi 71.2%、SEMES 13.1%、ASMPT 5.6%、Yamaha/Shinkawa 5.6%；ASMPT「~26%」為整體 TCB（含 CoW chip-to-substrate）口徑。Hanwha bonders 目前未被採用、與 Hanmi 專利訴訟中；Micron HBM4 改採 BESI 獨供。",
+   "companies": [
+    {
+     "name": "Hanmi Semiconductor",
+     "ticker": "042700.KS",
+     "country": "KR",
+     "share": "HBM TCB 71.2%",
+     "products": "Dual TC Bonder / TC BONDER 4(HBM4)",
+     "note": "SK 海力士主供；2026/6/8 獲海力士 HBM4 TC Bonder 4.5 Griffin ₩442 億首單（~15 台、9 月初交付清州 P&T 廠）",
+     "src": "https://www.trendforce.com/news/2026/06/09/news-sk-hynix-reportedly-places-44-2bn-won-tc-bonder-order-with-hanmi-accelerating-hbm4-ramp-up/"
+    },
+    {
+     "name": "SEMES",
+     "ticker": "—",
+     "country": "KR",
+     "share": "HBM TCB 13.1%",
+     "products": "TC bonder (NCF)",
+     "note": "三星 captive、未上市"
+    },
+    {
+     "name": "ASMPT",
+     "ticker": "0522.HK",
+     "country": "SG",
+     "share": "整體 TCB ~26%/HBM 5.6%",
+     "products": "chip-to-substrate TCB + HBM4 TC bonder",
+     "note": "CoW + SK 海力士 HBM4 部分"
+    },
+    {
+     "name": "Yamaha/Shinkawa / K&S",
+     "ticker": "7272.T / KLIC",
+     "country": "JP",
+     "share": "HBM 5.6%/長尾",
+     "products": "TC bonder / APTURA Fluxless TCB",
+     "note": "Shinkawa 被三星停用；K&S 切入"
+    },
+    {
+     "name": "BESI / Hanwha 精機",
+     "ticker": "BESI.AS / 489790.KS",
+     "country": "EU",
+     "share": "Micron HBM4 獨供 / 訴訟中",
+     "products": "TC bonder + d2w",
+     "note": "Micron HBM4 改 BESI；Hanwha 未採用、訴訟未定"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-cow"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TCB bonder 市場與專利戰 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/12/12/news-sk-hynix-reportedly-places-hbm4-tc-bonder-order-with-asmpt-as-hanmi-hanwha-patent-clash-heats-up/"
+    }
+   ]
+  },
+  {
+   "id": "eq-hybond",
+   "row": "equip",
+   "col": 8,
+   "span": 1,
+   "kind": "rail",
+   "name": "混合鍵合",
+   "nameEn": "Hybrid Bonding",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "銅對銅直接鍵合設備，為下世代更高密度 CoW 與 HBM4 關鍵，高速成長且集中。",
+   "marketSize": "$1.5→$4 億",
+   "growth": "21–22% CAGR",
+   "share": "null",
+   "analysis": "BESI 領導（AMAT 2025 入股 ~9% 結盟），EVG/SUSS 主導 W2W，中國通富以 IP 萌芽；韓系 Hanwha Semitech 為目前唯一供 SK 海力士 hybrid bonder 樣機者、SHB2 Nano D2W cluster 2026/4 進 SK 海力士產線評估，後段超車中。",
+   "companies": [
+    {
+     "name": "BESI / EV Group",
+     "ticker": "BESI.AS / —",
+     "country": "EU",
+     "share": "d2w/w2w 雙領先",
+     "products": "die-to-wafer / wafer-to-wafer 混合鍵合",
+     "note": "BESI 純玩家+AMAT 持股9%；EVG 先行者"
+    },
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "country": "US",
+     "share": "整合式 d2w",
+     "products": "Kinex 整合式 d2w hybrid bonder",
+     "note": "入股 BESI 9%（2025/4）、Kinex 2025/11"
+    },
+    {
+     "name": "SUSS MicroTec / K&S",
+     "ticker": "SMHN.DE / KLIC",
+     "country": "EU",
+     "share": "top-5",
+     "products": "XBC300 Gen2 d2w / CuFirst(與 ROHM)",
+     "note": "d2w 整合方案"
+    },
+    {
+     "name": "通富微電 Tongfu",
+     "ticker": "002156.SZ",
+     "country": "CN",
+     "share": "萌芽",
+     "products": "hybrid bonding IP",
+     "note": "中國玩家"
+    },
+    {
+     "name": "Hanwha Semitech",
+     "ticker": "489790.KS",
+     "country": "KR",
+     "share": "SK 海力士 hybrid bonder 唯一樣機",
+     "products": "SHB2 Nano D2W hybrid bonding cluster",
+     "note": "自 2022 與 SK 海力士獨家共研、2026/4 進線評估、後段超車中",
+     "src": "https://www.thelec.net/news/articleView.html?idxno=11199"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-cow"
+    }
+   ],
+   "sources": [
+    {
+     "label": "混合鍵合市場 (InsightAce)",
+     "url": "https://www.insightaceanalytic.com/report/hybrid-bonding-market/3483"
+    }
+   ]
+  },
+  {
+   "id": "eq-tbond",
+   "row": "equip",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "暫時鍵合 / 解鍵合",
+   "nameEn": "Temp Bond / Debond",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "薄晶圓搬運所需的暫時鍵合與雷射/機械解鍵合，CoWoS/CoPoS 薄化與玻璃載板關鍵。",
+   "marketSize": "null",
+   "growth": "亞太 47%",
+   "share": "null",
+   "analysis": "EVG＋SUSS 雙寡占設備端；台廠辛耘以與 3M 合作的 Pyxis 系列＋自製切入，均豪做貼合周邊。",
+   "companies": [
+    {
+     "name": "EV Group",
+     "ticker": "—",
+     "country": "AT",
+     "share": "全球領導",
+     "products": "EVG850 TB + UV/IR 雷射解鍵合",
+     "note": "首個 HVM 解鍵合"
+    },
+    {
+     "name": "SUSS MicroTec",
+     "ticker": "SMHN.DE",
+     "country": "DE",
+     "share": "全球第二",
+     "products": "XBS300 鍵合 + LD12 解鍵合",
+     "note": "第二梯隊"
+    },
+    {
+     "name": "辛耘 Scientech",
+     "ticker": "3583.TW",
+     "country": "TW",
+     "share": "台廠代表",
+     "products": "Frame/Taiko Debonding (與 3M)",
+     "note": "CoPoS 薄化關鍵"
+    },
+    {
+     "name": "Brewer Science",
+     "ticker": "—",
+     "country": "US",
+     "share": "材料",
+     "products": "暫時鍵合膠材",
+     "note": "與 EVG 商業化"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-cow"
+    }
+   ],
+   "sources": [
+    {
+     "label": "辛耘 暫時鍵合 (遠見ESG)",
+     "url": "https://esg.gvm.com.tw/article/116812"
+    }
+   ]
+  },
+  {
+   "id": "eq-dispense",
+   "row": "equip",
+   "col": 10,
+   "span": 1,
+   "kind": "rail",
+   "name": "點膠 / 底填",
+   "nameEn": "Dispense · Underfill",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · 萬潤 TSMC 部分關鍵機種獨家",
+   "desc": "晶片底部填充（underfill）點膠與散熱片壓合；材料端為底填膠。",
+   "marketSize": "null",
+   "growth": "底填膠 ~11%",
+   "share": "null",
+   "analysis": "設備端 Nordson 全球龍頭、台廠萬潤一站式（且為 TSMC 部分關鍵機種獨家）；材料端 Namics/Henkel/住友主導。",
+   "companies": [
+    {
+     "name": "萬潤 Wan Run",
+     "ticker": "6187.TWO",
+     "country": "TW",
+     "share": "TSMC 部分機種獨家",
+     "products": "wafer-level underfill 點膠/散熱片壓合/AOI",
+     "note": "CoWoS 點膠一站式台廠",
+     "src": "https://stockanalysis.com/quote/tpex/6187/company/"
+    },
+    {
+     "name": "Nordson ASYMTEK",
+     "ticker": "NDSN",
+     "country": "US",
+     "share": "全球龍頭",
+     "products": "自動底填/點膠系統",
+     "note": "點膠設備龍頭"
+    },
+    {
+     "name": "Namics (DIC)",
+     "ticker": "—",
+     "country": "JP",
+     "share": "底填膠領導",
+     "products": "LCMUF/高導熱底填",
+     "note": "底填膠龍頭"
+    },
+    {
+     "name": "Henkel",
+     "ticker": "HEN3.DE",
+     "country": "DE",
+     "share": "黏著劑第一",
+     "products": "ECCOBOND UF 底填膠",
+     "note": "底填材料龍頭"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-wos"
+    }
+   ],
+   "sources": [
+    {
+     "label": "萬潤 封測設備 (Stock Analysis)",
+     "url": "https://stockanalysis.com/quote/tpex/6187/company/"
+    }
+   ]
+  },
+  {
+   "id": "eq-cure",
+   "row": "equip",
+   "col": 11,
+   "span": 1,
+   "kind": "rail",
+   "name": "壓合 / 固化 / 烘烤",
+   "nameEn": "Lamination · Curing · Oven",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "貼膜/壓膜、固化烘烤爐（oven）、Carrier Bonder 等熱處理製程。",
+   "marketSize": "null",
+   "growth": "台廠主導",
+   "share": "null",
+   "analysis": "台廠熱處理三雄志聖/群翊/科嶠分食先進封裝烘烤固化；志聖半導體佔營收約 30%、群翊高階接單佔 75%。",
+   "companies": [
+    {
+     "name": "志聖 GP Tech",
+     "ticker": "2467.TW",
+     "country": "TW",
+     "share": "烘烤固化龍頭",
+     "products": "貼膜/壓膜/烘烤 oven/Carrier Bonder",
+     "note": "G2C 聯盟",
+     "src": "https://statementdog.com/news/9079"
+    },
+    {
+     "name": "群翊 Chun Yih",
+     "ticker": "6664.TWO",
+     "country": "TW",
+     "share": "高階接單 75%",
+     "products": "載板熱處理/壓合",
+     "note": "玻璃基板/載板熱處理"
+    },
+    {
+     "name": "科嶠 GPM",
+     "ticker": "4542.TWO",
+     "country": "TW",
+     "share": "熱處理三雄",
+     "products": "先進封裝熱處理",
+     "note": "熱處理台廠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-wos"
+    }
+   ],
+   "sources": [
+    {
+     "label": "志聖 先進封裝熱處理 (StatementDog)",
+     "url": "https://statementdog.com/news/9079"
+    }
+   ]
+  },
+  {
+   "id": "eq-laser",
+   "row": "equip",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "雷射加工 / TGV",
+   "nameEn": "Laser · TGV",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "雷射開槽、鑽孔、玻璃穿孔（TGV）、雷射解鍵合；隨 CoPoS（玻璃基板由圓轉方）需求爆發。TSMC CoPoS 試產線 2026/6 完工（TrendForce 2026/4；C.C. Wei 2026-06-04 股東會確認「已建立試產線，距大量生產仍需 2–3 年」）、310×310mm 規格進度確認（SCHMID 2026/5）、HVM 目標 2028–29。",
+   "marketSize": "新戰場",
+   "growth": "CoPoS 驅動",
+   "share": "null",
+   "analysis": "DISCO 為切割/雷射全球龍頭；台廠鈦昇以 TGV（8000 孔/秒）切入台積電 CoPoS，是少數 TGV 鑽孔＋雷射解鍵合＋電漿清洗一站式者，屬高速成長新戰場。",
+   "companies": [
+    {
+     "name": "鈦昇 TYC",
+     "ticker": "8027.TWO",
+     "country": "TW",
+     "share": "TGV 領先台廠",
+     "products": "雷射開槽/鑽孔/TGV/電漿蝕刻",
+     "note": "切入 TSMC CoPoS",
+     "src": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/225803"
+    },
+    {
+     "name": "DISCO",
+     "ticker": "6146.T",
+     "country": "JP",
+     "share": "切割/雷射龍頭",
+     "products": "laser grooving/stealth dicing",
+     "note": "全球龍頭"
+    },
+    {
+     "name": "EO Technics",
+     "ticker": "039030.KQ",
+     "country": "KR",
+     "share": "韓系",
+     "products": "雷射標記/鑽孔/切割",
+     "note": "CoWoS 連結待證"
+    },
+    {
+     "name": "大族雷射",
+     "ticker": "002008.SZ",
+     "country": "CN",
+     "share": "中國龍頭",
+     "products": "全系列雷射加工",
+     "note": "CoWoS 連結待證"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-interposer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "鈦昇 TGV 切入先進封裝 (Money Weekly)",
+     "url": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/225803"
+    }
+   ]
+  },
+  {
+   "id": "eq-inspect",
+   "row": "equip",
+   "col": 12,
+   "span": 1,
+   "kind": "rail",
+   "name": "量測 / AOI 檢測 / 測試",
+   "nameEn": "Metrology · AOI · Test",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "中介層/RDL/凸塊量測、封裝外觀 AOI、成品測試與探針卡。",
+   "marketSize": "null",
+   "growth": "RDL 高成長",
+   "share": "null",
+   "analysis": "前段量測 KLA/Onto/Camtek 主導；台廠由田/牧德（PCB AOI 轉戰）做封裝黃光 AOI、致茂為 TSMC CoWoS-L RDL 測試重要供應商；探針卡 FormFactor/旺矽。",
+   "companies": [
+    {
+     "name": "由田 Utechzone",
+     "ticker": "3455.TWO",
+     "country": "TW",
+     "share": "封裝黃光 AOI 主力",
+     "products": "螢光式 RDL 黃光 AOI",
+     "note": "RDL/Bumping/Underfill 全節點",
+     "src": "https://udn.com/news/story/7240/9426556"
+    },
+    {
+     "name": "牧德 Machvision",
+     "ticker": "3563.TWO",
+     "country": "TW",
+     "share": "PCB AOI 龍頭轉型",
+     "products": "AVI 外觀檢測+量測",
+     "note": "CoWoS/PLP 檢測 2026 量產"
+    },
+    {
+     "name": "致茂 Chroma",
+     "ticker": "2360.TW",
+     "country": "TW",
+     "share": "測試全球第 4",
+     "products": "SLT/RDL 量測/ATE",
+     "note": "TSMC CoWoS-L RDL 測試重要供應商"
+    },
+    {
+     "name": "Camtek / Onto / KLA",
+     "ticker": "CAMT / ONTO / KLAC",
+     "country": "US",
+     "share": "AP 檢測雙雄+前段",
+     "products": "RDL/microbump/interposer 檢測",
+     "note": "先進封裝量測檢測領導"
+    },
+    {
+     "name": "中科飛測 Skyverse",
+     "ticker": "688361.SS",
+     "country": "CN",
+     "share": "本土",
+     "products": "缺陷檢測/量測",
+     "note": "對標 KLA/Camtek"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-wos"
+    }
+   ],
+   "sources": [
+    {
+     "label": "由田 先進封裝全節點 AOI (經濟日報)",
+     "url": "https://udn.com/news/story/7240/9426556"
+    },
+    {
+     "label": "Camtek CoWoS-like OSAT 訂單 (Converge Digest)",
+     "url": "https://convergedigest.com/camtek-lands-31m-order-from-osat-for-cowos-like-advanced-packaging/"
+    }
+   ]
+  },
+  {
+   "id": "eq-fab",
+   "row": "equip",
+   "col": 13,
+   "span": 1,
+   "kind": "rail",
+   "name": "自動化・物流・廠務",
+   "nameEn": "Automation · AMHS · Facility",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "晶圓/晶粒分選、晶粒貼合、OHT 天車與整廠物流（AMHS），以及無塵室機電統包與水氣化學供應。",
+   "marketSize": "null",
+   "growth": "AI 整廠需求",
+   "share": "null",
+   "analysis": "分選/貼合台廠均華主導（先進封裝佔營收 85%），盟立曾擠掉日商成 TSMC AMHS 供應商、迅得補齊 OHT；無塵室機電由漢唐/亞翔/聖暉/帆宣/洋基「廠務五雄」寡占統包。",
+   "companies": [
+    {
+     "name": "均華 Gallant Micro",
+     "ticker": "6640.TWO",
+     "country": "TW",
+     "share": "分選/貼合龍頭",
+     "products": "Chip Sorter + Die Bonder",
+     "note": "先進封裝佔營收 85%",
+     "src": "https://statementdog.com/news/14448"
+    },
+    {
+     "name": "迅得 Chenois",
+     "ticker": "6438.TW",
+     "country": "TW",
+     "share": "OHT 台廠",
+     "products": "OHT 天車/整廠物流",
+     "note": "受惠 CoWoS 倉儲"
+    },
+    {
+     "name": "盟立 Mirle",
+     "ticker": "2464.TW",
+     "country": "TW",
+     "share": "TSMC AMHS",
+     "products": "OHT/Stocker/EFEM",
+     "note": "AMHS 國產化代表"
+    },
+    {
+     "name": "漢唐 Han Tang",
+     "ticker": "2404.TW",
+     "country": "TW",
+     "share": "無塵室龍頭",
+     "products": "無塵室機電統包",
+     "note": "在手 >千億；廠務五雄",
+     "src": "https://money.udn.com/money/story/5612/9380569"
+    },
+    {
+     "name": "亞翔 / 聖暉 / 帆宣 / 洋基",
+     "ticker": "6139 / 5536 / 6196 / 6691",
+     "country": "TW",
+     "share": "廠務五雄",
+     "products": "無塵室工程/廠務系統/水氣化學",
+     "note": "TSMC 建廠統包"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-osat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "均華 分選/晶粒貼合 (StatementDog)",
+     "url": "https://statementdog.com/news/14448"
+    },
+    {
+     "label": "廠務五雄 受惠 (經濟日報)",
+     "url": "https://money.udn.com/money/story/5612/9380569"
+    }
+   ]
+  },
+  {
+   "id": "f-tsv",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "TSV 矽穿孔製程",
+   "nameEn": "Through-Silicon Via",
+   "competition": "monopoly",
+   "single": "null",
+   "desc": "在矽中介層上製作銅填充垂直穿孔：微影→DRIE 蝕刻→SiO₂ 襯墊→銅 ECD 填充→CMP。",
+   "marketSize": "TSMC CoWoS 鎖喉",
+   "growth": "TSMC 整合",
+   "share": "null",
+   "analysis": "TSV 整合製程綁在台積電 CoWoS 流程內近乎獨佔，所需蝕刻/電鍍/CMP 設備由 Lam、AMAT、Ebara 寡占供應。【絃外之音】TSMC 帳面獨佔 TSV，但實質定價權往上游漏：Disco 切割 >70%、Ebara CMP/電鍍寡占——這些設備一斷，TSMC 的中介層良率與產能立刻停擺，是被「TSMC 獨佔」敘事掩蓋的二階咽喉。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "整合製程持有者",
+     "products": "中介層 TSV + 3D TSV 整合",
+     "note": "CoWoS 內製 TSV"
+    },
+    {
+     "name": "Lam Research",
+     "ticker": "LRCX",
+     "country": "US",
+     "share": "蝕刻",
+     "products": "Bosch process DRIE",
+     "note": "TSV 蝕刻"
+    },
+    {
+     "name": "Ebara 荏原",
+     "ticker": "6361.T",
+     "country": "JP",
+     "share": "電鍍/CMP",
+     "products": "銅 ECD 填充 + CMP",
+     "note": "TSV 銅填充"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "eq-etch"
+    },
+    {
+     "id": "m-wafer"
+    },
+    {
+     "id": "m-cmp"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-interposer"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSV 製程瓶頸 (Semiconductor Engineering)",
+     "url": "https://semiengineering.com/tsv-complexity-leads-to-manufacturing-bottleneck/"
+    }
+   ]
+  },
+  {
+   "id": "f-interposer",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "矽中介層 / RDL / LSI",
+   "nameEn": "Si Interposer · RDL · LSI",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · TSMC CoWoS-S/L 與 LSI 製程近乎獨家（2026 起 Intel Foveros/EMIB-T 為首個可量產第二來源）",
+   "desc": "邏輯晶片與 HBM 之間的高密度互連橋樑：CoWoS-S 全矽、CoWoS-R 有機 RDL、CoWoS-L 局部矽橋(LSI)+RDL。",
+   "marketSize": "鎖喉點",
+   "growth": "60%+",
+   "share": "null",
+   "analysis": "高階矽中介層與 CoWoS-L 的 LSI 製程綁定台積電，技術與良率門檻使其近乎獨佔，是整條 AI 鏈最關鍵鎖喉點；2025 Nvidia 鎖定約 60% 整體 CoWoS 產能（CoWoS-L 占比更高）。2026-H1 結構鬆動：NVIDIA $5B 入股 Intel 後確認以 Intel Foundry 的 Foveros 3D+EMIB-T 作第二來源（約 2027末–2028量產），加上 Samsung SAINT 擴大客戶測試，高階 2.5D/3D 封裝由近乎獨佔轉向三強格局雛形，故節點競爭態勢由 monopoly 上調為 oligopoly。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": ">90%",
+     "products": "矽中介層(含TSV)+LSI 矽橋+RDL",
+     "note": "CoWoS-S/R/L 獨佔"
+    },
+    {
+     "name": "聯電 UMC",
+     "ticker": "2303.TW",
+     "country": "TW",
+     "share": "獨立挑戰者",
+     "products": "矽中介層/RDL/WoW 混合鍵合",
+     "note": "拿下 Qualcomm HPC 中介層（1500nF/mm² 電容）、2026 Q1 量產，藉 CoWoS 缺口以非 TSMC 路線切入中介層段"
+    },
+    {
+     "name": "Amkor",
+     "ticker": "AMKR",
+     "country": "US",
+     "share": "有機 RDL",
+     "products": "organic RDL interposer",
+     "note": "成本敏感 ASIC"
+    },
+    {
+     "name": "Intel / Samsung",
+     "ticker": "INTC / 005930.KS",
+     "country": "US",
+     "share": "替代架構→第二來源",
+     "products": "Foveros 3D + EMIB(-T) / I-Cube·SAINT 橋接",
+     "note": "CoWoS-L 競爭替代→首個可量產第二來源；NVIDIA $5B 入股 2025/12/29 完成、確認共同開發 SoC/CPU 並由 Intel Foundry 以 Foveros 3D+EMIB-T 提供先進封裝(NVLink AI 機櫃)、約 2027末–2028初量產、Intel CFO 稱光封裝即有『每年數十億美元』案子洽談中；Intel EMIB-T 2026 進廠量產(可擴 12x reticle、單封裝 16 運算晶粒+24 HBM5、比 CoWoS 便宜 30–40%)、以 ~5K wpm 成 Nvidia 新封裝供應商(Q2'26 加入)；Nvidia 次世代 Feynman 評估約 25% 封裝量交 Intel EMIB／75% 留 TSMC；Samsung SAINT 自家 2.5D 已通過驗證、2026 擴大客戶測試對標 CoWoS；MediaTek 採 EMIB+CoWoS 雙封裝",
+     "src": "https://www.tomshardware.com/tech-industry/semiconductors/why-nvidias-5bn-partnership-is-about-intels-packaging"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-tsv"
+    },
+    {
+     "id": "eq-litho"
+    },
+    {
+     "id": "eq-cmp"
+    },
+    {
+     "id": "eq-laser"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-cow"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CoWoS-S/R/L 差異 (AnySilicon)",
+     "url": "https://anysilicon.com/cowos-package/"
+    },
+    {
+     "label": "Nvidia 鎖 60% CoWoS 產能 (Astute)",
+     "url": "https://www.astutegroup.com/news/industrial/advanced-packaging-demand-soars-nvidia-secures-60-of-cowos-capacity/"
+    }
+   ]
+  },
+  {
+   "id": "f-cow",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "CoW 晶圓接合",
+   "nameEn": "Chip-on-Wafer",
+   "competition": "monopoly",
+   "single": "鎖喉點 · TSMC CoW 一條龍主導，Nvidia 鎖 ~60% 配額",
+   "desc": "將 GPU/ASIC 晶粒與 HBM 鍵合至矽中介層晶圓上，形成完整運算模組。",
+   "marketSize": "鎖喉點",
+   "growth": "產能 ~10x",
+   "share": "null",
+   "analysis": "台積電 CoWoS 一條龍主導（製程/IP sole-source、>90%）；月產能 2023 ~1.3 萬→2024 ~3.5–4 萬→2025 ~7.5 萬→2026 年底 ~12.7–13 萬片（TrendForce/Tiger 口徑收斂 ~127K wpm；上限估 ~150K wpm 對應 Rubin 平台需求）→2027 持續成長、仍供不應求（2026/4 TSMC Q1 法說 C.C. Wei；capex $52–56B 上限）。TrendForce 2026-06-15：含 OSAT 夥伴新增 5–6 萬片後全產業月產能逼近 20 萬片，供需缺口估從現約 20% 收斂至 2026 年底約 10%、2027 TSMC CoWoS 月產能再上修至 ~17 萬片、續改善。委外 Amkor（18–19 萬片/年含 Nvidia 8 萬）、矽品（6–8 萬片/年）；非 TSMC OSAT 聯盟 2026 月產能由原估 26K 上修至 40K 片（+50%；含 Nvidia Vera CPU/車用約 8 萬片/年由 Amkor+ASE/SPIL 分擔）。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "主導製造",
+     "products": "CoW 接合 + TCB/hybrid bonding",
+     "note": "CoWoS 核心接合節點"
+    },
+    {
+     "name": "Amkor",
+     "ticker": "AMKR",
+     "country": "US",
+     "share": "最大委外夥伴",
+     "products": "CoW 接合 18–19 萬片/年",
+     "note": "含 Nvidia 8 萬片"
+    },
+    {
+     "name": "SPIL 矽品",
+     "ticker": "—",
+     "country": "TW",
+     "share": "委外承接",
+     "products": "CoW 接合 6–8 萬片/年",
+     "note": "★ASE 旗下、2018 下市無獨立代號（非 3711.TW）"
+    },
+    {
+     "name": "Samsung",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "自有",
+     "products": "I-Cube/SAINT 內製",
+     "note": "captive"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-interposer"
+    },
+    {
+     "id": "eq-dicing"
+    },
+    {
+     "id": "eq-wet"
+    },
+    {
+     "id": "eq-tcb"
+    },
+    {
+     "id": "eq-hybond"
+    },
+    {
+     "id": "eq-tbond"
+    },
+    {
+     "id": "m-hbm"
+    },
+    {
+     "id": "m-carrier"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-wos"
+    }
+   ],
+   "sources": [
+    {
+     "label": "TSMC CoWoS 產能與委外 (globalsemiresearch)",
+     "url": "https://globalsemiresearch.substack.com/p/tsmcs-cowos-capacity-scaling-up-outsourcing"
+    }
+   ]
+  },
+  {
+   "id": "f-wos",
+   "row": "flow",
+   "col": 7,
+   "span": 2,
+   "kind": "stage",
+   "name": "WoS 載板接合",
+   "nameEn": "Wafer-on-Substrate",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "將切割後的 CoW 模組接合到 ABF 封裝載板上，完成電源/訊號輸出與機械支撐。",
+   "marketSize": "null",
+   "growth": "全 booked",
+   "share": "null",
+   "analysis": "台積電主導，ASE（CoWoP 類 CoWoS）與 Amkor 承接委外；CoWoS-L/S 自 2025 底全數 booked，OSAT 以 CoWoS-like 補位。",
+   "companies": [
+    {
+     "name": "TSMC 台積電",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "主導",
+     "products": "中介層接 ABF 載板+底填",
+     "note": "後段接合主導"
+    },
+    {
+     "name": "ASE 日月光",
+     "ticker": "3711.TW",
+     "country": "TW",
+     "share": "OSAT 領導",
+     "products": "CoWoP（類 CoWoS）",
+     "note": "2026 LEAP 目標再上修至 >$3.5B（+YoY 118%；capex 從 $7B 升至 $8.5B，年度第二次上修，2026/4 法說）；full-process LEAP 2026 年目標三倍；AI 抹平季節性"
+    },
+    {
+     "name": "Amkor",
+     "ticker": "AMKR",
+     "country": "US",
+     "share": "委外",
+     "products": "wafer-on-substrate 接合",
+     "note": "WoS 委外"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-cow"
+    },
+    {
+     "id": "eq-dispense"
+    },
+    {
+     "id": "eq-cure"
+    },
+    {
+     "id": "eq-inspect"
+    },
+    {
+     "id": "m-abf"
+    },
+    {
+     "id": "m-glass"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-osat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CoWoS-L/S 全 booked、ASE CoWoP (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/12/08/news-tsmcs-cowos-l-s-reportedly-fully-booked-osat-partners-step-up-with-ases-cowop-in-focus/"
+    }
+   ]
+  },
+  {
+   "id": "f-osat",
+   "row": "flow",
+   "col": 9,
+   "span": 2,
+   "kind": "stage",
+   "name": "OSAT 封裝測試",
+   "nameEn": "OSAT Assembly & Test",
+   "competition": "redocean",
+   "single": "null",
+   "desc": "後段最終組裝、植球、測試與良率篩選；既協助台積電外包 CoW，也負責成品測試與出貨。",
+   "marketSize": "成熟紅海",
+   "growth": "AI 高成長",
+   "share": "null",
+   "analysis": "傳統 OSAT 為成熟紅海、價格競爭激烈；但 CoWoS 認證資格（Nvidia/台積電）形成少數廠商護城河，AI 先進封裝為高成長。2024 市佔（top-10 營收 $41.56B）：ASE 居首（占 top-10 ~45%、$18.54B）、Amkor 15.2%（$6.32B）、JCET 12%（$5B）、通富 8%（$3.32B）、力成 5.5%。【絃外之音】OSAT 帳面是紅海，但 CoWoS/CoWoP 認證把它切成兩個世界——拿不到 Nvidia/TSMC 認證的廠在紅海殺價，拿到的（ASE/Amkor）享寡占毛利；中國 JCET/HT-Tech 雙位數成長正侵蝕傳統紅海段，但先進封裝段仍被地緣鎖在牆外。",
+   "companies": [
+    {
+     "name": "ASE 日月光",
+     "ticker": "3711.TW",
+     "country": "TW",
+     "share": "全球龍頭",
+     "products": "CoWoP + FOPLP + SiP + 測試",
+     "note": "AI 先進封裝最大台廠"
+    },
+    {
+     "name": "Amkor",
+     "ticker": "AMKR",
+     "country": "US",
+     "share": "~15.2%",
+     "products": "CoWoS 委外 + 2.5D/RDL",
+     "note": "TSMC 最大委外夥伴；Arizona Phase 1 在建工程 $368M（2026-03-31 10-Q；2025 底 $250M），完工 2027、HVM 2028 啟動、2029 全速；capex 2026 $2.5–3.0B；完工前帶來 1–2% 營業利益率逆風至 2028"
+    },
+    {
+     "name": "JCET 長電 / 通富 Tongfu",
+     "ticker": "600584.SS / 002156.SZ",
+     "country": "CN",
+     "share": "~12% / ~8%",
+     "products": "XDFOI 2.5D / chiplet",
+     "note": "中國前二，AMD 夥伴"
+    },
+    {
+     "name": "力成 PTI / 京元電 KYEC",
+     "ticker": "6239.TW / 2449.TW",
+     "country": "TW",
+     "share": "~5.5% / 測試",
+     "products": "HBM 封測 / CoWoS 成品測試 / FOPLP",
+     "note": "記憶體與測試主力；力成 FOPLP 投資 NT$433 億（≈$13.5B）、月產 6K–7K 片全數預訂（Broadcom+AMD 高層 2026-02-02 親赴確認）、H2 2026 月貢獻 ~NT$1B、HVM 1H27；AMD Zen 7 A14 FOPLP 評估中（TrendForce 2026-05-25）"
+    },
+    {
+     "name": "頎邦 Chipbond / 福懋科",
+     "ticker": "6147.TWO / 8131.TWO",
+     "country": "TW",
+     "share": "金凸塊龍頭",
+     "products": "bumping/COF/晶圓測試 / 記憶體封裝",
+     "note": "頎邦金凸塊近寡占（單點）"
+    },
+    {
+     "name": "華天 Huatian / 南茂 ChipMOS",
+     "ticker": "002185.SZ / 8150.TW",
+     "country": "CN",
+     "share": "中國 Big-3 #3 / 利基",
+     "products": "WLP/SiP / 驅動IC·記憶體封測",
+     "note": "中國第三大 OSAT；補列"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-wos"
+    },
+    {
+     "id": "eq-fab"
+    },
+    {
+     "id": "m-emc"
+    },
+    {
+     "id": "m-chem"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "d-ai"
+    }
+   ],
+   "sources": [
+    {
+     "label": "OSAT 排名與市佔 (Mark Lapedus)",
+     "url": "https://marklapedus.substack.com/p/ase-amkor-top-osat-rankings-but-china"
+    }
+   ]
+  },
+  {
+   "id": "d-ai",
+   "row": "flow",
+   "col": 11,
+   "span": 2,
+   "kind": "demand",
+   "name": "AI 加速器 / 終端需求",
+   "nameEn": "AI Accelerators (Demand)",
+   "competition": "monopoly",
+   "single": "null",
+   "desc": "CoWoS 最終客戶：AI GPU、自研 ASIC 與雲端服務商。需求遠超供給，是 TSMC 擴產核心動力。",
+   "marketSize": "Nvidia ~80% 壟斷",
+   "growth": "25% CAGR",
+   "share": "null",
+   "analysis": "Nvidia 約占 AI 加速器營收 80–90%、近乎獨佔且鎖定約 60% CoWoS 配額（2026 預訂 ~59.5 萬片）；Broadcom（Google TPU/Meta）、AMD、Marvell（AWS/微軟）等自研 ASIC 成長更快、分食市場。【絃外之音】真正的定價權雙握：TSMC 握供給端壟斷，但 Nvidia 握需求端壟斷——用一張鎖 60% 配額的採購單反向決定 TSMC 的擴產節奏與優先序，是「客戶集中度」對封裝鏈最大的隱性風險。",
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "營收 ~80–90%",
+     "products": "GB200/GB300 + Rubin (CoWoS-L)",
+     "note": "鎖 ~60% CoWoS 配額（2026 預訂 ~59.5 萬片、其中 TSMC ~51 萬）；Vera Rubin 2026/6 全面量產、Q3'26 首批出貨"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "country": "US",
+     "share": "AI ASIC 60–80%",
+     "products": "Google TPU/Meta ASIC",
+     "note": "CoWoS 2026 ~24 萬片/年（240,000 wafers，彭博/Tiger 最新估計；2025 估 ~15 萬片 15% 為舊數）；Google 因 CoWoS 配額受限將 2026 TPU 目標砍 100 萬顆，印證 CoWoS 仍是 AI 算力單點瓶頸",
+     "src": "https://www.itiger.com/news/1121636208"
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "country": "US",
+     "share": "GPU 第二",
+     "products": "MI300X/MI350/MI400",
+     "note": "~11%"
+    },
+    {
+     "name": "Marvell / Google / AWS / MS",
+     "ticker": "MRVL / GOOGL / AMZN / MSFT",
+     "country": "US",
+     "share": "自研 ASIC",
+     "products": "Trainium/Maia/TPU",
+     "note": "雲端自研晶片"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-osat"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "AI 加速器市佔 NVDA (Silicon Analysts)",
+     "url": "https://siliconanalysts.com/analysis/nvidia-ai-accelerator-market-share-2024-2026"
+    }
+   ]
+  },
+  {
+   "id": "m-wafer",
+   "row": "material",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "矽晶圓",
+   "nameEn": "Silicon Wafer",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "製作矽中介層所需的 12 吋（300mm）矽晶圓。",
+   "marketSize": "$145 億",
+   "growth": "8.7% CAGR",
+   "share": "null",
+   "analysis": "前五大約占 82%、300mm 佔約 75% 價值：信越、SUMCO、環球晶、Siltronic、SK Siltron。",
+   "companies": [
+    {
+     "name": "信越化學 Shin-Etsu",
+     "ticker": "4063.T",
+     "country": "JP",
+     "share": "全球第一",
+     "products": "300mm 拋光/磊晶晶圓",
+     "note": "矽晶圓龍頭"
+    },
+    {
+     "name": "SUMCO",
+     "ticker": "3436.T",
+     "country": "JP",
+     "share": "全球第二",
+     "products": "300mm 晶圓",
+     "note": "第二源"
+    },
+    {
+     "name": "環球晶 GlobalWafers",
+     "ticker": "6488.TWO",
+     "country": "TW",
+     "share": "全球第三",
+     "products": "300mm 晶圓",
+     "note": "主力台廠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-tsv"
+    }
+   ],
+   "sources": [
+    {
+     "label": "矽晶圓市場與前五市佔 (Stellar MR)",
+     "url": "https://www.stellarmr.com/report/silicon-wafer-market/2769"
+    }
+   ]
+  },
+  {
+   "id": "m-cmp",
+   "row": "material",
+   "col": 2,
+   "span": 1,
+   "kind": "rail",
+   "name": "CMP 耗材 (slurry/pad)",
+   "nameEn": "CMP Slurry · Pad",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "化學機械研磨的研磨液（slurry）與研磨墊（pad）及鑽石碟，是中介層/TSV 平坦化的耗材。",
+   "marketSize": "$36 億",
+   "growth": "9% CAGR",
+   "share": "null",
+   "analysis": "各細分接近獨佔：DuPont CMP pad >70%、Fujifilm 銅 slurry 約 31% 第一、Entegris 整體約 23%；台廠中砂供鑽石碟與再生晶圓。",
+   "companies": [
+    {
+     "name": "DuPont",
+     "ticker": "DD",
+     "country": "US",
+     "share": "CMP pad >70%",
+     "products": "CMP pad",
+     "note": "pad 全球絕對龍頭"
+    },
+    {
+     "name": "Fujifilm EM",
+     "ticker": "4901.T",
+     "country": "JP",
+     "share": "Cu slurry ~31%",
+     "products": "Cu slurry",
+     "note": "銅研磨液第一（≠ Fujimi）"
+    },
+    {
+     "name": "Fujimi",
+     "ticker": "5384.T",
+     "country": "JP",
+     "share": "slurry ~18–20%",
+     "products": "氧化物/鎢 slurry/pad",
+     "note": "研磨材料另一大廠（與 Fujifilm 不同公司）"
+    },
+    {
+     "name": "Entegris / CMC",
+     "ticker": "ENTG",
+     "country": "US",
+     "share": "整體 ~23%",
+     "products": "slurry + pad + 過濾",
+     "note": "CMP 耗材整合"
+    },
+    {
+     "name": "中砂 Kinik",
+     "ticker": "1560.TW",
+     "country": "TW",
+     "share": "台廠",
+     "products": "鑽石碟/retaining ring/再生晶圓",
+     "note": "CMP 耗材台廠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-tsv"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CMP pad/slurry 預測 (Semiconductor Digest)",
+     "url": "https://www.semiconductor-digest.com/semiconductor-cmp-pad-slurry-forecast/"
+    }
+   ]
+  },
+  {
+   "id": "m-hbm",
+   "row": "material",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "HBM 高頻寬記憶體",
+   "nameEn": "HBM Memory",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "堆疊在中介層上的高頻寬記憶體（HBM3E/HBM4），與 GPU 共同決定 AI 算力。",
+   "marketSize": "售罄 / 鎖喉點",
+   "growth": "+70% (2026)",
+   "share": "null",
+   "analysis": "三強寡占且供不應求（top-3 合計近 100%、HHI 極高），但 2026 出現地位重排——TrendForce 最新：SK 海力士 bit-share 由 2025 ~59% 降至 2026 ~50%、三星由 ~20% 升至 ~28%、美光補餘超越三星舊位（Q4'25 bit ~59%/銷售額 ~57% 為舊口徑）（HBM4 已量產：三星 2026/2 首發；2026/6 黃仁勳確認三星/海力士/美光三家同獲 Rubin HBM4 認證並量產、Q3'26 首批系統出貨，配額估 SK ~60–70%/三星 ~25–30%/美光補餘）。需求 2025 +130%、2026 +70%。⚠ 市佔依季度/bit-vs-營收 口徑差異大。",
+   "companies": [
+    {
+     "name": "SK 海力士",
+     "ticker": "000660.KS",
+     "country": "KR",
+     "share": "2026 bit ~50%（由 59% 降）",
+     "products": "HBM3E + HBM4",
+     "note": "Nvidia 主供；2026 bit-share 由 59% 收斂至 ~50%、三星追近",
+     "src": "https://www.astutegroup.com/news/general/sk-hynix-holds-62-of-hbm-micron-overtakes-samsung-2026-battle-pivots-to-hbm4/"
+    },
+    {
+     "name": "Micron 美光",
+     "ticker": "MU",
+     "country": "US",
+     "share": "Q4'25 ~21%",
+     "products": "HBM3E 12-hi + HBM4",
+     "note": "超越三星"
+    },
+    {
+     "name": "Samsung 三星",
+     "ticker": "005930.KS",
+     "country": "KR",
+     "share": "2026 bit ~28%（由 20% 升）",
+     "products": "HBM3E + HBM4",
+     "note": "HBM4 2026/2 量產、Rubin ~25–30%；2026 bit-share 由 20% 回升至 ~28%"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-cow"
+    }
+   ],
+   "sources": [
+    {
+     "label": "HBM 市佔季度變化 (Astute Group)",
+     "url": "https://www.astutegroup.com/news/general/sk-hynix-holds-62-of-hbm-micron-overtakes-samsung-2026-battle-pivots-to-hbm4/"
+    }
+   ]
+  },
+  {
+   "id": "m-emc",
+   "row": "material",
+   "col": 10,
+   "span": 1,
+   "kind": "rail",
+   "name": "EMC 環氧封裝材",
+   "nameEn": "Epoxy Molding Compound",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "封裝保護用環氧樹脂封裝材（EMC），用於 CoWoS/先進封裝 molding。",
+   "marketSize": "$25 億",
+   "growth": "6.8% CAGR",
+   "share": "null",
+   "analysis": "日廠主導：住友電木（~18–20%）居首、Resonac（~10%）次之、台灣長春（~4%）供應，前三約占四成。",
+   "companies": [
+    {
+     "name": "Sumitomo Bakelite",
+     "ticker": "4203.T",
+     "country": "JP",
+     "share": "~18–20%",
+     "products": "封裝 EMC + 液態封裝材",
+     "note": "molding 主力"
+    },
+    {
+     "name": "Resonac 昭和電工",
+     "ticker": "4004.T",
+     "country": "JP",
+     "share": "~10%",
+     "products": "EMC + 封裝材料",
+     "note": "第二梯隊"
+    },
+    {
+     "name": "Panasonic",
+     "ticker": "6752.T",
+     "country": "JP",
+     "share": "三強之一",
+     "products": "環氧模封料 EMC",
+     "note": "日系 EMC 三強"
+    },
+    {
+     "name": "長春 Chang Chun",
+     "ticker": "—",
+     "country": "TW",
+     "share": "~4%",
+     "products": "環氧樹脂 + EMC",
+     "note": "台灣供應"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-osat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "EMC 全球市場 (Spherical Insights)",
+     "url": "https://www.sphericalinsights.com/blogs/top-25-companies-in-global-semiconductor-epoxy-mold-compound-market-market-strategic-overview-and-future-trends-2024-2035"
+    }
+   ]
+  },
+  {
+   "id": "m-abf",
+   "row": "material",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "ABF 載板 (FC-BGA)",
+   "nameEn": "ABF Substrate",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "承載中介層+晶片的高層數有機載板（FC-BGA），連接 PCB；AI 封裝需超大尺寸高層數。",
+   "marketSize": "$48.9 億",
+   "growth": "10.6% CAGR",
+   "share": "null",
+   "analysis": "前五大約占 74%、無單一獨大：欣興（~22%）居首，Ibiden（Nvidia 主供）、Shinko、南電、AT&S 次之。",
+   "companies": [
+    {
+     "name": "欣興 Unimicron",
+     "ticker": "3037.TW",
+     "country": "TW",
+     "share": "~22%",
+     "products": "高層數 ABF FC-BGA 載板",
+     "note": "全球最大"
+    },
+    {
+     "name": "Ibiden",
+     "ticker": "4062.T",
+     "country": "JP",
+     "share": "前二",
+     "products": "高密度 ABF 載板",
+     "note": "Nvidia 主供"
+    },
+    {
+     "name": "Shinko 新光",
+     "ticker": "6967.T",
+     "country": "JP",
+     "share": "前五",
+     "products": "FC-BGA 載板",
+     "note": "高階載板"
+    },
+    {
+     "name": "南電 / AT&S / 景碩",
+     "ticker": "8046.TW / ATS.VI / 3189.TW",
+     "country": "TW",
+     "share": "前五",
+     "products": "ABF FC-BGA 載板",
+     "note": "AI 載板供應"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "m-film"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-wos"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ABF 載板前五大廠 (WonderfulPCB)",
+     "url": "https://www.wonderfulpcb.com/blog/top-abf-substrate-manufacturers-and-market-leaders/"
+    }
+   ]
+  },
+  {
+   "id": "m-film",
+   "row": "material",
+   "col": 8,
+   "span": 1,
+   "kind": "rail",
+   "name": "ABF 增層膜",
+   "nameEn": "Ajinomoto Build-up Film",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · 味之素 ABF 膜 95–98%，全鏈最深單點",
+   "desc": "ABF 載板的關鍵絕緣增層介電膜，源自味之素味精化學，幾乎所有高階 CPU/GPU 載板都依賴它。",
+   "marketSize": "鎖喉點",
+   "growth": "8.3% CAGR",
+   "share": "null",
+   "analysis": "味之素 ABF 膜市占 95–98%、近乎絕對獨佔（ABF 占高階載板絕緣膜 >94%、top-3 約 99%），是整條先進封裝鏈最深、最脆弱的單點瓶頸；積水化學份額極小。【絃外之音】這是全鏈「賣鏟子的賣鏟子」極致——一家賣味精起家的化學公司，靠一層幾乎沒有第二源的膜，掐住所有高階 CPU/GPU 載板；它斷貨，欣興/Ibiden/南電全停，TSMC CoWoS 後段也跟著卡。",
+   "companies": [
+    {
+     "name": "味之素 Ajinomoto",
+     "ticker": "2802.T",
+     "country": "JP",
+     "share": "95–98%",
+     "products": "Ajinomoto Build-up Film",
+     "note": "全鏈最大壟斷瓶頸"
+    },
+    {
+     "name": "積水化學 Sekisui",
+     "ticker": "4204.T",
+     "country": "JP",
+     "share": "極小",
+     "products": "build-up film 替代材",
+     "note": "唯一潛在第二源"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "m-abf"
+    }
+   ],
+   "sources": [
+    {
+     "label": "味之素 ABF 獨佔 (Semiconductor Insight)",
+     "url": "https://semiconductorinsight.com/blog/ajinomoto-ramps-up-abf-substrate-production-amid-surging-semiconductor-demand-market-poised-to-double-by-2032/"
+    }
+   ]
+  },
+  {
+   "id": "m-glass",
+   "row": "material",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "玻璃載板（新興替代）",
+   "nameEn": "Glass Substrate",
+   "competition": "emerging",
+   "single": "null",
+   "desc": "以玻璃核心取代 ABF 有機載板的下世代封裝基板，是長期繞過 ABF 獨佔的潛在替代。",
+   "marketSize": "長線威脅 ABF",
+   "growth": "2026 量產衝刺",
+   "share": "null",
+   "analysis": "2026 底進入首批商業化：Absolics(SKC) 喬治亞廠年產能 12,000m²、AMD/AWS 樣品送測進入 pre-qualification 階段；SKC 籌資 ₩1.17 兆（≈$785M）支持三年量產路徑（SKC BigGo 2026/5）；TrendForce 2026-06-05：glass substrate 2027 初步商業化、2029 放量、2030 全面量產，CoWoS 每片成本 ~$10K 為轉換動力；三星電機 Sejong 試線 2027+ HVM；TSMC/Corning 合作持續。",
+   "companies": [
+    {
+     "name": "Absolics (SKC)",
+     "ticker": "011790.KS",
+     "country": "KR",
+     "share": "量產最前沿",
+     "products": "玻璃核心載板",
+     "note": "供 AMD/AWS 樣品"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "先行者",
+     "products": "厚核玻璃載板 + EMIB",
+     "note": "2025 起授權"
+    },
+    {
+     "name": "Samsung Electro-Mech / Corning",
+     "ticker": "009150.KS / GLW",
+     "country": "KR",
+     "share": "挑戰者",
+     "products": "玻璃線 / 玻璃基材",
+     "note": "Corning 與 TSMC 合作"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-wos"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SKC/Absolics 玻璃載板 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/05/08/news-skc-said-to-speed-glass-substrate-mass-production-by-year-end-advances-new-non-embedding-tech-for-u-s-client/"
+    }
+   ]
+  },
+  {
+   "id": "m-chem",
+   "row": "material",
+   "col": 11,
+   "span": 1,
+   "kind": "rail",
+   "name": "電子特用化學品",
+   "nameEn": "Specialty Chemicals",
+   "competition": "oligopoly",
+   "single": "客戶獨家 · 新應材 TSMC 先進製程 Rinse 獨供（3nm/2nm）",
+   "desc": "顯影液、蝕刻液、剝離液、光阻、前驅物等濕製程化學品。",
+   "marketSize": "客戶獨家單點",
+   "growth": "TSMC 在地化",
+   "share": "null",
+   "analysis": "日德廠（TOK/JSR/信越/Merck/BASF）主導先進光阻；但台廠【新應材】握有 TSMC 先進製程 Rinse 獨供（3nm 起、2nm 延續）、三福為 TSMC CoWoS 特化與 TMAH 回收，是客戶獨家單點。",
+   "companies": [
+    {
+     "name": "新應材 AEMC",
+     "ticker": "4749.TWO",
+     "country": "TW",
+     "share": "TSMC Rinse 獨供",
+     "products": "Rinse 表面改質劑/BARC/EBR",
+     "note": "3nm/2nm 獨供，半導體佔營收 >80%",
+     "src": "https://www.bnext.com.tw/article/81788/aemc-pre-otc-listing"
+    },
+    {
+     "name": "三福化工",
+     "ticker": "4755.TWO",
+     "country": "TW",
+     "share": "TSMC CoWoS 特化",
+     "products": "顯影液/蝕刻液/剝離液/清洗液",
+     "note": "TMAH 回收承接三科"
+    },
+    {
+     "name": "達興材料",
+     "ticker": "3686.TWO",
+     "country": "TW",
+     "share": "友達集團",
+     "products": "光阻剝離液/顯影液",
+     "note": "剝離/顯影液台廠"
+    },
+    {
+     "name": "TOK / JSR / Merck",
+     "ticker": "4186.T / 4185.T / MRK.DE",
+     "country": "JP",
+     "share": "全球光阻",
+     "products": "光阻/顯影/前驅物",
+     "note": "先進光阻全球大廠"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-osat"
+    }
+   ],
+   "sources": [
+    {
+     "label": "新應材 TSMC Rinse 獨供 (數位時代)",
+     "url": "https://www.bnext.com.tw/article/81788/aemc-pre-otc-listing"
+    },
+    {
+     "label": "三福化工 TSMC CoWoS 特化 (Vocus)",
+     "url": "https://vocus.cc/article/65e59b66fd897800013de2ef"
+    }
+   ]
+  },
+  {
+   "id": "m-carrier",
+   "row": "material",
+   "col": 6,
+   "span": 1,
+   "kind": "rail",
+   "name": "載具 / FOUP / 光罩盒",
+   "nameEn": "Carrier · FOUP · EUV Pod",
+   "competition": "monopoly",
+   "single": "近乎獨佔 · 家登 EUV 光罩盒全球 ~85%",
+   "desc": "晶圓傳載盒（FOUP）、EUV 光罩傳載盒（pod）與先進封裝載具/過濾耗材。",
+   "marketSize": "客戶獨家單點",
+   "growth": "封裝載具新引擎",
+   "share": "null",
+   "analysis": "台廠【家登】EUV 光罩盒全球約 85%、FOUP 約 30%，是被首版完全漏掉的近壟斷單點；Entegris 為載具/過濾全球大廠並在台設廠。CoWoS/CoPoS 載具為新成長引擎。",
+   "companies": [
+    {
+     "name": "家登精密 GUDENG",
+     "ticker": "3680.TWO",
+     "country": "TW",
+     "share": "EUV pod ~85%／FOUP ~30%",
+     "products": "EUV pod/FOUP/先進封裝載具",
+     "note": "光罩盒霸主（首版漏網單點）",
+     "src": "https://www.pocket.tw/school/report/SCHOOL/6409/"
+    },
+    {
+     "name": "Entegris",
+     "ticker": "ENTG",
+     "country": "US",
+     "share": "載具/過濾大廠",
+     "products": "purge FOUP/Thin-Wafer FOUP/CMP 過濾",
+     "note": "高雄/新竹設廠"
+    },
+    {
+     "name": "中砂 Kinik",
+     "ticker": "1560.TW",
+     "country": "TW",
+     "share": "台廠",
+     "products": "再生晶圓/載具相關",
+     "note": "CMP 耗材+再生晶圓"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-cow"
+    }
+   ],
+   "sources": [
+    {
+     "label": "家登 EUV pod 全球 85% (Pocket)",
+     "url": "https://www.pocket.tw/school/report/SCHOOL/6409/"
+    }
+   ]
+  },
+  {
+   "id": "m-thermal",
+   "row": "material",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "散熱 / 液冷",
+   "nameEn": "Thermal · Liquid Cooling",
+   "competition": "highgrowth",
+   "single": "封裝級單點 · 健策 CoWoS/Rubin lid/IHS/In-TIM；台積電 2026 已把直接液冷整進 CoWoS 平台",
+   "desc": "封裝級散熱（lid/IHS/TIM）與系統級液冷（冷板/QD/分歧管）；台積電 2026 已把 direct-to-silicon 液冷整合進 CoWoS 平台（CoWoS-R 熱阻 0.055°C/W）。",
+   "marketSize": "已整進 CoWoS",
+   "growth": "AI 剛需",
+   "share": "null",
+   "analysis": "封裝級：健策（CoWoS/Rubin lid/IHS/MCL/In-TIM，最貼 CoWoS 製程的散熱單點）；系統級液冷：奇鋐（GB300 水冷板 ~50%）、雙鴻（水冷板/分歧管）、富世達（QD 快接頭）。AI 剛需、與封裝同步設計。",
+   "companies": [
+    {
+     "name": "健策 Jentech",
+     "ticker": "3653.TW",
+     "country": "TW",
+     "share": "封裝級 lid/IHS",
+     "products": "CoWoS/Rubin lid/IHS/In-TIM",
+     "note": "最貼 CoWoS 製程散熱（單點）",
+     "src": "https://www.pocket.tw/school/report/SCHOOL/6275/"
+    },
+    {
+     "name": "奇鋐 AVC / 雙鴻 Auras",
+     "ticker": "3017.TW / 3324.TW",
+     "country": "TW",
+     "share": "水冷板 ~50%",
+     "products": "水冷板/分歧管/整櫃液冷",
+     "note": "GB300 液冷"
+    },
+    {
+     "name": "富世達 Fositek",
+     "ticker": "6805.TW",
+     "country": "TW",
+     "share": "液冷連接",
+     "products": "QD 快接頭/液冷件",
+     "note": "GB300"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-wos"
+    }
+   ],
+   "sources": [
+    {
+     "label": "健策 CoWoS 散熱 (Pocket)",
+     "url": "https://www.pocket.tw/school/report/SCHOOL/6275/"
+    }
+   ]
+  },
+  {
+   "id": "m-design",
+   "row": "material",
+   "col": 4,
+   "span": 1,
+   "kind": "rail",
+   "name": "設計服務 / chiplet / 3DIC EDA",
+   "nameEn": "Design Service · Chiplet · EDA",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "AI ASIC 設計服務（chiplet/UCIe）與封裝 3DIC sign-off EDA，是 TSMC 3DFabric Alliance 生態、決定 CoWoS 客製量。",
+   "marketSize": "決定客製量",
+   "growth": "chiplet 生態",
+   "share": "null",
+   "analysis": "全球客製 ASIC co-design 由 Broadcom（~60%）、Marvell（~35%）主導；台廠世芯（AWS Trainium 主源）、創意（TSMC 系）、智原為次級設計服務層；封裝 EDA：Synopsys 3DIC Compiler、Cadence Multi-Die（與 TSMC CoWoS 5.5x reticle 認證綁定）；UCIe die-to-die IP 晶心。",
+   "companies": [
+    {
+     "name": "Broadcom / Marvell",
+     "ticker": "AVGO / MRVL",
+     "country": "US",
+     "share": "客製 ASIC ~60% / ~35%",
+     "products": "Google TPU/Meta / AWS/微軟 ASIC",
+     "note": "全球客製矽雙雄"
+    },
+    {
+     "name": "世芯 Alchip / 創意 GUC",
+     "ticker": "3661.TW / 3443.TW",
+     "country": "TW",
+     "share": "次級設計服務",
+     "products": "2.5D/3DIC ASIC + UCIe IP",
+     "note": "世芯=AWS Trainium 主源；創意 Tesla AI5 待證"
+    },
+    {
+     "name": "智原 Faraday / 晶心 Andes",
+     "ticker": "3035.TW / 6533.TWO",
+     "country": "TW",
+     "share": "設計服務/IP",
+     "products": "ASIC/IP / RISC-V CPU IP",
+     "note": "chiplet IP"
+    },
+    {
+     "name": "Synopsys / Cadence",
+     "ticker": "SNPS / CDNS",
+     "country": "US",
+     "share": "3DIC sign-off",
+     "products": "3DIC Compiler / Multi-Die",
+     "note": "TSMC CoWoS 認證 flow"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "d-ai"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Synopsys 3DIC / TSMC 3DFabric",
+     "url": "https://www.synopsys.com"
+    }
+   ]
+  },
+  {
+   "id": "m-pkgmat",
+   "row": "material",
+   "col": 12,
+   "span": 1,
+   "kind": "rail",
+   "name": "封裝關鍵材料（PSPI/靶材/電鍍/銲料/NCF/BT）",
+   "nameEn": "Key Pkg Materials",
+   "competition": "oligopoly",
+   "single": "近單點 · PSPI 介電 旭化成 PIMEL 領導（前五 ~71%、2025 缺料、無全面替代）",
+   "desc": "先進封裝多個被忽略但關鍵的材料子段：PSPI/RDL 介電、濺鍍靶材、電鍍化學、銲料/微凸塊、MUF/NCF 底填、BT 樹脂/CCL。各子段多為日系/少數廠寡占或近單點。",
+   "marketSize": "多單點子段",
+   "growth": "AI 封裝拉動",
+   "share": "null",
+   "analysis": "PSPI（旭化成 PIMEL/Toray/HD MicroSystems，前五 ~71%、2025 缺料）；濺鍍靶材（JX/光洋/江豐）；電鍍化學（MKS Atotech/上村/DuPont）；銲料微凸塊（千住/昇貿/Indium）；MUF/NCF（Dexerials/Toray/Namics）；BT 樹脂/CCL（三菱瓦斯/台光電）。",
+   "companies": [
+    {
+     "name": "旭化成 Asahi Kasei / HD MicroSystems",
+     "ticker": "3407.T / —",
+     "country": "JP",
+     "share": "PSPI 前五 ~71%",
+     "products": "PIMEL PSPI / 封裝介電膜",
+     "note": "PSPI 近單點、2025 缺料",
+     "src": "https://technews.tw/2025/05/28/"
+    },
+    {
+     "name": "JX Advanced Metals / 光洋 / 江豐",
+     "ticker": "5016.T / 1785.TWO / 300666.SZ",
+     "country": "JP",
+     "share": "靶材龍頭/台/中",
+     "products": "高純 Cu/Ti/Ta 濺鍍靶",
+     "note": "RDL/TSV 金屬化"
+    },
+    {
+     "name": "MKS Atotech / 上村 / DuPont",
+     "ticker": "MKSI / — / DD",
+     "country": "US",
+     "share": "電鍍化學龍頭",
+     "products": "RDL/Cu pillar 電鍍化學",
+     "note": "InFO/CoWoS 鍍銅"
+    },
+    {
+     "name": "千住金屬 / 昇貿 / Indium",
+     "ticker": "5836.T / 3551.TW / —",
+     "country": "JP",
+     "share": "銲料球領先",
+     "products": "微焊球 / solder paste",
+     "note": "微凸塊互連"
+    },
+    {
+     "name": "Dexerials / Toray / 三菱瓦斯",
+     "ticker": "4980.T / 3402.T / 4182.T",
+     "country": "JP",
+     "share": "NCF/BT 樹脂",
+     "products": "NCF/ACF 接合膜 / BT prepreg",
+     "note": "底填+載板核心樹脂"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-wos"
+    }
+   ],
+   "sources": [
+    {
+     "label": "PSPI 缺料 旭化成 (TechNews)",
+     "url": "https://technews.tw/2025/05/28/"
+    },
+    {
+     "label": "ABF/BT 載板上游 (ipcb)",
+     "url": "https://www.ipcb.co"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "f-tsv",
+   "f-interposer"
+  ],
+  [
+   "f-interposer",
+   "f-cow"
+  ],
+  [
+   "f-cow",
+   "f-wos"
+  ],
+  [
+   "f-wos",
+   "f-osat"
+  ],
+  [
+   "f-osat",
+   "d-ai"
+  ],
+  [
+   "eq-etch",
+   "f-tsv"
+  ],
+  [
+   "eq-litho",
+   "f-interposer"
+  ],
+  [
+   "eq-cmp",
+   "f-interposer"
+  ],
+  [
+   "eq-dicing",
+   "f-cow"
+  ],
+  [
+   "eq-wet",
+   "f-cow"
+  ],
+  [
+   "eq-tcb",
+   "f-cow"
+  ],
+  [
+   "eq-hybond",
+   "f-cow"
+  ],
+  [
+   "eq-tbond",
+   "f-cow"
+  ],
+  [
+   "eq-laser",
+   "f-interposer"
+  ],
+  [
+   "eq-dispense",
+   "f-wos"
+  ],
+  [
+   "eq-cure",
+   "f-wos"
+  ],
+  [
+   "eq-inspect",
+   "f-wos"
+  ],
+  [
+   "eq-fab",
+   "f-osat"
+  ],
+  [
+   "m-wafer",
+   "f-tsv"
+  ],
+  [
+   "m-cmp",
+   "f-tsv"
+  ],
+  [
+   "m-hbm",
+   "f-cow"
+  ],
+  [
+   "m-carrier",
+   "f-cow"
+  ],
+  [
+   "m-thermal",
+   "f-wos"
+  ],
+  [
+   "m-design",
+   "d-ai"
+  ],
+  [
+   "m-abf",
+   "f-wos"
+  ],
+  [
+   "m-glass",
+   "f-wos"
+  ],
+  [
+   "m-film",
+   "m-abf"
+  ],
+  [
+   "m-emc",
+   "f-osat"
+  ],
+  [
+   "m-chem",
+   "f-osat"
+  ],
+  [
+   "m-pkgmat",
+   "f-wos"
+  ]
+ ],
+ "_proposed": {}
+}

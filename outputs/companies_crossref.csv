@@ -1,0 +1,3148 @@
+﻿name,ticker,country,appearances,topics
+TSMC 台積電,2330.TW,TW,19,advanced | ai_chip_startup | asic | bci_neurotech | chiplet_ucie | cim_pim | cowos | edge_ai | glass_substrate | hbm | icdesign | leosat | semicap_wfe | substrate
+Broadcom,AVGO,US,17,asic | ate_test | chiplet_ucie | cowos | cpo | glass_substrate | hbm | icdesign | memory_storage | neocloud | networking | optical_module | server | silicon_laser_els
+Applied Materials,AMAT,US,15,advanced | cowos | glass_substrate | hbm | hybrid_bonding | semicap_wfe | siph | specialty_gas
+NVIDIA,NVDA,US,14,agentops | ai_inference | ate_test | auto_semi | bci_neurotech | connector_hsio | fpga | hbm | neocloud | networking | photonic_compute | power_semi | silicon_laser_els
+台達電 Delta,2308.TW,TW,14,data_center_cooling | ev_charging | humanoid_components | power | robot | server
+Microsoft,MSFT,US,13,agentops | ai_chip_startup | ai_inference | ai_media_gen | asic | chiplet_ucie | connector_hsio | erp_ai | fusion | neocloud | photonic_compute | silicon_laser_els | vpp_grid
+Nvidia,NVDA,US,13,ai_media_gen | chiplet_ucie | cowos | cpo | data_center_cooling | glass_substrate | icdesign | power | robot | robotaxi | substrate
+Coherent,COHR,US,12,cpo | fusion | lidar | material | optical_module | photonic_compute | power_semi | server | silicon_laser_els | siph
+Infineon,IFX.DE,DE,12,auto_semi | bbu | cim_pim | ev | grid_power | mems_sensor | power | power_semi
+Lam Research,LRCX,US,12,advanced | cowos | glass_substrate | hbm | hybrid_bonding | mems_sensor | semicap_wfe | specialty_gas
+AMD,AMD,US,11,ai_inference | ai_media_gen | ate_test | chiplet_ucie | cowos | edge_ai | glass_substrate | hbm | icdesign | neocloud
+Marvell,MRVL,US,11,ai_inference | asic | ate_test | chiplet_ucie | cpo | dram_cxl | icdesign | memory_storage | networking | optical_module | server
+STMicroelectronics,STM,CH,11,auto_semi | ev_charging | leosat | lidar | mems_sensor | power_semi | rf_6g
+Vertiv,VRT,US,11,bbu | data_center_cooling | onsite_power | power | power_semi | server
+GlobalFoundries,GFS,US,10,auto_semi | cim_pim | cpo | defense | leosat | photonic_compute | power_semi | rf_6g | silicon_laser_els
+Intel,INTC,US,9,chiplet_ucie | cowos | edge_ai | fpga | glass_substrate | photonic_compute | semicap_wfe | substrate
+Synopsys,SNPS,US,9,advanced | ai_chip_startup | asic | chiplet_ucie | cim_pim | edge_ai | fpga | hbm | icdesign
+Tesla,TSLA,US,9,asic | auto_semi | ev | mems_sensor | power_semi | robotaxi | solid_state_battery
+Apple,AAPL,US,8,advanced | edge_ai | glass_substrate | india_ems_semi | mems_sensor | rare_earth
+Cadence,CDNS,US,8,advanced | ai_chip_startup | asic | chiplet_ucie | cim_pim | fpga | hbm | icdesign
+Micron,MU,US,8,ai_chip_startup | cim_pim | dram_cxl | hbm | hybrid_bonding | memory_storage | semicap_wfe
+OpenAI,—,US,8,agentic_ai | ai_chip_startup | ai_inference | ai_media_gen | asic | cs_ai | neocloud | vertical_ai_agents
+Panasonic,6752.T,JP,8,battery_materials | ccl | cowos | ev | hbm | mlcc_passive | plp
+Samsung Foundry,005930.KS,KR,8,advanced | asic | auto_semi | cim_pim | edge_ai | fpga | hbm | icdesign
+味之素 Ajinomoto,2802.T,JP,8,ccl | cowos | leosat | material | plp | substrate
+Amkor,AMKR,US,7,ai_chip_startup | ate_test | cowos | substrate
+Amphenol,APH,US,7,connector_hsio | ev_charging | networking | power | server | silicon_laser_els
+Google,GOOGL,US,7,ai_inference | chiplet_ucie | connector_hsio | fusion | photonic_compute | power_semi | vpp_grid
+Lumentum,LITE,US,7,cpo | lidar | optical_module | photonic_compute | silicon_laser_els | siph
+Schneider Electric,SU.PA,FR,7,data_center_cooling | grid_power | industrial_ai | power | vpp_grid
+Tokyo Electron,8035.T,JP,7,advanced | cowos | hbm | semicap_wfe
+Tower Semiconductor,TSEM,IL,7,defense | optical_module | photonic_compute | rf_6g | silicon_laser_els | siph
+聯發科 MediaTek,2454.TW,TW,7,advanced | asic | auto_semi | chiplet_ucie | cpo | icdesign | robot
+雙鴻 Auras,3324.TW,TW,7,data_center_cooling | power | server
+ASE 日月光,3711.TW,TW,6,ai_chip_startup | chiplet_ucie | cowos | substrate
+Air Liquide,AI.PA,FR,6,fusion | hydrogen | material | specialty_gas
+Lockheed Martin,LMT,US,6,defense | fpga | space_economy
+Meta,META,US,6,ai_media_gen | chiplet_ucie | neocloud | silicon_laser_els | subsea_telecom_cable
+Qualcomm,QCOM,US,6,ai_devices | auto_semi | icdesign | leosat | rf_6g | robot
+SK hynix,000660.KS,KR,6,ai_chip_startup | ate_test | cim_pim | dram_cxl | hybrid_bonding
+Samsung Electronics,005930.KS,KR,6,ai_devices | hybrid_bonding | industrial_ai | memory_storage | mems_sensor | specialty_gas
+Samsung 三星,005930.KS,KR,6,chiplet_ucie | cowos | edge_ai | semicap_wfe
+Synopsys / Cadence,SNPS / CDNS,US,6,advanced | asic | cowos | icdesign
+Wolfspeed,WOLF,US,6,defense | ev | ev_charging | material | power_semi | rf_6g
+onsemi,ON,US,6,auto_semi | ev_charging | lidar | mems_sensor | power_semi
+信越化學 Shin-Etsu,4063.T,JP,6,cowos | data_center_cooling | humanoid_components | material | rare_earth
+貿聯-KY BizLink,3665.TW,TW,6,connector_hsio | cpo | networking | power | server
+ASMPT,0522.HK,SG,5,cowos | glass_substrate | hbm | hybrid_bonding | plp
+Arm Holdings,ARM,UK,5,ai_chip_startup | asic | chiplet_ucie | edge_ai | icdesign
+CATL 寧德時代,300750.SZ,CN,5,battery_materials | ess | ev | robot | solid_state_battery
+Disco,6146.T,JP,5,cowos | glass_substrate | hbm | plp | semicap_wfe
+GE Vernova,GEV,US,5,grid_power | industrial_ai | nuclear_smr | onsite_power
+Hitachi Energy,6501.T,JP,5,ess | ev_charging | grid_power | vpp_grid
+Ibiden,4062.T,JP,5,cowos | glass_substrate | plp | substrate
+Intel Foundry,INTC,US,5,advanced | asic | chiplet_ucie | edge_ai | fpga
+L3Harris,LHX,US,5,defense | space_economy
+Onto Innovation,ONTO,US,5,ate_test | glass_substrate | hybrid_bonding | plp | semicap_wfe
+Resonac 昭和電工,4004.T,JP,5,cowos | hbm | material | substrate
+SUMCO,3436.T,JP,5,advanced | cowos | hbm | material | mems_sensor
+SUSS MicroTec,SMHN.DE,DE,5,cowos | hybrid_bonding | mems_sensor | plp | siph
+Samsung SDS,018260.KS,KR,5,agentic_ai | erp_ai | rag_kb | workflow_rpa
+Supermicro,SMCI,US,5,bbu | dram_cxl | fpga | memory_storage | server
+TDK,6762.T,JP,5,humanoid_components | mlcc_passive | rare_earth
+TE Connectivity,TEL,CH,5,connector_hsio | ev_charging | mems_sensor | power | silicon_laser_els
+Texas Instruments,TXN,US,5,auto_semi | bci_neurotech | ev_charging | power | power_semi
+致茂 Chroma,2360.TW,TW,5,cowos | cpo | plp | siph | substrate
+辛耘 Scientech,3583.TW,TW,5,cowos | cpo | plp | semicap_wfe
+ABB,ABBN.SW,CH,4,grid_power | robot | subsea_telecom_cable
+ASML,ASML,NL,4,advanced | cowos | hbm | semicap_wfe
+Absolics (SKC),011790.KS,KR,4,cowos | glass_substrate | plp | substrate
+AlphaSense,—,US,4,agentic_ai | rag_kb | vertical_ai_agents
+Ayar Labs,—,US,4,ai_chip_startup | chiplet_ucie | photonic_compute | server
+Cisco,CSCO,US,4,networking | photonic_compute | server
+Cloudflare,NET,US,4,agentops | ai_inference | cyber_platform
+Corning,GLW,US,4,optical_module | plp | siph | subsea_telecom_cable
+Databricks,—,US,4,agentic_ai | data_platform | rag_kb
+Datadog,DDOG,US,4,agentic_ai | agentops | coding_ai | llmops_eval
+EV Group (EVG),—,AT,4,cpo | hybrid_bonding | mems_sensor | siph
+Google / Meta,GOOGL / META,US,4,dram_cxl | grid_power | memory_storage | nuclear_smr
+IQE,IQE.L,UK,4,cpo | lidar | rf_6g | silicon_laser_els
+JX Advanced Metals,5016.T,JP,4,advanced | copper_electrification | material | silicon_laser_els
+LG Energy Solution,373220.KS,KR,4,battery_materials | bbu | ess | industrial_ai
+Linde,LIN,IE,4,hydrogen | material | specialty_gas
+Meta Platforms,META,US,4,agentic_ai | ai_devices | asic | mems_sensor
+Microsoft / Amazon,MSFT / AMZN,US,4,dram_cxl | grid_power | memory_storage | nuclear_smr
+Mitsubishi Electric,6503.T,JP,4,grid_power | industrial_ai
+Northrop Grumman,NOC,US,4,defense | space_economy
+Oracle,ORCL,US,4,agentops | erp_ai | hydrogen | nuclear_smr
+PKSHA Technology,3993.T,JP,4,cs_ai | erp_ai | rag_kb
+Prysmian,PRY.MI,IT,4,copper_electrification | subsea_telecom_cable | wind_power
+SEMES,—,KR,4,advanced | cowos | hbm
+Samsung,005930.KS,KR,4,cowos | hbm | mems_sensor
+SiFive,—,US,4,ai_chip_startup | asic | fpga | icdesign
+Soitec,SOI.PA,FR,4,cpo | mems_sensor | photonic_compute | siph
+Zoox (Amazon),AMZN,US,4,robotaxi
+上銀 HIWIN,2049.TW,TW,4,humanoid_components | robot
+住友電木 Sumitomo Bakelite,4203.T,JP,4,hbm | material | plp
+全新光電 VPEC,2455.TW,TW,4,lidar | rf_6g | silicon_laser_els
+台積電 TSMC,2330.TW,TW,4,auto_semi | data_center_cooling | fpga | rf_6g
+奇鋐 AVC,3017.TW,TW,4,data_center_cooling | power | server
+廣達 Quanta,2382.TW,TW,4,bbu | connector_hsio | edge_ai | robot
+晶心科技 Andes,6533.TWO,TW,4,ai_chip_startup | asic | icdesign
+漢翔 AIDC,2634.TW,TW,4,defense | engine_mro
+群創 Innolux,3481.TW,TW,4,glass_substrate | leosat | plp
+聯電 UMC,2303.TW,TW,4,auto_semi | cowos | fpga | leosat
+陽光電源 Sungrow,300274.SZ,CN,4,ess | hydrogen | solar_pv
+AGC 旭硝子,5201.T,JP,3,connector_hsio | glass_substrate | siph
+AMS-OSRAM,AMS.SW,CH,3,humanoid_components | mems_sensor
+AST SpaceMobile,ASTS,US,3,leosat | rf_6g | space_economy
+Accenture,ACN,IE,3,agentic_ai | agentops | erp_ai
+Air Products,APD,US,3,fusion | hydrogen | specialty_gas
+Akamai + LayerX（瀏覽器 AI 安全）,AKAM,US,3,ai_security
+Anthropic,—,US,3,agentic_ai | cs_ai | neocloud
+Arm,ARM,UK,3,advanced | auto_semi | fpga
+Astera Labs,ALAB,US,3,asic | dram_cxl | networking
+BAE Systems,BA.L,UK,3,defense | fpga
+BESI,BESI.AS,NL,3,hbm | plp | siph
+BWX Technologies,BWXT,US,3,nuclear_fuel_cycle | nuclear_smr | radiopharma_isotope
+BYD 比亞迪,1211.HK,CN,3,ev | lidar | power_semi
+BYD 比亞迪,002594.SZ,CN,3,battery_materials | ess | ev
+CME Group,CME,US,3,prediction_markets | stablecoin_rwa
+Camtek,CAMT,IL,3,ate_test | hybrid_bonding | plp
+Canon,7751.T,JP,3,cowos | plp | semicap_wfe
+Celestial AI → Marvell,MRVL,US,3,cpo | photonic_compute | siph
+CoreWeave,CRWV,US,3,agentic_ai | ai_media_gen | neocloud
+Credo Technology,CRDO,US,3,asic | connector_hsio | networking
+DNP 大日本印刷,7912.T,JP,3,glass_substrate | plp | substrate
+EV Group,—,AT,3,cowos | hbm | plp
+Eaton,ETN,US,3,grid_power | onsite_power | power
+Ebara 荏原,6361.T,JP,3,advanced | cowos
+Entegris,ENTG,US,3,cowos | material | specialty_gas
+Figure AI,—,US,3,industrial_ai | mems_sensor | robot
+Freshworks,FRSH,IN,3,erp_ai | rag_kb | workflow_rpa
+Glean,—,US,3,agentic_ai | rag_kb | vertical_ai_agents
+Google (Alphabet),GOOGL,US,3,asic | solar_pv | subsea_telecom_cable
+Hamamatsu 濱松,6965.T,JP,3,lidar
+Hanwha Aerospace,012450.KS,KR,3,defense | industrial_ai
+Hebbia,—,US,3,rag_kb | vertical_ai_agents
+Howmet Aerospace,HWM,US,3,engine_mro | onsite_power
+KLA,KLAC,US,3,advanced | ate_test | semicap_wfe
+Lynas Rare Earths,LYC.AX,AU,3,rare_earth
+MP Materials,MP,US,3,drone_uav | rare_earth
+Medtronic,MDT,US,3,bci_neurotech | surgical_robotics
+Microchip,MCHP,US,3,defense | dram_cxl | fpga
+Microsoft Azure,MSFT,US,3,agentic_ai | data_platform | neocloud
+Naver / NAVER Cloud,035420.KS,KR,3,agentic_ai | erp_ai | rag_kb
+Nidec 日本電產,6594.T,JP,3,humanoid_components | robot
+Palo Alto Networks,PANW,US,3,agentic_ai | agentops | cyber_platform
+RTX (Raytheon),RTX,US,3,defense
+Rambus,RMBS,US,3,dram_cxl | hbm
+Renesas,6723.T,JP,3,auto_semi | fpga
+SCREEN Holdings,7735.T,JP,3,cowos | industrial_ai | semicap_wfe
+SK Hynix,000660.KS,KR,3,hbm | semicap_wfe
+SK 海力士,000660.KS,KR,3,cowos | edge_ai | neocloud
+Samsung Electronics 三星,005930.KS,KR,3,cim_pim | dram_cxl
+Siemens Energy,ENR.DE,DE,3,grid_power | hydrogen | onsite_power
+Sierra AI,—,US,3,agentic_ai | cs_ai
+Snowflake,SNOW,US,3,agentic_ai | data_platform | rag_kb
+Sony,6758.T,JP,3,ai_devices | auto_semi | surgical_robotics
+TRUMPF,—,DE,3,advanced | lidar | semicap_wfe
+TSMC,2330.TW,TW,3,hybrid_bonding | mems_sensor | photonic_compute
+Waymo (Alphabet),GOOGL,US,3,robotaxi
+Zoho Corporation,—,IN,3,erp_ai | rag_kb | workflow_rpa
+三菱瓦斯化學 MGC,4182.T,JP,3,material | substrate
+世芯-KY Alchip,3661.TW,TW,3,asic | icdesign
+中砂 Kinik,1560.TW,TW,3,cowos | material
+住友大阪水泥,5232.T,JP,3,cpo | siph
+全球傳動 TBI Motion,4540.TW,TW,3,humanoid_components | robot | surgical_robotics
+創意 GUC,3443.TW,TW,3,asic | hbm | icdesign
+力成 PTI,6239.TW,TW,3,ate_test | memory_storage | plp
+力旺 eMemory,3529.TWO,TW,3,asic | chiplet_ucie | cim_pim
+北方華創 NAURA,002371.SZ,CN,3,china_semi | semicap_wfe
+台光電 EMC,2383.TW,TW,3,ccl | connector_hsio | substrate
+同欣電 Tong Hsing,6271.TW,TW,3,defense | leosat | mems_sensor
+和大工業 Hota,1536.TW,TW,3,humanoid_components | robot
+嘉澤 Lotes,3533.TW,TW,3,connector_hsio | networking | server
+富世達 Fositek,6805.TW,TW,3,cowos | power | server
+弘塑 GPTC,3131.TWO,TW,3,cowos | cpo | plp
+智原 Faraday,3035.TW,TW,3,asic | cim_pim | icdesign
+智邦 Accton,2345.TW,TW,3,leosat | networking | server
+村田 Murata,6981.T,JP,3,mlcc_passive | power
+欣興 Unimicron,3037.TW,TW,3,cowos | server | substrate
+牧德 Machvision,3563.TWO,TW,3,cowos | plp | substrate
+環球晶 GlobalWafers,6488.TWO,TW,3,advanced | cowos | material
+由田 Utechzone,3455.TWO,TW,3,cowos | plp | substrate
+緯創 Wistron,3231.TW,TW,3,edge_ai | server
+緯穎 Wiwynn,6669.TW,TW,3,bbu | networking | server
+聯亞 LandMark,3081.TWO,TW,3,cpo | silicon_laser_els | siph
+長春 Chang Chun,—,TW,3,cowos | material | substrate
+長興 Eternal,1717.TW,TW,3,cpo | material | siph
+鴻海 Foxconn,2317.TW,TW,3,bbu | robot | server
+ACM 盛美,ACMR,US,2,plp
+ADEKA,4401.T,JP,2,advanced | material
+AMD / Broadcom,AMD / AVGO,US,2,advanced | power
+ASM International,ASM.AS,NL,2,advanced | semicap_wfe
+ASML (HMI),ASML,NL,2,advanced | semicap_wfe
+AT&S,ATS.VI,AT,2,ccl | substrate
+AWS,AMZN,US,2,ai_chip_startup | neocloud
+Abridge,—,US,2,agentic_ai | vertical_ai_agents
+Advanced Energy,AEIS,US,2,advanced | semicap_wfe
+Advantest,6857.T,JP,2,hbm | siph
+AeroVironment,AVAV,US,2,defense | drone_uav
+Airbus,AIR.PA,EU,2,leosat | space_economy
+Alchip 世芯-KY / Brillink 光循,3661.TW,TW,2,cpo
+Alphawave Semi → Qualcomm,QCOM,US,2,asic | chiplet_ucie
+Amazon (AWS),AMZN,US,2,ai_inference | ai_media_gen
+Amazon AWS,AMZN,US,2,chiplet_ucie | connector_hsio
+Amazon Web Services,AMZN,US,2,agentic_ai | cyber_platform
+American Superconductor,AMSC,US,2,fusion | space_economy
+Antithesis,—,US,2,coding_ai
+Apple Intelligence,AAPL,US,2,edge_ai
+Aptiv,APTV,IE,2,auto_semi | connector_hsio
+Arista Networks,ANET,US,2,networking | server
+Arize AI,—,US,2,agentic_ai | agentops
+Atotech (MKS),MKSI,DE,2,plp
+BESI / Hanwha 精機,BESI.AS / 489790.KS,EU,2,cowos | hbm
+BOE 京東方,000725.SZ,CN,2,ai_devices | glass_substrate
+BlackRock,BLK,US,2,stablecoin_rwa
+Bloom Energy,BE,US,2,hydrogen | onsite_power
+Boeing,BA,US,2,defense | space_economy
+Bota Systems,—,CH,2,humanoid_components | robot
+Boyd Thermal (Eaton),ETN,US,2,data_center_cooling | power
+Braintrust,—,US,2,agentops | llmops_eval
+CHT Security（中華資安國際）,—,TW,2,ai_security
+CPC (Colder Products),DOV,US,2,connector_hsio | data_center_cooling
+CT-Unite 视觉芯,—,CN,2,humanoid_components
+CXMT 長鑫存儲,—,CN,2,dram_cxl | hbm
+Cameco,CCJ,CA,2,nuclear_fuel_cycle | nuclear_smr
+Carl Zeiss SMT,—,DE,2,advanced | semicap_wfe
+Cboe Global Markets,CBOE,US,2,prediction_markets
+Centrus Energy,LEU,US,2,nuclear_fuel_cycle | nuclear_smr
+Cerebras Systems,CBRS,US,2,ai_chip_startup | ai_inference
+Cognex,CGNX,US,2,industrial_ai | robot
+Coherent / Lumentum,COHR / LITE,US,2,cpo | optical_module
+Composio,—,US,2,agentic_ai
+Constellation Energy,CEG,US,2,nuclear_fuel_cycle | nuclear_smr
+CoolIT Systems,—,CA,2,data_center_cooling
+Corning 康寧,GLW,US,2,glass_substrate | solid_state_battery
+Cummins / Accelera,CMI,US,2,hydrogen
+DISCO,6146.T,JP,2,cowos | mems_sensor
+Decagon,—,US,2,agentic_ai | cs_ai
+Dell Technologies,DELL,US,2,dram_cxl | memory_storage
+Digiwin / 鼎捷數智,6112.TW,TW,2,erp_ai
+Doosan Enerbility,034020.KS,KR,2,nuclear_smr | onsite_power
+DuPont,DD,US,2,cowos | material
+Dynatrace,DT,US,2,agentops | llmops_eval
+EO Technics,039030.KQ,KR,2,cowos | hbm
+Elastic,ESTC,US,2,agentic_ai | rag_kb
+ElevenLabs,—,UK,2,ai_media_gen | cs_ai
+Eli Lilly,LLY,US,2,ai_pharma | glp1_cdmo
+Energy Fuels,UUUU,US,2,rare_earth
+FPT Corporation / FPT.AI,FPT.HM,VN,2,cs_ai
+FUTEK,—,US,2,humanoid_components | mems_sensor
+Fabrinet,FN,TH,2,cpo | optical_module
+FormFactor,FORM,US,2,ate_test | cpo
+FuelCell Energy,FCEL,US,2,hydrogen | onsite_power
+Fujikura,5803.T,JP,2,fusion | subsea_telecom_cable
+Fujimi,5384.T,JP,2,cowos | material
+GE Aerospace,GE,US,2,defense | engine_mro
+GUC 創意電子,3443.TW,TW,2,cpo
+Generac,GNRC,US,2,onsite_power | vpp_grid
+General Compute,—,US,2,ai_chip_startup | neocloud
+Glencore,GLEN.L,UK,2,battery_materials | copper_electrification
+GoTo Group（Sahabat-AI）,GOTO.JK,ID,2,cs_ai
+Google Cloud,GOOGL,US,2,ai_media_gen | neocloud
+Grab Holdings,GRAB,SG,2,cs_ai | rag_kb
+Groq,—,US,2,ai_chip_startup | ai_inference
+HCLTech AI Force 2.0,HCLTECH.NS,IN,2,workflow_rpa
+Hanmi Semiconductor,042700.KS,KR,2,cowos | hbm
+Harmonic Drive Systems 哈默納科,6324.T,JP,2,humanoid_components | robot
+Hemlock Semiconductor,—,US,2,solar_pv
+Henkel,HEN3.DE,DE,2,cowos | hbm
+Honeywell,HON,US,2,data_center_cooling | defense
+Houmo.AI 後摩智能,—,CN,2,cim_pim
+Huawei HiSec AI Firewall,—,CN,2,ai_security
+HyperLight,—,US,2,siph
+Hyundai Motor,005380.KS,KR,2,hydrogen | robotaxi
+IBM,IBM,US,2,agentic_ai | erp_ai
+IBM watsonx.governance,IBM,US,2,ai_security | llmops_eval
+Imagination / 芯原 VeriSilicon,— / 688521.SS,UK,2,icdesign
+InfiniFlow — RAGFlow + Infinity DB,—,CN,2,rag_kb
+Infosys BPM,INFY.NS,IN,2,workflow_rpa
+InsightFinder AI,—,US,2,llmops_eval
+Intercontinental Exchange,ICE,US,2,prediction_markets | stablecoin_rwa
+Intuit,INTU,US,2,erp_ai | vertical_ai_agents
+Intuitive Surgical,ISRG,US,2,surgical_robotics
+Keppel（Global Marine）,BN4.SI,SG,2,subsea_telecom_cable
+Kingston 金士頓,—,US,2,dram_cxl | memory_storage
+Kokusai Electric,6525.T,JP,2,advanced | semicap_wfe
+LangChain Inc.,—,US,2,agentic_ai | rag_kb
+LangChain Inc. (LangSmith),—,US,2,agentic_ai | llmops_eval
+Lasertec,6920.T,JP,2,advanced | semicap_wfe
+Lattice,LSCC,US,2,fpga
+Lovable,—,SE,2,agentic_ai | coding_ai
+Luxshare 立訊精密,002475.SZ,CN,2,connector_hsio
+M31 矽智科技,6643.TWO,TW,2,icdesign
+MACOM,MTSI,US,2,defense | siph
+MKS Instruments,MKSI,US,2,advanced | semicap_wfe
+Micron 美光,MU,US,2,cowos | edge_ai
+Microsoft (Azure),MSFT,US,2,ai_media_gen | ai_pharma
+Mistral AI,—,FR,2,agentic_ai | ai_inference
+MongoDB,MDB,US,2,agentic_ai | data_platform
+Monolithic Power (MPS),MPWR,US,2,dram_cxl | power
+Montage 瀾起科技,688008.SS,CN,2,dram_cxl
+MuleSoft（Salesforce）,CRM,US,2,agentic_ai | workflow_rpa
+Murata,6981.T,JP,2,mems_sensor | rf_6g
+Musashi Energy Solutions,7220.T,JP,2,power
+NEC,6701.T,JP,2,subsea_telecom_cable | workflow_rpa
+NTT,9432.T,JP,2,agentic_ai | subsea_telecom_cable
+Nabtesco 那博特斯克,6268.T,JP,2,humanoid_components | robot
+Navitas,NVTS,US,2,power | power_semi
+Neurophos,—,US,2,photonic_compute
+Nexans,NEX.PA,FR,2,copper_electrification | wind_power
+NextEra Energy,NEE,US,2,solar_pv | wind_power
+Nikon,7731.T,JP,2,cowos | semicap_wfe
+Nippon Steel,5401.T,JP,2,grid_power | shipbuilding
+Nittobo 日東紡,3110.T,JP,2,ccl | substrate
+Nordson ASYMTEK,NDSN,US,2,cowos | cpo
+Novartis,NVS,CH,2,ai_pharma | radiopharma_isotope
+Novo Nordisk,NVO,DK,2,ai_pharma | glp1_cdmo
+OCI,010060.KS,KR,2,material | solar_pv
+Okta,OKTA,US,2,agentops | cyber_platform
+Olympus,7733.T,JP,2,surgical_robotics
+OpenAI Codex（CLI + Cloud）,—,US,2,coding_ai
+OpenCode（SST）,—,US,2,coding_ai
+Oracle (OCI),ORCL,US,2,bbu | neocloud
+Orange Marine,ORA.PA,FR,2,subsea_telecom_cable
+Otsuka Corporation（大塚商会）,4768.T,JP,2,erp_ai | workflow_rpa
+PROCEPT BioRobotics,PRCT,US,2,surgical_robotics
+Palantir,PLTR,US,2,agentops | drone_uav
+Parker Hannifin,PH,US,2,connector_hsio | data_center_cooling
+Pfeiffer Vacuum,—,DE,2,fusion | semicap_wfe
+Pinecone,—,US,2,agentic_ai | rag_kb
+Plug Power,PLUG,US,2,hydrogen
+PolyAI,—,UK,2,cs_ai
+Poolside AI,—,US,2,agentic_ai | coding_ai
+Power Integrations,POWI,US,2,power | power_semi
+Q.ANT,—,DE,2,photonic_compute
+Qi-AnXin（奇安信）,688561.SS,CN,2,ai_security
+Qorvo,QRVO,US,2,defense | rf_6g
+ROHM,6963.T,JP,2,ev_charging | power_semi
+RTX,RTX,US,2,defense | fpga
+Rapidus,—,JP,2,advanced | plp
+Replit,—,US,2,agentic_ai | coding_ai
+Resonac,4004.T,JP,2,hbm | plp
+Respan（前 Keywords AI）,—,US,2,llmops_eval
+Rheinmetall,RHM.DE,DE,2,defense
+Robinhood,HOOD,US,2,prediction_markets | stablecoin_rwa
+Rocket Lab,RKLB,US,2,leosat | space_economy
+Rolls-Royce,RR.L,UK,2,engine_mro | onsite_power
+SCREEN,7735.T,JP,2,advanced | plp
+SMIC 中芯國際,0981.HK,HK,2,china_semi | semicap_wfe
+Safran,SAF.PA,FR,2,defense | engine_mro
+Salesforce,CRM,US,2,agentops | erp_ai
+Schaeffler（含 Ewellix）,SHA.DE,DE,2,humanoid_components
+ServiceNow,NOW,US,2,agentops | erp_ai
+Siemens,SIE.DE,DE,2,grid_power | vpp_grid
+Siemens EDA,SIE.DE,DE,2,advanced | fpga
+Siltronic / SK Siltron,WAF.DE / —,DE,2,advanced | material
+SolarEdge,SEDG,US,2,solar_pv | vpp_grid
+Solvay,SOLB.BR,BE,2,hydrogen | rare_earth
+Sony Semiconductor,6758.T,JP,2,mems_sensor
+Stryker,SYK,US,2,surgical_robotics
+Stäubli,—,CH,2,connector_hsio | ev_charging
+Sumitomo / 三菱 Mitsubishi,5802.T / 6503.T,JP,2,silicon_laser_els | siph
+Sumitomo / 三菱電機,5802.T / 6503.T,JP,2,cpo | optical_module
+Sumitomo Electric 住友電工,5802.T,JP,2,lidar | silicon_laser_els
+TCS（Tata Consultancy Services）,TCS.NS,IN,2,erp_ai | workflow_rpa
+TSMC (SoIC/COUPE),2330.TW,TW,2,cpo | siph
+TSMC COUPE,2330.TW,TW,2,cpo | siph
+Talen Energy,TLN,US,2,nuclear_smr | onsite_power
+Tata Electronics,—,IN,2,india_ems_semi
+Teradyne,TER,US,2,ate_test | hbm
+Tesla Energy,TSLA,US,2,ess | vpp_grid
+Thales / Leonardo,HO.PA / LDO.MI,EU,2,defense
+Thermo Fisher,TMO,US,2,ai_pharma | glp1_cdmo
+Together AI,—,US,2,ai_inference | neocloud
+Toppan / DNP / Photronics,7911.T / 7912.T / PLAB,JP,2,advanced | material
+Toray 東麗,3402.T,JP,2,battery_materials | material
+Trend Micro TrendAI Vision One,4704.T,JP,2,ai_security
+USA Rare Earth,USAR,US,2,rare_earth
+Uber Technologies,UBER,US,2,robotaxi
+Umicore,UMI.BR,BE,2,battery_materials | hydrogen
+Vapi,—,US,2,agentic_ai | cs_ai
+Veeco,VECO,US,2,advanced | cpo
+Veeva Systems,VEEV,US,2,agentic_ai | ai_pharma
+Vishay Intertechnology,VSH,US,2,mlcc_passive
+Wacker Chemie,WCH.DE,DE,2,material | solar_pv
+Weebit Nano,WBT.AX,AU,2,cim_pim
+Westinghouse,—,US,2,nuclear_fuel_cycle | nuclear_smr
+Wipro Intelligence,WIPRO.NS,IN,2,workflow_rpa
+Wonik Robotics,—,KR,2,humanoid_components | robot
+Workato,—,US,2,agentic_ai | workflow_rpa
+Zapier,—,US,2,agentic_ai | workflow_rpa
+ZeroErr 因克斯,—,CN,2,humanoid_components
+Zimmer Biomet,ZBH,US,2,surgical_robotics
+d-Matrix,—,US,2,ai_chip_startup | cim_pim
+imec,—,BE,2,bci_neurotech | photonic_compute
+n8n,—,DE,2,agentic_ai | workflow_rpa
+三花智控 Sanhua,002050.SZ,CN,2,humanoid_components | robot
+上詮 FOCI,3363.TWO,TW,2,cpo | optical_module
+中科飛測 Skyverse,688361.SS,CN,2,china_semi | cowos
+中航光电 AVIC Jonhon,002179.SZ,CN,2,connector_hsio
+中際旭創 Innolight,300308.SZ,CN,2,optical_module
+京瓷 Kyocera,6971.T,JP,2,cpo | siph
+仕佳光子 Shijia,688313.SH,CN,2,cpo | siph
+住友重機 Sumitomo HI,6302.T,JP,2,humanoid_components | robot
+住友電工 Sumitomo,5802.T,JP,2,optical_module | siph
+信越 / 環球晶,4063.T / 6488.TWO,JP,2,cpo | siph
+健策 Jentech,3653.TW,TW,2,cowos | power
+健策精密 Jentech,3653.TW,TW,2,data_center_cooling
+健鼎 Tripod,3044.TW,TW,2,ccl | networking
+兆威機電 Zhaowei,003021.SZ,CN,2,humanoid_components | robot
+兆易創新 GigaDevice,603986.SS,CN,2,china_semi | icdesign
+光寶科 Lite-On,2301.TW,TW,2,power | server
+全產業 GPU 抵押債,—,GLOBAL,2,ai_infra_capital | neocloud
+剛果(DRC) 鉭礦（上游）,—,CN,2,mlcc_passive
+創見 Transcend,2451.TW,TW,2,dram_cxl | memory_storage
+力成 PTI / 京元電 KYEC,6239.TW / 2449.TW,TW,2,cowos | hbm
+力旺電子 eMemory,3529.TWO,TW,2,icdesign
+北方稀土 / 中國稀土集團,600111.SS,CN,2,rare_earth
+十銓 Team Group,4967.TW,TW,2,dram_cxl | memory_storage
+千住金屬 / 昇貿 / Indium,5836.T / 3551.TW / —,JP,2,cowos | material
+千附 Chyun Fu,8383.TWO,TW,2,defense
+古河電工 Furukawa Electric,5801.T,JP,2,battery_materials | subsea_telecom_cable
+台光電 / 聯茂,2383.TW / 6213.TW,TW,2,leosat | material
+台積電,2330.TW,TW,2,power_semi | specialty_gas
+嘉元科技 Jiayuan,688388.SS,CN,2,battery_materials | copper_electrification
+國巨 Yageo,2327.TW,TW,2,mlcc_passive | power
+均豪 GPM,5443.TWO,TW,2,cpo | plp
+大族雷射 Han's Laser,002008.SZ,CN,2,cowos | glass_substrate
+大立光 Largan,3008.TW,TW,2,ai_devices | cpo
+天合光能 Trina Solar,688599.SS,CN,2,solar_pv
+天孚通信 TFC,300394.SZ,CN,2,cpo | siph
+太陽誘電 Taiyo Yuden,6976.T,JP,2,mlcc_passive
+威剛 ADATA,3260.TWO,TW,2,dram_cxl | memory_storage
+宏捷科 AWSC,8086.TWO,TW,2,rf_6g
+宜鼎 Innodisk,5289.TWO,TW,2,dram_cxl | memory_storage
+家登 Gudeng,3680.TWO,TW,2,advanced | semicap_wfe
+寒武紀 Cambricon,688256.SS,CN,2,china_semi | icdesign
+小米 Xiaomi,1810.HK,CN,2,edge_ai | ev
+建準 Sunon,2421.TW,TW,2,data_center_cooling | power
+志聖 GP Tech,2467.TW,TW,2,cowos | plp
+慧榮 Silicon Motion,SIMO,TW,2,memory_storage | server
+所羅門 Solomon,2359.TW,TW,2,robot
+拓普集團 Tuopu,601689.SS,CN,2,humanoid_components | robot
+新應材 AEMC,4749.TWO,TW,2,advanced | cowos
+新易盛 Eoptolink,300502.SZ,CN,2,optical_module | server
+日月光 ASE,3711.TW,TW,2,fpga | plp
+旭化成 Asahi Kasei / HD MicroSystems,3407.T / —,JP,2,cowos | material
+旺矽 MPI,6223.TWO,TW,2,cpo | substrate
+晶心科 Andes,6533.TWO,TW,2,icdesign
+晶科能源 JinkoSolar,JKS,US,2,solar_pv
+比亞迪 BYD,1211.HK,CN,2,auto_semi | rare_earth
+沃格光電 Wotop,603773.SS,CN,2,glass_substrate | substrate
+源傑科技 Yuanjie,688498.SS,CN,2,silicon_laser_els
+源杰 Yuanjie,688498.SH,CN,2,cpo | siph
+環宇-KY GCS,4991.TWO,TW,2,cpo | siph
+禾賽科技 Hesai,HSAI,CN,2,auto_semi | lidar
+積水化學 Sekisui,4204.T,JP,2,cowos | substrate
+穩懋 WIN Semi,3105.TWO,TW,2,leosat
+穩懋 WIN Semiconductors,3105.TWO,TW,2,rf_6g
+統新,6426.TW,TW,2,cpo | siph
+綠的諧波 Leaderdrive,688017.SS,CN,2,humanoid_components | robot
+群聯 Phison,8299.TWO,TW,2,memory_storage | server
+聯亞 LandMark / 環宇 GCS,3081.TWO / 4991.TWO,TW,2,optical_module | siph
+聯茂 ITEQ,6213.TW,TW,2,ccl | connector_hsio
+聯詠 Novatek,3034.TW,TW,2,icdesign
+英業達 Inventec,2356.TW,TW,2,edge_ai | server
+華大九天 Empyrean,301269.SZ,CN,2,advanced | china_semi
+華新科 Walsin,2492.TW,TW,2,mlcc_passive | power
+華為 Huawei,—,CN,2,lidar | solar_pv
+華通 Compeq,2313.TW,TW,2,leosat | space_economy
+萬潤 Wonder Tech,6187.TWO,TW,2,cpo | siph
+貝特瑞 BTR,835185.BJ,CN,2,ev | solid_state_battery
+超眾 Chaun-Choung,6230.TWO,TW,2,data_center_cooling | power
+通威 Tongwei,600438.SS,CN,2,solar_pv
+通富微電 Tongfu,002156.SZ,CN,2,china_semi | cowos
+速騰聚創 RoboSense,2498.HK,CN,2,auto_semi | lidar
+金像電 GCE,2368.TW,TW,2,ccl | server
+金力永磁 JL MAG,300748.SZ,CN,2,humanoid_components | rare_earth
+隆基綠能 LONGi,601012.SS,CN,2,solar_pv
+高明鐵 GMT,4573.TWO,TW,2,cpo | siph
+1X Technologies,—,US,1,robot
+3DGS,—,US,1,glass_substrate
+52TOYS(樂自天成),—,CN,1,ip_collectibles
+AAC Technologies,2018.HK,CN,1,mems_sensor
+AAR Corp,AIR,US,1,engine_mro
+ABB E-mobility,ABBN.SW,CH,1,ev_charging
+ABB Ltd,ABB,CH,1,industrial_ai
+ABBYY,—,US,1,workflow_rpa
+ABEJA,5572.T,JP,1,rag_kb
+ABEJA Platform,5574.T,JP,1,llmops_eval
+ACM Research,ACMR,US,1,semicap_wfe
+ACM Research 盛美,ACMR / 688082.SS,US,1,cowos
+ADP,ADP,US,1,erp_ai
+AEM Holdings,AWX.SI,SG,1,ate_test
+AES-KY,6781.TW,TW,1,power
+AES-KY 全漢能源科技,6781.TW,TW,1,bbu
+AGC,5201.T,JP,1,hydrogen
+AGC / Hoya,5201.T / 7741.T,JP,1,advanced
+AGC / NEG / SCHOTT,5201.T / 5214.T / —,JP,1,plp
+AGC / 日本電氣硝子,5201.T / 5214.T,JP,1,cpo
+AI ASIC TAM (MS 估),—,GLOBAL,1,asic
+AI Singapore (SEA-LION),—,SG,1,rag_kb
+AI Singapore（SEA-LION + SEA-Guard EvalOps）,—,SG,1,llmops_eval
+AI Singapore（SEA-LION）,—,SG,1,agentic_ai
+AI 伺服器製造,NVDA / 2317.TW,US,1,robot
+AI 實驗室,—,US,1,onsite_power
+AI 資料中心（hyperscaler PPA）,—,US,1,nuclear_fuel_cycle
+AMD (Xilinx),AMD,US,1,fpga
+AMD / Broadcom,AMD,US,1,data_center_cooling
+AMD Pensando,AMD,US,1,networking
+AMD（對照外商）,AMD,US,1,china_semi
+AMI,—,US,1,fpga
+AMI (被併購中),—,US,1,fpga
+AMPECO,—,BG,1,ev_charging
+APAC Opto,—,TW,1,silicon_laser_els
+APMIC AI,—,TW,1,rag_kb
+APMIC（加速私有機器智慧）,—,TW,1,llmops_eval
+APR / 에이피알,278470.KS,KR,1,kbeauty
+ASE / Amkor,3711.TW / AMKR,TW,1,asic
+ASE / Amkor / 日月光,3711.TW / AMKR / 3711.TW,TW,1,material
+ASE / SPIL 日月光,3711.TW,TW,1,cpo
+ASIC 伺服器（終端拉動）,—,US,1,mlcc_passive
+ASML,ASML.AS,NL,1,india_ems_semi
+ASML（對照壟斷者）,ASML,NL,1,china_semi
+ASN (Alcatel Submarine Networks),—,FR,1,subsea_telecom_cable
+ASP Isotopes,ASPI,US,1,fusion
+ASUS AI SuperBuild（with Intel）,2357.TW,TW,1,coding_ai
+ATI (Novanta),NOVT,US,1,mems_sensor
+ATI Inc.,ATI,US,1,onsite_power
+ATI Industrial（Novanta）,NOVT,US,1,humanoid_components
+ATI(Novanta) / FUTEK,NOVT / —,US,1,robot
+AVX（京瓷旗下）,6971.T,JP,1,mlcc_passive
+AWS (Amazon),AMZN,US,1,glass_substrate
+AWS / Azure / GCP,AMZN,US,1,agentops
+AWS / Azure / GCP Marketplace,AMZN,US,1,cyber_platform
+AWS Kinesis / MSK,AMZN,US,1,data_platform
+AWS Redshift,AMZN,US,1,data_platform
+AWS Textract（Amazon）,AMZN,US,1,workflow_rpa
+AXT,AXTI,US,1,rf_6g
+AXT (+北京通美),AXTI,US,1,siph
+AXT (Tongmei 通美),AXTI,US,1,silicon_laser_els
+AXT / Coherent,AXTI / COHR,US,1,cpo
+Aalo Atomics,—,US,1,nuclear_smr
+AbbVie(Allergan) / Galderma,ABBV,US,1,kr_aesthetics_device
+Abbott,ABT,US,1,bci_neurotech
+Absci,ABSI,US,1,ai_pharma
+Absci (濕實驗室),ABSI,US,1,ai_pharma
+Accenture / Deloitte（MSSP/SI）,ACN,US,1,cyber_platform
+Accretech,7729.T,JP,1,plp
+Accretech 東京精密,7729.T,JP,1,cowos
+Acer Cyber Security（宏碁資安）,—,TW,1,ai_security
+Achronix,—,US,1,fpga
+Ada,—,CA,1,cs_ai
+Adobe,ADBE,US,1,ai_media_gen
+Adobe (Content Credentials),ADBE,US,1,ai_media_gen
+Adobe (Firefly),ADBE,US,1,ai_media_gen
+Advanced Media（AmiVoice）,3773.T,JP,1,cs_ai
+Advantech,2395.TW,TW,1,industrial_ai
+Advantest / Teradyne,6857.T / TER,JP,1,advanced
+Advantest 愛德萬,6857.T,JP,1,ate_test
+Adversa AI,—,IL,1,llmops_eval
+Adversa AI（Continuous Red Team）,—,IL,1,ai_security
+Aehr Test Systems,AEHR,US,1,ate_test
+AerCap / 飛機租賃公司,AER,IE,1,engine_mro
+Aeva Technologies,AEVA,US,1,lidar
+Agility Robotics,—,US,1,robot
+AhnLab AI Plus（Agentic AI）,053800.KQ,KR,1,ai_security
+AhnLab AI Plus（Agentic）,053800.KQ,KR,1,ai_security
+Ahnlab AI Plus + XDR,053800.KQ,KR,1,coding_ai
+Air Products / 大陽日酸,APD / 4091.T,US,1,material
+Airbus / Boeing（OEM 機體）,BA,US,1,engine_mro
+Airbyte,—,US,1,data_platform
+Aixtron,AIXA,EU,1,cpo
+Akamai,AKAM,US,1,cyber_platform
+Akhetonics,—,DE,1,photonic_compute
+AkzoNobel (International),AKZA.AS,NL,1,shipbuilding
+Alchip(後段)/Marvell,3661.TW / MRVL,TW,1,asic
+Alfa Laval,ALFA.ST,SE,1,data_center_cooling
+Alibaba Cloud / Qwen,9988.HK,CN,1,industrial_ai
+Alibaba Cloud PAI + DashScope / Qwen-Agent,9988.HK,CN,1,llmops_eval
+Alibaba Cloud — PAI + 知識庫 RAG,9988.HK,CN,1,rag_kb
+Alibaba Cloud — Qwen3-Embedding,9988.HK,CN,1,rag_kb
+Alibaba Qwen / DeepSeek,BABA / —,CN,1,edge_ai
+Allganize（Alli LLMOps）,—,KR,1,llmops_eval
+Allied Motion / Kollmorgen,—,US,1,humanoid_components
+Alphabet (Google Cloud),GOOGL,US,1,ai_pharma
+Alphabet / Google Cloud（含 Wiz）,GOOGL,US,1,cyber_platform
+Alphabet / Google DeepMind,GOOGL,US,1,agentic_ai
+Alphawave / Astera Labs,(Qualcomm) / ALAB,EU,1,cpo
+Alphawave / Rambus,AWE.L / RMBS,UK,1,icdesign
+Alphawave(→Qualcomm) / Rambus,(QCOM) / RMBS,US,1,advanced
+Alpitronic,—,IT,1,ev_charging
+Altera,—,US,1,fpga
+Altera (Physical AI),—,US,1,fpga
+Amazon,AMZN,US,1,kbeauty
+Amazon (AWS Bio Discovery),AMZN,US,1,ai_pharma
+Amazon (Polly),AMZN,US,1,ai_media_gen
+Amazon / Meta,AMZN / META,US,1,cpo
+Amazon AWS (Annapurna),AMZN,US,1,asic
+Amazon Braket / IonQ 雲,AMZN,US,1,quantum_compute
+Amazon Connect（AWS AI）,AMZN,US,1,cs_ai
+Amazon Leo（Globalstar 整併）/ Iridium,AMZN / IRDM,US,1,leosat
+Amazon Leo（前 Kuiper）,AMZN,US,1,leosat
+Amazon Nova Act（前 Adept AI）,AMZN,US,1,workflow_rpa
+Amazon S3 / AWS,AMZN,US,1,data_platform
+Amazon Textract,AMZN,US,1,rag_kb
+Amber Enterprises,AMBER.NS,IN,1,india_ems_semi
+Ambience Healthcare,—,US,1,vertical_ai_agents
+American Electric Power,AEP,US,1,grid_power
+American Electric Power (AEP),AEP,US,1,hydrogen
+American Tower(CoreSite),AMT,US,1,ai_infra_capital
+Amerit Fleet Solutions,—,US,1,robotaxi
+Amkor / Deca,AMKR / —,US,1,plp
+Amkor / Intel,AMKR / INTC,US,1,cpo
+Amphenol / TE Connectivity,APH / TEL,US,1,defense
+Amphenol（cartridge）,APH,US,1,connector_hsio
+Amphenol（socket）,APH,US,1,connector_hsio
+Amprion / TenneT,—,DE,1,grid_power
+Amprius Technologies,AMPX,US,1,evtol_uam
+Analog Devices,ADI,US,1,mems_sensor
+Analog Devices / Renesas,ADI / 6723.T,US,1,power
+Android AICore,GOOGL,US,1,edge_ai
+Anduril / Shield AI,—,US,1,defense
+Anduril Industries,—,US,1,drone_uav
+Ansys / Keysight,(SNPS) / KEYS,US,1,icdesign
+Ansys / Keysight EDA,(SNPS) / KEYS,US,1,advanced
+Antares / Radiant / Valar,—,US,1,nuclear_smr
+Anthropic (Claude Agent SDK),—,US,1,agentic_ai
+Anthropic (Claude Code),—,US,1,agentic_ai
+Anthropic (Claude),—,US,1,vertical_ai_agents
+Anthropic (MCP 標準制定),—,US,1,agentic_ai
+Anthropic / OpenAI / Google,—,US,1,agentops
+Anthropic Claude (PDF support),—,US,1,rag_kb
+Anthropic Computer Use,—,US,1,workflow_rpa
+Anthropic Console（含 HumanLoop eval）,—,US,1,llmops_eval
+Anthropic Trust & Safety,—,US,1,ai_security
+Anthropic(終端用款·未上市),—,US,1,ai_infra_capital
+Anthropic（Claude Code）,—,US,1,coding_ai
+Antofagasta,ANTO.L,CL,1,copper_electrification
+Anua,—,KR,1,kbeauty
+Anysphere / Cursor,—,US,1,coding_ai
+Anysphere / Cursor（被 SpaceX 收購中）,—,US,1,agentic_ai
+Aoki Super (青木スーパー),—,JP,1,fusion
+Apache Airflow / Astronomer,—,US,1,workflow_rpa
+Apollo / Hamilton Lane,APO,US,1,stablecoin_rwa
+Apollo Global,APO,US,1,ai_infra_capital
+AppZen,—,US,1,erp_ai
+Apple (自用),AAPL,US,1,icdesign
+Apple (自研 modem),AAPL,US,1,rf_6g
+Apple / Google,AAPL / GOOGL,US,1,ai_devices
+Apple / Samsung (手機系統),AAPL / 005930.KS,US,1,icdesign
+Apple A18/A19,AAPL,US,1,edge_ai
+Apple CoreML / MLX,AAPL,US,1,edge_ai
+Apple Silicon (M4/M5),AAPL,US,1,edge_ai
+Applied Materials（CMP/活化）,AMAT,US,1,hybrid_bonding
+Applied Materials（對照）,AMAT,US,1,china_semi
+Applied Optoelectronics,AAOI,US,1,optical_module
+Applitools,—,IL,1,coding_ai
+Apptronik,—,US,1,industrial_ai
+Arafura Rare Earths,ARU.AX,AU,1,rare_earth
+Archer Aviation,ACHR,US,1,evtol_uam
+Arcosa,ACA,US,1,wind_power
+Arianespace,—,FR,1,space_economy
+Arize AI (+ Phoenix OSS),—,US,1,llmops_eval
+Arm (Artisan),ARM,UK,1,icdesign
+Arm (Mali/Immortalis),ARM,UK,1,icdesign
+Arm Ethos,ARM,UK,1,edge_ai
+Array Technologies,ARRY,US,1,solar_pv
+Arrow Electronics,ARW,US,1,mlcc_passive
+Arteris,AIP,US,1,chiplet_ucie
+Asahi Kasei 旭化成,3407.T,JP,1,battery_materials
+Asana (+ StackAI),ASAN,US,1,agentic_ai
+AssemblyAI,—,US,1,cs_ai
+Astemo（本田/日立）,—,JP,1,rare_earth
+AstraZeneca,AZN,UK,1,ai_pharma
+Asus / Acer / MSI,2357.TW / 2353.TW / 2377.TW,TW,1,edge_ai
+Asus 華碩 / Acer 宏碁 / MSI 微星,2357.TW / 2353.TW / 2377.TW,TW,1,edge_ai
+Atlassian,TEAM,US,1,agentops
+Augment Code,—,US,1,coding_ai
+Aurigene Services,—,IN,1,ai_pharma
+Aurubis,NDA.DE,DE,1,copper_electrification
+AutoGo (K2),—,GLOBAL,1,robotaxi
+Autodesk,ADSK,US,1,industrial_ai
+Automation Anywhere,—,US,1,workflow_rpa
+Avis Budget Group,CAR,US,1,robotaxi
+Avnet,AVT,US,1,mlcc_passive
+Avride,—,US,1,robotaxi
+Axcelis,ACLS,US,1,advanced
+Axcelis Technologies,ACLS,US,1,semicap_wfe
+Axelera AI,—,NL,1,cim_pim
+Axelera AI (邊緣視覺),—,NL,1,cim_pim
+Axiom Space,—,US,1,space_economy
+Ayar Labs / Lightmatter,—,US,1,cpo
+Ayar Labs / Lightmatter,— / —,US,1,siph
+Azure AI Document Intelligence（Microsoft）,MSFT,US,1,workflow_rpa
+BAAI / 北京智源研究院 (BGE),—,CN,1,rag_kb
+BAE / Dassault / Airbus,BA.L / AM.PA / AIR.PA,EU,1,defense
+BAE / KNDS,BA.L / —,EU,1,defense
+BAE Systems (rad-hard),BA.L,UK,1,defense
+BASF / 三菱化學,BAS.DE / 4188.T,DE,1,material
+BE Semiconductor (BESI),BESI.AS,NL,1,hybrid_bonding
+BESI / AMAT,BESI.AS / AMAT,EU,1,cpo
+BESI / EV Group,BESI.AS / —,EU,1,cowos
+BETA Technologies,—,US,1,evtol_uam
+BHP,BHP,AU,1,copper_electrification
+BIS(監理觀點),—,CH,1,ai_infra_capital
+BNY Mellon,BK,US,1,stablecoin_rwa
+Bachem,BANB.SW,CH,1,glp1_cdmo
+Bachem（自供胺基酸）,BANB.SW,CH,1,glp1_cdmo
+Baidu / 百度,9888.HK,CN,1,agentic_ai
+Baidu / 百度 — Qianfan 企業 RAG,9888.HK,CN,1,rag_kb
+Baidu 千帆大模型平台（Qianfan）,9888.HK,CN,1,llmops_eval
+Baker Lab / RFdiffusion (IPD),—,US,1,ai_pharma
+Ballard Power,BLDP,CA,1,hydrogen
+Baowu / 寶武,600019.SS,CN,1,grid_power
+Baseten,—,US,1,ai_inference
+Basis,—,US,1,vertical_ai_agents
+Basler AG,BSL.DE,DE,1,industrial_ai
+Beauty of Joseon,—,KR,1,kbeauty
+Bentley Systems,BSY,US,1,industrial_ai
+BeyondTrust / Delinea,—,US,1,cyber_platform
+BeyondTrust Modern PAM,—,US,1,ai_security
+BigID（DSPM）,—,US,1,ai_security
+BizteX,—,JP,1,workflow_rpa
+Black Forest Labs,—,DE,1,ai_media_gen
+BlackLine,BL,US,1,erp_ai
+BlackRock(SPV 共同 LP),BLK,US,1,ai_infra_capital
+BlackSky,BKSY,US,1,space_economy
+Blackrock Neurotech,—,US,1,bci_neurotech
+Blackstone,BX,US,1,ai_infra_capital
+Bladt / Smulders,—,DK,1,wind_power
+Bland AI,—,US,1,cs_ai
+Blink Charging,BLNK,US,1,ev_charging
+Bloomage Biotech,688363.SS,CN,1,kr_aesthetics_device
+Bloomberg (BloombergGPT),—,US,1,vertical_ai_agents
+Bloomberg AI,—,US,1,agentic_ai
+Blue Cheetah,—,US,1,asic
+Blue Earth Diagnostics（Bracco 旗下）,—,IT,1,radiopharma_isotope
+Blue Origin,—,US,1,space_economy
+Blue Origin (BE-4),—,US,1,space_economy
+Blue Owl Capital,OWL,US,1,ai_infra_capital
+Blue Prism（SS&C）,SSNC,UK,1,workflow_rpa
+Bluefors,—,FI,1,quantum_compute
+BofA 經理人調查,BAC,US,1,ai_infra_capital
+Bolt,—,EU,1,robotaxi
+Bolt.new / StackBlitz,—,US,1,coding_ai
+Bolt.new 開源生態 / StackBlitz,—,US,1,coding_ai
+Boltz PBC (Boltz-2),—,US,1,ai_pharma
+Boomi,—,US,1,workflow_rpa
+BorgWarner / Aptiv / Denso,BWA / APTV / 6902.T,US,1,ev
+Bosch,未上市,DE,1,power_semi
+Bosch,—,DE,1,mems_sensor
+Bosch (Tier-1),—,DE,1,mems_sensor
+Bosch / ST / TDK,— / STM / TDK,DE,1,robot
+Bosch / ZF,—,DE,1,auto_semi
+Bosch Sensortec,—,DE,1,mems_sensor
+Boston Dynamics,—,US,1,robot
+Boston Scientific,BSX,US,1,bci_neurotech
+Boyd Thermal(Eaton) / 雙鴻,ETN / 3324.TW,US,1,power
+BrainChip Holdings,BRN.AX,AU,1,industrial_ai
+Brewer Science,—,US,1,cowos
+Brex,—,US,1,erp_ai
+Bristol Myers Squibb,BMY,US,1,radiopharma_isotope
+Broadcom (FBAR),AVGO,US,1,rf_6g
+Broadcom (Wireless),AVGO,US,1,rf_6g
+Broadcom (scale-up Ethernet),AVGO,US,1,networking
+Broadcom (交換晶片),AVGO,US,1,server
+Broadcom / AMD,AVGO / AMD,US,1,substrate
+Broadcom / Marvell,AVGO / MRVL,US,1,cowos
+Broadcom SAM(三客戶),AVGO,US,1,asic
+Broadcom(客製矽+網路平台),AVGO,US,1,ai_infra_capital
+Broadcom-設計 XPU,AVGO,US,1,asic
+Broadwind,BWEN,US,1,wind_power
+Brookfield,BAM,CA,1,ai_infra_capital
+Brookfield Asset Mgmt,BAM,CA,1,hydrogen
+Brookfield Renewable,BEPC,CA,1,solar_pv
+Browser Use,—,CH,1,workflow_rpa
+Browserbase,—,US,1,workflow_rpa
+Bruker,BRKR,US,1,radiopharma_isotope
+Buildkite,—,AU,1,coding_ai
+ByteDance (Protenix),—,CN,1,ai_pharma
+ByteDance (Seedance),—,CN,1,ai_media_gen
+ByteDance / 字節跳動 — Seed1.5-Embedding,—,CN,1,rag_kb
+ByteDance Doubao / 火山引擎,—,CN,1,agentic_ai
+ByteDance Trae / MarsCode,—,CN,1,coding_ai
+ByteDance Volcano Engine / 火山引擎,—,CN,1,agentic_ai
+ByteDance 火山方舟（Volcano Ark）,—,CN,1,llmops_eval
+C3.ai (AI Governance in Agentic Platform),AI,US,1,llmops_eval
+CATL / 比亞迪,300750.SZ,CN,1,bbu
+CEJN,—,SE,1,connector_hsio
+CEM Corporation,—,US,1,glp1_cdmo
+CEVA,CEVA,IL,1,edge_ai
+CF Benchmarks (Kraken),—,UK,1,prediction_markets
+CFTC（監管定錨）,—,US,1,prediction_markets
+CG Power (CG Semi),CGPOWER.NS,IN,1,india_ems_semi
+CHT Security（中華資安）,—,TW,1,cyber_platform
+CMA CGM / Maersk 等船公司,—,FR,1,shipbuilding
+CMR Surgical,—,UK,1,surgical_robotics
+CNNC / Rosatom,—,CN,1,nuclear_fuel_cycle
+CPC (Colder Products),—,US,1,power
+CPower,—,US,1,vpp_grid
+CS Wind,112610.KS,KR,1,wind_power
+CVRx,CVRX,US,1,bci_neurotech
+Cadeler,CADLR,DK,1,wind_power
+Cadence (system IP),CDNS,US,1,chiplet_ucie
+Cadence Design Systems,CDNS,US,1,industrial_ai
+Cadence Tensilica,CDNS,US,1,edge_ai
+Caelux,—,US,1,solar_pv
+CalypsoAI（within F5 FFIV）,FFIV,IE,1,llmops_eval
+Cameco（持 Westinghouse 49%）,CCJ,CA,1,nuclear_fuel_cycle
+Cameco（轉化）,CCJ,CA,1,nuclear_fuel_cycle
+Camtek / Onto / KLA,CAMT / ONTO / KLAC,US,1,cowos
+Canva,—,AU,1,ai_media_gen
+Capgemini,CAP.PA,FR,1,agentic_ai
+Cardinal Health,CAH,US,1,radiopharma_isotope
+Cartesia,—,US,1,ai_media_gen
+Catalent (Novo Holdings),—,US,1,glp1_cdmo
+Caterpillar,CAT,US,1,onsite_power
+Cato Networks,—,IL,1,cyber_platform
+Cato Networks + Aim Security,—,IL,1,ai_security
+Celigo,—,US,1,workflow_rpa
+Cellid,—,JP,1,ai_devices
+Cerebras Cloud,CBRS,US,1,ai_inference
+Ceres Power,CWR.L,UK,1,hydrogen
+Ceva / 芯原 VeriSilicon,CEVA / 688521.SS,US,1,icdesign
+Chai Discovery,—,US,1,ai_pharma
+Chainlink,—,US,1,stablecoin_rwa
+ChargePoint,CHPT,US,1,ev_charging
+ChargePoint (SaaS),CHPT,US,1,ev_charging
+ChargePoint / EVgo,CHPT / EVGO,US,1,ev
+Charles River Laboratories,CRL,US,1,ai_pharma
+Chart Industries (Baker Hughes),BKR,US,1,hydrogen
+Check Point + Lakera AI,CHKP,IL,1,ai_security
+Check Point Software,CHKP,IL,1,agentic_ai
+Checkmarx,—,IL,1,coding_ai
+Chemours (Nafion™),CC,US,1,hydrogen
+Chengxin Lithium 盛新鋰能,002240.SZ,CN,1,solid_state_battery
+Chevron,CVX,US,1,fusion
+China Isotope & Radiation (中國同輻),1763.HK,CN,1,radiopharma_isotope
+Chroma,—,US,1,rag_kb
+Chugoku Marine Paints,4617.T,JP,1,shipbuilding
+Chunghwa Telecom（企業資安業務）,2412.TW,TW,1,ai_security
+Circle,CRCL,US,1,stablecoin_rwa
+CircleCI,—,US,1,coding_ai
+Cisco / Acacia,CSCO,US,1,cpo
+Cisco / Splunk (AI Observability),CSCO,US,1,llmops_eval
+Cisco AI Defense,CSCO,US,1,ai_security
+Cisco Astrix Security（NHI）,CSCO,US,1,ai_security
+Cisco Systems,CSCO,US,1,agentic_ai
+Cisco（含 Splunk）,CSCO,US,1,cyber_platform
+Classys,214150.KQ,KR,1,kr_aesthetics_device
+Classys（巴西直營/通路收購）,214150.KQ,KR,1,kr_aesthetics_device
+Classys（自製換能器/耗材）,214150.KQ,KR,1,kr_aesthetics_device
+Cleveland-Cliffs,CLF,US,1,grid_power
+ClickHouse,—,US,1,data_platform
+CodeRabbit,—,US,1,coding_ai
+Codeium / Windsurf（→ Cognition）,—,US,1,coding_ai
+Codelco,—,CL,1,copper_electrification
+Cognition AI (Devin + Windsurf),—,US,1,agentic_ai
+Cognition AI / Devin,—,US,1,coding_ai
+Cohere,—,CA,1,agentic_ai
+Cohere Embed v4 + Rerank 4,—,CA,1,rag_kb
+Cohere Health,—,US,1,vertical_ai_agents
+Cohere North (RAG Platform),—,CA,1,rag_kb
+Coherent (ELS),COHR,US,1,silicon_laser_els
+Coherent (telecom 相干),COHR,US,1,siph
+Coherent (自有磊晶),COHR,US,1,silicon_laser_els
+Cohu,COHU,US,1,ate_test
+Cohu (Neon),COHU,US,1,ate_test
+Coilcraft,—,US,1,mlcc_passive
+Coinbase,COIN,US,1,stablecoin_rwa
+Coinbase (Base),COIN,US,1,stablecoin_rwa
+Colossyan,—,UK,1,ai_media_gen
+Comet,COTN.SW,CH,1,advanced
+Comet ML (Opik),—,US,1,llmops_eval
+Commonwealth Fusion (CFS),—,US,1,fusion
+Concentrix,CNXC,US,1,cs_ai
+Confident AI (DeepEval),—,US,1,llmops_eval
+Confluent (IBM 旗下),IBM,US,1,data_platform
+Confluent（現為 IBM）,—,US,1,agentic_ai
+ContextualAI,—,US,1,rag_kb
+Continental (Aumovio),CON.DE,DE,1,auto_semi
+Cooler Master,—,TW,1,data_center_cooling
+CordenPharma,—,DE,1,glp1_cdmo
+CoreWeave / Nebius,CRWV,US,1,agentops
+CoreWeave / Nebius(neocloud 用款),CRWV,US,1,ai_infra_capital
+CoreWeave / Nebius(向其外包),CRWV,US,1,neocloud
+CoreWeave / W&B Weave,CRWV,US,1,llmops_eval
+CoreWeave / Weights & Biases,CRWV,US,1,agentic_ai
+CoreWeave(GPU 債發行),CRWV,US,1,ai_infra_capital
+CoreWeave(債務結構),CRWV,US,1,neocloud
+Corning / Senko,GLW / —,US,1,cpo
+Cosmax,192820.KS,KR,1,kbeauty
+Cosmecca Korea,241710.KQ,KR,1,kbeauty
+Couchbase,BASE,US,1,rag_kb
+Coupa,—,US,1,erp_ai
+Coupa (+ Rossum),—,US,1,agentic_ai
+Covariant（→ Amazon Robotics）,AMZN,US,1,industrial_ai
+Credo,CRDO,US,1,server
+Credo (+DustPhotonics),CRDO,US,1,siph
+Credo / MACOM,CRDO / MTSI,US,1,cpo
+Credo AI,—,US,1,llmops_eval
+Credo AI（AI Governance）,—,US,1,ai_security
+Cresta,—,US,1,cs_ai
+CrewAI Inc.,—,US,1,agentic_ai
+Croda International,CRDA.L,UK,1,kbeauty
+Crosby,—,US,1,vertical_ai_agents
+CrowdStrike,CRWD,US,1,agentops
+CrowdStrike Charlotte AI + AgentWorks,CRWD,US,1,ai_security
+CrowdStrike Falcon,CRWD,US,1,cyber_platform
+CrowdStrike Next-Gen SIEM,CRWD,US,1,cyber_platform
+CrowdStrike（Threat Graph telemetry）,CRWD,US,1,cyber_platform
+"Cruise (GM, 已退出)",GM,US,1,robotaxi
+Crusoe,—,US,1,neocloud
+Crusoe(Stargate 建置/neocloud),—,US,1,ai_infra_capital
+Cummins,CMI,US,1,onsite_power
+Curium Pharma,—,FR,1,radiopharma_isotope
+Curium（分裝物流）,—,FR,1,radiopharma_isotope
+Cursor (Anysphere),—,US,1,ai_inference
+Curtiss-Wright,CW,US,1,defense
+CyberArk,CYBR,US,1,agentops
+CyberArk Secure AI Agents,PANW,IL,1,ai_security
+CyberArk（Idira / PANW）,PANW,US,1,cyber_platform
+Cybertrust Japan（PKI / CA）,4498.T,JP,1,ai_security
+Cyclic Materials,—,CA,1,rare_earth
+Cyera DSPM,—,IL,1,ai_security
+Cyient DLM,CYIENTDLM.NS,IN,1,india_ems_semi
+Cymer (ASML),—,US,1,advanced
+D-ID,—,IL,1,ai_media_gen
+D-Wave Quantum,QBTS,CA,1,quantum_compute
+DBRS Morningstar(評等),—,CA,1,ai_infra_capital
+DI Corp / UniTest / Techwing,003160.KS / 086390.KQ / 089030.KQ,KR,1,hbm
+DIT,110990.KQ,KR,1,hbm
+DJI 大疆,—,CN,1,drone_uav
+DNF / Hansol / DS Techopia,092070.KQ / 014680.KS / —,KR,1,hbm
+DSM-Firmenich,DSFIR.AS,NL,1,kbeauty
+DTCC,—,US,1,stablecoin_rwa
+Daeduck Electronics,353200.KS,KR,1,substrate
+Daewoong Pharmaceutical,069620.KS,KR,1,kr_aesthetics_device
+Dagster Labs,—,US,1,workflow_rpa
+Dahua Technology,002236.SZ,CN,1,industrial_ai
+Daikin 大金,4061.T,JP,1,connector_hsio
+Daishinku 大真空（晶振）,6962.T,JP,1,mlcc_passive
+Danaher (Cytiva),DHR,US,1,glp1_cdmo
+Danfoss,—,DK,1,data_center_cooling
+Danfoss / Parker / Staubli,— / PH / —,DK,1,power
+Dassault Systèmes,DSY.PA,FR,1,industrial_ai
+Databricks (Delta / Tabular),—,US,1,data_platform
+Databricks Lakebase (Neon),—,US,1,data_platform
+Databricks Mosaic AI (Agent Framework),—,US,1,rag_kb
+Datadog (LLM Obs + AI Agent Monitoring),DDOG,US,1,llmops_eval
+Datalogic,DAL.MI,IT,1,industrial_ai
+Dayforce（DAY）,DAY,US,1,erp_ai
+DeFi 協議（底層收益）,—,GLOBAL,1,stablecoin_rwa
+Deel,—,US,1,erp_ai
+DeepInfra,—,US,1,ai_inference
+DeepMind AlphaFold3,GOOGL,US,1,ai_pharma
+DeepSeek / 深度求索,—,CN,1,agentic_ai
+DeepSeek Coder-V2,—,CN,1,coding_ai
+Deepgram,—,US,1,cs_ai
+Dell,DELL,US,1,edge_ai
+Dell / HPE,DELL / HPE,US,1,server
+Deloitte,—,UK,1,agentic_ai
+Deloitte (Zora AI),—,US,1,vertical_ai_agents
+Delta Electronics,2308.TW,TW,1,industrial_ai
+Denison Mines,DNN,CA,1,nuclear_fuel_cycle
+Dexerials / Toray,4980.T / 3402.T,JP,1,material
+Dexerials / Toray / 三菱瓦斯,4980.T / 3402.T / 4182.T,JP,1,cowos
+Diffblue,—,UK,1,coding_ai
+Dify（LangGenius）,—,CN,1,llmops_eval
+Digital Asset (Canton),—,US,1,stablecoin_rwa
+Digital Realty,DLR,US,1,ai_infra_capital
+DigitalBridge,DBRG,US,1,ai_infra_capital
+DigitalOcean,DOCN,US,1,agentops
+Digiwin 鼎新電腦（鼎捷數智）,6112.TW,TW,1,workflow_rpa
+Dings Intellisense,—,CN,1,humanoid_components
+Disco Corporation,6146.T,JP,1,hybrid_bonding
+Disney,DIS,US,1,ai_media_gen
+Dixon Technologies,DIXON.NS,IN,1,india_ems_semi
+Dongjin / 崇越(代理),005290.KS / 5434.TW,KR,1,advanced
+Dongjin Semichem,005290.KQ,KR,1,hbm
+Doosan / Park Aero,— / PKE,KR,1,ccl
+Doosan Fuel Cell,336260.KS,KR,1,hydrogen
+Doosan Robotics,454910.KS,KR,1,industrial_ai
+Douzone Bizon,012510.KS,KR,1,erp_ai
+"Douzone Bizon Co., Ltd.",012510.KS,KR,1,erp_ai
+DraftKings,DKNG,US,1,prediction_markets
+Draganfly,DPRO,CA,1,drone_uav
+Driivz (Vontier),VNT,US,1,ev_charging
+DuPont / Fujimi,DD / 5384.T,US,1,advanced
+Duksan Hi-Metal,077360.KQ,KR,1,hbm
+Dynatrace (Davis AI + LLM Obs),DT,US,1,llmops_eval
+EEW SPC,—,DE,1,wind_power
+EHang 億航,EH,CN,1,drone_uav
+EHang 運營端,EH,CN,1,evtol_uam
+ELYZA（KDDI 子公司）,—,JP,1,cs_ai
+EPC,未上市,US,1,power_semi
+ESI (MKS Instruments),MKSI,US,1,substrate
+EV Connect (Schneider),SU.PA,FR,1,ev_charging
+EVE 億緯鋰能,300014.SZ,CN,1,battery_materials
+EVE 億緯鋰能 / 海辰 HiTHIUM,300014.SZ / —,CN,1,ess
+EVgo,EVGO,US,1,ev_charging
+Ebara,6361.T,JP,1,semicap_wfe
+Ebara（CMP）,6361.T,JP,1,hybrid_bonding
+Eckert & Ziegler,EUZ.DE,DE,1,radiopharma_isotope
+EcoPro BM / L&F,247540.KQ,KR,1,battery_materials
+Edge Impulse（Qualcomm）,QCOM,US,1,industrial_ai
+Edwards Vacuum (Atlas Copco),ATCO-A.ST,SE,1,semicap_wfe
+Efinix,—,US,1,fpga
+Eightfold AI,—,US,1,erp_ai
+Eikon Therapeutics,EIKN,US,1,ai_pharma
+Elbit / Leonardo DRS,ESLT / DRS,IL,1,defense
+Elbit Systems,ESLT,IL,1,defense
+Electrify America,VWAGY,US,1,ev_charging
+Eliyan,—,US,1,chiplet_ucie
+Emerson Electric,EMR,US,1,industrial_ai
+Empower Semiconductor（矽電容）,—,US,1,mlcc_passive
+EnCharge AI,—,US,1,cim_pim
+EnCharge AI (端側/筆電),—,US,1,cim_pim
+Enel X,ENEL.MI,IT,1,vpp_grid
+Energy Vault,NRGV,US,1,ess
+EnergyHub,—,US,1,vpp_grid
+Eni,E,IT,1,fusion
+Enphase,ENPH,US,1,vpp_grid
+Enphase / SolarEdge,ENPH / SEDG,US,1,ess
+Enphase Energy,ENPH,US,1,solar_pv
+Enplas,6961.T,JP,1,ate_test
+Entegris (CMC),ENTG,US,1,advanced
+Entegris (Cabot/CMC),ENTG,US,1,material
+Entegris / CMC,ENTG,US,1,cowos
+Envision AESC,—,JP,1,ess
+Envision 遠景,—,CN,1,wind_power
+Equinix,EQIX,US,1,ai_infra_capital
+Ericsson,ERIC,SE,1,fpga
+Ero Copper,ERO,CA,1,copper_electrification
+EssilorLuxottica,EL.PA,FR,1,ai_devices
+Etched,—,US,1,ai_chip_startup
+Euclyd,—,NL,1,ai_chip_startup
+Eutelsat OneWeb,ETL.PA,EU,1,leosat
+Eve Air Mobility,EVEX,US,1,evtol_uam
+EvenUp,—,US,1,vertical_ai_agents
+Evolito,—,UK,1,evtol_uam
+Evolus（美國肉毒通路）,EOLS,US,1,kr_aesthetics_device
+EvolutionaryScale (ESM3),—,US,1,ai_pharma
+Evotec,EVT.DE,DE,1,ai_pharma
+ExxonMobil,XOM,US,1,hydrogen
+F5,FFIV,US,1,cyber_platform
+F5 + CalypsoAI,FFIV,US,1,ai_security
+FADU,440110.KQ,KR,1,memory_storage
+FAW 一汽,—,CN,1,solid_state_battery
+FERC Order 2222,—,US,1,vpp_grid
+FSB(金融穩定委員會),—,CH,1,ai_infra_capital
+FactSet,FDS,US,1,vertical_ai_agents
+Factorial Energy,FAC,US,1,solid_state_battery
+FairNow（EU AI Act Automation）,—,DK,1,ai_security
+Fanuc,6954.T,JP,1,industrial_ai
+Fanuc 發那科,6954.T,JP,1,robot
+Fastly,FSLY,US,1,cyber_platform
+Fastned,FAST.AS,NL,1,ev_charging
+Faulhaber（德國）,—,DE,1,humanoid_components
+Featherless AI,—,US,1,ai_inference
+Fermata Energy,—,US,1,ev_charging
+Ferrotec / Heraeus / 信越石英,6890.T / — / —,JP,1,advanced
+Fiddler AI,—,US,1,llmops_eval
+Fiddler AI (AI Agent Control Plane),—,US,1,llmops_eval
+Figure Helix(自研),—,US,1,robot
+Filtronic,FTC.L,UK,1,leosat
+Fin（前 Intercom，現為 Salesforce）,CRM,US,1,agentic_ai
+Firefly Aerospace,FLY,US,1,space_economy
+Fireworks / Together AI,—,US,1,agentops
+Fireworks AI,—,US,1,ai_inference
+First Solar,FSLR,US,1,solar_pv
+Five9,FIVN,US,1,cs_ai
+Fivetran + dbt Labs (合併),—,US,1,data_platform
+Flender,—,DE,1,wind_power
+FlexGen / NextEra,— / NEE,US,1,ess
+FloQast,—,US,1,erp_ai
+Fluence (軟體),FLNC,US,1,vpp_grid
+Fluence Energy,FLNC,US,1,ess
+Flutter (FanDuel),FLUT,IE,1,prediction_markets
+Focused Energy,—,DE,1,fusion
+Foosung,—,KR,1,specialty_gas
+FormFactor (+Keystone),FORM,US,1,siph
+FormFactor / Technoprobe,FORM / TPRO.MI,US,1,advanced
+FormFactor / 旺矽,FORM / 6223.TWO,US,1,hbm
+Fortinet,FTNT,US,1,cyber_platform
+Fortinet（FortiASIC SP5/NP7）,FTNT,US,1,cyber_platform
+Fourier 傅利葉 / 智元 Agibot,— / —,CN,1,robot
+Foxconn / 鴻海 Foxbrain AI,2317.TW,TW,1,coding_ai
+Foxconn / 鴻海精密,2317.TW,TW,1,agentic_ai
+Foxconn FIT 鴻海互連,2317.TW,TW,1,connector_hsio
+Foxconn 鴻海,2317.TW,TW,1,connector_hsio
+Foxconn（Hon Hai）,2317.TW,TW,1,industrial_ai
+Fractile,—,UK,1,ai_chip_startup
+Framatome,—,FR,1,nuclear_fuel_cycle
+Franklin Resources,BEN,US,1,stablecoin_rwa
+Freeport-McMoRan,FCX,US,1,copper_electrification
+Freeport（精煉）,FCX,US,1,copper_electrification
+Freiberger,—,DE,1,silicon_laser_els
+Freshworks（Freddy AI + Service Health Monitoring）,FRSH,IN,1,llmops_eval
+Frontgrade (前 Cobham),—,US,1,defense
+Fuji Titanium / Ferro,—,JP,1,mlcc_passive
+Fujifilm EM,4901.T,JP,1,cowos
+Fujitsu,6702.T,JP,1,workflow_rpa
+Fujitsu Data e-TRUST（IDYX）,6702.T,JP,1,ai_security
+Fujitsu（Takane LLM + LLMOps）,6702.T,JP,1,llmops_eval
+FuriosaAI,—,KR,1,ai_chip_startup
+Futu (moomoo),FUTU,HK,1,prediction_markets
+G42 / MBZUAI（UAE）,—,GLOBAL,1,ai_chip_startup
+GAC / BAIC,601238.SS,CN,1,robotaxi
+GDS Holdings,GDS,CN,1,ai_infra_capital
+GE Aerospace（OEM MRO）,GE,US,1,engine_mro
+GE Aerospace（原廠件）,GE,US,1,engine_mro
+GE Vernova (GridOS AI),GEV,US,1,vpp_grid
+GE Vernova (GridOS),GEV,US,1,vpp_grid
+GE Vernova (Wind),GEV,US,1,wind_power
+GM / Stellantis（策略投資）,GM,US,1,rare_earth
+GM Energy,GM,US,1,ev_charging
+GMI Cloud / 礪算科技,—,TW,1,agentic_ai
+GRC / LiquidStack,— / —,US,1,power
+GSA（瑞士）,—,CH,1,humanoid_components
+GSK,GSK,UK,1,ai_pharma
+GTT (Gaztransport & Technigaz),GTT.PA,FR,1,shipbuilding
+Galaxy AI / 小米 HyperOS / Xiaomi,005930.KS / 1810.HK,KR,1,edge_ai
+GalaxyCore (格科微),688728.SS,CN,1,mems_sensor
+Galderma / AbbVie(Allergan),GALD,CH,1,kr_aesthetics_device
+Galileo（within Cisco CSCO / Splunk Observability）,CSCO,US,1,llmops_eval
+Ganfeng Lithium 贛鋒鋰業,002460.SZ,CN,1,solid_state_battery
+General Dynamics,GD,US,1,defense
+General Dynamics / Boeing,GD / BA,US,1,defense
+General Dynamics / HII,GD / HII,US,1,defense
+General Fusion,—,CA,1,fusion
+General Matter,—,US,1,nuclear_fuel_cycle
+Generate:Biomedicines,GENB,US,1,ai_pharma
+Genesis Therapeutics,—,US,1,ai_pharma
+Genesys,—,US,1,cs_ai
+Genius Sports,GENI,UK,1,prediction_markets
+Geomega Resources,GMA.V,CA,1,rare_earth
+Gerresheimer,GXI.DE,DE,1,glp1_cdmo
+Getinge,—,SE,1,surgical_robotics
+Getty Images,GETY,US,1,ai_media_gen
+GitHub Actions（Microsoft）,MSFT,US,1,coding_ai
+GitHub Advanced Security（Microsoft）,MSFT,US,1,coding_ai
+GitHub Copilot (Microsoft),MSFT,US,1,agentic_ai
+GitHub Copilot（Microsoft）,MSFT,US,1,coding_ai
+GitLab Duo Code Review,GTLB,US,1,coding_ai
+Givaudan (Active Beauty),GIVN.SW,CH,1,kbeauty
+Glencore（冶煉）,GLEN.L,UK,1,copper_electrification
+Global Nuclear Fuel,GEV,US,1,nuclear_fuel_cycle
+GlobalFoundries (+AMF),GFS,US,1,siph
+GlobalFoundries (Quantum Tech Solutions),GFS,US,1,quantum_compute
+Globalstar (Amazon Leo),GSAT,US,1,space_economy
+Globe Telecom（GBiz）,GLO.PS,PH,1,workflow_rpa
+Globus Medical,GMED,US,1,surgical_robotics
+Goermicro (Goertek),002241.SZ,CN,1,mems_sensor
+Goertek,002241.SZ,CN,1,mems_sensor
+Goldman Sachs / MUFG(承貸),GS,US,1,ai_infra_capital
+Goldwind 金風,002202.SZ,CN,1,wind_power
+"Google (Agent Development Kit, ADK)",GOOGL,US,1,agentic_ai
+Google (Gemini),GOOGL,US,1,vertical_ai_agents
+Google (Imagen 4),GOOGL,US,1,ai_media_gen
+Google (Lyria 2),GOOGL,US,1,ai_media_gen
+Google (Lyria/TTS),GOOGL,US,1,ai_media_gen
+Google (Project Suncatcher),GOOGL,US,1,space_economy
+Google (SynthID),GOOGL,US,1,ai_media_gen
+Google (Tapestry / 削峰),GOOGL,US,1,vpp_grid
+Google (TurboQuant),GOOGL,US,1,ai_inference
+Google (Veo 3.1),GOOGL,US,1,ai_media_gen
+Google / AWS,GOOGL / AMZN,US,1,hbm
+Google / CSP 自研,GOOGL,US,1,ate_test
+Google / Intersect Power,GOOGL,US,1,ess
+Google AICore / AI Edge,GOOGL,US,1,edge_ai
+Google BigQuery,GOOGL,US,1,data_platform
+Google Cloud Platform,GOOGL,US,1,agentic_ai
+Google Cloud Storage,GOOGL,US,1,data_platform
+Google Cloud（CCAI/Gemini）,GOOGL,US,1,cs_ai
+Google DeepMind,GOOGL,US,1,ai_media_gen
+Google DeepMind / Physical Intelligence,GOOGL / —,US,1,robot
+Google Document AI,GOOGL,US,1,rag_kb
+Google Gemini Computer Use,GOOGL,US,1,workflow_rpa
+Google Gemini Nano,GOOGL,US,1,edge_ai
+Google Pixel,GOOGL,US,1,edge_ai
+Google Pub/Sub,GOOGL,US,1,data_platform
+Google Quantum AI,GOOGL,US,1,quantum_compute
+Google Tensor,GOOGL,US,1,edge_ai
+Grab,GRAB,SG,1,robotaxi
+Greptile,—,US,1,coding_ai
+GridBeyond,—,IE,1,vpp_grid
+Groq Cloud,—,US,1,ai_inference
+Groq Compiler,—,US,1,ai_chip_startup
+Group14 / 6K Energy,—,US,1,solid_state_battery
+H3C 紫光股份,000938.SZ,CN,1,networking
+HCLTech Managed SASE（AI-Driven）,HCLTECH.NS,IN,1,ai_security
+HD Hyundai Electric,267260.KS,KR,1,grid_power
+HD 現代 (美國布局),267250.KS,KR,1,shipbuilding
+HD 現代尾浦,010620.KS,KR,1,shipbuilding
+HD 現代船舶引擎,071970.KS,KR,1,shipbuilding
+HD 現代重工,329180.KS,KR,1,shipbuilding
+HD 現代重工（引擎機械）,329180.KS,KR,1,shipbuilding
+HD 韓國造船海洋,009540.KS,KR,1,shipbuilding
+HEICO,HEI,US,1,engine_mro
+HEICO（修理/USM 整合）,HEI,US,1,engine_mro
+HIWIN Technologies,2049.TW,TW,1,industrial_ai
+HOYA,7741.T,JP,1,cpo
+HOYA / Pentax Medical,7741.T,JP,1,surgical_robotics
+HP,HPQ,US,1,edge_ai
+HUMAIN / Aramco（沙烏地）,—,GLOBAL,1,ai_chip_startup
+Hamamatsu,6965.T,JP,1,mems_sensor
+Hancom,030520.KS,KR,1,workflow_rpa
+Hancom Inc.,030520.KS,KR,1,erp_ai
+Hanwha / PNT / Jaewon,—,KR,1,solid_state_battery
+Hanwha Ocean / HD 現代重工,042660.KS / 329180.KS,KR,1,defense
+Hanwha Qcells,009830.KS,KR,1,solar_pv
+Hanwha Semitech,489790.KS,KR,1,cowos
+Harmonic / Nabtesco / Nidec,6324.T / 6268.T / 6594.T,JP,1,robot
+Harmonic Drive Systems,6324.T,JP,1,surgical_robotics
+Harness,—,US,1,coding_ai
+Harness（含 Qwiet AI）,—,US,1,coding_ai
+Harvey,—,US,1,vertical_ai_agents
+Harvey AI,—,US,1,agentic_ai
+Haynes / Carpenter,CRS,US,1,onsite_power
+Haystack / deepset,—,DE,1,rag_kb
+Heidenhain,—,DE,1,humanoid_components
+Helion Energy,—,US,1,fusion
+Helsing,—,DE,1,defense
+Hempel / Jotun,—,DK,1,shipbuilding
+Henkel,HEN.DE,DE,1,data_center_cooling
+Hertz / Oro Mobility,HTZ,US,1,robotaxi
+Hesai 禾賽 / RoboSense,HSAI / 2498.HK,CN,1,robot
+Hexagon AB,HEXA-B.ST,SE,1,industrial_ai
+HeyGen,—,US,1,ai_media_gen
+HiBob,—,UK,1,erp_ai
+HiSilicon (華為),—,CN,1,rf_6g
+HiddenLayer,—,US,1,llmops_eval
+HiddenLayer AISec Platform,—,US,1,ai_security
+HighRadius,—,US,1,erp_ai
+Hikvision,002415.SZ,CN,1,industrial_ai
+Hillstone Networks（山石網科）,688030.SS,CN,1,ai_security
+Himax 奇景,HIMX,TW,1,icdesign
+Hippocratic AI,—,US,1,agentic_ai
+Hitachi,6501.T,JP,1,industrial_ai
+Hitachi Energy (ETRM),6501.T,JP,1,vpp_grid
+Hitachi Energy (Nostradamus),6501.T,JP,1,vpp_grid
+Hitachi High-Tech,6501.T,JP,1,cowos
+Holistic AI,—,UK,1,llmops_eval
+Holistic AI（EU AI Act Readiness）,—,UK,1,ai_security
+Honeywell (Aclara),HON,US,1,vpp_grid
+Honeywell / Materion,HON / MTRN,US,1,material
+Honeywell / Tosoh / Materion,HON / 4042.T / MTRN,US,1,advanced
+Honeywell / 信越,HON / 4063.T,US,1,power
+Honeywell International,HON,US,1,industrial_ai
+Horiba,6856.T,JP,1,semicap_wfe
+Hour One,—,IL,1,ai_media_gen
+Hoya,7741.T,JP,1,material
+Huawei / OPPO / vivo / Honor,— / — / — / —,CN,1,edge_ai
+Huawei / 小米,— / 1810.HK,CN,1,edge_ai
+Huawei Cloud / 華為雲,—,CN,1,agentic_ai
+Huawei Cloud（Industrial AI）,—,CN,1,industrial_ai
+Huawei Kirin / UNISOC,— / —,CN,1,edge_ai
+Huawei ModelArts,—,CN,1,llmops_eval
+HubSpot（Breeze）,HUBS,US,1,cs_ai
+Hubject,—,DE,1,ev_charging
+Hugel,145020.KQ,KR,1,kr_aesthetics_device
+Hugel（填充/精華）,145020.KQ,KR,1,kr_aesthetics_device
+Hugel（診所培訓/海外）,145020.KQ,KR,1,kr_aesthetics_device
+HyProMag USA,—,UK,1,rare_earth
+Hyosung Heavy,298040.KS,KR,1,grid_power
+Hyperbolic,—,US,1,ai_inference
+Hyperscaler（雲三巨頭+Oracle）,MSFT,US,1,copper_electrification
+Hyperscience,—,US,1,workflow_rpa
+Hyundai / Kia,005380.KS,KR,1,solid_state_battery
+Hyundai Heavy Industries,329180.KS,KR,1,fusion
+Hyundai Motor Group（含 Boston Dynamics）,005380.KS,KR,1,industrial_ai
+Hyundai Motor Group（政府計畫）,005380.KS,KR,1,industrial_ai
+Hyundai Rotem,064350.KS,KR,1,defense
+Hyundai Rotem / KAI,064350.KS / 047810.KS,KR,1,defense
+Hyundai Steel,004020.KS,KR,1,shipbuilding
+Hyundai 現代,005380.KS,KR,1,power_semi
+Hyundai-Kia,005380.KS,KR,1,ev
+IBM / Azure / Braket 量子雲,IBM / MSFT / AMZN,US,1,quantum_compute
+IBM Consulting,IBM,US,1,agentic_ai
+IBM Instana (AI Observability),IBM,US,1,llmops_eval
+IBM QRadar,IBM,US,1,cyber_platform
+IBM Quantum,IBM,US,1,quantum_compute
+IBM Research,IBM,US,1,cim_pim
+IBM watsonx Orchestrate,IBM,US,1,workflow_rpa
+IHI / 三菱重工 MHI,7013.T / 7011.T,JP,1,defense
+IMS Nanofabrication,—,AT,1,advanced
+ION Group (Openlink),—,UK,1,vpp_grid
+IREN,IREN,AU,1,neocloud
+ISC,095340.KQ,KR,1,ate_test
+ISC / Leeno,095340.KQ / 058470.KQ,KR,1,hbm
+ISM / MeitY (補貼方),—,IN,1,india_ems_semi
+ITM Isotope Technologies,—,DE,1,radiopharma_isotope
+ITM Power,ITM.L,UK,1,hydrogen
+ITM（治療藥）,—,DE,1,radiopharma_isotope
+IVRy（アイブリー）,—,JP,1,cs_ai
+Iberdrola,IBE.MC,ES,1,wind_power
+Ichor Systems,ICHR,US,1,semicap_wfe
+Idemitsu Kosan 出光興産,5019.T,JP,1,solid_state_battery
+Illumina,ILMN,US,1,ai_pharma
+Iluka Resources,ILU.AX,AU,1,rare_earth
+Imagination Tech,—,UK,1,icdesign
+Imperva（Thales）,HO.PA,FR,1,cyber_platform
+Indico Data,—,US,1,workflow_rpa
+Indium / MARUWA,— / 5344.T,US,1,siph
+Indium / Namics(DIC),— / —,US,1,substrate
+Inertia Enterprises,—,US,1,fusion
+Infineon,IFNNY,DE,1,ev_charging
+Infineon / Renesas,IFX.DE / 6723.T,EU,1,defense
+Infineon×TSMC,IFX.DE,DE,1,cim_pim
+Infleqtion,INFQ,US,1,quantum_compute
+Informatica (Salesforce 旗下),CRM,US,1,data_platform
+Infor（Koch Industries）,—,US,1,erp_ai
+Infosys,INFY,IN,1,agentic_ai
+Infosys,INFY.NS,IN,1,erp_ai
+Inngest,—,US,1,workflow_rpa
+Innolight 旭創 / Eoptolink 新易盛,300308.SZ / 300502.SZ,CN,1,cpo
+Innoscience 英諾賽科,2577.HK,CN,1,power
+Innoviz,INVZ,IL,1,lidar
+Insilico Medicine,3696.HK,HK,1,ai_pharma
+Inspire Medical,INSP,US,1,bci_neurotech
+Intel (RAMP-C),INTC,US,1,defense
+Intel / Micron,INTC / MU,US,1,material
+Intel / STMicro,INTC / STM,US,1,siph
+Intel / Samsung,INTC / 005930.KS,US,1,cowos
+Intel / Tesla,INTC / TSLA,US,1,substrate
+Intel IPU / Marvell,INTC / MRVL,US,1,networking
+Intercom（Fin）,—,IE,1,cs_ai
+Intercos,ICOS.MI,IT,1,kbeauty
+Intuitive Machines,LUNR,US,1,space_economy
+IonQ,IONQ,US,1,quantum_compute
+Iridium,IRDM,US,1,space_economy
+Iris Biotech,—,DE,1,glp1_cdmo
+Iron Mountain,IRM,US,1,ai_infra_capital
+Isola / AGC-Nelco,— / 5201.T,US,1,ccl
+Isomorphic Labs,—,UK,1,ai_pharma
+Itron,ITRI,US,1,vpp_grid
+Ivanhoe Mines,IVN.TO,CA,1,copper_electrification
+JBD 顯耀顯示,—,CN,1,ai_devices
+JCET / 華天 / 成都奕成,600584.SS / 002185.SZ / —,CN,1,plp
+JCET 長電 / 通富 Tongfu,600584.SS / 002156.SZ,CN,1,cowos
+JEM / 穎崴 / 雍智,6855.T / 6515.TW / 6683.TWO,JP,1,advanced
+JEOL,6951.T,JP,1,advanced
+JFE Steel,5411.T,JP,1,grid_power
+JFrog,FROG,IL,1,coding_ai
+JPMorgan(安排/研究),JPM,US,1,ai_infra_capital
+JSR,—,JP,1,material
+JSR (含 Inpria),—,JP,1,advanced
+JX / Freiberger,— / —,JP,1,cpo
+JX Advanced Metals / 光洋 / 江豐,5016.T / 1785.TWO / 300666.SZ,JP,1,cowos
+JX 金屬,5016.T,JP,1,siph
+JX 金屬 / 古河電工,5016.T / 5801.T,JP,1,substrate
+Japan Electronic Materials (JEM),6855.T,JP,1,ate_test
+Jeisys Medical,—,KR,1,kr_aesthetics_device
+Jeisys（耗材/換能器）,—,KR,1,kr_aesthetics_device
+JetBrains AI Assistant + Junie,—,CZ,1,coding_ai
+Jina AI (jina-embeddings-v4),—,DE,1,rag_kb
+Joby Aviation,JOBY,US,1,evtol_uam
+Johnson & Johnson,JNJ,US,1,surgical_robotics
+Johnson Matthey,JMAT.L,UK,1,hydrogen
+Joule Labs,—,US,1,robotaxi
+JumpCloud Agentic IAM,—,US,1,ai_security
+Juniper (HPE) / Nokia,HPE / NOK,US,1,networking
+K&S,KLIC,US,1,plp
+KAI,047810.KS,KR,1,defense
+KCC,002380.KS,KR,1,shipbuilding
+KDDI（au / ELYZA）,9433.T,JP,1,cs_ai
+KEMET（國巨子公司）,2327.TW,TW,1,mlcc_passive
+KKR,KKR,US,1,ai_infra_capital
+KLA / Ebara,KLAC / 6361.T,US,1,hbm
+KLA Corporation,KLAC,US,1,hybrid_bonding
+KOA（晶片電阻）,6999.T,JP,1,mlcc_passive
+KT Corporation,030200.KS,KR,1,workflow_rpa
+KT Corporation（AICC + LLMOps）,030200.KS,KR,1,llmops_eval
+KT Corporation（Agentic AICC）,030200.KS,KR,1,cs_ai
+KT Corporation（KT Cybersecurity）,030200.KS,KR,1,ai_security
+KUKA / Universal Robots,— / TER,DE,1,robot
+Kakao Corp / Kakao Work,035720.KQ,KR,1,erp_ai
+Kakao Corp.,035720.KS,KR,1,rag_kb
+Kakao Enterprise（Kakao i Connect Center）,—,KR,1,cs_ai
+Kakao i（東南亞 KakaoTalk Channel）,035720.KS,KR,1,cs_ai
+Kalshi,—,US,1,prediction_markets
+Karl Storz,—,DE,1,surgical_robotics
+Karman Holdings,KRMN,US,1,space_economy
+Karman 配套供應鏈,—,US,1,space_economy
+Kaynes Semicon,KAYNES.NS,IN,1,india_ems_semi
+Kaynes Technology,KAYNES.NS,IN,1,india_ems_semi
+Kazatomprom,KAP.IL,KZ,1,nuclear_smr
+Kazatomprom,KAP.L,KZ,1,nuclear_fuel_cycle
+Kempower,KEMPOWR.HE,FI,1,ev_charging
+Keppel DC REIT,ME8U.SI,SG,1,ai_infra_capital
+Kewpie,2809.T,JP,1,kbeauty
+Keyence,6861.T,JP,1,industrial_ai
+Keyence 基恩斯,6861.T,JP,1,robot
+Keysight,KEYS,US,1,leosat
+Keysight / Zurich Instruments,KEYS / —,US,1,quantum_compute
+Kilopass / Sidense(被併) 系,—,US,1,icdesign
+Kioxia 鎧俠,285A.T,JP,1,memory_storage
+Knowles,KN,US,1,mems_sensor
+Kolmar Korea,161890.KS,KR,1,kbeauty
+Korea Southern Power (KOSPO),—,KR,1,hydrogen
+Kratos / Ondas,KTOS / ONDS,US,1,drone_uav
+Kratos Defense,KTOS,US,1,drone_uav
+Krutrim AI（Ola Krutrim）,—,IN,1,coding_ai
+Kuaishou (Kling),1024.HK,CN,1,ai_media_gen
+Kulicke & Soffa,KLIC,US,1,hybrid_bonding
+Kuwait Investment Authority,—,KZ,1,ai_infra_capital
+Kymeta / 國際相位陣列,—,US,1,leosat
+L3Harris / Northrop,LHX / NOC,US,1,drone_uav
+LAC（JSOC）,3857.T,JP,1,ai_security
+LG AI Research,066570.KS,KR,1,agentic_ai
+LG AI Research（韓）,003550.KS,KR,1,ai_chip_startup
+LG CNS,010060.KS,KR,1,agentic_ai
+LG CNS,034580.KS,KR,1,erp_ai
+LG CNS,064400.KS,KR,1,workflow_rpa
+LG CNS AI Programmer（DevOn AIDD）,010060.KS,KR,1,coding_ai
+LG CNS（DAP GenAI + LLMOps）,010060.KS,KR,1,llmops_eval
+LG CNS（亞洲 SI）,034580.KS,KR,1,erp_ai
+LG ES / SK On / Samsung SDI,373220.KS / — / 006400.KS,KR,1,ev
+LG ES / Samsung SDI (系統),373220.KS / 006400.KS,KR,1,ess
+LG Energy / 三星 SDI,373220.KS / 006400.KS,KR,1,robot
+LG Energy Solution / LG Chem,373220.KS,KR,1,solid_state_battery
+LG 化學（自製 HA→出售）,051910.KS,KR,1,kr_aesthetics_device
+LG 生活健康 LG H&H,051900.KS,KR,1,kbeauty
+LIG Nex1,079550.KS,KR,1,defense
+LIPAC,—,KR,1,cpo
+LM Wind Power,GEV,DK,1,wind_power
+LMCache,—,US,1,ai_inference
+LNG / 天然氣供應,LNG,US,1,onsite_power
+LNG 出口商 / 租賃,—,US,1,shipbuilding
+LNG 船（韓廠主導）,—,KR,1,shipbuilding
+LPKF Laser & Electronics,LPK.DE,DE,1,glass_substrate
+LS Electric,010120.KS,KR,1,grid_power
+Lakera（within Check Point CHKP）,CHKP,IL,1,llmops_eval
+Lambda,—,US,1,neocloud
+Lambda Labs,—,US,1,agentic_ai
+LanceDB,—,US,1,rag_kb
+Landing AI,—,US,1,industrial_ai
+Landis+Gyr,LAND.SW,CH,1,vpp_grid
+LangChain,—,US,1,agentops
+LangChain (LangSmith),—,US,1,agentops
+LangGenius / Dify,—,CN,1,coding_ai
+LangGenius Inc. (Dify),—,CN,1,agentic_ai
+Langfuse,—,DE,1,agentops
+Langfuse（within ClickHouse）,—,DE,1,llmops_eval
+Lantheus Holdings,LNTH,US,1,radiopharma_isotope
+Lantheus（含 PNT 分裝）,LNTH,US,1,radiopharma_isotope
+Lasso Security（GenAI Risk Mgmt）,—,IL,1,ai_security
+Lattice,—,US,1,erp_ai
+Leap,—,US,1,vpp_grid
+Leeno Industrial,058470.KQ,KR,1,ate_test
+Legora,—,SE,1,vertical_ai_agents
+Leishen 鐳神智能,—,CN,1,lidar
+Lenovo / HP / Dell,0992.HK / HPQ / DELL,HK,1,edge_ai
+Lenovo 聯想,0992.HK,HK,1,edge_ai
+Leonardo DRS,DRS,US,1,defense
+"LexisNexis (RELX, Protégé)",RELX,UK,1,vertical_ai_agents
+Lightelligence (曦智),1879.HK,CN,1,photonic_compute
+Lightmatter,—,US,1,photonic_compute
+Lightmatter (Envise),—,US,1,photonic_compute
+Lightmatter (Passage),—,US,1,photonic_compute
+Lightmatter / Lightelligence / PsiQuantum,— / — / —,US,1,siph
+Linde / Air Liquide,LIN / AI.PA,EU,1,advanced
+Liobate,—,CN,1,siph
+Lionsgate,LGF.A,US,1,ai_media_gen
+LiquidStack / GRC / Submer,—,US,1,data_center_cooling
+LivaNova,LIVN,UK,1,bci_neurotech
+LlamaIndex (Run-Llama),—,US,1,rag_kb
+LlamaIndex / LlamaParse (Run-Llama),—,US,1,rag_kb
+Logz.io,—,IL,1,llmops_eval
+Lonza,LONN.SW,CH,1,glp1_cdmo
+Lotte Group（Dustin / HAVI）,023530.KS,KR,1,cs_ai
+Lucid,LCID,US,1,auto_semi
+Lucid Group,LCID,US,1,robotaxi
+Lufthansa Technik / ST Engineering,—,DE,1,engine_mro
+Luma AI,—,US,1,ai_media_gen
+Lumentum (ELSFP),LITE,US,1,silicon_laser_els
+Luminar（破產 · 資產出售完成）,LAZR,US,1,lidar
+Lumus / DigiLens,— / —,IL,1,ai_devices
+Luxshare（自製線材）,002475.SZ,CN,1,connector_hsio
+Lyft,LYFT,US,1,robotaxi
+M31 / Ceva / Imagination,6643.TWO / CEVA / —,TW,1,advanced
+M31 科技,6643.TWO,TW,1,asic
+M31 科技 M31,6643.TWO,TW,1,chiplet_ucie
+MACOM / MaxLinear,MTSI / MXL,US,1,optical_module
+MACOM / Qualcomm RF,MTSI / QCOM,US,1,leosat
+MAN Energy Solutions,VOW3.DE,DE,1,shipbuilding
+MBDA,—,EU,1,defense
+MBDA / Rafael,— / —,EU,1,defense
+MEMSensing,688286.SS,CN,1,mems_sensor
+MGX(阿布達比),—,AE,1,ai_infra_capital
+MJC（武藤）,6871.T,JP,1,substrate
+MK Electron,033160.KQ,KR,1,hbm
+MKS Atotech,MKSI,US,1,substrate
+MKS Atotech / 上村,MKSI / —,US,1,substrate
+MKS Atotech / 上村 / DuPont,MKSI / — / DD,US,1,cowos
+MKS Atotech / 上村工業,MKSI / —,US,1,material
+MKS Instruments / Coherent,MKSI / COHR,US,1,quantum_compute
+MP Materials / Lynas,MP / LYC.AX,US,1,ev
+MP Materials（回收）,MP,US,1,rare_earth
+MPS,MPWR,US,1,power_semi
+MR (Reinhausen),—,DE,1,grid_power
+MSFT / GOOGL / AMZN / Meta,MSFT,US,1,data_center_cooling
+MTU Aero Engines,MTX.DE,DE,1,engine_mro
+MTU Maintenance,MTX.DE,DE,1,engine_mro
+Mabl,—,US,1,coding_ai
+Magic AI,—,US,1,coding_ai
+Make.com（前 Integromat）,—,DE,1,workflow_rpa
+Manz Asia 亞智科技,—,TW,1,plp
+Marvel Fusion,—,DE,1,fusion
+Marvell (LPO/LRO DSP),MRVL,US,1,optical_module
+Marvell / Alphawave(→QCOM) / Eliyan,MRVL / (QCOM) / —,US,1,hbm
+Marvell / Cisco,MRVL / CSCO,US,1,cpo
+Marvell / Google / AWS,MRVL / GOOGL / AMZN,US,1,substrate
+Marvell / Google / AWS / MS,MRVL / GOOGL / AMZN / MSFT,US,1,cowos
+Marvell / Semtech,MRVL / SMTC,US,1,networking
+Marvell-設計 XPU,MRVL,US,1,asic
+Mastercard,MA,US,1,stablecoin_rwa
+MatX,—,US,1,ai_chip_startup
+Maven AGI,—,US,1,cs_ai
+Maxar Intelligence,—,US,1,space_economy
+Maxeon Solar,MAXN,US,1,solar_pv
+Maxon,—,CH,1,robot
+Maxon / Faulhaber,—,CH,1,surgical_robotics
+Maxon / 鳴志 Moons,— / 603728.SS,CH,1,robot
+Maxon / 鳴志（馬達供應）,603728.SS,CN,1,humanoid_components
+Maxon（瑞士）,—,CH,1,humanoid_components
+Maxscend 卓胜微,300782.SZ,CN,1,rf_6g
+May Mobility,—,US,1,robotaxi
+McKinsey QuantumBlack,—,US,1,agentic_ai
+MediaTek,2454.TW,TW,1,rf_6g
+MediaTek / 聯發科,2454.TW,TW,1,agentic_ai
+MediaTek Breeze2（繁中模型）,2454.TW,TW,1,coding_ai
+MediaTek Dimensity,2454.TW,TW,1,edge_ai
+MediaTek 聯發科,2454.TW,TW,1,leosat
+Medicare / 商保給付方,—,US,1,bci_neurotech
+Medtronic（BrainSense AI）,MDT,US,1,bci_neurotech
+Medytox,086900.KQ,KR,1,kr_aesthetics_device
+Medytox（自有菌株）,086900.KQ,KR,1,kr_aesthetics_device
+Megvii Technology,—,CN,1,industrial_ai
+Melexis,MELE.BR,EU,1,mems_sensor
+Mercedes-Benz,MBG.DE,DE,1,solid_state_battery
+Merck,MRK,US,1,ai_pharma
+Merck (EMD),MRK.DE,DE,1,material
+Merck (Versum),MRK.DE,EU,1,advanced
+Merck / 關東電化,MRK.DE / 4047.T,DE,1,material
+Merck KGaA (MilliporeSigma),MRK.DE,DE,1,glp1_cdmo
+Merck KGaA / Sigma-Aldrich,MRK.DE,DE,1,glp1_cdmo
+Mercury Systems,MRCY,US,1,defense
+Merz / Solta(Bausch Health),BHC,US,1,kr_aesthetics_device
+Meta (MusicGen),META,US,1,ai_media_gen
+Meta Llama 3.2 / Mistral,META / —,US,1,edge_ai
+Meta(表外 SPV),META,US,1,ai_infra_capital
+Miami International (MIAX),MIAX,US,1,prediction_markets
+Michael Burry(空方),—,US,1,ai_infra_capital
+MicroVision,MVIS,US,1,lidar
+Micron / Samsung (TC-NCF),MU / 005930.KS,US,1,hbm
+Micron / 長江存儲,MU,US,1,specialty_gas
+Micron Technology,MU,US,1,india_ems_semi
+Micronics Japan (MJC),6871.T,JP,1,ate_test
+Microsoft (AutoGen / Agent Framework),MSFT,US,1,agentic_ai
+Microsoft (Azure TTS),MSFT,US,1,ai_media_gen
+Microsoft (Copilot Studio + Azure AI Foundry),MSFT,US,1,agentic_ai
+Microsoft (DAX / Nuance),MSFT,US,1,vertical_ai_agents
+Microsoft / Amazon,MSFT,US,1,subsea_telecom_cable
+Microsoft / Google,MSFT / GOOGL,US,1,cpo
+Microsoft / Google / AWS / Meta,MSFT / GOOGL / AMZN / META,US,1,power
+Microsoft / Google / AWS / Meta,MSFT,US,1,bbu
+Microsoft / Meta,MSFT / META,US,1,fpga
+Microsoft / Quantinuum,MSFT / QNT,US,1,quantum_compute
+Microsoft Azure AI Document Intelligence,MSFT,US,1,rag_kb
+Microsoft Azure Event Hubs,MSFT,US,1,data_platform
+Microsoft Copilot+,MSFT,US,1,edge_ai
+Microsoft Defender,MSFT,US,1,cyber_platform
+Microsoft Dynamics 365 Contact Center,MSFT,US,1,cs_ai
+Microsoft Entra,MSFT,US,1,cyber_platform
+Microsoft Entra Agent ID,MSFT,US,1,ai_security
+Microsoft Fabric,MSFT,US,1,data_platform
+Microsoft Fabric Data Factory,MSFT,US,1,data_platform
+Microsoft GraphRAG,MSFT,US,1,rag_kb
+Microsoft Phi,MSFT,US,1,edge_ai
+Microsoft Power Automate,MSFT,US,1,workflow_rpa
+Microsoft Power Automate / Copilot Studio,MSFT,US,1,agentic_ai
+Microsoft Purview（AI DLP）,MSFT,US,1,ai_security
+Microsoft Sentinel,MSFT,US,1,cyber_platform
+Microsoft Surface,MSFT,US,1,edge_ai
+Microsoft（Azure + 威脅情報）,MSFT,US,1,cyber_platform
+Midjourney,—,US,1,ai_media_gen
+Mindgard（Automated AI Red Team）,—,UK,1,ai_security
+Mingyang 明陽,601615.SS,CN,1,wind_power
+MiniMax,2469.HK,CN,1,agentic_ai
+Mistral Embed / Codestral Embed,—,FR,1,rag_kb
+Mitsubishi Chemical 三菱化學,4188.T,JP,1,battery_materials
+Mitsubishi Gas Chemical,4182.T,JP,1,ccl
+Mitsui Mining & Smelting 三井金属,5706.T,JP,1,solid_state_battery
+Mitsui 三井化學,4183.T,JP,1,advanced
+Mitsumi（三美電機）,6767.T,JP,1,humanoid_components
+Mobileye,MBLY,IL,1,auto_semi
+Modal Labs,—,US,1,ai_inference
+ModelOp,—,US,1,llmops_eval
+Modular,—,US,1,industrial_ai
+Moka / 摩卡人力資源 — Eva AI,—,CN,1,rag_kb
+Molex,—,US,1,silicon_laser_els
+Molex (Koch 旗下),—,US,1,connector_hsio
+Molex（socket）,—,US,1,connector_hsio
+Molicel（台泥集團）,—,TW,1,bbu
+Momenta,—,CN,1,robotaxi
+Mona Labs,—,IL,1,llmops_eval
+Money Forward,3994.T,JP,1,rag_kb
+"Money Forward, Inc.",3994.T,JP,1,erp_ai
+MongoDB + Voyage AI,MDB,US,1,rag_kb
+Monolithic Power,MPWR,US,1,power
+Moody's(評等方法),MCO,US,1,ai_infra_capital
+Moog,MOG.A,US,1,space_economy
+Moonshot AI / 月之暗面（Kimi）,—,CN,1,agentic_ai
+Moonvalley,—,US,1,ai_media_gen
+Moove,—,US,1,robotaxi
+Moove (車隊夥伴),—,US,1,robotaxi
+Morgan Stanley(安排行),MS,US,1,ai_infra_capital
+Morgan Stanley(融資缺口估算),MS,US,1,ai_infra_capital
+Motorola(Lenovo),0992.HK,HK,1,edge_ai
+MultiOn AI（AGI Inc.）,—,US,1,workflow_rpa
+Munters,MTRS.ST,SE,1,data_center_cooling
+Murata (SAW),6981.T,JP,1,rf_6g
+Murata 村田,6981.T,JP,1,connector_hsio
+Murata 村田製作所,6981.T,JP,1,solid_state_battery
+Mythic,—,US,1,cim_pim
+Mythic (車用/國防),—,US,1,cim_pim
+NANO Nuclear Energy,NNE,US,1,nuclear_smr
+NCS Group（Singtel 旗下）,Z74.SI,SG,1,workflow_rpa
+NCS Group（Singtel）,Z74.SI,SG,1,agentic_ai
+NDK 日本電波工業（晶振）,6779.T,JP,1,mlcc_passive
+NEC Cyber Security Platform（NCSP）,6701.T,JP,1,ai_security
+NEXTDC,NXT.AX,AU,1,ai_infra_capital
+NGK Insulators / 住友,5333.T,JP,1,photonic_compute
+NGK 日本碍子,5333.T,JP,1,siph
+NHN Cloud,181710.KS,KR,1,agentic_ai
+NHTSA / AV STEP (監管),—,US,1,robotaxi
+NICE Ltd,NICE,IL,1,agentic_ai
+NICE Ltd.,NICE,IL,1,cs_ai
+NICE Robotic Automation,NICE,IL,1,workflow_rpa
+NIF / LLNL,—,US,1,fusion
+NIO 蔚來,NIO,CN,1,solid_state_battery
+NKT,NKT.CO,DK,1,wind_power
+NOVONIX,NVX,AU,1,battery_materials
+NRI / 野村綜合研究所,4307.T,JP,1,rag_kb
+NSFOCUS（綠盟科技）,300369.SZ,CN,1,ai_security
+NSK / NTN,6471.T,JP,1,wind_power
+NTT / NEL Photonics,9432.T,JP,1,siph
+NTT / Samsung,— / 005930.KS,JP,1,cpo
+NTT / 智邦 Accton,9432.T / 2345.TW,JP,1,siph
+NTT Communications / NTT DATA,9432.T,JP,1,cs_ai
+NTT DATA AI-Powered Cyber Defense,9432.T,JP,1,ai_security
+NTT DATA Smart AI Agent,9613.T,JP,1,workflow_rpa
+NTT Data Group,9613.T,JP,1,erp_ai
+NTT Data Smart AI Agent™ Ecosystem,9613.T,JP,1,coding_ai
+NTT Data（NTT 子公司）,—,JP,1,subsea_telecom_cable
+NTT Data（Smart AI Agent™ / AgentOps）,—,JP,1,llmops_eval
+NTT Data（亞洲 SI）,9613.T,JP,1,erp_ai
+NTT Data（日本 SI）,9613.T,JP,1,agentic_ai
+NTT-AT,—,JP,1,siph
+NVIDIA (BioNeMo),NVDA,US,1,ai_pharma
+NVIDIA (CUDA),NVDA,US,1,ai_chip_startup
+NVIDIA (Riva / ACE NIM),NVDA,US,1,cs_ai
+NVIDIA (TensorRT-LLM / Dynamo),NVDA,US,1,ai_inference
+NVIDIA (需求錨點/獨買),NVDA,US,1,optical_module
+NVIDIA ConnectX/BlueField,NVDA,US,1,networking
+NVIDIA Jetson / Qualcomm,NVDA / QCOM,US,1,drone_uav
+NVIDIA NVLink/NVSwitch,NVDA,US,1,networking
+NVIDIA NeMo Guardrails,NVDA,US,1,ai_security
+NVIDIA Project DIGITS,NVDA,US,1,edge_ai
+NVIDIA(股權背書),NVDA,US,1,neocloud
+NVIDIA（Jetson + Isaac）,NVDA,US,1,industrial_ai
+NVIDIA（Metropolis）,NVDA,US,1,industrial_ai
+NVIDIA（算力底層）,NVDA,US,1,copper_electrification
+NVIDIA（終端拉動）,NVDA,US,1,mlcc_passive
+NVIDIA（終端拉貨）,NVDA,US,1,hybrid_bonding
+NVIDIA（規格制定）,NVDA,US,1,bbu
+NXP,NXPI,NL,1,auto_semi
+Nabla,—,FR,1,vertical_ai_agents
+Nagase ChemteX / Samsung SDI,8012.T / 006400.KS,JP,1,hbm
+Namics (DIC),4631.T,JP,1,hbm
+Namics (DIC),—,JP,1,cowos
+Namics(DIC) / Henkel,— / HEN3.DE,JP,1,material
+NanoLN,—,CN,1,siph
+Nasdaq,NDAQ,US,1,stablecoin_rwa
+Naura 北方華創 / AMEC 中微,002371.SZ / 688012.SS,CN,1,cowos
+Navan（前 TripActions）,NAVN,US,1,erp_ai
+Naver Cloud（CLOVA AiCall）,035420.KS,KR,1,cs_ai
+Naver Cloud（CLOVA Studio LLMOps）,035420.KS,KR,1,llmops_eval
+Naver HyperCLOVA X（coding）,035420.KS,KR,1,coding_ai
+Navitas Semiconductor,NVTS,US,1,power
+Nebius Group,NBIS,US,1,neocloud
+Nebius(可轉債),NBIS,US,1,neocloud
+Nel ASA,NEL.OL,NO,1,hydrogen
+Neo Performance Materials,NEO.TO,CA,1,rare_earth
+Nepes,—,KR,1,plp
+NetSuite（Oracle 旗下）,ORCL,US,1,erp_ai
+Netflix,NFLX,US,1,ai_media_gen
+Netskope,NTSK,US,1,cyber_platform
+Neura Robotics,—,DE,1,industrial_ai
+Neural Magic (Red Hat),IBM,US,1,ai_inference
+Neuralink,—,US,1,bci_neurotech
+NeuroPace,NPCE,US,1,bci_neurotech
+New Relic (Agentic AI Monitoring),—,US,1,llmops_eval
+NexGen Energy,NXE,CA,1,nuclear_fuel_cycle
+NextEra / AES / Engie,NEE / AES / ENGI.PA,US,1,ess
+NextEra / Southern,NEE / SO,US,1,grid_power
+Nextracker,NXT,US,1,solar_pv
+Nichicon,6996.T,JP,1,mlcc_passive
+Nidec,6594.T,JP,1,data_center_cooling
+Nightfall AI（GenAI DLP）,—,US,1,ai_security
+Nikon / ASML,7731.T / ASML,JP,1,plp
+Nikon / Canon,7731.T / 7751.T,JP,1,advanced
+Nippon Electric Glass NEG,5214.T,JP,1,glass_substrate
+Nippon Sanso,4091.T,JP,1,specialty_gas
+Nippon Sanso(日本酸素),4091.T,JP,1,specialty_gas
+Niron Magnetics,—,US,1,rare_earth
+Nokia,NOK,FI,1,fpga
+Nokia / Ericsson,NOK,FI,1,rf_6g
+Noma Security（AI Agent Security）,—,IL,1,ai_security
+Nomic AI (nomic-embed),—,US,1,rag_kb
+Noodoe,—,TW,1,ev_charging
+Nordex,NDX1.DE,DE,1,wind_power
+Nordson,NDSN,US,1,siph
+NorthStar / Nusano / Niowave / Ionetix,—,US,1,radiopharma_isotope
+Northrop Grumman (自有 GaN),NOC,US,1,defense
+Nova / Park Systems / Bruker,NVMI / 140860.KQ / BRKR,GLOBAL,1,advanced
+Novartis（終端拉動）,NVS,CH,1,radiopharma_isotope
+Noveon Magnetics,—,US,1,rare_earth
+Novita AI,—,SG,1,ai_inference
+Nscale,—,UK,1,neocloud
+NuFlare,—,JP,1,advanced
+NuScale Power,SMR,US,1,nuclear_smr
+Numeric,—,US,1,vertical_ai_agents
+Nuro,—,US,1,robotaxi
+Nuvve,NVVE,US,1,ev_charging
+Nvidia (NVLink/NVSwitch),NVDA,US,1,server
+Nvidia (NVQLink / CUDA-Q),NVDA,US,1,quantum_compute
+Nvidia (NVentures),NVDA,US,1,fusion
+Nvidia (Vera Rubin Space-1),NVDA,US,1,space_economy
+Nvidia (reference),NVDA,US,1,server
+Nvidia (設計),NVDA,US,1,server
+Nvidia / AMD,NVDA / AMD,US,1,plp
+Nvidia / AMD（終端）,NVDA / AMD,US,1,material
+Nvidia DGX Cloud,NVDA,US,1,server
+Nvidia Isaac GR00T,NVDA,US,1,robot
+Nvidia（被擠出者）,NVDA,US,1,china_semi
+Nvidia（記憶體需求驅動）,NVDA,US,1,dram_cxl
+OMS Group,—,SG,1,subsea_telecom_cable
+ONNX Runtime / DirectML,MSFT,US,1,edge_ai
+OPPO / vivo / Honor,— / — / —,CN,1,edge_ai
+OS 內建 AI 應用,MSFT / AAPL / GOOGL,US,1,edge_ai
+"Obic Co., Ltd.",4684.T,JP,1,erp_ai
+Octopus Deploy,—,AU,1,coding_ai
+Octopus Energy / Kraken,—,UK,1,vpp_grid
+Ohara 小原,5218.T,JP,1,solid_state_battery
+Oklo,OKLO,US,1,nuclear_smr
+Oklo / TerraPower / X-energy,OKLO,US,1,nuclear_fuel_cycle
+Okta（Agent IdP）,OKTA,US,1,ai_security
+Olive Young,—,KR,1,kbeauty
+OmniVision (韋爾),603501.SS,CN,1,mems_sensor
+Omron,6645.T,JP,1,industrial_ai
+Ondas Holdings,ONDS,US,1,drone_uav
+Ondo Finance,—,US,1,stablecoin_rwa
+OneTrust（Trust Intelligence）,—,US,1,ai_security
+Onto / AMAT / 日立 High-Tech,ONTO / AMAT / 6501.T,US,1,advanced
+Onto / KLA,ONTO / KLAC,US,1,plp
+OpenAI (DALL·E),—,US,1,ai_media_gen
+OpenAI (Sora 2),—,US,1,ai_media_gen
+OpenAI / Anthropic (AI lab 自研晶片),— / —,US,1,icdesign
+OpenAI / xAI / Anthropic,— / — / —,US,1,server
+OpenAI Embeddings,—,US,1,rag_kb
+OpenAI Triton / MLIR,—,US,1,ai_chip_startup
+OpenAI Usage Dashboard,—,US,1,llmops_eval
+OpenAI（AI-native 手機 SoC）,—,US,1,edge_ai
+OpenAI（ChatGPT Agent Mode）,—,US,1,workflow_rpa
+OpenAI（Stargate 需求斷層）,—,US,1,dram_cxl
+OpenEvidence,—,US,1,vertical_ai_agents
+OpenHands / All-Hands-AI,—,US,1,coding_ai
+OpenLight,—,US,1,siph
+OpenRouter,—,US,1,ai_inference
+Oracle / AI 實驗室 / 企業 AI,ORCL,US,1,neocloud
+Oracle Cloud Infrastructure,ORCL,US,1,agentic_ai
+Oracle(用款方信用外溢),ORCL,US,1,ai_infra_capital
+Oracle(終端用款),ORCL,US,1,ai_infra_capital
+Orano,—,FR,1,nuclear_fuel_cycle
+Orbotech (KLA),KLAC,US,1,substrate
+Orca Security,—,US,1,agentops
+Oriole Networks,—,UK,1,photonic_compute
+Ouster,OUST,US,1,lidar
+Ouster（自研 Chronos）,OUST,US,1,lidar
+Owens Corning,OC,US,1,wind_power
+Owkin,—,FR,1,ai_pharma
+Oxford Instruments,OXIG.L,UK,1,quantum_compute
+Oxford PV,—,UK,1,solar_pv
+PFN（Preferred Networks）PLaMo,—,JP,1,coding_ai
+PG Electroplast,PGEL.NS,IN,1,india_ems_semi
+PI / MRSI(Mycronic),— / MYCR.ST,DE,1,siph
+PIMCO(私募信貸),—,US,1,ai_infra_capital
+POET Technologies,POET,CA,1,siph
+POSCO,005490.KS,KR,1,grid_power
+POSCO Future M,003670.KS,KR,1,battery_materials
+POSCO Future M 浦項未來材料,003670.KS,KR,1,solid_state_battery
+POSCO Holdings,005490.KS,KR,1,shipbuilding
+PPG,PPG,US,1,substrate
+PPG Industries,PPG,US,1,shipbuilding
+PSK Holdings,031980.KQ,KR,1,hbm
+PSK Inc.,319660.KQ,KR,1,advanced
+PTC Inc.,PTC,US,1,industrial_ai
+PaXini 帕西尼,—,CN,1,humanoid_components
+Pacific Fusion,—,US,1,fusion
+Palantir (AIP),PLTR,US,1,agentic_ai
+Palo Alto Cortex,PANW,US,1,cyber_platform
+Palo Alto Networks (Prisma AIRS 2.0),PANW,US,1,llmops_eval
+Palo Alto Networks Prisma AIRS 3.0,PANW,US,1,ai_security
+Panasonic (CCL),6752.T,JP,1,ccl
+Panasonic Energy,6752.T,JP,1,bbu
+Paradromics,—,US,1,bci_neurotech
+Patronus AI,—,US,1,llmops_eval
+Paxos,—,US,1,stablecoin_rwa
+Paychex,PAYX,US,1,erp_ai
+Pegasystems,PEGA,US,1,workflow_rpa
+Penta Security WAPPLES AI WAF,—,KR,1,ai_security
+Perplexity,—,US,1,ai_inference
+PharmaResearch,214450.KQ,KR,1,kbeauty
+Phoenix Contact,—,DE,1,ev_charging
+Phoenix Tailings,—,US,1,rare_earth
+Physical Intelligence（π）,—,US,1,industrial_ai
+Pika / 愛詩 PixVerse,—,US,1,ai_media_gen
+Ping Identity / ForgeRock,—,US,1,cyber_platform
+PingCAP TiDB,—,CN,1,data_platform
+PixArt 原相,3227.TWO,TW,1,mems_sensor
+PlanOptik,—,DE,1,glass_substrate
+Planet Labs,PL,US,1,space_economy
+Plansee,—,AT,1,fusion
+Plasma-Therm,—,US,1,mems_sensor
+Plumerai,—,UK,1,industrial_ai
+Point2 Technology,—,KR,1,cpo
+PolyPeptide Group,PPGN.SW,CH,1,glp1_cdmo
+Polycab India,POLYCAB.NS,IN,1,india_ems_semi
+Polymarket,—,US,1,prediction_markets
+Pony.ai,PONY,CN,1,robotaxi
+Pony.ai,2026.HK,CN,1,robotaxi
+Pony.ai 小馬智行,PONY,US,1,lidar
+Portescap,—,US,1,humanoid_components
+Positron AI,—,US,1,ai_chip_startup
+Pratt & Whitney（GTF MRO）,RTX,US,1,engine_mro
+Precision Castparts (PCC),—,US,1,onsite_power
+Precision Neuroscience,—,US,1,bci_neurotech
+Prefect,—,US,1,workflow_rpa
+Preferred Networks（PLaMo + LLMOps）,—,JP,1,llmops_eval
+ProEnergy,—,US,1,onsite_power
+ProLogium 輝能,—,TW,1,solid_state_battery
+Proterial（原日立金屬 Hitachi Metals）,—,JP,1,rare_earth
+Proxima Fusion,—,DE,1,fusion
+Public Service / NextEra,PEG / NEE,US,1,nuclear_smr
+Pumtech Korea,251970.KQ,KR,1,kbeauty
+Q-CTRL / Classiq,—,AU,1,quantum_compute
+QTS(Blackstone),—,US,1,ai_infra_capital
+Qdrant,—,DE,1,rag_kb
+Qodo（前 CodiumAI）,—,IL,1,coding_ai
+Qorvo (BAW),QRVO,US,1,rf_6g
+Qorvo (模組),QRVO,US,1,rf_6g
+Qorvo / Skyworks,QRVO / SWKS,US,1,leosat
+Qualcomm (NTN),QCOM,US,1,rf_6g
+Qualcomm (RFFE),QCOM,US,1,rf_6g
+Qualcomm (濾波器),QCOM,US,1,rf_6g
+Qualcomm / Nvidia,QCOM / NVDA,US,1,advanced
+Qualcomm AI Hub,QCOM,US,1,edge_ai
+Qualcomm Oryon,QCOM,US,1,edge_ai
+Qualcomm Snapdragon 8,QCOM,US,1,edge_ai
+Qualcomm Snapdragon X,QCOM,US,1,edge_ai
+Qualcomm（Tenstorrent 整合）,QCOM,US,1,asic
+Quanta / 廣達,2382.TW,TW,1,agentic_ai
+Quanta Computer（QCT）,2382.TW,TW,1,industrial_ai
+Quantinuum (軟體),QNT,US,1,quantum_compute
+Quantum Computing Inc (QCI),QUBT,US,1,quantum_compute
+QuantumScape,QS,US,1,solid_state_battery
+QuantumScape（無陽極）,QS,US,1,solid_state_battery
+QuickLogic,QUIK,US,1,fpga
+Quinn Emanuel(訴訟風險),—,US,1,ai_infra_capital
+RAGFlow (InfiniFlow),—,CN,1,rag_kb
+REC Silicon,RECSI.OL,NO,1,solar_pv
+ROHM / 三安光電,6963.T / 600703.SS,JP,1,ev
+ROHM（晶片電阻）,6963.T,JP,1,mlcc_passive
+RTX (Pratt & Whitney),RTX,US,1,engine_mro
+RTX (Pratt & Whitney) / Collins,RTX,US,1,defense
+RTX / Leonardo DRS,RTX / DRS,US,1,drone_uav
+RWE,RWE.DE,DE,1,wind_power
+RadixArk (SGLang),—,US,1,ai_inference
+Ramp,—,US,1,erp_ai
+ReElement Technologies,AREC,US,1,rare_earth
+Rebellions,—,KR,1,ai_chip_startup
+Recruit Holdings,6098.T,JP,1,erp_ai
+Recruit Holdings（Air BusinessTools）,6098.T,JP,1,workflow_rpa
+Recursion,RXRX,US,1,ai_pharma
+Recursion (Phenomics 資料),RXRX,US,1,ai_pharma
+Recursion (自動化實驗室),RXRX,US,1,ai_pharma
+Red Cat Holdings,RCAT,US,1,drone_uav
+Reddit,RDDT,US,1,ai_media_gen
+Redpanda,—,US,1,data_platform
+Reducto,—,US,1,rag_kb
+Redwire,RDW,US,1,space_economy
+Renault / Valeo,RNO.PA,FR,1,rare_earth
+Renesas / Stars (合資夥伴),6723.T,JP,1,india_ems_semi
+Renesas / onsemi,6723.T / ON,JP,1,power
+Renesas 瑞薩,6723.T,JP,1,dram_cxl
+Renishaw / RLS,RSW.L,UK,1,humanoid_components
+Resemble AI / PlayHT,—,US,1,ai_media_gen
+Resonac / Henkel,4004.T / HEN3.DE,JP,1,material
+Resonac / Panasonic,4004.T / 6752.T,JP,1,material
+Resonac(原昭和電工),4004.T,JP,1,specialty_gas
+Resonac（昭和電工）,4004.T,JP,1,power_semi
+Restate,—,DE,1,workflow_rpa
+Retell AI,—,US,1,cs_ai
+Rigetti Computing,RGTI,US,1,quantum_compute
+Rio Tinto,RIO,AU,1,copper_electrification
+Riot Platforms,RIOT,US,1,nuclear_smr
+Ripple,—,US,1,stablecoin_rwa
+Rippling,—,US,1,erp_ai
+RoboSense 速騰（自研 SoC）,2498.HK,CN,1,lidar
+Robust Intelligence（within Cisco CSCO）,CSCO,US,1,llmops_eval
+Roche,ROG.SW,CH,1,ai_pharma
+Rocket Lab (Space Systems),RKLB,US,1,space_economy
+Rockwell Automation,ROK,US,1,industrial_ai
+Rogers / 國際微波材料,ROG,US,1,leosat
+Rogers Corp,ROG,US,1,ccl
+Rogo,—,US,1,vertical_ai_agents
+Rohde & Schwarz,—,DE,1,leosat
+Rokid / Even Realities,—,CN,1,ai_devices
+Rolls-Royce / Safran,RR.L / SAF.PA,EU,1,defense
+Rolls-Royce（LTSA）,RR.L,UK,1,engine_mro
+Rossum（已被 Coupa 收購）,—,CZ,1,workflow_rpa
+Rothera (Robinhood×SIG),—,US,1,prediction_markets
+Rubycon,—,JP,1,mlcc_passive
+Runway,—,US,1,ai_media_gen
+S&P Global,SPGI,US,1,vertical_ai_agents
+S&P Global(評等),SPGI,US,1,ai_infra_capital
+S&S Tech / FST / LG Innotek,101490.KQ / 036810.KQ / 011070.KS,KR,1,advanced
+S2W Lab（DarkBERT AI 威脅情報）,—,KR,1,ai_security
+SAP (Joule Agents),SAP,DE,1,agentic_ai
+SAP Concur（SAP旗下）,SAP,DE,1,erp_ai
+SAP Japan / Oracle Japan,—,JP,1,erp_ai
+SAP SE,SAP,DE,1,erp_ai
+SAS Institute (Viya Model Manager + AI Navigator),—,US,1,llmops_eval
+SAS Viya（Model Risk Governance）,—,US,1,ai_security
+SCHOTT,—,DE,1,siph
+SCSK Corporation,9719.T,JP,1,workflow_rpa
+SCSK Corporation DevSecOps SI,9719.T,JP,1,coding_ai
+SES AI,SES,US,1,solid_state_battery
+SHINE Technologies,—,US,1,radiopharma_isotope
+SK C&C,—,KR,1,workflow_rpa
+SK Hynix (MR-MUF),000660.KS,KR,1,hbm
+SK Materials / DNF / Soulbrain,— / 092070.KQ / 357780.KQ,KR,1,material
+SK Materials / Soulbrain / DNF / Hansol,— / 036830.KS / 092070.KS / 014680.KS,KR,1,advanced
+SK Nexilis,—,KR,1,battery_materials
+SK On,096770.KS,KR,1,solid_state_battery
+SK Shieldus Secudium MDR,—,KR,1,ai_security
+SK Siltron,—,KR,1,hbm
+SK Siltron,未上市,KR,1,power_semi
+SK Specialty,—,KR,1,specialty_gas
+SK Specialty(原 SK materials),—,KR,1,specialty_gas
+SK Telecom（AICC + Adot Biz）,017670.KS,KR,1,cs_ai
+SK ecoplant,—,KR,1,hydrogen
+SK hynix (Solidigm),000660.KS,KR,1,memory_storage
+SK hynix（CXL 模組/自研控制器）,000660.KS,KR,1,dram_cxl
+SK 海力士 / Micron,000660.KS / MU,KR,1,asic
+SKF,SKF-B.ST,SE,1,wind_power
+SMA Solar,S92.DE,DE,1,solar_pv
+SMA Solar / Power Electronics,S92.DE / —,DE,1,ess
+SMART Photonics / STMicro / UMC,— / STM / 2303.TW,EU,1,cpo
+SMCG,—,KR,1,kbeauty
+SMEE 上海微電子,—,CN,1,semicap_wfe
+SMIC (科創板),688981.SS,CN,1,china_semi
+SMIC 中芯,0981.HK,HK,1,edge_ai
+SPIL 矽品,—,TW,1,cowos
+STERIS,STE,IE,1,surgical_robotics
+STMicro / onsemi,STM / ON,EU,1,ev
+STMicroelectronics / Bosch,STM,EU,1,humanoid_components
+SUSS MicroTec,SMHN,DE,1,cpo
+SUSS MicroTec / K&S,SMHN.DE / KLIC,EU,1,cowos
+SYSTEX / 精誠資訊,6214.TW,TW,1,rag_kb
+Saab,SAAB-B.ST,EU,1,defense
+Safran / RR / P&W（原廠件）,SAF.PA,FR,1,engine_mro
+Safran（CFM 服務）,SAF.PA,FR,1,engine_mro
+Sage Group,SGE.L,UK,1,erp_ai
+Sage Intacct / Sage Copilot,SGE.L,UK,1,erp_ai
+SailPoint,SAIL,US,1,cyber_platform
+SailPoint（SAIL）,SAIL,US,1,ai_security
+Sakana AI,—,JP,1,industrial_ai
+Salesforce (Agentforce 3),CRM,US,1,agentic_ai
+Salesforce (Agentforce for Service),CRM,US,1,agentic_ai
+Salesforce（Agentforce for Service）,CRM,US,1,cs_ai
+Salience Labs,—,UK,1,photonic_compute
+Saltlux / 솔트룩스,—,KR,1,rag_kb
+SambaNova,—,US,1,ai_inference
+SambaNova SambaFlow,—,US,1,ai_chip_startup
+SambaNova Systems,—,US,1,ai_chip_startup
+"Samsung (Hybrid, 規劃中)",005930.KS,KR,1,hbm
+Samsung / CUMEC,005930.KS / —,KR,1,siph
+Samsung / Intel / SK hynix,005930.KS / INTC / 000660.KS,KR,1,material
+Samsung / SK hynix,005930.KS / 000660.KS,KR,1,material
+Samsung / SK hynix（伺服器 DDR5）,005930.KS / 000660.KS,KR,1,dram_cxl
+Samsung / 小米 / vivo 等,005930.KS,KR,1,india_ems_semi
+Samsung Electro-Mech,009150.KS,KR,1,power
+Samsung Electro-Mech / Corning,009150.KS / GLW,KR,1,cowos
+Samsung Exynos,005930.KS,KR,1,edge_ai
+Samsung SDI,006400.KS,KR,1,solid_state_battery
+Samsung SDI / SK On,006400.KS / —,KR,1,ess
+Samsung SDS FabriX / Brity Copilot,018260.KS,KR,1,coding_ai
+Samsung SDS（FabriX + Agent Studio）,018260.KS,KR,1,llmops_eval
+Samsung SDS（亞洲 SI）,018260.KS,KR,1,erp_ai
+Samsung 電機,009150.KS,KR,1,substrate
+Samsung 電機 / Corning / AGC,009150.KS / GLW / 5201.T,KR,1,substrate
+Samsung 電機 / LG Innotek,009150.KS / 011070.KS,KR,1,substrate
+Samsung 電機 SEMCO,009150.KS,KR,1,glass_substrate
+Samsung（CXL 模組/控制器）,005930.KS,KR,1,dram_cxl
+Samsung（Foundry+HBM）,005930.KS,KR,1,ai_chip_startup
+Samtec,—,US,1,connector_hsio
+SanDisk,SNDK,US,1,memory_storage
+Sangfor Athena AI（深信服）,300454.SZ,CN,1,ai_security
+Sangfor Technologies（深信服）,300454.SZ,CN,1,ai_security
+Sanmina,SANM,US,1,ccl
+Sanofi,SNY,FR,1,ai_pharma
+Sansan,4443.T,JP,1,rag_kb
+Sapien Semiconductor,—,KR,1,ai_devices
+Saronic,—,US,1,defense
+Sartorius,SRT.DE,DE,1,glp1_cdmo
+Sarvam AI,—,IN,1,coding_ai
+Saviynt（Identity Cloud）,—,US,1,ai_security
+Schaeffler,SHA.DE,DE,1,wind_power
+Schaeffler 舍弗勒,SHA.DE,DE,1,robot
+Schneider / Motivair,SU.PA,FR,1,data_center_cooling
+Schneider Electric / Motivair,SU.PA,FR,1,data_center_cooling
+Schott,—,DE,1,glass_substrate
+Schrödinger,SDGR,US,1,ai_pharma
+Sea Limited / Shopee,SE,SG,1,cs_ai
+Secureworks / Arctic Wolf（MDR）,—,US,1,cyber_platform
+Securitize,—,US,1,stablecoin_rwa
+Sekisui 積水 / Toray 東麗,4204.T / 3402.T,JP,1,hbm
+Semtech (+Alphawave),SMTC,US,1,optical_module
+Semtech (LPO IC),SMTC,US,1,optical_module
+Semtech / MaxLinear,SMTC / MXL,US,1,cpo
+Senko,—,US,1,silicon_laser_els
+Sensata,ST,US,1,mems_sensor
+SenseTime,0020.HK,HK,1,industrial_ai
+SenseTime SenseCore 2.0 + SenseTrust,0020.HK,CN,1,llmops_eval
+SentinelOne,S,US,1,agentops
+SentinelOne + Prompt Security,S,US,1,ai_security
+SentinelOne Singularity,S,US,1,cyber_platform
+ServiceNow (Now Assist),NOW,US,1,agentic_ai
+ServiceNow（AI Agent Orchestrator）,NOW,US,1,workflow_rpa
+ServiceNow（Now Assist for CSM）,NOW,US,1,cs_ai
+Seyond 圖達通,—,CN,1,lidar
+Shanghai Superconductor,—,CN,1,fusion
+Shell / Castrol(bp),SHEL,UK,1,data_center_cooling
+Shibaura / ACM 盛美,6590.T / ACMR,JP,1,cowos
+Shinko 新光,6967.T,JP,1,cowos
+Shinko 新光電氣,6967.T,JP,1,substrate
+Shoals Technologies,SHLS,US,1,solar_pv
+Shutterstock,SSTK,US,1,ai_media_gen
+SiCrystal（ROHM）,6963.T,JP,1,power_semi
+SiFive / Tenstorrent,— / —,US,1,icdesign
+SiFive / 晶心 Andes,— / 6533.TWO,US,1,edge_ai
+SiLC / Aeva / Voyant,— / AEVA / —,US,1,siph
+SiLC Technologies,—,US,1,lidar
+Sibelco / TQC,— / —,EU,1,material
+Sibelco / TQC,—,EU,1,solar_pv
+Siemens AG,SIE.DE,DE,1,industrial_ai
+Siemens EDA,—,DE,1,asic
+Siemens EDA (Mentor),—,DE,1,icdesign
+Siemens Gamesa,ENR.DE,DE,1,wind_power
+Siemens Gamesa (葉片),ENR.DE,DE,1,wind_power
+Sierra,—,US,1,vertical_ai_agents
+Sierra Space,—,US,1,space_economy
+Sif Group,SIFG.AS,NL,1,wind_power
+Silex Microsystems,—,CN,1,mems_sensor
+Silicon2 / 실리콘투,257720.KQ,KR,1,kbeauty
+Silver Lake,—,US,1,fpga
+Simmtech,222800.KQ,KR,1,substrate
+Singtel / Nxera,Z74.SI,SG,1,agentic_ai
+Sinopec,600028.SS,CN,1,hydrogen
+Sion Power,—,US,1,solid_state_battery
+Sion Power（無人機/國防）,—,US,1,solid_state_battery
+Sivers Semiconductors,SIVE.ST,SE,1,silicon_laser_els
+Skild AI,—,US,1,industrial_ai
+SkyWater,SKYT,US,1,defense
+SkyWater Technology,SKYT,US,1,cim_pim
+Skydio,—,US,1,drone_uav
+Skylo / Sateliot,—,EU,1,leosat
+Skyworks (TC-SAW),SWKS,US,1,rf_6g
+Skyworks (模組),SWKS,US,1,rf_6g
+Skyworks Solutions,SWKS,US,1,rf_6g
+Snowflake (Crunchy Data),SNOW,US,1,data_platform
+Snowflake (Datavolo / Snowpipe),SNOW,US,1,data_platform
+Snowflake (Polaris / Iceberg),SNOW,US,1,data_platform
+Snyk,—,UK,1,coding_ai
+Snyk（亞洲區擴張）,—,UK,1,coding_ai
+Socionext,6526.T,JP,1,asic
+Socionext / 芯原 VeriSilicon,6526.T / 688521.SS,JP,1,icdesign
+SoftBank / SB Intuitions,9434.T,JP,1,agentic_ai
+SoftBank / SB Intuitions,9984.T,JP,1,agentic_ai
+SoftBank(LP+垂直整合),9984.T,JP,1,ai_infra_capital
+Soitec (LNOI),SOI.PA,FR,1,siph
+Solid Power,SLDP,US,1,solid_state_battery
+Solidigm（SK hynix 子公司）,—,US,1,memory_storage
+Sonatype,—,US,1,coding_ai
+Sony 索尼,6758.T,JP,1,lidar
+Sophos / Bitdefender,—,UK,1,cyber_platform
+Soulbrain,036830.KQ,KR,1,hbm
+Soulbrain / Enchem,357780.KQ,KR,1,battery_materials
+Soulbrain / KCTech,036830.KS / 281820.KS,KR,1,advanced
+Sourcegraph / Cody,—,US,1,coding_ai
+Sourcegraph / Cody Review,—,US,1,coding_ai
+Southern Copper,SCCO,PE,1,copper_electrification
+Southern Copper（精煉）,SCCO,PE,1,copper_electrification
+SpaceX,—,US,1,leosat
+SpaceX,SPCX,US,1,space_economy
+SpaceX (Starlink),—,US,1,leosat
+SpaceX (Starlink),SPCX,US,1,space_economy
+SpaceX (Starshield),—,US,1,defense
+SpaceX (自製酬載),—,US,1,leosat
+SpaceX Starlink,—,US,1,leosat
+SpaceX（衛星 RF）,—,US,1,plp
+Speechmatics,—,UK,1,cs_ai
+Spendesk,—,FR,1,erp_ai
+Splunk（Cisco）,CSCO,US,1,cyber_platform
+Sportradar,SRAD,CH,1,prediction_markets
+Sprott Physical Uranium Trust,U-UN.TO,CA,1,nuclear_fuel_cycle
+Stability AI,—,UK,1,ai_media_gen
+Stability AI (Stable Audio),—,UK,1,ai_media_gen
+Star Charge 星星充電,—,CN,1,ev_charging
+Starburst / Dremio,—,US,1,data_platform
+Starcloud,—,US,1,space_economy
+Stargate (OpenAI/Oracle),ORCL,US,1,grid_power
+Stargate(OpenAI/SoftBank/Oracle/MGX),—,US,1,ai_infra_capital
+State Grid / 南瑞 (NARI),600406.SS,CN,1,grid_power
+State Street,STT,US,1,stablecoin_rwa
+Staubli,—,CH,1,data_center_cooling
+Stellantis,STLA,EU,1,lidar
+Stem,STEM,US,1,vpp_grid
+Stevanato Group,STVN,IT,1,glp1_cdmo
+Stockmark,—,JP,1,rag_kb
+Stockmark（Aconnect + Stockmark-2-100B）,—,JP,1,llmops_eval
+Stonepeak(基建 PE),—,US,1,ai_infra_capital
+Strategy,MSTR,US,1,stablecoin_rwa
+Stream Data Centers(Apollo),—,US,1,ai_infra_capital
+SuNAM,—,KR,1,fusion
+SubCom,—,US,1,subsea_telecom_cable
+SubCom（自有船隊）,—,US,1,subsea_telecom_cable
+Suki,—,US,1,vertical_ai_agents
+Sumitomo Bakelite,4203.T,JP,1,cowos
+Sumitomo Bakelite / DuPont,4203.T / DD,JP,1,ccl
+Sumitomo Electric,5802.T,JP,1,rf_6g
+Sumitomo Electric 住友,5802.T,JP,1,silicon_laser_els
+Sumitomo 住友電工,5802.T,JP,1,cpo
+Suno,—,US,1,ai_media_gen
+Sunrun,RUN,US,1,vpp_grid
+Sunwoda 欣旺達 / GAC 廣汽,300207.SZ,CN,1,solid_state_battery
+Supabase,—,US,1,agentic_ai
+SuperPower / Furukawa,5801.T,JP,1,fusion
+Sweep AI,—,US,1,coding_ai
+Synchron,—,US,1,bci_neurotech
+Synopsys (system IP),SNPS,US,1,chiplet_ucie
+Synopsys / Ansys / Cadence,SNPS / (SNPS) / CDNS,US,1,siph
+Synopsys / Arm,SNPS / ARM,US,1,asic
+Synopsys / Rambus,SNPS / RMBS,US,1,icdesign
+Synopsys/Cadence（對照）,SNPS,US,1,china_semi
+Synopsys（含 Ansys）,SNPS,US,1,industrial_ai
+Synthesia,—,UK,1,ai_media_gen
+Synthflow AI,—,DE,1,cs_ai
+Syntiant,—,US,1,mems_sensor
+Syrah Resources,SYR.AX,AU,1,battery_materials
+Syrma SGS Technology,SYRMA.NS,IN,1,india_ems_semi
+Systex Corporation（精誠資訊）,6214.TW,TW,1,erp_ai
+Systex 精誠資訊,6214.TW,TW,1,workflow_rpa
+TAE Technologies,—,US,1,fusion
+TBEA / 特變電工,600089.SS,CN,1,grid_power
+TCI 大江生醫,8436.TWO,TW,1,kbeauty
+TCL 中環 TCL Zhonghuan,002129.SZ,CN,1,solar_pv
+TCS Cognitive Automation,TCS.NS,IN,1,workflow_rpa
+TDK (InvenSense),6762.T,JP,1,mems_sensor
+TDK / EPCOS,6762.T,JP,1,rf_6g
+TDK / 太陽誘電,6762.T / 6976.T,JP,1,power
+TELD 特來電,300001.SZ,CN,1,ev_charging
+TE（cable）,TEL,CH,1,connector_hsio
+TE（socket）,TEL,CH,1,connector_hsio
+THK,6481.T,JP,1,industrial_ai
+THK / NSK,6481.T / 6471.T,JP,1,robot
+THK / NSK,6481.T,JP,1,humanoid_components
+TI / ADI / Infineon,TXN / ADI / IFX.DE,US,1,icdesign
+TOK / JSR / Merck,4186.T / — / MRK.DE,JP,1,hbm
+TOK / JSR / Merck,4186.T / 4185.T / MRK.DE,JP,1,cowos
+TOK 東京應化,4186.T,JP,1,advanced
+TPI Composites,TPIC,US,1,wind_power
+TSMC (AZ),2330.TW,TW,1,defense
+TSMC OIP / Samsung SAFE,2330.TW / 005930.KS,TW,1,icdesign
+TSMC（CoPoS）,2330.TW,TW,1,plp
+TSMC（前段材料最大買家）,2330.TW,TW,1,material
+TSMC（材料拉貨方）,2330.TW,TW,1,material
+TTEC Holdings,TTEC,US,1,cs_ai
+TTM Technologies,TTMI,US,1,ccl
+Tabnine,—,IL,1,coding_ai
+Taiyo Yuden,6976.T,JP,1,rf_6g
+Tanaka (田中貴金属),—,JP,1,hydrogen
+Tantalus Systems,TANT.TO,CA,1,vpp_grid
+TaskUs,TASK,US,1,cs_ai
+Tata Communications AXIOM（SASE）,TATACOMM.NS,IN,1,ai_security
+Tata Consultancy Services,TCS.NS,IN,1,agentic_ai
+Tata Electronics (TSAT),—,IN,1,india_ems_semi
+Tata Elxsi,TATAELXSI.NS,IN,1,india_ems_semi
+TaxGPT,—,US,1,erp_ai
+TechWing,089030.KQ,KR,1,ate_test
+Technoprobe,TPRO.MI,IT,1,ate_test
+Teck Resources,TECK,CA,1,copper_electrification
+Teledyne (FLIR),TDY,US,1,defense
+Teledyne (FLIR) / Sony,TDY / 6758.T,US,1,drone_uav
+Teledyne DALSA,TDY,US,1,mems_sensor
+Teledyne Technologies,TDY,US,1,industrial_ai
+Teleperformance,TEP,FR,1,cs_ai
+Telix Pharmaceuticals,TLX,AU,1,radiopharma_isotope
+Telix（診斷）,TLX,AU,1,radiopharma_isotope
+Temporal,—,US,1,agentops
+Temporal Technologies,—,US,1,workflow_rpa
+Tempus AI,TEM,US,1,ai_pharma
+Tencent / 騰訊 — Hunyuan Embed,0700.HK,CN,1,rag_kb
+Tencent Cloud（工業 AI）,0700.HK,CN,1,industrial_ai
+Tencent TI Platform (TI-ONE + ADP),0700.HK,CN,1,llmops_eval
+Tencent — WeKnora + Hunyuan RAG,0700.HK,CN,1,rag_kb
+Tenstorrent,—,US,1,ai_chip_startup
+Tenstorrent (IP),—,US,1,ai_chip_startup
+Terakraft,—,NO,1,photonic_compute
+TerraPower / X-energy / Kairos,XE（X-energy）,US,1,nuclear_smr
+TerraPower Isotopes,—,US,1,radiopharma_isotope
+Terrestrial Energy,IMSR,CA,1,nuclear_smr
+Tesla (Supercharger HW),TSLA,US,1,ev_charging
+Tesla / Figure(自研),TSLA / —,US,1,robot
+Tesla Optimus,TSLA,US,1,robot
+Tesla Supercharger,TSLA,US,1,ev_charging
+Tesla(自研),TSLA,US,1,robot
+Tesla（EV+Optimus 機器人）,TSLA,US,1,rare_earth
+Tether,—,GLOBAL,1,stablecoin_rwa
+Texas Instruments / ADI,TXN / ADI,US,1,defense
+The Mobility House,—,DE,1,ev_charging
+Thea Energy,—,US,1,fusion
+Thomson Reuters,TRI,US,1,vertical_ai_agents
+Thomson Reuters (CoCounsel),TRI,US,1,vertical_ai_agents
+Thomson Reuters (Westlaw 語料),TRI,US,1,vertical_ai_agents
+Thomson Reuters CoCounsel,TRI,CA,1,agentic_ai
+Tier IV,—,JP,1,industrial_ai
+Tier IV（NEDO 計畫）,—,JP,1,industrial_ai
+Tipalti,—,US,1,erp_ai
+Tirtir,—,KR,1,kbeauty
+Tokamak Energy,—,UK,1,fusion
+Tokyo Electron (TEL),8035.T,JP,1,hybrid_bonding
+Tokyo Ohka 東京應化 TOK,4186.T,JP,1,material
+Toppan 凸版,7911.T,JP,1,glass_substrate
+Topsec / 天融信（DeepSeek AI）,002212.SZ,CN,1,ai_security
+Topsec Technologies（天融信）,002212.SZ,CN,1,ai_security
+Topsoe,—,DK,1,hydrogen
+Toray,3402.T,JP,1,wind_power
+Tosoh(東曹),4042.T,JP,1,specialty_gas
+TotalEnergies,TTE.PA,FR,1,solar_pv
+Towa,6315.T,JP,1,plp
+Tower Semi,TSEM,IL,1,cpo
+Toyota,7203.T,JP,1,hydrogen
+Toyota (V2G 試點),TM,JP,1,ev_charging
+Toyota / Stellantis,7203.T / STLA,JP,1,ev
+Toyota Motor,7203.T,JP,1,robotaxi
+Toyota 豐田,7203.T,JP,1,solid_state_battery
+Tradeweb Markets,TW,US,1,prediction_markets
+Trail of Bits（AI Security Audit）,—,US,1,ai_security
+TransDigm,TDG,US,1,engine_mro
+Transsion,688036.SS,CN,1,edge_ai
+Tray.ai,—,US,1,workflow_rpa
+Trench Group,—,DE,1,grid_power
+Trend Micro Vision One,4704.T,JP,1,cyber_platform
+Trend Micro（Cloud One + Snyk 聯盟）,4704.T,JP,1,coding_ai
+Tricentis,—,AT,1,coding_ai
+Trintech Cadency,—,IE,1,erp_ai
+Tritium,—,AU,1,ev_charging
+TruLens / TruEra（within Snowflake SNOW）,SNOW,US,1,llmops_eval
+Truewind,—,US,1,vertical_ai_agents
+Tsinghua 清華大學,—,CN,1,cim_pim
+Tungsten Automation（前 Kofax）,—,US,1,workflow_rpa
+Turbopuffer,—,US,1,rag_kb
+Twilio Flex,TWLO,US,1,cs_ai
+Type One / Pacific Fusion,—,US,1,fusion
+UACJ,5741.T,JP,1,battery_materials
+UALink Consortium,—,GLOBAL,1,networking
+UBTech 優必選,9880.HK,CN,1,robot
+UBTech(自動換電),9880.HK,CN,1,robot
+UCIe Consortium,—,GLOBAL,1,chiplet_ucie
+UCT / Ichor / Ferrotec / ULVAC,UCTT / ICHR / 6890.T / 6728.T,US,1,advanced
+UISEE Technology,1511.HK,CN,1,industrial_ai
+UK AISI Inspect（英國 AI Security Institute）,—,UK,1,llmops_eval
+ULA (United Launch Alliance),—,US,1,space_economy
+UMC / imec / SMART Photonics,2303.TW / — / —,TW,1,siph
+UPMEM,—,FR,1,cim_pim
+US Conec / Senko,— / —,US,1,optical_module
+US Critical Materials,—,US,1,rare_earth
+Uber (自建 depot),UBER,US,1,robotaxi
+Udio,—,US,1,ai_media_gen
+UiPath,PATH,US,1,workflow_rpa
+UiPath (Maestro),PATH,US,1,agentic_ai
+Ulta Beauty,ULTA,US,1,kbeauty
+Ultra Ethernet Consortium,—,GLOBAL,1,networking
+Umicore / POSCO Future M,UMI.BR / 003670.KS,EU,1,ev
+Unitree 宇樹,—,CN,1,robot
+Universal Music,UMG.AS,NL,1,ai_media_gen
+Unstructured.io,—,US,1,rag_kb
+Untether AI (已退場),—,CA,1,cim_pim
+Unusual Machines / Westmag / Neros,UMAC / —,US,1,drone_uav
+Uplight (AutoGrid),—,US,1,vpp_grid
+Upstage,—,KR,1,rag_kb
+Uranium Energy,UEC,US,1,nuclear_fuel_cycle
+Uranium Energy / Denison,UEC / DNN,US,1,nuclear_smr
+Urenco,—,EU,1,nuclear_fuel_cycle
+Utility-scale（電網級）,—,GLOBAL,1,ess
+VACUUMSCHMELZE (VAC),—,DE,1,rare_earth
+VAT Group,VACN.SW,CH,1,semicap_wfe
+VW / GM / Ford,VOW3.DE / GM / F,DE,1,ev
+VW PowerCo,VOW3.DE,DE,1,solid_state_battery
+Valeo,FR.PA,FR,1,lidar
+Vantage / CyrusOne / Compass,—,US,1,ai_infra_capital
+Vast Data / Voltage Park / RunPod,—,US,1,neocloud
+Veeam + Securiti AI,—,US,1,ai_security
+Veeco / Mattson,VECO / —,US,1,advanced
+Veracode,—,US,1,coding_ai
+Verint Systems,VRNT,US,1,cs_ai
+Vertical Aerospace,EVTL,UK,1,evtol_uam
+Vertice (+ Vendr),—,UK,1,agentic_ai
+Vertiv / Eaton,VRT / ETN,US,1,power
+Vertiv / Lite-On(US),VRT / 2301.TW,US,1,power
+Vespa.ai,—,NO,1,rag_kb
+Vestas,VWS.CO,DK,1,wind_power
+Via Mechanics,—,JP,1,substrate
+Viasat,VSAT,US,1,space_economy
+Vicor,VICR,US,1,power
+Viking Therapeutics,VKTX,US,1,glp1_cdmo
+VinFast,VFS,VN,1,solid_state_battery
+Visa,V,US,1,stablecoin_rwa
+Visionox 維信諾,002387.SZ,CN,1,glass_substrate
+Vistra,VST,US,1,nuclear_smr
+Volkswagen,VOW3.DE,DE,1,auto_semi
+Volkswagen / Elli (V2G),VOW3.DE,DE,1,vpp_grid
+Voltus,—,US,1,vpp_grid
+Voyage AI（MongoDB 旗下）,MDB,US,1,rag_kb
+Voyager Technologies,VOYG,US,1,space_economy
+Vulcan Elements,—,US,1,rare_earth
+W.L. Gore,—,US,1,hydrogen
+Walmart,WMT,US,1,kbeauty
+Warner Music,WMG,US,1,ai_media_gen
+Wavetek (穩懋系),—,TW,1,siph
+Waymo,GOOGL,US,1,lidar
+Wayve,—,UK,1,robotaxi
+WeLion 衛藍新能源,—,CN,1,solid_state_battery
+WeRide,WRD,CN,1,robotaxi
+WeRide,0800.HK,CN,1,robotaxi
+WeRide 文遠知行,WRD,US,1,lidar
+WeaveGrid,—,US,1,vpp_grid
+Weaviate,—,NL,1,rag_kb
+West Pharmaceutical,WST,US,1,glp1_cdmo
+WinActor（NTT DATA）,9613.T,JP,1,workflow_rpa
+WinGD,—,CH,1,shipbuilding
+Wipro,WIPRO.NS,IN,1,erp_ai
+Wipro Cyber Defense（AI Security Lab）,WIT,IN,1,ai_security
+WitnessAI（AI Firewall）,—,US,1,ai_security
+Wiwynn,6669.TWO,TW,1,industrial_ai
+Wiwynn / 緯穎,6669.TW,TW,1,agentic_ai
+Wonderful,—,IL,1,cs_ai
+Wonik IPS / Jusung / Eugene / TES,240810.KQ / 036930.KQ / 084370.KQ / 095610.KQ,KR,1,advanced
+Wontech,336570.KQ,KR,1,kr_aesthetics_device
+Wontech（自製 RF tip）,336570.KQ,KR,1,kr_aesthetics_device
+WorkFusion,—,US,1,workflow_rpa
+Workday,WDAY,US,1,erp_ai
+Workday Taiwan（WDAY 合作夥伴網路）,WDAY,TW,1,erp_ai
+Works Applications,—,JP,1,erp_ai
+World Labs,—,US,1,industrial_ai
+Wärtsilä (GEMS),WRT1V.HE,FI,1,vpp_grid
+Wärtsilä Energy,WRT1V.HE,FI,1,ess
+X-FAB,XFAB.PA,EU,1,mems_sensor
+X-Fab,XFAB.PA,DE,1,power_semi
+XELA Robotics,—,JP,1,robot
+XMC 武漢新芯,—,CN,1,china_semi
+XREAL,—,CN,1,ai_devices
+Xaira Therapeutics,—,US,1,ai_pharma
+Xcimer Energy,—,US,1,fusion
+Xero,XRO.AX,AU,1,erp_ai
+Xiaomi / Alibaba / ByteDance,1810.HK / BABA / —,CN,1,ai_devices
+Xiaomi 小米,1810.HK,HK,1,edge_ai
+Xpeng 小鵬,9868.HK,CN,1,robot
+Xscape Photonics,—,US,1,photonic_compute
+YMTC 長江存儲,—,CN,1,memory_storage
+Yamaha/Shinkawa,7272.T,JP,1,hbm
+Yamaha/Shinkawa / K&S,7272.T / KLIC,JP,1,cowos
+Yamaichi Electronics,6941.T,JP,1,ate_test
+Yaskawa Electric,6506.T,JP,1,industrial_ai
+Yaskawa 安川電機,6506.T,JP,1,robot
+Yellow Cake plc,YCA.L,UK,1,nuclear_fuel_cycle
+Yokogawa Electric,6841.T,JP,1,industrial_ai
+Yonwoo (隸 Kolmar),—,KR,1,kbeauty
+York / Sierra Space,—,US,1,space_economy
+Ypsomed,YPSN.SW,CH,1,glp1_cdmo
+ZF Wind Power,—,DE,1,wind_power
+Zebra Technologies,ZBRA,US,1,industrial_ai
+Zeekr / Geely,ZK,CN,1,robotaxi
+Zendesk,—,US,1,agentic_ai
+Zendesk（AI Agents + Forethought）,—,US,1,cs_ai
+Zenity（Agentic AI Security）,—,IL,1,ai_security
+ZeroPath,—,US,1,coding_ai
+Zoho Zia LLM / Zia Agent Studio,—,IN,1,coding_ai
+Zoho（Zia LLM + AI Governance）,—,IN,1,llmops_eval
+Zscaler,ZS,US,1,cyber_platform
+ams OSRAM,AMS.SW,CH,1,lidar
+d-Matrix (資料中心),—,US,1,cim_pim
+d-Matrix Aviator,—,US,1,ai_chip_startup
+datacom/CPO (旭創/Broadcom/Nvidia),300308.SZ / AVGO / NVDA,CN,1,siph
+ficonTEC,—,DE,1,siph
+ficonTEC / PI / MRSI(Mycronic),— / — / MYCR.ST,DE,1,cpo
+freee K.K.,4478.T,JP,1,erp_ai
+iFlytek / 科大訊飛,002230.SZ,CN,1,agentic_ai
+iKala,—,TW,1,rag_kb
+indie Semiconductor,INDI,US,1,auto_semi
+llama.cpp / MediaPipe,— / GOOGL,GLOBAL,1,edge_ai
+merchant GPU(被侵蝕),NVDA / AMD,US,1,asic
+momo 富邦媒,8454.TWO,TW,1,cs_ai
+nLIGHT,LASR,US,1,optical_module
+onsemi / STMicro / Rohm,ON / STM / 6963.T,US,1,power
+pgvector + Postgres 生態,—,US,1,rag_kb
+rad-hard/感測上游,—,US,1,defense
+thyssenkrupp nucera,NCH2.DE,DE,1,hydrogen
+v0 / Vercel,—,US,1,coding_ai
+vLLM (Red Hat / IBM),IBM,US,1,ai_inference
+xAI,—,US,1,asic
+Ørsted,ORSTED.CO,DK,1,wind_power
+三井化學 Mitsui Chemicals,4183.T,JP,1,material
+三井金屬 / Co-Tech 長華科,5706.T / 4426.TW,JP,1,material
+三井金屬 / SK Nexilis,5706.T / —,JP,1,ccl
+三井金屬 / 住友化學,5706.T / 4005.T,JP,1,material
+三井金屬礦業 Mitsui Kinzoku,5706.T,JP,1,copper_electrification
+三星 LSI / Magnachip / 集創北方,005930.KS / MX / —,KR,1,icdesign
+三星 SEMCO,009150.KS,KR,1,plp
+三星 System LSI,005930.KS,KR,1,rf_6g
+三星SDI,006400.KS,KR,1,bbu
+三星重工,010140.KS,KR,1,shipbuilding
+三星電機 SEMCO,009150.KS,KR,1,plp
+三星電機 Samsung Electro-Mech,009150.KS,KR,1,mlcc_passive
+三福化工,4755.TWO,TW,1,cowos
+三福化工 / 勝一 / 國精化,4755.TWO / 1773.TW / 4722.TW,TW,1,material
+三菱重工 (MHI),7011.T,JP,1,onsite_power
+三菱重工 / 川崎重工,7011.T / 7012.T,JP,1,defense
+三菱重工 / 川崎重工,7011.T,JP,1,shipbuilding
+三菱重工 / 川崎重工 / IHI,7011.T / 7012.T / 7013.T,JP,1,defense
+三菱電機 Mitsubishi,6503.T,JP,1,optical_module
+三菱電機 Mitsubishi Electric,6503.T,JP,1,substrate
+上海交大×曦智光子運算實驗室,—,CN,1,photonic_compute
+上海垣信 Spacesail,—,CN,1,leosat
+上海微電子 SMEE,—,CN,1,china_semi
+上海電氣 / 運達 Windey,601727.SS,CN,1,wind_power
+上緯投控 Swancor,3708.TWO,TW,1,wind_power
+上緯新材 Swancor Advanced,688585.SS,CN,1,wind_power
+上詮 FOCI / 波若威,3363.TWO / 3163.TWO,TW,1,siph
+上銀(大銀) / 和大,2049.TW / 1536.TW,TW,1,robot
+上銀科技 Hiwin,2049.TW,TW,1,surgical_robotics
+上銀（大銀）DAIDO/HIWIN,2049.TW,TW,1,humanoid_components
+世界先進,5347.TWO,TW,1,power_semi
+世紀鋼/世紀風電,9958.TWO,TW,1,wind_power
+世芯 Alchip,3661.TW,TW,1,chiplet_ucie
+世芯 Alchip / 創意 GUC,3661.TW / 3443.TW,TW,1,cowos
+中信海直,000099.SZ,CN,1,evtol_uam
+中信造船 Jong Shyn,2644.TWO,TW,1,defense
+中光電智能 / DJI,5371.TWO / —,TW,1,defense
+中創新航 CALB / 國軒高科,3931.HK / 002074.SZ,CN,1,ev
+中國巨石 Jushi,600176.SS,CN,1,wind_power
+中國星網 China SatNet,—,CN,1,leosat
+中國消費者,—,CN,1,kr_aesthetics_device
+中國稀土集團 / 五礦稀土,000831.SZ,CN,1,rare_earth
+中國稀土集團 / 北方稀土,600111.SS,CN,1,ev
+中國船舶 (CSSC),600150.SS,CN,1,shipbuilding
+中國鎢業/出口管制（政策方）,—,CN,1,specialty_gas
+中國電科 CETC（國企）,—,CN,1,evtol_uam
+中天科技 Zhongtian,600522.SS,CN,1,wind_power
+中央硝子,4044.T,JP,1,specialty_gas
+中廣核新能源 CGN,1798.HK,HK,1,wind_power
+中復神鷹,688295.SH,CN,1,evtol_uam
+中微 AMEC,688012.SH,CN,1,cpo
+中微 AMEC,688012.SS,CN,1,semicap_wfe
+中微公司 AMEC,688012.SS,CN,1,china_semi
+中材科技 Sinoma,002080.SZ,CN,1,wind_power
+中材科技 Sinoma Sci-Tech,002080.SZ,CN,1,battery_materials
+中直股份 AVICOPTER,600038.SH,CN,1,evtol_uam
+中石科技 Sinwa,300684.SZ,CN,1,power
+中砂 Kinik / 長春,1560.TW / —,TW,1,advanced
+中磊 Sercomm / 啟碁 WNC,5388.TWO / 6285.TW,TW,1,networking
+中科三環 Zhongke Sanhuan,000970.SZ,CN,1,rare_earth
+中科院 NCSIST,—,TW,1,defense
+中興 ZTE,000063.SZ,CN,1,networking
+中興電,1513.TW,TW,1,grid_power
+中興電工,1513.TW,TW,1,onsite_power
+中航高科,600862.SH,CN,1,evtol_uam
+中船特氣,688146.SH,CN,1,specialty_gas
+中芯國際 SMIC,0981.HK,CN,1,icdesign
+中華精測,6510.TWO,TW,1,ate_test
+中華電信 CHT,2412.TW,TW,1,leosat
+中華電信 InventAI + Bishop 評測平台,2412.TW,TW,1,llmops_eval
+中華電信（InventAI）,2412.TW,TW,1,cs_ai
+中鎢高新,000657.SZ,CN,1,specialty_gas
+主權 AI / 國家隊,—,GLOBAL,1,server
+乾坤 Cyntec（建準旗下）,3308.TW,TW,1,mlcc_passive
+亞光 Asia Optical,3019.TW,TW,1,defense
+亞力,1514.TW,TW,1,grid_power
+亞力電機,1514.TW,TW,1,onsite_power
+亞太/新興市場需求,—,GLOBAL,1,surgical_robotics
+亞太優勢 APM,—,TW,1,mems_sensor
+亞太（日韓台）,—,JP,1,defense
+亞翔 / 聖暉 / 帆宣 / 洋基,6139 / 5536 / 6196 / 6691,TW,1,cowos
+亨通光電 Hengtong,600487.SS,CN,1,subsea_telecom_cable
+京元電子 KYEC,2449.TW,TW,1,ate_test
+京運通 Jingyuntong,601908.SS,CN,1,solar_pv
+京鼎 Foxsemicon,3413.TW,TW,1,semicap_wfe
+京鼎 Foxsemicon / 閎康 MA-tek,3413.TW / 3587.TW,TW,1,advanced
+仁寶 Compal,2324.TW,TW,1,edge_ai
+仕佳光子 GIGALIGHT,688313.SS,CN,1,optical_module
+仕佳光子 Shijia,688313.SS,CN,1,silicon_laser_els
+企業客戶（跨產業）,—,GLOBAL,1,agentops
+住友 / 古河 Furukawa,5802.T / 5801.T,JP,1,cpo
+住友化學 / Fujifilm / DuPont,4005.T / 4901.T / DD,JP,1,material
+住友重機 SHI,6302.T,JP,1,advanced
+住友金屬礦山 Sumitomo Metal Mining,5713.T,JP,1,mlcc_passive
+住友電工 Sumitomo Electric,5802.T,JP,1,subsea_telecom_cable
+信義光能 Xinyi Solar,0968.HK,HK,1,solar_pv
+信越 / AGC,4063.T / 5201.T,JP,1,material
+信越 / Dow / Brewer Science,4063.T / DOW / —,JP,1,material
+信越 / Sumitomo Chem / Fujifilm,4063.T / 4005.T / 4901.T,JP,1,advanced
+信越 / 長春,4063.T / —,JP,1,plp
+信越 Shin-Etsu,4063.T,JP,1,hbm
+信越化學（光隔離器）,4063.T,JP,1,cpo
+信越半導體 Shin-Etsu,4063.T,JP,1,advanced
+信邦,3023.TW,TW,1,ev_charging
+信驊 ASPEED,5274.TWO,TW,1,fpga
+信驊 Aspeed,5274.TWO,TW,1,networking
+倉儲物流,—,US,1,robot
+偏鄉/家用寬頻,—,GLOBAL,1,leosat
+健和興,3003.TW,TW,1,ev_charging
+健和興 Excel Cell,3003.TW,TW,1,power
+健策 Jentech / Vertiv,3653.TW / VRT,TW,1,server
+健鼎 Tripod / 滬士電 WUS,3044.TW / 002463.SZ,TW,1,server
+億緯鋰能 EVE,300014.SZ,CN,1,evtol_uam
+億航智能 EHang,EH,CN,1,evtol_uam
+兆威機電 港股 Zhaowei HK,02692.HK,HK,1,humanoid_components
+兆赫 Microelectronics,2485.TW,TW,1,space_economy
+兆龙互连 Zhaolong,300913.SZ,CN,1,connector_hsio
+光威復材,300699.SZ,CN,1,evtol_uam
+光寶 Lite-On,2301.TW,TW,1,leosat
+光寶科技 Lite-On,2301.TW,TW,1,bbu
+光洋應材 / 江豐,1785.TWO / 300666.SZ,TW,1,advanced
+光洋應材 / 隆運,1786.TWO / —,TW,1,material
+光線傳媒,300251.SZ,CN,1,ip_collectibles
+光迅 Accelink / MACOM,002281.SZ / MTSI,CN,1,cpo
+光迅科技 Accelink,002281.SZ,CN,1,optical_module
+光陽光電,—,TW,1,cpo
+全志/瑞芯微 / 樂鑫 Espressif,300458.SZ / 603893.SS / 688018.SS,CN,1,icdesign
+全新 / 穩懋 / IQE,2455.TW / 3105.TWO / IQE.L,TW,1,siph
+全新 VPEC / 穩懋 WIN,2455.TW / 3105.TWO,TW,1,cpo
+全球 IDM 印度設計中心,NVDA,US,1,india_ems_semi
+全球核電業主（中印/美歐/日）,—,GLOBAL,1,nuclear_fuel_cycle
+全球皮膚科/醫美診所,—,GLOBAL,1,kr_aesthetics_device
+全球航空公司（客運/貨運）,—,GLOBAL,1,engine_mro
+全球軍售 (SIPRI Top 100),—,GLOBAL,1,defense
+公準 Kuenzer,3178.TWO,TW,1,defense
+再生能源開發商,—,GLOBAL,1,copper_electrification
+凱基金控（凱基銀行）,2883.TW,TW,1,stablecoin_rwa
+凱盛科技 Kaisheng,600552.SS,CN,1,glass_substrate
+創意 GUC / Socionext,3443.TW / 6526.T,TW,1,icdesign
+創意 GUC / 世芯 Alchip / 智原,3443.TW / 3661.TW / 3035.TW,TW,1,advanced
+創意/世芯(利基線),3443.TW / 3661.TW,TW,1,asic
+創意電子 GUC,3443.TW,TW,1,chiplet_ucie
+力智 uPI,6719.TWO,TW,1,power
+力積電,6770.TW,TW,1,power_semi
+力積電 PSMC,6770.TWO,TW,1,dram_cxl
+力積電 PSMC,6770.TW,TW,1,india_ems_semi
+力致 Forcecon,3483.TWO,TW,1,power
+加百裕工業,3323.TWO,TW,1,bbu
+勝宏科技 Victory Giant,300476.SZ,CN,1,ccl
+勤誠 Chenbro,8210.TW,TW,1,server
+北方稀土 China Northern RE,600111.SS,CN,1,rare_earth
+北極星藥業-KY,6550.TW,TW,1,glp1_cdmo
+北約 / 歐盟,—,EU,1,defense
+千住金屬 Senju,—,JP,1,hbm
+千住金屬 Senju,5836.T,JP,1,substrate
+千帆 Qianfan / 中國星網 GW,— / —,CN,1,leosat
+協鑫光電 GCL Perovskite,—,CN,1,solar_pv
+協鑫科技 GCL Tech,3800.HK,HK,1,solar_pv
+南亞 / 宏和,1303.TW / 1446.TW,TW,1,ccl
+南亞 / 長春,1303.TW / —,TW,1,substrate
+南亞塑膠 Nan Ya Plastics,1303.TW,TW,1,copper_electrification
+南亞新材 / 華正新材,688519.SS / 603186.SS,CN,1,ccl
+南亞科,2408.TW,TW,1,memory_storage
+南亞科 Nanya,2408.TW,TW,1,dram_cxl
+南俊國際 Nanchun,2996.TW,TW,1,server
+南大光電 / 彤程新材 / 晶瑞,300346.SZ / 603650.SS / 300655.SZ,CN,1,material
+南大光電 Nata Opto,300346.SZ,CN,1,china_semi
+南茂,8150.TW,TW,1,memory_storage
+南電 / AT&S / 景碩,8046.TW / ATS.VI / 3189.TW,TW,1,cowos
+南電 Nan Ya PCB / 景碩 Kinsus,8046.TW / 3189.TW,TW,1,substrate
+南電 Nan Ya PCB / 欣興 Unimicron,8046.TW / 3037.TW,TW,1,substrate
+卡游(Kayou),—,CN,1,ip_collectibles
+卡游(零售/分銷),—,CN,1,ip_collectibles
+印度 IT / VLSI 服務商,—,IN,1,india_ems_semi
+友威科 / ClassOne,3580.TWO / —,TW,1,plp
+友華生技醫藥,4120.TWO,TW,1,radiopharma_isotope
+友達 AUO / BOE,2409.TW / 000725.SZ,TW,1,plp
+古河電工 Furukawa,5801.T,JP,1,optical_module
+台光電 EMC (Elite Material),2383.TW,TW,1,leosat
+台半,5425.TWO,TW,1,power_semi
+台廠後段(世芯/創意),3661.TW / 3443.TW,TW,1,asic
+台揚 Microelectronics(Microelec),2314.TW,TW,1,leosat
+台日光學濾光片廠,—,TW,1,lidar
+台灣 國防預算,—,TW,1,defense
+台灣晶技 TXC（晶振）,3042.TW,TW,1,mlcc_passive
+台燿 TUC,6274.TW,TW,1,ccl
+台特化 / 中華化 / 勝一,4772.TWO / 1727.TW / 1773.TW,TW,1,advanced
+台玻 TG / 富喬 Fuhwa,1802.TW / 1815.TW,TW,1,substrate
+台積電 TSMC（矽電容）,2330.TW,TW,1,mlcc_passive
+台船 CSBC,2208.TW,TW,1,shipbuilding
+台達電,2308.TW,TW,1,power_semi
+台達電 / 貿聯-KY / 和大,2308.TW / 3665.TW / 1536.TW,TW,1,ev
+台達電 Delta / 固德威,2308.TW / 688390.SS,TW,1,ess
+台達電子 Delta,2308.TW,TW,1,bbu
+台電,—,TW,1,grid_power
+吉利 / 極氪,0175.HK,CN,1,auto_semi
+吉利 / 零跑 Leapmotor,0175.HK / 9863.HK,CN,1,ev
+同欣電 / 穩懋,6271.TW,TW,1,space_economy
+名創優品 (TOP TOY),9896.HK,HK,1,ip_collectibles
+名創優品(海外),9896.HK,HK,1,ip_collectibles
+名機製作所 Meiki,—,JP,1,substrate
+和碩 Pegatron,4938.TW,TW,1,edge_ai
+唯捷创芯 Vanchip,688153.SS,CN,1,rf_6g
+啟碁 WNC (Wistron NeWeb),6285.TW,TW,1,leosat
+啟碁 Wistron NeWeb,6285.TW,TW,1,space_economy
+嘉基,6715.TWO,TW,1,cpo
+嘉基 / 前鼎,6715.TWO / 4908.TWO,TW,1,siph
+嘉晶 GET,3016.TW,TW,1,cpo
+嘉晶電子,3016.TW,TW,1,power_semi
+因時機器人 Inspire,—,CN,1,robot
+因時機器人 Inspire Robots,—,CN,1,humanoid_components
+固德威 GoodWe,688390.SS,CN,1,solar_pv
+國巨 / 華新科 / 欣興等,2327.TW,TW,1,india_ems_semi
+國巨 Yageo（晶片電阻）,2327.TW,TW,1,mlcc_passive
+國巨(AVX) / 村田,2327.TW / 6981.T,TW,1,power
+國望光學 / 光刻零組件,—,CN,1,china_semi
+國軒高科,002074.SZ,CN,1,evtol_uam
+國軒高科 Gotion,002074.SZ,CN,1,battery_materials
+國防 / 政府,—,US,1,leosat
+圣诺生物,688117.SS,CN,1,glp1_cdmo
+地平線 Horizon Robotics,9660.HK,CN,1,auto_semi
+地方政府 / vertiport 投建商,—,CN,1,evtol_uam
+均華 Gallant Micro,6640.TWO,TW,1,cowos
+均豪 GPM / 弘塑,5443.TWO / 3131.TWO,TW,1,siph
+垂直 agent（法/金/醫/客服）,—,US,1,agentops
+堺化學 Sakai Chemical,4078.T,JP,1,mlcc_passive
+壁仞科技 Biren,—,CN,1,china_semi
+士林電機,1503.TW,TW,1,onsite_power
+士電,1503.TW,TW,1,grid_power
+壽險業(最終 LP),—,US,1,ai_infra_capital
+多摩川 Tamagawa Seiki,—,JP,1,humanoid_components
+多氟多 Do-Fluoride,002407.SZ,CN,1,battery_materials
+大亞電線電纜 Ta Ya,1609.TW,TW,1,copper_electrification
+大全新能源 Daqo,DQ,US,1,solar_pv
+大全能源 / 協鑫,688303.SS / 03800.HK,CN,1,material
+大基金三期 Big Fund III,—,CN,1,china_semi
+大族雷射,002008.SZ,CN,1,cowos
+大族雷射 / LPKF,002008.SZ / LPK.DE,CN,1,substrate
+大聯大 WPG Holdings,3702.TW,TW,1,mlcc_passive
+大金 Daikin / 昊華科技,6367.JP / 600378.SS,JP,1,ccl
+大金重工 Dajin,002487.SZ,CN,1,wind_power
+大銀微 HIWIN,4576.TW,TW,1,siph
+大銀微系統 Hiwin Mikro,4576.TW,TW,1,cpo
+天孚/上詮 (FAU·光引擎),300394.SZ / 3363.TWO,CN,1,server
+天孚通信 / 太辰光,300394.SZ / 300570.SZ,CN,1,optical_module
+天孚通信 T&S,300394.SZ,CN,1,optical_module
+天岳先進 SICC,688234.SS,CN,1,power_semi
+天岳先進 SICC / 天科合達 TanKeBlue,688234.SS / —,CN,1,material
+天科合達 TanKeBlue,未上市,CN,1,power_semi
+天賜材料 / 新宙邦,002709.SZ / 300037.SZ,CN,1,ess
+天賜材料 Tinci,002709.SZ,CN,1,battery_materials
+天順風能 Titan Wind,002531.SZ,CN,1,wind_power
+天齊鋰業 Tianqi Lithium,002466.SZ,CN,1,battery_materials
+太辰光 Taclink / Fujikura,300570.SZ / 5803.T,CN,1,cpo
+奇力新 Chilisin,2456.TW,TW,1,mlcc_passive
+奇景 / 采鈺,HIMX / 6789.TW,TW,1,siph
+奇景 Himax,HIMX,TW,1,cpo
+奇鋐 / 雙鴻,3017.TW,TW,1,data_center_cooling
+奇鋐 AVC / 雙鴻 Auras,3017.TW / 3324.TW,TW,1,cowos
+奧飛娛樂,002292.SZ,CN,1,ip_collectibles
+威剛 ADATA / 十銓 TeamGroup,3260.TW / 4967.TW,TW,1,server
+宇立 Sunrise / 海伯森 Hypersen,—,CN,1,humanoid_components
+安路科技 Anlogic,688107.SS,CN,1,fpga
+安集科技 Anji,688019.SS,CN,1,china_semi
+安集科技 Anji / 鼎龍 Dinglong,688019.SS / 300054.SZ,CN,1,material
+宏捷科 AWSC / 全新 VPEC,8086.TWO / 2455.TW,TW,1,leosat
+宏致 Aces,3605.TWO,TW,1,connector_hsio
+宗申動力 Zongshen,001696.SZ,CN,1,evtol_uam
+定穎投控 / 博智,6251.TW / 8155.TWO,TW,1,ccl
+定穎投控 Define,6790.TW,TW,1,server
+家登精密,3680.TWO,TW,1,hybrid_bonding
+家登精密 GUDENG,3680.TWO,TW,1,cowos
+家電/IT 品牌（國內+外銷）,—,IN,1,india_ems_semi
+容百科技 / 當升科技,688005.SS / 300073.SZ,CN,1,ev
+容百科技 Ronbay,688005.SS,CN,1,battery_materials
+富世達 Foxconn-Suzhou (FSDA),3010.TWO,TW,1,data_center_cooling
+富士電機 Fuji Electric,6504.T,JP,1,ev
+富邦金控（內部 AI 財務後台）,2881.TW,TW,1,erp_ai
+富采 Ennostar / IET-KY / 宏捷,3714.TW / 4971.TWO / 8086.TWO,TW,1,cpo
+寧德時代 CATL,300750.SZ,CN,1,evtol_uam
+小鵬 Turing / Tesla AI5(自研),9868.HK / TSLA,CN,1,robot
+小鵬匯天 XPeng AeroHT,XPEV,CN,1,evtol_uam
+小鵬（圖靈）,XPEV,CN,1,auto_semi
+尚太科技 Shinzoom,001301.SZ,CN,1,battery_materials
+屹唐股份 / 華卓精科 等,—,CN,1,china_semi
+崇越 Topco,5434.TW,TW,1,advanced
+川湖 King Slide,2059.TW,TW,1,server
+工業/IoT/邊緣 AI,—,GLOBAL,1,icdesign
+工研院（ITRI）,—,TW,1,industrial_ai
+巴西消費者,—,BR,1,kr_aesthetics_device
+布魯可(Bloks),0325.HK,HK,1,ip_collectibles
+布魯可(零售/分銷),0325.HK,HK,1,ip_collectibles
+帆宣 Marketech / 漢唐,6196.TW / 2404.TW,TW,1,advanced
+帝科股份 DK Electronic,300842.SZ,CN,1,solar_pv
+平頭哥 / 芯來,BABA / —,CN,1,icdesign
+康舒 AcBel(Lung Yin),6282.TW,TW,1,power
+廈門鎢業,600549.SH,CN,1,specialty_gas
+廣告 agency (Edelman/R-GA),—,GLOBAL,1,ai_media_gen
+廣立微 Semitronix,301095.SZ,CN,1,china_semi
+廣運 Kenmec,6125.TW,TW,1,power
+廣運金運 Kenmec,6125.TW,TW,1,power
+廣達 / 和碩,2382.TW / 4938.TW,TW,1,ai_devices
+廣達 Quanta (QCT/雲達),2382.TW,TW,1,server
+建滔 Kingboard,0148.HK,HK,1,ccl
+建滔積層板 Kingboard,0148.HK,HK,1,ccl
+弘元綠能 Hongyuan,603185.SS,CN,1,solar_pv
+弘塑 / 辛耘,3131.TWO / 3583.TW,TW,1,advanced
+弘塑 Grand Process Tech,3131.TWO,TW,1,semicap_wfe
+強茂,2481.TW,TW,1,power_semi
+後量子密碼 PQC,—,GLOBAL,1,quantum_compute
+復旦微電,688385.SS,CN,1,fpga
+微創醫療 MicroPort,0853.HK,CN,1,surgical_robotics
+微軟 / Google / AWS / Meta,MSFT / GOOGL / AMZN / META,US,1,server
+德山 Tokuyama / 信越,4043.T / 4063.T,JP,1,material
+德微科技,3675.TWO,TW,1,power_semi
+德方納米 Dynanonic,300769.SZ,CN,1,battery_materials
+德賽西威 Desay SV,002920.SZ,CN,1,auto_semi
+志聖 GP Tech / 群翊 Chun Yih,2467.TW / 6664.TWO,TW,1,substrate
+思爾芯 S2C,—,CN,1,fpga
+恒玄科技 Bestechnic,688608.SS,CN,1,ai_devices
+恩捷 / 天賜材料,002812.SZ / 002709.SZ,CN,1,ev
+恩捷股份 SEMCORP,002812.SZ,CN,1,battery_materials
+恩捷股份 Yunnan Energy,002812.SZ,CN,1,ess
+愛旭股份 Aiko Solar,600732.SS,CN,1,solar_pv
+愛普生 Seiko Epson（晶振）,6724.T,JP,1,mlcc_passive
+愛茉莉太平洋 Amorepacific,090430.KS,KR,1,kbeauty
+慧智微 SmarterMicro,688869.SS,CN,1,rf_6g
+手機直連 D2C,—,GLOBAL,1,leosat
+技嘉 Gigabyte,2376.TW,TW,1,server
+技嘉 Gigabyte / 神達 MiTAC,2376.TW / 3706.TW,TW,1,server
+拓荆科技 Piotech,688072.SS,CN,1,china_semi
+拓荊 Piotech,688072.SS,CN,1,semicap_wfe
+摩爾線程 Moore Threads,688795.SS,CN,1,china_semi
+政府/主權量子,—,US,1,quantum_compute
+散戶交易者（運動/選舉/加密）,—,GLOBAL,1,prediction_markets
+文曄 WT Microelectronics,3036.TW,TW,1,mlcc_passive
+斯達半導 / 士蘭微,603290.SS / 600460.SS,CN,1,ev
+新凱來 SiCarrier,—,CN,1,china_semi
+新唐 Nuvoton,4919.TW,TW,1,icdesign
+新型雲/Neocloud,CRWV,US,1,onsite_power
+新宙邦 Capchem,300037.SZ,CN,1,battery_materials
+新普科技 Simplo,6121.TWO,TW,1,bbu
+新特能源 Xinte,1799.HK,HK,1,solar_pv
+新盛力 / 系統電,4931.TWO / 5309.TWO,TW,1,power
+新盛力 STL Technology,4931.TWO,TW,1,bbu
+日月光投控 ASE,3711.TW,TW,1,ate_test
+日本 Chemi-Con,6997.T,JP,1,mlcc_passive
+日本 NEDO（新能源產業技術綜合開發機構）,—,JP,1,industrial_ai
+日本/東南亞市場,—,GLOBAL,1,kbeauty
+日本化學工業 Nippon Chemical Ind.,4092.T,JP,1,mlcc_passive
+日本郵船 (NYK),9101.T,JP,1,shipbuilding
+日本電氣硝子 NEG / HOYA,5214.T / 7741.T,JP,1,siph
+日東紡 Nittobo / Panasonic,3110.T / 6752.T,JP,1,material
+日東電工 Nitto,6988.T,JP,1,material
+日立 High-Tech,6501.T,JP,1,semicap_wfe
+日進材料 Iljin Materials,020150.KS,KR,1,battery_materials
+旭創 InnoLight,300308.SZ,CN,1,server
+旭化成 Asahi Kasei,3407.T,JP,1,plp
+旭化成 Asahi Kasei / 長興,3407.T / 1717.TW,JP,1,substrate
+旺宏,2337.TW,TW,1,memory_storage
+旺矽,6223.TWO,TW,1,ate_test
+旺矽 MPI / 中華精測,6223.TWO / 6510.TW,TW,1,advanced
+旺矽 MPI / 惠特,6223.TWO / 6706.TWO,TW,1,siph
+昂瑞微 OnMicro,—,CN,1,rf_6g
+昇貿 Shenmao,3551.TW,TW,1,substrate
+昇達科 Microelectronics(MTI),3491.TWO,TW,1,leosat
+昇達科 SARSP,3491.TWO,TW,1,space_economy
+昊志機電 / 步科,300503.SZ,CN,1,humanoid_components
+星源材質 Senior,300568.SZ,CN,1,battery_materials
+昭榮化學 Shoei Chemical,—,JP,1,mlcc_passive
+昱能科技 Hoymiles,688032.SS,CN,1,solar_pv
+時代新材 Zhuzhou Times,600458.SS,CN,1,wind_power
+晟銘電 Shing Ming,3013.TW,TW,1,data_center_cooling
+景碩 Kinsus,3189.TW,TW,1,substrate
+晶合集成 Nexchip,688249.SS,CN,1,china_semi
+晶心 Andes / 力旺 eMemory / M31,6533.TWO / 3529.TW / 6643.TWO,TW,1,advanced
+晶心科 Andes / 安謀中國,6533.TWO / —,TW,1,icdesign
+晶澳科技 JA Solar,002459.SZ,CN,1,solar_pv
+晶瑞電子材料 / 格林達,300655.SZ / 603931.SS,CN,1,material
+晶豪科,3006.TW,TW,1,memory_storage
+晶豪科 ESMT,3006.TW,TW,1,dram_cxl
+智元 AgiBot OmniHand,—,CN,1,robot
+智原 Faraday / 晶心 Andes,3035.TW / 6533.TWO,TW,1,cowos
+智多晶 Intelliprop,—,CN,1,fpga
+智慧工廠/汽車產線,TSLA / BYD,US,1,robot
+智譜 CodeGeeX,—,CN,1,coding_ai
+智邦 / 緯穎 / 廣達,2345.TW / 6669.TW / 2382.TW,TW,1,cpo
+月之暗面 Kimi Code,—,CN,1,coding_ai
+朋程科技,8255.TWO,TW,1,power_semi
+服務 / 家用（長線）,—,GLOBAL,1,robot
+杉杉股份 Shanshan,600884.SS,CN,1,battery_materials
+杭州新劍機電 Xinjian,—,CN,1,humanoid_components
+東元 TECO,1504.TW,TW,1,humanoid_components
+東元 TECO / Allied Motion,1504.TW / —,TW,1,robot
+東南亞消費者（印尼/泰/越）,—,ID,1,kr_aesthetics_device
+東岳集團 Dongyue,0189.HK,HK,1,ccl
+東方電纜 Orient Cable,603606.SS,CN,1,wind_power
+東莞天域,未上市,CN,1,power_semi
+東莞潮玩代工集群,—,CN,1,ip_collectibles
+楠梓電 NAN YA PCB,2316.TW,TW,1,ccl
+極電光能 UtmoLight,—,CN,1,solar_pv
+概倫電子 Primarius,688206.SS,CN,1,china_semi
+樺漢 Ennoconn / 盟立 Mirle,6414.TW / 2464.TW,TW,1,robot
+機構/企業客戶,—,GLOBAL,1,stablecoin_rwa
+機構/造市商（對沖）,—,GLOBAL,1,prediction_markets
+欣興 Unimicron / 景碩 Kinsus,3037.TW / 3189.TW,TW,1,leosat
+欣銓 Ardentec,3264.TWO,TW,1,ate_test
+歌爾股份 GoerTek,002241.SZ,CN,1,ai_devices
+正文 Gemtek / 耀登 Auden,4906.TW / 3138.TW,TW,1,leosat
+正泰新能 Astronergy,601877.SS,CN,1,solar_pv
+武漢精測 Wuhan Jingce,300567.SZ,CN,1,semicap_wfe
+比亞迪儲能 / CATL,002594.SZ / 300750.SZ,CN,1,ess
+比亞迪半導體,1211.HK,CN,1,auto_semi
+水晶光電 / 視涯 SeeYA,002273.SZ / —,CN,1,ai_devices
+永冠-KY,1589.TW,TW,1,onsite_power
+永冠-KY Yonguan,1589.TW,TW,1,wind_power
+永鼎股份 Yongding (東部超導),600105.SS,CN,1,fusion
+江波龍 Longsys,301308.SZ,CN,1,memory_storage
+江西銅業 Jiangxi Copper,0358.HK,CN,1,copper_electrification
+江豐電子 Jiangfeng,300666.SZ,CN,1,material
+汽車/工業終端,—,GLOBAL,1,india_ems_semi
+沃飛長空 / 峰飛 / 時的科技,—,CN,1,evtol_uam
+泡泡瑪特,9992.HK,HK,1,ip_collectibles
+泡泡瑪特(海外),9992.HK,HK,1,ip_collectibles
+泡泡瑪特(設計/藝術家),9992.HK,HK,1,ip_collectibles
+波若威 Browave,3163.TWO,TW,1,cpo
+泰碩 Taisol,3338.TWO,TW,1,power
+洛陽鉬業 CMOC,603993.SS,CN,1,battery_materials
+海伯森 Hypersen / 宇立,—,CN,1,robot
+海光/摩爾線程/壁仞/沐曦,688041.SS / 688795.SS / 06082.HK / 688802.SS,CN,1,icdesign
+海光信息 Hygon,688041.SS,CN,1,china_semi
+海博思創 / 阿特斯,688411.SS / CSIQ,CN,1,ess
+海外 Z 世代/收藏家,—,GLOBAL,1,ip_collectibles
+海思 HiSilicon (麒麟),—,CN,1,china_semi
+消費 PMIC/RF/穿戴,—,GLOBAL,1,plp
+深南電路 SCC,002916.SZ,CN,1,ccl
+深南電路 Shennan,002916.SZ,CN,1,substrate
+深城交,300846.SZ,CN,1,evtol_uam
+湖南裕能 / 德方納米,301358.SZ / 300769.SZ,CN,1,ess
+湖南裕能 Hunan Yuneng,301358.SZ,CN,1,battery_materials
+源杰科技 Yuanjie,688498.SS,CN,1,optical_module
+滬士電 WUS,002463.SZ,CN,1,ccl
+滬硅產業 / 立昂微,688126.SS / 605358.SS,CN,1,material
+滬硅產業 SGSI,688126.SS,CN,1,china_semi
+漢唐 Han Tang,2404.TW,TW,1,cowos
+漢唐/帆宣 (廠務),2404.TW / 6196.TW,TW,1,server
+漢磊科技,3707.TWO,TW,1,power_semi
+漢翔 AIDC（維修）,2634.TW,TW,1,engine_mro
+漢翔航空 AIDC,2634.TW,TW,1,evtol_uam
+潮州三環 CCTC,300408.SZ,CN,1,mlcc_passive
+瀚天天成 EpiWorld,未上市,CN,1,power_semi
+瀾起科技 Montage,688008.SS,CN,1,china_semi
+營邦 AIC,3693.TWO,TW,1,server
+燧原 Enflame,—,CN,1,china_semi
+燿華 Unitech,2367.TW,TW,1,space_economy
+燿華 Yaohua,2367.TW,TW,1,leosat
+玉山金控（內部 AI 財務後台）,2884.TW,TW,1,erp_ai
+玉山銀行 E.SUN Bank,2884.TW,TW,1,cs_ai
+玉晶光 / 亞光 / 今國光,3406.TW / 3019.TW / 6209.TW,TW,1,cpo
+玉晶光 GSEO,3406.TW,TW,1,ai_devices
+珠海越亞 Access,—,CN,1,substrate
+理想 / 小鵬,2015.HK,CN,1,auto_semi
+理想 / 小鵬 / 蔚來,LI / XPEV / NIO,CN,1,ev
+瑞昱 Realtek,2379.TW,TW,1,icdesign
+瑞泰新材 GTHR,301238.SZ,CN,1,battery_materials
+瑞聲 AAC / Knowles,2018.HK / KN,CN,1,ai_devices
+瑞鼎 Raydium,3592.TWO,TW,1,icdesign
+瑞鼎 Raydium / Himax 奇景,3592.TWO / HIMX,TW,1,icdesign
+璞泰來 Putailai,603659.SS,CN,1,battery_materials
+環保船（甲醇/氨/LNG 雙燃料）,—,GLOBAL,1,shipbuilding
+環球晶 / SK Siltron CSS,6488.TWO / —,TW,1,material
+環球晶 / Siltronic,6488.TWO / WAF.DE,TW,1,hbm
+生物相似藥群（中國/印度）,—,CN,1,glp1_cdmo
+生益科技 Shengyi,600183.SS,CN,1,ccl
+甬矽電子 Yongsi,688362.SS,CN,1,china_semi
+田中貴金屬 / 日系打線,—,JP,1,copper_electrification
+田中貴金屬 / 賀利氏 Heraeus,— / —,JP,1,material
+當升科技 Easpring,300073.SZ,CN,1,battery_materials
+病患族群（癱瘓/帕金森/癲癇/中風）,—,GLOBAL,1,bci_neurotech
+百度 Apollo Go,BIDU,CN,1,lidar
+百度 Apollo Go (蘿蔔快跑),BIDU,CN,1,robotaxi
+百度 Comate X,9888.HK,CN,1,coding_ai
+盛合晶微 / 通富檳城等,—,CN,1,china_semi
+盛和資源 Shenghe Resources,600392.SS,CN,1,rare_earth
+盛新鋰能 Chengxin Lithium,002240.SZ,CN,1,battery_materials
+盛科通信 Centec,688702.SS,CN,1,networking
+盛美上海 ACM Research,688082.SS,CN,1,china_semi
+盛群 Holtek / LX Semicon,6202.TW / 108320.KS,TW,1,icdesign
+盟立 Mirle,2464.TW,TW,1,cowos
+直得 Chieftek,1597.TW,TW,1,robot
+眾達-KY,4977.TW,TW,1,optical_module
+眾達-KY / 前鼎,4977.TWO / 4908.TWO,TW,1,cpo
+石英股份 Pacific Quartz,603688.SS,CN,1,solar_pv
+矽格 Sigurd,6257.TW,TW,1,ate_test
+神經解碼 AI（OEM/新創自研）,—,US,1,bci_neurotech
+福懋科,8131.TW,TW,1,memory_storage
+福斯特 Foster,603806.SS,CN,1,solar_pv
+福田金屬,—,JP,1,copper_electrification
+福華 / 廣運 Kenmec,8085.TWO / 6125.TW,TW,1,power
+福萊特玻璃 Flat Glass,6865.HK,HK,1,solar_pv
+禾伸堂 Holy Stone,3026.TW,TW,1,mlcc_passive
+禾賽 Hesai（自研 SPAD-SoC）,HSAI,CN,1,lidar
+禾賽 Hesai（自研掃描）,HSAI,CN,1,lidar
+私募信貸 / 大型銀行(承貸方),—,US,1,neocloud
+私募信貸(泡沫指標),—,GLOBAL,1,ai_infra_capital
+科妍生技,1786.TW,TW,1,kr_aesthetics_device
+科嶠 GPM,4542.TWO,TW,1,cowos
+科建 / 利基微波廠,—,TW,1,leosat
+穎崴,6515.TW,TW,1,ate_test
+穎崴 WinWay / 惠特,6515.TWO / 6706.TWO,TW,1,cpo
+穩懋 / IQE,3105.TWO / IQE.L,TW,1,material
+穩懋 WIN / 宏捷科 AWSC,3105.TWO / 8086.TWO,TW,1,defense
+穩懋 WIN Semi,3105.TW,TW,1,ai_devices
+穩懋 Win Semiconductors,3105.TWO,TW,1,lidar
+立積 RichWave,4968.TW,TW,1,leosat
+立訊精密 Luxshare,002475.SZ,CN,1,ai_devices
+立錡 Richtek（聯發科）,2454.TW,TW,1,dram_cxl
+第三方 on-device,—,GLOBAL,1,edge_ai
+粵芯半導體 CanSemi,—,CN,1,china_semi
+精材 Xintec,3374.TWO,TW,1,mems_sensor
+紫光國微 (紫光同創),002049.SZ,CN,1,fpga
+紫光展銳 Unisoc / 三星 LSI,— / 005930.KS,CN,1,icdesign
+紫金礦業 Zijin,2899.HK,CN,1,copper_electrification
+紫金礦業（冶煉）,2899.HK,CN,1,copper_electrification
+經緯航太 / 雷虎,8495.TWO / 8033.TWO,TW,1,drone_uav
+經緯航太 GEOSAT,8495.TWO,TW,1,defense
+綠的-KY / 全球傳動,3164.TW / 4540.TW,TW,1,robot
+美國 DoD,—,US,1,defense
+美國國防部 DoD / DoW,—,US,1,rare_earth
+美國消費者/通路（Sephora/Target/Costco）,—,US,1,kbeauty
+美國消費者（最大市場）,—,US,1,kr_aesthetics_device
+美時化學製藥,1795.TW,TW,1,glp1_cdmo
+群翊 / 科嶠,6664.TWO / 4542.TWO,TW,1,plp
+群翊 Chun Yih,6664.TWO,TW,1,cowos
+群電 AcBel,6412.TW,TW,1,power
+翔名 / 瑞耘,8091.TWO / 6532.TWO,TW,1,advanced
+耀登 Auden,3138.TW,TW,1,leosat
+聯亞光電 LandMark,3081.TW,TW,1,lidar
+聯創光電 Lianchuang,600363.SS,CN,1,fusion
+聯茂 ITEQ / 台燿 TUC,6213.TW / 6274.TW,TW,1,substrate
+聯鈞 / 光聖,3450.TW / 6442.TW,TW,1,optical_module
+聯電 UMC / GlobalFoundries,2303.TW / GFS,TW,1,icdesign
+腫瘤患者（攝護腺癌/神經內分泌瘤）,—,GLOBAL,1,radiopharma_isotope
+臥龍電驅 Wolong,600580.SH,CN,1,evtol_uam
+致茂,2360.TW,TW,1,ate_test
+興森科技 Xingsen,002436.SZ,CN,1,substrate
+興能高,6558.TWO,TW,1,bbu
+舜宇光學 Sunny Optical,2382.HK,CN,1,ai_devices
+航空 IFC / 海事,—,GLOBAL,1,leosat
+芯原 VeriSilicon,688521.SS,CN,1,icdesign
+芯原股份 VeriSilicon,688521.SS,CN,1,china_semi
+芯源微 Kingsemi,688037.SS,CN,1,china_semi
+英特磊 IntelliEPI,5455.TWO,TW,1,rf_6g
+英維克 Envicool,002837.SZ,CN,1,data_center_cooling
+英諾賽科 Innoscience,2577.HK,CN,1,power_semi
+茂萊光學 Maolai,688502.SS,CN,1,china_semi
+茂達 Anpec,6138.TWO,TW,1,power
+華力微 Huali (HLMC),—,CN,1,china_semi
+華友鈷業 Huayou Cobalt,603799.SS,CN,1,battery_materials
+華城,1519.TW,TW,1,grid_power
+華城電機,1519.TW,TW,1,onsite_power
+華大九天 / 概倫電子,301269.SZ / 688206.SS,CN,1,icdesign
+華天 Huatian / 南茂 ChipMOS,002185.SZ / 8150.TW,CN,1,cowos
+華天科技 Huatian,002185.SZ,CN,1,china_semi
+華峰測控 Accotest,688200.SS,CN,1,ate_test
+華工科技 / 劍橋科技,000988.SZ / 603083.SS,CN,1,optical_module
+華新麗華 Walsin,1605.TW,TW,1,wind_power
+華新麗華 Walsin Lihwa,1605.TW,TW,1,copper_electrification
+華星光 / 光聖 / 聯鈞,4979.TWO / 6442.TW / 3450.TWO,TW,1,cpo
+華星光 / 波若威,4979.TWO / 3163.TW,TW,1,optical_module
+華東,8110.TW,TW,1,memory_storage
+華榮電線電纜 Walsin Hua Jung,1608.TW,TW,1,copper_electrification
+華泰 OSE,2329.TW,TW,1,memory_storage
+華海清科 / 萬業 等,688120.SS,CN,1,china_semi
+華海清科 Hwatsing,688120.SS,CN,1,semicap_wfe
+華為昇騰 Huawei Ascend (海思),—,CN,1,china_semi
+華為海思（乾崑）,—,CN,1,auto_semi
+華為海思（系統整合方）,—,CN,1,china_semi
+華為雲 CodeArts Doer,—,CN,1,coding_ai
+華特氣體,688268.SH,CN,1,specialty_gas
+華特氣體 / 金宏氣體,688268.SS / 688106.SS,CN,1,material
+華特氣體 Huate Gas,688268.SS,CN,1,china_semi
+華立科技,301011.SZ,CN,1,ip_collectibles
+華虹半導體 Hua Hong,1347.HK,CN,1,china_semi
+華邦電,2344.TW,TW,1,memory_storage
+華邦電 Winbond,2344.TW,TW,1,dram_cxl
+萬潤 / 均華 / 盟立,6187.TWO / 6640.TWO / 2464.TW,TW,1,plp
+萬潤 Wan Run,6187.TWO,TW,1,cowos
+萬豐奧威 Wanfeng,002085.SZ,CN,1,evtol_uam
+藥明康德 (WuXi STA/TIDES),603259.SS,CN,1,glp1_cdmo
+藥物/材料模擬,—,GLOBAL,1,quantum_compute
+蘇州智光 / 福晶科技,002222.SZ,CN,1,china_semi
+裕同科技,002831.SZ,CN,1,ip_collectibles
+西部超導 Western Superconducting,688122.SS,CN,1,fusion
+西門子能源 / GE Vernova（風電）,GEV,US,1,rare_earth
+訊芯-KY,6451.TW,TW,1,cpo
+訊芯-KY / ASE / Fabrinet,6451.TW / 3711.TW / FN,TW,1,siph
+許繼電氣,000400.SZ,CN,1,grid_power
+諾德股份 Nuode,600110.SS,CN,1,battery_materials
+譁裕 SEMCO / 公準 / 信錦,3419.TW / 3178.TWO / 1582.TW,TW,1,leosat
+诺泰生物,688076.SS,CN,1,glp1_cdmo
+豐達科,3004.TW,TW,1,engine_mro
+豪威 OmniVision (韋爾),603501.SS,CN,1,ai_devices
+貝特瑞 BTR New Material,835185.BJ,CN,1,battery_materials
+貨櫃船（船公司大單）,—,GLOBAL,1,shipbuilding
+資料中心供電/配電商,—,GLOBAL,1,copper_electrification
+資料中心備電/緩衝,—,GLOBAL,1,ess
+賓士 Mercedes-Benz,MBG.DE,DE,1,lidar
+贛鋒鋰業 Ganfeng Lithium,002460.SZ,CN,1,battery_materials
+超大規模業者,MSFT,US,1,onsite_power
+路維光電 / 清溢光電,688401.SS / 688138.SS,CN,1,material
+車廠 / Tesla (車用電子),TSLA,US,1,icdesign
+車廠 / 充電基建,—,GLOBAL,1,copper_electrification
+輝能氧化物路線（CES 2026）,—,TW,1,solid_state_battery
+辛耘企業,3583.TW,TW,1,hybrid_bonding
+迅得 Chenois,6438.TW,TW,1,cowos
+連展 / 宏致,3710.TW / 3605.TW,TW,1,server
+達創 / 鴻佰 Ingrasys,— / 2317.TW,TW,1,networking
+達明 Techman,—,TW,1,robot
+達興 / 國精化 / 三福化,5234.TW / 4722.TW / 4755.TWO,TW,1,advanced
+達興材料,3686.TWO,TW,1,cowos
+達興材料 Daxin,5234.TWO,TW,1,material
+醫院 / 醫療體系（全球）,—,GLOBAL,1,surgical_robotics
+醫院核醫科 / 癌症中心,—,GLOBAL,1,radiopharma_isotope
+采鈺 VisEra,6789.TW,TW,1,cpo
+采鈺 VisEra,6789.TWO,TW,1,mems_sensor
+金力永磁 / 中科三環,300748.SZ / 000970.SZ,CN,1,ev
+金寶 Kinpo,2312.TW,TW,1,space_economy
+金寶 Kinpo / 智易 Arcadyan,2312.TW / 3596.TW,TW,1,leosat
+金融 / 政府 / 製造 CISO,—,GLOBAL,1,cyber_platform
+金麗科 Genesys,3228.TWO,TW,1,asic
+釹鐵硼磁石供應鏈,—,CN,1,wind_power
+鈞興-KY Pan Taiwan,4571.TW,TW,1,humanoid_components
+鈞達股份 Jietai,002865.SZ,CN,1,solar_pv
+鈦昇 TYC,8027.TWO,TW,1,cowos
+鈺創,5351.TWO,TW,1,memory_storage
+鈺創 Etron,5351.TWO,TW,1,dram_cxl
+銅箔工業 Co-Tech,8358.TW,TW,1,ccl
+銳捷網路 Ruijie,301165.SZ,CN,1,networking
+錦浪科技 Ginlong Solis,300763.SZ,CN,1,solar_pv
+鑫科材料 / 上海新陽,600255.SS / 300236.SZ,CN,1,material
+長光華芯 Everbright Photonics,688048.SS,CN,1,silicon_laser_els
+長川科技,300604.SZ,CN,1,ate_test
+長征系 / 民營 (CASC 等),—,CN,1,leosat
+長春 CCP,—,TW,1,plp
+長春 Chang Chun / 台光電,— / 2383.TW,TW,1,material
+長榮航太 EGAT,2645.TW,TW,1,engine_mro
+長江存儲 YMTC,—,CN,1,china_semi
+長興 / 太陽油墨,1717.TW / 4626.T,TW,1,plp
+長鑫存儲 CXMT,—,CN,1,china_semi
+長電科技 JCET,600584.SS,CN,1,china_semi
+閎康 MA-tek,3587.TW,TW,1,ate_test
+閱文集團,0772.HK,HK,1,ip_collectibles
+關東電化工業,4047.T,JP,1,specialty_gas
+阿特斯 Canadian Solar,CSIQ,CA,1,solar_pv
+阿里 Ververica / DataHub,9988.HK,CN,1,data_platform
+阿里巴巴 通義靈碼（Lingma）,9988.HK,CN,1,coding_ai
+阿里平頭哥 T-Head,BABA,CN,1,asic
+阿里通義千問 (阿里巴巴),9988.HK,CN,1,agentic_ai
+阿里雲 Alibaba Cloud,9988.HK,CN,1,agentic_ai
+阿里雲 MaxCompute,9988.HK,CN,1,data_platform
+阿里雲 PolarDB,9988.HK,CN,1,data_platform
+陽明海運 / 長榮海運,2603.TW,TW,1,shipbuilding
+隆基綠能 LONGi Hydrogen,601012.SS,CN,1,hydrogen
+雅克科技,002409.SZ,CN,1,specialty_gas
+雅克科技 / 南大光電,002409.SZ / 300346.SZ,CN,1,material
+雍智科技,6683.TWO,TW,1,ate_test
+雙美生技,4728.TWO,TW,1,kr_aesthetics_device
+雙良節能 Shuangliang,600481.SS,CN,1,solar_pv
+雲端/Hyperscaler (AI 資料中心),MSFT / GOOGL / AMZN / META,US,1,icdesign
+雲達 QCT / 神雲 MiTAC,— / —,TW,1,server
+雷尼紹 / 多摩川,RSW.L / —,UK,1,robot
+雷虎 Thunder Tiger,8033.TW,TW,1,defense
+雷鳥創新 RayNeo,—,CN,1,ai_devices
+電力公司 / 電網營運商,—,GLOBAL,1,copper_electrification
+靈心巧手 LinkerBot,—,CN,1,humanoid_components
+韋爾 Will / 聖邦微 / 思瑞浦,603501.SS / 300661.SZ / 688536.SS,CN,1,icdesign
+韋爾股份 OmniVision,603501.SS,CN,1,auto_semi
+韓國 MSIT（科學技術情報通信部）,—,KR,1,industrial_ai
+韓華 Shipping (船東),—,US,1,shipbuilding
+韓華海洋,042660.KS,KR,1,shipbuilding
+韓華海洋 (Hanwha Ocean),042660.KS,KR,1,shipbuilding
+順達 Dynapack,3211.TW,TW,1,power
+順達科技 Dynapack,3211.TWO,TW,1,bbu
+頎邦 Chipbond / 福懋科,6147.TWO / 8131.TWO,TW,1,cowos
+風華高科 Fenghua,000636.SZ,CN,1,mlcc_passive
+飛宏 Phihong,2457.TW,TW,1,ev_charging
+騰訊 CodeBuddy（原 CodeFuse）,0700.HK,CN,1,coding_ai
+高力 KAORI,8996.TW,TW,1,data_center_cooling
+高力 Kaori,8996.TW,TW,1,power
+高雲半導體 Gowin,—,CN,1,fpga
+鳴志電器 Moons,603728.SS,CN,1,humanoid_components
+鴻勁精密,7769.TW,TW,1,ate_test
+鴻海 Foxconn (Hon Hai),2317.TW,TW,1,india_ems_semi
+鴻海 Foxconn (鴻佰/Ingrasys),2317.TW,TW,1,server
+鴻海 Foxconn / 廣達 / 緯創,2317.TW,TW,1,neocloud
+鴻海 MIH / 富田電機,2317.TW / —,TW,1,ev
+鴻海/廣達/緯創 (L11-L12),2317.TW / 2382.TW / 3231.TW,TW,1,server
+鴻海/廣達/緯創 ODM,2317.TW / 2382.TW / 3231.TW,TW,1,power
+鵬輝能源 Great Power,300438.SZ,CN,1,bbu
+黑芝麻智能,2533.HK,CN,1,auto_semi
+鼎龍股份 Dinglong,300054.SZ,CN,1,china_semi
+龍德造船 Lung Teh,6753.TW,TW,1,defense
+龍旗 / 華勤,603341.SS / 603296.SS,CN,1,ai_devices
+龍源電力 Longyuan,916.HK,HK,1,wind_power
+龍蟠科技 LBM,603906.SS,CN,1,battery_materials

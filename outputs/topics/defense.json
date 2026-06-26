@@ -1,0 +1,1540 @@
+{
+ "id": "defense",
+ "tab": "軍工國防",
+ "title": "軍工 / 國防安全供應鏈",
+ "subtitle": "Defense & National Security — 從半導體/國防電子視角拆解現代國防：關鍵元件（rad-hard/mil-spec 晶片、GaN RF、EO-IR 感測）→ 次系統（雷達/電戰 C4ISR、航電、推進）→ 系統整合（戰機/艦艇/陸戰/飛彈）→ 平台與終端需求（各國國防預算、不對稱戰力、無人機、太空）。主承包商為國家冠軍寡占（LMT/RTX/NOC、BAE/Thales/Leonardo、韓四強、日三菱/川崎/IHI）；國防晶片（GaN、rad-hard）受美 ITAR/EAR 管制為地緣鎖喉點。台灣以漢翔/造船/無人機/飛彈零組件切入，惟多為概念股、國防營收占比待證。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 18
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "90+"
+  },
+  {
+   "k": "ITAR／rad-hard／GaN 鎖喉單點",
+   "v": 6,
+   "sub": "BAE rad-hard·Frontgrade·Wolfspeed GaN·Teledyne·MBDA·中科院",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "tech",
+   "label": "關鍵元件 · 半導體 · 感測 Tech",
+   "main": false
+  },
+  {
+   "id": "flow",
+   "label": "次系統 → 系統整合 → 終端需求 Subsystems · Integration · Demand",
+   "main": true
+  },
+  {
+   "id": "platform",
+   "label": "平台 · 無人載具 · 飛彈 Platforms",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "t-radhard",
+   "row": "tech",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "Rad-hard / 太空級 / 軍規晶片",
+   "nameEn": "Rad-hard · Space-grade · Mil Chips",
+   "competition": "monopoly",
+   "single": "⚑ ITAR 鎖喉 · BAE RAD750/RAD5500 抗輻射處理器近獨家；Frontgrade(Cobham) 與 BAE 控美軍/NASA rad-hard",
+   "desc": "抗輻射（rad-hard）處理器、FPGA、記憶體與類比 IC，用於衛星、飛彈、核戰備與深空任務；受美 ITAR/EAR 出口管制。",
+   "marketSize": "近壟斷利基",
+   "growth": "太空/核戰備拉動",
+   "share": "null",
+   "analysis": "BAE Systems（RAD750/RAD5500 抗輻射 PowerPC，火星探測器/軍衛星近獨家）與 Frontgrade（前 Cobham Aerospace & Defense，rad-hard FPGA/記憶體/混訊）為美軍/NASA rad-hard 雙核心；Microchip（rad-tolerant FPGA/MCU）、TI、ADI（軍規類比/RF）、Renesas/Infineon 提供寬譜 mil/aero 元件。屬高門檻、低量、長認證週期的近壟斷利基。⚑絃外之音：太空級 rad-hard 處理器實為 sole-source（BAE RAD750 飛在 100+ 衛星、為太空業 workhorse），是整條國防鏈最隱性的單點瓶頸 — 帳面市佔不顯眼，但飛彈/衛星/核戰備一旦此處斷供即全鏈停擺，定價權實質握於此。NASA HPSC 改採 SiFive RISC-V 多核（目標 >1000x RAD750），為長線替代但 5-10 年內難撼動 BAE 認證壁壘。",
+   "companies": [
+    {
+     "name": "BAE Systems (rad-hard)",
+     "ticker": "BA.L",
+     "country": "UK",
+     "share": "rad-hard 處理器近獨家",
+     "products": "RAD750/RAD5500 抗輻射 PowerPC",
+     "note": "火星車/軍衛星；美廠 BAE FAST Labs",
+     "src": "https://www.baesystems.com/en-us/product/radiation-hardened-electronics"
+    },
+    {
+     "name": "Frontgrade (前 Cobham)",
+     "ticker": "—",
+     "country": "US",
+     "share": "rad-hard FPGA/記憶體",
+     "products": "rad-hard FPGA/SRAM/混訊/電源 IC",
+     "note": "Veritas Capital 持有、未上市",
+     "src": "https://www.frontgrade.com/"
+    },
+    {
+     "name": "Microchip",
+     "ticker": "MCHP",
+     "country": "US",
+     "share": "rad-tolerant FPGA/MCU",
+     "products": "RTG4/PolarFire RT FPGA、太空 MCU",
+     "note": "太空/國防寬產品線"
+    },
+    {
+     "name": "Texas Instruments / ADI",
+     "ticker": "TXN / ADI",
+     "country": "US",
+     "share": "軍規類比/RF",
+     "products": "QML 軍規類比/電源/RF/資料轉換",
+     "note": "ADI=RF+混訊國防主力"
+    },
+    {
+     "name": "Infineon / Renesas",
+     "ticker": "IFX.DE / 6723.T",
+     "country": "EU",
+     "share": "歐日 mil/aero",
+     "products": "功率/MCU/rad-hard 元件",
+     "note": "Infineon=德、Renesas=日"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-c4isr"
+    },
+    {
+     "id": "p-missile"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BAE rad-hard electronics",
+     "url": "https://www.baesystems.com/en-us/product/radiation-hardened-electronics"
+    }
+   ]
+  },
+  {
+   "id": "t-gan",
+   "row": "tech",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "GaN / RF 化合物半導體（雷達・電戰）",
+   "nameEn": "GaN · RF Compound Semi (Radar/EW)",
+   "competition": "oligopoly",
+   "single": "⚑ 美管制 · Wolfspeed GaN-on-SiC 為 AESA 雷達主力；穩懋/宏捷科切入國防 GaN 代工（占比待證）",
+   "desc": "氮化鎵（GaN-on-SiC/GaAs）射頻功率元件，是 AESA 主動相位陣列雷達、電子戰與軍用衛星通訊的核心；高功率密度＋寬頻。",
+   "marketSize": "雷達/電戰核心",
+   "growth": "AESA 雷達剛需",
+   "share": "null",
+   "analysis": "GaN-on-SiC 由 Wolfspeed（材料+元件）、RTX/Qorvo（QRVO，GaN/GaAs 供 Tier-1 國防 prime）、MACOM（MTSI，GaN-on-SiC 含 STMicro 代工）、Northrop（自有 GaN 廠）主導；台廠穩懋（3105.TWO，GaAs/GaN 代工龍頭）、宏捷科（8086.TWO）切入國防/衛星 GaN 代工（國防營收占比待證）。受美 EAR 對中管制。⚑絃外之音：GaN RF 結構性集中於 Wolfspeed/Qorvo/MACOM/Sumitomo/Ampleon；Qorvo 雷達系統段市佔 ~38.9%、GaN 占其國防營收由 2023 的 11% 升至 2025 的 18%（受極音速武器拉動）。真正單點是上游 SiC 基板（Wolfspeed），其 2025/9 走 Chapter 11 後 AESA 雷達材料源穩定性成隱性供應風險。",
+   "companies": [
+    {
+     "name": "Wolfspeed",
+     "ticker": "WOLF",
+     "country": "US",
+     "share": "GaN-on-SiC 材料+元件",
+     "products": "SiC 基板/GaN HEMT RF",
+     "note": "AESA 雷達材料源；2025/9/29 出 Chapter 11(91 天清掉 $4.6B 債、減債 ~70%、恢復正權益 $1.0B)、FQ1'26 營收 ~$197M(Mohawk Valley 貢獻 $97M)、現金 $926M、推 10kV SiC MOSFET"
+    },
+    {
+     "name": "Qorvo",
+     "ticker": "QRVO",
+     "country": "US",
+     "share": "國防 GaN/GaAs",
+     "products": "GaN PA/前端、雷達/EW/SATCOM",
+     "note": "供 Tier-1 prime；Skyworks 2025/10/28 宣布收購(~$22B、現金$32.5+0.96 SWKS股/股)；2026/2/5 雙方收 FTC HSR Second Request 延長審查、中國 SAMR 進 Phase II；正式指引仍為 2027 曆年初、但雙方表態『愈來愈樂觀可於 2026 下半年完成』、綜效 $500M+"
+    },
+    {
+     "name": "MACOM",
+     "ticker": "MTSI",
+     "country": "US",
+     "share": "GaN-on-SiC/GaAs",
+     "products": "雷達/EW GaN MMIC",
+     "note": "取得 ST GaN-on-Si 資產"
+    },
+    {
+     "name": "穩懋 WIN / 宏捷科 AWSC",
+     "ticker": "3105.TWO / 8086.TWO",
+     "country": "TW",
+     "share": "GaAs/GaN 代工",
+     "products": "GaAs/GaN MMIC 代工",
+     "note": "切入國防/衛星 GaN（占比待證/概念股）",
+     "src": "https://money.udn.com/money/story/5612/8400000"
+    },
+    {
+     "name": "Northrop Grumman (自有 GaN)",
+     "ticker": "NOC",
+     "country": "US",
+     "share": "垂直整合",
+     "products": "自有 GaN MMIC 廠",
+     "note": "雷達/EW 自製"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-c4isr"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Qorvo defense & aerospace GaN",
+     "url": "https://www.qorvo.com/markets/defense-aerospace"
+    }
+   ]
+  },
+  {
+   "id": "t-sensor",
+   "row": "tech",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "EO-IR / 熱影像 / 感測",
+   "nameEn": "EO-IR · Thermal · Sensors",
+   "competition": "oligopoly",
+   "single": "⚑ Teledyne FLIR 熱影像近寡占；台廠同欣電 紅外線/感測封裝切入（占比待證）",
+   "desc": "電光紅外（EO-IR）、熱影像（thermal）、紅外線焦平面陣列（FPA）與雷射/光電瞄準，用於偵蒐、夜視、目標獲取與飛彈導引。",
+   "marketSize": "感測單點",
+   "growth": "無人化/夜視拉動",
+   "share": "null",
+   "analysis": "Teledyne FLIR（TDY，熱影像/EO-IR 近寡占）、Leonardo DRS（DRS，先進紅外線感測）、L3Harris、Elbit（ESLT）主導軍用 EO-IR；台廠同欣電（6271.TW，紅外線/MEMS/感測封裝切入無人機/熱影像，國防占比待證）、亞光（3019.TW，光學鏡頭/瞄具）為利基供應。",
+   "companies": [
+    {
+     "name": "Teledyne (FLIR)",
+     "ticker": "TDY",
+     "country": "US",
+     "share": "熱影像近寡占",
+     "products": "熱影像/EO-IR/FPA/無人系統感測",
+     "note": "併 FLIR 後龍頭"
+    },
+    {
+     "name": "Leonardo DRS",
+     "ticker": "DRS",
+     "country": "US",
+     "share": "先進紅外線感測",
+     "products": "先進 IR 感測/電力推進/網路運算",
+     "note": "Leonardo 子公司、美上市",
+     "src": "https://www.sec.gov/Archives/edgar/data/0001833756/000183375625000007/q32025earningspressrelease.htm"
+    },
+    {
+     "name": "Elbit Systems",
+     "ticker": "ESLT",
+     "country": "IL",
+     "share": "EO-IR/瞄具",
+     "products": "光電/夜視/瞄準/無人系統",
+     "note": "以色列國防電子龍頭"
+    },
+    {
+     "name": "同欣電 Tong Hsing",
+     "ticker": "6271.TW",
+     "country": "TW",
+     "share": "感測封裝",
+     "products": "紅外線/MEMS/影像感測封裝",
+     "note": "切入無人機/熱影像（占比待證/概念股）"
+    },
+    {
+     "name": "亞光 Asia Optical",
+     "ticker": "3019.TW",
+     "country": "TW",
+     "share": "光學鏡頭/瞄具",
+     "products": "軍用光學/熱顯像/瞄具",
+     "note": "光電利基台廠（待證）"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-c4isr"
+    },
+    {
+     "id": "p-uav"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Leonardo DRS Q3 2025 (SEC 8-K)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001833756/000183375625000007/q32025earningspressrelease.htm"
+    }
+   ]
+  },
+  {
+   "id": "t-milcomp",
+   "row": "tech",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "軍規連接器 / 被動 / 嵌入式運算",
+   "nameEn": "Mil Connectors · Passives · Embedded",
+   "competition": "oligopoly",
+   "single": "客戶獨家級 · 台廠公準 軍規連接器；千附 飛彈/航太精密零件",
+   "desc": "軍規（mil-spec）連接器、線束、被動元件與耐環境嵌入式運算（VPX/OpenVPX），是各次系統間的耐振動/耐溫互連與訊號處理底座。",
+   "marketSize": "利基單點",
+   "growth": "在地化機會",
+   "share": "null",
+   "analysis": "國際軍規連接器以 Amphenol（APH）、TE Connectivity（TEL）、Glenair 主導；嵌入式運算 Mercury Systems（MRCY，OpenVPX 安全處理）、Curtiss-Wright（CW）；台廠公準（3178.TWO，軍規/航太連接器）、千附（8383.TWO，飛彈/航太精密機械零件加工，1.25 兆飛彈預算受惠）為在地化利基（國防占比待證）。",
+   "companies": [
+    {
+     "name": "Amphenol / TE Connectivity",
+     "ticker": "APH / TEL",
+     "country": "US",
+     "share": "軍規連接器龍頭",
+     "products": "mil-spec 連接器/線束",
+     "note": "全球互連寡占"
+    },
+    {
+     "name": "Mercury Systems",
+     "ticker": "MRCY",
+     "country": "US",
+     "share": "嵌入式安全運算",
+     "products": "OpenVPX/RF/安全處理模組",
+     "note": "國防電子處理子系統"
+    },
+    {
+     "name": "Curtiss-Wright",
+     "ticker": "CW",
+     "country": "US",
+     "share": "耐環境運算",
+     "products": "VPX/任務電腦/資料記錄",
+     "note": "航電/嵌入式"
+    },
+    {
+     "name": "公準 Kuenzer",
+     "ticker": "3178.TWO",
+     "country": "TW",
+     "share": "軍規連接器",
+     "products": "軍規/航太連接器",
+     "note": "在地化利基（待證/概念股）",
+     "src": "https://www.cmoney.tw/notes/note-detail.aspx?nid=600000"
+    },
+    {
+     "name": "千附 Chyun Fu",
+     "ticker": "8383.TWO",
+     "country": "TW",
+     "share": "飛彈/航太精密件",
+     "products": "飛彈/航太精密機械零件加工",
+     "note": "特別預算 2026/5 砍至 7,800 億、國內委製飛彈案遭刪，受惠縮水（占比待證）",
+     "src": "https://tw.stock.yahoo.com/quote/8383.TWO/profile"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-c4isr"
+    },
+    {
+     "id": "f-avionics"
+    }
+   ],
+   "sources": [
+    {
+     "label": "千附 公司基本資料 (Yahoo股市)",
+     "url": "https://tw.stock.yahoo.com/quote/8383.TWO/profile"
+    }
+   ]
+  },
+  {
+   "id": "t-fab",
+   "row": "tech",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "晶圓代工 / 安全製造（國防晶片）",
+   "nameEn": "Foundry · Secure Fab (Defense Chips)",
+   "competition": "oligopoly",
+   "single": "⚑ 美國防 RAMP-C/Trusted Foundry · GlobalFoundries 與 Intel 為美軍可信代工；TSMC AZ 牽動國防安全",
+   "desc": "國防/航太晶片的可信賴（Trusted Foundry / RAMP-C）與在岸製造，含安全製程、供應鏈溯源與抗竄改；美國推動晶片自主化。",
+   "marketSize": "戰略製造",
+   "growth": "供應鏈在岸化",
+   "share": "null",
+   "analysis": "GlobalFoundries（GFS，美 DMEA Trusted Foundry、可信製程）、Intel（INTC，RAMP-C 18A 國防專案）為美軍在岸代工主力；TSMC（2330.TW）AZ 廠擴產牽動國防供應安全與台美關係；SkyWater（SKYT，美國防 Trusted 代工）、Tower（TSEM）補位。屬戰略而非純商業競爭。",
+   "companies": [
+    {
+     "name": "GlobalFoundries",
+     "ticker": "GFS",
+     "country": "US",
+     "share": "Trusted Foundry",
+     "products": "可信製程/RF SOI/航太國防晶圓",
+     "note": "DMEA 認證、美在岸主力"
+    },
+    {
+     "name": "Intel (RAMP-C)",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "國防先進製程",
+     "products": "18A RAMP-C 國防晶片",
+     "note": "美 DoD RAMP-C 主承製"
+    },
+    {
+     "name": "TSMC (AZ)",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "先進製程關鍵",
+     "products": "先進邏輯（亞利桑那擴產）",
+     "note": "牽動國防供應安全/地緣"
+    },
+    {
+     "name": "SkyWater",
+     "ticker": "SKYT",
+     "country": "US",
+     "share": "Trusted 代工",
+     "products": "美國防 Trusted Foundry",
+     "note": "ITAR 內、國防特化"
+    },
+    {
+     "name": "Tower Semiconductor",
+     "ticker": "TSEM",
+     "country": "IL",
+     "share": "RF/類比代工",
+     "products": "RF SOI/SiGe（雷達/EW）",
+     "note": "國防 RF 代工補位"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "t-radhard"
+    },
+    {
+     "id": "t-gan"
+    },
+    {
+     "id": "f-c4isr"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Intel RAMP-C 國防專案 (Intel)",
+     "url": "https://www.intel.com/content/www/us/en/government/usg-fact-sheet.html"
+    }
+   ]
+  },
+  {
+   "id": "t-missile-elec",
+   "row": "tech",
+   "col": 11,
+   "span": 1,
+   "kind": "rail",
+   "name": "導引 / 引信 / 慣性導航",
+   "nameEn": "Guidance · Fuze · INS/GNSS",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "精準彈藥的尋標器（seeker）、引信、慣性導航（INS/IMU）、抗干擾 GNSS 與導引電子，是飛彈/智慧彈藥的「大腦」。",
+   "marketSize": "彈藥電子單點",
+   "growth": "精準彈藥拉動",
+   "share": "null",
+   "analysis": "尋標器/導引電子由 RTX、Lockheed、Northrop 內製＋BAE/L3Harris；慣性導航 Honeywell（HON）、Safran（SAF.PA）、Northrop（LITEF）；抗干擾 GNSS L3Harris、BAE；引信 Kaman/L3Harris。屬國防 prime 內部整合＋少數專業件供應。台廠多供結構/機構件（待證）。",
+   "companies": [
+    {
+     "name": "RTX (Raytheon)",
+     "ticker": "RTX",
+     "country": "US",
+     "share": "尋標器/導引",
+     "products": "雷達/紅外尋標器、導引電子",
+     "note": "飛彈導引整合龍頭"
+    },
+    {
+     "name": "Honeywell",
+     "ticker": "HON",
+     "country": "US",
+     "share": "慣性導航龍頭",
+     "products": "INS/IMU/GNSS/航電",
+     "note": "導航與感測核心"
+    },
+    {
+     "name": "Safran",
+     "ticker": "SAF.PA",
+     "country": "FR",
+     "share": "歐系慣導/光電",
+     "products": "INS/慣性感測/光電",
+     "note": "歐洲導航主力"
+    },
+    {
+     "name": "L3Harris",
+     "ticker": "LHX",
+     "country": "US",
+     "share": "抗干擾/引信/通訊",
+     "products": "抗干擾 GNSS、引信、戰術通訊",
+     "note": "C4ISR+彈藥電子"
+    },
+    {
+     "name": "BAE Systems",
+     "ticker": "BA.L",
+     "country": "UK",
+     "share": "導引/電子",
+     "products": "精準導引套件(APKWS)/seeker",
+     "note": "英美雙重布局"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "p-missile"
+    }
+   ],
+   "sources": [
+    {
+     "label": "RTX missiles & defense",
+     "url": "https://www.rtx.com/raytheon"
+    }
+   ]
+  },
+  {
+   "id": "f-c4isr",
+   "row": "flow",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "雷達 / 電戰 / C4ISR 次系統",
+   "nameEn": "Radar · EW · C4ISR Subsystems",
+   "competition": "oligopoly",
+   "single": "⚑ 國防電子護城河 · RTX/Northrop AESA 雷達；L3Harris/Elbit/Leonardo DRS 電戰主導",
+   "desc": "主動相位陣列（AESA）雷達、電子戰（EW）、感測融合與指管通情監偵（C4ISR），把 GaN/rad-hard/EO-IR 元件整合為任務系統。",
+   "marketSize": "電戰最快 CAGR",
+   "growth": "AESA/EW 高成長",
+   "share": "null",
+   "analysis": "AESA 雷達 RTX、Northrop（NOC）、Lockheed、BAE、Leonardo、Thales；電戰 L3Harris（LHX）、Northrop、Elbit（ESLT）、Leonardo DRS（DRS）、BAE；嵌入式處理 Mercury（MRCY）、Curtiss-Wright。電戰段為 2025-2033 最快 CAGR，受電磁威脅升級驅動。國防電子認證資格＝護城河。",
+   "companies": [
+    {
+     "name": "RTX (Raytheon)",
+     "ticker": "RTX",
+     "country": "US",
+     "share": "雷達/感測龍頭",
+     "products": "AESA 雷達/EW/飛彈感測",
+     "note": "國防電子+飛彈雙核心"
+    },
+    {
+     "name": "Northrop Grumman",
+     "ticker": "NOC",
+     "country": "US",
+     "share": "雷達/EW/太空",
+     "products": "AESA/EW/C4ISR/太空感測",
+     "note": "2024 軍售 ~$37.9B (SIPRI)",
+     "src": "https://www.sipri.org/media/press-release/2025/sipri-top-100-arms-producers-see-combined-revenues-surge-states-rush-modernize-and-expand-arsenals"
+    },
+    {
+     "name": "L3Harris",
+     "ticker": "LHX",
+     "country": "US",
+     "share": "C4ISR/EW/通訊",
+     "products": "戰術通訊/EW/ISR/夜視",
+     "note": "通訊與 EW 主力"
+    },
+    {
+     "name": "Elbit / Leonardo DRS",
+     "ticker": "ESLT / DRS",
+     "country": "IL",
+     "share": "EO-IR/EW/感測",
+     "products": "EW/EO-IR/感測子系統",
+     "note": "ESLT=以色列、DRS=美上市"
+    },
+    {
+     "name": "Thales / Leonardo",
+     "ticker": "HO.PA / LDO.MI",
+     "country": "EU",
+     "share": "歐系雷達/電子",
+     "products": "雷達/航電/C4ISR/防空",
+     "note": "法/義國防電子"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "t-radhard"
+    },
+    {
+     "id": "t-gan"
+    },
+    {
+     "id": "t-sensor"
+    },
+    {
+     "id": "t-milcomp"
+    },
+    {
+     "id": "t-fab"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-integration"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SIPRI Top 100 2024 press release",
+     "url": "https://www.sipri.org/media/press-release/2025/sipri-top-100-arms-producers-see-combined-revenues-surge-states-rush-modernize-and-expand-arsenals"
+    }
+   ]
+  },
+  {
+   "id": "f-avionics",
+   "row": "flow",
+   "col": 3,
+   "span": 2,
+   "kind": "stage",
+   "name": "航電 / 推進 / 動力次系統",
+   "nameEn": "Avionics · Propulsion · Power",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "飛行航電、發動機/推進、輔助動力與機載電力管理，是戰機/直升機/艦艇平台的動力與控制次系統。",
+   "marketSize": "次系統寡占",
+   "growth": "機隊更新",
+   "share": "null",
+   "analysis": "軍用航空發動機 GE Aerospace（GE）、RTX(Pratt & Whitney)、Rolls-Royce（RR.L）、Safran 寡占；航電 Honeywell、Collins(RTX)、BAE、Thales；日本三菱重工/IHI（7013.T）供國產航發/機體；韓 Hanwha Aerospace 供 KF-21 發動機。台廠漢翔（2634.TW）為航發/機體零件＋IDF/勇鷹維修。",
+   "companies": [
+    {
+     "name": "GE Aerospace",
+     "ticker": "GE",
+     "country": "US",
+     "share": "軍用航發龍頭",
+     "products": "F404/F414/T700 發動機",
+     "note": "戰機/直升機動力"
+    },
+    {
+     "name": "RTX (Pratt & Whitney) / Collins",
+     "ticker": "RTX",
+     "country": "US",
+     "share": "航發+航電",
+     "products": "F135 發動機/航電",
+     "note": "F-35 動力"
+    },
+    {
+     "name": "Rolls-Royce / Safran",
+     "ticker": "RR.L / SAF.PA",
+     "country": "EU",
+     "share": "歐系航發",
+     "products": "軍用航發/動力",
+     "note": "英/法主力"
+    },
+    {
+     "name": "IHI / 三菱重工 MHI",
+     "ticker": "7013.T / 7011.T",
+     "country": "JP",
+     "share": "日本航發/機體",
+     "products": "XF9 航發/機體結構",
+     "note": "GCAP 次世代戰機"
+    },
+    {
+     "name": "漢翔 AIDC",
+     "ticker": "2634.TW",
+     "country": "TW",
+     "share": "航發/機體零件",
+     "products": "航發零件/機體/IDF/勇鷹",
+     "note": "台灣航太核心、本業國防",
+     "src": "https://www.businesstoday.com.tw/article/category/183015/post/202511260081/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "t-milcomp"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-integration"
+    }
+   ],
+   "sources": [
+    {
+     "label": "漢翔軍工本業 (今周刊)",
+     "url": "https://www.businesstoday.com.tw/article/category/183015/post/202511260081/"
+    }
+   ]
+  },
+  {
+   "id": "f-integration",
+   "row": "flow",
+   "col": 5,
+   "span": 2,
+   "kind": "stage",
+   "name": "系統整合 / 主承包商（美）",
+   "nameEn": "Systems Integration / US Primes",
+   "competition": "oligopoly",
+   "single": "國家冠軍 · Lockheed Martin 全球第一 (~$65B 軍售)；美 5 大 prime 寡占整合",
+   "desc": "把雷達/航電/推進/武器整合為完整作戰系統（戰機/艦艇/陸戰/太空）的美國主承包商，是價值鏈最頂層、利潤與護城河最集中環節。",
+   "marketSize": "美 prime 寡占",
+   "growth": "5.9% 軍售(2024)",
+   "share": "null",
+   "analysis": "Lockheed Martin（LMT，全球第一 ~$65B 軍售/2024）、RTX（~$40.6B）、Northrop（NOC ~$37.9B）、General Dynamics（GD）、Boeing（BA）、L3Harris（LHX）為美 6 大 prime；SIPRI Top 100 2024 合計營收 $679B、年增 5.9%，美廠占 $334B（39 家）。Top-5 prime（LMT/RTX/NOC/BAE/GD）合計 ~$215B≈全球軍售 31.7%、佔美廠 64%，集中度極高。⚑絃外之音：prime 的「市佔光環」掩蓋一個事實——其護城河非製造而是「系統整合認證資格＋FMS 通路」，真正利潤槓桿在毛利更高的次系統/飛彈段；元件斷供（rad-hard/GaN/EO-IR）才是 prime 的實質卡脖子點。",
+   "companies": [
+    {
+     "name": "Lockheed Martin",
+     "ticker": "LMT",
+     "country": "US",
+     "share": "全球第一 ~$65B",
+     "products": "F-35/F-22/飛彈/太空/防空",
+     "note": "2024 SIPRI 第一",
+     "src": "https://www.sipri.org/media/press-release/2025/sipri-top-100-arms-producers-see-combined-revenues-surge-states-rush-modernize-and-expand-arsenals"
+    },
+    {
+     "name": "RTX",
+     "ticker": "RTX",
+     "country": "US",
+     "share": "全球第二 ~$40.6B(2024)",
+     "products": "飛彈/雷達/航發/防空(愛國者)",
+     "note": "Raytheon+P&W+Collins；Top-5 prime 合計 ~$215B≈全球軍售 31.7%"
+    },
+    {
+     "name": "Northrop Grumman",
+     "ticker": "NOC",
+     "country": "US",
+     "share": "~$37.9B",
+     "products": "B-21/太空/雷達/EW",
+     "note": "匿蹤轟炸機+太空"
+    },
+    {
+     "name": "General Dynamics / Boeing",
+     "ticker": "GD / BA",
+     "country": "US",
+     "share": "陸海/航太",
+     "products": "戰車/潛艦/F-15/F/A-18/軍機",
+     "note": "GD=戰車潛艦、BA=軍機"
+    },
+    {
+     "name": "L3Harris",
+     "ticker": "LHX",
+     "country": "US",
+     "share": "第六",
+     "products": "通訊/EW/ISR/太空",
+     "note": "國防電子整合"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-c4isr"
+    },
+    {
+     "id": "f-avionics"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SIPRI Top 100：LMT 第一 ~$65B",
+     "url": "https://www.sipri.org/media/press-release/2025/sipri-top-100-arms-producers-see-combined-revenues-surge-states-rush-modernize-and-expand-arsenals"
+    }
+   ]
+  },
+  {
+   "id": "f-eu-primes",
+   "row": "flow",
+   "col": 7,
+   "span": 2,
+   "kind": "stage",
+   "name": "系統整合 / 主承包商（歐）",
+   "nameEn": "Systems Integration / EU Primes",
+   "competition": "oligopoly",
+   "single": "國家冠軍 · BAE Systems 歐洲第一 (~$34B、全球第四)；Rheinmetall 砲彈/裝甲爆發",
+   "desc": "歐洲各國國家冠軍主承包商，因烏俄戰爭與北約擴軍而營收爆發；涵蓋戰機、防空、裝甲、海軍與彈藥。",
+   "marketSize": "歐國家冠軍",
+   "growth": "歐洲重整軍備",
+   "share": "null",
+   "analysis": "BAE Systems（BA.L，歐洲第一 ~$34B、全球第四）、Thales（HO.PA）、Leonardo（LDO.MI）、Rheinmetall（RHM.DE，砲彈/裝甲需求爆發、股價多倍）、Saab（SAAB-B.ST，戰機/雷達/反裝甲）、Airbus Defence；MBDA（BAE/Airbus/Leonardo 合資飛彈，未上市）。歐洲重整軍備為 2025-2030 結構性題材。",
+   "companies": [
+    {
+     "name": "BAE Systems",
+     "ticker": "BA.L",
+     "country": "UK",
+     "share": "歐洲第一 ~$34B",
+     "products": "戰機/艦艇/裝甲/電子/rad-hard",
+     "note": "全球第四(SIPRI)"
+    },
+    {
+     "name": "Rheinmetall",
+     "ticker": "RHM.DE",
+     "country": "DE",
+     "share": "砲彈/裝甲爆發",
+     "products": "155mm 砲彈/裝甲/防空/艦艇",
+     "note": "2026/Q1 併 NVL 造船成立 Naval Systems 新事業部(含 Blohm+Voss，pipeline ~€5.5B)；Q1'26 在手單 €73B 創高、管理層估年底翻倍；砲彈年產能逾 100 萬發；FY26 財測 €14.0-14.5B；2026/5 對另一德國船廠提收購要約"
+    },
+    {
+     "name": "Thales / Leonardo",
+     "ticker": "HO.PA / LDO.MI",
+     "country": "EU",
+     "share": "電子/航太",
+     "products": "雷達/航電/直升機/太空",
+     "note": "法/義國家冠軍"
+    },
+    {
+     "name": "Saab",
+     "ticker": "SAAB-B.ST",
+     "country": "EU",
+     "share": "戰機/雷達",
+     "products": "Gripen/GlobalEye/反裝甲",
+     "note": "瑞典、北約新成員"
+    },
+    {
+     "name": "MBDA",
+     "ticker": "—",
+     "country": "EU",
+     "share": "歐洲飛彈龍頭",
+     "products": "Meteor/Aster/反艦飛彈",
+     "note": "BAE/Airbus/Leonardo 合資、未上市"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-c4isr"
+    },
+    {
+     "id": "f-avionics"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BAE 歐洲第一/全球第四 (SIPRI)",
+     "url": "https://www.sipri.org/media/press-release/2025/sipri-top-100-arms-producers-see-combined-revenues-surge-states-rush-modernize-and-expand-arsenals"
+    }
+   ]
+  },
+  {
+   "id": "f-asia-primes",
+   "row": "flow",
+   "col": 9,
+   "span": 2,
+   "kind": "stage",
+   "name": "系統整合 / 亞太主承包商（韓・日・台）",
+   "nameEn": "Integration / Asia Primes (KR·JP·TW)",
+   "competition": "oligopoly",
+   "single": "韓四強躍升 · Hanwha Aerospace FY2025 營收 26.6兆韓元(~$18.2B,+137%)；SIPRI2024 第21；台漢翔/造船本土整合",
+   "desc": "韓國（出口爆發）、日本（防衛預算倍增/解禁出口）、台灣（國防自主）的系統整合商；亞太再武裝主軸。",
+   "marketSize": "亞太國家隊",
+   "growth": "韓出口 +42%",
+   "share": "null",
+   "analysis": "韓四強：Hanwha Aerospace（012450.KS，FY2025 營收 26.6兆韓元(~$18.2B,+137%)、SIPRI2024 第21、K9 火砲/裝甲/航太）、Hyundai Rotem（064350.KS，K2 戰車）、KAI（047810.KS，FA-50/KF-21）、LIG Nex1（079550.KS，飛彈，全球第60）；FY2025 韓四強合計 ~40.5兆韓元創高、2026E ~50.6兆(~$37.4B)；Hanwha Q1'26 營收 5.75兆韓元(+4.9% YoY)、營益 6,389億(+20.6%)。日本三菱重工（7011.T）/川崎重工（7012.T，潛艦）/IHI（7013.T）。台灣漢翔（2634.TW）/造船廠負責本土平台整合。",
+   "companies": [
+    {
+     "name": "Hanwha Aerospace",
+     "ticker": "012450.KS",
+     "country": "KR",
+     "share": "FY2025 26.6兆韓元(~$18.2B)",
+     "products": "K9 火砲/裝甲/航發/太空",
+     "note": "全球第21(SIPRI)、韓龍頭",
+     "src": "https://www.koreaherald.com/article/10628008"
+    },
+    {
+     "name": "Hyundai Rotem / KAI",
+     "ticker": "064350.KS / 047810.KS",
+     "country": "KR",
+     "share": "戰車/戰機",
+     "products": "K2 戰車 / FA-50/KF-21",
+     "note": "陸戰+航空整合"
+    },
+    {
+     "name": "LIG Nex1",
+     "ticker": "079550.KS",
+     "country": "KR",
+     "share": "飛彈(全球第60)",
+     "products": "天弓/反艦/防空飛彈",
+     "note": "韓飛彈整合、躍升 73→60"
+    },
+    {
+     "name": "三菱重工 / 川崎重工 / IHI",
+     "ticker": "7011.T / 7012.T / 7013.T",
+     "country": "JP",
+     "share": "日本國家隊",
+     "products": "戰機/艦艇/潛艦/航發",
+     "note": "防衛預算倍增、GCAP"
+    },
+    {
+     "name": "漢翔 AIDC",
+     "ticker": "2634.TW",
+     "country": "TW",
+     "share": "台灣航太整合",
+     "products": "IDF/勇鷹/無人機/MRO",
+     "note": "勇鷹交機近尾聲、2026 轉型無人機/反無人機；Q1'26 EPS 0.28 元",
+     "src": "https://www.businesstoday.com.tw/article/category/183015/post/202511260081/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-c4isr"
+    },
+    {
+     "id": "f-avionics"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "K-defense 排名躍升 (Korea Herald)",
+     "url": "https://www.koreaherald.com/article/10628008"
+    }
+   ]
+  },
+  {
+   "id": "f-demand",
+   "row": "flow",
+   "col": 11,
+   "span": 2,
+   "kind": "demand",
+   "name": "終端需求 / 各國國防預算",
+   "nameEn": "End Demand / Defense Budgets",
+   "competition": "highgrowth",
+   "single": "null",
+   "desc": "終端需求＝各國國防預算、不對稱戰力、無人機與太空軍事化。地緣衝突（烏俄、中東、台海、北約）驅動全球軍費創新高。",
+   "marketSize": "$679B 軍售(2024)",
+   "growth": "全球軍費創高",
+   "share": "null",
+   "analysis": "SIPRI Top 100 2024 軍售 $679B(+5.9%)、為歷史新高；驅動力：北約 2%→3-5% GDP、歐洲重整軍備、亞太再武裝、不對稱/無人化、太空與低軌軍用。台灣 2026 國防預算 ~9,495 億台幣(GDP ~3.32%)；1.25 兆特別預算 2026/5/8 遭立院三讀砍至 7,800 億（僅留對美軍購分 2 批 3,000 億+4,800 億；刪商購 7 案 1,000 億＋國內委製 5 案 2,500 億，含強弓飛彈/銳鳶二型/自殺無人艇），台廠題材縮水。SIPRI：2025 全球軍費 $2.887 兆(+2.9%)、歐洲 +14%、美國 -7.5%。",
+   "companies": [
+    {
+     "name": "美國 DoD",
+     "ticker": "—",
+     "country": "US",
+     "share": "全球最大買方",
+     "products": "FY2026 國防預算 ~$8,000+億",
+     "note": "FMS 外銷驅動全球 prime"
+    },
+    {
+     "name": "北約 / 歐盟",
+     "ticker": "—",
+     "country": "EU",
+     "share": "重整軍備",
+     "products": "2%→3-5% GDP 目標",
+     "note": "Rheinmetall/BAE 受惠"
+    },
+    {
+     "name": "亞太（日韓台）",
+     "ticker": "—",
+     "country": "JP",
+     "share": "再武裝",
+     "products": "日防衛倍增/韓出口/台自主",
+     "note": "亞太結構性成長"
+    },
+    {
+     "name": "台灣 國防預算",
+     "ticker": "—",
+     "country": "TW",
+     "share": "特別預算 7,800 億(原 1.25 兆)",
+     "products": "對美軍購 分2批(3,000億+4,800億)",
+     "note": "2026/5/8 三讀；商購/國內委製 3,500 億遭刪、2026 年國內自製無人機新採購歸零。政院 2026/6/18 正式提出『國防自主無人載具採購特別條例』~2,100億台幣(US$6.6B,2026-2031)補位：採濱海監偵 1,446架+攻擊型 20.82萬架+自殺無人艇 1,320艘，已送立院審議",
+     "src": "https://focustaiwan.tw/politics/202606180012"
+    },
+    {
+     "name": "全球軍售 (SIPRI Top 100)",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "$679B(+5.9%)",
+     "products": "2024 歷史新高",
+     "note": "地緣衝突驅動"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "f-integration"
+    },
+    {
+     "id": "f-eu-primes"
+    },
+    {
+     "id": "f-asia-primes"
+    },
+    {
+     "id": "p-uav"
+    },
+    {
+     "id": "p-missile"
+    },
+    {
+     "id": "p-naval"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "SIPRI Top 100 $679B (SIPRI)",
+     "url": "https://www.sipri.org/media/press-release/2025/sipri-top-100-arms-producers-see-combined-revenues-surge-states-rush-modernize-and-expand-arsenals"
+    }
+   ]
+  },
+  {
+   "id": "p-uav",
+   "row": "platform",
+   "col": 1,
+   "span": 1,
+   "kind": "rail",
+   "name": "無人機 / 無人載具 UAV",
+   "nameEn": "UAV · Unmanned Systems",
+   "competition": "highgrowth",
+   "single": "新創顛覆 · Anduril/Shield AI/Helsing 軟體定義自主；台廠雷虎/經緯航太 概念股放量",
+   "desc": "軍用無人機、巡飛彈（loitering munition）、無人水面/水下載具與自主協同（CCA 忠誠僚機），是不對稱戰力與軟體定義國防核心。",
+   "marketSize": "新創湧入",
+   "growth": "不對稱核心",
+   "share": "null",
+   "analysis": "美國 AeroVironment（AVAV，Switchblade 巡飛彈、併 BlueHalo ~$4.1B）、Anduril（未上市，Lattice/CCA YFQ-44A；2026/5 Series H $5B、估值 $61B；2026/3 獲美陸軍 10 年上限 $20B 合約、Arsenal-1 開產 Fury）、Shield AI（未上市，Hivemind 自主，獲選 CCA）、General Atomics；中國 DJI（未上市，受美管制）。台廠雷虎（8033.TW，無人機/無人艇）、經緯航太（8495.TWO，無人機）、中光電智能（中光電 5371.TWO 子公司，軍用無人機）為概念股放量、國防營收占比待證。",
+   "companies": [
+    {
+     "name": "AeroVironment",
+     "ticker": "AVAV",
+     "country": "US",
+     "share": "巡飛彈/小型 UAV",
+     "products": "Switchblade/LOCUST/C-UAS",
+     "note": "併 BlueHalo ~$4.1B 擴 C-UAS/太空；FQ2'26 營收 $408M(+143% YoY、有機 +38%)、EPS $0.64；獲美陸軍 $186M 次世代 Switchblade 600 Block2/300 Block20 交付令(屬 $990M LUS 合約)；FQ3'26 funded backlog 創高 $1.10B、YTD bookings $2.1B(1.6x B-to-B)"
+    },
+    {
+     "name": "Anduril / Shield AI",
+     "ticker": "—",
+     "country": "US",
+     "share": "軟體定義自主",
+     "products": "Lattice/Hivemind/CCA 僚機",
+     "note": "皆未上市、獲選 USAF CCA；Anduril 2026/5 完成 ~$5B Series H(Thrive/a16z 領投)、估值 12 個月翻倍至 $61B、累計募資 >$6.3B；2025 營收 ~$2.2B(YoY 倍增)、2026E ~$4.3B；Arsenal-1 量產 Fury YFQ-44A",
+     "src": "https://www.cnbc.com/2026/05/13/anduril-valuation-defense-tech-funding-boom.html"
+    },
+    {
+     "name": "雷虎 Thunder Tiger",
+     "ticker": "8033.TW",
+     "country": "TW",
+     "share": "無人機/無人艇",
+     "products": "軍用無人機/無人水面艇",
+     "note": "台無人機概念股龍頭；受惠政院 2,100億無人載具特別條例(攻擊型 20.82萬架/自殺無人艇 1,320艘)＋海軍千艘無人艇案(~300億潛在)（占比待證）",
+     "src": "https://udn.com/news/story/10930/9574241"
+    },
+    {
+     "name": "經緯航太 GEOSAT",
+     "ticker": "8495.TWO",
+     "country": "TW",
+     "share": "無人機系統",
+     "products": "軍/民用無人機/空拍",
+     "note": "台無人機（占比待證/概念股)",
+     "src": "https://www.cnyes.com/twstock/8495"
+    },
+    {
+     "name": "中光電智能 / DJI",
+     "ticker": "5371.TWO / —",
+     "country": "TW",
+     "share": "軍用 UAV / 民用龍頭",
+     "products": "軍用無人機 / 消費+商用 UAV",
+     "note": "中光電子公司；DJI 未上市、受美管制"
+    },
+    {
+     "name": "Helsing",
+     "ticker": "—",
+     "country": "DE",
+     "share": "歐洲 AI 國防軍",
+     "products": "HX-2 巡飛彈/Altra 偵打軟體/CA-1 Europa 僚機/Lura 反潛",
+     "note": "未上市；2026/5 以 $18B 估值募 $1.2B(Dragoneer/Lightspeed 領投)、12 個月內估值由 €12B 再升、登德國最有價值新創；HX-2 獲 Bundeswehr €269M 初約、框架上限 €1.46B/7 年；2026/1 併西班牙機器人 Keybotic",
+     "src": "https://techcrunch.com/2026/05/11/daniel-ek-backed-defense-tech-helsing-to-raise-1-2b-at-18b-valuation/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USAF 選 Shield AI/Anduril CCA (Breaking Defense)",
+     "url": "https://breakingdefense.com/2025/09/rtx-shield-ai-picked-to-give-collaborative-combat-aircraft-autonomous-capabilities/"
+    }
+   ]
+  },
+  {
+   "id": "p-missile",
+   "row": "platform",
+   "col": 3,
+   "span": 1,
+   "kind": "rail",
+   "name": "飛彈 / 精準彈藥",
+   "nameEn": "Missiles · Precision Munitions",
+   "competition": "oligopoly",
+   "single": "⚑ 寡占 · RTX/Lockheed 飛彈雙雄；MBDA 歐洲；台 中科院 自製天弓/雄三",
+   "desc": "防空/反艦/巡弋/空對空飛彈與精準導引彈藥，因戰場消耗與庫存補充而需求爆發；導引電子（尋標器/INS）為技術門檻。",
+   "marketSize": "需求爆發",
+   "growth": "彈藥補庫存",
+   "share": "null",
+   "analysis": "RTX（愛國者/AMRAAM/標準飛彈）、Lockheed（LMT，PAC-3/JASSM/HIMARS/標槍）為美飛彈雙雄；MBDA（歐洲，Meteor/Aster）；以色列 Rafael（未上市，鐵穹）；韓 LIG Nex1（079550.KS）。台灣中科院（NCSIST，國家隊未上市，天弓/雄三/雄二E），台廠千附（8383.TWO）供精密零件。",
+   "companies": [
+    {
+     "name": "Lockheed Martin",
+     "ticker": "LMT",
+     "country": "US",
+     "share": "飛彈龍頭",
+     "products": "PAC-3/JASSM/HIMARS/標槍",
+     "note": "防空+打擊飛彈"
+    },
+    {
+     "name": "RTX (Raytheon)",
+     "ticker": "RTX",
+     "country": "US",
+     "share": "防空/空對空",
+     "products": "愛國者/AMRAAM/標準飛彈",
+     "note": "防空攔截主力"
+    },
+    {
+     "name": "MBDA / Rafael",
+     "ticker": "— / —",
+     "country": "EU",
+     "share": "歐/以飛彈",
+     "products": "Meteor/Aster / 鐵穹/反戰車",
+     "note": "皆未上市（MBDA 合資、Rafael 國有）"
+    },
+    {
+     "name": "中科院 NCSIST",
+     "ticker": "—",
+     "country": "TW",
+     "share": "台自製飛彈",
+     "products": "天弓/雄風/雄二E 巡弋",
+     "note": "國家隊、未上市",
+     "src": "https://www.businesstoday.com.tw/article/category/183027/post/202507090016/"
+    },
+    {
+     "name": "千附 Chyun Fu",
+     "ticker": "8383.TWO",
+     "country": "TW",
+     "share": "飛彈精密件",
+     "products": "飛彈/航太精密機械加工",
+     "note": "特別預算遭砍、強弓等國內飛彈委製案遭刪（待證）"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "t-radhard"
+    },
+    {
+     "id": "t-missile-elec"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Lockheed missiles & fire control",
+     "url": "https://www.lockheedmartin.com/en-us/capabilities/missiles-fire-control.html"
+    }
+   ]
+  },
+  {
+   "id": "p-naval",
+   "row": "platform",
+   "col": 5,
+   "span": 1,
+   "kind": "rail",
+   "name": "艦艇 / 潛艦 / 無人艇",
+   "nameEn": "Naval · Submarines · USV",
+   "competition": "oligopoly",
+   "single": "本土造艦 · 台龍德造船/中信造船 無人艇/巡防艦在手單放量",
+   "desc": "水面艦、潛艦與無人水面/水下載具（USV/UUV），是制海與不對稱戰力平台；造艦為長週期、在地化高的國防分項。",
+   "marketSize": "造艦長約",
+   "growth": "海軍擴編",
+   "share": "null",
+   "analysis": "美 General Dynamics(Electric Boat)/HII（HII，核潛艦/航艦）；歐 BAE/Naval Group/Fincantieri；日 三菱重工/川崎重工（潛艦）；韓 HD 現代重工/Hanwha Ocean。台灣龍德造船（6753.TW，無人艇/巡防艦/光華六號、在手單 >144 億）、中信造船（2644.TWO，海巡/快艇/無人艇）為本土造艦受惠，2025/7 遭中國列出口管制（反證其國防實在性）。⚑絃外之音：軟體定義「自主造船」新創 Saronic（US，2025/12 拿下美海軍 $392M Corsair USV 量產約、傳以 ~$7.5B 估值募 $1.5B）正以新創速度切入 USV，與傳統長週期造艦寡占並行，對台廠無人艇外銷既是標竿也是潛在競爭。",
+   "companies": [
+    {
+     "name": "General Dynamics / HII",
+     "ticker": "GD / HII",
+     "country": "US",
+     "share": "美核潛艦/航艦",
+     "products": "維吉尼亞級潛艦/福特級航艦",
+     "note": "海軍造艦寡占"
+    },
+    {
+     "name": "三菱重工 / 川崎重工",
+     "ticker": "7011.T / 7012.T",
+     "country": "JP",
+     "share": "日本潛艦",
+     "products": "蒼龍/大鯨級潛艦/護衛艦",
+     "note": "日本海自主力"
+    },
+    {
+     "name": "Hanwha Ocean / HD 現代重工",
+     "ticker": "042660.KS / 329180.KS",
+     "country": "KR",
+     "share": "韓造艦",
+     "products": "潛艦/驅逐艦/出口造艦",
+     "note": "韓海軍+出口"
+    },
+    {
+     "name": "龍德造船 Lung Teh",
+     "ticker": "6753.TW",
+     "country": "TW",
+     "share": "無人艇/巡防艦",
+     "products": "無人艇/光華六號/海巡艦",
+     "note": "在手單 >144 億、本業國防",
+     "src": "https://www.sinotrade.com.tw/richclub/hotstock/"
+    },
+    {
+     "name": "中信造船 Jong Shyn",
+     "ticker": "2644.TWO",
+     "country": "TW",
+     "share": "海巡/快艇/無人艇",
+     "products": "海巡艦/快艇/無人艇",
+     "note": "遭中國列管(反證實在性)",
+     "src": "https://www.businesstoday.com.tw/article/category/183027/post/202507090016/"
+    },
+    {
+     "name": "Saronic",
+     "ticker": "—",
+     "country": "US",
+     "share": "自主無人艇新銳",
+     "products": "Corsair/Spyglass/Marauder USV、自主造船廠",
+     "note": "未上市；2025/12 獲美海軍 $392M Corsair USV 量產約(<12 個月交付、~$200M 即撥)；2026/3/31 完成 $1.75B Series D、估值衝 $9.25B(Kleiner Perkins 領投、Advent/Bessemer/a16z 等)、累計募資 >$3.5B；規劃 $5B 旗艦無人造船廠 Port Alpha",
+     "src": "https://www.prnewswire.com/news-releases/saronic-closes-1-75b-series-d-at-9-25b-valuation-to-accelerate-a-new-era-of-maritime-autonomy-302729298.html"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "中國列管台軍工 8 家 (今周刊)",
+     "url": "https://www.businesstoday.com.tw/article/category/183027/post/202507090016/"
+    }
+   ]
+  },
+  {
+   "id": "p-air",
+   "row": "platform",
+   "col": 7,
+   "span": 1,
+   "kind": "rail",
+   "name": "戰機 / 軍機平台",
+   "nameEn": "Combat Aircraft Platforms",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "有人戰機（4.5/5/6 代）、運輸機、直升機與下世代空中系統（NGAD/GCAP），是航空作戰平台頂層。",
+   "marketSize": "平台寡占",
+   "growth": "六代機/機隊更新",
+   "share": "null",
+   "analysis": "美 Lockheed（F-35/F-22/NGAD F-47）、Boeing（F-15EX/F/A-18）；歐 BAE/Airbus/Dassault（陣風）、GCAP（英日義 BAE+三菱重工+Leonardo）；韓 KAI（KF-21/FA-50）；台漢翔（IDF 經國號/勇鷹高教機）。屬極高門檻、少數國家具整機能力。",
+   "companies": [
+    {
+     "name": "Lockheed Martin",
+     "ticker": "LMT",
+     "country": "US",
+     "share": "5/6 代機龍頭",
+     "products": "F-35/F-22/F-47 NGAD",
+     "note": "匿蹤戰機主導"
+    },
+    {
+     "name": "Boeing",
+     "ticker": "BA",
+     "country": "US",
+     "share": "戰機/軍機",
+     "products": "F-15EX/F/A-18/KC-46/MQ-28",
+     "note": "軍機與加油機"
+    },
+    {
+     "name": "BAE / Dassault / Airbus",
+     "ticker": "BA.L / AM.PA / AIR.PA",
+     "country": "EU",
+     "share": "歐系戰機/GCAP",
+     "products": "颱風/陣風/GCAP 六代機",
+     "note": "歐洲整機"
+    },
+    {
+     "name": "KAI",
+     "ticker": "047810.KS",
+     "country": "KR",
+     "share": "韓戰機",
+     "products": "KF-21/FA-50/直升機",
+     "note": "韓航空整機+出口"
+    },
+    {
+     "name": "漢翔 AIDC",
+     "ticker": "2634.TW",
+     "country": "TW",
+     "share": "台整機/高教機",
+     "products": "IDF 經國號/勇鷹高教機",
+     "note": "台灣唯一整機商",
+     "src": "https://www.businesstoday.com.tw/article/category/183015/post/202511260081/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "漢翔整機/高教機 (今周刊)",
+     "url": "https://www.businesstoday.com.tw/article/category/183015/post/202511260081/"
+    }
+   ]
+  },
+  {
+   "id": "p-space",
+   "row": "platform",
+   "col": 9,
+   "span": 1,
+   "kind": "rail",
+   "name": "軍用太空 / 衛星 / 飛彈防禦",
+   "nameEn": "Mil Space · Satellites · Missile Defense",
+   "competition": "oligopoly",
+   "single": "⚑ rad-hard 太空鏈 · Northrop/Lockheed/L3Harris 軍衛星；SpaceX 國防發射",
+   "desc": "軍用衛星（偵蒐/通訊/預警）、飛彈防禦（如美 Golden Dome）、太空感測與發射，是 rad-hard 晶片與 EO-IR 感測的最終匯流平台。",
+   "marketSize": "Golden Dome",
+   "growth": "太空軍事化",
+   "share": "null",
+   "analysis": "Northrop（NOC）、Lockheed（LMT）、L3Harris（LHX，太空 ISR/預警）、Boeing 主導軍衛星與飛彈防禦；SpaceX（未上市，國防發射/Starshield）；rad-hard 晶片（BAE/Frontgrade/Microchip）與 EO-IR（Teledyne）為其上游。美 Golden Dome：2026/4/24 太空軍公布上限 $3.2B 之 20 份太空攔截器原型 OTA（Anduril/SpaceX/LMT/NOC/RTX 等 12 家，2028 展示），為新增長極。",
+   "companies": [
+    {
+     "name": "Northrop Grumman",
+     "ticker": "NOC",
+     "country": "US",
+     "share": "軍衛星/太空感測",
+     "products": "預警衛星/太空 ISR/飛彈防禦",
+     "note": "太空+雷達整合"
+    },
+    {
+     "name": "Lockheed Martin",
+     "ticker": "LMT",
+     "country": "US",
+     "share": "軍衛星/防禦",
+     "products": "SBIRS/Next-Gen OPIR/THAAD",
+     "note": "飛彈預警+攔截"
+    },
+    {
+     "name": "L3Harris",
+     "ticker": "LHX",
+     "country": "US",
+     "share": "太空 ISR/預警",
+     "products": "追蹤層衛星/太空感測",
+     "note": "SDA 衛星"
+    },
+    {
+     "name": "SpaceX (Starshield)",
+     "ticker": "—",
+     "country": "US",
+     "share": "國防發射/通訊",
+     "products": "國防發射/Starshield 軍用星",
+     "note": "未上市、國防太空關鍵"
+    },
+    {
+     "name": "rad-hard/感測上游",
+     "ticker": "—",
+     "country": "US",
+     "share": "元件鎖喉",
+     "products": "BAE/Frontgrade rad-hard + Teledyne EO-IR",
+     "note": "見 Tech 層 t-radhard/t-sensor"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "t-radhard"
+    },
+    {
+     "id": "t-sensor"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "SIPRI Top 100 2024 (含太空段)",
+     "url": "https://www.sipri.org/media/press-release/2025/sipri-top-100-arms-producers-see-combined-revenues-surge-states-rush-modernize-and-expand-arsenals"
+    }
+   ]
+  },
+  {
+   "id": "p-land",
+   "row": "platform",
+   "col": 11,
+   "span": 1,
+   "kind": "rail",
+   "name": "陸戰 / 裝甲 / 火砲 / 防空",
+   "nameEn": "Land · Armor · Artillery · Air Defense",
+   "competition": "oligopoly",
+   "single": "null",
+   "desc": "主戰車、裝甲車、自走砲、多管火箭與野戰防空，因烏俄戰爭消耗與補庫存而需求爆發；韓歐為主要出口受惠。",
+   "marketSize": "歐韓爆發",
+   "growth": "砲彈/裝甲補庫存",
+   "share": "null",
+   "analysis": "美 General Dynamics（GD，艾布蘭戰車/史崔克）、RTX/Lockheed（防空）；歐 Rheinmetall（RHM.DE，豹2/155mm 砲彈/防空，需求爆發）、KNDS、BAE；韓 Hyundai Rotem（064350.KS，K2）、Hanwha（K9 自走砲/裝甲，出口歐洲/中東爆發）。台灣以授權生產/在地維保為主。",
+   "companies": [
+    {
+     "name": "General Dynamics",
+     "ticker": "GD",
+     "country": "US",
+     "share": "美裝甲龍頭",
+     "products": "M1 艾布蘭/史崔克/裝甲車",
+     "note": "陸戰平台主力"
+    },
+    {
+     "name": "Rheinmetall",
+     "ticker": "RHM.DE",
+     "country": "DE",
+     "share": "歐裝甲/砲彈",
+     "products": "豹2/155mm 砲彈/防空",
+     "note": "歐洲擴軍最大受惠"
+    },
+    {
+     "name": "Hyundai Rotem",
+     "ticker": "064350.KS",
+     "country": "KR",
+     "share": "K2 戰車出口",
+     "products": "K2 黑豹戰車/裝甲",
+     "note": "波蘭等大單",
+     "src": "https://www.koreaherald.com/article/10628008"
+    },
+    {
+     "name": "Hanwha Aerospace",
+     "ticker": "012450.KS",
+     "country": "KR",
+     "share": "K9 火砲",
+     "products": "K9 自走砲/天弩防空/裝甲",
+     "note": "出口歐洲/中東爆發"
+    },
+    {
+     "name": "BAE / KNDS",
+     "ticker": "BA.L / —",
+     "country": "EU",
+     "share": "歐裝甲/火砲",
+     "products": "CV90/Archer 自走砲 / 豹/凱撒",
+     "note": "KNDS=法德合資未上市"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "f-demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "K-defense 出口爆發 (Korea Herald)",
+     "url": "https://www.koreaherald.com/article/10628008"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "f-c4isr",
+   "f-integration"
+  ],
+  [
+   "f-avionics",
+   "f-integration"
+  ],
+  [
+   "f-c4isr",
+   "f-eu-primes"
+  ],
+  [
+   "f-avionics",
+   "f-eu-primes"
+  ],
+  [
+   "f-c4isr",
+   "f-asia-primes"
+  ],
+  [
+   "f-avionics",
+   "f-asia-primes"
+  ],
+  [
+   "f-integration",
+   "f-demand"
+  ],
+  [
+   "f-eu-primes",
+   "f-demand"
+  ],
+  [
+   "f-asia-primes",
+   "f-demand"
+  ],
+  [
+   "t-radhard",
+   "f-c4isr"
+  ],
+  [
+   "t-gan",
+   "f-c4isr"
+  ],
+  [
+   "t-sensor",
+   "f-c4isr"
+  ],
+  [
+   "t-milcomp",
+   "f-c4isr"
+  ],
+  [
+   "t-milcomp",
+   "f-avionics"
+  ],
+  [
+   "t-fab",
+   "f-c4isr"
+  ],
+  [
+   "t-fab",
+   "t-radhard"
+  ],
+  [
+   "t-fab",
+   "t-gan"
+  ],
+  [
+   "t-radhard",
+   "p-missile"
+  ],
+  [
+   "t-missile-elec",
+   "p-missile"
+  ],
+  [
+   "t-radhard",
+   "p-space"
+  ],
+  [
+   "t-sensor",
+   "p-space"
+  ],
+  [
+   "t-sensor",
+   "p-uav"
+  ],
+  [
+   "p-uav",
+   "f-demand"
+  ],
+  [
+   "p-missile",
+   "f-demand"
+  ],
+  [
+   "p-naval",
+   "f-demand"
+  ],
+  [
+   "p-air",
+   "f-demand"
+  ],
+  [
+   "p-space",
+   "f-demand"
+  ],
+  [
+   "p-land",
+   "f-demand"
+  ]
+ ],
+ "_proposed": {}
+}

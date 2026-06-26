@@ -1,0 +1,649 @@
+{
+ "id": "shipbuilding",
+ "tab": "造船超級循環",
+ "title": "商用造船超級循環供應鏈 (Commercial Shipbuilding Super-Cycle — LNG・MASGA・Eco-Ships)",
+ "subtitle": "商用造船在 2026 進入「結構性超級循環」：全球商用造船在手訂單 Q1 2026 達 1.91 億 CGT、為 17 年新高（佔現役船隊 17%，2011 年以來最高），新接訂單 YoY +40%，今天下單交期已拉到 3.8 年（2019 年僅 2.4 年），不是景氣循環而是『產能結構性短缺』。三大引擎同時點火：①LNG 船——全球在建 LNG 船逾 400 艘、近現役船隊一半，2026/2027 各交付約 100 艘，第 1,000 艘 LNG 船將於 2027 Q2 下水，韓廠握 70~75% 訂單、174,000 cbm 標準船價已由 2022 年 $2.1 億漲到 $2.63 億並衝 $2.8 億；②美國 MASGA（Make American Shipbuilding Great Again）——美韓 $3,500 億投資案以造船為核心，韓華以 $50 億改造費城 Philly Shipyard、年產能由 <2 艘拚到 20 艘，並接下近 50 年來首批美國出口用 LNG 船；③環保船替換潮——甲醇/氨/LNG 雙燃料船成新接主流，IMO 減碳法規逼換船。價值鏈：船用鋼板（POSCO 9% Ni 鋼）/曲軸/船用引擎（HD 現代船舶引擎 071970）/LNG 圍護系統（GTT 薄膜近壟斷）/塗料（Chugoku/Jotun/Hempel/KCC 前九大佔 >90%）→ 船廠總裝（韓 HD/三星/韓華、中 CSSC、日 三菱/川崎）→ LNG 船/貨櫃/油輪/環保船 → 船東/租賃（韓華 Shipping）＋ LNG 出口。各龍頭 2026 數字：HD 韓國造船海洋（009540.KS）2025 營收 $205 億、營業利益 +172%、LNG 船全球市佔 25%、在手訂單 3~4 年；三星重工（010140.KS）在手 $265 億、LNG 船 84 艘、2026 營業利益估 1.18 兆韓元；韓華海洋（042660.KS）MASGA 急先鋒、首入美海軍 NGLS 設計；中國船舶（600150.SS）CSIC 併購於 2026/1 完成、成全球最大造船集團、在手 530+ 艘、全球新接訂單市佔約 17%；日本三菱重工（7011.T）/川崎重工（7012.T）以 LNG/氨/LCO2 船重返賽局。絃外之音：超級循環真正的『定價權卡位點』不在總裝船廠（韓中產能仍在擴、毛利受鋼價與工資擠壓），而在『無可替代的關鍵零組件壟斷』——GTT 薄膜圍護系統幾乎獨佔 LNG 船貨艙設計（按艘抽權利金、訂單滿到 2029）、雙燃料船用引擎被 HD 現代/MAN-ES 體系把持、9% Ni 鋼 / 低溫鋼板由 POSCO 等少數鋼廠供應——這些『賣鏟人』隨每一艘高價環保船下單而受惠，且不必承擔船廠的產能與履約風險。台股對應：台船（2208.TW）接陽明/長榮甲醇雙燃料 feeder 船在地單、政府產業政策加持。⚠ 與既有 defense 主題（軍艦/國防造船/晶片視角）部分重疊；本主題聚焦『商用全供應鏈 × 超級循環』視角。非投資建議。",
+ "category": "industrial",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 7
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "全球在手訂單",
+   "v": "1.91億CGT",
+   "sub": "Q1 2026 達 17 年新高（佔現役船隊 17%）；新接訂單 YoY +40%",
+   "hot": true
+  },
+  {
+   "k": "催化／風險",
+   "v": 2,
+   "sub": "LNG 船滿載 + MASGA 在地化 + 環保船替換潮·韓中產能擴張＋鋼價工資擠壓＋LNG 長線供過於求疑慮",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "upstream",
+   "label": "上游：船用鋼板/曲軸・船用引擎・LNG圍護/塗料/海事配件",
+   "main": false
+  },
+  {
+   "id": "yard",
+   "label": "中游：船廠總裝（超級循環的卡位戰場）",
+   "main": true
+  },
+  {
+   "id": "vessel",
+   "label": "下游：LNG船/貨櫃/油輪/環保船・美國MASGA在地化",
+   "main": false
+  },
+  {
+   "id": "demand",
+   "label": "終端：船東・租賃 + LNG 出口",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "steel_forging",
+   "row": "upstream",
+   "col": 1,
+   "span": 1,
+   "kind": "stage",
+   "name": "船用鋼板 / 曲軸 / 鍛件",
+   "nameEn": "Marine Steel Plate · Crankshafts · Forgings",
+   "competition": "oligopoly",
+   "single": "隱性卡位 · LNG 船貨艙專用 9% Ni 鋼 / 低溫鋼板只有 POSCO 等少數鋼廠能穩定量產，鋼價上漲直接壓船廠毛利",
+   "desc": "造船最大宗原材料——厚鋼板（船體）＋ LNG 船專用 9% Ni 鋼 / 低溫壓力容器鋼板 / 高錳鋼 ＋ 主機曲軸等大型鍛件。鋼板約佔船體成本兩成，價格與供給是船廠毛利的關鍵變數。",
+   "marketSize": "造船用鋼板全球數百億美元；高強度/低溫鋼為高毛利利基",
+   "growth": "POSCO 2026 Q2 全產品線漲價、現代製鐵跟進；造船需求支撐高強度船板",
+   "share": "null",
+   "analysis": "POSCO（005490.KS）供應全球頂級造船鋼，含 LNG 船用 9% Ni 鋼、低溫壓力容器鋼板、高錳鋼——這類低溫材料技術門檻高、能穩定量產者寥寥，是 LNG 超級循環的隱性受惠者。但 2026 Q2 POSCO 對全產品線漲價、現代製鐵跟進，鋼價上漲反向擠壓船廠毛利，形成上下游利益拉鋸。日本製鐵（5401.T）、中國寶武等供應一般船板與大型鍛件（曲軸/船尾軸）。絃外之音：船板是『循環順風但定價權有限』的環節——需求隨造船潮上升，但鋼廠之間競爭激烈，真正稀缺的是 LNG 低溫鋼利基。",
+   "companies": [
+    {
+     "name": "POSCO Holdings",
+     "ticker": "005490.KS",
+     "country": "KR",
+     "share": "造船鋼/LNG 低溫鋼龍頭",
+     "products": "厚鋼板 / 9% Ni 鋼 / 低溫壓力容器鋼板 / 高錳鋼",
+     "note": "供全球頂級造船鋼；2026 Q2 全產品線漲價、Q1 淨利 5,430 億韓元",
+     "src": "https://www.poscointl.com/eng/steelIndustry?business=shipbuilding"
+    },
+    {
+     "name": "Hyundai Steel",
+     "ticker": "004020.KS",
+     "country": "KR",
+     "share": "韓國第二大鋼廠",
+     "products": "造船厚板 / 船體用鋼",
+     "note": "跟進 POSCO 漲價；HD 現代體系內供應",
+     "src": "https://en.sedaily.com/finance/2026/04/07/posco-raises-prices-across-all-steel-products-amid-war-shock"
+    },
+    {
+     "name": "Nippon Steel",
+     "ticker": "5401.T",
+     "country": "JP",
+     "share": "日系造船鋼/鍛件",
+     "products": "船板 / 大型鍛件 / 曲軸料",
+     "note": "供日本船廠與全球高端船板",
+     "src": "https://www.openpr.com/news/4545997/global-shipbuilding-activity-and-fleet-modernization-programs"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "yard_assembly"
+    }
+   ],
+   "sources": [
+    {
+     "label": "POSCO INTERNATIONAL：造船用鋼（9% Ni/低溫鋼）",
+     "url": "https://www.poscointl.com/eng/steelIndustry?business=shipbuilding"
+    },
+    {
+     "label": "POSCO 2026 Q2 全產品線漲價（Seoul Economic Daily）",
+     "url": "https://en.sedaily.com/finance/2026/04/07/posco-raises-prices-across-all-steel-products-amid-war-shock"
+    },
+    {
+     "label": "全球造船鋼板需求受船隊現代化支撐 (openPR)",
+     "url": "https://www.openpr.com/news/4545997/global-shipbuilding-activity-and-fleet-modernization-programs"
+    }
+   ]
+  },
+  {
+   "id": "marine_engine",
+   "row": "upstream",
+   "col": 2,
+   "span": 1,
+   "kind": "stage",
+   "name": "船用引擎 / 推進系統",
+   "nameEn": "Marine Engines & Propulsion",
+   "competition": "oligopoly",
+   "single": "技術寡占 · 雙燃料（LNG/甲醇/氨）低速主機被 MAN-ES 授權體系把持，HD 現代船舶引擎 071970 為全球最大授權製造商",
+   "desc": "船舶的『心臟』——低速二行程主機 ＋ 中速四行程機，環保船改用 LNG/甲醇/氨雙燃料引擎是替換潮核心。設計 IP 集中於 MAN Energy Solutions（德）與 WinGD（瑞士/中資），製造由韓/日授權廠承接。",
+   "marketSize": "船用引擎全球百億美元級；雙燃料機為高成長利基",
+   "growth": "HD 現代船舶引擎引擎/機械事業 2025 Q3 營收 +31%、營益 +123%、營益率 20.8%",
+   "share": "null",
+   "analysis": "船用引擎是雙寡占結構：①設計 IP——MAN Energy Solutions（德，福斯集團旗下）與 WinGD（瑞士，中船 CSSC 控股）幾乎包辦全球低速主機授權；②製造授權——HD 現代船舶引擎（071970.KS，原 STX 重工，2024 改名）為全球最大船用引擎製造商，首家國產化 LNG 船用 51/60DF 雙燃料機、並推氨雙燃料機，2025 Q3 引擎/機械事業營收 1 兆韓元（+31%）、營益 +123%、營益率 20.8%。HD 現代重工（329180.KS）自有引擎機械部門同步受惠。絃外之音：環保船替換潮中，引擎是『每艘船都要、且技術鎖定』的關鍵零件——雙燃料機溢價高，是比船體更乾淨的受惠者。（註：seed 中的 082740 為誤植，HSD/STX 重工現為 HD 現代船舶引擎，正確代號 071970.KS。）",
+   "companies": [
+    {
+     "name": "HD 現代船舶引擎",
+     "ticker": "071970.KS",
+     "country": "KR",
+     "share": "全球最大船用引擎製造商",
+     "products": "低速主機 / LNG·甲醇·氨雙燃料機（MAN-ES 授權）",
+     "note": "原 STX 重工 2024 改名；首家國產化 51/60DF LNG 雙燃料機；2025 Q3 引擎事業 +31%",
+     "src": "https://www.koreaherald.com/article/3441230"
+    },
+    {
+     "name": "HD 現代重工（引擎機械）",
+     "ticker": "329180.KS",
+     "country": "KR",
+     "share": "自有引擎機械部門",
+     "products": "HiMSEN 中速機 / 大型低速機 / 氨雙燃料機",
+     "note": "2025 Q3 引擎/機械營收 1 兆韓元(+31%)、營益 +123%、營益率 20.8%",
+     "src": "https://www.rivieramm.com/news-content-hub/news-content-hub/class-gives-green-light-to-new-hhi-emd-ammonia-dual-fuel-four-stroke-engine-86527"
+    },
+    {
+     "name": "MAN Energy Solutions",
+     "ticker": "VOW3.DE",
+     "country": "DE",
+     "share": "低速主機設計 IP 龍頭",
+     "products": "MAN B&W 二行程機設計授權 / 雙燃料技術",
+     "note": "福斯集團旗下；授權全球韓日中製造廠",
+     "src": "https://shipandbunker.com/news/apac/200559-hd-hyundai-validates-ethanol-use-on-its-dual-fuel-marine-engine"
+    },
+    {
+     "name": "WinGD",
+     "ticker": "—",
+     "country": "CH",
+     "share": "低速主機設計 IP 次強",
+     "products": "X-DF 雙燃料機設計",
+     "note": "中船 CSSC 控股；瑞士 Winterthur 起家",
+     "src": "https://en.wikipedia.org/wiki/China_State_Shipbuilding_Corporation"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "yard_assembly"
+    }
+   ],
+   "sources": [
+    {
+     "label": "STX 重工改名 HD 現代船舶引擎（Korea Herald）",
+     "url": "https://www.koreaherald.com/article/3441230"
+    },
+    {
+     "label": "HD 現代氨雙燃料機獲船級認可 (Riviera)",
+     "url": "https://www.rivieramm.com/news-content-hub/news-content-hub/class-gives-green-light-to-new-hhi-emd-ammonia-dual-fuel-four-stroke-engine-86527"
+    }
+   ]
+  },
+  {
+   "id": "containment_coating",
+   "row": "upstream",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "LNG 圍護系統 / 塗料 / 海事配件",
+   "nameEn": "LNG Containment · Coatings · Marine Equipment",
+   "competition": "monopoly",
+   "single": "真壟斷 · GTT 薄膜圍護系統幾乎獨佔 LNG 船貨艙設計，每艘 LNG 船按艘抽權利金、訂單能見度到 2029",
+   "desc": "LNG 船最關鍵的差異化技術——薄膜式圍護系統（−163°C 貨艙）＋ 防汙/船殼塗料 ＋ 各式海事配件（閥件、泵、再液化）。圍護系統幾近壟斷，是整條供應鏈定價權最強的一環。",
+   "marketSize": "LNG 圍護按 LNG 船訂單抽成；船用塗料 2026 約 $60 億（CAGR ~5.6%）",
+   "growth": "GTT 訂單滿到 2028~2029；船用塗料前九大佔 >90%",
+   "share": "null",
+   "analysis": "GTT（GTT.PA，法國）以 Mark III / NO96 薄膜圍護系統幾乎獨佔 LNG 船貨艙設計——韓中日船廠每接一艘 LNG 船幾乎都要向 GTT 付權利金，2026 已自三星重工、HD 韓國造船拿下多艘 200,000 cbm 新船貨艙設計單、交付排到 2028~2029，是整條造船供應鏈『定價權最高、最無產能風險』的賣鏟人。船用塗料市場 2026 約 $60 億（CAGR ~5.6%），Chugoku Marine Paints（4617.T）、Jotun（挪威私有）、AkzoNobel（AKZA.AS）、PPG（PPG）、Hempel（丹麥私有）、KCC（002380.KS）、Kansai/Nippon Paint 前九大佔 >90%，IMO 減碳逼船東採用低阻力防汙塗料。絃外之音：GTT 是本主題『絃外之音』的核心——投資造船超級循環，與其賭波動的總裝船廠，不如卡位這種隨每艘 LNG 船下單而抽成的壟斷供應商。",
+   "companies": [
+    {
+     "name": "GTT (Gaztransport & Technigaz)",
+     "ticker": "GTT.PA",
+     "country": "FR",
+     "share": "LNG 薄膜圍護系統近壟斷",
+     "products": "Mark III Flex / NO96 薄膜圍護系統設計",
+     "note": "韓中日船廠每艘 LNG 船付權利金；2026 接 SHI/HD 多艘 200k cbm 設計、交付到 2029",
+     "src": "https://www.marinelink.com/news/gtt-gets-design-work-industryfirst-539475"
+    },
+    {
+     "name": "Chugoku Marine Paints",
+     "ticker": "4617.T",
+     "country": "JP",
+     "share": "船用塗料前段班",
+     "products": "防汙塗料 / 船殼塗料",
+     "note": "全球前九大塗料商之一（合計佔 >90%）",
+     "src": "https://www.openpr.com/news/4535223/marine-coatings-market-size-propelled-by-7-8-cagr"
+    },
+    {
+     "name": "AkzoNobel (International)",
+     "ticker": "AKZA.AS",
+     "country": "NL",
+     "share": "船用塗料龍頭群",
+     "products": "International 防汙/低阻力塗料",
+     "note": "IMO 減碳逼換低阻力塗料；2036 市場估 $103.8 億",
+     "src": "https://www.financialcontent.com/article/accwirecq-2026-4-2-global-marine-coatings-market-to-reach-usd-1038-billion-by-2036-asia-pacific-leads-while-akzo-nobel-hempel-drive-innovation"
+    },
+    {
+     "name": "PPG Industries",
+     "ticker": "PPG",
+     "country": "US",
+     "share": "船用塗料龍頭群",
+     "products": "Sigma / PPG 海事塗料",
+     "note": "前九大塗料商之一",
+     "src": "https://www.openpr.com/news/4535223/marine-coatings-market-size-propelled-by-7-8-cagr"
+    },
+    {
+     "name": "KCC",
+     "ticker": "002380.KS",
+     "country": "KR",
+     "share": "韓系船用塗料",
+     "products": "防汙/船殼塗料",
+     "note": "供韓國三大船廠；前九大塗料商之一",
+     "src": "https://www.mordorintelligence.com/industry-reports/south-korea-marine-coatings-market"
+    },
+    {
+     "name": "Hempel / Jotun",
+     "ticker": "—",
+     "country": "DK",
+     "share": "歐系船用塗料雙雄",
+     "products": "防汙/低阻力塗料",
+     "note": "丹麥 Hempel、挪威 Jotun 皆私有；前九大塗料商",
+     "src": "https://www.businesswire.com/news/home/20211027005545/en/Global-Hull-Coatings-Market-Outlook-to-2026-Featuring-Hempel-AS-Jotun-BASF-SE-Akzo-Nobel-N.V.-PPG-Industries---ResearchAndMarkets.com"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "yard_assembly"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GTT 取得多船 LNG 薄膜圍護設計單 (MarineLink)",
+     "url": "https://www.marinelink.com/news/gtt-gets-design-work-industryfirst-539475"
+    },
+    {
+     "label": "船用塗料市場 2036 達 $103.8 億 (FinancialContent)",
+     "url": "https://www.financialcontent.com/article/accwirecq-2026-4-2-global-marine-coatings-market-to-reach-usd-1038-billion-by-2036-asia-pacific-leads-while-akzo-nobel-hempel-drive-innovation"
+    },
+    {
+     "label": "船用塗料前九大佔 >90% (openPR)",
+     "url": "https://www.openpr.com/news/4535223/marine-coatings-market-size-propelled-by-7-8-cagr"
+    }
+   ]
+  },
+  {
+   "id": "yard_assembly",
+   "row": "yard",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "船廠總裝（韓・中・日）",
+   "nameEn": "Shipyard Assembly (Korea · China · Japan)",
+   "competition": "oligopoly",
+   "single": "卡位戰場 · 韓廠握 70~75% LNG 船訂單、交期 3~4 年滿載；中國 CSSC 併購成全球最大集團（在手 530+ 艘）",
+   "desc": "超級循環的核心戰場——把鋼板、引擎、圍護系統、塗料總裝成船。產能由韓（高端 LNG/環保船）、中（量大、全船型）、日（重返高端）三國寡占，交期已拉到 3.8 年，船價隨產能滿載而上漲。",
+   "marketSize": "全球在手訂單 1.91 億 CGT（17 年新高，佔船隊 17%）",
+   "growth": "新接訂單 YoY +40%；交期 3.8 年（vs 2019 年 2.4 年）",
+   "share": "null",
+   "analysis": "韓國三大廠（高端 LNG/環保船霸主）：HD 韓國造船海洋（009540.KS）2025 營收 $205 億、營業利益 +172%、LNG 船全球市佔 25%、在手訂單 3~4 年、氣體船佔在手逾 60%；三星重工（010140.KS）在手 $265 億、LNG 船 84 艘（$191 億）、2026 營益估 1.18 兆韓元；韓華海洋（042660.KS）MASGA 急先鋒。中國 CSSC（600150.SS）於 2026/1 完成 CSIC 併購、成全球最大造船集團、在手 530+ 艘、5,400 萬載重噸、全球新接訂單市佔約 17%、2025 上半年中國拿下全球 68.3% 新接訂單。日本三菱重工（7011.T）/川崎重工（7012.T）以 LNG/氨/LCO2 船重返高端。絃外之音：總裝是『循環最直接但定價權受限』的環節——韓中產能仍在擴、毛利受鋼價與工資擠壓、且 LNG 長線有供過於求疑慮；真正穩的受惠在上游壟斷零組件（GTT/引擎/低溫鋼）。",
+   "companies": [
+    {
+     "name": "HD 韓國造船海洋",
+     "ticker": "009540.KS",
+     "country": "KR",
+     "share": "全球龍頭、LNG 船市佔 25%",
+     "products": "LNG 船 / 貨櫃 / 油輪 / 環保船（控股 HD 現代重工/尾浦）",
+     "note": "2025 營收 $205 億、營益 +172%、在手 3~4 年；氣體船佔在手 >60%",
+     "src": "https://maritime-executive.com/article/south-korean-shipbuilders-achieve-market-share-gains-for-2025"
+    },
+    {
+     "name": "HD 現代重工",
+     "ticker": "329180.KS",
+     "country": "KR",
+     "share": "韓最大單一船廠",
+     "products": "LNG 船 / 大型貨櫃 / 油輪 / 海工",
+     "note": "HD 韓國造船海洋核心子公司；引擎機械同步受惠",
+     "src": "https://securities.miraeasset.com/bbs/download/2139697.pdf?attachmentId=2139697"
+    },
+    {
+     "name": "三星重工",
+     "ticker": "010140.KS",
+     "country": "KR",
+     "share": "LNG 船/海工強者",
+     "products": "LNG 船 / 浮式 LNG / 大型貨櫃",
+     "note": "在手 $265 億、LNG 船 84 艘($191億)；2026 營益估 1.18 兆韓元",
+     "src": "https://www.ainvest.com/news/samsung-heavy-industries-lng-carrier-boom-implications-long-term-earnings-recovery-2508/"
+    },
+    {
+     "name": "韓華海洋",
+     "ticker": "042660.KS",
+     "country": "KR",
+     "share": "MASGA 急先鋒",
+     "products": "LNG 船 / 油輪 / 潛艦 / 美海軍維修",
+     "note": "首入美海軍 NGLS 概念設計；$50 億改造費城船廠",
+     "src": "https://en.sedaily.com/news/2026/03/31/hanwha-breaks-into-us-navy-shipbuilding-for-first-time"
+    },
+    {
+     "name": "HD 現代尾浦",
+     "ticker": "010620.KS",
+     "country": "KR",
+     "share": "中型船/MR 油輪/環保 feeder",
+     "products": "中型油輪 / 甲醇雙燃料 feeder / PCTC",
+     "note": "HD 韓國造船海洋子公司；中小型環保船主力",
+     "src": "https://maritime-executive.com/article/south-korean-shipbuilders-achieve-market-share-gains-for-2025"
+    },
+    {
+     "name": "中國船舶 (CSSC)",
+     "ticker": "600150.SS",
+     "country": "CN",
+     "share": "全球最大造船集團",
+     "products": "全船型（貨櫃/散貨/油輪/LNG/海工）",
+     "note": "2026/1 完成 CSIC 併購；在手 530+ 艘、5,400 萬 DWT、新接訂單市佔 ~17%",
+     "src": "https://www.maritimenews.com/cssc/cssc-csic-merger-completed"
+    },
+    {
+     "name": "三菱重工 / 川崎重工",
+     "ticker": "7011.T",
+     "country": "JP",
+     "share": "日系重返高端",
+     "products": "LNG 船 / 氨/LCO2 船 / 郵輪 / LNG 動力車運船",
+     "note": "MHI 與今治 MILES JV 設計 LNG/LCO2 船；KHI 7012.T 同列",
+     "src": "https://www.turbomachinerymag.com/view/mitsubishi-heavy-industries-imabari-shipbuilding-rename-mi-lng-to-miles"
+    },
+    {
+     "name": "台船 CSBC",
+     "ticker": "2208.TW",
+     "country": "TW",
+     "share": "台股造船在地play",
+     "products": "甲醇雙燃料 feeder / 油輪 / 軍艦",
+     "note": "接陽明/長榮甲醇雙燃料 feeder 在地單；政府產業政策加持、私募增資擴產",
+     "src": "https://splash247.com/evergreen-and-yang-ming-in-discussions-for-multiple-feeder-orders-on-home-soil/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "steel_forging"
+    },
+    {
+     "id": "marine_engine"
+    },
+    {
+     "id": "containment_coating"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "vessel_types"
+    },
+    {
+     "id": "masga"
+    }
+   ],
+   "sources": [
+    {
+     "label": "韓國船廠 2025 市佔提升 (Maritime Executive)",
+     "url": "https://maritime-executive.com/article/south-korean-shipbuilders-achieve-market-share-gains-for-2025"
+    },
+    {
+     "label": "造船超級循環：1.91 億 CGT、17 年新高 (Macronotes)",
+     "url": "https://macronotes.substack.com/p/the-17-year-orderbook-nobodys-tracking"
+    },
+    {
+     "label": "CSSC-CSIC 併購完成、成全球最大造船 (MaritimeNews)",
+     "url": "https://www.maritimenews.com/cssc/cssc-csic-merger-completed"
+    }
+   ]
+  },
+  {
+   "id": "vessel_types",
+   "row": "vessel",
+   "col": 1,
+   "span": 2,
+   "kind": "stage",
+   "name": "LNG 船 / 貨櫃 / 油輪 / 環保船",
+   "nameEn": "LNG Carriers · Boxships · Tankers · Eco-Ships",
+   "competition": "highgrowth",
+   "single": "需求引擎 · 全球在建 LNG 船逾 400 艘（近現役船隊一半），第 1,000 艘 LNG 船將於 2027 Q2 下水",
+   "desc": "超級循環的『產品形態』——高價值 LNG 船領漲、貨櫃/油輪換新、甲醇/氨/LNG 雙燃料環保船因 IMO 減碳成新接主流。船型結構決定供應鏈各環節的受惠強度。",
+   "marketSize": "在建 LNG 船 400+ 艘；174k cbm 船價 $2.63 億並衝 $2.8 億",
+   "growth": "LNG 船 2026/2027 各交付約 100 艘；環保船佔新接比重快速上升",
+   "share": "null",
+   "analysis": "船型結構是供應鏈的需求引擎：①LNG 船——全球在建逾 400 艘（近現役船隊一半），韓廠握 70~75%、中廠 25~30%，174,000 cbm 標準船價由 2022 年 $2.1 億漲到 $2.63 億並衝 $2.8 億，每艘都拉動 GTT 圍護＋雙燃料引擎＋9% Ni 鋼；②貨櫃船——陽明、長榮等 2026 大舉下單 LNG/甲醇雙燃料船；③油輪/散貨——換新與環保替換；④環保船——甲醇/氨/LNG 雙燃料船因 IMO 2030/2050 減碳成新接主流，溢價最高。絃外之音：投資人該追的不是『船型』而是『每種高價船型背後不可替代的零件供應商』——LNG 船利好 GTT、環保船利好雙燃料引擎，這才是把船型熱潮轉成穩定現金流的方式。",
+   "companies": [
+    {
+     "name": "LNG 船（韓廠主導）",
+     "ticker": "—",
+     "country": "KR",
+     "share": "在建 400+ 艘、韓佔 70~75%",
+     "products": "174k~200k cbm LNG 運輸船",
+     "note": "船價 $2.63 億→$2.8 億；每艘拉動 GTT+雙燃料引擎+低溫鋼",
+     "src": "https://www.rivieramm.com/news-content-hub/news-content-hub/countdown-to-the-1000-lng-carrier-begins-86242"
+    },
+    {
+     "name": "環保船（甲醇/氨/LNG 雙燃料）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "新接訂單主流",
+     "products": "甲醇/氨/LNG 雙燃料貨櫃·油輪·PCTC",
+     "note": "IMO 2030/2050 減碳逼換船；溢價最高、利好雙燃料引擎",
+     "src": "https://patrickgros.medium.com/future-demand-for-merchant-ship-types-2025-2045-66f909c15501"
+    },
+    {
+     "name": "貨櫃船（船公司大單）",
+     "ticker": "—",
+     "country": "GLOBAL",
+     "share": "2026 新接放量",
+     "products": "LNG/甲醇雙燃料大型貨櫃船",
+     "note": "陽明/長榮/CMA CGM 等 2026 大舉下單；CMA CGM 12 艘 LNG 貨櫃單",
+     "src": "https://www.czapp.com/analyst-insights/ocean-carriers-kick-off-2026-with-massive-newbuild-orders/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "yard_assembly"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "shipowner_lng"
+    }
+   ],
+   "sources": [
+    {
+     "label": "LNG 船隊 10 年內倍增、第 1,000 艘 2027 下水 (Riviera)",
+     "url": "https://www.rivieramm.com/news-content-hub/news-content-hub/countdown-to-the-1000-lng-carrier-begins-86242"
+    },
+    {
+     "label": "2026 船公司大舉新接訂單 (CZapp)",
+     "url": "https://www.czapp.com/analyst-insights/ocean-carriers-kick-off-2026-with-massive-newbuild-orders/"
+    },
+    {
+     "label": "LNG 船 2026 在建/交期/船價 (ShipFinex)",
+     "url": "https://www.shipfinex.com/blog/lng-carrier-construction-activity-orderbook"
+    }
+   ]
+  },
+  {
+   "id": "masga",
+   "row": "vessel",
+   "col": 3,
+   "span": 1,
+   "kind": "stage",
+   "name": "美國 MASGA 在地化",
+   "nameEn": "US MASGA Localization",
+   "competition": "emerging",
+   "single": "政策催化 · 美韓 $3,500 億投資案以造船為核心；韓華 $50 億改造費城船廠、年產能拚 <2 → 20 艘",
+   "desc": "Make American Shipbuilding Great Again——美國重建商船產能的政策推力，韓廠以技術＋資本在地化（收購/擴建美國船廠），承接美國出口用 LNG 船與海軍訂單，是超級循環的『地緣政治新引擎』。",
+   "marketSize": "美韓 $3,500 億投資案、造船為核心；費城船廠 $50 億擴建",
+   "growth": "韓華接近 50 年來首批美國出口用 LNG 船；首入美海軍 NGLS 設計",
+   "share": "null",
+   "analysis": "MASGA 是超級循環的地緣政治新引擎：美韓於 2025 達成 $3,500 億投資案、造船列為核心，韓華集團以 $1 億收購費城 Philly Shipyard、再投 $50 億增建 2 塢 3 碼頭、年產能由 <2 艘拚到 20 艘。韓華 Shipping LLC 向費城船廠下單 2 艘美國籍 LNG 船（約 $5.04 億）——近 50 年來首批美國出口用 LNG 船，並接 10 艘 MR 油輪；韓華海洋更首度進入美海軍 NGLS 概念設計，HD 現代亦布局美國船廠。絃外之音：MASGA 短期是『題材＋訂單能見度』，但美國本土造船成本高、產能爬坡慢，真正受惠的是輸出技術與管理的韓廠母公司（韓華海洋、HD 現代），而非美國本土資產本身。",
+   "companies": [
+    {
+     "name": "韓華海洋 (Hanwha Ocean)",
+     "ticker": "042660.KS",
+     "country": "KR",
+     "share": "MASGA 領頭羊",
+     "products": "費城船廠擴建 / 美籍 LNG 船 / 美海軍 NGLS",
+     "note": "$50 億改造費城船廠、年產能拚 20 艘；首入美海軍設計",
+     "src": "https://www.hanwha.com/newsroom/news/press-releases/hanwha-announces-5-billion-philly-shipyard-investment-as-part-of-south-koreas-commitment-to-us-shipbuilding-growth.do"
+    },
+    {
+     "name": "韓華 Shipping (船東)",
+     "ticker": "—",
+     "country": "US",
+     "share": "美籍 LNG 船船東",
+     "products": "2 艘美籍 LNG 船 / 10 艘 MR 油輪訂單",
+     "note": "近 50 年首批美國出口用 LNG 船（約 $5.04 億）；費城船廠建造",
+     "src": "https://maritime-executive.com/article/hanwha-shipping-details-largest-u-s-commercial-vessel-order-in-20-years"
+    },
+    {
+     "name": "HD 現代 (美國布局)",
+     "ticker": "267250.KS",
+     "country": "KR",
+     "share": "HD 集團控股",
+     "products": "美國造船合作 / 技術輸出",
+     "note": "HD 集團持股造船/引擎；亦探索美國船廠合作",
+     "src": "https://www.seoulz.com/korea-us-shipbuilding-alliance/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "yard_assembly"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "shipowner_lng"
+    }
+   ],
+   "sources": [
+    {
+     "label": "韓華 $50 億費城船廠投資（Hanwha 官網）",
+     "url": "https://www.hanwha.com/newsroom/news/press-releases/hanwha-announces-5-billion-philly-shipyard-investment-as-part-of-south-koreas-commitment-to-us-shipbuilding-growth.do"
+    },
+    {
+     "label": "韓華 Shipping 20 年來最大美國商船訂單 (Maritime Executive)",
+     "url": "https://maritime-executive.com/article/hanwha-shipping-details-largest-u-s-commercial-vessel-order-in-20-years"
+    },
+    {
+     "label": "美韓 $3,500 億投資案、造船為核心 (Lloyd's List)",
+     "url": "https://www.lloydslist.com/LL1155295/US-South-Korea-reach-350bn-investment-deal-with-shipbuilding-focus"
+    }
+   ]
+  },
+  {
+   "id": "shipowner_lng",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端：船東・租賃 + LNG 出口",
+   "nameEn": "Shipowners · Leasing · LNG Export",
+   "competition": "fragmented",
+   "single": "null",
+   "desc": "造船的終端需求——船公司/船東下單、租賃公司融資造船、LNG 出口商長租運能，這些需求回頭驅動上述全供應鏈的訂單與船價。",
+   "marketSize": "全球海運/LNG 出口需求；LNG 出口擴張拉動運能",
+   "growth": "美國 LNG 出口擴張 + 環保法規換船 + 租賃融資造船",
+   "share": "null",
+   "analysis": "需求端是造船超級循環的根本引擎：①LNG 出口商——美國 LNG 出口擴張需長期運能，船東/出口商鎖長約下單 LNG 船；②船公司——陽明（2609.TW）、長榮（2603.TW）、馬士基、CMA CGM、日本郵船（9101.T）大舉下環保雙燃料船；③船東/租賃——韓華 Shipping 等以船東身分回購自家船廠運能、租賃公司提供造船融資。絃外之音：終端需求分散且循環性強（LNG 長線有供過於求疑慮、運價波動），這正是為何『卡位上游壟斷零組件』比『賭終端船東或總裝船廠』更穩——供應鏈愈往上游，受惠愈與『下單量』正相關而非『運價』正相關。",
+   "companies": [
+    {
+     "name": "日本郵船 (NYK)",
+     "ticker": "9101.T",
+     "country": "JP",
+     "share": "LNG/汽車運/貨櫃船東",
+     "products": "LNG 船 / 環保船隊 / LNG 動力船",
+     "note": "全球大型船東；下環保雙燃料船拉動造船需求",
+     "src": "https://patrickgros.medium.com/future-demand-for-merchant-ship-types-2025-2045-66f909c15501"
+    },
+    {
+     "name": "陽明海運 / 長榮海運",
+     "ticker": "2603.TW",
+     "country": "TW",
+     "share": "台灣貨櫃船東",
+     "products": "LNG/甲醇雙燃料貨櫃船訂單",
+     "note": "陽明(2609)向 HD/韓華下 LNG 雙燃料船；長榮(2603)甲醇船；台船 feeder 在地單",
+     "src": "https://maritime-executive.com/article/yang-ming-orders-containerships-with-new-lng-technology-from-hanwha-ocean"
+    },
+    {
+     "name": "CMA CGM / Maersk 等船公司",
+     "ticker": "—",
+     "country": "FR",
+     "share": "全球貨櫃船東",
+     "products": "LNG/甲醇雙燃料船大單",
+     "note": "CMA CGM 向 HD 下 12 艘 LNG 貨櫃船($25.7 億)；推升船價與訂單",
+     "src": "https://moatalpha.com/hd-korea-shipbuilding-analysis-2026/"
+    },
+    {
+     "name": "LNG 出口商 / 租賃",
+     "ticker": "—",
+     "country": "US",
+     "share": "終端運能需求",
+     "products": "長約租運能 / 造船融資",
+     "note": "美國 LNG 出口擴張鎖長約下單 LNG 船；租賃融資放大造船需求",
+     "src": "https://www.shipfinex.com/blog/lng-carrier-construction-activity-orderbook"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "vessel_types"
+    },
+    {
+     "id": "masga"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "陽明向韓華下 LNG 技術貨櫃船 (Maritime Executive)",
+     "url": "https://maritime-executive.com/article/yang-ming-orders-containerships-with-new-lng-technology-from-hanwha-ocean"
+    },
+    {
+     "label": "船型需求預測 2025-2045 (Patrick Gros)",
+     "url": "https://patrickgros.medium.com/future-demand-for-merchant-ship-types-2025-2045-66f909c15501"
+    },
+    {
+     "label": "LNG 出口擴張拉動 LNG 船訂單 (ShipFinex)",
+     "url": "https://www.shipfinex.com/blog/lng-carrier-construction-activity-orderbook"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "steel_forging",
+   "yard_assembly"
+  ],
+  [
+   "marine_engine",
+   "yard_assembly"
+  ],
+  [
+   "containment_coating",
+   "yard_assembly"
+  ],
+  [
+   "yard_assembly",
+   "vessel_types"
+  ],
+  [
+   "yard_assembly",
+   "masga"
+  ],
+  [
+   "vessel_types",
+   "shipowner_lng"
+  ],
+  [
+   "masga",
+   "shipowner_lng"
+  ]
+ ],
+ "_proposed": {}
+}

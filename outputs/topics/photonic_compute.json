@@ -1,0 +1,559 @@
+{
+ "id": "photonic_compute",
+ "tab": "光子運算",
+ "title": "光子運算供應鏈 (Photonic / Optical Computing)",
+ "subtitle": "Photonic / Optical Computing — 用光（光強度/相位）在類比域做矩陣乘法（MAC），以突破電子互連與算力的功耗牆。2026 是敘事引爆年：Lightelligence（曦智）2026-04 香港掛牌、公開認購 600 倍超額、首日 +380%、估值約 $104 億美元；Marvell 以 $32.5 億完成併購 Celestial AI（Photonic Fabric）；Lightmatter 估值 $44 億（Passage M1000 達 114 Tbps）；Q.ANT 第二代 TFLN NPU 2 於 H1 2026 出貨；上海交大×曦智成立中國首座光子運算實驗室。價值鏈：矽光子/TFLN 代工（GF 併 AMF 成最大 SiPh 代工、TSMC COUPE 2026 量產、Tower）→ 光運算核心元件（調變器/微環權重庫/MZI/metasurface）→ 光 I/O/光互連 chiplet（Ayar Labs、Lightmatter Passage）→ 光 AI 加速器整機 → 終端超大規模/HPC。⚠ 認知核心：真正用光『做運算』商轉延後 2028+，現在賺到錢的是『光互連』與『矽光子代工』兩個賣鏟人環節。有別於 siph/cpo/optical_module/silicon_laser_els/quantum_compute。",
+ "category": "hw",
+ "stats": [
+  {
+   "k": "供應鏈節點",
+   "v": 5
+  },
+  {
+   "k": "涵蓋廠商",
+   "v": "30+"
+  },
+  {
+   "k": "光神經網路處理器市場",
+   "v": "$59億(2035)",
+   "sub": "2026 $5.45億→2035 CAGR ~30.3%（GMInsights）·光子 AI 加速器另估 2035 $412億",
+   "hot": true
+  },
+  {
+   "k": "2026 催化",
+   "v": "曦智 +380%",
+   "sub": "HKEX IPO 600x 超額/估值 ~$104億·Marvell $32.5億併 Celestial AI",
+   "hot": true
+  }
+ ],
+ "rows": [
+  {
+   "id": "foundry",
+   "label": "矽光子 / TFLN 代工 + 光學基板 Foundry & Substrate",
+   "main": false
+  },
+  {
+   "id": "device",
+   "label": "光運算核心元件 Optical Compute Devices",
+   "main": false
+  },
+  {
+   "id": "io",
+   "label": "光 I/O / 光互連 chiplet Optical I/O & Interconnect",
+   "main": false
+  },
+  {
+   "id": "accel",
+   "label": "光 AI 加速器 / 光運算整機 Optical AI Accelerators",
+   "main": true
+  },
+  {
+   "id": "demand",
+   "label": "終端採用 Hyperscale / HPC Demand",
+   "main": false
+  }
+ ],
+ "nodes": [
+  {
+   "id": "siph_foundry",
+   "row": "foundry",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "矽光子 / TFLN 代工 + SOI/光學基板",
+   "nameEn": "SiPh / TFLN Foundry & Substrate",
+   "competition": "oligopoly",
+   "single": "鎖喉點 · GF 併 AMF 成全球最大 SiPh 代工、2026 SiPh 營收估翻倍至 ~$4 億；Soitec SOI 基板近壟斷",
+   "desc": "光子運算晶片的製造底層：矽光子（SiPh）與薄膜鈮酸鋰（TFLN）代工平台，加上 SOI 與 TFLN 晶圓基板。這是整條鏈最先有真實營收、最具量產彈性的賣鏟人環節。",
+   "marketSize": "賣鏟人最務實",
+   "growth": "產能卡位戰",
+   "share": "null",
+   "analysis": "GlobalFoundries（GFS，2025-11 併新加坡 Advanced Micro Foundry/AMF 成全球最大專業 SiPh 代工；2026 管理層視 SiPh 為核心成長引擎、營收估翻倍至 ~$4 億、2028 破 $10 億，Q1'26 總營收 $16.3 億超預期；AMF 200mm 平台將擴至 300mm、與 A*STAR 設新加坡 SiPh 卓越研發中心；GF Fotonix 為 fabless 光子公司首選平台；客戶含 Broadcom/Cisco/Marvell/NVIDIA + Ayar Labs/Lightmatter/PsiQuantum/Ranovus/Xanadu）。TSMC（2330.TW，COUPE 用 SoIC-X 把電晶圓疊在光晶圓上、2026 量產、號稱 5–10x 能效/10–20x 低延遲，NVIDIA GTC 展示、Broadcom 採用）。Tower Semiconductor（TSEM，PH18DA 整合 III-V 雷射/TPS45PH 低損氮化矽波導；2026-06 與 Marvell 累計出貨 >500 萬顆相干 PIC；2026-05 簽 SiPh 2027 營收合約 $13 億、收 $2.9 億產能預付）。imec（BE，歐洲光子 PDK/研發樞紐、Q.ANT 投資人）。基材：Soitec（SOI.PA，SOI 基板近壟斷）、NGK/住友（JP，TFLN 晶圓）。GF/Tower 同時受惠古典光運算 + 光子量子兩條敘事。",
+   "companies": [
+    {
+     "name": "GlobalFoundries",
+     "ticker": "GFS",
+     "country": "US",
+     "share": "全球最大專業 SiPh 代工",
+     "products": "GF Fotonix SiPh 平台 / 併 AMF",
+     "note": "2025-11 併新加坡 AMF；2026 SiPh 營收估翻倍至 ~$4 億、2028 破 $10 億；Q1'26 總營收 $16.3 億；客戶含 Lightmatter/Ayar/PsiQuantum/NVIDIA/Marvell",
+     "src": "https://www.trendforce.com/news/2026/05/07/news-globalfoundries-reportedly-sees-silicon-photonics-revenue-doubling-in-2026-passing-1b-by-2028/"
+    },
+    {
+     "name": "TSMC",
+     "ticker": "2330.TW",
+     "country": "TW",
+     "share": "光引擎代工 COUPE",
+     "products": "COUPE (SoIC-X 電+光晶圓堆疊)",
+     "note": "2026 量產；5–10x 能效；NVIDIA/Broadcom 採用",
+     "src": "https://www.trendforce.com/news/2026/04/01/news-silicon-photonics-race-intensifies-as-tsmc-targets-2026-coupe-production-samsung-eyes-2029-cpo-turnkey/"
+    },
+    {
+     "name": "Tower Semiconductor",
+     "ticker": "TSEM",
+     "country": "IL",
+     "share": "相干 PIC 量產代工",
+     "products": "PH18DA (整合 III-V 雷射) / TPS45PH 氮化矽波導",
+     "note": "2026-06 與 Marvell 累計 >500 萬顆相干 PIC；2026-05 SiPh 2027 合約 $13 億",
+     "src": "https://www.sec.gov/Archives/edgar/data/0000928876/000117891326000026/zk2634181.htm"
+    },
+    {
+     "name": "imec",
+     "ticker": "—",
+     "country": "BE",
+     "share": "歐洲光子 PDK/研發樞紐",
+     "products": "矽光子 PDK / MPW 多專案晶圓",
+     "note": "Q.ANT 投資人（imec.xpand）",
+     "src": "https://www.eetimes.com/q-ant-raises-series-a-debuts-second-gen-tfln-photonic-chip/"
+    },
+    {
+     "name": "Soitec",
+     "ticker": "SOI.PA",
+     "country": "FR",
+     "share": "SOI 基板近壟斷",
+     "products": "SOI 工程晶圓 / Smart Cut",
+     "note": "矽光子運算晶片上游基材",
+     "src": "https://www.digitimes.com/news/a20251121PD230/silicon-photonics-globalfoundries-shipments-commercial.html"
+    },
+    {
+     "name": "NGK Insulators / 住友",
+     "ticker": "5333.T",
+     "country": "JP",
+     "share": "TFLN 晶圓",
+     "products": "薄膜鈮酸鋰 (TFLN) 晶圓",
+     "note": "Q.ANT 等 TFLN 路線上游基材",
+     "src": "https://qant.com/photonic-computing/"
+    }
+   ],
+   "upstream": [],
+   "downstream": [
+    {
+     "id": "compute_device"
+    },
+    {
+     "id": "optical_io"
+    }
+   ],
+   "sources": [
+    {
+     "label": "GF 次世代矽光子 + 夥伴 (SiliconSemiconductor)",
+     "url": "https://siliconsemiconductor.net/article/114391/GlobalFoundries_Announces_Next-Gen_Silicon_Photonics"
+    },
+    {
+     "label": "TSMC COUPE 2026 量產 (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/04/01/news-silicon-photonics-race-intensifies-as-tsmc-targets-2026-coupe-production-samsung-eyes-2029-cpo-turnkey/"
+    }
+   ]
+  },
+  {
+   "id": "compute_device",
+   "row": "device",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "光運算核心元件（調變器/微環/MZI/metasurface/雷射）",
+   "nameEn": "Optical Compute Devices",
+   "competition": "emerging",
+   "single": "⚠ 多為新創自研；微環需主動校準、類比精度限推論；CW 雷射源與 silicon_laser_els 共享",
+   "desc": "把運算做進光裡的核心光元件：高速調變器、微環諧振器權重庫、Mach-Zehnder 干涉儀網格、metasurface 光調變陣列、光偵測器與 CW 雷射光源。多為新創自研、技術路線分歧。",
+   "marketSize": "類比 MAC 元件",
+   "growth": "技術路線分歧",
+   "share": "null",
+   "analysis": "光做矩陣乘法是類比運算：用光強度/相位編碼權重與輸入，單一光元件即可完成一次乘加（CMOS 8-bit 乘法需 ~1,200 電晶體）。Q.ANT（DE，TFLNoI 平台，號稱類比單一運算較 CMOS 至少 30x 能效）、Neurophos（US，metasurface 光調變器在單晶片整合 >100 萬個微米級光元件，源自隱形斗篷超穎材料技術）、Lightmatter（US，自研光元件 + 3D 光子堆疊，Passage M1000 整合多達 34 chiplet/等效 die >4,000 mm²）。光源輸入：Coherent（COHR）、Lumentum（LITE）高功率 CW 雷射（與 silicon_laser_els 共享）。研究級元件：Intel（INTC，自有 photonics fab，MOSCAP 微環調變器 117 pm/V、0.8V 驅動）。⚠ 微環對溫度/製程漂移敏感需主動校準；類比運算精度（號稱 ~90% 推論準確度、8-bit 級）限其只能推論、難做訓練（Q.ANT 號稱可晶片訓練屬少數待驗證例外）。",
+   "companies": [
+    {
+     "name": "Lightmatter",
+     "ticker": "—",
+     "country": "US",
+     "share": "自研光元件 + 3D 光子堆疊",
+     "products": "Passage 3D 光 interposer / 光元件",
+     "note": "未上市 $4.4B；M1000 整合 34 chiplet、等效 die >4,000 mm²",
+     "src": "https://lightmatter.co/products/m1000/"
+    },
+    {
+     "name": "Q.ANT",
+     "ticker": "—",
+     "country": "DE",
+     "share": "TFLN 光運算元件",
+     "products": "TFLNoI 光調變器陣列 (NPU)",
+     "note": "未上市；2025 €62M Series A + Druckenmiller $80M；單一光元件完成 8-bit 乘法、30x 能效",
+     "src": "https://www.eetimes.com/q-ant-raises-series-a-debuts-second-gen-tfln-photonic-chip/"
+    },
+    {
+     "name": "Neurophos",
+     "ticker": "—",
+     "country": "US",
+     "share": "metasurface 光調變器",
+     "products": "metasurface 光處理元件 (OPU)",
+     "note": "未上市；2026-01 募 $110M、累計 $118M；單晶片 >100 萬光元件",
+     "src": "https://siliconangle.com/2026/01/22/chip-startup-neurophos-gets-110m-replace-electrons-photons-accelerate-ai-compute/"
+    },
+    {
+     "name": "Coherent",
+     "ticker": "COHR",
+     "country": "US",
+     "share": "高功率 CW 雷射光源",
+     "products": "CW DFB 雷射 / 高功率二極體",
+     "note": "2026-03 NVIDIA 入股 $20 億+多年採購承諾、擴美國產能（與 silicon_laser_els 共享）",
+     "src": "https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html"
+    },
+    {
+     "name": "Lumentum",
+     "ticker": "LITE",
+     "country": "US",
+     "share": "雷射光源",
+     "products": "CW 雷射 / 泵浦源",
+     "note": "2026-03 NVIDIA 入股 $20 億+採購承諾+未來產能取得權；NVIDIA 系雷射供應商",
+     "src": "https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "自有 photonics fab",
+     "products": "MOSCAP 微環調變器 / 矽光子元件",
+     "note": "117 pm/V、0.8V 驅動研究級元件；亦投 Ayar Labs",
+     "src": "https://www.eetimes.com/q-ant-raises-series-a-debuts-second-gen-tfln-photonic-chip/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "siph_foundry"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "optical_io"
+    },
+    {
+     "id": "optical_accel"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Q.ANT 二代 TFLN 光子晶片 (EE Times)",
+     "url": "https://www.eetimes.com/q-ant-raises-series-a-debuts-second-gen-tfln-photonic-chip/"
+    },
+    {
+     "label": "Neurophos $110M 光處理器 (SiliconANGLE)",
+     "url": "https://siliconangle.com/2026/01/22/chip-startup-neurophos-gets-110m-replace-electrons-photons-accelerate-ai-compute/"
+    }
+   ]
+  },
+  {
+   "id": "optical_io",
+   "row": "io",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "光 I/O / 光互連 chiplet（賣鏟人，最先賺錢）",
+   "nameEn": "Optical I/O & Interconnect Chiplet",
+   "competition": "highgrowth",
+   "single": "最先商業化的環節 · Marvell $32.5 億併 Celestial AI；NVIDIA 2026-03 灑 ~$65 億入股光子供應鏈（Marvell/Lumentum/Coherent 各 $20 億）",
+   "desc": "用光在晶片間搬資料（光 I/O / 光互連 chiplet），是整條鏈最先有量產與營收的環節，直接搭 AI 資料中心 scale-up 剛需。與『光算力』不同：這裡是用光搬資料、運算仍在電域。",
+   "marketSize": "確定性需求",
+   "growth": "scale-up 剛需",
+   "share": "null",
+   "analysis": "Ayar Labs（US，TeraPHY UCIe 光 I/O chiplet；2026-03 Series E $500M @ $3.75B，Neuberger Berman 領投、NVIDIA/AMD/Intel 參投；2024-12 Series D $155M Intel/NVIDIA）。Lightmatter Passage（US，M1000 達 114 Tbps 已出貨、L200 CPO 2026、L20 6.4 Tbps 2026-03 發表；單光纖 1.6 Tbps 紀錄；GF + ASE 代工/封裝）。Celestial AI → Marvell（MRVL，Photonic Fabric 把記憶體與運算解耦；2026-02 Marvell $32.5 億完成併購，預期 FY2029 Q4 年化 $10 億 run rate）。Oriole Networks（UK，UCL spin-out，光交換取代電交換加速 LLM 訓練/推論）。Xscape Photonics（US，多波長光 I/O，2024 募約 $44M——注意與 Lightmatter $4.4B 估值易混淆）。⚠ 這是『確定性需求』環節：連 Lightmatter 都把主力放這、而非光算力。垂直整合潮再升級：NVIDIA 2026-03 一口氣灑 ~$65 億入股光子供應鏈（Marvell/Lumentum/Coherent 各 $20 億 + Corning），把雷射/光互連產能私有化綁定；Marvell 併 Celestial（FY29Q4 年化 $10 億 run rate、有意義營收要到 2028 末）、NVIDIA/AMD/Intel 投 Ayar。",
+   "companies": [
+    {
+     "name": "Ayar Labs",
+     "ticker": "—",
+     "country": "US",
+     "share": "光 I/O chiplet 領導",
+     "products": "TeraPHY UCIe 光 I/O chiplet (2Tbps) / SuperNova 光源",
+     "note": "未上市；2026-03 Series E $500M @ $3.75B（累計 $870M）Neuberger Berman 領投、新投資人含 Alchip/ARK/Insight/MediaTek/QIA/Sequoia；新設新竹辦公室；量產 ramp 對準 2028",
+     "src": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/"
+    },
+    {
+     "name": "Lightmatter (Passage)",
+     "ticker": "—",
+     "country": "US",
+     "share": "3D 光 interposer 領導",
+     "products": "Passage M1000 (114 Tbps) / L200 CPO / Guide DR 液冷雷射 NIC",
+     "note": "未上市 $4.4B；M1000 已出貨、2026-05 推 Guide DR 液冷雷射 NIC（機櫃密度 4x）、2026-01 與 Cadence/GUC 合作 CPO；GF+ASE 代工封裝",
+     "src": "https://lightmatter.co/press-releases/"
+    },
+    {
+     "name": "Celestial AI → Marvell",
+     "ticker": "MRVL",
+     "country": "US",
+     "share": "被併 $32.5 億",
+     "products": "Photonic Fabric (記憶體-運算解耦)",
+     "note": "2026-02 Marvell 完成併購；預期 FY2029 Q4 年化 $10 億 run rate",
+     "src": "https://www.sdxcentral.com/news/marvell-completes-325b-acquisition-of-photonic-startup-celestial-ai/"
+    },
+    {
+     "name": "Oriole Networks",
+     "ticker": "—",
+     "country": "UK",
+     "share": "光交換網路新創",
+     "products": "光交換 fabric (取代電交換)",
+     "note": "未上市；UCL spin-out；加速 LLM 訓練/推論",
+     "src": "https://cignal.ai/2025/11/optical-component-startup-tracker/"
+    },
+    {
+     "name": "Xscape Photonics",
+     "ticker": "—",
+     "country": "US",
+     "share": "多波長光 I/O",
+     "products": "多波長光互連",
+     "note": "未上市；2024 募約 $44M（與 Lightmatter $4.4B 易混淆）",
+     "src": "https://cignal.ai/2025/11/optical-component-startup-tracker/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "siph_foundry"
+    },
+    {
+     "id": "compute_device"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "optical_accel"
+    },
+    {
+     "id": "end_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Lightmatter Passage M1000 114 Tbps (官方)",
+     "url": "https://lightmatter.co/press-release/lightmatter-unveils-passage-m1000-photonic-superchip-worlds-fastest-ai-interconnect/"
+    },
+    {
+     "label": "Marvell 完成併 Celestial AI $3.25B (SDxCentral)",
+     "url": "https://www.sdxcentral.com/news/marvell-completes-325b-acquisition-of-photonic-startup-celestial-ai/"
+    }
+   ]
+  },
+  {
+   "id": "optical_accel",
+   "row": "accel",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "光 AI 加速器 / 光運算整機（敘事核心、商轉 2028+）",
+   "nameEn": "Optical AI Accelerators",
+   "competition": "emerging",
+   "single": "⚠ 高估值題材 · 曦智 HKEX（1879.HK）首日 +383.6%、市值衝破 HK$800 億；2025 營收僅 RMB106m、淨損 RMB13 億；純光算力商轉延後 2028+",
+   "desc": "真正用光『做運算』的光 AI 加速器與整機，是題材敘事核心，但純光算力商轉延後至 2028+、多數未上市、燒錢且時程屢滑期。",
+   "marketSize": "選擇權式佈局",
+   "growth": "高題材高風險",
+   "share": "null",
+   "analysis": "Lightelligence（曦智科技，上海/HKEX 1879.HK──非 2696，2026-04-28 掛牌、IPO 定價區間頂端 HK$183.2、淨募 HK$2.4B、零售超額 ~5,785 倍、首日 +383.6%（近十年主板新股最大首日漲幅）、市值衝破 HK$800 億（約 $102 億）；2025 營收 RMB106m（2023→25 CAGR 66.9%）但淨損 RMB13 億、6 月市值回落至約 $68 億；在中國第三方 scale-up 光互連市場以營收計居首（~88.3% 份額）；PACE2 光運算加速器、Hummingbird 64 核光互連 AI 推論 ASIC、Photowave PCIe5/6+CXL；騰訊/百度/中國移動股東、基石含 Alibaba/BlackRock/GIC/Temasek）。Lightmatter Envise（US，光子 AI 加速器但為次要產品線、主推光互連）。Q.ANT NPS（DE，首個商用光子處理伺服器 x86 相容；NPU 2 客戶出貨 H1 2026、號稱 30x 能效）。Neurophos OPU（US，ExaOPS 光 AI 推論晶片；Terakraft 2027 試點、2028 初首套系統）。Salience Labs（UK，與 Tower 合製 PIC-based 光交換 OCS）。Akhetonics（DE，全光通用運算晶片；2024-11 種子 €6M）。中國國家隊：上海交大×曦智光子運算實驗室（2026-06-11）、清華/上海交大 LightGen 登 Science，視為繞過美國 GPU/HBM 管制的戰略路線。⚠ 風險：商轉滑期、估值極端（曦智 $104 億對應極小營收 P/S 極高）、CUDA 護城河 + GPU 自身走 CPO 壓制、類比精度與良率待證。",
+   "companies": [
+    {
+     "name": "Lightelligence (曦智)",
+     "ticker": "1879.HK",
+     "country": "CN",
+     "share": "光 AI 加速器領先 / 已上市",
+     "products": "PACE2 / Hummingbird / Photowave",
+     "note": "2026-04-28 HKEX 上市（1879.HK，非 2696）、首日 +383.6%、市值衝破 HK$800 億；2025 營收 RMB106m（3 年 CAGR 66.9%）但淨損 RMB13 億；6 月回落至市值約 $68 億；騰訊/百度股東",
+     "src": "https://www.caixinglobal.com/2026-04-28/lightelligence-sets-record-ipo-gain-with-383-surge-on-hong-kong-debut-102438977.html"
+    },
+    {
+     "name": "Lightmatter (Envise)",
+     "ticker": "—",
+     "country": "US",
+     "share": "光算力（次要產品線）",
+     "products": "Envise 光子 AI 加速器",
+     "note": "未上市 $4.4B；主力為光互連 Passage、光算力為次",
+     "src": "https://lightmatter.co/blog/a-new-kind-of-computer/"
+    },
+    {
+     "name": "Q.ANT",
+     "ticker": "—",
+     "country": "DE",
+     "share": "歐洲光算力領先",
+     "products": "Native Processing Server (NPS) / NPU 2",
+     "note": "未上市；2025-07 €62M Series A + 2025-11 Druckenmiller $80M；2026-05 IONOS 成首個商用 NPS 客戶；NPU 2 於 LRZ 超算較 gen-1 快 100x、x86 相容",
+     "src": "https://thequantuminsider.com/2026/05/21/qant-photonic-ai-computing-commercial-ionos/"
+    },
+    {
+     "name": "Neurophos",
+     "ticker": "—",
+     "country": "US",
+     "share": "光推論晶片新創",
+     "products": "ExaOPS OPU 光 AI 推論",
+     "note": "未上市；Terakraft 2027 試點、2028 初首套系統",
+     "src": "https://techcrunch.com/2026/01/22/from-invisibility-cloaks-to-ai-chips-neurophos-raises-110m-to-build-tiny-optical-processors-for-inferencing/"
+    },
+    {
+     "name": "Salience Labs",
+     "ticker": "—",
+     "country": "UK",
+     "share": "光交換新創",
+     "products": "PIC-based 光交換 (OCS)",
+     "note": "未上市；與 Tower 合製 PIC",
+     "src": "https://www.sec.gov/Archives/edgar/data/0000928876/000117891326000026/zk2634181.htm"
+    },
+    {
+     "name": "Akhetonics",
+     "ticker": "—",
+     "country": "DE",
+     "share": "全光通用運算新創",
+     "products": "全光通用運算晶片",
+     "note": "未上市；2024-11 種子 €6M",
+     "src": "https://cignal.ai/2025/11/optical-component-startup-tracker/"
+    },
+    {
+     "name": "上海交大×曦智光子運算實驗室",
+     "ticker": "—",
+     "country": "CN",
+     "share": "中國國家隊",
+     "products": "LightGen 光 AI 晶片 (Science)",
+     "note": "2026-06-11 中國首座光子運算實驗室；繞過美國管制戰略路線",
+     "src": "https://thenextweb.com/news/china-photonics-lab-ai-chips-us-curbs"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "compute_device"
+    },
+    {
+     "id": "optical_io"
+    }
+   ],
+   "downstream": [
+    {
+     "id": "end_demand"
+    }
+   ],
+   "sources": [
+    {
+     "label": "曦智 HKEX IPO 600x 超額 (Startup Fortune)",
+     "url": "https://startupfortune.com/lightelligences-600x-oversubscribed-hk-ipo-proves-the-market-wants-photonic-ai-chips/"
+    },
+    {
+     "label": "中國首座光子運算實驗室 (TNW)",
+     "url": "https://thenextweb.com/news/china-photonics-lab-ai-chips-us-curbs"
+    }
+   ]
+  },
+  {
+   "id": "end_demand",
+   "row": "demand",
+   "col": 1,
+   "span": 3,
+   "kind": "stage",
+   "name": "終端採用（超大規模 / HPC / 主權 AI）",
+   "nameEn": "Hyperscale / HPC Demand",
+   "competition": "oligopoly",
+   "single": "AI 資料中心功耗牆是結構性催化；但採用方多投資新創而非大量採購",
+   "desc": "AI 資料中心的互連與算力功耗牆，是把光子運算推向可投資敘事的需求催化。超大規模與 HPC/主權 AI 為終端採用方，但目前多以『投資/試點』而非大量採購形式參與。",
+   "marketSize": "需求錨點",
+   "growth": "結構性催化",
+   "share": "null",
+   "analysis": "NVIDIA（NVDA，投 Ayar Labs、自身 GPU 走 CPO/COUPE 光 I/O、GTC 展示 COUPE 光引擎）、AMD（投 Ayar）、Intel（INTC，既投 Ayar 又有自有 photonics fab）。雲端：Microsoft（MSFT）、Google（GOOGL，Lightmatter 投資人/GV）、Cisco（CSCO，矽光子 + 量子網路）。試點：Terakraft（NO，Neurophos 2027 光 AI 加速器試點資料中心）、各國主權 AI/超算中心（Q.ANT 已進歐洲超算設施）。⚠ 與 cpo/optical_module/server 主題共享『AI 資料中心功耗牆』同一結構性催化；但光子運算屬更長天期、更高風險的選擇權式佈局——大廠多以策略投資/試點參與，真正大量採購光『算力』尚遠，光『互連』則已搭 scale-up 剛需起量。",
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "country": "US",
+     "share": "GPU 龍頭 + 光 I/O 投資/採用",
+     "products": "Ayar 投資人 / COUPE 光引擎 / CPO",
+     "note": "2026-03 光子投資狂潮約 $65 億：Lumentum/Coherent/Marvell 各 $20 億+Corning；GTC 展示 COUPE；GPU 自身走 CPO 既是催化也是競爭",
+     "src": "https://thenextweb.com/news/nvidia-photonics-investment-copper-bottleneck-ai-data-centre"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "country": "US",
+     "share": "投資 + 自有光子 fab",
+     "products": "Ayar 投資人 / 自有 photonics",
+     "note": "2024-12 與 NVIDIA 共投 Ayar $155M",
+     "src": "https://cignal.ai/2025/11/optical-component-startup-tracker/"
+    },
+    {
+     "name": "Google",
+     "ticker": "GOOGL",
+     "country": "US",
+     "share": "Lightmatter 投資人",
+     "products": "GV 投資 Lightmatter / 雲端採用方",
+     "note": "GV 多輪參投 Lightmatter",
+     "src": "https://sacra.com/c/lightmatter/"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "country": "US",
+     "share": "雲端採用方",
+     "products": "AI 資料中心 scale-up",
+     "note": "AI 互連功耗牆需求端",
+     "src": "https://markets.financialcontent.com/wral/article/tokenring-2026-1-1-the-speed-of-light-silicon-photonics-shatters-the-ai-interconnect-bottleneck"
+    },
+    {
+     "name": "Cisco",
+     "ticker": "CSCO",
+     "country": "US",
+     "share": "網路設備 + 矽光子",
+     "products": "矽光子交換 / 量子網路",
+     "note": "GF SiPh 夥伴；資料中心互連採用方",
+     "src": "https://siliconsemiconductor.net/article/114391/GlobalFoundries_Announces_Next-Gen_Silicon_Photonics"
+    },
+    {
+     "name": "Terakraft",
+     "ticker": "—",
+     "country": "NO",
+     "share": "光 AI 試點資料中心",
+     "products": "Neurophos OPU 2027 試點",
+     "note": "未上市；挪威資料中心營運商",
+     "src": "https://techcrunch.com/2026/01/22/from-invisibility-cloaks-to-ai-chips-neurophos-raises-110m-to-build-tiny-optical-processors-for-inferencing/"
+    }
+   ],
+   "upstream": [
+    {
+     "id": "optical_io"
+    },
+    {
+     "id": "optical_accel"
+    }
+   ],
+   "downstream": [],
+   "sources": [
+    {
+     "label": "矽光子打破 AI 互連瓶頸 (FinancialContent)",
+     "url": "https://markets.financialcontent.com/wral/article/tokenring-2026-1-1-the-speed-of-light-silicon-photonics-shatters-the-ai-interconnect-bottleneck"
+    },
+    {
+     "label": "Neurophos×Terakraft 2027 試點 (TechCrunch)",
+     "url": "https://techcrunch.com/2026/01/22/from-invisibility-cloaks-to-ai-chips-neurophos-raises-110m-to-build-tiny-optical-processors-for-inferencing/"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "siph_foundry",
+   "compute_device"
+  ],
+  [
+   "siph_foundry",
+   "optical_io"
+  ],
+  [
+   "compute_device",
+   "optical_io"
+  ],
+  [
+   "compute_device",
+   "optical_accel"
+  ],
+  [
+   "optical_io",
+   "optical_accel"
+  ],
+  [
+   "optical_io",
+   "end_demand"
+  ],
+  [
+   "optical_accel",
+   "end_demand"
+  ]
+ ],
+ "_proposed": {}
+}
