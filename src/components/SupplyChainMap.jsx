@@ -218,11 +218,11 @@ export const SupplyChainMap = ({ topicData, highlightedNodeId }) => {
                   {visibleNodes.length === 0 && (
                     <p className="sc-row-empty">此步驟無符合篩選條件的環節</p>
                   )}
-                  {visibleNodes.map(node => {
+                  {visibleNodes.map((node, ni) => {
                     const comp = getComp(node.competition);
                     const lock = isLockpoint(node);
                     const isActive = activeNodeId === node.id;
-                    const twCount = (node.companies || []).filter(isTW).length;
+                    const cos = node.companies || [];
                     return (
                       <button
                         key={node.id}
@@ -231,12 +231,23 @@ export const SupplyChainMap = ({ topicData, highlightedNodeId }) => {
                         onClick={() => setActiveNodeId(isActive ? null : node.id)}
                         ref={el => { if (isActive) detailRefs.current[node.id] = el; }}
                       >
-                        <div className="sc-node-top">
-                          <span className="sc-node-comp" style={{ color: comp.color }}>{comp.label}</span>
+                        <div className="sc-node-head">
+                          <span className="sc-node-idx">{ni + 1}</span>
+                          <span className="sc-node-name">{node.name}</span>
                           {lock && <span className="sc-node-lock">⚠ 鎖喉</span>}
                         </div>
-                        <div className="sc-node-name">{node.name}</div>
-                        {twCount > 0 && <div className="sc-node-tw">🇹🇼 {twCount} 家台廠</div>}
+                        {cos.length > 0 && (
+                          <div className="sc-node-cos">
+                            {cos.slice(0, 6).map((c, i) => (
+                              <span key={i} className={`sc-co-tag${isTW(c) ? ' tw' : ''}`}>{c.name}</span>
+                            ))}
+                            {cos.length > 6 && <span className="sc-co-more">+{cos.length - 6}</span>}
+                          </div>
+                        )}
+                        <div className="sc-node-foot">
+                          <span className="sc-node-comp" style={{ color: comp.color }}>{comp.label}</span>
+                          <span className="sc-node-hint">點擊看明細</span>
+                        </div>
                       </button>
                     );
                   })}
@@ -436,25 +447,44 @@ export const SupplyChainMap = ({ topicData, highlightedNodeId }) => {
         .sc-row-choke { color: var(--accent-red); }
         .sc-row-empty { font-size: 0.78rem; color: var(--text-muted); padding: 6px 0; font-style: italic; }
 
-        /* NODE CARDS */
-        .sc-nodes-wrap { display: flex; flex-wrap: wrap; gap: 8px; padding-bottom: 2px; }
+        /* NODE CARDS — 色塊編號流程卡片 */
+        .sc-nodes-wrap { display: flex; flex-wrap: wrap; gap: 10px; padding-bottom: 2px; }
         .sc-node {
-          min-width: 130px; flex: 1; max-width: 220px;
-          border: 1px solid rgba(255,255,255,.06);
-          border-left: 3px solid var(--cc);
-          border-radius: 8px; background: rgba(255,255,255,.02);
-          padding: 9px 11px; cursor: pointer; text-align: left;
-          display: flex; flex-direction: column; gap: 4px;
+          min-width: 210px; flex: 1 1 250px; max-width: 360px;
+          border: 1px solid color-mix(in srgb, var(--cc) 32%, transparent);
+          border-left: 4px solid var(--cc);
+          border-radius: 10px;
+          background: color-mix(in srgb, var(--cc) 9%, #141821);
+          padding: 13px 15px; cursor: pointer; text-align: left;
+          display: flex; flex-direction: column; gap: 10px;
           transition: all var(--transition-fast);
         }
-        .sc-node:hover { background: rgba(255,255,255,.04); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,.2); }
-        .sc-node.active { background: rgba(0,191,255,.06); border-color: rgba(0,191,255,.4); border-left-color: var(--cc); box-shadow: var(--neon-glow-blue); }
-        .sc-node.lock { box-shadow: 0 0 8px rgba(239,68,68,.12); }
-        .sc-node-top { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
-        .sc-node-comp { font-size: 0.66rem; font-weight: 600; }
-        .sc-node-lock { font-size: 0.6rem; background: rgba(239,68,68,.15); color: var(--accent-red); border: 1px solid rgba(239,68,68,.3); padding: 1px 4px; border-radius: 3px; animation: pulse 2s infinite; white-space: nowrap; }
-        .sc-node-name { font-size: 0.83rem; font-weight: 600; color: var(--text-primary); line-height: 1.35; }
-        .sc-node-tw { font-size: 0.66rem; color: var(--accent-blue); }
+        .sc-node:hover { background: color-mix(in srgb, var(--cc) 16%, #141821); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.3); }
+        .sc-node.active { background: color-mix(in srgb, var(--cc) 18%, #141821); box-shadow: 0 0 0 2px var(--cc), 0 6px 16px rgba(0,0,0,.3); }
+        .sc-node.lock { box-shadow: 0 0 10px color-mix(in srgb, var(--cc) 25%, transparent); }
+
+        /* 標頭：編號 + 環節名（小、輔助） */
+        .sc-node-head { display: flex; align-items: center; gap: 8px; }
+        .sc-node-idx {
+          width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
+          background: var(--cc); color: #0b0e14;
+          font-size: 0.72rem; font-weight: 800; font-family: 'Outfit', sans-serif;
+          display: flex; align-items: center; justify-content: center;
+        }
+        .sc-node-name { font-size: 0.78rem; font-weight: 500; color: var(--text-secondary); flex: 1; line-height: 1.3; }
+        .sc-node-lock { font-size: 0.58rem; background: rgba(239,68,68,.92); color: #fff; padding: 2px 6px; border-radius: 4px; animation: pulse 2s infinite; white-space: nowrap; font-weight: 700; }
+
+        /* 公司名 — 主角，大字 */
+        .sc-node-cos { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+        .sc-co-tag { font-size: 1.02rem; font-weight: 700; color: var(--text-primary); line-height: 1.25; letter-spacing: -0.01em; }
+        .sc-co-tag.tw { color: var(--accent-blue); }
+        .sc-co-more { font-size: 0.72rem; color: var(--text-muted); align-self: center; }
+
+        /* 卡腳：格局標籤 + 提示（小、淡） */
+        .sc-node-foot { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+        .sc-node-comp { font-size: 0.68rem; font-weight: 700; }
+        .sc-node-hint { font-size: 0.62rem; color: var(--text-muted); opacity: 0; transition: opacity var(--transition-fast); }
+        .sc-node:hover .sc-node-hint { opacity: 1; }
 
         /* INLINE DETAIL */
         .sc-detail {
@@ -486,10 +516,10 @@ export const SupplyChainMap = ({ topicData, highlightedNodeId }) => {
         .sc-co-bottom { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-muted); }
         .sc-co-share { font-style: italic; }
 
-        /* FLOW DIVIDER */
-        .sc-divider { display: flex; align-items: center; gap: 10px; padding: 18px 0 14px; }
-        .sc-div-line { flex: 1; height: 1px; background: rgba(255,255,255,.06); }
-        .sc-div-text { font-size: 0.72rem; color: var(--text-muted); white-space: nowrap; }
+        /* FLOW DIVIDER — 置中向下箭頭 */
+        .sc-divider { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px 0; }
+        .sc-div-line { width: 2px; height: 12px; background: linear-gradient(to bottom, rgba(255,255,255,.04), rgba(255,255,255,.14)); }
+        .sc-div-text { font-size: 0.68rem; color: var(--text-muted); white-space: nowrap; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.07); padding: 3px 14px; border-radius: 20px; }
 
         /* RIGHT RAIL */
         .sc-right-rail { display: flex; flex-direction: column; gap: 10px; position: sticky; top: 14px; max-height: calc(100vh - 110px); overflow-y: auto; }
